@@ -1,0 +1,1366 @@
+{
+  "mainTopic": "Why חכמים forbade immersing an impure vessel on שבת and יום טוב: the reasons of רבה, רב יוסף, רב ביבי and רבא, and the challenges to them.",
+  "overview": "This amud asks why חכמים forbade immersing an impure vessel on שבת and יום טוב. רבה says it is because a person might carry the vessel four אמות in רשות הרבים on the way to a מקוה. When אביי challenges him, he extends the ban to a pit in one's own courtyard and to יום טוב, each through a גזירה. A series of sources seems to show that חכמים did not make such גזירות: השקה of water, drawing water with an impure bucket, a vessel that became impure on יום טוב itself, a vessel made impure by a ולד הטומאה, and a נדה immersing in her clothes. Each one is answered in one of two ways. Either the case is rare, and חכמים do not decree on rare cases, or the unusual method itself reminds the person of the rule. רב יוסף then gives a different reason, fear of סחיטה (wringing), and the same challenges and answers apply to him. רב ביבי says the worry is that people would put off immersing their vessels, and a ברייתא supports him. רבא says immersion looks like fixing a vessel. Then the גמרא asks why a person who immerses in murky water is not also seen as fixing himself, and רב נחמן בר יצחק begins an answer that continues on the next amud.",
+  "steps": [
+    {
+      "stepNumber": 1,
+      "hebrewStepName": "מימרא",
+      "title": "רבה's reason: he might carry the vessel in the public domain",
+      "stepSummary": "רבה explains that immersing a vessel on שבת or יום טוב is forbidden because a person might carry it four אמות in רשות הרבים.",
+      "simpleTranslation": "Lest he pick it up in his hand and carry it four cubits in the public domain.",
+      "whatsHappening": "This is the end of רבה's explanation, which began on the previous amud. He gives the reason for the ban on immersing an impure vessel on שבת and יום טוב.",
+      "deeperAnalysis": "The worry is not about the immersion itself. The worry is that walking the vessel to a מקוה could lead to carrying four אמות in רשות הרבים, which is a real שבת prohibition. So the ban on טבילה is a protective fence (גזירה).",
+      "keyTerms": [
+        {
+          "term": "שֶׁמָּא",
+          "meaning": "Lest; perhaps (introduces a feared outcome)"
+        },
+        {
+          "term": "אַרְבַּע אַמּוֹת",
+          "meaning": "Four cubits, the distance that makes carrying forbidden"
+        },
+        {
+          "term": "רְשׁוּת הָרַבִּים",
+          "meaning": "The public domain"
+        }
+      ],
+      "confusionAlert": "This line is the tail of a statement by רבה that started earlier. The speaker is רבה, even though his name does not appear here.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "שֶׁמָּא יִטְּלֶנּוּ בְּיָדוֹ,",
+          "english": "lest he pick it up in his hand,",
+          "notes": "'It' is the impure vessel to be immersed."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וְיַעֲבִירֶנּוּ אַרְבַּע אַמּוֹת בִּרְשׁוּת הָרַבִּים.",
+          "english": "and carry it four cubits in the public domain.",
+          "notes": "On the way to the מקוה."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "תירוץ",
+      "triggerLanguage": "שֶׁמָּא יִטְּלֶנּוּ בְּיָדוֹ",
+      "macroPhase": "opening_question",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Completes רבה's reasoning, which began on the previous amud.",
+      "mimraCoreRuling": "Immersing a vessel on שבת is forbidden for fear of carrying it four אמות in רשות הרבים. The rule for יום טוב is added later as a secondary גזירה (step 5)."
+    },
+    {
+      "stepNumber": 2,
+      "hebrewStepName": "קשיא",
+      "title": "אביי: what if the pit is in his own courtyard?",
+      "stepSummary": "אביי challenges רבה: if the מקוה pit is in his own courtyard, there is no risk of carrying in public.",
+      "simpleTranslation": "אביי said to him: If he has a pit in his courtyard, what is there to say?",
+      "whatsHappening": "אביי attacks רבה's reason. If the water is right in his own courtyard, the fear of carrying in public should not apply.",
+      "deeperAnalysis": "רבה's reason depends on walking through רשות הרבים. A pit in a private courtyard removes that danger. So by רבה's logic, immersion there should be permitted.",
+      "keyTerms": [
+        {
+          "term": "אַבָּיֵי",
+          "meaning": "אביי, the student and nephew of רבה"
+        },
+        {
+          "term": "בּוֹר",
+          "meaning": "A pit, here one filled with valid מקוה water"
+        },
+        {
+          "term": "חָצֵר",
+          "meaning": "A courtyard, which is a private domain"
+        },
+        {
+          "term": "מַאי אִיכָּא לְמֵימַר",
+          "meaning": "What is there to say? (a formula for a challenge)"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֲמַר לֵיהּ אַבָּיֵי:",
+          "english": "Abaye said to him:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "יֵשׁ לוֹ בּוֹר בַּחֲצֵירוֹ,",
+          "english": "If he has a pit in his courtyard,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "מַאי אִיכָּא לְמֵימַר?",
+          "english": "what is there to say?",
+          "notes": "In other words, your reason does not apply here."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אֲמַר לֵיהּ אַבָּיֵי: יֵשׁ לוֹ בּוֹר בַּחֲצֵירוֹ, מַאי אִיכָּא לְמֵימַר",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        1
+      ],
+      "scopeOfStep": "exception_case",
+      "relationToPreviousStep": "Challenges רבה's reason with a case where it seems not to apply.",
+      "kashyaTarget": "רבה's reason (fear of carrying in רשות הרבים)",
+      "kashyaAttackLogic": "When the pit is in a private courtyard, there is no public carrying, so the ban should not apply."
+    },
+    {
+      "stepNumber": 3,
+      "hebrewStepName": "תירוץ",
+      "title": "רבה: the courtyard pit is included in the decree",
+      "stepSummary": "רבה answers that חכמים forbade immersion even in a courtyard pit, so that people would not confuse it with a pit in public.",
+      "simpleTranslation": "He said to him: It is a decree, a pit in his courtyard because of a pit in the public domain.",
+      "whatsHappening": "רבה answers אביי. The ban covers every pit, even a private one, to keep the rule simple.",
+      "deeperAnalysis": "חכמים did not split the rule by location. Allowing a private pit could lead people to use a public one too. So the private case is forbidden as an extension of the main fear.",
+      "keyTerms": [
+        {
+          "term": "גְּזֵירָה",
+          "meaning": "A rabbinic decree made as a protective fence"
+        },
+        {
+          "term": "אַטּוּ",
+          "meaning": "Because of; on account of (one case forbidden because of another)"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֲמַר לֵיהּ: גְּזֵירָה בּוֹר בַּחֲצֵרוֹ",
+          "english": "He said to him: It is a decree, a pit in his courtyard"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אַטּוּ בּוֹר בִּרְשׁוּת הָרַבִּים.",
+          "english": "because of a pit in the public domain."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "גְּזֵירָה בּוֹר בַּחֲצֵרוֹ אַטּוּ בּוֹר בִּרְשׁוּת הָרַבִּים",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        2
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Answers אביי's challenge.",
+      "terutzResolutionType": "Extension of the decree (גזירה אטו)",
+      "terutzHavaAmina": "A private courtyard pit should be permitted, since there is no carrying in public.",
+      "terutzMaskana": "חכמים included the private pit in the decree, because of the public pit."
+    },
+    {
+      "stepNumber": 4,
+      "hebrewStepName": "קשיא",
+      "title": "אביי: but on יום טוב carrying is permitted",
+      "stepSummary": "אביי challenges again: the carrying fear works for שבת, but on יום טוב carrying in public is allowed.",
+      "simpleTranslation": "This works out well for שבת; on יום טוב, what is there to say?",
+      "whatsHappening": "A second challenge to רבה. His reason fits שבת, but it does not seem to fit יום טוב.",
+      "deeperAnalysis": "On יום טוב, carrying in רשות הרבים is generally permitted. So the fear of carrying gives no reason to forbid immersion on יום טוב, yet the ban applies on יום טוב too.",
+      "keyTerms": [
+        {
+          "term": "הָתִינַח",
+          "meaning": "This works out well (it fits one case but not another)"
+        },
+        {
+          "term": "יוֹם טוֹב",
+          "meaning": "A festival day"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "הָתִינַח שַׁבָּת,",
+          "english": "This works out well for Shabbat,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "בְּיוֹם טוֹב מַאי אִיכָּא לְמֵימַר?",
+          "english": "on Yom Tov, what is there to say?",
+          "notes": "On יום טוב carrying is permitted."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "הָתִינַח שַׁבָּת, בְּיוֹם טוֹב מַאי אִיכָּא לְמֵימַר",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        1
+      ],
+      "scopeOfStep": "exception_case",
+      "relationToPreviousStep": "A second challenge to רבה's reason.",
+      "kashyaTarget": "Applying רבה's reason to יום טוב",
+      "kashyaAttackLogic": "Carrying is allowed on יום טוב, so the carrying fear cannot explain the ban there."
+    },
+    {
+      "stepNumber": 5,
+      "hebrewStepName": "תירוץ",
+      "title": "רבה: יום טוב is decreed because of שבת",
+      "stepSummary": "רבה answers that חכמים forbade immersion on יום טוב so that people would not come to immerse on שבת.",
+      "simpleTranslation": "They decreed יום טוב because of שבת.",
+      "whatsHappening": "רבה answers with another extension. יום טוב is forbidden so that it will not be confused with שבת.",
+      "deeperAnalysis": "This is a second layer of protection. The main fear exists only on שבת, but חכמים made יום טוב match שבת so that people would not mix up the two days.",
+      "keyTerms": [
+        {
+          "term": "גָּזְרוּ",
+          "meaning": "They (חכמים) decreed"
+        }
+      ],
+      "whatToRemember": "רבה's ban works in layers. The main fear is carrying on שבת. From there it extends to a private pit and to יום טוב, each through a גזירה.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "גָּזְרוּ יוֹם טוֹב אַטּוּ שַׁבָּת.",
+          "english": "They decreed Yom Tov because of Shabbat."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "גָּזְרוּ יוֹם טוֹב אַטּוּ שַׁבָּת",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        4
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Answers אביי's יום טוב challenge.",
+      "terutzResolutionType": "Extension of the decree (גזירה אטו)",
+      "terutzHavaAmina": "Immersion on יום טוב should be permitted, since carrying is allowed.",
+      "terutzMaskana": "יום טוב was included in the decree because of שבת."
+    },
+    {
+      "stepNumber": 6,
+      "hebrewStepName": "קשיא",
+      "title": "Challenge from the משנה permitting השקה",
+      "stepSummary": "The גמרא asks whether חכמים really make such גזירות. A משנה permits השקה of impure water in a stone vessel without forbidding it because of טבילה.",
+      "simpleTranslation": "And do we decree? But we learned: They agree that one may bring water into contact in a stone vessel to purify it, but one may not immerse. And if so, let us decree contact because of immersion!",
+      "whatsHappening": "The גמרא challenges the idea of extending decrees. It brings a משנה where חכמים did not make a similar extension.",
+      "deeperAnalysis": "In השקה, impure water in its container touches מקוה water and becomes pure. The משנה allows this on יום טוב, but only in a stone vessel, which cannot become impure. Immersing an impure vessel is forbidden. If חכמים liked to extend decrees, they should have forbidden השקה too, since it looks so much like טבילה.",
+      "keyTerms": [
+        {
+          "term": "וּמִי גָּזְרִינַן",
+          "meaning": "And do we really decree? (opens a challenge)"
+        },
+        {
+          "term": "וְהָא תְּנַן",
+          "meaning": "But didn't we learn in a משנה?"
+        },
+        {
+          "term": "הַשָּׁקָה",
+          "meaning": "Bringing impure water into contact with מקוה water to purify it"
+        },
+        {
+          "term": "כְּלִי אֶבֶן",
+          "meaning": "A stone vessel, which cannot become impure"
+        },
+        {
+          "term": "הַטְבָּלָה",
+          "meaning": "Immersion in a מקוה"
+        },
+        {
+          "term": "וְאִי אִיתָא",
+          "meaning": "And if it is so (if your claim were true)"
+        }
+      ],
+      "confusionAlert": "השקה purifies the water only, which is permitted. The vessel holding it is stone, so the vessel never needs purifying. 'לא מטבילין' refers to purifying something that does need טבילה, such as an impure vessel.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וּמִי גָּזְרִינַן? וְהָא תְּנַן:",
+          "english": "And do we decree? But didn't we learn:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וְשָׁוִין שֶׁמַּשִּׁיקִין אֶת הַמַּיִם",
+          "english": "And they agree that one may bring the water into contact",
+          "notes": "'They' are בית שמאי and בית הלל."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "בִּכְלִי אֶבֶן לְטַהֲרָן,",
+          "english": "in a stone vessel, to purify it,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "אֲבָל לֹא מַטְבִּילִין.",
+          "english": "but one may not immerse."
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "וְאִי אִיתָא — נִגְזוֹר הַשָּׁקָה אַטּוּ הַטְבָּלָה!",
+          "english": "And if it is so, let us decree contact because of immersion!"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וּמִי גָּזְרִינַן? וְהָא תְּנַן",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [
+        3,
+        5
+      ],
+      "scopeOfStep": "proof_mechanism",
+      "relationToPreviousStep": "Questions the whole approach of extending decrees, which רבה used in steps 3 and 5.",
+      "kashyaTarget": "The principle that חכמים extend a ban to similar cases (גזירה אטו)",
+      "kashyaAttackLogic": "The משנה permits השקה even though it closely resembles the forbidden טבילה, so חכמים apparently do not extend decrees this way."
+    },
+    {
+      "stepNumber": 7,
+      "hebrewStepName": "תירוץ",
+      "title": "השקה is an unusual case, so no decree was needed",
+      "stepSummary": "The גמרא rejects the comparison. Someone who needs השקה has no other water and guards it closely, so impure water here is rare, and חכמים do not decree on rare cases.",
+      "simpleTranslation": "And can you think so? If he has good water, why would he need to do השקה with this water? Rather, he does not have any, and since he does not have any, he is very careful with it.",
+      "whatsHappening": "The גמרא explains why השקה is different from טבילה. Because השקה happens so rarely, there was no need for a decree.",
+      "deeperAnalysis": "A person would only bother with השקה if he had no other pure water. Such a person guards his water very carefully, so it rarely becomes impure. The text implies, without stating it, that חכמים do not make decrees for rare situations. This leaves רבה's גזירות in place.",
+      "keyTerms": [
+        {
+          "term": "וְתִסְבְּרָא",
+          "meaning": "And can you think so? (rejects the premise of the question)"
+        },
+        {
+          "term": "מַיִם יָפִים",
+          "meaning": "Good, pure water"
+        },
+        {
+          "term": "מִזְהָר זְהִיר",
+          "meaning": "He is extremely careful"
+        }
+      ],
+      "whatToRemember": "חכמים extend a decree to similar cases (a private pit, יום טוב). They do not decree for unusual cases like השקה, where a person guards his only water carefully.",
+      "whyThisMatters": "This shows a general rule for rabbinic decrees: they target common situations, not rare ones.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְתִסְבְּרָא?",
+          "english": "And can you think so?"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אִי אִית לֵיהּ מַיִם יָפִים,",
+          "english": "If he has good water,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "הָנֵי לְמָה לִי לְמֶעְבַּד לְהוּ הַשָּׁקָה?",
+          "english": "why would I need to do השקה with these?"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "אֶלָּא דְּלֵית לֵיהּ,",
+          "english": "Rather, he does not have any,"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "וְכֵיוָן דְּלֵית לֵיהּ",
+          "english": "and since he does not have any,"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "מִזְהָר זְהִיר בְּהוּ.",
+          "english": "he is very careful with it.",
+          "notes": "So its becoming impure is a rare event."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "דחיה",
+      "triggerLanguage": "וְתִסְבְּרָא? אִי אִית לֵיהּ מַיִם יָפִים",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        6
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Answers the challenge from the משנה by showing that its case is different.",
+      "terutzResolutionType": "Distinguishing the case: a rare situation does not call for a decree",
+      "terutzHavaAmina": "The משנה shows that חכמים do not extend decrees.",
+      "terutzMaskana": "השקה is a rare situation, so no decree was needed there. Extending decrees remains valid for common cases."
+    },
+    {
+      "stepNumber": 8,
+      "hebrewStepName": "קשיא",
+      "title": "Drawing water with an impure bucket",
+      "stepSummary": "אביי cites a ברייתא that allows drawing water on יום טוב with an impure bucket, which purifies the bucket. He asks why חכמים did not forbid this out of fear that a person will come to immerse the bucket by itself.",
+      "simpleTranslation": "אביי challenged רבה: We learned that one may draw water with an impure bucket, and the bucket becomes pure. If רבה is right, we should make a גזירה here, because the person might come to immerse the bucket by itself!",
+      "whatsHappening": "אביי attacks רבה's view with a new source. Here a vessel becomes pure on יום טוב, and no one forbids it.",
+      "deeperAnalysis": "When you lower an impure bucket into a מקוה to draw water, the bucket is fully under water, so it becomes pure. The ברייתא allows this on יום טוב. If חכמים worried that one action leads to another, they should have forbidden this too, so the person would not come to do a plain טבילה of the bucket.",
+      "keyTerms": [
+        {
+          "term": "אֵיתִיבֵיהּ",
+          "meaning": "He challenged him from a source (a ברייתא or משנה)"
+        },
+        {
+          "term": "מַדְלִין",
+          "meaning": "One may draw water"
+        },
+        {
+          "term": "דְּלִי",
+          "meaning": "Bucket or pail"
+        },
+        {
+          "term": "בְּעֵינֵיהּ",
+          "meaning": "By itself, in its plain form"
+        }
+      ],
+      "confusionAlert": "Do not think the ברייתא is talking about a normal טבילה. The person is only drawing water. The bucket becomes pure as a side effect of being in the water.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֵיתִיבֵיהּ: מַדְלִין בִּדְלִי טָמֵא,",
+          "english": "He challenged him: one may draw water with an impure bucket,",
+          "notes": "אביי is challenging רבה."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וְהוּא טָהוֹר.",
+          "english": "and it becomes pure.",
+          "notes": "The bucket is fully under the water, so this works as a טבילה."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וְאִי אִיתָא, נִגְזוֹר",
+          "english": "And if it is so, let us decree",
+          "notes": "If רבה's גזירה is real."
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "דִּלְמָא אָתֵי לְאַטְבּוֹלֵיהּ בְּעֵינֵיהּ!",
+          "english": "lest he come to immerse it by itself!"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אֵיתִיבֵיהּ",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        5,
+        7
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Opens a new challenge after the השקה challenge was answered.",
+      "kashyaTarget": "רבה's claim that חכמים forbade טבילה on יום טוב as a גזירה",
+      "kashyaAttackLogic": "A ברייתא allows purifying a bucket by drawing water on יום טוב without any גזירה, so the worry about a plain טבילה seems not to exist."
+    },
+    {
+      "stepNumber": 9,
+      "hebrewStepName": "תירוץ",
+      "title": "The bucket owner remembers the rule",
+      "stepSummary": "רבה answers that this case is different. The person knows he may purify the bucket only by drawing water with it, so he will remember that a plain טבילה is forbidden.",
+      "simpleTranslation": "There it is different. Since he was allowed to purify it only by drawing water with his bucket, he remembers the rule.",
+      "whatsHappening": "רבה explains why no גזירה is needed in the bucket case.",
+      "deeperAnalysis": "The odd way of purifying, through drawing water, itself reminds the person that a normal טבילה is not allowed. A גזירה is only needed where someone might forget, and here he will not forget.",
+      "keyTerms": [
+        {
+          "term": "שָׁאנֵי הָתָם",
+          "meaning": "There it is different"
+        },
+        {
+          "term": "זָכוּר הוּא",
+          "meaning": "He remembers"
+        },
+        {
+          "term": "עַל יְדֵי",
+          "meaning": "By means of"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "שָׁאנֵי הָתָם,",
+          "english": "It is different there,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "מִתּוֹךְ שֶׁלֹּא הוּתְּרָה לוֹ",
+          "english": "since it was not permitted to him",
+          "notes": "Meaning the purification was not permitted."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "אֶלָּא עַל יְדֵי דׇּלְיוֹ —",
+          "english": "except by means of his bucket (drawing water) —"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "זָכוּר הוּא.",
+          "english": "he remembers."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "שָׁאנֵי הָתָם",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        8
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Answers the קשיא of step 8.",
+      "terutzResolutionType": "Distinguishing the case: the special method acts as a reminder",
+      "terutzHavaAmina": "The bucket case shows that חכמים did not fear people coming to do a plain טבילה.",
+      "terutzMaskana": "Here the unusual method reminds the person of the rule, so there was no need for a גזירה."
+    },
+    {
+      "stepNumber": 10,
+      "hebrewStepName": "קשיא",
+      "title": "A vessel that became impure on יום טוב itself",
+      "stepSummary": "אביי cites a ברייתא: a vessel that became impure on ערב יום טוב may not be immersed on יום טוב, but one that became impure on יום טוב may be immersed. He asks why חכמים did not forbid the second case because of the first.",
+      "simpleTranslation": "He challenged him: A vessel that became impure on ערב יום טוב may not be immersed on יום טוב. If it became impure on יום טוב, one may immerse it on יום טוב. If רבה is right, we should forbid the יום טוב case because of the ערב יום טוב case!",
+      "whatsHappening": "אביי brings a second source. In it, a vessel may sometimes be immersed on יום טוב itself.",
+      "deeperAnalysis": "The ברייתא shows that חכמים split the cases: one is forbidden, the other allowed. If חכמים like to make protective rules, they should have forbidden both, so that people would not mix them up.",
+      "keyTerms": [
+        {
+          "term": "עֶרֶב יוֹם טוֹב",
+          "meaning": "The day before יום טוב"
+        },
+        {
+          "term": "מַטְבִּילִין",
+          "meaning": "One may immerse"
+        },
+        {
+          "term": "אַטּוּ",
+          "meaning": "Because of (forbidding one case on account of another)"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֵיתִיבֵיהּ: כְּלִי שֶׁנִּטְמָא מֵעֶרֶב יוֹם טוֹב —",
+          "english": "He challenged him: a vessel that became impure from the eve of the Festival —"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אֵין מַטְבִּילִין אוֹתוֹ בְּיוֹם טוֹב,",
+          "english": "one may not immerse it on the Festival,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "בְּיוֹם טוֹב — מַטְבִּילִין אוֹתוֹ בְּיוֹם טוֹב.",
+          "english": "if it became impure on the Festival — one may immerse it on the Festival."
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וְאִם אִיתָא,",
+          "english": "And if it is so,"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "נִגְזוֹר דְּיוֹם טוֹב אַטּוּ דְּעֶרֶב יוֹם טוֹב!",
+          "english": "let us decree on the Festival case because of the eve-of-Festival case!"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אֵיתִיבֵיהּ",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        5
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Opens a new challenge after step 9's answer.",
+      "kashyaTarget": "רבה's גזירה approach",
+      "kashyaAttackLogic": "חכמים allowed טבילה for a vessel made impure on יום טוב and did not forbid it because of the similar forbidden case."
+    },
+    {
+      "stepNumber": 11,
+      "hebrewStepName": "תירוץ",
+      "title": "Becoming impure on יום טוב is rare",
+      "stepSummary": "רבה answers that becoming impure on יום טוב rarely happens, and חכמים do not make גזירות for rare things.",
+      "simpleTranslation": "Becoming impure on יום טוב is something that is not common, and for something not common, חכמים did not make a decree.",
+      "whatsHappening": "רבה explains why no גזירה was made for a vessel that became impure on יום טוב.",
+      "deeperAnalysis": "Before a רגל, people make sure everything is pure, so impurity on יום טוב itself rarely comes up. Since the case is rare, there is no real danger that people will mix it up with the common case, so חכמים left it allowed.",
+      "keyTerms": [
+        {
+          "term": "מִלְּתָא דְּלָא שְׁכִיחָא",
+          "meaning": "Something that is not common, a rare case"
+        },
+        {
+          "term": "גְּזַרוּ",
+          "meaning": "They decreed"
+        },
+        {
+          "term": "רַבָּנַן",
+          "meaning": "The Sages"
+        }
+      ],
+      "whyThisMatters": "This is the same rule the גמרא used in step 7. It becomes רבה's main tool for answering these challenges.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "טוּמְאָה בְּיוֹם טוֹב",
+          "english": "Impurity on a Festival"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "מִלְּתָא דְּלָא שְׁכִיחָא הִיא,",
+          "english": "is an uncommon thing,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וּמִלְּתָא דְלָא שְׁכִיחָא",
+          "english": "and an uncommon thing —"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "לָא גְּזַרוּ בַּהּ רַבָּנַן.",
+          "english": "the Sages did not decree about it."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "טוּמְאָה בְּיוֹם טוֹב מִלְּתָא דְּלָא שְׁכִיחָא הִיא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        7,
+        10
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Answers the קשיא of step 10.",
+      "terutzResolutionType": "The rare-case principle",
+      "terutzHavaAmina": "Allowing the יום טוב case shows that חכמים do not make such גזירות.",
+      "terutzMaskana": "The case is rare, so no גזירה was needed. The גזירה still applies to the common case."
+    },
+    {
+      "stepNumber": 12,
+      "hebrewStepName": "קשיא",
+      "title": "Primary versus secondary impurity",
+      "stepSummary": "אביי cites a ברייתא: a vessel made impure by an אב הטומאה may not be immersed on יום טוב, but one made impure by a ולד הטומאה may be. He asks why חכמים did not forbid the second because of the first.",
+      "simpleTranslation": "He challenged him: A vessel that became impure from an אב הטומאה may not be immersed on יום טוב. If it became impure from a ולד הטומאה, one may immerse it on יום טוב. If רבה is right, we should forbid this case because of that one!",
+      "whatsHappening": "אביי brings a third source. Again, one kind of impure vessel may be immersed on יום טוב.",
+      "deeperAnalysis": "Here the split is by the strength of the impurity, not by when it happened. A vessel touched by a ולד הטומאה is impure only מדרבנן, and the ברייתא allows its טבילה on יום טוב. אביי asks again why there was no protective rule to stop confusion with the stronger case.",
+      "keyTerms": [
+        {
+          "term": "אַב הַטּוּמְאָה",
+          "meaning": "A primary source of impurity"
+        },
+        {
+          "term": "וְלַד הַטּוּמְאָה",
+          "meaning": "A derivative impurity, something made impure by an אב הטומאה"
+        },
+        {
+          "term": "הָא אַטּוּ הָא",
+          "meaning": "This because of that"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֵיתִיבֵיהּ: כְּלִי שֶׁנִּטְמָא בְּאַב הַטּוּמְאָה —",
+          "english": "He challenged him: a vessel that became impure through a primary source of impurity —"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אֵין מַטְבִּילִין אוֹתוֹ בְּיוֹם טוֹב,",
+          "english": "one may not immerse it on the Festival,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "בִּוְלַד הַטּוּמְאָה — מַטְבִּילִין אוֹתוֹ בְּיוֹם טוֹב.",
+          "english": "through a derivative impurity — one may immerse it on the Festival."
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וְאִם אִיתָא, נִגְזוֹר הָא אַטּוּ הָא!",
+          "english": "And if it is so, let us decree this because of that!"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אֵיתִיבֵיהּ",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        5
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Opens a third challenge after step 11's answer.",
+      "kashyaTarget": "רבה's גזירה approach",
+      "kashyaAttackLogic": "חכמים allowed טבילה of a vessel made impure by a ולד הטומאה and did not forbid it because of the forbidden אב הטומאה case."
+    },
+    {
+      "stepNumber": 13,
+      "hebrewStepName": "תירוץ",
+      "title": "Only כהנים care, and כהנים are careful",
+      "stepSummary": "רבה answers that only כהנים bother to purify a vessel made impure by a ולד הטומאה. כהנים are careful, so impurity like this is rare, and no גזירה is needed.",
+      "simpleTranslation": "A ולד הטומאה, where would you find people caring about it? Only with כהנים. And כהנים are careful.",
+      "whatsHappening": "רבה answers the third challenge. The case is rare, so no גזירה was made.",
+      "deeperAnalysis": "A vessel made impure by a ולד הטומאה cannot make ordinary חולין food impure. Only a כהן eating תרומה needs to purify it. כהנים guard their vessels closely, so this impurity seldom happens, and the rare-case rule applies again.",
+      "keyTerms": [
+        {
+          "term": "הֵיכִי מַשְׁכַּחַתְּ לַהּ",
+          "meaning": "Where would you find it? In what case does it come up?"
+        },
+        {
+          "term": "כֹּהֲנִים",
+          "meaning": "Priests"
+        },
+        {
+          "term": "זְרִיזִין",
+          "meaning": "Careful, alert"
+        }
+      ],
+      "whatToRemember": "רבה's גזירה stands. Each case where טבילה on יום טוב is allowed is explained: either the person will remember the rule (the bucket), or the case is rare (impurity on יום טוב, or a ולד הטומאה, which only matters to careful כהנים). חכמים do not make גזירות for rare cases.",
+      "confusionAlert": "The question 'where do you find it?' does not mean a ולד הטומאה never happens. It means only כהנים care about it, so in practice the case is rare.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְלַד הַטּוּמְאָה הֵיכִי מַשְׁכַּחַתְּ לַהּ?",
+          "english": "A derivative impurity, where do you find it (mattering)?"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "גַּבֵּי כֹהֲנִים —",
+          "english": "With regard to priests —",
+          "notes": "Because they eat תרומה, which can be made impure even by such a vessel."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "כֹּהֲנִים זְרִיזִין הֵם.",
+          "english": "and priests are careful."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וְלַד הַטּוּמְאָה הֵיכִי מַשְׁכַּחַתְּ לַהּ",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        11,
+        12
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Answers the קשיא of step 12.",
+      "terutzResolutionType": "The rare-case principle, applied through who actually cares about this impurity",
+      "terutzHavaAmina": "Allowing the ולד הטומאה case shows that there is no גזירה against טבילה on יום טוב.",
+      "terutzMaskana": "Only careful כהנים are involved, so the case is rare and no גזירה was made."
+    },
+    {
+      "stepNumber": 14,
+      "hebrewStepName": "קשיא",
+      "title": "A woman may immerse in her clothes, so why no decree?",
+      "stepSummary": "The גמרא cites רב: a נדה with no pure clothes may immerse while wearing her clothes. If חכמים worried about immersing vessels, they should forbid this too, in case she later immerses the clothes alone.",
+      "simpleTranslation": "Come and hear: רב חייא בר אשי said in the name of רב: a נדה who has no pure clothes may use a clever method and immerse while wearing her clothes. If רבה's decree is real, we should forbid this, in case she comes to immerse the clothes by themselves!",
+      "whatsHappening": "The גמרא brings one more source to challenge רבה's decree. רב allows a woman to purify her clothes on שבת or יום טוב by immersing while wearing them.",
+      "deeperAnalysis": "When she immerses with her clothes on, the clothes become pure along with her. Purifying clothes this way is allowed. So why did חכמים not forbid it, in case she later immerses the clothes alone, which is forbidden? If they made a decree about vessels, they should have made one here as well.",
+      "keyTerms": [
+        {
+          "term": "תָּא שְׁמַע",
+          "meaning": "Come and hear: the גמרא is bringing a source as proof or as a challenge"
+        },
+        {
+          "term": "נִדָּה",
+          "meaning": "A woman in the impurity of menstruation who needs to immerse"
+        },
+        {
+          "term": "מַעֲרֶמֶת",
+          "meaning": "Uses a clever method to get around a prohibition legally"
+        },
+        {
+          "term": "וְאִם אִיתָא",
+          "meaning": "And if it is so: if your view were correct"
+        },
+        {
+          "term": "בְּעֵינַיְיהוּ",
+          "meaning": "By themselves, in their plain state"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "תָּא שְׁמַע, דְּאָמַר רַב חִיָּיא בַּר אָשֵׁי",
+          "english": "Come and hear, for Rav Ḥiyya bar Ashi said"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אָמַר רַב: נִדָּה שֶׁאֵין לָהּ בְּגָדִים —",
+          "english": "that Rav said: A menstruating woman who has no (pure) clothes"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "מַעֲרֶמֶת וְטוֹבֶלֶת בִּבְגָדֶיהָ.",
+          "english": "may use a clever method and immerse in her clothes.",
+          "notes": "Her clothes become pure together with her."
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וְאִם אִיתָא, נִגְזוֹר",
+          "english": "And if it is so (that there is a decree), let us decree"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "דִּלְמָא אָתֵי לְאַטְבּוֹלֵי בְּעֵינַיְיהוּ!",
+          "english": "lest she come to immerse them (the clothes) by themselves!"
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "ראיה",
+      "triggerLanguage": "וְאִם אִיתָא, נִגְזוֹר דִּלְמָא אָתֵי לְאַטְבּוֹלֵי בְּעֵינַיְיהוּ",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        9,
+        11,
+        13
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "The גמרא adds a further challenge to רבה's decree, following the same pattern as אביי's challenges in steps 8, 10 and 12.",
+      "kashyaTarget": "רבה's view that חכמים forbade immersing vessels on שבת and יום טוב.",
+      "kashyaAttackLogic": "רב permits immersing clothes indirectly and makes no decree that she might immerse them directly. This suggests there is no general decree against immersing vessels."
+    },
+    {
+      "stepNumber": 15,
+      "hebrewStepName": "תירוץ",
+      "title": "She remembers because it only works while wearing them",
+      "stepSummary": "The גמרא answers that the woman knows she may purify the clothes only by wearing them, so she will remember not to immerse them alone.",
+      "simpleTranslation": "It is different there. Since she was permitted only by wearing them, she remembers.",
+      "whatsHappening": "The גמרא explains why no decree was needed for the woman's case.",
+      "deeperAnalysis": "The permission comes with a built-in reminder: it works only while the clothes are on her body. Because of that unusual condition, she will not get confused and immerse the clothes by themselves. This follows the same reasoning as step 9 about the bucket.",
+      "keyTerms": [
+        {
+          "term": "שָׁאנֵי הָתָם",
+          "meaning": "It is different there: the cited case has a special feature"
+        },
+        {
+          "term": "מִתּוֹךְ",
+          "meaning": "Since, because"
+        },
+        {
+          "term": "מַלְבּוּשׁ",
+          "meaning": "Wearing as a garment"
+        },
+        {
+          "term": "זְכוּרָה הִיא",
+          "meaning": "She remembers"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "שָׁאנֵי הָתָם,",
+          "english": "It is different there,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "מִתּוֹךְ שֶׁלֹּא הוּתְּרָה לָהּ",
+          "english": "since it was not permitted for her"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "אֶלָּא עַל יְדֵי מַלְבּוּשׁ —",
+          "english": "except by means of wearing them,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "זְכוּרָה הִיא.",
+          "english": "she remembers (that plain immersion is forbidden)."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "שָׁאנֵי הָתָם",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        9,
+        14
+      ],
+      "scopeOfStep": "exception_case",
+      "relationToPreviousStep": "Answers the challenge of step 14 by pointing to a special feature of that case.",
+      "terutzResolutionType": "Distinguishing the case (שאני התם): the unusual method itself serves as a reminder.",
+      "terutzHavaAmina": "Allowing immersion in her clothes might lead her to immerse the clothes alone.",
+      "terutzMaskana": "The condition that she must wear them reminds her, so no decree is needed, and רבה's decree still stands.",
+      "whatToRemember": "All the challenges to רבה's decree are answered in one of two ways: the case is rare (steps 7, 11 and 13), or the method has a built-in reminder (steps 9 and 15). So חכמים saw no need for an extra decree in those cases."
+    },
+    {
+      "stepNumber": 16,
+      "hebrewStepName": "מימרא",
+      "title": "A different reason: fear of wringing",
+      "stepSummary": "רב יוסף says the ban on immersing vessels is a decree because of סחיטה (wringing out water).",
+      "simpleTranslation": "רב יוסף said: It is a decree because of wringing.",
+      "whatsHappening": "A new אמורא gives a different reason why חכמים forbade immersing vessels on שבת and יום טוב.",
+      "deeperAnalysis": "רבה worried about carrying the vessel four אמות in רשות הרבים. רב יוסף worries instead that after immersing something like clothing, a person might wring the water out of it, which is forbidden on שבת. The ban is the same; only the reason for the decree changes.",
+      "keyTerms": [
+        {
+          "term": "גְּזֵרָה",
+          "meaning": "A protective decree by חכמים to keep people away from a real prohibition"
+        },
+        {
+          "term": "סְחִיטָה",
+          "meaning": "Wringing or squeezing out liquid, forbidden on שבת"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "רַב יוֹסֵף אָמַר:",
+          "english": "Rav Yosef said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "גְּזֵרָה מִשּׁוּם סְחִיטָה.",
+          "english": "It is a decree because of wringing."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "רַב יוֹסֵף אָמַר: גְּזֵרָה מִשּׁוּם סְחִיטָה",
+      "macroPhase": "alternate_branch",
+      "branchRole": "alternative_approach",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Gives an alternative reason for the same decree that רבה explained differently.",
+      "mimraCoreRuling": "Immersing vessels on שבת and יום טוב is forbidden as a decree, in case one comes to wring them out.",
+      "confusionAlert": "רב יוסף does not disagree that immersion is forbidden. He disagrees only about why חכמים forbade it."
+    },
+    {
+      "stepNumber": 17,
+      "hebrewStepName": "קשיא",
+      "title": "What about vessels that cannot be wrung?",
+      "stepSummary": "אביי asks: wringing explains cloth items, but why forbid metal or wooden vessels that cannot be wrung?",
+      "simpleTranslation": "אביי said to him: That works for vessels that can be wrung. But for vessels that cannot be wrung, what can you say?",
+      "whatsHappening": "אביי challenges רב יוסף's reason because it seems to cover only some vessels.",
+      "deeperAnalysis": "Fear of wringing makes sense for clothing and similar items. A metal pot cannot be wrung at all, yet immersing it is also forbidden. So רב יוסף's reason seems too narrow to explain the whole ban.",
+      "keyTerms": [
+        {
+          "term": "תִּינַח",
+          "meaning": "That works out well (for one case), introducing a problem with another"
+        },
+        {
+          "term": "בְּנֵי סְחִיטָה",
+          "meaning": "Items capable of being wrung"
+        },
+        {
+          "term": "מַאי אִיכָּא לְמֵימַר",
+          "meaning": "What is there to say? A strong challenge"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֲמַר לֵיהּ אַבָּיֵי:",
+          "english": "Abaye said to him:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "תִּינַח כֵּלִים דִּבְנֵי סְחִיטָה נִינְהוּ.",
+          "english": "It works well for vessels that are fit for wringing."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "כֵּלִים דְּלָאו בְּנֵי סְחִיטָה נִינְהוּ,",
+          "english": "Vessels that are not fit for wringing,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "מַאי אִיכָּא לְמֵימַר?",
+          "english": "what is there to say?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "תִּינַח כֵּלִים דִּבְנֵי סְחִיטָה נִינְהוּ",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        16
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Challenges the reason given in step 16.",
+      "kashyaTarget": "רב יוסף's reason of סחיטה.",
+      "kashyaAttackLogic": "The reason covers only items that can be wrung, but the ban applies to all vessels."
+    },
+    {
+      "stepNumber": 18,
+      "hebrewStepName": "תירוץ",
+      "title": "One decree covers all vessels",
+      "stepSummary": "רב יוסף answers that חכמים forbade vessels that cannot be wrung because of the ones that can.",
+      "simpleTranslation": "He said to him: It is a decree on these because of those.",
+      "whatsHappening": "רב יוסף defends his reason by expanding the decree to cover all vessels.",
+      "deeperAnalysis": "חכמים did not want to split the rule by type of vessel, because people would mix up the cases. So they forbade immersing all vessels, including the ones that cannot be wrung, to protect against wringing the ones that can.",
+      "keyTerms": [
+        {
+          "term": "הָנֵי אַטּוּ הָנֵי",
+          "meaning": "These because of those: one group is forbidden to protect another"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֲמַר לֵיהּ: גְּזֵרָה הָנֵי אַטּוּ הָנֵי.",
+          "english": "He said to him: It is a decree on these (vessels) because of those (vessels)."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "גְּזֵרָה הָנֵי אַטּוּ הָנֵי",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        17
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Answers אביי's challenge in step 17.",
+      "terutzResolutionType": "Broadening the decree (a second-level גזירה)",
+      "terutzHavaAmina": "Vessels that cannot be wrung should be permitted, since there is no fear of wringing.",
+      "terutzMaskana": "חכמים made one uniform decree for all vessels, so those that cannot be wrung are included."
+    },
+    {
+      "stepNumber": 19,
+      "hebrewStepName": "מסקנא",
+      "title": "The same challenges and the same answers",
+      "stepSummary": "אביי raised all the earlier challenges against רב יוסף, and רב יוסף answered them just as they had been answered before.",
+      "simpleTranslation": "He challenged him with all of these challenges, and he answered him as we answered.",
+      "whatsHappening": "The גמרא sums up: all the challenges brought against רבה's decree (steps 6 to 15) were also brought against רב יוסף, with the same answers.",
+      "deeperAnalysis": "Those challenges attacked the idea of any decree against immersing vessels, not רבה's specific reason. So they apply equally to רב יוסף. The answers also work for him: the case is rare, or there is a built-in reminder.",
+      "keyTerms": [
+        {
+          "term": "אֵיתִיבֵיהּ",
+          "meaning": "He challenged him (with a source)"
+        },
+        {
+          "term": "תְּיוּבָתָא",
+          "meaning": "Refutations, challenges from sources"
+        },
+        {
+          "term": "כִּדְשַׁנִּינַן",
+          "meaning": "As we answered (earlier)"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֵיתִיבֵיהּ כֹּל הָנֵי תְּיוּבָתָא,",
+          "english": "He challenged him with all these challenges,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וְשַׁנִּי לֵיהּ כִּדְשַׁנִּינַן.",
+          "english": "and he answered him as we answered."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "תירוץ",
+      "triggerLanguage": "אֵיתִיבֵיהּ כֹּל הָנֵי תְּיוּבָתָא, וְשַׁנִּי לֵיהּ כִּדְשַׁנִּינַן",
+      "macroPhase": "conclusion",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Applies the earlier cycle of challenges and answers to רב יוסף's approach and closes this section.",
+      "maskanaFinalTakeaway": "Both רבה and רב יוסף hold that immersing vessels on שבת and יום טוב is forbidden by decree. They differ only about the reason, and both survive אביי's challenges with the same answers.",
+      "whatToRemember": "Two reasons for one ban. רבה: one might carry the vessel four אמות in רשות הרבים. רב יוסף: one might wring it out (סחיטה), and the decree covers all vessels. The challenges about rare cases and built-in reminders are answered the same way for both."
+    },
+    {
+      "stepNumber": 20,
+      "hebrewStepName": "מימרא",
+      "title": "רב ביבי: the ban is so people won't delay immersing",
+      "stepSummary": "רב ביבי gives a new reason for the ban: חכמים feared that a person would put off immersing his impure vessels.",
+      "simpleTranslation": "רב ביבי said: It is a decree, lest he delay.",
+      "whatsHappening": "A third אמורא, רב ביבי, gives his own reason why one may not immerse a vessel on שבת or יום טוב.",
+      "deeperAnalysis": "If immersing on יום טוב were allowed, a person might leave his vessels impure until יום טוב, when he has free time. Keeping impure vessels at home for a long time could lead him to make pure foods, like תרומה, impure. So חכמים forbade immersing on יום טוב, and people would take care of it right away.",
+      "keyTerms": [
+        {
+          "term": "גְּזֵרָה",
+          "meaning": "A protective decree of חכמים"
+        },
+        {
+          "term": "שֶׁמָּא יְשַׁהֶא",
+          "meaning": "Lest he delay (put it off)"
+        },
+        {
+          "term": "רַב בִּיבִי",
+          "meaning": "An אמורא (רב ביבי)"
+        }
+      ],
+      "confusionAlert": "Being 'delayed' here does not mean delayed on יום טוב itself. The worry is that he will leave the vessel impure for days before יום טוב, waiting for his free time.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "רַב בִּיבִי אָמַר:",
+          "english": "Rav Beivai said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "גְּזֵרָה שֶׁמָּא יְשַׁהֶא.",
+          "english": "It is a decree, lest he delay.",
+          "notes": "Lest he put off immersing his impure vessels until the Festival."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "רַב בִּיבִי אָמַר",
+      "macroPhase": "alternate_branch",
+      "branchRole": "alternative_approach",
+      "dependsOnStepNumbers": [
+        16
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Gives a third reason for the ban, next to the reasons of רבה and רב יוסף (סחיטה).",
+      "mimraCoreRuling": "Immersing vessels on יום טוב is forbidden so that people will not put off purifying them."
+    },
+    {
+      "stepNumber": 21,
+      "hebrewStepName": "ראיה",
+      "title": "A ברייתא supports רב ביבי",
+      "stepSummary": "A ברייתא forbids immersing on יום טוב a vessel that became impure before יום טוב, and it gives רב ביבי's exact reason.",
+      "simpleTranslation": "It was taught in accordance with רב ביבי: A vessel that became impure on ערב יום טוב may not be immersed on יום טוב. This is a decree, lest he delay.",
+      "whatsHappening": "The גמרא brings a ברייתא that says the same thing as רב ביבי, word for word.",
+      "deeperAnalysis": "The ברייתא uses the very words 'גזרה שמא ישהא', so it clearly backs up רב ביבי. Its case is a vessel that became impure on ערב יום טוב. He could have immersed it before יום טוב, so putting it off is exactly the worry.",
+      "keyTerms": [
+        {
+          "term": "תַּנְיָא כְּווֹתֵיהּ",
+          "meaning": "It was taught (in a ברייתא) in accordance with him"
+        },
+        {
+          "term": "עֶרֶב יוֹם טוֹב",
+          "meaning": "The day before the Festival"
+        },
+        {
+          "term": "מַטְבִּילִין",
+          "meaning": "We immerse (in a מקוה)"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "תַּנְיָא כְּווֹתֵיהּ דְּרַב בִּיבִי:",
+          "english": "It was taught in accordance with Rav Beivai:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "כְּלִי שֶׁנִּטְמָא מֵעֶרֶב יוֹם טוֹב —",
+          "english": "A vessel that became impure on the eve of the Festival —"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "אֵין מַטְבִּילִין אוֹתוֹ בְּיוֹם טוֹב,",
+          "english": "one may not immerse it on the Festival,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "גְּזֵרָה שֶׁמָּא יְשַׁהֶא.",
+          "english": "a decree, lest he delay."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "תַּנְיָא כְּווֹתֵיהּ דְּרַב בִּיבִי",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        20
+      ],
+      "scopeOfStep": "proof_mechanism",
+      "relationToPreviousStep": "Supports רב ביבי's reason from step 20.",
+      "raayaObject": "רב ביבי's reason, גזרה שמא ישהא",
+      "raayaSupportSource": "A ברייתא that uses the same words"
+    },
+    {
+      "stepNumber": 22,
+      "hebrewStepName": "מימרא",
+      "title": "רבא: immersing looks like fixing a vessel",
+      "stepSummary": "רבא says the ban exists because immersing a vessel looks like repairing it.",
+      "simpleTranslation": "רבא said: Because he looks like someone fixing a vessel.",
+      "whatsHappening": "A fourth reason: רבא says immersing a vessel looks like the forbidden מלאכה of fixing a vessel.",
+      "deeperAnalysis": "Before the immersion the vessel could not be used, and afterward it can. That looks like repairing a vessel, which is forbidden on שבת and יום טוב. The ban is only about how it looks, so it is a rabbinic rule.",
+      "keyTerms": [
+        {
+          "term": "נִרְאֶה",
+          "meaning": "Looks like, appears as"
+        },
+        {
+          "term": "מְתַקֵּן כְּלִי",
+          "meaning": "Fixing or repairing a vessel (forbidden on שבת)"
+        },
+        {
+          "term": "רָבָא",
+          "meaning": "An אמורא (רבא)"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "רָבָא אָמַר:",
+          "english": "Rava said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "מִפְּנֵי שֶׁנִּרְאֶה כִּמְתַקֵּן כְּלִי.",
+          "english": "Because he looks like one who is fixing a vessel."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "רָבָא אָמַר",
+      "macroPhase": "alternate_branch",
+      "branchRole": "alternative_approach",
+      "dependsOnStepNumbers": [
+        20
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Gives another reason for the ban, different from רב ביבי's.",
+      "mimraCoreRuling": "Immersing a vessel is forbidden because it looks like repairing a vessel."
+    },
+    {
+      "stepNumber": 23,
+      "hebrewStepName": "קשיא",
+      "title": "Then a person should also be forbidden to immerse",
+      "stepSummary": "The גמרא asks: if fixing is the problem, a person who immerses himself is also 'fixing' himself.",
+      "simpleTranslation": "If so, a person too should be forbidden!",
+      "whatsHappening": "The גמרא challenges רבא: by his logic, a person should not be allowed to immerse himself either.",
+      "deeperAnalysis": "A person who immerses also goes from impure to pure, so he 'fixes' himself. Yet a person may immerse on שבת. If that looks fine for a person, why not for a vessel?",
+      "keyTerms": [
+        {
+          "term": "אִי הָכִי",
+          "meaning": "If so"
+        },
+        {
+          "term": "נָמֵי",
+          "meaning": "Also, too"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אִי הָכִי, אָדָם נָמֵי!",
+          "english": "If so, a person too!",
+          "notes": "A person immersing himself should also be forbidden."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אִי הָכִי, אָדָם נָמֵי",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        22
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Attacks רבא's reason from step 22.",
+      "kashyaTarget": "רבא's reason, נראה כמתקן כלי",
+      "kashyaAttackLogic": "A person also becomes 'fixed' when he immerses, yet he may immerse. So the reason proves too much."
+    },
+    {
+      "stepNumber": 24,
+      "hebrewStepName": "תירוץ",
+      "title": "A person looks like he is cooling off",
+      "stepSummary": "A person in water looks like he is just cooling off, so he does not look like he is fixing himself.",
+      "simpleTranslation": "A person looks like someone cooling off.",
+      "whatsHappening": "The גמרא answers that a person in water does not look like he is purifying himself, because he could be bathing to cool off.",
+      "deeperAnalysis": "With a vessel, everyone sees that the immersion makes it usable. With a person, anyone watching assumes he is simply bathing. So for a person there is no look of fixing at all.",
+      "keyTerms": [
+        {
+          "term": "מֵיקֵר",
+          "meaning": "Cooling oneself off"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָדָם נִרְאֶה כְּמֵיקֵר.",
+          "english": "A person looks like one who is cooling off."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אָדָם נִרְאֶה כְּמֵיקֵר",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        23
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Answers the challenge of step 23.",
+      "terutzResolutionType": "Distinction between cases",
+      "terutzHavaAmina": "A person immersing looks like he is fixing himself, just as a vessel does.",
+      "terutzMaskana": "A person looks like he is bathing to cool off, so there is no look of fixing."
+    },
+    {
+      "stepNumber": 25,
+      "hebrewStepName": "קשיא",
+      "title": "But what about dirty water?",
+      "stepSummary": "The cooling-off answer works for clean water. But no one cools off in murky water, so a person immersing there does look like he is purifying himself.",
+      "simpleTranslation": "This works well for good water. What can be said about bad water?",
+      "whatsHappening": "The גמרא pushes back on the last answer: it only works when the water is clean and pleasant.",
+      "deeperAnalysis": "A מקוה is not always clean. Someone dipping in murky water is clearly not doing it for pleasure. So he does look like he is purifying himself, and רבא's reason should forbid it.",
+      "keyTerms": [
+        {
+          "term": "הָא תִּינַח",
+          "meaning": "This works well (for one case)"
+        },
+        {
+          "term": "מַיִם יָפִים / מַיִם רָעִים",
+          "meaning": "Good, clean water / bad, murky water"
+        },
+        {
+          "term": "מַאי אִיכָּא לְמֵימַר",
+          "meaning": "What is there to say?"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "הָא תִּינַח מַיִם יָפִים,",
+          "english": "This works well for good water;"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "מַיִם רָעִים מַאי אִיכָּא לְמֵימַר?",
+          "english": "for bad water, what is there to say?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "הָא תִּינַח מַיִם יָפִים",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        24
+      ],
+      "scopeOfStep": "exception_case",
+      "relationToPreviousStep": "Challenges the answer of step 24.",
+      "kashyaTarget": "The answer that a person looks like he is cooling off",
+      "kashyaAttackLogic": "Nobody cools off in murky water, so in that case a person does look like he is purifying himself."
+    },
+    {
+      "stepNumber": 26,
+      "hebrewStepName": "תירוץ",
+      "title": "רב נחמן בר יצחק begins his answer",
+      "stepSummary": "רב נחמן בר יצחק starts to explain why even dirty water does not show that the person is purifying himself. This passage ends in the middle of his words.",
+      "simpleTranslation": "רב נחמן בר יצחק said: Sometimes a person comes...",
+      "whatsHappening": "רב נחמן בר יצחק begins answering the dirty-water question. His answer continues on the next amud.",
+      "deeperAnalysis": "His point will be that even in murky water, onlookers will not assume he is immersing for purity, because there are other ordinary reasons to wash. The opening words 'sometimes a person comes' set up a real-life case that will show this.",
+      "keyTerms": [
+        {
+          "term": "רַב נַחְמָן בַּר יִצְחָק",
+          "meaning": "An אמורא (רב נחמן בר יצחק)"
+        },
+        {
+          "term": "פְּעָמִים",
+          "meaning": "Sometimes"
+        }
+      ],
+      "confusionAlert": "The sentence is cut off here. Do not try to finish the answer from these words alone. Wait for the next passage.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר רַב נַחְמָן בַּר יִצְחָק:",
+          "english": "Rav Nachman bar Yitzchak said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "פְּעָמִים שֶׁאָדָם בָּא",
+          "english": "Sometimes a person comes",
+          "notes": "The sentence continues on the next amud."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אָמַר רַב נַחְמָן בַּר יִצְחָק: פְּעָמִים שֶׁאָדָם בָּא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        25
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Begins answering the murky-water challenge of step 25.",
+      "terutzResolutionType": "Real-life case showing another reason to wash",
+      "terutzHavaAmina": "Immersing in dirty water must be for purity.",
+      "terutzMaskana": "Even murky water can be used for ordinary reasons. The full answer continues on the next amud."
+    }
+  ]
+}
