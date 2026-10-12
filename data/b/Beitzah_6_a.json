@@ -1,0 +1,1089 @@
+{
+  "mainTopic": "Burial on יום טוב שני, the two days of ראש השנה (egg and עירובי תבשילין), and a chick that hatched on יום טוב.",
+  "overview": "רבא rules that on יום טוב ראשון only non-Jews handle a burial, but on יום טוב שני Jews may do it themselves. This applies even to ראש השנה, though an egg laid on the first day of ראש השנה stays forbidden on the second day. The נהרדעי disagree about the egg, because since עזרא's time אלול has never been made 30 days long. מר זוטרא limits burial on יום טוב שני to a burial that was already delayed. רב אשי says we never postpone it, because for a מת the Rabbis treated יום טוב שני like a weekday, and רבינא adds that nowadays the danger from the חברי holds us back. A story follows: רב אשי forgot his עירובי תבשילין before a Thursday-Friday ראש השנה, and he explains that רבא's תנאי does not work there, since he does not accept the נהרדעי's view. Finally, רב forbids a chick that hatched on יום טוב as מוקצה, while שמואל (or רבי יוחנן) permits it. רב is challenged with a newborn calf and with a calf born to a טריפה, and רבה gives the answer רב could have given. אביי's reply begins and continues on the next amud.",
+  "steps": [
+    {
+      "stepNumber": 1,
+      "hebrewStepName": "מימרא",
+      "title": "רבא: Who handles a burial on the first and second day of יום טוב",
+      "stepSummary": "רבא rules that on יום טוב ראשון non-Jews handle the burial, and on יום טוב שני Jews may do it. This holds even for ראש השנה, but not for the law of an egg.",
+      "simpleTranslation": "רבא said: If a person died on the first day of יום טוב, non-Jews should take care of his burial. If he died on the second day of יום טוב, Jews should take care of it, even on the two יום טוב days of ראש השנה. This is not so regarding an egg.",
+      "whatsHappening": "רבא gives a new practical rule about burying a מת on יום טוב, and he extends it to ראש השנה with one exception.",
+      "deeperAnalysis": "יום טוב ראשון is fully holy, so Jews may not do the burial work themselves and must use non-Jews. יום טוב שני in the diaspora is only מדרבנן, so for the honor of the מת the Rabbis allowed Jews to bury. For ראש השנה, רבא treats the two days the same way for burial. For an egg, however, the two days count as one long holy day, so an egg laid on day one stays forbidden on day two.",
+      "keyTerms": [
+        {
+          "term": "יוֹם טוֹב רִאשׁוֹן",
+          "meaning": "The first day of the festival, which is fully holy from the Torah"
+        },
+        {
+          "term": "יוֹם טוֹב שֵׁנִי",
+          "meaning": "The second festival day kept in the diaspora, a rabbinic enactment"
+        },
+        {
+          "term": "יִתְעַסְּקוּ בּוֹ",
+          "meaning": "They should take care of him, meaning handle the burial"
+        },
+        {
+          "term": "עֲמָמִים",
+          "meaning": "Non-Jews (literally, the nations)"
+        },
+        {
+          "term": "מַה שֶּׁאֵין כֵּן",
+          "meaning": "Which is not so; this introduces an exception"
+        },
+        {
+          "term": "בֵּיצָה",
+          "meaning": "An egg; here, one laid on the first day of ראש השנה"
+        }
+      ],
+      "confusionAlert": "'Not so with an egg' does not mean the egg is permitted. It means the egg law is different: on ראש השנה an egg laid on day one stays forbidden on day two, even though burial on day two is allowed.",
+      "whyThisMatters": "This is the basic halachic source for treating יום טוב שני more leniently when it comes to burying the dead.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר רָבָא: מֵת בְּיוֹם טוֹב רִאשׁוֹן —",
+          "english": "Rava said: If one died on the first day of Yom Tov,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "יִתְעַסְּקוּ בּוֹ עֲמָמִים.",
+          "english": "non-Jews should attend to him (his burial)."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "מֵת בְּיוֹם טוֹב שֵׁנִי —",
+          "english": "If he died on the second day of Yom Tov,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "יִתְעַסְּקוּ בּוֹ יִשְׂרָאֵל,",
+          "english": "Jews should attend to him,"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "וַאֲפִילּוּ בִּשְׁנֵי יָמִים טוֹבִים שֶׁל רֹאשׁ הַשָּׁנָה.",
+          "english": "and even on the two Yom Tov days of Rosh Hashanah.",
+          "notes": "For burial purposes, the two days of ראש השנה are treated like any other two-day יום טוב."
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "מַה שֶּׁאֵין כֵּן בְּבֵיצָה.",
+          "english": "This is not so regarding an egg.",
+          "notes": "An egg laid on the first day of ראש השנה stays forbidden on the second day."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אָמַר רָבָא",
+      "macroPhase": "opening_question",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Opens a new topic: burial on the second day of Yom Tov.",
+      "mimraCoreRuling": "On יום טוב ראשון non-Jews bury, and on יום טוב שני Jews may bury. This includes ראש השנה, but the egg remains forbidden on ראש השנה."
+    },
+    {
+      "stepNumber": 2,
+      "hebrewStepName": "מימרא",
+      "title": "The נהרדעי: Even the egg is permitted",
+      "stepSummary": "The נהרדעי disagree with רבא's exception and say ראש השנה is like other festivals even regarding an egg.",
+      "simpleTranslation": "The נהרדעי say: Even regarding an egg, it is the same.",
+      "whatsHappening": "A different group of Sages argues with the last part of רבא's statement. They hold that an egg laid on the first day of ראש השנה is permitted on the second day.",
+      "deeperAnalysis": "רבא had made ראש השנה different only for the egg. The נהרדעי remove that exception, so ראש השנה's two days count as two separate days for the egg as well. Their reason comes in the next step.",
+      "keyTerms": [
+        {
+          "term": "נְהַרְדָּעֵי",
+          "meaning": "The Sages of the city of נהרדעא"
+        },
+        {
+          "term": "אָמְרִי",
+          "meaning": "They say"
+        },
+        {
+          "term": "אַף",
+          "meaning": "Even, also"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "נְהַרְדָּעֵי אָמְרִי: אַף בְּבֵיצָה.",
+          "english": "The Sages of Neharde'a say: Even regarding an egg."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "דחיה",
+      "triggerLanguage": "נְהַרְדָּעֵי אָמְרִי",
+      "macroPhase": "alternate_branch",
+      "branchRole": "alternative_approach",
+      "dependsOnStepNumbers": [
+        1
+      ],
+      "scopeOfStep": "exception_case",
+      "relationToPreviousStep": "Disputes the egg exception in רבא's ruling.",
+      "mimraCoreRuling": "An egg laid on the first day of ראש השנה is permitted on the second day, just as on other festivals."
+    },
+    {
+      "stepNumber": 3,
+      "hebrewStepName": "ראיה",
+      "title": "The נהרדעי's reason: אלול has not been made a full month since עזרא",
+      "stepSummary": "The נהרדעי reject the worry that אלול might be lengthened, citing רב that since עזרא's days אלול was never made 30 days.",
+      "simpleTranslation": "What is your concern? That perhaps they will make אלול a full month? But רב חיננא בר כהנא said in the name of רב: From the days of עזרא onward, we have not found אלול to be a full month.",
+      "whatsHappening": "The נהרדעי explain why the egg should be permitted. They answer the reason someone might give for forbidding it.",
+      "deeperAnalysis": "The reason to forbid the egg is this: if בית דין made אלול 30 days long, the real ראש השנה would be the second day, and the two days would become one holy unit. The נהרדעי prove from רב that אלול has always been 29 days since עזרא. So the first day is the real ראש השנה, and the second day is only a doubtful extra day, just like on other festivals.",
+      "keyTerms": [
+        {
+          "term": "מָה דַּעְתָּיךְ",
+          "meaning": "What is your thinking? This introduces the opposing reasoning in order to reject it"
+        },
+        {
+          "term": "מְעַבְּרִי",
+          "meaning": "They make the month 'full' (30 days)"
+        },
+        {
+          "term": "אֱלוּל מְעוּבָּר",
+          "meaning": "An אלול of 30 days instead of 29"
+        },
+        {
+          "term": "מִימוֹת עֶזְרָא",
+          "meaning": "From the days of עזרא the scribe"
+        }
+      ],
+      "confusionAlert": "'מעובר' here means a 30-day month. It does not mean adding a leap month (עיבור שנה).",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "דְּמָה דַּעְתָּיךְ,",
+          "english": "For what is your thinking?"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "דִּלְמָא מְעַבְּרִי לֵיהּ לֶאֱלוּל,",
+          "english": "That perhaps they will make Elul a full (30-day) month?"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "הָא אָמַר רַב חִינָּנָא בַּר כָּהֲנָא אָמַר רַב:",
+          "english": "But Rav Chinnana bar Kahana said in the name of Rav:"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "מִימוֹת עֶזְרָא וְאֵילָךְ",
+          "english": "From the days of Ezra and onward"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "לֹא מָצִינוּ אֱלוּל מְעוּבָּר.",
+          "english": "we have not found a full Elul."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "דְּמָה דַּעְתָּיךְ, דִּלְמָא מְעַבְּרִי לֵיהּ לֶאֱלוּל, הָא אָמַר רַב חִינָּנָא בַּר כָּהֲנָא אָמַר רַב",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        2
+      ],
+      "scopeOfStep": "proof_mechanism",
+      "relationToPreviousStep": "Provides the reasoning and proof for the נהרדעי position.",
+      "raayaObject": "The Neharde'a ruling that the egg is permitted on the second day of ראש השנה.",
+      "raayaSupportSource": "רב's report, via רב חיננא בר כהנא, that since עזרא אלול has never been made 30 days long."
+    },
+    {
+      "stepNumber": 4,
+      "hebrewStepName": "מימרא",
+      "title": "מר זוטרא: Jews bury on the second day only if burial was already delayed",
+      "stepSummary": "מר זוטרא limits רבא's permission to a מת whose burial was already delayed. Otherwise, we postpone the burial until after יום טוב.",
+      "simpleTranslation": "מר זוטרא said: We only said this when the burial was already delayed. But if it was not delayed, we delay it.",
+      "whatsHappening": "The גמרא returns to רבא's burial rule, and מר זוטרא narrows it.",
+      "deeperAnalysis": "According to מר זוטרא, Jews may bury on יום טוב שני only if the body has already been waiting, for example someone who died before יום טוב. In that case the body may begin to decay, and the honor of the מת is at stake. If the person died that day, there is no urgency, so we wait until after יום טוב.",
+      "keyTerms": [
+        {
+          "term": "לָא אֲמַרַן אֶלָּא",
+          "meaning": "We only said this when; a limiting formula"
+        },
+        {
+          "term": "אִשְׁתַּהִי",
+          "meaning": "It was delayed (the burial was already held up)"
+        },
+        {
+          "term": "מַשְׁהִינַן לֵיהּ",
+          "meaning": "We delay it (postpone the burial)"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר מָר זוּטְרָא:",
+          "english": "Mar Zutra said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "לָא אֲמַרַן, אֶלָּא דְּאִשְׁתַּהִי.",
+          "english": "We only said this when it (the burial) was already delayed."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "אֲבָל לָא אִשְׁתַּהִי — מַשְׁהִינַן לֵיהּ.",
+          "english": "But if it was not delayed, we delay it."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "תירוץ",
+      "triggerLanguage": "לָא אֲמַרַן, אֶלָּא",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "returns_to_previous_branch",
+      "dependsOnStepNumbers": [
+        1
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Returns from the egg discussion to רבא's burial rule and limits it.",
+      "mimraCoreRuling": "Jews bury on יום טוב שני only if the burial was already delayed; otherwise it is postponed until after יום טוב."
+    },
+    {
+      "stepNumber": 5,
+      "hebrewStepName": "מימרא",
+      "title": "רב אשי: We never postpone the burial",
+      "stepSummary": "רב אשי disagrees with מר זוטרא and says that even if the burial was not delayed, we do not postpone it.",
+      "simpleTranslation": "רב אשי said: Even if it was not delayed, we still do not delay it.",
+      "whatsHappening": "רב אשי argues with מר זוטרא and keeps רבא's rule fully in force.",
+      "deeperAnalysis": "מר זוטרא allowed burial on יום טוב שני only in an urgent situation. רב אשי says urgency is not needed: any מת on יום טוב שני is buried that same day. His reason is given in the next step.",
+      "keyTerms": [
+        {
+          "term": "אַף עַל גַּב",
+          "meaning": "Even though"
+        },
+        {
+          "term": "נָמֵי",
+          "meaning": "Also, still"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "רַב אָשֵׁי אָמַר:",
+          "english": "Rav Ashi said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אַף עַל גַּב דְּלָא אִשְׁתַּהִי,",
+          "english": "Even though it was not delayed,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "נָמֵי לָא מַשְׁהִינַן לֵיהּ.",
+          "english": "we still do not delay it."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "דחיה",
+      "triggerLanguage": "רַב אָשֵׁי אָמַר",
+      "macroPhase": "alternate_branch",
+      "branchRole": "alternative_approach",
+      "dependsOnStepNumbers": [
+        1,
+        4
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Disputes מר זוטרא's limitation.",
+      "mimraCoreRuling": "A מת on יום טוב שני is buried that day even if there has been no delay."
+    },
+    {
+      "stepNumber": 6,
+      "hebrewStepName": "תשובה",
+      "title": "The reason: For the dead, the second day is like a weekday",
+      "stepSummary": "רב אשי explains that for a מת the Rabbis made יום טוב שני like a weekday, even allowing cutting a garment and myrtle for him.",
+      "simpleTranslation": "What is the reason? Regarding a dead person, the Rabbis made יום טוב שני like a weekday, even to cut a cloak for him and to cut myrtle for him.",
+      "whatsHappening": "רב אשי asks himself why we do not delay the burial, and then gives the reason.",
+      "deeperAnalysis": "The idea is not just that we bend the rules in an emergency. For anything a מת needs, the Rabbis removed the holiness of יום טוב שני entirely. This is shown by the fact that even extra honors are allowed, such as cutting cloth for a shroud and cutting myrtle branches for the bier.",
+      "keyTerms": [
+        {
+          "term": "מַאי טַעְמָא",
+          "meaning": "What is the reason?"
+        },
+        {
+          "term": "לְגַבֵּי מֵת",
+          "meaning": "With regard to a dead person"
+        },
+        {
+          "term": "כְּחוֹל שַׁוְּיוּהּ רַבָּנַן",
+          "meaning": "The Rabbis made it like a weekday"
+        },
+        {
+          "term": "לְמֵיגַז גְּלִימָא",
+          "meaning": "To cut a cloak (cloth for the shroud)"
+        },
+        {
+          "term": "אָסָא",
+          "meaning": "Myrtle, placed on the bier in honor of the dead"
+        }
+      ],
+      "whatToRemember": "רבא: on יום טוב ראשון non-Jews bury, and on יום טוב שני Jews bury, including on ראש השנה. On the egg, רבא forbids it on the second day of ראש השנה, while the נהרדעי permit it. On delay, מר זוטרא allows burial only if the body was already waiting, while רב אשי says we never delay, because for a מת יום טוב שני is like a weekday.",
+      "whyThisMatters": "רב אשי's principle 'כחול שוויוה רבנן' defines how far the leniency goes. It covers every need of the מת, not just emergencies.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מַאי טַעְמָא,",
+          "english": "What is the reason?"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "יוֹם טוֹב שֵׁנִי לְגַבֵּי מֵת —",
+          "english": "The second day of Yom Tov, regarding a dead person,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "כְּחוֹל שַׁוְּיוּהּ רַבָּנַן,",
+          "english": "the Rabbis made it like a weekday,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "אֲפִילּוּ לְמֵיגַז לֵיהּ גְּלִימָא,",
+          "english": "even to cut a cloak for him,"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "וּלְמֵיגַז לֵיהּ אָסָא.",
+          "english": "and to cut myrtle for him."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "מסקנא",
+      "triggerLanguage": "מַאי טַעְמָא",
+      "macroPhase": "conclusion",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        5
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Gives the reasoning for רב אשי's ruling.",
+      "sheelahInformationSought": "Why we do not postpone a burial on יום טוב שני even when there is no urgency.",
+      "teshuvahAnswerProvided": "For a מת, the Rabbis treated יום טוב שני as a weekday, even for cutting a garment or myrtle for him."
+    },
+    {
+      "stepNumber": 7,
+      "hebrewStepName": "מימרא",
+      "title": "Nowadays we worry about the hostile priests",
+      "stepSummary": "רבינא says that nowadays, because of the חברי, we are concerned and do not bury a מת on יום טוב שני.",
+      "simpleTranslation": "רבינא said: And nowadays, when there are חברי, we are concerned.",
+      "whatsHappening": "רבינא adds a limit to רב אשי's lenient ruling from the previous step. Because of a new danger, we do not actually bury on יום טוב שני nowadays.",
+      "deeperAnalysis": "רב אשי said that for a מת, יום טוב שני is like a weekday. רבינא does not argue with that basic rule. He says a new outside danger changes how we apply it. The חברי were Persian priests who might use Jewish burials on יום טוב שני as proof that the day is not holy, and then force Jews to work on it.",
+      "keyTerms": [
+        {
+          "term": "הָאִידָּנָא",
+          "meaning": "nowadays, at present"
+        },
+        {
+          "term": "חַבָּרֵי",
+          "meaning": "Persian priests who were hostile to Jews"
+        },
+        {
+          "term": "חָיְישִׁינַן",
+          "meaning": "we are concerned, we take this worry into account"
+        }
+      ],
+      "confusionAlert": "רבינא is not saying that יום טוב שני is fully holy for a מת. The basic rule of רב אשי still stands. רבינא only says that, because of the חברי, we hold back from actually burying on that day.",
+      "whyThisMatters": "This shows that a halachic leniency can be put on hold because of outside dangers, even while the basic rule is not changed.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר רָבִינָא:",
+          "english": "Ravina said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וְהָאִידָּנָא דְּאִיכָּא חַבָּרֵי —",
+          "english": "And nowadays, when there are the Persian priests (ḥabarei) —",
+          "notes": "These priests could use burial on the second day as proof that the day is not holy."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "חָיְישִׁינַן.",
+          "english": "we are concerned (and do not bury on that day)."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "מסקנא",
+      "triggerLanguage": "אָמַר רָבִינָא: וְהָאִידָּנָא דְּאִיכָּא חַבָּרֵי",
+      "macroPhase": "conclusion",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        5,
+        6
+      ],
+      "scopeOfStep": "exception_case",
+      "relationToPreviousStep": "Limits רב אשי's ruling that יום טוב שני is like a weekday for a מת, because of a present-day danger.",
+      "mimraCoreRuling": "Nowadays, because of the חברי, we are concerned and do not bury a מת on יום טוב שני."
+    },
+    {
+      "stepNumber": 8,
+      "hebrewStepName": "מימרא",
+      "title": "The story: רב אשי is sad on ראש השנה",
+      "stepSummary": "רבינא sees his teacher sad on ראש השנה. The reason is that he forgot to make an עירובי תבשילין.",
+      "simpleTranslation": "רבינא was sitting before רב אשי on the two days of יום טוב of ראש השנה. He saw that he was sad. He said to him: Why is the master sad? He answered: Because I did not set aside an עירובי תבשילין.",
+      "whatsHappening": "The גמרא opens a new story that sets up the next discussion. רב אשי forgot to make an עירובי תבשילין before ראש השנה, which fell on Thursday and Friday.",
+      "deeperAnalysis": "When יום טוב falls right before שבת, you may cook on יום טוב for שבת only if you made an עירובי תבשילין before יום טוב. Without it, רב אשי could not cook on Friday (the second day of ראש השנה) for שבת. That is why he was sad.",
+      "keyTerms": [
+        {
+          "term": "עֵירוּבֵי תַּבְשִׁילִין",
+          "meaning": "a cooked food set aside before יום טוב, which allows cooking on יום טוב for שבת"
+        },
+        {
+          "term": "עֲצִיב",
+          "meaning": "sad"
+        },
+        {
+          "term": "אוֹתִיבִי",
+          "meaning": "I set down / prepared"
+        },
+        {
+          "term": "מָר",
+          "meaning": "master (a respectful way to address a teacher)"
+        }
+      ],
+      "confusionAlert": "The printed text has 'רב (אסי)' in parentheses. The correct reading, as Sefaria shows, is רב אשי, רבינא's teacher.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "רָבִינָא הֲוָה יָתֵיב קַמֵּיהּ דְּרַב (אַסִּי)",
+          "english": "Ravina was sitting before Rav (Ashi)",
+          "notes": "The correct reading is רב אשי."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "בִּשְׁנֵי יָמִים טוֹבִים שֶׁל רֹאשׁ הַשָּׁנָה,",
+          "english": "on the two Festival days of Rosh HaShana,",
+          "notes": "That year they fell on Thursday and Friday, right before שבת."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "חַזְיֵיהּ דַּהֲוָה עֲצִיב,",
+          "english": "he saw that he was sad,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "אֲמַר לֵיהּ: אַמַּאי עֲצִיב מָר?",
+          "english": "he said to him: Why is the Master sad?"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "אֲמַר לֵיהּ: דְּלָא אוֹתִיבִי עֵירוּבֵי תַּבְשִׁילִין.",
+          "english": "He said to him: Because I did not set aside a joining of cooked foods."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "שאלה",
+      "triggerLanguage": "רָבִינָא הֲוָה יָתֵיב קַמֵּיהּ דְּרַב",
+      "macroPhase": "narrative_aggadah",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Starts a new topic, a story about עירובי תבשילין on ראש השנה. It connects back to the earlier theme of whether the two days of ראש השנה are like other festivals.",
+      "mimraCoreRuling": "Sets up the case: רב אשי did not make an עירובי תבשילין before a Thursday-Friday ראש השנה."
+    },
+    {
+      "stepNumber": 9,
+      "hebrewStepName": "קשיא",
+      "title": "רבינא suggests making the עירוב now with a תנאי",
+      "stepSummary": "רבינא challenges his teacher's worry. Why not make the עירובי תבשילין now, on the first day? רבא allows this with a תנאי.",
+      "simpleTranslation": "He said to him: Let the master set aside the עירובי תבשילין now! Didn't רבא say that a person may set aside an עירובי תבשילין from one day of יום טוב to the next, by making a condition?",
+      "whatsHappening": "רבינא offers a fix and backs it up with a ruling of רבא. He suggests making the עירוב on Thursday with a תנאי.",
+      "deeperAnalysis": "The two days of יום טוב in the גלות exist because of doubt about which day is the real holiday. So you can say: 'If today is a weekday, this is my עירוב. If today is holy, then tomorrow is a weekday and I don't need one.' Either way the עירוב works. רבינא assumes the same תנאי should work on ראש השנה.",
+      "keyTerms": [
+        {
+          "term": "וְלוֹתֵיב",
+          "meaning": "and let him set it down / prepare it"
+        },
+        {
+          "term": "מִי לָא אָמַר",
+          "meaning": "didn't (so-and-so) say? (a way of bringing a source as a challenge)"
+        },
+        {
+          "term": "וּמַתְנֶה",
+          "meaning": "and he makes a condition (תנאי)"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֲמַר לֵיהּ: וְלוֹתֵיב מָר הָאִידָּנָא?",
+          "english": "He said to him: Then let the Master set one aside now!"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "מִי לָא אָמַר רָבָא:",
+          "english": "Didn't Rava say:"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "מַנִּיחַ אָדָם עֵירוּבֵי תַבְשִׁילִין",
+          "english": "A person may set aside a joining of cooked foods"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "מִיּוֹם טוֹב לַחֲבֵירוֹ, וּמַתְנֶה!",
+          "english": "from one Festival day to the next, and make a stipulation!",
+          "notes": "The condition: 'If today is a weekday, this is my עירוב. If today is holy, tomorrow is a weekday.'"
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "שאלה",
+      "triggerLanguage": "מִי לָא אָמַר רָבָא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        8
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Challenges רב אשי's sadness from step 8 by offering a solution based on רבא.",
+      "kashyaTarget": "רב אשי's assumption that he has lost the chance to make an עירובי תבשילין.",
+      "kashyaAttackLogic": "רבא allows making an עירוב on the first day of יום טוב with a תנאי, so רב אשי should be able to fix the problem now."
+    },
+    {
+      "stepNumber": 10,
+      "hebrewStepName": "תירוץ",
+      "title": "רבא's rule does not apply to Rosh HaShana",
+      "stepSummary": "רב אשי answers that רבא's rule was said only about the two days of יום טוב of the גלות, not about the two days of ראש השנה.",
+      "simpleTranslation": "He said to him: You can say רבא said this about the two days of יום טוב of the גלות. Did he say it about the two days of ראש השנה?",
+      "whatsHappening": "רב אשי rejects רבינא's suggestion. He explains that רבא's rule is limited to the regular second day of יום טוב outside ארץ ישראל.",
+      "deeperAnalysis": "The תנאי works only when one of the two days is really a weekday. The two days of ראש השנה are treated as one long holy day (קדושה אחת). Both are equally holy, so the condition 'if today is a weekday' cannot work.",
+      "keyTerms": [
+        {
+          "term": "אֵימַר",
+          "meaning": "you can say (that this applies only to...)"
+        },
+        {
+          "term": "שְׁנֵי יָמִים טוֹבִים שֶׁל גָּלִיּוֹת",
+          "meaning": "the two days of יום טוב kept outside ארץ ישראל because of doubt"
+        },
+        {
+          "term": "רֹאשׁ הַשָּׁנָה",
+          "meaning": "ראש השנה, whose two days are treated as one long holy day"
+        }
+      ],
+      "whatToRemember": "A תנאי between two days of יום טוב works in the גלות, because one day is really a weekday. It does not work on ראש השנה, because both days count as one long holy day.",
+      "confusionAlert": "ראש השנה is still a יום טוב. The point is only that its two days are uniquely joined into one holiness, so the 'one of these days is a weekday' condition fails.",
+      "whyThisMatters": "This is the basis for the halacha that you cannot make an עירובי תבשילין with a תנאי on the first day of ראש השנה.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֲמַר לֵיהּ: אֵימַר דְּאָמַר רָבָא",
+          "english": "He said to him: You can say that Rava said this"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "בִּשְׁנֵי יָמִים טוֹבִים שֶׁל גָּלִיּוֹת.",
+          "english": "about the two Festival days of the Diaspora."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "בִּשְׁנֵי יָמִים טוֹבִים שֶׁל רֹאשׁ הַשָּׁנָה מִי אָמַר?",
+          "english": "But about the two Festival days of Rosh HaShana, did he say it?",
+          "notes": "A rhetorical question meaning 'he did not say this.'"
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "דחיה",
+      "triggerLanguage": "אֵימַר דְּאָמַר רָבָא בִּשְׁנֵי יָמִים טוֹבִים שֶׁל גָּלִיּוֹת",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        9
+      ],
+      "scopeOfStep": "exception_case",
+      "relationToPreviousStep": "Answers רבינא's challenge by limiting רבא's rule.",
+      "terutzResolutionType": "Limiting the source: רבא's ruling applies only to the two days of יום טוב of the גלות.",
+      "terutzHavaAmina": "רבינא thought רבא's תנאי works for any two days of יום טוב, including ראש השנה.",
+      "terutzMaskana": "The two days of ראש השנה are one long holiness, so the תנאי cannot be used on them."
+    },
+    {
+      "stepNumber": 11,
+      "hebrewStepName": "קשיא",
+      "title": "רבינא challenges from the נהרדעי",
+      "stepSummary": "רבינא points out that the נהרדעי allow an egg laid on the first day of ראש השנה to be eaten on the second day. That means they treat the two days as separate, just like the יום טוב of the גלות.",
+      "simpleTranslation": "But didn't the נהרדעי say: even an egg is permitted?",
+      "whatsHappening": "רבינא pushes back against רב אשי's answer. He brings a ruling of the נהרדעי that seems to treat the two days of ראש השנה just like the two days of יום טוב in the גלות.",
+      "deeperAnalysis": "רב אשי said that רבא's תנאי works only for the two days of the גלות, not for ראש השנה. But the נהרדעי allow an egg from the first day of ראש השנה on the second day. That only makes sense if each day is its own separate day. If so, רבא's תנאי should work on ראש השנה too, and the teacher could still make the עירובי תבשילין.",
+      "keyTerms": [
+        {
+          "term": "נְהַרְדָּעֵי",
+          "meaning": "The Sages of the city of נהרדעא"
+        },
+        {
+          "term": "בֵּיצָה",
+          "meaning": "An egg; here, one laid on the first day of ראש השנה"
+        },
+        {
+          "term": "מוּתֶּרֶת",
+          "meaning": "Permitted"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְהָא אָמְרִי נְהַרְדָּעֵי:",
+          "english": "But didn't the Sages of Neharde'a say:",
+          "notes": "וְהָא = 'but surely', a classic opening for a challenge"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אַף בֵּיצָה מוּתֶּרֶת.",
+          "english": "Even an egg is permitted.",
+          "notes": "Meaning even on the two days of ראש השנה, an egg laid on day one may be eaten on day two"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וְהָא אָמְרִי נְהַרְדָּעֵי",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        2,
+        9,
+        10
+      ],
+      "scopeOfStep": "proof_mechanism",
+      "relationToPreviousStep": "Attacks רב אשי's distinction from step 10",
+      "kashyaTarget": "רב אשי's claim that ראש השנה is different from the two days of the גלות",
+      "kashyaAttackLogic": "The נהרדעי treat the two days of ראש השנה as separate days, the same as the גלות. So רבא's תנאי should also apply to ראש השנה."
+    },
+    {
+      "stepNumber": 12,
+      "hebrewStepName": "תירוץ",
+      "title": "רב אשי explicitly rejected the נהרדעי view",
+      "stepSummary": "רב מרדכי reports that רב אשי told him directly that he does not hold like the נהרדעי.",
+      "simpleTranslation": "רב מרדכי said to him: The Master told me explicitly that he does not agree with this ruling of the נהרדעי.",
+      "whatsHappening": "רב מרדכי defends רב אשי. He reports that רב אשי personally told him he disagrees with the נהרדעי.",
+      "deeperAnalysis": "The challenge only works if רב אשי accepts the נהרדעי's ruling. Since he does not, he can still hold that the two days of ראש השנה count as one long day. So there is no way to fix a forgotten עירובי תבשילין on ראש השנה, and the teacher's worry was justified.",
+      "keyTerms": [
+        {
+          "term": "בְּפֵירוּשׁ",
+          "meaning": "Explicitly, openly"
+        },
+        {
+          "term": "מָר",
+          "meaning": "'The Master', a respectful title for one's teacher (here רב אשי)"
+        },
+        {
+          "term": "סָבַר",
+          "meaning": "Holds, agrees with (an opinion)"
+        }
+      ],
+      "whatToRemember": "According to רב אשי, the two days of ראש השנה count as one long day. So the תנאי trick for עירובי תבשילין does not work there.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֲמַר לֵיהּ רַב מָרְדֳּכַי:",
+          "english": "Rav Mordekhai said to him:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "בְּפֵירוּשׁ אֲמַר לִי מָר",
+          "english": "The Master explicitly told me"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "דְּלָא סָבַר לְהָא דִּנְהַרְדָּעֵי.",
+          "english": "that he does not hold like this ruling of the Neharde'ans."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "דחיה",
+      "triggerLanguage": "בְּפֵירוּשׁ אֲמַר לִי מָר",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        10,
+        11
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Answers רבינא's challenge by showing that רב אשי rejects its source",
+      "terutzResolutionType": "Rejecting the premise: the cited source is not accepted by the one being challenged",
+      "terutzHavaAmina": "רב אשי must accept the נהרדעי's ruling, so ראש השנה would be two separate days",
+      "terutzMaskana": "רב אשי disagrees with the נהרדעי, so his distinction stands"
+    },
+    {
+      "stepNumber": 13,
+      "hebrewStepName": "מימרא",
+      "title": "Dispute about a chick that hatched on יום טוב",
+      "stepSummary": "A new topic: רב forbids a chick that hatched on יום טוב. שמואל (or some say רבי יוחנן) permits it.",
+      "simpleTranslation": "It was stated: A chick that hatched on יום טוב — רב said it is forbidden. שמואל, and some say רבי יוחנן, said it is permitted.",
+      "whatsHappening": "The גמרא starts a brand-new discussion. It presents a disagreement about whether a chick that hatched on יום טוב may be slaughtered and eaten that day.",
+      "deeperAnalysis": "The word אתמר signals a dispute between אמוראים. רב says the chick is forbidden. The other opinion, said by שמואל or perhaps רבי יוחנן, says it is permitted. Here only the rulings are given; the reasons come in the next step.",
+      "keyTerms": [
+        {
+          "term": "אִתְּמַר",
+          "meaning": "'It was stated': introduces a dispute between אמוראים"
+        },
+        {
+          "term": "אֶפְרוֹחַ",
+          "meaning": "A chick"
+        },
+        {
+          "term": "וְאִיתֵּימָא",
+          "meaning": "'And some say': an alternate version of who said it"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אִתְּמַר: אֶפְרוֹחַ שֶׁנּוֹלַד בְּיוֹם טוֹב,",
+          "english": "It was stated: A chick that hatched on Yom Tov,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "רַב אָמַר: אָסוּר.",
+          "english": "Rav said: It is forbidden."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וּשְׁמוּאֵל, וְאִיתֵּימָא רַבִּי יוֹחָנָן",
+          "english": "And Shmuel, and some say Rabbi Yochanan,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "אָמַר: מוּתָּר.",
+          "english": "said: It is permitted."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אִתְּמַר: אֶפְרוֹחַ שֶׁנּוֹלַד בְּיוֹם טוֹב",
+      "macroPhase": "opening_question",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "New topic, connected to the general theme of things that came into being on יום טוב (like the egg)",
+      "mimraCoreRuling": "רב: a chick that hatched on יום טוב is forbidden. שמואל (or רבי יוחנן): it is permitted."
+    },
+    {
+      "stepNumber": 14,
+      "hebrewStepName": "מימרא",
+      "title": "The reasons for each side",
+      "stepSummary": "רב forbids the chick because it is מוקצה. שמואל (or רבי יוחנן) permits it because it becomes permitted through שחיטה.",
+      "simpleTranslation": "רב said it is forbidden because it is מוקצה. שמואל, or some say רבי יוחנן, said it is permitted, since it becomes permitted through slaughter.",
+      "whatsHappening": "The גמרא repeats the two rulings, this time adding the reason behind each one.",
+      "deeperAnalysis": "רב's view: before יום טוב began, the chick was still inside the egg. It was not ready to be used, so it was set aside (מוקצה) for the whole day. The other view: a live chick, like any bird, becomes food through normal שחיטה. Its hatching is just what makes that שחיטה possible, so it is not treated as מוקצה.",
+      "keyTerms": [
+        {
+          "term": "מוּקְצֶה",
+          "meaning": "Set aside; something not prepared or expected for use before יום טוב, so it may not be used"
+        },
+        {
+          "term": "מַתִּיר עַצְמוֹ",
+          "meaning": "It permits itself"
+        },
+        {
+          "term": "שְׁחִיטָה",
+          "meaning": "Kosher slaughter"
+        }
+      ],
+      "confusionAlert": "This is not a needless repeat of step 13. The גמרא repeats the rulings in order to add the reasons.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "רַב אָמַר: אָסוּר — מוּקְצֶה הוּא.",
+          "english": "Rav said: It is forbidden, because it is muktzeh."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וּשְׁמוּאֵל, וְאִיתֵּימָא רַבִּי יוֹחָנָן",
+          "english": "And Shmuel, and some say Rabbi Yochanan,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "אָמַר: מוּתָּר —",
+          "english": "said: It is permitted,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "הוֹאִיל וּמַתִּיר עַצְמוֹ בִּשְׁחִיטָה.",
+          "english": "since it makes itself permitted through slaughter."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "תשובה",
+      "triggerLanguage": "רַב אָמַר: אָסוּר — מוּקְצֶה הוּא",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        13
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Gives the reasons for the rulings in step 13",
+      "mimraCoreRuling": "רב: the chick is forbidden as מוקצה. שמואל (or רבי יוחנן): it is permitted, because it becomes permitted through שחיטה."
+    },
+    {
+      "stepNumber": 15,
+      "hebrewStepName": "קשיא",
+      "title": "Challenge: how is a chick different from a newborn calf?",
+      "stepSummary": "רב כהנא and רב אסי ask רב why a chick is different from a calf born on יום טוב, which may be eaten.",
+      "simpleTranslation": "רב כהנא and רב אסי said to רב: What is the difference between this and a calf born on יום טוב?",
+      "whatsHappening": "רב's students challenge his ruling. They point out that a calf born on יום טוב is permitted, so why not a chick?",
+      "deeperAnalysis": "Both the calf and the chick did not exist as separate animals before יום טוב. If the calf is not treated as מוקצה, the chick should not be either. This puts pressure on רב's מוקצה reasoning.",
+      "keyTerms": [
+        {
+          "term": "מָה בֵּין זֶה",
+          "meaning": "What is the difference between this..."
+        },
+        {
+          "term": "עֵגֶל",
+          "meaning": "A calf"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמְרִי לֵיהּ רַב כָּהֲנָא וְרַב אַסִּי לְרַב:",
+          "english": "Rav Kahana and Rav Asi said to Rav:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וְכִי מָה בֵּין זֶה",
+          "english": "And what is the difference between this"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "לְעֵגֶל שֶׁנּוֹלַד בְּיוֹם טוֹב?",
+          "english": "and a calf born on Yom Tov?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וְכִי מָה בֵּין זֶה לְעֵגֶל שֶׁנּוֹלַד בְּיוֹם טוֹב",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        14
+      ],
+      "scopeOfStep": "inference",
+      "relationToPreviousStep": "Attacks רב's position from step 14",
+      "kashyaTarget": "רב's ruling that a hatched chick is מוקצה",
+      "kashyaAttackLogic": "A newborn calf is permitted even though it was born on יום טוב. The chick seems to be the same case, so it should be permitted too."
+    },
+    {
+      "stepNumber": 16,
+      "hebrewStepName": "תירוץ",
+      "title": "The calf was ready through its mother",
+      "stepSummary": "רב answers that the calf was already prepared before יום טוב through its mother, since slaughtering the mother would have permitted the calf inside her.",
+      "simpleTranslation": "He said to them: Since it was prepared through its mother, by slaughter.",
+      "whatsHappening": "רב defends his ruling. He explains why the calf is different from the chick.",
+      "deeperAnalysis": "By הלכה, if a cow is slaughtered, the calf inside her becomes permitted along with her. So even before it was born, the calf was 'ready' as food through the mother's שחיטה, and it was never מוקצה. A chick inside an egg has no such route to becoming permitted, so before hatching it was set aside.",
+      "keyTerms": [
+        {
+          "term": "מוּכָן",
+          "meaning": "Prepared, ready for use"
+        },
+        {
+          "term": "אַגַּב אִמּוֹ",
+          "meaning": "Through its mother, as part of its mother"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֲמַר לְהוּ:",
+          "english": "He said to them:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "הוֹאִיל וּמוּכָן אַגַּב אִמּוֹ בִּשְׁחִיטָה.",
+          "english": "Since it was prepared through its mother, by slaughter."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "הוֹאִיל וּמוּכָן אַגַּב אִמּוֹ בִּשְׁחִיטָה",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        15
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Answers the challenge of step 15",
+      "terutzResolutionType": "Distinction between the cases",
+      "terutzHavaAmina": "A calf and a chick are the same, since both are new on יום טוב",
+      "terutzMaskana": "The calf was already prepared through its mother's שחיטה, but the chick was not"
+    },
+    {
+      "stepNumber": 17,
+      "hebrewStepName": "קשיא",
+      "title": "Challenge from a calf born to a טריפה",
+      "stepSummary": "The students ask again: what about a calf born from a טריפה mother? It was never ready through its mother, yet it is permitted.",
+      "simpleTranslation": "And what is the difference between this and a calf born from a טריפה?",
+      "whatsHappening": "The students attack רב's answer with a case where his reason, 'ready through its mother', does not work.",
+      "deeperAnalysis": "If the mother is a טריפה, slaughtering her does not permit her or the calf inside her. So that calf was never prepared through its mother. Yet once born, it may be slaughtered on יום טוב. That seems to undo רב's distinction.",
+      "keyTerms": [
+        {
+          "term": "טְרֵפָה",
+          "meaning": "An animal with a fatal defect; it may not be eaten even after שחיטה"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וּמָה בֵּין זֶה",
+          "english": "And what is the difference between this"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "לְעֵגֶל שֶׁנּוֹלַד מִן הַטְּרֵפָה!",
+          "english": "and a calf born from a treifah!",
+          "notes": "Its mother's שחיטה would not have permitted it, yet it is permitted after birth"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וּמָה בֵּין זֶה לְעֵגֶל שֶׁנּוֹלַד מִן הַטְּרֵפָה",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        16
+      ],
+      "scopeOfStep": "inference",
+      "relationToPreviousStep": "Attacks רב's answer from step 16",
+      "kashyaTarget": "רב's reason that the calf was 'prepared through its mother'",
+      "kashyaAttackLogic": "A calf born from a טריפה was never prepared through its mother, yet it is permitted. So 'prepared through its mother' cannot be the real difference."
+    },
+    {
+      "stepNumber": 18,
+      "hebrewStepName": "מסקנא",
+      "title": "רב was silent",
+      "stepSummary": "רב does not answer the second challenge.",
+      "simpleTranslation": "רב was silent.",
+      "whatsHappening": "רב gives no reply to the challenge from the calf of a טריפה. The next step supplies the answer רב could have given.",
+      "deeperAnalysis": "רב's silence means he himself did not answer the challenge. His distinction between the calf and the chick has been seriously questioned, but step 19 shows the answer he could have given.",
+      "keyTerms": [
+        {
+          "term": "שְׁתֵיק",
+          "meaning": "Was silent"
+        }
+      ],
+      "whatToRemember": "רב forbids a hatched chick as מוקצה and separated it from a newborn calf, which was ready 'through its mother'. The case of a calf born from a טריפה left him silent, and step 19 gives the answer he could have said.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "שְׁתֵיק רַב.",
+          "english": "Rav was silent."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "קשיא",
+      "triggerLanguage": "שְׁתֵיק רַב",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        17
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Reports רב's response (silence) to the challenge of step 17",
+      "maskanaFinalTakeaway": "רב himself did not answer the challenge from a calf born to a טריפה. Step 19 supplies the answer on his behalf."
+    },
+    {
+      "stepNumber": 19,
+      "hebrewStepName": "תירוץ",
+      "title": "רבה gives the answer רב could have said",
+      "stepSummary": "רבה (or רב יוסף) asks why רב stayed silent. He says רב could have answered that a calf from a טריפה mother was already prepared through its mother, as food for dogs.",
+      "simpleTranslation": "רבה said, and some say it was רב יוסף: Why was רב silent? He should have told them: since the calf was prepared through its mother for dogs!",
+      "whatsHappening": "A later אמורא steps in to defend רב. He gives the answer to the students' challenge that רב himself did not give.",
+      "deeperAnalysis": "The students said a calf from a טריפה mother was never prepared through its mother, because the mother could not be eaten by people. רבה answers that 'prepared' does not have to mean prepared for humans. The טריפה mother was ready to be fed to dogs, so the calf inside her was ready too. That means it is not fully מוקצה. A chick inside its egg was not ready for anything, so רב's ruling on the chick still holds.",
+      "keyTerms": [
+        {
+          "term": "שְׁתֵיק",
+          "meaning": "was silent"
+        },
+        {
+          "term": "הוֹאִיל",
+          "meaning": "since, because"
+        },
+        {
+          "term": "מוּכָן",
+          "meaning": "prepared, ready for use (the opposite of מוקצה)"
+        },
+        {
+          "term": "אַגַּב אִמּוֹ",
+          "meaning": "through its mother, by being attached to its mother"
+        },
+        {
+          "term": "כְּלָבִים",
+          "meaning": "dogs"
+        }
+      ],
+      "confusionAlert": "Do not think רבה is saying the calf was prepared for people to eat. His point is that being ready even for dog food is enough to stop it from being fully מוקצה.",
+      "whyThisMatters": "This step widens the idea of מוכן. Something counts as ready if it had any permitted use before יום טוב, even feeding animals. That is what still separates the calf from the chick.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֲמַר רַבָּה וְאִיתֵּימָא רַב יוֹסֵף:",
+          "english": "Rabbah said, and some say it was Rav Yosef:",
+          "notes": "Attribution line. The tradition is unsure which of the two said it."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "מַאי טַעְמָא שְׁתֵיק רַב?",
+          "english": "What is the reason Rav was silent?",
+          "notes": "This is not a real question. It introduces the answer רב could have given."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "לֵימָא לְהוּ:",
+          "english": "Let him say to them:"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "הוֹאִיל וּמוּכָן אַגַּב אִמּוֹ לִכְלָבִים!",
+          "english": "Since it is prepared through its mother for dogs!",
+          "notes": "The טריפה mother could be given to dogs, so the calf inside her was ready along with her."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "שאלה",
+      "triggerLanguage": "מַאי טַעְמָא שְׁתֵיק רַב? לֵימָא לְהוּ",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        16,
+        17,
+        18
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Gives the answer to the challenge in step 17 that רב left unanswered in step 18.",
+      "terutzResolutionType": "Widens the definition of 'prepared' (מוכן) to include readiness for dogs, not only for people.",
+      "terutzHavaAmina": "A calf from a טריפה mother was never prepared through its mother, so רב's distinction falls apart.",
+      "terutzMaskana": "The טריפה mother was ready as dog food, so the calf inside her was prepared. The chick, which was not ready for anything, stays מוקצה."
+    },
+    {
+      "stepNumber": 20,
+      "hebrewStepName": "קשיא",
+      "title": "אביי begins his response to רבה (or רב יוסף)",
+      "stepSummary": "אביי starts to respond to the answer suggested by רבה (or רב יוסף). His actual words continue on the next amud.",
+      "simpleTranslation": "אביי said to him:",
+      "whatsHappening": "This is only a setup line. The גמרא is opening אביי's response to רבה (or רב יוסף), and its content comes in the next part of the text.",
+      "deeperAnalysis": "No argument appears here yet. The phrase 'said to him' tells us אביי is answering רבה directly. That usually signals a challenge to the answer just given.",
+      "keyTerms": [
+        {
+          "term": "אֲמַר לֵיהּ",
+          "meaning": "said to him (introduces a direct reply)"
+        },
+        {
+          "term": "אַבָּיֵי",
+          "meaning": "אביי, a student of רבה"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֲמַר לֵיהּ אַבָּיֵי:",
+          "english": "Abaye said to him:",
+          "notes": "Opens a response that continues on the next amud."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "שאלה",
+      "triggerLanguage": "אֲמַר לֵיהּ אַבָּיֵי",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        19
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Introduces אביי's reply to רבה's answer in step 19.",
+      "kashyaTarget": "רבה's answer that the calf was prepared through its mother for dogs.",
+      "kashyaAttackLogic": "Not yet stated. The content follows on the next amud."
+    }
+  ]
+}
