@@ -1,0 +1,1447 @@
+{
+  "mainTopic": "Making images of the Temple vessels and of heavenly beings: the מנורה of seven branches, the חשמונאי מנורה, the four faces of the heavenly chariot, and the human face (\"לא תעשון אתי\").",
+  "overview": "This amud finishes a ברייתא that אביי quoted: you may not make an exact copy of a Temple vessel, such as a seven-branch מנורה, even from other metals. The חכמים reject רבי יוסי בר יהודה's proof that a wooden one is also forbidden. The גמרא then tests אביי's idea that things that can't be copied exactly, like the moon, may be pictured. Using several ברייתות on 'לא תעשון אתי', it moves through the four faces together, the human face ('do not make Me'), the angels of the upper heaven, and the worship of everything from the sun down to a tiny worm. In the end a ברייתא forbids even simply making images of the sun and moon, so אביי's line falls. The גמרא answers that others made רבן גמליאל's pictures for him. That leads to the question of חשדא: רב יהודה's raised seal, the shul in נהרדעא with a statue, and the rule that רבים are not suspected. As the נשיא, רבן גמליאל was always among many people. Two other answers are that the pictures were in pieces, or that he made them in order to learn. A new משנה then begins with witnesses who saw the moon in the morning in the east, and it continues on the next amud.",
+  "steps": [
+    {
+      "stepNumber": 1,
+      "hebrewStepName": "מימרא",
+      "title": "Which kinds of מנורה one may make",
+      "stepSummary": "The ברייתא ends its list: a מנורה of 5, 6, or 8 branches may be made, but not one of 7, even from metals other than gold.",
+      "simpleTranslation": "You may make a מנורה of five, six, or eight branches. But one of seven, you may not make, even from other kinds of metal.",
+      "whatsHappening": "We are in the middle of a ברייתא that אביי quoted. It lists which copies of the Temple items are forbidden. Here it finishes the rule about the מנורה.",
+      "deeperAnalysis": "Only an exact copy of the Temple מנורה is forbidden. Changing the number of branches makes it not a copy, so it is allowed. A 7-branch מנורה of silver or copper is still forbidden, because the Temple מנורה itself may be made from those metals when gold is not available.",
+      "keyTerms": [
+        {
+          "term": "מְנוֹרָה",
+          "meaning": "The seven-branched candelabrum of the בית המקדש"
+        },
+        {
+          "term": "לֹא יַעֲשֶׂה",
+          "meaning": "He may not make (it)"
+        },
+        {
+          "term": "שְׁאָר מִינֵי מַתָּכוֹת",
+          "meaning": "Other kinds of metal (not gold)"
+        }
+      ],
+      "confusionAlert": "Don't think 'other metals' makes it different from the real one. A מנורה of other metals is still kosher for the מקדש, so it still counts as a copy.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "שֶׁל חֲמִשָּׁה וְשֶׁל שִׁשָּׁה וְשֶׁל שְׁמוֹנָה.",
+          "english": "(But he may make one) of five, or of six, or of eight (branches).",
+          "notes": "This continues the ברייתא from the previous section."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וְשֶׁל שִׁבְעָה — לֹא יַעֲשֶׂה,",
+          "english": "But one of seven, he may not make,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "אֲפִילּוּ שֶׁל שְׁאָר מִינֵי מַתָּכוֹת.",
+          "english": "even of other kinds of metals."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "ראיה",
+      "triggerLanguage": "שֶׁל חֲמִשָּׁה וְשֶׁל שִׁשָּׁה וְשֶׁל שְׁמוֹנָה",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Continues the ברייתא quoted by אביי on the previous amud.",
+      "mimraCoreRuling": "Only an exact 7-branch copy of the מנורה is forbidden, even if made from a metal other than gold."
+    },
+    {
+      "stepNumber": 2,
+      "hebrewStepName": "מימרא",
+      "title": "A wooden מנורה is also forbidden",
+      "stepSummary": "רבי יוסי בר יהודה adds that even a wooden 7-branch מנורה is forbidden, since the חשמונאי kings made one like that.",
+      "simpleTranslation": "רבי יוסי בר יהודה says: you may not make one even of wood, the way the kings of the חשמונאי dynasty made it.",
+      "whatsHappening": "A תנא adds a stricter rule to the ברייתא. He forbids a wooden copy too.",
+      "deeperAnalysis": "His logic: the חשמונאים used a wooden מנורה in the מקדש. So wood is a valid material, and a wooden copy counts as an exact copy. He brings the חשמונאים as his proof.",
+      "keyTerms": [
+        {
+          "term": "שֶׁל עֵץ",
+          "meaning": "Made of wood"
+        },
+        {
+          "term": "מַלְכֵי בֵּית חַשְׁמוֹנַאי",
+          "meaning": "The kings of the Hasmonean dynasty"
+        },
+        {
+          "term": "כְּדֶרֶךְ",
+          "meaning": "In the manner of"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "רַבִּי יוֹסֵי בַּר יְהוּדָה אוֹמֵר:",
+          "english": "Rabbi Yosei bar Yehuda says:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אַף שֶׁל עֵץ לֹא יַעֲשֶׂה,",
+          "english": "Also one of wood he may not make,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "כְּדֶרֶךְ שֶׁעָשׂוּ מַלְכֵי בֵּית חַשְׁמוֹנַאי.",
+          "english": "in the way that the kings of the Hasmonean house made it."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "רַבִּי יוֹסֵי בַּר יְהוּדָה אוֹמֵר",
+      "macroPhase": "source_derivation",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [
+        1
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Adds a stricter opinion to the ruling of the ברייתא.",
+      "mimraCoreRuling": "A wooden 7-branch מנורה is also forbidden, based on the חשמונאי מנורה."
+    },
+    {
+      "stepNumber": 3,
+      "hebrewStepName": "דחיה",
+      "title": "The חכמים reject the proof from the חשמונאים",
+      "stepSummary": "The חכמים say the חשמונאי מנורה was not really wood. It was iron spits covered with tin, later upgraded to silver and then gold.",
+      "simpleTranslation": "They said to him: you bring a proof from there?! They were iron spits, and they covered them with tin. When they became richer, they made them of silver. When they became richer again, they made them of gold.",
+      "whatsHappening": "The other חכמים push back on רבי יוסי בר יהודה's proof.",
+      "deeperAnalysis": "Their point is that the חשמונאים never used wood. They used iron rods coated with tin, which is metal. So there is no proof that wood is valid, and a wooden copy is not forbidden.",
+      "keyTerms": [
+        {
+          "term": "מִשָּׁם רְאָיָה",
+          "meaning": "From there (you bring) a proof?! (a rejection formula)"
+        },
+        {
+          "term": "שַׁפּוּדִין שֶׁל בַּרְזֶל",
+          "meaning": "Iron spits / rods"
+        },
+        {
+          "term": "חִיפּוּם בְּבַעַץ",
+          "meaning": "They plated them with tin"
+        },
+        {
+          "term": "הֶעֱשִׁירוּ",
+          "meaning": "They became wealthier"
+        }
+      ],
+      "whatToRemember": "The ברייתא's rule is that only a usable copy of a Temple vessel is forbidden. אביי relies on this idea: anything that can be reproduced exactly may not be copied.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמְרוּ לוֹ: מִשָּׁם רְאָיָיה?!",
+          "english": "They said to him: from there is a proof?!"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "שַׁפּוּדִין שֶׁל בַּרְזֶל הָיוּ וְחִיפּוּם בְּבַעַץ.",
+          "english": "They were spits of iron, and they covered them with tin."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "הֶעֱשִׁירוּ — עֲשָׂאוּם שֶׁל כֶּסֶף,",
+          "english": "When they grew richer, they made them of silver;"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "חָזְרוּ הֶעֱשִׁירוּ — עֲשָׂאוּם שֶׁל זָהָב.",
+          "english": "when they grew richer again, they made them of gold."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אָמְרוּ לוֹ: מִשָּׁם רְאָיָיה",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        2
+      ],
+      "scopeOfStep": "proof_mechanism",
+      "relationToPreviousStep": "Rejects the historical proof of step 2.",
+      "dechiyaRejectionScope": "Rejects רבי יוסי בר יהודה's proof that wood is a valid material for the מנורה.",
+      "dechiyaFlawIdentified": "The חשמונאי מנורה was made of metal (iron plated with tin), not wood."
+    },
+    {
+      "stepNumber": 4,
+      "hebrewStepName": "קשיא",
+      "title": "Are images of heavenly attendants really allowed?",
+      "stepSummary": "The גמרא challenges אביי: a ברייתא forbids making images of God's attendants on high, even though they can't be copied exactly.",
+      "simpleTranslation": "And the attendants that are impossible to copy exactly, are they really permitted? But it was taught in a ברייתא: 'Do not make with Me' means do not make the likeness of My attendants who serve before Me on high!",
+      "whatsHappening": "The גמרא attacks אביי's idea that only exactly copyable things are forbidden. It quotes a ברייתא against him.",
+      "deeperAnalysis": "אביי allowed the moon pictures because the moon can't be reproduced exactly. But the ברייתא on 'לא תעשון אתי' forbids images of the heavenly attendants. Those certainly can't be copied exactly, and they seem to include the sun and moon.",
+      "keyTerms": [
+        {
+          "term": "שַׁמָּשִׁין",
+          "meaning": "Attendants: the heavenly beings that 'serve' God"
+        },
+        {
+          "term": "מִי שְׁרֵי",
+          "meaning": "Is it permitted?"
+        },
+        {
+          "term": "וְהָתַנְיָא",
+          "meaning": "But it was taught in a ברייתא (introduces a contradiction)"
+        },
+        {
+          "term": "בַּמָּרוֹם",
+          "meaning": "On high, in heaven"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְשַׁמָּשִׁין שֶׁאִי אֶפְשָׁר לַעֲשׂוֹת כְּמוֹתָן",
+          "english": "And attendants which it is impossible to make like them,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "מִי שְׁרֵי?",
+          "english": "is it permitted?"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וְהָתַנְיָא: ״לֹא תַעֲשׂוּן אִתִּי״ —",
+          "english": "But it was taught: 'You shall not make with Me' —"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "לֹא תַּעֲשׂוּן כִּדְמוּת שַׁמָּשַׁיי",
+          "english": "you shall not make the likeness of My attendants"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "הַמְשַׁמְּשִׁין לְפָנַי בַּמָּרוֹם!",
+          "english": "who serve before Me on high!"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וְשַׁמָּשִׁין שֶׁאִי אֶפְשָׁר לַעֲשׂוֹת כְּמוֹתָן מִי שְׁרֵי",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "returns_to_previous_branch",
+      "dependsOnStepNumbers": [
+        1,
+        3
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Returns to אביי's principle, which was based on the ברייתא, and challenges it.",
+      "kashyaTarget": "אביי's principle that things that cannot be copied exactly (like the moon) may be depicted.",
+      "kashyaAttackLogic": "A ברייתא forbids depicting heavenly attendants, which cannot be copied exactly. So being impossible to copy does not make an image permitted."
+    },
+    {
+      "stepNumber": 5,
+      "hebrewStepName": "תירוץ",
+      "title": "Only the four faces together are forbidden",
+      "stepSummary": "אביי answers that the verse only forbids the image of the four faces of the heavenly chariot together.",
+      "simpleTranslation": "אביי said: the Torah only forbade the image of the four faces together.",
+      "whatsHappening": "אביי narrows the ברייתא so it no longer contradicts him.",
+      "deeperAnalysis": "The 'attendants on high' are the חיות of the מרכבה, which have four faces (man, lion, ox, eagle). Only that combined image is forbidden. Other heavenly things, like the moon, are not included, so רבן גמליאל's moon pictures stay permitted.",
+      "keyTerms": [
+        {
+          "term": "לֹא אָסְרָה תּוֹרָה אֶלָּא",
+          "meaning": "The Torah only forbade..."
+        },
+        {
+          "term": "אַרְבָּעָה פָּנִים",
+          "meaning": "Four faces (of the חיות in יחזקאל's chariot vision)"
+        },
+        {
+          "term": "בַּהֲדֵי הֲדָדֵי",
+          "meaning": "Together, with each other"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר אַבָּיֵי:",
+          "english": "Abaye said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "לֹא אָסְרָה תּוֹרָה אֶלָּא",
+          "english": "The Torah forbade only"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "דְּמוּת אַרְבָּעָה פָּנִים בַּהֲדֵי הֲדָדֵי.",
+          "english": "the image of four faces together."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אָמַר אַבָּיֵי: לֹא אָסְרָה תּוֹרָה אֶלָּא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        4
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Answers the קשיא of step 4.",
+      "terutzResolutionType": "Narrowing the scope of the ברייתא",
+      "terutzHavaAmina": "The ברייתא forbids images of all heavenly beings, including the sun and moon.",
+      "terutzMaskana": "The ברייתא forbids only the combined four-faced image of the חיות."
+    },
+    {
+      "stepNumber": 6,
+      "hebrewStepName": "קשיא",
+      "title": "Then why is a human face alone forbidden?",
+      "stepSummary": "If only all four faces together are forbidden, a human face by itself should be allowed. Yet a ברייתא says every face is allowed except a human face.",
+      "simpleTranslation": "But if so, a human face alone should be permitted! Why, then, was it taught: all faces are permitted except the human face?",
+      "whatsHappening": "The גמרא attacks אביי's answer with a new ברייתא.",
+      "deeperAnalysis": "By אביי's rule, any single face is fine, since only the full four-face set is forbidden. But a ברייתא singles out the human face as forbidden even alone. That needs a new explanation.",
+      "keyTerms": [
+        {
+          "term": "אֶלָּא מֵעַתָּה",
+          "meaning": "But now (if so)... (introduces a challenge from a consequence)"
+        },
+        {
+          "term": "פַּרְצוּף אָדָם",
+          "meaning": "A human face"
+        },
+        {
+          "term": "לְחוֹדֵיהּ",
+          "meaning": "By itself, alone"
+        },
+        {
+          "term": "אַלְּמָה תַּנְיָא",
+          "meaning": "Why, then, was it taught?"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֶלָּא מֵעַתָּה",
+          "english": "But now, if so,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "פַּרְצוּף אָדָם לְחוֹדֵיהּ תִּשְׁתְּרֵי?",
+          "english": "a human face alone should be permitted?"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "אַלְּמָה תַּנְיָא:",
+          "english": "Why was it taught:"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "כׇּל הַפַּרְצוּפוֹת מוּתָּרִין",
+          "english": "All faces are permitted"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "חוּץ מִפַּרְצוּף אָדָם!",
+          "english": "except for a human face!"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אֶלָּא מֵעַתָּה פַּרְצוּף אָדָם לְחוֹדֵיהּ תִּשְׁתְּרֵי",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        5
+      ],
+      "scopeOfStep": "inference",
+      "relationToPreviousStep": "Challenges the answer given in step 5.",
+      "kashyaTarget": "אביי's answer that only the four faces together are forbidden.",
+      "kashyaAttackLogic": "That answer implies a single human face is permitted, but a ברייתא explicitly forbids it."
+    },
+    {
+      "stepNumber": 7,
+      "hebrewStepName": "תירוץ",
+      "title": "'Do not make Me': the human face has its own source",
+      "stepSummary": "רב הונא בריה דרב אידי reports from אביי that the verse is also read 'do not make Me', which forbids the human face.",
+      "simpleTranslation": "רב הונא בריה דרב אידי said: I heard from אביי's lecture: 'Do not make with Me (אִתִּי)' means 'do not make Me (אוֹתִי)'.",
+      "whatsHappening": "The גמרא gives a separate source for forbidding the human face, quoted in אביי's name.",
+      "deeperAnalysis": "The word אִתִּי is read as אוֹתִי, 'Me'. Man was created בצלם אלקים, so making a human face is like making an image of 'Me'. That is why the human face is forbidden even alone. אביי's four-faces rule still stands for everything else.",
+      "keyTerms": [
+        {
+          "term": "מִפִּרְקֵיהּ דְּאַבָּיֵי",
+          "meaning": "From אביי's public lecture"
+        },
+        {
+          "term": "שְׁמִיעָא לִי",
+          "meaning": "I heard"
+        },
+        {
+          "term": "אִתִּי / אוֹתִי",
+          "meaning": "'With Me' read as 'Me'"
+        }
+      ],
+      "whatToRemember": "At this stage there are three levels. Exact copies of Temple items are forbidden. Of the heavenly beings, only the four-faced chariot image is forbidden. The human face is forbidden from the reading 'לא תעשון אותי'. The middle level does not last: step 9 widens it to all the attendants of the upper heaven, and step 14 brings a ברייתא that forbids images of the sun and moon too.",
+      "whyThisMatters": "This is a main source for the halacha against making a full human face or figure, and why it differs from other images.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר רַב הוּנָא בְּרֵיהּ דְּרַב אִידִי:",
+          "english": "Rav Huna son of Rav Idi said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "מִפִּרְקֵיהּ דְּאַבָּיֵי שְׁמִיעָא לִי:",
+          "english": "From Abaye's lecture I heard:"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "״לֹא תַעֲשׂוּן אִתִּי״ — לֹא תַּעֲשׂוּן אוֹתִי.",
+          "english": "'You shall not make with Me' means you shall not make Me."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אָמַר רַב הוּנָא בְּרֵיהּ דְּרַב אִידִי: מִפִּרְקֵיהּ דְּאַבָּיֵי שְׁמִיעָא לִי",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        5,
+        6
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Answers the קשיא of step 6.",
+      "terutzResolutionType": "New derivation from the verse (a separate source)",
+      "terutzHavaAmina": "The human face would be allowed under the four-faces rule.",
+      "terutzMaskana": "The human face is forbidden by the reading 'לא תעשון אותי', since man is in God's image."
+    },
+    {
+      "stepNumber": 8,
+      "hebrewStepName": "קשיא",
+      "title": "Are images of the other heavenly attendants allowed?",
+      "stepSummary": "If only the four faces together and the human face are forbidden, the other attendants should be allowed. A ברייתא forbids images of אופנים, שרפים, חיות הקודש and מלאכי השרת.",
+      "simpleTranslation": "Is it really allowed to make images of the other attendants? A ברייתא teaches that 'You shall not make with Me' means do not make images of My attendants on high, such as אופנים, שרפים, חיות הקודש and מלאכי השרת!",
+      "whatsHappening": "The גמרא attacks אביי again. His reading seems to allow images of other heavenly beings, but a ברייתא forbids them.",
+      "deeperAnalysis": "אביי said the פסוק forbids only the four faces together, plus the human face. That would leave images of angels and other heavenly beings allowed. This ברייתא lists those beings by name and forbids images of them.",
+      "keyTerms": [
+        {
+          "term": "שַׁמָּשִׁין",
+          "meaning": "Attendants or servants, meaning the beings who serve before God"
+        },
+        {
+          "term": "מִי שְׁרֵי?",
+          "meaning": "Is it really permitted? (a challenge, not a real question)"
+        },
+        {
+          "term": "אוֹפַנִּים",
+          "meaning": "אופנים, a class of heavenly beings (literally 'wheels')"
+        },
+        {
+          "term": "שְׂרָפִים",
+          "meaning": "שרפים, fiery angels"
+        },
+        {
+          "term": "חַיּוֹת הַקֹּדֶשׁ",
+          "meaning": "The holy חיות, the living beings of the heavenly chariot"
+        },
+        {
+          "term": "מַלְאֲכֵי הַשָּׁרֵת",
+          "meaning": "The ministering angels"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וּשְׁאָר שַׁמָּשִׁין מִי שְׁרֵי?",
+          "english": "And are the other attendants permitted?"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וְהָא תַּנְיָא",
+          "english": "But isn't it taught in a ברייתא"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "״לֹא תַעֲשׂוּן אִתִּי״ —",
+          "english": "\"You shall not make with Me\""
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "לֹא תַּעֲשׂוּן כִּדְמוּת שַׁמָּשַׁיי",
+          "english": "you shall not make the likeness of My attendants"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "הַמְּשַׁמְּשִׁין לְפָנַי בַּמָּרוֹם,",
+          "english": "who serve before Me on high,"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "כְּגוֹן אוֹפַנִּים וּשְׂרָפִים",
+          "english": "such as Ofanim and Serafim"
+        },
+        {
+          "phraseNumber": 7,
+          "aramaic": "וְחַיּוֹת הַקּוֹדֶשׁ וּמַלְאֲכֵי הַשָּׁרֵת!",
+          "english": "and the holy Chayot and the ministering angels!"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וּשְׁאָר שַׁמָּשִׁין מִי שְׁרֵי? וְהָא תַּנְיָא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        5,
+        7
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Builds on אביי's answers in Steps 5 and 7. Since only the four faces and the human face were forbidden, it asks about the remaining heavenly beings.",
+      "kashyaTarget": "אביי's narrow reading of 'לא תעשון אתי'",
+      "kashyaAttackLogic": "A ברייתא explicitly forbids images of the angels and heavenly beings, which אביי's reading would seem to allow."
+    },
+    {
+      "stepNumber": 9,
+      "hebrewStepName": "תירוץ",
+      "title": "Only the attendants of the upper realm are forbidden",
+      "stepSummary": "אביי answers that the Torah forbade images only of the attendants in the highest heaven, not the bodies of the lower heaven like the sun and moon.",
+      "simpleTranslation": "אביי said: The Torah forbade only the attendants who are in the upper dwelling.",
+      "whatsHappening": "אביי accepts that angels may not be pictured. He limits the איסור to the beings of the highest heaven.",
+      "deeperAnalysis": "The ברייתא listed only beings of the upper heaven (אופנים, שרפים, angels), so אביי admits these are forbidden. The sun and moon are in a lower level of heaven, so drawing them is still allowed. This keeps רבן גמליאל's moon diagrams permitted.",
+      "keyTerms": [
+        {
+          "term": "מָדוֹר הָעֶלְיוֹן",
+          "meaning": "The upper dwelling, the highest heaven where the angels are"
+        },
+        {
+          "term": "לֹא אָסְרָה תּוֹרָה אֶלָּא",
+          "meaning": "The Torah forbade only (a limiting formula)"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר אַבָּיֵי:",
+          "english": "Abaye said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "לֹא אָסְרָה תּוֹרָה אֶלָּא",
+          "english": "The Torah prohibited only"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "שַׁמָּשִׁין שֶׁבַּמָּדוֹר הָעֶלְיוֹן.",
+          "english": "the attendants that are in the upper dwelling."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אָמַר אַבָּיֵי: לֹא אָסְרָה תּוֹרָה אֶלָּא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        8
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Answers the challenge of Step 8 by drawing a line between upper and lower heavenly levels.",
+      "terutzResolutionType": "Limiting the scope of the איסור (distinction between upper and lower heaven)",
+      "terutzHavaAmina": "The ברייתא seemed to prove that all heavenly beings, including the sun and moon, may not be pictured.",
+      "terutzMaskana": "Only the beings of the upper heaven are forbidden. The sun, moon and stars of the lower heaven are still allowed."
+    },
+    {
+      "stepNumber": 10,
+      "hebrewStepName": "קשיא",
+      "title": "A ברייתא includes the sun, moon and stars",
+      "stepSummary": "The גמרא challenges: are images of the lower heaven really allowed? A ברייתא reads 'אשר בשמים' to include the sun, moon, stars and מזלות.",
+      "simpleTranslation": "Are the things of the lower dwelling really allowed? A ברייתא teaches: 'that is in heaven' includes the sun, moon, stars and מזלות, and 'above' includes the ministering angels!",
+      "whatsHappening": "The גמרא attacks אביי's new line. A ברייתא seems to forbid images of the sun and moon as well.",
+      "deeperAnalysis": "The ברייתא learns from the words 'אשר בשמים' that the sun, moon, stars and מזלות are included in the איסור. That is exactly the lower heaven אביי just permitted. The word 'ממעל' (above) adds the angels of the upper heaven.",
+      "keyTerms": [
+        {
+          "term": "מָדוֹר הַתַּחְתּוֹן",
+          "meaning": "The lower dwelling, the lower heaven of the sun, moon and stars"
+        },
+        {
+          "term": "לְרַבּוֹת",
+          "meaning": "To include (a derivation that adds something from a word in the פסוק)"
+        },
+        {
+          "term": "חַמָּה וּלְבָנָה",
+          "meaning": "The sun and the moon"
+        },
+        {
+          "term": "מַזָּלוֹת",
+          "meaning": "Constellations"
+        },
+        {
+          "term": "מִמַּעַל",
+          "meaning": "Above (word in the פסוק)"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְשֶׁבַּמָּדוֹר הַתַּחְתּוֹן מִי שְׁרֵי?",
+          "english": "And are those in the lower dwelling permitted?"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וְהָתַנְיָא:",
+          "english": "But isn't it taught:"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "״אֲשֶׁר בַּשָּׁמַיִם״ —",
+          "english": "\"that is in heaven\""
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "לְרַבּוֹת חַמָּה וּלְבָנָה כּוֹכָבִים וּמַזָּלוֹת,",
+          "english": "comes to include the sun, moon, stars and constellations;"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "״מִמַּעַל״ — לְרַבּוֹת מַלְאֲכֵי הַשָּׁרֵת!",
+          "english": "\"above\" comes to include the ministering angels!"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וְשֶׁבַּמָּדוֹר הַתַּחְתּוֹן מִי שְׁרֵי? וְהָתַנְיָא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        9
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Directly attacks the distinction אביי made in Step 9.",
+      "kashyaTarget": "אביי's claim that the lower heaven (sun, moon, stars) may be pictured",
+      "kashyaAttackLogic": "A ברייתא derives from 'אשר בשמים' that the sun, moon, stars and מזלות are included in the איסור."
+    },
+    {
+      "stepNumber": 11,
+      "hebrewStepName": "תירוץ",
+      "title": "That ברייתא is about worship",
+      "stepSummary": "The גמרא answers that the ברייתא about the sun and moon is teaching the איסור of worshipping them, not the איסור of making an image.",
+      "simpleTranslation": "When that ברייתא was taught, it was about worshipping them.",
+      "whatsHappening": "The גמרא defends אביי by explaining that the ברייתא is about a different איסור.",
+      "deeperAnalysis": "The ברייתא comes from the פסוק of the עשרת הדברות, which also forbids bowing to idols. So it may mean you may not worship the sun or moon. Making a picture of them could still be allowed.",
+      "keyTerms": [
+        {
+          "term": "לְעׇבְדָם",
+          "meaning": "To worship them"
+        },
+        {
+          "term": "כִּי תַּנְיָא הָהִיא",
+          "meaning": "When that ברייתא was taught (it was about a different case)"
+        }
+      ],
+      "confusionAlert": "There are two separate איסורים here: making an image, and worshipping something as a god. The גמרא moves this ברייתא to the worship איסור, so it no longer says anything about making pictures.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "כִּי תַּנְיָא הָהִיא —",
+          "english": "When that baraita was taught,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "לְעׇבְדָם.",
+          "english": "it was about worshipping them."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "כִּי תַּנְיָא הָהִיא לְעׇבְדָם",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        10
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Answers the challenge of Step 10 by reinterpreting the ברייתא.",
+      "terutzResolutionType": "Reassigning the source to a different איסור (worship, not image-making)",
+      "terutzHavaAmina": "The ברייתא seemed to forbid making images of the sun and moon.",
+      "terutzMaskana": "The ברייתא forbids worshipping the sun and moon. Making images of them is not addressed."
+    },
+    {
+      "stepNumber": 12,
+      "hebrewStepName": "קשיא",
+      "title": "If it is about worship, even a tiny worm should be included",
+      "stepSummary": "The גמרא questions the answer: if the ברייתא is about worship, it should include even something as small as a tiny worm.",
+      "simpleTranslation": "If it is about worshipping them, then even a tiny worm should also be included!",
+      "whatsHappening": "The גמרא tests the last answer. If the ברייתא is about worship, it should forbid worshipping anything at all, even the smallest creature.",
+      "deeperAnalysis": "Worship of any created thing is forbidden, big or small. So a worship-based ברייתא should not stop at heavenly bodies. It should reach down to the lowliest creature.",
+      "keyTerms": [
+        {
+          "term": "שִׁלְשׁוּל קָטָן",
+          "meaning": "A tiny worm"
+        },
+        {
+          "term": "אִי",
+          "meaning": "If (introducing a consequence of the last answer)"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אִי לְעׇבְדָם,",
+          "english": "If it is about worshipping them,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אֲפִילּוּ שִׁלְשׁוּל קָטָן נָמֵי!",
+          "english": "then even a tiny worm should also be included!"
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "שאלה",
+      "triggerLanguage": "אִי לְעׇבְדָם, אֲפִילּוּ שִׁלְשׁוּל קָטָן נָמֵי",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        11
+      ],
+      "scopeOfStep": "inference",
+      "relationToPreviousStep": "Challenges the answer of Step 11 by pushing its logic further.",
+      "kashyaTarget": "The claim that the ברייתא is about worship",
+      "kashyaAttackLogic": "Worship of anything is forbidden. A worship-based ברייתא should therefore include even the smallest creature, which seemed missing."
+    },
+    {
+      "stepNumber": 13,
+      "hebrewStepName": "תירוץ",
+      "title": "Yes, the same ברייתא includes a tiny worm",
+      "stepSummary": "The גמרא agrees and shows that the same ברייתא does include a tiny worm. It learns this from 'מתחת', which proves the ברייתא is about worship.",
+      "simpleTranslation": "Yes, that is true, as it is taught: 'that is on the earth' includes mountains, hills, seas, rivers, streams and valleys, and 'beneath' includes a tiny worm.",
+      "whatsHappening": "The גמרא answers that the ברייתא really does include a tiny worm. That supports reading the ברייתא as being about worship.",
+      "deeperAnalysis": "The ברייתא continues through the rest of the פסוק and lists mountains, seas, valleys and even a tiny worm. People do not usually make images of a mountain or a worm, but someone could worship them. So the whole ברייתא fits the worship reading, and אביי's distinction survives.",
+      "keyTerms": [
+        {
+          "term": "אִין הָכִי נָמֵי",
+          "meaning": "Yes, that is indeed so (accepting the challenge's point)"
+        },
+        {
+          "term": "אֲפִיקִים",
+          "meaning": "Streams or riverbeds"
+        },
+        {
+          "term": "גֵּאָיוֹת",
+          "meaning": "Valleys"
+        },
+        {
+          "term": "מִתַּחַת",
+          "meaning": "Beneath (word in the פסוק)"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אִין הָכִי נָמֵי,",
+          "english": "Yes, it is indeed so,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "דְּתַנְיָא:",
+          "english": "as it is taught:"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "״אֲשֶׁר בָּאָרֶץ״ —",
+          "english": "\"that is on the earth\""
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "לְרַבּוֹת הָרִים וּגְבָעוֹת",
+          "english": "comes to include mountains and hills,"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "יַמִּים וּנְהָרוֹת אֲפִיקִים וְגֵאָיוֹת,",
+          "english": "seas and rivers, streams and valleys;"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "״מִתַּחַת״ — לְרַבּוֹת שִׁלְשׁוּל קָטָן.",
+          "english": "\"beneath\" comes to include a tiny worm."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אִין הָכִי נָמֵי, דְּתַנְיָא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        11,
+        12
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Answers Step 12 by accepting its point and showing the ברייתא already includes the tiny worm.",
+      "terutzResolutionType": "Accepting the challenge (אין הכי נמי) and showing the source already says it",
+      "terutzHavaAmina": "It seemed the worship reading failed because the ברייתא did not include small creatures.",
+      "terutzMaskana": "The ברייתא does include a tiny worm, so it is about worship, and images of the sun and moon are still allowed according to אביי.",
+      "whyThisMatters": "This confirms that a long list of things in a ברייתא can belong to the worship איסור rather than to image-making. The two איסורים must be kept apart when reading these sources."
+    },
+    {
+      "stepNumber": 14,
+      "hebrewStepName": "קשיא",
+      "title": "A ברייתא forbids simply making images of the sun and moon",
+      "stepSummary": "The גמרא brings a ברייתא that forbids making images of God's attendants, such as the sun, moon, stars and מזלות. This is plain image-making, not worship.",
+      "simpleTranslation": "Is simply making them really allowed? A ברייתא teaches: 'You shall not make with Me' means do not make images of My attendants who serve before Me, such as the sun, moon, stars and מזלות!",
+      "whatsHappening": "The גמרא brings a new challenge against אביי. This time the ברייתא is clearly about making images, not worshipping them.",
+      "deeperAnalysis": "This ברייתא is built on 'לא תעשון אתי', a פסוק about making, and it names the sun, moon, stars and מזלות. The worship answer cannot work here. אביי's line between upper and lower heaven is rejected, so the גמרא needs a new explanation for רבן גמליאל's moon diagrams. The next step gives one.",
+      "keyTerms": [
+        {
+          "term": "עֲשִׂיָּיה גְּרֵידְתָּא",
+          "meaning": "Mere making, just forming an image without any worship"
+        },
+        {
+          "term": "וְהָתַנְיָא",
+          "meaning": "But isn't it taught in a ברייתא? (introducing a contradicting source)"
+        }
+      ],
+      "whatToRemember": "Making an image is forbidden even with no worship at all, and that includes the sun, moon, stars and מזלות. אביי's distinction does not survive, so the גמרא must explain רבן גמליאל's moon diagrams in a new way, starting in step 15.",
+      "confusionAlert": "This ברייתא looks almost the same as the one in Step 8, but the examples are different. Step 8 listed angels of the upper heaven. This one lists the sun and moon, which is exactly what אביי had permitted.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וַעֲשִׂיָּיה גְּרֵידְתָּא מִי שְׁרֵי?",
+          "english": "And is mere making permitted?"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וְהָתַנְיָא:",
+          "english": "But isn't it taught:"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "״לֹא תַעֲשׂוּן אִתִּי״ —",
+          "english": "\"You shall not make with Me\""
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "לֹא תַּעֲשׂוּן כִּדְמוּת שַׁמָּשַׁיי",
+          "english": "you shall not make the likeness of My attendants"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "הַמְשַׁמְּשִׁין לְפָנַי,",
+          "english": "who serve before Me,"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "כְּגוֹן חַמָּה וּלְבָנָה",
+          "english": "such as the sun and moon,"
+        },
+        {
+          "phraseNumber": 7,
+          "aramaic": "כּוֹכָבִים וּמַזָּלוֹת.",
+          "english": "stars and constellations."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וַעֲשִׂיָּיה גְּרֵידְתָּא מִי שְׁרֵי? וְהָתַנְיָא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        9,
+        11,
+        13
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "After Step 13 saved אביי from the worship-based ברייתא, this step brings a ברייתא about making images that the worship answer cannot handle.",
+      "kashyaTarget": "אביי's permission to make images of the lower heaven (sun, moon, stars)",
+      "kashyaAttackLogic": "A ברייתא based on the פסוק about making explicitly forbids images of the sun, moon, stars and מזלות, so the worship answer cannot apply."
+    },
+    {
+      "stepNumber": 15,
+      "hebrewStepName": "תירוץ",
+      "title": "רבן גמליאל's pictures were made by others",
+      "stepSummary": "The גמרא answers the קשיא from step 14: רבן גמליאל did not make the moon-pictures himself. Non-Jews made them for him, and the איסור is only on making them.",
+      "simpleTranslation": "רבן גמליאל is different, because others made the pictures for him.",
+      "whatsHappening": "The גמרא gives a new answer for why רבן גמליאל could keep pictures of the moon, even though the ברייתא forbids making images of the heavenly bodies. He did not make them; others made them for him.",
+      "deeperAnalysis": "The ברייתא forbids the act of making such an image. If a non-Jew made it, no Jew did the forbidden act, so simply owning it should be fine. This answer separates making an image from owning one.",
+      "keyTerms": [
+        {
+          "term": "שָׁאנֵי",
+          "meaning": "is different (this case has a special reason)"
+        },
+        {
+          "term": "אֲחֵרִים עָשׂוּ לוֹ",
+          "meaning": "others (non-Jews) made it for him"
+        },
+        {
+          "term": "רַבָּן גַּמְלִיאֵל",
+          "meaning": "the נשיא who had moon-pictures for questioning witnesses"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "שָׁאנֵי רַבָּן גַּמְלִיאֵל,",
+          "english": "Rabban Gamliel is different,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "דַּאֲחֵרִים עָשׂוּ לוֹ.",
+          "english": "since others made it for him.",
+          "notes": "Others means non-Jews. The איסור applies only to a Jew who makes the image."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "",
+      "triggerLanguage": "שָׁאנֵי רַבָּן גַּמְלִיאֵל",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        14
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Answers the קשיא of step 14 that making images of the heavenly bodies is forbidden.",
+      "terutzResolutionType": "Distinguishing the case: making the image versus owning one made by others",
+      "terutzHavaAmina": "רבן גמליאל seemed to break the איסור against images of the sun and moon.",
+      "terutzMaskana": "The איסור is on making the image. רבן גמליאל only owned pictures that others made."
+    },
+    {
+      "stepNumber": 16,
+      "hebrewStepName": "קשיא",
+      "title": "שמואל told רב יהודה to deface a ring made by others",
+      "stepSummary": "The גמרא challenges the answer. רב יהודה's ring was also made by others, yet שמואל told him to ruin its image.",
+      "simpleTranslation": "But look at רב יהודה: others made his ring, and still שמואל said to him, 'Sharp one, blind this one's eyes!'",
+      "whatsHappening": "The גמרא attacks the answer from step 15. In רב יהודה's case others made the human-shaped seal, but שמואל still told him to deface it.",
+      "deeperAnalysis": "If owning an image made by others were allowed, שמואל would not have needed to ruin it. His instruction suggests that even keeping such an image is a problem, which undercuts the 'others made it' answer.",
+      "keyTerms": [
+        {
+          "term": "וְהָא",
+          "meaning": "but look! (opens a challenge from a known case)"
+        },
+        {
+          "term": "שִׁינָּנָא",
+          "meaning": "sharp one; שמואל's nickname for his student רב יהודה"
+        },
+        {
+          "term": "סַמִּי עֵינֵיהּ",
+          "meaning": "blind its eyes, meaning deface the image"
+        },
+        {
+          "term": "דְּדֵין",
+          "meaning": "of this one"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְהָא רַב יְהוּדָה, דַּאֲחֵרִים עָשׂוּ לוֹ,",
+          "english": "But there is Rav Yehuda, for whom others made it,",
+          "notes": "This was a signet ring with a human image."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וַאֲמַר לֵיהּ שְׁמוּאֵל לְרַב יְהוּדָה:",
+          "english": "and Shmuel said to Rav Yehuda:"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "שִׁינָּנָא, סַמִּי עֵינֵיהּ דְּדֵין!",
+          "english": "Sharp one, blind the eyes of this one!",
+          "notes": "In other words, ruin the image so it is no longer a complete face."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "",
+      "triggerLanguage": "וְהָא רַב יְהוּדָה, דַּאֲחֵרִים עָשׂוּ לוֹ",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        15
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Challenges the answer of step 15.",
+      "kashyaTarget": "The claim that an image made by others may be kept",
+      "kashyaAttackLogic": "שמואל made רב יהודה deface an image that others had made. That implies keeping such an image is forbidden even when a Jew did not make it."
+    },
+    {
+      "stepNumber": 17,
+      "hebrewStepName": "תירוץ",
+      "title": "רב יהודה's seal was raised, so it caused suspicion",
+      "stepSummary": "רב יהודה's case was different. His seal stuck out, and the concern was suspicion of עבודה זרה, not the איסור of making images.",
+      "simpleTranslation": "There, his seal was raised, and the problem was suspicion.",
+      "whatsHappening": "The גמרא answers that שמואל's instruction had a different reason. A raised image on a ring looks like an idol, so people might suspect the wearer.",
+      "deeperAnalysis": "The 'others made it' answer still stands. שמואל was not worried about the making of the image. He was worried that people would see a raised figure and think רב יהודה served עבודה זרה.",
+      "keyTerms": [
+        {
+          "term": "הָתָם",
+          "meaning": "there (in that other case)"
+        },
+        {
+          "term": "חוֹתָמוֹ בּוֹלֵט",
+          "meaning": "its seal is raised, sticking out"
+        },
+        {
+          "term": "חֲשָׁדָא",
+          "meaning": "suspicion (that people will think one serves עבודה זרה)"
+        }
+      ],
+      "confusionAlert": "Do not confuse the two reasons. Making an image is one איסור. חשדא is a separate worry about how something looks to others, even when no image-making איסור applies.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "הָתָם, חוֹתָמוֹ בּוֹלֵט הֲוָה,",
+          "english": "There, his seal was protruding,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וּמִשּׁוּם חֲשָׁדָא.",
+          "english": "and it was because of suspicion."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "",
+      "triggerLanguage": "הָתָם, חוֹתָמוֹ בּוֹלֵט הֲוָה",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        16
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Answers the קשיא of step 16.",
+      "terutzResolutionType": "Different reason: suspicion, not the image-making איסור",
+      "terutzHavaAmina": "שמואל's instruction seemed to show that owning an image made by others is forbidden.",
+      "terutzMaskana": "שמואל's concern was only חשדא, caused by the raised image. The 'others made it' answer still holds."
+    },
+    {
+      "stepNumber": 18,
+      "hebrewStepName": "ראיה",
+      "title": "A ברייתא about raised and sunken ring seals",
+      "stepSummary": "A ברייתא supports the idea that a raised seal causes suspicion. Wearing a raised seal is forbidden, but wearing a sunken one is allowed.",
+      "simpleTranslation": "As it is taught: a ring with a raised seal may not be worn, but you may seal with it. A ring with a sunken seal may be worn, but you may not seal with it.",
+      "whatsHappening": "The גמרא brings a ברייתא to back up the חשדא answer. The ברייתא shows that a raised image is forbidden to wear because of how it looks.",
+      "deeperAnalysis": "Wearing a raised image causes suspicion, so it is forbidden. Sealing with it leaves only a sunken mark, so that is allowed. A sunken seal is the reverse: wearing it is fine, but pressing it into wax creates a raised image, and that counts as making a forbidden image.",
+      "keyTerms": [
+        {
+          "term": "כִּדְתַנְיָא",
+          "meaning": "as it is taught in a ברייתא"
+        },
+        {
+          "term": "טַבַּעַת",
+          "meaning": "a ring"
+        },
+        {
+          "term": "לְהַנִּיחָהּ",
+          "meaning": "to put it on (wear it)"
+        },
+        {
+          "term": "לַחְתּוֹם",
+          "meaning": "to seal (press it into wax or clay)"
+        },
+        {
+          "term": "שׁוֹקֵעַ",
+          "meaning": "sunken, carved inward"
+        }
+      ],
+      "whyThisMatters": "The ברייתא shows that two separate concerns are at work: wearing (חשדא) and producing a raised image (making). This is the same distinction the תירוץ in step 17 relies on.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "כִּדְתַנְיָא: טַבַּעַת, חוֹתָמוֹ בּוֹלֵט —",
+          "english": "As it is taught: a ring whose seal protrudes —"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אָסוּר לְהַנִּיחָהּ וּמוּתָּר לַחְתּוֹם בָּהּ.",
+          "english": "it is forbidden to wear it, but permitted to seal with it.",
+          "notes": "Sealing with it produces a sunken image, which is not forbidden to make."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "חוֹתָמוֹ שׁוֹקֵעַ —",
+          "english": "If its seal is sunken —"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "מוּתָּר לְהַנִּיחָהּ וְאָסוּר לַחְתּוֹם בָּהּ.",
+          "english": "it is permitted to wear it, but forbidden to seal with it.",
+          "notes": "Sealing with it produces a raised image, which counts as making a forbidden image."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "מימרא",
+      "triggerLanguage": "כִּדְתַנְיָא: טַבַּעַת, חוֹתָמוֹ בּוֹלֵט",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        17
+      ],
+      "scopeOfStep": "proof_mechanism",
+      "relationToPreviousStep": "Supports the חשדא answer of step 17.",
+      "raayaObject": "That a raised seal is forbidden to wear because of suspicion",
+      "raayaSupportSource": "A ברייתא about raised and sunken ring seals"
+    },
+    {
+      "stepNumber": 19,
+      "hebrewStepName": "קשיא",
+      "title": "Great rabbis prayed in a shul that had a statue",
+      "stepSummary": "The גמרא asks whether we really worry about חשדא. רב, שמואל, שמואל's father and לוי all prayed in the shul in נהרדעא, which had a statue.",
+      "simpleTranslation": "Do we really worry about suspicion? There was the shul in נהרדעא that had been moved and rebuilt, and it had a statue in it. Yet רב, שמואל, שמואל's father and לוי would go in and pray there without worrying about suspicion!",
+      "whatsHappening": "The גמרא challenges the idea that suspicion is a real concern. It points to a shul with a king's statue where the greatest rabbis prayed anyway.",
+      "deeperAnalysis": "Praying in front of a statue looks far worse than wearing a ring. If these great people ignored suspicion in that setting, why did שמואל worry about it with רב יהודה's ring?",
+      "keyTerms": [
+        {
+          "term": "חָיְישִׁינַן",
+          "meaning": "we are concerned, we worry"
+        },
+        {
+          "term": "בֵּי כְנִישְׁתָּא",
+          "meaning": "a shul (synagogue)"
+        },
+        {
+          "term": "שַׁף וִיתֵיב",
+          "meaning": "'moved and settled'; the name of the shul, whose stones were moved from ארץ ישראל"
+        },
+        {
+          "term": "נְהַרְדְּעָא",
+          "meaning": "נהרדעא, a major Jewish city in בבל"
+        },
+        {
+          "term": "אִנְדְּרָטָא",
+          "meaning": "a statue (of the king)"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וּמִי חָיְישִׁינַן לַחֲשָׁדָא?",
+          "english": "And do we worry about suspicion?"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וְהָא הָהִיא בֵּי כְנִישְׁתָּא",
+          "english": "But there was that synagogue"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "דְּשַׁף וִיתֵיב בִּנְהַרְדְּעָא,",
+          "english": "that was moved and settled in Nehardea,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "דַּהֲוָה בֵּיהּ אִנְדְּרָטָא,",
+          "english": "which had a statue in it,"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "וַהֲווֹ עָיְילִי רַב וּשְׁמוּאֵל",
+          "english": "and Rav and Shmuel would enter,"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "וַאֲבוּהּ דִּשְׁמוּאֵל וְלֵוִי",
+          "english": "and Shmuel's father and Levi,"
+        },
+        {
+          "phraseNumber": 7,
+          "aramaic": "וּמְצַלּוּ הָתָם,",
+          "english": "and pray there,"
+        },
+        {
+          "phraseNumber": 8,
+          "aramaic": "וְלָא חָיְישִׁי לַחֲשָׁדָא!",
+          "english": "and they did not worry about suspicion!"
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "",
+      "triggerLanguage": "וּמִי חָיְישִׁינַן לַחֲשָׁדָא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        17,
+        18
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Challenges the חשדא reasoning of step 17.",
+      "kashyaTarget": "The claim that חשדא is a real concern",
+      "kashyaAttackLogic": "Great rabbis prayed in front of a statue, which looks much worse than wearing a ring, and did not worry about suspicion. So חשדא should not explain שמואל's ruling."
+    },
+    {
+      "stepNumber": 20,
+      "hebrewStepName": "תירוץ",
+      "title": "When many people are present, there is no suspicion",
+      "stepSummary": "A shul is full of people, and no one suspects a crowd of serving עבודה זרה.",
+      "simpleTranslation": "Many people are different.",
+      "whatsHappening": "The גמרא answers that suspicion only applies to an individual. In a public place with many people, no one thinks the statue is being worshipped.",
+      "deeperAnalysis": "A person alone with an image might be suspected. A whole congregation will not be suspected, and the statue is assumed to be decoration. So רב יהודה, as an individual, still had a suspicion problem.",
+      "keyTerms": [
+        {
+          "term": "רַבִּים",
+          "meaning": "many people, the public"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "רַבִּים שָׁאנֵי.",
+          "english": "Many people are different."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "",
+      "triggerLanguage": "רַבִּים שָׁאנֵי",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        19
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Answers the קשיא of step 19.",
+      "terutzResolutionType": "Distinguishing the case: public versus individual",
+      "terutzHavaAmina": "The shul in נהרדעא seemed to show that suspicion is ignored.",
+      "terutzMaskana": "Suspicion applies only to an individual, not to a crowd."
+    },
+    {
+      "stepNumber": 21,
+      "hebrewStepName": "קשיא",
+      "title": "But רבן גמליאל was an individual",
+      "stepSummary": "If suspicion applies to individuals, רבן גמליאל should have had a problem, since his moon-pictures were his private possession.",
+      "simpleTranslation": "But wasn't רבן גמליאל an individual?",
+      "whatsHappening": "The גמרא turns the new rule back on רבן גמליאל. He was one person with images, so he should have been suspected too.",
+      "deeperAnalysis": "Step 15 already showed that the image-making איסור does not apply to רבן גמליאל. Now the חשדא concern from steps 17-20 seems to apply to him, since he was an individual.",
+      "keyTerms": [
+        {
+          "term": "יָחִיד",
+          "meaning": "an individual, a single person"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְהָא רַבָּן גַּמְלִיאֵל יָחִיד הוּא?",
+          "english": "But isn't Rabban Gamliel an individual?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "שאלה",
+      "triggerLanguage": "וְהָא רַבָּן גַּמְלִיאֵל יָחִיד הוּא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "returns_to_previous_branch",
+      "dependsOnStepNumbers": [
+        15,
+        20
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Applies the rule from step 20 against רבן גמליאל's case.",
+      "kashyaTarget": "רבן גמליאל's permission to keep the moon-pictures",
+      "kashyaAttackLogic": "If an individual with an image raises suspicion, רבן גמליאל, an individual, should have been forbidden to keep the pictures."
+    },
+    {
+      "stepNumber": 22,
+      "hebrewStepName": "תירוץ",
+      "title": "A נשיא always has many people around him",
+      "stepSummary": "Because רבן גמליאל was the נשיא, many people were always with him, so he counts like רבים.",
+      "simpleTranslation": "Since he is the נשיא, many people are always found with him.",
+      "whatsHappening": "The גמרא answers that רבן גמליאל was never really alone. As the נשיא, he always had crowds around him.",
+      "deeperAnalysis": "The 'many people' rule from step 20 applies to him because of his position. With many people constantly present, no one would suspect the pictures of being for worship.",
+      "keyTerms": [
+        {
+          "term": "כֵּיוָן דְּ",
+          "meaning": "since, because"
+        },
+        {
+          "term": "נָשִׂיא",
+          "meaning": "head of the סנהדרין, leader of the Jewish people"
+        },
+        {
+          "term": "שְׁכִיחִי",
+          "meaning": "are commonly found"
+        },
+        {
+          "term": "גַּבֵּיהּ",
+          "meaning": "with him, near him"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "כֵּיוָן דְּנָשִׂיא הוּא —",
+          "english": "Since he is the Nasi —"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "שְׁכִיחִי רַבִּים גַּבֵּיהּ.",
+          "english": "many people are commonly found with him."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "",
+      "triggerLanguage": "כֵּיוָן דְּנָשִׂיא הוּא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        21
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Answers the קשיא of step 21.",
+      "terutzResolutionType": "Reclassifying the case: the נשיא counts as רבים",
+      "terutzHavaAmina": "רבן גמליאל seemed to be an individual who would be suspected.",
+      "terutzMaskana": "As נשיא, he was always among many people, so there was no suspicion."
+    },
+    {
+      "stepNumber": 23,
+      "hebrewStepName": "תירוץ",
+      "title": "Second answer: the pictures were made of separate pieces",
+      "stepSummary": "A second answer: רבן גמליאל's moon-pictures were in separate pieces that had to be put together, and only a complete image is forbidden.",
+      "simpleTranslation": "If you want, say: they were made of pieces.",
+      "whatsHappening": "The גמרא offers a different way to explain רבן גמליאל. His pictures were not one complete image but separate parts that he assembled when needed.",
+      "deeperAnalysis": "The איסור applies only to a whole image. An image kept in separate pieces is not a complete image, so neither the making איסור nor the suspicion concern applies.",
+      "keyTerms": [
+        {
+          "term": "אִיבָּעֵית אֵימָא",
+          "meaning": "if you want, say (introduces an alternative answer)"
+        },
+        {
+          "term": "פְּרָקִים",
+          "meaning": "separate pieces that are put together"
+        }
+      ],
+      "whatToRemember": "So far there are two answers for רבן גמליאל's moon-pictures. Either others made them and, as נשיא, he was always among many people so there was no suspicion, or they were made of separate pieces and were not a complete image. The next step adds a third answer.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אִיבָּעֵית אֵימָא:",
+          "english": "If you wish, say:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "דִּפְרָקִים הֲוָה.",
+          "english": "it was in pieces.",
+          "notes": "The image was assembled from parts. Only a complete image is forbidden."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "מסקנא",
+      "triggerLanguage": "אִיבָּעֵית אֵימָא: דִּפְרָקִים הֲוָה",
+      "macroPhase": "alternate_branch",
+      "branchRole": "alternative_approach",
+      "dependsOnStepNumbers": [
+        21
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Gives a second, independent answer to the קשיא of step 21 and to the whole question about רבן גמליאל.",
+      "terutzResolutionType": "Redefining the object: not a complete image",
+      "terutzHavaAmina": "רבן גמליאל's pictures seemed to be complete forbidden images.",
+      "terutzMaskana": "They were made of separate pieces, and a non-complete image is permitted."
+    },
+    {
+      "stepNumber": 24,
+      "hebrewStepName": "תירוץ",
+      "title": "A third answer: רבן גמליאל made the pictures in order to learn",
+      "stepSummary": "The גמרא gives one more answer for רבן גמליאל: he made the moon-pictures to learn, and the Torah only forbids learning foreign practices in order to copy them. Learning in order to understand and to teach is allowed.",
+      "simpleTranslation": "Or, if you want, say this: he made them in order to learn. It is written, \"You shall not learn to do.\" This means you may not learn in order to do. But you may learn in order to understand and to teach.",
+      "whatsHappening": "The גמרא gives a third answer to the question about רבן גמליאל's moon-pictures. It says he made them for learning, and the Torah allows that.",
+      "deeperAnalysis": "The first two answers were technical: he was like רבים, or the picture came in separate pieces. This answer is different. It says that even a forbidden image may be made when the purpose is learning, based on a careful reading of the פסוק: the Torah forbids learning ״לַעֲשׂוֹת״, to do, but not learning to understand and to teach. רבן גמליאל needed the pictures to check witnesses for קידוש החודש, which is exactly 'understanding and teaching.'",
+      "keyTerms": [
+        {
+          "term": "וְאִיבָּעֵית אֵימָא",
+          "meaning": "'And if you wish, say' — the גמרא is offering another answer"
+        },
+        {
+          "term": "לְהִתְלַמֵּד",
+          "meaning": "In order to learn / to teach himself"
+        },
+        {
+          "term": "לֹא תִּלְמַד לַעֲשׂוֹת",
+          "meaning": "'You shall not learn to do' (דברים י״ח:ט) — do not learn the ways of the nations in order to copy them"
+        },
+        {
+          "term": "לְהָבִין וּלְהוֹרוֹת",
+          "meaning": "To understand and to teach or give rulings — this kind of learning is allowed"
+        }
+      ],
+      "whatToRemember": "There are three answers for רבן גמליאל's moon-pictures: (1) others made them for him, so he did not do the forbidden making, and as the נשיא he counts like רבים, so there is no suspicion; (2) the pictures were in pieces, and only a complete image is forbidden; (3) he made them to learn, and learning to understand and teach is allowed.",
+      "confusionAlert": "Do not think this answer means the pictures stopped being a forbidden kind of image. They are still in that category. The answer is only that making them for learning is an allowed exception.",
+      "whyThisMatters": "This sets up an important idea: something normally forbidden may be allowed when it is needed for Torah learning and for teaching or ruling properly.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְאִיבָּעֵית אֵימָא:",
+          "english": "And if you wish, say:",
+          "notes": "This tells you another answer is coming."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "לְהִתְלַמֵּד עֲבַד,",
+          "english": "he made them in order to learn,",
+          "notes": "רבן גמליאל made the moon-pictures for study."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וּכְתִיב: ״לֹא תִּלְמַד לַעֲשׂוֹת״ —",
+          "english": "and it is written: \"You shall not learn to do\" —",
+          "notes": "דברים י״ח:ט. The key word is לַעֲשׂוֹת, 'to do.'"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "אֲבָל אַתָּה לָמֵד לְהָבִין וּלְהוֹרוֹת.",
+          "english": "but you may learn in order to understand and to teach.",
+          "notes": "Learning is only forbidden when the goal is copying. Learning to understand is allowed."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "מסקנא",
+      "triggerLanguage": "וְאִיבָּעֵית אֵימָא: לְהִתְלַמֵּד עֲבַד",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "alternative_approach",
+      "dependsOnStepNumbers": [
+        21,
+        22,
+        23
+      ],
+      "scopeOfStep": "exception_case",
+      "relationToPreviousStep": "This is a third, separate answer to the whole question about רבן גמליאל's moon-pictures (the קשיא of step 14, not only step 21), alongside the answers in steps 22 and 23. Since it says he made them himself, it does not depend on step 15's 'others made them.'",
+      "kashyaTarget": "The question from step 21: how could רבן גמליאל keep moon-pictures privately?",
+      "terutzResolutionType": "Purpose-based exception from a פסוק: making them for learning is allowed.",
+      "terutzHavaAmina": "We thought making a forbidden image is never allowed, even by a great person like רבן גמליאל.",
+      "terutzMaskana": "The Torah only forbids learning in order to copy. Making images in order to understand and to rule properly is allowed."
+    },
+    {
+      "stepNumber": 25,
+      "hebrewStepName": "מימרא",
+      "title": "New משנה: two witnesses say they saw the moon in the morning in the east",
+      "stepSummary": "A new משנה opens with a story of two witnesses who came to בית דין and said they had seen the moon in the morning in the east. The rest of the story and the ruling come on the next amud.",
+      "simpleTranslation": "משנה: There was a story where two witnesses came and said: \"We saw the moon in the morning, in the east.\"",
+      "whatsHappening": "A new משנה begins with a story about two witnesses for the new moon. It is only setting up the story here, and the problem and the ruling come next.",
+      "deeperAnalysis": "Seeing the moon in the morning in the east means seeing the old, shrinking moon from the end of the month. Keep this detail in mind. The משנה will soon add what else these witnesses said, and the question will be whether their testimony can be accepted for קידוש החודש.",
+      "keyTerms": [
+        {
+          "term": "מַתְנִיתִין",
+          "meaning": "'Our משנה' — a new משנה is starting"
+        },
+        {
+          "term": "מַעֲשֶׂה",
+          "meaning": "A story or incident that actually happened"
+        },
+        {
+          "term": "שַׁחֲרִית",
+          "meaning": "In the morning"
+        },
+        {
+          "term": "בַּמִּזְרָח",
+          "meaning": "In the east"
+        },
+        {
+          "term": "קִדּוּשׁ הַחֹדֶשׁ",
+          "meaning": "בית דין declaring the new month based on witnesses who saw the new moon"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מַתְנִי׳",
+          "english": "MISHNAH:",
+          "notes": "A new משנה begins here."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "מַעֲשֶׂה שֶׁבָּאוּ שְׁנַיִם",
+          "english": "There was an incident in which two witnesses came",
+          "notes": "They came to בית דין to testify about the moon."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וְאָמְרוּ: רְאִינוּהוּ שַׁחֲרִית בַּמִּזְרָח,",
+          "english": "and they said: We saw it in the morning in the east,",
+          "notes": "This is the old moon at the end of the month. The sentence continues on the next amud."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "מַתְנִי׳ מַעֲשֶׂה שֶׁבָּאוּ שְׁנַיִם וְאָמְרוּ",
+      "macroPhase": "mishnah",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "The discussion of רבן גמליאל's moon-pictures is finished. A new משנה starts a new topic.",
+      "mimraCoreRuling": "No ruling yet. The משנה is only describing the witnesses' testimony, and the ruling comes on the next amud."
+    }
+  ]
+}

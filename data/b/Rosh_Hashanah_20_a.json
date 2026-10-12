@@ -1,0 +1,1816 @@
+{
+  "mainTopic": "The length of אדר, adding a day to אלול for a public need, and when בית דין may delay or advance ראש חודש",
+  "overview": "This amud asks whether the אדר before ניסן is always חסר (29 days). It tests the question with a משנה that lets witnesses break שבת to testify about the new moon of ניסן and תשרי. In a second version, רב נחמן uses that משנה as proof that אדר is always חסר, but the גמרא rejects the proof. רב כהנא then shows that the משנה's reason, the קרבן, only makes sense if the date is uncertain, and the 'always חסר' view is refuted with a תיובתא. Next, עולא reports that בית דין made אלול full so that ראש השנה would not sit next to שבת. עולא says this was for the vegetables, and רבי אחא בר חנינא says it was for the dead. The גמרא works out the practical difference between them and explains why the favor mattered mainly in hot בבל. A ברייתא of רבה בר שמואל seems to forbid adjusting a month for a need. רבא answers that delaying a month is allowed and only sanctifying early is forbidden, and he also offers that the ברייתא follows אחרים. On pressuring witnesses, רבי יוחנן seems to contradict רבי יהושע בן לוי. אביי splits ניסן and תשרי from the other months, and רב דימי reports the rule in reverse. The reason for רב דימי's version comes on the next amud.",
+  "steps": [
+    {
+      "stepNumber": 1,
+      "hebrewStepName": "קשיא",
+      "title": "If אדר is always חסר, why break שבת?",
+      "stepSummary": "The closing part of a challenge against the view that אדר is always חסר.",
+      "simpleTranslation": "But if you say אדר is always חסר, why would the witnesses break שבת?",
+      "whatsHappening": "The גמרא is finishing a challenge. If אדר is always 29 days, everyone already knows when ראש חודש ניסן is, so why does the משנה let witnesses break שבת?",
+      "deeperAnalysis": "Breaking שבת is only allowed when the testimony is truly needed. If the calendar is fixed (אדר always 29 days), the court does not seem to need witnesses at all. So the משנה seems to contradict the 'always short' view.",
+      "keyTerms": [
+        {
+          "term": "לְעוֹלָם חָסֵר",
+          "meaning": "always short (a 29-day month)"
+        },
+        {
+          "term": "אַמַּאי",
+          "meaning": "why?"
+        },
+        {
+          "term": "מְחַלְּלִינַן",
+          "meaning": "we desecrate (break) [שבת]"
+        },
+        {
+          "term": "אִי אָמְרַתְּ",
+          "meaning": "if you say"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֶלָּא אִי אָמְרַתְּ לְעוֹלָם חָסֵר,",
+          "english": "But if you say [Adar] is always short,",
+          "notes": "Continues the challenge that began on the previous amud."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אַמַּאי מְחַלְּלִינַן?",
+          "english": "why do we desecrate [Shabbat]?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אֶלָּא אִי אָמְרַתְּ לְעוֹלָם חָסֵר, אַמַּאי מְחַלְּלִינַן",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "inference",
+      "relationToPreviousStep": "Continues a challenge begun on the previous amud.",
+      "kashyaTarget": "The claim that אדר הסמוך לניסן is always חסר.",
+      "kashyaAttackLogic": "A fixed calendar makes the witnesses unnecessary, so breaking שבת for them should not be allowed. Yet the משנה allows it."
+    },
+    {
+      "stepNumber": 2,
+      "hebrewStepName": "תירוץ",
+      "title": "Because it is a מצוה to sanctify based on sighting",
+      "stepSummary": "Even when the date is known, there is a מצוה to sanctify the month based on witnesses who actually saw the moon.",
+      "simpleTranslation": "Because it is a מצוה to sanctify the month based on actually seeing [the moon].",
+      "whatsHappening": "The גמרא defends the 'always short' view. The witnesses break שבת because of the מצוה of קידוש על הראייה, not because the date is unknown.",
+      "deeperAnalysis": "The answer changes the purpose of the testimony. It is not only for finding out the date. It is also for doing the sanctification the proper way, based on real sighting. That מצוה alone is enough to justify breaking שבת.",
+      "keyTerms": [
+        {
+          "term": "מִצְוָה לְקַדֵּשׁ",
+          "meaning": "a מצוה to sanctify [the new month]"
+        },
+        {
+          "term": "עַל הָרְאִיָּה",
+          "meaning": "based on the sighting [of the moon]"
+        }
+      ],
+      "whatToRemember": "קידוש על הראייה is a מצוה in its own right. It applies even when the date could be figured out without witnesses.",
+      "whyThisMatters": "This idea returns later in this passage (Step 7), where it ends up neutralizing רב נחמן's proof.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מִשּׁוּם דְּמִצְוָה לְקַדֵּשׁ עַל הָרְאִיָּיה.",
+          "english": "Because it is a מצוה to sanctify on the basis of sighting."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "מִשּׁוּם דְּמִצְוָה לְקַדֵּשׁ עַל הָרְאִיָּיה",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        1
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Answers the challenge of step 1.",
+      "terutzResolutionType": "Gives a new reason for the testimony",
+      "terutzHavaAmina": "Witnesses only break שבת when the date is actually unknown.",
+      "terutzMaskana": "Witnesses break שבת to fulfill the מצוה of קידוש על הראייה, even when the date is known."
+    },
+    {
+      "stepNumber": 3,
+      "hebrewStepName": "ראיה",
+      "title": "Second version: רב נחמן cites the משנה as support",
+      "stepSummary": "In an alternate version, רב נחמן says the משנה about breaking שבת for ניסן and תשרי supports the view that אדר is always חסר.",
+      "simpleTranslation": "Some say: רב נחמן said, we too learned this in a משנה: for two months witnesses break שבת, for ניסן and for תשרי.",
+      "whatsHappening": "The גמרא presents a second version (איכא דאמרי). Here the same משנה becomes a proof FOR the 'always short' view. This step only quotes the source; the next steps explain the proof.",
+      "deeperAnalysis": "In the first version, the משנה was a difficulty for 'always short'. Now רב נחמן flips it into support. The משנה is identical; only the reading of it changes.",
+      "keyTerms": [
+        {
+          "term": "אִיכָּא דְּאָמְרִי",
+          "meaning": "some say (introduces an alternate version)"
+        },
+        {
+          "term": "אַף אֲנַן נָמֵי תְּנֵינָא",
+          "meaning": "we too have learned [this in a משנה]"
+        },
+        {
+          "term": "נִיסָן וְתִשְׁרֵי",
+          "meaning": "the months of ניסן and תשרי"
+        }
+      ],
+      "confusionAlert": "This is not a new משנה or a new argument. It is the SAME משנה used in the opposite direction in a second version of the discussion.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אִיכָּא דְּאָמְרִי, אָמַר רַב נַחְמָן,",
+          "english": "Some say: Rav Nachman said,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אַף אֲנַן נָמֵי תְּנֵינָא:",
+          "english": "We too have learned [it in a Mishnah]:"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "עַל שְׁנֵי חֳדָשִׁים מְחַלְּלִין אֶת הַשַּׁבָּת —",
+          "english": "For two months [witnesses] desecrate Shabbat —"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "עַל נִיסָן וְעַל תִּשְׁרִי.",
+          "english": "for Nisan and for Tishrei."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "מימרא",
+      "triggerLanguage": "אִיכָּא דְּאָמְרִי, אָמַר רַב נַחְמָן, אַף אֲנַן נָמֵי תְּנֵינָא",
+      "macroPhase": "alternate_branch",
+      "branchRole": "alternative_approach",
+      "dependsOnStepNumbers": [
+        1,
+        2
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Restarts the discussion in a second version, with the משנה now used as support.",
+      "raayaObject": "The view that אדר הסמוך לניסן is always חסר.",
+      "raayaSupportSource": "The משנה: witnesses may break שבת for ניסן and תשרי."
+    },
+    {
+      "stepNumber": 4,
+      "hebrewStepName": "ראיה",
+      "title": "The משנה fits nicely if אדר is always חסר",
+      "stepSummary": "רב נחמן explains that the 'always short' view explains the משנה well: the witnesses come for the מצוה of קידוש על הראייה.",
+      "simpleTranslation": "It works well if you say אדר is always חסר: that is why they break שבת, because it is a מצוה to sanctify based on sighting.",
+      "whatsHappening": "רב נחמן shows that the 'always short' view explains the משנה smoothly. Since the date is fixed, the only possible reason for the witnesses to travel is the מצוה of sanctifying by sighting.",
+      "deeperAnalysis": "Here the 'מצוה of sighting' reason is the natural explanation, not a defensive answer as it was in step 2. This sets up the comparison with the other view in the next step.",
+      "keyTerms": [
+        {
+          "term": "בִּשְׁלָמָא",
+          "meaning": "it works well / granted"
+        },
+        {
+          "term": "מִשּׁוּם הָכִי",
+          "meaning": "because of this"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אִי אָמְרַתְּ בִּשְׁלָמָא לְעוֹלָם חָסֵר —",
+          "english": "Granted, if you say [Adar] is always short —"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "מִשּׁוּם הָכִי מְחַלְּלִינַן,",
+          "english": "that is why we desecrate [Shabbat],"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "דְּמִצְוָה לְקַדֵּשׁ עַל הָרְאִיָּיה.",
+          "english": "because it is a מצוה to sanctify on the basis of sighting."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אִי אָמְרַתְּ בִּשְׁלָמָא לְעוֹלָם חָסֵר",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        3
+      ],
+      "scopeOfStep": "proof_mechanism",
+      "relationToPreviousStep": "Explains how the משנה cited in step 3 fits the 'always short' view.",
+      "raayaObject": "אדר is always חסר.",
+      "raayaSupportSource": "The משנה, explained through קידוש על הראייה."
+    },
+    {
+      "stepNumber": 5,
+      "hebrewStepName": "ראיה",
+      "title": "If אדר is sometimes full, just add a day",
+      "stepSummary": "Under the view that אדר is sometimes full and sometimes short, the court could avoid חילול שבת by making אדר full and sanctifying the next day.",
+      "simpleTranslation": "But if you say it is sometimes full and sometimes short, why break שבת? Let them make the month full now and sanctify it tomorrow.",
+      "whatsHappening": "רב נחמן finishes his proof by attacking the opposing view. If the court can choose whether אדר has 29 or 30 days, it could simply add a day and spare the witnesses from breaking שבת.",
+      "deeperAnalysis": "Under the flexible view, the court has an easy way out: make אדר full (עיבור) and declare ראש חודש on Sunday. Since breaking שבת should be avoided when possible, the משנה's permission seems to make sense only if אדר is always 29 days.",
+      "keyTerms": [
+        {
+          "term": "זִמְנִין מָלֵא זִמְנִין חָסֵר",
+          "meaning": "sometimes full (30 days), sometimes short (29 days)"
+        },
+        {
+          "term": "נְעַבְּרֵיהּ",
+          "meaning": "let us make it full (add a day)"
+        },
+        {
+          "term": "הָאִידָּנָא",
+          "meaning": "now / today"
+        },
+        {
+          "term": "לִמְחַר",
+          "meaning": "tomorrow"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֶלָּא אִי אָמְרַתְּ זִמְנִין מָלֵא זִמְנִין חָסֵר —",
+          "english": "But if you say it is sometimes full, sometimes short —"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אַמַּאי מְחַלְּלִינַן?",
+          "english": "why do we desecrate [Shabbat]?"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "נְעַבְּרֵיהּ הָאִידָּנָא,",
+          "english": "Let us make it full now,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וּנְקַדְּשֵׁיהּ לִמְחַר.",
+          "english": "and sanctify it tomorrow."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "קשיא",
+      "triggerLanguage": "אֶלָּא אִי אָמְרַתְּ זִמְנִין מָלֵא זִמְנִין חָסֵר, אַמַּאי מְחַלְּלִינַן",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        3,
+        4
+      ],
+      "scopeOfStep": "inference",
+      "relationToPreviousStep": "Completes רב נחמן's proof by showing that the opposing view cannot explain the משנה.",
+      "kashyaTarget": "The view that אדר is sometimes full and sometimes short.",
+      "kashyaAttackLogic": "If the court has the option to add a day, there is no need to break שבת, so the משנה would not allow it."
+    },
+    {
+      "stepNumber": 6,
+      "hebrewStepName": "דחיה",
+      "title": "If day 30 is שבת, that is exactly what we do",
+      "stepSummary": "The גמרא agrees that when day 30 of אדר falls on שבת, the court does add a day, and the witnesses do not break שבת.",
+      "simpleTranslation": "If the thirtieth day falls on שבת, indeed that is so.",
+      "whatsHappening": "The גמרא begins rejecting רב נחמן's proof. It concedes that when day 30 falls on שבת, the court really does make אדר full instead of letting witnesses break שבת. This is the first half of the rejection; the next step finishes it.",
+      "deeperAnalysis": "The rejection accepts רב נחמן's logic for this one case. It does not argue with it. The point is that the משנה must be talking about a different case, which comes next.",
+      "keyTerms": [
+        {
+          "term": "אִקְּלַע",
+          "meaning": "it happened / fell out"
+        },
+        {
+          "term": "הָכִי נָמֵי",
+          "meaning": "indeed, that is so"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אִי דְּאִקְּלַע יוֹם שְׁלֹשִׁים בְּשַׁבָּת —",
+          "english": "If the thirtieth day fell on Shabbat —"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "הָכִי נָמֵי.",
+          "english": "indeed, so it is [we add a day and do not desecrate]."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אִי דְּאִקְּלַע יוֹם שְׁלֹשִׁים בְּשַׁבָּת, הָכִי נָמֵי",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        5
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Begins rejecting the proof built in steps 3–5.",
+      "dechiyaRejectionScope": "Partial concession: רב נחמן's argument is correct for the day-30 case.",
+      "dechiyaFlawIdentified": "רב נחמן assumed the משנה is talking about the day-30 case. It is not."
+    },
+    {
+      "stepNumber": 7,
+      "hebrewStepName": "דחיה",
+      "title": "The משנה means when day 31 falls on Shabbat",
+      "stepSummary": "The משנה refers to a case where day 31 falls on שבת. Nothing can be delayed then, and the witnesses come only for the מצוה of קידוש על הראייה.",
+      "simpleTranslation": "Here we are dealing with a case where the thirty-first day fell on שבת, [and they break שבת] because it is a מצוה to sanctify based on sighting.",
+      "whatsHappening": "The גמרא finishes the rejection. It explains the משנה even according to the 'sometimes full' view: the case is when day 31 is שבת. A month cannot be longer than 30 days, so there is no option to push it off.",
+      "deeperAnalysis": "On day 31, ראש חודש is set no matter what. So the witnesses travel only because of the מצוה of קידוש על הראייה. Since that same reason works for both views, the משנה proves nothing, and רב נחמן's proof falls.",
+      "keyTerms": [
+        {
+          "term": "הָכָא בְּמַאי עָסְקִינַן",
+          "meaning": "with what case are we dealing here? (narrows the case)"
+        },
+        {
+          "term": "יוֹם שְׁלֹשִׁים וְאֶחָד",
+          "meaning": "the thirty-first day"
+        }
+      ],
+      "whatToRemember": "רב נחמן's proof fails. The משנה can refer to day 31 falling on שבת, where the מצוה of קידוש על הראייה justifies breaking שבת under either view.",
+      "confusionAlert": "A month never has more than 30 days. On day 31, the court has no choice left to make, so the 'just add a day' option from step 5 does not exist.",
+      "whyThisMatters": "The same principle, קידוש על הראייה, serves as the answer in both versions. It turns out to be the key to the whole passage.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "הָכָא בְּמַאי עָסְקִינַן:",
+          "english": "Here, with what are we dealing?"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "דְּאִקְּלַע יוֹם שְׁלֹשִׁים וְאֶחָד בְּשַׁבָּת,",
+          "english": "Where the thirty-first day fell on Shabbat,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "דְּמִצְוָה לְקַדֵּשׁ עַל הָרְאִיָּיה.",
+          "english": "[and they desecrate] because it is a מצוה to sanctify on the basis of sighting."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "תירוץ",
+      "triggerLanguage": "הָכָא בְּמַאי עָסְקִינַן",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        2,
+        5,
+        6
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Completes the rejection begun in step 6 by narrowing the משנה to a specific case.",
+      "terutzResolutionType": "אוקימתא (narrowing the case)",
+      "terutzHavaAmina": "The משנה is talking about the day-30 case, where the court could add a day.",
+      "terutzMaskana": "The משנה is talking about day 31 on שבת, where the only reason for the witnesses is קידוש על הראייה. So the משנה fits both views.",
+      "dechiyaRejectionScope": "Full rejection of רב נחמן's proof.",
+      "dechiyaFlawIdentified": "The 'מצוה of sighting' reason is not unique to the 'always short' view."
+    },
+    {
+      "stepNumber": 8,
+      "hebrewStepName": "קשיא",
+      "title": "רב כהנא quotes the next line of the משנה",
+      "stepSummary": "רב כהנא opens an objection by quoting the משנה's rule for when the בית המקדש stood: witnesses broke שבת for every month, for the sake of the קרבן.",
+      "simpleTranslation": "רב כהנא objected: When the בית המקדש stood, they would break שבת even for all the months, to fix the קרבן.",
+      "whatsHappening": "רב כהנא begins an attack by quoting another line from the same משנה. This step sets up his argument, which comes in the next steps.",
+      "deeperAnalysis": "Steps 3-7 quoted only the part of the משנה about today, when witnesses break שבת just for ניסן and תשרי. רב כהנא points to the next line, about the time of the בית המקדש. Back then, witnesses broke שבת for every month, and the stated reason was the קרבן, not the מצוה of seeing the moon.",
+      "keyTerms": [
+        {
+          "term": "מֵתִיב",
+          "meaning": "Raises an objection, usually from a משנה or ברייתא"
+        },
+        {
+          "term": "מְחַלְּלִין",
+          "meaning": "They break (desecrate) שבת"
+        },
+        {
+          "term": "תַּקָּנַת הַקׇּרְבָּן",
+          "meaning": "Making sure the קרבן (the ראש חודש מוסף) is brought on the correct day"
+        },
+        {
+          "term": "כְּשֶׁהַמִּקְדָּשׁ קַיָּים",
+          "meaning": "When the בית המקדש was standing"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מֵתִיב רַב כָּהֲנָא:",
+          "english": "Rav Kahana raised an objection:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "כְּשֶׁהַמִּקְדָּשׁ קַיָּים",
+          "english": "When the Temple was standing"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "מְחַלְּלִין אַף עַל כּוּלָּן,",
+          "english": "they would break Shabbat even for all the months,",
+          "notes": "All months, not just ניסן and תשרי"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "מִפְּנֵי תַּקָּנַת הַקׇּרְבָּן.",
+          "english": "in order to set the offering properly."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "מימרא",
+      "triggerLanguage": "מֵתִיב רַב כָּהֲנָא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        3,
+        4,
+        7
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "After רב נחמן's proof was rejected, opens a new challenge against the 'always חסר' view itself by attacking its reliance on קידוש על הראייה.",
+      "kashyaTarget": "The view that אדר הסמוך לניסן is always חסר, and the defense of it (Steps 2, 4, 7) that witnesses break שבת only for the מצוה of קידוש על הראייה",
+      "kashyaAttackLogic": "The משנה itself gives the קרבן as the reason for breaking שבת. That reason will turn out to require that אדר's length be uncertain."
+    },
+    {
+      "stepNumber": 9,
+      "hebrewStepName": "קשיא",
+      "title": "The reason for Nisan and Tishrei is also the offering",
+      "stepSummary": "Since the other months clearly were not about the מצוה of seeing the moon, ניסן and תשרי must also be about the קרבן.",
+      "simpleTranslation": "Since for all the other months the reason is not the מצוה of sanctifying based on sighting, then for ניסן and תשרי too the reason is not the מצוה of sanctifying based on sighting.",
+      "whatsHappening": "רב כהנא draws an inference from the משנה. The reason for breaking שבת is the same for every month: the קרבן, not the מצוה of קידוש על הראייה.",
+      "deeperAnalysis": "In Step 4, רב נחמן said witnesses break שבת for ניסן just for the מצוה of קידוש על הראייה. רב כהנא answers that the משנה treats all months alike, and for the other months the reason is clearly the קרבן. So ניסן and תשרי also need a practical reason: getting the date right for the קרבן.",
+      "keyTerms": [
+        {
+          "term": "מִדְּכוּלְּהוּ",
+          "meaning": "From (the case of) all the others"
+        },
+        {
+          "term": "מִצְוָה לְקַדֵּשׁ עַל הָרְאִיָּיה",
+          "meaning": "The מצוה to sanctify the month based on witnesses who saw the moon"
+        },
+        {
+          "term": "נָמֵי",
+          "meaning": "Also, too"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מִדְּכוּלְּהוּ לָאו מִשּׁוּם",
+          "english": "Since for all the others it is not because"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "דְּמִצְוָה לְקַדֵּשׁ עַל הָרְאִיָּיה —",
+          "english": "it is a מצוה to sanctify based on the sighting —"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "נִיסָן וְתִשְׁרִי נָמֵי לָאו מִשּׁוּם",
+          "english": "Nisan and Tishrei too are not because"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "דְּמִצְוָה לְקַדֵּשׁ עַל הָרְאִיָּיה.",
+          "english": "it is a מצוה to sanctify based on the sighting."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "ראיה",
+      "triggerLanguage": "מִדְּכוּלְּהוּ לָאו מִשּׁוּם דְּמִצְוָה לְקַדֵּשׁ עַל הָרְאִיָּיה",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        4,
+        7,
+        8
+      ],
+      "scopeOfStep": "inference",
+      "relationToPreviousStep": "Draws the inference from the משנה quoted in Step 8.",
+      "kashyaTarget": "The explanation in Steps 4 and 7 that witnesses travel only for the מצוה of קידוש על הראייה",
+      "kashyaAttackLogic": "The משנה treats all months the same way. The other months are about the קרבן, so ניסן and תשרי must be too."
+    },
+    {
+      "stepNumber": 10,
+      "hebrewStepName": "קשיא",
+      "title": "Only 'sometimes full' explains breaking Shabbat",
+      "stepSummary": "If אדר is sometimes full and sometimes short, witnesses are needed to fix the date for the קרבן. If אדר is always short, the date is already known, so why break שבת?",
+      "simpleTranslation": "It works if you say אדר is sometimes full and sometimes short; that is why they break שבת. But if you say it is always short, why would they break שבת?",
+      "whatsHappening": "רב כהנא finishes his challenge. Breaking שבת for the קרבן only makes sense if the length of אדר is not fixed.",
+      "deeperAnalysis": "If אדר could be 29 or 30 days, בית דין needs the witnesses to know which day is ראש חודש ניסן, so the קרבן is brought on time. If אדר were always 29 days, ראש חודש would already be known. Witnesses would add nothing for the קרבן, so there would be no reason to break שבת.",
+      "keyTerms": [
+        {
+          "term": "אִי אָמְרַתְּ בִּשְׁלָמָא",
+          "meaning": "It works well if you say..."
+        },
+        {
+          "term": "זִמְנִין מָלֵא וְזִמְנִין חָסֵר",
+          "meaning": "Sometimes full (30 days) and sometimes short (29 days)"
+        },
+        {
+          "term": "אַמַּאי",
+          "meaning": "Why?"
+        }
+      ],
+      "confusionAlert": "Do not mix up the two reasons. 'For the מצוה of seeing' was רב נחמן's answer. 'For the קרבן' is the reason in the משנה, and that reason needs an uncertain date to make sense.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אִי אָמְרַתְּ בִּשְׁלָמָא",
+          "english": "It works if you say"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "זִמְנִין מָלֵא וְזִמְנִין חָסֵר,",
+          "english": "that Adar is sometimes full and sometimes short,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "מִשּׁוּם הָכִי מְחַלְּלִינַן.",
+          "english": "that is why we break Shabbat."
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "אֶלָּא אִי אָמְרַתְּ לְעוֹלָם חָסֵר,",
+          "english": "But if you say it is always short,"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "אַמַּאי מְחַלְּלִינַן?",
+          "english": "why would we break Shabbat?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אִי אָמְרַתְּ בִּשְׁלָמָא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        8,
+        9
+      ],
+      "scopeOfStep": "proof_mechanism",
+      "relationToPreviousStep": "Completes רב כהנא's objection by showing which view fits the reason given in the משנה.",
+      "kashyaTarget": "The view that אדר is always חסר",
+      "kashyaAttackLogic": "Breaking שבת for the קרבן requires an unknown date. A fixed 29-day אדר removes any doubt, so there is no reason to break שבת."
+    },
+    {
+      "stepNumber": 11,
+      "hebrewStepName": "מסקנא",
+      "title": "The proof is refuted",
+      "stepSummary": "The גמרא declares רב כהנא's objection a full refutation of the view that אדר is always חסר.",
+      "simpleTranslation": "This is a refutation.",
+      "whatsHappening": "The גמרא rules that the challenge wins. The view that אדר is always חסר is refuted, not just its proof.",
+      "deeperAnalysis": "תיובתא means the objection stands and there is no answer. The משנה's reason for breaking שבת, the קרבן, only makes sense if the date is uncertain. So the משנה refutes the view that אדר is always חסר and fits the view that it is sometimes full and sometimes short.",
+      "keyTerms": [
+        {
+          "term": "תְּיוּבְתָּא",
+          "meaning": "A conclusive refutation; the objection stands"
+        }
+      ],
+      "whatToRemember": "The משנה's reason for breaking שבת (the קרבן) only works if the length of אדר is uncertain. So the משנה cannot prove that אדר is always חסר.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "תְּיוּבְתָּא.",
+          "english": "It is a refutation."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "דחיה",
+      "triggerLanguage": "תְּיוּבְתָּא",
+      "macroPhase": "conclusion",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        3,
+        10
+      ],
+      "scopeOfStep": "proof_mechanism",
+      "relationToPreviousStep": "Accepts רב כהנא's challenge as final.",
+      "maskanaFinalTakeaway": "The view that אדר is always חסר is refuted by the משנה, which allows breaking שבת for the קרבן. That only makes sense if אדר is sometimes full and sometimes short."
+    },
+    {
+      "stepNumber": 12,
+      "hebrewStepName": "מימרא",
+      "title": "עולא reports that Elul was made full",
+      "stepSummary": "עולא arrives from ארץ ישראל and reports that בית דין made אלול a 30-day month.",
+      "simpleTranslation": "When עולא came, he said: They made אלול full.",
+      "whatsHappening": "A new topic begins. עולא reports news from ארץ ישראל: this year בית דין added a day to אלול.",
+      "deeperAnalysis": "Making אלול full means ראש השנה moves one day later. This report brings a new case into the discussion of whether the court may adjust a month's length on purpose.",
+      "keyTerms": [
+        {
+          "term": "כִּי אֲתָא",
+          "meaning": "When he came (from ארץ ישראל to בבל)"
+        },
+        {
+          "term": "עַבְּרוּהּ",
+          "meaning": "They made it full; they added a 30th day"
+        },
+        {
+          "term": "אֱלוּל",
+          "meaning": "The month before תשרי"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "כִּי אֲתָא עוּלָּא, אָמַר:",
+          "english": "When Ulla came, he said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "עַבְּרוּהּ לֶאֱלוּל.",
+          "english": "They made Elul full."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "כִּי אֲתָא עוּלָּא, אָמַר",
+      "macroPhase": "alternate_branch",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Starts a new topic after the refutation closes the previous one.",
+      "mimraCoreRuling": "בית דין in ארץ ישראל made אלול a 30-day month that year."
+    },
+    {
+      "stepNumber": 13,
+      "hebrewStepName": "מימרא",
+      "title": "עולא: Do the Babylonians know what favor we did?",
+      "stepSummary": "עולא says the Babylonian sages should appreciate the favor done for them by making אלול full.",
+      "simpleTranslation": "עולא said: Do our Babylonian colleagues know what favor we did for them?",
+      "whatsHappening": "עולא explains that adding the day to אלול was done on purpose to help the Jews of בבל.",
+      "deeperAnalysis": "Pushing off ראש השנה by a day kept the יום טוב from falling right next to שבת. That would have created two restricted days in a row, which is hard for people. עולא's point is that בית דין sometimes changes a month's length on purpose for a practical benefit.",
+      "keyTerms": [
+        {
+          "term": "חַבְרִין בַּבְלָאֵי",
+          "meaning": "Our Babylonian colleagues (the sages of בבל)"
+        },
+        {
+          "term": "טֵיבוּתָא",
+          "meaning": "A favor, a kindness"
+        },
+        {
+          "term": "בַּהֲדַיְיהוּ",
+          "meaning": "With them, for them"
+        }
+      ],
+      "whyThisMatters": "This shows that בית דין could adjust the calendar on purpose for people's needs. That question becomes important in the discussion that follows.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר עוּלָּא:",
+          "english": "Ulla said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "יָדְעִי חַבְרִין בַּבְלָאֵי",
+          "english": "Do our Babylonian colleagues know"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "מַאי טֵיבוּתָא עָבְדִינַן בַּהֲדַיְיהוּ!",
+          "english": "what favor we did for them!"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אָמַר עוּלָּא: יָדְעִי חַבְרִין בַּבְלָאֵי",
+      "macroPhase": "alternate_branch",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        12
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Explains the purpose behind the report in Step 12.",
+      "mimraCoreRuling": "Making אלול full was a deliberate favor, keeping ראש השנה from falling next to שבת."
+    },
+    {
+      "stepNumber": 14,
+      "hebrewStepName": "שאלה",
+      "title": "What is the favor of a full אלול?",
+      "stepSummary": "The גמרא asks what benefit עולא meant when he said making אלול full was a favor.",
+      "simpleTranslation": "What is the favor?",
+      "whatsHappening": "The גמרא asks what good thing comes from making אלול 30 days. This question sets up the two answers that come next.",
+      "deeperAnalysis": "A full אלול moves ראש השנה (and יום הכפורים) one day later in the week, so it does not sit right next to שבת. The גמרא wants to know why it is bad to have two days of rest in a row.",
+      "keyTerms": [
+        {
+          "term": "טֵיבוּתָא",
+          "meaning": "a favor, a benefit"
+        },
+        {
+          "term": "מַאי",
+          "meaning": "what?"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מַאי טֵיבוּתָא?",
+          "english": "What is the favor?",
+          "notes": "Refers back to עולא's words in Step 13."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "מַאי טֵיבוּתָא",
+      "macroPhase": "opening_question",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [
+        12,
+        13
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Asks for the meaning of the 'favor' mentioned by עולא in Step 13.",
+      "sheelahInformationSought": "What practical benefit comes from making אלול full, so that a holy day does not fall next to שבת?"
+    },
+    {
+      "stepNumber": 15,
+      "hebrewStepName": "תשובה",
+      "title": "עולא: because of the vegetables",
+      "stepSummary": "עולא explains that the benefit is fresh vegetables.",
+      "simpleTranslation": "עולא said: Because of the vegetables.",
+      "whatsHappening": "עולא gives the first answer. Two rest days in a row would leave people without fresh vegetables.",
+      "deeperAnalysis": "Vegetables cannot be picked on שבת or יום טוב. With two holy days back to back, vegetables picked beforehand would wilt, so a full אלול keeps people's food fresh.",
+      "keyTerms": [
+        {
+          "term": "יַרְקַיָּא",
+          "meaning": "vegetables, greens"
+        },
+        {
+          "term": "מִשּׁוּם",
+          "meaning": "because of"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "עוּלָּא אָמַר: מִשּׁוּם יַרְקַיָּא.",
+          "english": "Ulla said: Because of the vegetables.",
+          "notes": "Vegetables picked before two straight days of rest would no longer be fresh."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "מימרא",
+      "triggerLanguage": "עוּלָּא אָמַר: מִשּׁוּם יַרְקַיָּא",
+      "macroPhase": "opening_question",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        14
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "First answer to the question in Step 14.",
+      "teshuvahAnswerProvided": "The favor is that people will have fresh vegetables."
+    },
+    {
+      "stepNumber": 16,
+      "hebrewStepName": "תשובה",
+      "title": "רבי אחא בר חנינא: because of the dead",
+      "stepSummary": "רבי אחא בר חנינא explains that the benefit is that the dead will not go unburied for two days.",
+      "simpleTranslation": "רבי אחא בר חנינא said: Because of the dead.",
+      "whatsHappening": "A second answer is given. Two rest days in a row would mean a person who died could not be buried for two days.",
+      "deeperAnalysis": "Burial is not done on שבת. A body left unburied for two days would begin to decay, which is a disgrace to the dead. A full אלול prevents this.",
+      "keyTerms": [
+        {
+          "term": "מִתַיָּא",
+          "meaning": "the dead"
+        }
+      ],
+      "confusionAlert": "מִתַיָּא means 'the dead.' It does not mean 'when' (מֵאֵימַת).",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "רַבִּי אַחָא בַּר חֲנִינָא אָמַר:",
+          "english": "Rabbi Acha bar Chanina said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "מִשּׁוּם מִתַיָּא.",
+          "english": "Because of the dead.",
+          "notes": "Bodies would go unburied for two days."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "מימרא",
+      "triggerLanguage": "רַבִּי אַחָא בַּר חֲנִינָא אָמַר: מִשּׁוּם מִתַיָּא",
+      "macroPhase": "opening_question",
+      "branchRole": "alternative_approach",
+      "dependsOnStepNumbers": [
+        14
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Second, competing answer to the question in Step 14.",
+      "teshuvahAnswerProvided": "The favor is that the dead are not left unburied for two days."
+    },
+    {
+      "stepNumber": 17,
+      "hebrewStepName": "שאלה",
+      "title": "What is the practical difference between them?",
+      "stepSummary": "The גמרא asks in what case the two reasons would lead to a different result.",
+      "simpleTranslation": "What is the difference between them?",
+      "whatsHappening": "The גמרא asks whether the two opinions ever lead to different results. This sets up the search for a case where they disagree.",
+      "deeperAnalysis": "Both reasons support making אלול full. The גמרא wants to find a real case where one reason requires a full אלול and the other does not.",
+      "keyTerms": [
+        {
+          "term": "מַאי בֵּינַיְיהוּ",
+          "meaning": "what is the difference between them?"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מַאי בֵּינַיְיהוּ?",
+          "english": "What is the difference between them?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "מַאי בֵּינַיְיהוּ",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        15,
+        16
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Compares the two answers given in Steps 15 and 16.",
+      "sheelahInformationSought": "A case where the 'vegetables' reason and the 'dead' reason lead to different rulings."
+    },
+    {
+      "stepNumber": 18,
+      "hebrewStepName": "תשובה",
+      "title": "First attempt: יום הכפורים right after שבת",
+      "stepSummary": "The proposed difference is יום הכפורים on Sunday. Because of the dead, אלול is made full. Because of vegetables, it is not needed, since vegetables are only wanted after the fast ends.",
+      "simpleTranslation": "The difference between them is when יום הכפורים falls right after שבת. The one who says 'because of the dead' would make אלול full. The one who says 'because of the vegetables' would not, because when does a person need vegetables? Only in the evening after the fast, and in the evening he can go out and bring fresh ones.",
+      "whatsHappening": "The גמרא suggests a case where the two reasons give different results: יום הכפורים falling on Sunday.",
+      "deeperAnalysis": "If יום הכפורים is on Sunday, a body would wait from Friday until after Sunday, so the 'dead' reason requires a full אלול. Nobody eats on יום הכפורים, though, and once the fast ends Sunday night a person can go pick fresh vegetables. So the 'vegetables' reason sees no problem.",
+      "keyTerms": [
+        {
+          "term": "מְעַבְּרִינַן",
+          "meaning": "we add a day (we make the month full)"
+        },
+        {
+          "term": "לְאוּרְתָּא",
+          "meaning": "in the evening"
+        },
+        {
+          "term": "טָרַח וּמַיְיתֵי",
+          "meaning": "he takes the trouble and brings"
+        },
+        {
+          "term": "לְאֵימַת",
+          "meaning": "for when?"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אִיכָּא בֵּינַיְיהוּ:",
+          "english": "There is a difference between them:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "יוֹם הַכִּפּוּרִים שֶׁחָל לִהְיוֹת אַחַר הַשַּׁבָּת.",
+          "english": "When Yom Kippur falls right after Shabbat.",
+          "notes": "That is, on Sunday."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "מַאן דְּאָמַר מִשּׁוּם מִתַיָּא — מְעַבְּרִינַן.",
+          "english": "The one who says 'because of the dead': we make Elul full."
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וּמַאן דְּאָמַר מִשּׁוּם יַרְקַיָּא,",
+          "english": "But the one who says 'because of the vegetables':"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "לְאֵימַת קָא בָּעֵי לְהוּ — לְאוּרְתָּא,",
+          "english": "When does he need them? In the evening (after the fast).",
+          "notes": "There is no eating on יום הכפורים itself."
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "לְאוּרְתָּא טָרַח וּמַיְיתֵי.",
+          "english": "In the evening he takes the trouble and brings fresh ones."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אִיכָּא בֵּינַיְיהוּ: יוֹם הַכִּפּוּרִים שֶׁחָל לִהְיוֹת אַחַר הַשַּׁבָּת",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        17
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Answers Step 17 with a proposed case of difference.",
+      "teshuvahAnswerProvided": "יום הכפורים on Sunday: the 'dead' view makes אלול full, while the 'vegetables' view sees no need."
+    },
+    {
+      "stepNumber": 19,
+      "hebrewStepName": "קשיא",
+      "title": "The vegetables view should also worry about the dead",
+      "stepSummary": "Even the 'vegetables' view should make אלול full in that case because of the dead, so the case shows no real difference.",
+      "simpleTranslation": "But even according to the one who says 'because of the vegetables,' let בית דין make אלול full because of the dead!",
+      "whatsHappening": "The גמרא challenges the case from the last step. Everyone cares about the dead, so the 'vegetables' view should also add a day.",
+      "deeperAnalysis": "עולא never said the dead don't matter. He only said vegetables are a reason. In the יום הכפורים case, the problem with the dead still exists, so he would also make אלול full. That erases the proposed difference.",
+      "keyTerms": [
+        {
+          "term": "לְעַבְּרֵיהּ",
+          "meaning": "let him make it full (add a day)"
+        },
+        {
+          "term": "וּלְמַאן דְּאָמַר",
+          "meaning": "and according to the one who says"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וּלְמַאן דְּאָמַר מִשּׁוּם יַרְקַיָּא,",
+          "english": "And according to the one who says 'because of the vegetables,'"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "לְעַבְּרֵיהּ מִשּׁוּם מִתַיָּא!",
+          "english": "let him make it full because of the dead!"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וּלְמַאן דְּאָמַר מִשּׁוּם יַרְקַיָּא, לְעַבְּרֵיהּ מִשּׁוּם מִתַיָּא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        18
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Attacks the proposed difference in Step 18.",
+      "kashyaTarget": "The claim that the 'vegetables' view would not make אלול full when יום הכפורים falls on Sunday.",
+      "kashyaAttackLogic": "The concern for the dead is valid for everyone. Since it applies in this case, both views would make אלול full, and there is no difference."
+    },
+    {
+      "stepNumber": 20,
+      "hebrewStepName": "תירוץ",
+      "title": "Real difference: יום טוב next to שבת",
+      "stepSummary": "The real difference is יום טוב right before or after שבת. The 'vegetables' view adds a day. The 'dead' view does not, since non-Jews may bury on יום טוב.",
+      "simpleTranslation": "Rather, the difference between them is a יום טוב right next to שבת, either before it or after it. The one who says 'because of the vegetables' would make אלול full. The one who says 'because of the dead' would not, because burial can be done by non-Jews.",
+      "whatsHappening": "The גמרא drops its first case and offers a new one: ראש השנה (a יום טוב) falling on Friday or Sunday.",
+      "deeperAnalysis": "In this case the dead are not a problem, because on יום טוב non-Jews may bury the body. So the 'dead' view has no need to add a day. Vegetables still cannot be picked on שבת or יום טוב, so the 'vegetables' view does add a day. Now the two views truly differ.",
+      "keyTerms": [
+        {
+          "term": "אֶלָּא",
+          "meaning": "rather (dropping the earlier answer)"
+        },
+        {
+          "term": "יוֹם טוֹב הַסָּמוּךְ לַשַּׁבָּת",
+          "meaning": "a יום טוב right next to שבת"
+        },
+        {
+          "term": "אֶפְשָׁר בְּעַמְמֵי",
+          "meaning": "it can be done through non-Jews"
+        }
+      ],
+      "confusionAlert": "Here it is the 'vegetables' view that adds a day, the opposite of the first case. Pay attention to which view makes אלול full in each case.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֶלָּא: אִיכָּא בֵּינַיְיהוּ",
+          "english": "Rather, there is a difference between them:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "יוֹם טוֹב הַסָּמוּךְ לַשַּׁבָּת",
+          "english": "a Yom Tov that is right next to Shabbat,",
+          "notes": "Here this means ראש השנה."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "בֵּין מִלְּפָנֶיהָ בֵּין מִלְּאַחֲרֶיהָ.",
+          "english": "whether before it or after it."
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "מַאן דְּאָמַר מִשּׁוּם יַרְקַיָּא — מְעַבְּרִינַן,",
+          "english": "The one who says 'because of the vegetables': we make Elul full,"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "וּמַאן דְּאָמַר מִשּׁוּם מִתַיָּא —",
+          "english": "but the one who says 'because of the dead':"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "אֶפְשָׁר בְּעַמְמֵי.",
+          "english": "it is possible through non-Jews.",
+          "notes": "On יום טוב, non-Jews may bury the dead."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אֶלָּא: אִיכָּא בֵּינַיְיהוּ יוֹם טוֹב הַסָּמוּךְ לַשַּׁבָּת",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "alternative_approach",
+      "dependsOnStepNumbers": [
+        19
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Replaces the rejected case from Step 18 with a new case.",
+      "terutzResolutionType": "Replacement case: a new scenario where the shared concern does not apply.",
+      "terutzHavaAmina": "The difference was thought to be יום הכפורים on Sunday.",
+      "terutzMaskana": "The difference is יום טוב next to שבת, where burial by non-Jews removes the concern about the dead."
+    },
+    {
+      "stepNumber": 21,
+      "hebrewStepName": "קשיא",
+      "title": "The dead view should also worry about vegetables",
+      "stepSummary": "The 'dead' view should still add a day in the יום טוב case because of the vegetables.",
+      "simpleTranslation": "But according to the one who says 'because of the dead,' let בית דין make אלול full because of the vegetables!",
+      "whatsHappening": "The גמרא now turns the same challenge the other way. Wilted vegetables are a problem for everyone, so the 'dead' view should also add a day.",
+      "deeperAnalysis": "Just as the 'vegetables' view had to worry about the dead, the 'dead' view should have to worry about vegetables. If so, the new case shows no difference either.",
+      "keyTerms": [],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וּלְמַאן דְּאָמַר מִשּׁוּם מִתַיָּא,",
+          "english": "And according to the one who says 'because of the dead,'"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "לְעַבְּרֵיהּ מִשּׁוּם יַרְקַיָּא!",
+          "english": "let him make it full because of the vegetables!"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וּלְמַאן דְּאָמַר מִשּׁוּם מִתַיָּא, לְעַבְּרֵיהּ מִשּׁוּם יַרְקַיָּא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        20
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Attacks the new case in Step 20, using the same pattern as Step 19.",
+      "kashyaTarget": "The claim that the 'dead' view would not make אלול full when יום טוב is next to שבת.",
+      "kashyaAttackLogic": "The problem of wilted vegetables still exists in this case, so the 'dead' view should also add a day, and the difference disappears."
+    },
+    {
+      "stepNumber": 22,
+      "hebrewStepName": "תירוץ",
+      "title": "Wilted vegetables can be revived in hot water",
+      "stepSummary": "The 'dead' view does not count vegetables as a real problem, because wilted vegetables can be refreshed in hot water.",
+      "simpleTranslation": "It is possible to fix them with hot water.",
+      "whatsHappening": "The גמרא answers that wilted vegetables are not a serious problem, because soaking them in hot water makes them fresh again.",
+      "deeperAnalysis": "The vegetable problem has an easy fix, so the 'dead' view does not change the calendar for it. That keeps the difference from Step 20 standing: in the יום טוב case only the 'vegetables' view makes אלול full.",
+      "keyTerms": [
+        {
+          "term": "חַמִּימֵי",
+          "meaning": "hot water"
+        }
+      ],
+      "whatToRemember": "A full אלול keeps holy days from sitting next to שבת. עולא's reason is fresh vegetables, and רבי אחא בר חנינא's reason is the dead. The practical difference is יום טוב next to שבת. There the 'vegetables' view adds a day. The 'dead' view does not, since non-Jews can bury on יום טוב and wilted vegetables can be revived in hot water.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֶפְשָׁר בְּחַמִּימֵי.",
+          "english": "It is possible with hot water.",
+          "notes": "Soaking wilted vegetables in hot water restores their freshness."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אֶפְשָׁר בְּחַמִּימֵי",
+      "macroPhase": "conclusion",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        20,
+        21
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Answers the challenge in Step 21 and keeps the difference from Step 20 in place.",
+      "terutzResolutionType": "Minimizing the concern: the problem has a simple fix.",
+      "terutzHavaAmina": "Wilted vegetables should be a reason for everyone to make אלול full.",
+      "terutzMaskana": "Vegetables can be revived in hot water, so the 'dead' view does not add a day for them."
+    },
+    {
+      "stepNumber": 23,
+      "hebrewStepName": "קשיא",
+      "title": "Why did the extra day help only us in בבל?",
+      "stepSummary": "The גמרא asks why עולא said the extra day in אלול helped the people of בבל, when the same reasons should apply in ארץ ישראל too.",
+      "simpleTranslation": "If so, what is special about us? It should help them too!",
+      "whatsHappening": "The גמרא asks a challenge. If the reasons for the extra day are vegetables and the dead, why did עולא say the benefit was for us in בבל and not for those in ארץ ישראל?",
+      "deeperAnalysis": "עולא said the people of בבל should appreciate the favor done for them by making אלול full. But vegetables and burial are problems everywhere. So why did he limit the benefit to בבל?",
+      "keyTerms": [
+        {
+          "term": "אִי הָכִי",
+          "meaning": "If so (if what you said is true)"
+        },
+        {
+          "term": "מַאי שְׁנָא",
+          "meaning": "What is the difference?"
+        },
+        {
+          "term": "לְדִידַן",
+          "meaning": "For us (here, the people of בבל)"
+        },
+        {
+          "term": "לְדִידְהוּ",
+          "meaning": "For them (here, the people of ארץ ישראל)"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אִי הָכִי:",
+          "english": "If so,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "מַאי שְׁנָא לְדִידַן,",
+          "english": "what is different about us (in Babylonia)?",
+          "notes": "Refers to עולא's statement that the Babylonians benefited."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "אֲפִילּוּ לְדִידְהוּ נָמֵי!",
+          "english": "Even for them (in Eretz Yisrael) too!"
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "שאלה",
+      "triggerLanguage": "אִי הָכִי מַאי שְׁנָא לְדִידַן",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        18,
+        20,
+        22
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Now that the reasons (vegetables and the dead) are settled, the גמרא questions why עולא said only בבל benefited.",
+      "kashyaTarget": "עולא's statement that adding a day helped the people of בבל specifically",
+      "kashyaAttackLogic": "The reasons given (wilting vegetables, unburied bodies) are universal, so the benefit should not be limited to one place."
+    },
+    {
+      "stepNumber": 24,
+      "hebrewStepName": "תירוץ",
+      "title": "בבל is hot, ארץ ישראל is not",
+      "stepSummary": "The weather in בבל is hot, so food and bodies spoil quickly. In ארץ ישראל it is cooler, so the problem is less serious.",
+      "simpleTranslation": "For us the weather is hot. For them the weather is not hot.",
+      "whatsHappening": "The גמרא answers that climate makes the difference. The heat of בבל turns two days in a row without fresh vegetables or burial into a real problem.",
+      "deeperAnalysis": "In a hot place, vegetables wilt and a body decays within two days. In the cooler climate of ארץ ישראל, things can last two days without serious damage. So the extra day was a real favor mainly for בבל.",
+      "keyTerms": [
+        {
+          "term": "חֲבִיל",
+          "meaning": "Hot, steamy"
+        },
+        {
+          "term": "עָלְמָא",
+          "meaning": "The world (here: the weather or climate)"
+        }
+      ],
+      "whatToRemember": "The extra day in אלול mattered mainly in hot בבל, where food and the dead cannot wait two days.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "לְדִידַן חֲבִיל לַן עָלְמָא,",
+          "english": "For us, the world (weather) is hot,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "לְדִידְהוּ לָא חֲבִיל לְהוּ עָלְמָא.",
+          "english": "for them, the world (weather) is not hot."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "לְדִידַן חֲבִיל לַן עָלְמָא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        23
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Answers the challenge of step 23.",
+      "terutzResolutionType": "Factual distinction (climate)",
+      "terutzHavaAmina": "The problem of vegetables and the dead is the same everywhere.",
+      "terutzMaskana": "The heat of בבל makes the two-day problem serious there, unlike ארץ ישראל."
+    },
+    {
+      "stepNumber": 25,
+      "hebrewStepName": "קשיא",
+      "title": "A ברייתא says a month may not be adjusted for a need",
+      "stepSummary": "The גמרא challenges the whole idea of adding a day to a month for a practical reason, using a ברייתא of רבה בר שמואל.",
+      "simpleTranslation": "Is that so? But רבה בר שמואל taught: You might think that just as they add a month to a year for a need, they also add a day to a month for a need. So the verse says: 'This month shall be to you the beginning of months.' When you see the moon like this, sanctify the month.",
+      "whatsHappening": "The גמרא brings a ברייתא that seems to say the opposite of everything so far. It says you cannot change a month for a need. Once the new moon is seen, you must sanctify the month.",
+      "deeperAnalysis": "Until now the גמרא assumed a court may add a day to אלול even if the moon was seen on time. The ברייתא seems to forbid exactly that: 'see and sanctify' sounds like you must declare the new month right away. This attacks the basic idea behind steps 18–24.",
+      "keyTerms": [
+        {
+          "term": "אִינִי",
+          "meaning": "Is that really so? (opens a challenge)"
+        },
+        {
+          "term": "וְהָתָנֵי",
+          "meaning": "But wasn't it taught (in a ברייתא)?"
+        },
+        {
+          "term": "מְעַבְּרִין",
+          "meaning": "They add extra time (a month to a year, or a day to a month)"
+        },
+        {
+          "term": "לְצוֹרֶךְ",
+          "meaning": "For a need (a practical reason)"
+        },
+        {
+          "term": "כָּזֶה רְאֵה וְקַדֵּשׁ",
+          "meaning": "See it like this, and sanctify"
+        }
+      ],
+      "confusionAlert": "Adding a month to a year (עיבור שנה) for a need is clearly allowed. The question here is only about adding a day to a month.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אִינִי?!",
+          "english": "Is that so?!"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וְהָתָנֵי רַבָּה בַּר שְׁמוּאֵל:",
+          "english": "But didn't Rabba bar Shmuel teach:"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "יָכוֹל כְּשֵׁם שֶׁמְּעַבְּרִין אֶת הַשָּׁנָה לְצוֹרֶךְ,",
+          "english": "One might think that just as they add a month to the year for a need,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "כָּךְ מְעַבְּרִין אֶת הַחֹדֶשׁ לְצוֹרֶךְ?",
+          "english": "so too they add a day to the month for a need?"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "תַּלְמוּד לוֹמַר:",
+          "english": "Therefore the verse says:"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "״הַחֹדֶשׁ הַזֶּה לָכֶם רֹאשׁ חֳדָשִׁים״",
+          "english": "\"This month shall be to you the beginning of months\"",
+          "notes": "שמות יב:ב"
+        },
+        {
+          "phraseNumber": 7,
+          "aramaic": "כָּזֶה רְאֵה וְקַדֵּשׁ.",
+          "english": "Like this: see and sanctify."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אִינִי וְהָתָנֵי רַבָּה בַּר שְׁמוּאֵל",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [
+        12,
+        13,
+        18,
+        20
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Steps back from the details and challenges the basic premise that a month may be lengthened for a need.",
+      "kashyaTarget": "The assumption that a court may add a day to a month (like אלול) for practical needs",
+      "kashyaAttackLogic": "The ברייתא learns from a פסוק that a month is not adjusted for a need. Once the moon is seen, the month is sanctified."
+    },
+    {
+      "stepNumber": 26,
+      "hebrewStepName": "תירוץ",
+      "title": "Delaying a month is different from sanctifying it early",
+      "stepSummary": "רבא answers that the ברייתא is not about adding a day. It is about sanctifying a month early, which is forbidden.",
+      "simpleTranslation": "רבא said: This is not difficult. Here it is about making the month full (adding a day). There it is about sanctifying it (early).",
+      "whatsHappening": "רבא resolves the contradiction by splitting it into two cases. Adding a day for a need is allowed. Declaring the new month early, before the moon is seen, is not.",
+      "deeperAnalysis": "The earlier discussion allows a court to delay ראש חודש to the 31st even when the moon was seen on time. The ברייתא forbids moving ראש חודש earlier, to the 30th, without seeing the moon. They speak about opposite directions, so there is no contradiction.",
+      "keyTerms": [
+        {
+          "term": "לָא קַשְׁיָא",
+          "meaning": "It is not difficult (introduces a resolution)"
+        },
+        {
+          "term": "לְעַבְּרוֹ",
+          "meaning": "To make it full (add a 30th day, delaying ראש חודש)"
+        },
+        {
+          "term": "לְקַדְּשׁוֹ",
+          "meaning": "To sanctify it (declare ראש חודש, here meaning early)"
+        }
+      ],
+      "confusionAlert": "'Sanctify' here means sanctifying early, on the 30th day, without the moon being seen. Sanctifying on time after witnesses come is of course normal.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר רָבָא, לָא קַשְׁיָא:",
+          "english": "Rava said: It is not difficult:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "כָּאן לְעַבְּרוֹ,",
+          "english": "here, it is about making it full (adding a day),"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "כָּאן לְקַדְּשׁוֹ.",
+          "english": "there, it is about sanctifying it (early)."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אָמַר רָבָא לָא קַשְׁיָא כָּאן לְעַבְּרוֹ כָּאן לְקַדְּשׁוֹ",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        25
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Answers the challenge of step 25.",
+      "terutzResolutionType": "Case distinction (delaying vs. moving early)",
+      "terutzHavaAmina": "The ברייתא forbids any change to a month for a need, including adding a day.",
+      "terutzMaskana": "Adding a day for a need is allowed. Only sanctifying early is forbidden."
+    },
+    {
+      "stepNumber": 27,
+      "hebrewStepName": "תירוץ",
+      "title": "Rereading the ברייתא according to רבא",
+      "stepSummary": "רבא explains the ברייתא's real meaning: one might think a month may be sanctified early for a need, so the פסוק teaches that only after seeing the moon may it be sanctified.",
+      "simpleTranslation": "This is what it means: You might think that just as they add to a year and to a month for a need, they may also sanctify the month (early) for a need. So the verse says: 'This month shall be to you.' Only when you see it like this, sanctify it.",
+      "whatsHappening": "רבא rereads the wording of the ברייתא to fit his answer. He shows that its 'one might think' was really about early sanctification.",
+      "deeperAnalysis": "In רבא's reading, adding a day to a month is now placed on the allowed side, next to adding a month to the year. The thing the פסוק blocks is sanctifying the month before the moon appears. 'See and sanctify' now means you cannot sanctify without seeing.",
+      "keyTerms": [
+        {
+          "term": "וְהָכִי קָאָמַר",
+          "meaning": "And this is what it is saying (rereading a source)"
+        },
+        {
+          "term": "מְקַדְּשִׁין",
+          "meaning": "They sanctify (declare ראש חודש)"
+        }
+      ],
+      "whatToRemember": "A court may delay ראש חודש for a need, but may never declare it early before the moon is seen.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְהָכִי קָאָמַר:",
+          "english": "And this is what it is saying:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "יָכוֹל כְּשֵׁם שֶׁמְּעַבְּרִין אֶת הַשָּׁנָה וְאֶת הַחֹדֶשׁ לְצוֹרֶךְ,",
+          "english": "One might think that just as they add to the year and to the month for a need,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "כָּךְ מְקַדְּשִׁין אֶת הַחֹדֶשׁ לְצוֹרֶךְ",
+          "english": "so too they may sanctify the month (early) for a need"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "תַּלְמוּד לוֹמַר:",
+          "english": "Therefore the verse says:"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "״הַחֹדֶשׁ הַזֶּה לָכֶם״",
+          "english": "\"This month shall be to you\""
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "כָּזֶה רְאֵה וְקַדֵּשׁ.",
+          "english": "Like this: see, and (only then) sanctify."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "מסקנא",
+      "triggerLanguage": "וְהָכִי קָאָמַר",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        25,
+        26
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Completes רבא's answer by showing how the ברייתא's words fit his distinction.",
+      "terutzResolutionType": "Rereading the source (שינוי פירוש)",
+      "terutzHavaAmina": "The ברייתא's 'one might think' was about adding a day to a month.",
+      "terutzMaskana": "The ברייתא's 'one might think' was about sanctifying early. Adding a day is assumed to be allowed."
+    },
+    {
+      "stepNumber": 28,
+      "hebrewStepName": "ראיה",
+      "title": "רבי יהושע בן לוי's ruling on pressuring witnesses supports רבא",
+      "stepSummary": "רבי יהושע בן לוי rules that a court may pressure witnesses in order to delay a month, but not in order to sanctify it early. This matches רבא's distinction.",
+      "simpleTranslation": "This is like what רבי יהושע בן לוי said: They may pressure witnesses about a moon seen on time, in order to make the month full. They may not pressure witnesses about a moon not seen on time, in order to sanctify it.",
+      "whatsHappening": "The גמרא brings a parallel ruling that follows the same rule as רבא. The court may work to delay ראש חודש, but may never push it earlier.",
+      "deeperAnalysis": "If the moon was really seen on the 30th, the court may pressure the witnesses with tough questioning so that their testimony is not accepted and ראש חודש falls on the 31st. If the moon was not seen, the court may not pressure witnesses into testifying that they saw it, which would make ראש חודש early. This is the same 'delay yes, early no' rule as רבא's.",
+      "keyTerms": [
+        {
+          "term": "מְאַיְּימִין",
+          "meaning": "They intimidate or pressure (through tough questioning)"
+        },
+        {
+          "term": "עֵדִים",
+          "meaning": "Witnesses (here, those who saw the new moon)"
+        },
+        {
+          "term": "בִּזְמַנּוֹ",
+          "meaning": "At its proper time (the night of the 30th)"
+        }
+      ],
+      "whatToRemember": "Both רבא and רבי יהושע בן לוי teach one rule: a court may delay ראש חודש for a need, but never make it early.",
+      "whyThisMatters": "It shows that רבא's distinction is a known rule, not just an answer made up to escape the challenge.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְכִי הָא דְּאָמַר רַבִּי יְהוֹשֻׁעַ בֶּן לֵוִי:",
+          "english": "And this is like what Rabbi Yehoshua ben Levi said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "מְאַיְּימִין עַל הָעֵדִים",
+          "english": "They may intimidate the witnesses"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "עַל הַחֹדֶשׁ שֶׁנִּרְאָה בִּזְמַנּוֹ",
+          "english": "about a new moon that was seen at its proper time"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "לְעַבְּרוֹ,",
+          "english": "in order to make the month full (delay ראש חודש),"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "וְאֵין מְאַיְּימִין עַל הָעֵדִים",
+          "english": "but they may not intimidate the witnesses"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "עַל הַחֹדֶשׁ שֶׁלֹּא נִרְאָה בִּזְמַנּוֹ",
+          "english": "about a new moon that was not seen at its proper time"
+        },
+        {
+          "phraseNumber": 7,
+          "aramaic": "לְקַדְּשׁוֹ.",
+          "english": "in order to sanctify it (early)."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "מימרא",
+      "triggerLanguage": "וְכִי הָא דְּאָמַר רַבִּי יְהוֹשֻׁעַ בֶּן לֵוִי",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        26,
+        27
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Brings a parallel ruling that supports רבא's distinction from steps 26–27.",
+      "raayaObject": "רבא's distinction: delaying a month for a need is allowed, sanctifying early is forbidden",
+      "raayaSupportSource": "רבי יהושע בן לוי's ruling on pressuring witnesses",
+      "maskanaFinalTakeaway": "A court may act to delay ראש חודש, but may never act to make it early."
+    },
+    {
+      "stepNumber": 29,
+      "hebrewStepName": "קשיא",
+      "title": "רבי יוחנן allowed pressuring witnesses to start a month early",
+      "stepSummary": "The גמרא challenges רבי יהושע בן לוי's rule with a message from רבי יהודה נשיאה. He reported that רבי יוחנן taught that witnesses may be pressured so that a month can be sanctified early.",
+      "simpleTranslation": "Is that really so? But רבי יהודה נשיאה sent a message to רבי אמי: Know that all his days, רבי יוחנן taught us that we may pressure the witnesses about a moon that was not seen in its time, in order to sanctify the month. Even though they did not see it, they should say, \"We saw it!\"",
+      "whatsHappening": "The גמרא attacks what we just learned. רבי יהושע בן לוי said we may never pressure witnesses in order to start a month early, but רבי יוחנן taught that we may.",
+      "deeperAnalysis": "Step 28 drew a clear line: pressuring witnesses is allowed for delaying a month, but not for starting it early. Here רבי יוחנן allows exactly the forbidden case: pushing witnesses to testify so the month starts on day 30, even though the moon was not seen. That is a head-on contradiction to רבי יהושע בן לוי, and to רבא's distinction that rested on him.",
+      "keyTerms": [
+        {
+          "term": "אִינִי",
+          "meaning": "Is that so? An opening word that signals a challenge"
+        },
+        {
+          "term": "שְׁלַח לֵיהּ",
+          "meaning": "He sent him a message"
+        },
+        {
+          "term": "רַבִּי יְהוּדָה נְשִׂיאָה",
+          "meaning": "רבי יהודה the נשיא, head of the סנהדרין"
+        },
+        {
+          "term": "מְאַיְּימִין עַל הָעֵדִים",
+          "meaning": "We pressure or intimidate the witnesses"
+        },
+        {
+          "term": "לְקַדְּשׁוֹ",
+          "meaning": "To sanctify it, meaning to declare the new month"
+        }
+      ],
+      "confusionAlert": "Do not read this as בית דין approving plain lying. The גמרא only reports רבי יוחנן's statement here and does not yet explain what \"they should say we saw it\" means. Right now the only point is that his teaching clashes with רבי יהושע בן לוי.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אִינִי?!",
+          "english": "Is that so?!"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וְהָא שְׁלַח לֵיהּ רַבִּי יְהוּדָה נְשִׂיאָה לְרַבִּי אַמֵּי:",
+          "english": "But Rabbi Yehuda Nesia sent a message to Rabbi Ami:"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "הֱווּ יוֹדְעִין",
+          "english": "Be aware"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "שֶׁכׇּל יָמָיו שֶׁל רַבִּי יוֹחָנָן הָיָה מְלַמְּדֵנוּ:",
+          "english": "that all the days of Rabbi Yochanan he would teach us:"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "מְאַיְּימִין עַל הָעֵדִים",
+          "english": "We may pressure the witnesses"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "עַל הַחֹדֶשׁ שֶׁלֹּא נִרְאָה בִּזְמַנּוֹ — לְקַדְּשׁוֹ,",
+          "english": "about a new moon that was not seen in its time, in order to sanctify it,",
+          "notes": "So that the month starts on day 30 instead of day 31"
+        },
+        {
+          "phraseNumber": 7,
+          "aramaic": "אַף עַל פִּי שֶׁלֹּא רָאוּהוּ, יֹאמְרוּ ״רָאִינוּ״!",
+          "english": "even though they did not see it, they should say: \"We saw it!\""
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "",
+      "triggerLanguage": "אִינִי?! וְהָא שְׁלַח לֵיהּ רַבִּי יְהוּדָה נְשִׂיאָה לְרַבִּי אַמֵּי",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        27,
+        28
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Challenges the support brought in Step 28 from רבי יהושע בן לוי",
+      "kashyaTarget": "רבי יהושע בן לוי's rule that witnesses may not be pressured in order to sanctify a month early",
+      "kashyaAttackLogic": "רבי יוחנן explicitly allows pressuring witnesses so that a month can be sanctified early, which directly contradicts רבי יהושע בן לוי."
+    },
+    {
+      "stepNumber": 30,
+      "hebrewStepName": "תירוץ",
+      "title": "אביי: ניסן and תשרי are different from the other months",
+      "stepSummary": "אביי resolves the contradiction. רבי יוחנן is speaking about נִיסָן and תִּשְׁרֵי, while רבי יהושע בן לוי is speaking about the other months.",
+      "simpleTranslation": "אביי said: This is not difficult. This ruling is about נִיסָן and תִּשְׁרֵי. That ruling is about the other months.",
+      "whatsHappening": "אביי answers the challenge by saying the two rulings deal with different months, so they do not actually disagree.",
+      "deeperAnalysis": "In נִיסָן and תִּשְׁרֵי, the day the month starts sets the dates of the major ימים טובים, such as פסח and סוכות. For those months, רבי יוחנן allows pressure so the month can begin early. For the other months there is no such need, so רבי יהושע בן לוי's ban on starting a month early still applies.",
+      "keyTerms": [
+        {
+          "term": "לָא קַשְׁיָא",
+          "meaning": "It is not difficult; the standard opening of an answer"
+        },
+        {
+          "term": "נִיסָן וְתִשְׁרֵי",
+          "meaning": "The months of ניסן and תשרי, which contain the major ימים טובים"
+        },
+        {
+          "term": "שְׁאָר יַרְחֵי",
+          "meaning": "The other months"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר אַבָּיֵי, לָא קַשְׁיָא:",
+          "english": "Abaye said: This is not difficult:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "הָא בְּנִיסָן וְתִשְׁרִי,",
+          "english": "This ruling is about Nisan and Tishrei,",
+          "notes": "רבי יוחנן's ruling, which allows sanctifying the month early"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "הָא בִּשְׁאָר יַרְחֵי.",
+          "english": "that ruling is about the other months.",
+          "notes": "רבי יהושע בן לוי's ruling, which forbids sanctifying the month early"
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "",
+      "triggerLanguage": "אָמַר אַבָּיֵי, לָא קַשְׁיָא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        29
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Answers the קשיא of Step 29",
+      "terutzResolutionType": "Splitting the cases: the two rulings apply to different months",
+      "terutzHavaAmina": "רבי יוחנן and רבי יהושע בן לוי disagree about every month.",
+      "terutzMaskana": "In נִיסָן and תִּשְׁרֵי a month may be sanctified early for the sake of the festivals. In other months it may not."
+    },
+    {
+      "stepNumber": 31,
+      "hebrewStepName": "תירוץ",
+      "title": "רבא: רבה בר שמואל's ברייתא follows אחרים",
+      "stepSummary": "רבא offers a different approach. The ברייתא of רבה בר שמואל, which did not allow adjusting months for a practical need, reflects the view of אחרים.",
+      "simpleTranslation": "רבא said: That which רבה בר שמואל taught follows the view of אחרים.",
+      "whatsHappening": "רבא gives a new way of understanding the earlier ברייתא. Instead of reinterpreting it, he says it reflects the view of a specific group, אחרים. The next step will bring their ברייתא as proof.",
+      "deeperAnalysis": "The ברייתא of רבה בר שמואל (Step 25) said a month is not adjusted for a practical need. רבי יוחנן's teaching (Step 29) clashed with that ruling. Instead of splitting the months as אביי did, רבא says the ברייתא follows אחרים, who hold the calendar is completely fixed. The חכמים disagree and allow adjusting months for a need, so רבי יוחנן's teaching can follow them.",
+      "keyTerms": [
+        {
+          "term": "דְּתָנֵי",
+          "meaning": "That which he taught, referring to a ברייתא"
+        },
+        {
+          "term": "אֲחֵרִים",
+          "meaning": "\"Others\": an unnamed group of תנאים quoted as a separate opinion"
+        }
+      ],
+      "confusionAlert": "This is not the same move רבא made in Step 26. There he reread the ברייתא as being about sanctifying a month early. Here he leaves its meaning alone and instead assigns it to a particular opinion.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "רָבָא אָמַר: הָא דְּתָנֵי רַבָּה בַּר שְׁמוּאֵל —",
+          "english": "Rava said: That which Rabba bar Shmuel taught"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אֲחֵרִים הִיא.",
+          "english": "follows the view of Acherim."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "מימרא",
+      "triggerLanguage": "רָבָא אָמַר: הָא דְּתָנֵי רַבָּה בַּר שְׁמוּאֵל — אֲחֵרִים הִיא",
+      "macroPhase": "alternate_branch",
+      "branchRole": "alternative_approach",
+      "dependsOnStepNumbers": [
+        25,
+        26,
+        29,
+        30
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Offers רבא's alternative to אביי's answer in Step 30. רבי יוחנן's teaching clashes with the ברייתא of רבה בר שמואל and with רבי יהושע בן לוי. רבא says that ruling belongs to אחרים, so רבי יוחנן can follow the חכמים for all months.",
+      "terutzResolutionType": "Attributing a source to a specific opinion",
+      "terutzHavaAmina": "The ברייתא of רבה בר שמואל is the accepted rule for everyone.",
+      "terutzMaskana": "The ברייתא reflects the view of אחרים, so it does not bind those who allow adjusting the months."
+    },
+    {
+      "stepNumber": 32,
+      "hebrewStepName": "ראיה",
+      "title": "אחרים hold the calendar is fixed: a four-day yearly shift",
+      "stepSummary": "The גמרא quotes the ברייתא of אחרים. Each year's שבועות and ראש השנה fall exactly four days of the week later than the year before, or five days later after a leap year.",
+      "simpleTranslation": "As it was taught in a ברייתא: אחרים say: Between one עצרת and the next, and between one ראש השנה and the next, there are only four days. And if it was a leap year, five.",
+      "whatsHappening": "The גמרא brings the source showing that אחרים hold the months follow a fixed pattern. This proves רבא's claim that the no-adjusting ברייתא matches their view.",
+      "deeperAnalysis": "If the months always alternate between 30 and 29 days, a year is 354 days, which is 50 weeks plus 4 days. That means each holiday always moves exactly four weekdays forward. A leap year is 383 days, which is 54 weeks plus 5 days. A shift that never changes only works if בית דין never lengthens or shortens a month, which is exactly the ruling of רבה בר שמואל.",
+      "keyTerms": [
+        {
+          "term": "דְּתַנְיָא",
+          "meaning": "As it was taught in a ברייתא"
+        },
+        {
+          "term": "עֲצֶרֶת",
+          "meaning": "עצרת, the name חז״ל use for שבועות"
+        },
+        {
+          "term": "בִּלְבַד",
+          "meaning": "Only, exclusively"
+        },
+        {
+          "term": "שָׁנָה מְעוּבֶּרֶת",
+          "meaning": "A leap year, with an extra month added"
+        }
+      ],
+      "whyThisMatters": "It shows that the ban on adjusting months comes from a calendar view that is completely fixed. That view is held by אחרים, not necessarily by the חכמים.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "דְּתַנְיָא, אֲחֵרִים אוֹמְרִים:",
+          "english": "As it is taught in a baraita: Acherim say:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אֵין בֵּין עֲצֶרֶת לַעֲצֶרֶת",
+          "english": "Between one Shavuot and the next there is nothing"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וְאֵין בֵּין רֹאשׁ הַשָּׁנָה לָרֹאשׁ הַשָּׁנָה",
+          "english": "and between one Rosh HaShana and the next there is nothing"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "אֶלָּא אַרְבָּעָה יָמִים בִּלְבַד.",
+          "english": "except four days alone.",
+          "notes": "Four days of the week: 354 days is 50 weeks plus 4 days"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "וְאִם הָיְתָה שָׁנָה מְעוּבֶּרֶת — חֲמִשָּׁה.",
+          "english": "And if it was a leap year, five.",
+          "notes": "383 days is 54 weeks plus 5 days"
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "",
+      "triggerLanguage": "דְּתַנְיָא, אֲחֵרִים אוֹמְרִים",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        31
+      ],
+      "scopeOfStep": "proof_mechanism",
+      "relationToPreviousStep": "Supplies the source behind רבא's claim in Step 31",
+      "raayaObject": "רבא's claim that the ברייתא of רבה בר שמואל follows אחרים",
+      "raayaSupportSource": "The ברייתא of אחרים describing a fixed four-day yearly shift, which assumes the months are never adjusted"
+    },
+    {
+      "stepNumber": 33,
+      "hebrewStepName": "תירוץ",
+      "title": "רב דימי reports the rule in reverse",
+      "stepSummary": "רב דימי מנהרדעא reports רבי יהושע בן לוי's rule the opposite way. Witnesses may be pressured so a month can be sanctified early, but not to block testimony so a month can be delayed.",
+      "simpleTranslation": "רב דימי from נהרדעא taught it the opposite way: We may pressure the witnesses about a moon that was not seen in its time, in order to sanctify the month. But we may not pressure the witnesses about a moon that was seen in its time, in order to add a day to the month.",
+      "whatsHappening": "רב דימי gives another version of רבי יהושע בן לוי's teaching, with the two parts flipped. In this version it matches רבי יוחנן, so the contradiction disappears.",
+      "deeperAnalysis": "In the version from Step 28, delaying was allowed and starting early was forbidden. רב דימי's version allows starting early and forbids delaying. That matches רבי יוחנן's teaching exactly, so no answer like אביי's is needed.",
+      "keyTerms": [
+        {
+          "term": "מַתְנֵי אִיפְּכָא",
+          "meaning": "He teaches it the opposite way"
+        },
+        {
+          "term": "נְהַרְדְּעָא",
+          "meaning": "Nehardea, a major Torah center in בבל"
+        },
+        {
+          "term": "לְעַבְּרוֹ",
+          "meaning": "To lengthen it, meaning to add a 30th day to the old month"
+        }
+      ],
+      "whatToRemember": "There are three ways to deal with רבי יוחנן's teaching. (1) אביי: נִיסָן and תִּשְׁרֵי may be sanctified early, but other months may not. (2) רבא: the no-adjusting ברייתא follows אחרים, whose calendar is fully fixed. (3) רב דימי: רבי יהושע בן לוי's rule is reversed, so starting a month early is allowed and delaying it is forbidden.",
+      "confusionAlert": "Keep track of which version is which. In Step 28, delaying was allowed and starting early was forbidden. In רב דימי's version, the exact opposite is true.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "רַב דִּימִי מִנְּהַרְדְּעָא מַתְנֵי אִיפְּכָא:",
+          "english": "Rav Dimi from Nehardea taught it the opposite way:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "מְאַיְּימִין עַל הָעֵדִים",
+          "english": "We may pressure the witnesses"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "עַל הַחֹדֶשׁ שֶׁלֹּא נִרְאָה בִּזְמַנּוֹ — לְקַדְּשׁוֹ,",
+          "english": "about a new moon that was not seen in its time, in order to sanctify it,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וְאֵין מְאַיְּימִין עַל הָעֵדִים",
+          "english": "but we may not pressure the witnesses"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "עַל הַחֹדֶשׁ שֶׁנִּרְאָה בִּזְמַנּוֹ — לְעַבְּרוֹ.",
+          "english": "about a new moon that was seen in its time, in order to add a day to the month."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "מימרא",
+      "triggerLanguage": "רַב דִּימִי מִנְּהַרְדְּעָא מַתְנֵי אִיפְּכָא",
+      "macroPhase": "alternate_branch",
+      "branchRole": "alternative_approach",
+      "dependsOnStepNumbers": [
+        28,
+        29
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Offers an alternate version of the rule from Step 28 that removes the contradiction raised in Step 29",
+      "terutzResolutionType": "Alternate version of the source (איפכא)",
+      "terutzHavaAmina": "רבי יהושע בן לוי allowed delaying a month but forbade starting it early, which clashes with רבי יוחנן.",
+      "terutzMaskana": "In רב דימי's version, starting a month early is allowed and delaying it is forbidden, which fits רבי יוחנן."
+    },
+    {
+      "stepNumber": 34,
+      "hebrewStepName": "שאלה",
+      "title": "Asking for the reason behind רב דימי's version",
+      "stepSummary": "The גמרא asks what the logic is behind רב דימי מנהרדעא's version of the rule.",
+      "simpleTranslation": "What is the reason?",
+      "whatsHappening": "The גמרא asks why רב דימי's version of the rule makes sense. This is a setup line. The answer comes at the start of the next amud.",
+      "deeperAnalysis": "רב דימי's version seems backwards at first glance. Pressuring witnesses to testify about a new moon they did not actually see sounds worse than pressuring them to stay quiet about one they did see. So the גמרא stops to ask for the logic behind his version.",
+      "keyTerms": [
+        {
+          "term": "מַאי טַעְמָא",
+          "meaning": "What is the reason? A standard question asking for the logic behind a ruling."
+        }
+      ],
+      "confusionAlert": "Do not think the גמרא is rejecting רב דימי here. It is only asking for his reasoning, and the explanation comes at the start of the next amud.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מַאי טַעְמָא —",
+          "english": "What is the reason?",
+          "notes": "Asks for the logic behind רב דימי מנהרדעא's version of רבי יהושע בן לוי's rule. The answer continues on the next amud."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "קשיא",
+      "triggerLanguage": "מַאי טַעְמָא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        33
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Asks for the reasoning behind the reversed version of the rule reported in step 33.",
+      "sheelahInformationSought": "The logic for allowing pressure on witnesses so a month can be sanctified early, but not pressure to stay silent so a month can be delayed, even though pressuring witnesses to testify falsely seems worse."
+    }
+  ]
+}

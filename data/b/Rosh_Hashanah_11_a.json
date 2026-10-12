@@ -1,0 +1,2104 @@
+{
+  "mainTopic": "The ברייתא of רבי אליעזר and רבי יהושע on which great events happened in תשרי or ניסן, and the גמרא's sources for each claim",
+  "overview": "This amud opens at the end of a ברייתא listing events in history and the months they happened in. רבי אליעזר puts creation, the birth and death of the אבות, and the future גאולה in תשרי. רבי יהושע puts them in ניסן. A second ברייתא shows each תנא's proof from the creation verses and from nature, and the גמרא explains how each side reads the other's verse. The two then argue over the month the אבות were born, using the verses 'ירח האיתנים' and 'חדש זיו'. Both sides agree that צדיקים die on their birthday, because הקדוש ברוך הוא completes their years. The גמרא proves that יצחק was born on פסח and works through how long a pregnancy must be. רבי אלעזר uses a גזירה שוה to show that שרה, רחל and חנה were remembered on ראש השנה. Finally, the גמרא begins the source for יוסף leaving prison on ראש השנה, and that proof continues on the next amud.",
+  "steps": [
+    {
+      "stepNumber": 1,
+      "hebrewStepName": "מימרא",
+      "title": "End of רבי אליעזר's list: slavery ended, Egypt redemption, future redemption",
+      "stepSummary": "רבי אליעזר's list closes. Slavery in מצרים ended on ראש השנה, the redemption from מצרים was in ניסן, and the future גאולה will be in תשרי.",
+      "simpleTranslation": "On ראש השנה our forefathers stopped working as slaves in מצרים. In ניסן they were redeemed. In תשרי, in the future, we will be redeemed.",
+      "whatsHappening": "We are joining the last lines of רבי אליעזר's list, which started on the previous amud. He lists major historical events and the months they happened in.",
+      "deeperAnalysis": "רבי אליעזר's key claim is that the future גאולה will be in תשרי, the same month he says the world was created. This is a different month from the redemption from מצרים, which was in ניסן. That last item is exactly what רבי יהושע will dispute in the next step.",
+      "keyTerms": [
+        {
+          "term": "בָּטְלָה עֲבוֹדָה",
+          "meaning": "The slave labor stopped"
+        },
+        {
+          "term": "נִגְאֲלוּ",
+          "meaning": "They were redeemed"
+        },
+        {
+          "term": "עֲתִידִין לִיגָּאֵל",
+          "meaning": "They are destined to be redeemed (the final גאולה)"
+        }
+      ],
+      "confusionAlert": "This is not the start of a new statement. It is the end of רבי אליעזר's list, which began on the previous page. That list includes the claim that the world was created in תשרי.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "בְּרֹאשׁ הַשָּׁנָה בָּטְלָה עֲבוֹדָה",
+          "english": "On Rosh HaShana the labor ceased"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "מֵאֲבוֹתֵינוּ בְּמִצְרַיִם,",
+          "english": "from our forefathers in Egypt;",
+          "notes": "Six months before the Exodus, the plagues began and the slavery stopped."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "בְּנִיסָן נִגְאֲלוּ,",
+          "english": "in Nisan they were redeemed;"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "בְּתִשְׁרִי עֲתִידִין לִיגָּאֵל.",
+          "english": "in Tishrei they are destined to be redeemed in the future."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "בְּרֹאשׁ הַשָּׁנָה בָּטְלָה עֲבוֹדָה מֵאֲבוֹתֵינוּ בְּמִצְרַיִם",
+      "macroPhase": "opening_question",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Continuation of רבי אליעזר's list from the previous page",
+      "mimraCoreRuling": "According to רבי אליעזר, the future redemption will be in תשרי."
+    },
+    {
+      "stepNumber": 2,
+      "hebrewStepName": "מימרא",
+      "title": "רבי יהושע's list: creation and future redemption in ניסן",
+      "stepSummary": "רבי יהושע disagrees. He says the world was created in ניסן, the אבות were born and died in ניסן, and the future גאולה will also be in ניסן.",
+      "simpleTranslation": "רבי יהושע says: In ניסן the world was created. In ניסן the אבות were born and in ניסן they died. On פסח יצחק was born. On ראש השנה שרה, רחל and חנה were remembered by ה׳ and conceived. On ראש השנה יוסף left prison. On ראש השנה the slavery in מצרים ended. In ניסן we were redeemed, and in ניסן we will be redeemed in the future.",
+      "whatsHappening": "רבי יהושע gives his own list, which goes against רבי אליעזר on several points.",
+      "deeperAnalysis": "The main disputes are over creation (ניסן vs. תשרי), the birth and death of the אבות, and the future גאולה (ניסן vs. תשרי). Some items match רבי אליעזר's list, such as the ראש השנה events for שרה, רחל, חנה and יוסף, and the end of the slavery. The disagreement is only about specific events, not about everything.",
+      "keyTerms": [
+        {
+          "term": "נִבְרָא הָעוֹלָם",
+          "meaning": "The world was created"
+        },
+        {
+          "term": "אָבוֹת",
+          "meaning": "The Patriarchs (אברהם, יצחק, יעקב)"
+        },
+        {
+          "term": "נִפְקְדָה",
+          "meaning": "Was 'remembered' by ה׳, meaning she conceived"
+        },
+        {
+          "term": "בֵּית הָאֲסוּרִין",
+          "meaning": "Prison"
+        }
+      ],
+      "whyThisMatters": "This sets up the main debate the rest of this passage will prove: was the world created in תשרי or in ניסן?",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "רַבִּי יְהוֹשֻׁעַ אוֹמֵר:",
+          "english": "Rabbi Yehoshua says:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "בְּנִיסָן נִבְרָא הָעוֹלָם,",
+          "english": "In Nisan the world was created;"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "בְּנִיסָן נוֹלְדוּ אָבוֹת,",
+          "english": "in Nisan the Patriarchs were born;"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "בְּנִיסָן מֵתוּ אָבוֹת,",
+          "english": "in Nisan the Patriarchs died;"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "בְּפֶסַח נוֹלַד יִצְחָק,",
+          "english": "on Passover Isaac was born;"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "בְּרֹאשׁ הַשָּׁנָה נִפְקְדָה שָׂרָה רָחֵל וְחַנָּה,",
+          "english": "on Rosh HaShana Sarah, Rachel, and Hannah were remembered;"
+        },
+        {
+          "phraseNumber": 7,
+          "aramaic": "בְּרֹאשׁ הַשָּׁנָה יָצָא יוֹסֵף מִבֵּית הָאֲסוּרִין,",
+          "english": "on Rosh HaShana Joseph came out of prison;"
+        },
+        {
+          "phraseNumber": 8,
+          "aramaic": "בְּרֹאשׁ הַשָּׁנָה בָּטְלָה עֲבוֹדָה מֵאֲבוֹתֵינוּ בְּמִצְרַיִם,",
+          "english": "on Rosh HaShana the slavery of our forefathers in Egypt ceased;"
+        },
+        {
+          "phraseNumber": 9,
+          "aramaic": "בְּנִיסָן נִגְאֲלוּ",
+          "english": "in Nisan they were redeemed;"
+        },
+        {
+          "phraseNumber": 10,
+          "aramaic": "בְּנִיסָן עֲתִידִין לִיגָּאֵל.",
+          "english": "in Nisan they are destined to be redeemed in the future."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "רַבִּי יְהוֹשֻׁעַ אוֹמֵר: בְּנִיסָן נִבְרָא הָעוֹלָם",
+      "macroPhase": "opening_question",
+      "branchRole": "alternative_approach",
+      "dependsOnStepNumbers": [
+        1
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "An opposing list that disputes רבי אליעזר's dates",
+      "mimraCoreRuling": "The world was created in ניסן, and the future redemption will be in ניסן."
+    },
+    {
+      "stepNumber": 3,
+      "hebrewStepName": "ראיה",
+      "title": "רבי אליעזר's verse proof that the world was created in תשרי",
+      "stepSummary": "A ברייתא brings רבי אליעזר's proof. The creation verse says the earth sprouted grass and trees had fruit. The month when grass sprouts and trees are full of ripe fruit is תשרי.",
+      "simpleTranslation": "A ברייתא teaches: רבי אליעזר says, how do we know the world was created in תשרי? The verse says, 'Let the earth sprout grass, herbs yielding seed, fruit trees.' Which month has the earth sprouting grass while the trees are full of fruit? That is תשרי.",
+      "whatsHappening": "The גמרא brings a ברייתא where רבי אליעזר proves from a פסוק that creation was in תשרי.",
+      "deeperAnalysis": "רבי אליעזר reads the verse as describing two things at once. Grass was just starting to sprout, while the trees already had ripe fruit. That combination fits early autumn (תשרי), when the trees are still full of ripe fruit and the new growing season is starting.",
+      "keyTerms": [
+        {
+          "term": "תַּנְיָא",
+          "meaning": "It was taught in a ברייתא"
+        },
+        {
+          "term": "מִנַּיִן",
+          "meaning": "From where do we know?"
+        },
+        {
+          "term": "תַּדְשֵׁא",
+          "meaning": "Let it sprout"
+        },
+        {
+          "term": "הֱוֵי אוֹמֵר",
+          "meaning": "You must say (the only possible answer is)"
+        }
+      ],
+      "confusionAlert": "Watch the small wording difference. רבי אליעזר says the earth is 'bringing out' grass (just starting) while trees are 'full of' fruit (ripe). רבי יהושע will flip this. That flip is the whole argument.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "תַּנְיָא, רַבִּי אֱלִיעֶזֶר אוֹמֵר:",
+          "english": "It was taught: Rabbi Eliezer says:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "מִנַּיִן שֶׁבְּתִשְׁרִי נִבְרָא הָעוֹלָם —",
+          "english": "From where do we know that the world was created in Tishrei?"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "שֶׁנֶּאֱמַר: ״וַיֹּאמֶר אֱלֹהִים",
+          "english": "As it says: 'And God said:"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "תַּדְשֵׁא הָאָרֶץ דֶּשֶׁא",
+          "english": "Let the earth sprout grass,"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "עֵשֶׂב מַזְרִיעַ זֶרַע עֵץ פְּרִי״.",
+          "english": "herb yielding seed, fruit tree' (Genesis 1:11)."
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "אֵיזֶהוּ חֹדֶשׁ שֶׁהָאָרֶץ מוֹצִיאָה דְּשָׁאִים",
+          "english": "Which is the month when the earth brings forth grass"
+        },
+        {
+          "phraseNumber": 7,
+          "aramaic": "וְאִילָן מָלֵא פֵּירוֹת —",
+          "english": "and the tree is full of fruit?"
+        },
+        {
+          "phraseNumber": 8,
+          "aramaic": "הֱוֵי אוֹמֵר זֶה תִּשְׁרִי.",
+          "english": "You must say: this is Tishrei."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "מימרא",
+      "triggerLanguage": "תַּנְיָא, רַבִּי אֱלִיעֶזֶר אוֹמֵר: מִנַּיִן שֶׁבְּתִשְׁרִי נִבְרָא הָעוֹלָם",
+      "macroPhase": "source_derivation",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [
+        1,
+        2
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Brings the scriptural basis for רבי אליעזר's claim about creation",
+      "raayaObject": "The world was created in תשרי.",
+      "raayaSupportSource": "בראשית א:יא, read as grass just sprouting while trees are full of fruit."
+    },
+    {
+      "stepNumber": 4,
+      "hebrewStepName": "ראיה",
+      "title": "Extra support for תשרי: the rainy season",
+      "stepSummary": "רבי אליעזר adds that תשרי is the season of the first rains. The newly created plants needed rain to grow, and the verse mentions a mist watering the ground.",
+      "simpleTranslation": "That season is the time of the first rains. Rain fell and the plants grew, as the verse says: 'And a mist rose up from the earth.'",
+      "whatsHappening": "רבי אליעזר adds a second support from nature to his תשרי proof.",
+      "deeperAnalysis": "At creation the plants needed water to grow. The season that begins in תשרי is when the first rains (רביעה) come. The פסוק about mist watering the ground matches that rainy season.",
+      "keyTerms": [
+        {
+          "term": "אוֹתוֹ הַפֶּרֶק",
+          "meaning": "That season or period"
+        },
+        {
+          "term": "רְבִיעָה",
+          "meaning": "The first rainfall of the season"
+        },
+        {
+          "term": "אֵד",
+          "meaning": "Mist or vapor"
+        }
+      ],
+      "whatToRemember": "רבי אליעזר's view is תשרי: the trees have ripe fruit, grass is starting to sprout, and the rains begin.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְאוֹתוֹ הַפֶּרֶק זְמַן רְבִיעָה הָיְתָה,",
+          "english": "And that season was the time of the first rains,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וְיָרְדוּ גְּשָׁמִים וְצִימֵּחוּ,",
+          "english": "and rain fell and the plants grew,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "שֶׁנֶּאֱמַר: ״וְאֵד יַעֲלֶה מִן הָאָרֶץ״.",
+          "english": "as it says: 'And a mist went up from the earth' (Genesis 2:6)."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וְאוֹתוֹ הַפֶּרֶק זְמַן רְבִיעָה הָיְתָה",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        3
+      ],
+      "scopeOfStep": "proof_mechanism",
+      "relationToPreviousStep": "Strengthens רבי אליעזר's proof with a seasonal sign",
+      "raayaObject": "Creation in תשרי",
+      "raayaSupportSource": "בראשית ב:ו, the mist watering the ground, matching the rainy season."
+    },
+    {
+      "stepNumber": 5,
+      "hebrewStepName": "ראיה",
+      "title": "רבי יהושע's verse proof that the world was created in ניסן",
+      "stepSummary": "רבי יהושע uses the next verse. The earth brought forth grass and trees were producing fruit. The month when the ground is full of grass and trees are just starting to bud fruit is ניסן.",
+      "simpleTranslation": "רבי יהושע says: how do we know the world was created in ניסן? The verse says, 'The earth brought forth grass, herbs yielding seed, and trees making fruit.' Which month has the earth full of grass while trees are starting to bring out fruit? That is ניסן.",
+      "whatsHappening": "רבי יהושע gives his own פסוק-based proof that creation was in ניסן.",
+      "deeperAnalysis": "רבי יהושע reads the picture the opposite way. The ground was already full of grass, while the trees were only beginning to produce fruit. That describes spring (ניסן), when fields are green and fruit is just budding.",
+      "keyTerms": [
+        {
+          "term": "וַתּוֹצֵא",
+          "meaning": "And it brought forth"
+        },
+        {
+          "term": "עוֹשֶׂה פְּרִי",
+          "meaning": "Making or producing fruit (still in process)"
+        },
+        {
+          "term": "מְלֵיאָה דְּשָׁאִים",
+          "meaning": "Full of grass"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "רַבִּי יְהוֹשֻׁעַ אוֹמֵר:",
+          "english": "Rabbi Yehoshua says:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "מִנַּיִן שֶׁבְּנִיסָן נִבְרָא הָעוֹלָם —",
+          "english": "From where do we know that the world was created in Nisan?"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "שֶׁנֶּאֱמַר: ״וַתּוֹצֵא הָאָרֶץ דֶּשֶׁא",
+          "english": "As it says: 'And the earth brought forth grass,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "עֵשֶׂב מַזְרִיעַ זֶרַע",
+          "english": "herb yielding seed,"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "וְעֵץ עוֹשֶׂה פְּרִי״.",
+          "english": "and tree making fruit' (Genesis 1:12)."
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "אֵיזֶהוּ חֹדֶשׁ שֶׁהָאָרֶץ מְלֵיאָה דְּשָׁאִים",
+          "english": "Which is the month when the earth is full of grass"
+        },
+        {
+          "phraseNumber": 7,
+          "aramaic": "וְאִילָן מוֹצִיא פֵּירוֹת —",
+          "english": "and the tree brings forth fruit?"
+        },
+        {
+          "phraseNumber": 8,
+          "aramaic": "הֱוֵי אוֹמֵר, זֶה נִיסָן.",
+          "english": "You must say: this is Nisan."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "מימרא",
+      "triggerLanguage": "רַבִּי יְהוֹשֻׁעַ אוֹמֵר: מִנַּיִן שֶׁבְּנִיסָן נִבְרָא הָעוֹלָם",
+      "macroPhase": "source_derivation",
+      "branchRole": "alternative_approach",
+      "dependsOnStepNumbers": [
+        2,
+        3
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Parallel opposing proof that mirrors רבי אליעזר's structure",
+      "raayaObject": "The world was created in ניסן.",
+      "raayaSupportSource": "בראשית א:יב, read as the ground full of grass while trees are only beginning to produce fruit."
+    },
+    {
+      "stepNumber": 6,
+      "hebrewStepName": "ראיה",
+      "title": "Extra support for ניסן: the animals' mating season",
+      "stepSummary": "רבי יהושע adds that ניסן is when animals and birds mate. That fits a newly created world that needed to fill up with creatures.",
+      "simpleTranslation": "That season is the time when cattle, wild animals and birds pair up with one another, as the verse says: 'The meadows are clothed with flocks.'",
+      "whatsHappening": "רבי יהושע adds a nature-based support to his ניסן proof, matching רבי אליעזר's rain argument.",
+      "deeperAnalysis": "A new world needed its animals to multiply. Spring (ניסן) is the mating season. The גמרא reads 'לבשו כרים הצאן' as describing the mating itself: the rams (כרים) cover the flocks.",
+      "keyTerms": [
+        {
+          "term": "שֶׁמִּזְדַּוְּוגִין",
+          "meaning": "That they pair up or mate"
+        },
+        {
+          "term": "לָבְשׁוּ כָרִים הַצֹּאן",
+          "meaning": "Literally 'the meadows are clothed with flocks'; for the proof, read as the rams (כרים) covering the flocks, i.e., mating"
+        },
+        {
+          "term": "בְּהֵמָה וְחַיָּה וָעוֹף",
+          "meaning": "Domestic animals, wild animals, and birds"
+        }
+      ],
+      "whatToRemember": "The two views mirror each other. רבי אליעזר: תשרי, with ripe fruit, sprouting grass and rain. רבי יהושע: ניסן, with full grass, budding fruit and animals mating.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְאוֹתוֹ הַפֶּרֶק, זְמַן בְּהֵמָה וְחַיָּה וָעוֹף",
+          "english": "And that season is the time when cattle, beasts, and birds"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "שֶׁמִּזְדַּוְּוגִין זֶה אֵצֶל זֶה,",
+          "english": "mate with one another,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "שֶׁנֶּאֱמַר: ״לָבְשׁוּ כָרִים הַצֹּאן וְגוֹ׳״.",
+          "english": "as it says: 'The meadows are clothed with flocks, etc.' (Psalms 65:14)."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וְאוֹתוֹ הַפֶּרֶק, זְמַן בְּהֵמָה וְחַיָּה וָעוֹף שֶׁמִּזְדַּוְּוגִין זֶה אֵצֶל זֶה",
+      "macroPhase": "source_derivation",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        5
+      ],
+      "scopeOfStep": "proof_mechanism",
+      "relationToPreviousStep": "Strengthens רבי יהושע's proof with a seasonal sign",
+      "raayaObject": "Creation in ניסן",
+      "raayaSupportSource": "תהלים סה:יד, flocks filling the meadows after the spring mating season."
+    },
+    {
+      "stepNumber": 7,
+      "hebrewStepName": "קשיא",
+      "title": "Challenge to רבי אליעזר from 'tree producing fruit'",
+      "stepSummary": "The גמרא asks how רבי אליעזר deals with the verse that רבי יהושע used for ניסן.",
+      "simpleTranslation": "And the other one (רבי אליעזר), isn't it written: 'a tree producing fruit'?!",
+      "whatsHappening": "The גמרא challenges רבי אליעזר. The verse 'עץ עושה פרי' sounds like trees were only starting to make fruit, and that fits ניסן, not תשרי.",
+      "deeperAnalysis": "In Step 5, רבי יהושע used this exact phrase to prove ניסן. Now the גמרא turns it around and asks רבי אליעזר: if the world was created in תשרי, when fruit is already ripe, why does the תורה describe trees as still 'producing' fruit?",
+      "keyTerms": [
+        {
+          "term": "וְאִידַּךְ",
+          "meaning": "And the other one, meaning the other side of the argument"
+        },
+        {
+          "term": "הָא כְּתִיב",
+          "meaning": "But isn't it written? (a formula that opens a challenge from a verse)"
+        },
+        {
+          "term": "עֵץ עוֹשֶׂה פְּרִי",
+          "meaning": "A tree producing fruit, meaning still in the process of making fruit"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְאִידַּךְ נָמֵי,",
+          "english": "And the other one too (how does he explain this?),",
+          "notes": "Here 'the other one' is רבי אליעזר."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "הָא כְּתִיב: ״עֵץ עוֹשֶׂה פְּרִי״!",
+          "english": "Isn't it written: 'a tree producing fruit'!",
+          "notes": "This implies fruit was only beginning to form, which matches ניסן."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וְאִידַּךְ נָמֵי, הָא כְּתִיב",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        3,
+        5
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Turns רבי יהושע's proof-verse from Step 5 into a challenge against רבי אליעזר.",
+      "kashyaTarget": "רבי אליעזר's view that the world was created in תשרי",
+      "kashyaAttackLogic": "The verse describes fruit still forming, which matches ניסן and not תשרי, when fruit is already ripe."
+    },
+    {
+      "stepNumber": 8,
+      "hebrewStepName": "תירוץ",
+      "title": "That verse is a blessing for future generations",
+      "stepSummary": "רבי אליעזר explains that 'עץ עושה פרי' is not describing the moment of creation.",
+      "simpleTranslation": "That verse is written as a blessing for future generations.",
+      "whatsHappening": "רבי אליעזר answers that 'producing fruit' is not a picture of the trees on the day they were created. It is a blessing that trees will keep producing fruit in every future generation.",
+      "deeperAnalysis": "The answer moves the verse from the present to the future. 'Producing fruit' means trees will go on bearing fruit forever. Read that way, the verse says nothing about which month creation happened in, so the challenge falls away.",
+      "keyTerms": [
+        {
+          "term": "לִבְרָכָה",
+          "meaning": "As a blessing"
+        },
+        {
+          "term": "לְדוֹרוֹת",
+          "meaning": "For future generations"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "הָהוּא לִבְרָכָה לְדוֹרוֹת",
+          "english": "That (verse) is as a blessing for future generations",
+          "notes": "Trees will continue producing fruit in every era."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "הוּא דִּכְתִיב.",
+          "english": "is what it is written for.",
+          "notes": ""
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "הָהוּא לִבְרָכָה לְדוֹרוֹת הוּא דִּכְתִיב",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        7
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Answers the challenge of Step 7.",
+      "terutzResolutionType": "Reinterpretation of the verse (a future blessing, not a description of creation)",
+      "terutzHavaAmina": "The verse describes the trees on the day of creation, so creation was in ניסן.",
+      "terutzMaskana": "The verse is a blessing for all future generations, so it does not decide the month of creation."
+    },
+    {
+      "stepNumber": 9,
+      "hebrewStepName": "קשיא",
+      "title": "Challenge to רבי יהושע from 'fruit tree'",
+      "stepSummary": "The גמרא asks how רבי יהושע deals with the verse רבי אליעזר used for תשרי.",
+      "simpleTranslation": "And the other one (רבי יהושע), isn't it written: 'fruit tree'?",
+      "whatsHappening": "Now the גמרא challenges רבי יהושע. The verse 'עץ פרי' sounds like trees were already full of fruit, which fits תשרי.",
+      "deeperAnalysis": "This mirrors Step 7. In Step 3, רבי אליעזר used 'עץ פרי' to show the trees were full of ripe fruit. If creation was in ניסן, when fruit is only budding, how can the תורה call them 'fruit trees' already?",
+      "keyTerms": [
+        {
+          "term": "עֵץ פְּרִי",
+          "meaning": "A fruit tree, meaning a tree already carrying fruit"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְאִידַּךְ נָמֵי,",
+          "english": "And the other one too (how does he explain this?),",
+          "notes": "Here 'the other one' is רבי יהושע."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "הָא כְּתִיב: ״עֵץ פְּרִי״?",
+          "english": "Isn't it written: 'fruit tree'?",
+          "notes": "This implies the trees were already full of ripe fruit, which matches תשרי."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וְאִידַּךְ נָמֵי, הָא כְּתִיב",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        3,
+        5
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "The mirror image of Step 7, now aimed at רבי יהושע.",
+      "kashyaTarget": "רבי יהושע's view that the world was created in ניסן",
+      "kashyaAttackLogic": "The verse describes trees already full of fruit, which matches תשרי and not ניסן."
+    },
+    {
+      "stepNumber": 10,
+      "hebrewStepName": "תירוץ",
+      "title": "Creation was made fully formed",
+      "stepSummary": "רבי יהושע answers with רבי יהושע בן לוי's rule that everything in creation came out complete and mature.",
+      "simpleTranslation": "That follows רבי יהושע בן לוי, who said: everything in creation was made at full height, with full understanding, and in full beauty. As it says: 'The heavens and the earth were finished, and all their host'. Don't read 'their host' (צבאם), read 'their beauty' (צביונם).",
+      "whatsHappening": "רבי יהושע explains that the trees had ripe fruit even in ניסן. That is because creation did not follow the normal seasons: everything was made fully grown from the start.",
+      "deeperAnalysis": "So the ripe fruit does not tell us the season. At the moment they were created, trees were made mature and loaded with fruit, no matter what month it was. The proof comes from rereading צבאם ('their host') as צביונם ('their full form').",
+      "keyTerms": [
+        {
+          "term": "מַעֲשֵׂה בְרֵאשִׁית",
+          "meaning": "The things made during the six days of creation"
+        },
+        {
+          "term": "לְקוֹמָתָן",
+          "meaning": "At their full height and size"
+        },
+        {
+          "term": "לְדַעְתָּן",
+          "meaning": "With their full understanding, or with their own consent"
+        },
+        {
+          "term": "לְצִבְיוֹנָן",
+          "meaning": "In their full form or beauty"
+        },
+        {
+          "term": "אַל תִּקְרֵי",
+          "meaning": "Do not read (the word this way), meaning reread it to draw out a lesson"
+        }
+      ],
+      "whyThisMatters": "This principle, that creation came out fully mature, takes away the strongest textual support for תשרי. It shows that the ripeness of creation cannot tell us the season.",
+      "confusionAlert": "'אל תקרי' does not change the text of the תורה. It is a way of drawing a second layer of meaning from a word that sounds similar.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "הָהוּא כִּדְרַבִּי יְהוֹשֻׁעַ בֶּן לֵוִי.",
+          "english": "That (verse) follows Rabbi Yehoshua ben Levi.",
+          "notes": ""
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "דְּאָמַר רַבִּי יְהוֹשֻׁעַ בֶּן לֵוִי:",
+          "english": "For Rabbi Yehoshua ben Levi said:",
+          "notes": ""
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "כׇּל מַעֲשֵׂה בְרֵאשִׁית לְקוֹמָתָן נִבְרְאוּ,",
+          "english": "All the works of creation were created at their full height,",
+          "notes": "Fully grown, so trees could bear fruit right away."
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "לְדַעְתָּן נִבְרְאוּ,",
+          "english": "they were created with their full understanding,",
+          "notes": ""
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "לְצִבְיוֹנָן נִבְרְאוּ,",
+          "english": "they were created in their full form,",
+          "notes": ""
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "שֶׁנֶּאֱמַר: ״וַיְכֻלּוּ הַשָּׁמַיִם וְהָאָרֶץ וְכׇל צְבָאָם״,",
+          "english": "as it says: 'And the heavens and the earth were finished, and all their host',",
+          "notes": "בראשית ב:א"
+        },
+        {
+          "phraseNumber": 7,
+          "aramaic": "אַל תִּקְרֵי ״צְבָאָם״,",
+          "english": "do not read 'their host',",
+          "notes": ""
+        },
+        {
+          "phraseNumber": 8,
+          "aramaic": "אֶלָּא ״צִבְיוֹנָם״.",
+          "english": "but rather 'their full form'.",
+          "notes": "So the trees were created already full of fruit."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "הָהוּא כִּדְרַבִּי יְהוֹשֻׁעַ בֶּן לֵוִי",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        9
+      ],
+      "scopeOfStep": "proof_mechanism",
+      "relationToPreviousStep": "Answers the challenge of Step 9.",
+      "terutzResolutionType": "A general principle that cancels the inference from the season",
+      "terutzHavaAmina": "Trees full of fruit prove the season was תשרי.",
+      "terutzMaskana": "Creation was made fully mature, so ripe fruit was possible even in ניסן."
+    },
+    {
+      "stepNumber": 11,
+      "hebrewStepName": "ראיה",
+      "title": "Proof that the אבות were born in תשרי",
+      "stepSummary": "רבי אליעזר proves the אבות were born in תשרי from the phrase 'ירח האיתנים'.",
+      "simpleTranslation": "רבי אליעזר says: How do we know the אבות were born in תשרי? As it says: 'All the men of Israel gathered to King שלמה in the month of the איתנים, at the festival.' That is the month in which the mighty ones of the world were born.",
+      "whatsHappening": "The ברייתא moves from creation to its second topic: the birth of the אבות. רבי אליעזר reads 'ירח האיתנים' (the festival month, תשרי) as 'the month of the mighty ones', meaning the אבות.",
+      "deeperAnalysis": "The verse calls the month of סוכות 'ירח האיתנים'. רבי אליעזר takes 'איתנים' as a title for the אבות, the mighty ones of the world. So this name for תשרי is telling us it is the month they were born. The next step will ask how we know 'איתן' means mighty.",
+      "keyTerms": [
+        {
+          "term": "מִנַּיִן",
+          "meaning": "From where do we know?"
+        },
+        {
+          "term": "אָבוֹת",
+          "meaning": "The forefathers: אברהם, יצחק, יעקב"
+        },
+        {
+          "term": "יֶרַח הָאֵיתָנִים",
+          "meaning": "The month of the mighty ones, a biblical name for תשרי"
+        },
+        {
+          "term": "אֵיתָנֵי עוֹלָם",
+          "meaning": "The mighty ones of the world, meaning the אבות"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "רַבִּי אֱלִיעֶזֶר אוֹמֵר:",
+          "english": "Rabbi Eliezer says:",
+          "notes": "The ברייתא continues."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "מִנַּיִן שֶׁבְּתִשְׁרִי נוֹלְדוּ אָבוֹת —",
+          "english": "From where do we know that the Patriarchs were born in Tishrei?",
+          "notes": ""
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "שֶׁנֶּאֱמַר: ״וַיִּקָּהֲלוּ אֶל הַמֶּלֶךְ שְׁלֹמֹה",
+          "english": "As it says: 'And they gathered to King Solomon,",
+          "notes": "מלכים א ח:ב"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "כׇּל אִישׁ יִשְׂרָאֵל",
+          "english": "all the men of Israel,",
+          "notes": ""
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "בְּיֶרַח הָאֵיתָנִים בֶּחָג״,",
+          "english": "in the month of the mighty ones, at the festival',",
+          "notes": "The festival is סוכות, which is in תשרי."
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "יֶרַח שֶׁנּוֹלְדוּ בּוֹ אֵיתָנֵי עוֹלָם.",
+          "english": "the month in which the mighty ones of the world were born.",
+          "notes": "The mighty ones are the אבות."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "מימרא",
+      "triggerLanguage": "רַבִּי אֱלִיעֶזֶר אוֹמֵר: מִנַּיִן",
+      "macroPhase": "source_derivation",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [
+        2
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Moves from the creation dispute to the next part of the ברייתא: the birth of the אבות.",
+      "raayaObject": "That the אבות were born in תשרי",
+      "raayaSupportSource": "מלכים א ח:ב, 'בירח האיתנים בחג'"
+    },
+    {
+      "stepNumber": 12,
+      "hebrewStepName": "שאלה",
+      "title": "How do we know 'איתן' means mighty?",
+      "stepSummary": "The גמרא asks for the source that 'איתן' means strong or mighty.",
+      "simpleTranslation": "How do we see that this word 'איתן' means strong ones?",
+      "whatsHappening": "The גמרא stops to check the key word in רבי אליעזר's proof. This question sets up the next step, which will bring verses to define 'איתן'.",
+      "deeperAnalysis": "The whole proof depends on 'איתנים' meaning 'mighty ones', a title that can fit the אבות. Without a source for that meaning, the derivation has nothing to stand on.",
+      "keyTerms": [
+        {
+          "term": "מַאי מַשְׁמַע",
+          "meaning": "What shows that? Where do we see it?"
+        },
+        {
+          "term": "לִישָּׁנָא דְּתַקִּיפֵי",
+          "meaning": "A word meaning strong or mighty ones"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מַאי מַשְׁמַע",
+          "english": "What shows",
+          "notes": ""
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "דְּהַאי ״אֵיתָן״ לִישָּׁנָא דְּתַקִּיפֵי הוּא —",
+          "english": "that this word 'eitan' is a term for mighty ones?",
+          "notes": ""
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "מַאי מַשְׁמַע",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        11
+      ],
+      "scopeOfStep": "wording",
+      "relationToPreviousStep": "Questions the meaning of the key word in Step 11.",
+      "sheelahInformationSought": "A source showing that 'איתן' means mighty or strong"
+    },
+    {
+      "stepNumber": 13,
+      "hebrewStepName": "תשובה",
+      "title": "Verses showing 'איתן' means mighty and refers to the אבות",
+      "stepSummary": "Several verses show that 'איתן' means strong and that 'איתנים' and 'mountains' refer to the אבות.",
+      "simpleTranslation": "As it is written: 'Strong (איתן) is your dwelling'. And it says: 'Hear, O mountains, the quarrel of ה׳, and you strong ones (איתנים), foundations of the earth'. And it says: 'The voice of my beloved, here he comes, leaping over the mountains, skipping over the hills'. 'Leaping over the mountains' means in the merit of the אבות. 'Skipping over the hills' means in the merit of the אמהות.",
+      "whatsHappening": "The גמרא answers with three verses. The first shows that 'איתן' means strong. The next two show that 'mountains' and 'איתנים' are names for the אבות.",
+      "deeperAnalysis": "'איתן מושבך' shows the basic meaning: strong. The verse in מיכה puts 'mountains' side by side with 'איתנים, foundations of the earth'. The verse in שיר השירים shows that 'mountains' stand for the אבות, whose merit lets the redemption 'leap' ahead early. Put the links together, and 'איתנים' means the אבות.",
+      "keyTerms": [
+        {
+          "term": "וְאוֹמֵר",
+          "meaning": "And it (another verse) says, used to add a further proof"
+        },
+        {
+          "term": "מוֹסְדֵי אָרֶץ",
+          "meaning": "Foundations of the earth"
+        },
+        {
+          "term": "בִּזְכוּת",
+          "meaning": "In the merit of"
+        },
+        {
+          "term": "אִמָּהוֹת",
+          "meaning": "The Matriarchs: שרה, רבקה, רחל, לאה"
+        }
+      ],
+      "whatToRemember": "Each side explains away the other's creation verse: a future blessing for רבי אליעזר, and full-formed creation for רבי יהושע. רבי אליעזר then proves the אבות were born in תשרי from 'ירח האיתנים', since איתנים means mighty ones, which means mountains, which means the אבות.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "כְּדִכְתִיב: ״אֵיתָן מוֹשָׁבֶךָ״,",
+          "english": "As it is written: 'Strong is your dwelling place',",
+          "notes": "במדבר כד:כא. This shows that איתן means strong."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וְאוֹמֵר: ״שִׁמְעוּ הָרִים אֶת רִיב ה׳",
+          "english": "And it says: 'Hear, O mountains, the quarrel of ה׳,",
+          "notes": "מיכה ו:ב"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וְהָאֵיתָנִים מוֹסְדֵי אָרֶץ״,",
+          "english": "and you mighty ones, foundations of the earth',",
+          "notes": "Mountains and איתנים are placed together. Both refer to the אבות."
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וְאוֹמֵר: ״קוֹל דּוֹדִי הִנֵּה זֶה בָּא",
+          "english": "And it says: 'The voice of my beloved, here he comes,",
+          "notes": "שיר השירים ב:ח"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "מְדַלֵּג עַל הֶהָרִים מְקַפֵּץ עַל הַגְּבָעוֹת״.",
+          "english": "leaping over the mountains, skipping over the hills'.",
+          "notes": ""
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "״מְדַלֵּג עַל הֶהָרִים״ — בִּזְכוּת אָבוֹת.",
+          "english": "'Leaping over the mountains' means in the merit of the Patriarchs.",
+          "notes": "The redemption comes early thanks to the merit of the אבות."
+        },
+        {
+          "phraseNumber": 7,
+          "aramaic": "״מְקַפֵּץ עַל הַגְּבָעוֹת״ — בִּזְכוּת אִמָּהוֹת.",
+          "english": "'Skipping over the hills' means in the merit of the Matriarchs.",
+          "notes": ""
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "כְּדִכְתִיב: ״אֵיתָן מוֹשָׁבֶךָ״",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        12
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Answers the question of Step 12.",
+      "teshuvahAnswerProvided": "איתן means strong (במדבר). איתנים are placed together with mountains (מיכה). Mountains stand for the אבות (שיר השירים). So 'ירח האיתנים' is the month of the אבות."
+    },
+    {
+      "stepNumber": 14,
+      "hebrewStepName": "ראיה",
+      "title": "רבי יהושע's verse for ניסן: חדש זיו",
+      "stepSummary": "רבי יהושע proves the אבות were born in ניסן, because the verse calls it 'חדש זיו', the month of the radiant ones.",
+      "simpleTranslation": "רבי יהושע says: How do we know the אבות were born in ניסן? The verse says, 'In the 480th year after בני ישראל left מצרים, in the fourth year, in the month of זיו.' זיו means the month when the radiant ones of the world were born.",
+      "whatsHappening": "Now that we have seen רבי אליעזר's proof for תשרי, רבי יהושע brings his own proof that the אבות were born in ניסן.",
+      "deeperAnalysis": "The verse in מלכים calls the month of the building of the בית המקדש 'זיו'. That month is אייר, but it is also connected with the ניסן season. רבי יהושע reads 'זיו' (shine) as a hint to the 'זיותני עולם', the shining people of the world, who are the אבות. This is a mirror image of how רבי אליעזר read 'איתנים'.",
+      "keyTerms": [
+        {
+          "term": "חֹדֶשׁ זִיו",
+          "meaning": "The month of Ziv (radiance), a name for the spring month"
+        },
+        {
+          "term": "זִיוְתָנֵי עוֹלָם",
+          "meaning": "The radiant ones of the world, meaning the אבות"
+        },
+        {
+          "term": "מִנַּיִן",
+          "meaning": "From where do we know?"
+        },
+        {
+          "term": "אָבוֹת",
+          "meaning": "The Patriarchs: אברהם, יצחק, יעקב"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "רַבִּי יְהוֹשֻׁעַ אוֹמֵר:",
+          "english": "Rabbi Yehoshua says:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "מִנַּיִן שֶׁבְּנִיסָן נוֹלְדוּ אָבוֹת —",
+          "english": "From where do we know that the Patriarchs were born in Nisan?"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "שֶׁנֶּאֱמַר: ״וַיְהִי בִשְׁמוֹנִים שָׁנָה וְאַרְבַּע מֵאוֹת שָׁנָה",
+          "english": "As it says: 'And it was in the four hundred and eightieth year'",
+          "notes": "מלכים א ו:א"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "לְצֵאת בְּנֵי יִשְׂרָאֵל מֵאֶרֶץ מִצְרַיִם",
+          "english": "after the children of Israel left the land of Egypt"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "בַּשָּׁנָה הָרְבִיעִית בְּחֹדֶשׁ זִיו״ —",
+          "english": "in the fourth year, in the month of Ziv'"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "בְּיֶרַח שֶׁנּוֹלְדוּ בּוֹ זִיוְתָנֵי עוֹלָם.",
+          "english": "meaning: in the month in which the radiant ones of the world were born.",
+          "notes": "A wordplay connecting זיו with זיותני"
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "מימרא",
+      "triggerLanguage": "רַבִּי יְהוֹשֻׁעַ אוֹמֵר: מִנַּיִן שֶׁבְּנִיסָן נוֹלְדוּ אָבוֹת",
+      "macroPhase": "source_derivation",
+      "branchRole": "alternative_approach",
+      "dependsOnStepNumbers": [
+        11,
+        12,
+        13
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Parallels רבי אליעזר's proof from 'ירח האיתנים' with a matching proof for ניסן.",
+      "raayaObject": "The אבות were born in ניסן.",
+      "raayaSupportSource": "מלכים א ו:א, 'בחדש זיו', read as 'the month of the radiant ones'."
+    },
+    {
+      "stepNumber": 15,
+      "hebrewStepName": "קשיא",
+      "title": "What does רבי יהושע do with 'ירח האיתנים'?",
+      "stepSummary": "The גמרא asks how רבי יהושע explains the verse 'ירח האיתנים', which רבי אליעזר used for תשרי.",
+      "simpleTranslation": "And the other one too, רבי יהושע: isn't it written, 'in the month of the mighty ones'?",
+      "whatsHappening": "The גמרא challenges רבי יהושע by asking how he deals with רבי אליעזר's verse about תשרי.",
+      "deeperAnalysis": "רבי אליעזר showed that 'איתנים' means the mighty אבות, and the verse calls תשרי by that name. If רבי יהושע says the אבות were born in ניסן, he must explain why תשרי is called the month of the mighty.",
+      "keyTerms": [
+        {
+          "term": "וְאִידַּךְ",
+          "meaning": "And the other one, meaning the other תנא"
+        },
+        {
+          "term": "הָכְתִיב",
+          "meaning": "But isn't it written?"
+        },
+        {
+          "term": "נָמֵי",
+          "meaning": "Also / too"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְאִידַּךְ נָמֵי, הָכְתִיב:",
+          "english": "And the other one too, isn't it written:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "״בְּיֶרַח הָאֵיתָנִים״!",
+          "english": "'In the month of the mighty ones'!",
+          "notes": "מלכים א ח:ב, which refers to תשרי"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וְאִידַּךְ נָמֵי, הָכְתִיב",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        11,
+        14
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Turns רבי אליעזר's verse against רבי יהושע's position.",
+      "kashyaTarget": "רבי יהושע's view that the אבות were born in ניסן",
+      "kashyaAttackLogic": "The verse calls תשרי 'the month of the mighty ones', which was shown to mean the אבות. That seems to place their birth in תשרי."
+    },
+    {
+      "stepNumber": 16,
+      "hebrewStepName": "תירוץ",
+      "title": "תשרי is mighty in מצוות",
+      "stepSummary": "רבי יהושע answers that 'איתנים' refers to תשרי being strong in מצוות, not to the births of the אבות.",
+      "simpleTranslation": "There, it means that the month is strong in מצוות.",
+      "whatsHappening": "The גמרא answers for רבי יהושע: 'איתנים' means mighty, but it describes the month itself, which is full of מצוות.",
+      "deeperAnalysis": "רבי יהושע agrees that 'איתן' means strong. He only changes what is strong: the month is packed with מצוות and ימים טובים, such as ראש השנה, יום כיפור, and סוכות. So the verse is no proof about when the אבות were born.",
+      "keyTerms": [
+        {
+          "term": "הָתָם",
+          "meaning": "There, in that verse"
+        },
+        {
+          "term": "תַּקִּיפֵי",
+          "meaning": "Strong, mighty"
+        },
+        {
+          "term": "מִצְוֹת",
+          "meaning": "Commandments"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "הָתָם, דְּתַקִּיפֵי בְּמִצְוֹת.",
+          "english": "There, it means that it is mighty in מצוות.",
+          "notes": "תשרי has many holidays and their מצוות"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "הָתָם, דְּתַקִּיפֵי בְּמִצְוֹת",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        15
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Answers the challenge from 'ירח האיתנים'.",
+      "terutzResolutionType": "Reinterpretation of the verse",
+      "terutzHavaAmina": "'איתנים' refers to the mighty אבות being born in תשרי.",
+      "terutzMaskana": "'איתנים' describes the month as strong in מצוות."
+    },
+    {
+      "stepNumber": 17,
+      "hebrewStepName": "קשיא",
+      "title": "What does רבי אליעזר do with 'חדש זיו'?",
+      "stepSummary": "The גמרא asks how רבי אליעזר explains 'חדש זיו', which רבי יהושע used for ניסן.",
+      "simpleTranslation": "And the other one too, רבי אליעזר: isn't it written, 'in the month of זיו'?",
+      "whatsHappening": "Now the גמרא turns the same question around and asks how רבי אליעזר explains רבי יהושע's verse.",
+      "deeperAnalysis": "Each side needs a way to read the other's verse. If 'זיו' hints to the radiant אבות, רבי אליעזר must explain what else 'זיו' could mean.",
+      "keyTerms": [
+        {
+          "term": "זִיו",
+          "meaning": "Shine, radiance"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְאִידַּךְ נָמֵי, הָכְתִיב:",
+          "english": "And the other one too, isn't it written:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "״בְּחֹדֶשׁ זִיו״?",
+          "english": "'In the month of Ziv'?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וְאִידַּךְ נָמֵי, הָכְתִיב",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        14
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Mirrors step 15, now challenging רבי אליעזר.",
+      "kashyaTarget": "רבי אליעזר's view that the אבות were born in תשרי",
+      "kashyaAttackLogic": "The spring month is called 'זיו', which was read as the month of the radiant אבות."
+    },
+    {
+      "stepNumber": 18,
+      "hebrewStepName": "תירוץ",
+      "title": "זיו means the shine of the trees",
+      "stepSummary": "רבי אליעזר answers that 'זיו' refers to the radiance of the trees blossoming in the spring.",
+      "simpleTranslation": "That verse means it is the month in which the trees have radiance.",
+      "whatsHappening": "The גמרא answers for רבי אליעזר: 'זיו' is about the beauty of nature in spring, not about the אבות.",
+      "deeperAnalysis": "רבי אליעזר keeps the meaning 'shine' but changes who is shining. It is the trees, which blossom and look beautiful in the spring. This takes away רבי יהושע's proof.",
+      "keyTerms": [
+        {
+          "term": "זִיוָא",
+          "meaning": "Radiance (Aramaic)"
+        },
+        {
+          "term": "אִילָנֵי",
+          "meaning": "Trees"
+        },
+        {
+          "term": "הַהוּא",
+          "meaning": "That one (that verse)"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "הַהוּא, דְּאִית בֵּיהּ זִיוָא לְאִילָנֵי.",
+          "english": "That verse means the month in which there is radiance for the trees."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "הַהוּא, דְּאִית בֵּיהּ זִיוָא לְאִילָנֵי",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        17
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Answers the challenge from 'חדש זיו'.",
+      "terutzResolutionType": "Reinterpretation of the verse",
+      "terutzHavaAmina": "'זיו' refers to the radiant אבות born in that month.",
+      "terutzMaskana": "'זיו' refers to the blossoming of the trees in the spring."
+    },
+    {
+      "stepNumber": 19,
+      "hebrewStepName": "ראיה",
+      "title": "רב יהודה's blessing on blossoming trees",
+      "stepSummary": "The גמרא supports the 'trees' reading with רב יהודה's ברכה said when seeing trees blossom in ניסן.",
+      "simpleTranslation": "As רב יהודה said: Someone who goes out in the days of ניסן and sees trees blossoming says, 'Blessed is He who did not leave His world lacking anything, and created in it good creatures and good trees for people to enjoy.'",
+      "whatsHappening": "The גמרא brings support that ניסן is known as a time of beautiful blossoming trees.",
+      "deeperAnalysis": "רב יהודה's ברכה shows that the blossoming trees of ניסן are a known and special sight, important enough to have its own ברכה. This makes it reasonable to say that 'זיו' describes the shine of the trees.",
+      "keyTerms": [
+        {
+          "term": "דִּמְלַבְלְבִי",
+          "meaning": "That are blossoming"
+        },
+        {
+          "term": "לְהִתְנָאוֹת",
+          "meaning": "To enjoy, to benefit from"
+        },
+        {
+          "term": "רַב יְהוּדָה",
+          "meaning": "An אמורא who taught many ברכות"
+        },
+        {
+          "term": "בִּרְכַּת הָאִילָנוֹת",
+          "meaning": "The blessing on blossoming trees"
+        }
+      ],
+      "whyThisMatters": "This is the source for the practical הלכה of ברכת האילנות, which is said once a year on fruit trees in bloom, usually during ניסן.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "דְּאָמַר רַב יְהוּדָה:",
+          "english": "As Rav Yehuda said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "הַאי מַאן דִּנְפַק בְּיוֹמֵי נִיסָן",
+          "english": "One who goes out in the days of Nisan"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וְחָזֵי אִילָנֵי דִּמְלַבְלְבִי,",
+          "english": "and sees trees that are blossoming,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "אוֹמֵר: בָּרוּךְ שֶׁלֹּא חִיסֵּר מֵעוֹלָמוֹ כְּלוּם,",
+          "english": "says: Blessed is He who did not leave His world lacking anything,"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "וּבָרָא בּוֹ בְּרִיּוֹת טוֹבוֹת וְאִילָנוֹת טוֹבוֹת",
+          "english": "and created in it good creatures and good trees"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "לְהִתְנָאוֹת בָּהֶן בְּנֵי אָדָם.",
+          "english": "for people to enjoy them."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "תירוץ",
+      "triggerLanguage": "דְּאָמַר רַב יְהוּדָה",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        18
+      ],
+      "scopeOfStep": "proof_mechanism",
+      "relationToPreviousStep": "Backs up the answer in step 18.",
+      "raayaObject": "ניסן is the month in which the trees shine.",
+      "raayaSupportSource": "רב יהודה's ברכת האילנות, said in ניסן"
+    },
+    {
+      "stepNumber": 20,
+      "hebrewStepName": "מימרא",
+      "title": "The אבות died in the same month they were born",
+      "stepSummary": "Each opinion holds that the אבות died in the same month as their birth: ניסן according to רבי יהושע, תשרי according to רבי אליעזר.",
+      "simpleTranslation": "The one who says they were born in ניסן says they died in ניסן. The one who says they were born in תשרי says they died in תשרי.",
+      "whatsHappening": "The גמרא adds a new rule: according to both sides, the אבות died in their birth month. The next step brings the proof for this.",
+      "deeperAnalysis": "This is not a new argument between them. Both agree on the principle that birth and death fall in the same month. They only disagree about which month it was.",
+      "keyTerms": [
+        {
+          "term": "מַאן דְּאָמַר",
+          "meaning": "The one who says"
+        },
+        {
+          "term": "מֵתוּ",
+          "meaning": "They died"
+        },
+        {
+          "term": "נוֹלְדוּ",
+          "meaning": "They were born"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מַאן דְּאָמַר בְּנִיסָן נוֹלְדוּ —",
+          "english": "The one who says they were born in Nisan"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "בְּנִיסָן מֵתוּ.",
+          "english": "holds they died in Nisan."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "מַאן דְּאָמַר בְּתִשְׁרִי נוֹלְדוּ —",
+          "english": "The one who says they were born in Tishrei"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "בְּתִשְׁרִי מֵתוּ,",
+          "english": "holds they died in Tishrei,"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "מַאן דְּאָמַר בְּנִיסָן נוֹלְדוּ",
+      "macroPhase": "opening_question",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [
+        11,
+        14
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Extends the debate from birth to death.",
+      "mimraCoreRuling": "According to both views, the אבות died in the same month in which they were born."
+    },
+    {
+      "stepNumber": 21,
+      "hebrewStepName": "ראיה",
+      "title": "משה's 'today' shows a completed year",
+      "stepSummary": "The extra word 'היום' in משה's statement teaches that his years were exactly complete on the day he died.",
+      "simpleTranslation": "As it says: 'He said to them, I am 120 years old today.' The verse did not need to say 'today.' So why does it say 'today'? To teach: today my days and years are complete.",
+      "whatsHappening": "The גמרא proves the principle from משה רבינו, who said on the day he died that he was 120 'today'.",
+      "deeperAnalysis": "The word 'היום' seems extra, since משה was obviously speaking that day. The extra word teaches that his life ended on his exact birthday, with his years fully complete. חז״ל teach that he was born and died on ז׳ אדר.",
+      "keyTerms": [
+        {
+          "term": "שֶׁאֵין תַּלְמוּד לוֹמַר",
+          "meaning": "The verse did not need to say"
+        },
+        {
+          "term": "מָלְאוּ",
+          "meaning": "Were filled / completed"
+        },
+        {
+          "term": "הַיּוֹם",
+          "meaning": "Today"
+        }
+      ],
+      "confusionAlert": "The proof is about משה, not the אבות, and משה died in אדר. The verse proves the general idea that צדיקים die on their birthday. That idea is then applied to the אבות in whichever month each opinion holds.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "שֶׁנֶּאֱמַר: ״וַיֹּאמֶר אֲלֵיהֶם",
+          "english": "As it is stated: 'And he said to them,'",
+          "notes": "דברים לא:ב"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "בֶּן מֵאָה וְעֶשְׂרִים שָׁנָה אָנֹכִי הַיּוֹם״,",
+          "english": "I am one hundred and twenty years old today,'"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "שֶׁאֵין תַּלְמוּד לוֹמַר ״הַיּוֹם״,",
+          "english": "since the verse did not need to say 'today,'"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וּמָה תַּלְמוּד לוֹמַר ״הַיּוֹם״ —",
+          "english": "so why does the verse say 'today'?"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "הַיּוֹם מָלְאוּ יָמַי וּשְׁנוֹתַי.",
+          "english": "It means: today my days and years are complete."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "שֶׁנֶּאֱמַר: ״וַיֹּאמֶר אֲלֵיהֶם בֶּן מֵאָה וְעֶשְׂרִים שָׁנָה אָנֹכִי הַיּוֹם״",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        20
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Supplies the proof for the principle in step 20.",
+      "raayaObject": "צדיקים die on the same date they were born.",
+      "raayaSupportSource": "דברים לא:ב, where the extra word 'היום' is explained"
+    },
+    {
+      "stepNumber": 22,
+      "hebrewStepName": "מסקנא",
+      "title": "הקדוש ברוך הוא completes the years of צדיקים",
+      "stepSummary": "The general lesson is that הקדוש ברוך הוא fills the years of צדיקים exactly, to the day and month, as the verse says 'את מספר ימיך אמלא'.",
+      "simpleTranslation": "This teaches you that הקדוש ברוך הוא sits and fills the years of צדיקים, from day to day and month to month, as it says: 'I will fill the number of your days.'",
+      "whatsHappening": "The גמרא states the general rule learned from משה and backs it up with another verse.",
+      "deeperAnalysis": "משה's case is not a one-time event. It is an example of a general reward for צדיקים: their lives are counted in complete years. That is why the אבות died in their birth month.",
+      "keyTerms": [
+        {
+          "term": "לְלַמֶּדְךָ",
+          "meaning": "To teach you"
+        },
+        {
+          "term": "מְמַלֵּא",
+          "meaning": "Fills, completes"
+        },
+        {
+          "term": "צַדִּיקִים",
+          "meaning": "Righteous people"
+        },
+        {
+          "term": "אֲמַלֵּא",
+          "meaning": "I will fill / complete"
+        }
+      ],
+      "whatToRemember": "רבי אליעזר holds the אבות were born and died in תשרי, and רבי יהושע holds ניסן. Each one reads the other's verse differently: 'איתנים' means strong in מצוות, and 'זיו' means the shine of the trees. Both agree that צדיקים die on their birthday, because הקדוש ברוך הוא completes their years.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "לְלַמֶּדְךָ שֶׁהַקָּדוֹשׁ בָּרוּךְ הוּא יוֹשֵׁב",
+          "english": "To teach you that the Holy One, Blessed be He, sits"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וּמְמַלֵּא שְׁנוֹתֵיהֶם שֶׁל צַדִּיקִים",
+          "english": "and fills the years of the righteous"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "מִיּוֹם לְיוֹם מֵחֹדֶשׁ לְחֹדֶשׁ,",
+          "english": "from day to day and from month to month,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "שֶׁנֶּאֱמַר: ״אֶת מִסְפַּר יָמֶיךָ אֲמַלֵּא״.",
+          "english": "as it is stated: 'The number of your days I will fill.'",
+          "notes": "שמות כג:כו"
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "ראיה",
+      "triggerLanguage": "לְלַמֶּדְךָ שֶׁהַקָּדוֹשׁ בָּרוּךְ הוּא יוֹשֵׁב וּמְמַלֵּא שְׁנוֹתֵיהֶם שֶׁל צַדִּיקִים",
+      "macroPhase": "conclusion",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        20,
+        21
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Turns the drasha on 'היום' into a general principle.",
+      "maskanaFinalTakeaway": "צדיקים complete their years exactly, so the אבות died in the same month they were born."
+    },
+    {
+      "stepNumber": 23,
+      "hebrewStepName": "שאלה",
+      "title": "What is the source that יצחק was born on פסח?",
+      "stepSummary": "The גמרא quotes the ברייתא's claim that יצחק was born on פסח and asks for its source.",
+      "simpleTranslation": "On פסח יצחק was born. How do we know this?",
+      "whatsHappening": "The גמרא brings up another line of the ברייתא, that יצחק was born on פסח, and asks how we know it. This sets up the proof that follows.",
+      "deeperAnalysis": "The earlier steps dealt with when the world was created and when the אבות were born and died. Now the גמרא wants a verse that pins יצחק's birth to פסח specifically.",
+      "keyTerms": [
+        {
+          "term": "פֶּסַח",
+          "meaning": "The יום טוב in ניסן"
+        },
+        {
+          "term": "נוֹלַד",
+          "meaning": "was born"
+        },
+        {
+          "term": "מְנָלַן",
+          "meaning": "From where do we know this?"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "בְּפֶסַח נוֹלַד יִצְחָק, מְנָלַן —",
+          "english": "On Passover Isaac was born. From where do we know this?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "מְנָלַן",
+      "macroPhase": "opening_question",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [
+        2
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Moves from the general idea of the אבות' birth months to a specific claim about יצחק.",
+      "sheelahInformationSought": "A Scriptural source showing that יצחק was born on פסח."
+    },
+    {
+      "stepNumber": 24,
+      "hebrewStepName": "תשובה",
+      "title": "The angel promised to return 'at the appointed time'",
+      "stepSummary": "The source is the angel's promise to אברהם: 'לַמּוֹעֵד אָשׁוּב אֵלֶיךָ', read as 'at the next יום טוב'.",
+      "simpleTranslation": "As it is written: 'At the appointed time I will return to you.'",
+      "whatsHappening": "The גמרא answers with a פסוק. The angel told אברהם he would come back 'לַמּוֹעֵד', and the גמרא reads 'מועד' as a יום טוב.",
+      "deeperAnalysis": "The word 'מועד' is understood as 'יום טוב', so the angel promised that שרה would have a son by the next festival. But the verse does not say which festival, so the גמרא still has to work out when the angel was speaking.",
+      "keyTerms": [
+        {
+          "term": "לַמּוֹעֵד",
+          "meaning": "at the appointed time, read here as 'at the יום טוב'"
+        },
+        {
+          "term": "אָשׁוּב אֵלֶיךָ",
+          "meaning": "I will return to you"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "כְּדִכְתִיב: ״לַמּוֹעֵד אָשׁוּב אֵלֶיךָ״.",
+          "english": "As it is written: 'At the appointed time I will return to you.'",
+          "notes": "בראשית יח:יד. 'מועד' is taken to mean a festival."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "כְּדִכְתִיב",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        23
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Gives the verse requested in Step 23.",
+      "teshuvahAnswerProvided": "The angel promised a son 'by the next מועד', and the next steps show which festival that must be."
+    },
+    {
+      "stepNumber": 25,
+      "hebrewStepName": "שאלה",
+      "title": "When did the angel speak? Not on פסח",
+      "stepSummary": "The גמרא asks which festival the angel visited on. It rejects פסח, because then the birth would be on שבועות, only fifty days later.",
+      "simpleTranslation": "When was he standing? If you say it was on פסח and he told him 'by שבועות', can a woman give birth in fifty days?!",
+      "whatsHappening": "The גמרא asks on which יום טוב the angel came. It tests the first option, פסח, and shows it cannot work.",
+      "deeperAnalysis": "If the angel spoke on פסח, 'the next מועד' would be שבועות. Only fifty days is far too short for a pregnancy, so this option is ruled out.",
+      "keyTerms": [
+        {
+          "term": "אֵימַת קָאֵי",
+          "meaning": "When was he standing, meaning when did this happen?"
+        },
+        {
+          "term": "אִילֵּימָא",
+          "meaning": "If you say..."
+        },
+        {
+          "term": "עֲצֶרֶת",
+          "meaning": "שבועות"
+        },
+        {
+          "term": "מִי קָא יָלְדָה",
+          "meaning": "Can she give birth?! (a question expecting 'no')"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֵימַת קָאֵי?",
+          "english": "When was he standing?",
+          "notes": "That is, on which festival did the angel speak?"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אִילֵּימָא בְּפֶסַח וְקָאָמַר לֵיהּ בַּעֲצֶרֶת —",
+          "english": "If you say it was on Passover, and he told him 'on Shavuot'"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "בְּחַמְשִׁין יוֹמִין מִי קָא יָלְדָה?",
+          "english": "Can a woman give birth in fifty days?!"
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "דחיה",
+      "triggerLanguage": "אֵימַת קָאֵי? אִילֵּימָא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        24
+      ],
+      "scopeOfStep": "inference",
+      "relationToPreviousStep": "Asks which festival the verse of Step 24 refers to, and rules out the first option.",
+      "sheelahInformationSought": "On which festival did the angel make the promise?"
+    },
+    {
+      "stepNumber": 26,
+      "hebrewStepName": "דחיה",
+      "title": "Not on שבועות either",
+      "stepSummary": "The second option, that the angel spoke on שבועות about סוכות, is also rejected, because five months is too short.",
+      "simpleTranslation": "Rather, he stood on שבועות and told him 'by תשרי.' Still, can she give birth in five months?!",
+      "whatsHappening": "The גמרא tries a second option: the angel came on שבועות and promised a son by סוכות in תשרי. This is rejected as well.",
+      "deeperAnalysis": "From שבועות to סוכות is only about five months, which is still too short for a living child. So the גמרא pushes the visit one festival later.",
+      "keyTerms": [
+        {
+          "term": "אֶלָּא",
+          "meaning": "Rather (introduces a new attempt)"
+        },
+        {
+          "term": "אַכַּתִּי",
+          "meaning": "Still, even so"
+        },
+        {
+          "term": "יַרְחֵי",
+          "meaning": "months"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֶלָּא דְּקָאֵי בַּעֲצֶרֶת וְקָאָמַר לֵיהּ בְּתִשְׁרִי —",
+          "english": "Rather, he stood on Shavuot and told him 'in Tishrei'"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אַכַּתִּי בְּחַמְשָׁה יַרְחֵי מִי קָא יָלְדָה?",
+          "english": "Still, can she give birth in five months?!"
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "קשיא",
+      "triggerLanguage": "אֶלָּא דְּקָאֵי בַּעֲצֶרֶת",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        25
+      ],
+      "scopeOfStep": "inference",
+      "relationToPreviousStep": "After פסח was ruled out, tries שבועות and rules it out too.",
+      "dechiyaRejectionScope": "Rejects the option that the angel spoke on שבועות.",
+      "dechiyaFlawIdentified": "Five months is too short a pregnancy."
+    },
+    {
+      "stepNumber": 27,
+      "hebrewStepName": "תשובה",
+      "title": "The angel spoke on סוכות about ניסן",
+      "stepSummary": "The conclusion: the angel came on סוכות and promised a son by the festival in ניסן, which is פסח.",
+      "simpleTranslation": "Rather, he stood on סוכות and told her 'by ניסן.'",
+      "whatsHappening": "The גמרא settles on the third option. The angel visited on סוכות, so the 'next מועד' was פסח in ניסן, and that is when יצחק was born.",
+      "deeperAnalysis": "This finishes the proof from Step 23 that יצחק was born on פסח. But it leaves a new problem: סוכות to פסח is still only about six months.",
+      "keyTerms": [
+        {
+          "term": "חַג",
+          "meaning": "'The חג', meaning סוכות"
+        },
+        {
+          "term": "נִיסָן",
+          "meaning": "the month of פסח"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֶלָּא דְּקָאֵי בְּחַג וְקָאָמַר לַהּ בְּנִיסָן.",
+          "english": "Rather, he stood on Sukkot and told her 'in Nisan.'"
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "תירוץ",
+      "triggerLanguage": "אֶלָּא דְּקָאֵי בְּחַג",
+      "macroPhase": "source_derivation",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        25,
+        26
+      ],
+      "scopeOfStep": "inference",
+      "relationToPreviousStep": "After two options were rejected, this is the option that works.",
+      "teshuvahAnswerProvided": "The visit was on סוכות, so the birth was on פסח."
+    },
+    {
+      "stepNumber": 28,
+      "hebrewStepName": "קשיא",
+      "title": "Six months is still too short",
+      "stepSummary": "The גמרא challenges the answer: even from סוכות to פסח is only six months.",
+      "simpleTranslation": "Still, can she give birth in six months?!",
+      "whatsHappening": "The גמרא pushes back on the answer it just gave, because six months also seems too short for a pregnancy.",
+      "deeperAnalysis": "A living baby needs at least seven months. Counting from סוכות in תשרי to פסח in ניסן gives only about six, so the problem has not gone away.",
+      "keyTerms": [
+        {
+          "term": "שִׁיתָּא",
+          "meaning": "six"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אַכַּתִּי, בְּשִׁיתָּא יַרְחֵי מִי קָא יָלְדָה?",
+          "english": "Still, can she give birth in six months?!"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אַכַּתִּי, בְּשִׁיתָּא יַרְחֵי מִי קָא יָלְדָה",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        27
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Attacks the conclusion of Step 27.",
+      "kashyaTarget": "The claim that the angel spoke on סוכות about פסח.",
+      "kashyaAttackLogic": "תשרי to ניסן is six months, which is shorter than a normal viable pregnancy."
+    },
+    {
+      "stepNumber": 29,
+      "hebrewStepName": "תירוץ",
+      "title": "That year was a leap year",
+      "stepSummary": "A ברייתא teaches that the year was a leap year, so an extra אדר made the gap seven months.",
+      "simpleTranslation": "It was taught: that year was a leap year.",
+      "whatsHappening": "The גמרא answers with a ברייתא: that year had an extra month, so there were seven months from סוכות to פסח.",
+      "deeperAnalysis": "A שנה מעוברת adds a second אדר before ניסן. That stretches the six months into seven, which is a valid length for a birth.",
+      "keyTerms": [
+        {
+          "term": "תָּנָא",
+          "meaning": "It was taught in a ברייתא"
+        },
+        {
+          "term": "שָׁנָה מְעוּבֶּרֶת",
+          "meaning": "a leap year with an extra month of אדר"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "תָּנָא: אוֹתָהּ שָׁנָה מְעוּבֶּרֶת הָיְתָה.",
+          "english": "It was taught: that year was a leap year."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "תָּנָא: אוֹתָהּ שָׁנָה מְעוּבֶּרֶת הָיְתָה",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        28
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Answers the six-month problem of Step 28.",
+      "terutzResolutionType": "Factual detail: an extra month added to that year.",
+      "terutzHavaAmina": "There were only six months between סוכות and פסח.",
+      "terutzMaskana": "With a second אדר, there were seven months."
+    },
+    {
+      "stepNumber": 30,
+      "hebrewStepName": "קשיא",
+      "title": "Subtracting the days of impurity, it is still short",
+      "stepSummary": "The גמרא objects: שרה could not conceive right away because of her days of impurity, so the pregnancy was shorter than seven full months.",
+      "simpleTranslation": "In the end, when the master subtracts the days of impurity, they come out short!",
+      "whatsHappening": "The גמרא challenges the leap-year answer. שרה had her days of טומאה at the time of the angel's visit, so she conceived only later.",
+      "deeperAnalysis": "There is a tradition that שרה had just become a נדה on that day. Once those days of טומאה are taken off, the pregnancy was less than a full seven months.",
+      "keyTerms": [
+        {
+          "term": "סוֹף סוֹף",
+          "meaning": "in the end, ultimately"
+        },
+        {
+          "term": "מַדְלֵי",
+          "meaning": "removes, subtracts"
+        },
+        {
+          "term": "יוֹמֵי טוּמְאָה",
+          "meaning": "days of ritual impurity"
+        },
+        {
+          "term": "בָּצְרִי",
+          "meaning": "they are lacking, short"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "סוֹף סוֹף, כִּי מַדְלֵי מָר יוֹמֵי טוּמְאָה —",
+          "english": "Ultimately, when the master subtracts the days of impurity"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "בָּצְרִי לְהוּ!",
+          "english": "they come out short!",
+          "notes": "Fewer than seven full months remain."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "סוֹף סוֹף",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        29
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Attacks the leap-year answer of Step 29.",
+      "kashyaTarget": "The claim that seven months passed between the conception and the birth.",
+      "kashyaAttackLogic": "Conception could only happen after her days of impurity, so the pregnancy was less than seven full months."
+    },
+    {
+      "stepNumber": 31,
+      "hebrewStepName": "תירוץ",
+      "title": "A seventh-month birth may come early",
+      "stepSummary": "מר זוטרא teaches that a seventh-month birth does not need full months. From a פסוק, the minimum is six months and two days.",
+      "simpleTranslation": "מר זוטרא said: Even according to the one who says a woman giving birth in the ninth month does not give birth with incomplete months, one giving birth in the seventh month does give birth with incomplete months. As it says: 'And it was at the turning of the days.' The minimum of 'turnings' (three-month seasons) is two, and the minimum of 'days' is two.",
+      "whatsHappening": "מר זוטרא answers that a baby born in the seventh month can come before that month is complete, so a shortened seventh month is not a problem.",
+      "deeperAnalysis": "He brings a פסוק about חנה: 'לִתְקוּפוֹת הַיָּמִים'. The plural 'תקופות' means at least two three-month seasons, which is six months. The plural 'ימים' means at least two days. So six months and two days is enough, and שרה's pregnancy, even after removing her days of impurity, still reached that.",
+      "keyTerms": [
+        {
+          "term": "מָר זוּטְרָא",
+          "meaning": "an אמורא"
+        },
+        {
+          "term": "מְקוּטָּעִין",
+          "meaning": "incomplete months"
+        },
+        {
+          "term": "תְּקוּפוֹת",
+          "meaning": "seasons of three months each"
+        },
+        {
+          "term": "מִיעוּט",
+          "meaning": "the minimum a plural word can mean"
+        }
+      ],
+      "confusionAlert": "Do not think מר זוטרא is saying the baby is born at six months like an ordinary early birth. He is saying this counts as a seventh-month birth, which only needs to reach six months and two days.",
+      "whatToRemember": "A seventh-month baby can be born after just six months and two days. That is how יצחק could be born on פסח after the angel's visit on סוכות.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר מָר זוּטְרָא:",
+          "english": "Mar Zutra said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אֲפִילּוּ לְמַאן דְּאָמַר יוֹלֶדֶת לְתִשְׁעָה —",
+          "english": "Even according to the one who says that one who gives birth in the ninth month"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "אֵינָהּ יוֹלֶדֶת לִמְקוּטָּעִין,",
+          "english": "does not give birth with incomplete months,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "יוֹלֶדֶת לְשִׁבְעָה — יוֹלֶדֶת לִמְקוּטָּעִין,",
+          "english": "one who gives birth in the seventh month does give birth with incomplete months,"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "שֶׁנֶּאֱמַר: ״וַיְהִי לִתְקוּפוֹת הַיָּמִים״,",
+          "english": "as it is stated: 'And it came to pass at the cycles of days,'",
+          "notes": "שמואל I 1:20, about the birth of שמואל."
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "מִיעוּט תְּקוּפוֹת — שְׁתַּיִם,",
+          "english": "the minimum of 'cycles' is two (six months),"
+        },
+        {
+          "phraseNumber": 7,
+          "aramaic": "וּמִיעוּט יָמִים — שְׁנַיִם.",
+          "english": "and the minimum of 'days' is two."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אָמַר מָר זוּטְרָא: אֲפִילּוּ לְמַאן דְּאָמַר",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        30
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Resolves the impurity-days challenge of Step 30.",
+      "terutzResolutionType": "New rule about how long a pregnancy must be, proven from a פסוק.",
+      "terutzHavaAmina": "A seventh-month birth needs seven full months.",
+      "terutzMaskana": "Six months and two days is enough for a seventh-month birth.",
+      "whyThisMatters": "This sets the minimum length of a viable pregnancy, a rule the גמרא uses in other places too."
+    },
+    {
+      "stepNumber": 32,
+      "hebrewStepName": "שאלה",
+      "title": "שרה, רחל and חנה were remembered on ראש השנה",
+      "stepSummary": "The גמרא brings the next line of the ברייתא, that these three women were remembered on ראש השנה, and asks for the source.",
+      "simpleTranslation": "On ראש השנה שרה, רחל and חנה were remembered. How do we know this?",
+      "whatsHappening": "A new topic opens: שרה, רחל and חנה were each 'remembered' by ה׳ (and later had children) on ראש השנה. The גמרא asks for the source, setting up רבי אלעזר's proof.",
+      "deeperAnalysis": "'נפקדה' means ה׳ took note of a woman so that she could have a child. The claim ties these three famous births to ראש השנה.",
+      "keyTerms": [
+        {
+          "term": "נִפְקְדָה",
+          "meaning": "was 'remembered' by ה׳, so that she could have a child"
+        },
+        {
+          "term": "רֹאשׁ הַשָּׁנָה",
+          "meaning": "the New Year"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "בְּרֹאשׁ הַשָּׁנָה נִפְקְדָה שָׂרָה רָחֵל וְחַנָּה.",
+          "english": "On Rosh Hashanah Sarah, Rachel and Hannah were remembered."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "מְנָלַן?",
+          "english": "From where do we know this?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "מימרא",
+      "triggerLanguage": "בְּרֹאשׁ הַשָּׁנָה נִפְקְדָה שָׂרָה רָחֵל וְחַנָּה",
+      "macroPhase": "source_derivation",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [
+        2
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Moves on from יצחק's birth to a new line of the ברייתא.",
+      "mimraCoreRuling": "שרה, רחל and חנה were remembered on ראש השנה.",
+      "sheelahInformationSought": "A פסוק showing that שרה, רחל and חנה were remembered on ראש השנה."
+    },
+    {
+      "stepNumber": 33,
+      "hebrewStepName": "תשובה",
+      "title": "רבי אלעזר: learned from the words 'remembering' and 'revisiting'",
+      "stepSummary": "רבי אלעזר says the source is a גזירה שוה built on the words 'פקידה' and 'זכירה'.",
+      "simpleTranslation": "רבי אלעזר said: We learn it from 'פקידה' and 'פקידה', and from 'זכירה' and 'זכירה'.",
+      "whatsHappening": "רבי אלעזר gives the outline of his proof: two word-links, one on 'פקידה' (revisiting) and one on 'זכירה' (remembering). The next step fills in the details.",
+      "deeperAnalysis": "A גזירה שוה connects two places that use the same word, so that what is true in one applies to the other. Here the shared words will link the three women to ראש השנה.",
+      "keyTerms": [
+        {
+          "term": "רַבִּי אֶלְעָזָר",
+          "meaning": "an אמורא"
+        },
+        {
+          "term": "אָתְיָא",
+          "meaning": "it comes (is learned) from"
+        },
+        {
+          "term": "פְּקִידָה",
+          "meaning": "revisiting, being taken note of"
+        },
+        {
+          "term": "זְכִירָה",
+          "meaning": "remembering"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר רַבִּי אֶלְעָזָר:",
+          "english": "Rabbi Elazar said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אָתְיָא ״פְּקִידָה״ ״פְּקִידָה״,",
+          "english": "It is learned from 'revisiting' and 'revisiting',"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "אָתְיָא ״זְכִירָה״ ״זְכִירָה״.",
+          "english": "it is learned from 'remembering' and 'remembering'."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אָמַר רַבִּי אֶלְעָזָר: אָתְיָא",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        32
+      ],
+      "scopeOfStep": "proof_mechanism",
+      "relationToPreviousStep": "Answers the מנלן of Step 32.",
+      "teshuvahAnswerProvided": "A double גזירה שוה on 'פקידה' and 'זכירה'."
+    },
+    {
+      "stepNumber": 34,
+      "hebrewStepName": "ראיה",
+      "title": "The verses linking רחל and חנה to ראש השנה",
+      "stepSummary": "Both רחל and חנה are described with the word 'remembering', and ראש השנה is called 'זכרון', so they were remembered on ראש השנה.",
+      "simpleTranslation": "It is written about רחל: 'And God remembered רחל', and it is written about חנה: 'And ה׳ remembered her'. And 'remembering' is learned from 'remembering' of ראש השנה, as it is written: 'A day of rest, a remembrance of the שופר blast.'",
+      "whatsHappening": "רבי אלעזר spells out the 'זכירה' link. The פסוקים about רחל and חנה say ה׳ 'remembered' them, and ראש השנה is called a day of 'זכרון'.",
+      "deeperAnalysis": "The shared word 'זכירה' connects the two women to ראש השנה, showing they were remembered on that day. The next step explains the 'פקידה' link, which brings in שרה.",
+      "keyTerms": [
+        {
+          "term": "וַיִּזְכֹּר אֱלֹהִים",
+          "meaning": "and God remembered"
+        },
+        {
+          "term": "שַׁבָּתוֹן",
+          "meaning": "a day of rest"
+        },
+        {
+          "term": "זִכְרוֹן תְּרוּעָה",
+          "meaning": "a remembrance of the shofar blast, a name for ראש השנה"
+        }
+      ],
+      "whatToRemember": "ראש השנה is the day of 'זכרון', so ה׳'s 'remembering' of רחל and חנה is linked to that day.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "כְּתִיב בְּרָחֵל: ״וַיִּזְכּוֹר אֱלֹהִים אֶת רָחֵל״,",
+          "english": "It is written about Rachel: 'And God remembered Rachel,'",
+          "notes": "בראשית ל:כב."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וּכְתִיב בְּחַנָּה: ״וַיִּזְכְּרֶהָ ה׳״,",
+          "english": "and it is written about Hannah: 'And the Lord remembered her,'",
+          "notes": "שמואל I 1:19."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וְאָתְיָא ״זְכִירָה״ ״זְכִירָה״ מֵרֹאשׁ הַשָּׁנָה,",
+          "english": "and 'remembering' is learned from 'remembering' of Rosh Hashanah,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "דִּכְתִיב: ״שַׁבָּתוֹן זִכְרוֹן תְּרוּעָה״.",
+          "english": "as it is written: 'A solemn rest, a remembrance of the shofar blast.'",
+          "notes": "ויקרא כג:כד."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "כְּתִיב בְּרָחֵל",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        33
+      ],
+      "scopeOfStep": "proof_mechanism",
+      "relationToPreviousStep": "Fills in the 'זכירה' half of רבי אלעזר's proof from Step 33.",
+      "raayaObject": "That רחל and חנה were remembered on ראש השנה.",
+      "raayaSupportSource": "The word 'זכירה' used for רחל and חנה, matched with 'זכרון תרועה' of ראש השנה."
+    },
+    {
+      "stepNumber": 35,
+      "hebrewStepName": "ראיה",
+      "title": "The word 'took note' links שרה to חנה",
+      "stepSummary": "The same word 'פקד' is used for both חנה and שרה. Since חנה was already tied to ראש השנה, שרה was also remembered on ראש השנה.",
+      "simpleTranslation": "We learn the word 'took note' from the same word 'took note'. About חנה it says: 'For ה׳ took note of חנה.' About שרה it says: 'And ה׳ took note of שרה.'",
+      "whatsHappening": "The גמרא finishes the proof for שרה. It shows that the Torah uses the same word, 'took note' (פקד), for both חנה and שרה.",
+      "deeperAnalysis": "In step 34, חנה was tied to ראש השנה through the word 'remembering' (זכירה). Now a second shared word, 'took note' (פקידה), connects חנה to שרה. So the chain runs ראש השנה → חנה → שרה, and שרה was also remembered on ראש השנה.",
+      "keyTerms": [
+        {
+          "term": "פָּקַד",
+          "meaning": "He took note of / remembered (used here for granting a child)"
+        },
+        {
+          "term": "כְּתִיב",
+          "meaning": "It is written"
+        },
+        {
+          "term": "חַנָּה",
+          "meaning": "Hannah, the mother of שמואל"
+        },
+        {
+          "term": "שָׂרָה",
+          "meaning": "Sarah, the wife of אברהם"
+        }
+      ],
+      "whatToRemember": "This is a two-link chain. 'Remembering' (זכירה) ties ראש השנה to חנה. Then 'took note' (פקידה) ties חנה to שרה. So all three women, שרה, רחל, and חנה, were remembered on ראש השנה.",
+      "confusionAlert": "There is no פסוק that directly links שרה to ראש השנה. She is connected through חנה, who acts as the middle link between the two גזירה שוה steps.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "״פְּקִידָה״ ״פְּקִידָה״,",
+          "english": "'Took note' from 'took note'",
+          "notes": "This is the shorthand way of naming a גזירה שוה: the same word appears in two places."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "כְּתִיב בְּחַנָּה: ״כִּי פָקַד ה׳ אֶת חַנָּה״,",
+          "english": "It is written about Hannah: 'For ה׳ took note of Hannah'",
+          "notes": "שמואל א ב:כא"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וּכְתִיב בְּשָׂרָה: ״וַה׳ פָּקַד אֶת שָׂרָה״.",
+          "english": "And it is written about Sarah: 'And ה׳ took note of Sarah'",
+          "notes": "בראשית כא:א. Same word, so the same timing: ראש השנה."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "מסקנא",
+      "triggerLanguage": "״פְּקִידָה״ ״פְּקִידָה״",
+      "macroPhase": "source_derivation",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        33,
+        34
+      ],
+      "scopeOfStep": "proof_mechanism",
+      "relationToPreviousStep": "Finishes the second half of רבי אלעזר's גזירה שוה. Step 34 covered 'remembering'; this step covers 'took note'.",
+      "raayaObject": "That שרה was remembered on ראש השנה",
+      "raayaSupportSource": "The shared word 'פקד' in שמואל א ב:כא (חנה) and בראשית כא:א (שרה)"
+    },
+    {
+      "stepNumber": 36,
+      "hebrewStepName": "שאלה",
+      "title": "יוסף left prison on ראש השנה: what is the source?",
+      "stepSummary": "The גמרא quotes the next line of the ברייתא, that יוסף came out of prison on ראש השנה, and asks how we know this.",
+      "simpleTranslation": "On ראש השנה, יוסף came out of prison. How do we know this?",
+      "whatsHappening": "The גמרא moves on to the next event listed in the ברייתא: יוסף being freed from prison on ראש השנה. It asks for the source, which sets up the next step.",
+      "deeperAnalysis": "This is the same pattern as step 32: quote a claim from the ברייתא, then ask 'מנלן'. The question does not doubt the claim. It is asking which פסוק supports it.",
+      "keyTerms": [
+        {
+          "term": "יָצָא",
+          "meaning": "Went out / came out"
+        },
+        {
+          "term": "בֵּית הָאֲסוּרִין",
+          "meaning": "Prison (literally 'the house of the bound')"
+        },
+        {
+          "term": "מְנָלַן",
+          "meaning": "From where do we know this?"
+        },
+        {
+          "term": "יוֹסֵף",
+          "meaning": "Joseph, son of יעקב"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "בְּרֹאשׁ הַשָּׁנָה יָצָא יוֹסֵף",
+          "english": "On Rosh Hashanah Joseph came out",
+          "notes": "This is the next line of the ברייתא."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "מִבֵּית הָאֲסוּרִין,",
+          "english": "from prison"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "מְנָלַן —",
+          "english": "From where do we know this?",
+          "notes": "A request for a source, not a challenge."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "מימרא",
+      "triggerLanguage": "בְּרֹאשׁ הַשָּׁנָה יָצָא יוֹסֵף מִבֵּית הָאֲסוּרִין, מְנָלַן",
+      "macroPhase": "opening_question",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [
+        2
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "With the three women finished, the גמרא opens a new item from the same ברייתא.",
+      "mimraCoreRuling": "יוסף was released from prison on ראש השנה.",
+      "sheelahInformationSought": "Which פסוק shows that יוסף left prison on ראש השנה?"
+    },
+    {
+      "stepNumber": 37,
+      "hebrewStepName": "תשובה",
+      "title": "The source begins with the verse about blowing שופר",
+      "stepSummary": "The גמרא starts its answer with תהלים פא, which speaks of blowing שופר at the new moon, a day called a 'statute for Israel'. This verse is about ראש השנה.",
+      "simpleTranslation": "As it is written: 'Blow the שופר at the new moon, at the hidden time, for our festival day. For it is a statute for Israel…'",
+      "whatsHappening": "The גמרא begins answering where we know יוסף left prison on ראש השנה. It first quotes a פסוק that describes ראש השנה, setting up a link to יוסף that comes right on the next amud.",
+      "deeperAnalysis": "'בחדש' (at the new moon) and 'בכסא' (when the moon is hidden) point to ראש השנה. It is the only festival that falls on the new moon, when the moon cannot be seen. This verse only identifies the day. The connection to יוסף comes from the next verses in the same chapter, which the גמרא brings next.",
+      "keyTerms": [
+        {
+          "term": "תִּקְעוּ",
+          "meaning": "Blow (the שופר)"
+        },
+        {
+          "term": "בַּכֵּסֶא",
+          "meaning": "At the hidden time (when the moon is covered)"
+        },
+        {
+          "term": "חֹק",
+          "meaning": "A statute / fixed rule"
+        },
+        {
+          "term": "וְגוֹ׳",
+          "meaning": "'And so on': the verse continues"
+        }
+      ],
+      "confusionAlert": "Don't look for יוסף in this פסוק yet. He is not mentioned here. This verse only proves the day is ראש השנה, and the link to יוסף comes in the verses that follow.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "דִּכְתִיב: ״תִּקְעוּ בַחֹדֶשׁ שׁוֹפָר",
+          "english": "As it is written: 'Blow the shofar at the new moon'",
+          "notes": "תהלים פא:ד"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "בַּכֵּסֶא לְיוֹם חַגֵּנוּ.",
+          "english": "at the hidden time, for our festival day",
+          "notes": "'Hidden' means the moon is covered. Only ראש השנה falls then."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "כִּי חֹק לְיִשְׂרָאֵל הוּא וְגוֹ׳.",
+          "english": "For it is a statute for Israel, and so on",
+          "notes": "תהלים פא:ה. The verse goes on: 'a judgment of the God of יעקב'."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "ראיה",
+      "triggerLanguage": "דִּכְתִיב: ״תִּקְעוּ בַחֹדֶשׁ שׁוֹפָר בַּכֵּסֶא לְיוֹם חַגֵּנוּ",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        36
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Starts to answer the 'מנלן' question from step 36.",
+      "teshuvahAnswerProvided": "The source is the passage in תהלים פא. It opens by describing ראש השנה, and the link to יוסף comes in the verses that follow."
+    }
+  ]
+}

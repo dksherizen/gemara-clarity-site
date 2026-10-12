@@ -1,0 +1,1531 @@
+{
+  "mainTopic": "The fire signals for ראש חודש, the courtyard בית יעזק where witnesses gathered, and how the court examined witnesses of the new moon",
+  "overview": "This amud finishes the גמרא's discussion of the fire signals (משואות) that announced ראש חודש. It identifies the last station as בירם, explains that 'גולה' means פומבדיתא, and explains that the city looked like a bonfire because everyone held a torch on his roof. A ברייתא of רבי שמעון בן אלעזר adds more stations. רבי יוחנן says the stations were 8 פרסאות apart, and אביי explains that the trip is longer today because the direct roads were blocked, which is backed by two פסוקים. A new משנה describes בית יעזק, the courtyard where witnesses gathered and were fed. It also teaches רבן גמליאל הזקן's תקנה giving witnesses, midwives and rescuers two thousand אמות on שבת. The גמרא asks whether the name is בית יעזק or בית יזק, and the question is not settled. Another משנה describes how the court questions the witnesses about the moon. אביי explains that one question asks which way the crescent's gap faced, and רבי יוחנן's teaching that the sun never sees that gap begins here and continues on the next amud.",
+  "steps": [
+    {
+      "stepNumber": 1,
+      "hebrewStepName": "תשובה",
+      "title": "Beit Baltin is Biram",
+      "stepSummary": "The גמרא finishes identifying the last signal station, בית בלתין, as the town of בירם.",
+      "simpleTranslation": "This is Biram.",
+      "whatsHappening": "The גמרא is finishing an answer that started on the previous amud: the last mountain station in the משנה, בית בלתין, is the place called בירם.",
+      "deeperAnalysis": "The משנה listed the stations by older names. The גמרא gives the name people knew in its own time, so the reader can picture the real route of the signals.",
+      "keyTerms": [
+        {
+          "term": "בֵּירָם",
+          "meaning": "Biram, the later name of בית בלתין, the last signal station"
+        },
+        {
+          "term": "בֵּית בַּלְתִּין",
+          "meaning": "Beit Baltin, the final mountain in the משנה's list of fire-signal stations"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "זוֹ בֵּירָם.",
+          "english": "This is Biram.",
+          "notes": "The answer to the question 'What is בית בלתין?' that came on the previous amud."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "מסקנא",
+      "triggerLanguage": "זוֹ בֵּירָם",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "wording",
+      "relationToPreviousStep": "Completes the identification question earlier.",
+      "teshuvahAnswerProvided": "בית בלתין is the town known as בירם."
+    },
+    {
+      "stepNumber": 2,
+      "hebrewStepName": "שאלה",
+      "title": "What does 'Diaspora' mean here?",
+      "stepSummary": "The גמרא asks which place the משנה means when it says the signaler saw the whole גולה lit up.",
+      "simpleTranslation": "What is the 'Diaspora'?",
+      "whatsHappening": "The גמרא asks a clarifying question about a word in the משנה, and the answer comes in the next step.",
+      "deeperAnalysis": "The משנה says the man at בירם waved his torch until he saw 'the whole גולה' burning like a bonfire. No one person could see the entire Jewish world, so the word must mean one specific place.",
+      "keyTerms": [
+        {
+          "term": "מַאי",
+          "meaning": "What is? (a standard way the גמרא opens a clarifying question)"
+        },
+        {
+          "term": "גּוֹלָה",
+          "meaning": "Diaspora, the Jewish community outside ארץ ישראל"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מַאי גּוֹלָה?",
+          "english": "What is 'Diaspora'?",
+          "notes": "This refers to the משנה's phrase 'until he saw the whole גולה before him like a bonfire.'"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "מַאי גּוֹלָה",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "wording",
+      "relationToPreviousStep": "Moves from the station names to the משנה's description of the result at the end of the chain.",
+      "sheelahInformationSought": "Which specific location the משנה means by 'גולה'."
+    },
+    {
+      "stepNumber": 3,
+      "hebrewStepName": "תשובה",
+      "title": "רב יוסף: It means Pumbedita",
+      "stepSummary": "רב יוסף explains that 'גולה' means the city of פומבדיתא in בבל.",
+      "simpleTranslation": "רב יוסף said: This is Pumbedita.",
+      "whatsHappening": "רב יוסף answers the question: the 'גולה' in the משנה is the city of פומבדיתא.",
+      "deeperAnalysis": "פומבדיתא was a major Jewish center in בבל. It was the place that received the signal at the end of the chain. So the משנה is describing one city lighting up, not the whole Jewish world.",
+      "keyTerms": [
+        {
+          "term": "פּוּמְבְּדִיתָא",
+          "meaning": "Pumbedita, a major Jewish city and yeshiva center in Babylonia"
+        },
+        {
+          "term": "רַב יוֹסֵף",
+          "meaning": "רב יוסף, a leading אמורא of פומבדיתא"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר רַב יוֹסֵף:",
+          "english": "Rav Yosef said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "זוֹ פּוּמְבְּדִיתָא.",
+          "english": "This is Pumbedita."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אָמַר רַב יוֹסֵף: זוֹ פּוּמְבְּדִיתָא",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        2
+      ],
+      "scopeOfStep": "wording",
+      "relationToPreviousStep": "Answers the question in step 2.",
+      "teshuvahAnswerProvided": "'גולה' here means the city of פומבדיתא."
+    },
+    {
+      "stepNumber": 4,
+      "hebrewStepName": "שאלה",
+      "title": "What does 'like a bonfire' mean?",
+      "stepSummary": "The גמרא asks what the משנה means when it says the גולה looked like one big bonfire.",
+      "simpleTranslation": "What is 'like a bonfire'?",
+      "whatsHappening": "The גמרא asks a second clarifying question about the משנה's wording, and the answer comes next.",
+      "deeperAnalysis": "Now that we know the place is פומבדיתא, we still need to know why a whole city would look like one fire. The גמרא wants to understand what the people there actually did.",
+      "keyTerms": [
+        {
+          "term": "מְדוּרַת הָאֵשׁ",
+          "meaning": "a bonfire, a large pile of burning fire"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מַאי כִּמְדוּרַת הָאֵשׁ?",
+          "english": "What is 'like a bonfire'?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "מַאי כִּמְדוּרַת הָאֵשׁ",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        3
+      ],
+      "scopeOfStep": "wording",
+      "relationToPreviousStep": "Continues explaining the same phrase of the משנה.",
+      "sheelahInformationSought": "How the city came to look like a single large fire."
+    },
+    {
+      "stepNumber": 5,
+      "hebrewStepName": "תשובה",
+      "title": "Everyone climbed his roof with a torch",
+      "stepSummary": "A ברייתא teaches that every person in the city took a torch and went up on his roof, so the whole city glowed like one bonfire.",
+      "simpleTranslation": "It was taught: Each and every person takes a torch in his hand and goes up to the top of his roof.",
+      "whatsHappening": "A ברייתא answers the question: when the signal arrived, every person in פומבדיתא held up a torch on his roof.",
+      "deeperAnalysis": "The 'bonfire' was not one fire. It was many small torches across the rooftops that together looked like one huge blaze. The ברייתא describes only what they did, not why.",
+      "keyTerms": [
+        {
+          "term": "תָּנָא",
+          "meaning": "It was taught (introduces a ברייתא, a teaching of the תנאים)"
+        },
+        {
+          "term": "אֲבוּקָה",
+          "meaning": "a torch"
+        },
+        {
+          "term": "גַּגּוֹ",
+          "meaning": "his roof"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "תָּנָא:",
+          "english": "It was taught:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "כׇּל אֶחָד וְאֶחָד",
+          "english": "each and every one"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "נוֹטֵל אֲבוּקָה בְּיָדוֹ",
+          "english": "takes a torch in his hand"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וְעוֹלֶה לְרֹאשׁ גַּגּוֹ.",
+          "english": "and goes up to the top of his roof."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "תָּנָא: כׇּל אֶחָד וְאֶחָד נוֹטֵל אֲבוּקָה בְּיָדוֹ",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        4
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Answers the question in step 4.",
+      "teshuvahAnswerProvided": "Each person lit a torch on his own roof, so the whole city looked like one bonfire."
+    },
+    {
+      "stepNumber": 6,
+      "hebrewStepName": "מימרא",
+      "title": "רבי שמעון בן אלעזר adds more stations",
+      "stepSummary": "A ברייתא quotes רבי שמעון בן אלעזר, who says that torches were also lit at חרים, כייר, גדר and nearby places.",
+      "simpleTranslation": "It was taught: רבי שמעון בן אלעזר says: Also Charim, Kayar, Geder and its neighbors.",
+      "whatsHappening": "A ברייתא brings רבי שמעון בן אלעזר, who lists extra signal stations that the משנה did not mention.",
+      "deeperAnalysis": "The משנה listed five mountains: הר המשחה, סרטבא, גרופינא, חוורן and בית בלתין. רבי שמעון בן אלעזר adds more places. This raises a question the גמרא handles next: how do his extra places fit with the משנה's list?",
+      "keyTerms": [
+        {
+          "term": "תַּנְיָא",
+          "meaning": "It was taught in a ברייתא"
+        },
+        {
+          "term": "רַבִּי שִׁמְעוֹן בֶּן אֶלְעָזָר",
+          "meaning": "רבי שמעון בן אלעזר, a תנא"
+        },
+        {
+          "term": "אַף",
+          "meaning": "also, in addition"
+        },
+        {
+          "term": "וְחַבְרוֹתֶיהָ",
+          "meaning": "and its neighboring places"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "תַּנְיָא,",
+          "english": "It was taught in a baraita:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "רַבִּי שִׁמְעוֹן בֶּן אֶלְעָזָר אוֹמֵר:",
+          "english": "Rabbi Shimon ben Elazar says:"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "אַף חָרִים וּכְיָיר",
+          "english": "also Charim and Kayar"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וּגְדֹר וְחַבְרוֹתֶיהָ.",
+          "english": "and Geder and its neighboring places."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "תַּנְיָא, רַבִּי שִׁמְעוֹן בֶּן אֶלְעָזָר אוֹמֵר: אַף",
+      "macroPhase": "source_derivation",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Opens a new topic: additional stations beyond those listed in the משנה.",
+      "mimraCoreRuling": "Signal fires were also lit at חרים, כייר, גדר and their neighboring places."
+    },
+    {
+      "stepNumber": 7,
+      "hebrewStepName": "תירוץ",
+      "title": "First view: The extra places were in between",
+      "stepSummary": "One opinion says the extra places of רבי שמעון בן אלעזר stood in between the stations listed in the משנה.",
+      "simpleTranslation": "Some say: They stood in between.",
+      "whatsHappening": "The גמרא gives the first explanation of how the ברייתא fits with the משנה: the extra places were in-between stations.",
+      "deeperAnalysis": "By this view, רבי שמעון בן אלעזר is adding middle links inside the same chain. The משנה named only the main mountains, while the ברייתא also names the smaller stops between them.",
+      "keyTerms": [
+        {
+          "term": "אִיכָּא דְּאָמְרִי",
+          "meaning": "There are those who say (introduces one of two views)"
+        },
+        {
+          "term": "בֵּינֵי וּבֵינֵי",
+          "meaning": "in between"
+        },
+        {
+          "term": "הֲווֹ קָיְימִי",
+          "meaning": "they were standing / located"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אִיכָּא דְּאָמְרִי:",
+          "english": "There are those who say:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "בֵּינֵי וּבֵינֵי הֲווֹ קָיְימִי.",
+          "english": "They were located in between."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "מימרא",
+      "triggerLanguage": "אִיכָּא דְּאָמְרִי: בֵּינֵי וּבֵינֵי הֲווֹ קָיְימִי",
+      "macroPhase": "alternate_branch",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        6
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Explains how the ברייתא's additions fit with the משנה.",
+      "terutzResolutionType": "Harmonization by placement inside the chain",
+      "terutzHavaAmina": "The ברייתא might seem to argue with the משנה's list.",
+      "terutzMaskana": "Both lists are true; the ברייתא adds in-between stations the משנה left out."
+    },
+    {
+      "stepNumber": 8,
+      "hebrewStepName": "תירוץ",
+      "title": "Second view: The extra places were on the other side",
+      "stepSummary": "Another opinion says the extra places were on the far side of ארץ ישראל, so each source lists a different side of the route.",
+      "simpleTranslation": "Some say: They were on the other side of the Land of Israel. One Sage counts this side, and the other Sage counts that side.",
+      "whatsHappening": "The גמרא gives a second explanation: the ברייתא's places were on the other side of ארץ ישראל, toward בבל, so the משנה and the ברייתא each list a different side.",
+      "deeperAnalysis": "Here the two lists do not overlap at all. The תנא of the משנה lists the stations on one side, and רבי שמעון בן אלעזר lists the ones on the other side. Either way, there is no argument about the facts, only about which part of the route each source describes.",
+      "keyTerms": [
+        {
+          "term": "גִּיסָא",
+          "meaning": "side"
+        },
+        {
+          "term": "מָר",
+          "meaning": "this Master / one Sage"
+        },
+        {
+          "term": "חָשֵׁיב",
+          "meaning": "counts, lists"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אִיכָּא דְּאָמְרִי:",
+          "english": "There are those who say:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "לְהָךְ גִּיסָא דְּאֶרֶץ יִשְׂרָאֵל",
+          "english": "on the other side of Eretz Yisrael"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "הֲווֹ קָיְימִי.",
+          "english": "they were located."
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "מָר חָשֵׁיב דְּהַאי גִּיסָא,",
+          "english": "One Sage counts those of this side,"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "וּמָר חָשֵׁיב דְּהַאי גִּיסָא.",
+          "english": "and the other Sage counts those of that side."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "מימרא",
+      "triggerLanguage": "אִיכָּא דְּאָמְרִי: לְהָךְ גִּיסָא דְּאֶרֶץ יִשְׂרָאֵל הֲווֹ קָיְימִי",
+      "macroPhase": "alternate_branch",
+      "branchRole": "alternative_approach",
+      "dependsOnStepNumbers": [
+        6,
+        7
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Offers a different way to fit the ברייתא with the משנה than step 7.",
+      "terutzResolutionType": "Harmonization by separate geographic sides",
+      "terutzHavaAmina": "The extra places might have been inside the משנה's chain.",
+      "terutzMaskana": "Each source lists the stations of a different side of the route, so they do not conflict.",
+      "whatToRemember": "Both views agree that the משנה and the ברייתא do not argue. They only disagree about where the extra stations were: between the משנה's mountains, or on the other side of ארץ ישראל."
+    },
+    {
+      "stepNumber": 9,
+      "hebrewStepName": "מימרא",
+      "title": "רבי יוחנן: Eight פרסאות between stations",
+      "stepSummary": "רבי יוחנן says each signal station was eight פרסאות from the next one.",
+      "simpleTranslation": "רבי יוחנן said: Between each and every one there were eight parasangs.",
+      "whatsHappening": "רבי יוחנן gives the distance between the fire-signal stations: eight פרסאות each.",
+      "deeperAnalysis": "This gives the route a measurement. It also sets up the next move, where the גמרא adds up the total and compares it to the distance in its own day.",
+      "keyTerms": [
+        {
+          "term": "רַבִּי יוֹחָנָן",
+          "meaning": "רבי יוחנן, a leading אמורא of ארץ ישראל"
+        },
+        {
+          "term": "פַּרְסָאוֹת",
+          "meaning": "parasangs, a unit of distance (about 4 מיל each)"
+        },
+        {
+          "term": "שְׁמוֹנֶה",
+          "meaning": "eight"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר רַבִּי יוֹחָנָן:",
+          "english": "Rabbi Yochanan said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "בֵּין כׇּל אַחַת וְאַחַת",
+          "english": "between each and every one"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "שְׁמוֹנֶה פַּרְסָאוֹת.",
+          "english": "there were eight parasangs."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אָמַר רַבִּי יוֹחָנָן: בֵּין כׇּל אַחַת וְאַחַת שְׁמוֹנֶה פַּרְסָאוֹת",
+      "macroPhase": "opening_question",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Starts a new topic: the distance between the stations.",
+      "mimraCoreRuling": "Each signal station was eight פרסאות from the next."
+    },
+    {
+      "stepNumber": 10,
+      "hebrewStepName": "שאלה",
+      "title": "How much is the total?",
+      "stepSummary": "The גמרא asks how many פרסאות the whole route adds up to.",
+      "simpleTranslation": "How many are they altogether?",
+      "whatsHappening": "The גמרא asks for the total distance, setting up a calculation that will lead to a challenge.",
+      "deeperAnalysis": "Once each gap is eight פרסאות, the total depends on how many gaps there are. The גמרא wants a number it can compare to real travel distance.",
+      "keyTerms": [
+        {
+          "term": "כַּמָּה",
+          "meaning": "how many / how much"
+        },
+        {
+          "term": "הָווּ לְהוּ",
+          "meaning": "do they come to (in total)"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "כַּמָּה הָווּ לְהוּ?",
+          "english": "How many do they come to?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "כַּמָּה הָווּ לְהוּ",
+      "macroPhase": "opening_question",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        9
+      ],
+      "scopeOfStep": "inference",
+      "relationToPreviousStep": "Builds on רבי יוחנן's distance to calculate a total.",
+      "sheelahInformationSought": "The total distance of the signal route."
+    },
+    {
+      "stepNumber": 11,
+      "hebrewStepName": "תשובה",
+      "title": "Thirty-two פרסאות",
+      "stepSummary": "The total is thirty-two פרסאות: four gaps of eight each.",
+      "simpleTranslation": "Thirty-two.",
+      "whatsHappening": "The גמרא answers that the total is 32 פרסאות.",
+      "deeperAnalysis": "There are five stations in the משנה, from הר המשחה to בית בלתין, which leaves four gaps. Four gaps times eight פרסאות equals 32.",
+      "keyTerms": [
+        {
+          "term": "תְּלָתִין וְתַרְתֵּין",
+          "meaning": "thirty-two"
+        }
+      ],
+      "confusionAlert": "Do not count five times eight. There are five stations, but only four spaces between them, so the total is 32, not 40.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "תְּלָתִין וְתַרְתֵּין,",
+          "english": "Thirty-two."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "תְּלָתִין וְתַרְתֵּין",
+      "macroPhase": "opening_question",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        10
+      ],
+      "scopeOfStep": "inference",
+      "relationToPreviousStep": "Answers the calculation question in step 10.",
+      "teshuvahAnswerProvided": "The route totals 32 פרסאות."
+    },
+    {
+      "stepNumber": 12,
+      "hebrewStepName": "קשיא",
+      "title": "But nowadays it is much farther",
+      "stepSummary": "The גמרא challenges the total: in its own time, the trip from הר המשחה to בית בלתין is much longer than 32 פרסאות.",
+      "simpleTranslation": "But nowadays they are much more!",
+      "whatsHappening": "The גמרא challenges רבי יוחנן's numbers: people who travel this route today find it much longer than 32 פרסאות.",
+      "deeperAnalysis": "Real-world experience seems to contradict the calculation. If the stations were only 32 פרסאות apart in total, the trip should not take so much longer now.",
+      "keyTerms": [
+        {
+          "term": "וְהָא",
+          "meaning": "but surely (opens a challenge)"
+        },
+        {
+          "term": "הָאִידָּנָא",
+          "meaning": "nowadays"
+        },
+        {
+          "term": "טוּבָא",
+          "meaning": "much, a lot"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְהָא הָאִידָּנָא",
+          "english": "But surely nowadays"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "טוּבָא הָווּ!",
+          "english": "they are much more!"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וְהָא הָאִידָּנָא טוּבָא הָווּ",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        9,
+        11
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Attacks the total reached in step 11.",
+      "kashyaTarget": "רבי יוחנן's distance of 8 פרסאות per station (32 in total)",
+      "kashyaAttackLogic": "Present-day travel distance is far more than 32 פרסאות, which seems to contradict the figure."
+    },
+    {
+      "stepNumber": 13,
+      "hebrewStepName": "תירוץ",
+      "title": "אביי: The direct roads were blocked",
+      "stepSummary": "אביי answers that the direct roads have been closed, so people today must take longer, indirect routes.",
+      "simpleTranslation": "אביי said: The roads have become blocked for them.",
+      "whatsHappening": "אביי resolves the challenge: the straight roads are now closed, so today's trip is longer even though the real distance has not changed.",
+      "deeperAnalysis": "רבי יוחנן was measuring the straight distance between the mountains, which is what matters for fire signals seen through the air. Travelers today must go around on detours, so their trip is longer. The two numbers measure different things and do not conflict.",
+      "keyTerms": [
+        {
+          "term": "אַבָּיֵי",
+          "meaning": "אביי, a leading אמורא of בבל"
+        },
+        {
+          "term": "אִסְתַּתּוֹמֵי אִסְתַּתּוּם",
+          "meaning": "they have indeed become blocked"
+        },
+        {
+          "term": "דַּרְכֵי",
+          "meaning": "roads, routes"
+        }
+      ],
+      "whatToRemember": "The fire-signal stations were 8 פרסאות apart (32 in total) in a straight line. Today's longer trip comes only from blocked roads that force detours, not from a different real distance.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר אַבָּיֵי:",
+          "english": "Abaye said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אִסְתַּתּוֹמֵי אִסְתַּתּוּם לְהוּ דַּרְכֵי.",
+          "english": "The roads have become blocked for them."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אָמַר אַבָּיֵי: אִסְתַּתּוֹמֵי אִסְתַּתּוּם לְהוּ דַּרְכֵי",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        12
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Answers the challenge in step 12.",
+      "terutzResolutionType": "Distinguishing straight-line distance from travel route",
+      "terutzHavaAmina": "Today's longer journey proves the stations were farther apart than 32 פרסאות.",
+      "terutzMaskana": "The direct roads were blocked, so the travel route became longer while the true distance stayed 32 פרסאות."
+    },
+    {
+      "stepNumber": 14,
+      "hebrewStepName": "ראיה",
+      "title": "A verse showing that the roads were blocked",
+      "stepSummary": "The גמרא supports אביי's claim with a verse from הושע: God says He will block the way with thorns.",
+      "simpleTranslation": "As it is written: 'Therefore, behold, I will hedge up your way with thorns.'",
+      "whatsHappening": "The גמרא brings a פסוק to back up what אביי just said: the direct roads were closed, so travel today takes longer.",
+      "deeperAnalysis": "אביי said the old short routes no longer exist. The verse in הושע describes God blocking the people's path with thorns as a punishment. This shows that blocked and lengthened roads are part of the exile, so the 32 פרסאות figure was true in earlier times.",
+      "keyTerms": [
+        {
+          "term": "דִּכְתִיב",
+          "meaning": "As it is written (introduces a verse)"
+        },
+        {
+          "term": "שָׂךְ",
+          "meaning": "Hedging up or fencing in (blocking)"
+        },
+        {
+          "term": "דַּרְכֵּךְ",
+          "meaning": "Your way or road"
+        },
+        {
+          "term": "סִירִים",
+          "meaning": "Thorns"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "דִּכְתִיב: ״לָכֵן הִנְנִי שָׂךְ",
+          "english": "As it is written: 'Therefore, behold, I will hedge up'",
+          "notes": "From הושע 2:8"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אֶת דַּרְכֵּךְ בַּסִּירִים״,",
+          "english": "your way with thorns.'",
+          "notes": "The roads are blocked, so people must go around."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "מסקנא",
+      "triggerLanguage": "דִּכְתִיב: לָכֵן הִנְנִי שָׂךְ אֶת דַּרְכֵּךְ בַּסִּירִים",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        13
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Gives a scriptural source for אביי's answer in Step 13.",
+      "raayaObject": "אביי's claim that the direct roads have been closed.",
+      "raayaSupportSource": "הושע 2:8, 'I will hedge up your way with thorns.'"
+    },
+    {
+      "stepNumber": 15,
+      "hebrewStepName": "ראיה",
+      "title": "A second verse: my paths were made crooked",
+      "stepSummary": "רב נחמן בר יצחק brings a different verse from איכה: 'He has made my paths crooked.'",
+      "simpleTranslation": "רב נחמן בר יצחק said: We learn it from here, as it is written: 'He has made my paths crooked.'",
+      "whatsHappening": "רב נחמן בר יצחק offers a different פסוק as the source that the roads became longer.",
+      "deeperAnalysis": "The first verse speaks of a path that is blocked. This verse from איכה speaks of paths that are twisted, meaning roads that wind around and take longer. Both verses support the same idea in slightly different ways. This ends the signal-fire discussion.",
+      "keyTerms": [
+        {
+          "term": "מֵהָכָא",
+          "meaning": "From here (I bring a different source)"
+        },
+        {
+          "term": "נְתִיבוֹתַי",
+          "meaning": "My paths"
+        },
+        {
+          "term": "עִוָּה",
+          "meaning": "He made crooked or twisted"
+        }
+      ],
+      "whatToRemember": "The 32 פרסאות distance was correct in its time. Roads became longer only in exile, and the verses in הושע and איכה hint at this.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "רַב נַחְמָן בַּר יִצְחָק אָמַר מֵהָכָא,",
+          "english": "Rav Naḥman bar Yitzḥak said: from here,",
+          "notes": "He offers an alternative source."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "דִּכְתִיב: ״נְתִיבוֹתַי עִוָּה״.",
+          "english": "as it is written: 'He has made my paths crooked.'",
+          "notes": "From איכה 3:9"
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "מימרא",
+      "triggerLanguage": "רַב נַחְמָן בַּר יִצְחָק אָמַר מֵהָכָא",
+      "macroPhase": "source_derivation",
+      "branchRole": "alternative_approach",
+      "dependsOnStepNumbers": [
+        13,
+        14
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Gives a different verse for the same point made in Step 14.",
+      "raayaObject": "That travel routes became longer during the exile.",
+      "raayaSupportSource": "איכה 3:9, 'He has made my paths crooked.'"
+    },
+    {
+      "stepNumber": 16,
+      "hebrewStepName": "מימרא",
+      "title": "The courtyard where the witnesses gathered",
+      "stepSummary": "The new משנה describes בית יעזק, a large courtyard in ירושלים where new-moon witnesses gathered, were examined, and were given big meals.",
+      "simpleTranslation": "There was a large courtyard in ירושלים, and it was called בית יעזק. All the witnesses would gather there, and בית דין would examine them there. They would make big feasts for them, so that they would be used to coming.",
+      "whatsHappening": "A new משנה begins. It describes the place where witnesses who saw the new moon came to testify, and how they were treated well.",
+      "deeperAnalysis": "The witnesses had a set meeting place, בית יעזק, and בית דין questioned them there. The big meals had a practical goal: they made people happy to come and testify. Without witnesses, בית דין could not declare the new month.",
+      "keyTerms": [
+        {
+          "term": "מַתְנִי׳",
+          "meaning": "Our משנה (marks the start of a new משנה)"
+        },
+        {
+          "term": "בֵּית יַעְזֵק",
+          "meaning": "The name of the large courtyard in ירושלים"
+        },
+        {
+          "term": "עֵדִים",
+          "meaning": "Witnesses (who saw the new moon)"
+        },
+        {
+          "term": "בּוֹדְקִין",
+          "meaning": "Examine or question"
+        },
+        {
+          "term": "רְגִילִין",
+          "meaning": "Used to it; in the habit"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מַתְנִי׳ חָצֵר גְּדוֹלָה הָיְתָה בִּירוּשָׁלַיִם",
+          "english": "MISHNA: There was a large courtyard in Jerusalem,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וּבֵית יַעְזֵק הָיְתָה נִקְרֵאת,",
+          "english": "and it was called Beit Ya'zek,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וּלְשָׁם כׇּל הָעֵדִים מִתְכַּנְּסִין.",
+          "english": "and all the witnesses would gather there."
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וּבֵית דִּין בּוֹדְקִין אוֹתָם שָׁם.",
+          "english": "And the court would examine them there."
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "וּסְעוּדוֹת גְּדוֹלוֹת עוֹשִׂין לָהֶם,",
+          "english": "And they would make great feasts for them,"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "בִּשְׁבִיל שֶׁיְּהוּ רְגִילִין לָבֹא.",
+          "english": "so that they would be accustomed to coming.",
+          "notes": "The goal is to encourage witnesses to keep coming."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "מַתְנִי׳ חָצֵר גְּדוֹלָה הָיְתָה בִּירוּשָׁלַיִם",
+      "macroPhase": "mishnah",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "A new משנה begins. The signal-fire discussion is now finished.",
+      "mimraCoreRuling": "Witnesses gathered at בית יעזק, were examined there by בית דין, and were given feasts to encourage them to come."
+    },
+    {
+      "stepNumber": 17,
+      "hebrewStepName": "מימרא",
+      "title": "רבן גמליאל lets witnesses walk on שבת",
+      "stepSummary": "At first, witnesses who came on שבת could not leave the courtyard all day. רבן גמליאל הזקן enacted that they may walk two thousand אמות in every direction.",
+      "simpleTranslation": "At first, they would not move from there the whole day. רבן גמליאל הזקן enacted that they may walk two thousand אמות in every direction.",
+      "whatsHappening": "The משנה describes a problem with witnesses who came on שבת, and the תקנה that רבן גמליאל הזקן made to fix it.",
+      "deeperAnalysis": "Witnesses who traveled on שבת went past their תחום שבת. Under the normal rule, they would be stuck within four אמות and could not leave the courtyard. רבן גמליאל הזקן treated them as if they belonged to the new place, so they received a fresh two thousand אמות. This made witnesses more willing to come.",
+      "keyTerms": [
+        {
+          "term": "בָּרִאשׁוֹנָה",
+          "meaning": "At first; originally"
+        },
+        {
+          "term": "זָזִין",
+          "meaning": "Move"
+        },
+        {
+          "term": "הִתְקִין",
+          "meaning": "Enacted a rabbinic rule (תקנה)"
+        },
+        {
+          "term": "אַלְפַּיִם אַמָּה",
+          "meaning": "Two thousand cubits, the normal שבת walking limit"
+        }
+      ],
+      "confusionAlert": "Witnesses were allowed to travel on שבת in order to testify. The problem was only what happened after they arrived: since they had left their תחום, they had no walking area at all.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "בָּרִאשׁוֹנָה לֹא הָיוּ זָזִין",
+          "english": "Initially, they would not move"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "מִשָּׁם כׇּל הַיּוֹם.",
+          "english": "from there all day."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "הִתְקִין רַבָּן גַּמְלִיאֵל הַזָּקֵן",
+          "english": "Rabban Gamliel the Elder instituted"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "שֶׁיְּהוּ מְהַלְּכִין אַלְפַּיִם אַמָּה לְכׇל רוּחַ.",
+          "english": "that they may walk two thousand cubits in each direction."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "בָּרִאשׁוֹנָה לֹא הָיוּ זָזִין מִשָּׁם כׇּל הַיּוֹם",
+      "macroPhase": "mishnah",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        16
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Continues describing how witnesses at בית יעזק were treated, now on שבת.",
+      "mimraCoreRuling": "Witnesses who arrive on שבת receive two thousand אמות in every direction from where they arrived."
+    },
+    {
+      "stepNumber": 18,
+      "hebrewStepName": "מימרא",
+      "title": "Midwives and rescuers get the same walking area",
+      "stepSummary": "The same rule applies to a midwife and to people who come to rescue others from fire, troops, a river, or a collapse. They are like the people of that city.",
+      "simpleTranslation": "And not only these witnesses. The same applies to a midwife who comes to deliver a baby, and to someone who comes to rescue people from a fire, from troops, from a river, or from a collapsed building. They are like the people of the city, and they have two thousand אמות in every direction.",
+      "whatsHappening": "The משנה extends רבן גמליאל's rule beyond witnesses to other people who travel on שבת for a מצוה or to save lives.",
+      "deeperAnalysis": "Like the witnesses, these people left their תחום for an important, permitted reason. The משנה treats them as residents of the place they reached, so they get a full two thousand אמות there. Otherwise people might hesitate to help next time.",
+      "keyTerms": [
+        {
+          "term": "חֲכָמָה",
+          "meaning": "Midwife (literally, a wise woman)"
+        },
+        {
+          "term": "לְיַילֵּד",
+          "meaning": "To deliver a baby"
+        },
+        {
+          "term": "דְּלֵיקָה",
+          "meaning": "Fire"
+        },
+        {
+          "term": "גַּיִיס",
+          "meaning": "Troops; an invading army"
+        },
+        {
+          "term": "מַפּוֹלֶת",
+          "meaning": "Collapse of a building"
+        },
+        {
+          "term": "כְּאַנְשֵׁי הָעִיר",
+          "meaning": "Like the residents of the city"
+        }
+      ],
+      "whatToRemember": "Anyone who leaves their תחום on שבת for testimony, birth, or rescue is treated like a resident of the place they arrive. They get two thousand אמות in every direction.",
+      "whyThisMatters": "This shows a general principle: חז״ל made sure that people doing urgent good deeds on שבת would not be punished by being stuck in place afterward.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְלֹא אֵלּוּ בִּלְבַד, אֶלָּא",
+          "english": "And not only these, but"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אַף חֲכָמָה הַבָּאָה לְיַילֵּד,",
+          "english": "also a midwife who comes to deliver a child,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וְהַבָּא לְהַצִּיל מִן הַדְּלֵיקָה",
+          "english": "and one who comes to rescue from a fire,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וּמִן הַגַּיִיס וּמִן הַנָּהָר וּמִן הַמַּפּוֹלֶת —",
+          "english": "and from troops, and from a river, and from a collapse —"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "הֲרֵי אֵלּוּ כְּאַנְשֵׁי הָעִיר,",
+          "english": "these are like the inhabitants of the city,"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "וְיֵשׁ לָהֶם אַלְפַּיִם לְכׇל רוּחַ.",
+          "english": "and they have two thousand cubits in each direction."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וְלֹא אֵלּוּ בִּלְבַד, אֶלָּא אַף חֲכָמָה הַבָּאָה לְיַילֵּד",
+      "macroPhase": "mishnah",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        17
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Extends the two-thousand-אמה rule from Step 17 to other cases.",
+      "mimraCoreRuling": "Midwives and rescuers who come from outside the תחום are treated like residents and get two thousand אמות in every direction."
+    },
+    {
+      "stepNumber": 19,
+      "hebrewStepName": "שאלה",
+      "title": "What was the courtyard's real name?",
+      "stepSummary": "The גמרא asks whether the משנה reads בית יעזק, a positive word, or בית יזק, a word of distress.",
+      "simpleTranslation": "גמרא: They asked: Did we learn 'בית יעזק' or 'בית יזק'? If it is 'בית יעזק', that is a nice word, as the verse says 'he dug it and cleared it of stones.' Or maybe it is 'בית יזק', a word of pain, as the verse says 'he was bound in chains'?",
+      "whatsHappening": "The גמרא is unsure how to read the name of the courtyard in the משנה, and it lays out two possible versions.",
+      "deeperAnalysis": "Each version carries a message. 'יעזק' comes from a root meaning to improve or fix up, so the place was pleasant. 'יזק' comes from 'אזיקים', chains, which fits the old rule that witnesses who came on שבת could not leave the courtyard.",
+      "keyTerms": [
+        {
+          "term": "אִיבַּעְיָא לְהוּ",
+          "meaning": "They asked; a question the scholars could not answer right away"
+        },
+        {
+          "term": "תְּנַן",
+          "meaning": "We learned (in the משנה)"
+        },
+        {
+          "term": "לִישָּׁנָא מְעַלְּיָא",
+          "meaning": "A fine, positive expression"
+        },
+        {
+          "term": "לִישָּׁנָא דְצַעֲרָא",
+          "meaning": "An expression of pain or distress"
+        },
+        {
+          "term": "אֲזִיקִּים",
+          "meaning": "Chains or shackles"
+        }
+      ],
+      "confusionAlert": "Nobody here argues about the הלכה. The question is only about the correct wording of the name and what that name says about the place.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "גְּמָ׳ אִיבַּעְיָא לְהוּ:",
+          "english": "GEMARA: A question was asked to them:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "״בֵּית יַעְזֵק״ תְּנַן, אוֹ ״בֵּית יָזֵק״ תְּנַן?",
+          "english": "Did we learn 'Beit Ya'zek,' or did we learn 'Beit Yazek'?"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "״בֵּית יַעְזֵק״ תְּנַן — לִישָּׁנָא מְעַלְּיָא הוּא,",
+          "english": "Did we learn 'Beit Ya'zek'? That is a fine, positive term,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "דִּכְתִיב: ״וַיְעַזְּקֵהוּ וַיְסַקְּלֵהוּ״,",
+          "english": "as it is written: 'And he dug it and cleared it of stones,'",
+          "notes": "ישעיהו ה:ב. The root עזק means improving a field."
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "אוֹ דִלְמָא ״בֵּית יָזֵק״ תְּנַן —",
+          "english": "Or perhaps we learned 'Beit Yazek' —"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "לִישָּׁנָא דְצַעֲרָא הוּא,",
+          "english": "which is a term of distress,"
+        },
+        {
+          "phraseNumber": 7,
+          "aramaic": "כְּדִכְתִיב: ״וְהוּא אָסוּר בָּאזִיקִּים״?",
+          "english": "as it is written: 'And he was bound in chains'?",
+          "notes": "ירמיהו מ:א"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אִיבַּעְיָא לְהוּ: ״בֵּית יַעְזֵק״ תְּנַן, אוֹ ״בֵּית יָזֵק״ תְּנַן",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [
+        16,
+        17
+      ],
+      "scopeOfStep": "wording",
+      "relationToPreviousStep": "The גמרא now asks about the name of the courtyard mentioned in the משנה at Step 16.",
+      "sheelahInformationSought": "Is the correct reading of the name בית יעזק (positive) or בית יזק (distress)?"
+    },
+    {
+      "stepNumber": 20,
+      "hebrewStepName": "ראיה",
+      "title": "אביי's proof from the big meals",
+      "stepSummary": "אביי points to the משנה's big meals as proof that the place was pleasant, so the name is בית יעזק.",
+      "simpleTranslation": "אביי said: Come and hear. They would make big meals for them there, so that they would be used to coming.",
+      "whatsHappening": "אביי tries to settle the question using the משנה itself.",
+      "deeperAnalysis": "The משנה says the witnesses were served big meals to encourage them to come. A place that pampers its guests sounds like the positive name בית יעזק, not a name that means chains.",
+      "keyTerms": [
+        {
+          "term": "תָּא שְׁמַע",
+          "meaning": "Come and hear; introduces a proof"
+        },
+        {
+          "term": "סְעוּדוֹת גְּדוֹלוֹת",
+          "meaning": "Big meals"
+        },
+        {
+          "term": "רְגִילִים לָבוֹא",
+          "meaning": "Used to coming"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר אַבָּיֵי, תָּא שְׁמַע:",
+          "english": "Abaye said: Come and hear:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "סְעוּדוֹת גְּדוֹלוֹת הָיוּ עוֹשִׂין לָהֶם שָׁם,",
+          "english": "They would make big meals for them there,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "כְּדֵי שֶׁיְּהוּ רְגִילִים לָבוֹא.",
+          "english": "so that they would be used to coming."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אָמַר אַבָּיֵי, תָּא שְׁמַע",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        16,
+        19
+      ],
+      "scopeOfStep": "proof_mechanism",
+      "relationToPreviousStep": "Tries to answer the question from Step 19.",
+      "raayaObject": "The name is בית יעזק, the positive version.",
+      "raayaSupportSource": "The משנה's statement that the witnesses were given big meals there."
+    },
+    {
+      "stepNumber": 21,
+      "hebrewStepName": "דחיה",
+      "title": "The place could have had both features",
+      "stepSummary": "The גמרא rejects אביי's proof: the witnesses may have been treated well and also kept from leaving.",
+      "simpleTranslation": "Perhaps they did two things with them.",
+      "whatsHappening": "The גמרא pushes back on אביי's proof, so the question is left open.",
+      "deeperAnalysis": "The big meals only show that part of the experience was pleasant. Witnesses could still be fed well and be stuck in the courtyard on שבת, which fits the name בית יזק. Because both readings work, the meals prove nothing.",
+      "keyTerms": [
+        {
+          "term": "דִּלְמָא",
+          "meaning": "Perhaps"
+        },
+        {
+          "term": "תַּרְתֵּי",
+          "meaning": "Two (things)"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "דִּלְמָא תַּרְתֵּי הֲווֹ עָבְדִי בְּהוּ.",
+          "english": "Perhaps they would do two things with them."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "דִּלְמָא תַּרְתֵּי הֲווֹ עָבְדִי בְּהוּ",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        17,
+        20
+      ],
+      "scopeOfStep": "inference",
+      "relationToPreviousStep": "Rejects אביי's proof from Step 20.",
+      "dechiyaRejectionScope": "Rejects only the proof. The question about the name remains open.",
+      "dechiyaFlawIdentified": "Good meals do not rule out restrictions. Both could be true at once.",
+      "whatToRemember": "The question of בית יעזק versus בית יזק is not resolved. The meals were a kindness, but the limits on leaving were still a hardship."
+    },
+    {
+      "stepNumber": 22,
+      "hebrewStepName": "מימרא",
+      "title": "Questioning the first witness",
+      "stepSummary": "The new משנה explains that the first pair is examined first, starting with the senior witness. He is asked exactly how and where he saw the moon.",
+      "simpleTranslation": "משנה: How do they examine the witnesses? The pair that came first is examined first. They bring in the senior one and say to him: Tell us how you saw the moon. Was it in front of the sun or behind it? To its north or its south? How high was it? Which way was it tilting? How wide was it? If he said 'in front of the sun,' he has said nothing.",
+      "whatsHappening": "A new משנה starts. It describes the court's step-by-step questioning of the first witness about the new moon.",
+      "deeperAnalysis": "The court asks detailed questions to check that the witness truly saw the new moon. Some answers are impossible, such as placing the moon in front of the sun. A witness who gives such an answer is either mistaken or lying, so his testimony is thrown out.",
+      "keyTerms": [
+        {
+          "term": "בּוֹדְקִין",
+          "meaning": "They examine or check"
+        },
+        {
+          "term": "זוּג",
+          "meaning": "A pair (of witnesses)"
+        },
+        {
+          "term": "הַגָּדוֹל שֶׁבָּהֶן",
+          "meaning": "The senior or more important of the two"
+        },
+        {
+          "term": "הַלְּבָנָה",
+          "meaning": "The moon"
+        },
+        {
+          "term": "הַחַמָּה",
+          "meaning": "The sun"
+        },
+        {
+          "term": "לֹא אָמַר כְּלוּם",
+          "meaning": "He has said nothing; his testimony is worthless"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מַתְנִי׳ כֵּיצַד בּוֹדְקִין אֶת הָעֵדִים?",
+          "english": "MISHNAH: How do they examine the witnesses?"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "זוּג שֶׁבָּא רִאשׁוֹן — בּוֹדְקִין אוֹתוֹ רִאשׁוֹן.",
+          "english": "The pair that came first is examined first."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וּמַכְנִיסִין אֶת הַגָּדוֹל שֶׁבָּהֶן,",
+          "english": "They bring in the senior one of them,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וְאוֹמְרִין לוֹ, אֱמוֹר כֵּיצַד רָאִיתָ אֶת הַלְּבָנָה:",
+          "english": "and they say to him: Tell how you saw the moon:"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "לִפְנֵי הַחַמָּה, אוֹ לְאַחַר הַחַמָּה?",
+          "english": "In front of the sun, or behind the sun?"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "לִצְפוֹנָהּ, אוֹ לִדְרוֹמָהּ?",
+          "english": "To its north, or to its south?"
+        },
+        {
+          "phraseNumber": 7,
+          "aramaic": "כַּמָּה הָיָה גָּבוֹהַּ, וּלְאַיִן הָיָה נוֹטֶה,",
+          "english": "How high was it, and in which direction was it tilting,"
+        },
+        {
+          "phraseNumber": 8,
+          "aramaic": "וְכַמָּה הָיָה רָחָב.",
+          "english": "and how wide was it?"
+        },
+        {
+          "phraseNumber": 9,
+          "aramaic": "אִם אָמַר לִפְנֵי הַחַמָּה — לֹא אָמַר כְּלוּם.",
+          "english": "If he said 'in front of the sun,' he has said nothing.",
+          "notes": "The new moon is never seen in that position, so this answer shows the testimony is false or mistaken."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "כֵּיצַד בּוֹדְקִין אֶת הָעֵדִים",
+      "macroPhase": "mishnah",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Starts a new משנה about the examination process, now that the witnesses have arrived and gathered.",
+      "mimraCoreRuling": "The first pair is examined first, starting with the senior witness, who is asked detailed questions about the moon's position. An impossible answer makes his testimony worthless."
+    },
+    {
+      "stepNumber": 23,
+      "hebrewStepName": "מימרא",
+      "title": "Questioning the second witness and comparing answers",
+      "stepSummary": "The second witness is examined separately. If both accounts match, the testimony is accepted.",
+      "simpleTranslation": "Afterwards they bring in the second witness and examine him. If their words are found to match, their testimony stands.",
+      "whatsHappening": "The משנה continues: the second witness is questioned on his own, and his answers are compared to the first witness's answers.",
+      "deeperAnalysis": "Questioning each witness separately keeps them from coordinating their stories. Only when both accounts agree does the court accept the testimony and declare the new month.",
+      "keyTerms": [
+        {
+          "term": "מְכֻוָּנִים",
+          "meaning": "Matching, consistent"
+        },
+        {
+          "term": "עֵדוּתָן קַיֶּימֶת",
+          "meaning": "Their testimony stands (is accepted)"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְאַחַר כָּךְ הָיוּ מַכְנִיסִין אֶת הַשֵּׁנִי וּבוֹדְקִין אוֹתוֹ.",
+          "english": "And afterwards they would bring in the second one and examine him."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אִם נִמְצְאוּ דִּבְרֵיהֶם מְכֻוּוֹנִים — עֵדוּתָן קַיֶּימֶת.",
+          "english": "If their words are found to match, their testimony stands."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וְאַחַר כָּךְ הָיוּ מַכְנִיסִין אֶת הַשֵּׁנִי",
+      "macroPhase": "mishnah",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        22
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Continues the examination process from Step 22 with the second witness.",
+      "mimraCoreRuling": "The second witness is examined separately. Matching accounts make the testimony valid."
+    },
+    {
+      "stepNumber": 24,
+      "hebrewStepName": "מימרא",
+      "title": "Brief questions for the other pairs",
+      "stepSummary": "All the other pairs are asked only general questions. The court does not need them, but it wants them to leave happy and keep coming.",
+      "simpleTranslation": "And all the other pairs are asked about the main points. This is not because the court needs them, but so they do not leave disappointed, and so they will be used to coming.",
+      "whatsHappening": "The משנה ends by explaining what happens to the extra pairs of witnesses after a valid pair has already testified.",
+      "deeperAnalysis": "Once one pair is accepted, more testimony is not needed. The court still gives the others a short hearing so they feel their trip mattered. This repeats the same goal as the big meals: keeping witnesses willing to come in the future.",
+      "keyTerms": [
+        {
+          "term": "רָאשֵׁי דְבָרִים",
+          "meaning": "Main points, general questions"
+        },
+        {
+          "term": "בְּפַחֵי נֶפֶשׁ",
+          "meaning": "Disappointed, let down"
+        },
+        {
+          "term": "שְׁאָר כׇּל הַזּוּגוֹת",
+          "meaning": "All the other pairs"
+        }
+      ],
+      "whyThisMatters": "It shows how much effort בית דין put into keeping witnesses motivated, because declaring the new month depended on them.",
+      "whatToRemember": "The process works like this: the first pair is examined in detail, one witness at a time. Their answers must match. Later pairs get a short hearing only to encourage them.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וּשְׁאָר כׇּל הַזּוּגוֹת, שׁוֹאֲלִין אוֹתָן רָאשֵׁי דְבָרִים.",
+          "english": "And all the other pairs, they ask them the main points."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "לֹא שֶׁהָיוּ צְרִיכִים לָהֶם,",
+          "english": "Not because they needed them,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "אֶלָּא כְּדֵי שֶׁלֹּא יֵצְאוּ בְּפַחֵי נֶפֶשׁ,",
+          "english": "but so that they should not leave disappointed,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "בִּשְׁבִיל שֶׁיְּהוּ רְגִילִים לָבוֹא.",
+          "english": "so that they will be used to coming."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וּשְׁאָר כׇּל הַזּוּגוֹת, שׁוֹאֲלִין אוֹתָן רָאשֵׁי דְבָרִים",
+      "macroPhase": "mishnah",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        22,
+        23
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Finishes the examination procedure by explaining how the extra pairs are handled.",
+      "mimraCoreRuling": "The other pairs are asked only general questions, to encourage witnesses to keep coming."
+    },
+    {
+      "stepNumber": 25,
+      "hebrewStepName": "קשיא",
+      "title": "Aren't the court's two questions the same thing?",
+      "stepSummary": "The גמרא challenges the משנה: 'in front of the sun' seems to mean 'north of it,' and 'behind the sun' seems to mean 'south of it,' so why ask both?",
+      "simpleTranslation": "גמרא: 'In front of the sun' is the same as 'to its north,' and 'behind the sun' is the same as 'to its south'!",
+      "whatsHappening": "The גמרא starts its discussion of the משנה by pointing out that two of the court's questions seem to repeat each other.",
+      "deeperAnalysis": "The משנה said the court asks the witness whether the moon was in front of or behind the sun, and also whether it was north or south of it. The גמרא assumes both questions are about the moon's position relative to the sun. If so, one pair of questions should be enough, and the second pair looks extra.",
+      "keyTerms": [
+        {
+          "term": "גְּמָרָא",
+          "meaning": "The Talmud's discussion of the משנה"
+        },
+        {
+          "term": "הַיְינוּ",
+          "meaning": "That is the same as"
+        },
+        {
+          "term": "לִפְנֵי הַחַמָּה",
+          "meaning": "In front of the sun"
+        },
+        {
+          "term": "לִצְפוֹנָהּ",
+          "meaning": "To its north"
+        },
+        {
+          "term": "לִדְרוֹמָהּ",
+          "meaning": "To its south"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "גְּמָ׳",
+          "english": "GEMARA:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "הַיְינוּ לִפְנֵי הַחַמָּה, הַיְינוּ לִצְפוֹנָהּ;",
+          "english": "In front of the sun is the same as to its north;",
+          "notes": "The גמרא assumes 'in front of' and 'north' describe the same spot."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "הַיְינוּ לְאַחַר הַחַמָּה, הַיְינוּ לִדְרוֹמָהּ!",
+          "english": "behind the sun is the same as to its south!",
+          "notes": "So why does the משנה list both questions?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "שאלה",
+      "triggerLanguage": "הַיְינוּ לִפְנֵי הַחַמָּה, הַיְינוּ לִצְפוֹנָהּ",
+      "macroPhase": "opening_question",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [
+        22
+      ],
+      "scopeOfStep": "wording",
+      "relationToPreviousStep": "Opens the גמרא on the משנה's questioning of the first witness.",
+      "kashyaTarget": "The משנה's list of questions to the moon witnesses",
+      "kashyaAttackLogic": "Redundancy: two pairs of questions seem to ask the same thing."
+    },
+    {
+      "stepNumber": 26,
+      "hebrewStepName": "תירוץ",
+      "title": "אביי: The first question asks which way the moon's gap faced",
+      "stepSummary": "אביי explains that 'in front of or behind the sun' asks which way the moon's curved gap pointed. A witness who says it pointed toward the sun has said nothing.",
+      "simpleTranslation": "אביי said: The question is about the moon's gap. Did it face toward the sun or away from the sun? If the witness said it faced toward the sun, his words mean nothing.",
+      "whatsHappening": "אביי answers the challenge by showing that the first question is about something different: the direction of the crescent's opening.",
+      "deeperAnalysis": "North or south asks where the moon was. In front of or behind asks which way the hollow inner curve of the crescent faced. In reality the gap always faces away from the sun. So a witness who says it faced the sun is describing something impossible, and his testimony is rejected.",
+      "keyTerms": [
+        {
+          "term": "פְּגִימָתָהּ",
+          "meaning": "Its gap, meaning the hollow inner curve of the crescent"
+        },
+        {
+          "term": "לְאַחַר הַחַמָּה",
+          "meaning": "Behind the sun, meaning facing away from it"
+        },
+        {
+          "term": "לָא אָמַר כְּלוּם",
+          "meaning": "He has said nothing; his testimony is worthless"
+        }
+      ],
+      "confusionAlert": "Do not mix up the two questions. 'North or south' is about the moon's location. 'In front of or behind' is about which way the open side of the crescent points.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר אַבָּיֵי:",
+          "english": "Abaye said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "פְּגִימָתָהּ — לִפְנֵי הַחַמָּה,",
+          "english": "Its gap: was it toward the sun,",
+          "notes": "The hollow side of the crescent"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "אוֹ לְאַחַר הַחַמָּה?",
+          "english": "or away from the sun?"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "אִם אָמַר לִפְנֵי הַחַמָּה",
+          "english": "If he said toward the sun,"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "לָא אָמַר כְּלוּם.",
+          "english": "he has said nothing.",
+          "notes": "He described something that never happens, so he is not believed."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אָמַר אַבָּיֵי: פְּגִימָתָהּ",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        25
+      ],
+      "scopeOfStep": "wording",
+      "relationToPreviousStep": "Answers the redundancy challenge of step 25.",
+      "terutzResolutionType": "Reinterpretation: the two questions ask about different things",
+      "terutzHavaAmina": "Both questions ask where the moon stood relative to the sun.",
+      "terutzMaskana": "The first question asks which way the crescent's gap faced, and it is a test of the witness's truthfulness."
+    },
+    {
+      "stepNumber": 27,
+      "hebrewStepName": "ראיה",
+      "title": "רבי יוחנן: The sun never sees the gap of the moon or of a rainbow",
+      "stepSummary": "רבי יוחנן explains a verse in איוב: the sun has never seen the gap side of the moon or of a rainbow. This supports אביי's point.",
+      "simpleTranslation": "As רבי יוחנן said: What does the verse mean, 'Dominion and fear are with Him, He makes peace in His high places'? The sun has never seen the gap of the moon, and it has never seen the gap of a rainbow.",
+      "whatsHappening": "The גמרא brings רבי יוחנן's teaching as the source for אביי's claim that the moon's gap never faces the sun.",
+      "deeperAnalysis": "רבי יוחנן reads 'He makes peace in His high places' as describing how the heavenly bodies are arranged. The gap side of the moon and of a rainbow always faces away from the sun. That is exactly why a witness who says the gap faced the sun must be mistaken or lying.",
+      "keyTerms": [
+        {
+          "term": "הַמְשֵׁל וָפַחַד",
+          "meaning": "Dominion and fear (from איוב 25:2)"
+        },
+        {
+          "term": "עוֹשֶׂה שָׁלוֹם בִּמְרוֹמָיו",
+          "meaning": "He makes peace in His high places"
+        },
+        {
+          "term": "לְבָנָה",
+          "meaning": "The moon"
+        },
+        {
+          "term": "קֶשֶׁת",
+          "meaning": "A rainbow"
+        },
+        {
+          "term": "מֵעוֹלָם",
+          "meaning": "Never"
+        }
+      ],
+      "whyThisMatters": "This fact of nature is what lets the court catch a false witness with a single question.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "דְּאָמַר רַבִּי יוֹחָנָן,",
+          "english": "As Rabbi Yochanan said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "מַאי דִּכְתִיב:",
+          "english": "What is the meaning of that which is written:"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "״הַמְשֵׁל וָפַחַד עִמּוֹ",
+          "english": "\"Dominion and fear are with Him,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "עוֹשֶׂה שָׁלוֹם בִּמְרוֹמָיו״,",
+          "english": "He makes peace in His high places\"?"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "מֵעוֹלָם לֹא רָאֲתָה חַמָּה",
+          "english": "The sun has never seen"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "פְּגִימָתָהּ שֶׁל לְבָנָה,",
+          "english": "the gap side of the moon,"
+        },
+        {
+          "phraseNumber": 7,
+          "aramaic": "וְלֹא פְּגִימָתָהּ שֶׁל קֶשֶׁת.",
+          "english": "nor the gap side of a rainbow."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "מימרא",
+      "triggerLanguage": "דְּאָמַר רַבִּי יוֹחָנָן, מַאי דִּכְתִיב",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        26
+      ],
+      "scopeOfStep": "proof_mechanism",
+      "relationToPreviousStep": "Supplies the source for אביי's claim in step 26.",
+      "raayaObject": "אביי's claim that a witness who says the gap faced the sun has said nothing",
+      "raayaSupportSource": "רבי יוחנן's explanation of איוב 25:2"
+    },
+    {
+      "stepNumber": 28,
+      "hebrewStepName": "מימרא",
+      "title": "The reasons the sun never sees the moon's gap or the rainbow's gap",
+      "stepSummary": "רבי יוחנן gives two reasons. The moon would feel ashamed if the sun saw its gap. The rainbow's gap is hidden so that sun-worshippers should not say something false. The sentence continues in the next section.",
+      "simpleTranslation": "The sun never sees the moon's gap, because the moon would feel bad. The sun never sees the rainbow's gap, so that the sun-worshippers should not say...",
+      "whatsHappening": "רבי יוחנן explains why each of the two arrangements exists. The second reason is cut off and finishes in the next part of the text.",
+      "deeperAnalysis": "The moon's reason fits the verse: hiding its 'flaw' from the sun keeps peace between them. The rainbow's reason is different. It is meant to stop the sun-worshippers from drawing a false conclusion, and the next section will tell us what that conclusion is.",
+      "keyTerms": [
+        {
+          "term": "חָלְשָׁה דַּעְתַּהּ",
+          "meaning": "Her spirit is weakened; she feels hurt or ashamed"
+        },
+        {
+          "term": "דְּלָא לֵימְרוּ",
+          "meaning": "So that they should not say"
+        },
+        {
+          "term": "עוֹבְדֵי הַחַמָּה",
+          "meaning": "Sun-worshippers"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "פְּגִימָתָהּ שֶׁל לְבָנָה",
+          "english": "The gap side of the moon is not seen by the sun"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "דְּחָלְשָׁה דַּעְתַּהּ.",
+          "english": "because the moon would feel hurt.",
+          "notes": "Hiding the moon's gap keeps peace between the sun and the moon."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "פְּגִימָתָהּ שֶׁל קֶשֶׁת",
+          "english": "The gap side of the rainbow is not seen by the sun"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "דְּלָא לֵימְרוּ עוֹבְדֵי הַחַמָּה",
+          "english": "so that the sun-worshippers should not say...",
+          "notes": "The sentence continues on the next amud."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "ראיה",
+      "triggerLanguage": "פְּגִימָתָהּ שֶׁל לְבָנָה דְּחָלְשָׁה דַּעְתַּהּ",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        27
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Explains the reasons behind רבי יוחנן's two facts in step 27.",
+      "mimraCoreRuling": "The moon's gap is hidden from the sun to spare the moon's feelings. The rainbow's gap is hidden to prevent a false claim by sun-worshippers."
+    }
+  ]
+}

@@ -1,0 +1,1027 @@
+{
+  "mainTopic": "Fixing the calendar: why one kind of witness manipulation is allowed, שמואל's claim that he could set the calendar by calculation, and the rule that the new month needs both a night and a day",
+  "overview": "This amud opens by finishing an earlier discussion: delaying ראש חודש by holding back true witnesses looks like a lie, but declaring it early does not. Next, שמואל claims he can fix the calendar for all of the גולה by calculation. אבא אבוה דרבי שמלאי tests him with a ברייתא from סוד העיבור about a מולד before or after midday, and שמואל's claim is rejected. רבי זירא then sends a rule from ארץ ישראל: a day can be ראש חודש only if both its night and its day belong to the new month. This explains the ברייתא: a מולד before midday means the moon can be seen at sunset. The גמרא adds that the moon is hidden for 24 hours, and רב אשי says that both facts are used to catch false witnesses. The גמרא then looks for the source of the night-and-day rule. רבי יוחנן and ריש לקיש bring different פסוקים, and אביי and רבא disagree about whether this makes a practical difference. Finally, רב נחמן rules that a calendar doubt is pushed forward, so סוכות in חוץ לארץ is kept on the fifteenth and sixteenth. The גמרא challenges this: why not keep the fourteenth too? The answer comes on the next amud.",
+  "steps": [
+    {
+      "stepNumber": 1,
+      "hebrewStepName": "תירוץ",
+      "title": "Why one approach looks like a lie and the other does not",
+      "stepSummary": "The גמרא finishes its answer to an earlier question. Holding back true witnesses so that ראש חודש is pushed off looks like a lie. Bringing witnesses so that ראש חודש comes early does not look like a lie.",
+      "simpleTranslation": "This one looks like a lie. That one does not look like a lie.",
+      "whatsHappening": "The גמרא is finishing its answer to a question on the previous amud. It explains why בית דין may sometimes make ראש חודש come early, but may not push it later by holding back witnesses who really saw the moon.",
+      "deeperAnalysis": "If witnesses saw the moon and ראש חודש is still delayed, other people who also saw it will think בית דין is lying. If ראש חודש comes a day early, people simply assume that only a few people saw the moon. So the problem is not the change itself. The problem is how it looks to the public.",
+      "keyTerms": [
+        {
+          "term": "מִיחֲזֵי",
+          "meaning": "Looks like / appears as"
+        },
+        {
+          "term": "שִׁקְרָא",
+          "meaning": "A lie / falsehood"
+        },
+        {
+          "term": "הַאי",
+          "meaning": "This (one)"
+        }
+      ],
+      "whyThisMatters": "It shows that בית דין must avoid steps that make its rulings look dishonest to the public, even when it has the authority to adjust the calendar.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "הַאי מִיחֲזֵי כְּשִׁקְרָא,",
+          "english": "This one looks like a lie,",
+          "notes": "Holding back witnesses who saw the moon, so that ראש חודש is pushed off."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "הַאי לָא מִיחֲזֵי כְּשִׁקְרָא.",
+          "english": "that one does not look like a lie.",
+          "notes": "Making ראש חודש early. People assume only a few saw the moon."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "מסקנא",
+      "triggerLanguage": "הַאי מִיחֲזֵי כְּשִׁקְרָא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Completes an answer to a question raised on the previous amud.",
+      "terutzResolutionType": "Distinction between cases based on how each looks to the public",
+      "terutzHavaAmina": "One might think both ways of changing the calendar should be treated the same.",
+      "terutzMaskana": "Delaying ראש חודש looks like a lie, but moving it earlier does not, so only moving it earlier is allowed."
+    },
+    {
+      "stepNumber": 2,
+      "hebrewStepName": "מימרא",
+      "title": "שמואל claims he can fix the calendar for the whole Diaspora",
+      "stepSummary": "שמואל, who was an expert in astronomy, says he could set the calendar for the entire גולה by calculation.",
+      "simpleTranslation": "שמואל said: I am able to fix the calendar for the entire Diaspora.",
+      "whatsHappening": "A new topic begins. שמואל boasts that his knowledge of the moon's movements is enough to set the calendar for all Jews outside ארץ ישראל.",
+      "deeperAnalysis": "Normally the month was set by witnesses who came before בית דין. שמואל suggests that calculation could do the job without depending on witnesses. This claim sets up the challenge in the next steps.",
+      "keyTerms": [
+        {
+          "term": "יָכֵילְנָא",
+          "meaning": "I am able"
+        },
+        {
+          "term": "לְתַקּוֹנֵי",
+          "meaning": "To fix / arrange (here: the calendar)"
+        },
+        {
+          "term": "גּוֹלָה",
+          "meaning": "The Diaspora (Jews outside ארץ ישראל)"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר שְׁמוּאֵל:",
+          "english": "Shmuel said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "יָכֵילְנָא לְתַקּוֹנֵי לְכוּלַּהּ גּוֹלָה.",
+          "english": "I am able to fix (the calendar) for the entire Diaspora.",
+          "notes": "He means by astronomical calculation."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אָמַר שְׁמוּאֵל: יָכֵילְנָא לְתַקּוֹנֵי לְכוּלַּהּ גּוֹלָה",
+      "macroPhase": "narrative_aggadah",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Opens a new topic: setting the calendar by calculation.",
+      "mimraCoreRuling": "שמואל claims his calculations are enough to set the calendar for all of the גולה."
+    },
+    {
+      "stepNumber": 3,
+      "hebrewStepName": "שאלה",
+      "title": "אבא tests שמואל with a hard calendar teaching",
+      "stepSummary": "אבא אבוה דרבי שמלאי asks שמואל whether he understands a ברייתא from סוד העיבור about a מולד before or after midday.",
+      "simpleTranslation": "אבא, the father of רבי שמלאי, said to שמואל: Does the master know this teaching from the ברייתא of סוד העיבור: born before midday, or born after midday?",
+      "whatsHappening": "אבא tests שמואל's claim. He asks whether שמואל understands a hard calendar teaching about the timing of the מולד.",
+      "deeperAnalysis": "This is a testing question. Anyone who can really fix the calendar should know what this teaching means. The question sets up the challenge that comes in step 5.",
+      "keyTerms": [
+        {
+          "term": "סוֹד הָעִיבּוּר",
+          "meaning": "The secret of intercalation (the hidden rules for calculating the calendar)"
+        },
+        {
+          "term": "נוֹלַד",
+          "meaning": "Was born, referring to the new moon (the מולד)"
+        },
+        {
+          "term": "חֲצוֹת",
+          "meaning": "Midday"
+        },
+        {
+          "term": "תַּנְיָא",
+          "meaning": "It was taught in a ברייתא"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֲמַר לֵיהּ אַבָּא אֲבוּהּ דְּרַבִּי שִׂמְלַאי לִשְׁמוּאֵל:",
+          "english": "Abba, the father of Rabbi Simlai, said to Shmuel:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "יָדַע מָר הַאי מִילְּתָא",
+          "english": "Does the master know this matter",
+          "notes": "מר means \"master,\" a respectful way to address a scholar."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "דְּתַנְיָא בְּסוֹד הָעִיבּוּר:",
+          "english": "that is taught in the secret of intercalation:"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "נוֹלַד קוֹדֶם חֲצוֹת",
+          "english": "born before midday",
+          "notes": "The new moon (מולד) appeared before midday."
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "אוֹ נוֹלַד אַחַר חֲצוֹת?",
+          "english": "or born after midday?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "קשיא",
+      "triggerLanguage": "יָדַע מָר הַאי מִילְּתָא דְּתַנְיָא בְּסוֹד הָעִיבּוּר",
+      "macroPhase": "narrative_aggadah",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        2
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Tests the claim שמואל made in step 2.",
+      "sheelahInformationSought": "Whether שמואל understands the ברייתא about a מולד before or after midday."
+    },
+    {
+      "stepNumber": 4,
+      "hebrewStepName": "תשובה",
+      "title": "שמואל admits he does not know",
+      "stepSummary": "שמואל answers honestly that he does not know what this teaching means.",
+      "simpleTranslation": "He said to him: No.",
+      "whatsHappening": "שמואל admits that he does not understand the teaching. This prepares the next step, where אבא uses this admission against שמואל's claim.",
+      "deeperAnalysis": "With one honest word, שמואל opens a gap in his own claim. Now his ability to fix the calendar is in doubt.",
+      "keyTerms": [
+        {
+          "term": "לָא",
+          "meaning": "No"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֲמַר לֵיהּ: לָא.",
+          "english": "He said to him: No."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אֲמַר לֵיהּ: לָא",
+      "macroPhase": "narrative_aggadah",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        3
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Answers the question from step 3.",
+      "teshuvahAnswerProvided": "שמואל does not know the meaning of the ברייתא."
+    },
+    {
+      "stepNumber": 5,
+      "hebrewStepName": "דחיה",
+      "title": "If you do not know this, you probably do not know other things",
+      "stepSummary": "אבא concludes that since שמואל does not know this teaching, there are probably other things he does not know. So his claim to fix the calendar cannot be relied on.",
+      "simpleTranslation": "He said to him: Since the master does not know this, there are other matters that the master does not know.",
+      "whatsHappening": "אבא uses שמואל's admission to reject his claim. If there is a gap in his knowledge here, there may be other gaps, so his calendar calculations are not reliable.",
+      "deeperAnalysis": "The argument goes from one known gap to a probable lack of full mastery. Setting the calendar requires complete knowledge, so even one gap is enough to reject שמואל's boast.",
+      "keyTerms": [
+        {
+          "term": "מִדְּהָא",
+          "meaning": "Since this (one thing)"
+        },
+        {
+          "term": "מִילֵּי אַחְרָנְיָיתָא",
+          "meaning": "Other matters"
+        },
+        {
+          "term": "מָר",
+          "meaning": "Master (respectful address)"
+        }
+      ],
+      "whatToRemember": "שמואל's claim that he could set the calendar by calculation was rejected, because he did not know the teaching about a מולד before or after midday.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֲמַר לֵיהּ: מִדְּהָא לָא יָדַע מָר —",
+          "english": "He said to him: Since the master does not know this,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אִיכָּא מִילֵּי אַחְרָנְיָיתָא דְּלָא יָדַע מָר.",
+          "english": "there are other matters that the master does not know."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "קשיא",
+      "triggerLanguage": "מִדְּהָא לָא יָדַע מָר",
+      "macroPhase": "narrative_aggadah",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        2,
+        4
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Uses שמואל's admission from step 4 to reject his claim from step 2.",
+      "dechiyaRejectionScope": "שמואל's claim in step 2 that he could set the calendar for the whole גולה.",
+      "dechiyaFlawIdentified": "His knowledge of the calendar's rules is incomplete, so his calculations cannot be trusted."
+    },
+    {
+      "stepNumber": 6,
+      "hebrewStepName": "מימרא",
+      "title": "רבי זירא: the new month needs both night and day",
+      "stepSummary": "After moving to ארץ ישראל, רבי זירא sends back a ruling: for a day to be ראש חודש, both its night and its day must belong to the new month. This begins to explain the hard ברייתא.",
+      "simpleTranslation": "When רבי זירא went up to ארץ ישראל, he sent to them: It is necessary that both the night and the day be of the new month.",
+      "whatsHappening": "רבי זירא sends a rule from ארץ ישראל that helps explain the ברייתא שמואל did not know. A day counts as ראש חודש only if the new month has already begun by its night, and not just during its daytime.",
+      "deeperAnalysis": "On the standard explanation, the מולד must happen before the night begins, so that the whole day, night and daytime, is part of the new month. This is the principle behind the ברייתא's line about a מולד before or after midday. The גמרא will work out the details next.",
+      "keyTerms": [
+        {
+          "term": "סְלֵיק",
+          "meaning": "Went up (moved from בבל to ארץ ישראל)"
+        },
+        {
+          "term": "שְׁלַח לְהוּ",
+          "meaning": "He sent to them (a message back to בבל)"
+        },
+        {
+          "term": "לַיְלָה וָיוֹם",
+          "meaning": "Night and day"
+        },
+        {
+          "term": "הֶחָדָשׁ",
+          "meaning": "The (new) month"
+        }
+      ],
+      "confusionAlert": "In Jewish law the night comes before the day. So \"night and day of the new month\" means the new month must already have begun when that evening starts.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "כִּי סְלֵיק רַבִּי זֵירָא, שְׁלַח לְהוּ:",
+          "english": "When Rabbi Zeira went up (to Eretz Yisrael), he sent to them:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "צָרִיךְ שֶׁיְּהֵא לַיְלָה וָיוֹם מִן הֶחָדָשׁ.",
+          "english": "It is necessary that the night and the day be of the new month."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "תשובה",
+      "triggerLanguage": "כִּי סְלֵיק רַבִּי זֵירָא, שְׁלַח לְהוּ",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [
+        3
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Begins to explain the hard ברייתא from step 3.",
+      "mimraCoreRuling": "A day can be ראש חודש only if both its night and its day belong to the new month.",
+      "whyThisMatters": "This principle is the basis for the later rules about when the מולד must happen for a day to be declared ראש חודש."
+    },
+    {
+      "stepNumber": 7,
+      "hebrewStepName": "מימרא",
+      "title": "The meaning of the hard ברייתא is explained",
+      "stepSummary": "The ברייתא that אבא אבוה דרבי שמלאי quoted now makes sense: if the מולד happens before midday, the moon will be seen near sunset; if not, it will not be seen.",
+      "simpleTranslation": "And this is what אבא אבוה דרבי שמלאי said: we calculate the moment of the new moon's birth. If it was born before midday, it is known that it will be seen close to sunset. If it was not born before midday, it is known that it will not be seen close to sunset.",
+      "whatsHappening": "Using רבי זירא's rule from the previous step, the גמרא now explains the ברייתא that שמואל did not understand.",
+      "deeperAnalysis": "After the מולד, the new moon needs about six hours before it can be seen. If the מולד is before midday, at least six hours remain until sunset, so the moon can be seen that evening and the coming night and day can both belong to the new month. If the מולד is after midday, it cannot yet be seen at sunset.",
+      "keyTerms": [
+        {
+          "term": "תּוֹלַדְתּוֹ",
+          "meaning": "its birth, meaning the מוֹלָד, the moment the new moon begins"
+        },
+        {
+          "term": "חֲצוֹת",
+          "meaning": "midday (noon)"
+        },
+        {
+          "term": "בְּיָדוּעַ",
+          "meaning": "it is known for certain"
+        },
+        {
+          "term": "שְׁקִיעַת הַחַמָּה",
+          "meaning": "sunset"
+        }
+      ],
+      "confusionAlert": "The מולד is not the moment the moon is seen. It is the hidden moment the new month begins. The moon only becomes visible some hours later.",
+      "whyThisMatters": "This closes the story about שמואל: the ברייתא he did not know is now explained, and it depends on רבי זירא's rule.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְזוֹ שֶׁאָמַר אַבָּא אֲבוּהּ דְּרַבִּי שִׂמְלַאי:",
+          "english": "And this is what Abba, the father of Rabbi Simlai, said:",
+          "notes": "This refers back to the ברייתא he asked שמואל about in Step 3."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "מְחַשְּׁבִין אֶת תּוֹלַדְתּוֹ.",
+          "english": "We calculate its birth (the molad).",
+          "notes": "The moment of the new moon's birth is worked out by calculation."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "נוֹלַד קוֹדֶם חֲצוֹת —",
+          "english": "If it was born before midday,",
+          "notes": "At least about six hours are left before sunset."
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "בְּיָדוּעַ שֶׁנִּרְאָה סָמוּךְ לִשְׁקִיעַת הַחַמָּה.",
+          "english": "it is known that it will be seen close to sunset.",
+          "notes": ""
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "לֹא נוֹלַד קוֹדֶם חֲצוֹת —",
+          "english": "If it was not born before midday,",
+          "notes": ""
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "בְּיָדוּעַ שֶׁלֹּא נִרְאָה סָמוּךְ לִשְׁקִיעַת הַחַמָּה.",
+          "english": "it is known that it will not be seen close to sunset.",
+          "notes": "There is not enough time for the moon to become visible."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "תשובה",
+      "triggerLanguage": "וְזוֹ שֶׁאָמַר אַבָּא אֲבוּהּ דְּרַבִּי שִׂמְלַאי",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        3,
+        6
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Applies רבי זירא's rule to explain the ברייתא that שמואל could not explain",
+      "mimraCoreRuling": "A מולד before midday means the moon will be visible at sunset; a מולד after midday means it will not."
+    },
+    {
+      "stepNumber": 8,
+      "hebrewStepName": "שאלה",
+      "title": "What practical use does this calculation have?",
+      "stepSummary": "The גמרא asks what practical difference it makes to know whether the moon will be visible at sunset.",
+      "simpleTranslation": "What is the practical difference?",
+      "whatsHappening": "The גמרא asks why this calculation matters, since the court declares ראש חודש based on עדים anyway. This question sets up רב אשי's answer.",
+      "deeperAnalysis": "The month is set by witnesses who see the moon, not by calculation. So the גמרא wants to know what real job the calculation does in the court.",
+      "keyTerms": [
+        {
+          "term": "לְמַאי נָפְקָא מִינַּהּ",
+          "meaning": "what practical difference does it make?"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "לְמַאי נָפְקָא מִינַּהּ?",
+          "english": "For what is the practical difference?",
+          "notes": "The court relies on witnesses, so why calculate?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "קשיא",
+      "triggerLanguage": "לְמַאי נָפְקָא מִינַּהּ",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        7
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Asks what the rule in Step 7 is used for",
+      "sheelahInformationSought": "The practical use of knowing whether the moon is visible at sunset"
+    },
+    {
+      "stepNumber": 9,
+      "hebrewStepName": "תשובה",
+      "title": "The calculation is used to catch lying witnesses",
+      "stepSummary": "רב אשי answers that the calculation lets the court disprove witnesses whose story does not match it.",
+      "simpleTranslation": "רב אשי said: to disprove the witnesses.",
+      "whatsHappening": "רב אשי gives the practical use: the calculation is a check on the witnesses.",
+      "deeperAnalysis": "The court still needs witnesses, but if עדים say they saw the moon at sunset when the calculation shows it could not be seen, the court knows they are false. The calculation does not replace the witnesses; it tests them.",
+      "keyTerms": [
+        {
+          "term": "רַב אָשֵׁי",
+          "meaning": "the אָמוֹרָא who answers both practical questions here"
+        },
+        {
+          "term": "לְאַכְחוֹשֵׁי",
+          "meaning": "to contradict / disprove"
+        },
+        {
+          "term": "סָהֲדֵי",
+          "meaning": "witnesses"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר רַב אָשֵׁי:",
+          "english": "Rav Ashi said:",
+          "notes": ""
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "לְאַכְחוֹשֵׁי סָהֲדֵי.",
+          "english": "To disprove the witnesses.",
+          "notes": "Witnesses who claim the impossible are rejected."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אָמַר רַב אָשֵׁי: לְאַכְחוֹשֵׁי סָהֲדֵי",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        8
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Answers the question of Step 8",
+      "teshuvahAnswerProvided": "The calculation is used to reject witnesses whose testimony contradicts it"
+    },
+    {
+      "stepNumber": 10,
+      "hebrewStepName": "מימרא",
+      "title": "The moon is hidden for twenty-four hours",
+      "stepSummary": "רבי זירא quotes רב נחמן: the moon is invisible for 24 hours. In בבל that is 6 hours of the old moon and 18 of the new; in ארץ ישראל it is 6 of the new and 18 of the old.",
+      "simpleTranslation": "רבי זירא said in the name of רב נחמן: for twenty-four hours the moon is hidden. For us in בבל, six hours from the old moon and eighteen from the new. For them in ארץ ישראל, six from the new and eighteen from the old.",
+      "whatsHappening": "The גמרא brings a new astronomical fact: there is a 24-hour period around the מולד when the moon cannot be seen at all.",
+      "deeperAnalysis": "Between the last sight of the old moon and the first sight of the new one, there are 24 hours with no moon. How those hours split before and after the מולד depends on location, so בבל and ארץ ישראל get opposite splits.",
+      "keyTerms": [
+        {
+          "term": "מִכַּסֵּי",
+          "meaning": "is covered / hidden"
+        },
+        {
+          "term": "סֵיהֲרָא",
+          "meaning": "the moon"
+        },
+        {
+          "term": "עַתִּיקָא",
+          "meaning": "the old (moon)"
+        },
+        {
+          "term": "חַדְתָּא",
+          "meaning": "the new (moon)"
+        },
+        {
+          "term": "לְדִידַן",
+          "meaning": "for us, in בָּבֶל"
+        },
+        {
+          "term": "לְדִידְהוּ",
+          "meaning": "for them, in אֶרֶץ יִשְׂרָאֵל"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר רַבִּי זֵירָא אָמַר רַב נַחְמָן:",
+          "english": "Rabbi Zeira said that Rav Nachman said:",
+          "notes": ""
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "עֶשְׂרִים וְאַרְבְּעָה שָׁעֵי מִכַּסֵּי סֵיהֲרָא.",
+          "english": "For twenty-four hours the moon is hidden.",
+          "notes": "From the last sighting of the old moon to the first sighting of the new."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "לְדִידַן — שֵׁית מֵעַתִּיקָא",
+          "english": "For us (in Babylonia): six hours of the old moon",
+          "notes": ""
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וְתַמְנֵי סְרֵי מֵחַדְתָּא,",
+          "english": "and eighteen of the new;",
+          "notes": ""
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "לְדִידְהוּ — שֵׁית מֵחַדְתָּא",
+          "english": "for them (in Eretz Yisrael): six hours of the new moon",
+          "notes": ""
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "וְתַמְנֵי סְרֵי מֵעַתִּיקָא.",
+          "english": "and eighteen of the old.",
+          "notes": "The split is reversed because of the different location."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אָמַר רַבִּי זֵירָא אָמַר רַב נַחְמָן",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Adds a second astronomical fact about the moon's visibility",
+      "mimraCoreRuling": "The moon is invisible for 24 hours around the מולד, divided 6/18 or 18/6 depending on location."
+    },
+    {
+      "stepNumber": 11,
+      "hebrewStepName": "שאלה",
+      "title": "What practical use does the 24-hour fact have?",
+      "stepSummary": "The גמרא again asks what practical difference this astronomical fact makes.",
+      "simpleTranslation": "What is the practical difference?",
+      "whatsHappening": "The same question as before, now asked about רב נחמן's 24-hour rule. It sets up רב אשי's answer.",
+      "deeperAnalysis": "Since the month is still set by witnesses, the גמרא wants to know how knowing about this hidden period helps the court.",
+      "keyTerms": [
+        {
+          "term": "עֶשְׂרִים וְאַרְבְּעָה שָׁעֵי",
+          "meaning": "twenty-four hours"
+        },
+        {
+          "term": "שֵׁית",
+          "meaning": "six"
+        },
+        {
+          "term": "תַּמְנֵי סְרֵי",
+          "meaning": "eighteen"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "לְמַאי נָפְקָא מִינַּהּ?",
+          "english": "For what is the practical difference?",
+          "notes": "Now asked about the 24-hour rule."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "קשיא",
+      "triggerLanguage": "לְמַאי נָפְקָא מִינַּהּ",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        10
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Asks what the rule in Step 10 is used for",
+      "sheelahInformationSought": "The practical use of knowing the moon is hidden for 24 hours"
+    },
+    {
+      "stepNumber": 12,
+      "hebrewStepName": "תשובה",
+      "title": "This fact also catches lying witnesses",
+      "stepSummary": "רב אשי answers again: it is used to disprove witnesses, for example ones who claim to have seen both the old and the new moon within 24 hours.",
+      "simpleTranslation": "רב אשי said: to disprove the witnesses.",
+      "whatsHappening": "רב אשי gives the same answer: the 24-hour fact is another tool for testing the witnesses.",
+      "deeperAnalysis": "If עדים say they saw the old moon and then the new moon within one 24-hour period, that is impossible, so they are false witnesses. Like the midday rule, this calculation checks testimony; it does not replace it.",
+      "keyTerms": [
+        {
+          "term": "קִידּוּשׁ הַחֹדֶשׁ",
+          "meaning": "the court's declaration of the new month"
+        },
+        {
+          "term": "בֵּית דִּין",
+          "meaning": "the court"
+        },
+        {
+          "term": "עֵדֵי שֶׁקֶר",
+          "meaning": "false witnesses"
+        }
+      ],
+      "whatToRemember": "In קידוש החודש, the בית דין depends on witnesses, but uses astronomical calculations (the midday rule and the 24-hour hidden period) to catch and reject false witnesses.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר רַב אָשֵׁי:",
+          "english": "Rav Ashi said:",
+          "notes": ""
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "לְאַכְחוֹשֵׁי סָהֲדֵי.",
+          "english": "To disprove the witnesses.",
+          "notes": "Seeing the old and new moon within 24 hours is impossible."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אָמַר רַב אָשֵׁי: לְאַכְחוֹשֵׁי סָהֲדֵי",
+      "macroPhase": "conclusion",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        10,
+        11
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Answers the question of Step 11, the same answer as Step 9",
+      "teshuvahAnswerProvided": "The 24-hour rule is used to reject witnesses whose testimony is astronomically impossible"
+    },
+    {
+      "stepNumber": 13,
+      "hebrewStepName": "שאלה",
+      "title": "Quoting the rule that ראש חודש needs night and day, and asking for its source",
+      "stepSummary": "The גמרא quotes an earlier statement that ראש חודש must have both its night and its day from the new month, and asks: where do we learn this?",
+      "simpleTranslation": "The Master said: It is necessary that both the night and the day be from the new month. From where do we know this?",
+      "whatsHappening": "The גמרא goes back to a rule it mentioned earlier and asks for its source in the תורה. This sets up the next two answers.",
+      "deeperAnalysis": "The rule is that a day only counts as ראש חודש if its night, and not just its daytime, is already part of the new month. Behind this is the idea that a Jewish day starts at night. The גמרא now wants a פסוק that teaches this.",
+      "keyTerms": [
+        {
+          "term": "אָמַר מָר",
+          "meaning": "'The Master said', a formula for quoting an earlier statement in order to discuss it"
+        },
+        {
+          "term": "לַיְלָה וָיוֹם",
+          "meaning": "Night and day, meaning the full 24-hour day"
+        },
+        {
+          "term": "הֶחָדָשׁ",
+          "meaning": "The new month or new moon"
+        },
+        {
+          "term": "מְנָלַן",
+          "meaning": "'From where do we know this?', a request for a source"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר מָר: צָרִיךְ שֶׁיְּהֵא",
+          "english": "The Master said: It is necessary that there be",
+          "notes": "Quoting a rule stated earlier in the sugya"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "לַיְלָה וָיוֹם מִן הֶחָדָשׁ.",
+          "english": "a night and a day from the new month.",
+          "notes": "Both the night and the day must belong to the new month"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "מְנָלַן?",
+          "english": "From where do we know this?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "מימרא",
+      "triggerLanguage": "אָמַר מָר: צָרִיךְ שֶׁיְּהֵא לַיְלָה וָיוֹם מִן הֶחָדָשׁ. מְנָלַן?",
+      "macroPhase": "source_derivation",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [
+        6
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Starts a new section. It leaves the topic of testing witnesses against the astronomical calculation and goes back to רבי זירא's rule from step 6 to find its source.",
+      "sheelahInformationSought": "The פסוק that teaches that ראש חודש must include both its night and its day from the new month.",
+      "mimraCoreRuling": "A day counts as ראש חודש only if both its night and its day belong to the new month."
+    },
+    {
+      "stepNumber": 14,
+      "hebrewStepName": "תשובה",
+      "title": "רבי יוחנן learns it from 'evening to evening'",
+      "stepSummary": "רבי יוחנן brings the פסוק 'מערב עד ערב', which shows that a day runs from one evening to the next.",
+      "simpleTranslation": "רבי יוחנן said: The source is the פסוק 'From evening to evening' (ויקרא כג:לב).",
+      "whatsHappening": "רבי יוחנן gives the first source for the rule.",
+      "deeperAnalysis": "The פסוק about יום כיפור says the day lasts 'from evening to evening.' This shows that a day in the תורה starts at nightfall. So if a day is to be ראש חודש, its night must also belong to the new month.",
+      "keyTerms": [
+        {
+          "term": "מֵעֶרֶב עַד עֶרֶב",
+          "meaning": "'From evening to evening', the פסוק about יום כיפור"
+        },
+        {
+          "term": "רַבִּי יוֹחָנָן",
+          "meaning": "A leading אמורא of ארץ ישראל"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "רַבִּי יוֹחָנָן אָמַר:",
+          "english": "Rabbi Yoḥanan said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "״מֵעֶרֶב עַד עֶרֶב״.",
+          "english": "\"From evening to evening.\"",
+          "notes": "Leviticus 23:32. The day begins in the evening."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "רַבִּי יוֹחָנָן אָמַר: ״מֵעֶרֶב עַד עֶרֶב״",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        13
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Answers the question of step 13.",
+      "teshuvahAnswerProvided": "The rule comes from 'מערב עד ערב': a day runs from evening to evening, so the night is part of the day."
+    },
+    {
+      "stepNumber": 15,
+      "hebrewStepName": "תשובה",
+      "title": "ריש לקיש learns it from the end of פסח 'in the evening'",
+      "stepSummary": "ריש לקיש brings a different פסוק: 'until the twenty-first day of the month in the evening.'",
+      "simpleTranslation": "ריש לקיש said: The source is the פסוק 'until the twenty-first day of the month in the evening' (שמות יב:יח).",
+      "whatsHappening": "ריש לקיש gives a second, different source for the same rule.",
+      "deeperAnalysis": "The פסוק about eating מצה on פסח says it lasts until the evening of the twenty-first. This shows that a day ends at evening, so the next day begins at night. It reaches the same rule as רבי יוחנן, but from a different פסוק.",
+      "keyTerms": [
+        {
+          "term": "רֵישׁ לָקִישׁ",
+          "meaning": "רבי שמעון בן לקיש, the study partner of רבי יוחנן"
+        },
+        {
+          "term": "עַד יוֹם הָאֶחָד וְעֶשְׂרִים לַחֹדֶשׁ בָּעָרֶב",
+          "meaning": "'Until the twenty-first day of the month in the evening', the פסוק about the end of פסח"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "רֵישׁ לָקִישׁ אָמַר:",
+          "english": "Reish Lakish said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "״עַד יוֹם הָאֶחָד וְעֶשְׂרִים",
+          "english": "\"Until the twenty-first day"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "לַחֹדֶשׁ בָּעָרֶב״.",
+          "english": "of the month, in the evening.\"",
+          "notes": "Exodus 12:18, about eating מצה"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "רֵישׁ לָקִישׁ אָמַר: ״עַד יוֹם הָאֶחָד וְעֶשְׂרִים לַחֹדֶשׁ בָּעָרֶב״",
+      "macroPhase": "source_derivation",
+      "branchRole": "alternative_approach",
+      "dependsOnStepNumbers": [
+        13
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Gives a second answer to step 13, different from רבי יוחנן's source.",
+      "teshuvahAnswerProvided": "The rule comes from the פסוק about פסח ending 'on the twenty-first in the evening'."
+    },
+    {
+      "stepNumber": 16,
+      "hebrewStepName": "שאלה",
+      "title": "Asking what difference there is between the two sources",
+      "stepSummary": "The גמרא asks: since both reach the same rule, what difference is there between רבי יוחנן and ריש לקיש?",
+      "simpleTranslation": "What is the difference between them?",
+      "whatsHappening": "The גמרא asks whether the two different sources lead to any real difference. This sets up the answers of אביי and רבא.",
+      "deeperAnalysis": "When two אמוראים give different sources for the same rule, the גמרא often checks whether the choice of source changes the law in any case. Here it is asking exactly that.",
+      "keyTerms": [
+        {
+          "term": "מַאי בֵּינַיְיהוּ",
+          "meaning": "'What is the difference between them?'"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מַאי בֵּינַיְיהוּ?",
+          "english": "What is the difference between them?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "מַאי בֵּינַיְיהוּ?",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        14,
+        15
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Compares the two answers given in steps 14 and 15.",
+      "sheelahInformationSought": "Whether there is any practical difference between the two sources."
+    },
+    {
+      "stepNumber": 17,
+      "hebrewStepName": "תשובה",
+      "title": "אביי: only the reading of the פסוק differs",
+      "stepSummary": "אביי says there is no practical difference. They only disagree about which פסוק teaches the rule.",
+      "simpleTranslation": "אביי said: The only difference between them is which verse is being interpreted.",
+      "whatsHappening": "אביי answers that the argument is only about the source, not about the law.",
+      "deeperAnalysis": "According to אביי, רבי יוחנן and ריש לקיש agree on the הלכה in every case. They only differ about which פסוק is the true source of the rule.",
+      "keyTerms": [
+        {
+          "term": "מַשְׁמָעוּת דּוֹרְשִׁין",
+          "meaning": "'The meaning that is expounded', a difference only in how the פסוק is learned, with no change in the law"
+        },
+        {
+          "term": "אִיכָּא בֵּינַיְיהוּ",
+          "meaning": "'There is between them', meaning this is the difference between the two"
+        }
+      ],
+      "confusionAlert": "Do not think אביי found a new case where the law changes. He is saying the opposite: the הלכה is the same, and only the source is different.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אַבָּיֵי אָמַר: מַשְׁמָעוּת דּוֹרְשִׁין",
+          "english": "Abaye said: The interpretation of the verse's meaning"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אִיכָּא בֵּינַיְיהוּ.",
+          "english": "is the difference between them."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אַבָּיֵי אָמַר: מַשְׁמָעוּת דּוֹרְשִׁין אִיכָּא בֵּינַיְיהוּ",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        16
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "First answer to the question of step 16.",
+      "teshuvahAnswerProvided": "There is no practical difference. They only disagree about which פסוק is the source."
+    },
+    {
+      "stepNumber": 18,
+      "hebrewStepName": "תשובה",
+      "title": "רבא: there is a real difference about midnight",
+      "stepSummary": "רבא says there is a practical difference between them concerning חצות לילה (midnight).",
+      "simpleTranslation": "רבא said: There is a practical difference between them regarding midnight.",
+      "whatsHappening": "רבא disagrees with אביי and says there is a real case where the law comes out differently.",
+      "deeperAnalysis": "For רבי יוחנן ('מערב עד ערב'), the day starts at nightfall, so the whole night must already belong to the new month. ריש לקיש's פסוק is about מצה, which is only an obligation until midnight. That hints that a day can be treated as starting from midnight, so if the new moon is already there before midnight, that is enough.",
+      "keyTerms": [
+        {
+          "term": "חֲצוֹת לַיְלָה",
+          "meaning": "Midnight"
+        },
+        {
+          "term": "רָבָא",
+          "meaning": "A leading אמורא in בבל who often disagrees with אביי"
+        }
+      ],
+      "whatToRemember": "רבי יוחנן and ריש לקיש bring different פסוקים for the rule that ראש חודש needs its night as well as its day. According to אביי they only differ about the source. According to רבא they differ in practice: for רבי יוחנן the whole night, from nightfall, must belong to the new month, while for ריש לקיש it is enough if the new month has begun by midnight.",
+      "whyThisMatters": "This shows a common pattern in the גמרא: two different sources for the same rule can lead to different practical results in a borderline case.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "רָבָא אָמַר:",
+          "english": "Rava said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "חֲצוֹת לַיְלָה אִיכָּא בֵּינַיְיהוּ.",
+          "english": "Midnight is the difference between them.",
+          "notes": "Whether a new moon present before midnight is enough"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "רָבָא אָמַר: חֲצוֹת לַיְלָה אִיכָּא בֵּינַיְיהוּ",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "alternative_approach",
+      "dependsOnStepNumbers": [
+        14,
+        15,
+        16
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "A second answer to step 16 that disagrees with אביי by finding a practical difference.",
+      "teshuvahAnswerProvided": "There is a practical difference concerning midnight. For ריש לקיש a day can be treated as starting from midnight, and for רבי יוחנן it starts at nightfall."
+    },
+    {
+      "stepNumber": 19,
+      "hebrewStepName": "מימרא",
+      "title": "רב נחמן: a calendar doubt is always pushed forward",
+      "stepSummary": "רב נחמן (quoted by רבי זירא) rules that when an extra יום טוב is kept because of a calendar ספק, it is added on the following day, not the day before. So סוכות in חוץ לארץ is kept on the fifteenth and sixteenth, not the fourteenth.",
+      "simpleTranslation": "רבי זירא said in the name of רב נחמן: whenever there is a doubt, we push it forward. This means we keep the fifteenth and the sixteenth, but we do not keep the fourteenth.",
+      "whatsHappening": "The גמרא starts a new topic. It brings a rule from רב נחמן about which side the extra Diaspora day goes on: always afterward.",
+      "deeperAnalysis": "In חוץ לארץ people did not know for sure when the month started, so they could not be sure which day was really the fifteenth. רב נחמן says the possible mistake only goes one way: the real holiday could be later than the counted day, but not earlier. So the extra day is added after the fifteenth (the sixteenth), and the fourteenth is never kept.",
+      "keyTerms": [
+        {
+          "term": "סְפֵיקָא",
+          "meaning": "A doubt or uncertainty (here, about which day the month began)"
+        },
+        {
+          "term": "לְקַמֵּיהּ שָׁדֵינַן",
+          "meaning": "We throw it forward, so the doubtful day is placed after, not before"
+        },
+        {
+          "term": "לְמֵימְרָא",
+          "meaning": "That is to say. It introduces what a statement means in practice"
+        },
+        {
+          "term": "עָבְדִינַן",
+          "meaning": "We observe (we keep the day as יום טוב)"
+        },
+        {
+          "term": "חֲמֵיסַר / שִׁיתְּסַר / אַרְבֵּיסַר",
+          "meaning": "Fifteenth / sixteenth / fourteenth (days of the month)"
+        }
+      ],
+      "confusionAlert": "'Cast forward' does not mean we move the holiday to a later date. It means we keep the counted day, and the extra day of doubt is added after it, never before it.",
+      "whyThisMatters": "This rule explains why the Diaspora's second day of יום טוב always comes after the first day and never before it.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר רַבִּי זֵירָא אָמַר רַב נַחְמָן:",
+          "english": "Rabbi Zeira said that Rav Nachman said:",
+          "notes": "Attribution, merged into this step."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "כֹּל סְפֵיקָא לְקַמֵּיהּ שָׁדֵינַן.",
+          "english": "Any doubt, we cast it forward.",
+          "notes": "The extra day of doubt is placed after the counted day."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "לְמֵימְרָא דַּחֲמֵיסַר וְשִׁיתְּסַר עָבְדִינַן,",
+          "english": "That is to say, we observe the fifteenth and the sixteenth,",
+          "notes": "Applied to סוכות in חוץ לארץ."
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "אַרְבֵּיסַר לָא עָבְדִינַן.",
+          "english": "but the fourteenth we do not observe.",
+          "notes": "The day before is never added."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "תשובה",
+      "triggerLanguage": "אָמַר רַבִּי זֵירָא אָמַר רַב נַחְמָן כֹּל סְפֵיקָא לְקַמֵּיהּ שָׁדֵינַן",
+      "macroPhase": "opening_question",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Starts a new topic after the debate between רבי יוחנן and ריש לקיש ended with רבא's practical difference.",
+      "mimraCoreRuling": "A calendar ספק is resolved by adding the extra day afterward. In חוץ לארץ, סוכות is kept on the fifteenth and sixteenth, not on the fourteenth."
+    },
+    {
+      "stepNumber": 20,
+      "hebrewStepName": "קשיא",
+      "title": "Challenge: why not keep the fourteenth too, in case אב and אלול were both short?",
+      "stepSummary": "The גמרא challenges רב נחמן: if both אב and אלול were made short (29 days), the day the Diaspora counts as the fourteenth would really be the fifteenth of תשרי. So the fourteenth should also be kept.",
+      "simpleTranslation": "But let them also keep the fourteenth! Maybe they made אב short and also made אלול short.",
+      "whatsHappening": "The גמרא attacks רב נחמן's rule. It shows that the doubt could also go backward, which would make the fourteenth possibly the real holiday.",
+      "deeperAnalysis": "רב נחמן said the mistake only goes forward. The גמרא points out a case where it goes backward: if both אב and אלול were short months, the real month started a day earlier than the Diaspora counted. Then the counted 'fourteenth' is really the fifteenth, so keeping only the fifteenth and sixteenth would miss the true first day of סוכות.",
+      "keyTerms": [
+        {
+          "term": "וְלֶיעְבַּד נָמֵי",
+          "meaning": "But let them also observe. This wording opens a challenge."
+        },
+        {
+          "term": "דִּלְמָא",
+          "meaning": "Perhaps, maybe"
+        },
+        {
+          "term": "חַסְּרוּהּ",
+          "meaning": "They made it short (a חסר month of 29 days)"
+        },
+        {
+          "term": "אָב / אֱלוּל",
+          "meaning": "The months before תשרי"
+        }
+      ],
+      "confusionAlert": "A short month (חסר) has 29 days, and a full month (מלא) has 30. If two months are each one day shorter than expected, the new month starts earlier, which moves every date one day earlier.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְלֶיעְבַּד נָמֵי אַרְבֵּיסַר?",
+          "english": "But let them observe the fourteenth as well?",
+          "notes": "A rhetorical question that works as a challenge."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "דִּלְמָא חַסְּרוּהּ לְאָב",
+          "english": "Perhaps they made Av short",
+          "notes": "Av was given 29 days."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וְחַסְּרוּהּ לֶאֱלוּל!",
+          "english": "and they made Elul short!",
+          "notes": "If both are short, the counted fourteenth is really the fifteenth."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "שאלה",
+      "triggerLanguage": "וְלֶיעְבַּד נָמֵי אַרְבֵּיסַר דִּלְמָא חַסְּרוּהּ לְאָב וְחַסְּרוּהּ לֶאֱלוּל",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        19
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Directly challenges רב נחמן's rule from step 19 that the fourteenth is never kept.",
+      "kashyaTarget": "רב נחמן's rule that a calendar ספק is only cast forward, so the fourteenth is not kept.",
+      "kashyaAttackLogic": "If both אב and אלול were short, the true month started one day earlier than counted. That makes the counted fourteenth the real fifteenth, so the doubt can also go backward."
+    }
+  ]
+}
