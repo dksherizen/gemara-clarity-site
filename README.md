@@ -1,2 +1,1 @@
-# gemara-clarity-site
-Gemara Clarity static site, in loving memory of Tzvi Sherizen. Data in data/b/.
+Gemara Clarity — in loving memory of Tzvi Sherizen. Static site; data in data/b/.

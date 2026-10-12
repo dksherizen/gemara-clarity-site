@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gemara Clarity: every sugya, step by step</title>
+<meta name="description" content="Learn any daf of Gemara step by step: Aramaic beside English, phrase by phrase, with every question, challenge, answer and conclusion colour-coded. In loving memory of Tzvi Sherizen.">
+<meta name="theme-color" content="#07101d">
+<meta property="og:title" content="Gemara Clarity">
+<meta property="og:description" content="Every sugya, step by step: Aramaic beside English, with the argument's flow colour-coded.">
+<meta property="og:image" content="og.png">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-192.png" type="image/png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Gemara">
+<link rel="preload" href="fonts/frank-ruhl-hebrew.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="theme-dark">
+<a class="skip" href="#view">Skip to content</a>
+<header class="topbar" id="topbar">
+  <button class="brand" id="homeBtn" aria-label="Gemara Clarity home">
+    <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+    <span class="brand-name">Gemara Clarity</span>
+  </button>
+  <button class="refbtn" id="refBtn" aria-haspopup="dialog">
+    <span id="refBtnText">Choose a daf</span>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+  </button>
+  <div class="top-actions">
+    <button class="iconbtn" id="settingsBtn" aria-label="Text and display settings" title="Text and display">
+      <span aria-hidden="true" class="aa">Aa</span>
+    </button>
+  </div>
+  <div class="progress" aria-hidden="true"><div id="progressFill"></div></div>
+</header>
+
+<div class="layout">
+  <aside class="sidebar" id="sidebar" aria-label="Flow of the sugya"></aside>
+  <main id="view" tabindex="-1"></main>
+</div>
+
+<nav class="bottombar" id="bottombar" aria-label="Daf navigation" hidden>
+  <button id="prevBtn" class="bb-btn" aria-label="Previous amud"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg><span id="prevLabel"></span></button>
+  <button id="flowBtn" class="bb-btn bb-mid" aria-label="Show the flow of the sugya"><span class="bb-k">Flow</span><span id="stepCounter" class="bb-sub"></span></button>
+  <button id="reviewBtn" class="bb-btn bb-mid" aria-label="Review this amud"><span class="bb-k">Review</span><span class="bb-sub">quiz</span></button>
+  <button id="nextBtn" class="bb-btn" aria-label="Next amud"><span id="nextLabel"></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+</nav>
+
+<div class="sheet-backdrop" id="backdrop" hidden></div>
+<section class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetTitle" hidden>
+  <div class="sheet-head">
+    <h2 id="sheetTitle"></h2>
+    <button class="iconbtn" id="sheetClose" aria-label="Close">✕</button>
+  </div>
+  <div class="sheet-body" id="sheetBody"></div>
+</section>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script type="module" src="app.js"></script>
+</body>
+</html>
