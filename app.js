@@ -266,7 +266,7 @@ function openPicker(focusMas){
     const showMasList = () => {
       $("#pickBody", body).innerHTML = SEDARIM.map(([en, he, list]) => `<div class="seder">Seder ${en} · <span class="en-he">${he}</span></div><div class="masgrid">${list.map(k => {
         const n = [...cloudIds].filter(id => parseId(id).m === k).length;
-        return `<button class="masbtn" data-mas="${k}"><span>${masName(k)}${n ? `<span class="badge" title="${n} amudim with breakdown">● ${n}</span>` : ""}</span><span class="he">${masInfo(k)[1]}</span></button>`; }).join("")}</div>`).join("");
+        return `<button class="masbtn" data-mas="${k}"><span class="mb-names"><span class="mb-en">${masName(k)}</span><span class="mb-he">${masInfo(k)[1]}</span></span>${n ? `<span class="badge" title="${n} amudim with breakdown">${n}</span>` : ""}</button>`; }).join("")}</div>`).join("");
     };
     const showDafGrid = k => {
       const [, he, first, last] = masInfo(k);
@@ -357,8 +357,9 @@ function libraryHtml(){
   if (!cloudIds.size) return `<div class="empty">The breakdown library couldn’t be reached right now. Every daf still opens with text and translation.</div>`;
   const by = {};
   for (const id of cloudIds) { const p = parseId(id); (by[p.m] ||= []).push(p.i); }
-  return `<div class="lib">${MAS.filter(x => by[x[0]]).map(([k, he]) => `<div class="card lib-row"><h3><span>${masName(k)}</span><span class="he">${he}</span></h3>
-    <div class="chips">${by[k].sort((a,b) => a-b).map(i => `<a class="chip" href="${hashFor(k, i)}">${dafOf(i).daf}${dafOf(i).amud}</a>`).join("")}</div></div>`).join("")}</div>`;
+  const lastM = (history_()[0] && parseId(history_()[0].id).m) || "";
+  return `<div class="lib">${MAS.filter(x => by[x[0]]).map(([k, he]) => `<details class="card lib-row"${k === lastM ? " open" : ""}><summary><span class="lr-en">${masName(k)}</span><span class="he lr-he">${he}</span><span class="lr-n">${by[k].length}</span>${chev}</summary>
+    <div class="chips">${by[k].sort((a,b) => a-b).map(i => `<a class="chip" href="${hashFor(k, i)}">${dafOf(i).daf}${dafOf(i).amud}</a>`).join("")}</div></details>`).join("")}</div>`;
 }
 function renderHome(){
   current = null; document.title = "Gemara Clarity: every sugya, step by step";
@@ -366,7 +367,7 @@ function renderHome(){
   const h = history_(), bm = bookmarks();
   const last = h[0] && parseId(h[0].id);
   $("#view").innerHTML = `
-    <div class="dedication"><div class="en">In loving memory of Tzvi Sherizen</div><span class="he">אליעזר אברהם צבי בן פתחיה לייב</span></div>
+    <figure class="dedication" aria-label="Dedication"><div class="ded-l he">לעילוי נשמת</div><div class="ded-name he">אליעזר אברהם צבי בן פתחיה לייב</div><div class="ded-rule" aria-hidden="true"><i></i><b></b><i></i></div><figcaption class="ded-en">In loving memory of <span>Tzvi Sherizen</span></figcaption></figure>
     <div class="hero"><h1>Gemara Clarity</h1><p>Every sugya, step by step: the Aramaic beside the English, phrase by phrase, with every question, challenge, answer and conclusion in its own colour.</p>
       <button class="searchbox" id="homeSearch"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>Go to any daf…</button></div>
     <div class="home-grid two">
