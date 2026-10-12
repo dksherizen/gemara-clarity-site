@@ -1,0 +1,1840 @@
+{
+  "mainTopic": "The status of a שיכור, the need for a settled mind in תפלה and learning, and sayings about wine",
+  "overview": "This amud finishes the teaching of רבי אלעזר בן עזריה that, because of the חורבן, the Jewish people are 'drunk, but not from wine' and can be exempted from judgment. The גמרא challenges this with a ברייתא saying a שיכור is fully responsible except for תפלה, and answers that he meant only the judgment of תפלה. רבי חנינא adds that someone who reaches 'the drunkenness of לוט' is exempt from everything. רבי חנינא and רבי יוחנן then disagree about the word מפיק in a teaching that a drunk person should not pray. The practical difference is רב ששת's practice of napping and having his attendant wake him for prayer. Next comes a series of teachings that תפלה, judging, and Torah study all need a calm, clear mind, followed by sayings about whether the night is for sleep or for learning. רבי אלעזר says a traveler should not pray for three days, and some אמוראים avoided praying near strong smells. The amud ends with sayings about wine, including the teaching that plentiful wine in the home is part of the Torah's ברכה.",
+  "steps": [
+    {
+      "stepNumber": 1,
+      "hebrewStepName": "מימרא",
+      "title": "Since the חורבן, everyone can be considered 'drunk'",
+      "stepSummary": "רבי אלעזר בן עזריה claims he could exempt the whole world from judgment since the חורבן. His source is a פסוק that calls the Jewish people 'drunk, but not from wine.'",
+      "simpleTranslation": "I am able to exempt the entire world from judgment, from the day the בית המקדש was destroyed until now. As it says: 'Therefore, please hear this, you afflicted one, who is drunk, but not from wine.'",
+      "whatsHappening": "The גמרא continues a statement of רבי אלעזר בן עזריה, which began on the previous amud. He says the Jewish people are like drunk people because of the pain of the חורבן, so they should not be judged.",
+      "deeperAnalysis": "The idea depends on the assumption that a drunk person is not fully responsible for what he does. The פסוק calls the suffering nation 'drunk, but not from wine.' So all Jews after the חורבן are treated like a שיכור. The statement is broad and does not yet say which kind of 'judgment' he means. That gap opens the door to the next challenge.",
+      "keyTerms": [
+        {
+          "term": "לִפְטוֹר",
+          "meaning": "To exempt / free from obligation or liability"
+        },
+        {
+          "term": "מִן הַדִּין",
+          "meaning": "From judgment (here, the scope of 'judgment' is still unclear)"
+        },
+        {
+          "term": "שֶׁחָרַב בֵּית הַמִּקְדָּשׁ",
+          "meaning": "That the Temple was destroyed (the חורבן)"
+        },
+        {
+          "term": "וּשְׁכוּרַת וְלֹא מִיָּיִן",
+          "meaning": "And drunk, but not from wine (ישעיהו נ״א:כ״א)"
+        }
+      ],
+      "confusionAlert": "This step starts in the middle of a teaching. The speaker (רבי אלעזר בן עזריה) was named on the previous amud. Also, 'from judgment' sounds like 'from all punishment,' but the גמרא will soon narrow it.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "יָכוֹל אֲנִי לִפְטוֹר",
+          "english": "I am able to exempt"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אֶת כָּל הָעוֹלָם כּוּלּוֹ מִן הַדִּין",
+          "english": "the entire world from judgment"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "מִיּוֹם שֶׁחָרַב בֵּית הַמִּקְדָּשׁ",
+          "english": "from the day the Temple was destroyed"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וְעַד עַכְשָׁיו,",
+          "english": "until now,"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "שֶׁנֶּאֱמַר: ״לָכֵן שִׁמְעִי נָא זֹאת",
+          "english": "as it is stated: 'Therefore, please hear this,",
+          "notes": "ישעיהו נ״א:כ״א"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "עֲנִיָּיהּ וּשְׁכוּרַת וְלֹא מִיָּיִן״.",
+          "english": "you afflicted one, drunk but not from wine.'"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "יָכוֹל אֲנִי לִפְטוֹר אֶת כָּל הָעוֹלָם כּוּלּוֹ מִן הַדִּין",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Continues a teaching earlier about the status of a שיכור.",
+      "mimraCoreRuling": "Because of the חורבן, the Jewish people are considered 'drunk,' and so they can be exempted from judgment."
+    },
+    {
+      "stepNumber": 2,
+      "hebrewStepName": "קשיא",
+      "title": "A ברייתא says a drunk person is fully responsible",
+      "stepSummary": "The גמרא challenges the previous statement with a ברייתא. A שיכור's deals are binding, and he is punished for his sins. He is like a sober person in everything except תפלה.",
+      "simpleTranslation": "They challenged this: A drunk person's purchase is a valid purchase, and his sale is a valid sale. If he did a sin that carries the death penalty, he is executed. If it carries מלקות, he gets lashes. The general rule is: he is like a sober person in all matters, except that he is exempt from תפלה.",
+      "whatsHappening": "The גמרא brings a ברייתא to attack רבי אלעזר בן עזריה. If drunk people are responsible for their actions, then calling the nation 'drunk' should not exempt them from anything.",
+      "deeperAnalysis": "The ברייתא says being drunk does not remove responsibility. Business deals stand, and even capital punishment and מלקות still apply. The one exception is תפלה. That exception will become the key to the answer in the next step.",
+      "keyTerms": [
+        {
+          "term": "מֵיתִיבִי",
+          "meaning": "They challenged (introduces a challenge from a תנאי source, usually a ברייתא)"
+        },
+        {
+          "term": "שִׁיכּוֹר",
+          "meaning": "A drunk person"
+        },
+        {
+          "term": "מִקָּחוֹ מִקָּח",
+          "meaning": "His purchase is a binding purchase"
+        },
+        {
+          "term": "מַלְקוֹת",
+          "meaning": "Lashes (biblical flogging)"
+        },
+        {
+          "term": "כְּפִיקֵּחַ",
+          "meaning": "Like a sober, clear-minded person"
+        },
+        {
+          "term": "כְּלָלוֹ שֶׁל דָּבָר",
+          "meaning": "The general principle of the matter"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מֵיתִיבִי: שִׁיכּוֹר מִקָּחוֹ מִקָּח,",
+          "english": "They raised an objection: a drunk person — his purchase is a purchase,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וּמִמְכָּרוֹ מִמְכָּר.",
+          "english": "and his sale is a sale."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "עָבַר עֲבֵירָה שֶׁיֵּשׁ בָּהּ מִיתָה —",
+          "english": "If he committed a sin that carries death —"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "מְמִיתִין אוֹתוֹ,",
+          "english": "we execute him;"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "מַלְקוֹת — מַלְקִין אוֹתוֹ.",
+          "english": "lashes — we give him lashes."
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "כְּלָלוֹ שֶׁל דָּבָר:",
+          "english": "The general principle is:"
+        },
+        {
+          "phraseNumber": 7,
+          "aramaic": "הֲרֵי הוּא כְּפִיקֵּחַ לְכׇל דְּבָרָיו,",
+          "english": "he is like a sober person in all his matters,"
+        },
+        {
+          "phraseNumber": 8,
+          "aramaic": "אֶלָּא שֶׁפָּטוּר מִן הַתְּפִלָּה.",
+          "english": "except that he is exempt from prayer."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "מֵיתִיבִי",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        1
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Challenges the statement in step 1.",
+      "kashyaTarget": "רבי אלעזר בן עזריה's claim that 'drunkenness' exempts the whole world from judgment.",
+      "kashyaAttackLogic": "The ברייתא says a שיכור is fully liable in all matters. So comparing the nation to a שיכור cannot exempt them from judgment."
+    },
+    {
+      "stepNumber": 3,
+      "hebrewStepName": "תירוץ",
+      "title": "He meant only exemption from the judgment of תפלה",
+      "stepSummary": "The גמרא explains that רבי אלעזר בן עזריה only meant he could exempt people regarding תפלה. That matches the one exception in the ברייתא.",
+      "simpleTranslation": "What does he mean by 'I am able to exempt'? He too means: from the judgment of תפלה.",
+      "whatsHappening": "The גמרא answers the challenge by narrowing what רבי אלעזר בן עזריה meant. He was not talking about all sins, only about תפלה.",
+      "deeperAnalysis": "The word נמי ('also') shows that his statement now matches the ברייתא's exception. Like a שיכור, the Jewish people after the חורבן cannot be held liable for flaws in their תפלה, such as missing כוונה. The comparison to a שיכור stays, but its effect is limited to תפלה.",
+      "keyTerms": [
+        {
+          "term": "מַאי",
+          "meaning": "What (does it mean)?"
+        },
+        {
+          "term": "דְּקָאָמַר",
+          "meaning": "That he said"
+        },
+        {
+          "term": "נָמֵי",
+          "meaning": "Also / too"
+        },
+        {
+          "term": "מִדִּין תְּפִלָּה",
+          "meaning": "From the judgment of prayer"
+        }
+      ],
+      "whatToRemember": "A שיכור is responsible for everything except תפלה. רבי אלעזר בן עזריה's 'exemption of the world' applies only to judgment about תפלה.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מַאי ״יָכוֹלְנִי לִפְטוֹר״ דְּקָאָמַר",
+          "english": "What is the meaning of 'I am able to exempt' that he said?"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "נָמֵי — מִדִּין תְּפִלָּה.",
+          "english": "He too meant — from the judgment of prayer."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "מַאי ״יָכוֹלְנִי לִפְטוֹר״ דְּקָאָמַר נָמֵי",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        1,
+        2
+      ],
+      "scopeOfStep": "wording",
+      "relationToPreviousStep": "Answers the challenge of step 2 by narrowing the meaning of step 1.",
+      "terutzResolutionType": "Narrowing the scope of the original statement",
+      "terutzHavaAmina": "We thought 'exempt from judgment' meant exemption from all liability for sins.",
+      "terutzMaskana": "He meant only exemption from the judgment of תפלה, which matches the ברייתא's exception."
+    },
+    {
+      "stepNumber": 4,
+      "hebrewStepName": "מימרא",
+      "title": "Drunkenness at the level of לוט exempts from everything",
+      "stepSummary": "רבי חנינא limits the ברייתא. A שיכור is liable only if he has not reached 'the drunkenness of לוט.' If he has, he is exempt from all liability.",
+      "simpleTranslation": "רבי חנינא said: They only taught this rule when he did not reach the drunkenness of לוט. But if he reached the drunkenness of לוט, he is exempt from everything.",
+      "whatsHappening": "רבי חנינא adds a limit to the ברייתא's rule. Ordinary drunkenness leaves a person responsible. Total drunkenness, like לוט's, removes responsibility completely.",
+      "deeperAnalysis": "לוט was so drunk that he did not know what he was doing (בראשית י״ט). A person in that state is like someone with no understanding at all. So his deals and sins carry no legal weight. The ברייתא's 'he is like a sober person' only covers someone who is still somewhat aware.",
+      "keyTerms": [
+        {
+          "term": "לֹא שָׁנוּ אֶלָּא",
+          "meaning": "They only taught (this rule) in a case where (introduces a limitation)"
+        },
+        {
+          "term": "שִׁכְרוּתוֹ שֶׁל לוֹט",
+          "meaning": "The drunkenness of לוט: total intoxication with no awareness"
+        },
+        {
+          "term": "פָּטוּר מִכּוּלָּם",
+          "meaning": "Exempt from all of them (all liabilities)"
+        }
+      ],
+      "whatToRemember": "There are two levels of שיכור. Ordinary drunkenness means full responsibility except for תפלה. Drunkenness like לוט's means exemption from everything.",
+      "whyThisMatters": "'The drunkenness of לוט' became the standard halachic line for when a drunk person loses legal responsibility.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר רַבִּי חֲנִינָא:",
+          "english": "Rabbi Chanina said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "לֹא שָׁנוּ אֶלָּא",
+          "english": "They taught this only"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "שֶׁלֹּא הִגִּיעַ לְשִׁכְרוּתוֹ שֶׁל לוֹט,",
+          "english": "where he did not reach the drunkenness of Lot;"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "אֲבָל הִגִּיעַ לְשִׁכְרוּתוֹ שֶׁל לוֹט —",
+          "english": "but if he reached the drunkenness of Lot —"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "פָּטוּר מִכּוּלָּם.",
+          "english": "he is exempt from all of them."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "תירוץ",
+      "triggerLanguage": "אָמַר רַבִּי חֲנִינָא: לֹא שָׁנוּ אֶלָּא",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [
+        2
+      ],
+      "scopeOfStep": "exception_case",
+      "relationToPreviousStep": "Returns to the ברייתא of step 2 and adds a limitation to its rule.",
+      "mimraCoreRuling": "A שיכור is liable only below the level of לוט's drunkenness. At that level, he is exempt from everything."
+    },
+    {
+      "stepNumber": 5,
+      "hebrewStepName": "מימרא",
+      "title": "Skipping the מגן at a time of drunkenness protects from troubles",
+      "stepSummary": "רבי חנינא says that whoever 'passes over the מגן' at a time of arrogance will have troubles closed off from him. He bases this on a פסוק in איוב. רש״י explains that this means skipping the תפלה that opens with מגן אברהם while one is drunk.",
+      "simpleTranslation": "רבי חנינא said: Whoever passes over the shield (מגן) at a time of arrogance, troubles are closed and sealed away from him. As the פסוק says: 'Pride, passing of shields, closed, sealed, tight.'",
+      "whatsHappening": "רבי חנינא teaches that a drunk person should not pray. רש״י explains: 'the מגן' is the תפלה that opens with מגן אברהם, 'passing over' it means skipping it, and 'a time of arrogance' means a time of drunkenness. Whoever skips תפלה while drunk is protected from troubles.",
+      "deeperAnalysis": "The פסוק in איוב describes a sea creature's scales. רבי חנינא reads its words as a דרשה: גאוה (arrogance, here drunkenness), אפיקי מגנים (passing over the מגן), סגור חותם (closed and sealed), צר (troubles). This fits the ברייתא in step 2, which exempts a שיכור from תפלה: skipping תפלה while drunk is the right thing to do, and troubles are sealed away from the one who does it.",
+      "keyTerms": [
+        {
+          "term": "מֵפִיק",
+          "meaning": "Passes or brings over. The exact meaning is debated later in this sugya."
+        },
+        {
+          "term": "מָגֵן",
+          "meaning": "A shield. רש״י: here, the תפלה that opens with מגן אברהם"
+        },
+        {
+          "term": "שְׁעַת גַּאֲוָה",
+          "meaning": "A time of arrogance. רש״י: a time of drunkenness"
+        },
+        {
+          "term": "סוֹגְרִין וְחוֹתְמִין",
+          "meaning": "They close and seal"
+        },
+        {
+          "term": "צָרוֹת",
+          "meaning": "Troubles"
+        }
+      ],
+      "confusionAlert": "The פסוק in איוב is not a law about shields. It describes a creature's scales, and רבי חנינא uses its words as a דרשה about not praying while drunk.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר רַבִּי חֲנִינָא:",
+          "english": "Rabbi Chanina said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "כׇּל הַמֵּפִיק מָגֵן בִּשְׁעַת גַּאֲוָה,",
+          "english": "Whoever passes a shield at a time of arrogance,",
+          "notes": "He guards himself, for example when he is drunk."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "סוֹגְרִין וְחוֹתְמִין צָרוֹת בַּעֲדוֹ,",
+          "english": "troubles are closed and sealed away from him,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "שֶׁנֶּאֱמַר: ״גַּאֲוָה אֲפִיקֵי מָגִנִּים",
+          "english": "as it says: 'Pride, the channels/passing of shields,'",
+          "notes": "איוב 41:7"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "סָגוּר חוֹתָם צָר״.",
+          "english": "'closed, a tight seal.'",
+          "notes": "צר is read as צרות, troubles."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אָמַר רַבִּי חֲנִינָא: כׇּל הַמֵּפִיק מָגֵן בִּשְׁעַת גַּאֲוָה",
+      "macroPhase": "narrative_aggadah",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        4
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Continues the theme of drunkenness and תפלה from the ברייתא and from רבי חנינא's statement about שכרותו של לוט.",
+      "mimraCoreRuling": "Whoever skips תפלה (the מגן) while drunk has troubles sealed away from him."
+    },
+    {
+      "stepNumber": 6,
+      "hebrewStepName": "שאלה",
+      "title": "How do we know אפיק means 'passing'?",
+      "stepSummary": "The גמרא asks for a source that the word אפיק means 'passing over.'",
+      "simpleTranslation": "From where do we see that this word אפיק is a language of passing?",
+      "whatsHappening": "The גמרא pauses to check one word in רבי חנינא's דרשה. It is setting up a proof that comes in the next step.",
+      "deeperAnalysis": "רבי חנינא's whole lesson depends on reading אפיק as 'passing.' The גמרא is not attacking him. It wants a source for that meaning of the word.",
+      "keyTerms": [
+        {
+          "term": "מַאי מַשְׁמַע",
+          "meaning": "From where is it implied? How do we know?"
+        },
+        {
+          "term": "לִישָּׁנָא",
+          "meaning": "A language or expression"
+        },
+        {
+          "term": "עַבּוֹרֵי",
+          "meaning": "Passing over"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מַאי מַשְׁמַע דְּהַאי ״אָפִיק״",
+          "english": "From where is it implied that this word 'afik'"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "לִישָּׁנָא דְעַבּוֹרֵי הוּא?",
+          "english": "is an expression of passing?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "קשיא",
+      "triggerLanguage": "מַאי מַשְׁמַע דְּהַאי אָפִיק לִישָּׁנָא דְעַבּוֹרֵי הוּא",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        5
+      ],
+      "scopeOfStep": "wording",
+      "relationToPreviousStep": "Asks for a source for the meaning of the key word in רבי חנינא's דרשה.",
+      "sheelahInformationSought": "A source that אפיק means 'passing.'"
+    },
+    {
+      "stepNumber": 7,
+      "hebrewStepName": "תשובה",
+      "title": "Proof from איוב that אפיק means passing",
+      "stepSummary": "A פסוק in איוב puts אפיק next to יעבורו, 'they pass by.' This shows that אפיק means passing.",
+      "simpleTranslation": "As it is written: 'My brothers betrayed like a stream, like the channel of streams that pass by.'",
+      "whatsHappening": "The גמרא answers its question with a פסוק that links אפיק to passing.",
+      "deeperAnalysis": "In the פסוק, the אפיק of streams is described with the verb יעבורו, 'they pass.' This shows that אפיק is connected to the idea of passing. So רבי חנינא's reading of 'passing a shield' is supported.",
+      "keyTerms": [
+        {
+          "term": "אֲפִיק נְחָלִים",
+          "meaning": "A channel of streams"
+        },
+        {
+          "term": "יַעֲבוֹרוּ",
+          "meaning": "They pass by"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "דִּכְתִיב: ״אַחַי בָּגְדוּ כְמוֹ נָחַל",
+          "english": "As it is written: 'My brothers betrayed like a stream,'",
+          "notes": "איוב 6:15"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "כַּאֲפִיק נְחָלִים יַעֲבוֹרוּ״.",
+          "english": "'like the channel of streams that pass by.'"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "דִּכְתִיב: אַחַי בָּגְדוּ כְמוֹ נָחַל כַּאֲפִיק נְחָלִים יַעֲבוֹרוּ",
+      "macroPhase": "source_derivation",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        6
+      ],
+      "scopeOfStep": "proof_mechanism",
+      "relationToPreviousStep": "Answers the שאלה with a פסוק.",
+      "teshuvahAnswerProvided": "In איוב 6:15, אפיק appears with יעבורו (pass by), so אפיק means passing."
+    },
+    {
+      "stepNumber": 8,
+      "hebrewStepName": "מימרא",
+      "title": "רבי יוחנן: the teaching was 'whoever does NOT מפיק'",
+      "stepSummary": "רבי יוחנן says the teaching was actually stated in the negative: 'whoever does not מפיק.'",
+      "simpleTranslation": "רבי יוחנן said: It was stated as 'whoever does not מפיק.'",
+      "whatsHappening": "רבי יוחנן gives a different version of the teaching. He changes the wording to 'whoever does NOT מפיק.'",
+      "deeperAnalysis": "רבי יוחנן reads the word מפיק differently, as 'revealing,' not 'passing over.' Because of that reading, the wording has to change for the lesson to work. רש״י explains it as 'whoever does not reveal (bring out) the תפלה while drunk,' meaning he does not pray. Both אמוראים agree that a drunk person should not pray. They disagree about what the word מפיק means.",
+      "keyTerms": [
+        {
+          "term": "שֶׁאֵינוֹ מֵפִיק",
+          "meaning": "Who does not מפיק"
+        },
+        {
+          "term": "אִתְּמַר",
+          "meaning": "It was stated. This introduces a corrected version of a teaching."
+        }
+      ],
+      "confusionAlert": "רבי יוחנן is not saying the opposite lesson. His reading of מפיק as 'revealing' forces him to add the word 'not,' and the lesson stays the same: a drunk person does not pray.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "רַבִּי יוֹחָנָן אָמַר:",
+          "english": "Rabbi Yochanan said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "״כֹּל שֶׁאֵינוֹ מֵפִיק״ אִתְּמַר.",
+          "english": "It was stated as 'whoever does not mapik.'"
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "דחיה",
+      "triggerLanguage": "רַבִּי יוֹחָנָן אָמַר: כֹּל שֶׁאֵינוֹ מֵפִיק אִתְּמַר",
+      "macroPhase": "alternate_branch",
+      "branchRole": "alternative_approach",
+      "dependsOnStepNumbers": [
+        5
+      ],
+      "scopeOfStep": "wording",
+      "relationToPreviousStep": "Offers a different version of רבי חנינא's statement, based on a different meaning of מפיק.",
+      "mimraCoreRuling": "The teaching should read 'whoever does not מפיק,' because מפיק means revealing."
+    },
+    {
+      "stepNumber": 9,
+      "hebrewStepName": "שאלה",
+      "title": "How do we know מפיק means 'revealing'?",
+      "stepSummary": "The גמרא asks for a source for רבי יוחנן's reading that מפיק means 'revealing.'",
+      "simpleTranslation": "From where do we see that this word מפיק is a language of revealing?",
+      "whatsHappening": "Just as it did for רבי חנינא, the גמרא asks for a source for רבי יוחנן's meaning of the word. It is setting up the proof in the next step.",
+      "deeperAnalysis": "This question mirrors step 6. Each אמורא needs a פסוק to back up his meaning of the same word.",
+      "keyTerms": [
+        {
+          "term": "גַּלּוֹיֵי",
+          "meaning": "Revealing or uncovering"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מַאי מַשְׁמַע דְּהַאי ״מֵפִיק״",
+          "english": "From where is it implied that this word 'mapik'"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "לִישָּׁנָא דְגַלּוֹיֵי הוּא?",
+          "english": "is an expression of revealing?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "קשיא",
+      "triggerLanguage": "מַאי מַשְׁמַע דְּהַאי מֵפִיק לִישָּׁנָא דְגַלּוֹיֵי הוּא",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        8
+      ],
+      "scopeOfStep": "wording",
+      "relationToPreviousStep": "Asks for a source for רבי יוחנן's meaning of מפיק.",
+      "sheelahInformationSought": "A source that מפיק means 'revealing.'"
+    },
+    {
+      "stepNumber": 10,
+      "hebrewStepName": "תשובה",
+      "title": "Proof from תהלים that אפיק means revealing",
+      "stepSummary": "A פסוק in תהלים links אפיקי מים with ויגלו, 'were laid bare.' This shows that the word means revealing.",
+      "simpleTranslation": "As it is written: 'The channels of water were seen, and the foundations of the world were laid bare.'",
+      "whatsHappening": "The גמרא proves רבי יוחנן's meaning with a פסוק that ties אפיק to being revealed.",
+      "deeperAnalysis": "In the פסוק, the אפיקי מים 'were seen' alongside 'were revealed' (ויגלו). This links the word to uncovering. So each side of the disagreement has a פסוק for its meaning of מפיק.",
+      "keyTerms": [
+        {
+          "term": "וַיֵּרָאוּ",
+          "meaning": "They were seen"
+        },
+        {
+          "term": "וַיִּגָּלוּ",
+          "meaning": "They were revealed or laid bare"
+        },
+        {
+          "term": "מוֹסְדוֹת תֵּבֵל",
+          "meaning": "The foundations of the world"
+        }
+      ],
+      "whatToRemember": "רבי חנינא and רבי יוחנן both teach that a person should not pray while drunk. They disagree about the word מפיק. רבי חנינא reads it as 'passing,' based on איוב, and רבי יוחנן reads it as 'revealing,' based on תהלים, so he words the teaching as 'whoever does not מפיק.'",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "דִּכְתִיב: ״וַיֵּרָאוּ אֲפִיקֵי מַיִם",
+          "english": "As it is written: 'The channels of water were seen,'",
+          "notes": "תהלים 18:16"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וַיִּגָּלוּ מוֹסְדוֹת תֵּבֵל״.",
+          "english": "'and the foundations of the world were laid bare.'"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "דִּכְתִיב: וַיֵּרָאוּ אֲפִיקֵי מַיִם וַיִּגָּלוּ מוֹסְדוֹת תֵּבֵל",
+      "macroPhase": "source_derivation",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        9
+      ],
+      "scopeOfStep": "proof_mechanism",
+      "relationToPreviousStep": "Answers the שאלה with a פסוק that supports רבי יוחנן.",
+      "teshuvahAnswerProvided": "In תהלים 18:16, אפיקי מים appear with ויגלו (were revealed), so the word means revealing."
+    },
+    {
+      "stepNumber": 11,
+      "hebrewStepName": "שאלה",
+      "title": "If both readings are supported, what is the practical difference?",
+      "stepSummary": "The גמרא notes that the פסוקים support both readings of מפיק and asks what practical difference there is between them.",
+      "simpleTranslation": "Now, since the verses can support both this Master and that Master, what is the difference between them?",
+      "whatsHappening": "The גמרא sees that both opinions about the word מפיק have a source in a פסוק. So it asks whether the dispute changes anything in practice. This sets up the next step.",
+      "deeperAnalysis": "Steps 7 and 10 showed that each reading has a valid proof from the language of תנ\"ך. So the argument cannot be settled from the words alone. The גמרא therefore looks for a real-life case where the two views would lead to different behavior.",
+      "keyTerms": [
+        {
+          "term": "מִכְּדֵי",
+          "meaning": "Now, since (introduces a premise both sides accept)"
+        },
+        {
+          "term": "קְרָאֵי",
+          "meaning": "Verses"
+        },
+        {
+          "term": "מַאי בֵּינַיְיהוּ",
+          "meaning": "What is the difference between them?"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מִכְּדֵי, קְרָאֵי מַשְׁמַע",
+          "english": "Now, since the verses imply"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "בֵּין לְמָר וּבֵין לְמָר,",
+          "english": "both for this Master and for that Master,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "מַאי בֵּינַיְיהוּ?",
+          "english": "what is the difference between them?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "מִכְּדֵי, קְרָאֵי מַשְׁמַע בֵּין לְמָר וּבֵין לְמָר, מַאי בֵּינַיְיהוּ",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        5,
+        7,
+        8,
+        10
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Since both readings now have a source, the גמרא asks what practical difference remains.",
+      "sheelahInformationSought": "The practical difference between the two readings of מפיק."
+    },
+    {
+      "stepNumber": 12,
+      "hebrewStepName": "תשובה",
+      "title": "The difference is the practice of רב ששת",
+      "stepSummary": "The difference between the two views is whether a person may follow רב ששת's practice of napping and having his attendant wake him to pray.",
+      "simpleTranslation": "The difference between them is the practice of רב ששת. רב ששת handed his sleep over to his attendant, who would wake him for prayer. One Master agrees with רב ששת's practice, and the other Master does not.",
+      "whatsHappening": "The גמרא answers the question. The two views disagree about רב ששת's practice: he would sleep a little and tell his attendant to wake him when the time for prayer came.",
+      "deeperAnalysis": "רש״י explains: רבי חנינא, who says one must 'pass over' (skip) תפלה, does not accept רב ששת's practice. In his view, a person in that state may not pray until he wakes up by himself. רבי יוחנן does accept it: one may nap and be woken for prayer. So the dispute over the word becomes a real practical question.",
+      "keyTerms": [
+        {
+          "term": "רַב שֵׁשֶׁת",
+          "meaning": "An אמורא whose practice serves as the test case"
+        },
+        {
+          "term": "מָסַר שִׁינְתֵּיהּ",
+          "meaning": "He handed over (the watching of) his sleep"
+        },
+        {
+          "term": "שַׁמָּעֵיהּ",
+          "meaning": "His attendant"
+        },
+        {
+          "term": "אִית לֵיהּ / לֵית לֵיהּ",
+          "meaning": "He holds of it / he does not hold of it"
+        }
+      ],
+      "whatToRemember": "The two readings of מפיק differ on רב ששת's practice of napping and being woken for prayer. According to רש״י, רבי חנינא does not accept it (one must wake up on his own before praying), and רבי יוחנן does.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אִיכָּא בֵּינַיְיהוּ דְּרַב שֵׁשֶׁת.",
+          "english": "The difference between them is the practice of Rav Sheshet."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "דְּרַב שֵׁשֶׁת מָסַר שִׁינְתֵּיהּ לְשַׁמָּעֵיהּ.",
+          "english": "For Rav Sheshet gave over his sleep to his attendant.",
+          "notes": "The attendant would wake him when the time for prayer came."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "מָר אִית לֵיהּ דְּרַב שֵׁשֶׁת,",
+          "english": "One Master holds like Rav Sheshet's practice,",
+          "notes": "רבי חנינא"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וּמָר לֵית לֵיהּ דְּרַב שֵׁשֶׁת.",
+          "english": "and one Master does not hold like Rav Sheshet's practice.",
+          "notes": "רבי יוחנן"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אִיכָּא בֵּינַיְיהוּ דְּרַב שֵׁשֶׁת",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        11
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Answers the question of step 11.",
+      "teshuvahAnswerProvided": "The two views differ on whether one may nap and be woken for prayer, like רב ששת. According to רש״י, רבי חנינא says no and רבי יוחנן says yes."
+    },
+    {
+      "stepNumber": 13,
+      "hebrewStepName": "מימרא",
+      "title": "Someone with an unsettled mind should not pray",
+      "stepSummary": "רב teaches that a person whose mind is not settled should not pray. The source is the פסוק \"בצר אל יורה\".",
+      "simpleTranslation": "רב חייא בר אשי said in the name of רב: Anyone whose mind is not settled should not pray, as it says: \"When in distress, one should not rule.\"",
+      "whatsHappening": "The גמרא brings a new teaching on a related theme. A person who is upset or distracted should not pray.",
+      "deeperAnalysis": "The פסוק literally says that a person in distress should not issue rulings. רב applies the same idea to prayer: prayer also needs a calm, focused mind. This opens a short section about how disturbances affect serious spiritual and mental work.",
+      "keyTerms": [
+        {
+          "term": "דַּעְתּוֹ מְיוּשֶּׁבֶת עָלָיו",
+          "meaning": "His mind is settled and calm"
+        },
+        {
+          "term": "אַל יִתְפַּלֵּל",
+          "meaning": "He should not pray"
+        },
+        {
+          "term": "בְּצָר אַל יוֹרֶה",
+          "meaning": "When in distress, one should not issue rulings"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר רַב חִיָּיא בַּר אָשֵׁי אָמַר רַב:",
+          "english": "Rav Ḥiyya bar Ashi said that Rav said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "כֹּל שֶׁאֵין דַּעְתּוֹ מְיוּשֶּׁבֶת עָלָיו",
+          "english": "Anyone whose mind is not settled upon him"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "אַל יִתְפַּלֵּל,",
+          "english": "should not pray,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "מִשּׁוּם שֶׁנֶּאֱמַר: ״בְּצָר אַל יוֹרֶה״.",
+          "english": "because it is stated: \"When in distress, one should not rule.\""
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אָמַר רַב חִיָּיא בַּר אָשֵׁי אָמַר רַב",
+      "macroPhase": "source_derivation",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "A new, related teaching about the right state of mind for prayer.",
+      "mimraCoreRuling": "A person whose mind is not settled should not pray."
+    },
+    {
+      "stepNumber": 14,
+      "hebrewStepName": "ראיה",
+      "title": "רבי חנינא did not pray on a day he was angry",
+      "stepSummary": "רבי חנינא did not pray on a day he was angry, based on the same פסוק.",
+      "simpleTranslation": "רבי חנינא, on a day he was angry, did not pray. He said: It is written, \"When in distress, one should not rule.\"",
+      "whatsHappening": "The גמרא tells a story showing רב's rule in action. רבי חנינא skipped praying on days when he was angry.",
+      "deeperAnalysis": "This story supports רב's teaching from step 13 with a real practice. It also shows that anger counts as an \"unsettled mind,\" not only sadness or worry.",
+      "keyTerms": [
+        {
+          "term": "בְּיוֹמָא דְּרָתַח",
+          "meaning": "On a day he was angry (literally, \"boiling\")"
+        },
+        {
+          "term": "לָא מְצַלֵּי",
+          "meaning": "Would not pray"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "רַבִּי חֲנִינָא בְּיוֹמָא דְּרָתַח",
+          "english": "Rabbi Ḥanina, on a day that he was angry,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "לָא מְצַלֵּי,",
+          "english": "would not pray,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "אָמַר: ״בְּצָר אַל יוֹרֶה״ כְּתִיב.",
+          "english": "he said: It is written, \"When in distress, one should not rule.\""
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "מימרא",
+      "triggerLanguage": "רַבִּי חֲנִינָא בְּיוֹמָא דְּרָתַח לָא מְצַלֵּי",
+      "macroPhase": "narrative_aggadah",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        13
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Illustrates and supports רב's rule with a practice.",
+      "raayaObject": "רב's rule that one with an unsettled mind should not pray",
+      "raayaSupportSource": "The practice of רבי חנינא"
+    },
+    {
+      "stepNumber": 15,
+      "hebrewStepName": "ראיה",
+      "title": "מר עוקבא did not go to court on a day of hot wind",
+      "stepSummary": "מר עוקבא did not go to judge in court on days when the harsh south wind blew.",
+      "simpleTranslation": "מר עוקבא, on a day of the south wind, would not go out to the court.",
+      "whatsHappening": "Another story extends the idea to judging. מר עוקבא, a judge, stayed home on days of hot, harsh wind.",
+      "deeperAnalysis": "The hot wind disturbed his clear thinking. This story fits the literal meaning of \"בצר אל יורה\": a person in an uncomfortable state should not issue legal rulings.",
+      "keyTerms": [
+        {
+          "term": "יוֹמָא דְשׁוּתָא",
+          "meaning": "A day of the hot south wind"
+        },
+        {
+          "term": "בֵּי דִינָא",
+          "meaning": "The court"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מָר עוּקְבָא בְּיוֹמָא דְשׁוּתָא",
+          "english": "Mar Ukva, on a day of a south wind,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "לָא הֲוָה נָפֵיק לְבֵי דִינָא.",
+          "english": "would not go out to the court."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "מימרא",
+      "triggerLanguage": "מָר עוּקְבָא בְּיוֹמָא דְשׁוּתָא לָא הֲוָה נָפֵיק לְבֵי דִינָא",
+      "macroPhase": "narrative_aggadah",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        13
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "A further practice showing the same principle, now applied to judging.",
+      "raayaObject": "The principle that a disturbed mind should not issue rulings",
+      "raayaSupportSource": "The practice of מר עוקבא"
+    },
+    {
+      "stepNumber": 16,
+      "hebrewStepName": "מימרא",
+      "title": "Learning הלכה needs a clear mind, like a clear day",
+      "stepSummary": "רב נחמן בר יצחק says that studying הלכה requires clarity, like a day when the north wind clears the sky.",
+      "simpleTranslation": "רב נחמן בר יצחק said: הלכה requires clarity, like a day of the north wind.",
+      "whatsHappening": "The theme moves to Torah study. Learning הלכה needs a mind as clear as a bright, clear-skied day.",
+      "deeperAnalysis": "This is the opposite picture of step 15. A harsh wind spoils thinking, while a clear north-wind day matches the clear mind needed for learning.",
+      "keyTerms": [
+        {
+          "term": "הִלְכְתָא",
+          "meaning": "The study of הלכה"
+        },
+        {
+          "term": "צִילּוּתָא",
+          "meaning": "Clarity"
+        },
+        {
+          "term": "יוֹמָא דְאִסְתָּנָא",
+          "meaning": "A day of the north wind, which clears the sky"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר רַב נַחְמָן בַּר יִצְחָק:",
+          "english": "Rav Naḥman bar Yitzḥak said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "הִלְכְתָא בָּעֲיָא צִילּוּתָא",
+          "english": "Halakha requires clarity"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "כְּיוֹמָא דְאִסְתָּנָא.",
+          "english": "like a day of the north wind."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אָמַר רַב נַחְמָן בַּר יִצְחָק הִלְכְתָא בָּעֲיָא צִילּוּתָא",
+      "macroPhase": "narrative_aggadah",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        13
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Extends the clear-mind theme from prayer and judging to Torah study.",
+      "mimraCoreRuling": "Studying הלכה requires a clear mind."
+    },
+    {
+      "stepNumber": 17,
+      "hebrewStepName": "מימרא",
+      "title": "אביי: even a small errand ruined his learning",
+      "stepSummary": "אביי says that if his stepmother asked him just to bring her a dish of כותח, he could no longer learn properly.",
+      "simpleTranslation": "אביי said: If my mother tells me, \"Bring me כותח,\" I can no longer learn.",
+      "whatsHappening": "אביי gives a personal example. Even a tiny distraction, like being asked for a dish, broke his concentration.",
+      "deeperAnalysis": "This shows how delicate the clarity needed for learning is. It is not only major troubles that disturb it; even a minor interruption does.",
+      "keyTerms": [
+        {
+          "term": "אֵם",
+          "meaning": "Here: אביי's stepmother (the woman who raised him)"
+        },
+        {
+          "term": "כּוּתָּחָא",
+          "meaning": "כותח, a dip made with milk and bread crusts"
+        },
+        {
+          "term": "לָא תְּנַאי",
+          "meaning": "I cannot learn"
+        }
+      ],
+      "confusionAlert": "The word אם here does not mean אביי's birth mother, who died when he was born. It refers to the woman who raised him.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר אַבָּיֵי:",
+          "english": "Abaye said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אִי אָמְרָה לִי אֵם",
+          "english": "If my mother says to me:"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "קָרֵיב כּוּתָּחָא —",
+          "english": "Bring me kutaḥ —"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "לָא תְּנַאי.",
+          "english": "I cannot learn."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אָמַר אַבָּיֵי אִי אָמְרָה לִי אֵם קָרֵיב כּוּתָּחָא",
+      "macroPhase": "narrative_aggadah",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        16
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Gives a personal example of how easily learning-clarity is lost.",
+      "mimraCoreRuling": "Even a small task can disrupt focused Torah study."
+    },
+    {
+      "stepNumber": 18,
+      "hebrewStepName": "מימרא",
+      "title": "רבא: even a louse bite ruined his learning",
+      "stepSummary": "רבא says that if a louse bit him, he could no longer learn properly.",
+      "simpleTranslation": "רבא said: If a louse bites me, I can no longer learn.",
+      "whatsHappening": "רבא adds his own example in the same style as אביי. Even a small physical irritation broke his focus.",
+      "deeperAnalysis": "אביי's example was a distraction from outside. רבא's is a bodily discomfort. Both show that learning needs complete calm.",
+      "keyTerms": [
+        {
+          "term": "קְרַצְתַּן",
+          "meaning": "Bit me"
+        },
+        {
+          "term": "כִּינָּה",
+          "meaning": "A louse"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר רָבָא:",
+          "english": "Rava said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אִי קְרַצְתַּן כִּינָּה",
+          "english": "If a louse bites me,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "לָא תְּנַאי.",
+          "english": "I cannot learn."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אָמַר רָבָא אִי קְרַצְתַּן כִּינָּה לָא תְּנַאי",
+      "macroPhase": "narrative_aggadah",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        17
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Parallels אביי's statement with a physical disturbance.",
+      "mimraCoreRuling": "Even a small bodily irritation disrupts Torah study."
+    },
+    {
+      "stepNumber": 19,
+      "hebrewStepName": "ראיה",
+      "title": "מר בריה דרבינא's mother made him seven garments",
+      "stepSummary": "The mother of מר בריה דרבינא made him seven garments, one for each day of the week, so lice would not disturb him.",
+      "simpleTranslation": "For מר, the son of רבינא, his mother made seven garments for the seven days of the week.",
+      "whatsHappening": "The גמרא ends the section with a story. A mother made sure her son always wore fresh clothing so lice would not bother him while learning.",
+      "deeperAnalysis": "This story connects to רבא's louse complaint in step 18. It shows that people took real, practical steps to protect a learner's peace of mind.",
+      "keyTerms": [
+        {
+          "term": "מָנֵי",
+          "meaning": "Garments"
+        },
+        {
+          "term": "שִׁבְעָה יוֹמֵי",
+          "meaning": "Seven days (of the week)"
+        }
+      ],
+      "whatToRemember": "Prayer, judging, and Torah study all require a calm, clear mind. Anger, harsh weather, small errands, or even a louse bite can disturb it.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מָר בְּרֵיהּ דְּרָבִינָא",
+          "english": "Mar, son of Ravina —"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "עֲבַדָה לֵיהּ אִמֵּיהּ",
+          "english": "his mother made for him"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "שִׁבְעָה מָנֵי לְשִׁבְעָה יוֹמֵי.",
+          "english": "seven garments for the seven days.",
+          "notes": "Fresh clothes each day, so lice from old clothing would not distract him (רבינו חננאל)."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "מסקנא",
+      "triggerLanguage": "מָר בְּרֵיהּ דְּרָבִינָא עֲבַדָה לֵיהּ אִמֵּיהּ שִׁבְעָה מָנֵי לְשִׁבְעָה יוֹמֵי",
+      "macroPhase": "narrative_aggadah",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        18
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Illustrates the concern raised by רבא about lice disturbing study.",
+      "raayaObject": "The concern that lice disturb Torah study",
+      "raayaSupportSource": "The practice of מר בריה דרבינא's mother"
+    },
+    {
+      "stepNumber": 20,
+      "hebrewStepName": "מימרא",
+      "title": "Night was created for sleep",
+      "stepSummary": "רב יהודה says the night was created only for sleeping.",
+      "simpleTranslation": "רב יהודה said: The night was created only for sleep.",
+      "whatsHappening": "רב יהודה makes a short statement: the night is meant for sleeping.",
+      "deeperAnalysis": "This continues the earlier theme about the conditions a person needs to learn well. A tired mind cannot learn clearly, so the night is set aside for rest. This sets up the contrasting view of ריש לקיש in the next step.",
+      "keyTerms": [
+        {
+          "term": "לֵילְיָא",
+          "meaning": "Night"
+        },
+        {
+          "term": "שִׁינְתָּא",
+          "meaning": "Sleep"
+        },
+        {
+          "term": "אִיבְּרִי",
+          "meaning": "Was created"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר רַב יְהוּדָה:",
+          "english": "Rav Yehuda said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "לָא אִיבְּרִי לֵילְיָא אֶלָּא לְשִׁינְתָּא.",
+          "english": "The night was created only for sleep."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אָמַר רַב יְהוּדָה",
+      "macroPhase": "narrative_aggadah",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        16
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Continues the series of sayings about the conditions needed for clear learning.",
+      "mimraCoreRuling": "Night is meant for sleep."
+    },
+    {
+      "stepNumber": 21,
+      "hebrewStepName": "מימרא",
+      "title": "The moon was created for study",
+      "stepSummary": "ריש לקיש says the moon was created only for Torah review.",
+      "simpleTranslation": "רבי שמעון בן לקיש said: The moon was created only for study (review of learning).",
+      "whatsHappening": "ריש לקיש gives a statement that sounds like the opposite of רב יהודה: moonlit nights are for learning.",
+      "deeperAnalysis": "רב יהודה spoke about the night in general. ריש לקיש focuses on the moon, meaning nights with light. On those nights a person can use the time for גירסא, which means reviewing and repeating what he learned. The גמרא leaves the two statements side by side without resolving them.",
+      "keyTerms": [
+        {
+          "term": "סֵיהֲרָא",
+          "meaning": "The moon"
+        },
+        {
+          "term": "גִּירְסָא",
+          "meaning": "Reviewing and repeating one's learning"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר רַבִּי שִׁמְעוֹן בֶּן לָקִישׁ:",
+          "english": "Rabbi Shimon ben Lakish said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "לָא אִיבְּרִי סֵיהֲרָא אֶלָּא לְגִירְסָא.",
+          "english": "The moon was created only for study (review)."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אָמַר רַבִּי שִׁמְעוֹן בֶּן לָקִישׁ",
+      "macroPhase": "narrative_aggadah",
+      "branchRole": "alternative_approach",
+      "dependsOnStepNumbers": [
+        20
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Gives a contrasting view to רב יהודה about how to use the night.",
+      "mimraCoreRuling": "Moonlit nights are for reviewing Torah."
+    },
+    {
+      "stepNumber": 22,
+      "hebrewStepName": "ראיה",
+      "title": "רבי זירא's sharp teachings came from the daytime",
+      "stepSummary": "People praised רבי זירא for his sharp teachings, and he answered that he had learned them by day.",
+      "simpleTranslation": "They said to רבי זירא: Your teachings are sharp. He said to them: They are from the daytime.",
+      "whatsHappening": "A short story shows that learning done in the daytime comes out the clearest.",
+      "deeperAnalysis": "רבי זירא credits the sharpness of his learning to the fact that he studied it by day. This supports the idea that the day is the main time for deep, clear learning. At night a person can review, but the sharp thinking happens by day.",
+      "keyTerms": [
+        {
+          "term": "מְחַדְּדָן",
+          "meaning": "Are sharp"
+        },
+        {
+          "term": "שְׁמַעְתָּךְ",
+          "meaning": "Your teachings"
+        },
+        {
+          "term": "דִּימָמֵי",
+          "meaning": "Of the daytime"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמְרִי לֵיהּ לְרַבִּי זֵירָא:",
+          "english": "They said to Rabbi Zeira:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "מְחַדְּדָן שְׁמַעְתָּךְ.",
+          "english": "Your teachings are sharp."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "אֲמַר לְהוּ: דִּימָמֵי נִינְהוּ.",
+          "english": "He said to them: They are from the daytime."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "מימרא",
+      "triggerLanguage": "אָמְרִי לֵיהּ לְרַבִּי זֵירָא",
+      "macroPhase": "narrative_aggadah",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        20,
+        21
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Adds a story showing that daytime is the best time for clear learning.",
+      "raayaObject": "The idea that daytime learning is the clearest.",
+      "raayaSupportSource": "רבי זירא's own explanation of why his teachings were so sharp."
+    },
+    {
+      "stepNumber": 23,
+      "hebrewStepName": "ראיה",
+      "title": "רב חסדא refuses to sleep",
+      "stepSummary": "רב חסדא's daughter asked him to sleep a little, and he answered that there will be plenty of time to sleep after death.",
+      "simpleTranslation": "רב חסדא's daughter said to רב חסדא: Doesn't the Master want to sleep a little? He said to her: Soon the days that are long and short will come, and we will sleep a lot.",
+      "whatsHappening": "A story shows how רב חסדא stayed up at night learning instead of sleeping.",
+      "deeperAnalysis": "The 'long and short days' are the days in the grave. They are long in time but short in chances to learn Torah and do מצוות. Since a person can rest then, רב חסדא used every moment of life now for learning.",
+      "keyTerms": [
+        {
+          "term": "מֵינַם",
+          "meaning": "To sleep"
+        },
+        {
+          "term": "פּוּרְתָּא",
+          "meaning": "A little"
+        },
+        {
+          "term": "אֲרִיכֵי וְקַטִּינֵי",
+          "meaning": "Long and short"
+        },
+        {
+          "term": "טוּבָא",
+          "meaning": "A lot"
+        }
+      ],
+      "confusionAlert": "The 'days that are long and short' are not a season of the year. They mean the time after death, long in length but empty of chances to learn and do מצוות.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֲמַרָה לֵיהּ בַּרְתֵּיהּ דְּרַב חִסְדָּא לְרַב חִסְדָּא:",
+          "english": "Rav Chisda's daughter said to Rav Chisda:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "לָא בָּעֵי מָר מֵינַם פּוּרְתָּא?",
+          "english": "Doesn't the Master want to sleep a little?"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "אֲמַר לַהּ:",
+          "english": "He said to her:"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "הַשְׁתָּא אָתוּ יוֹמֵי דַּאֲרִיכֵי וְקַטִּינֵי,",
+          "english": "Soon the days that are long and short will come,",
+          "notes": "The days in the grave: long in time, short in opportunity for Torah and מצוות."
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "וְנֵינוּם טוּבָא.",
+          "english": "and we will sleep a lot."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "מימרא",
+      "triggerLanguage": "אֲמַרָה לֵיהּ בַּרְתֵּיהּ דְּרַב חִסְדָּא לְרַב חִסְדָּא",
+      "macroPhase": "narrative_aggadah",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        20,
+        21
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Gives a story of a sage who learned at night, in contrast to 'night is for sleep'.",
+      "raayaObject": "Using the night for Torah learning.",
+      "raayaSupportSource": "רב חסדא's practice and his answer to his daughter."
+    },
+    {
+      "stepNumber": 24,
+      "hebrewStepName": "מימרא",
+      "title": "Torah scholars are day workers",
+      "stepSummary": "רב נחמן בר יצחק says that Torah scholars work mainly by day.",
+      "simpleTranslation": "רב נחמן בר יצחק said: We are day workers.",
+      "whatsHappening": "רב נחמן בר יצחק describes his own approach: Torah learning is daytime work, like a hired worker who works by day.",
+      "deeperAnalysis": "Unlike רב חסדא, he does his main learning in the day and rests at night. This matches רב יהודה's view that night is for sleep. It also fits רבי זירא's story about clear daytime learning.",
+      "keyTerms": [
+        {
+          "term": "פּוֹעֲלֵי",
+          "meaning": "Workers"
+        },
+        {
+          "term": "אֲנַן",
+          "meaning": "We"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר רַב נַחְמָן בַּר יִצְחָק:",
+          "english": "Rav Nachman bar Yitzchak said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אֲנַן פּוֹעֲלֵי דִּימָמֵי אֲנַן.",
+          "english": "We are day workers."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אָמַר רַב נַחְמָן בַּר יִצְחָק",
+      "macroPhase": "narrative_aggadah",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        20,
+        22
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Gives another sage's approach, which favors daytime learning.",
+      "mimraCoreRuling": "Torah learning is mainly a daytime job."
+    },
+    {
+      "stepNumber": 25,
+      "hebrewStepName": "ראיה",
+      "title": "רב אחא בר יעקב borrows and repays",
+      "stepSummary": "רב אחא בר יעקב would make up missed daytime learning at night.",
+      "simpleTranslation": "רב אחא בר יעקב would borrow and repay.",
+      "whatsHappening": "The גמרא reports how רב אחא בר יעקב handled lost learning time. If he missed learning by day, he paid it back at night.",
+      "deeperAnalysis": "He agreed that the day is the main time to learn. But he treated missed daytime learning like a debt that must be paid back. So he used the night only to make up what he owed, which is a middle path between the views above.",
+      "keyTerms": [
+        {
+          "term": "יָזֵיף",
+          "meaning": "Borrows"
+        },
+        {
+          "term": "פָּרַע",
+          "meaning": "Repays"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "רַב אַחָא בַּר יַעֲקֹב",
+          "english": "Rav Acha bar Yaakov"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "יָזֵיף וּפָרַע.",
+          "english": "would borrow and repay.",
+          "notes": "He 'borrowed' time from daytime learning and 'repaid' it at night."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "מימרא",
+      "triggerLanguage": "רַב אַחָא בַּר יַעֲקֹב יָזֵיף וּפָרַע",
+      "macroPhase": "narrative_aggadah",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        24
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Adds a sage's practice that builds on the idea of 'day workers'.",
+      "raayaObject": "The day is primary, but missed learning must be made up.",
+      "raayaSupportSource": "רב אחא בר יעקב's practice.",
+      "whatToRemember": "The sages disagree on how to use the night. Some say it is for sleep, some use it for review, some learned through it, and some used it to make up lost daytime learning. All of them agree that clear learning needs the right conditions."
+    },
+    {
+      "stepNumber": 26,
+      "hebrewStepName": "מימרא",
+      "title": "No prayer for three days after a journey",
+      "stepSummary": "רבי אלעזר rules that someone returning from a trip should not pray for three days, and brings a proof from עזרא.",
+      "simpleTranslation": "רבי אלעזר said: One who comes from a journey should not pray for three days, as it says: 'And I gathered them to the river that goes to Achava, and we camped there three days, and I looked over the people, etc.'",
+      "whatsHappening": "רבי אלעזר gives a new rule about תפילה: after a trip, a person waits three days before praying. He brings a פסוק from עזרא as the source.",
+      "deeperAnalysis": "This fits the larger theme that holy tasks need a settled mind. A tired traveler cannot concentrate properly. In the פסוק, עזרא and the people camped for three days, and only afterward did they fast and pray for a safe journey.",
+      "keyTerms": [
+        {
+          "term": "הַבָּא מִן הַדֶּרֶךְ",
+          "meaning": "One who comes from a journey"
+        },
+        {
+          "term": "יִתְפַּלֵּל",
+          "meaning": "Pray"
+        },
+        {
+          "term": "וַנַּחֲנֶה",
+          "meaning": "And we camped"
+        },
+        {
+          "term": "וְגוֹ׳",
+          "meaning": "Etc.; the verse continues"
+        }
+      ],
+      "confusionAlert": "The quoted words do not mention prayer. The proof comes from the continuation hinted at by וגו׳ (עזרא ח:כא). Only after the three days did they declare a fast and pray.",
+      "whyThisMatters": "It shows that proper תפילה requires a settled mind, which ties into the whole section about clarity of mind.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר רַבִּי אֶלְעָזָר:",
+          "english": "Rabbi Elazar said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "הַבָּא מִן הַדֶּרֶךְ,",
+          "english": "One who comes from a journey"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "אַל יִתְפַּלֵּל שְׁלֹשָׁה יָמִים,",
+          "english": "should not pray for three days,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "שֶׁנֶּאֱמַר:",
+          "english": "as it says:"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "״וָאֶקְבְּצֵם אֶל הַנָּהָר הַבָּא אֶל אַחֲוָא",
+          "english": "\"And I gathered them to the river that goes to Achava,"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "וַנַּחֲנֶה שָׁם יָמִים שְׁלֹשָׁה",
+          "english": "and we camped there three days,"
+        },
+        {
+          "phraseNumber": 7,
+          "aramaic": "וָאָבִינָה בָּעָם וְגוֹ׳״.",
+          "english": "and I looked over the people, etc.\"",
+          "notes": "Later (עזרא 8:21) they fast and pray, but only after the three days."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אָמַר רַבִּי אֶלְעָזָר הַבָּא מִן הַדֶּרֶךְ",
+      "macroPhase": "source_derivation",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Moves from learning to תפילה, keeping the shared theme of a settled mind.",
+      "mimraCoreRuling": "Someone returning from a journey should not pray for three days, based on the פסוק in עזרא."
+    },
+    {
+      "stepNumber": 27,
+      "hebrewStepName": "ראיה",
+      "title": "שמואל's father did not pray for three days after a trip",
+      "stepSummary": "אבוה דשמואל would not pray for three days after returning from a journey.",
+      "simpleTranslation": "שמואל's father, when he came back from a trip, would not pray for three days.",
+      "whatsHappening": "The גמרא tells a story that matches what רבי אלעזר just said: after a trip, a person waits three days before praying.",
+      "deeperAnalysis": "רבי אלעזר said in Step 26 that a traveler should not pray for three days because his mind is not settled. Here a great person, שמואל's father, actually acted this way, which shows the rule was followed in real life.",
+      "keyTerms": [
+        {
+          "term": "אֲבוּהּ דִּשְׁמוּאֵל",
+          "meaning": "שמואל's father"
+        },
+        {
+          "term": "אוֹרְחָא",
+          "meaning": "a road / a journey"
+        },
+        {
+          "term": "מְצַלֵּי",
+          "meaning": "prays"
+        },
+        {
+          "term": "תְּלָתָא יוֹמֵי",
+          "meaning": "three days"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֲבוּהּ דִּשְׁמוּאֵל,",
+          "english": "Shmuel's father,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "כִּי אָתֵי בְּאוֹרְחָא,",
+          "english": "when he came back from a journey,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "לָא מְצַלֵּי תְּלָתָא יוֹמֵי.",
+          "english": "would not pray for three days.",
+          "notes": "He needed time to rest and calm his mind."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "מימרא",
+      "triggerLanguage": "אֲבוּהּ דִּשְׁמוּאֵל, כִּי אָתֵי בְּאוֹרְחָא",
+      "macroPhase": "narrative_aggadah",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        26
+      ],
+      "scopeOfStep": "proof_mechanism",
+      "relationToPreviousStep": "Supports רבי אלעזר's rule with a real-life practice.",
+      "raayaObject": "רבי אלעזר's rule that a returning traveler waits three days before praying.",
+      "raayaSupportSource": "The personal practice of אבוה דשמואל."
+    },
+    {
+      "stepNumber": 28,
+      "hebrewStepName": "ראיה",
+      "title": "שמואל and רב פפא avoided praying near strong smells",
+      "stepSummary": "שמואל would not pray in a house with alcoholic drink, and רב פפא would not pray in a house with small fried fish.",
+      "simpleTranslation": "שמואל would not pray in a house that had beer or other strong drink in it. רב פפא would not pray in a house that had small fried fish in it.",
+      "whatsHappening": "The גמרא gives two more stories of אמוראים who avoided praying where something would disturb their focus — here, a strong smell.",
+      "deeperAnalysis": "The idea is the same as the travel rule: תפילה needs a calm, focused mind. Travel tires the mind, and a strong smell distracts it, so both great teachers avoided praying in those places.",
+      "keyTerms": [
+        {
+          "term": "בֵּיתָא",
+          "meaning": "a house"
+        },
+        {
+          "term": "שִׁיכְרָא",
+          "meaning": "beer / alcoholic drink"
+        },
+        {
+          "term": "הַרְסָנָא",
+          "meaning": "small fried fish"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "שְׁמוּאֵל לָא מְצַלֵּי",
+          "english": "Shmuel would not pray"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "בְּבֵיתָא דְּאִית בֵּיהּ שִׁיכְרָא.",
+          "english": "in a house that had alcoholic drink in it.",
+          "notes": "The smell disturbed his focus."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "רַב פָּפָּא לָא מְצַלֵּי",
+          "english": "Rav Pappa would not pray"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "בְּבֵיתָא דְּאִית בֵּיהּ הַרְסָנָא.",
+          "english": "in a house that had small fried fish in it.",
+          "notes": "Again, because of the strong smell."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "מימרא",
+      "triggerLanguage": "שְׁמוּאֵל לָא מְצַלֵּי בְּבֵיתָא דְּאִית בֵּיהּ שִׁיכְרָא",
+      "macroPhase": "narrative_aggadah",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        26,
+        27
+      ],
+      "scopeOfStep": "proof_mechanism",
+      "relationToPreviousStep": "Extends the theme from travel fatigue to other things that disturb concentration in תפילה.",
+      "raayaObject": "The broader principle that one should pray only with a settled, focused mind.",
+      "raayaSupportSource": "The practices of שמואל and רב פפא.",
+      "whatToRemember": "תפילה needs a calm, focused mind. Great teachers avoided praying when tired from travel or near distracting smells."
+    },
+    {
+      "stepNumber": 29,
+      "hebrewStepName": "מימרא",
+      "title": "Someone calmed by wine is like his Creator",
+      "stepSummary": "רבי חנינא teaches that a person who becomes calmer and easier to win over through wine has something of his Creator's way in him, based on the פסוק about ה׳ smelling the sweet smell of נח's offering.",
+      "simpleTranslation": "רבי חנינא said: Anyone who becomes calmed by his wine has in him something of the mind of his Creator, as it says: 'And ה׳ smelled the pleasant smell...'",
+      "whatsHappening": "The גמרא moves from smells and drinks during תפילה to sayings about wine. רבי חנינא says that being calmed and won over through wine is like ה׳'s way, so to speak.",
+      "deeperAnalysis": "After the flood, ה׳ 'smelled' נח's offering and then promised never to curse the ground again. So, in a way, ה׳ became gentler after the pleasant smell. A person who becomes softer and more forgiving after wine is acting in a similar way.",
+      "keyTerms": [
+        {
+          "term": "הַמִּתְפַּתֶּה",
+          "meaning": "one who is calmed or won over"
+        },
+        {
+          "term": "דַּעַת קוֹנוֹ",
+          "meaning": "the mind of his Creator"
+        },
+        {
+          "term": "רֵיחַ הַנִּיחוֹחַ",
+          "meaning": "a pleasant smell (of an offering)"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר רַבִּי חֲנִינָא:",
+          "english": "Rabbi Chanina said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "כׇּל הַמִּתְפַּתֶּה בְּיֵינוֹ —",
+          "english": "Anyone who is calmed (won over) by his wine —"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "יֵשׁ בּוֹ מִדַּעַת קוֹנוֹ,",
+          "english": "has in him something of the mind of his Creator,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "שֶׁנֶּאֱמַר: ״וַיָּרַח ה׳ אֶת רֵיחַ הַנִּיחוֹחַ וְגוֹ׳״.",
+          "english": "as it says: 'And ה׳ smelled the pleasant smell, etc.'",
+          "notes": "בראשית 8:21 — after this, ה׳ promised not to curse the ground again."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אָמַר רַבִּי חֲנִינָא: כׇּל הַמִּתְפַּתֶּה בְּיֵינוֹ",
+      "macroPhase": "narrative_aggadah",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [
+        28
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Connected through the theme of drink and smell, this begins a new series of sayings about wine.",
+      "mimraCoreRuling": "A person who is calmed and won over through wine resembles his Creator, who became gentler after smelling the offering."
+    },
+    {
+      "stepNumber": 30,
+      "hebrewStepName": "מימרא",
+      "title": "Someone who stays clear-headed with wine is like the seventy elders",
+      "stepSummary": "רבי חייא teaches that a person who stays settled after drinking wine has the wisdom of seventy elders, because יין and סוד both add up to seventy, and usually when wine goes in, a secret comes out.",
+      "simpleTranslation": "רבי חייא said: Anyone who stays settled with his wine has the wisdom of seventy elders. The word 'wine' adds up to seventy, and the word 'secret' adds up to seventy. When wine goes in, a secret comes out.",
+      "whatsHappening": "רבי חייא praises a person who drinks wine and still stays in control, saying he has the wisdom of the seventy elders.",
+      "deeperAnalysis": "Using גימטריא, יין (10+10+50) and סוד (60+6+4) both equal seventy. Most people reveal secrets when they drink. Someone who keeps his secrets even after drinking shows a mind as strong as the seventy elders.",
+      "keyTerms": [
+        {
+          "term": "הַמִּתְיַישֵּׁב",
+          "meaning": "one who stays settled / clear-headed"
+        },
+        {
+          "term": "שִׁבְעִים זְקֵנִים",
+          "meaning": "the seventy elders"
+        },
+        {
+          "term": "סוֹד",
+          "meaning": "a secret"
+        },
+        {
+          "term": "נִכְנַס יַיִן יָצָא סוֹד",
+          "meaning": "wine goes in, a secret comes out"
+        }
+      ],
+      "confusionAlert": "'Given in seventy letters' does not mean the word has seventy letters. It means the letters add up to seventy in גימטריא.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר רַבִּי חִיָּיא:",
+          "english": "Rabbi Chiya said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "כׇּל הַמִּתְיַישֵּׁב בְּיֵינוֹ —",
+          "english": "Anyone who stays settled with his wine —"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "יֵשׁ בּוֹ דַּעַת שִׁבְעִים זְקֵנִים.",
+          "english": "has in him the wisdom of seventy elders."
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "״יַיִן״ נִיתַּן בְּשִׁבְעִים אוֹתִיּוֹת,",
+          "english": "'Wine' was given in letters worth seventy,",
+          "notes": "י(10) + י(10) + ן(50) = 70."
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "וְ״סוֹד״ נִיתַּן בְּשִׁבְעִים אוֹתִיּוֹת.",
+          "english": "and 'secret' was given in letters worth seventy.",
+          "notes": "ס(60) + ו(6) + ד(4) = 70."
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "נִכְנַס יַיִן — יָצָא סוֹד.",
+          "english": "When wine goes in — a secret comes out."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אָמַר רַבִּי חִיָּיא: כׇּל הַמִּתְיַישֵּׁב בְּיֵינוֹ",
+      "macroPhase": "narrative_aggadah",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        29
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "A second saying in the series about wine, this time praising self-control.",
+      "mimraCoreRuling": "Staying clear-headed and keeping secrets after drinking wine shows the wisdom of the seventy elders."
+    },
+    {
+      "stepNumber": 31,
+      "hebrewStepName": "מימרא",
+      "title": "Wine was created to comfort mourners and to repay the wicked",
+      "stepSummary": "רבי חנין teaches that wine was created only to comfort mourners and to give the wicked their reward in this world, based on a פסוק in משלי.",
+      "simpleTranslation": "רבי חנין said: Wine was created only to comfort mourners and to pay reward to the wicked, as it says: 'Give strong drink to the one who is perishing...'",
+      "whatsHappening": "רבי חנין gives a third saying about wine: it has two main purposes, comforting mourners and rewarding the wicked.",
+      "deeperAnalysis": "The פסוק says to give strong drink to 'the one who is perishing,' meaning the wicked, and wine to 'the bitter of soul,' meaning mourners. The wicked get their good reward here in this world through pleasures like wine, so nothing is left for them in עולם הבא.",
+      "keyTerms": [
+        {
+          "term": "לְנַחֵם אֲבֵלִים",
+          "meaning": "to comfort mourners"
+        },
+        {
+          "term": "לְשַׁלֵּם שָׂכָר",
+          "meaning": "to pay reward"
+        },
+        {
+          "term": "אוֹבֵד",
+          "meaning": "one who is perishing (the wicked)"
+        }
+      ],
+      "whatToRemember": "The three wine sayings: being calmed by wine is like the Creator (רבי חנינא); staying clear-headed with wine is like the seventy elders (רבי חייא); wine was created to comfort mourners and repay the wicked (רבי חנין).",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר רַבִּי חָנִין:",
+          "english": "Rabbi Chanin said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "לֹא נִבְרָא יַיִן אֶלָּא",
+          "english": "Wine was created only"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "לְנַחֵם אֲבֵלִים",
+          "english": "to comfort mourners"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וּלְשַׁלֵּם שָׂכָר לָרְשָׁעִים,",
+          "english": "and to pay reward to the wicked,",
+          "notes": "They get their reward in this world, so none is left for עולם הבא."
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "שֶׁנֶּאֱמַר: ״תְּנוּ שֵׁכָר לְאוֹבֵד וְגוֹ׳״.",
+          "english": "as it says: 'Give strong drink to the one who is perishing, etc.'",
+          "notes": "משלי 31:6 — it continues, 'and wine to the bitter of soul,' meaning mourners."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אָמַר רַבִּי חָנִין: לֹא נִבְרָא יַיִן אֶלָּא לְנַחֵם אֲבֵלִים",
+      "macroPhase": "narrative_aggadah",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        30
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "A third saying in the wine series, explaining wine's purpose.",
+      "mimraCoreRuling": "Wine was created to comfort mourners and to give the wicked their reward in this world."
+    },
+    {
+      "stepNumber": 32,
+      "hebrewStepName": "מימרא",
+      "title": "A home without plentiful wine is not yet included in the blessing",
+      "stepSummary": "רבי חנין בר פפא teaches that anyone whose home does not have wine flowing like water is not included in the Torah's ברכה. He cites the פסוק 'וברך את לחמך ואת מימיך'.",
+      "simpleTranslation": "רבי חנין בר פפא said: Anyone in whose house wine is not poured out like water is not included in the blessing, as the פסוק says: 'And He will bless your bread and your water.'",
+      "whatsHappening": "A new אמורא gives another teaching about wine. He says that having plenty of wine at home is a sign of the Torah's ברכה, and he brings a פסוק as his source.",
+      "deeperAnalysis": "The earlier teachings praised self-control with wine or limited wine's purpose. Here wine is presented positively, as part of the blessing ה׳ promises. The פסוק only says 'water', so the next step must explain how 'water' can mean wine.",
+      "keyTerms": [
+        {
+          "term": "נִשְׁפָּךְ",
+          "meaning": "Poured out or flowing, meaning freely and in large amounts"
+        },
+        {
+          "term": "כַּמַּיִם",
+          "meaning": "Like water, meaning plentiful and easy to come by"
+        },
+        {
+          "term": "בִּכְלַל בְּרָכָה",
+          "meaning": "Included in the blessing promised by the Torah"
+        },
+        {
+          "term": "שֶׁנֶּאֱמַר",
+          "meaning": "As it is said; this introduces a פסוק used as a source"
+        }
+      ],
+      "confusionAlert": "Do not read this as 'drink lots of wine'. The point is that wine being plentiful in the home is a sign of blessing and prosperity. It does not encourage drunkenness. The earlier steps praised a person who stays settled after drinking.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר רַבִּי חָנִין בַּר פָּפָּא:",
+          "english": "Rabbi Ḥanin bar Pappa said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "כׇּל שֶׁאֵין יַיִן נִשְׁפָּךְ",
+          "english": "Anyone in whose [house] wine is not poured out"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "בְּתוֹךְ בֵּיתוֹ כַּמַּיִם —",
+          "english": "inside his house like water"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "אֵינוֹ בִּכְלַל בְּרָכָה,",
+          "english": "is not included in the blessing,"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "שֶׁנֶּאֱמַר:",
+          "english": "as it is said:"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "״וּבֵרַךְ אֶת לַחְמְךָ וְאֶת מֵימֶיךָ״.",
+          "english": "'And He will bless your bread and your water.'",
+          "notes": "שמות 23:25"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אָמַר רַבִּי חָנִין בַּר פָּפָּא",
+      "macroPhase": "narrative_aggadah",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Adds one more teaching to the series about wine, this time a positive one that links wine to blessing.",
+      "mimraCoreRuling": "A home where wine flows freely like water is included in the Torah's ברכה. A home without it is not yet included."
+    },
+    {
+      "stepNumber": 33,
+      "hebrewStepName": "ראיה",
+      "title": "Proving that 'water' in the verse means wine",
+      "stepSummary": "Bread and the 'water' are listed together, so the 'water' must be something that, like bread, can be bought with כסף מעשר שני. That is wine, and the פסוק calls it 'water'.",
+      "simpleTranslation": "Bread is something that may be bought with מעשר money. So too, the 'water' in the פסוק is something that may be bought with מעשר money. What is that? Wine. Yet the פסוק calls it 'water'.",
+      "whatsHappening": "The גמרא explains how the פסוק about 'water' can prove anything about wine. It shows that the 'water' really means wine.",
+      "deeperAnalysis": "Since bread and 'water' are paired in one פסוק, we compare them: bread may be bought with כסף מעשר שני, so the 'water' must be something that can also be bought with it. Plain water may not be bought with that money, but wine may. So the פסוק's 'water' is wine, and this completes the proof for step 32.",
+      "keyTerms": [
+        {
+          "term": "כֶּסֶף מַעֲשֵׂר",
+          "meaning": "Money used to redeem מעשר שני; it may only be spent on food and drink to eat in ירושלים"
+        },
+        {
+          "term": "מָה ... אַף ...",
+          "meaning": "Just as ... so too ...; a comparison between two items"
+        },
+        {
+          "term": "מַאי נִיהוּ",
+          "meaning": "What is it?; asks what something actually refers to"
+        },
+        {
+          "term": "קָרֵי לֵיהּ",
+          "meaning": "Calls it; the פסוק uses this name for it"
+        }
+      ],
+      "confusionAlert": "Why can't the 'water' just mean plain water? Water may not be bought with כסף מעשר שני. So it does not match bread, and the comparison would fail.",
+      "whatToRemember": "רבי חנין בר פפא reads 'מימיך' in 'וברך את לחמך ואת מימיך' as wine. He learns this by comparing it to bread: both may be bought with כסף מעשר שני. So plentiful wine is part of the Torah's ברכה.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מָה לֶחֶם שֶׁנִּיקָּח בְּכֶסֶף מַעֲשֵׂר —",
+          "english": "Just as bread is something bought with [second] tithe money"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אַף מַיִם שֶׁנִּיקָּח בְּכֶסֶף מַעֲשֵׂר,",
+          "english": "so too the 'water' is something bought with tithe money,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וּמַאי נִיהוּ — יַיִן,",
+          "english": "and what is it? Wine,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וְקָא קָרֵי לֵיהּ מַיִם.",
+          "english": "and [yet the verse] calls it 'water.'"
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "מימרא",
+      "triggerLanguage": "מָה לֶחֶם שֶׁנִּיקָּח בְּכֶסֶף מַעֲשֵׂר",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        32
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Explains how the פסוק cited in step 32 actually refers to wine, which completes the proof.",
+      "raayaObject": "The claim that plentiful wine in the home is part of the Torah's ברכה (step 32).",
+      "raayaSupportSource": "The pairing of bread and 'water' in 'וברך את לחמך ואת מימיך', together with the rule that only food and drink like bread and wine, not plain water, may be bought with כסף מעשר שני."
+    }
+  ]
+}
