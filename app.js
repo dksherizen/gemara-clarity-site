@@ -249,10 +249,29 @@ function go(m, i, extra=""){ location.hash = hashFor(m, i, extra); }
 const chev = `<svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>`;
 const hasBreakdown = id => cloudIds.has(id);
 
+/* ---------- perakim (static data/perakim.json, from Sefaria's chapter map) ---------- */
+let perakim = null;
+function loadPerakim(){
+  return loadPerakim.p || (loadPerakim.p = fetch("data/perakim.json").then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+    .then(d => (perakim = d && d.masechtot || null)).catch(() => { loadPerakim.p = null; return null; }));
+}
+const perakimOf = m => (perakim && perakim[m]) || null;
+const perakimAt = (m, i) => (perakimOf(m) || []).filter(p => i >= p.start && i <= p.end);
+const amudLbl = i => { const {daf, amud} = dafOf(i); return `${daf}${amud}`; };
+const perekHe = p => `פרק ${p.he}`;
+function perekLineHtml(m, i){
+  const ps = perakimAt(m, i); if (!ps.length) return "";
+  const main = ps[0], next = ps[1];
+  return `<button class="perekline" id="perekBtn" data-perek="${main.n}" aria-label="Perek ${main.n}, ${esc(perekHe(main))}${next ? `; perek ${next.n} begins on this amud` : ""}. Show the perakim">`
+    + `<span>Perek ${main.n} · <span class="he">${esc(perekHe(main))}</span></span>`
+    + (next ? `<span class="pk-next">Perek ${next.n} · <span class="he">${esc(perekHe(next))}</span> begins here</span>` : "")
+    + `</button>`;
+}
+
 /* ---------- picker ---------- */
-function openPicker(focusMas){
+function openPicker(focusMas, focusPerek){
   const html = `
-    <input class="input" id="gotoInput" type="search" autocomplete="off" placeholder="Type a daf, e.g. Makkot 5b" aria-label="Go to a daf" autofocus>
+    <input class="input" id="gotoInput" type="search" autocomplete="off" placeholder="Type a daf, e.g. Makkot 5b" aria-label="Go to a daf"${focusPerek ? "" : " autofocus"}>
     <div class="sugg" id="gotoSugg"></div>
     <div id="yomiSlot"></div>
     <div id="pickBody"></div>`;
@@ -263,24 +282,58 @@ function openPicker(focusMas){
         const n = [...cloudIds].filter(id => parseId(id).m === k).length;
         return `<button class="masbtn" data-mas="${k}"><span class="mb-names"><span class="mb-en">${masName(k)}</span><span class="mb-he">${masInfo(k)[1]}</span></span>${n ? `<span class="badge" title="${n} amudim with breakdown">${n}</span>` : ""}</button>`; }).join("")}</div>`).join("");
     };
-    const showDafGrid = k => {
-      const [, he, first, last] = masInfo(k);
+    const cellHtml = (k, i, inRange, mid) => {
+      const [, , first, last] = masInfo(k), {daf: d, amud: am} = dafOf(i);
+      if (!inRange) return `<span class="ph" aria-hidden="true"></span>`;
+      const ok = i >= first && i <= last, id = refId(k, i), cur = current && current.m === k && current.i === i;
+      return `<button ${ok ? "" : "disabled"} data-go="${k}|${i}" class="${hasBreakdown(id) ? "has" : ""} ${cur ? "cur" : ""} ${mid ? "mid" : ""}"${mid ? ` title="${mid}"` : ""} aria-label="${masName(k)} ${d}${am}${hasBreakdown(id) ? ", has breakdown" : ""}${mid ? ", " + mid : ""}">${am}</button>`;
+    };
+    const rows = (k, from, to, midOf = () => "") => {
       let cells = "";
-      for (let d = Math.floor(first/2)+1; d <= Math.floor(last/2)+1; d++) {
-        const cell = am => { const i = idxOf(d, am); const ok = i >= first && i <= last; const id = refId(k, i);
-          const cur = current && current.m === k && current.i === i;
-          return `<button ${ok ? "" : "disabled"} data-go="${k}|${i}" class="${hasBreakdown(id) ? "has" : ""} ${cur ? "cur" : ""}" aria-label="${masName(k)} ${d}${am}${hasBreakdown(id) ? ", has breakdown" : ""}">${am}</button>`; };
-        cells += `<div class="dafcell"><span class="dn">${d}</span>${cell("a")}${cell("b")}</div>`;
+      for (let d = Math.floor(from/2)+1; d <= Math.floor(to/2)+1; d++) {
+        const c = am => { const i = idxOf(d, am); return cellHtml(k, i, i >= from && i <= to, midOf(i)); };
+        cells += `<div class="dafcell"><span class="dn">${d}</span>${c("a")}${c("b")}</div>`;
       }
+      return `<div class="dafgrid">${cells}</div>`;
+    };
+    const scrollToPerek = (n, smooth) => { // below the sticky jump bar, however many rows it wraps to
+      const s = $(`#pk-${n}`, body), bar = $(".pk-jump", body); if (!s) return;
+      const y = body.scrollTop + s.getBoundingClientRect().top - body.getBoundingClientRect().top - (bar ? bar.offsetHeight : 0) - 4;
+      body.scrollTo({ top: y, behavior: smooth ? "smooth" : "auto" });
+    };
+    const markJump = n => {
+      const bar = $(".pk-jump", body); if (!bar) return;
+      $$(".chip", bar).forEach(c => c.classList.toggle("on", c.dataset.jump === String(n)));
+      const c = $(`.chip[data-jump="${n}"]`, bar); if (c && bar.scrollWidth > bar.clientWidth) bar.scrollLeft = c.offsetLeft - (bar.clientWidth - c.offsetWidth) / 2;
+    };
+    const showDafGrid = (k, focusPerek) => {
+      const [, he, first, last] = masInfo(k);
+      const ps = perakimOf(k), byPerek = !!(ps && ps.length > 1 && settings.byPerek !== false);
+      let grid;
+      if (byPerek) {
+        grid = `<nav class="pk-jump" aria-label="Jump to a perek">${ps.map(p => `<button class="chip" data-jump="${p.n}"><b>${p.n}</b><span class="he">${esc(p.he)}</span></button>`).join("")}</nav>`
+          + ps.map((p, n) => {
+            const prev = ps[n-1], nxt = ps[n+1];
+            const midOf = i => (prev && i === prev.end && i === p.start) ? `Perek ${p.n} begins partway down this amud` : (nxt && i === nxt.start && i === p.end) ? `Perek ${nxt.n} begins partway down this amud` : "";
+            return `<section class="pk" id="pk-${p.n}"><h4 class="pk-h"><span>Perek ${p.n} · <span class="he">${esc(perekHe(p))}</span></span><span class="pk-r">${amudLbl(p.start)}–${amudLbl(p.end)}</span></h4>${rows(k, Math.max(p.start, first), Math.min(p.end, last), midOf)}</section>`;
+          }).join("");
+      } else grid = rows(k, first, last);
       $("#pickBody", body).innerHTML = `<div class="seder"><button class="chip" data-back>‹ All masechtot</button></div>
         <h3 style="margin:8px 0 0;display:flex;justify-content:space-between">${masName(k)} <span class="he en-he" style="color:var(--muted);font-weight:500">${he}</span></h3>
-        <div class="legend-mini"><span><i></i>full step-by-step breakdown</span><span>others: text and translation</span></div>
-        <div class="dafgrid">${cells}</div>`;
-      const c = $("button.cur", body); c && c.scrollIntoView({ block: "center" });
+        ${ps && ps.length > 1 ? `<div class="tabs pk-mode" role="tablist" aria-label="How to list the dapim"><button role="tab" data-mode="perek" aria-selected="${byPerek}">By perek</button><button role="tab" data-mode="all" aria-selected="${!byPerek}">All dapim</button></div>` : ""}
+        <div class="legend-mini"><span><i></i>full step-by-step breakdown</span><span>others: text and translation</span>${byPerek ? `<span><i class="mid"></i>new perek starts partway down</span>` : ""}</div>
+        ${grid}`;
+      $("#pickBody", body).dataset.mas = k;
+      const activeN = focusPerek || (current && current.m === k && (perakimAt(k, current.i)[0] || {}).n);
+      if (byPerek && activeN) markJump(activeN);
+      if (byPerek && focusPerek && $(`#pk-${focusPerek}`, body)) scrollToPerek(focusPerek);
+      else { const c = $("button.cur", body); c && c.scrollIntoView({ block: "center" }); }
     };
     body.addEventListener("click", e => {
-      const t = e.target.closest("[data-mas],[data-go],[data-back]"); if (!t) return;
-      if (t.dataset.mas) showDafGrid(t.dataset.mas);
+      const t = e.target.closest("[data-mas],[data-go],[data-back],[data-jump],[data-mode]"); if (!t) return;
+      if (t.dataset.jump) { markJump(t.dataset.jump); scrollToPerek(t.dataset.jump, true); }
+      else if (t.dataset.mode) { const want = t.dataset.mode === "perek"; if ((settings.byPerek !== false) !== want) { settings.byPerek = want; saveJSON(LS.settings, settings); } const k = $("#pickBody", body).dataset.mas; const ps = current && current.m === k ? perakimAt(k, current.i) : []; showDafGrid(k, ps[0] && ps[0].n); }
+      else if (t.dataset.mas) showDafGrid(t.dataset.mas);
       else if (t.dataset.back !== undefined) showMasList();
       else { const [k, i] = t.dataset.go.split("|"); closeSheet(); go(k, +i); }
     });
@@ -292,7 +345,9 @@ function openPicker(focusMas){
         || (input.value.trim() ? `<div class="empty">No match yet. Try “Berakhot 2a”.</div>` : "");
     });
     input.addEventListener("keydown", e => { if (e.key === "Enter") { const f = $("button", sugg); f && f.click(); } });
-    if (focusMas) showDafGrid(focusMas); else if (current) showDafGrid(current.m); else showMasList();
+    const startGrid = () => { if (focusMas) showDafGrid(focusMas, focusPerek); else if (current) showDafGrid(current.m); else showMasList(); };
+    if (perakim || !(focusMas || current)) startGrid();
+    else { $("#pickBody", body).innerHTML = `<div class="loading"><div class="spinner"></div></div>`; loadPerakim().then(() => { if ($("#pickBody", body) && $("#pickBody", body).isConnected) startGrid(); }); }
     dafYomi().then(y => { if (y && $("#yomiSlot", body)) $("#yomiSlot", body).innerHTML = `<button class="chip" data-go="${y.m}|${y.i}" style="width:100%;justify-content:space-between;min-height:46px;border-radius:12px"><span>Today’s Daf Yomi: <b>${masName(y.m)} ${dafOf(y.i).daf}</b></span><span class="x">›</span></button>`; }).catch(()=>{});
   });
 }
@@ -465,6 +520,7 @@ function renderDaf(){
   $("#view").innerHTML = `
     <section class="card dafhead">
       <div class="refline"><h1>${esc(label(c.m, c.i))}</h1><span class="he">${heLabel(c.m, c.i)}</span></div>
+      <div id="perekSlot">${perekLineHtml(c.m, c.i)}</div>
       ${a ? `<div class="topic">${esc(a.mainTopic || "")}</div>${a.overview ? `<p class="overview">${esc(a.overview)}</p>` : ""}
         <div class="typecounts">${Object.entries(TYPES).filter(([he]) => counts[he]).map(([he, t]) => `<span class="typecount t-${t.k}">${counts[he]} ${t.en}${counts[he] > 1 ? "s" : ""}</span>`).join("")}${mishCountHtml()}</div>` : ""}
       <div class="headactions">
@@ -556,8 +612,13 @@ async function renderText(){
   const body = $("#dafBody"); if (!body || !current || current.id !== id) return;
   if (current.tab === "text" || !current.analysis) { body.innerHTML = html; const r = $("#retryText"); if (r) r.onclick = () => { body.innerHTML = `<div class="loading"><div class="spinner"></div></div>`; renderText(); }; }
 }
+function wirePerek(){
+  const c = current, b = $("#perekBtn"); if (!c || !b) return;
+  b.onclick = () => openPicker(c.m, +b.dataset.perek);
+}
 function wireDaf(){
   const c = current;
+  wirePerek();
   $("#bmBtn").onclick = () => { let b = bookmarks(); b = b.includes(c.id) ? b.filter(x => x !== c.id) : [c.id, ...b]; saveJSON(LS.bookmarks, b); toast(b.includes(c.id) ? "Bookmarked" : "Bookmark removed"); renderDaf(); };
   $("#shareBtn").onclick = async () => { const url = location.href; try { if (navigator.share) await navigator.share({ title: `${label(c.m, c.i)} · Gemara Clarity`, url }); else { await navigator.clipboard.writeText(url); toast("Link copied"); } } catch {} };
   $("#pdfBtn").onclick = () => { const was = settings.expandAll; const old = document.title; document.title = `${label(c.m, c.i)} - Gemara Clarity`; $$(".explain").forEach(x => x.hidden = false); setTimeout(() => { window.print(); document.title = old; if (!was) renderDaf(); }, 120); };
@@ -728,7 +789,9 @@ document.addEventListener("keydown", e => {
 
 applySettings();
 route(false);
+loadPerakim().then(() => { const s = $("#perekSlot"); if (s && current && !s.firstChild) { s.innerHTML = perekLineHtml(current.m, current.i); wirePerek(); } });
 loadCloudIndex().then(() => {
+  $$("#pickBody [data-go]").forEach(b => { const [k, i] = b.dataset.go.split("|"); b.classList.toggle("has", hasBreakdown(refId(k, +i))); }); // a picker opened before the library list arrived
   if (!current) { const s = $("#libSlot"); if (s) { s.innerHTML = libraryHtml(); const hdr = s.previousElementSibling; if (hdr) hdr.querySelector("small").textContent = cloudIds.size ? cloudIds.size + " amudim" : ""; } }
   else if (!current.analysis && cloudIds.has(current.id)) { const c = current; current = null; openDaf(c.m, c.i); }
   else renderDafNoticeCount();
