@@ -1,0 +1,2249 @@
+{
+  "mainTopic": "Night-time dangers and their remedies, the four cups for the poor, and רבי עקיבא's advice to his son and to רבי שמעון בן יוחי",
+  "overview": "This amud starts by finishing a list of dangers: not washing hands after bloodletting, a haircut, or cutting nails brings fear, and food kept under a bed attracts a רוח רעה. A ברייתא warns against drinking water on Tuesday and Friday nights, and the גמרא gives a chain of backup remedies for a thirsty person, from saying the seven 'קול ה׳' verses down to throwing something into the water. A second ברייתא warns against drinking river or pond water at night because of שברירי, a spirit that causes blindness, and gives remedies for that as well. The גמרא then returns to the משנה: even a poor person living off the תמחוי must get four cups, and even רבי עקיבא, who says 'עשה שבתך חול', agrees here because of פרסומי ניסא. תנא דבי אליהו adds that even a poor person should do something small for שבת, such as a dish of small fried fish. The גמרא then quotes רבי עקיבא's seven instructions to his son, including the advice to join a successful person, which רב פפא and רב שמואל בר יצחק explain. Finally, it tells how רבי עקיבא, while in prison, gave five teachings to רבי שמעון בן יוחי. These include using a corrected text when teaching your son and not 'cooking in your friend's pot,' and that last explanation continues on the next amud.",
+  "steps": [
+    {
+      "stepNumber": 1,
+      "hebrewStepName": "מימרא",
+      "title": "Not washing hands after bloodletting, haircut, or nail cutting brings fear",
+      "stepSummary": "Someone who does not wash his hands after bloodletting, a haircut, or cutting nails will be afraid for seven, three, or one day.",
+      "simpleTranslation": "One who lets blood and does not wash his hands will be afraid for seven days. One who cuts his hair and does not wash his hands will be afraid for three days. One who cuts his nails and does not wash his hands will be afraid for one day, and he will not know what is frightening him.",
+      "whatsHappening": "The גמרא continues a list of dangerous habits. Here it lists three actions that require washing your hands afterward, and what happens if you don't.",
+      "deeperAnalysis": "The three cases go from strongest to weakest: bloodletting brings seven days of fear, a haircut brings three, and cutting nails brings one. In the last case the person feels afraid without knowing why. All three share one rule: after cutting something from the body, wash your hands.",
+      "keyTerms": [
+        {
+          "term": "מְסוֹכַר",
+          "meaning": "Lets blood (bloodletting, a common medical practice)"
+        },
+        {
+          "term": "מָשֵׁי יְדֵיהּ",
+          "meaning": "Washes his hands"
+        },
+        {
+          "term": "מְפַחֵיד",
+          "meaning": "Is afraid / will feel fear"
+        },
+        {
+          "term": "מַזְיֵיהּ",
+          "meaning": "His hair"
+        },
+        {
+          "term": "טוּפְרֵיהּ",
+          "meaning": "His nails"
+        }
+      ],
+      "confusionAlert": "This amud begins in the middle of a list that started on the previous daf, so it opens with 'דִּמְסוֹכַר' ('one who lets blood') with no introduction. The introduction comes on the previous amud.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "דִּמְסוֹכַר וְלָא מָשֵׁי יְדֵיהּ —",
+          "english": "One who lets blood and does not wash his hands"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "מְפַחֵיד שִׁבְעָה יוֹמֵי.",
+          "english": "will be afraid for seven days."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "דְּשָׁקֵיל מַזְיֵיהּ וְלָא מָשֵׁי יְדֵיהּ —",
+          "english": "One who cuts his hair and does not wash his hands"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "מְפַחֵיד תְּלָתָא יוֹמֵי.",
+          "english": "will be afraid for three days."
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "דְּשָׁקֵיל טוּפְרֵיהּ וְלָא מָשֵׁי יְדֵיהּ —",
+          "english": "One who cuts his nails and does not wash his hands"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "מְפַחֵיד חַד יוֹמָא,",
+          "english": "will be afraid for one day,"
+        },
+        {
+          "phraseNumber": 7,
+          "aramaic": "וְלָא יָדַע מַאי קָא מְפַחֵיד.",
+          "english": "and he will not know what is frightening him."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "דִּמְסוֹכַר וְלָא מָשֵׁי יְדֵיהּ",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Continues a list of dangerous practices from the previous daf.",
+      "mimraCoreRuling": "Wash hands after bloodletting, a haircut, or cutting nails, or you will suffer fear for 7, 3, or 1 days."
+    },
+    {
+      "stepNumber": 2,
+      "hebrewStepName": "מימרא",
+      "title": "Hand on the nose brings fear, hand on the forehead brings sleep",
+      "stepSummary": "Resting a hand on the nostrils leads to fear, and resting it on the forehead leads to sleep.",
+      "simpleTranslation": "A hand on the nostrils is a step toward fear. A hand on the forehead is a step toward sleep.",
+      "whatsHappening": "The גמרא adds two short observations about where a person rests his hand and what it leads to.",
+      "deeperAnalysis": "The word דַּרְגָּא means 'a step' or 'a ladder' toward something. Placing a hand on the nose leads toward fear, and placing it on the forehead leads toward sleep. This links to the previous step's theme of fear.",
+      "keyTerms": [
+        {
+          "term": "יְדָא",
+          "meaning": "A hand"
+        },
+        {
+          "term": "אוּסְיָא",
+          "meaning": "Nostrils"
+        },
+        {
+          "term": "פּוּתָא",
+          "meaning": "Forehead"
+        },
+        {
+          "term": "דַּרְגָּא",
+          "meaning": "A step / a path toward"
+        },
+        {
+          "term": "שִׁינְתָּא",
+          "meaning": "Sleep"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "יְדָא אַאוּסְיָא —",
+          "english": "A hand on the nostrils"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "דַּרְגָּא לְפַחְדָּא.",
+          "english": "is a step toward fear."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "יְדָא אַפּוּתָא —",
+          "english": "A hand on the forehead"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "דַּרְגָּא לְשִׁינְתָּא.",
+          "english": "is a step toward sleep."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "יְדָא אַאוּסְיָא",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        1
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Adds another item about fear, the same theme as step 1.",
+      "mimraCoreRuling": "A hand on the nostrils leads to fear; a hand on the forehead leads to sleep."
+    },
+    {
+      "stepNumber": 3,
+      "hebrewStepName": "מימרא",
+      "title": "Food and drink under the bed attract an evil spirit",
+      "stepSummary": "A תנא teaches that a רוח רעה rests on food and drink kept under a bed, even if they are covered with iron.",
+      "simpleTranslation": "A Sage taught: Food and drink under the bed, even if they are covered with iron vessels, an evil spirit rests upon them.",
+      "whatsHappening": "The גמרא quotes a teaching from a תנא: do not keep food or drink under your bed, because a רוח רעה settles on it.",
+      "deeperAnalysis": "The key word is אֲפִילּוּ, 'even.' Iron was thought to protect against spirits, so you might expect that covering the food with iron would help. This teaching says that even iron does not help here.",
+      "keyTerms": [
+        {
+          "term": "תָּנָא",
+          "meaning": "A Sage taught (introduces a teaching from the time of the משנה)"
+        },
+        {
+          "term": "תַּחַת הַמִּטָּה",
+          "meaning": "Under the bed"
+        },
+        {
+          "term": "מְחוּפִּין",
+          "meaning": "Covered"
+        },
+        {
+          "term": "רוּחַ רָעָה",
+          "meaning": "An evil spirit"
+        },
+        {
+          "term": "שׁוֹרָה",
+          "meaning": "Rests / settles upon"
+        }
+      ],
+      "whyThisMatters": "This is a well-known practical custom: many people are careful not to keep food or drink under a bed.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "תָּנָא: אוֹכָלִין וּמַשְׁקִין תַּחַת הַמִּטָּה,",
+          "english": "A Sage taught: Food and drink under the bed,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אֲפִילּוּ מְחוּפִּין בִּכְלִי בַּרְזֶל —",
+          "english": "even if they are covered with iron vessels,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "רוּחַ רָעָה שׁוֹרָה עֲלֵיהֶן.",
+          "english": "an evil spirit rests upon them."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "תָּנָא: אוֹכָלִין וּמַשְׁקִין תַּחַת הַמִּטָּה",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Adds another danger to the list, this time from a תנאי source.",
+      "mimraCoreRuling": "Food and drink under a bed are affected by a רוח רעה, even if covered with iron."
+    },
+    {
+      "stepNumber": 4,
+      "hebrewStepName": "מימרא",
+      "title": "Do not drink water on Tuesday or Friday nights",
+      "stepSummary": "A ברייתא rules that one should not drink water on Tuesday nights or Friday nights, and if he does, he is responsible for the danger.",
+      "simpleTranslation": "The Sages taught: A person should not drink water on Tuesday nights or on שבת nights. If he drinks, his blood is on his own head, because of the danger.",
+      "whatsHappening": "The גמרא quotes a ברייתא warning against drinking water on two particular nights of the week.",
+      "deeperAnalysis": "'לֵילֵי רְבִיעִיּוֹת' means the night going into Wednesday, which is Tuesday night. 'לֵילֵי שַׁבָּתוֹת' is Friday night. The phrase 'his blood is on his head' means that if harm comes to him, he is to blame. The ברייתא says there is a סכנה but does not yet say what it is, which sets up the next question.",
+      "keyTerms": [
+        {
+          "term": "תָּנוּ רַבָּנַן",
+          "meaning": "The Sages taught (introduces a ברייתא)"
+        },
+        {
+          "term": "לֵילֵי רְבִיעִיּוֹת",
+          "meaning": "Nights going into Wednesday, i.e. Tuesday nights"
+        },
+        {
+          "term": "לֵילֵי שַׁבָּתוֹת",
+          "meaning": "שבת nights, i.e. Friday nights"
+        },
+        {
+          "term": "דָּמוֹ בְּרֹאשׁוֹ",
+          "meaning": "His blood is on his own head; he is to blame"
+        },
+        {
+          "term": "סַכָּנָה",
+          "meaning": "Danger"
+        }
+      ],
+      "confusionAlert": "'לֵילֵי רְבִיעִיּוֹת' is not Wednesday night. In Jewish counting the night comes before the day, so the night 'of the fourth day' is what we call Tuesday night.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "תָּנוּ רַבָּנַן: לֹא יִשְׁתֶּה אָדָם מַיִם",
+          "english": "The Sages taught: A person should not drink water"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "לֹא בְּלֵילֵי רְבִיעִיּוֹת",
+          "english": "not on Tuesday nights"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וְלֹא בְּלֵילֵי שַׁבָּתוֹת,",
+          "english": "and not on Shabbat (Friday) nights,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וְאִם שָׁתָה — דָּמוֹ בְּרֹאשׁוֹ",
+          "english": "and if he drinks, his blood is upon his own head"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "מִפְּנֵי סַכָּנָה.",
+          "english": "because of the danger."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "תָּנוּ רַבָּנַן: לֹא יִשְׁתֶּה אָדָם מַיִם",
+      "macroPhase": "source_derivation",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Introduces a new danger, drinking water on certain nights. This opens the discussion of the thirsty person's remedies, which ends at step 12.",
+      "mimraCoreRuling": "Do not drink water on Tuesday or Friday nights, because of danger."
+    },
+    {
+      "stepNumber": 5,
+      "hebrewStepName": "שאלה",
+      "title": "What is the danger?",
+      "stepSummary": "The גמרא asks what kind of danger the ברייתא means.",
+      "simpleTranslation": "What is the danger?",
+      "whatsHappening": "The גמרא asks a short clarifying question: the ברייתא mentioned a 'danger,' but what exactly is it? This sets up the answer in the next step.",
+      "deeperAnalysis": "Water is normally safe to drink, so the word 'danger' is unclear. The גמרא wants to know whether this is a physical danger or something else.",
+      "keyTerms": [
+        {
+          "term": "מַאי",
+          "meaning": "What?"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מַאי סַכָּנָה?",
+          "english": "What is the danger?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "מַאי סַכָּנָה",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        4
+      ],
+      "scopeOfStep": "wording",
+      "relationToPreviousStep": "Asks for the meaning of the word סכנה in step 4.",
+      "sheelahInformationSought": "What specific danger the ברייתא is referring to."
+    },
+    {
+      "stepNumber": 6,
+      "hebrewStepName": "תשובה",
+      "title": "The danger is an evil spirit",
+      "stepSummary": "The danger is a רוח רעה that is active on those nights.",
+      "simpleTranslation": "An evil spirit.",
+      "whatsHappening": "The גמרא answers its own question: the danger comes from a רוח רעה.",
+      "deeperAnalysis": "The danger is not from the water itself. It comes from a harmful spiritual force that is active on Tuesday and Friday nights. This explains why the warning applies only to those two nights.",
+      "keyTerms": [],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "רוּחַ רָעָה.",
+          "english": "An evil spirit."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "רוּחַ רָעָה",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        5
+      ],
+      "scopeOfStep": "wording",
+      "relationToPreviousStep": "Answers the question of step 5.",
+      "teshuvahAnswerProvided": "The danger is a רוח רעה active on those nights."
+    },
+    {
+      "stepNumber": 7,
+      "hebrewStepName": "שאלה",
+      "title": "What should a thirsty person do?",
+      "stepSummary": "The גמרא asks what remedy there is for someone who is thirsty on one of those nights.",
+      "simpleTranslation": "And if he is thirsty, what is his remedy?",
+      "whatsHappening": "The גמרא asks a practical question: what if someone really needs to drink on one of these nights? This sets up a list of remedies.",
+      "deeperAnalysis": "Telling people never to drink water on two nights a week is hard to keep. So the גמרא looks for a way to protect a thirsty person so that he can drink safely.",
+      "keyTerms": [
+        {
+          "term": "צָחֵי",
+          "meaning": "Is thirsty"
+        },
+        {
+          "term": "תַּקַּנְתֵּיהּ",
+          "meaning": "His remedy / his fix"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְאִם צָחֵי מַאי תַּקַּנְתֵּיהּ?",
+          "english": "And if he is thirsty, what is his remedy?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וְאִם צָחֵי מַאי תַּקַּנְתֵּיהּ",
+      "macroPhase": "opening_question",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        4,
+        6
+      ],
+      "scopeOfStep": "exception_case",
+      "relationToPreviousStep": "Builds on the ban in steps 4 to 6 by asking how a thirsty person can drink safely.",
+      "sheelahInformationSought": "A protective remedy so a thirsty person can drink water on the dangerous nights."
+    },
+    {
+      "stepNumber": 8,
+      "hebrewStepName": "תשובה",
+      "title": "Say the seven 'voices of ה׳' from תהלים, then drink",
+      "stepSummary": "The first remedy is to say the seven 'קול ה׳' phrases that דוד said about water (תהלים כ״ט), and then drink.",
+      "simpleTranslation": "He should say the seven voices that דוד said over the water, and then drink, as it says: 'The voice of ה׳ is upon the waters; the God of glory thunders, ה׳ is upon many waters. The voice of ה׳ is powerful; the voice of ה׳ is majestic. The voice of ה׳ breaks cedars; ה׳ breaks the cedars of לבנון. The voice of ה׳ carves out flames of fire. The voice of ה׳ shakes the wilderness; ה׳ shakes the wilderness of קדש. The voice of ה׳ makes the deer give birth and strips the forests bare; and in His Temple all say: Glory.'",
+      "whatsHappening": "The גמרא gives the first remedy: say the verses from תהלים that mention 'קול ה׳' seven times, starting with 'over the water,' and then you may drink.",
+      "deeperAnalysis": "These verses fit because they open with 'קול ה׳ עַל הַמָּיִם,' the voice of ה׳ over the water. Saying them calls on ה׳'s power over the water and protects the person from the רוח רעה. Count the phrase 'קול ה׳' in the quote and you will find exactly seven.",
+      "keyTerms": [
+        {
+          "term": "שִׁבְעָה קוֹלוֹת",
+          "meaning": "The seven 'voices', the seven times 'קוֹל ה׳' appears in תְּהִלִּים כ״ט"
+        },
+        {
+          "term": "וַהֲדַר נִישְׁתֵּי",
+          "meaning": "And then he may drink"
+        },
+        {
+          "term": "שֶׁנֶּאֱמַר",
+          "meaning": "As it says (introduces a verse)"
+        },
+        {
+          "term": "נֵימָא",
+          "meaning": "He should say"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "(נֵימָא) שִׁבְעָה קוֹלוֹת",
+          "english": "He should say the seven voices"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "שֶׁאָמַר דָּוִד עַל הַמַּיִם,",
+          "english": "that David said over the water,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וַהֲדַר נִישְׁתֵּי,",
+          "english": "and afterward he may drink,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "שֶׁנֶּאֱמַר: ״קוֹל ה׳ עַל הַמָּיִם",
+          "english": "as it is stated: 'The voice of the Lord is upon the waters;"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "אֵל הַכָּבוֹד הִרְעִים",
+          "english": "the God of glory thunders,"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "ה׳ עַל מַיִם רַבִּים",
+          "english": "the Lord upon many waters."
+        },
+        {
+          "phraseNumber": 7,
+          "aramaic": "קוֹל ה׳ בַּכֹּחַ",
+          "english": "The voice of the Lord is powerful;"
+        },
+        {
+          "phraseNumber": 8,
+          "aramaic": "קוֹל ה׳ בֶּהָדָר",
+          "english": "the voice of the Lord is full of majesty."
+        },
+        {
+          "phraseNumber": 9,
+          "aramaic": "קוֹל ה׳ שׁוֹבֵר אֲרָזִים",
+          "english": "The voice of the Lord breaks the cedars;"
+        },
+        {
+          "phraseNumber": 10,
+          "aramaic": "וַיְשַׁבֵּר ה׳ אֶת אַרְזֵי הַלְּבָנוֹן",
+          "english": "the Lord breaks the cedars of Lebanon."
+        },
+        {
+          "phraseNumber": 11,
+          "aramaic": "קוֹל ה׳ חוֹצֵב לַהֲבוֹת אֵשׁ",
+          "english": "The voice of the Lord hews out flames of fire."
+        },
+        {
+          "phraseNumber": 12,
+          "aramaic": "קוֹל ה׳ יָחִיל מִדְבָּר",
+          "english": "The voice of the Lord shakes the wilderness;"
+        },
+        {
+          "phraseNumber": 13,
+          "aramaic": "יָחִיל ה׳ מִדְבַּר קָדֵשׁ",
+          "english": "the Lord shakes the wilderness of Kadesh."
+        },
+        {
+          "phraseNumber": 14,
+          "aramaic": "קוֹל ה׳ יְחוֹלֵל אַיָּלוֹת",
+          "english": "The voice of the Lord makes the hinds give birth,"
+        },
+        {
+          "phraseNumber": 15,
+          "aramaic": "וַיֶּחֱשׂוֹף יְעָרוֹת",
+          "english": "and strips the forests bare;"
+        },
+        {
+          "phraseNumber": 16,
+          "aramaic": "וּבְהֵיכָלוֹ כּוּלּוֹ אוֹמֵר כָּבוֹד״.",
+          "english": "and in His Temple all say: Glory.'"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "נֵימָא שִׁבְעָה קוֹלוֹת שֶׁאָמַר דָּוִד עַל הַמַּיִם",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        7
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Gives the first and main answer to the question in step 7.",
+      "teshuvahAnswerProvided": "Recite the seven 'קול ה׳' verses of תהלים כ״ט, then drink."
+    },
+    {
+      "stepNumber": 9,
+      "hebrewStepName": "תשובה",
+      "title": "Second remedy: say a formula against the spirits",
+      "stepSummary": "If he can't say the verses, he should say a formula naming spirits and declaring that he is protected.",
+      "simpleTranslation": "And if not, he should say this: 'לול, שפן, אניגרון, אנירדפין, I sit among the stars, I walk among thin and fat people.'",
+      "whatsHappening": "The גמרא gives a backup remedy for someone who does not know the verses: a short formula addressed to the spirits.",
+      "deeperAnalysis": "The first four words are understood as names of שדים. The person declares that he sits among the stars and walks among thin and fat people. As Sefaria explains it, he is telling the spirits that they can take others but should leave him alone.",
+      "keyTerms": [
+        {
+          "term": "וְאִי לָא",
+          "meaning": "And if not (introduces a backup option)"
+        },
+        {
+          "term": "הָכִי",
+          "meaning": "Like this / as follows"
+        },
+        {
+          "term": "יָתֵיבְנָא",
+          "meaning": "I sit"
+        },
+        {
+          "term": "אָזֵילְנָא",
+          "meaning": "I walk"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְאִי לָא, (נֵימָא) הָכִי:",
+          "english": "And if not, he should say as follows:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "״לוּל שָׁפָן אֲנִיגְרוֹן אֲנִירָדְפִין",
+          "english": "'Lul, Shafan, Anigron, Anirdafin' (names of demons),"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "בֵּין כּוֹכְבֵי יָתֵיבְנָא,",
+          "english": "I sit among the stars,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "בֵּין בְּלִיעִי שַׁמִּינֵי אָזֵילְנָא״.",
+          "english": "I walk among thin and fat people.'"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וְאִי לָא, נֵימָא הָכִי",
+      "macroPhase": "alternate_branch",
+      "branchRole": "alternative_approach",
+      "dependsOnStepNumbers": [
+        7,
+        8
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "A fallback if the remedy of step 8 is not possible.",
+      "teshuvahAnswerProvided": "Say a protective formula naming the spirits, then drink."
+    },
+    {
+      "stepNumber": 10,
+      "hebrewStepName": "תשובה",
+      "title": "Third remedy: wake a companion and tell him you are thirsty",
+      "stepSummary": "If someone is with him, he should wake him, say 'So-and-so son of so-and-so, I am thirsty for water,' and then drink.",
+      "simpleTranslation": "And if not, if there is someone with him, he should wake him and say to him: 'So-and-so son of so-and-so, I am thirsty for water,' and then drink.",
+      "whatsHappening": "The גמרא gives another backup: if there is another person nearby, wake him and announce that you are thirsty, then drink.",
+      "deeperAnalysis": "This remedy uses no words of protection at all. It depends on not being alone, since a person alone is more exposed to a רוח רעה. Waking someone and speaking to him ends that isolation.",
+      "keyTerms": [
+        {
+          "term": "אִינִישׁ בַּהֲדֵיהּ",
+          "meaning": "A person with him"
+        },
+        {
+          "term": "נַיתְעֲרֵיהּ",
+          "meaning": "He should wake him up"
+        },
+        {
+          "term": "פְּלָנְיָא בַּר פְּלָנִתָא",
+          "meaning": "So-and-so son of (the woman) so-and-so"
+        },
+        {
+          "term": "צָחֵינָא מַיָּא",
+          "meaning": "I am thirsty for water"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְאִי לָא, אִי אִיכָּא אִינִישׁ בַּהֲדֵיהּ —",
+          "english": "And if not, if there is a person with him,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "נַיתְעֲרֵיהּ וְלֵימָא לֵיהּ:",
+          "english": "he should wake him and say to him:"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "״פְּלָנְיָא בַּר פְּלָנִתָא",
+          "english": "'So-and-so, son of so-and-so,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "צָחֵינָא מַיָּא״,",
+          "english": "I am thirsty for water,'"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "וַהֲדַר נִישְׁתֵּי.",
+          "english": "and then he may drink."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וְאִי לָא, אִי אִיכָּא אִינִישׁ בַּהֲדֵיהּ",
+      "macroPhase": "alternate_branch",
+      "branchRole": "alternative_approach",
+      "dependsOnStepNumbers": [
+        7,
+        9
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "A further fallback if he does not know the formula of step 9.",
+      "teshuvahAnswerProvided": "Wake a companion and tell him you are thirsty, then drink."
+    },
+    {
+      "stepNumber": 11,
+      "hebrewStepName": "תשובה",
+      "title": "Fourth remedy: knock the lid on the jug",
+      "stepSummary": "If no one is with him, he should rattle the lid against the jug and then drink.",
+      "simpleTranslation": "And if not, he should knock the lid on the jug and then drink.",
+      "whatsHappening": "The גמרא gives another backup for someone alone: make a noise by knocking the lid against the jug, then drink.",
+      "deeperAnalysis": "With no one to wake, the person makes his own sound. Knocking the lid on the jug takes the place of talking to a companion.",
+      "keyTerms": [
+        {
+          "term": "מְקַרְקֵשׁ",
+          "meaning": "Knocks / rattles"
+        },
+        {
+          "term": "נִכְתְּמָא",
+          "meaning": "The lid / cover"
+        },
+        {
+          "term": "חַצְבָּא",
+          "meaning": "The jug / cup"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְאִי לָא — מְקַרְקֵשׁ נִכְתְּמָא אַחַצְבָּא",
+          "english": "And if not, he should knock the lid on the jug"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וַהֲדַר נִישְׁתֵּי.",
+          "english": "and then drink."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וְאִי לָא — מְקַרְקֵשׁ נִכְתְּמָא אַחַצְבָּא",
+      "macroPhase": "alternate_branch",
+      "branchRole": "alternative_approach",
+      "dependsOnStepNumbers": [
+        7,
+        10
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "A fallback for someone alone, when step 10 is not possible.",
+      "teshuvahAnswerProvided": "Knock the lid against the cup, then drink."
+    },
+    {
+      "stepNumber": 12,
+      "hebrewStepName": "תשובה",
+      "title": "Last remedy: throw something into the water",
+      "stepSummary": "If he cannot do even that, he should throw some object into the water and then drink.",
+      "simpleTranslation": "And if not, he should throw something into it and then drink.",
+      "whatsHappening": "The גמרא ends the list with the simplest remedy: drop any object into the water, then drink.",
+      "deeperAnalysis": "This is the last and easiest option, open to anyone. Each remedy in the list is simpler than the one before, so that a thirsty person always has some way to drink safely.",
+      "keyTerms": [
+        {
+          "term": "נִישְׁדֵּי",
+          "meaning": "He should throw"
+        },
+        {
+          "term": "מִידֵּי",
+          "meaning": "Something / any object"
+        }
+      ],
+      "whatToRemember": "Water should not be drunk on Tuesday and Friday nights because of a רוח רעה. A thirsty person can protect himself with one of these remedies, in order: (1) say the seven 'קול ה׳' verses, (2) say the formula against the spirits, (3) wake a companion and say you are thirsty, (4) knock the lid on the cup, (5) throw something into the water. Then he may drink.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְאִי לָא — נִישְׁדֵּי בַּהּ מִידֵּי,",
+          "english": "And if not, he should throw something into it,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וַהֲדַר נִישְׁתֵּי.",
+          "english": "and then drink."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "מסקנא",
+      "triggerLanguage": "וְאִי לָא — נִישְׁדֵּי בַּהּ מִידֵּי",
+      "macroPhase": "conclusion",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        7,
+        11
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "The final and simplest fallback, ending the list of remedies.",
+      "teshuvahAnswerProvided": "Throw any object into the water, then drink.",
+      "maskanaFinalTakeaway": "There is always a remedy, even a very simple one, that allows a thirsty person to drink safely on the dangerous nights."
+    },
+    {
+      "stepNumber": 13,
+      "hebrewStepName": "מימרא",
+      "title": "Do not drink river or pond water at night",
+      "stepSummary": "A ברייתא teaches that one may not drink water from rivers or ponds at night, and if he does, he carries the responsibility for the danger.",
+      "simpleTranslation": "The Rabbis taught: A person should not drink water from rivers or ponds at night. If he drinks, his blood is on his own head, because of the danger.",
+      "whatsHappening": "The גמרא brings a new ברייתא with another warning about drinking water at night.",
+      "deeperAnalysis": "This continues the theme of dangers connected to drinking at night. 'His blood is on his own head' means that if harm comes to him, he is responsible, since he was warned. The ברייתא does not yet say what the danger is.",
+      "keyTerms": [
+        {
+          "term": "תָּנוּ רַבָּנַן",
+          "meaning": "The Rabbis taught (introduces a ברייתא)"
+        },
+        {
+          "term": "נְהָרוֹת",
+          "meaning": "Rivers"
+        },
+        {
+          "term": "אֲגַמִּים",
+          "meaning": "Ponds, lakes"
+        },
+        {
+          "term": "דָּמוֹ בְּרֹאשׁוֹ",
+          "meaning": "His blood is on his own head; he is responsible for what happens"
+        },
+        {
+          "term": "סַכָּנָה",
+          "meaning": "Danger"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "תָּנוּ רַבָּנַן:",
+          "english": "The Rabbis taught:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "לֹא יִשְׁתֶּה אָדָם מַיִם",
+          "english": "A person should not drink water"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "לֹא מִן הַנְּהָרוֹת וְלֹא מִן הָאֲגַמִּים בַּלַּיְלָה,",
+          "english": "not from rivers and not from ponds at night,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וְאִם שָׁתָה — דָּמוֹ בְּרֹאשׁוֹ,",
+          "english": "and if he drank, his blood is on his own head,"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "מִפְּנֵי הַסַּכָּנָה.",
+          "english": "because of the danger."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "תָּנוּ רַבָּנַן: לֹא יִשְׁתֶּה אָדָם מַיִם",
+      "macroPhase": "source_derivation",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Continues the general theme of dangers of drinking water at night, with a new ברייתא.",
+      "mimraCoreRuling": "Do not drink river or pond water at night; one who does is responsible for the danger."
+    },
+    {
+      "stepNumber": 14,
+      "hebrewStepName": "שאלה",
+      "title": "What is the danger?",
+      "stepSummary": "The גמרא asks what danger the ברייתא means.",
+      "simpleTranslation": "What danger?",
+      "whatsHappening": "The גמרא asks a simple clarifying question: which danger is the ברייתא talking about? This sets up the next step.",
+      "deeperAnalysis": "The ברייתא just said 'because of the danger' without saying what it is. The גמרא wants the danger named.",
+      "keyTerms": [
+        {
+          "term": "מַאי",
+          "meaning": "What?"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מַאי סַכָּנָה?",
+          "english": "What danger?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "מַאי סַכָּנָה?",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        13
+      ],
+      "scopeOfStep": "wording",
+      "relationToPreviousStep": "Asks to define the danger mentioned in the ברייתא.",
+      "sheelahInformationSought": "What the 'danger' in the ברייתא refers to."
+    },
+    {
+      "stepNumber": 15,
+      "hebrewStepName": "תשובה",
+      "title": "The danger of שברירי (blindness)",
+      "stepSummary": "The danger is שברירי, a spirit that causes blindness.",
+      "simpleTranslation": "The danger of שברירי (a blindness-causing spirit).",
+      "whatsHappening": "The גמרא answers: the danger is from שברירי, which causes blindness.",
+      "deeperAnalysis": "שברירי is understood as a harmful spirit that brings blindness. So the worry is not dirty water, but a spiritual danger at night.",
+      "keyTerms": [
+        {
+          "term": "שַׁבְרִירֵי",
+          "meaning": "Name of a harmful spirit that causes blindness"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "סַכָּנַת שַׁבְרִירֵי.",
+          "english": "The danger of shavrirei (blindness)."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "סַכָּנַת שַׁבְרִירֵי",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        14
+      ],
+      "scopeOfStep": "wording",
+      "relationToPreviousStep": "Answers the question of step 14.",
+      "teshuvahAnswerProvided": "The danger is שברירי, a spirit that causes blindness."
+    },
+    {
+      "stepNumber": 16,
+      "hebrewStepName": "שאלה",
+      "title": "What if he is thirsty?",
+      "stepSummary": "The גמרא asks what a thirsty person can do to protect himself.",
+      "simpleTranslation": "And if he is thirsty, what is his fix?",
+      "whatsHappening": "The גמרא asks for a practical solution for someone who really needs to drink at night. This sets up the two remedies that follow.",
+      "deeperAnalysis": "The rule says not to drink, but a person may be very thirsty. The גמרא asks what remedy lets him drink safely.",
+      "keyTerms": [
+        {
+          "term": "צַחֵי",
+          "meaning": "He is thirsty"
+        },
+        {
+          "term": "תַּקַּנְתֵּיהּ",
+          "meaning": "His remedy, his fix"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְאִי צַחֵי",
+          "english": "And if he is thirsty,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "מַאי תַּקַּנְתֵּיהּ?",
+          "english": "what is his remedy?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וְאִי צַחֵי מַאי תַּקַּנְתֵּיהּ?",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        13,
+        15
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Moves from the danger to a practical remedy.",
+      "sheelahInformationSought": "What a thirsty person can do to drink safely at night."
+    },
+    {
+      "stepNumber": 17,
+      "hebrewStepName": "תשובה",
+      "title": "If someone is with him, he tells his friend he is thirsty",
+      "stepSummary": "If another person is there, he says to him: 'So-and-so son of so-and-so, I am thirsty for water.'",
+      "simpleTranslation": "If there is a person with him, he should say to him: 'So-and-so, son of so-and-so, I am thirsty for water.'",
+      "whatsHappening": "The first remedy: if someone is with him, he speaks to that person and announces his thirst.",
+      "deeperAnalysis": "This is the same remedy we saw earlier (step 10), now applied to this danger. Talking to another person seems to break the spirit's hold, so he can then drink.",
+      "keyTerms": [
+        {
+          "term": "בַּהֲדֵיהּ",
+          "meaning": "With him"
+        },
+        {
+          "term": "פְּלָנְיָא בַּר פְּלָנִתָא",
+          "meaning": "So-and-so son of so-and-so (a woman)"
+        },
+        {
+          "term": "צָחֵינָא מַיָּא",
+          "meaning": "I am thirsty for water"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אִי אִיכָּא אִינִישׁ בַּהֲדֵיהּ —",
+          "english": "If there is a person with him,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "לֵימָא לֵיהּ:",
+          "english": "he should say to him:"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "״פְּלָנְיָא בַּר פְּלָנִתָא,",
+          "english": "\"So-and-so, son of so-and-so (his mother),"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "צָחֵינָא מַיָּא״.",
+          "english": "I am thirsty for water.\""
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אִי אִיכָּא אִינִישׁ בַּהֲדֵיהּ",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        16
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Gives the first answer to the question of step 16.",
+      "teshuvahAnswerProvided": "If someone is with him, he tells that person by name that he is thirsty."
+    },
+    {
+      "stepNumber": 18,
+      "hebrewStepName": "תשובה",
+      "title": "If he is alone, he says a protective formula to himself",
+      "stepSummary": "If no one is there, he says to himself a formula in which the spirit's name shrinks, ending 'I am thirsty for water in white cups.'",
+      "simpleTranslation": "And if not, he should say to himself: 'So-and-so, my mother told me: Beware of שברירי. שברירי, ברירי, רירי, ירי, רי. I am thirsty for water in white cups.'",
+      "whatsHappening": "The second remedy: if he is alone, he says a special formula to himself.",
+      "deeperAnalysis": "In the formula, the name שברירי gets shorter letter by letter until it almost disappears. The idea is that the spirit's power shrinks and goes away, like the name.",
+      "keyTerms": [
+        {
+          "term": "לְנַפְשֵׁיהּ",
+          "meaning": "To himself"
+        },
+        {
+          "term": "אִיזְדְּהַר",
+          "meaning": "Be careful, beware"
+        },
+        {
+          "term": "כָּסֵי חִיוָּרֵי",
+          "meaning": "White cups"
+        }
+      ],
+      "whatToRemember": "Drinking river or pond water at night risks שברירי (blindness). Remedy: tell a companion you are thirsty, or, if alone, say the shrinking-name formula.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְאִי לָא,",
+          "english": "And if not (no one is with him),"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "(נֵימָא) אִיהוּ לְנַפְשֵׁיהּ:",
+          "english": "he should say to himself:"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "״פְּלָנְיָא, אֲמַרָה לִי אִימִּי",
+          "english": "\"So-and-so, my mother said to me:"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "אִיזְדְּהַר מִשַּׁבְרִירֵי",
+          "english": "beware of shavrirei,"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "שַׁבְרִירֵי בְּרִירֵי רִירֵי יְרֵי רֵי —",
+          "english": "shavrirei, berirei, rirei, yeri, ri;",
+          "notes": "The name shrinks each time, so the spirit's power fades away."
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "צָחֵינָא מַיָּא בְּכָסֵי חִיוָּרֵי״.",
+          "english": "I am thirsty for water in white cups.\""
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וְאִי לָא, נֵימָא אִיהוּ לְנַפְשֵׁיהּ",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        16,
+        17
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Gives the second answer, for when he is alone.",
+      "teshuvahAnswerProvided": "If alone, he says a formula naming שברירי with a shrinking name and declares his thirst."
+    },
+    {
+      "stepNumber": 19,
+      "hebrewStepName": "קשיא",
+      "title": "Back to the משנה: why say even from the charity plate?",
+      "stepSummary": "The גמרא returns to the משנה's words 'even from the תמחוי' and asks: isn't that obvious?",
+      "simpleTranslation": "'And even from the charity plate' (the משנה says a poor person must get four cups). This is obvious!",
+      "whatsHappening": "The גמרא goes back to the משנה, which says even a poor person who lives off the תמחוי must get four cups of wine. It asks why the משנה needs to say something so obvious.",
+      "deeperAnalysis": "If drinking four cups is a מצוה, of course the community must give them even to a poor person. So the גמרא challenges the extra words in the משנה as unnecessary.",
+      "keyTerms": [
+        {
+          "term": "תַּמְחוּי",
+          "meaning": "Charity plate; food fund given daily to the very poor"
+        },
+        {
+          "term": "פְּשִׁיטָא",
+          "meaning": "It is obvious!"
+        }
+      ],
+      "confusionAlert": "This is a sudden jump. The topic of night water is over; the גמרא is now back on the משנה about four cups on פסח.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וַאֲפִילּוּ מִן הַתַּמְחוּי וְכוּ׳.",
+          "english": "\"And even from the charity plate, etc.\""
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "פְּשִׁיטָא!",
+          "english": "It is obvious!"
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "שאלה",
+      "triggerLanguage": "וַאֲפִילּוּ מִן הַתַּמְחוּי וְכוּ׳. פְּשִׁיטָא!",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "returns_to_previous_branch",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "wording",
+      "relationToPreviousStep": "Leaves the digression and returns to the משנה.",
+      "kashyaTarget": "The משנה's phrase 'even from the תמחוי'.",
+      "kashyaAttackLogic": "If four cups are a מצוה, obviously a poor person must be given them, so the words seem unnecessary."
+    },
+    {
+      "stepNumber": 20,
+      "hebrewStepName": "תירוץ",
+      "title": "Even רבי עקיבא agrees, because of פרסומי ניסא",
+      "stepSummary": "The phrase teaches that even רבי עקיבא, who says not to rely on others for שבת, agrees that a poor person should take help for the four cups, because of פרסומי ניסא.",
+      "simpleTranslation": "It is needed to teach that even according to רבי עקיבא, who said, 'Make your שבת like a weekday and do not depend on people,' here he agrees, because of publicizing the miracle.",
+      "whatsHappening": "The גמרא answers that the משנה's words are not obvious: they teach that even רבי עקיבא agrees in this case.",
+      "deeperAnalysis": "רבי עקיבא says a poor person should eat a plain weekday meal on שבת rather than take from others. One might think he says the same about the four cups. The משנה teaches that here he agrees to take help, because the four cups spread the news of the miracle (פרסומי ניסא).",
+      "keyTerms": [
+        {
+          "term": "לֹא נִצְרְכָא",
+          "meaning": "It was only needed for (the case of...)"
+        },
+        {
+          "term": "עֲשֵׂה שַׁבַּתְּךָ חוֹל",
+          "meaning": "Make your שבת like a weekday"
+        },
+        {
+          "term": "אַל תִּצְטָרֵךְ לַבְּרִיּוֹת",
+          "meaning": "Do not depend on other people"
+        },
+        {
+          "term": "פַּרְסוֹמֵי נִיסָּא",
+          "meaning": "Publicizing the miracle"
+        },
+        {
+          "term": "מוֹדֵי",
+          "meaning": "He agrees"
+        }
+      ],
+      "whyThisMatters": "This shows פרסומי ניסא is so important that it overrides the normal value of not taking from others.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "לֹא נִצְרְכָא אֶלָּא",
+          "english": "It is needed only"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אֲפִילּוּ לְרַבִּי עֲקִיבָא, דְּאָמַר:",
+          "english": "even according to Rabbi Akiva, who said:"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "עֲשֵׂה שַׁבַּתְּךָ חוֹל",
+          "english": "Make your Shabbat like a weekday"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וְאַל תִּצְטָרֵךְ לַבְּרִיּוֹת —",
+          "english": "and do not depend on other people;"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "הָכָא מִשּׁוּם פַּרְסוֹמֵי נִיסָּא (מוֹדֵי).",
+          "english": "here, because of publicizing the miracle, he agrees."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "לֹא נִצְרְכָא אֶלָּא אֲפִילּוּ לְרַבִּי עֲקִיבָא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        19
+      ],
+      "scopeOfStep": "exception_case",
+      "relationToPreviousStep": "Answers the 'obvious' challenge of step 19.",
+      "terutzResolutionType": "Shows the phrase teaches a new point: an exception even to רבי עקיבא's view.",
+      "terutzHavaAmina": "One might think רבי עקיבא would tell a poor person not to take charity even for the four cups.",
+      "terutzMaskana": "Even רבי עקיבא agrees that for the four cups a poor person takes help, because of פרסומי ניסא."
+    },
+    {
+      "stepNumber": 21,
+      "hebrewStepName": "מימרא",
+      "title": "Even so, do something small for שבת at home",
+      "stepSummary": "תנא דבי אליהו teaches that even according to רבי עקיבא, a poor person should still do some small thing in his home to honor שבת.",
+      "simpleTranslation": "The school of אליהו taught: Even though רבי עקיבא said, 'Make your שבת like a weekday and do not depend on people,' a person should still do a small thing in his house.",
+      "whatsHappening": "A new teaching adds a limit to רבי עקיבא's rule: even a poor person should make some small difference for שבת.",
+      "deeperAnalysis": "רבי עקיבא's rule could sound like a poor person's שבת can be exactly like a weekday. תנא דבי אליהו says no: he should still do something small at home to mark שבת as special.",
+      "keyTerms": [
+        {
+          "term": "תָּנָא דְּבֵי אֵלִיָּהוּ",
+          "meaning": "It was taught in the school of אליהו"
+        },
+        {
+          "term": "אַף עַל פִּי",
+          "meaning": "Even though"
+        },
+        {
+          "term": "דָּבָר מוּעָט",
+          "meaning": "A small thing"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "תָּנָא דְּבֵי אֵלִיָּהוּ,",
+          "english": "The school of Eliyahu taught:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אַף עַל פִּי שֶׁאָמַר רַבִּי עֲקִיבָא:",
+          "english": "Even though Rabbi Akiva said:"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "עֲשֵׂה שַׁבַּתְּךָ חוֹל",
+          "english": "Make your Shabbat like a weekday"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וְאַל תִּצְטָרֵךְ לַבְּרִיּוֹת,",
+          "english": "and do not depend on other people,"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "אֲבָל עוֹשֶׂה הוּא דָּבָר מוּעָט",
+          "english": "still, he does some small thing"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "בְּתוֹךְ בֵּיתוֹ.",
+          "english": "inside his house."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "תָּנָא דְּבֵי אֵלִיָּהוּ",
+      "macroPhase": "alternate_branch",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        20
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Builds on the mention of רבי עקיבא's rule and limits it.",
+      "mimraCoreRuling": "Even a poor person who does not take charity for שבת should do something small at home to honor שבת."
+    },
+    {
+      "stepNumber": 22,
+      "hebrewStepName": "שאלה",
+      "title": "What is that small thing?",
+      "stepSummary": "The גמרא asks what the 'small thing' is.",
+      "simpleTranslation": "What are they (these small things)?",
+      "whatsHappening": "The גמרא asks for an example of the small thing. This sets up רב פפא's answer.",
+      "deeperAnalysis": "The teaching said 'a small thing' without details. The גמרא wants a concrete example.",
+      "keyTerms": [
+        {
+          "term": "מַאי נִינְהוּ",
+          "meaning": "What are they?"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מַאי נִינְהוּ?",
+          "english": "What are they?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "מַאי נִינְהוּ?",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        21
+      ],
+      "scopeOfStep": "wording",
+      "relationToPreviousStep": "Asks to define 'a small thing' from step 21.",
+      "sheelahInformationSought": "A concrete example of the small thing done for שבת."
+    },
+    {
+      "stepNumber": 23,
+      "hebrewStepName": "תשובה",
+      "title": "רב פפא: a dish of small fried fish",
+      "stepSummary": "רב פפא says the small thing is a dish of small fried fish.",
+      "simpleTranslation": "רב פפא said: A dish of small fried fish.",
+      "whatsHappening": "רב פפא gives the example: a cheap dish of small fried fish.",
+      "deeperAnalysis": "Small fried fish were inexpensive, so even a poor person could afford them. This marks שבת as special without needing to take from others.",
+      "keyTerms": [
+        {
+          "term": "רַב פָּפָּא",
+          "meaning": "An אמורא"
+        },
+        {
+          "term": "כָּסָא דְהַרְסָנָא",
+          "meaning": "A dish of small fish fried (in oil and flour)"
+        }
+      ],
+      "whatToRemember": "Even a poor person who avoids charity for שבת should do a small cheap thing to honor it, such as small fried fish.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר רַב פָּפָּא:",
+          "english": "Rav Pappa said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "כָּסָא דְהַרְסָנָא.",
+          "english": "A dish of small fried fish."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אָמַר רַב פָּפָּא: כָּסָא דְהַרְסָנָא",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        22
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Answers step 22.",
+      "teshuvahAnswerProvided": "A dish of small fried fish."
+    },
+    {
+      "stepNumber": 24,
+      "hebrewStepName": "ראיה",
+      "title": "רבי יהודה בן תימא: push yourself to do ה׳'s will",
+      "stepSummary": "The גמרא quotes a משנה: be bold like a leopard, light like an eagle, fast like a deer, strong like a lion to do the will of your Father in Heaven.",
+      "simpleTranslation": "As we learned in a משנה: רבי יהודה בן תימא says: Be bold like a leopard, light like an eagle, run like a deer, and strong like a lion to do the will of your Father in Heaven.",
+      "whatsHappening": "The גמרא brings a משנה as support: a person should put real effort into doing מצוות.",
+      "deeperAnalysis": "The point fits the idea that a person should push himself to honor שבת and do מצוות, even when it is hard. Each animal shows a different kind of effort: boldness, lightness, speed, and strength.",
+      "keyTerms": [
+        {
+          "term": "כְּדִתְנַן",
+          "meaning": "As we learned in a משנה"
+        },
+        {
+          "term": "רַבִּי יְהוּדָה בֶּן תֵּימָא",
+          "meaning": "A תנא"
+        },
+        {
+          "term": "עַז כַּנָּמֵר",
+          "meaning": "Bold like a leopard"
+        },
+        {
+          "term": "רְצוֹן אָבִיךָ שֶׁבַּשָּׁמַיִם",
+          "meaning": "The will of your Father in Heaven"
+        }
+      ],
+      "whyThisMatters": "This famous line (also in פרקי אבות) teaches that serving ה׳ calls for full energy and effort.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "כְּדִתְנַן,",
+          "english": "As we learned in a mishna:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "רַבִּי יְהוּדָה בֶּן תֵּימָא אוֹמֵר:",
+          "english": "Rabbi Yehuda ben Teima says:"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "הֱוֵי עַז כַּנָּמֵר וְקַל כַּנֶּשֶׁר,",
+          "english": "Be bold like a leopard and light like an eagle,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "רָץ כַּצְּבִי וְגִבּוֹר כָּאֲרִי",
+          "english": "run like a deer and be strong like a lion"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "לַעֲשׂוֹת רְצוֹן אָבִיךָ שֶׁבַּשָּׁמַיִם.",
+          "english": "to do the will of your Father in Heaven."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "מימרא",
+      "triggerLanguage": "כְּדִתְנַן, רַבִּי יְהוּדָה בֶּן תֵּימָא אוֹמֵר",
+      "macroPhase": "source_derivation",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        21,
+        23
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Supports the idea of making effort for מצוות, like honoring שבת.",
+      "raayaObject": "That a person should exert real effort to do מצוות, such as honoring שבת.",
+      "raayaSupportSource": "The משנה of רבי יהודה בן תימא (be bold like a leopard, etc.)."
+    },
+    {
+      "stepNumber": 25,
+      "hebrewStepName": "מימרא",
+      "title": "רבי עקיבא's seven instructions to his son begin",
+      "stepSummary": "A ברייתא introduces seven pieces of advice from רבי עקיבא to his son רבי יהושע. It lists the first two: do not learn in a busy high spot of the city, and do not live in a city run by scholars.",
+      "simpleTranslation": "The Rabbis taught: רבי עקיבא commanded his son רבי יהושע seven things. My son, do not sit and learn at the high, busy point of a city. Do not live in a city whose leaders are Torah scholars.",
+      "whatsHappening": "The גמרא quotes the full ברייתא behind רבי עקיבא's statement about שבת that was discussed earlier. It begins with the first two of seven pieces of advice.",
+      "deeperAnalysis": "Learning in a busy high spot is a bad idea because people walking by will keep interrupting you. A city led by scholars may be poorly run, because the scholars are busy learning and do not have time to manage the city. These are practical life lessons, not formal הלכות.",
+      "keyTerms": [
+        {
+          "term": "תָּנוּ רַבָּנַן",
+          "meaning": "The Rabbis taught; this opens a ברייתא"
+        },
+        {
+          "term": "צִוָּה",
+          "meaning": "Commanded or instructed"
+        },
+        {
+          "term": "גּוֹבְהָהּ שֶׁל עִיר",
+          "meaning": "The high point of a city, a busy public spot"
+        },
+        {
+          "term": "וְתִשְׁנֶה",
+          "meaning": "And learn (review your studies)"
+        },
+        {
+          "term": "תַּלְמִידֵי חֲכָמִים",
+          "meaning": "Torah scholars"
+        }
+      ],
+      "whyThisMatters": "This is the full original source of 'עשה שבתך חול', which the earlier steps were built on.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "תָּנוּ רַבָּנַן,",
+          "english": "The Rabbis taught:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "שִׁבְעָה דְּבָרִים צִוָּה רַבִּי עֲקִיבָא",
+          "english": "Rabbi Akiva commanded seven things"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "אֶת רַבִּי יְהוֹשֻׁעַ בְּנוֹ:",
+          "english": "to Rabbi Yehoshua, his son:"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "בְּנִי, אַל תֵּשֵׁב בְּגוֹבְהָהּ שֶׁל עִיר וְתִשְׁנֶה,",
+          "english": "My son, do not sit at the high point of a city and study,",
+          "notes": "People passing by will interrupt you."
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "וְאַל תָּדוּר בְּעִיר",
+          "english": "and do not live in a city"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "שֶׁרָאשֶׁיהָ תַּלְמִידֵי חֲכָמִים.",
+          "english": "whose leaders are Torah scholars.",
+          "notes": "They are too busy learning to run the city well."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "תָּנוּ רַבָּנַן, שִׁבְעָה דְּבָרִים צִוָּה רַבִּי עֲקִיבָא אֶת רַבִּי יְהוֹשֻׁעַ בְּנוֹ",
+      "macroPhase": "narrative_aggadah",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [
+        21
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Brings the full ברייתא that is the source of רבי עקיבא's saying about שבת, which was discussed before.",
+      "mimraCoreRuling": "Do not study in a busy public high spot, and do not live in a city governed by scholars."
+    },
+    {
+      "stepNumber": 26,
+      "hebrewStepName": "מימרא",
+      "title": "The remaining instructions, including making שבת like a weekday",
+      "stepSummary": "רבי עקיבא continues with the other five instructions: do not enter a house suddenly, always wear shoes, eat early in the morning, make your שבת like a weekday rather than depend on people, and attach yourself to a successful person.",
+      "simpleTranslation": "Do not walk into your own house suddenly, and certainly not into someone else's. Do not go without shoes. Get up early and eat, in summer because of the heat and in winter because of the cold. Make your שבת like a weekday rather than need other people. Make an effort to join with a person whose luck is smiling on him.",
+      "whatsHappening": "The ברייתא finishes the list of seven instructions. This list includes the famous line about making שבת like a weekday.",
+      "deeperAnalysis": "Entering suddenly can embarrass the people inside, so you should knock first, even in your own home. Going barefoot is a disgrace. 'עשה שבתך חול' is the line the גמרא already discussed: it is better to eat plainly on שבת than to depend on charity. The last instruction, about a lucky person, is unclear, so רב פפא will explain it next.",
+      "keyTerms": [
+        {
+          "term": "פִּתְאוֹם",
+          "meaning": "Suddenly, without warning"
+        },
+        {
+          "term": "כׇּל שֶׁכֵּן",
+          "meaning": "All the more so"
+        },
+        {
+          "term": "עֲשֵׂה שַׁבַּתְּךָ חוֹל",
+          "meaning": "Make your שבת like a weekday (simple meals)"
+        },
+        {
+          "term": "אַל תִּצְטָרֵךְ לַבְּרִיּוֹת",
+          "meaning": "Do not become dependent on other people"
+        },
+        {
+          "term": "שֶׁהַשָּׁעָה מְשַׂחֶקֶת לוֹ",
+          "meaning": "Whose hour smiles on him; a successful person"
+        }
+      ],
+      "confusionAlert": "'Make your שבת like a weekday' does not mean ignoring שבת. It means eating plain weekday food rather than taking charity, and steps 20–21 already showed that even this has limits.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְאַל תִּכָּנֵס לְבֵיתְךָ פִּתְאוֹם,",
+          "english": "And do not enter your house suddenly,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "כׇּל שֶׁכֵּן לְבֵית חֲבֵירְךָ.",
+          "english": "all the more so the house of your friend."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וְאַל תִּמְנַע מִנְעָלִים מֵרַגְלֶיךָ.",
+          "english": "And do not withhold shoes from your feet."
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "הַשְׁכֵּם וֶאֱכוֹל,",
+          "english": "Get up early and eat,"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "בַּקַּיִץ מִפְּנֵי הַחַמָּה,",
+          "english": "in the summer because of the heat,"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "וּבַחוֹרֶף מִפְּנֵי הַצִּינָּה.",
+          "english": "and in the winter because of the cold."
+        },
+        {
+          "phraseNumber": 7,
+          "aramaic": "וַעֲשֵׂה שַׁבַּתְּךָ חוֹל",
+          "english": "And make your Shabbat like a weekday"
+        },
+        {
+          "phraseNumber": 8,
+          "aramaic": "וְאַל תִּצְטָרֵךְ לַבְּרִיּוֹת.",
+          "english": "and do not become dependent on people."
+        },
+        {
+          "phraseNumber": 9,
+          "aramaic": "וֶהֱוֵי מִשְׁתַּדֵּל עִם אָדָם",
+          "english": "And make an effort to join with a person"
+        },
+        {
+          "phraseNumber": 10,
+          "aramaic": "שֶׁהַשָּׁעָה מְשַׂחֶקֶת לוֹ.",
+          "english": "upon whom the hour is smiling."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וְאַל תִּכָּנֵס לְבֵיתְךָ פִּתְאוֹם",
+      "macroPhase": "narrative_aggadah",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        25
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Continues and completes the list of seven instructions.",
+      "mimraCoreRuling": "Knock before entering, wear shoes, eat early, choose a plain שבת over dependence on others, and attach yourself to a successful person."
+    },
+    {
+      "stepNumber": 27,
+      "hebrewStepName": "מימרא",
+      "title": "רב פפא: Partner with the lucky person, but do not trade with him",
+      "stepSummary": "רב פפא explains the last instruction. Do not buy from or sell to a successful person, because his luck will make him win the deal at your expense. Instead, go into partnership with him.",
+      "simpleTranslation": "רב פפא said: Do not buy from him and do not sell to him. Instead, form a partnership with him.",
+      "whatsHappening": "רב פפא explains what 'join with a lucky person' means in practice.",
+      "deeperAnalysis": "If you trade against a lucky person, his luck works against you, because he gains and you lose. In a partnership you share the profits, so his good fortune helps you too.",
+      "keyTerms": [
+        {
+          "term": "לְמִיזְבַּן",
+          "meaning": "To buy"
+        },
+        {
+          "term": "לְזַבּוֹנֵי",
+          "meaning": "To sell"
+        },
+        {
+          "term": "שׁוּתָּפוּת",
+          "meaning": "Partnership"
+        },
+        {
+          "term": "בַּהֲדֵיהּ",
+          "meaning": "With him"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר רַב פָּפָּא:",
+          "english": "Rav Pappa said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "לָא לְמִיזְבַּן מִינֵּיהּ",
+          "english": "Not to buy from him"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וְלָא לְזַבּוֹנֵי לֵיהּ,",
+          "english": "and not to sell to him,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "אֶלָּא לְמֶעְבַּד שׁוּתָּפוּת בַּהֲדֵיהּ.",
+          "english": "but rather to form a partnership with him."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "תשובה",
+      "triggerLanguage": "אָמַר רַב פָּפָּא: לָא לְמִיזְבַּן מִינֵּיהּ",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        26
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Explains the seventh instruction from the previous step.",
+      "mimraCoreRuling": "Joining a lucky person means forming a partnership, not trading with him."
+    },
+    {
+      "stepNumber": 28,
+      "hebrewStepName": "דחיה",
+      "title": "Even trading with a blessed person brings blessing",
+      "stepSummary": "Based on רב שמואל בר יצחק's teaching that anyone who took even a פרוטה from איוב was blessed, the גמרא says that even buying from or selling to a successful person is fine.",
+      "simpleTranslation": "But now that רב שמואל בר יצחק has said: What does the verse 'You blessed the work of his hands' mean? Anyone who took a פרוטה from איוב was blessed. So even buying from him or selling to him is good.",
+      "whatsHappening": "The גמרא brings a new teaching that removes רב פפא's limit. Even ordinary trading with a blessed person is good.",
+      "deeperAnalysis": "רב פפא thought a lucky person's fortune only helps you in a partnership. The verse about איוב shows that his blessing passed to anyone who received even a small coin from him, even through a regular sale. So the blessing spreads to you, and there is no reason to avoid trading with such a person.",
+      "keyTerms": [
+        {
+          "term": "וְהַשְׁתָּא דְּאָמַר",
+          "meaning": "But now that it has been said; a formula introducing a new source that updates an earlier view"
+        },
+        {
+          "term": "מַאי דִּכְתִיב",
+          "meaning": "What is the meaning of what is written"
+        },
+        {
+          "term": "פְּרוּטָה",
+          "meaning": "The smallest coin"
+        },
+        {
+          "term": "מִתְבָּרֵךְ",
+          "meaning": "Becomes blessed"
+        },
+        {
+          "term": "שַׁפִּיר דָּמֵי",
+          "meaning": "It is fine, permitted, good"
+        }
+      ],
+      "whatToRemember": "The final view is that any business with a blessed person, whether a partnership or plain buying and selling, lets you share in his blessing.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְהַשְׁתָּא דְּאָמַר רַב שְׁמוּאֵל בַּר יִצְחָק:",
+          "english": "But now that Rav Shmuel bar Yitzchak said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "מַאי דִּכְתִיב ״מַעֲשֵׂה יָדָיו בֵּרַכְתָּ״ —",
+          "english": "What is meant by what is written: 'You have blessed the work of his hands' —",
+          "notes": "איוב 1:10"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "כׇּל הַנּוֹטֵל פְּרוּטָה מֵאִיּוֹב מִתְבָּרֵךְ,",
+          "english": "anyone who took a peruta from Job was blessed,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "אֲפִילּוּ לְמִיזְבַּן מִינֵּיהּ וּלְזַבּוֹנֵי לֵיהּ",
+          "english": "even to buy from him and to sell to him"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "שַׁפִּיר דָּמֵי.",
+          "english": "is fine."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "מסקנא",
+      "triggerLanguage": "וְהַשְׁתָּא דְּאָמַר רַב שְׁמוּאֵל בַּר יִצְחָק",
+      "macroPhase": "conclusion",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        27
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Overturns רב פפא's restriction against trading with the lucky person.",
+      "dechiyaRejectionScope": "Rejects only רב פפא's limit against buying and selling. The advice to partner with a successful person still stands.",
+      "dechiyaFlawIdentified": "רב פפא assumed a lucky person's fortune harms the other side in a trade, but the verse about איוב shows that blessing passes even through a small transaction."
+    },
+    {
+      "stepNumber": 29,
+      "hebrewStepName": "מימרא",
+      "title": "Five instructions to רבי שמעון בן יוחי while רבי עקיבא was in prison",
+      "stepSummary": "The גמרא introduces a second list: five things רבי עקיבא told רבי שמעון בן יוחי while רבי עקיבא was imprisoned.",
+      "simpleTranslation": "רבי עקיבא commanded רבי שמעון בן יוחי five things when he was locked up in prison.",
+      "whatsHappening": "The גמרא opens a new list of advice from רבי עקיבא. Before giving the five things, it first tells the story of how they came to be said.",
+      "deeperAnalysis": "רבי עקיבא was jailed by the Romans for teaching תורה. The list itself is delayed, because the גמרא first describes the conversation between the two of them.",
+      "keyTerms": [
+        {
+          "term": "חֲמִשָּׁה דְּבָרִים",
+          "meaning": "Five things"
+        },
+        {
+          "term": "חָבוּשׁ",
+          "meaning": "Imprisoned, locked up"
+        },
+        {
+          "term": "בֵּית הָאֲסוּרִין",
+          "meaning": "Prison"
+        }
+      ],
+      "confusionAlert": "The one in prison is רבי עקיבא, not רבי שמעון בן יוחי.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "חֲמִשָּׁה דְּבָרִים צִוָּה רַבִּי עֲקִיבָא",
+          "english": "Rabbi Akiva commanded five things"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אֶת רַבִּי שִׁמְעוֹן בֶּן יוֹחַי",
+          "english": "to Rabbi Shimon ben Yochai"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "כְּשֶׁהָיָה חָבוּשׁ בְּבֵית הָאֲסוּרִין.",
+          "english": "when he was imprisoned in the jailhouse."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "חֲמִשָּׁה דְּבָרִים צִוָּה רַבִּי עֲקִיבָא אֶת רַבִּי שִׁמְעוֹן בֶּן יוֹחַי",
+      "macroPhase": "narrative_aggadah",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [
+        25
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Starts a second, similar list of רבי עקיבא's advice.",
+      "mimraCoreRuling": "Introduces five instructions given to רבי שמעון בן יוחי during רבי עקיבא's imprisonment."
+    },
+    {
+      "stepNumber": 30,
+      "hebrewStepName": "שאלה",
+      "title": "רבי שמעון asks to be taught Torah",
+      "stepSummary": "רבי שמעון בן יוחי asks רבי עקיבא to teach him תורה.",
+      "simpleTranslation": "He said to him: רבי, teach me תורה.",
+      "whatsHappening": "רבי שמעון makes a request, which sets up the exchange that follows.",
+      "deeperAnalysis": "Teaching תורה was banned by the Romans, and it was the reason רבי עקיבא was in prison. So this request carries real danger.",
+      "keyTerms": [
+        {
+          "term": "לַמְּדֵנִי",
+          "meaning": "Teach me"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר לוֹ: רַבִּי, לַמְּדֵנִי תּוֹרָה,",
+          "english": "He said to him: Rabbi, teach me Torah."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "מימרא",
+      "triggerLanguage": "אָמַר לוֹ: רַבִּי, לַמְּדֵנִי תּוֹרָה",
+      "macroPhase": "narrative_aggadah",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        29
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Begins the story behind the five instructions.",
+      "sheelahInformationSought": "Whether רבי עקיבא will teach him תורה despite the ban."
+    },
+    {
+      "stepNumber": 31,
+      "hebrewStepName": "תשובה",
+      "title": "רבי עקיבא refuses",
+      "stepSummary": "רבי עקיבא says he will not teach him.",
+      "simpleTranslation": "He said: I will not teach you.",
+      "whatsHappening": "רבי עקיבא answers with a refusal, because teaching is dangerous right now.",
+      "deeperAnalysis": "The refusal is meant to protect רבי שמעון. It does not come from any unwillingness to teach.",
+      "keyTerms": [
+        {
+          "term": "אֵינִי מְלַמְּדֶךָ",
+          "meaning": "I will not teach you"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר: אֵינִי מְלַמְּדֶךָ.",
+          "english": "He said: I will not teach you."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "triggerLanguage": "אָמַר: אֵינִי מְלַמְּדֶךָ",
+      "macroPhase": "narrative_aggadah",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        30
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Answers the request with a refusal.",
+      "teshuvahAnswerProvided": "No, I will not teach you, because of the danger."
+    },
+    {
+      "stepNumber": 32,
+      "hebrewStepName": "קשיא",
+      "title": "רבי שמעון's playful threat",
+      "stepSummary": "רבי שמעון jokingly threatens to tell his father יוחי, who will turn רבי עקיבא over to the government.",
+      "simpleTranslation": "He said to him: If you do not teach me, I will tell my father יוחי, and he will hand you over to the government.",
+      "whatsHappening": "רבי שמעון pushes back against the refusal with a joking threat.",
+      "deeperAnalysis": "The threat is a joke, because רבי עקיבא is already in the government's prison. רבי שמעון is really saying: I cannot force you, so please teach me.",
+      "keyTerms": [
+        {
+          "term": "וּמוֹסֶרְךָ",
+          "meaning": "And he will hand you over"
+        },
+        {
+          "term": "מַלְכוּת",
+          "meaning": "The government (here, Rome)"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר לוֹ:",
+          "english": "He said to him:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אִם אֵין אַתָּה מְלַמְּדֵנִי",
+          "english": "If you do not teach me,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "אֲנִי אוֹמֵר לְיוֹחַי אַבָּא",
+          "english": "I will tell Yochai my father,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וּמוֹסֶרְךָ לַמַּלְכוּת.",
+          "english": "and he will hand you over to the government."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "מימרא",
+      "triggerLanguage": "אִם אֵין אַתָּה מְלַמְּדֵנִי אֲנִי אוֹמֵר לְיוֹחַי אַבָּא",
+      "macroPhase": "narrative_aggadah",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        31
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Pushes back against the refusal.",
+      "kashyaTarget": "רבי עקיבא's refusal to teach.",
+      "kashyaAttackLogic": "A playful pressure tactic to get רבי עקיבא to change his mind."
+    },
+    {
+      "stepNumber": 33,
+      "hebrewStepName": "תירוץ",
+      "title": "The cow wants to nurse even more than the calf wants to drink",
+      "stepSummary": "רבי עקיבא explains that he wants to teach even more than רבי שמעון wants to learn, but the danger holds him back.",
+      "simpleTranslation": "He said to him: My son, more than the calf wants to drink, the cow wants to nurse.",
+      "whatsHappening": "רבי עקיבא responds warmly. His refusal is not because he does not want to teach.",
+      "deeperAnalysis": "Like a mother cow eager to feed her calf, a teacher wants to teach even more than the student wants to learn. The only thing stopping him is the danger.",
+      "keyTerms": [
+        {
+          "term": "עֵגֶל",
+          "meaning": "Calf (the student)"
+        },
+        {
+          "term": "פָּרָה",
+          "meaning": "Cow (the teacher)"
+        },
+        {
+          "term": "לִינַק",
+          "meaning": "To suckle, to drink milk"
+        },
+        {
+          "term": "לְהָנִיק",
+          "meaning": "To nurse, to give milk"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר לוֹ: בְּנִי,",
+          "english": "He said to him: My son,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "יוֹתֵר מִמַּה שֶּׁהָעֵגֶל רוֹצֶה לִינַק",
+          "english": "more than the calf wants to suck,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "פָּרָה רוֹצֶה לְהָנִיק.",
+          "english": "the cow wants to nurse."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "triggerLanguage": "יוֹתֵר מִמַּה שֶּׁהָעֵגֶל רוֹצֶה לִינַק פָּרָה רוֹצֶה לְהָנִיק",
+      "macroPhase": "narrative_aggadah",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        32
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Explains the real reason behind the refusal.",
+      "terutzResolutionType": "Clarifying motive",
+      "terutzHavaAmina": "It might seem that רבי עקיבא simply does not want to teach.",
+      "terutzMaskana": "He wants to teach very much, but he holds back only because of the danger."
+    },
+    {
+      "stepNumber": 34,
+      "hebrewStepName": "דחיה",
+      "title": "It is the student who is at risk",
+      "stepSummary": "רבי שמעון answers that the danger is really his own, since he is the one who is free and could be caught. He is willing to take that risk.",
+      "simpleTranslation": "He said to him: Who is in danger? Isn't the calf in danger?",
+      "whatsHappening": "רבי שמעון pushes aside רבי עקיבא's concern about danger.",
+      "deeperAnalysis": "רבי עקיבא is already in prison, so the person who would be risking something by learning is רבי שמעון, the 'calf.' Since he is willing to accept that risk, the reason for refusing falls away.",
+      "keyTerms": [
+        {
+          "term": "סַכָּנָה",
+          "meaning": "Danger"
+        },
+        {
+          "term": "וַהֲלֹא",
+          "meaning": "Is it not so that"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר לוֹ: וּמִי בְּסַכָּנָה?",
+          "english": "He said to him: And who is in danger?"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וַהֲלֹא עֵגֶל בְּסַכָּנָה.",
+          "english": "Isn't it the calf who is in danger?"
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "קשיא",
+      "triggerLanguage": "וּמִי בְּסַכָּנָה? וַהֲלֹא עֵגֶל בְּסַכָּנָה",
+      "macroPhase": "narrative_aggadah",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        33
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Rejects the danger as a reason to refuse.",
+      "dechiyaRejectionScope": "The danger-based reason for refusing to teach.",
+      "dechiyaFlawIdentified": "The danger falls on the student, who willingly accepts it, so it should not stop the teacher."
+    },
+    {
+      "stepNumber": 35,
+      "hebrewStepName": "מימרא",
+      "title": "First teaching: hang yourself on a tall tree",
+      "stepSummary": "רבי עקיבא gives in and starts teaching. His first saying is that if you want people to accept your words, rely on a great authority.",
+      "simpleTranslation": "He said to him: If you want to be strangled, hang yourself on a tall tree.",
+      "whatsHappening": "רבי עקיבא gives in to רבי שמעון's insistence and begins a list of short life teachings. This is the first one.",
+      "deeperAnalysis": "The saying is a picture, not a literal instruction. If you want your words to 'hold,' tie them to a big, strong 'tree,' meaning a great authority. Quoting a גדול gives your statement weight.",
+      "keyTerms": [
+        {
+          "term": "לֵיחָנֵק",
+          "meaning": "to be strangled"
+        },
+        {
+          "term": "הִיתָּלֵה",
+          "meaning": "hang yourself"
+        },
+        {
+          "term": "אִילָן גָּדוֹל",
+          "meaning": "a tall/great tree; a picture for a great authority"
+        }
+      ],
+      "confusionAlert": "This is not about harming oneself. It is a parable meaning: attribute your teaching to a great person so it will be accepted.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר לוֹ:",
+          "english": "He (Rabbi Akiva) said to him:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אִם בִּקַּשְׁתָּ לֵיחָנֵק —",
+          "english": "If you wish to be strangled,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "הִיתָּלֵה בְּאִילָן גָּדוֹל.",
+          "english": "hang yourself on a tall tree.",
+          "notes": "Meaning: attach your words to a great authority."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "תשובה",
+      "triggerLanguage": "אָמַר לוֹ: אִם בִּקַּשְׁתָּ לֵיחָנֵק",
+      "macroPhase": "narrative_aggadah",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        34
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "רבי עקיבא responds to רבי שמעון's insistence by agreeing to teach him a few things.",
+      "mimraCoreRuling": "To have your words accepted, attribute them to a great authority."
+    },
+    {
+      "stepNumber": 36,
+      "hebrewStepName": "מימרא",
+      "title": "Second teaching: teach your son from a corrected text",
+      "stepSummary": "רבי עקיבא advises teaching one's son only from an accurate, corrected book.",
+      "simpleTranslation": "And when you teach your son, teach him from a corrected book.",
+      "whatsHappening": "רבי עקיבא gives his second teaching: when teaching your child, use a text that has been checked for errors.",
+      "deeperAnalysis": "The saying is short and does not say why accuracy matters so much. The גמרא will ask about that in the next step.",
+      "keyTerms": [
+        {
+          "term": "סֵפֶר מוּגָּהּ",
+          "meaning": "a corrected, proofread book"
+        },
+        {
+          "term": "בִּנְךָ",
+          "meaning": "your son"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וּכְשֶׁאַתָּה מְלַמֵּד אֶת בִּנְךָ —",
+          "english": "And when you teach your son,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "לַמְּדֵהוּ בְּסֵפֶר מוּגָּהּ.",
+          "english": "teach him from a corrected book."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וּכְשֶׁאַתָּה מְלַמֵּד אֶת בִּנְךָ",
+      "macroPhase": "narrative_aggadah",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        35
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "The next item in רבי עקיבא's list of teachings.",
+      "mimraCoreRuling": "Teach children from accurate, corrected texts."
+    },
+    {
+      "stepNumber": 37,
+      "hebrewStepName": "שאלה",
+      "title": "What does the corrected-text teaching mean?",
+      "stepSummary": "The גמרא asks what the point of the corrected-text advice is.",
+      "simpleTranslation": "What is it?",
+      "whatsHappening": "The גמרא stops to ask what רבי עקיבא's advice really means. This sets up the explanation in the next step.",
+      "deeperAnalysis": "Using a correct book seems obvious, so the גמרא wants to know what extra point is being made.",
+      "keyTerms": [
+        {
+          "term": "מַאי הִיא",
+          "meaning": "what is it? (asks for an explanation)"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מַאי הִיא?",
+          "english": "What is (the meaning of) it?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "מַאי הִיא",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        36
+      ],
+      "scopeOfStep": "wording",
+      "relationToPreviousStep": "Asks for the meaning of the teaching in step 36.",
+      "sheelahInformationSought": "What is the specific point of teaching from a corrected text?"
+    },
+    {
+      "stepNumber": 38,
+      "hebrewStepName": "תשובה",
+      "title": "A mistake learned first stays in",
+      "stepSummary": "רבא, or some say רב משרשיא, explains that the advice applies when learning something new, because once a mistake enters the mind it stays.",
+      "simpleTranslation": "רבא said, and some say רב משרשיא: About something new, because a mistake, once it enters, has entered.",
+      "whatsHappening": "רבא, or some say רב משרשיא, explains that the advice is about first-time learning. A mistake picked up at the start is very hard to remove.",
+      "deeperAnalysis": "The key word is בחדתא, meaning 'new material.' A student learning something for the first time has nothing to compare it with, so an error sticks permanently. That is why the very first text must be accurate.",
+      "keyTerms": [
+        {
+          "term": "וְאִיתֵּימָא",
+          "meaning": "and some say (an alternate attribution)"
+        },
+        {
+          "term": "בְּחַדְתָּא",
+          "meaning": "regarding something new"
+        },
+        {
+          "term": "שַׁבֶּשְׁתָּא",
+          "meaning": "a mistake / corruption"
+        },
+        {
+          "term": "כֵּיוָן דְּעָל — עָל",
+          "meaning": "once it entered, it entered (it stays)"
+        }
+      ],
+      "whatToRemember": "First impressions in learning are permanent. Learn new material correctly from the start.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר רָבָא, וְאִיתֵּימָא רַב מְשַׁרְשְׁיָא:",
+          "english": "Rava said, and some say Rav Mesharshiya:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "בְּחַדְתָּא,",
+          "english": "regarding something new (being learned),"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "שַׁבֶּשְׁתָּא כֵּיוָן דְּעָל — עָל.",
+          "english": "for a mistake, once it has entered, has entered (and stays)."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אָמַר רָבָא, וְאִיתֵּימָא רַב מְשַׁרְשְׁיָא",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        37
+      ],
+      "scopeOfStep": "wording",
+      "relationToPreviousStep": "Answers the question of step 37.",
+      "teshuvahAnswerProvided": "The advice applies to new learning, because an early mistake becomes permanently fixed."
+    },
+    {
+      "stepNumber": 39,
+      "hebrewStepName": "מימרא",
+      "title": "Third teaching: don't cook in your friend's pot",
+      "stepSummary": "רבי עקיבא's next saying: do not cook in a pot your friend already cooked in.",
+      "simpleTranslation": "Do not cook in a pot in which your friend cooked.",
+      "whatsHappening": "רבי עקיבא gives another short, puzzling saying. The גמרא will explain it right after.",
+      "deeperAnalysis": "Like the tree saying, this is a parable, not a kitchen rule. The 'pot' stands for something else, which the גמרא will identify.",
+      "keyTerms": [
+        {
+          "term": "קְדֵירָה",
+          "meaning": "a pot"
+        },
+        {
+          "term": "חֲבֵירֶךָ",
+          "meaning": "your friend / fellow"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "לֹא תְּבַשֵּׁל בִּקְדֵירָה",
+          "english": "Do not cook in a pot"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "שֶׁבִּישֵּׁל בָּהּ חֲבֵירֶךָ.",
+          "english": "in which your friend cooked."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "לֹא תְּבַשֵּׁל בִּקְדֵירָה שֶׁבִּישֵּׁל בָּהּ חֲבֵירֶךָ",
+      "macroPhase": "narrative_aggadah",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        35
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Continues רבי עקיבא's list of teachings.",
+      "mimraCoreRuling": "Do not 'cook in a pot' your friend already used (a parable explained next)."
+    },
+    {
+      "stepNumber": 40,
+      "hebrewStepName": "שאלה",
+      "title": "What is the pot?",
+      "stepSummary": "The גמרא asks what the 'pot' saying refers to.",
+      "simpleTranslation": "What is it?",
+      "whatsHappening": "The גמרא asks what the parable is really about. This sets up the explanation that follows.",
+      "deeperAnalysis": "The question signals that the saying is not about actual cooking, so the real meaning must be identified.",
+      "keyTerms": [
+        {
+          "term": "מַאי נִיהוּ",
+          "meaning": "what is it? (asks to identify the referent)"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מַאי נִיהוּ —",
+          "english": "What is it?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "מַאי נִיהוּ",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        39
+      ],
+      "scopeOfStep": "wording",
+      "relationToPreviousStep": "Asks for the meaning of step 39's parable.",
+      "sheelahInformationSought": "What does 'a pot your friend cooked in' refer to?"
+    },
+    {
+      "stepNumber": 41,
+      "hebrewStepName": "תשובה",
+      "title": "The pot is a divorcee whose ex-husband is alive",
+      "stepSummary": "The parable refers to marrying a גרושה while her first husband is still alive. As מר taught, when a divorced man marries a divorced woman there are 'four minds in the bed.'",
+      "simpleTranslation": "A divorced woman during her husband's lifetime, as the Master said: A divorced man who married a divorced woman, there are four minds in the bed.",
+      "whatsHappening": "The גמרא explains that the 'pot' is a woman divorced from a husband who is still alive. It supports this with a teaching from מר.",
+      "deeperAnalysis": "While the ex-husband is alive, thoughts of the former spouse can intrude on the new marriage. מר's statement makes the point vivid: two divorced people bring 'four minds,' meaning each is thinking of a current and a former spouse.",
+      "keyTerms": [
+        {
+          "term": "גְּרוּשָׁה",
+          "meaning": "a divorced woman"
+        },
+        {
+          "term": "בְּחַיֵּי בַּעְלָהּ",
+          "meaning": "during her (former) husband's lifetime"
+        },
+        {
+          "term": "דְּאָמַר מָר",
+          "meaning": "as the Master said (quoting an earlier teaching)"
+        },
+        {
+          "term": "אַרְבַּע דֵּעוֹת בַּמִּטָּה",
+          "meaning": "four minds in the bed"
+        }
+      ],
+      "confusionAlert": "This is life advice from רבי עקיבא, not a הלכה forbidding marriage to a גרושה. Such a marriage is permitted, except for a כהן.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "גְּרוּשָׁה בְּחַיֵּי בַּעְלָהּ,",
+          "english": "a divorced woman during the lifetime of her (former) husband,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "דְּאָמַר מָר",
+          "english": "as the Master said:"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "גָּרוּשׁ שֶׁנָּשָׂא גְּרוּשָׁהּ —",
+          "english": "a divorced man who married a divorced woman,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "אַרְבַּע דֵּעוֹת בַּמִּטָּה.",
+          "english": "there are four minds in the bed."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "ראיה",
+      "triggerLanguage": "גְּרוּשָׁה בְּחַיֵּי בַּעְלָהּ, דְּאָמַר מָר",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        40
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Answers step 40 and backs up the answer with a quoted teaching.",
+      "teshuvahAnswerProvided": "The 'pot' is a divorced woman whose former husband is still alive."
+    },
+    {
+      "stepNumber": 42,
+      "hebrewStepName": "תשובה",
+      "title": "A second explanation: even a widow",
+      "stepSummary": "The גמרא offers a second explanation: the advice applies even to an אלמנה. The reason begins with 'לפי' and continues on the next amud.",
+      "simpleTranslation": "And if you want, say: even with a widow, because...",
+      "whatsHappening": "The גמרא gives a different, broader reading of the 'pot' parable that includes a widow. The reason is cut off and continues on the next amud.",
+      "deeperAnalysis": "The first explanation needed the ex-husband to be alive. This one widens the advice even to an אלמנה, whose husband has died, so the concern must be something beyond thoughts of a living ex-husband. That reason comes next.",
+      "keyTerms": [
+        {
+          "term": "וְאִי בָּעֵית אֵימָא",
+          "meaning": "and if you wish, say (introduces an alternate explanation)"
+        },
+        {
+          "term": "אַלְמָנָה",
+          "meaning": "a widow"
+        },
+        {
+          "term": "לְפִי",
+          "meaning": "because / according to (the reason continues next)"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְאִי בָּעֵית אֵימָא:",
+          "english": "And if you wish, say:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אֲפִילּוּ בְּאַלְמָנָה, לְפִי",
+          "english": "even with a widow, because",
+          "notes": "Sentence continues on the next amud."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "תירוץ",
+      "triggerLanguage": "וְאִי בָּעֵית אֵימָא: אֲפִילּוּ בְּאַלְמָנָה",
+      "macroPhase": "alternate_branch",
+      "branchRole": "alternative_approach",
+      "dependsOnStepNumbers": [
+        40,
+        41
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Offers a second answer to step 40's question, broadening the case beyond step 41.",
+      "teshuvahAnswerProvided": "The 'pot' advice applies even to marrying a widow (reason continues on the next amud)."
+    }
+  ]
+}
