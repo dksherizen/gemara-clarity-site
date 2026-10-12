@@ -39,7 +39,7 @@ const isMish = k => !!(current && current.mish && current.mish[k]);
 const PHASES = {mishnah:"On the Mishnah",opening_question:"Opening question",source_derivation:"Finding the source",objection_defense_cycle:"Challenge and defence",alternate_branch:"Another approach",clarification_of_terms:"Defining terms",narrative_aggadah:"Story / aggadah",conclusion:"Conclusion"};
 const FS_BASE = "https://firestore.googleapis.com/v1/projects/gemara-clarity/databases/(default)/documents/artifacts/gemara-clarity-public/public/data/gemara_cache_v5";
 const SEFARIA = "https://www.sefaria.org";
-const LS = { settings:"gc2-settings", bookmarks:"gc2-bookmarks", history:"gc2-history", key:"gc2-openai-key", explained:"gc2-open" };
+const LS = { settings:"gc2-settings", bookmarks:"gc2-bookmarks", history:"gc2-history", explained:"gc2-open" };
 const DATA_CACHE = "gc2-data-v1";
 
 const $ = (s, r=document) => r.querySelector(s);
@@ -49,10 +49,11 @@ const NIKUD = /[\u0591-\u05BD\u05BF\u05C1\u05C2\u05C4\u05C5\u05C7]/g;
 const loadJSON = (k, d) => { try { const v = JSON.parse(localStorage.getItem(k)); return v ?? d; } catch { return d; } };
 const saveJSON = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} };
 
+try { localStorage.removeItem("gc2-openai-key"); } catch {} // the old bring-your-own-key mode is gone; forget any key a device saved
 const settings = Object.assign({ scale:1, nikud:true, translation:true, colors:true, notes:true, terms:true, logic:false, expandAll:false, theme:"dark" }, loadJSON(LS.settings, {}));
 let cloudIds = new Set();
 let cloudLoaded = false;
-let current = null; // {m, i, id, analysis, source:'cloud'|'local'|null, text, tab}
+let current = null; // {m, i, id, analysis, source:'cloud'|null, text, tab}
 let observer = null;
 
 /* ---------- refs ---------- */
@@ -185,12 +186,6 @@ async function loadCloudAnalysis(id){
     return a && Array.isArray(a.steps) && a.steps.length ? a : null;
   } catch (e) { if (e.notFound) return null; throw e; }
 }
-async function localAnalysis(id){
-  try { const c = await caches.open(DATA_CACHE); const r = await c.match("/local-analysis/" + id); return r ? r.json() : null; } catch { return null; }
-}
-async function saveLocalAnalysis(id, data){
-  const c = await caches.open(DATA_CACHE); await c.put("/local-analysis/" + id, new Response(JSON.stringify(data), { headers: { "content-type":"application/json" } }));
-}
 async function loadText(m, i){
   const { daf, amud } = dafOf(i);
   const j = await cachedJSON(`${SEFARIA}/api/texts/${m}.${daf}${amud}?context=0&commentary=0&pad=0`, { ttl: 60*864e5 });
@@ -305,7 +300,6 @@ function openPicker(focusMas){
 /* ---------- settings ---------- */
 function openSettings(){
   const sw = (key, title, sub) => `<label class="setrow"><span class="lbl"><b>${title}</b>${sub ? `<span>${sub}</span>` : ""}</span><span class="switch"><input type="checkbox" data-set="${key}" ${settings[key] ? "checked" : ""}><span></span></span></label>`;
-  const key = localStorage.getItem(LS.key) || "";
   const html = `
     <div class="setrow"><span class="lbl"><b>Text size</b><span>Hebrew/Aramaic and English together</span></span>
       <span class="sizer"><button data-size="-1" aria-label="Smaller text">A−</button><button data-size="1" aria-label="Larger text">A+</button></span></div>
@@ -322,10 +316,6 @@ function openSettings(){
     <h3 style="margin:22px 0 4px;font-size:16px">Offline</h3>
     <p class="small" style="margin:0 0 8px">Every daf you open is saved on this device automatically. You can also save the whole breakdown library now (${cloudIds.size || "all"} amudim) for learning without signal.</p>
     <button class="btn" id="saveAll">Save library for offline</button> <span class="small" id="saveAllMsg"></span>
-    <h3 style="margin:22px 0 4px;font-size:16px">Make new breakdowns (optional)</h3>
-    <p class="small" style="margin:0 0 8px">For an amud with no breakdown yet, you can create one with your own OpenAI API key. The key is stored only in this browser, and the breakdown is saved only on this device.</p>
-    <input class="input" id="keyInput" type="password" autocomplete="off" placeholder="sk-…" value="${esc(key)}" aria-label="Your OpenAI API key">
-    <div style="display:flex;gap:8px;margin-top:8px"><button class="btn" id="saveKey">Save key</button><button class="btn" id="clearKey">Remove key</button></div>
     <h3 style="margin:22px 0 4px;font-size:16px">About</h3>
     <p class="small" style="margin:0">Text and translation: Sefaria, William Davidson Edition (CC BY-NC). Step-by-step breakdowns are AI-generated with the original <a href="https://gemara-clarity.netlify.app/" target="_blank" rel="noopener">Gemara Clarity</a> prompt (his library, plus amudim generated the same way); check them against the text and your teacher.</p>
     <p class="small"><button class="btn" id="clearData" style="margin-top:10px">Clear my bookmarks, history and saved data</button></p>`;
@@ -335,8 +325,6 @@ function openSettings(){
       const t = e.target.closest("button"); if (!t) return;
       if (t.dataset.size) { settings.scale = Math.min(1.7, Math.max(0.85, +(settings.scale + 0.1 * +t.dataset.size).toFixed(2))); applySettings(); }
       if (t.dataset.theme) { settings.theme = t.dataset.theme; applySettings(); $$("[data-theme]", body).forEach(b => b.setAttribute("aria-pressed", b.dataset.theme === settings.theme)); }
-      if (t.id === "saveKey") { const v = $("#keyInput", body).value.trim(); if (v) { localStorage.setItem(LS.key, v); toast("Key saved on this device only"); rerender(); } }
-      if (t.id === "clearKey") { localStorage.removeItem(LS.key); $("#keyInput", body).value = ""; toast("Key removed"); rerender(); }
       if (t.id === "saveAll") saveLibrary($("#saveAllMsg", body), t);
       if (t.id === "clearData") { if (confirm("Clear bookmarks, history, saved dapim and settings on this device?")) { Object.values(LS).forEach(k => localStorage.removeItem(k)); try { await caches.delete(DATA_CACHE); } catch {} location.hash = "#/"; location.reload(); } }
     });
@@ -367,7 +355,6 @@ function renderHome(){
   const h = history_(), bm = bookmarks();
   const last = h[0] && parseId(h[0].id);
   $("#view").innerHTML = `
-    <figure class="dedication" aria-label="Dedication"><div class="ded-l he">לעילוי נשמת</div><div class="ded-name he">אליעזר אברהם צבי בן פתחיה לייב</div><div class="ded-rule" aria-hidden="true"><i></i><b></b><i></i></div><figcaption class="ded-en">In loving memory of <span>Tzvi Sherizen</span></figcaption></figure>
     <div class="hero"><h1>Gemara Clarity</h1><p>Every sugya, step by step: the Aramaic beside the English, phrase by phrase, with every question, challenge, answer and conclusion in its own colour.</p>
       <button class="searchbox" id="homeSearch"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>Go to any daf…</button></div>
     <div class="home-grid two">
@@ -380,8 +367,7 @@ function renderHome(){
     <div id="libSlot">${libraryHtml()}</div>
     <p class="small" style="margin:10px 4px 0">Every other daf in Shas opens too, with the full text and translation side by side.</p>
     <div class="section-h">The eight kinds of step</div>
-    <div class="legend">${Object.entries(TYPES).map(([he, t]) => `<div class="lg t-${t.k}"><span class="swatch"></span><div><b><span class="en-he">${he}</span> · ${t.en}</b><div class="d">${t.d}</div></div></div>`).join("")}<div class="lg t-mishnah"><span class="swatch"></span><div><b><span class="en-he">${MISHNAH.he}</span> · ${MISHNAH.en} badge</b><div class="d">${MISHNAH.d}</div></div></div></div>
-    <div class="footer-ded">Gemara Clarity<span class="he">לעילוי נשמת אליעזר אברהם צבי בן פתחיה לייב</span></div>`;
+    <div class="legend">${Object.entries(TYPES).map(([he, t]) => `<div class="lg t-${t.k}"><span class="swatch"></span><div><b><span class="en-he">${he}</span> · ${t.en}</b><div class="d">${t.d}</div></div></div>`).join("")}<div class="lg t-mishnah"><span class="swatch"></span><div><b><span class="en-he">${MISHNAH.he}</span> · ${MISHNAH.en} badge</b><div class="d">${MISHNAH.d}</div></div></div></div>`;
   $("#homeSearch").onclick = () => openPicker();
   dafYomi().then(y => {
     const tile = $("#yomiTile"); if (!tile) return;
@@ -461,11 +447,10 @@ async function openDaf(m, i, tab){
   if (!same) {
     $("#view").innerHTML = `<div class="loading"><div class="spinner"></div>Loading ${esc(label(m, i))}…</div>`;
     window.scrollTo(0, 0);
-    const local = await localAnalysis(id);
     let cloud = null, cloudErr = null;
-    if (!local && (hasBreakdown(id) || !cloudLoaded || !cloudIds.size)) { try { cloud = await loadCloudAnalysis(id); } catch (e) { cloudErr = e; } }
+    if ((hasBreakdown(id) || !cloudLoaded || !cloudIds.size)) { try { cloud = await loadCloudAnalysis(id); } catch (e) { cloudErr = e; } }
     if (!current || current.id !== id) return;
-    current.analysis = local || cloud; current.source = local ? "local" : cloud ? "cloud" : null; current.cloudErr = cloudErr;
+    current.analysis = cloud; current.source = cloud ? "cloud" : null; current.cloudErr = cloudErr;
     if (!current.tab) current.tab = current.analysis ? "steps" : "text";
   }
   renderDaf();
@@ -476,7 +461,6 @@ function renderDaf(){
   const c = current; if (!c) return;
   const a = c.analysis, bm = bookmarks().includes(c.id);
   const counts = {}; if (a) a.steps.forEach(s => { counts[s.hebrewStepName] = (counts[s.hebrewStepName]||0) + 1; });
-  const keySaved = !!localStorage.getItem(LS.key);
   setChrome(true); updateNav();
   $("#view").innerHTML = `
     <section class="card dafhead">
@@ -490,15 +474,15 @@ function renderDaf(){
         <button class="btn" id="pdfBtn"><svg viewBox="0 0 24 24"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 14h12v8H6z"/></svg>PDF</button>
       </div>
       ${a ? `<div class="tabs" role="tablist"><button role="tab" data-tab="steps" aria-selected="${c.tab === "steps"}">Step by step</button><button role="tab" data-tab="text" aria-selected="${c.tab === "text"}">Full text</button></div>
-        <p class="note-ai">${c.source === "local" ? "Breakdown made on this device with your key. " : ""}AI-generated breakdown: check it against the text and your teacher.</p>` : ""}
+        <p class="note-ai">AI-generated breakdown: check it against the text and your teacher.</p>` : ""}
     </section>
-    ${!a ? `<div class="notice"><b>No step-by-step breakdown for this amud yet.</b>
-        <p>${c.cloudErr ? "The breakdown library couldn’t be reached just now. " : ""}Here is the full text with translation, side by side. ${cloudIds.size ? `${cloudIds.size} amudim are fully broken down.` : ""}</p>
-        ${keySaved ? `<button class="btn primary" id="makeBtn">Create a breakdown with my key</button><div class="small" id="makeMsg"></div>` : `<button class="btn" id="libBtn">See broken-down dapim</button>`}
+    ${!a ? `<div class="notice">${c.cloudErr ? `<b>The breakdown couldn’t be loaded just now.</b>
+        <p>Check your connection and try again. Meanwhile, here is the full text with translation, side by side.</p>` : `<b>Step-by-step breakdown coming soon.</b>
+        <p>This amud is on its way. Meanwhile, here is the full text with translation, side by side.${cloudIds.size ? ` ${cloudIds.size} amudim are fully broken down so far.` : ""}</p>`}
+        <button class="btn" id="libBtn">See broken-down dapim</button>
       </div>` : ""}
     <div id="dafBody">${c.tab === "steps" && a ? stepsBlock(a) : `<div class="loading"><div class="spinner"></div>Loading text from Sefaria…</div>`}</div>
-    <div class="endnav" id="endnav"></div>
-    <div class="footer-ded">In loving memory of Tzvi Sherizen<span class="he">אליעזר אברהם צבי בן פתחיה לייב</span></div>`;
+    <div class="endnav" id="endnav"></div>`;
   // sidebar (desktop) mirrors the flow
   $("#sidebar").innerHTML = a && c.tab === "steps" ? flowHtml(a.steps) : "";
   wireDaf();
@@ -580,7 +564,6 @@ function wireDaf(){
   $$("[data-tab]").forEach(b => b.onclick = () => { c.tab = b.dataset.tab; renderDaf(); });
   const ov = $(".dafhead .overview"); if (ov) ov.onclick = () => ov.classList.toggle("full");
   const lib = $("#libBtn"); if (lib) lib.onclick = () => { location.hash = "#/"; setTimeout(() => { const s = $("#libSlot"); s && s.scrollIntoView({ behavior: "smooth" }); }, 60); };
-  const mk = $("#makeBtn"); if (mk) mk.onclick = () => makeBreakdown(mk);
   const view = $("#view");
   view.onclick = e => {
     const j = e.target.closest("[data-jump]"); if (j) { e.preventDefault(); jumpTo(+j.dataset.jump); return; }
@@ -625,18 +608,6 @@ window.addEventListener("scroll", () => {
   $("#progressFill").style.width = current && max > 0 ? Math.min(100, h.scrollTop / max * 100) + "%" : "0";
 }, { passive: true });
 
-async function makeBreakdown(btn){
-  const msg = $("#makeMsg"); btn.disabled = true;
-  const c = current; const id = c.id;
-  try {
-    const t = c.text || await loadText(c.m, c.i); c.text = t;
-    const ai = await import("./ai.js");
-    const data = await ai.generate({ refLabel: label(c.m, c.i), he: t.he, en: t.en, apiKey: localStorage.getItem(LS.key), onStatus: s => { if (msg) msg.textContent = s; } });
-    await saveLocalAnalysis(id, data);
-    if (current && current.id === id) { current.analysis = data; current.source = "local"; current.tab = "steps"; renderDaf(); toast("Breakdown saved on this device"); }
-  } catch (e) { if (msg) msg.textContent = (e && e.message) || "Couldn’t create the breakdown."; btn.disabled = false; }
-}
-
 /* ---------- review ---------- */
 function shuffle(a){ a = a.slice(); for (let k = a.length - 1; k > 0; k--) { const j = Math.floor(Math.random() * (k + 1)); [a[k], a[j]] = [a[j], a[k]]; } return a; }
 function buildQuiz(steps){
@@ -679,7 +650,7 @@ function renderReview(m, i){
   };
   if (current && current.id === id && current.analysis) return start(current.analysis);
   $("#view").innerHTML = `<div class="loading"><div class="spinner"></div>Preparing review…</div>`;
-  (async () => { const a = (await localAnalysis(id)) || await loadCloudAnalysis(id).catch(() => null); if (a) start(a); else { location.hash = hashFor(m, i); } })();
+  (async () => { const a = await loadCloudAnalysis(id).catch(() => null); if (a) start(a); else { location.hash = hashFor(m, i); } })();
 }
 function runQuiz(a){
   const qs = buildQuiz(a.steps); let n = 0, score = 0; const box = $("#quiz");
