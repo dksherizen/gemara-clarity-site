@@ -1,0 +1,2440 @@
+{
+  "mainTopic": "The sources and structure of תקיעת שופר: three sets of blasts, Torah versus rabbinic sets, the שופר requirement, and רבי אבהו's order of תשר״ת, תש״ת and תר״ת.",
+  "overview": "This amud finishes a ברייתא showing that ראש השנה and the יובל both need three sets of תקיעה–תרועה–תקיעה, nine blasts in all. It joins the two days through a גזירה שוה on the word 'שביעי'. The גמרא explains why that ברייתא mentions both a היקש and a גזירה שוה. It then brings a second ברייתא that learns the same pattern from the trumpets in the מדבר and carries it over to ראש השנה through the word 'תרועה'. That ברייתא and רבי יונתן disagree about how many of the three sets are required by the Torah and how many by the חכמים. Along the way the גמרא shows how each opinion finds sources for blowing only by day and for the laws of רב מתנא, and why ראש השנה needs a שופר and not trumpets. Next comes רבי אבהו's practice in קסרי. Because he was unsure whether a תרועה is groaning, wailing, or groaning followed by wailing, we blow תשר״ת, תש״ת and תר״ת. The amud ends by quoting the משנה about stretching one תקיעה to the length of two, and רבי יוחנן's ruling on it begins and continues on the next amud.",
+  "steps": [
+    {
+      "stepNumber": 1,
+      "hebrewStepName": "מימרא",
+      "title": "All shofar blasts of the seventh month must be alike",
+      "stepSummary": "The ברייתא points out that the words 'בחדש השביעי' are extra in the יובל verse, and learns from them that all שופר blasts of the seventh month follow one pattern.",
+      "simpleTranslation": "There was no need for the verse to say 'in the seventh month'. So why does it say 'in the seventh month'? To teach that all the שופר blasts of the seventh month must be like each other.",
+      "whatsHappening": "The ברייתא, which started on the previous daf, finishes a derivation: an extra phrase in the יובל verse teaches that the שופר blowing of יום הכפורים of the יובל and of ראש השנה must be the same.",
+      "deeperAnalysis": "The verse about the יובל already says 'ביום הכפורים', and everyone knows יום הכפורים falls in the seventh month. So the words 'בחדש השביעי' add no new fact. The ברייתא reads them as a link: the יובל blowing is tied to every blowing of that month, meaning ראש השנה.",
+      "keyTerms": [
+        {
+          "term": "תַּלְמוּד לוֹמַר",
+          "meaning": "'The verse teaches'. Used to introduce a source from a פסוק."
+        },
+        {
+          "term": "בַּחֹדֶשׁ הַשְּׁבִיעִי",
+          "meaning": "'In the seventh month', which is תשרי."
+        },
+        {
+          "term": "תְּרוּעוֹת",
+          "meaning": "Shofar soundings (plural of תרועה)."
+        },
+        {
+          "term": "זֶה כָּזֶה",
+          "meaning": "'This like that', meaning identical to each other."
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "שֶׁאֵין תַּלְמוּד לוֹמַר ״בַּחֹדֶשׁ הַשְּׁבִיעִי״,",
+          "english": "For there is no need for the verse to say 'in the seventh month',",
+          "notes": "The verse already said 'on the Day of Atonement', which is obviously in the seventh month."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וּמָה תַּלְמוּד לוֹמַר ״בַּחֹדֶשׁ הַשְּׁבִיעִי״ —",
+          "english": "so why does the verse say 'in the seventh month'?"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "שֶׁיְּהוּ כׇּל תְּרוּעוֹת",
+          "english": "So that all the soundings"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "הַחֹדֶשׁ הַשְּׁבִיעִי זֶה כָּזֶה.",
+          "english": "of the seventh month will be like one another.",
+          "notes": "The blowing on ראש השנה and on יום הכפורים of the יובל share one pattern."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "ראיה",
+      "triggerLanguage": "שֶׁאֵין תַּלְמוּד לוֹמַר ״בַּחֹדֶשׁ הַשְּׁבִיעִי״, וּמָה תַּלְמוּד לוֹמַר ״בַּחֹדֶשׁ הַשְּׁבִיעִי״",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Finishes a ברייתא derivation that began on the previous daf.",
+      "mimraCoreRuling": "All shofar soundings of תשרי (ראש השנה and יום הכפורים of יובל) must follow the same pattern."
+    },
+    {
+      "stepNumber": 2,
+      "hebrewStepName": "שאלה",
+      "title": "Source for three sets of three blasts",
+      "stepSummary": "The ברייתא asks for the source that the שופר is blown in three sets of three blasts.",
+      "simpleTranslation": "And where do we learn that there are three sets, each of three blasts?",
+      "whatsHappening": "The ברייתא opens a new question, setting up the next step: what is the source for the number of blasts?",
+      "deeperAnalysis": "We already know each תרועה needs a plain תקיעה before it and after it (from earlier in the ברייתא). That makes one set of three. The question is why there are three such sets.",
+      "keyTerms": [
+        {
+          "term": "וּמִנַּיִן",
+          "meaning": "'And from where?' Asks for a source."
+        },
+        {
+          "term": "שָׁלֹשׁ שֶׁל שָׁלֹשׁ שָׁלֹשׁ",
+          "meaning": "Three sets of three each (תקיעה–תרועה–תקיעה, three times)."
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וּמִנַּיִן לְשָׁלֹשׁ שֶׁל שָׁלֹשׁ שָׁלֹשׁ —",
+          "english": "And from where do we learn three sets of three each?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וּמִנַּיִן לְשָׁלֹשׁ שֶׁל שָׁלֹשׁ שָׁלֹשׁ",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        1
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Moves from 'the blowings are alike' to 'how many blasts are there'.",
+      "sheelahInformationSought": "A scriptural source for three sets of תקיעה–תרועה–תקיעה."
+    },
+    {
+      "stepNumber": 3,
+      "hebrewStepName": "תשובה",
+      "title": "Three verses each mention תרועה",
+      "stepSummary": "The answer is that the word תרועה appears in three verses: one about the יובל and two about ראש השנה.",
+      "simpleTranslation": "The verse teaches: 'You shall sound the שופר of תרועה', 'A rest, a remembrance of תרועה', 'It shall be a day of תרועה for you'.",
+      "whatsHappening": "The ברייתא answers the question by quoting three פסוקים, each of which mentions a תרועה.",
+      "deeperAnalysis": "Each mention of תרועה counts as one set, because each תרועה has a תקיעה before it and after it. Three mentions give three sets, which is nine blasts. The problem is that one verse (ויקרא כה:ט) is about the יובל, while the other two (ויקרא כג:כד; במדבר כט:א) are about ראש השנה.",
+      "keyTerms": [
+        {
+          "term": "וְהַעֲבַרְתָּ שׁוֹפַר תְּרוּעָה",
+          "meaning": "The יובל verse (ויקרא כה:ט), 'You shall sound the shofar of תרועה'."
+        },
+        {
+          "term": "שַׁבָּתוֹן זִכְרוֹן תְּרוּעָה",
+          "meaning": "The ראש השנה verse (ויקרא כג:כד)."
+        },
+        {
+          "term": "יוֹם תְּרוּעָה",
+          "meaning": "The ראש השנה verse (במדבר כט:א), 'a day of sounding'."
+        }
+      ],
+      "confusionAlert": "Don't assume all three verses are about ראש השנה. One is about יום הכפורים of the יובל. That is exactly why the next question is needed.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "תַּלְמוּד לוֹמַר: ״וְהַעֲבַרְתָּ שׁוֹפַר תְּרוּעָה״,",
+          "english": "The verse teaches: 'You shall sound the shofar of terua' (Yovel),"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "״שַׁבָּתוֹן זִכְרוֹן תְּרוּעָה״,",
+          "english": "'A solemn rest, a remembrance of terua' (Rosh HaShana),"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "״יוֹם תְּרוּעָה יִהְיֶה לָכֶם״.",
+          "english": "'It shall be a day of terua for you' (Rosh HaShana)."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "ראיה",
+      "triggerLanguage": "תַּלְמוּד לוֹמַר: ״וְהַעֲבַרְתָּ שׁוֹפַר תְּרוּעָה״",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        2
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Answers the question of step 2.",
+      "teshuvahAnswerProvided": "Three mentions of תרועה give three sets of blasts."
+    },
+    {
+      "stepNumber": 4,
+      "hebrewStepName": "שאלה",
+      "title": "How can verses about one day apply to the other?",
+      "stepSummary": "The ברייתא asks how a verse said about ראש השנה can apply to the יובל, and the reverse.",
+      "simpleTranslation": "And where do we learn to apply what is said about this day to that day, and what is said about that day to this day?",
+      "whatsHappening": "The ברייתא raises a problem with its own answer and sets up the next step: the three verses are split between two different days.",
+      "deeperAnalysis": "If each day counted only its own verses, ראש השנה would have two sets and the יובל only one. To reach three sets on each day, we need a rule that joins the verses of both days together.",
+      "keyTerms": [
+        {
+          "term": "לִיתֵּן אֶת הָאָמוּר",
+          "meaning": "'To apply what was said', meaning to carry a law from one place to another."
+        },
+        {
+          "term": "שֶׁל זֶה בָּזֶה",
+          "meaning": "'That of this one to that one'."
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וּמִנַּיִן לִיתֵּן אֶת הָאָמוּר",
+          "english": "And from where do we learn to apply what is said"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "שֶׁל זֶה בָּזֶה וְשֶׁל זֶה בָּזֶה —",
+          "english": "about this one to that one, and about that one to this one?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "קשיא",
+      "triggerLanguage": "וּמִנַּיִן לִיתֵּן אֶת הָאָמוּר שֶׁל זֶה בָּזֶה וְשֶׁל זֶה בָּזֶה",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        3
+      ],
+      "scopeOfStep": "proof_mechanism",
+      "relationToPreviousStep": "Points out the gap in step 3's proof: the verses belong to two different days.",
+      "sheelahInformationSought": "A mechanism that links the ראש השנה verses with the יובל verse."
+    },
+    {
+      "stepNumber": 5,
+      "hebrewStepName": "תשובה",
+      "title": "A גזירה שוה on the word 'seventh'",
+      "stepSummary": "Both the יובל verse and the ראש השנה verse use the word 'שביעי', so a גזירה שוה links them.",
+      "simpleTranslation": "The verse says 'seventh' here and 'seventh' there, to make a גזירה שוה.",
+      "whatsHappening": "The ברייתא answers with a גזירה שוה: the shared word 'השביעי' joins the two days, so all three mentions of תרועה apply to both.",
+      "deeperAnalysis": "ויקרא כה:ט (יובל) says 'בחדש השביעי', and ויקרא כג:כד (ראש השנה) also says 'בחדש השביעי'. The matching word works like a bridge. So both ראש השנה and the יובל get three sets of תקיעה–תרועה–תקיעה.",
+      "keyTerms": [
+        {
+          "term": "גְּזֵירָה שָׁוָה",
+          "meaning": "A traditional method of linking two laws through a shared word in the Torah."
+        },
+        {
+          "term": "שְׁבִיעִי",
+          "meaning": "'Seventh', the linking word in both verses."
+        }
+      ],
+      "whatToRemember": "Three mentions of תרועה, joined by the גזירה שוה of 'שביעי', give three sets of three blasts on both ראש השנה and the יובל.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "תַּלְמוּד לוֹמַר: ״שְׁבִיעִי״ ״שְׁבִיעִי״",
+          "english": "The verse teaches: 'seventh' and 'seventh'"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "לִגְזֵירָה שָׁוָה.",
+          "english": "for a verbal analogy."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "תַּלְמוּד לוֹמַר: ״שְׁבִיעִי״ ״שְׁבִיעִי״ לִגְזֵירָה שָׁוָה",
+      "macroPhase": "source_derivation",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        4
+      ],
+      "scopeOfStep": "proof_mechanism",
+      "relationToPreviousStep": "Answers step 4's question.",
+      "teshuvahAnswerProvided": "A גזירה שוה on 'שביעי' makes the verses of each day apply to the other."
+    },
+    {
+      "stepNumber": 6,
+      "hebrewStepName": "מסקנא",
+      "title": "The practical result: nine blasts and their lengths",
+      "stepSummary": "The ברייתא sums up: three sets make nine blasts. A תקיעה is as long as a תרועה, and a תרועה is as long as three שברים.",
+      "simpleTranslation": "How so? Three sets, which are nine blasts. A תקיעה is as long as a תרועה. A תרועה is as long as three שברים.",
+      "whatsHappening": "The ברייתא closes by stating the practical bottom line: how many blasts are blown and how long each one must be.",
+      "deeperAnalysis": "'שלש שהן תשע' turns the derivation into a number: three sets of three is nine blasts. Then it sets the length of each blast. The תקיעה must equal the תרועה, and the תרועה must equal three broken שברים sounds.",
+      "keyTerms": [
+        {
+          "term": "הָא כֵּיצַד",
+          "meaning": "'How so?' Introduces the practical summary."
+        },
+        {
+          "term": "שִׁיעוּר",
+          "meaning": "Required measure or length."
+        },
+        {
+          "term": "תְּקִיעָה",
+          "meaning": "A long, plain shofar blast."
+        },
+        {
+          "term": "שְׁבָרִים",
+          "meaning": "Medium 'broken' blasts."
+        }
+      ],
+      "whyThisMatters": "The length 'a תרועה equals three שברים' does not seem to match the משנה, which compares a תרועה to three יבבות (short whimpers). This question about what a תרועה really sounds like comes back in רבי אבהו's discussion later on this amud (steps 33–43).",
+      "whatToRemember": "Nine blasts in total. A תקיעה equals a תרועה in length, and a תרועה equals three שברים.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "הָא כֵּיצַד?",
+          "english": "How so?"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "שָׁלֹשׁ שֶׁהֵן תֵּשַׁע.",
+          "english": "Three sets, which are nine blasts."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "שִׁיעוּר תְּקִיעָה כִּתְרוּעָה,",
+          "english": "The length of a tekia is like that of a terua,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "שִׁיעוּר תְּרוּעָה כִּשְׁלֹשָׁה שְׁבָרִים.",
+          "english": "the length of a terua is like three shevarim."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "הָא כֵּיצַד? שָׁלֹשׁ שֶׁהֵן תֵּשַׁע",
+      "macroPhase": "conclusion",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        3,
+        5
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Turns the derivations of steps 3 and 5 into practical halacha.",
+      "maskanaFinalTakeaway": "Blow three sets of תקיעה–תרועה–תקיעה (nine blasts). A תקיעה is as long as a תרועה, and a תרועה is as long as three שברים."
+    },
+    {
+      "stepNumber": 7,
+      "hebrewStepName": "קשיא",
+      "title": "Why does the תנא switch derivation methods?",
+      "stepSummary": "The גמרא challenges the ברייתא: it first used a היקש and then a גזירה שוה for the same law.",
+      "simpleTranslation": "This תנא first brings the law from a היקש, and now he brings it from a גזירה שוה?",
+      "whatsHappening": "The גמרא notices that the ברייתא we just learned seems to use two different methods to prove the same thing, and asks why.",
+      "deeperAnalysis": "Earlier the ברייתא linked the blasts of the seventh month together through a היקש (based on 'בחדש השביעי'). Then it used a גזירה שוה from the word 'שביעי' to link יובל and ראש השנה. Why would one תנא need two separate methods for the same law?",
+      "keyTerms": [
+        {
+          "term": "הֶיקֵּשׁ",
+          "meaning": "A juxtaposition: learning a law because two things appear together in the same verse"
+        },
+        {
+          "term": "גְּזֵירָה שָׁוָה",
+          "meaning": "A verbal analogy: learning a law because the same word appears in two places"
+        },
+        {
+          "term": "מֵעִיקָּרָא",
+          "meaning": "At first, originally"
+        },
+        {
+          "term": "מַיְיתֵי לַהּ",
+          "meaning": "He brings it, derives it"
+        }
+      ],
+      "confusionAlert": "Do not mix up the two methods. A היקש links things placed side by side in the text. A גזירה שוה links two places that share the same word.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "הַאי תַּנָּא, מֵעִיקָּרָא",
+          "english": "This tanna, at first,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "מַיְיתֵי לַהּ בְּהֶיקֵּישָׁא,",
+          "english": "derives it through juxtaposition,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וְהַשְׁתָּא מַיְיתֵי לַהּ בִּגְזֵירָה שָׁוָה?",
+          "english": "and now he derives it through a verbal analogy?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "שאלה",
+      "triggerLanguage": "הַאי תַּנָּא, מֵעִיקָּרָא מַיְיתֵי לַהּ בְּהֶיקֵּישָׁא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [
+        1,
+        5
+      ],
+      "scopeOfStep": "proof_mechanism",
+      "relationToPreviousStep": "Challenges the ברייתא for using both the היקש of step 1 and the גזירה שוה of step 5 for the same law",
+      "kashyaTarget": "The ברייתא's use of both a היקש and a גזירה שוה",
+      "kashyaAttackLogic": "One תנא should not need two different proofs for one law, so switching methods looks inconsistent"
+    },
+    {
+      "stepNumber": 8,
+      "hebrewStepName": "תירוץ",
+      "title": "The juxtaposition is only a backup",
+      "stepSummary": "The תנא means that without the גזירה שוה he would use the היקש. Since the גזירה שוה works, the היקש is not needed.",
+      "simpleTranslation": "This is what he means: if there were no גזירה שוה, I would have learned it from the היקש. Now that it comes from the גזירה שוה, the היקש is not needed.",
+      "whatsHappening": "The גמרא answers that the תנא is not really relying on two proofs. The היקש was only a fallback.",
+      "deeperAnalysis": "The ברייתא is read as a 'would-have' statement. The real source is the גזירה שוה, and the היקש was mentioned only to show what we would use if the גזירה שוה did not exist. So there is no inconsistency.",
+      "keyTerms": [
+        {
+          "term": "הָכִי קָאָמַר",
+          "meaning": "This is what he means"
+        },
+        {
+          "term": "אִי לָאו",
+          "meaning": "If not for"
+        },
+        {
+          "term": "לָא צְרִיךְ",
+          "meaning": "Is not needed"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "הָכִי קָאָמַר:",
+          "english": "This is what he is saying:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אִי לָאו גְּזֵירָה שָׁוָה,",
+          "english": "If not for the verbal analogy,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "הֲוָה מַיְיתִינָא לַהּ בְּהֶיקֵּישָׁא.",
+          "english": "I would have derived it through juxtaposition."
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "הַשְׁתָּא דְּאָתְיָא בִּגְזֵירָה שָׁוָה",
+          "english": "Now that it comes through a verbal analogy,"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "— הֶיקֵּישָׁא לָא צְרִיךְ.",
+          "english": "the juxtaposition is not needed."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "הָכִי קָאָמַר: אִי לָאו גְּזֵירָה שָׁוָה",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        7
+      ],
+      "scopeOfStep": "proof_mechanism",
+      "relationToPreviousStep": "Answers the קשיא of step 7",
+      "terutzResolutionType": "Reinterpretation of the ברייתא's wording as a hypothetical fallback",
+      "terutzHavaAmina": "The תנא relies on two separate proofs at once",
+      "terutzMaskana": "The גזירה שוה is the real source, and the היקש is only a backup",
+      "whatToRemember": "In the first ברייתא, the גזירה שוה from 'שביעי' is the main source. The היקש is only a backup."
+    },
+    {
+      "stepNumber": 9,
+      "hebrewStepName": "מימרא",
+      "title": "Another תנא learns it from the wilderness trumpets",
+      "stepSummary": "The גמרא introduces a different ברייתא that learns the blasts from the trumpets in the מדבר. It opens by saying that תקיעה and תרועה are separate sounds.",
+      "simpleTranslation": "And this other תנא learns it through a גזירה שוה from the מדבר, as a ברייתא teaches: 'And you shall blow a תרועה' means a תקיעה is its own sound and a תרועה is its own sound.",
+      "whatsHappening": "The גמרא brings a second ברייתא with a different source: the trumpet blasts used in the מדבר. This step sets up the proof that comes in the next lines.",
+      "deeperAnalysis": "This תנא's source is the verses in פרשת בהעלותך about blowing the trumpets in the מדבר. His first claim is basic: the word 'ותקעתם' (תקיעה) and the word 'תרועה' describe two different sounds.",
+      "keyTerms": [
+        {
+          "term": "מִדְבָּר",
+          "meaning": "The wilderness, where trumpets were blown when the camps traveled"
+        },
+        {
+          "term": "דְּתַנְיָא",
+          "meaning": "As it is taught in a ברייתא"
+        },
+        {
+          "term": "בִּפְנֵי עַצְמָהּ",
+          "meaning": "On its own, a separate thing"
+        },
+        {
+          "term": "תְּקִיעָה",
+          "meaning": "A long straight blast"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְהַאי תַּנָּא מַיְיתֵי לַהּ",
+          "english": "And this tanna derives it"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "בִּגְזֵירָה שָׁוָה מִמִּדְבָּר,",
+          "english": "through a verbal analogy from the wilderness,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "דְּתַנְיָא: ״וּתְקַעְתֶּם תְּרוּעָה״",
+          "english": "as it is taught: \"And you shall sound a terua\""
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "— תְּקִיעָה בִּפְנֵי עַצְמָהּ",
+          "english": "a tekia is its own sound"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "וּתְרוּעָה בִּפְנֵי עַצְמָהּ.",
+          "english": "and a terua is its own sound."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "ראיה",
+      "triggerLanguage": "וְהַאי תַּנָּא מַיְיתֵי לַהּ בִּגְזֵירָה שָׁוָה מִמִּדְבָּר",
+      "macroPhase": "alternate_branch",
+      "branchRole": "alternative_approach",
+      "dependsOnStepNumbers": [
+        2,
+        3
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Presents a second תנא with a different source for the same pattern of blasts",
+      "mimraCoreRuling": "תקיעה and תרועה are two distinct sounds, learned from the trumpets in the מדבר"
+    },
+    {
+      "stepNumber": 10,
+      "hebrewStepName": "שאלה",
+      "title": "Maybe תקיעה and תרועה are the same sound?",
+      "stepSummary": "The ברייתא asks whether תקיעה and תרועה might just be two names for one sound.",
+      "simpleTranslation": "You say a תקיעה is its own sound and a תרועה is its own sound. Or perhaps they are one and the same?",
+      "whatsHappening": "The ברייתא tests its own claim by suggesting the opposite possibility. It is setting up the proof that comes next.",
+      "deeperAnalysis": "Since the verse 'ותקעתם תרועה' uses both words for one act, a reader might think they are synonyms. The ברייתא raises this so it can disprove it.",
+      "keyTerms": [
+        {
+          "term": "אַתָּה אוֹמֵר",
+          "meaning": "You say"
+        },
+        {
+          "term": "אוֹ אֵינוֹ אֶלָּא",
+          "meaning": "Or perhaps it is only"
+        },
+        {
+          "term": "אַחַת הִיא",
+          "meaning": "It is one and the same"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אַתָּה אוֹמֵר תְּקִיעָה בִּפְנֵי עַצְמָהּ",
+          "english": "You say a tekia is its own sound"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וּתְרוּעָה בִּפְנֵי עַצְמָהּ,",
+          "english": "and a terua is its own sound,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "אוֹ אֵינוֹ אֶלָּא",
+          "english": "or perhaps it is only"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "תְּקִיעָה וּתְרוּעָה אַחַת הִיא",
+          "english": "that a tekia and a terua are one and the same?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אַתָּה אוֹמֵר תְּקִיעָה בִּפְנֵי עַצְמָהּ וּתְרוּעָה בִּפְנֵי עַצְמָהּ, אוֹ אֵינוֹ אֶלָּא",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        9
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Questions the claim made in step 9",
+      "sheelahInformationSought": "Are תקיעה and תרועה really two different sounds, or synonyms?"
+    },
+    {
+      "stepNumber": 11,
+      "hebrewStepName": "ראיה",
+      "title": "Proof: blow a tekia but not a terua",
+      "stepSummary": "The verse says to blow a תקיעה but not a תרועה when gathering the people, so the two must be different.",
+      "simpleTranslation": "When the verse says, 'When gathering the assembly, you shall blow a תקיעה and not a תרועה,' you must conclude that a תקיעה is its own sound and a תרועה is its own sound.",
+      "whatsHappening": "The ברייתא proves that the two sounds are different from a verse that commands one and forbids the other.",
+      "deeperAnalysis": "If תקיעה and תרועה were the same sound, the Torah could not say 'blow one but not the other.' The verse's contrast shows that they are two separate sounds.",
+      "keyTerms": [
+        {
+          "term": "כְּשֶׁהוּא אוֹמֵר",
+          "meaning": "When it (the verse) says"
+        },
+        {
+          "term": "הַקְהֵל אֶת הַקָּהָל",
+          "meaning": "Gathering the assembly"
+        },
+        {
+          "term": "הֱוֵי אוֹמֵר",
+          "meaning": "You must conclude"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "כְּשֶׁהוּא אוֹמֵר:",
+          "english": "When it says:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "״וּבְהַקְהִיל אֶת הַקָּהָל",
+          "english": "\"But when the assembly is gathered,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "תִּתְקְעוּ וְלֹא תָרִיעוּ״,",
+          "english": "you shall sound a tekia but not a terua,\""
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "הֱוֵי אוֹמֵר:",
+          "english": "you must say:"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "תְּקִיעָה בִּפְנֵי עַצְמָהּ וּתְרוּעָה בִּפְנֵי עַצְמָהּ.",
+          "english": "a tekia is its own sound and a terua is its own sound."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "תשובה",
+      "triggerLanguage": "כְּשֶׁהוּא אוֹמֵר: וּבְהַקְהִיל אֶת הַקָּהָל תִּתְקְעוּ וְלֹא תָרִיעוּ",
+      "macroPhase": "source_derivation",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        10
+      ],
+      "scopeOfStep": "proof_mechanism",
+      "relationToPreviousStep": "Answers the question of step 10 with a verse",
+      "raayaObject": "That תקיעה and תרועה are distinct sounds",
+      "raayaSupportSource": "במדבר י:ז, 'ובהקהיל את הקהל תתקעו ולא תריעו'"
+    },
+    {
+      "stepNumber": 12,
+      "hebrewStepName": "ראיה",
+      "title": "A straight blast before and after each תרועה",
+      "stepSummary": "Verses show that a plain blast (פשוטה) comes before the תרועה and another comes after it.",
+      "simpleTranslation": "And how do we know a straight blast comes before it? The verse says 'ותקעתם תרועה,' with the תקיעה first. And how do we know a straight blast comes after it? The verse says 'תרועה יתקעו,' with the תקיעה after.",
+      "whatsHappening": "The ברייתא now proves the full pattern: תקיעה, then תרועה, then תקיעה, learned from the order of the words in two verses.",
+      "deeperAnalysis": "In 'ותקעתם תרועה' the תקיעה word comes first, so a plain blast comes before the תרועה. In 'תרועה יתקעו' the תקיעה word comes last, so a plain blast comes after it. Together they build the תקיעה-תרועה-תקיעה set.",
+      "keyTerms": [
+        {
+          "term": "פְּשׁוּטָה",
+          "meaning": "A straight, plain blast, meaning a תקיעה"
+        },
+        {
+          "term": "לְפָנֶיהָ",
+          "meaning": "Before it"
+        },
+        {
+          "term": "לְאַחֲרֶיהָ",
+          "meaning": "After it"
+        },
+        {
+          "term": "תַּלְמוּד לוֹמַר",
+          "meaning": "The verse teaches"
+        }
+      ],
+      "whyThisMatters": "This is the basis for every set of shofar blasts having a תקיעה on both sides of the middle sound.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וּמִנַּיִן שֶׁפְּשׁוּטָה לְפָנֶיהָ",
+          "english": "And from where do we know that a straight blast precedes it?"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "— תַּלְמוּד לוֹמַר: ״וּתְקַעְתֶּם תְּרוּעָה״.",
+          "english": "The verse states: \"And you shall sound a terua.\""
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וּמִנַּיִן שֶׁפְּשׁוּטָה לְאַחֲרֶיהָ",
+          "english": "And from where do we know that a straight blast follows it?"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "— תַּלְמוּד לוֹמַר: ״תְּרוּעָה יִתְקְעוּ״.",
+          "english": "The verse states: \"A terua you shall sound.\""
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "תשובה",
+      "triggerLanguage": "וּמִנַּיִן שֶׁפְּשׁוּטָה לְפָנֶיהָ",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        11
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Builds on step 11: now that the sounds are distinct, it shows their order",
+      "raayaObject": "A תקיעה comes before and after each תרועה",
+      "raayaSupportSource": "במדבר י:ה 'ותקעתם תרועה' and במדבר י:ו 'תרועה יתקעו'"
+    },
+    {
+      "stepNumber": 13,
+      "hebrewStepName": "מימרא",
+      "title": "רבי ישמעאל learns it from the word 'second time'",
+      "stepSummary": "רבי ישמעאל בנו של רבי יוחנן בן ברוקא says the extra word 'שנית' teaches that every תרועה has a תקיעה with it.",
+      "simpleTranslation": "רבי ישמעאל בנו של רבי יוחנן בן ברוקא says: That proof is not needed. The verse says 'ותקעתם תרועה שנית.' The word 'שנית' is not needed, so why does the verse say it? It is a בנין אב: wherever 'תרועה' is said, a תקיעה should come second to it.",
+      "whatsHappening": "A different תנא offers another source. He says the extra word 'שנית' (a second time) sets up a general rule for every תרועה.",
+      "deeperAnalysis": "The context already makes clear that this is the second set of blasts, so the word 'שנית' looks extra. רבי ישמעאל reads it as a בנין אב, a model case, teaching that every תרועה must have a תקיעה following it. This replaces the need for the separate verse 'תרועה יתקעו.'",
+      "keyTerms": [
+        {
+          "term": "אֵינוֹ צָרִיךְ",
+          "meaning": "It is not needed"
+        },
+        {
+          "term": "שֵׁנִית",
+          "meaning": "A second time"
+        },
+        {
+          "term": "בִּנְיַן אָב",
+          "meaning": "A model case from which a general rule is built"
+        },
+        {
+          "term": "שֶׁאֵין תַּלְמוּד לוֹמַר",
+          "meaning": "The verse did not need to say"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "רַבִּי יִשְׁמָעֵאל בְּנוֹ שֶׁל רַבִּי יוֹחָנָן בֶּן בְּרוֹקָא אוֹמֵר:",
+          "english": "Rabbi Yishmael, son of Rabbi Yoḥanan ben Beroka, says:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אֵינוֹ צָרִיךְ,",
+          "english": "It is not necessary,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "הֲרֵי הוּא אוֹמֵר: ״וּתְקַעְתֶּם תְּרוּעָה שֵׁנִית״,",
+          "english": "for it says: \"And you shall sound a terua a second time,\""
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "שֶׁאֵין תַּלְמוּד לוֹמַר ״שֵׁנִית״,",
+          "english": "since there was no need for the verse to say \"a second time.\""
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "וּמָה תַּלְמוּד לוֹמַר ״שֵׁנִית״",
+          "english": "So why does the verse say \"a second time\"?"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "— זֶה בָּנָה אָב,",
+          "english": "This builds a paradigm:"
+        },
+        {
+          "phraseNumber": 7,
+          "aramaic": "שֶׁכׇּל מָקוֹם שֶׁנֶּאֱמַר ״תְּרוּעָה״",
+          "english": "that wherever \"terua\" is stated,"
+        },
+        {
+          "phraseNumber": 8,
+          "aramaic": "— תְּהֵא תְּקִיעָה שְׁנִיָּה לָהּ.",
+          "english": "a tekia should be second to it."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "דחיה",
+      "triggerLanguage": "רַבִּי יִשְׁמָעֵאל בְּנוֹ שֶׁל רַבִּי יוֹחָנָן בֶּן בְּרוֹקָא אוֹמֵר: אֵינוֹ צָרִיךְ",
+      "macroPhase": "alternate_branch",
+      "branchRole": "alternative_approach",
+      "dependsOnStepNumbers": [
+        12
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Offers an alternative source to the one in step 12",
+      "mimraCoreRuling": "The extra word 'שנית' is a בנין אב teaching that every תרועה is accompanied by a תקיעה after it"
+    },
+    {
+      "stepNumber": 14,
+      "hebrewStepName": "שאלה",
+      "title": "How do we know this applies to ראש השנה?",
+      "stepSummary": "The ברייתא asks how the rule learned from the מדבר reaches ראש השנה.",
+      "simpleTranslation": "I only know this about the מדבר. How do we know it applies to ראש השנה?",
+      "whatsHappening": "The ברייתא notes that so far everything was learned from the trumpets in the מדבר. Now it asks how to carry the rule over to ראש השנה.",
+      "deeperAnalysis": "The verses so far deal with trumpets in the מדבר, not the shofar on ראש השנה. A link is needed to apply the same pattern there.",
+      "keyTerms": [
+        {
+          "term": "אֵין לִי אֶלָּא",
+          "meaning": "I only know (this case)"
+        },
+        {
+          "term": "רֹאשׁ הַשָּׁנָה",
+          "meaning": "The New Year festival when the shofar is blown"
+        },
+        {
+          "term": "מִנַּיִן",
+          "meaning": "From where do we know"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֵין לִי אֶלָּא בַּמִּדְבָּר,",
+          "english": "I have this only for the wilderness;"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "בְּרֹאשׁ הַשָּׁנָה מִנַּיִן?",
+          "english": "from where do we know it for Rosh HaShana?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אֵין לִי אֶלָּא בַּמִּדְבָּר, בְּרֹאשׁ הַשָּׁנָה מִנַּיִן",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        12,
+        13
+      ],
+      "scopeOfStep": "inference",
+      "relationToPreviousStep": "Extends the rule from steps 12-13 and asks how it applies to ראש השנה",
+      "sheelahInformationSought": "The source for applying the מדבר pattern to ראש השנה"
+    },
+    {
+      "stepNumber": 15,
+      "hebrewStepName": "תשובה",
+      "title": "The word 'תרועה' links them",
+      "stepSummary": "A גזירה שוה on the word 'תרועה', found both in the מדבר verses and in the ראש השנה verses, carries the rule over.",
+      "simpleTranslation": "The verse says 'תרועה' here and 'תרועה' there, for a גזירה שוה.",
+      "whatsHappening": "The ברייתא answers that the shared word 'תרועה' links the מדבר and ראש השנה, so the same blasting pattern applies.",
+      "deeperAnalysis": "The word 'תרועה' appears for the trumpets in the מדבר and also for ראש השנה. Through a גזירה שוה, the pattern of a תקיעה before and after every תרועה moves from the מדבר to ראש השנה. This completes this תנא's source, which differs from the first ברייתא's link through 'שביעי'.",
+      "keyTerms": [
+        {
+          "term": "לִגְזֵירָה שָׁוָה",
+          "meaning": "For the purpose of a verbal analogy"
+        },
+        {
+          "term": "תְּרוּעָה",
+          "meaning": "A broken or wavering blast, the middle sound in each set"
+        }
+      ],
+      "whatToRemember": "Two sources for the blasting pattern: the first ברייתא links ראש השנה and יובל through 'שביעי'. This ברייתא learns the pattern from the מדבר and links it to ראש השנה through the shared word 'תרועה'.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "תַּלְמוּד לוֹמַר: ״תְּרוּעָה״ ״תְּרוּעָה״",
+          "english": "The verse states \"terua\" here and \"terua\" there,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "לִגְזֵירָה שָׁוָה.",
+          "english": "for a verbal analogy."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "תַּלְמוּד לוֹמַר: תְּרוּעָה תְּרוּעָה לִגְזֵירָה שָׁוָה",
+      "macroPhase": "conclusion",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        14
+      ],
+      "scopeOfStep": "proof_mechanism",
+      "relationToPreviousStep": "Answers the question of step 14",
+      "teshuvahAnswerProvided": "A גזירה שוה on the word 'תרועה' applies the מדבר pattern to ראש השנה",
+      "maskanaFinalTakeaway": "Through this תנא's route, the תקיעה-תרועה-תקיעה pattern from the מדבר applies to ראש השנה"
+    },
+    {
+      "stepNumber": 16,
+      "hebrewStepName": "מימרא",
+      "title": "Three verses about ראש השנה each mention תרועה",
+      "stepSummary": "The ברייתא counts three mentions of תרועה in the ראש השנה verses and gives each one two תקיעות.",
+      "simpleTranslation": "Three תרועות are mentioned for ראש השנה: 'A solemn rest, a remembrance of תרועה', 'A day of תרועה', and 'You shall sound the שופר of תרועה'. Each one gets two תקיעות.",
+      "whatsHappening": "The ברייתא now applies the rules it just learned to ראש השנה. It counts how many times the Torah says תרועה about this day.",
+      "deeperAnalysis": "Step 12 taught that every תרועה has a plain blast before it and after it. Step 15 carried that rule over to ראש השנה. Since the ראש השנה verses say תרועה three times, each mention gets one תקיעה before and one after.",
+      "keyTerms": [
+        {
+          "term": "שַׁבָּתוֹן",
+          "meaning": "A solemn day of rest (ויקרא כג:כד)"
+        },
+        {
+          "term": "זִכְרוֹן תְּרוּעָה",
+          "meaning": "A remembrance of the תרועה blast"
+        },
+        {
+          "term": "יוֹם תְּרוּעָה",
+          "meaning": "A day of תרועה (במדבר כט:א)"
+        },
+        {
+          "term": "וְהַעֲבַרְתָּ שׁוֹפַר",
+          "meaning": "You shall sound the שופר (ויקרא כה:ט, said about יובל)"
+        },
+        {
+          "term": "לְכׇל אַחַת וְאַחַת",
+          "meaning": "For each and every one"
+        }
+      ],
+      "confusionAlert": "The third verse, 'וְהַעֲבַרְתָּ שׁוֹפַר תְּרוּעָה', is said about יום כיפור of the יובל year, not about ראש השנה itself. The ברייתא does not say why it still counts it toward ראש השנה. Presumably it relies on the 'שביעי' link between the two days, which the first ברייתא made explicit.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְשָׁלֹשׁ תְּרוּעוֹת נֶאֶמְרוּ בְּרֹאשׁ הַשָּׁנָה:",
+          "english": "And three teruot are stated regarding Rosh HaShana:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "״שַׁבָּתוֹן זִכְרוֹן תְּרוּעָה״,",
+          "english": "'A solemn rest, a memorial of terua',",
+          "notes": "Leviticus 23:24"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "״יוֹם תְּרוּעָה״,",
+          "english": "'A day of terua',",
+          "notes": "Numbers 29:1"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "״וְהַעֲבַרְתָּ שׁוֹפַר תְּרוּעָה״,",
+          "english": "'Then you shall sound the shofar of terua',",
+          "notes": "Leviticus 25:9"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "וּשְׁתֵּי תְּקִיעוֹת לְכׇל אַחַת וְאַחַת.",
+          "english": "and two tekiot for each and every one.",
+          "notes": "One before and one after each terua"
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "ראיה",
+      "triggerLanguage": "וְשָׁלֹשׁ תְּרוּעוֹת נֶאֶמְרוּ בְּרֹאשׁ הַשָּׁנָה",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        12,
+        15
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Applies the rule that was carried over by the גזירה שוה to the actual ראש השנה verses.",
+      "mimraCoreRuling": "There are three mentions of תרועה for ראש השנה, and each has two תקיעות."
+    },
+    {
+      "stepNumber": 17,
+      "hebrewStepName": "מסקנא",
+      "title": "The total: three תרועות and six תקיעות",
+      "stepSummary": "The ברייתא sums up: three תרועות and six תקיעות, two sets from the Torah and one from the חכמים.",
+      "simpleTranslation": "So we have learned that three תרועות and six תקיעות are said for ראש השנה. Two come from the Torah and one comes from the words of the חכמים.",
+      "whatsHappening": "The ברייתא adds up the count from the last step. It then says that not all three sets have the same level of obligation.",
+      "deeperAnalysis": "Three תרועות with two תקיעות each gives six תקיעות. The new point is the split: two sets are a Torah requirement and one is only from the חכמים. The next step explains which verse is the 'weaker' one.",
+      "keyTerms": [
+        {
+          "term": "מָצִינוּ לְמֵדִין",
+          "meaning": "We find that we have learned (a summing-up phrase)"
+        },
+        {
+          "term": "מִדִּבְרֵי תוֹרָה",
+          "meaning": "From the Torah (a Torah-level obligation)"
+        },
+        {
+          "term": "מִדִּבְרֵי סוֹפְרִים",
+          "meaning": "From the words of the Sages (a rabbinic-level obligation)"
+        }
+      ],
+      "whatToRemember": "The basic structure of the shofar blowing is 3 × (תקיעה–תרועה–תקיעה) = nine blasts in total.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מָצִינוּ לְמֵדִין:",
+          "english": "We are found to have learned:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "שָׁלֹשׁ תְּרוּעוֹת וְשֵׁשׁ תְּקִיעוֹת",
+          "english": "three teruot and six tekiot"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "נֶאֶמְרוּ בְּרֹאשׁ הַשָּׁנָה,",
+          "english": "are stated regarding Rosh HaShana,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "שְׁתַּיִם מִדִּבְרֵי תוֹרָה,",
+          "english": "two by the words of the Torah,"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "וְאַחַת מִדִּבְרֵי סוֹפְרִים.",
+          "english": "and one by the words of the Sages."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "מָצִינוּ לְמֵדִין",
+      "macroPhase": "conclusion",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        16
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Totals the count from step 16 and adds the Torah/rabbinic split.",
+      "maskanaFinalTakeaway": "Three תרועות and six תקיעות on ראש השנה: two sets from the Torah, one from the חכמים."
+    },
+    {
+      "stepNumber": 18,
+      "hebrewStepName": "מימרא",
+      "title": "Which two verses are from the Torah and which verse teaches something else",
+      "stepSummary": "The verses 'שבתון זכרון תרועה' and 'והעברת שופר תרועה' count as Torah-level. 'יום תרועה יהיה לכם' is used to teach something else.",
+      "simpleTranslation": "'A solemn rest, a remembrance of תרועה' and 'You shall sound the שופר of תרועה' are from the Torah. 'A day of תרועה it shall be for you' comes to teach its own lesson.",
+      "whatsHappening": "The ברייתא explains its split by saying which verses count toward the Torah obligation. One verse is set aside because it is needed for a different lesson.",
+      "deeperAnalysis": "A verse that is 'used up' teaching another lesson cannot also create a full Torah obligation. According to the Sefaria explanation, 'יום תרועה' is used for the גזירה שוה from step 15. So its third תרועה is only hinted at, and the חכמים made it an obligation.",
+      "keyTerms": [
+        {
+          "term": "לְתַלְמוּדוֹ הוּא בָּא",
+          "meaning": "It comes for its own teaching (the verse is needed for a different lesson)"
+        },
+        {
+          "term": "יִהְיֶה לָכֶם",
+          "meaning": "It shall be for you"
+        }
+      ],
+      "confusionAlert": "'מדברי סופרים' here does not mean the חכמים made it up with no source. The verse does hint at it, but because the verse is busy teaching something else, the obligation is only rabbinic.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "״שַׁבָּתוֹן זִכְרוֹן תְּרוּעָה״,",
+          "english": "'A solemn rest, a memorial of terua',"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "״וְהַעֲבַרְתָּ שׁוֹפַר תְּרוּעָה״ — מִדִּבְרֵי תוֹרָה.",
+          "english": "'Then you shall sound the shofar of terua' — are by the words of the Torah."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "״יוֹם תְּרוּעָה יִהְיֶה לָכֶם״ —",
+          "english": "'It shall be a day of terua for you' —"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "לְתַלְמוּדוֹ הוּא בָּא.",
+          "english": "comes for its own teaching.",
+          "notes": "According to Sefaria, for the verbal analogy (גזירה שוה)"
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "תשובה",
+      "triggerLanguage": "״יוֹם תְּרוּעָה יִהְיֶה לָכֶם״ — לְתַלְמוּדוֹ הוּא בָּא",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        15,
+        17
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Explains the 'two Torah, one rabbinic' split stated in step 17.",
+      "mimraCoreRuling": "Two verses create a Torah obligation. 'יום תרועה' is used for another lesson, so its תרועה is rabbinic."
+    },
+    {
+      "stepNumber": 19,
+      "hebrewStepName": "מימרא",
+      "title": "רבי יונתן: only one set is from the Torah",
+      "stepSummary": "רבי שמואל בר נחמני in the name of רבי יונתן says only 'והעברת שופר תרועה' is Torah-level. The other two verses each teach something else.",
+      "simpleTranslation": "רבי שמואל בר נחמני said in the name of רבי יונתן: one is from the Torah and two are from the חכמים. 'You shall sound the שופר of תרועה' is from the Torah. 'A solemn rest, a remembrance of תרועה' and 'A day of תרועה it shall be for you' each come to teach their own lesson.",
+      "whatsHappening": "A different אמורא disagrees with the ברייתא's split. He says two of the verses are needed for other lessons, so only one set of blasts is a Torah obligation.",
+      "deeperAnalysis": "The total count stays the same: three תרועות and six תקיעות. The disagreement is only about the level of obligation. רבי יונתן takes away the Torah status of 'שבתון זכרון תרועה' as well, because he holds it is also needed for its own lesson.",
+      "keyTerms": [
+        {
+          "term": "רַבִּי שְׁמוּאֵל בַּר נַחְמָנִי",
+          "meaning": "An אמורא from ארץ ישראל who reports teachings of רבי יונתן"
+        },
+        {
+          "term": "רַבִּי יוֹנָתָן",
+          "meaning": "An early אמורא from ארץ ישראל"
+        },
+        {
+          "term": "אַחַת ... וּשְׁתַּיִם",
+          "meaning": "One (from the Torah) and two (from the חכמים), the reverse of the ברייתא"
+        }
+      ],
+      "whyThisMatters": "This shows that the Torah requires at least one full set of תקיעה–תרועה–תקיעה. Everyone agrees that we blow three sets in practice.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "רַבִּי שְׁמוּאֵל בַּר נַחְמָנִי אָמַר רַבִּי יוֹנָתָן:",
+          "english": "Rabbi Shmuel bar Naḥmani said that Rabbi Yonatan said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אַחַת מִדִּבְרֵי תוֹרָה,",
+          "english": "One is by the words of the Torah,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וּשְׁתַּיִם מִדִּבְרֵי סוֹפְרִים.",
+          "english": "and two are by the words of the Sages."
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "״וְהַעֲבַרְתָּ שׁוֹפַר תְּרוּעָה״ — מִדִּבְרֵי תוֹרָה.",
+          "english": "'Then you shall sound the shofar of terua' — is by the words of the Torah."
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "״שַׁבָּתוֹן זִכְרוֹן תְּרוּעָה״,",
+          "english": "'A solemn rest, a memorial of terua',"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "וְ״יוֹם תְּרוּעָה יִהְיֶה לָכֶם״ —",
+          "english": "and 'It shall be a day of terua for you' —"
+        },
+        {
+          "phraseNumber": 7,
+          "aramaic": "לְתַלְמוּדוֹ הוּא בָּא.",
+          "english": "come for their own teaching."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "רַבִּי שְׁמוּאֵל בַּר נַחְמָנִי אָמַר רַבִּי יוֹנָתָן",
+      "macroPhase": "alternate_branch",
+      "branchRole": "alternative_approach",
+      "dependsOnStepNumbers": [
+        17,
+        18
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Disputes the ברייתא's 'two Torah, one rabbinic' split and reverses it.",
+      "mimraCoreRuling": "Only one set of תקיעה–תרועה–תקיעה is from the Torah. The other two sets are rabbinic."
+    },
+    {
+      "stepNumber": 20,
+      "hebrewStepName": "שאלה",
+      "title": "What lesson does the verse come to teach?",
+      "stepSummary": "The גמרא asks what 'it comes for its own teaching' means, focusing on the verse 'יום תרועה'.",
+      "simpleTranslation": "What does 'it comes for its own teaching' mean?",
+      "whatsHappening": "The גמרא stops to ask what other lesson the verse 'יום תרועה יהיה לכם' teaches. This sets up the answer in the next step.",
+      "deeperAnalysis": "The claim that a verse is 'used up' only works if we can name the lesson it teaches. So the גמרא asks for that lesson directly.",
+      "keyTerms": [
+        {
+          "term": "מַאי",
+          "meaning": "What? (Aramaic)"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מַאי לְתַלְמוּדוֹ הוּא בָּא?",
+          "english": "What is meant by 'it comes for its own teaching'?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "מַאי לְתַלְמוּדוֹ הוּא בָּא",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        19
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Asks for the specific lesson behind the phrase used in step 19.",
+      "sheelahInformationSought": "What other law is learned from 'יום תרועה יהיה לכם'?"
+    },
+    {
+      "stepNumber": 21,
+      "hebrewStepName": "תשובה",
+      "title": "The verse teaches: by day and not at night",
+      "stepSummary": "The word 'יום' teaches that the שופר is blown during the day and not at night.",
+      "simpleTranslation": "It is needed to teach: by day and not at night.",
+      "whatsHappening": "The גמרא answers that 'יום תרועה' teaches that the שופר must be blown in the daytime.",
+      "deeperAnalysis": "The word 'יום' (day) in the verse is what teaches this law. Since the verse is busy teaching when to blow, it does not also create a separate Torah-level set of blasts.",
+      "keyTerms": [
+        {
+          "term": "מִיבְּעֵי",
+          "meaning": "It is needed (for a different lesson)"
+        },
+        {
+          "term": "בַּיּוֹם וְלֹא בַּלַּיְלָה",
+          "meaning": "By day and not at night"
+        }
+      ],
+      "whatToRemember": "Shofar blowing on ראש השנה must take place during the day. A blast at night does not count.",
+      "whyThisMatters": "This is the source for the practical rule that the מצוה of שופר can only be fulfilled in the daytime.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מִיבְּעֵי: בַּיּוֹם וְלֹא בַּלַּיְלָה.",
+          "english": "It is needed to teach: by day and not at night."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "מִיבְּעֵי: בַּיּוֹם וְלֹא בַּלַּיְלָה",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        20
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Answers the question of step 20.",
+      "teshuvahAnswerProvided": "'יום תרועה' teaches that the שופר is blown by day and not at night."
+    },
+    {
+      "stepNumber": 22,
+      "hebrewStepName": "שאלה",
+      "title": "Where does the other opinion learn 'by day, not by night'?",
+      "stepSummary": "The גמרא asks how the other opinion, who does not use 'יום תרועה' for this law, knows that שופר must be blown by day.",
+      "simpleTranslation": "And the other opinion: where does he learn that it is by day and not at night?",
+      "whatsHappening": "The גמרא turns to the other opinion in the debate and asks for his source that שופר is blown by day. This sets up the answer in the next step.",
+      "deeperAnalysis": "In step 21 we learned that the word 'יום' in 'יום תרועה' teaches that שופר is blown by day. But the other opinion uses that verse for a different purpose. So the גמרא needs to know where he gets the day-only rule.",
+      "keyTerms": [
+        {
+          "term": "וְאִידַּךְ",
+          "meaning": "And the other one (the other opinion)"
+        },
+        {
+          "term": "בַּיּוֹם וְלֹא בַּלַּיְלָה",
+          "meaning": "By day and not at night"
+        },
+        {
+          "term": "מְנָא לֵיהּ",
+          "meaning": "From where does he know it?"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְאִידַּךְ,",
+          "english": "And the other opinion,",
+          "notes": "The opinion that does not use 'יום תרועה' for the day-only rule"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "בַּיּוֹם וְלֹא בַּלַּיְלָה מְנָא לֵיהּ?",
+          "english": "by day and not at night, from where does he learn it?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וְאִידַּךְ, בַּיּוֹם וְלֹא בַּלַּיְלָה מְנָא לֵיהּ",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        19,
+        20,
+        21
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Asks how the other opinion gets the law that step 21 derived from 'יום'",
+      "sheelahInformationSought": "The other opinion's source for blowing שופר only by day"
+    },
+    {
+      "stepNumber": 23,
+      "hebrewStepName": "תשובה",
+      "title": "He learns it from 'On the Day of Atonement'",
+      "stepSummary": "The other opinion learns the day-only rule from the יובל verse 'ביום הכפורים'.",
+      "simpleTranslation": "He learns it from 'On the Day of Atonement.'",
+      "whatsHappening": "The גמרא answers that the other opinion learns the day-only rule from the יובל verse, which says the שופר is blown 'ביום הכפורים', on the day of יום כפור.",
+      "deeperAnalysis": "The verse about יובל (ויקרא כה:ט) says to blow the שופר 'on the Day of Atonement'. The word 'day' shows it is done in daytime. The other opinion applies this to ראש השנה too.",
+      "keyTerms": [
+        {
+          "term": "נָפְקָא לֵיהּ",
+          "meaning": "He derives it (literally: it comes out for him)"
+        },
+        {
+          "term": "בְּיוֹם הַכִּפּוּרִים",
+          "meaning": "On the Day of Atonement (from the יובל verse)"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "נָפְקָא לֵיהּ",
+          "english": "He derives it"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "מִ״בְּיוֹם הַכִּפּוּרִים״.",
+          "english": "from 'On the Day of Atonement.'",
+          "notes": "ויקרא כה:ט, about blowing שופר in the יובל year"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "נָפְקָא לֵיהּ מִ״בְּיוֹם הַכִּפּוּרִים״",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        22
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Answers the question of step 22",
+      "teshuvahAnswerProvided": "The day-only rule comes from 'ביום הכפורים' in the יובל verse"
+    },
+    {
+      "stepNumber": 24,
+      "hebrewStepName": "קשיא",
+      "title": "Then he should learn the plain blasts from that verse too",
+      "stepSummary": "The גמרא challenges: if he learns from the יובל verse, he should also learn from it the plain תקיעה before and after each תרועה.",
+      "simpleTranslation": "If he learns from 'On the Day of Atonement', let him also learn from it a plain blast before it and a plain blast after it!",
+      "whatsHappening": "The גמרא pushes back on the answer. If this opinion uses the יובל verse for one law, why not use it for the plain blasts too?",
+      "deeperAnalysis": "The same יובל verse has the words 'וְהַעֲבַרְתָּ' and 'תַּעֲבִירוּ', which others use to teach a תקיעה before and after each תרועה. The other opinion learns that law from the verses about the desert instead. The גמרא asks why he goes elsewhere when the יובל verse is already his source.",
+      "keyTerms": [
+        {
+          "term": "יָלֵיף",
+          "meaning": "He learns / derives"
+        },
+        {
+          "term": "נִגְמוֹר נָמֵי מִינֵּיהּ",
+          "meaning": "Let us also learn from it"
+        },
+        {
+          "term": "פְּשׁוּטָה",
+          "meaning": "A plain, straight blast (a תקיעה)"
+        },
+        {
+          "term": "לְפָנֶיהָ וּלְאַחֲרֶיהָ",
+          "meaning": "Before it and after it (before and after the תרועה)"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אִי ״בְּיוֹם הַכִּפּוּרִים״ יָלֵיף,",
+          "english": "If he learns from 'On the Day of Atonement,'"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "נִגְמוֹר נָמֵי מִינֵּיהּ",
+          "english": "let us also learn from it"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "לִפְשׁוּטָה לְפָנֶיהָ",
+          "english": "a plain blast before it"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וּפְשׁוּטָה לְאַחֲרֶיהָ!",
+          "english": "and a plain blast after it!"
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "שאלה",
+      "triggerLanguage": "אִי ״בְּיוֹם הַכִּפּוּרִים״ יָלֵיף, נִגְמוֹר נָמֵי מִינֵּיהּ",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        23
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Challenges the answer of step 23 by asking that it be applied consistently",
+      "kashyaTarget": "The other opinion's use of the יובל verse for only one law",
+      "kashyaAttackLogic": "If the יובל verse is a valid source for him, he should learn all its laws from it, including the plain blasts, and not need the desert verses"
+    },
+    {
+      "stepNumber": 25,
+      "hebrewStepName": "תירוץ",
+      "title": "The words 'וְהַעֲבַרְתָּ' and 'תַּעֲבִירוּ' do not mean a plain blast to him",
+      "stepSummary": "The other opinion does not read 'וְהַעֲבַרְתָּ' and 'תַּעֲבִירוּ' as teaching the plain blasts.",
+      "simpleTranslation": "'And you shall pass' and 'you shall pass' do not mean that to them.",
+      "whatsHappening": "The גמרא answers that this opinion does not read the words 'וְהַעֲבַרְתָּ' and 'תַּעֲבִירוּ' as meaning a plain תקיעה.",
+      "deeperAnalysis": "The plain-blast law depends on reading those two words as a תקיעה. This opinion uses the verse only for 'day', and reads those words differently. So he must learn the plain blasts from somewhere else.",
+      "keyTerms": [
+        {
+          "term": "וְהַעֲבַרְתָּ",
+          "meaning": "And you shall sound / pass (the שופר)"
+        },
+        {
+          "term": "תַּעֲבִירוּ",
+          "meaning": "You shall sound / pass (the שופר)"
+        },
+        {
+          "term": "לָא מַשְׁמַע לְהוּ",
+          "meaning": "It does not mean that to them"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "״וְהַעֲבַרְתָּ״ ״תַּעֲבִירוּ״",
+          "english": "'And you shall pass,' 'you shall pass'"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "לָא מַשְׁמַע לְהוּ.",
+          "english": "do not mean that to them."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "״וְהַעֲבַרְתָּ״ ״תַּעֲבִירוּ״ לָא מַשְׁמַע לְהוּ",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        24
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Answers the challenge of step 24",
+      "terutzResolutionType": "Different reading of the verse's words",
+      "terutzHavaAmina": "The whole יובל verse, including 'וְהַעֲבַרְתָּ' and 'תַּעֲבִירוּ', should teach this opinion the plain blasts",
+      "terutzMaskana": "To this opinion those words do not mean a plain blast, so only the word 'day' is used from this verse"
+    },
+    {
+      "stepNumber": 26,
+      "hebrewStepName": "שאלה",
+      "title": "Then what does he learn from those words?",
+      "stepSummary": "The גמרא asks what this opinion learns from 'וְהַעֲבַרְתָּ' and 'תַּעֲבִירוּ' if not the plain blasts.",
+      "simpleTranslation": "Rather, what do they learn from them?",
+      "whatsHappening": "Since this opinion does not use the two words for plain blasts, the גמרא asks what they do teach him. This sets up the answer in the next step.",
+      "deeperAnalysis": "The Torah does not use words for nothing. If these words do not teach the plain blasts, they must teach something else. The גמרא wants to know what.",
+      "keyTerms": [
+        {
+          "term": "אֶלָּא",
+          "meaning": "Rather / if so"
+        },
+        {
+          "term": "מַאי דָּרְשִׁי בְּהוּ",
+          "meaning": "What do they expound from them?"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֶלָּא מַאי דָּרְשִׁי בְּהוּ?",
+          "english": "Rather, what do they learn from them?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אֶלָּא מַאי דָּרְשִׁי בְּהוּ",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        25
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Follows from step 25: if the words are not about plain blasts, what are they for?",
+      "sheelahInformationSought": "What 'וְהַעֲבַרְתָּ' and 'תַּעֲבִירוּ' teach according to this opinion"
+    },
+    {
+      "stepNumber": 27,
+      "hebrewStepName": "תשובה",
+      "title": "They teach the laws of רב מתנא",
+      "stepSummary": "'וְהַעֲבַרְתָּ' teaches that the שופר is used the way the animal carried it. 'תַּעֲבִירוּ' teaches that we must blow it, not just carry it around.",
+      "simpleTranslation": "'And you shall pass' is like רב מתנא. For רב מתנא said: 'And you shall pass' means in the way it was carried. 'You shall pass' is said so that we would not think the Merciful One means we should just carry it by hand.",
+      "whatsHappening": "The גמרא answers that this opinion learns two laws of רב מתנא from the two words. One law is about the shape of the שופר, and the other is about how the מצוה is done.",
+      "deeperAnalysis": "'וְהַעֲבַרְתָּ' can mean 'carry'. It teaches that the שופר must keep the shape it had on the animal's head: the narrow end stays narrow and the wide end stays wide. 'תַּעֲבִירוּ' is added so we do not think the מצוה is just to carry the שופר through the land. It must be blown.",
+      "keyTerms": [
+        {
+          "term": "רַב מַתְנָא",
+          "meaning": "רב מתנא, an אמורא"
+        },
+        {
+          "term": "דֶּרֶךְ הַעֲבָרָתוֹ",
+          "meaning": "The way it was carried (on the animal's head)"
+        },
+        {
+          "term": "רַחֲמָנָא",
+          "meaning": "The Merciful One (the Torah)"
+        },
+        {
+          "term": "נְעַבְּרֵיהּ בְּיָד",
+          "meaning": "Let us carry it by hand"
+        }
+      ],
+      "confusionAlert": "The phrase 'נעבריה ביד' is NOT what the Torah commands. It is the mistake the word 'תעבירו' prevents: we might have thought it is enough to just carry the שופר around.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "״וְהַעֲבַרְתָּ״ כִּדְרַב מַתְנָא.",
+          "english": "'And you shall pass' is as רב מתנא taught."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "דְּאָמַר רַב מַתְנָא:",
+          "english": "For רב מתנא said:"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "״וְהַעֲבַרְתָּ״ — דֶּרֶךְ הַעֲבָרָתוֹ,",
+          "english": "'And you shall pass' means in the way it was carried,",
+          "notes": "The שופר keeps its natural shape from the animal's head"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "״תַּעֲבִירוּ״ — דְּקָאָמַר רַחֲמָנָא",
+          "english": "'You shall pass' is written so that we not think the Merciful One says"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "נְעַבְּרֵיהּ בְּיָד.",
+          "english": "let us just carry it by hand.",
+          "notes": "The word teaches that the שופר must be blown, not just carried"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "״וְהַעֲבַרְתָּ״ כִּדְרַב מַתְנָא. דְּאָמַר רַב מַתְנָא",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        26
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Answers the question of step 26",
+      "teshuvahAnswerProvided": "'וְהַעֲבַרְתָּ' teaches the natural shape of the שופר. 'תַּעֲבִירוּ' teaches that it must be blown and not merely carried.",
+      "whyThisMatters": "This is the source for the halacha that a שופר must not be reshaped against its natural form."
+    },
+    {
+      "stepNumber": 28,
+      "hebrewStepName": "שאלה",
+      "title": "And how does the first opinion get רב מתנא's laws?",
+      "stepSummary": "The גמרא asks how the first opinion, who uses these words for the plain blasts, knows רב מתנא's laws.",
+      "simpleTranslation": "And the other?",
+      "whatsHappening": "The גמרא now turns to the first opinion, who used 'וְהַעֲבַרְתָּ' and 'תַּעֲבִירוּ' for the plain blasts. It asks where he gets רב מתנא's laws. This sets up the answer in the next step.",
+      "deeperAnalysis": "Each word can teach only one thing at a time. If the first opinion used the words for the plain blasts, he seems to have no source left for רב מתנא's laws.",
+      "keyTerms": [],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְאִידַּךְ?",
+          "english": "And the other opinion?",
+          "notes": "The one who uses the two words for the plain blasts"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וְאִידַּךְ",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        25,
+        27
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Flips the question back to the first opinion",
+      "sheelahInformationSought": "The first opinion's source for רב מתנא's laws"
+    },
+    {
+      "stepNumber": 29,
+      "hebrewStepName": "תשובה",
+      "title": "He learns רב מתנא's laws from the unusual wording",
+      "stepSummary": "The first opinion learns רב מתנא's laws from the fact that the Torah used an unusual word, 'pass', instead of 'blow'.",
+      "simpleTranslation": "רב מתנא's law he learns from the fact that the verse changed its wording.",
+      "whatsHappening": "The גמרא answers that the first opinion learns רב מתנא's laws from the Torah's choice of an unusual word.",
+      "deeperAnalysis": "Normally the Torah would say 'תתקעו', 'blow'. Instead it says 'תַּעֲבִירוּ', 'pass'. That change itself is a hint that teaches רב מתנא's laws, so the words can still teach the plain blasts. Both opinions accept רב מתנא's laws. They only disagree about the source.",
+      "keyTerms": [
+        {
+          "term": "מִדְּשַׁנִּי",
+          "meaning": "From the fact that it changed"
+        },
+        {
+          "term": "בְּדִיבּוּרֵיהּ",
+          "meaning": "In its wording / speech"
+        }
+      ],
+      "whatToRemember": "Both sides agree on the laws: day only, plain blasts before and after the תרועה, and רב מתנא's laws. They only argue about which verse or word teaches each one.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "דְּרַב מַתְנָא —",
+          "english": "The law of רב מתנא —"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "מִדְּשַׁנִּי בְּדִיבּוּרֵיהּ.",
+          "english": "he learns from the fact that the verse changed its wording.",
+          "notes": "'Pass' instead of the usual 'blow'"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "דְּרַב מַתְנָא מִדְּשַׁנִּי בְּדִיבּוּרֵיהּ",
+      "macroPhase": "conclusion",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        28
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Answers the question of step 28",
+      "teshuvahAnswerProvided": "The unusual word 'תעבירו', used instead of 'blow', teaches רב מתנא's laws"
+    },
+    {
+      "stepNumber": 30,
+      "hebrewStepName": "תשובה",
+      "title": "Proof that the שופר must be blown, from the story of משה",
+      "stepSummary": "The worry that 'תעבירו' might mean just carrying the שופר by hand is rejected. The word 'עברה' is compared to the same word used with משה, where it meant a sound.",
+      "simpleTranslation": "You cannot say 'תעבירו' means carrying the שופר by hand. This תנא learns 'עברה' from 'עברה' in the story of משה. Here it says 'and you shall pass the שופר of תרועה', and there it says 'משה commanded, and they passed a voice through the camp'. Just as there it was done with a sound, here too it must be done with a sound.",
+      "whatsHappening": "The גמרא finishes its answer to Step 28. It explains how the first opinion knows we must actually blow the שופר and not just carry it around.",
+      "deeperAnalysis": "In Step 27, the other opinion needed the word 'תעבירו' to teach that we must blow and not just carry. The first opinion gets that same law from a different place: a גזירה שוה linking 'עברה' here to 'ויעבירו קול' with משה. Since משה's 'passing' was clearly done with a voice, the שופר's 'passing' must also be done with a sound.",
+      "keyTerms": [
+        {
+          "term": "בְּיָד",
+          "meaning": "by hand (just carrying it)"
+        },
+        {
+          "term": "לָא מָצֵית אָמְרַתְּ",
+          "meaning": "you cannot say"
+        },
+        {
+          "term": "גָּמַר",
+          "meaning": "he learns (here, through a גזירה שוה)"
+        },
+        {
+          "term": "עֲבָרָה",
+          "meaning": "the root 'to pass'"
+        },
+        {
+          "term": "מָה לְהַלָּן אַף כָּאן",
+          "meaning": "just as there, so too here (the comparison formula)"
+        }
+      ],
+      "confusionAlert": "Do not mix up the two opinions. The other opinion learns 'blow, don't carry' straight from the word 'תעבירו'. The first opinion learns it from the comparison to משה.",
+      "whyThisMatters": "This lets the first opinion keep using the words 'והעברת' and 'תעבירו' for the plain blasts and still have a source for the law that the שופר must be blown.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "״תַּעֲבִירוּ״ בְּיָד —",
+          "english": "'You shall pass': meaning by hand?",
+          "notes": "The worry: maybe 'passing' just means carrying the שופר around."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "לָא מָצֵית אָמְרַתְּ,",
+          "english": "you cannot say that,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "דְּגָמַר ״עֲבָרָה״ ״עֲבָרָה״ מִמֹּשֶׁה.",
+          "english": "because he learns 'avara' from 'avara' in the story of Moshe.",
+          "notes": "A גזירה שוה based on the shared word."
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "כְּתִיב הָכָא: ״וְהַעֲבַרְתָּ שׁוֹפַר תְּרוּעָה״,",
+          "english": "It is written here: 'And you shall pass the shofar of teruah',"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "וּכְתִיב הָתָם: ״וַיְצַו מֹשֶׁה",
+          "english": "and it is written there: 'And Moshe commanded,"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "וַיַּעֲבִירוּ קוֹל בַּמַּחֲנֶה״,",
+          "english": "and they passed a voice through the camp',",
+          "notes": "שמות לו:ו, the announcement to stop bringing donations for the משכן."
+        },
+        {
+          "phraseNumber": 7,
+          "aramaic": "מָה לְהַלָּן בְּקוֹל —",
+          "english": "just as there it was with a sound,"
+        },
+        {
+          "phraseNumber": 8,
+          "aramaic": "אַף כָּאן בְּקוֹל.",
+          "english": "so too here it is with a sound."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "תירוץ",
+      "triggerLanguage": "״תַּעֲבִירוּ״ בְּיָד — לָא מָצֵית אָמְרַתְּ",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        27,
+        28,
+        29
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Completes the answer begun in Step 29 by giving the first opinion's source for 'blow, not carry'.",
+      "sheelahInformationSought": "How does the first opinion know the שופר must be blown and not just carried?",
+      "teshuvahAnswerProvided": "From a גזירה שוה of 'עברה' with משה, where the 'passing' was done by voice."
+    },
+    {
+      "stepNumber": 31,
+      "hebrewStepName": "קשיא",
+      "title": "If we learn from the wilderness, should we use trumpets?",
+      "stepSummary": "The גמרא challenges the תנא who learns the blowing pattern from the trumpets in the מדבר. If we copy the מדבר, maybe we should copy the trumpets too.",
+      "simpleTranslation": "According to this תנא, who brings the law from the wilderness: just as there they used trumpets, should we use trumpets here too?",
+      "whatsHappening": "The גמרא attacks the opinion that learns the ראש השנה blasts from the trumpet blasts of the מדבר. If the comparison is complete, ראש השנה should also need trumpets.",
+      "deeperAnalysis": "A comparison usually carries over the details of the source case. In the מדבר the sounds were made on חצוצרות, silver trumpets. So the question is: why does the comparison stop at the pattern of blasts and not also bring along the instrument?",
+      "keyTerms": [
+        {
+          "term": "תַּנָּא",
+          "meaning": "a sage of the משנה period"
+        },
+        {
+          "term": "דְּמַיְיתֵי לַהּ",
+          "meaning": "who brings (derives) it"
+        },
+        {
+          "term": "מִדְבָּר",
+          "meaning": "the wilderness (the trumpet blasts used when the camps traveled)"
+        },
+        {
+          "term": "חֲצוֹצְרוֹת",
+          "meaning": "trumpets"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וּלְהַאי תַּנָּא",
+          "english": "And according to this tanna"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "דְּמַיְיתֵי לַהּ מִמִּדְבָּר,",
+          "english": "who brings it from the wilderness,",
+          "notes": "He learns that a תקיעה comes before and after each תרועה from the trumpets in the מדבר."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "אִי מָה לְהַלָּן חֲצוֹצְרוֹת,",
+          "english": "if so, just as there they used trumpets,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "אַף כָּאן חֲצוֹצְרוֹת?",
+          "english": "so too here we should use trumpets?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "שאלה",
+      "triggerLanguage": "וּלְהַאי תַּנָּא דְּמַיְיתֵי לַהּ מִמִּדְבָּר",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [
+        9,
+        12,
+        15
+      ],
+      "scopeOfStep": "inference",
+      "relationToPreviousStep": "Turns to a weakness in the opinion that learns from the מדבר.",
+      "kashyaTarget": "The תנא who learns the blowing pattern from the trumpets of the מדבר.",
+      "kashyaAttackLogic": "If the comparison to the מדבר holds, it should also carry over the instrument, trumpets, which is wrong for ראש השנה."
+    },
+    {
+      "stepNumber": 32,
+      "hebrewStepName": "תירוץ",
+      "title": "A verse requires a שופר on ראש השנה",
+      "stepSummary": "The verse 'תקעו בחדש שופר בכסה ליום חגנו' refers to ראש השנה, and it says 'שופר'. So the instrument must be a שופר, not trumpets.",
+      "simpleTranslation": "The verse says: 'Blow the שופר at the new month, at the covered time, for our festival day.' Which festival is the month covered on? It must be ראש השנה. And the Torah says 'שופר'.",
+      "whatsHappening": "The גמרא answers the challenge with a verse from תהלים. The verse shows that ראש השנה specifically needs a שופר.",
+      "deeperAnalysis": "ראש השנה is the only festival that falls on the first of the month, when the moon is hidden ('covered'). Since that verse says 'שופר', the instrument is fixed. The comparison to the מדבר only teaches the pattern of blasts, not the instrument.",
+      "keyTerms": [
+        {
+          "term": "תַּלְמוּד לוֹמַר",
+          "meaning": "the verse teaches"
+        },
+        {
+          "term": "בַּכֵּסֶה",
+          "meaning": "at the covered time (when the moon is hidden)"
+        },
+        {
+          "term": "מִתְכַּסֶּה",
+          "meaning": "is covered"
+        },
+        {
+          "term": "הֱוֵי אוֹמֵר",
+          "meaning": "you must say"
+        },
+        {
+          "term": "רַחֲמָנָא",
+          "meaning": "the Merciful One (the Torah)"
+        }
+      ],
+      "whatToRemember": "The pattern of blasts can be learned from the מדבר, but the instrument on ראש השנה must be a שופר, because of 'תקעו בחדש שופר'.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "תַּלְמוּד לוֹמַר:",
+          "english": "The verse teaches:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "״תִּקְעוּ בַחֹדֶשׁ שׁוֹפָר",
+          "english": "'Blow the shofar at the new month,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "בַּכֵּסֶה לְיוֹם חַגֵּנוּ״,",
+          "english": "at the covered time, for our festival day',",
+          "notes": "תהלים פא:ד"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "אֵי זֶהוּ חַג",
+          "english": "which festival is it"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "שֶׁהַחֹדֶשׁ מִתְכַּסֶּה בּוֹ?",
+          "english": "on which the month (the moon) is covered?"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "הֱוֵי אוֹמֵר זֶה רֹאשׁ הַשָּׁנָה,",
+          "english": "you must say this is Rosh Hashanah,",
+          "notes": "It is the only festival on the first day of a month."
+        },
+        {
+          "phraseNumber": 7,
+          "aramaic": "וְקָאָמַר רַחֲמָנָא: ״שׁוֹפָר״.",
+          "english": "and the Merciful One says: 'shofar'."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "תַּלְמוּד לוֹמַר: ״תִּקְעוּ בַחֹדֶשׁ שׁוֹפָר בַּכֵּסֶה לְיוֹם חַגֵּנוּ״",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        31
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Answers the trumpet challenge of Step 31.",
+      "terutzResolutionType": "A separate verse limits the comparison and fixes the instrument.",
+      "terutzHavaAmina": "Copying the מדבר would mean using trumpets on ראש השנה.",
+      "terutzMaskana": "A verse about ראש השנה says 'שופר', so only a שופר is used."
+    },
+    {
+      "stepNumber": 33,
+      "hebrewStepName": "מימרא",
+      "title": "רבי אבהו's order of blasts in קסרי",
+      "stepSummary": "רבי אבהו set up in קסרי the order: תקיעה, three שברים, תרועה, תקיעה.",
+      "simpleTranslation": "רבי אבהו instituted in קסרי: a תקיעה, three שברים, a תרועה, and a תקיעה.",
+      "whatsHappening": "A new section begins. The גמרא reports a practice that רבי אבהו set up for how to blow the שופר.",
+      "deeperAnalysis": "This set puts both kinds of broken sound, שברים and תרועה, in the middle between two plain תקיעות. It sets up the next step, where the גמרא will ask why both are needed.",
+      "keyTerms": [
+        {
+          "term": "אַתְקֵין",
+          "meaning": "he instituted (set up a practice)"
+        },
+        {
+          "term": "רַבִּי אֲבָהוּ",
+          "meaning": "an אמורא of ארץ ישראל"
+        },
+        {
+          "term": "קֵסָרִי",
+          "meaning": "Caesarea, a city in ארץ ישראל"
+        },
+        {
+          "term": "תְּקִיעָה",
+          "meaning": "a long, plain blast"
+        },
+        {
+          "term": "שְׁבָרִים",
+          "meaning": "broken blasts (three medium sounds)"
+        },
+        {
+          "term": "תְּרוּעָה",
+          "meaning": "a series of short, quick blasts"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אַתְקֵין רַבִּי אֲבָהוּ בְּקֵסָרִי:",
+          "english": "Rabbi Abbahu instituted in Caesarea:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "תְּקִיעָה, שְׁלֹשָׁה שְׁבָרִים,",
+          "english": "a tekiah, three shevarim,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "תְּרוּעָה, תְּקִיעָה.",
+          "english": "a teruah, and a tekiah."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אַתְקֵין רַבִּי אֲבָהוּ בְּקֵסָרִי",
+      "macroPhase": "opening_question",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Starts a new topic: the exact order of blasts.",
+      "mimraCoreRuling": "The set of blasts is תקיעה, שלשה שברים, תרועה, תקיעה."
+    },
+    {
+      "stepNumber": 34,
+      "hebrewStepName": "קשיא",
+      "title": "Whichever way you look at it, one sound is extra",
+      "stepSummary": "The גמרא challenges רבי אבהו. If a תרועה is short wailing sounds, blow תקיעה-תרועה-תקיעה. If it is groaning sounds, blow תקיעה-שברים-תקיעה. Why include both?",
+      "simpleTranslation": "Whichever way you look at it: if the תרועה is a wailing, do תקיעה, תרועה, תקיעה. If it is a groaning, do תקיעה, three שברים, תקיעה!",
+      "whatsHappening": "The גמרא attacks רבי אבהו's order. It argues that he seems to be adding an unneeded sound, whichever definition of תרועה he holds.",
+      "deeperAnalysis": "The Torah's 'תרועה' is either quick wailing sounds (our תרועה) or slower groaning sounds (our שברים). Either way, only one of them is the real תרועה, so a set with just that sound between two תקיעות should be enough. Why does רבי אבהו put both sounds into one set?",
+      "keyTerms": [
+        {
+          "term": "מָה נַפְשָׁךְ",
+          "meaning": "whichever way you look at it"
+        },
+        {
+          "term": "יַלּוֹלֵי יַלֵּיל",
+          "meaning": "it is a wailing (short, quick sounds)"
+        },
+        {
+          "term": "גַּנּוֹחֵי גַּנַּח",
+          "meaning": "it is a groaning (longer, broken sounds)"
+        },
+        {
+          "term": "לֶעְבֵּיד",
+          "meaning": "let him do"
+        }
+      ],
+      "confusionAlert": "The question is not whether we blow both kinds of sound. It is why רבי אבהו puts both together inside one set between the same two תקיעות.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מָה נַפְשָׁךְ?",
+          "english": "Whichever way you look at it:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אִי יַלּוֹלֵי יַלֵּיל —",
+          "english": "if the teruah is a wailing,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "לֶעְבֵּיד תְּקִיעָה תְּרוּעָה וּתְקִיעָה,",
+          "english": "let him do tekiah, teruah, and tekiah;"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וְאִי גַּנּוֹחֵי גַּנַּח —",
+          "english": "and if it is a groaning,"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "לֶעְבֵּיד תְּקִיעָה שְׁלֹשָׁה שְׁבָרִים וּתְקִיעָה!",
+          "english": "let him do tekiah, three shevarim, and tekiah!"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "מָה נַפְשָׁךְ? אִי יַלּוֹלֵי יַלֵּיל",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        33
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Challenges the order רבי אבהו set up in Step 33.",
+      "kashyaTarget": "רבי אבהו's set of תקיעה, שברים, תרועה, תקיעה.",
+      "kashyaAttackLogic": "A 'מה נפשך' argument: under either definition of תרועה, one of the middle sounds is extra and does not belong in the set."
+    },
+    {
+      "stepNumber": 35,
+      "hebrewStepName": "תירוץ",
+      "title": "רבי אבהו was unsure what a תרועה sounds like",
+      "stepSummary": "רבי אבהו included both kinds of sounds because he was unsure whether a תרועה is groaning or wailing.",
+      "simpleTranslation": "He was unsure whether a תרועה is groaning or wailing.",
+      "whatsHappening": "The גמרא answers the question from Step 34: רבי אבהו put both sounds in because he did not know which one is the real תרועה.",
+      "deeperAnalysis": "The Torah says to blow a תרועה but does not describe the sound. Groaning means long, broken sounds (שברים). Wailing means short, quick sounds. Since רבי אבהו could not decide, he included both so that people would surely fulfill the מצוה.",
+      "keyTerms": [
+        {
+          "term": "מְסַפְּקָא לֵיהּ",
+          "meaning": "He was in doubt"
+        },
+        {
+          "term": "גַּנּוֹחֵי גַּנַּח",
+          "meaning": "Groaning (longer, broken sighs, like שברים)"
+        },
+        {
+          "term": "יַלּוֹלֵי יַלֵּיל",
+          "meaning": "Wailing (short, quick sobs, like the תרועה blasts)"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מְסַפְּקָא לֵיהּ אִי גַּנּוֹחֵי גַּנַּח",
+          "english": "He was in doubt whether it means groaning",
+          "notes": "Groaning is matched to שברים."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אִי יַלּוֹלֵי יַלֵּיל.",
+          "english": "or whether it means wailing.",
+          "notes": "Wailing is matched to the short תרועה blasts."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "מְסַפְּקָא לֵיהּ",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        33,
+        34
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Answers the question in Step 34 about why both sounds are included.",
+      "terutzResolutionType": "Doubt resolution: both possibilities are covered",
+      "terutzHavaAmina": "Including both sounds seemed pointless, since the תרועה is only one of them.",
+      "terutzMaskana": "Both are included because the right sound is unknown."
+    },
+    {
+      "stepNumber": 36,
+      "hebrewStepName": "קשיא",
+      "title": "רב עוירא: the שברים may interrupt",
+      "stepSummary": "רב עוירא points out a problem. If a תרועה is really wailing, then the שברים in the combined set are an interruption between the first תקיעה and the תרועה.",
+      "simpleTranslation": "רב עוירא objected: But maybe a תרועה is wailing. Then the three שברים interrupt between the תרועה and the תקיעה!",
+      "whatsHappening": "רב עוירא attacks רבי אבהו's combined set (תקיעה, שברים, תרועה, תקיעה) by showing it might not work.",
+      "deeperAnalysis": "A תרועה must sit directly between two תקיעות. If the true תרועה is wailing, then the שברים are an extra sound wedged between the first תקיעה and the real תרועה. That interruption could ruin the whole set.",
+      "keyTerms": [
+        {
+          "term": "מַתְקֵיף לַהּ",
+          "meaning": "He strongly objected to it"
+        },
+        {
+          "term": "וְדִלְמָא",
+          "meaning": "But perhaps"
+        },
+        {
+          "term": "מַפְסֵיק",
+          "meaning": "Interrupts, makes a break"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מַתְקֵיף לַהּ רַב עַוִּירָא:",
+          "english": "Rav Avira strongly objected to this:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וְדִלְמָא יַלּוֹלֵי הֲוָה,",
+          "english": "But perhaps it is wailing,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וְקָא מַפְסֵיק שְׁלֹשָׁה שְׁבָרִים",
+          "english": "and the three shevarim interrupt"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "בֵּין תְּרוּעָה לִתְקִיעָה!",
+          "english": "between the terua and the (first) tekia!"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "מַתְקֵיף לַהּ רַב עַוִּירָא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        33,
+        35
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Challenges the solution given in Step 35.",
+      "kashyaTarget": "רבי אבהו's combined set תשר״ת",
+      "kashyaAttackLogic": "If the תרועה is wailing, the שברים are an interruption between the first תקיעה and the תרועה."
+    },
+    {
+      "stepNumber": 37,
+      "hebrewStepName": "תירוץ",
+      "title": "That is why a תקיעה-תרועה-תקיעה set is also blown",
+      "stepSummary": "Because of this worry, a separate set of תקיעה, תרועה, תקיעה is also blown.",
+      "simpleTranslation": "That is why he then blows תקיעה, תרועה, תקיעה.",
+      "whatsHappening": "The גמרא answers רב עוירא: a clean set with only the wailing sound is blown as well, so that possibility is covered.",
+      "deeperAnalysis": "If wailing is the real תרועה, the combined set might fail. But the separate תר״ת set has no interruption, so it works by itself.",
+      "keyTerms": [
+        {
+          "term": "דַּהֲדַר עָבֵיד",
+          "meaning": "For he then goes back and does"
+        },
+        {
+          "term": "תְּקִיעָה",
+          "meaning": "A long, straight blast"
+        },
+        {
+          "term": "תְּרוּעָה",
+          "meaning": "The sound in question (here meaning the short wailing blasts)"
+        }
+      ],
+      "confusionAlert": "Do not think רבי אבהו's order was only the one combined set. The answer shows that he set up all three sets: תשר״ת, תש״ת, and תר״ת.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "דַּהֲדַר עָבֵיד תְּקִיעָה תְּרוּעָה וּתְקִיעָה.",
+          "english": "That is why he then performs tekia, terua, and tekia."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "דַּהֲדַר עָבֵיד תְּקִיעָה תְּרוּעָה וּתְקִיעָה",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        36
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Answers רב עוירא's objection.",
+      "terutzResolutionType": "Practice clarification: an extra set covers the gap",
+      "terutzHavaAmina": "Only the combined set was blown, so the wailing option might fail.",
+      "terutzMaskana": "A separate תר״ת set is also blown."
+    },
+    {
+      "stepNumber": 38,
+      "hebrewStepName": "קשיא",
+      "title": "רבינא: the תרועה may interrupt",
+      "stepSummary": "רבינא raises the opposite problem. If a תרועה is really groaning, then the wailing blasts interrupt between the שברים and the final תקיעה.",
+      "simpleTranslation": "רבינא objected: But maybe a תרועה is groaning. Then the תרועה interrupts between the שברים and the תקיעה!",
+      "whatsHappening": "רבינא attacks the combined set from the other side.",
+      "deeperAnalysis": "If the real תרועה is the שברים, then the wailing blasts that follow are an extra sound. They come between the real תרועה and the last תקיעה, so the combined set might fail this way too.",
+      "keyTerms": [
+        {
+          "term": "רָבִינָא",
+          "meaning": "An אמורא who raises the second objection"
+        },
+        {
+          "term": "שְׁבָרִים",
+          "meaning": "Three medium broken blasts (the groaning sound)"
+        },
+        {
+          "term": "מַפְסְקָא",
+          "meaning": "It interrupts"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מַתְקֵיף לַהּ רָבִינָא:",
+          "english": "Ravina strongly objected to this:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וְדִלְמָא גַּנּוֹחֵי הֲוָה,",
+          "english": "But perhaps it is groaning,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וְקָא מַפְסְקָא תְּרוּעָה",
+          "english": "and the terua interrupts"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "בֵּין שְׁבָרִים לִתְקִיעָה!",
+          "english": "between the shevarim and the (final) tekia!"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "מַתְקֵיף לַהּ רָבִינָא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        33,
+        35
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Parallels רב עוירא's objection, but from the opposite side.",
+      "kashyaTarget": "רבי אבהו's combined set תשר״ת",
+      "kashyaAttackLogic": "If the תרועה is groaning, the wailing blasts are an interruption before the final תקיעה."
+    },
+    {
+      "stepNumber": 39,
+      "hebrewStepName": "תירוץ",
+      "title": "That is why a תקיעה-שברים-תקיעה set is also blown",
+      "stepSummary": "Because of this worry, a separate set of תקיעה, שברים, תקיעה is also blown.",
+      "simpleTranslation": "That is why he then blows תקיעה, שברים, תקיעה.",
+      "whatsHappening": "The גמרא answers רבינא the same way: a clean set with only the groaning sound is blown as well.",
+      "deeperAnalysis": "The תש״ת set has no interruption, so it covers the possibility that groaning is the real תרועה. Now both single possibilities are fully protected.",
+      "keyTerms": [
+        {
+          "term": "תש״ת",
+          "meaning": "Short name for the set תקיעה, שברים, תקיעה"
+        },
+        {
+          "term": "תר״ת",
+          "meaning": "Short name for the set תקיעה, תרועה, תקיעה"
+        },
+        {
+          "term": "תשר״ת",
+          "meaning": "Short name for the set תקיעה, שברים, תרועה, תקיעה"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "דַּהֲדַר עָבֵיד תְּקִיעָה שְׁבָרִים תְּקִיעָה.",
+          "english": "That is why he then performs tekia, shevarim, tekia."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "דַּהֲדַר עָבֵיד תְּקִיעָה שְׁבָרִים תְּקִיעָה",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        38
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Answers רבינא's objection.",
+      "terutzResolutionType": "Practice clarification: an extra set covers the gap",
+      "terutzHavaAmina": "The groaning option might fail because of the interruption.",
+      "terutzMaskana": "A separate תש״ת set is also blown."
+    },
+    {
+      "stepNumber": 40,
+      "hebrewStepName": "קשיא",
+      "title": "Then why is the combined set needed at all?",
+      "stepSummary": "If the separate sets already cover groaning and wailing, then the combined set תשר״ת seems unnecessary.",
+      "simpleTranslation": "If so, what did רבי אבהו add? If a תרועה is groaning, that was already done. If it is wailing, that was already done too!",
+      "whatsHappening": "The גמרא turns the answers around. If the two separate sets cover everything, what is the point of the combined set?",
+      "deeperAnalysis": "The separate sets תש״ת and תר״ת each cover one possibility. So the combined set רבי אבהו introduced seems to add nothing.",
+      "keyTerms": [
+        {
+          "term": "אֶלָּא",
+          "meaning": "But then (opening a challenge)"
+        },
+        {
+          "term": "מַאי אַתְקֵין",
+          "meaning": "What did he set up / institute?"
+        },
+        {
+          "term": "הָא עַבְדֵיהּ",
+          "meaning": "Look, he already did it"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֶלָּא רַבִּי אֲבָהוּ מַאי אַתְקֵין?",
+          "english": "But then what did Rabbi Abbahu institute?"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אִי גַּנּוֹחֵי גַּנַּח — הָא עַבְדֵיהּ,",
+          "english": "If it is groaning, he already did it;"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "אִי יַלּוֹלֵי יַלֵּיל — הָא עַבְדֵיהּ!",
+          "english": "if it is wailing, he already did it!"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אֶלָּא רַבִּי אֲבָהוּ מַאי אַתְקֵין",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        33,
+        37,
+        39
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Uses the answers in Steps 37 and 39 to question the need for the combined set.",
+      "kashyaTarget": "The need for the combined set תשר״ת",
+      "kashyaAttackLogic": "The separate sets cover both possibilities, so the combined set looks redundant."
+    },
+    {
+      "stepNumber": 41,
+      "hebrewStepName": "תירוץ",
+      "title": "Maybe a תרועה is groaning and then wailing",
+      "stepSummary": "רבי אבהו also considered a third possibility: a תרועה might be groaning followed by wailing.",
+      "simpleTranslation": "He was unsure. Perhaps a תרועה is groaning and then wailing.",
+      "whatsHappening": "The גמרא explains that the combined set covers a third option: both sounds together.",
+      "deeperAnalysis": "There are three possibilities: only groaning, only wailing, or groaning followed by wailing. Each set covers one of them, so all three sets are needed.",
+      "keyTerms": [
+        {
+          "term": "דִּלְמָא",
+          "meaning": "Perhaps"
+        },
+        {
+          "term": "גַּנַּח וְיַלֵּיל",
+          "meaning": "Groaned and then wailed (both together)"
+        },
+        {
+          "term": "סָפֵק",
+          "meaning": "A doubt"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מְסַפְּקָא לֵיהּ דִּלְמָא גַּנַּח וְיַלֵּיל.",
+          "english": "He was in doubt: perhaps it is groaning and wailing."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "מְסַפְּקָא לֵיהּ דִּלְמָא גַּנַּח וְיַלֵּיל",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        40
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Answers Step 40 by adding a third possibility.",
+      "terutzResolutionType": "Adds a third possibility",
+      "terutzHavaAmina": "There were only two options, so the combined set added nothing.",
+      "terutzMaskana": "A third option, both sounds together, requires the combined set."
+    },
+    {
+      "stepNumber": 42,
+      "hebrewStepName": "קשיא",
+      "title": "Then also blow the reverse order",
+      "stepSummary": "If a תרועה might be groaning followed by wailing, then maybe it is wailing followed by groaning. So the reverse set should be blown too.",
+      "simpleTranslation": "If so, let him also do the reverse: תקיעה, תרועה, three שברים, תקיעה. Perhaps it is wailing and then groaning!",
+      "whatsHappening": "The גמרא pushes the logic further. If we worry about one mixed order, why not also worry about the opposite order?",
+      "deeperAnalysis": "Once we allow that the sounds might be combined, there is no obvious reason to choose groaning-first over wailing-first. That would call for a fourth set.",
+      "keyTerms": [
+        {
+          "term": "אִי הָכִי",
+          "meaning": "If so"
+        },
+        {
+          "term": "לֶיעְבַּד נָמֵי",
+          "meaning": "Let him also do"
+        },
+        {
+          "term": "אִיפְּכָא",
+          "meaning": "The reverse"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אִי הָכִי, לֶיעְבַּד נָמֵי אִיפְּכָא:",
+          "english": "If so, let him also do the reverse:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "תְּקִיעָה, תְּרוּעָה, שְׁלֹשָׁה שְׁבָרִים, וּתְקִיעָה —",
+          "english": "tekia, terua, three shevarim, and tekia,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "דִּלְמָא יַלֵּיל וְגַנַּח!",
+          "english": "since perhaps it is wailing and then groaning!"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אִי הָכִי, לֶיעְבַּד נָמֵי אִיפְּכָא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        41
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Extends the answer of Step 41 to the opposite order.",
+      "kashyaTarget": "Leaving out the reverse set תרש״ת",
+      "kashyaAttackLogic": "If a mixed order is possible, the opposite mixed order should also be possible."
+    },
+    {
+      "stepNumber": 43,
+      "hebrewStepName": "תירוץ",
+      "title": "People groan first and wail afterward",
+      "stepSummary": "The reverse set is not needed, because a person in trouble naturally groans first and then wails.",
+      "simpleTranslation": "The normal way of things: when something bad happens to a person, he first groans and then wails.",
+      "whatsHappening": "The גמרא answers by looking at how people really cry. Groaning comes first and wailing comes after, never the other way around.",
+      "deeperAnalysis": "The תרועה copies the sound of a person crying. Since people naturally go from deep sighs to quick sobs, only the groaning-then-wailing order is a real possibility. That is why there are three sets and not four.",
+      "keyTerms": [
+        {
+          "term": "סְתָמָא דְמִילְּתָא",
+          "meaning": "The usual way of things"
+        },
+        {
+          "term": "מִתְּרַע",
+          "meaning": "Something bad happens"
+        },
+        {
+          "term": "בְּרֵישָׁא",
+          "meaning": "First"
+        }
+      ],
+      "whatToRemember": "We blow three kinds of sets: תשר״ת, תש״ת, and תר״ת. This covers three options: a תרועה is groaning, wailing, or groaning followed by wailing. The reverse order is not blown, because people groan before they wail.",
+      "whyThisMatters": "This is the source for the order of blowing שופר used on ראש השנה today.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "סְתָמָא דְמִילְּתָא,",
+          "english": "The ordinary way of things is:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "כִּי מִתְּרַע בְּאִינִישׁ מִילְּתָא —",
+          "english": "when something bad happens to a person,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "בְּרֵישָׁא גָּנַח וַהֲדַר יָלֵיל.",
+          "english": "he first groans and then wails."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "סְתָמָא דְמִילְּתָא",
+      "macroPhase": "conclusion",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        42
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Answers Step 42 and closes the discussion of רבי אבהו's order.",
+      "terutzResolutionType": "Appeal to natural human behavior",
+      "terutzHavaAmina": "Both mixed orders seemed equally possible.",
+      "terutzMaskana": "Only groaning-then-wailing is realistic, so three sets are enough."
+    },
+    {
+      "stepNumber": 44,
+      "hebrewStepName": "מימרא",
+      "title": "Quoting the משנה about stretching one תקיעה into two",
+      "stepSummary": "The גמרא quotes the next case in the משנה: someone blew the first תקיעה and stretched the second one to the length of two.",
+      "simpleTranslation": "The משנה said: If he blew the first תקיעה and stretched the second one as long as two.",
+      "whatsHappening": "The גמרא moves to a new topic by quoting a line from the משנה. This sets up the discussion that follows.",
+      "deeperAnalysis": "The case is someone who tries to make one long blast count both as the end of one set and the start of the next. The משנה rules that it counts as only one תקיעה. The quote opens the next discussion.",
+      "keyTerms": [
+        {
+          "term": "תָּקַע בָּרִאשׁוֹנָה",
+          "meaning": "He blew the first (תקיעה)"
+        },
+        {
+          "term": "מָשַׁךְ",
+          "meaning": "He stretched or extended"
+        },
+        {
+          "term": "כִּשְׁתַּיִם",
+          "meaning": "As long as two"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "תָּקַע בָּרִאשׁוֹנָה",
+          "english": "He blew the first (tekia)"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וּמָשַׁךְ בַּשְּׁנִיָּה כִּשְׁתַּיִם.",
+          "english": "and extended the second one to the length of two."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "תָּקַע בָּרִאשׁוֹנָה וּמָשַׁךְ בַּשְּׁנִיָּה כִּשְׁתַּיִם",
+      "macroPhase": "mishnah",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Starts a new section by quoting the משנה.",
+      "mimraCoreRuling": "Stretching one תקיעה to the length of two counts as only one תקיעה (according to the משנה)."
+    },
+    {
+      "stepNumber": 45,
+      "hebrewStepName": "מימרא",
+      "title": "רבי יוחנן begins a statement about hearing",
+      "stepSummary": "רבי יוחנן starts a ruling about someone who heard the שופר. The statement continues on the next amud.",
+      "simpleTranslation": "רבי יוחנן said: If one heard...",
+      "whatsHappening": "רבי יוחנן begins a new ruling connected to the משנה. Only the first word is on this amud, and the rest continues on the next amud.",
+      "deeperAnalysis": "The word 'heard' tells us the ruling is about a listener who heard some of the sounds, not about the person blowing. The details come on the next amud.",
+      "keyTerms": [
+        {
+          "term": "רַבִּי יוֹחָנָן",
+          "meaning": "A leading אמורא of ארץ ישראל"
+        },
+        {
+          "term": "שָׁמַע",
+          "meaning": "He heard"
+        },
+        {
+          "term": "אָמַר",
+          "meaning": "He said"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר רַבִּי יוֹחָנָן: שָׁמַע",
+          "english": "Rabbi Yochanan said: If one heard",
+          "notes": "The sentence continues on the next amud."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "triggerLanguage": "אָמַר רַבִּי יוֹחָנָן: שָׁמַע",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        44
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Begins an אמורא's ruling on the משנה just quoted.",
+      "mimraCoreRuling": "Incomplete on this amud: a ruling about someone who heard the שופר blasts."
+    }
+  ]
+}

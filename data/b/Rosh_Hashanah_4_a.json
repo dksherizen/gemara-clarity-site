@@ -1,0 +1,1666 @@
+{
+  "mainTopic": "Proofs that כורש became corrupt, and פסח as ראש השנה לרגלים for בל תאחר",
+  "overview": "The גמרא continues asking whether כורש really 'soured' (אחמיץ). רב כהנא points to the king's generous daily gifts for the קרבנות. רבי יצחק answers from the next verse: the king gave so the Jews would pray for him and his sons. A ברייתא says that giving 'so my children will live' still makes one a צדיק גמור, but the גמרא answers that this applies to a Jew and not to a non-Jew. The גמרא then brings more proofs that כורש became corrupt. First, he built a burnable row of wood into the בית המקדש, and the גמרא shows how this differed from what שלמה did. Second, he kept a שגל, explained as a she-dog, beside him. A third proof, from the limits he placed on his gifts, is rejected. The גמרא then turns to the משנה's phrase 'ראש השנה לרגלים.' רב חסדא explains that פסח begins the order of festivals, which matters for בל תאחר according to רבי שמעון. A new ברייתא listing the obligations covered by בל תאחר begins and continues on the next amud.",
+  "steps": [
+    {
+      "stepNumber": 1,
+      "hebrewStepName": "קשיא",
+      "title": "רב כהנא cites the king's generous daily sacrifices",
+      "stepSummary": "רב כהנא challenges the claim that כורש became corrupt. He quotes a verse in עזרא showing that the king supplied all the sacrifices and supplies the כהנים needed, every day without fail.",
+      "simpleTranslation": "[But it says:] 'And whatever they need, young bulls, rams, and lambs for burnt-offerings to the God of heaven, wheat, salt, wine, and oil, as the כהנים in Jerusalem say, let it be given to them day by day without fail!' (עזרא ו:ט)",
+      "whatsHappening": "רב כהנא is challenging the idea that כורש turned bad. He quotes a verse showing how generously the king supported the בית המקדש.",
+      "deeperAnalysis": "The claim being attacked is that כורש 'soured' (אחמיץ) after starting out righteous. Someone who orders daily supplies for the קרבנות looks like a God-fearing king, not a corrupt one. The exclamation at the end shows that this verse is being used as a challenge.",
+      "keyTerms": [
+        {
+          "term": "עֲלָוָן",
+          "meaning": "burnt-offerings (Aramaic for עולות)"
+        },
+        {
+          "term": "אֱלָהּ שְׁמַיָּא",
+          "meaning": "the God of heaven"
+        },
+        {
+          "term": "כָּהֲנַיָּא",
+          "meaning": "the כהנים (priests)"
+        },
+        {
+          "term": "דִּי לָא שָׁלוּ",
+          "meaning": "without fail / without neglect"
+        }
+      ],
+      "confusionAlert": "This verse is in Aramaic because it quotes a royal decree in ספר עזרא. It is not the גמרא's own Aramaic. The verse is being used as ammunition against the claim that כורש became corrupt.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "״וּמָה חַשְׁחָן וּבְנֵי תוֹרִין",
+          "english": "\"And whatever they need, young bulls,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וְדִכְרִין וְאִמְּרִין לַעֲלָוָן",
+          "english": "and rams and lambs for burnt-offerings"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "לֶאֱלָהּ שְׁמַיָּא",
+          "english": "to the God of heaven,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "חִנְטִין מְלַח חֲמַר וּמְשַׁח",
+          "english": "wheat, salt, wine, and oil,"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "כְּמֵאמַר כָּהֲנַיָּא דִי בִירוּשְׁלֶם",
+          "english": "according to the word of the priests who are in Jerusalem,"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "לֶהֱוֵא מִתְיְהֵב לְהֹם יוֹם בְּיוֹם",
+          "english": "let it be given to them day by day"
+        },
+        {
+          "phraseNumber": 7,
+          "aramaic": "דִּי לָא שָׁלוּ״!",
+          "english": "without fail\"!",
+          "notes": "The exclamation marks this as a challenge: doesn't this show the king was God-fearing?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "ראיה",
+      "triggerLanguage": "וּמָה חַשְׁחָן וּבְנֵי תוֹרִין",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Continues רב כהנא's challenge from the previous daf against the claim that כורש became corrupt.",
+      "kashyaTarget": "The claim that כורש 'soured' (אחמיץ) after starting out righteous.",
+      "kashyaAttackLogic": "A king who generously funds daily sacrifices in the בית המקדש appears God-fearing, which contradicts the claim that he became corrupt."
+    },
+    {
+      "stepNumber": 2,
+      "hebrewStepName": "תירוץ",
+      "title": "רבי יצחק shows the king had a selfish motive",
+      "stepSummary": "רבי יצחק answers from the very next verse. The king gave the sacrifices so that the Jews would pray for his life and his sons' lives.",
+      "simpleTranslation": "רבי יצחק said to him: My teacher, the answer comes from your own verse: 'So that they may offer pleasing sacrifices to the God of heaven, and pray for the life of the king and his sons.' (עזרא ו:י)",
+      "whatsHappening": "רבי יצחק answers רב כהנא by reading the next verse. It shows that the king's gifts had a personal motive.",
+      "deeperAnalysis": "The generosity was not pure fear of Heaven. The king wanted something back: prayers for himself and his children. So the gifts do not prove he stayed righteous.",
+      "keyTerms": [
+        {
+          "term": "מִטּוּנָךְ",
+          "meaning": "from your own burden, i.e., from the very source you brought"
+        },
+        {
+          "term": "נִיחוֹחִין",
+          "meaning": "pleasing offerings"
+        },
+        {
+          "term": "וּמְצַלַּיִן",
+          "meaning": "and they pray"
+        },
+        {
+          "term": "מַלְכָּא וּבְנוֹהִי",
+          "meaning": "the king and his sons"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר לוֹ רַבִּי יִצְחָק:",
+          "english": "Rabbi Yitzchak said to him:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "רַבִּי, מִטּוּנָךְ:",
+          "english": "My teacher, from your own load [of proof]:",
+          "notes": "In other words, the answer is found in the very passage you quoted."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "״דִּי לֶהֱוֹן מְהַקְרְבִין נִיחוֹחִין",
+          "english": "\"So that they may offer pleasing offerings"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "לֶאֱלָהּ שְׁמַיָּא",
+          "english": "to the God of heaven"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "וּמְצַלַּיִן לְחַיֵּי מַלְכָּא וּבְנוֹהִי״.",
+          "english": "and pray for the life of the king and his sons.\""
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "דחיה",
+      "triggerLanguage": "אָמַר לוֹ רַבִּי יִצְחָק: רַבִּי, מִטּוּנָךְ",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        1
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Answers רב כהנא's challenge by reading the next verse.",
+      "terutzResolutionType": "Contextual reading: the next verse reveals the motive behind the gift.",
+      "terutzHavaAmina": "The king's gifts show sincere fear of Heaven.",
+      "terutzMaskana": "The king gave in order to get prayers for himself and his sons, so the gifts do not disprove his corruption."
+    },
+    {
+      "stepNumber": 3,
+      "hebrewStepName": "קשיא",
+      "title": "But giving for a personal reward is still praiseworthy",
+      "stepSummary": "The גמרא challenges רבי יצחק's answer. A ברייתא says that someone who gives צדקה so his children will live, or so he will earn עולם הבא, is a צדיק גמור.",
+      "simpleTranslation": "But someone who acts this way, isn't that a good thing? Isn't it taught in a ברייתא: One who says, 'This סלע is for צדקה so that my children will live,' or 'so that I will merit life in the World to Come,' is a completely righteous person.",
+      "whatsHappening": "The גמרא pushes back on רבי יצחק. Giving with a personal motive is not considered bad, according to a ברייתא.",
+      "deeperAnalysis": "רבי יצחק assumed that giving in order to get something back is a flaw. The ברייתא says the opposite: such a giver is still a צדיק גמור. So the king's motive should not count against him.",
+      "keyTerms": [
+        {
+          "term": "מְעַלְּיוּתָא",
+          "meaning": "a fine, praiseworthy thing"
+        },
+        {
+          "term": "וְהָתַנְיָא",
+          "meaning": "but isn't it taught in a ברייתא"
+        },
+        {
+          "term": "סֶלַע",
+          "meaning": "a silver coin"
+        },
+        {
+          "term": "צְדָקָה",
+          "meaning": "charity"
+        },
+        {
+          "term": "צַדִּיק גָּמוּר",
+          "meaning": "a completely righteous person"
+        }
+      ],
+      "whyThisMatters": "This ברייתא is an important source for the general idea that giving מצוות with a personal motive (שלא לשמה) can still be fully praiseworthy.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וּמַאן דְּעָבֵד הָכִי",
+          "english": "And one who acts in this way,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "לָאו מְעַלְּיוּתָא הִיא?",
+          "english": "is that not a fine thing?"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וְהָתַנְיָא, הָאוֹמֵר:",
+          "english": "But isn't it taught: One who says:"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "״סֶלַע זוֹ לִצְדָקָה",
+          "english": "\"This sela is for charity"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "בִּשְׁבִיל שֶׁיִּחְיוּ בָּנַי״,",
+          "english": "so that my children will live,\""
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "וּ״בִשְׁבִיל שֶׁאֶזְכֶּה בָּהּ",
+          "english": "or \"so that I will merit through it"
+        },
+        {
+          "phraseNumber": 7,
+          "aramaic": "לְחַיֵּי הָעוֹלָם הַבָּא״ —",
+          "english": "life in the World to Come\" —"
+        },
+        {
+          "phraseNumber": 8,
+          "aramaic": "הֲרֵי זֶה צַדִּיק גָּמוּר.",
+          "english": "this person is a completely righteous person."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וּמַאן דְּעָבֵד הָכִי לָאו מְעַלְּיוּתָא הִיא? וְהָתַנְיָא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        2
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Challenges רבי יצחק's assumption that a self-interested gift is a flaw.",
+      "kashyaTarget": "רבי יצחק's answer that the king's selfish motive shows he was not truly righteous.",
+      "kashyaAttackLogic": "A ברייתא rules that giving צדקה for a personal reward still makes one a צדיק גמור, so the king's motive should not be held against him."
+    },
+    {
+      "stepNumber": 4,
+      "hebrewStepName": "תירוץ",
+      "title": "A Jew versus a non-Jew",
+      "stepSummary": "The ברייתא refers to a Jew. A non-Jew who gives with a condition is judged differently.",
+      "simpleTranslation": "This is not difficult. Here, it refers to a Jew. There, it refers to non-Jews.",
+      "whatsHappening": "The גמרא resolves the challenge by distinguishing between a Jew and a non-Jew.",
+      "deeperAnalysis": "A Jew who gives on condition will not complain against Heaven if the condition is not met, so he remains a צדיק. A non-Jew may regret his gift and complain if he does not get what he wanted, so his conditional giving is not praised. That is why the king's gift does not earn him credit.",
+      "keyTerms": [
+        {
+          "term": "לָא קַשְׁיָא",
+          "meaning": "it is not difficult"
+        },
+        {
+          "term": "כָּאן",
+          "meaning": "here / in this case"
+        },
+        {
+          "term": "גּוֹיִם",
+          "meaning": "non-Jews"
+        }
+      ],
+      "confusionAlert": "The reason behind this distinction (that a non-Jew may regret and complain) is not written here. It comes from רש\"י and the commentaries.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "לָא קַשְׁיָא:",
+          "english": "It is not difficult:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "כָּאן בְּיִשְׂרָאֵל, כָּאן בְּגוֹיִם.",
+          "english": "Here it refers to a Jew; there it refers to non-Jews."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "לָא קַשְׁיָא: כָּאן בְּיִשְׂרָאֵל, כָּאן בְּגוֹיִם",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        2,
+        3
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Answers the challenge from the ברייתא.",
+      "terutzResolutionType": "Distinguishing cases (כאן... כאן...): the identity of the giver changes how the motive is judged.",
+      "terutzHavaAmina": "Giving for a reward is praiseworthy for anyone, including the king.",
+      "terutzMaskana": "Only a Jew's conditional giving is fully praiseworthy. A non-Jew's is not, so רבי יצחק's answer stands.",
+      "whatToRemember": "Giving צדקה 'so my children will live' still makes a Jew a צדיק גמור, but this does not apply to a non-Jew."
+    },
+    {
+      "stepNumber": 5,
+      "hebrewStepName": "ראיה",
+      "title": "Another proof: the row of wood in the בית המקדש",
+      "stepSummary": "The גמרא offers a different proof that כורש became corrupt. He ordered a row of wood to be built into the בית המקדש so he could burn it if the Jews rebelled.",
+      "simpleTranslation": "And if you want, say instead: From where do we know that he became corrupt? As it is written: 'Three rows of great stones and one row of new wood, and let the expense be paid from the king's house' (עזרא ו:ד). Why did he do this? He thought: If the Jews rebel against me, I will burn it with fire.",
+      "whatsHappening": "The גמרא gives a second, separate way to show that כורש became corrupt. It points to a detail in his building order.",
+      "deeperAnalysis": "Instead of relying on the king's motive for the sacrifices, this proof looks at the building plan. Mixing a row of wood into the stone walls made the בית המקדש burnable. This reveals a hostile plan to destroy it if the Jews ever rebelled.",
+      "keyTerms": [
+        {
+          "term": "וְאִיבָּעֵית אֵימָא",
+          "meaning": "and if you wish, say (an alternative answer)"
+        },
+        {
+          "term": "אַחְמִיץ",
+          "meaning": "he soured / became corrupt"
+        },
+        {
+          "term": "נִדְבָּךְ",
+          "meaning": "a row or layer of building material"
+        },
+        {
+          "term": "אָע",
+          "meaning": "wood"
+        },
+        {
+          "term": "אִיקְלְיֵיהּ בְּנוּרָא",
+          "meaning": "I will burn it with fire"
+        }
+      ],
+      "whatToRemember": "So far there are two proofs that כורש became corrupt (more follow later): (1) his gifts were given in exchange for prayers, which a non-Jew does not get credit for; (2) he built wood into the בית המקדש so he could burn it.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְאִיבָּעֵית אֵימָא:",
+          "english": "And if you wish, say:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "מְנָלַן דְּאַחְמִיץ —",
+          "english": "From where do we know that he became corrupt?"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "דִּכְתִיב: ״נִדְבָּכִין דִּי אֶבֶן גְּלָל תְּלָתָא",
+          "english": "As it is written: \"Three rows of great stones"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וְנִדְבָּךְ דִּי אָע חֲדַת",
+          "english": "and one row of new wood,"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "וְנִפְקְתָא מִן בֵּית מַלְכָּא תִּתְיְהִב״,",
+          "english": "and let the expense be given from the king's house.\""
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "לְמָה לֵיהּ דַּעֲבַד הָכִי?",
+          "english": "Why did he do it this way?"
+        },
+        {
+          "phraseNumber": 7,
+          "aramaic": "סָבַר: אִי מָרְדוּ בִּי יְהוּדָאֵי —",
+          "english": "He thought: If the Jews rebel against me,"
+        },
+        {
+          "phraseNumber": 8,
+          "aramaic": "אִיקְלְיֵיהּ בְּנוּרָא.",
+          "english": "I will burn it with fire."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "תירוץ",
+      "triggerLanguage": "וְאִיבָּעֵית אֵימָא: מְנָלַן דְּאַחְמִיץ",
+      "macroPhase": "alternate_branch",
+      "branchRole": "alternative_approach",
+      "dependsOnStepNumbers": [
+        1
+      ],
+      "scopeOfStep": "proof_mechanism",
+      "relationToPreviousStep": "Offers a separate answer to רב כהנא's challenge that does not depend on the king's motive for the sacrifices.",
+      "raayaObject": "That כורש became corrupt (אחמיץ).",
+      "raayaSupportSource": "עזרא ו:ד, which describes the king's order to include a row of wood in the walls of the בית המקדש."
+    },
+    {
+      "stepNumber": 6,
+      "hebrewStepName": "קשיא",
+      "title": "Didn't שלמה also build with a row of wood?",
+      "stepSummary": "The גמרא challenges the proof from the row of wood. שלמה also put a row of cedar wood into the בית המקדש.",
+      "simpleTranslation": "Is that to say שלמה did not do the same thing? Isn't it written: 'Three rows of hewn stone and a row of cedar beams'!",
+      "whatsHappening": "The גמרא attacks the proof from step 5. If adding a row of wood shows bad intent, then שלמה, who did the same thing, would also look bad.",
+      "deeperAnalysis": "The proof in step 5 assumed that building wood into the בית המקדש was a sign of corruption. But a verse in מלכים shows that שלמה built three rows of stone and then a row of cedar. So the wood by itself cannot prove that כורש was corrupt.",
+      "keyTerms": [
+        {
+          "term": "אַטּוּ",
+          "meaning": "Is that to say...? (introduces a surprised challenge)"
+        },
+        {
+          "term": "וְהָכְתִיב",
+          "meaning": "But isn't it written...?"
+        },
+        {
+          "term": "טוּרֵי גָזִית",
+          "meaning": "Rows of cut (hewn) stone"
+        },
+        {
+          "term": "כְּרֻתוֹת אֲרָזִים",
+          "meaning": "Cut cedar beams"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אַטּוּ שְׁלֹמֹה לָא עֲבַד הָכִי?",
+          "english": "Is that to say Solomon did not do this?",
+          "notes": "Did שלמה not also put wood into the בית המקדש?"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וְהָכְתִיב: ״שְׁלֹשָׁה טוּרֵי גָזִית",
+          "english": "But isn't it written: 'Three rows of hewn stone'",
+          "notes": "מלכים א ו:לו"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וְטוּר כְּרֻתוֹת אֲרָזִים״!",
+          "english": "'and a row of cedar beams'!",
+          "notes": "שלמה also placed a row of wood."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אַטּוּ שְׁלֹמֹה לָא עֲבַד הָכִי? וְהָכְתִיב",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        5
+      ],
+      "scopeOfStep": "proof_mechanism",
+      "relationToPreviousStep": "Challenges the proof brought in step 5",
+      "kashyaTarget": "The proof that כורש's row of wood showed corruption",
+      "kashyaAttackLogic": "שלמה did the same thing, and his intent was clearly good, so the wood itself proves nothing."
+    },
+    {
+      "stepNumber": 7,
+      "hebrewStepName": "תירוץ",
+      "title": "Three differences between שלמה's wood and כורש's wood",
+      "stepSummary": "שלמה placed the wood on top, sunk it into the walls, and covered it with plaster. כורש did the opposite in all three ways.",
+      "simpleTranslation": "שלמה placed it above, and he (כורש) placed it below. שלמה sank it into the building; he did not sink it into the building. שלמה plastered it with plaster; he did not plaster it with plaster.",
+      "whatsHappening": "The גמרא answers the challenge. It shows that שלמה's wood was built to be safe, while כורש's wood was built so it could burn easily.",
+      "deeperAnalysis": "Wood placed on top of stone can burn without bringing the building down, but wood placed at the bottom makes the whole building collapse. שלמה also set the wood deep into the walls and covered it with plaster so it would not catch fire, and כורש did neither. So the proof from step 5 still stands.",
+      "keyTerms": [
+        {
+          "term": "מִלְּמַעְלָה",
+          "meaning": "Above, on top"
+        },
+        {
+          "term": "מִלְּמַטָּה",
+          "meaning": "Below, at the bottom"
+        },
+        {
+          "term": "שַׁקְּעֵיהּ בְּבִנְיָנָא",
+          "meaning": "He sank it into the building"
+        },
+        {
+          "term": "סַדְיֵיהּ בְּסִידָא",
+          "meaning": "He plastered it with plaster"
+        }
+      ],
+      "whatToRemember": "The row of wood is still a proof against כורש, because he built it in a way that made it easy to burn. שלמה built his in a way that protected it.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "שְׁלֹמֹה עֲבַד מִלְּמַעְלָה,",
+          "english": "Solomon made it above,",
+          "notes": "The wood was on top of the stone rows."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וְאִיהוּ עֲבַד מִלְּמַטָּה.",
+          "english": "and he (Cyrus) made it below.",
+          "notes": "If it burned, the whole building would fall."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "שְׁלֹמֹה שַׁקְּעֵיהּ בְּבִנְיָנָא,",
+          "english": "Solomon sank it into the building,",
+          "notes": "Set deep inside the walls, so it was harder to burn."
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "אִיהוּ לָא שַׁקְּעֵיהּ בְּבִנְיָנָא.",
+          "english": "he did not sink it into the building.",
+          "notes": null
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "שְׁלֹמֹה סַדְיֵיהּ בְּסִידָא,",
+          "english": "Solomon plastered it with plaster,",
+          "notes": "Plaster protects wood from fire."
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "אִיהוּ לָא סַדְיֵיהּ בְּסִידָא.",
+          "english": "he did not plaster it with plaster.",
+          "notes": null
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "שְׁלֹמֹה עֲבַד מִלְּמַעְלָה, וְאִיהוּ עֲבַד מִלְּמַטָּה",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        5,
+        6
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Answers the challenge in step 6",
+      "terutzResolutionType": "Distinguishing the cases",
+      "terutzHavaAmina": "Any row of wood in the בית המקדש is the same, so שלמה and כורש did the same thing.",
+      "terutzMaskana": "The way the wood was built differed in three ways, and these show that כורש planned to be able to burn it."
+    },
+    {
+      "stepNumber": 8,
+      "hebrewStepName": "ראיה",
+      "title": "A new proof: the שגל sitting beside the king",
+      "stepSummary": "רב יוסף, or some say רבי יצחק, brings a new proof that כורש became corrupt from a verse in נחמיה.",
+      "simpleTranslation": "רב יוסף said, and some say it was רבי יצחק: From where do we know that he became corrupt? From here: 'And the king said to me, and the שגל was sitting beside him.'",
+      "whatsHappening": "A new אמורא gives another source showing that כורש became corrupt. The proof depends on the strange word שגל, which the גמרא explains in the next step.",
+      "deeperAnalysis": "On the previous amud (ג:) the גמרא treated the king in נחמיה (ארתחשסתא) as the same person as כורש. Here the verse mentions a שגל sitting beside the king. By itself this does not yet prove anything, so the proof depends on what שגל means.",
+      "keyTerms": [
+        {
+          "term": "וְאִיתֵּימָא",
+          "meaning": "And some say (another version of who said it)"
+        },
+        {
+          "term": "מְנָלַן",
+          "meaning": "From where do we know?"
+        },
+        {
+          "term": "דְּאַחְמִיץ",
+          "meaning": "That he went sour, became corrupt"
+        },
+        {
+          "term": "שֵׁגַל",
+          "meaning": "A word in the verse, explained in the next step"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר רַב יוֹסֵף, וְאִיתֵּימָא רַבִּי יִצְחָק:",
+          "english": "Rav Yosef said, and some say Rabbi Yitzchak:",
+          "notes": "Two versions of who said it."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "מְנָלַן דְּאַחְמִיץ — מֵהָכָא:",
+          "english": "From where do we know that he became corrupt? From here:",
+          "notes": "Literally 'became sour,' like dough that turns into חמץ."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "״וַיֹּאמֶר לִי הַמֶּלֶךְ",
+          "english": "'And the king said to me,",
+          "notes": "נחמיה ב:ו"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וְהַשֵּׁגַל יוֹשֶׁבֶת אֶצְלוֹ״.",
+          "english": "and the שגל was sitting beside him.'",
+          "notes": "The key word of the proof."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "מְנָלַן דְּאַחְמִיץ — מֵהָכָא",
+      "macroPhase": "source_derivation",
+      "branchRole": "alternative_approach",
+      "dependsOnStepNumbers": [
+        5
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Gives another proof of the same claim proven in steps 5 and 7",
+      "raayaObject": "That כורש became corrupt",
+      "raayaSupportSource": "נחמיה ב:ו, the שגל sitting beside the king"
+    },
+    {
+      "stepNumber": 9,
+      "hebrewStepName": "שאלה",
+      "title": "What does the word שגל mean?",
+      "stepSummary": "The גמרא asks what the word שגל means.",
+      "simpleTranslation": "What is 'שגל'?",
+      "whatsHappening": "The גמרא asks the meaning of the word. This is a setup question, and the answer will show why the verse proves corruption.",
+      "deeperAnalysis": "The proof from step 8 only works if שגל means something shameful. So the גמרא stops to define the word.",
+      "keyTerms": [
+        {
+          "term": "מַאי",
+          "meaning": "What is...?"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מַאי ״שֵׁגַל״?",
+          "english": "What is 'שגל'?",
+          "notes": null
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "מַאי ״שֵׁגַל״",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        8
+      ],
+      "scopeOfStep": "wording",
+      "relationToPreviousStep": "Asks for the meaning of the key word in step 8's verse",
+      "sheelahInformationSought": "The meaning of the word שגל"
+    },
+    {
+      "stepNumber": 10,
+      "hebrewStepName": "תשובה",
+      "title": "שגל means a she-dog",
+      "stepSummary": "רבה בר לימא, quoting רב, says that שגל means a female dog.",
+      "simpleTranslation": "רבה בר לימא said in the name of רב: A she-dog.",
+      "whatsHappening": "The question is answered. The king kept a female dog beside him for an immoral purpose, which shows how low he had fallen.",
+      "deeperAnalysis": "Once שגל means a she-dog that the king used in a shameful way, the verse in נחמיה becomes a clear proof that the king became corrupt. This meaning will now be challenged from other verses that also use the word שגל.",
+      "keyTerms": [
+        {
+          "term": "מִשְּׁמֵיהּ דְּ",
+          "meaning": "In the name of"
+        },
+        {
+          "term": "כַּלְבְּתָא",
+          "meaning": "A female dog"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר רַבָּה בַּר לִימָא מִשְּׁמֵיהּ דְּרַב:",
+          "english": "Rabba bar Lima said in the name of Rav:",
+          "notes": null
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "כַּלְבְּתָא.",
+          "english": "A she-dog.",
+          "notes": "Kept beside him for an immoral use."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אָמַר רַבָּה בַּר לִימָא מִשְּׁמֵיהּ דְּרַב",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        9
+      ],
+      "scopeOfStep": "wording",
+      "relationToPreviousStep": "Answers the question in step 9",
+      "teshuvahAnswerProvided": "שגל means a she-dog, which completes the proof that the king was corrupt."
+    },
+    {
+      "stepNumber": 11,
+      "hebrewStepName": "קשיא",
+      "title": "Challenge from דניאל: does a dog drink wine?",
+      "stepSummary": "A verse in דניאל says that בלשאצר's שגל drank wine from the vessels of the בית המקדש. A dog does not drink wine.",
+      "simpleTranslation": "But if so, what about the verse: 'You raised yourself against the Lord of heaven, and they brought the vessels of His house before you, and you and your lords, your שגל and your concubines, drank wine from them.' If שגל is a she-dog, does a she-dog drink wine?",
+      "whatsHappening": "The גמרא challenges רב's meaning of שגל. In another verse a שגל drinks wine, and that does not fit a dog.",
+      "deeperAnalysis": "The same word appears in דניאל about בלשאצר's party. There the שגל is listed with people who drank wine. If שגל means a dog, the verse seems to make no sense.",
+      "keyTerms": [
+        {
+          "term": "אֶלָּא מֵעַתָּה",
+          "meaning": "But if so, now... (introduces a challenge to what was just said)"
+        },
+        {
+          "term": "חַמְרָא",
+          "meaning": "Wine"
+        },
+        {
+          "term": "בַּת מִשְׁתְּיָא",
+          "meaning": "One who drinks, a drinker"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֶלָּא מֵעַתָּה, הָא דִּכְתִיב:",
+          "english": "But if so, what about that which is written:",
+          "notes": "דניאל ה:כג, about בלשאצר"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "״וְעַל מָרֵא שְׁמַיָּא הִתְרוֹמַמְתָּ",
+          "english": "'And you raised yourself against the Lord of heaven,",
+          "notes": null
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וּלְמָאנַיָּיא דִי בַיְתֵיהּ הַיְתִיו קׇדָמָךְ",
+          "english": "and the vessels of His house they brought before you,",
+          "notes": "The vessels of the בית המקדש"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וְאַנְתְּ וְרַבְרְבָנָךְ שֵׁגְלָתָךְ וּלְחֵנָתָךְ",
+          "english": "and you and your lords, your שגל and your concubines,",
+          "notes": "The word שגל appears here."
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "חַמְרָא שָׁתַיִן בְּהוֹן״,",
+          "english": "drank wine from them,'",
+          "notes": null
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "וְאִי ״שֵׁגַל״ כַּלְבְּתָא הִיא,",
+          "english": "and if שגל is a she-dog,",
+          "notes": null
+        },
+        {
+          "phraseNumber": 7,
+          "aramaic": "כַּלְבְּתָא בַּת מִשְׁתְּיָא חַמְרָא הִיא?",
+          "english": "is a she-dog a drinker of wine?",
+          "notes": "Dogs do not normally drink wine."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אֶלָּא מֵעַתָּה, הָא דִּכְתִיב",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        10
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Challenges רב's definition from step 10",
+      "kashyaTarget": "The meaning of שגל as a she-dog",
+      "kashyaAttackLogic": "A verse in דניאל describes the שגל drinking wine, and dogs do not drink wine."
+    },
+    {
+      "stepNumber": 12,
+      "hebrewStepName": "תירוץ",
+      "title": "The dog was trained to drink",
+      "stepSummary": "The גמרא answers that the dog was trained to drink wine.",
+      "simpleTranslation": "This is not difficult, because they trained it and it drank.",
+      "whatsHappening": "The גמרא defends רב's meaning. A dog can drink wine if it is taught to.",
+      "deeperAnalysis": "The challenge assumed that a dog could never drink wine. The גמרא answers that a trained dog can, so the verse in דניאל still fits the meaning 'she-dog.'",
+      "keyTerms": [
+        {
+          "term": "הָא לָא קַשְׁיָא",
+          "meaning": "This is not difficult"
+        },
+        {
+          "term": "דְּמַלְּפָא לָהּ",
+          "meaning": "That they taught it, trained it"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "הָא לָא קַשְׁיָא,",
+          "english": "This is not difficult,",
+          "notes": null
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "דְּמַלְּפָא לָה וְשָׁתְיָיא.",
+          "english": "because they train it and it drinks.",
+          "notes": "A trained dog can drink wine."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "הָא לָא קַשְׁיָא, דְּמַלְּפָא לָה וְשָׁתְיָיא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        11
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Answers the challenge in step 11",
+      "terutzResolutionType": "Explaining how the case works in practice",
+      "terutzHavaAmina": "A dog cannot drink wine, so שגל must mean a person.",
+      "terutzMaskana": "A dog can be trained to drink wine, so the meaning 'she-dog' still works."
+    },
+    {
+      "stepNumber": 13,
+      "hebrewStepName": "קשיא",
+      "title": "Challenge from תהלים: why would a prophet promise a dog?",
+      "stepSummary": "A verse in תהלים uses שגל as part of a blessing for the Jewish people. A dog would not be a blessing.",
+      "simpleTranslation": "But if so, what about the verse: 'Daughters of kings are among your precious ones; the שגל stands at your right hand in gold of Ophir.' If שגל is a she-dog, what good news is the prophet giving to the Jewish people?",
+      "whatsHappening": "The גמרא raises a second challenge to רב's meaning. In תהלים the word appears in a blessing, and a dog does not fit a blessing.",
+      "deeperAnalysis": "This is a different kind of problem than the wine question. In this verse the שגל is described as something honored, standing at the right side in fine gold. It would make no sense for a prophet to promise the Jews a dog as good news.",
+      "keyTerms": [
+        {
+          "term": "כֶּתֶם אוֹפִיר",
+          "meaning": "Fine gold of Ophir, a place known for its gold"
+        },
+        {
+          "term": "מְבַשַּׂר",
+          "meaning": "Bringing good news, announcing"
+        },
+        {
+          "term": "נָבִיא",
+          "meaning": "Prophet"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֶלָּא מֵעַתָּה דִּכְתִיב:",
+          "english": "But if so, that which is written:",
+          "notes": "תהלים מה:י"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "״בְּנוֹת מְלָכִים בְּיִקְּרוֹתֶיךָ",
+          "english": "'Daughters of kings are among your precious ones,",
+          "notes": null
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "נִצְּבָה שֵׁגַל לִימִינְךָ בְּכֶתֶם אוֹפִיר״,",
+          "english": "the שגל stands at your right in gold of Ophir,'",
+          "notes": "Here the שגל sounds like an honored figure."
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וְאִי שֵׁגַל כַּלְבְּתָא הִיא,",
+          "english": "and if שגל is a she-dog,",
+          "notes": null
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "מַאי קָא מְבַשַּׂר לְהוּ נָבִיא לְיִשְׂרָאֵל?!",
+          "english": "what good news is the prophet giving to Israel?!",
+          "notes": "A dog is not a blessing."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אֶלָּא מֵעַתָּה דִּכְתִיב",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        10
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "A second, separate challenge to רב's definition from step 10",
+      "kashyaTarget": "The meaning of שגל as a she-dog",
+      "kashyaAttackLogic": "The verse in תהלים uses שגל as part of a blessing, and a dog cannot be a blessing."
+    },
+    {
+      "stepNumber": 14,
+      "hebrewStepName": "תירוץ",
+      "title": "תורה is as dear to Israel as the dog was to the nations",
+      "stepSummary": "The verse is a comparison. Because the Jews loved the Torah as much as the nations loved their dogs, they earned the gold of Ophir.",
+      "simpleTranslation": "This is what it is saying: As a reward for the Torah being as beloved to Israel as the שגל is to the nations, you earned the gold of Ophir.",
+      "whatsHappening": "The גמרא answers the second challenge. The verse is not promising a dog; it uses the dog as a comparison.",
+      "deeperAnalysis": "The nations loved their dogs so much that they kept them right beside them. The prophet says that the Jews held the Torah just as close, and as a reward they earned the gold of Ophir. So שגל can still mean she-dog, and the proof that the king became corrupt stands.",
+      "keyTerms": [
+        {
+          "term": "הָכִי קָאָמַר",
+          "meaning": "This is what it means to say"
+        },
+        {
+          "term": "בִּשְׂכַר",
+          "meaning": "As a reward for"
+        },
+        {
+          "term": "חֲבִיבָה",
+          "meaning": "Beloved, dear"
+        },
+        {
+          "term": "זְכִיתֶם",
+          "meaning": "You merited, you earned"
+        }
+      ],
+      "whatToRemember": "שגל means a she-dog. The verse in נחמיה shows that the king kept one beside him, which proves he became corrupt. The other verses that use שגל can be explained in a way that fits this meaning.",
+      "confusionAlert": "The verse in תהלים is not promising the Jews a dog. The dog is only a comparison: Israel loved the Torah as much as the nations loved their dogs.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "הָכִי קָאָמַר:",
+          "english": "This is what it is saying:",
+          "notes": null
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "בִּשְׂכַר שֶׁחֲבִיבָה תּוֹרָה לְיִשְׂרָאֵל",
+          "english": "As a reward for the Torah being beloved to Israel",
+          "notes": null
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "כְּשֵׁגַל לַגּוֹיִם —",
+          "english": "like the she-dog is to the nations —",
+          "notes": "The comparison: just as close and dear"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "זְכִיתֶם לְכֶתֶם אוֹפִיר.",
+          "english": "you have earned the gold of Ophir.",
+          "notes": null
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "הָכִי קָאָמַר: בִּשְׂכַר שֶׁחֲבִיבָה תּוֹרָה לְיִשְׂרָאֵל",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        13
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Answers the challenge in step 13",
+      "terutzResolutionType": "Rereading the verse",
+      "terutzHavaAmina": "The verse promises Israel a שגל, so שגל must be something good.",
+      "terutzMaskana": "The verse uses the שגל as a comparison for how much Israel loves the Torah, so the meaning 'she-dog' still holds."
+    },
+    {
+      "stepNumber": 15,
+      "hebrewStepName": "תירוץ",
+      "title": "Second answer: שגל usually means queen, but there is a special tradition about כורש",
+      "stepSummary": "A new answer to the challenges from דניאל and תהלים: שגל normally means 'queen,' but רבה בר לימא had a received tradition that in the case of כורש it meant a female dog.",
+      "simpleTranslation": "And if you want, say: really, 'שגל' means a queen. But רבה בר לימא had a tradition that he learned.",
+      "whatsHappening": "The גמרא gives a second way to answer the questions from steps 11 and 13. It now admits that שגל normally means 'queen.'",
+      "deeperAnalysis": "Before this, the גמרא said שגל always means 'dog' and had to explain the verses that did not fit. Now it flips the approach: in דניאל and תהלים the word simply means 'queen,' so those verses cause no difficulty. Only in the verse about כורש did רבה בר לימא have a special tradition that it means a dog.",
+      "keyTerms": [
+        {
+          "term": "וְאִיבָּעֵית אֵימָא",
+          "meaning": "And if you want, say (introduces an alternative answer)"
+        },
+        {
+          "term": "לְעוֹלָם",
+          "meaning": "Really / actually (we go back to the plain view)"
+        },
+        {
+          "term": "מַלְכְּתָא",
+          "meaning": "Queen"
+        },
+        {
+          "term": "גְּמָרָא גְּמִיר לַהּ",
+          "meaning": "He had a received tradition about it"
+        }
+      ],
+      "confusionAlert": "Do not think רבה בר לימא is being proven wrong. He is still right about כורש. His claim is just narrowed to that one verse, and everywhere else שגל means 'queen.'",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְאִיבָּעֵית אֵימָא:",
+          "english": "And if you wish, say:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "לְעוֹלָם ״שֵׁגַל״ — מַלְכְּתָא הִיא,",
+          "english": "Actually, 'shegal' means a queen,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וְרַבָּה בַּר לִימָא",
+          "english": "and Rabba bar Lima"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "גְּמָרָא, גְּמִיר לַהּ.",
+          "english": "had a tradition that he learned about it (regarding Koresh).",
+          "notes": "He received it as a tradition. It is not derived from the plain meaning of the word."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "דחיה",
+      "triggerLanguage": "וְאִיבָּעֵית אֵימָא: לְעוֹלָם ״שֵׁגַל״ — מַלְכְּתָא הִיא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "alternative_approach",
+      "dependsOnStepNumbers": [
+        10,
+        11,
+        13
+      ],
+      "scopeOfStep": "wording",
+      "relationToPreviousStep": "An alternative resolution to the challenges of steps 11 and 13, replacing the answers of steps 12 and 14.",
+      "terutzResolutionType": "Limits the definition to one context, based on a received tradition",
+      "terutzHavaAmina": "שגל always means 'dog,' so verses that use it for a queen or a blessing are difficult.",
+      "terutzMaskana": "שגל means 'queen' in general. Only in the כורש verse, through tradition, does it mean a dog."
+    },
+    {
+      "stepNumber": 16,
+      "hebrewStepName": "שאלה",
+      "title": "Why would a dog be called by the word for queen?",
+      "stepSummary": "If שגל means 'queen,' the גמרא asks why the verse about כורש uses that word for a dog.",
+      "simpleTranslation": "And why does the verse call it 'שגל'?",
+      "whatsHappening": "The גמרא asks a follow-up question about the new answer. This sets up the explanation in the next step.",
+      "deeperAnalysis": "Once שגל is defined as 'queen,' it is strange for the כורש verse to use it for a dog. The גמרא wants to know what connects the dog to the word 'queen.'",
+      "keyTerms": [
+        {
+          "term": "וְאַמַּאי",
+          "meaning": "And why?"
+        },
+        {
+          "term": "קָרֵי לַהּ",
+          "meaning": "Calls it / refers to it as"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְאַמַּאי קָרֵי לַהּ ״שֵׁגַל״?",
+          "english": "And why does it call it 'shegal' (queen)?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "קשיא",
+      "triggerLanguage": "וְאַמַּאי קָרֵי לַהּ",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        15
+      ],
+      "scopeOfStep": "wording",
+      "relationToPreviousStep": "Asks for clarification of the answer in step 15.",
+      "sheelahInformationSought": "Why a dog would be described with the word that means 'queen.'"
+    },
+    {
+      "stepNumber": 17,
+      "hebrewStepName": "תשובה",
+      "title": "The dog was treated like a queen",
+      "stepSummary": "Two explanations: the dog was as dear to כורש as a queen, or he seated it in the queen's place.",
+      "simpleTranslation": "Because it was as dear to him as a queen. Or, because he seated it in the place of a queen.",
+      "whatsHappening": "The גמרא gives two reasons the dog is called 'queen.' Both show how disgracefully כורש behaved.",
+      "deeperAnalysis": "The first reason is about feelings: he loved the dog like a wife. The second reason is about actions: he physically placed the dog in the queen's seat. Either way, the word fits, and it shows that כורש had become corrupt.",
+      "keyTerms": [
+        {
+          "term": "חֲבִיבָה",
+          "meaning": "Dear / beloved"
+        },
+        {
+          "term": "אִי נָמֵי",
+          "meaning": "Alternatively / or else"
+        },
+        {
+          "term": "שֶׁהוֹשִׁיבָהּ",
+          "meaning": "That he seated her"
+        }
+      ],
+      "whatToRemember": "Final picture of שגל: it usually means 'queen.' In the כורש verse it refers to a dog that he treated like a queen, and this is the proof that he became corrupt.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "שֶׁהָיְתָה חֲבִיבָה עָלָיו כְּשֵׁגַל.",
+          "english": "Because it was as dear to him as a queen."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אִי נָמֵי: שֶׁהוֹשִׁיבָהּ בִּמְקוֹם שֵׁגַל.",
+          "english": "Or else: because he seated it in the place of a queen."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "שֶׁהָיְתָה חֲבִיבָה עָלָיו כְּשֵׁגַל",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        16
+      ],
+      "scopeOfStep": "wording",
+      "relationToPreviousStep": "Answers the question of step 16.",
+      "teshuvahAnswerProvided": "The dog was called 'queen' because he loved it like a queen, or because he seated it in a queen's place."
+    },
+    {
+      "stepNumber": 18,
+      "hebrewStepName": "ראיה",
+      "title": "A different proof that כורש became corrupt: he started limiting his gifts",
+      "stepSummary": "An alternative source: the verse lists limits on the king's gifts to the בית המקדש. Before, he gave without limits, and now he set limits.",
+      "simpleTranslation": "And if you want, say: from where do we know he became corrupt? From here: 'Up to a hundred talents of silver, up to a hundred measures of wheat, up to a hundred bat of wine, up to a hundred bat of oil, and salt without limit.' At first he gave without a limit, and now with a limit.",
+      "whatsHappening": "The גמרא offers a completely different proof that כורש became corrupt, without using שגל at all. It points to a verse where his donations come with set maximums.",
+      "deeperAnalysis": "Earlier he donated freely, with no cap. Now the verse lists exact upper limits for silver, wheat, wine and oil. The גמרא reads this change from generous to stingy as a sign that he had soured.",
+      "keyTerms": [
+        {
+          "term": "מְנָלַן",
+          "meaning": "From where do we know?"
+        },
+        {
+          "term": "דְּאַחְמִיץ",
+          "meaning": "That he soured (became corrupt)"
+        },
+        {
+          "term": "מֵעִיקָּרָא",
+          "meaning": "Originally / at first"
+        },
+        {
+          "term": "קִיצּוּתָא",
+          "meaning": "A fixed limit"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְאִיבָּעֵית אֵימָא:",
+          "english": "And if you wish, say:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "מְנָלַן דְּאַחְמִיץ — מֵהָכָא:",
+          "english": "From where do we know he became corrupt? From here:"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "״עַד כְּסַף כַּכְּרִין מְאָה",
+          "english": "'Up to a hundred talents of silver,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וְעַד חִנְטִין כּוֹרִין מְאָה",
+          "english": "and up to a hundred kor of wheat,"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "וְעַד חֲמַר בַּתִּין מְאָה",
+          "english": "and up to a hundred bat of wine,"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "וְעַד בַּתִּין מְשַׁח מְאָה",
+          "english": "and up to a hundred bat of oil,"
+        },
+        {
+          "phraseNumber": 7,
+          "aramaic": "וּמְלַח דִּי לָא כְתָב וְגוֹ׳״.",
+          "english": "and salt without a written limit, etc.' (עזרא 7:22)"
+        },
+        {
+          "phraseNumber": 8,
+          "aramaic": "מֵעִיקָּרָא — בְּלָא קִיצּוּתָא,",
+          "english": "At first, he gave without a limit,"
+        },
+        {
+          "phraseNumber": 9,
+          "aramaic": "וְהַשְׁתָּא — בְּקִיצּוּתָא.",
+          "english": "but now, with a limit."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "תשובה",
+      "triggerLanguage": "וְאִיבָּעֵית אֵימָא: מְנָלַן דְּאַחְמִיץ — מֵהָכָא",
+      "macroPhase": "source_derivation",
+      "branchRole": "alternative_approach",
+      "dependsOnStepNumbers": [
+        10
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Offers a second source, independent of the שגל verse, for the claim that כורש became corrupt.",
+      "raayaObject": "That כורש became corrupt.",
+      "raayaSupportSource": "עזרא 7:22, where his gifts now have set limits, compared with the unlimited giving earlier."
+    },
+    {
+      "stepNumber": 19,
+      "hebrewStepName": "דחיה",
+      "title": "Maybe at first he just did not know the right amount",
+      "stepSummary": "The proof is rejected: maybe at first he did not know what the בית המקדש needed, and later he set a fitting amount.",
+      "simpleTranslation": "But maybe at first he simply did not know what the right limit was?",
+      "whatsHappening": "The גמרא knocks down the proof from step 18 by offering an innocent explanation for the limits.",
+      "deeperAnalysis": "Setting a limit does not have to mean stinginess. At first he may not have known how much the בית המקדש needed. Once he learned, he set a sensible amount, so the limits prove nothing about corruption.",
+      "keyTerms": [
+        {
+          "term": "וְדִילְמָא",
+          "meaning": "But perhaps"
+        },
+        {
+          "term": "קִים לֵיהּ",
+          "meaning": "He knew / was clear to him"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְדִילְמָא מֵעִיקָּרָא",
+          "english": "But perhaps at first"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "לָא הֲוָה קִים לֵיהּ בְּקִיצּוּתָא?",
+          "english": "he did not know what limit to set?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וְדִילְמָא מֵעִיקָּרָא לָא הֲוָה קִים לֵיהּ בְּקִיצּוּתָא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        18
+      ],
+      "scopeOfStep": "inference",
+      "relationToPreviousStep": "Rejects the proof of step 18.",
+      "dechiyaRejectionScope": "The whole alternative proof from the gift limits.",
+      "dechiyaFlawIdentified": "The change to limits can be explained by his lack of knowledge at first, not by corruption."
+    },
+    {
+      "stepNumber": 20,
+      "hebrewStepName": "מסקנא",
+      "title": "Back to the original proof from שגל",
+      "stepSummary": "The גמרא concludes that the clear answer is the original one: the proof of corruption comes from שגל.",
+      "simpleTranslation": "Rather, it is clear like we answered at first.",
+      "whatsHappening": "Since the gift-limit proof failed, the גמרא returns to its first proof, the verse about שגל.",
+      "deeperAnalysis": "The phrase 'מחוורתא כדשנין מעיקרא' means the alternative did not hold up, so the original approach stands. The proof that כורש became corrupt rests on how he treated the שגל.",
+      "keyTerms": [
+        {
+          "term": "מְחַוַּורְתָּא",
+          "meaning": "It is clear"
+        },
+        {
+          "term": "כִּדְשַׁנִּיין מֵעִיקָּרָא",
+          "meaning": "As we answered at first"
+        }
+      ],
+      "whatToRemember": "The proof from the limits on his gifts was rejected. The גמרא falls back on its earlier answer, the שגל verse, as the proof that כורש became corrupt.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֶלָּא, מְחַוַּורְתָּא",
+          "english": "Rather, it is clear"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "כִּדְשַׁנִּיין מֵעִיקָּרָא.",
+          "english": "as we answered at first."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אֶלָּא, מְחַוַּורְתָּא כִּדְשַׁנִּיין מֵעִיקָּרָא",
+      "macroPhase": "conclusion",
+      "branchRole": "returns_to_previous_branch",
+      "dependsOnStepNumbers": [
+        10,
+        19
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "After the rejection in step 19, returns to the original שגל proof.",
+      "maskanaFinalTakeaway": "The source that כורש became corrupt is the שגל verse."
+    },
+    {
+      "stepNumber": 21,
+      "hebrewStepName": "קשיא",
+      "title": "How can the ראש השנה for רגלים be on the first of ניסן?",
+      "stepSummary": "The גמרא quotes the משנה's phrase 'and for the רגלים' and challenges it: פסח begins on the fifteenth of ניסן, not the first.",
+      "simpleTranslation": "'And for the festivals.' Is the new year for festivals on the first of ניסן? It is on the fifteenth of ניסן!",
+      "whatsHappening": "The גמרא moves to a new phrase in the משנה, which says the first of ניסן is ראש השנה for the רגלים. It immediately challenges this.",
+      "deeperAnalysis": "The first festival of the year is פסח, which starts on the fifteenth of ניסן. So it seems wrong to say the festivals' new year is on the first of the month.",
+      "keyTerms": [
+        {
+          "term": "רְגָלִים",
+          "meaning": "The pilgrimage festivals (פסח, שבועות, סוכות)"
+        },
+        {
+          "term": "נִיסָן",
+          "meaning": "The month of ניסן"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְלָרְגָלִים.",
+          "english": "'And for the festivals.'",
+          "notes": "A quote from the משנה."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "רְגָלִים בְּאֶחָד בְּנִיסָן הוּא?",
+          "english": "Is the new year for festivals on the first of Nisan?"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "בַּחֲמִשָּׁה עָשָׂר בְּנִיסָן הוּא!",
+          "english": "It is on the fifteenth of Nisan!"
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "שאלה",
+      "triggerLanguage": "וְלָרְגָלִים. רְגָלִים בְּאֶחָד בְּנִיסָן הוּא?",
+      "macroPhase": "opening_question",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "wording",
+      "relationToPreviousStep": "Leaves the topic of kings and begins analyzing the next clause of the משנה.",
+      "kashyaTarget": "The משנה's statement that the first of ניסן is ראש השנה for the רגלים.",
+      "kashyaAttackLogic": "פסח, the first festival, falls on the fifteenth of ניסן, so the date in the משנה seems wrong."
+    },
+    {
+      "stepNumber": 22,
+      "hebrewStepName": "תירוץ",
+      "title": "רב חסדא: the festival in ניסן starts the order of festivals",
+      "stepSummary": "רב חסדא explains that the משנה means the festival that falls in ניסן, פסח, is the start of the yearly order of festivals.",
+      "simpleTranslation": "רב חסדא said: the festival that is in it (ניסן) is the new year for festivals.",
+      "whatsHappening": "רב חסדא reinterprets the משנה. It is not giving a date. It is saying which festival begins the cycle.",
+      "deeperAnalysis": "The משנה does not mean the festivals' new year falls on the first day of ניסן. It means the festival of ניסן, which is פסח, counts as the first in the order of festivals. The first of ניסן is grouped together with it simply because it is the same month.",
+      "keyTerms": [
+        {
+          "term": "רַב חִסְדָּא",
+          "meaning": "An אמורא"
+        },
+        {
+          "term": "רֶגֶל שֶׁבּוֹ",
+          "meaning": "The festival that is in it (in ניסן)"
+        },
+        {
+          "term": "רֹאשׁ הַשָּׁנָה",
+          "meaning": "The new year / starting point"
+        }
+      ],
+      "whyThisMatters": "Knowing that פסח starts the order of festivals matters for counting how many festivals have passed, for example with a pledge someone has delayed paying (בל תאחר). The next step develops this.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר רַב חִסְדָּא:",
+          "english": "Rav Chisda said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "רֶגֶל שֶׁבּוֹ,",
+          "english": "The festival that is in it (Nisan)"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "רֹאשׁ הַשָּׁנָה לָרְגָלִים.",
+          "english": "is the new year for the festivals."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אָמַר רַב חִסְדָּא: רֶגֶל שֶׁבּוֹ",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        21
+      ],
+      "scopeOfStep": "wording",
+      "relationToPreviousStep": "Resolves the challenge of step 21.",
+      "terutzResolutionType": "Reinterprets the משנה's wording",
+      "terutzHavaAmina": "The משנה means the festivals' new year falls on the first day of ניסן.",
+      "terutzMaskana": "The משנה means the festival in ניסן, פסח, is the first in the order of festivals."
+    },
+    {
+      "stepNumber": 23,
+      "hebrewStepName": "מימרא",
+      "title": "The practical difference: when a vow-maker breaks 'do not delay'",
+      "stepSummary": "The גמרא explains that פסח starting the festival order matters for the prohibition of בל תאחר. It also says our משנה follows רבי שמעון.",
+      "simpleTranslation": "The practical difference is for someone who makes a vow: it decides when he becomes liable for 'Do not delay.' And our משנה follows רבי שמעון.",
+      "whatsHappening": "The גמרא has just learned (Step 22) that פסח begins the order of festivals. Now it tells us why that matters in practice: it affects the prohibition of בל תאחר.",
+      "deeperAnalysis": "The Torah forbids delaying payment of a vow. The time limit is measured in festivals, so we need to know which festival counts as 'first.' The גמרא says our משנה matches רבי שמעון's view, and the next steps prove this.",
+      "keyTerms": [
+        {
+          "term": "נָפְקָא מִינַּהּ",
+          "meaning": "The practical difference that results from this"
+        },
+        {
+          "term": "נוֹדֵר",
+          "meaning": "Someone who makes a vow"
+        },
+        {
+          "term": "בַּל תְּאַחֵר",
+          "meaning": "The prohibition 'Do not delay' paying a vow (דברים כג:כב)"
+        },
+        {
+          "term": "וְרַבִּי שִׁמְעוֹן הִיא",
+          "meaning": "'And it is רבי שמעון': this opinion follows רבי שמעון"
+        }
+      ],
+      "whyThisMatters": "This step gives a real halachic reason for the משנה's phrase 'ראש השנה for the רגלים.' Without it, the phrase would only be a calendar label.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "נָפְקָא מִינַּהּ לְנוֹדֵר,",
+          "english": "The practical difference is for one who makes a vow,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "לְמֵיקַם עֲלֵיהּ בְּ״בַל תְּאַחֵר״,",
+          "english": "to determine when he becomes liable for 'Do not delay,'",
+          "notes": "Literally: 'to make him stand under' the prohibition."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וְרַבִּי שִׁמְעוֹן הִיא.",
+          "english": "and it (the משנה) follows Rabbi Shimon."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "תירוץ",
+      "triggerLanguage": "נָפְקָא מִינַּהּ לְנוֹדֵר",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        21,
+        22
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Builds on רב חסדא's explanation by giving its practical halachic result.",
+      "mimraCoreRuling": "Calling פסח the start of the festival order matters for timing בל תאחר, and this follows רבי שמעון."
+    },
+    {
+      "stepNumber": 24,
+      "hebrewStepName": "ראיה",
+      "title": "The ברייתא: three festivals passing means 'do not delay' is broken",
+      "stepSummary": "The גמרא quotes a ברייתא. Its first opinion says that once any three festivals pass, the person transgresses בל תאחר.",
+      "simpleTranslation": "As a ברייתא teaches: whether one vows, consecrates, or makes a valuation, once three festivals have passed, he transgresses 'Do not delay.'",
+      "whatsHappening": "The גמרא brings a ברייתא to show where רבי שמעון's view comes from. This first part is the opinion of the תנא קמא, which sets up רבי שמעון's response in the next step.",
+      "deeperAnalysis": "The תנא קמא gives the basic rule: three festivals is the time limit for paying a vow. He does not say the festivals must come in a set order, so any three festivals in a row count. This is the backdrop that רבי שמעון will refine.",
+      "keyTerms": [
+        {
+          "term": "דְּתַנְיָא",
+          "meaning": "As it was taught in a ברייתא"
+        },
+        {
+          "term": "מַקְדִּישׁ",
+          "meaning": "Someone who consecrates an item to the בית המקדש"
+        },
+        {
+          "term": "מַעֲרִיךְ",
+          "meaning": "Someone who pledges a person's fixed 'valuation' (ערכין) to the Temple treasury"
+        },
+        {
+          "term": "רְגָלִים",
+          "meaning": "The three pilgrimage festivals: פסח, שבועות, סוכות"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "דְּתַנְיָא:",
+          "english": "As it was taught in a baraita:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אֶחָד הַנּוֹדֵר, וְאֶחָד הַמַּקְדִּישׁ,",
+          "english": "Whether one makes a vow, or one consecrates,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וְאֶחָד הַמַּעֲרִיךְ,",
+          "english": "or one makes a valuation,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "כֵּיוָן שֶׁעָבְרוּ עָלָיו שְׁלֹשָׁה רְגָלִים —",
+          "english": "once three festivals have passed over him,"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "עוֹבֵר בְּ״בַל תְּאַחֵר״.",
+          "english": "he transgresses 'Do not delay.'"
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "מימרא",
+      "triggerLanguage": "דְּתַנְיָא",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        23
+      ],
+      "scopeOfStep": "proof_mechanism",
+      "relationToPreviousStep": "Brings the source text that backs up the claim that the משנה follows רבי שמעון.",
+      "raayaObject": "The claim that our משנה follows רבי שמעון",
+      "raayaSupportSource": "A ברייתא about the time limit for בל תאחר (first opinion: the תנא קמא)"
+    },
+    {
+      "stepNumber": 25,
+      "hebrewStepName": "ראיה",
+      "title": "רבי שמעון: three festivals in order, starting with פסח",
+      "stepSummary": "רבי שמעון says the three festivals must pass in their proper order, with פסח first.",
+      "simpleTranslation": "רבי שמעון says: three festivals in their order, with חג המצות first.",
+      "whatsHappening": "This is the key part of the ברייתא. רבי שמעון adds that the festivals must come in order, beginning with פסח.",
+      "deeperAnalysis": "For the תנא קמא, any three festivals count. For רבי שמעון, the count only works if it runs פסח, then שבועות, then סוכות. This is exactly why the משנה calls ניסן the start of the festivals, so the משנה follows him.",
+      "keyTerms": [
+        {
+          "term": "כְּסִדְרָן",
+          "meaning": "In their proper order"
+        },
+        {
+          "term": "חַג הַמַּצּוֹת",
+          "meaning": "The Festival of Matzos: פסח"
+        },
+        {
+          "term": "תְּחִילָּה",
+          "meaning": "First"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "רַבִּי שִׁמְעוֹן אוֹמֵר:",
+          "english": "Rabbi Shimon says:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "שְׁלֹשָׁה רְגָלִים כְּסִדְרָן,",
+          "english": "three festivals in their proper order,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וְחַג הַמַּצּוֹת תְּחִילָּה.",
+          "english": "with the Festival of Matzos (פסח) first."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "מימרא",
+      "triggerLanguage": "רַבִּי שִׁמְעוֹן אוֹמֵר",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        23,
+        24
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Gives רבי שמעון's view, which disagrees with the תנא קמא and matches our משנה.",
+      "raayaObject": "That the משנה's 'ראש השנה for the רגלים' follows רבי שמעון",
+      "raayaSupportSource": "רבי שמעון's statement in the ברייתא: 'וְחַג הַמַּצּוֹת תְּחִילָּה'",
+      "whyThisMatters": "This is the opinion that gives meaning to ניסן being the 'new year' for festivals."
+    },
+    {
+      "stepNumber": 26,
+      "hebrewStepName": "ראיה",
+      "title": "Sometimes three, four, or five festivals",
+      "stepSummary": "רבי שמעון בן יוחאי explains that, depending on when the vow was made, three, four, or five festivals may pass before he transgresses.",
+      "simpleTranslation": "And so רבי שמעון בן יוחאי would say: festivals are sometimes three, sometimes four, sometimes five. How? If he vowed before פסח, three. Before עצרת (שבועות), five. Before החג (סוכות), four.",
+      "whatsHappening": "The ברייתא continues and spells out what 'in order, with פסח first' means in real life. The number of festivals depends on when the vow was made.",
+      "deeperAnalysis": "Before פסח: פסח, שבועות, סוכות, so three. Before שבועות: that שבועות and סוכות don't start the count, so he waits for the next פסח, שבועות, סוכות, making five. Before סוכות: that סוכות plus the next full cycle, making four.",
+      "keyTerms": [
+        {
+          "term": "פְּעָמִים",
+          "meaning": "Sometimes"
+        },
+        {
+          "term": "כֵּיצַד",
+          "meaning": "How so?"
+        },
+        {
+          "term": "עֲצֶרֶת",
+          "meaning": "The rabbinic name for שבועות"
+        },
+        {
+          "term": "הֶחָג",
+          "meaning": "'The Festival': usually means סוכות"
+        }
+      ],
+      "confusionAlert": "Don't think 'before עצרת' should give fewer festivals than 'before פסח.' Since the count must start with פסח, a vow made before שבועות has to wait for a whole new cycle, so it is the longest: five.",
+      "whatToRemember": "According to רבי שמעון, בל תאחר is only broken after a full cycle of פסח, שבועות, סוכות has passed. That is why ניסן (פסח) is the 'ראש השנה for the רגלים.'",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְכֵן הָיָה רַבִּי שִׁמְעוֹן בֶּן יוֹחַי אוֹמֵר:",
+          "english": "And so too Rabbi Shimon ben Yochai would say:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "רְגָלִים, פְּעָמִים שְׁלֹשָׁה,",
+          "english": "Festivals are sometimes three,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "פְּעָמִים אַרְבָּעָה, פְּעָמִים חֲמִשָּׁה.",
+          "english": "sometimes four, sometimes five."
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "כֵּיצַד?",
+          "english": "How so?"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "נָדַר לִפְנֵי הַפֶּסַח — שְׁלֹשָׁה.",
+          "english": "If he vowed before פסח, three."
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "לִפְנֵי עֲצֶרֶת — חֲמִשָּׁה.",
+          "english": "Before עצרת (שבועות), five.",
+          "notes": "The count waits until the next פסח."
+        },
+        {
+          "phraseNumber": 7,
+          "aramaic": "לִפְנֵי הֶחָג — אַרְבָּעָה.",
+          "english": "Before the Chag (סוכות), four."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "מימרא",
+      "triggerLanguage": "וְכֵן הָיָה רַבִּי שִׁמְעוֹן בֶּן יוֹחַי אוֹמֵר",
+      "macroPhase": "source_derivation",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        25
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Explains רבי שמעון's rule with concrete examples.",
+      "raayaObject": "How רבי שמעון's 'in order' rule works in practice",
+      "raayaSupportSource": "רבי שמעון בן יוחאי's counting of three, four, or five festivals"
+    },
+    {
+      "stepNumber": 27,
+      "hebrewStepName": "מימרא",
+      "title": "A new ברייתא lists the obligations covered by 'do not delay'",
+      "stepSummary": "A new ברייתא begins, listing many kinds of pledges and offerings: monetary vows, valuations, dedications, sacrifices, charity, tithes, firstborn, and the פסח offering.",
+      "simpleTranslation": "The Rabbis taught: those obligated for monetary vows and valuations, dedications and consecrations, sin-offerings and guilt-offerings, burnt-offerings and peace-offerings, charity and tithes, firstborn, animal tithe, and the פסח offering...",
+      "whatsHappening": "The גמרא starts a new ברייתא that lists all the obligations this rule applies to. The sentence is not finished on this amud. This is a setup, and the rule for these items comes on the next amud.",
+      "deeperAnalysis": "This widens the topic. The earlier ברייתא spoke of vows, consecrations, and valuations. This list shows that the same time limit covers many more obligations, including sacrifices, charity, and tithes.",
+      "keyTerms": [
+        {
+          "term": "תָּנוּ רַבָּנַן",
+          "meaning": "The Rabbis taught (introduces a ברייתא)"
+        },
+        {
+          "term": "דָּמִין",
+          "meaning": "Pledges of monetary value to the Temple"
+        },
+        {
+          "term": "חֲרָמִין",
+          "meaning": "Dedications (חרם), items devoted to the Temple or כהנים"
+        },
+        {
+          "term": "צְדָקוֹת",
+          "meaning": "Charity pledges"
+        },
+        {
+          "term": "בְּכוֹר",
+          "meaning": "A firstborn animal, given to the כהן"
+        },
+        {
+          "term": "מַעֲשֵׂר",
+          "meaning": "Here, after בכור: animal tithe (מעשר בהמה)"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "תָּנוּ רַבָּנַן:",
+          "english": "The Sages taught:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "חַיָּיבֵי הַדָּמִין וְהָעֲרָכִין,",
+          "english": "Those obligated for monetary pledges and valuations,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "הַחֲרָמִין וְהַהֶקְדֵּשׁוֹת,",
+          "english": "dedications and consecrations,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "חַטָּאוֹת וַאֲשָׁמוֹת,",
+          "english": "sin-offerings and guilt-offerings,"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "עוֹלוֹת וּשְׁלָמִים,",
+          "english": "burnt-offerings and peace-offerings,"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "צְדָקוֹת וּמַעַשְׂרוֹת,",
+          "english": "charity and tithes,"
+        },
+        {
+          "phraseNumber": 7,
+          "aramaic": "בְּכוֹר וּמַעֲשֵׂר וּפֶסַח,",
+          "english": "a firstborn, animal tithe, and the Paschal offering,",
+          "notes": "The sentence continues on the next amud."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "ראיה",
+      "triggerLanguage": "תָּנוּ רַבָּנַן",
+      "macroPhase": "source_derivation",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [
+        24,
+        26
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "After finishing רבי שמעון's counting, the גמרא opens a new ברייתא on which obligations fall under בל תאחר.",
+      "mimraCoreRuling": "Setup: a list of obligations whose rule for בל תאחר is stated in the continuation."
+    }
+  ]
+}

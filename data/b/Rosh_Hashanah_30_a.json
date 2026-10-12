@@ -1,0 +1,2328 @@
+{
+  "mainTopic": "Blowing שופר on שבת: tied to the court's presence or the court's hours; then רבן יוחנן בן זכאי's תקנות of לולב and יום הנף.",
+  "overview": "This amud asks how the שופר may be blown on a ראש השנה that falls on שבת after the Temple's destruction. In the first version, רב הונא's words 'ועם בית דין' mean only in front of the בית דין. רבא challenges this from the משנה's 'ועוד זאת', and the גמרא answers that in יבנה they blew only in front of the court, while in ירושלים they blew even away from it. In a second version, רב הונא's words are said on the יובל and mean only during the court's hours. רבא and רב ששת each challenge this from a ברייתא. Both challenges are answered: blowing is always limited to the court's hours, and on the יובל people may also blow away from the court. רבי supports the time limit. רבי זירא's question about judges who began to rise ends in תיקו. The גמרא then explains the four conditions for towns near ירושלים. A new משנה follows: רבן יוחנן בן זכאי's תקנות to take the לולב seven days everywhere and to forbid new grain all of יום הנף. The גמרא gives a source for זכר למקדש and the reason for the יום הנף rule, and רב נחמן בר יצחק begins another explanation that continues on the next amud.",
+  "steps": [
+    {
+      "stepNumber": 1,
+      "hebrewStepName": "שאלה",
+      "title": "What does 'with the court' mean?",
+      "stepSummary": "The גמרא quotes רב הונא's phrase 'ועם בית דין' and asks what it means.",
+      "simpleTranslation": "'And with the court.' What does 'and with the court' mean?",
+      "whatsHappening": "The גמרא quotes a short, unclear phrase from רב הונא about blowing שופר on שבת and asks what it means. It is setting up an explanation that comes in the next step.",
+      "deeperAnalysis": "רב הונא said the שופר was blown on שבת 'with the בית דין', but 'with' is vague. It could be about place (in front of the court) or about time (while the court is sitting). The גמרא wants to pin down which one.",
+      "keyTerms": [
+        {
+          "term": "בֵּית דִּין",
+          "meaning": "The court (here, the great court of the Sages)"
+        },
+        {
+          "term": "מַאי",
+          "meaning": "What? / What does it mean?"
+        },
+        {
+          "term": "וְעִם",
+          "meaning": "And with"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְעִם בֵּית דִּין.",
+          "english": "\"And with the court.\"",
+          "notes": "A quote of רב הונא's phrase about blowing שופר on שבת."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "מַאי וְעִם בֵּית דִּין?",
+          "english": "What does \"and with the court\" mean?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "מַאי וְעִם בֵּית דִּין",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "wording",
+      "relationToPreviousStep": "Picks up רב הונא's statement from the previous section of the sugya.",
+      "sheelahInformationSought": "Whether 'with the court' refers to the court's physical presence or to the time the court is in session."
+    },
+    {
+      "stepNumber": 2,
+      "hebrewStepName": "תשובה",
+      "title": "It means in the presence of the court",
+      "stepSummary": "'With the court' means in front of the בית דין. Anywhere not in front of the court, they do not blow.",
+      "simpleTranslation": "It means in the presence of the court. This excludes a place that is not in the presence of the court, where they do not blow.",
+      "whatsHappening": "The גמרא explains that רב הונא meant the שופר was blown on שבת only in front of the בית דין itself.",
+      "deeperAnalysis": "The phrase is read as being about place, not time. Blowing was allowed only where the court actually sat. Any other spot in town, even at the same moment, was not allowed.",
+      "keyTerms": [
+        {
+          "term": "בִּפְנֵי בֵּית דִּין",
+          "meaning": "In the presence of the court"
+        },
+        {
+          "term": "לְאַפּוֹקֵי",
+          "meaning": "To exclude"
+        },
+        {
+          "term": "דְּלָא",
+          "meaning": "That [they do] not"
+        }
+      ],
+      "whatToRemember": "According to רב הונא, in יבנה the שופר on שבת was blown only in front of the בית דין itself.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "בִּפְנֵי בֵּית דִּין,",
+          "english": "In the presence of the court,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "לְאַפּוֹקֵי שֶׁלֹּא בִּפְנֵי בֵּית דִּין — דְּלָא.",
+          "english": "to exclude [a place] not in the presence of the court, where they do not [blow]."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "בִּפְנֵי בֵּית דִּין, לְאַפּוֹקֵי שֶׁלֹּא בִּפְנֵי בֵּית דִּין",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        1
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Answers the question of step 1.",
+      "teshuvahAnswerProvided": "'With the court' means physically in front of the court. Any place not in front of the court is excluded."
+    },
+    {
+      "stepNumber": 3,
+      "hebrewStepName": "קשיא",
+      "title": "רבא objects from the משנה's 'and this additional'",
+      "stepSummary": "רבא opens a challenge by quoting the משנה: 'And this, too, ירושלים had more than יבנה'.",
+      "simpleTranslation": "רבא raised an objection: \"And this, too, ירושלים had in addition over יבנה,\" etc.",
+      "whatsHappening": "רבא begins an objection against רב הונא by quoting a line from the משנה. This step only sets up the challenge; the actual argument unfolds over the next steps.",
+      "deeperAnalysis": "The משנה lists an advantage ירושלים had over יבנה regarding blowing on שבת. רבא focuses on the extra word 'ועוד' (and also). He will use it to show that רב הונא's 'in front of the court' rule cannot be right.",
+      "keyTerms": [
+        {
+          "term": "מֵתִיב",
+          "meaning": "Raises an objection (from an authoritative source)"
+        },
+        {
+          "term": "וְעוֹד זֹאת",
+          "meaning": "And this also / and this additional thing"
+        },
+        {
+          "term": "יְתֵירָה",
+          "meaning": "More / having an advantage"
+        },
+        {
+          "term": "יַבְנֶה",
+          "meaning": "יבנה, the seat of the סנהדרין after the Temple's destruction"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מֵתִיב רָבָא:",
+          "english": "Rava raised an objection:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וְעוֹד זֹאת הָיְתָה יְרוּשָׁלַיִם",
+          "english": "\"And this additional thing Jerusalem had,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "יְתֵירָה עַל יַבְנֶה וְכוּ׳.",
+          "english": "more than Yavne,\" etc."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "ראיה",
+      "triggerLanguage": "מֵתִיב רָבָא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [
+        2
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Begins an attack on the explanation given in step 2.",
+      "kashyaTarget": "רב הונא's rule that in יבנה they blew only in front of the בית דין.",
+      "kashyaAttackLogic": "The extra word 'ועוד' in the משנה will be shown to imply something that contradicts רב הונא."
+    },
+    {
+      "stepNumber": 4,
+      "hebrewStepName": "שאלה",
+      "title": "What does 'and this additional' add?",
+      "stepSummary": "The גמרא asks what the extra words 'ועוד זאת' are teaching.",
+      "simpleTranslation": "What does \"and this additional\" mean?",
+      "whatsHappening": "The גמרא asks what the extra phrase 'and also this' in the משנה is coming to teach. It is setting up a search for the hidden meaning.",
+      "deeperAnalysis": "The word 'also' (ועוד) suggests a second, additional difference beyond what the משנה states openly. The גמרא wants to find out what that second difference is.",
+      "keyTerms": [],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מַאי וְעוֹד זֹאת?",
+          "english": "What does \"and this additional\" mean?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "מַאי וְעוֹד זֹאת",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        3
+      ],
+      "scopeOfStep": "wording",
+      "relationToPreviousStep": "Analyzes the משנה line quoted in step 3.",
+      "sheelahInformationSought": "What additional advantage of ירושלים the word 'ועוד' points to."
+    },
+    {
+      "stepNumber": 5,
+      "hebrewStepName": "דחיה",
+      "title": "It can't just mean what the משנה says openly",
+      "stepSummary": "If the משנה only meant the difference it spells out, it should have said 'זאת' alone, without 'ועוד'.",
+      "simpleTranslation": "If you say it means what is taught [explicitly], it should have said \"this\" [alone].",
+      "whatsHappening": "The גמרא rejects the simple reading that 'ועוד זאת' only refers to the difference the משנה goes on to state.",
+      "deeperAnalysis": "Had there been only one difference, the משנה would have written just 'זאת' (this). The extra 'ועוד' (also) shows there is a second, unstated difference.",
+      "keyTerms": [
+        {
+          "term": "אִילֵּימָא",
+          "meaning": "If you say"
+        },
+        {
+          "term": "כִּדְקָתָנֵי",
+          "meaning": "As it is taught [explicitly]"
+        },
+        {
+          "term": "מִיבְּעֵי לֵיהּ",
+          "meaning": "It should have [said]"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אִילֵּימָא כִּדְקָתָנֵי —",
+          "english": "If you say it means what is taught [explicitly],"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "״זֹאת״ מִיבְּעֵי לֵיהּ.",
+          "english": "it should have said \"this\" [alone]."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אִילֵּימָא כִּדְקָתָנֵי",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        4
+      ],
+      "scopeOfStep": "wording",
+      "relationToPreviousStep": "Rules out the simplest answer to step 4.",
+      "dechiyaRejectionScope": "The reading that 'ועוד זאת' only refers to the stated difference.",
+      "dechiyaFlawIdentified": "That reading makes the word 'ועוד' unnecessary."
+    },
+    {
+      "stepNumber": 6,
+      "hebrewStepName": "תשובה",
+      "title": "First suggestion: individuals blew in Jerusalem, not in Yavne",
+      "stepSummary": "The extra difference might be that in ירושלים individuals blew on שבת, but in יבנה individuals did not.",
+      "simpleTranslation": "Rather: in ירושלים individuals blow, but in יבנה individuals do not blow.",
+      "whatsHappening": "The גמרא suggests what the hidden second difference is: in ירושלים private people blew שופר on שבת, while in יבנה only the official blowing happened.",
+      "deeperAnalysis": "This first suggestion makes the extra difference about who blew (individuals or not), not about place or time. If it were true, it would not contradict רב הונא, but the next step will knock it down.",
+      "keyTerms": [
+        {
+          "term": "יְחִידִין",
+          "meaning": "Individuals (private people, not the official blower)"
+        },
+        {
+          "term": "תּוֹקְעִין",
+          "meaning": "They blow [the שופר]"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֶלָּא: דְּבִירוּשָׁלַיִם תּוֹקְעִין יְחִידִין,",
+          "english": "Rather: in Jerusalem individuals blow,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וּבְיַבְנֶה אֵין תּוֹקְעִין יְחִידִין.",
+          "english": "but in Yavne individuals do not blow."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "תירוץ",
+      "triggerLanguage": "אֶלָּא: דְּבִירוּשָׁלַיִם תּוֹקְעִין יְחִידִין",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "alternative_approach",
+      "dependsOnStepNumbers": [
+        5
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Offers a new meaning for 'ועוד' after the simple reading was rejected.",
+      "teshuvahAnswerProvided": "The extra difference is that individuals blew in ירושלים but not in יבנה."
+    },
+    {
+      "stepNumber": 7,
+      "hebrewStepName": "קשיא",
+      "title": "But individuals did blow in Yavne",
+      "stepSummary": "רב יצחק בר יוסף reported that in יבנה, after the שליח ציבור finished, the noise of individuals blowing was deafening.",
+      "simpleTranslation": "And in יבנה individuals do not blow? But when רב יצחק בר יוסף came, he said: When the שליח ציבור finished the blowing in יבנה, a person could not hear his own voice because of the sound of the individuals blowing.",
+      "whatsHappening": "The גמרא attacks the suggestion of step 6 with an eyewitness report that individuals did blow in יבנה, so loudly that no one could hear himself.",
+      "deeperAnalysis": "If individuals blew in יבנה too, then 'individuals blowing' cannot be the extra difference between ירושלים and יבנה. The suggestion of step 6 falls, and the גמרא must find another meaning for 'ועוד'.",
+      "keyTerms": [
+        {
+          "term": "כִּי אֲתָא",
+          "meaning": "When [he] came [from ארץ ישראל to בבל]"
+        },
+        {
+          "term": "שְׁלִיחָא דְצִיבּוּרָא",
+          "meaning": "The שליח ציבור, the prayer leader"
+        },
+        {
+          "term": "מְסַיֵּים",
+          "meaning": "Finishes"
+        },
+        {
+          "term": "קָל אוּנֵּיה",
+          "meaning": "The sound in his own ears / his own voice"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וּבְיַבְנֶה אֵין תּוֹקְעִין יְחִידִין?",
+          "english": "And in Yavne individuals do not blow?"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וְהָא כִּי אֲתָא",
+          "english": "But when [he] came,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "רַב יִצְחָק בַּר יוֹסֵף, אָמַר:",
+          "english": "Rav Yitzchak bar Yosef said:"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "כִּי מְסַיֵּים שְׁלִיחָא דְצִיבּוּרָא",
+          "english": "When the prayer leader finished"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "תְּקִיעָה בְּיַבְנֶה —",
+          "english": "the blowing in Yavne,"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "לָא שָׁמַע אִינִישׁ קָל אוּנֵּיה",
+          "english": "a person could not hear the sound in his own ears"
+        },
+        {
+          "phraseNumber": 7,
+          "aramaic": "מִקָּל תָּקוֹעַיָּא דִּיחִידָאֵי.",
+          "english": "because of the sound of the individuals' blowing."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וּבְיַבְנֶה אֵין תּוֹקְעִין יְחִידִין? וְהָא כִּי אֲתָא רַב יִצְחָק בַּר יוֹסֵף",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        6
+      ],
+      "scopeOfStep": "proof_mechanism",
+      "relationToPreviousStep": "Refutes the suggestion of step 6.",
+      "kashyaTarget": "The claim that individuals did not blow in יבנה.",
+      "kashyaAttackLogic": "An eyewitness report says many individuals blew in יבנה after the prayer leader finished."
+    },
+    {
+      "stepNumber": 8,
+      "hebrewStepName": "תירוץ",
+      "title": "Second suggestion: the difference is the court's hours",
+      "stepSummary": "In ירושלים they blew all day. In יבנה they blew only during the hours the בית דין was in session.",
+      "simpleTranslation": "Rather, is it not that in Jerusalem they blow both while the court is in session and while the court is not in session, and in Yavne, while the court is in session, yes; while the court is not in session, no?",
+      "whatsHappening": "With the 'individuals' reading gone, the גמרא offers the remaining explanation of 'ועוד': the difference between ירושלים and יבנה is about time.",
+      "deeperAnalysis": "In ירושלים the שופר could be blown on שבת all day long. In יבנה it could be blown only during the hours the בית דין was sitting, which is understood as until midday. This defines the rule by time, not by place.",
+      "keyTerms": [
+        {
+          "term": "אֶלָּא לָאו",
+          "meaning": "Rather, is it not that"
+        },
+        {
+          "term": "בִּזְמַן בֵּית דִּין",
+          "meaning": "While the court is in session (during its hours)"
+        },
+        {
+          "term": "אִין",
+          "meaning": "Yes"
+        }
+      ],
+      "confusionAlert": "Do not mix up 'בזמן בית דין' (during the court's hours) with 'בפני בית דין' (in the court's presence). The whole challenge depends on the gap between time and place.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֶלָּא לָאו: דְּבִירוּשָׁלַיִם תּוֹקְעִין",
+          "english": "Rather, is it not that in Jerusalem they blow"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "בֵּין בִּזְמַן בֵּית דִּין",
+          "english": "both while the court is in session"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וּבֵין שֶׁלֹּא בִּזְמַן בֵּית דִּין,",
+          "english": "and while the court is not in session,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וּבְיַבְנֶה, בִּזְמַן בֵּית דִּין — אִין,",
+          "english": "and in Yavne, while the court is in session, yes,"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "שֶׁלֹּא בִּזְמַן בֵּית דִּין — לָא.",
+          "english": "while the court is not in session, no?"
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "תשובה",
+      "triggerLanguage": "אֶלָּא לָאו: דְּבִירוּשָׁלַיִם תּוֹקְעִין בֵּין בִּזְמַן בֵּית דִּין",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "alternative_approach",
+      "dependsOnStepNumbers": [
+        4,
+        7
+      ],
+      "scopeOfStep": "inference",
+      "relationToPreviousStep": "Replaces the suggestion refuted in step 7 with a new reading of 'ועוד'.",
+      "terutzResolutionType": "Reinterpretation of the משנה's extra word",
+      "terutzHavaAmina": "The extra difference was about individuals blowing.",
+      "terutzMaskana": "The extra difference is about time: in יבנה they blew only during the court's hours."
+    },
+    {
+      "stepNumber": 9,
+      "hebrewStepName": "קשיא",
+      "title": "So they blew even away from the court, against רב הונא",
+      "stepSummary": "If the rule in יבנה depended only on the court's hours, then during those hours they blew even away from the court. This contradicts רב הונא.",
+      "simpleTranslation": "This implies that at least while the court is in session they blow, and even not in the presence of the court!",
+      "whatsHappening": "רבא finishes his objection: the משנה, read correctly, shows that in יבנה they blew even when not in front of the בית דין. That directly contradicts רב הונא from step 2.",
+      "deeperAnalysis": "Since the only limit in יבנה was time, anyone in town could blow during the court's hours, even far from the court. רב הונא said blowing was allowed only in the court's presence, so the משנה stands against him.",
+      "keyTerms": [
+        {
+          "term": "הָא",
+          "meaning": "This implies / so"
+        },
+        {
+          "term": "מִיהָא",
+          "meaning": "At least / in any case"
+        },
+        {
+          "term": "וַאֲפִילּוּ",
+          "meaning": "And even"
+        }
+      ],
+      "whatToRemember": "רבא's objection: if the משנה's 'ועוד זאת' is about time (the court's hours), then in יבנה they blew even away from the court, which contradicts רב הונא. The next step answers this by reading the difference as place, not time.",
+      "whyThisMatters": "This sets up the key question of the sugya: is the permission to blow שופר on שבת after the Temple tied to the place of the בית דין or to the time it is in session?",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "הָא בִּזְמַן בֵּית דִּין מִיהָא תּוֹקְעִין,",
+          "english": "This implies that at least while the court is in session they blow,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וַאֲפִילּוּ שֶׁלֹּא בִּפְנֵי בֵּית דִּין!",
+          "english": "and even not in the presence of the court!"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "הָא בִּזְמַן בֵּית דִּין מִיהָא תּוֹקְעִין, וַאֲפִילּוּ שֶׁלֹּא בִּפְנֵי בֵּית דִּין",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        2,
+        8
+      ],
+      "scopeOfStep": "inference",
+      "relationToPreviousStep": "Draws the conclusion from step 8 and aims it back at step 2.",
+      "kashyaTarget": "רב הונא's explanation that 'with the court' means in the court's presence (step 2).",
+      "kashyaAttackLogic": "If the rule in יבנה was set by the court's hours, then blowing away from the court during those hours was allowed. That contradicts the requirement of being in front of the court."
+    },
+    {
+      "stepNumber": 10,
+      "hebrewStepName": "תירוץ",
+      "title": "The extra difference is being in front of the court",
+      "stepSummary": "The גמרא rejects the challenge to רב הונא. The extra difference is not about time, it is about place: in ירושלים they blew both in front of the בית דין and away from it, while in יבנה they blew only in front of the בית דין.",
+      "simpleTranslation": "No. The difference is this: in ירושלים they blew both in front of the בית דין and not in front of the בית דין. In יבנה, in front of the בית דין, yes; not in front of the בית דין, no.",
+      "whatsHappening": "The גמרא answers the challenge from step 9 by giving a new explanation of the extra difference hinted at by 'ועוד'.",
+      "deeperAnalysis": "Step 9 said that if יבנה's rule were only about the court's hours, people could blow anywhere during those hours, which goes against רב הונא. So the גמרא changes the explanation. In יבנה, blowing had to be in front of the בית דין itself. In ירושלים, being near the court was not needed. This fits רב הונא exactly.",
+      "keyTerms": [
+        {
+          "term": "בִּפְנֵי בֵּית דִּין",
+          "meaning": "In the presence of the court"
+        },
+        {
+          "term": "שֶׁלֹּא בִּפְנֵי בֵּית דִּין",
+          "meaning": "Not in the presence of the court"
+        },
+        {
+          "term": "אִין",
+          "meaning": "Yes"
+        },
+        {
+          "term": "דְּאִילּוּ",
+          "meaning": "For whereas (introduces a contrast)"
+        }
+      ],
+      "whatToRemember": "Final answer for the משנה's 'ועוד': ירושלים allowed blowing even away from the בית דין; יבנה allowed blowing only in front of the בית דין.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "לָא: דְּאִילּוּ בִּירוּשָׁלַיִם תּוֹקְעִין",
+          "english": "No: for whereas in Jerusalem they blow"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "בֵּין בִּפְנֵי בֵּית דִּין",
+          "english": "both in the presence of the court"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "בֵּין שֶׁלֹּא בִּפְנֵי בֵּית דִּין,",
+          "english": "and not in the presence of the court,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וּבְיַבְנֶה, בִּפְנֵי בֵּית דִּין — אִין,",
+          "english": "but in Yavne, in the presence of the court — yes,",
+          "notes": "In יבנה blowing was tied to the court's physical presence."
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "שֶׁלֹּא בִּפְנֵי בֵּית דִּין — לָא.",
+          "english": "not in the presence of the court — no."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "דחיה",
+      "triggerLanguage": "לָא: דְּאִילּוּ בִּירוּשָׁלַיִם תּוֹקְעִין",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        8,
+        9
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Answers the קשיא of step 9 by changing the difference from time to place.",
+      "terutzResolutionType": "Redefinition of the distinction (presence instead of court hours)",
+      "terutzHavaAmina": "The difference between ירושלים and יבנה was the court's hours, so people in יבנה could blow anywhere during those hours.",
+      "terutzMaskana": "The difference is presence: in יבנה blowing was allowed only in front of the בית דין, which fits רב הונא."
+    },
+    {
+      "stepNumber": 11,
+      "hebrewStepName": "מימרא",
+      "title": "Second version: רב הונא's rule is attached to a ברייתא about the יובל",
+      "stepSummary": "Some teach רב הונא's rule in a different place, on a ברייתא about the יובל. The ברייתא learns from the פסוק that every individual must blow the שופר.",
+      "simpleTranslation": "Some teach this rule of רב הונא on what is written: 'On יום הכיפורים you shall pass the שופר through all your land.' This teaches that each and every individual is obligated to blow.",
+      "whatsHappening": "The גמרא brings a second version of where רב הונא's statement was said. Here it sets up the ברייתא that his rule will comment on.",
+      "deeperAnalysis": "The ברייתא reads 'בכל ארצכם' as a requirement for every person, not only the בית דין. This is the starting point that רב הונא will limit in the next step.",
+      "keyTerms": [
+        {
+          "term": "אִיכָּא דְּמַתְנֵי",
+          "meaning": "There are those who teach (a different version)"
+        },
+        {
+          "term": "תַּעֲבִירוּ שׁוֹפָר",
+          "meaning": "You shall pass/sound the שופר"
+        },
+        {
+          "term": "בְּכׇל אַרְצְכֶם",
+          "meaning": "Throughout all your land"
+        },
+        {
+          "term": "יָחִיד וְיָחִיד",
+          "meaning": "Each and every individual"
+        }
+      ],
+      "confusionAlert": "This is not a new opinion against step 10. It is a second version of where רב הונא's rule was said, and in this version his limit is about time, not presence.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אִיכָּא דְּמַתְנֵי לְהָא דְּרַב הוּנָא",
+          "english": "There are those who teach this statement of Rav Huna"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אַהָא דִּכְתִיב",
+          "english": "on this, which is written:"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "״בְּיוֹם הַכִּפּוּרִים תַּעֲבִירוּ שׁוֹפָר",
+          "english": "\"On Yom Kippur you shall sound the shofar"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "בְּכׇל אַרְצְכֶם״ —",
+          "english": "throughout all your land\" —",
+          "notes": "ויקרא כה:ט, about the יובל."
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "מְלַמֵּד שֶׁכׇּל יָחִיד וְיָחִיד",
+          "english": "this teaches that each and every individual"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "חַיָּיב לִתְקוֹעַ.",
+          "english": "is obligated to blow."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אִיכָּא דְּמַתְנֵי לְהָא דְּרַב הוּנָא",
+      "macroPhase": "alternate_branch",
+      "branchRole": "alternative_approach",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Leaves the משנה discussion and brings another version of where רב הונא's rule belongs.",
+      "mimraCoreRuling": "From 'בכל ארצכם', every individual is obligated to blow the שופר of the יובל."
+    },
+    {
+      "stepNumber": 12,
+      "hebrewStepName": "מימרא",
+      "title": "רב הונא adds: together with the court",
+      "stepSummary": "רב הונא limits the ברייתא. Individuals blow, but 'with the בית דין'.",
+      "simpleTranslation": "רב הונא said: And with the בית דין.",
+      "whatsHappening": "רב הונא adds a short limit to the ברייתא. The גמרא will next ask what this short phrase means.",
+      "deeperAnalysis": "The ברייתא said everyone must blow. רב הונא adds that this is not totally independent of the בית דין. The exact way it is tied to the court is not yet clear; steps 13–14 explain it.",
+      "keyTerms": [
+        {
+          "term": "וְעִם בֵּית דִּין",
+          "meaning": "And with the court"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר רַב הוּנָא:",
+          "english": "Rav Huna said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וְעִם בֵּית דִּין.",
+          "english": "And with the court."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אָמַר רַב הוּנָא: וְעִם בֵּית דִּין",
+      "macroPhase": "alternate_branch",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        11
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Adds a limit to the ברייתא of step 11.",
+      "mimraCoreRuling": "Individuals blow the יובל שופר only 'with the בית דין'."
+    },
+    {
+      "stepNumber": 13,
+      "hebrewStepName": "שאלה",
+      "title": "What does 'with the court' mean?",
+      "stepSummary": "The גמרא asks what רב הונא meant by 'with the בית דין'.",
+      "simpleTranslation": "What is 'and with the בית דין'?",
+      "whatsHappening": "The גמרא asks for an explanation of רב הונא's unclear phrase. This sets up the answer in the next step.",
+      "deeperAnalysis": "'With the court' could mean in front of the court or at the same time as the court. The question forces a choice.",
+      "keyTerms": [
+        {
+          "term": "מַאי",
+          "meaning": "What is / what does it mean"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מַאי וְעִם בֵּית דִּין —",
+          "english": "What is \"and with the court\"?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "מַאי וְעִם בֵּית דִּין",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        12
+      ],
+      "scopeOfStep": "wording",
+      "relationToPreviousStep": "Asks what רב הונא's words in step 12 mean.",
+      "sheelahInformationSought": "Whether 'with the court' means place (presence) or time (court hours)."
+    },
+    {
+      "stepNumber": 14,
+      "hebrewStepName": "תשובה",
+      "title": "It means during the court's hours",
+      "stepSummary": "'With the בית דין' means during the time the בית דין is in session. When the court is not in session, individuals do not blow.",
+      "simpleTranslation": "During the time of the בית דין. This excludes the time when the בית דין is not in session, when they do not blow.",
+      "whatsHappening": "The גמרא answers that רב הונא meant time: individuals blow only during the court's hours.",
+      "deeperAnalysis": "In this version רב הונא's limit is about time, not presence. So a person may blow away from the court, as long as it is during the court's hours. Outside those hours, no blowing.",
+      "keyTerms": [
+        {
+          "term": "בִּזְמַן בֵּית דִּין",
+          "meaning": "During the time the court is in session"
+        },
+        {
+          "term": "לְאַפּוֹקֵי",
+          "meaning": "To exclude"
+        }
+      ],
+      "whyThisMatters": "This time-based reading is exactly what רבא will attack in the next steps.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "בִּזְמַן בֵּית דִּין.",
+          "english": "During the time of the court."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "לְאַפּוֹקֵי שֶׁלֹּא בִּזְמַן בֵּית דִּין, דְּלָא.",
+          "english": "To exclude when it is not the time of the court, when they do not blow."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "בִּזְמַן בֵּית דִּין",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        13
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Answers the question of step 13.",
+      "teshuvahAnswerProvided": "'With the court' means during court hours; outside court hours individuals do not blow."
+    },
+    {
+      "stepNumber": 15,
+      "hebrewStepName": "קשיא",
+      "title": "רבא brings a ברייתא: blowing on שבת in the outlying areas, 'every man and his house'",
+      "stepSummary": "רבא brings a ברייתא: blowing on ראש השנה and on the יובל pushes aside שבת even in the גבולין, 'איש וביתו'. He will use this against רב הונא.",
+      "simpleTranslation": "רבא objected: The blowing of ראש השנה and of the יובל overrides שבת in the גבולין, every man and his house.",
+      "whatsHappening": "רבא begins an objection to רב הונא by quoting a ברייתא. This step sets up the challenge; the גמרא first has to explain the words 'איש וביתו'.",
+      "deeperAnalysis": "The ברייתא says that even outside the מקדש the שופר overrides שבת, and it uses the phrase 'איש וביתו'. If that phrase means each man blows in his own home, it seems to have no limit of court hours. The next steps work out what it means.",
+      "keyTerms": [
+        {
+          "term": "מֵתִיב",
+          "meaning": "He raises an objection (from a source)"
+        },
+        {
+          "term": "דּוֹחָה אֶת הַשַּׁבָּת",
+          "meaning": "Overrides the שבת"
+        },
+        {
+          "term": "בִּגְבוּלִין",
+          "meaning": "In the outlying areas (outside the מקדש)"
+        },
+        {
+          "term": "אִישׁ וּבֵיתוֹ",
+          "meaning": "Every man and his house"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מֵתִיב רָבָא:",
+          "english": "Rava raised an objection:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "תְּקִיעַת רֹאשׁ הַשָּׁנָה וְיוֹבֵל",
+          "english": "The blowing of Rosh Hashanah and of the Jubilee"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "דּוֹחָה אֶת הַשַּׁבָּת בִּגְבוּלִין,",
+          "english": "overrides Shabbat in the outlying areas,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "אִישׁ וּבֵיתוֹ.",
+          "english": "every man and his house."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "ראיה",
+      "triggerLanguage": "מֵתִיב רָבָא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        14
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Starts a challenge against the time-based version of רב הונא in step 14.",
+      "kashyaTarget": "רב הונא's rule that individuals blow only during court hours.",
+      "kashyaAttackLogic": "A ברייתא seems to allow every man to blow on שבת in the outlying areas with no mention of the court's hours."
+    },
+    {
+      "stepNumber": 16,
+      "hebrewStepName": "שאלה",
+      "title": "What does 'every man and his house' mean?",
+      "stepSummary": "The גמרא asks what 'איש וביתו' means in the ברייתא.",
+      "simpleTranslation": "What is 'every man and his house'?",
+      "whatsHappening": "The גמרא stops to define the key phrase, because רבא's whole challenge depends on it.",
+      "deeperAnalysis": "'ביתו' often means a man's wife. But it could also mean his home. The meaning decides whether this ברייתא challenges רב הונא.",
+      "keyTerms": [
+        {
+          "term": "בֵּיתוֹ",
+          "meaning": "His house (often meaning his wife)"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מַאי ״אִישׁ וּבֵיתוֹ״?",
+          "english": "What is \"every man and his house\"?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "מַאי ״אִישׁ וּבֵיתוֹ״",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        15
+      ],
+      "scopeOfStep": "wording",
+      "relationToPreviousStep": "Asks for the meaning of the phrase quoted in step 15.",
+      "sheelahInformationSought": "Whether 'ביתו' means his wife or his home."
+    },
+    {
+      "stepNumber": 17,
+      "hebrewStepName": "דחיה",
+      "title": "It cannot mean 'a man and his wife', because women are exempt",
+      "stepSummary": "If 'ביתו' meant his wife, that would make women obligated. But שופר is a מצות עשה שהזמן גרמא, and women are exempt from those.",
+      "simpleTranslation": "If you say it means a man and his wife, is a woman obligated? Isn't it a מצות עשה שהזמן גרמא? And from every מצות עשה שהזמן גרמא women are exempt.",
+      "whatsHappening": "The גמרא rules out the first possible meaning, 'a man and his wife'.",
+      "deeperAnalysis": "Blowing שופר only applies at a set time, so it is a time-bound positive מצוה. Women are exempt from such מצוות. So the ברייתא cannot be saying the wife blows too, and the phrase must mean something else.",
+      "keyTerms": [
+        {
+          "term": "אִילֵּימָא",
+          "meaning": "If you say"
+        },
+        {
+          "term": "אִיתְּתָא",
+          "meaning": "A woman"
+        },
+        {
+          "term": "מִצְוַת עֲשֵׂה שֶׁהַזְּמַן גְּרָמָא",
+          "meaning": "A positive מצוה caused by (bound to) time"
+        },
+        {
+          "term": "נָשִׁים פְּטוּרוֹת",
+          "meaning": "Women are exempt"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אִילֵּימָא אִישׁ וְאִשְׁתּוֹ —",
+          "english": "If you say: a man and his wife —"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אִיתְּתָא מִי מִיחַיְּיבָא?",
+          "english": "is a woman obligated?"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וְהָא מִצְוַת עֲשֵׂה שֶׁהַזְּמַן גְּרָמָא הִיא,",
+          "english": "But it is a positive time-bound מצוה,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וְכׇל מִצְוַת עֲשֵׂה שֶׁהַזְּמַן גְּרָמָא —",
+          "english": "and from every positive time-bound מצוה —"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "נָשִׁים פְּטוּרוֹת.",
+          "english": "women are exempt."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "קשיא",
+      "triggerLanguage": "אִילֵּימָא אִישׁ וְאִשְׁתּוֹ",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        16
+      ],
+      "scopeOfStep": "inference",
+      "relationToPreviousStep": "Rejects the first possible answer to the question in step 16.",
+      "dechiyaRejectionScope": "Rejects reading 'ביתו' as 'his wife'.",
+      "dechiyaFlawIdentified": "Women are exempt from a מצות עשה שהזמן גרמא, so they cannot be included in an obligation to blow."
+    },
+    {
+      "stepNumber": 18,
+      "hebrewStepName": "קשיא",
+      "title": "So it means each man in his home, even outside court hours",
+      "stepSummary": "So 'איש וביתו' must mean every man in his own home. That sounds like even outside the court's hours, which goes against רב הונא.",
+      "simpleTranslation": "Rather, doesn't it mean: every man in his house, and even when it is not the time of the בית דין? (This is a difficulty for רב הונא.)",
+      "whatsHappening": "With 'his wife' ruled out, רבא completes his challenge: the ברייתא allows each man to blow at home, apparently even outside the court's hours.",
+      "deeperAnalysis": "Blowing at home, away from the court, seems to have no time limit. That would go against רב הונא's rule that individuals blow only during court hours.",
+      "keyTerms": [
+        {
+          "term": "אֶלָּא לָאו",
+          "meaning": "Rather, is it not that...?"
+        },
+        {
+          "term": "אִישׁ בְּבֵיתוֹ",
+          "meaning": "Every man in his house"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֶלָּא לָאו: אִישׁ בְּבֵיתוֹ,",
+          "english": "Rather, is it not: every man in his house,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וַאֲפִילּוּ שֶׁלֹּא בִּזְמַן בֵּית דִּין!",
+          "english": "and even when it is not the time of the court!"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אֶלָּא לָאו: אִישׁ בְּבֵיתוֹ",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        15,
+        17
+      ],
+      "scopeOfStep": "inference",
+      "relationToPreviousStep": "With the 'wife' reading rejected in step 17, completes רבא's challenge begun in step 15.",
+      "kashyaTarget": "רב הונא's rule that individuals blow only during court hours (step 14).",
+      "kashyaAttackLogic": "'Every man in his house' seems to allow blowing at any time, even when the court is not in session."
+    },
+    {
+      "stepNumber": 19,
+      "hebrewStepName": "תירוץ",
+      "title": "No: in his house, but still during court hours",
+      "stepSummary": "The גמרא answers that 'every man in his house' really means only during the court's hours.",
+      "simpleTranslation": "No. Really, it means during the time of the בית דין.",
+      "whatsHappening": "The גמרא defends רב הונא: each man may blow at home, but still only during the court's hours.",
+      "deeperAnalysis": "The ברייתא tells us where a person may blow: even at home, away from the court. It does not tell us when. So it can match רב הונא's time limit, and the challenge falls away.",
+      "keyTerms": [
+        {
+          "term": "לְעוֹלָם",
+          "meaning": "Actually / in truth (keeps the original position)"
+        }
+      ],
+      "whatToRemember": "In the second version, רב הונא's rule is about time: individuals may blow anywhere, even at home, but only during the court's hours. The ברייתא of 'איש וביתו' fits this.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "לָא, לְעוֹלָם בִּזְמַן בֵּית דִּין.",
+          "english": "No, actually it means during the time of the court."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "לָא, לְעוֹלָם בִּזְמַן בֵּית דִּין",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        14,
+        18
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Answers רבא's challenge of step 18 and keeps רב הונא's rule.",
+      "terutzResolutionType": "Limiting the ברייתא's scope (it speaks of place, not time)",
+      "terutzHavaAmina": "'Every man in his house' means blowing at home at any time, even outside court hours.",
+      "terutzMaskana": "Blowing at home is allowed only during court hours, so the ברייתא agrees with רב הונא."
+    },
+    {
+      "stepNumber": 20,
+      "hebrewStepName": "קשיא",
+      "title": "רב ששת brings a ברייתא comparing the יובל and ראש השנה",
+      "stepSummary": "רב ששת quotes a ברייתא: the יובל and ראש השנה are equal for שופר and ברכות. On the יובל, every court blows and every individual must blow. On ראש השנה, only the court that made the month blows, and not every individual must blow.",
+      "simpleTranslation": "רב ששת objected: The יובל is the same as ראש השנה for the שופר blowing and the ברכות. The only difference is that on the יובל they blow both in the בית דין that sanctified the month and in a בית דין that did not, and every single person must blow. On ראש השנה they blew only in the בית דין that sanctified the month, and not every single person must blow.",
+      "whatsHappening": "רב ששת brings a new ברייתא to attack רב הונא. This step only quotes the source. The next steps will work out exactly how it challenges רב הונא.",
+      "deeperAnalysis": "The ברייתא lists two differences between the יובל and ראש השנה. One is which court blows. The other is whether every individual must blow. The second phrase, 'not every individual must blow,' is unclear, and the attack will be built on how we read it.",
+      "keyTerms": [
+        {
+          "term": "מֵתִיב",
+          "meaning": "Raises an objection from a source"
+        },
+        {
+          "term": "יוֹבֵל",
+          "meaning": "The Jubilee year; the שופר is blown on its יוֹם כִּפּוּר"
+        },
+        {
+          "term": "בְּרָכוֹת",
+          "meaning": "The special added blessings in the שְׁמוֹנֶה עֶשְׂרֵה (מַלְכִיּוֹת, זִכְרוֹנוֹת, שׁוֹפָרוֹת)"
+        },
+        {
+          "term": "קִידְּשׁוּ אֶת הַחֹדֶשׁ",
+          "meaning": "Declared the new month based on witnesses"
+        },
+        {
+          "term": "יָחִיד",
+          "meaning": "An individual person, as opposed to the court or the community"
+        }
+      ],
+      "confusionAlert": "The shofar of the יובל is blown on יום כיפור of the Jubilee year, not on ראש השנה. The ברייתא is comparing those two days.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מֵתִיב רַב שֵׁשֶׁת:",
+          "english": "Rav Sheshet raised an objection:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "שָׁוֶה הַיּוֹבֵל לְרֹאשׁ הַשָּׁנָה",
+          "english": "The Jubilee is the same as Rosh HaShana"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "לַתְּקִיעָה וְלַבְּרָכוֹת,",
+          "english": "for the shofar blowing and for the blessings,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "אֶלָּא שֶׁבַּיּוֹבֵל תּוֹקְעִין",
+          "english": "except that on the Jubilee they blow",
+          "notes": "Introduces the differences between the two."
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "בֵּין בְּבֵית דִּין שֶׁקִּידְּשׁוּ בּוֹ אֶת הַחֹדֶשׁ,",
+          "english": "both in the court where they sanctified the month,"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "וּבֵין בְּבֵית דִּין שֶׁלֹּא קִידְּשׁוּ בּוֹ אֶת הַחֹדֶשׁ,",
+          "english": "and in a court where they did not sanctify the month,"
+        },
+        {
+          "phraseNumber": 7,
+          "aramaic": "וְכׇל יָחִיד וְיָחִיד חַיָּיב לִתְקוֹעַ.",
+          "english": "and each and every individual is obligated to blow."
+        },
+        {
+          "phraseNumber": 8,
+          "aramaic": "בְּרֹאשׁ הַשָּׁנָה לֹא הָיוּ תּוֹקְעִין",
+          "english": "On Rosh HaShana they would not blow"
+        },
+        {
+          "phraseNumber": 9,
+          "aramaic": "אֶלָּא בְּבֵית דִּין שֶׁקִּידְּשׁוּ בּוֹ אֶת הַחֹדֶשׁ,",
+          "english": "except in the court where they sanctified the month,"
+        },
+        {
+          "phraseNumber": 10,
+          "aramaic": "וְאֵין כׇּל יָחִיד וְיָחִיד חַיָּיב לִתְקוֹעַ.",
+          "english": "and not each and every individual is obligated to blow.",
+          "notes": "This unclear phrase is the focus of the next steps."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "מימרא",
+      "triggerLanguage": "מֵתִיב רַב שֵׁשֶׁת",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [
+        19
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "After רבא's challenge was answered, רב ששת opens a second challenge against רב הונא from a different ברייתא.",
+      "kashyaTarget": "רב הונא's rule that blowing happened only during the court's hours",
+      "kashyaAttackLogic": "The attack is still being set up. It will depend on reading 'not every individual must blow' as a difference of time."
+    },
+    {
+      "stepNumber": 21,
+      "hebrewStepName": "שאלה",
+      "title": "What does 'not every individual must blow' mean?",
+      "stepSummary": "The גמרא asks what the ברייתא means when it says that on ראש השנה not every individual must blow.",
+      "simpleTranslation": "What does 'not every individual is obligated to blow' mean?",
+      "whatsHappening": "The גמרא stops to ask what the unclear phrase means. This sets up the readings that follow.",
+      "deeperAnalysis": "Whether רב ששת's attack works depends on what this phrase means. So the גמרא looks at the possible readings one at a time.",
+      "keyTerms": [
+        {
+          "term": "מַאי",
+          "meaning": "What? What does it mean?"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מַאי אֵין כׇּל יָחִיד וְיָחִיד חַיָּיב לִתְקוֹעַ?",
+          "english": "What is meant by 'not each and every individual is obligated to blow'?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "מַאי אֵין כׇּל יָחִיד וְיָחִיד חַיָּיב לִתְקוֹעַ",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        20
+      ],
+      "scopeOfStep": "wording",
+      "relationToPreviousStep": "Asks for the meaning of the last phrase of the ברייתא just quoted.",
+      "sheelahInformationSought": "The meaning of 'אין כל יחיד ויחיד חייב לתקוע' on ראש השנה"
+    },
+    {
+      "stepNumber": 22,
+      "hebrewStepName": "דחיה",
+      "title": "It cannot mean that individuals don't blow on Rosh HaShana",
+      "stepSummary": "Maybe it means individuals don't blow at all on ראש השנה. The גמרא rejects this. רב יצחק בר יוסף reported that in יבנה, individuals blew so loudly after the חזן finished that no one could hear himself.",
+      "simpleTranslation": "If you say it means that on the יובל individuals blow, but on ראש השנה individuals do not blow, that cannot be right. When רב יצחק בר יוסף came, he said: When the שליח ציבור finished the blowing in יבנה, a person could not hear his own voice because of the noise of the individuals blowing.",
+      "whatsHappening": "The גמרא tries the simplest reading: individuals don't blow on ראש השנה. Then it rejects that reading with a report of what actually happened in יבנה.",
+      "deeperAnalysis": "רב יצחק בר יוסף's report shows that individuals did blow on ראש השנה, and many of them. So the phrase cannot mean individuals don't blow at all, and the גמרא must look for another meaning.",
+      "keyTerms": [
+        {
+          "term": "אִילֵּימָא",
+          "meaning": "If you say (a reading the גמרא is about to reject)"
+        },
+        {
+          "term": "שְׁלִיחָא דְצִיבּוּרָא",
+          "meaning": "The prayer leader (שליח ציבור)"
+        },
+        {
+          "term": "יַבְנֶה",
+          "meaning": "The town where the סנהדרין sat after the destruction"
+        },
+        {
+          "term": "יְחִידָאֵי",
+          "meaning": "Individuals"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אִילֵּימָא דְּבַיּוֹבֵל תּוֹקְעִין יְחִידִין",
+          "english": "If you say that on the Jubilee individuals blow"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וּבְרֹאשׁ הַשָּׁנָה אֵין תּוֹקְעִין יְחִידִין —",
+          "english": "and on Rosh HaShana individuals do not blow —"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וְהָא כִּי אֲתָא רַב יִצְחָק בַּר יוֹסֵף, אָמַר:",
+          "english": "but when Rav Yitzchak bar Yosef came, he said:",
+          "notes": "'והא' introduces the source that contradicts the proposed reading."
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "כִּי הֲוָה מְסַיֵּים שְׁלִיחָא דְצִיבּוּרָא",
+          "english": "When the prayer leader would finish"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "תְּקִיעָתָא בְּיַבְנֶה —",
+          "english": "the blowings in Yavne —"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "לָא שָׁמַע אִינִישׁ קָל אוּנֵּיה",
+          "english": "a person could not hear the sound in his ear"
+        },
+        {
+          "phraseNumber": 7,
+          "aramaic": "מִקָּל תָּקוֹעַיָּא דִּיחִידָאֵי.",
+          "english": "because of the sound of the individuals' blowing."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אִילֵּימָא דְּבַיּוֹבֵל תּוֹקְעִין יְחִידִין",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        21
+      ],
+      "scopeOfStep": "wording",
+      "relationToPreviousStep": "Offers a first answer to the question and knocks it down.",
+      "dechiyaRejectionScope": "Rejects only the reading 'individuals don't blow on ראש השנה'",
+      "dechiyaFlawIdentified": "An eyewitness report from יבנה shows individuals did blow on ראש השנה"
+    },
+    {
+      "stepNumber": 23,
+      "hebrewStepName": "קשיא",
+      "title": "So the difference is about time, which contradicts רב הונא",
+      "stepSummary": "So the phrase must mean that on the יובל they blow both during and outside the court's hours. On ראש השנה they blow only during the court's hours. The ברייתא therefore teaches that the יובל is blown even outside the court's hours, and this goes against רב הונא.",
+      "simpleTranslation": "Rather, doesn't it mean this: on the יובל they blow both during the court's time and not during the court's time, while on ראש השנה, during the court's time, yes; not during the court's time, no. In any case, it teaches that on the יובל they blow both during the court's time and not during the court's time!",
+      "whatsHappening": "With the first reading gone, the גמרא proposes that the difference is about time. On that reading, the ברייתא clearly allows blowing outside the court's hours, and that is a challenge to רב הונא.",
+      "deeperAnalysis": "In this second version, רב הונא's limit was said directly about the יובל: individuals blow the יובל שופר only during the court's hours. This reading of the ברייתא says that on the יובל, blowing goes on even outside the court's hours. That directly contradicts רב הונא.",
+      "keyTerms": [
+        {
+          "term": "אֶלָּא לָאו",
+          "meaning": "Rather, is it not that (proposing the remaining reading)"
+        },
+        {
+          "term": "בִּזְמַן בֵּית דִּין",
+          "meaning": "During the time the court is in session"
+        },
+        {
+          "term": "קָתָנֵי מִיהַת",
+          "meaning": "In any case, it teaches (pointing to the key line that creates the challenge)"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֶלָּא לָאו: דְּאִילּוּ בַּיּוֹבֵל תּוֹקְעִין",
+          "english": "Rather, is it not that on the Jubilee they blow"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "בֵּין בִּזְמַן בֵּית דִּין",
+          "english": "both during the court's time"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "בֵּין שֶׁלֹּא בִּזְמַן בֵּית דִּין,",
+          "english": "and not during the court's time,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וּבְרֹאשׁ הַשָּׁנָה, בִּזְמַן בֵּית דִּין — אֵין,",
+          "english": "while on Rosh HaShana, during the court's time — yes,"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "שֶׁלֹּא בִּזְמַן בֵּית דִּין — לָא.",
+          "english": "not during the court's time — no."
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "קָתָנֵי מִיהַת: בַּיּוֹבֵל",
+          "english": "In any case it teaches: on the Jubilee"
+        },
+        {
+          "phraseNumber": 7,
+          "aramaic": "בֵּין בִּזְמַן בֵּית דִּין, בֵּין שֶׁלֹּא בִּזְמַן בֵּית דִּין!",
+          "english": "both during the court's time and not during the court's time!",
+          "notes": "This line is the point of the challenge against רב הונא."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אֶלָּא לָאו: דְּאִילּוּ בַּיּוֹבֵל תּוֹקְעִין",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        20,
+        22
+      ],
+      "scopeOfStep": "inference",
+      "relationToPreviousStep": "After rejecting the 'individuals don't blow' reading, the גמרא adopts the time-based reading. This turns רב ששת's ברייתא into a real challenge.",
+      "kashyaTarget": "רב הונא's rule limiting blowing to the court's hours",
+      "kashyaAttackLogic": "The ברייתא says the יובל is blown even outside the court's hours, which contradicts רב הונא's time limit."
+    },
+    {
+      "stepNumber": 24,
+      "hebrewStepName": "תירוץ",
+      "title": "The difference is about place, not time",
+      "stepSummary": "The גמרא answers: it is always during the court's hours. During those hours, on the יובל people blow both in front of the court and away from it. On ראש השנה they blow only during the court's hours and only in front of the court.",
+      "simpleTranslation": "No. Really, it is only during the court's time, and this is what it teaches: On the יובל, during the court's time, they blow both in the presence of the court and not in the presence of the court. On ראש השנה they blow during the court's time and in the presence of the court.",
+      "whatsHappening": "The גמרא answers רב ששת. It rereads the ברייתא so that it talks about where people blow, not when.",
+      "deeperAnalysis": "The גמרא separates two ideas: the court's hours (זמן) and the court's presence (פני). Both the יובל and ראש השנה are limited to the court's hours, so רב הונא is safe. The only extra freedom on the יובל is that people may blow away from the court.",
+      "keyTerms": [
+        {
+          "term": "לְעוֹלָם",
+          "meaning": "Really, actually (introducing the true reading)"
+        },
+        {
+          "term": "וְהָכִי קָתָנֵי",
+          "meaning": "And this is what it teaches (rereading the ברייתא)"
+        },
+        {
+          "term": "בִּפְנֵי בֵּית דִּין",
+          "meaning": "In the presence of the court, in front of it"
+        }
+      ],
+      "confusionAlert": "Do not mix up 'בזמן בית דין' (while the court is in session) with 'בפני בית דין' (in front of the court). The whole answer depends on keeping them apart.",
+      "whyThisMatters": "This answer saves רב הונא's rule. It also shows that blowing on שבת in the court's town was tied both to the court's sitting hours and to being near the court.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "לָא, לְעוֹלָם בִּזְמַן בֵּית דִּין,",
+          "english": "No, really it is only during the court's time,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וְהָכִי קָתָנֵי:",
+          "english": "and this is what it teaches:"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "בַּיּוֹבֵל, בִּזְמַן בֵּית דִּין — תּוֹקְעִין",
+          "english": "On the Jubilee, during the court's time — they blow"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "בֵּין בִּפְנֵי בֵּית דִּין,",
+          "english": "both in the presence of the court,"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "בֵּין שֶׁלֹּא בִּפְנֵי בֵּית דִּין.",
+          "english": "and not in the presence of the court."
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "בְּרֹאשׁ הַשָּׁנָה, תּוֹקְעִין",
+          "english": "On Rosh HaShana, they blow"
+        },
+        {
+          "phraseNumber": 7,
+          "aramaic": "בִּזְמַן בֵּית דִּין, וּבִפְנֵי בֵּית דִּין.",
+          "english": "during the court's time, and in the presence of the court."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "לָא, לְעוֹלָם בִּזְמַן בֵּית דִּין",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        23
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Answers the challenge of step 23 by rereading the ברייתא.",
+      "terutzResolutionType": "Rereading the source: changing the difference from time (זמן) to place (פני)",
+      "terutzHavaAmina": "The ברייתא lets people blow on the יובל even outside the court's hours",
+      "terutzMaskana": "Both the יובל and ראש השנה are blown only during the court's hours. On the יובל people may also blow away from the court."
+    },
+    {
+      "stepNumber": 25,
+      "hebrewStepName": "ראיה",
+      "title": "רבי's statement supports this: blow only while the court sits",
+      "stepSummary": "The גמרא brings support. רבי חייא בר גמדא said in the name of רבי יוסי בן שאול in the name of רבי that they blow only while the court is sitting.",
+      "simpleTranslation": "It was also stated: רבי חייא בר גמדא said in the name of רבי יוסי בן שאול in the name of רבי: They blow only as long as the court is sitting.",
+      "whatsHappening": "The גמרא backs up its answer, and רב הונא's rule, with a statement passed down from רבי.",
+      "deeperAnalysis": "רבי says blowing happens only while the court is in session. That matches the time limit just defended. So רב הונא's position is not only defended, it has support from a major authority.",
+      "keyTerms": [
+        {
+          "term": "אִיתְּמַר נָמֵי",
+          "meaning": "It was also stated (introducing a supporting statement)"
+        },
+        {
+          "term": "יוֹשְׁבִין",
+          "meaning": "Are sitting, are in session"
+        }
+      ],
+      "whatToRemember": "רב ששת's ברייתא does not refute רב הונא. Both the יובל and ראש השנה are blown only during the court's hours. The only difference is that on the יובל people may blow even away from the court. רבי himself supports the time limit.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אִיתְּמַר נָמֵי:",
+          "english": "It was also stated:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אָמַר רַבִּי חִיָּיא בַּר גַּמָּדָא",
+          "english": "Rabbi Chiya bar Gamda said"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "אָמַר רַבִּי יוֹסֵי בֶּן שָׁאוּל אָמַר רַבִּי:",
+          "english": "that Rabbi Yosei ben Shaul said that Rebbi said:"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "אֵין תּוֹקְעִין אֶלָּא",
+          "english": "They blow only"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "כׇּל זְמַן שֶׁבֵּית דִּין יוֹשְׁבִין.",
+          "english": "as long as the court is sitting."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אִיתְּמַר נָמֵי",
+      "macroPhase": "conclusion",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        24
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Supports the answer of step 24 and רב הונא's rule with a statement in the name of רבי.",
+      "raayaObject": "רב הונא's rule that blowing happens only during the court's hours",
+      "raayaSupportSource": "רבי חייא בר גמדא in the name of רבי יוסי בן שאול in the name of רבי"
+    },
+    {
+      "stepNumber": 26,
+      "hebrewStepName": "שאלה",
+      "title": "רבי זירא's question about judges who began to get up",
+      "stepSummary": "רבי זירא asks about judges who stirred to stand up but did not actually stand. Does this still count as the court's sitting time for blowing שופר?",
+      "simpleTranslation": "רבי זירא asked: If the judges started to get up but did not actually get up, what is the law? Do we need the בית דין to be sitting? If so, that is still true here. Or do we need it to be the בית דין's working time? If so, that time is over.",
+      "whatsHappening": "רבי זירא asks a practical question about the rule from the last step, that we blow only while the בית דין is sitting. What if the judges already started to get up but are still in their seats?",
+      "deeperAnalysis": "There are two ways to understand the rule. If what matters is that the judges are physically seated, they still are, so blowing is allowed. If what matters is that the court is still 'in session,' that session is effectively over once they prepare to leave, so blowing is not allowed.",
+      "keyTerms": [
+        {
+          "term": "בָּעֵי",
+          "meaning": "He asked (a real question that needs an answer, not an attack)"
+        },
+        {
+          "term": "נִנְעֲרוּ לַעֲמוֹד",
+          "meaning": "They stirred themselves to stand up"
+        },
+        {
+          "term": "בֵּית דִּין יוֹשְׁבִין",
+          "meaning": "The court physically seated"
+        },
+        {
+          "term": "זְמַן בֵּית דִּין",
+          "meaning": "The court's session time"
+        },
+        {
+          "term": "אוֹ דִלְמָא",
+          "meaning": "Or perhaps"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "בָּעֵי רַבִּי זֵירָא:",
+          "english": "Rabbi Zeira asked:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "נִנְעֲרוּ לַעֲמוֹד וְלֹא עָמְדוּ, מַהוּ?",
+          "english": "If they stirred to rise but did not rise, what is the law?"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "בֵּית דִּין יוֹשְׁבִין בָּעֵינַן —",
+          "english": "Do we require a seated court —",
+          "notes": "Side 1: the judges' physical position is what counts."
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וְהָא אִיכָּא,",
+          "english": "and that is present here,"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "אוֹ דִלְמָא: זְמַן בֵּית דִּין בָּעֵינַן —",
+          "english": "or perhaps we require the court's session time —",
+          "notes": "Side 2: the session itself is what counts."
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "וְלֵיכָּא?",
+          "english": "and that is not present?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "בָּעֵי רַבִּי זֵירָא",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        24,
+        25
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Tests the edges of the rule just supported in Step 25, that we blow only while the court sits.",
+      "sheelahInformationSought": "Is the rule defined by the judges physically sitting, or by the court's official session time?"
+    },
+    {
+      "stepNumber": 27,
+      "hebrewStepName": "מסקנא",
+      "title": "The question remains unresolved",
+      "stepSummary": "The גמרא leaves רבי זירא's question unanswered: תיקו.",
+      "simpleTranslation": "The question stands.",
+      "whatsHappening": "The גמרא finds no source that decides רבי זירא's question, so it leaves it open.",
+      "deeperAnalysis": "תיקו means we do not know which side is right. Both understandings of 'while the court sits' remain possible, so the case of judges who began to get up stays undecided.",
+      "keyTerms": [
+        {
+          "term": "תֵּיקוּ",
+          "meaning": "Let it stand; the question remains unresolved"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "תֵּיקוּ.",
+          "english": "Let it stand."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "תשובה",
+      "triggerLanguage": "תֵּיקוּ",
+      "macroPhase": "conclusion",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        26
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Closes רבי זירא's question without an answer.",
+      "maskanaFinalTakeaway": "We do not know whether judges who stirred to rise still count as a court in session for blowing שופר."
+    },
+    {
+      "stepNumber": 28,
+      "hebrewStepName": "מימרא",
+      "title": "Quoting the משנה about Jerusalem's advantage over Yavne",
+      "stepSummary": "The גמרא quotes the משנה's line that ירושלים had an extra advantage over יבנה. This is the setup for explaining its conditions.",
+      "simpleTranslation": "The משנה said: And ירושלים had this additional advantage over יבנה, etc.",
+      "whatsHappening": "The גמרא moves to a new line of the משנה. This step only quotes it, to set up the explanation that comes next.",
+      "deeperAnalysis": "The משנה taught that any town that could see ירושלים, hear the שופר there, was near it, and could reach it, could also blow שופר on שבת. The 'etc.' points to those four conditions, which the גמרא is about to explain one by one.",
+      "keyTerms": [
+        {
+          "term": "יְתֵירָה עַל",
+          "meaning": "Had more than; superior to"
+        },
+        {
+          "term": "יַבְנֶה",
+          "meaning": "Yavne, where the סנהדרין moved after the destruction"
+        },
+        {
+          "term": "וְכוּ׳",
+          "meaning": "Etc.; the rest of the quoted text"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְעוֹד זֹאת הָיְתָה יְרוּשָׁלַיִם",
+          "english": "And Jerusalem had this further"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "יְתֵירָה עַל יַבְנֶה וְכוּ׳.",
+          "english": "advantage over Yavne, etc."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וְעוֹד זֹאת הָיְתָה יְרוּשָׁלַיִם יְתֵירָה עַל יַבְנֶה",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "wording",
+      "relationToPreviousStep": "Leaves the topic of the court's session and opens a new section of the משנה.",
+      "mimraCoreRuling": "Towns around ירושלים that met certain conditions could also blow שופר on ראש השנה that fell on שבת."
+    },
+    {
+      "stepNumber": 29,
+      "hebrewStepName": "מימרא",
+      "title": "Seeing and hearing: excluding a valley town and a mountaintop town",
+      "stepSummary": "'Seeing' excludes a town down in a valley. 'Hearing' excludes a town on top of a mountain.",
+      "simpleTranslation": "'Sees' excludes a town sitting in a valley. 'Hears' excludes a town sitting on a mountaintop.",
+      "whatsHappening": "The גמרא explains the first two conditions by showing what each one leaves out.",
+      "deeperAnalysis": "Each condition is needed because some towns meet one but not the other. A town in a deep valley can hear the שופר but cannot see ירושלים. A town on a high mountain can see ירושלים but is too far up to hear. A town must have both.",
+      "keyTerms": [
+        {
+          "term": "פְּרָט לְ",
+          "meaning": "To exclude; this comes to leave out"
+        },
+        {
+          "term": "נַחַל",
+          "meaning": "Valley or riverbed"
+        },
+        {
+          "term": "רֹאשׁ הָהָר",
+          "meaning": "Mountaintop"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "רוֹאָה — פְּרָט לְיוֹשֶׁבֶת בַּנַּחַל.",
+          "english": "'Sees' — excluding one situated in a valley."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "שׁוֹמַעַת — פְּרָט לְיוֹשֶׁבֶת בְּרֹאשׁ הָהָר.",
+          "english": "'Hears' — excluding one situated on a mountaintop."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "תשובה",
+      "triggerLanguage": "רוֹאָה — פְּרָט לְיוֹשֶׁבֶת בַּנַּחַל",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        28
+      ],
+      "scopeOfStep": "wording",
+      "relationToPreviousStep": "Begins explaining the conditions of the משנה quoted in Step 28.",
+      "mimraCoreRuling": "A town must be able both to see ירושלים and to hear the שופר from it."
+    },
+    {
+      "stepNumber": 30,
+      "hebrewStepName": "מימרא",
+      "title": "Near and reachable: excluding a town beyond the limit or across a river",
+      "stepSummary": "'Near' excludes a town beyond the תחום. 'Can come' excludes a town cut off by a river.",
+      "simpleTranslation": "'Near' excludes a town beyond the תחום. 'And can come' excludes a town that a river separates from ירושלים.",
+      "whatsHappening": "The גמרא explains the last two conditions, again by showing what each one leaves out.",
+      "deeperAnalysis": "Even a town that can see and hear does not qualify if it lies beyond the שבת walking limit (תחום שבת). Even a town that is close does not qualify if a river blocks people from actually coming. All four conditions must be met together.",
+      "keyTerms": [
+        {
+          "term": "חוּץ לַתְּחוּם",
+          "meaning": "Beyond the שבת walking limit (2,000 אמות)"
+        },
+        {
+          "term": "מַפְסֵיק",
+          "meaning": "Separates; cuts off"
+        },
+        {
+          "term": "נַהֲרָא",
+          "meaning": "A river"
+        }
+      ],
+      "whatToRemember": "A town near ירושלים could blow שופר only if it met all four conditions: it could see ירושלים, hear the שופר, was within the תחום, and had no river blocking the way.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "קְרוֹבָה — פְּרָט לְיוֹשֶׁבֶת חוּץ לַתְּחוּם.",
+          "english": "'Near' — excluding one situated beyond the Shabbat limit."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וִיכוֹלָה לָבוֹא — פְּרָט לְמַפְסֵיק לַהּ נַהֲרָא.",
+          "english": "'And can come' — excluding one cut off by a river."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "תשובה",
+      "triggerLanguage": "קְרוֹבָה — פְּרָט לְיוֹשֶׁבֶת חוּץ לַתְּחוּם",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        28,
+        29
+      ],
+      "scopeOfStep": "wording",
+      "relationToPreviousStep": "Completes the list of four conditions begun in Step 29.",
+      "mimraCoreRuling": "A town must be within the תחום and physically reachable, with no river in the way."
+    },
+    {
+      "stepNumber": 31,
+      "hebrewStepName": "מימרא",
+      "title": "New משנה: לולב originally seven days in the Temple, one day elsewhere",
+      "stepSummary": "A new משנה teaches that at first the לולב was taken all seven days in the מקדש but only one day everywhere else.",
+      "simpleTranslation": "משנה: At first, the לולב was taken in the מקדש for seven days, and in the rest of the country for one day.",
+      "whatsHappening": "A new משנה begins. It describes how the מצוה of לולב was kept while the בית המקדש stood.",
+      "deeperAnalysis": "In the מקדש, the לולב was taken all seven days of סוכות. Everywhere else, it was taken only on the first day. This sets up the next part of the משנה, the change made after the destruction.",
+      "keyTerms": [
+        {
+          "term": "מַתְנִי׳",
+          "meaning": "Our משנה; marks the start of a new משנה"
+        },
+        {
+          "term": "בָּרִאשׁוֹנָה",
+          "meaning": "At first; originally"
+        },
+        {
+          "term": "לוּלָב",
+          "meaning": "The palm branch taken on סוכות"
+        },
+        {
+          "term": "מְדִינָה",
+          "meaning": "The rest of the country, outside the מקדש"
+        }
+      ],
+      "confusionAlert": "Here מדינה does not mean 'country' in the political sense. It means everywhere outside the מקדש, including the rest of ירושלים.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מַתְנִי׳",
+          "english": "MISHNA:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "בָּרִאשׁוֹנָה הָיָה הַלּוּלָב נִיטָּל",
+          "english": "At first the lulav was taken"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "בַּמִּקְדָּשׁ שִׁבְעָה,",
+          "english": "in the Temple for seven days,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וּבַמְּדִינָה יוֹם אֶחָד.",
+          "english": "and in the country for one day."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "בָּרִאשׁוֹנָה הָיָה הַלּוּלָב נִיטָּל בַּמִּקְדָּשׁ שִׁבְעָה",
+      "macroPhase": "mishnah",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Opens a new משנה. It continues the theme of the previous משנה, which recorded another of רבן יוחנן בן זכאי's תקנות, about שופר.",
+      "mimraCoreRuling": "While the מקדש stood, the לולב was taken seven days in the מקדש and one day elsewhere."
+    },
+    {
+      "stepNumber": 32,
+      "hebrewStepName": "מימרא",
+      "title": "רבן יוחנן בן זכאי extends the לולב to seven days everywhere",
+      "stepSummary": "After the destruction, רבן יוחנן בן זכאי made a תקנה to take the לולב all seven days everywhere, as a remembrance of the מקדש.",
+      "simpleTranslation": "After the בית המקדש was destroyed, רבן יוחנן בן זכאי made a rule that the לולב should be taken in the country for seven days, as a remembrance of the מקדש.",
+      "whatsHappening": "The משנה records the rabbinic תקנה that changed the practice after the בית המקדש was destroyed.",
+      "deeperAnalysis": "The extra six days outside the מקדש come from a rabbinic תקנה, not from the תורה. The reason given is זכר למקדש: we copy what was done in the מקדש so that it will not be forgotten.",
+      "keyTerms": [
+        {
+          "term": "הִתְקִין",
+          "meaning": "He instituted a rabbinic enactment (תקנה)"
+        },
+        {
+          "term": "רַבָּן יוֹחָנָן בֶּן זַכַּאי",
+          "meaning": "The leading sage at the time of the destruction"
+        },
+        {
+          "term": "זֵכֶר לַמִּקְדָּשׁ",
+          "meaning": "A remembrance of the Temple"
+        },
+        {
+          "term": "מִשֶּׁחָרַב",
+          "meaning": "Once it was destroyed"
+        }
+      ],
+      "whyThisMatters": "This is why we take the לולב all seven days of סוכות today. It is also a central example of the principle of זכר למקדש, which the גמרא will go on to discuss.",
+      "whatToRemember": "Outside the מקדש, the תורה requires the לולב only on the first day. The other six days come from רבן יוחנן בן זכאי's תקנה, as זכר למקדש.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מִשֶּׁחָרַב בֵּית הַמִּקְדָּשׁ,",
+          "english": "Once the Temple was destroyed,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "הִתְקִין רַבָּן יוֹחָנָן בֶּן זַכַּאי",
+          "english": "Rabban Yochanan ben Zakkai instituted"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "שֶׁיְּהֵא לוּלָב נִיטָּל בַּמְּדִינָה שִׁבְעָה,",
+          "english": "that the lulav be taken in the country for seven days,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "זֵכֶר לַמִּקְדָּשׁ.",
+          "english": "in remembrance of the Temple."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "מִשֶּׁחָרַב בֵּית הַמִּקְדָּשׁ הִתְקִין רַבָּן יוֹחָנָן בֶּן זַכַּאי",
+      "macroPhase": "mishnah",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        31
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Describes the change made to the original practice described in Step 31.",
+      "mimraCoreRuling": "After the destruction, the לולב is taken all seven days everywhere, by rabbinic תקנה, as זכר למקדש."
+    },
+    {
+      "stepNumber": 33,
+      "hebrewStepName": "מימרא",
+      "title": "The new grain stays forbidden the whole day of the עומר waving",
+      "stepSummary": "The משנה ends its list of תקנות: רבן יוחנן בן זכאי ruled that new grain (חדש) is forbidden for the entire יום הנף, the 16th of ניסן.",
+      "simpleTranslation": "And [he also made a rule] that the whole day of the waving [of the עומר] should be forbidden.",
+      "whatsHappening": "The משנה adds one more תקנה of רבן יוחנן בן זכאי. New grain may not be eaten at all on the 16th of ניסן, the day the עומר used to be waved.",
+      "deeperAnalysis": "By תורה law, when there is no בית המקדש, new grain becomes permitted at dawn of the 16th of ניסן. רבן יוחנן בן זכאי extended the איסור through the whole day, so it is permitted only from the 17th. The reason is not given yet. The גמרא will explain it below.",
+      "keyTerms": [
+        {
+          "term": "יוֹם הֶנֶף",
+          "meaning": "The day of waving: the 16th of ניסן, when the עומר was waved and offered"
+        },
+        {
+          "term": "חָדָשׁ",
+          "meaning": "New grain of this year's crop, forbidden until the עומר permits it"
+        },
+        {
+          "term": "אָסוּר",
+          "meaning": "Forbidden"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְשֶׁיְּהֵא יוֹם הֶנֶף",
+          "english": "And that the day of waving",
+          "notes": "Still listing what רבן יוחנן בן זכאי instituted"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "כּוּלּוֹ אָסוּר.",
+          "english": "be entirely forbidden.",
+          "notes": "Forbidden for eating new grain"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וְשֶׁיְּהֵא יוֹם הֶנֶף כּוּלּוֹ אָסוּר",
+      "macroPhase": "mishnah",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        32
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Continues the list of רבן יוחנן בן זכאי's post-חורבן תקנות after the לולב תקנה",
+      "mimraCoreRuling": "Eating חדש is forbidden for the entire 16th of ניסן, by rabbinic תקנה"
+    },
+    {
+      "stepNumber": 34,
+      "hebrewStepName": "שאלה",
+      "title": "Where do we learn to make a remembrance of the בית המקדש?",
+      "stepSummary": "The גמרא opens by asking for the source that we do things as a זכר למקדש, which was the basis of the לולב תקנה.",
+      "simpleTranslation": "גמרא: And from where do we know that we do things as a remembrance of the בית המקדש?",
+      "whatsHappening": "The גמרא begins and asks for a source for the whole idea of זכר למקדש. This sets up the next step, where it brings a פסוק.",
+      "deeperAnalysis": "The משנה said רבן יוחנן בן זכאי had the לולב taken seven days everywhere as a זכר למקדש. The גמרא wants to know what basis there is for creating practices just to remember the מקדש. It is not attacking the תקנה. It is looking for its root.",
+      "keyTerms": [
+        {
+          "term": "וּמְנָלַן",
+          "meaning": "And from where do we know?"
+        },
+        {
+          "term": "זֵכֶר לַמִּקְדָּשׁ",
+          "meaning": "A remembrance of the בית המקדש"
+        },
+        {
+          "term": "דְּעָבְדִינַן",
+          "meaning": "That we do / that we practice"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "גְּמָ׳",
+          "english": "GEMARA:",
+          "notes": "The גמרא section begins"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וּמְנָלַן דְּעָבְדִינַן",
+          "english": "And from where do we know that we do [things]",
+          "notes": "Standard request for a source"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "זֵכֶר לַמִּקְדָּשׁ?",
+          "english": "as a remembrance of the Temple?",
+          "notes": "Refers to the reason given for the לולב תקנה"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וּמְנָלַן דְּעָבְדִינַן זֵכֶר לַמִּקְדָּשׁ",
+      "macroPhase": "opening_question",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [
+        32
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Turns from the משנה to the גמרא and asks for the source behind the concept used in step 32",
+      "sheelahInformationSought": "A scriptural basis for creating practices that remember the מקדש"
+    },
+    {
+      "stepNumber": 35,
+      "hebrewStepName": "תשובה",
+      "title": "The פסוק: \"ציון, no one seeks her out\"",
+      "stepSummary": "The גמרא brings a פסוק in ירמיה that criticizes the nations for saying no one cares about ציון. This implies that ציון needs to be cared about and remembered.",
+      "simpleTranslation": "For the פסוק says: \"For I will bring healing to you and heal you of your wounds, says ה׳, because they called you an outcast: 'She is ציון, no one seeks her out.'\" This implies that she needs seeking out.",
+      "whatsHappening": "The גמרא answers its question with a פסוק. Since the פסוק complains that 'no one seeks out ציון,' we learn that we are supposed to seek her out.",
+      "deeperAnalysis": "The proof is an inference (מכלל). The פסוק treats 'no one cares for ציון' as a shameful insult. That means caring for ציון is expected. After the חורבן, one way to 'seek out' ציון is to keep practices that remember the מקדש.",
+      "keyTerms": [
+        {
+          "term": "דְּאָמַר קְרָא",
+          "meaning": "As the פסוק says"
+        },
+        {
+          "term": "דּוֹרֵשׁ",
+          "meaning": "One who seeks out / cares for"
+        },
+        {
+          "term": "מִכְּלַל",
+          "meaning": "By implication, we can infer"
+        },
+        {
+          "term": "דְּרִישָׁה",
+          "meaning": "Seeking out, caring for"
+        }
+      ],
+      "whatToRemember": "The idea of זכר למקדש comes from the פסוק 'ציון היא דורש אין לה'. Since ציון should not be ignored, we must actively 'seek her out'.",
+      "whyThisMatters": "This פסוק is the classic source for all practices done זכר למקדש, which appear across many areas of halacha.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "דְּאָמַר קְרָא:",
+          "english": "As the verse says:",
+          "notes": "ירמיה ל:יז"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "״כִּי אַעֲלֶה אֲרוּכָה לָךְ",
+          "english": "\"For I will bring healing to you",
+          "notes": "Promise of future rebuilding"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וּמִמַּכּוֹתַיִךְ אֶרְפָּאֵךְ נְאֻם ה׳",
+          "english": "and from your wounds I will heal you, says the Lord,",
+          "notes": ""
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "כִּי נִדָּחָה קָרְאוּ לָךְ",
+          "english": "because they called you an outcast:",
+          "notes": "The nations mocked ציון"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "צִיּוֹן הִיא דּוֹרֵשׁ אֵין לָהּ״,",
+          "english": "'She is Zion, no one seeks her out.'\"",
+          "notes": "The key words of the proof"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "מִכְּלַל דְּבָעֲיָא דְּרִישָׁה.",
+          "english": "By implication, she needs seeking out.",
+          "notes": "The inference: we must care for ציון"
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "ראיה",
+      "triggerLanguage": "דְּאָמַר קְרָא",
+      "macroPhase": "source_derivation",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        34
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Answers the source question of step 34",
+      "teshuvahAnswerProvided": "From ירמיה ל:יז, the complaint that no one seeks out ציון implies that ציון must be sought out, so we make remembrances of the מקדש"
+    },
+    {
+      "stepNumber": 36,
+      "hebrewStepName": "שאלה",
+      "title": "Why forbid new grain the whole day?",
+      "stepSummary": "The גמרא quotes the משנה's ruling about יום הנף again and asks for its reason.",
+      "simpleTranslation": "[The משנה said:] And that the whole day of waving should be forbidden. What is the reason?",
+      "whatsHappening": "The גמרא goes back to the last תקנה in the משנה and asks why it was made. This sets up the explanation in the next steps.",
+      "deeperAnalysis": "Without the מקדש, the תורה permits new grain at dawn of the 16th. So why did רבן יוחנן בן זכאי add a stricter rule for the whole day? The גמרא wants the logic behind this extra איסור.",
+      "keyTerms": [
+        {
+          "term": "מַאי טַעְמָא",
+          "meaning": "What is the reason?"
+        }
+      ],
+      "confusionAlert": "This is not a new משנה. The גמרא is re-quoting the line from step 33 so it can ask about it.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְשֶׁיְּהֵא יוֹם הֶנֶף כּוּלּוֹ אָסוּר.",
+          "english": "And that the entire day of waving be forbidden.",
+          "notes": "Re-quote of the משנה (step 33)"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "מַאי טַעְמָא —",
+          "english": "What is the reason?",
+          "notes": ""
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וְשֶׁיְּהֵא יוֹם הֶנֶף כּוּלּוֹ אָסוּר. מַאי טַעְמָא",
+      "macroPhase": "opening_question",
+      "branchRole": "returns_to_previous_branch",
+      "dependsOnStepNumbers": [
+        33
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Leaves the זכר למקדש source and returns to the יום הנף line of the משנה",
+      "sheelahInformationSought": "The reason for extending the איסור חדש through the entire 16th of ניסן"
+    },
+    {
+      "stepNumber": 37,
+      "hebrewStepName": "תשובה",
+      "title": "People might eat at dawn out of habit once the מקדש is rebuilt",
+      "stepSummary": "The reason is that the מקדש may be rebuilt soon. People would then remember eating new grain at dawn the year before and want to do the same again.",
+      "simpleTranslation": "[Because] soon the בית המקדש will be rebuilt, and people will say: 'Last year, didn't we eat as soon as the east became light? Now too let's eat.'",
+      "whatsHappening": "The גמרא gives the reason. The worry is that once the מקדש is rebuilt, people will keep their old habit of eating new grain at dawn.",
+      "deeperAnalysis": "The תקנה protects against a future mistake. If people get used to eating new grain at dawn, they might keep doing it even after the מקדש returns. That would be too early. Forbidding the whole day breaks the habit in advance.",
+      "keyTerms": [
+        {
+          "term": "מְהֵרָה יִבָּנֶה",
+          "meaning": "It will soon be rebuilt"
+        },
+        {
+          "term": "אֶשְׁתָּקַד",
+          "meaning": "Last year"
+        },
+        {
+          "term": "הֵאִיר מִזְרָח",
+          "meaning": "The east became light (dawn)"
+        },
+        {
+          "term": "נֵיכוֹל",
+          "meaning": "Let us eat"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מְהֵרָה יִבָּנֶה בֵּית הַמִּקְדָּשׁ,",
+          "english": "Soon the Temple will be rebuilt,",
+          "notes": "The rule is made with the rebuilding in mind"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וְיֹאמְרוּ: אֶשְׁתָּקַד",
+          "english": "and people will say: Last year,",
+          "notes": ""
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "מִי לֹא אָכַלְנוּ בְּהֵאִיר מִזְרָח —",
+          "english": "didn't we eat when the east became light?",
+          "notes": "When there was no מקדש, dawn permitted the grain"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "עַכְשָׁיו נָמֵי נֵיכוֹל.",
+          "english": "Now too let us eat.",
+          "notes": "The feared mistake"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "מְהֵרָה יִבָּנֶה בֵּית הַמִּקְדָּשׁ",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        36
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Answers the question of step 36",
+      "teshuvahAnswerProvided": "To prevent people from eating new grain at dawn out of habit after the מקדש is rebuilt"
+    },
+    {
+      "stepNumber": 38,
+      "hebrewStepName": "תשובה",
+      "title": "Without the עומר, dawn permits. With the עומר, the עומר permits",
+      "stepSummary": "The גמרא explains people's mistake. Last year dawn permitted the grain because there was no עומר. Once the עומר is brought again, only the עומר permits it.",
+      "simpleTranslation": "And they will not know that last year, when there was no עומר, the dawn permitted. Now that there is an עומר, the עומר permits.",
+      "whatsHappening": "The גמרא finishes its explanation by showing why eating at dawn would be wrong once the מקדש is rebuilt.",
+      "deeperAnalysis": "What permits the new grain depends on whether the מקדש stands. Without it, the arrival of the day (dawn) permits. With it, the actual offering of the עומר permits. Since the עומר is brought later in the day, eating at dawn would be eating forbidden חדש. The full-day ban keeps people from confusing the two systems.",
+      "keyTerms": [
+        {
+          "term": "עוֹמֶר",
+          "meaning": "The barley offering brought on the 16th of ניסן that permits new grain"
+        },
+        {
+          "term": "מַתִּיר",
+          "meaning": "Permits"
+        },
+        {
+          "term": "וְלָא יָדְעִי",
+          "meaning": "And they do not know"
+        }
+      ],
+      "whatToRemember": "With a מקדש, the עומר offering permits new grain. Without one, dawn of the 16th permits it. רבן יוחנן בן זכאי forbade the whole day so people would not keep the 'dawn' habit after the מקדש is rebuilt.",
+      "whyThisMatters": "This explains why the halacha keeps חדש forbidden throughout the 16th of ניסן even today, as a fence for the time the מקדש is rebuilt.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְלָא יָדְעִי",
+          "english": "But they do not know",
+          "notes": ""
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "דְּאֶשְׁתָּקַד לָא הֲוָה עוֹמֶר,",
+          "english": "that last year there was no omer,",
+          "notes": "No מקדש, so no offering"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "הֵאִיר מִזְרָח — הִתִּיר.",
+          "english": "[so] the east becoming light permitted.",
+          "notes": "Dawn itself permitted the grain"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "הַשְׁתָּא דְּאִיכָּא עוֹמֶר —",
+          "english": "Now that there is an omer,",
+          "notes": "After the rebuilding"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "עוֹמֶר מַתִּיר.",
+          "english": "the omer permits.",
+          "notes": "So one must wait until it is offered"
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "מסקנא",
+      "triggerLanguage": "וְלָא יָדְעִי דְּאֶשְׁתָּקַד לָא הֲוָה עוֹמֶר",
+      "macroPhase": "conclusion",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        37
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Completes the reasoning of step 37 by spelling out the mistake people would make",
+      "teshuvahAnswerProvided": "Dawn permits only when there is no עומר. Once the עומר exists, the offering itself permits. A full-day איסור prevents confusing the two",
+      "maskanaFinalTakeaway": "The full-day איסור on יום הנף guards against eating חדש too early once the מקדש is rebuilt"
+    },
+    {
+      "stepNumber": 39,
+      "hebrewStepName": "קשיא",
+      "title": "When was the Temple rebuilt? If on the sixteenth, there is no problem",
+      "stepSummary": "The גמרא asks when the מקדש would have been rebuilt in this scenario. If it was rebuilt on the 16th itself, then at dawn there was still no מקדש, so dawn really did permit the new grain and the worry disappears.",
+      "simpleTranslation": "In this case, when was the Temple built? If you say it was built on the sixteenth, then the morning light of the east did permit the grain, because there was no Temple yet.",
+      "whatsHappening": "The גמרא pokes at the reason from Step 37 by asking exactly when the מקדש would be rebuilt. It tries the first option, the 16th of ניסן, and shows that the worry does not fit there.",
+      "deeperAnalysis": "The worry was that people would eat new grain at dawn even though the עומר should now be what permits it. But if the מקדש is only rebuilt during the 16th, then at dawn there was no מקדש and no עומר. So dawn correctly permitted the grain, and nobody did anything wrong.",
+      "keyTerms": [
+        {
+          "term": "מִיבְּנֵי",
+          "meaning": "Being built (here: the בית המקדש being rebuilt)"
+        },
+        {
+          "term": "אֵימַת",
+          "meaning": "When?"
+        },
+        {
+          "term": "אִילֵּימָא",
+          "meaning": "If you say (introduces a suggestion the גמרא will reject)"
+        },
+        {
+          "term": "שִׁיתְּסַר",
+          "meaning": "Sixteen (the 16th of ניסן, יום הנף)"
+        },
+        {
+          "term": "הֵאִיר מִזְרָח",
+          "meaning": "The eastern sky lit up, meaning dawn"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "דְּמִיבְּנֵי אֵימַת?",
+          "english": "When is it that the Temple was built?",
+          "notes": "The גמרא asks for the timing so it can test the earlier worry."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אִילֵּימָא דְּאִיבְּנִי בְּשִׁיתְּסַר,",
+          "english": "If we say that it was built on the sixteenth,",
+          "notes": "First option: rebuilt on the 16th of ניסן itself."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "הֲרֵי הֵאִיר מִזְרָח — הִתִּיר.",
+          "english": "then the eastern light did permit it.",
+          "notes": "At dawn there was no מקדש yet, so dawn correctly permitted the new grain."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "שאלה",
+      "triggerLanguage": "דְּמִיבְּנֵי אֵימַת? אִילֵּימָא דְּאִיבְּנִי בְּשִׁיתְּסַר",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        37,
+        38
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Tests the scenario behind the reason given in Steps 37–38.",
+      "kashyaTarget": "The reason that a rebuilt מקדש would cause people to eat new grain wrongly at dawn",
+      "kashyaAttackLogic": "If the rebuilding happens on the 16th, dawn came before there was a מקדש, so eating at dawn was correct. There is no mistake to prevent."
+    },
+    {
+      "stepNumber": 40,
+      "hebrewStepName": "קשיא",
+      "title": "If rebuilt on the fifteenth, the grain should be permitted from midday",
+      "stepSummary": "The גמרא then tries the other option: the מקדש was rebuilt on the 15th. In that case dawn does not permit, but the grain should still be allowed from midday, because a משנה says the בית דין is never slow to bring the עומר.",
+      "simpleTranslation": "Rather, you must say it was built on the fifteenth. Then it should be permitted from midday onward, because we learned in a משנה: people who live far away are permitted to eat new grain from midday onward, because the court is not lazy about bringing the עומר.",
+      "whatsHappening": "The גמרא moves to the second option, rebuilding on the 15th. It challenges the תקנה again, asking why the grain is forbidden all day if it should be allowed from midday.",
+      "deeperAnalysis": "If the מקדש stands on the 15th, the עומר will be brought on the 16th. A משנה in מנחות teaches that people far away may assume the עומר was brought by midday. So רבן יוחנן בן זכאי should have forbidden the grain only until midday, not for the whole day.",
+      "keyTerms": [
+        {
+          "term": "חֲמֵיסַר",
+          "meaning": "Fifteen (the 15th of ניסן)"
+        },
+        {
+          "term": "חֲצוֹת הַיּוֹם",
+          "meaning": "Midday"
+        },
+        {
+          "term": "לִשְׁתְּרֵי",
+          "meaning": "Let it be permitted"
+        },
+        {
+          "term": "הָרְחוֹקִין",
+          "meaning": "Those who live far from ירושלים"
+        },
+        {
+          "term": "מִתְעַצְּלִים",
+          "meaning": "Lazy or slow to act"
+        }
+      ],
+      "confusionAlert": "The quoted משנה is not about the time when the עומר must be brought. It is about what far-away people may assume: since the בית דין is never slow, the עומר has certainly been brought by midday.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֶלָּא דְּאִיבְּנִי בַּחֲמֵיסַר.",
+          "english": "Rather, it means that it was built on the fifteenth.",
+          "notes": "Second option: the מקדש already stands before the 16th."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "מֵחֲצוֹת הַיּוֹם וּלְהַלָּן לִשְׁתְּרֵי,",
+          "english": "Then from midday onward let it be permitted,",
+          "notes": "The challenge: why forbid the grain for the whole day?"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "דְּהָא תְּנַן:",
+          "english": "for we learned in a משנה:",
+          "notes": "Introduces a source from מסכת מנחות."
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "הָרְחוֹקִין — מוּתָּרִין",
+          "english": "Those who are far away are permitted",
+          "notes": "People far from ירושלים do not know exactly when the עומר was brought."
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "מֵחֲצוֹת הַיּוֹם וּלְהַלָּן,",
+          "english": "from midday onward,",
+          "notes": ""
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "לְפִי שֶׁאֵין בֵּית דִּין מִתְעַצְּלִים בּוֹ!",
+          "english": "because the court is not lazy about it!",
+          "notes": "The בית דין certainly brings the עומר by midday."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "ראיה",
+      "triggerLanguage": "אֶלָּא דְּאִיבְּנִי בַּחֲמֵיסַר. מֵחֲצוֹת הַיּוֹם וּלְהַלָּן לִשְׁתְּרֵי, דְּהָא תְּנַן",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        36,
+        37,
+        39
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "After rejecting the 16th, the גמרא tries the 15th and finds a different problem.",
+      "kashyaTarget": "Why the תקנה forbids new grain for the entire day of יום הנף",
+      "kashyaAttackLogic": "A משנה teaches that the עומר is always brought by midday. So, at most, the grain should be forbidden only until midday."
+    },
+    {
+      "stepNumber": 41,
+      "hebrewStepName": "תירוץ",
+      "title": "The ruling is needed when the Temple is rebuilt late on the fifteenth or at night",
+      "stepSummary": "The גמרא answers that the תקנה is needed for a case where the מקדש is rebuilt on the 15th close to sunset, or at night. Then there may not be time to prepare the עומר by midday, so the grain must be forbidden all day.",
+      "simpleTranslation": "It is needed only where the Temple was built on the fifteenth close to sunset. Or, alternatively, where it was built at night.",
+      "whatsHappening": "The גמרא answers the challenge from Step 40 by picking a narrow timing case. In that case the whole-day ban really makes sense.",
+      "deeperAnalysis": "The rule that the עומר is ready by midday assumes the בית דין had normal time to prepare. If the מקדש is rebuilt just before sunset on the 15th, or during the night, the preparations might not be finished by midday. So eating at midday could turn out to be eating before the עומר was brought, and the whole day must be forbidden.",
+      "keyTerms": [
+        {
+          "term": "לֹא נִצְרְכָא",
+          "meaning": "It is needed only for (a specific case)"
+        },
+        {
+          "term": "סָמוּךְ",
+          "meaning": "Close to"
+        },
+        {
+          "term": "שְׁקִיעַת הַחַמָּה",
+          "meaning": "Sunset"
+        },
+        {
+          "term": "אִי נָמֵי",
+          "meaning": "Or also / alternatively"
+        },
+        {
+          "term": "לֵילְיָא",
+          "meaning": "Night"
+        }
+      ],
+      "whatToRemember": "The whole-day ban of רבן יוחנן בן זכאי, according to this approach, covers the case where the מקדש is rebuilt so late that the עומר might not be brought by midday.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "לֹא נִצְרְכָא, דְּאִיבְּנִי בַּחֲמֵיסַר",
+          "english": "It is needed only where it was built on the fifteenth",
+          "notes": "Narrows the case."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "סָמוּךְ לִשְׁקִיעַת הַחַמָּה.",
+          "english": "close to sunset.",
+          "notes": "Too late to prepare the עומר properly."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "אִי נָמֵי, דְּאִיבְּנִי בְּלֵילְיָא.",
+          "english": "Alternatively, where it was built at night.",
+          "notes": "On the night of the 16th, with no time to cut and prepare the עומר."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "לֹא נִצְרְכָא, דְּאִיבְּנִי בַּחֲמֵיסַר סָמוּךְ לִשְׁקִיעַת הַחַמָּה",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        39,
+        40
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Answers the challenge of Step 40.",
+      "terutzResolutionType": "Limiting the case to a specific timing scenario",
+      "terutzHavaAmina": "The ban seemed too broad, since the עומר is always brought by midday.",
+      "terutzMaskana": "When the מקדש is rebuilt near sunset on the 15th or at night, the עומר may be delayed past midday. So the full-day ban is justified."
+    },
+    {
+      "stepNumber": 42,
+      "hebrewStepName": "מימרא",
+      "title": "רב נחמן בר יצחק begins a different explanation",
+      "stepSummary": "רב נחמן בר יצחק starts a new explanation of רבן יוחנן בן זכאי's ruling. His statement continues on the next amud.",
+      "simpleTranslation": "רב נחמן בר יצחק said: רבן יוחנן בן זכאי...",
+      "whatsHappening": "The גמרא is setting up a new approach. רב נחמן בר יצחק begins to explain the ruling of רבן יוחנן בן זכאי differently, and the rest of his words come in the next section.",
+      "deeperAnalysis": "Until now the reason was a תקנה made because the מקדש may soon be rebuilt. רב נחמן בר יצחק signals that he understands the ruling in another way. His actual reasoning comes next.",
+      "keyTerms": [
+        {
+          "term": "רַב נַחְמָן בַּר יִצְחָק",
+          "meaning": "An אמורא who offers a different explanation"
+        },
+        {
+          "term": "רַבָּן יוֹחָנָן בֶּן זַכַּאי",
+          "meaning": "The תנא whose ruling about יום הנף is being explained"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר רַב נַחְמָן בַּר יִצְחָק:",
+          "english": "Rav Nachman bar Yitzchak said:",
+          "notes": "The attribution, merged into this step."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "רַבָּן יוֹחָנָן בֶּן זַכַּאי",
+          "english": "Rabban Yochanan ben Zakkai",
+          "notes": "The statement continues on the next amud."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "תירוץ",
+      "triggerLanguage": "אָמַר רַב נַחְמָן בַּר יִצְחָק: רַבָּן יוֹחָנָן בֶּן זַכַּאי",
+      "macroPhase": "alternate_branch",
+      "branchRole": "alternative_approach",
+      "dependsOnStepNumbers": [
+        36,
+        37
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "After the first explanation is defended, a new אמורא opens a different explanation of the same ruling.",
+      "mimraCoreRuling": "The statement is not finished here. רב נחמן בר יצחק is beginning a different reason for רבן יוחנן בן זכאי's ruling."
+    }
+  ]
+}
