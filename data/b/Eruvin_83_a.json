@@ -1,0 +1,1391 @@
+{
+  "mainTopic": "Loaf fractions and the size of a חצי פרס, and how the different סאה measures compare in eggs.",
+  "overview": "The משנה (82b) listed fractions of a loaf. Half the loaf is for entering a בית המנוגע, and a quarter, the חצי פרס, makes the body פסול for תרומה. A ברייתא adds an eighth of the loaf for טומאת אוכלין. The גמרא explains that our משנה left this out because the sizes do not match exactly: a חצי פרס is about two eggs, but never exactly two, while a כביצה is an egg with or without its shell. רב חסדא then says that two-egg view follows רבי יהודה and רבי יוסי, while רבי יוחנן בן ברוקה holds a חצי פרס is one and a half large eggs. Next רב דימי reports that רבי measured an old סאה at 217 eggs. The גמרא shows this fits no known סאה, then explains it as a ציפורי סאה of 207 eggs plus רבי's small extra twentieths. A ברייתא then says the ציפורי סאה is one-third larger than the desert סאה. When the math does not fit, רבי ירמיה reads it as approximate, and רבינא reads it as exact once רבי's extras are included. The amud ends by opening a new ברייתא on the verse 'the first of your dough', which continues on the next amud.",
+  "steps": [
+    {
+      "stepNumber": 1,
+      "hebrewStepName": "מימרא",
+      "title": "A ברייתא adds an eighth of the loaf for food impurity",
+      "stepSummary": "A ברייתא adds to the משנה's list: half of half of half of the loaf is the size for טומאת אוכלין.",
+      "simpleTranslation": "A Sage taught: and half of half of its half (an eighth of the loaf) is the size that becomes impure with טומאת אוכלין.",
+      "whatsHappening": "The גמרא brings a ברייתא that adds one more fraction to the list in our משנה: an eighth of the loaf.",
+      "deeperAnalysis": "Our משנה went from the whole loaf to half (for בית המנוגע) and then to a quarter (חצי פרס, which makes the body פסול for תרומה). The ברייתא keeps halving one more time and reaches an eighth. That eighth matches the known size for food impurity, a כביצה.",
+      "keyTerms": [
+        {
+          "term": "תָּנָא",
+          "meaning": "A Sage taught (introduces a ברייתא)"
+        },
+        {
+          "term": "חֲצִי חֲצִי חֶצְיָהּ",
+          "meaning": "Half of half of its half, which is one eighth"
+        },
+        {
+          "term": "טוּמְאַת אוֹכָלִין",
+          "meaning": "Ritual impurity of foods"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "תָּנָא:",
+          "english": "A Sage taught:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וַחֲצִי חֲצִי חֶצְיָהּ",
+          "english": "and half of half of its half (one eighth of the loaf)",
+          "notes": "This continues the halving pattern of the משנה."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "לְטַמֵּא טוּמְאַת אוֹכָלִין.",
+          "english": "is the size to become impure with the impurity of foods."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "ראיה",
+      "triggerLanguage": "תָּנָא",
+      "macroPhase": "source_derivation",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Adds to the list of loaf fractions in the משנה on 82b.",
+      "mimraCoreRuling": "An eighth of the loaf is the size for טומאת אוכלין."
+    },
+    {
+      "stepNumber": 2,
+      "hebrewStepName": "שאלה",
+      "title": "Why did our משנה leave out food impurity?",
+      "stepSummary": "The גמרא asks why the תנא of our משנה did not also list the eighth for טומאת אוכלין.",
+      "simpleTranslation": "And our תנא, why did he not teach the size for טומאת אוכלין?",
+      "whatsHappening": "The גמרא asks a simple question. If the eighth fits the pattern, why did our משנה skip it?",
+      "deeperAnalysis": "The משנה was clearly listing sizes by halving the loaf. Continuing one more step to an eighth would seem natural. So leaving it out needs an explanation.",
+      "keyTerms": [
+        {
+          "term": "תַּנָּא דִּידַן",
+          "meaning": "Our תנא, meaning the author of our משנה"
+        },
+        {
+          "term": "מַאי טַעְמָא",
+          "meaning": "What is the reason?"
+        },
+        {
+          "term": "לָא תָּנֵי",
+          "meaning": "He did not teach"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְתַנָּא דִּידַן מַאי טַעְמָא",
+          "english": "And our Tanna, what is the reason"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "לָא תָּנֵי טוּמְאַת אוֹכָלִין?",
+          "english": "that he did not teach the impurity of foods?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "קשיא",
+      "triggerLanguage": "וְתַנָּא דִּידַן מַאי טַעְמָא לָא תָּנֵי",
+      "macroPhase": "opening_question",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        1
+      ],
+      "scopeOfStep": "wording",
+      "relationToPreviousStep": "Uses the ברייתא in step 1 to ask about what the משנה left out.",
+      "sheelahInformationSought": "Why the משנה stopped at the quarter loaf and did not include the eighth."
+    },
+    {
+      "stepNumber": 3,
+      "hebrewStepName": "תשובה",
+      "title": "The sizes do not match exactly",
+      "stepSummary": "Answer: the measures are not exactly equal, so an eighth of this loaf is not precisely a כביצה.",
+      "simpleTranslation": "Because their measures are not exactly equal to each other.",
+      "whatsHappening": "The גמרא answers that our משנה only lists sizes that fit exactly. The eighth does not exactly equal the size for food impurity.",
+      "deeperAnalysis": "The ברייתא was speaking loosely: an eighth of the loaf is close to a כביצה. Our משנה wanted precise numbers, so it left the eighth out. The next steps prove the mismatch.",
+      "keyTerms": [
+        {
+          "term": "לָא שָׁווּ",
+          "meaning": "They are not equal"
+        },
+        {
+          "term": "שִׁיעוּרַיְיהוּ",
+          "meaning": "Their measures or sizes"
+        },
+        {
+          "term": "לַהֲדָדֵי",
+          "meaning": "To each other"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מִשּׁוּם דְּלָא שָׁווּ",
+          "english": "Because they are not equal,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "שִׁיעוּרַיְיהוּ לַהֲדָדֵי.",
+          "english": "their measures, to each other."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "מִשּׁוּם דְּלָא שָׁווּ שִׁיעוּרַיְיהוּ לַהֲדָדֵי",
+      "macroPhase": "opening_question",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        2
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Answers the question of step 2.",
+      "teshuvahAnswerProvided": "Half of a חצי פרס is not exactly a כביצה, so the משנה did not list it."
+    },
+    {
+      "stepNumber": 4,
+      "hebrewStepName": "ראיה",
+      "title": "How big is a חצי פרס? About two eggs",
+      "stepSummary": "A ברייתא gives three opinions on the size of a חצי פרס. All are close to two eggs, but each is slightly different.",
+      "simpleTranslation": "As it was taught: How much is a חצי פרס? Two eggs minus a little, says רבי יהודה. רבי יוסי says: two large eggs. רבי measured it as two eggs and a bit more. How much more? One twentieth of an egg.",
+      "whatsHappening": "The גמרא starts its proof by showing the exact size of a חצי פרס, which is the quarter loaf in the משנה. This is the first half of the comparison. The next step gives the second half.",
+      "deeperAnalysis": "Every opinion puts the חצי פרס at about two eggs, but never exactly two eggs. Half of that would be about one egg, though not exactly one egg. That small difference is the point the גמרא is building toward.",
+      "keyTerms": [
+        {
+          "term": "חֲצִי פְרָס",
+          "meaning": "Half a loaf-portion. It is the quarter loaf that makes the body פסול for תרומה"
+        },
+        {
+          "term": "חָסֵר קִימְעָא",
+          "meaning": "Minus a little"
+        },
+        {
+          "term": "שׂוֹחֲקוֹת",
+          "meaning": "Large, plump eggs (literally 'laughing')"
+        },
+        {
+          "term": "שִׁיעֵר",
+          "meaning": "He measured or estimated"
+        },
+        {
+          "term": "וָעוֹד",
+          "meaning": "And a bit more"
+        }
+      ],
+      "confusionAlert": "Do not think רבי, רבי יהודה, and רבי יוסי disagree by a lot. All three are within a tiny amount of two eggs. That tiny gap is exactly why the eighth of the loaf is not a precise כביצה.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "דְּתַנְיָא:",
+          "english": "As it was taught in a baraita:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "כַּמָּה שִׁיעוּר חֲצִי פְרָס?",
+          "english": "How much is the measure of half a peras?"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "שְׁתֵּי בֵיצִים חָסֵר קִימְעָא,",
+          "english": "Two eggs minus a little;"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "דִּבְרֵי רַבִּי יְהוּדָה.",
+          "english": "these are the words of Rabbi Yehuda."
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "רַבִּי יוֹסֵי אוֹמֵר: שְׁתֵּי בֵיצִים שׂוֹחֲקוֹת.",
+          "english": "Rabbi Yosei says: two large eggs."
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "שִׁיעֵר רַבִּי, שְׁתֵּי בֵיצִים וָעוֹד.",
+          "english": "Rabbi measured it: two eggs and a bit more."
+        },
+        {
+          "phraseNumber": 7,
+          "aramaic": "כַּמָּה וָעוֹד?",
+          "english": "How much is 'a bit more'?"
+        },
+        {
+          "phraseNumber": 8,
+          "aramaic": "אֶחָד מֵעֶשְׂרִים בַּבֵּיצָה.",
+          "english": "One twentieth of an egg."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "דְּתַנְיָא",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        3
+      ],
+      "scopeOfStep": "proof_mechanism",
+      "relationToPreviousStep": "Starts the proof for the answer in step 3.",
+      "raayaObject": "That the measures do not match exactly.",
+      "raayaSupportSource": "A ברייתא giving the size of a חצי פרס as about two eggs, with small differences between opinions."
+    },
+    {
+      "stepNumber": 5,
+      "hebrewStepName": "ראיה",
+      "title": "How big is a כביצה for food impurity?",
+      "stepSummary": "A second ברייתא says the כביצה for food impurity is an egg with its shell, according to רבי נתן and רבי דוסא, or without its shell, according to חכמים.",
+      "simpleTranslation": "But about טומאת אוכלין it was taught: רבי נתן and רבי דוסא said that the כביצה the Sages spoke of is like an egg together with its shell. חכמים say it is like an egg without its shell.",
+      "whatsHappening": "The גמרא brings the second half of its comparison: the exact size of a כביצה for food impurity.",
+      "deeperAnalysis": "None of the חצי פרס sizes divided in half gives exactly an egg with its shell or an egg without its shell. So the eighth of the loaf only roughly equals a כביצה. This completes the proof that our משנה left it out because it is not exact.",
+      "keyTerms": [
+        {
+          "term": "וְאִילּוּ",
+          "meaning": "Whereas, in contrast"
+        },
+        {
+          "term": "כְּבֵיצָה",
+          "meaning": "The size of an egg"
+        },
+        {
+          "term": "קְלִיפָּתָהּ",
+          "meaning": "Its shell"
+        }
+      ],
+      "whatToRemember": "Our משנה did not list the eighth of the loaf for טומאת אוכלין. The reason is that half of a חצי פרס (about two eggs, by every opinion) never exactly equals a כביצה, whether with the shell or without it.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְאִילּוּ גַּבֵּי טוּמְאַת אוֹכָלִין תַּנְיָא:",
+          "english": "Whereas regarding the impurity of foods it was taught:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "רַבִּי נָתָן וְרַבִּי דּוֹסָא אָמְרוּ:",
+          "english": "Rabbi Natan and Rabbi Dosa said:"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "כְּבֵיצָה שֶׁאָמְרוּ",
+          "english": "The egg-bulk that they (the Sages) spoke of"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "כָּמוֹהָ וְכִקְלִיפָּתָהּ,",
+          "english": "is like it (the egg) together with its shell;"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "וַחֲכָמִים אוֹמְרִים:",
+          "english": "and the Rabbis say:"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "כָּמוֹהָ בְּלֹא קְלִיפָּתָהּ.",
+          "english": "like it without its shell."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וְאִילּוּ גַּבֵּי טוּמְאַת אוֹכָלִין תַּנְיָא",
+      "macroPhase": "source_derivation",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        3,
+        4
+      ],
+      "scopeOfStep": "proof_mechanism",
+      "relationToPreviousStep": "Completes the comparison begun in step 4.",
+      "raayaObject": "That half of a חצי פרס is not exactly a כביצה.",
+      "raayaSupportSource": "A ברייתא defining the כביצה as an egg with or without its shell."
+    },
+    {
+      "stepNumber": 6,
+      "hebrewStepName": "מימרא",
+      "title": "רב חסדא: whose view is the two-egg חצי פרס?",
+      "stepSummary": "רב חסדא says the two-egg חצי פרס follows רבי יהודה and רבי יוסי. חכמים, who are רבי יוחנן בן ברוקה, hold it is one and a half large eggs.",
+      "simpleTranslation": "רפרם בר פפא said in the name of רב חסדא: This ברייתא follows רבי יהודה and רבי יוסי. But חכמים say a חצי פרס is one and a half large eggs. And who are these חכמים? רבי יוחנן בן ברוקה.",
+      "whatsHappening": "The גמרא now turns to the size of the חצי פרס itself. רב חסדא tells us who holds the two-egg view and who holds a smaller view.",
+      "deeperAnalysis": "The two-egg ברייתא is not everyone's opinion. It matches רבי יהודה and רבי יוסי, which fits רבי שמעון's loaf size in our משנה. The other side, called חכמים, is identified as רבי יוחנן בן ברוקה. His loaf size in the משנה works out to a חצי פרס of one and a half large eggs.",
+      "keyTerms": [
+        {
+          "term": "זוֹ דִּבְרֵי",
+          "meaning": "This is the opinion of"
+        },
+        {
+          "term": "כְּבֵיצָה וּמֶחֱצָה",
+          "meaning": "One and a half egg-bulks"
+        },
+        {
+          "term": "וּמַאן",
+          "meaning": "And who?"
+        }
+      ],
+      "whyThisMatters": "This shows that the size of a חצי פרס is a real disagreement. It ties the ברייתא's numbers back to the two loaf measures (רבי יוחנן בן ברוקה and רבי שמעון) in our משנה.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר רַפְרָם בַּר פָּפָּא",
+          "english": "Rafram bar Pappa said"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אָמַר רַב חִסְדָּא:",
+          "english": "that Rav Chisda said:"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "זוֹ דִּבְרֵי רַבִּי יְהוּדָה וְרַבִּי יוֹסֵי.",
+          "english": "This (baraita) is the view of Rabbi Yehuda and Rabbi Yosei."
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "אֲבָל חֲכָמִים אוֹמְרִים:",
+          "english": "But the Rabbis say:"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "כְּבֵיצָה וּמֶחֱצָה שׂוֹחֲקוֹת.",
+          "english": "one and a half large egg-bulks."
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "וּמַאן חֲכָמִים —",
+          "english": "And who are these Rabbis?"
+        },
+        {
+          "phraseNumber": 7,
+          "aramaic": "רַבִּי יוֹחָנָן בֶּן בְּרוֹקָה.",
+          "english": "Rabbi Yochanan ben Beroka."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "מסקנא",
+      "triggerLanguage": "אָמַר רַפְרָם בַּר פָּפָּא אָמַר רַב חִסְדָּא",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [
+        4
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Goes back to the ברייתא of step 4 and identifies whose opinion it is.",
+      "mimraCoreRuling": "The two-egg חצי פרס follows רבי יהודה and רבי יוסי. רבי יוחנן בן ברוקה holds it is one and a half large eggs."
+    },
+    {
+      "stepNumber": 7,
+      "hebrewStepName": "קשיא",
+      "title": "Isn't this obvious?",
+      "stepSummary": "The גמרא challenges רב חסדא's statement. It seems obvious that רבי יוחנן בן ברוקה, who holds that half the loaf is three eggs, holds that a חצי פרס (half of that) is one and a half eggs.",
+      "simpleTranslation": "That's obvious!",
+      "whatsHappening": "The גמרא complains that רב חסדא told us something we already knew.",
+      "deeperAnalysis": "From רבי יוחנן בן ברוקה's loaf size in the משנה, half the loaf comes to three eggs, so the חצי פרס (half of that) is clearly one and a half. Saying 'one and a half' seems to add nothing new.",
+      "keyTerms": [
+        {
+          "term": "פְּשִׁיטָא",
+          "meaning": "It's obvious; why say it?"
+        },
+        {
+          "term": "רַבִּי יוֹחָנָן בֶּן בְּרוֹקָה",
+          "meaning": "The תנא whose loaf size makes half the loaf three eggs, so a חצי פרס is one and a half eggs"
+        },
+        {
+          "term": "בֵּיצָה וּמֶחֱצָה",
+          "meaning": "One and a half eggs"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "פְּשִׁיטָא!",
+          "english": "That's obvious!",
+          "notes": "Half the loaf is three eggs, so its half (the חצי פרס) is one and a half eggs. What did רב חסדא add?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "שאלה",
+      "triggerLanguage": "פְּשִׁיטָא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        6
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Challenges the need for רב חסדא's statement in step 6",
+      "kashyaTarget": "רב חסדא's statement that, according to חכמים, a חצי פרס is one and a half eggs",
+      "kashyaAttackLogic": "The number follows simply from רבי יוחנן בן ברוקה's known view that half the loaf is three eggs, so the statement seems pointless."
+    },
+    {
+      "stepNumber": 8,
+      "hebrewStepName": "תירוץ",
+      "title": "The new point is that the eggs are large",
+      "stepSummary": "רב חסדא's real point was not the number but that the eggs must be large ones.",
+      "simpleTranslation": "He came to teach us that the eggs are large ones.",
+      "whatsHappening": "The גמרא answers: רב חסדא was teaching what size eggs to use, not the math.",
+      "deeperAnalysis": "The math was obvious, but nobody had said which eggs to measure with. רב חסדא adds that we use large eggs. That makes the measure bigger than with ordinary eggs.",
+      "keyTerms": [
+        {
+          "term": "שׂוֹחֲקוֹת",
+          "meaning": "Large eggs (literally 'laughing,' i.e., big and full)"
+        },
+        {
+          "term": "אֲתָא לְאַשְׁמוֹעִינַן",
+          "meaning": "He came to teach us"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "שׂוֹחֲקוֹת אֲתָא לְאַשְׁמוֹעִינַן.",
+          "english": "He came to teach us: large eggs.",
+          "notes": "The חידוש is the size of the egg, not the number."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "שׂוֹחֲקוֹת אֲתָא לְאַשְׁמוֹעִינַן",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        6,
+        7
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Answers the 'obvious' challenge of step 7",
+      "terutzResolutionType": "Identifies a hidden חידוש in the statement",
+      "terutzHavaAmina": "רב חסדא was only doing the math of halving three eggs.",
+      "terutzMaskana": "רב חסדא teaches that the measure uses large eggs."
+    },
+    {
+      "stepNumber": 9,
+      "hebrewStepName": "מימרא",
+      "title": "רבי measured an old סאה and found 217 eggs",
+      "stepSummary": "רב דימי reports that a man named בוניוס sent רבי an old measuring vessel from נאוסא. רבי found that it held 217 eggs.",
+      "simpleTranslation": "When רב דימי came, he said: בוניוס sent רבי a measure of Kondis from נאוסא, and רבי measured it at 217 eggs.",
+      "whatsHappening": "The גמרא brings a real-life report of a measure being tested with eggs. This sets up a question about which kind of סאה it was.",
+      "deeperAnalysis": "Up to now the discussion compared measures in egg units. Here we get a real measurement: one סאה vessel held 217 eggs. The next step will check whether this number fits the known סאה sizes.",
+      "keyTerms": [
+        {
+          "term": "כִּי אֲתָא",
+          "meaning": "When he came (from ארץ ישראל to בבל)"
+        },
+        {
+          "term": "רַב דִּימִי",
+          "meaning": "An אמורא who brought teachings from ארץ ישראל to בבל"
+        },
+        {
+          "term": "שִׁיגֵּר",
+          "meaning": "Sent"
+        },
+        {
+          "term": "מוֹדְיָא",
+          "meaning": "A measuring vessel; here, a סאה-measure"
+        },
+        {
+          "term": "שִׁיעֵר",
+          "meaning": "Measured or estimated"
+        },
+        {
+          "term": "בֵּיעִין",
+          "meaning": "Eggs"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "כִּי אֲתָא רַב דִּימִי, אָמַר:",
+          "english": "When Rav Dimi came, he said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "שִׁיגֵּר בּוֹנְיוֹס לְרַבִּי",
+          "english": "Bonyos sent to Rabbi (Yehuda HaNasi)"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "מוֹדְיָא דְקוֹנְדֵּיס דְּמִן נְאוּסָא,",
+          "english": "a measure of Kondis from Na'usa,",
+          "notes": "An old measuring vessel, believed to be an accurate סאה"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וְשִׁיעֵר רַבִּי",
+          "english": "and Rabbi measured it"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "מָאתַן וּשְׁבַע עֶשְׂרֵה בֵּיעִין.",
+          "english": "at two hundred seventeen eggs."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "ראיה",
+      "triggerLanguage": "כִּי אֲתָא רַב דִּימִי, אָמַר",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [
+        8
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Continues the topic of egg measurements with a real-world report",
+      "mimraCoreRuling": "An old סאה measure sent to רבי held 217 eggs."
+    },
+    {
+      "stepNumber": 10,
+      "hebrewStepName": "קשיא",
+      "title": "217 eggs fits no known סאה",
+      "stepSummary": "The גמרא asks which סאה this was. A desert סאה is 144 eggs and a Jerusalem סאה is 173 eggs. Neither equals 217.",
+      "simpleTranslation": "This סאה, from where is it? If it is a desert סאה, it is 144 eggs! And if it is a Jerusalem סאה, it is 173 eggs!",
+      "whatsHappening": "The גמרא attacks רב דימי's report: 217 eggs does not match any סאה we know.",
+      "deeperAnalysis": "A desert סאה is 6 קבין. Each קב is 4 לוגין, and each לוג is 6 eggs, so a סאה is 144 eggs. Jerusalem enlarged its measures, which brings the סאה to about 173 eggs. 217 is far bigger than both, so which סאה could this be?",
+      "keyTerms": [
+        {
+          "term": "סְאָה",
+          "meaning": "A large volume measure equal to 6 קבין"
+        },
+        {
+          "term": "מִדְבָּרִית",
+          "meaning": "The desert measure, the original Torah standard"
+        },
+        {
+          "term": "יְרוּשַׁלְמִית",
+          "meaning": "The Jerusalem measure, enlarged from the desert one"
+        },
+        {
+          "term": "קַב",
+          "meaning": "A volume measure of 4 לוגין"
+        },
+        {
+          "term": "לוֹג",
+          "meaning": "A volume measure of 6 eggs"
+        }
+      ],
+      "confusionAlert": "Don't look for 144 or 173 in the text. The גמרא assumes you know the chain: 1 סאה = 6 קבין, 1 קב = 4 לוגין, 1 לוג = 6 eggs (6×4×6 = 144). The Jerusalem סאה adds about a fifth (144 + 28.8 ≈ 173).",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "הָא סְאָה דְּהֵיכָא?",
+          "english": "This se'a, from where is it?"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אִי דְּמִדְבָּרִית,",
+          "english": "If it is the wilderness (desert) se'a,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "מֵאָה אַרְבָּעִים וְאַרְבַּע הָוְיָא!",
+          "english": "it is one hundred forty-four (eggs)!",
+          "notes": "6 קבין × 4 לוגין × 6 eggs"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וְאִי דִּירוּשַׁלְמִית,",
+          "english": "And if it is the Jerusalem se'a,"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "מֵאָה שִׁבְעִים וְשָׁלֹשׁ הָוְיָא!",
+          "english": "it is one hundred seventy-three (eggs)!",
+          "notes": "Jerusalem added about a fifth to the desert measure"
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "שאלה",
+      "triggerLanguage": "הָא סְאָה דְּהֵיכָא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        9
+      ],
+      "scopeOfStep": "proof_mechanism",
+      "relationToPreviousStep": "Challenges the figure reported in step 9",
+      "kashyaTarget": "רב דימי's report that the סאה held 217 eggs",
+      "kashyaAttackLogic": "Both known סאה standards (144 and 173 eggs) are far from 217, so the report does not fit either."
+    },
+    {
+      "stepNumber": 11,
+      "hebrewStepName": "קשיא",
+      "title": "Even the Tzippori measure does not match",
+      "stepSummary": "The גמרא finishes its question: even the larger סאה of ציפורי is only 207 eggs, not 217.",
+      "simpleTranslation": "And if it is the סאה of ציפורי, that is 207 eggs!",
+      "whatsHappening": "The גמרא is finishing the question it started in step 10. It tries one more known סאה size, the one used in ציפורי, and shows that it does not match 217 either.",
+      "deeperAnalysis": "There were three known sizes of סאה, and each one grew by a fifth: the desert סאה is 144 eggs, the Jerusalem סאה is about 173, and the ציפורי סאה is about 207. Even the largest one falls 10 eggs short of the 217 that רבי found. So no known סאה fits his vessel.",
+      "keyTerms": [
+        {
+          "term": "צִיפּוֹרִית",
+          "meaning": "The measure used in the city of ציפורי, the largest סאה"
+        },
+        {
+          "term": "מָאתַיִם וְשֶׁבַע",
+          "meaning": "Two hundred and seven"
+        },
+        {
+          "term": "הָוְיָין",
+          "meaning": "They come to / they equal"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְאִי דְּצִיפּוֹרִית,",
+          "english": "And if it is the measure of Tzippori,",
+          "notes": "The third and largest known סאה size."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "מָאתַיִם וְשֶׁבַע הָוְיָין!",
+          "english": "it comes to two hundred and seven [eggs]!",
+          "notes": "Still short of 217."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "שאלה",
+      "triggerLanguage": "וְאִי דְּצִיפּוֹרִית",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        9,
+        10
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Completes the list of known סאה sizes begun in step 10.",
+      "kashyaTarget": "רב דימי's report that רבי found the vessel held 217 eggs",
+      "kashyaAttackLogic": "Every known סאה size (144, about 173, 207) is smaller than 217, so the report seems to match no real measure."
+    },
+    {
+      "stepNumber": 12,
+      "hebrewStepName": "תירוץ",
+      "title": "It is the Tzippori measure, with the חלה added",
+      "stepSummary": "The גמרא answers that the vessel really is a ציפורי סאה, plus room for the חלה portion.",
+      "simpleTranslation": "Really it is the ציפורי measure. Take the amount of חלה and add it to them.",
+      "whatsHappening": "The גמרא gives a first answer. The vessel is a ציפורי סאה of 207 eggs, but it was made a bit bigger to hold the חלה portion as well.",
+      "deeperAnalysis": "The idea is that the vessel was built to hold a full סאה of dough even after the חלה given to the כהן is removed. So the extra space above 207 would be the חלה amount. The word לעולם shows the גמרא is keeping the ציפורי option and explaining the gap.",
+      "keyTerms": [
+        {
+          "term": "לְעוֹלָם",
+          "meaning": "Really / actually (I keep my first idea)"
+        },
+        {
+          "term": "חַלְּתָא",
+          "meaning": "חלה, the portion of dough given to a כהן"
+        },
+        {
+          "term": "שְׁדִי עֲלַיְיהוּ",
+          "meaning": "Throw it onto them / add it to them"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "לְעוֹלָם דְּצִיפּוֹרִית,",
+          "english": "Actually, it is the measure of Tzippori,",
+          "notes": "Keeps the 207-egg סאה."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אַיְיתִי חַלְּתָא שְׁדִי עֲלַיְיהוּ.",
+          "english": "bring the challah and add it to them.",
+          "notes": "The extra space is for the חלה portion."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "לְעוֹלָם דְּצִיפּוֹרִית",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        11
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Answers the question of step 11 by explaining the 10-egg gap.",
+      "terutzResolutionType": "Adds a hidden component (חלה) to the base measure",
+      "terutzHavaAmina": "217 matches no known סאה.",
+      "terutzMaskana": "217 equals a ציפורי סאה of 207 plus the חלה portion."
+    },
+    {
+      "stepNumber": 13,
+      "hebrewStepName": "קשיא",
+      "title": "The חלה amount is too small to close the gap",
+      "stepSummary": "The גמרא pushes back: חלה is only about 8 eggs, so the total is still short of 217.",
+      "simpleTranslation": "How much is the חלה? Eight. It is still short!",
+      "whatsHappening": "The גמרא tests the answer with numbers. The חלה portion is only about 8 eggs, so 207 plus 8 still does not reach 217.",
+      "deeperAnalysis": "חלה for a household is one twenty-fourth of the dough, and a twenty-fourth of 207 is roughly 8 eggs. That brings the total to about 215, which is still about 2 eggs short. So the חלה answer does not fully work.",
+      "keyTerms": [
+        {
+          "term": "כַּמָּה",
+          "meaning": "How much"
+        },
+        {
+          "term": "תַּמְנֵי",
+          "meaning": "Eight"
+        },
+        {
+          "term": "אַכַּתִּי בָּצַר לֵיהּ",
+          "meaning": "It is still lacking / still too little"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "חַלְּתָא כַּמָּה הָוְיָין?",
+          "english": "The challah, how much does it come to?",
+          "notes": "A twenty-fourth of the dough."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "תַּמְנֵי, אַכַּתִּי בָּצַר לֵיהּ!",
+          "english": "Eight; it is still lacking!",
+          "notes": "207 + 8 = about 215, not 217."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "דחיה",
+      "triggerLanguage": "חַלְּתָא כַּמָּה הָוְיָין",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        12
+      ],
+      "scopeOfStep": "proof_mechanism",
+      "relationToPreviousStep": "Rejects the חלה answer of step 12 using arithmetic.",
+      "kashyaTarget": "The answer that the extra space is for חלה",
+      "kashyaAttackLogic": "חלה is only about 8 eggs, so 207 plus 8 still falls short of 217."
+    },
+    {
+      "stepNumber": 14,
+      "hebrewStepName": "תירוץ",
+      "title": "Add the small extras in רבי's own measuring",
+      "stepSummary": "The גמרא's final answer: the gap comes from the small extra amounts in רבי's measuring.",
+      "simpleTranslation": "Rather, take the extra amounts of רבי and add them to them.",
+      "whatsHappening": "The גמרא drops the חלה idea and gives a new answer. The difference comes from the little extras in the way רבי measured.",
+      "deeperAnalysis": "The word אלא shows the גמרא is replacing the חלה answer. This refers back to רבי's 'ועוד' in step 4: one twentieth of an egg extra per egg, because רבי counted with smaller eggs. A twentieth of 207 is about 10 eggs, which brings 207 to 217. So the vessel really was a ציפורי סאה of 207 standard eggs.",
+      "keyTerms": [
+        {
+          "term": "אֶלָּא",
+          "meaning": "Rather (drops the earlier answer and gives a new one)"
+        },
+        {
+          "term": "וְעוֹדוֹת",
+          "meaning": "The extras / the small additional amounts"
+        },
+        {
+          "term": "אַיְיתִי",
+          "meaning": "Bring / take"
+        }
+      ],
+      "whatToRemember": "The 217-egg vessel is the ציפורי סאה of 207 eggs. The extra 10 eggs come from the small extras in רבי's measuring, not from the חלה portion.",
+      "confusionAlert": "Do not think the חלה answer still stands. The word אלא shows the גמרא replaced it, because חלה only covers about 8 of the missing 10 eggs.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֶלָּא אַיְיתִי וְעוֹדוֹת דְּרַבִּי",
+          "english": "Rather, bring the extras of Rabbi",
+          "notes": "Replaces the חלה answer."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "שְׁדִי עֲלַיְיהוּ.",
+          "english": "and add them to them.",
+          "notes": "About 10 eggs, bringing 207 to 217."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אֶלָּא אַיְיתִי וְעוֹדוֹת דְּרַבִּי",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        4,
+        11,
+        13
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Replaces the rejected חלה answer with a new explanation of the gap.",
+      "terutzResolutionType": "Replacement answer: the gap comes from how רבי measured",
+      "terutzHavaAmina": "The gap above 207 was the חלה portion, but that left the total short.",
+      "terutzMaskana": "The gap comes from רבי's small extras, which add about 10 eggs to 207 to make 217.",
+      "maskanaFinalTakeaway": "רבי's vessel was a ציפורי סאה; his measuring extras explain the 217 count."
+    },
+    {
+      "stepNumber": 15,
+      "hebrewStepName": "קשיא",
+      "title": "If so, the total comes out slightly above 217",
+      "stepSummary": "The גמרא objects that once רבי's small extras are added, the total goes slightly over 217 eggs.",
+      "simpleTranslation": "If so, it comes out to more!",
+      "whatsHappening": "The גמרא pushes back on the last answer. If the small extras from רבי's measuring are added in, the total is now a little more than 217 eggs, not exactly 217.",
+      "deeperAnalysis": "Step 14 used the small extra fractions to fill the gap up to 217. Now the גמרא says those fractions overshoot. The sum is a bit above 217 (Sefaria: by seven-twentieths of an egg), so the number still does not match exactly.",
+      "keyTerms": [
+        {
+          "term": "אִי הָכִי",
+          "meaning": "If so (if your answer is correct)"
+        },
+        {
+          "term": "טְפֵי",
+          "meaning": "More, extra"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אִי הָכִי, הָוֵי לֵיהּ טְפֵי!",
+          "english": "If so, it comes out to more!",
+          "notes": "More than 217 eggs, by a small fraction."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אִי הָכִי, הָוֵי לֵיהּ טְפֵי",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        14
+      ],
+      "scopeOfStep": "proof_mechanism",
+      "relationToPreviousStep": "Attacks the answer of step 14 for overshooting the total.",
+      "kashyaTarget": "The answer that רבי's small extras account for the gap up to 217.",
+      "kashyaAttackLogic": "The extras add up to slightly more than 217, so the total still does not match exactly."
+    },
+    {
+      "stepNumber": 16,
+      "hebrewStepName": "תירוץ",
+      "title": "Less than a full egg is not counted",
+      "stepSummary": "The leftover is less than one egg, so it was not counted.",
+      "simpleTranslation": "Since it is not a full egg's worth, he did not count it.",
+      "whatsHappening": "The גמרא answers that the leftover is smaller than one whole egg. Because of that, it was simply not counted.",
+      "deeperAnalysis": "The number 217 counts only whole eggs. A leftover smaller than a כביצה is dropped. So the total really is 217 plus a small fraction, and stating it as 217 is accurate enough.",
+      "keyTerms": [
+        {
+          "term": "כְּבֵיצָה",
+          "meaning": "The size of an egg (a standard unit of volume)"
+        },
+        {
+          "term": "לָא חָשֵׁיב לֵיהּ",
+          "meaning": "He did not count it"
+        }
+      ],
+      "whatToRemember": "The 217-egg figure is now explained: a ציפורי סאה of 207 eggs plus רבי's small extras (וְעוֹדוֹת). The חלה answer was dropped. Any leftover under one whole egg is not counted.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "כֵּיוָן דְּלָא הָוֵי כְּבֵיצָה,",
+          "english": "Since it is not a full egg's worth,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "לָא חָשֵׁיב לֵיהּ.",
+          "english": "he did not count it."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "כֵּיוָן דְּלָא הָוֵי כְּבֵיצָה",
+      "macroPhase": "conclusion",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        15
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Answers the objection of step 15.",
+      "terutzResolutionType": "Rounding: an amount below one whole unit is dropped.",
+      "terutzHavaAmina": "Any overshoot, even a tiny one, would make 217 inaccurate.",
+      "terutzMaskana": "Only whole eggs are counted, so a leftover under one egg does not matter."
+    },
+    {
+      "stepNumber": 17,
+      "hebrewStepName": "מימרא",
+      "title": "A ברייתא on how the three סאה sizes compare",
+      "stepSummary": "A ברייתא teaches that each סאה is one-sixth larger than the one before it, so a ציפורי סאה is one-third larger than a desert סאה.",
+      "simpleTranslation": "The Rabbis taught: A Jerusalem סאה is larger than a desert סאה by one-sixth. A ציפורי סאה is larger than a Jerusalem סאה by one-sixth. So a ציפורי סאה is larger than a desert סאה by one-third.",
+      "whatsHappening": "The גמרא brings a ברייתא that compares the three sizes of סאה. This sets up the next steps, where the גמרא will test the ברייתא's math.",
+      "deeperAnalysis": "The ברייתא says: desert to Jerusalem adds one-sixth, and Jerusalem to ציפורי adds another one-sixth. It concludes that the total increase is one-third. That 'one-third' is what the גמרא is about to examine.",
+      "keyTerms": [
+        {
+          "term": "תָּנוּ רַבָּנַן",
+          "meaning": "The Rabbis taught (introduces a ברייתא)"
+        },
+        {
+          "term": "סְאָה",
+          "meaning": "A measure of volume"
+        },
+        {
+          "term": "שְׁתוּת",
+          "meaning": "One-sixth"
+        },
+        {
+          "term": "שְׁלִישׁ",
+          "meaning": "One-third"
+        },
+        {
+          "term": "נִמְצֵאת",
+          "meaning": "It turns out, consequently"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "תָּנוּ רַבָּנַן",
+          "english": "The Rabbis taught:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "סְאָה יְרוּשַׁלְמִית יְתֵירָה עַל מִדְבָּרִית שְׁתוּת.",
+          "english": "A Jerusalem se'a is larger than a desert se'a by one-sixth."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וְשֶׁל צִיפּוֹרִית יְתֵירָה עַל יְרוּשַׁלְמִית שְׁתוּת.",
+          "english": "And the Tzippori se'a is larger than the Jerusalem se'a by one-sixth."
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "נִמְצֵאת שֶׁל צִיפּוֹרִית",
+          "english": "It turns out that the Tzippori se'a"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "יְתֵירָה עַל מִדְבָּרִית שְׁלִישׁ.",
+          "english": "is larger than the desert se'a by one-third."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "תָּנוּ רַבָּנַן סְאָה יְרוּשַׁלְמִית יְתֵירָה עַל מִדְבָּרִית שְׁתוּת",
+      "macroPhase": "source_derivation",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [
+        10,
+        11
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Opens a new topic: a ברייתא on the ratios between the three סאה sizes mentioned in steps 10-11.",
+      "mimraCoreRuling": "Each סאה is one-sixth larger than the one before it, so a ציפורי סאה is one-third larger than a desert סאה."
+    },
+    {
+      "stepNumber": 18,
+      "hebrewStepName": "קשיא",
+      "title": "One-third of the desert סאה does not fit",
+      "stepSummary": "The גמרא asks which סאה the 'one-third' refers to. One-third of the desert סאה is 48 eggs, but the real difference is 63.",
+      "simpleTranslation": "One-third of which סאה? If you say one-third of the desert סאה: how much is that? Forty-eight. Yet the actual difference is sixty-three.",
+      "whatsHappening": "The גמרא asks what the ברייתא's 'one-third' is measured from. It tries the desert סאה first and shows that the numbers do not match.",
+      "deeperAnalysis": "The desert סאה is 144 eggs, so one-third of it is 48. A ציפורי סאה is 207 eggs, so the real difference is 207 − 144 = 63. Since 48 is not 63, this reading fails.",
+      "keyTerms": [
+        {
+          "term": "דְּמַאן",
+          "meaning": "Of whom / of which one"
+        },
+        {
+          "term": "אִילֵּימָא",
+          "meaning": "If you say"
+        },
+        {
+          "term": "מִכְּדִי",
+          "meaning": "Now consider, after all"
+        },
+        {
+          "term": "עוּדְפָּא",
+          "meaning": "The excess, the difference"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "שְׁלִישׁ דְּמַאן?",
+          "english": "One-third of which se'a?"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אִילֵּימָא שְׁלִישׁ דְּמִדְבָּרִית,",
+          "english": "If you say one-third of the desert se'a,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "מִכְּדִי שְׁלִישׁ דְּמִדְבָּרִית כַּמָּה הָוֵי —",
+          "english": "now consider: one-third of the desert se'a, how much is it?"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "אַרְבְּעִין וּתְמָנְיָא,",
+          "english": "Forty-eight,",
+          "notes": "144 ÷ 3 = 48"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "וְאִילּוּ עוּדְפָּא, שִׁיתִּין וּתְלָת.",
+          "english": "while the actual difference is sixty-three.",
+          "notes": "207 − 144 = 63"
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "שאלה",
+      "triggerLanguage": "שְׁלִישׁ דְּמַאן? אִילֵּימָא שְׁלִישׁ דְּמִדְבָּרִית",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        17
+      ],
+      "scopeOfStep": "proof_mechanism",
+      "relationToPreviousStep": "Tests the ברייתא's 'one-third' against the numbers from steps 10-11.",
+      "kashyaTarget": "The ברייתא's statement that the ציפורי סאה is one-third larger than the desert סאה.",
+      "kashyaAttackLogic": "One-third of 144 is 48, but the real difference is 63."
+    },
+    {
+      "stepNumber": 19,
+      "hebrewStepName": "קשיא",
+      "title": "One-third of the Jerusalem סאה does not fit either",
+      "stepSummary": "One-third of the Jerusalem סאה is about 57⅔ eggs, which still is not 63.",
+      "simpleTranslation": "Rather, one-third of the Jerusalem סאה: how much is that? Fifty-eight less a third. Yet the actual difference is sixty-three.",
+      "whatsHappening": "The גמרא tries a second option: maybe 'one-third' means one-third of the Jerusalem סאה. This also fails.",
+      "deeperAnalysis": "The Jerusalem סאה is 173 eggs, so one-third of it is 57⅔ ('fifty-eight less a third'). The real difference is still 63, so this reading also does not work.",
+      "keyTerms": [
+        {
+          "term": "וְאֶלָּא",
+          "meaning": "But rather (trying another option)"
+        },
+        {
+          "term": "נְכֵי",
+          "meaning": "Less, minus"
+        },
+        {
+          "term": "תִּילְתָּא",
+          "meaning": "A third"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְאֶלָּא שְׁלִישׁ דִּירוּשַׁלְמִית:",
+          "english": "But rather, one-third of the Jerusalem se'a:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "שְׁלִישׁ דִּידַהּ כַּמָּה הָוֵי —",
+          "english": "one-third of it, how much is it?"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "חַמְשִׁין וּתְמָנְיָא נְכֵי תִּילְתָּא,",
+          "english": "Fifty-eight less a third,",
+          "notes": "173 ÷ 3 = 57⅔"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וְאִילּוּ עוּדְפָּא, שִׁתִּין וּתְלָת.",
+          "english": "while the actual difference is sixty-three."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וְאֶלָּא שְׁלִישׁ דִּירוּשַׁלְמִית",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "alternative_approach",
+      "dependsOnStepNumbers": [
+        17,
+        18
+      ],
+      "scopeOfStep": "proof_mechanism",
+      "relationToPreviousStep": "Tries a second reading after step 18's reading failed.",
+      "kashyaTarget": "Reading 'one-third' as one-third of the Jerusalem סאה.",
+      "kashyaAttackLogic": "One-third of 173 is 57⅔, not 63."
+    },
+    {
+      "stepNumber": 20,
+      "hebrewStepName": "קשיא",
+      "title": "One-third of the ציפורי סאה does not fit either",
+      "stepSummary": "One-third of the ציפורי סאה is 69 eggs, which is not 63 either.",
+      "simpleTranslation": "Rather, one-third of the ציפורי סאה: how much is that? Seventy less one. Yet the actual difference is sixty-three.",
+      "whatsHappening": "The גמרא tries the last option, the ציפורי סאה, and it also fails. All three readings of 'one-third' have now failed. The next step (רבי ירמיה) answers this.",
+      "deeperAnalysis": "The ציפורי סאה is 207 eggs, so one-third of it is 69 ('seventy less one'). That is more than 63. The difference is 63 no matter which reading is used, and the 'one-third' never comes out to 63.",
+      "keyTerms": [
+        {
+          "term": "חֲדָא",
+          "meaning": "One"
+        },
+        {
+          "term": "דִּידַהּ",
+          "meaning": "Of it (its own)"
+        }
+      ],
+      "confusionAlert": "Sefaria's English says 'seventy less one-third,' but the Aramaic here says נְכֵי חֲדָא, 'less one.' 207 ÷ 3 = 69 exactly.",
+      "whyThisMatters": "No reading of 'one-third' fits, so the גמרא will need a new way to understand the ברייתא's math.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְאֶלָּא דְּצִיפּוֹרִי:",
+          "english": "But rather, of the Tzippori se'a:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "שְׁלִישׁ דִּידַהּ כַּמָּה הָוֵי —",
+          "english": "one-third of it, how much is it?"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "שִׁבְעִין נְכֵי חֲדָא,",
+          "english": "Seventy less one,",
+          "notes": "207 ÷ 3 = 69"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וְאִילּוּ עוּדְפָּא, שִׁשִּׁים וְשָׁלֹשׁ.",
+          "english": "while the actual difference is sixty-three."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וְאֶלָּא דְּצִיפּוֹרִי",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "alternative_approach",
+      "dependsOnStepNumbers": [
+        17,
+        18,
+        19
+      ],
+      "scopeOfStep": "proof_mechanism",
+      "relationToPreviousStep": "Tries the third and last reading after steps 18 and 19 failed.",
+      "kashyaTarget": "Reading 'one-third' as one-third of the ציפורי סאה.",
+      "kashyaAttackLogic": "One-third of 207 is 69, not 63, so none of the three readings matches."
+    },
+    {
+      "stepNumber": 21,
+      "hebrewStepName": "תירוץ",
+      "title": "The numbers in the ברייתא are only approximate",
+      "stepSummary": "רבי ירמיה reads the ברייתא as making two approximate comparisons. The ציפורי סאה is larger than the desert סאה by about one-third of itself. And one-third of the ציפורי סאה is about half of the desert סאה.",
+      "simpleTranslation": "Rather, רבי ירמיה said: this is what the ברייתא means. The ציפורי סאה is larger than the desert סאה by an amount close to one-third of the ציפורי סאה. And one-third of the ציפורי סאה is close to half of the desert סאה.",
+      "whatsHappening": "רבי ירמיה answers the problem from the previous steps. He says the ברייתא never meant exact numbers. It was speaking in round, 'close enough' numbers.",
+      "deeperAnalysis": "The desert סאה is 144 eggs and the ציפורי סאה is about 207 eggs, so the difference is 63. One-third of 207 is 69, which is close to 63. Also, 69 is close to 72, which is half of the desert סאה. So both comparisons work, but only roughly.",
+      "keyTerms": [
+        {
+          "term": "אֶלָּא",
+          "meaning": "Rather (rejects the earlier reading and brings a new one)"
+        },
+        {
+          "term": "הָכִי קָאָמַר",
+          "meaning": "This is what he means"
+        },
+        {
+          "term": "קָרוֹב",
+          "meaning": "Close to; approximately"
+        },
+        {
+          "term": "מֶחֱצָה",
+          "meaning": "Half"
+        },
+        {
+          "term": "מִדְבָּרִית",
+          "meaning": "The desert סאה, the original Torah measure (144 eggs)"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֶלָּא אָמַר רַבִּי יִרְמְיָה,",
+          "english": "Rather, Rabbi Yirmeya said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "הָכִי קָאָמַר:",
+          "english": "This is what it means:"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "נִמְצֵאת סְאָה שֶׁל צִיפּוֹרִי",
+          "english": "It turns out that the se'a of Tzippori"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "יְתֵירָה עַל מִדְבָּרִית",
+          "english": "is larger than the desert se'a",
+          "notes": "By 63 eggs (207 minus 144)."
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "קָרוֹב לִשְׁלִישׁ שֶׁלָּהּ.",
+          "english": "by close to one-third of itself.",
+          "notes": "One-third of the Tzippori se'a is 69, which is close to 63."
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "וּשְׁלִישׁ שֶׁלָּהּ",
+          "english": "And one-third of it",
+          "notes": "69 eggs."
+        },
+        {
+          "phraseNumber": 7,
+          "aramaic": "קָרוֹב לְמֶחֱצָה דְּמִדְבָּרִית.",
+          "english": "is close to half of the desert se'a.",
+          "notes": "Half of 144 is 72, which is close to 69."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "מימרא",
+      "triggerLanguage": "אֶלָּא אָמַר רַבִּי יִרְמְיָה, הָכִי קָאָמַר",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        17,
+        18,
+        19,
+        20
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Answers the three challenges in steps 18 through 20 by reading the ברייתא as approximate.",
+      "terutzResolutionType": "Reinterpretation: the numbers are approximate, not exact",
+      "terutzHavaAmina": "We thought 'one-third' had to match the 63-egg difference exactly.",
+      "terutzMaskana": "'One-third' only means 'roughly one-third', and the ברייתא adds a second rough comparison to half of the desert סאה."
+    },
+    {
+      "stepNumber": 22,
+      "hebrewStepName": "קשיא",
+      "title": "The ברייתא never says 'close to'",
+      "stepSummary": "רבינא objects that the ברייתא's wording is exact. It does not say 'close to', so רבי ירמיה cannot read it as approximate.",
+      "simpleTranslation": "רבינא challenged this: does the ברייתא say 'close to ... close to'? It does not!",
+      "whatsHappening": "רבינא attacks רבי ירמיה's answer. The word 'close' is nowhere in the ברייתא.",
+      "deeperAnalysis": "רבי ירמיה's answer depends on adding the word 'close' twice. רבינא points out that the ברייתא's language sounds exact. So we cannot invent the idea of rounding.",
+      "keyTerms": [
+        {
+          "term": "מַתְקֵיף לַהּ",
+          "meaning": "He challenged it (an objection to someone's explanation)"
+        },
+        {
+          "term": "מִידֵּי קָתָנֵי",
+          "meaning": "Does it actually say...? (meaning: it does not)"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מַתְקֵיף לַהּ רָבִינָא:",
+          "english": "Ravina challenged it:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "מִידֵּי ״קָרוֹב״ ״קָרוֹב״ קָתָנֵי?",
+          "english": "Does it teach 'close to ... close to'?",
+          "notes": "A rhetorical question: the ברייתא does not use the word 'close' even once."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "מַתְקֵיף לַהּ רָבִינָא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        21
+      ],
+      "scopeOfStep": "wording",
+      "relationToPreviousStep": "Rejects רבי ירמיה's approximate reading in step 21.",
+      "kashyaTarget": "רבי ירמיה's claim that the ברייתא speaks in approximate numbers",
+      "kashyaAttackLogic": "The text of the ברייתא has no word meaning 'close to'. You cannot read approximation into exact language."
+    },
+    {
+      "stepNumber": 23,
+      "hebrewStepName": "תירוץ",
+      "title": "With רבי's additions, the comparison is exact",
+      "stepSummary": "רבינא explains that the ברייתא includes the extra amounts רבי added to the measures. With those added, one-third of the ציפורי סאה is more than half the desert סאה by exactly one-third of an egg.",
+      "simpleTranslation": "Rather, רבינא said: this is what the ברייתא means. One-third of the ציפורי סאה, together with רבי's extra additions, is more than half of the desert סאה by one-third of an egg.",
+      "whatsHappening": "רבינא gives his own reading, which is exact instead of approximate. He adds a factor that was not counted before: the extra amounts that רבי added to each measure.",
+      "deeperAnalysis": "The ציפורי סאה is 207 eggs. רבי added about one-twentieth of an egg for each egg, which brings the total to about 217 eggs. One-third of 217 is 72⅓. Half of the desert סאה is 72, so the difference is exactly one-third of an egg.",
+      "keyTerms": [
+        {
+          "term": "וְעוֹדָיוֹת",
+          "meaning": "Extra additions (small amounts added on top of a measure)"
+        },
+        {
+          "term": "רַבִּי",
+          "meaning": "רבי יהודה הנשיא, who added these extra amounts to the measures"
+        },
+        {
+          "term": "שְׁלִישׁ בֵּיצָה",
+          "meaning": "One-third of an egg"
+        }
+      ],
+      "whatToRemember": "רבי ירמיה reads the ברייתא as giving rough numbers. רבינא rejects that and reads it exactly: with רבי's additions (217 eggs), one-third of the ציפורי סאה (72⅓) is more than half the desert סאה (72) by exactly ⅓ of an egg.",
+      "confusionAlert": "רבינא is not comparing the ציפורי סאה to the desert סאה as a whole. He is comparing one-third of the ציפורי סאה, after רבי's additions, to half of the desert סאה.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֶלָּא אָמַר רָבִינָא,",
+          "english": "Rather, Ravina said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "הָכִי קָאָמַר:",
+          "english": "This is what it means:"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "נִמְצֵאת שְׁלִישׁ שֶׁל צִיפּוֹרִי",
+          "english": "It turns out that one-third of the Tzippori se'a"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "בִּוְעוֹדָיוֹת שֶׁל רַבִּי",
+          "english": "together with the extra additions of Rebbi",
+          "notes": "207 eggs plus about 1/20 per egg comes to about 217 eggs."
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "יְתֵירָה עַל מֶחֱצָה שֶׁל מִדְבָּרִית",
+          "english": "is more than half of the desert se'a",
+          "notes": "Half of 144 is 72."
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "שְׁלִישׁ בֵּיצָה.",
+          "english": "by one-third of an egg.",
+          "notes": "72⅓ minus 72 equals ⅓."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אֶלָּא אָמַר רָבִינָא, הָכִי קָאָמַר",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        14,
+        17,
+        22
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Answers רבינא's own objection in step 22 with an exact reading of the ברייתא from step 17.",
+      "terutzResolutionType": "Adds a missing factor (רבי's additions) so the numbers come out exact",
+      "terutzHavaAmina": "Without approximation, the ברייתא's numbers seemed impossible.",
+      "terutzMaskana": "Once רבי's additions are counted, the ברייתא is precise: the difference is exactly one-third of an egg."
+    },
+    {
+      "stepNumber": 24,
+      "hebrewStepName": "מימרא",
+      "title": "New ברייתא: 'the first of your dough'",
+      "stepSummary": "The גמרא opens a new ברייתא that starts by quoting the verse about separating חלה from dough.",
+      "simpleTranslation": "The Rabbis taught: 'The first of your dough'.",
+      "whatsHappening": "The גמרא is starting a new topic and setting up the next discussion. It quotes a ברייתא that begins with the verse about the מצוה of חלה.",
+      "deeperAnalysis": "So far, only the verse has been quoted. The ברייתא will go on to explain what this verse teaches. It is likely connected to how much dough requires חלה, which ties back to the measures discussed above.",
+      "keyTerms": [
+        {
+          "term": "תָּנוּ רַבָּנַן",
+          "meaning": "The Rabbis taught (introduces a ברייתא)"
+        },
+        {
+          "term": "רֵאשִׁית",
+          "meaning": "The first portion"
+        },
+        {
+          "term": "עֲרִיסוֹתֵיכֶם",
+          "meaning": "Your dough (your kneading)"
+        },
+        {
+          "term": "חַלָּה",
+          "meaning": "The portion of dough given to the כהן"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "תָּנוּ רַבָּנַן:",
+          "english": "The Rabbis taught:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "״רֵאשִׁית עֲרִיסוֹתֵיכֶם״,",
+          "english": "'The first of your dough',",
+          "notes": "במדבר 15:20, the verse about separating חלה."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "תָּנוּ רַבָּנַן",
+      "macroPhase": "source_derivation",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Starts a new ברייתא after the discussion of סאה measures ends.",
+      "mimraCoreRuling": "The ברייתא begins with the verse 'the first of your dough'. Its explanation continues on the next amud."
+    }
+  ]
+}
