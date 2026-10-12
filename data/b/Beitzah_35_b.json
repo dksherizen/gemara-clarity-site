@@ -1,0 +1,1446 @@
+{
+  "mainTopic": "End of פרק המביא (what fixes produce for מעשר) and the start of the new פרק: lowering produce through a skylight on יום טוב, the readings of מַשִּׁילִין, and how much may be lowered",
+  "overview": "The amud begins by finishing רבי יוחנן's list of things that fix produce for מעשר only once its work is finished. Listing חצר rejects רבי יעקב, and listing תרומה rejects רבי אליעזר. For מקח, a ברייתא about buying unfinished figs from an עם הארץ is brought, and the גמרא learns three lessons from it. Listing מקח also rejects the תנא קמא of a משנה about trading produce, following רבי יהודה. Then פרק המביא ends with a הדרן, and a new פרק opens with a משנה about lowering produce through a skylight on יום טוב and protecting things from a leak. The גמרא shows that the משנה's first word has several valid readings, each backed by a source meaning 'to fall'. Finally, the גמרא asks how much produce may be lowered. It answers four or five baskets, like the משנה about clearing storage on שבת, and then challenges that comparison from both directions.",
+  "steps": [
+    {
+      "stepNumber": 1,
+      "hebrewStepName": "מימרא",
+      "title": "The courtyard rule is stated to reject רבי יעקב",
+      "stepSummary": "The rule that a חצר fixes produce only after its work is done was stated to reject the view of רבי יעקב.",
+      "simpleTranslation": "Courtyard: this was said to exclude the view of רבי יעקב.",
+      "whatsHappening": "The גמרא explains why רבי יוחנן had to mention חצר in his list. This sets up the next step, which shows where רבי יעקב's view comes from.",
+      "deeperAnalysis": "Normally, bringing produce into your חצר makes it קבוע למעשר. רבי יוחנן says this only happens once the produce is fully processed. The גמרא says this detail was needed because רבי יעקב disagrees.",
+      "keyTerms": [
+        {
+          "term": "חָצֵר",
+          "meaning": "courtyard; bringing produce into it normally fixes it for tithing"
+        },
+        {
+          "term": "לְאַפּוֹקֵי",
+          "meaning": "to exclude (an opposing opinion)"
+        },
+        {
+          "term": "קָבוּעַ לְמַעֲשֵׂר",
+          "meaning": "fixed for tithing; produce that may no longer be snacked on untithed"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "חָצֵר —",
+          "english": "Courtyard:",
+          "notes": "Picking up the item from רבי יוחנן's list."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "לְאַפּוֹקֵי מִדְּרַבִּי יַעֲקֹב.",
+          "english": "is to exclude the view of Rabbi Yaakov."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "לְאַפּוֹקֵי מִדְּרַבִּי יַעֲקֹב",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "legal_rule",
+      "mimraCoreRuling": "A חצר does not fix unfinished produce for מעשר, which rejects רבי יעקב."
+    },
+    {
+      "stepNumber": 2,
+      "hebrewStepName": "ראיה",
+      "title": "Source: figs carried through a courtyard to be dried",
+      "stepSummary": "A משנה says figs carried through one's חצר to be dried may be eaten casually without tithing. A ברייתא adds that רבי יעקב obligates tithing and רבי יוסי ברבי יהודה exempts.",
+      "simpleTranslation": "As we learned: One who carries figs through his courtyard to dry them, his children and household may snack on them and are exempt from tithes. And a ברייתא teaches about this: רבי יעקב obligates, and רבי יוסי son of רבי יהודה exempts.",
+      "whatsHappening": "The גמרא brings the source showing that רבי יעקב holds a חצר fixes produce even before it is finished.",
+      "deeperAnalysis": "The figs are still on their way to being dried, so their work is not finished. The משנה and רבי יוסי ברבי יהודה say the חצר does not fix them, so casual eating is allowed. רבי יעקב says the חצר does fix them, and רבי יוחנן's rule rejects that view.",
+      "keyTerms": [
+        {
+          "term": "לְקַצּוֹת",
+          "meaning": "to dry figs into קְצִיעוֹת (dried figs)"
+        },
+        {
+          "term": "עֲרַאי",
+          "meaning": "casual snacking, not a fixed meal"
+        },
+        {
+          "term": "וְתָנֵי עֲלַהּ",
+          "meaning": "and a ברייתא teaches about it"
+        },
+        {
+          "term": "מְחַיֵּיב / פּוֹטֵר",
+          "meaning": "obligates / exempts"
+        }
+      ],
+      "confusionAlert": "The unnamed משנה exempts. Only the ברייתא tells us that רבי יעקב argues and obligates.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "דִּתְנַן:",
+          "english": "As we learned in a mishnah:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "הַמַּעֲבִיר תְּאֵנִים בַּחֲצֵרוֹ לְקַצּוֹת —",
+          "english": "One who carries figs through his courtyard to dry them,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "בָּנָיו וּבְנֵי בֵּיתוֹ אוֹכְלִין מֵהֶן עֲרַאי,",
+          "english": "his children and household eat from them casually,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וּפְטוּרִים מִן הַמַּעֲשֵׂר.",
+          "english": "and they are exempt from tithes."
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "וְתָנֵי עֲלַהּ:",
+          "english": "And a baraita teaches about it:"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "רַבִּי יַעֲקֹב מְחַיֵּיב,",
+          "english": "Rabbi Yaakov obligates,"
+        },
+        {
+          "phraseNumber": 7,
+          "aramaic": "וְרַבִּי יוֹסֵי בְּרַבִּי יְהוּדָה פּוֹטֵר.",
+          "english": "and Rabbi Yosei son of Rabbi Yehuda exempts."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "מימרא",
+      "triggerLanguage": "דִּתְנַן",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        1
+      ],
+      "scopeOfStep": "source_reading",
+      "raayaObject": "That there is a view (רבי יעקב) holding a חצר fixes unfinished produce.",
+      "raayaSupportSource": "משנה about figs carried through a חצר, together with the ברייתא recording the dispute."
+    },
+    {
+      "stepNumber": 3,
+      "hebrewStepName": "מימרא",
+      "title": "The תרומה rule is stated to reject רבי אליעזר",
+      "stepSummary": "The rule that separating תרומה fixes produce only after its work is done was stated to reject רבי אליעזר.",
+      "simpleTranslation": "תרומה: this was said to exclude the view of רבי אליעזר.",
+      "whatsHappening": "The גמרא explains why תרומה had to be mentioned in רבי יוחנן's list. This sets up the source in the next step.",
+      "deeperAnalysis": "Separating תרומה usually fixes the produce for tithing. רבי יוחנן limits this to finished produce, and that limit disagrees with רבי אליעזר.",
+      "keyTerms": [
+        {
+          "term": "תְּרוּמָה",
+          "meaning": "the first gift separated for the כהן"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "תְּרוּמָה —",
+          "english": "Terumah:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "לְאַפּוֹקֵי מִדְּרַבִּי אֱלִיעֶזֶר.",
+          "english": "is to exclude the view of Rabbi Eliezer."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "לְאַפּוֹקֵי מִדְּרַבִּי אֱלִיעֶזֶר",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "legal_rule",
+      "mimraCoreRuling": "Separating תרומה does not fix unfinished produce, which rejects רבי אליעזר."
+    },
+    {
+      "stepNumber": 4,
+      "hebrewStepName": "ראיה",
+      "title": "Source: תרומה separated before the produce was finished",
+      "stepSummary": "A משנה records that רבי אליעזר forbids casual eating from produce whose תרומה was separated before its work was finished, while the חכמים permit it.",
+      "simpleTranslation": "As we learned: Produce from which one separated תרומה before its work was finished: רבי אליעזר forbids eating from it casually, and the חכמים permit.",
+      "whatsHappening": "The גמרא brings the source for רבי אליעזר's view.",
+      "deeperAnalysis": "רבי אליעזר holds that separating תרומה fixes the produce even before it is finished, so even snacking requires tithing. The חכמים disagree, and רבי יוחנן follows the חכמים.",
+      "keyTerms": [
+        {
+          "term": "עַד שֶׁלֹּא נִגְמְרָה מְלַאכְתָּן",
+          "meaning": "before their processing was finished"
+        },
+        {
+          "term": "אוֹסֵר / מַתִּירִין",
+          "meaning": "forbids / permit"
+        },
+        {
+          "term": "חֲכָמִים",
+          "meaning": "the Sages (majority view)"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "דִּתְנַן:",
+          "english": "As we learned in a mishnah:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "פֵּירוֹת שֶׁתְּרָמָן",
+          "english": "Produce from which one separated terumah"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "עַד שֶׁלֹּא נִגְמְרָה מְלַאכְתָּן,",
+          "english": "before their work was finished:"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "רַבִּי אֱלִיעֶזֶר אוֹסֵר לֶאֱכוֹל מֵהֶן עֲרַאי,",
+          "english": "Rabbi Eliezer forbids eating from them casually,"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "וַחֲכָמִים מַתִּירִין.",
+          "english": "and the Sages permit."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "מימרא",
+      "triggerLanguage": "דִּתְנַן",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        3
+      ],
+      "scopeOfStep": "source_reading",
+      "raayaObject": "That רבי אליעזר holds תרומה fixes unfinished produce.",
+      "raayaSupportSource": "משנה recording the dispute between רבי אליעזר and the חכמים."
+    },
+    {
+      "stepNumber": 5,
+      "hebrewStepName": "ראיה",
+      "title": "Purchase: buying unfinished figs from an עם הארץ",
+      "stepSummary": "For מקח, the גמרא cites a ברייתא: someone who buys figs from an עם הארץ where most people press them into cakes may snack on them and later tithes them as דמאי.",
+      "simpleTranslation": "Purchase: as we learned: One who buys figs from an עם הארץ, in a place where most people press them, may eat from them casually, and he tithes them as דמאי.",
+      "whatsHappening": "The גמרא brings a source showing that a purchase does not fix produce whose work is not yet finished.",
+      "deeperAnalysis": "In that place figs are not finished until they are pressed into cakes, so at the time of purchase they are still unfinished. The buyer may snack, which shows the מקח did not fix them. Once they are finished, he tithes them as דמאי, the doubtful status of produce bought from an עם הארץ.",
+      "keyTerms": [
+        {
+          "term": "מִקָּח",
+          "meaning": "a purchase; normally fixes produce for tithing"
+        },
+        {
+          "term": "עַם הָאָרֶץ",
+          "meaning": "an unlearned person, not trusted regarding tithes"
+        },
+        {
+          "term": "דּוֹרְסִין",
+          "meaning": "press (figs into cakes)"
+        },
+        {
+          "term": "דְּמַאי",
+          "meaning": "produce of doubtful tithing status"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מִקָּח —",
+          "english": "Purchase:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "(כְּדִתְנַן)",
+          "english": "as we learned:"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "הַלּוֹקֵחַ תְּאֵנִים מֵעַם הָאָרֶץ,",
+          "english": "One who buys figs from an am ha'aretz,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "בִּמְקוֹם שֶׁרוֹב בְּנֵי אָדָם דּוֹרְסִין,",
+          "english": "in a place where most people press them into cakes,"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "אוֹכֵל מֵהֶן עֲרַאי,",
+          "english": "may eat from them casually,"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "וּמְעַשְּׂרָן דְּמַאי.",
+          "english": "and he tithes them as demai."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "מימרא",
+      "triggerLanguage": "מִקָּח — (כְּדִתְנַן)",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "source_reading",
+      "raayaObject": "That a מקח does not fix unfinished produce.",
+      "raayaSupportSource": "ברייתא about buying figs from an עם הארץ in a place where figs are pressed."
+    },
+    {
+      "stepNumber": 6,
+      "hebrewStepName": "מסקנא",
+      "title": "Three lessons, the first: a purchase fixes only finished produce",
+      "stepSummary": "The גמרא says three lessons can be learned from the ברייתא. The first is that a מקח fixes produce only if its work is finished.",
+      "simpleTranslation": "Learn three things from it. Learn from it: a purchase fixes only something whose work is finished.",
+      "whatsHappening": "The גמרא begins drawing three lessons from the fig ברייתא, starting with the point about מקח.",
+      "deeperAnalysis": "The buyer may snack even though he bought the figs. This can only be because the figs were not yet finished, so the purchase did not fix them.",
+      "keyTerms": [
+        {
+          "term": "שְׁמַע מִינַּהּ",
+          "meaning": "learn from it"
+        },
+        {
+          "term": "תְּלָת",
+          "meaning": "three"
+        },
+        {
+          "term": "קוֹבַעַת",
+          "meaning": "fixes (for tithing)"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "שְׁמַע מִינַּהּ תְּלָת.",
+          "english": "Learn from it three things."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "שְׁמַע מִינַּהּ:",
+          "english": "Learn from it:"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "מִקָּח אֵינָהּ קוֹבַעַת",
+          "english": "a purchase does not fix"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "אֶלָּא בְּדָבָר שֶׁנִּגְמְרָה מְלַאכְתּוֹ,",
+          "english": "except an item whose work is finished,"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "שְׁמַע מִינַּהּ תְּלָת",
+      "macroPhase": "conclusion",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        5
+      ],
+      "scopeOfStep": "inference",
+      "maskanaFinalTakeaway": "A מקח fixes produce for מעשר only once its work is finished."
+    },
+    {
+      "stepNumber": 7,
+      "hebrewStepName": "מסקנא",
+      "title": "Second lesson: most עמי הארץ do tithe",
+      "stepSummary": "Since the buyer tithes only as דמאי and not as definitely untithed, most עמי הארץ must be assumed to tithe.",
+      "simpleTranslation": "And learn from it: most עמי הארץ do tithe.",
+      "whatsHappening": "The גמרא draws the second lesson from the same ברייתא.",
+      "deeperAnalysis": "If most עמי הארץ did not tithe, their produce would be treated as surely untithed, and the buyer would have to tithe it fully. Because he only tithes it as דמאי, the doubtful category, we see that most of them do tithe.",
+      "keyTerms": [
+        {
+          "term": "רוֹב",
+          "meaning": "majority"
+        },
+        {
+          "term": "מְעַשְּׂרִין",
+          "meaning": "they separate tithes"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וּשְׁמַע מִינַּהּ:",
+          "english": "And learn from it:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "רוֹב עַמֵּי הָאָרֶץ מְעַשְּׂרִין הֵן,",
+          "english": "most amei ha'aretz do tithe,"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וּשְׁמַע מִינַּהּ",
+      "macroPhase": "conclusion",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        5,
+        6
+      ],
+      "scopeOfStep": "inference",
+      "maskanaFinalTakeaway": "Most עמי הארץ tithe, which is why their produce is only דמאי."
+    },
+    {
+      "stepNumber": 8,
+      "hebrewStepName": "מסקנא",
+      "title": "Third lesson: דמאי applies even to unfinished produce",
+      "stepSummary": "We tithe as דמאי produce bought from an עם הארץ even if it was bought before its work was finished.",
+      "simpleTranslation": "And learn from it: one tithes דמאי from עמי הארץ even for something whose work was not finished.",
+      "whatsHappening": "The גמרא draws the third and final lesson, which closes this section.",
+      "deeperAnalysis": "One might think that since the figs were still unfinished in the עם הארץ's hands, he had no obligation to tithe them yet, so the דמאי rules would not apply. The ברייתא shows the buyer still tithes them as דמאי once they are finished.",
+      "keyTerms": [
+        {
+          "term": "אֲפִילּוּ",
+          "meaning": "even"
+        },
+        {
+          "term": "מְלַאכְתּוֹ",
+          "meaning": "its processing/work"
+        }
+      ],
+      "whatToRemember": "רבי יוחנן's list makes one point: חצר, תרומה, and מקח fix produce for מעשר only after its work is finished. This rejects רבי יעקב (חצר) and רבי אליעזר (תרומה), and the fig ברייתא proves it for מקח. The same ברייתא also teaches that most עמי הארץ tithe, and that דמאי applies even to produce bought unfinished.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וּשְׁמַע מִינַּהּ:",
+          "english": "And learn from it:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "מְעַשְּׂרִין דְּמַאי מֵעַמֵּי הָאָרֶץ",
+          "english": "one tithes demai from amei ha'aretz"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "אֲפִילּוּ בְּדָבָר שֶׁלֹּא נִגְמְרָה מְלַאכְתּוֹ.",
+          "english": "even for an item whose work was not finished."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וּשְׁמַע מִינַּהּ",
+      "macroPhase": "conclusion",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        5,
+        6,
+        7
+      ],
+      "scopeOfStep": "inference",
+      "maskanaFinalTakeaway": "דמאי tithing applies to produce bought from an עם הארץ even if it was unfinished when bought."
+    },
+    {
+      "stepNumber": 9,
+      "hebrewStepName": "מימרא",
+      "title": "The purchase rule is stated to reject the view that trading produce always obligates tithing",
+      "stepSummary": "The rule that a מקח fixes produce only after its work is finished comes to reject the תנא קמא of a משנה. That תנא obligates tithing in every trade of produce, even produce meant for drying. The rule follows רבי יהודה, who exempts produce taken for drying.",
+      "simpleTranslation": "And this comes to exclude what we learned in a משנה: One who trades produce with his friend, whether this one takes it to eat and that one to eat, or this one to dry and that one to dry, or this one to eat and that one to dry, is obligated in מעשר. רבי יהודה says: the one who takes it to eat is obligated, and the one who takes it to dry is exempt.",
+      "whatsHappening": "The גמרא finishes explaining רבי יוחנן's list. Including מקח, meaning that a purchase fixes produce only once its work is finished, comes to reject the תנא קמא of the משנה about trading produce.",
+      "deeperAnalysis": "In this משנה, the תנא קמא holds that the trade itself always obligates tithing, even if the produce still has work left (drying it into dried fruit). רבי יהודה says produce taken for drying is not yet finished, so the trade does not fix it. Our lesson matches רבי יהודה and rules against the תנא קמא.",
+      "keyTerms": [
+        {
+          "term": "לְאַפּוֹקֵי",
+          "meaning": "To exclude, meaning to reject a different opinion"
+        },
+        {
+          "term": "הַמַּחֲלִיף",
+          "meaning": "One who trades or exchanges, which counts as a kind of purchase (מקח)"
+        },
+        {
+          "term": "לְקַצּוֹת",
+          "meaning": "To dry fruit (cut it and dry it), so its work is not yet finished"
+        },
+        {
+          "term": "חַיָּיב / פָּטוּר",
+          "meaning": "Obligated / exempt, here referring to tithing before casual eating"
+        }
+      ],
+      "whatToRemember": "A מקח fixes produce for מעשר only when its work is finished. This follows רבי יהודה against the תנא קמא of the trading משנה.",
+      "confusionAlert": "The תנא קמא obligates tithing even when both people take the fruit to dry. Do not think the dispute is only about the mixed case. רבי יהודה exempts anyone who takes it to dry.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וּלְאַפּוֹקֵי מֵהָא דִּתְנַן:",
+          "english": "And to exclude that which we learned in a Mishnah:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "הַמַּחֲלִיף פֵּירוֹת עִם חֲבֵירוֹ,",
+          "english": "One who exchanges produce with his friend,",
+          "notes": "An exchange counts as a purchase."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "זֶה לֶאֱכוֹל וְזֶה לֶאֱכוֹל,",
+          "english": "this one to eat and that one to eat,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "זֶה לְקַצּוֹת וְזֶה לְקַצּוֹת,",
+          "english": "this one to dry and that one to dry,"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "זֶה לֶאֱכוֹל וְזֶה לְקַצּוֹת — חַיָּיב.",
+          "english": "this one to eat and that one to dry: he is obligated.",
+          "notes": "The תנא קמא says the trade always obligates tithing."
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "רַבִּי יְהוּדָה אוֹמֵר:",
+          "english": "Rabbi Yehuda says:"
+        },
+        {
+          "phraseNumber": 7,
+          "aramaic": "לֶאֱכוֹל — חַיָּיב, לְקַצּוֹת — פָּטוּר.",
+          "english": "to eat: obligated; to dry: exempt.",
+          "notes": "For drying, the work is not finished, so the trade does not fix the produce."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "ראיה",
+      "triggerLanguage": "וּלְאַפּוֹקֵי מֵהָא דִּתְנַן",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        5,
+        6
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Returns to רבי יוחנן's listing of מקח, which step 5 supported and step 6 drew out of the ברייתא, and identifies the opinion it rejects, parallel to steps 1 and 3.",
+      "maskanaFinalTakeaway": "The first lesson follows רבי יהודה: a מקח fixes produce only when its work is finished. It rejects the תנא קמא, who obligates tithing in every exchange."
+    },
+    {
+      "stepNumber": 10,
+      "hebrewStepName": "מסקנא",
+      "title": "Hadran — Closing פרק המביא",
+      "stepSummary": "The closing formula for פרק המביא.",
+      "simpleTranslation": "We will return to you, המביא.",
+      "whatsHappening": "This line marks the end of the chapter called המביא. It is not part of any argument.",
+      "deeperAnalysis": "The הדרן is a traditional farewell said at the end of a פרק. It expresses the hope of coming back to learn it again. The next line starts a brand-new chapter.",
+      "keyTerms": [
+        {
+          "term": "הֲדַרַן עֲלָךְ",
+          "meaning": "We will return to you, the closing formula of a פרק"
+        },
+        {
+          "term": "הַמֵּבִיא",
+          "meaning": "The name of the chapter now ending (פרק המביא)"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "הֲדַרַן עֲלָךְ הַמֵּבִיא",
+          "english": "We will return to you, HaMeivi"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "הֲדַרַן עֲלָךְ הַמֵּבִיא",
+      "macroPhase": "conclusion",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "wording",
+      "relationToPreviousStep": "Closes the chapter after the final מעשר discussion.",
+      "maskanaFinalTakeaway": "End of פרק המביא."
+    },
+    {
+      "stepNumber": 11,
+      "hebrewStepName": "מימרא",
+      "title": "New פרק: lowering produce and protecting it from leaks",
+      "stepSummary": "The new משנה rules on three cases. Produce may be lowered through a skylight on יום טוב but not on שבת. Produce and jugs may be covered to protect them from a leak. A vessel may be placed under a leak on שבת.",
+      "simpleTranslation": "We may lower produce through a skylight on יום טוב, but not on שבת. We may cover produce with cloths because of a leak, and the same applies to jugs of wine and jugs of oil. And we may put a vessel under a leak on שבת.",
+      "whatsHappening": "A new chapter opens with a משנה about protecting produce and property from rain on יום טוב and שבת.",
+      "deeperAnalysis": "Lowering produce from the roof is heavy work. It is allowed on יום טוב to avoid a loss, but it is too much effort for שבת. Covering items or catching dripping water is light and protective, so it is allowed. The משנה says explicitly that putting a vessel under a leak is allowed even on שבת.",
+      "keyTerms": [
+        {
+          "term": "מַשִּׁילִין",
+          "meaning": "We lower or let down (produce from the roof)"
+        },
+        {
+          "term": "אֲרוּבָּה",
+          "meaning": "A skylight, an opening in the roof"
+        },
+        {
+          "term": "הַדֶּלֶף",
+          "meaning": "The leak or drip from the ceiling"
+        },
+        {
+          "term": "כַּדֵּי יַיִן וְכַדֵּי שֶׁמֶן",
+          "meaning": "Jugs of wine and jugs of oil"
+        }
+      ],
+      "confusionAlert": "The first case divides יום טוב from שבת. The last case, a vessel under a leak, is allowed even on שבת. Do not assume everything in this משנה is limited to יום טוב.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מַשִּׁילִין פֵּירוֹת דֶּרֶךְ אֲרוּבָּה בְּיוֹם טוֹב,",
+          "english": "One may lower produce through a skylight on a Festival,",
+          "notes": "To save produce drying on the roof from rain."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אֲבָל לֹא בְּשַׁבָּת.",
+          "english": "but not on Shabbat."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וּמְכַסִּים פֵּירוֹת בְּכֵלִים",
+          "english": "And one may cover produce with cloths"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "מִפְּנֵי הַדֶּלֶף,",
+          "english": "because of a leak,"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "וְכֵן כַּדֵּי יַיִן וְכַדֵּי שֶׁמֶן.",
+          "english": "and likewise jugs of wine and jugs of oil."
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "וְנוֹתְנִין כְּלִי תַּחַת הַדֶּלֶף בְּשַׁבָּת.",
+          "english": "And one may place a vessel beneath a leak on Shabbat."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "מַשִּׁילִין פֵּירוֹת דֶּרֶךְ אֲרוּבָּה בְּיוֹם טוֹב",
+      "macroPhase": "mishnah",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Opens a new chapter after the הדרן.",
+      "mimraCoreRuling": "Lowering produce through a skylight is permitted on יום טוב but not on שבת. Covering produce and jugs because of a leak is permitted. Placing a vessel under a leak is permitted on שבת."
+    },
+    {
+      "stepNumber": 12,
+      "hebrewStepName": "מימרא",
+      "title": "Two versions of the משנה's first word",
+      "stepSummary": "רב יהודה and רב נתן disagree about the משנה's opening word. One reads מַשִּׁילִין and the other reads מַשְׁחִילִין.",
+      "simpleTranslation": "It was said: רב יהודה and רב נתן disagreed. One taught 'מַשִּׁילִין' and one taught 'מַשְׁחִילִין'.",
+      "whatsHappening": "The גמרא begins by reporting two different readings of the משנה's first word. This sets up the next step, where מר זוטרא will defend both readings.",
+      "deeperAnalysis": "Both words mean lowering something down. The disagreement is only about the correct wording, not about the law. The גמרא will next bring a source for each reading.",
+      "keyTerms": [
+        {
+          "term": "אִתְּמַר",
+          "meaning": "It was said, introducing a statement or disagreement of אמוראים"
+        },
+        {
+          "term": "חַד תָּנֵי",
+          "meaning": "One taught (one recited the text this way)"
+        },
+        {
+          "term": "מַשְׁחִילִין",
+          "meaning": "An alternate reading meaning to let slip down"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "גְּמָ׳ אִתְּמַר:",
+          "english": "GEMARA: It was said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "רַב יְהוּדָה וְרַב נָתָן,",
+          "english": "Rav Yehuda and Rav Natan:"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "חַד תָּנֵי ״מַשִּׁילִין״,",
+          "english": "one taught 'mashilin,'"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וְחַד תָּנֵי ״מַשְׁחִילִין״.",
+          "english": "and one taught 'mashḥilin.'"
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "שאלה",
+      "triggerLanguage": "אִתְּמַר: רַב יְהוּדָה וְרַב נָתָן, חַד תָּנֵי",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [
+        11
+      ],
+      "scopeOfStep": "wording",
+      "relationToPreviousStep": "Starts the גמרא on the new משנה by examining its first word.",
+      "mimraCoreRuling": "There are two textual versions of the opening word: מַשִּׁילִין and מַשְׁחִילִין."
+    },
+    {
+      "stepNumber": 13,
+      "hebrewStepName": "מימרא",
+      "title": "מר זוטרא says both readings are correct",
+      "stepSummary": "מר זוטרא settles the argument of step 12. Neither the reading מַשִּׁילִין nor the reading מַשְׁחִילִין is a mistake.",
+      "simpleTranslation": "מר זוטרא said: Whoever reads 'מַשִּׁילִין' is not mistaken, and whoever reads 'מַשְׁחִילִין' is not mistaken.",
+      "whatsHappening": "מר זוטרא steps into the argument between רב יהודה and רב נתן and says both versions of the word are fine. This opens a section where he will prove each version.",
+      "deeperAnalysis": "This is not a real argument about the law. Both words mean the same thing: lowering the produce down. מר זוטרא is about to show that each root really means 'falling' or 'dropping' somewhere else in our sources.",
+      "keyTerms": [
+        {
+          "term": "מַר זוּטְרָא",
+          "meaning": "An אמורא who settles the reading dispute"
+        },
+        {
+          "term": "תָּנֵי",
+          "meaning": "Reads or learns (a version of the text)"
+        },
+        {
+          "term": "לָא מִשְׁתַּבַּשׁ",
+          "meaning": "Is not mistaken; is not using a corrupt text"
+        }
+      ],
+      "confusionAlert": "Do not think the two readings lead to two different laws. The argument is only about the wording. Every version describes the same action of lowering produce.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר מָר זוּטְרָא:",
+          "english": "Mar Zutra said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "מַאן דְּתָנֵי ״מַשִּׁילִין״ לָא מִשְׁתַּבַּשׁ,",
+          "english": "One who reads 'mashilin' is not mistaken,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וּמַאן דְּתָנֵי ״מַשְׁחִילִין״ לָא מִשְׁתַּבַּשׁ.",
+          "english": "and one who reads 'mashchilin' is not mistaken."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "מסקנא",
+      "triggerLanguage": "מַאן דְּתָנֵי ״מַשִּׁילִין״ לָא מִשְׁתַּבַּשׁ",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        12
+      ],
+      "scopeOfStep": "wording",
+      "relationToPreviousStep": "Resolves the wording dispute in step 12 by accepting both readings.",
+      "mimraCoreRuling": "Both מַשִּׁילִין and מַשְׁחִילִין are valid readings of the משנה."
+    },
+    {
+      "stepNumber": 14,
+      "hebrewStepName": "ראיה",
+      "title": "A verse supports the reading מַשִּׁילִין",
+      "stepSummary": "The reading מַשִּׁילִין is proven from the פסוק 'כי ישל זיתך', which uses the same root to mean olives dropping off the tree.",
+      "simpleTranslation": "Whoever reads 'מַשִּׁילִין' is not mistaken, because it is written: 'For your olives will drop off.'",
+      "whatsHappening": "מר זוטרא proves the first reading. He shows a פסוק where the root נ-ש-ל means 'dropping down'.",
+      "deeperAnalysis": "In the פסוק, olives falling off the tree are described with יִשַּׁל. So מַשִּׁילִין means 'making something fall', which fits lowering produce through a skylight.",
+      "keyTerms": [
+        {
+          "term": "דִּכְתִיב",
+          "meaning": "As it is written (introduces a פסוק)"
+        },
+        {
+          "term": "כִּי יִשַּׁל זֵיתֶךָ",
+          "meaning": "'For your olives will drop off' (דברים כח:מ)"
+        },
+        {
+          "term": "מַשִּׁילִין",
+          "meaning": "We cause to drop or lower"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מַאן דְּתָנֵי ״מַשִּׁילִין״ לָא מִשְׁתַּבַּשׁ,",
+          "english": "One who reads 'mashilin' is not mistaken,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "דִּכְתִיב: ״כִּי יִשַּׁל זֵיתֶךָ״.",
+          "english": "as it is written: 'For your olives will drop off.'"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "דִּכְתִיב: ״כִּי יִשַּׁל זֵיתֶךָ״",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        13
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Proves the first half of מר זוטרא's statement.",
+      "raayaObject": "That מַשִּׁילִין is a valid reading meaning 'lowering'.",
+      "raayaSupportSource": "The פסוק 'כי ישל זיתך', where the root means falling off."
+    },
+    {
+      "stepNumber": 15,
+      "hebrewStepName": "ראיה",
+      "title": "A משנה about animal blemishes supports מַשְׁחִילִין",
+      "stepSummary": "The reading מַשְׁחִילִין is proven from a משנה about blemishes. There, a שָׁחוּל is an animal whose thigh has slipped out of place.",
+      "simpleTranslation": "Whoever reads 'מַשְׁחִילִין' is not mistaken, because we learned in a משנה: 'the שחול and the כסול.' A שחול is one whose thigh slipped out of its socket. A כסול is one whose one hip is higher than the other.",
+      "whatsHappening": "מר זוטרא proves the second reading from a משנה about animal blemishes. The word שָׁחוּל describes a thigh that has slipped down out of place.",
+      "deeperAnalysis": "Since שָׁחוּל means a thigh that 'dropped out' of its socket, the root ש-ח-ל means 'slipping down'. So מַשְׁחִילִין also means lowering, and the second reading is correct too. The definition of כָּסוּל comes along with it from the same משנה.",
+      "keyTerms": [
+        {
+          "term": "דִּתְנַן",
+          "meaning": "As we learned in a משנה"
+        },
+        {
+          "term": "שָׁחוּל",
+          "meaning": "An animal whose thigh is dislocated (slipped out)"
+        },
+        {
+          "term": "כָּסוּל",
+          "meaning": "An animal with one hip higher than the other"
+        },
+        {
+          "term": "נִשְׁמְטָה יְרֵכוֹ",
+          "meaning": "Its thigh slipped out of place"
+        }
+      ],
+      "whatToRemember": "מר זוטרא's point: נ-ש-ל (from the פסוק) and ש-ח-ל (from the משנה) both mean 'falling or slipping down', so both readings work.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וּמַאן דְּתָנֵי ״מַשְׁחִילִין״ לָא מִשְׁתַּבַּשׁ,",
+          "english": "And one who reads 'mashchilin' is not mistaken,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "דִּתְנַן: הַשָּׁחוּל וְהַכָּסוּל.",
+          "english": "as we learned: 'the shachul and the kasul.'"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "שָׁחוּל — שֶׁנִּשְׁמְטָה יְרֵכוֹ,",
+          "english": "Shachul: one whose thigh has slipped out of place;",
+          "notes": "The thigh 'dropped' out of its socket, so the root means slipping down."
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "כָּסוּל — שֶׁאֶחָד מִיַּרְכוֹתָיו",
+          "english": "kasul: one in which one of its hips"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "גְּבוֹהָה מֵחֲבֶרְתָּהּ.",
+          "english": "is higher than the other."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "דִּתְנַן: הַשָּׁחוּל וְהַכָּסוּל",
+      "macroPhase": "source_derivation",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        13
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Proves the second half of מר זוטרא's statement.",
+      "raayaObject": "That מַשְׁחִילִין is a valid reading meaning 'lowering'.",
+      "raayaSupportSource": "The משנה about blemishes, where שָׁחוּל means a dislocated thigh."
+    },
+    {
+      "stepNumber": 16,
+      "hebrewStepName": "מימרא",
+      "title": "רב נחמן בר יצחק adds three more correct readings",
+      "stepSummary": "רב נחמן בר יצחק says three more versions of the word are also correct: מַשִּׁירִין, מַשְׁחִירִין and מַנְשִׁירִין.",
+      "simpleTranslation": "רב נחמן בר יצחק said: Whoever reads 'מַשִּׁירִין' is not mistaken, whoever reads 'מַשְׁחִירִין' is not mistaken, and whoever reads 'מַנְשִׁירִין' is not mistaken.",
+      "whatsHappening": "A second אמורא adds three more possible spellings of the משנה's word. This sets up the proofs that come next.",
+      "deeperAnalysis": "These versions use roots ending in ר instead of ל. מַשִּׁירִין and מַנְשִׁירִין both come from נ-ש-ר (fall off), and מַשְׁחִירִין comes from ש-ח-ר. רב נחמן בר יצחק will show that each one also means 'causing to fall'.",
+      "keyTerms": [
+        {
+          "term": "רַב נַחְמָן בַּר יִצְחָק",
+          "meaning": "An אמורא who adds more readings"
+        },
+        {
+          "term": "מַשִּׁירִין",
+          "meaning": "We cause to fall off"
+        },
+        {
+          "term": "מַשְׁחִירִין",
+          "meaning": "Another reading, from the root ש-ח-ר"
+        },
+        {
+          "term": "מַנְשִׁירִין",
+          "meaning": "We cause to drop, from the root נ-ש-ר"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר רַב נַחְמָן בַּר יִצְחָק:",
+          "english": "Rav Nachman bar Yitzchak said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "מַאן דְּתָנֵי ״מַשִּׁירִין״ לָא מִשְׁתַּבַּשׁ,",
+          "english": "One who reads 'mashirin' is not mistaken,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וּמַאן דְּתָנֵי ״מַשְׁחִירִין״ לָא מִשְׁתַּבַּשׁ,",
+          "english": "and one who reads 'mashchirin' is not mistaken,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וּמַאן דְּתָנֵי ״מַנְשִׁירִין״ לָא מִשְׁתַּבַּשׁ.",
+          "english": "and one who reads 'manshirin' is not mistaken."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אָמַר רַב נַחְמָן בַּר יִצְחָק: מַאן דְּתָנֵי ״מַשִּׁירִין״ לָא מִשְׁתַּבַּשׁ",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [
+        12,
+        13
+      ],
+      "scopeOfStep": "wording",
+      "relationToPreviousStep": "Widens מר זוטרא's approach by adding three more valid readings.",
+      "mimraCoreRuling": "מַשִּׁירִין, מַשְׁחִירִין and מַנְשִׁירִין are all acceptable readings of the משנה."
+    },
+    {
+      "stepNumber": 17,
+      "hebrewStepName": "ראיה",
+      "title": "Proof for מַשִּׁירִין from the law of a נזיר",
+      "stepSummary": "רבי ישמעאל says a נזיר may not wash his head with clay because it makes hair fall out (מַשִּׁיר). So מַשִּׁיר, the causative form of נ-ש-ר, means causing something to fall.",
+      "simpleTranslation": "Whoever reads 'מַשִּׁירִין' is not mistaken, because we learned: רבי ישמעאל says, a נזיר may not wash his head with clay, because it makes the hair fall out.",
+      "whatsHappening": "רב נחמן בר יצחק proves the first of his three readings. He uses a משנה about a נזיר, where מַשִּׁיר means making hair fall out.",
+      "deeperAnalysis": "A נזיר may not remove his hair. Clay pulls hairs out, and the משנה calls this מַשִּׁיר. That shows the root means 'causing to fall', which fits lowering produce.",
+      "keyTerms": [
+        {
+          "term": "נָזִיר",
+          "meaning": "A person under a נזירות vow, forbidden to remove his hair"
+        },
+        {
+          "term": "לֹא יָחוֹף",
+          "meaning": "May not wash or scrub (the hair)"
+        },
+        {
+          "term": "אֲדָמָה",
+          "meaning": "Clay or earth, used as a kind of shampoo"
+        },
+        {
+          "term": "מַשִּׁיר אֶת הַשֵּׂעָר",
+          "meaning": "Makes the hair fall out"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מַאן דְּתָנֵי ״מַשִּׁירִין״ לָא מִשְׁתַּבַּשׁ,",
+          "english": "One who reads 'mashirin' is not mistaken,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "דִּתְנַן, רַבִּי יִשְׁמָעֵאל אוֹמֵר:",
+          "english": "as we learned: Rabbi Yishmael says:"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "נָזִיר לֹא יָחוֹף רֹאשׁוֹ בַּאֲדָמָה,",
+          "english": "A nazir may not wash his head with clay,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "מִפְּנֵי שֶׁמַּשִּׁיר אֶת הַשֵּׂעָר.",
+          "english": "because it makes the hair fall out."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "דִּתְנַן, רַבִּי יִשְׁמָעֵאל אוֹמֵר: נָזִיר לֹא יָחוֹף רֹאשׁוֹ בַּאֲדָמָה",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        16
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Proves the first reading listed in step 16.",
+      "raayaObject": "That מַשִּׁירִין is a valid reading.",
+      "raayaSupportSource": "The משנה in נזיר: clay is מַשִּׁיר (makes fall) the hair."
+    },
+    {
+      "stepNumber": 18,
+      "hebrewStepName": "ראיה",
+      "title": "Proof for מַשְׁחִירִין from a barber's razor",
+      "stepSummary": "A משנה calls a razor שְׁחוֹר. Since a razor makes hair fall, the root ש-ח-ר also means causing something to fall.",
+      "simpleTranslation": "Whoever reads 'מַשְׁחִירִין' is not mistaken, because we learned: the razor and the scissors of barbers, even if their parts are separated, can become טמא.",
+      "whatsHappening": "רב נחמן בר יצחק proves the second reading. He uses a משנה about טומאה of barber tools, where a razor is called שְׁחוֹר.",
+      "deeperAnalysis": "The point is not the law of טומאה. It is the name of the razor. A tool that makes hair drop is called שְׁחוֹר, so the root ש-ח-ר carries the idea of making things fall.",
+      "keyTerms": [
+        {
+          "term": "שְׁחוֹר",
+          "meaning": "A razor (a tool that makes hair fall)"
+        },
+        {
+          "term": "זוּג שֶׁל סַפָּרִים",
+          "meaning": "A barber's pair of scissors"
+        },
+        {
+          "term": "נֶחְלְקוּ",
+          "meaning": "Were separated into parts"
+        },
+        {
+          "term": "טְמֵאִין",
+          "meaning": "Able to become ritually impure"
+        }
+      ],
+      "confusionAlert": "The proof comes from the word שְׁחוֹר, not from the ruling about טומאה. The טומאה law is only the setting in which the word appears.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וּמַאן דְּתָנֵי ״מַשְׁחִירִין״ לָא מִשְׁתַּבַּשׁ,",
+          "english": "And one who reads 'mashchirin' is not mistaken,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "דִּתְנַן: הַשְּׁחוֹר וְהַזּוּג שֶׁל סַפָּרִים,",
+          "english": "as we learned: The razor and the barbers' scissors,",
+          "notes": "The razor's name, שְׁחוֹר, is the proof."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "אַף עַל פִּי שֶׁנֶּחְלְקוּ — טְמֵאִין.",
+          "english": "even though they came apart, are susceptible to impurity."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "דִּתְנַן: הַשְּׁחוֹר וְהַזּוּג שֶׁל סַפָּרִים",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        16
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Proves the second reading listed in step 16.",
+      "raayaObject": "That מַשְׁחִירִין is a valid reading.",
+      "raayaSupportSource": "The משנה in כלים, which calls a razor שְׁחוֹר."
+    },
+    {
+      "stepNumber": 19,
+      "hebrewStepName": "ראיה",
+      "title": "Proof for מַנְשִׁירִין from clothes that fell into water",
+      "stepSummary": "A משנה says someone whose clothes 'נשרו' (fell) into water on שבת may keep walking in them. So the root נ-ש-ר means falling.",
+      "simpleTranslation": "Whoever reads 'מַנְשִׁירִין' is not mistaken, because we learned: someone whose clothes fell into water may walk in them and need not worry.",
+      "whatsHappening": "רב נחמן בר יצחק proves the third reading. He uses a משנה about שבת, where נָשְׁרוּ describes clothes falling into water.",
+      "deeperAnalysis": "The word נָשְׁרוּ means the clothes fell into the water. So מַנְשִׁירִין means 'causing to fall', which again fits lowering produce.",
+      "keyTerms": [
+        {
+          "term": "נָשְׁרוּ",
+          "meaning": "Fell (from the root נ-ש-ר)"
+        },
+        {
+          "term": "כֵּלָיו",
+          "meaning": "His clothes"
+        },
+        {
+          "term": "אֵינוֹ חוֹשֵׁשׁ",
+          "meaning": "Need not worry (about people suspecting him)"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וּמַאן דְּתָנֵי ״מַנְשִׁירִין״ לָא מִשְׁתַּבַּשׁ,",
+          "english": "And one who reads 'manshirin' is not mistaken,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "דִּתְנַן: מִי שֶׁנָּשְׁרוּ כֵּלָיו בַּמַּיִם —",
+          "english": "as we learned: One whose clothes fell into water"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "מְהַלֵּךְ בָּהֶם וְאֵינוֹ חוֹשֵׁשׁ.",
+          "english": "may walk in them and need not be concerned."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "דִּתְנַן: מִי שֶׁנָּשְׁרוּ כֵּלָיו בַּמַּיִם",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        16
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Proves the third reading listed in step 16.",
+      "raayaObject": "That מַנְשִׁירִין is a valid reading.",
+      "raayaSupportSource": "The משנה about clothes that נָשְׁרוּ into water on שבת."
+    },
+    {
+      "stepNumber": 20,
+      "hebrewStepName": "ראיה",
+      "title": "A second proof for מַנְשִׁירִין from לקט",
+      "stepSummary": "Another proof for מַנְשִׁירִין: לקט is defined as what falls (הַנּוֹשֵׁר) during reaping.",
+      "simpleTranslation": "Or, it can be proven from what we learned: What is לקט? What falls during reaping.",
+      "whatsHappening": "The גמרא offers a second source for the reading מַנְשִׁירִין. In the laws of לקט, the root נ-ש-ר describes stalks falling during the harvest.",
+      "deeperAnalysis": "Stalks that drop while the farmer reaps are left for the poor, and the משנה calls them הַנּוֹשֵׁר. This confirms again that נ-ש-ר means falling, so all the proposed readings say the same thing.",
+      "keyTerms": [
+        {
+          "term": "אִי נָמֵי",
+          "meaning": "Alternatively; or also"
+        },
+        {
+          "term": "לֶקֶט",
+          "meaning": "Gleanings left for the poor"
+        },
+        {
+          "term": "הַנּוֹשֵׁר",
+          "meaning": "What falls"
+        },
+        {
+          "term": "קְצִירָה",
+          "meaning": "Reaping or harvesting"
+        }
+      ],
+      "whatToRemember": "All five readings (מַשִּׁילִין, מַשְׁחִילִין, מַשִּׁירִין, מַשְׁחִירִין, מַנְשִׁירִין) are accepted. Each root means 'causing to fall', and each is backed by a source.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אִי נָמֵי מֵהָא דִּתְנַן:",
+          "english": "Alternatively, from this which we learned:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אֵיזֶהוּ לֶקֶט — הַנּוֹשֵׁר בִּשְׁעַת קְצִירָה.",
+          "english": "What is leket? That which falls at the time of reaping."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אִי נָמֵי מֵהָא דִּתְנַן: אֵיזֶהוּ לֶקֶט",
+      "macroPhase": "source_derivation",
+      "branchRole": "alternative_approach",
+      "dependsOnStepNumbers": [
+        16,
+        19
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Gives an alternative source for the same reading proven in step 19.",
+      "raayaObject": "That מַנְשִׁירִין is a valid reading.",
+      "raayaSupportSource": "The משנה in פאה defining לקט as הַנּוֹשֵׁר during reaping."
+    },
+    {
+      "stepNumber": 21,
+      "hebrewStepName": "שאלה",
+      "title": "How much produce may be lowered through the skylight?",
+      "stepSummary": "The גמרא quotes the משנה that allows lowering produce through a skylight on יום טוב and asks what the limit is.",
+      "simpleTranslation": "We learned in the משנה: one may lower produce through a skylight on יום טוב. Up to how much?",
+      "whatsHappening": "The גמרא goes back to the משנה's ruling and asks a practical question: how much produce is one allowed to lower? This sets up the answer in the next step.",
+      "deeperAnalysis": "The משנה allows the action but does not give an amount. Moving produce takes effort, so it seems there should be some limit. The גמרא wants to know what that limit is.",
+      "keyTerms": [
+        {
+          "term": "תְּנַן",
+          "meaning": "We learned (in a משנה)"
+        },
+        {
+          "term": "מַשִּׁילִין",
+          "meaning": "One may lower or let down"
+        },
+        {
+          "term": "אֲרוּבָּה",
+          "meaning": "A skylight or roof opening"
+        },
+        {
+          "term": "עַד כַּמָּה",
+          "meaning": "Up to how much?"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "תְּנַן: מַשִּׁילִין פֵּירוֹת",
+          "english": "We learned: one may lower produce"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "דֶּרֶךְ אֲרוּבָּה בְּיוֹם טוֹב.",
+          "english": "through a skylight on Yom Tov."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "עַד כַּמָּה?",
+          "english": "Up to how much?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "עַד כַּמָּה",
+      "macroPhase": "opening_question",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [
+        11
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Moves from explaining the word מַשִּׁילִין to asking about the size of the permission.",
+      "sheelahInformationSought": "The largest amount of produce that may be lowered through the skylight on יום טוב."
+    },
+    {
+      "stepNumber": 22,
+      "hebrewStepName": "תשובה",
+      "title": "The limit is four or five baskets, like the משנה about clearing storage",
+      "stepSummary": "רבי זירא, quoting רבי אסי (or רבי אסי quoting רבי יוחנן), says the limit is the same as the משנה that allows clearing four or five baskets for guests or for the בית המדרש.",
+      "simpleTranslation": "רבי זירא said in the name of רבי אסי, and some say רבי אסי said in the name of רבי יוחנן: It is like what we learned: One may clear away four or five baskets of straw or grain to make room for guests, or so that learning in the בית המדרש will not be stopped.",
+      "whatsHappening": "The answer borrows a number from another משנה, which allows clearing four or five baskets on שבת. The skylight case gets the same limit.",
+      "deeperAnalysis": "The other משנה sets four or five baskets as the amount one may move for a good purpose. רבי אסי (or רבי יוחנן) applies that same amount to lowering produce. The two names appear only because there are two versions of who said it.",
+      "keyTerms": [
+        {
+          "term": "וְאָמְרִי לַהּ",
+          "meaning": "And some say (a second version of who said it)"
+        },
+        {
+          "term": "מְפַנִּין",
+          "meaning": "One may clear away"
+        },
+        {
+          "term": "קוּפּוֹת",
+          "meaning": "Baskets"
+        },
+        {
+          "term": "אוֹרְחִים",
+          "meaning": "Guests"
+        },
+        {
+          "term": "בִּטּוּל בֵּית הַמִּדְרָשׁ",
+          "meaning": "Stopping the learning in the study hall"
+        }
+      ],
+      "confusionAlert": "The 'four or five baskets' משנה is about שבת, not יום טוב. Keep this in mind, because the next challenges use exactly this difference.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר רַבִּי זֵירָא אָמַר רַבִּי אַסִּי,",
+          "english": "Rabbi Zeira said in the name of Rabbi Assi,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וְאָמְרִי לַהּ אָמַר רַבִּי אַסִּי אָמַר רַבִּי יוֹחָנָן:",
+          "english": "and some say Rabbi Assi said in the name of Rabbi Yochanan:"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "כְּאוֹתָהּ שֶׁשָּׁנִינוּ:",
+          "english": "It is like that which we learned:"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "מְפַנִּין אַרְבַּע וְחָמֵשׁ קוּפּוֹת",
+          "english": "One may clear away four or five baskets"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "שֶׁל תֶּבֶן וְשֶׁל תְּבוּאָה",
+          "english": "of straw or of grain"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "מִפְּנֵי הָאוֹרְחִים,",
+          "english": "to make room for guests,"
+        },
+        {
+          "phraseNumber": 7,
+          "aramaic": "וּמִפְּנֵי בִּטּוּל בֵּית הַמִּדְרָשׁ.",
+          "english": "or so that learning in the study hall will not be stopped."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "כְּאוֹתָהּ שֶׁשָּׁנִינוּ",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        21
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Answers the question of how much.",
+      "teshuvahAnswerProvided": "Four or five baskets, the same amount allowed in the משנה about clearing storage for guests or the בית המדרש.",
+      "mimraCoreRuling": "The limit for lowering produce through the skylight is four or five baskets."
+    },
+    {
+      "stepNumber": 23,
+      "hebrewStepName": "קשיא",
+      "title": "The storage case may be different because it helps a מצוה",
+      "stepSummary": "The גמרא asks whether the comparison works, since the baskets were cleared for a מצוה, and the skylight case has no מצוה.",
+      "simpleTranslation": "But maybe there it is different, because learning in the בית המדרש would otherwise be stopped. But here, where no learning is being stopped, it is not allowed.",
+      "whatsHappening": "The גמרא attacks the comparison from the last step. The basket case had a special reason to be lenient, and the skylight case does not.",
+      "deeperAnalysis": "Clearing baskets was allowed to make room for guests or for learning, which are מצוות. Lowering produce through a skylight is just for one's own property. So perhaps the four or five basket allowance cannot be applied to it at all.",
+      "keyTerms": [
+        {
+          "term": "וְדִלְמָא",
+          "meaning": "But perhaps"
+        },
+        {
+          "term": "שָׁאנֵי הָתָם",
+          "meaning": "There it is different"
+        },
+        {
+          "term": "הָכָא",
+          "meaning": "Here"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְדִלְמָא שָׁאנֵי הָתָם,",
+          "english": "But perhaps there it is different,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "דְּאִיכָּא בִּטּוּל בֵּית הַמִּדְרָשׁ,",
+          "english": "since there is stopping of learning in the study hall,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "אֲבָל הָכָא דְּלֵיכָּא בִּטּוּל בֵּית הַמִּדְרָשׁ — לָא.",
+          "english": "but here, where there is no stopping of learning in the study hall, it is not allowed."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "דחיה",
+      "triggerLanguage": "וְדִלְמָא שָׁאנֵי הָתָם",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        22
+      ],
+      "scopeOfStep": "proof_mechanism",
+      "relationToPreviousStep": "Challenges the comparison used in the answer.",
+      "kashyaTarget": "The comparison between the skylight case and the four or five basket case.",
+      "kashyaAttackLogic": "The basket case was allowed because of a מצוה (guests and Torah learning). The skylight case has no מצוה, so the same allowance may not apply."
+    },
+    {
+      "stepNumber": 24,
+      "hebrewStepName": "קשיא",
+      "title": "יום טוב may be stricter because people treat it lightly",
+      "stepSummary": "A second challenge: five baskets were allowed on שבת because people take שבת seriously. יום טוב is treated more lightly, so perhaps nothing at all is allowed.",
+      "simpleTranslation": "Alternatively: there, the reason four or five baskets are allowed is because שבת is treated seriously, and people will not come to disrespect it. But יום טוב is treated lightly, and people might come to disrespect it, so nothing at all is allowed.",
+      "whatsHappening": "The גמרא gives another reason the comparison may fail. This one points to the difference between שבת and יום טוב.",
+      "deeperAnalysis": "Since everyone treats שבת seriously, allowing some moving will not lead people to disrespect it. People take יום טוב less seriously, so a leniency might cause them to treat it carelessly. This argument would make the skylight case stricter, possibly with no moving allowed at all.",
+      "keyTerms": [
+        {
+          "term": "אִי נָמֵי",
+          "meaning": "Alternatively"
+        },
+        {
+          "term": "דַּחֲמִירָא",
+          "meaning": "That is strict or treated seriously"
+        },
+        {
+          "term": "לְזַלְזוֹלֵי",
+          "meaning": "To treat with disrespect"
+        },
+        {
+          "term": "דְּקִיל",
+          "meaning": "That is treated lightly"
+        },
+        {
+          "term": "כְּלָל כְּלָל לָא",
+          "meaning": "Not at all"
+        }
+      ],
+      "confusionAlert": "This does not mean יום טוב is unimportant. Because some of its laws are lighter than שבת's (e.g. cooking for food is permitted), people treat יום טוב more casually, so חז״ל might need to guard it more carefully.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אִי נָמֵי: הָתָם הַיְינוּ טַעְמָא,",
+          "english": "Alternatively: there, this is the reason"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "דְּאַרְבַּע וְחָמֵשׁ קוּפּוֹת שְׁרֵי",
+          "english": "that four or five baskets are allowed:"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "מִשּׁוּם שַׁבָּת דַּחֲמִירָא",
+          "english": "because Shabbat is treated seriously"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וְלָא אָתֵי לְזַלְזוֹלֵי בַּיהּ,",
+          "english": "and people will not come to disrespect it,"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "אֲבָל יוֹם טוֹב דְּקִיל",
+          "english": "but Yom Tov, which is treated lightly"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "וְאָתֵי לְזַלְזוֹלֵי בֵּיהּ —",
+          "english": "and people might come to disrespect it,"
+        },
+        {
+          "phraseNumber": 7,
+          "aramaic": "כְּלָל כְּלָל לָא.",
+          "english": "is not allowed at all."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "דחיה",
+      "triggerLanguage": "אִי נָמֵי: הָתָם הַיְינוּ טַעְמָא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "alternative_approach",
+      "dependsOnStepNumbers": [
+        22
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Gives a second, separate reason the comparison may fail.",
+      "kashyaTarget": "The comparison between the שבת basket case and the יום טוב skylight case.",
+      "kashyaAttackLogic": "שבת is treated seriously, so a small leniency is safe there. יום טוב is treated casually, so perhaps nothing is allowed."
+    },
+    {
+      "stepNumber": 25,
+      "hebrewStepName": "קשיא",
+      "title": "Or the skylight case may be more lenient because money is at stake",
+      "stepSummary": "A third challenge from the opposite direction: the basket case involved no loss of money, but the skylight case does, so perhaps even more than five baskets is allowed.",
+      "simpleTranslation": "Alternatively, from the other direction: there, the reason is that no money will be lost. But here, where money will be lost, even a larger amount is allowed.",
+      "whatsHappening": "The גמרא now argues the opposite way. Perhaps the skylight case should be more lenient than four or five baskets, not stricter.",
+      "deeperAnalysis": "In the basket case, nothing is lost if the baskets stay where they are. In the skylight case, the produce may be ruined, for example by rain, if it is not moved. Preventing a loss of money could allow moving more than five baskets.",
+      "keyTerms": [
+        {
+          "term": "לְאִידַּךְ גִּיסָא",
+          "meaning": "From the other direction"
+        },
+        {
+          "term": "הֶפְסֵד מָמוֹן",
+          "meaning": "Loss of money or property"
+        },
+        {
+          "term": "טוּבָא",
+          "meaning": "A lot, a larger amount"
+        }
+      ],
+      "whatToRemember": "The answer of four or five baskets is challenged from both sides. It may be too lenient, because there is no מצוה and יום טוב is treated lightly. It may be too strict, because money will be lost. The comparison between the two cases is not obviously correct.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אִי נָמֵי לְאִידַּךְ גִּיסָא:",
+          "english": "Alternatively, from the other direction:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "הָתָם הַיְינוּ טַעְמָא,",
+          "english": "there, this is the reason:"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "דְּלֵיכָּא הֶפְסֵד מָמוֹן,",
+          "english": "because there is no loss of money,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "אֲבָל הָכָא דְּאִיכָּא הֶפְסֵד מָמוֹן,",
+          "english": "but here, where there is a loss of money,"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "אֲפִילּוּ טוּבָא נָמֵי.",
+          "english": "even a larger amount is also allowed."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "דחיה",
+      "triggerLanguage": "אִי נָמֵי לְאִידַּךְ גִּיסָא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "alternative_approach",
+      "dependsOnStepNumbers": [
+        22
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Argues the opposite of the previous two challenges, saying the skylight case may be more lenient.",
+      "kashyaTarget": "The limit of four or five baskets applied to the skylight case.",
+      "kashyaAttackLogic": "The basket limit was set where no money was at risk. When money will be lost, a larger amount may be allowed, so the limit does not carry over."
+    }
+  ]
+}

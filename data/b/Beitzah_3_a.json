@@ -1,0 +1,1032 @@
+{
+  "mainTopic": "Why an egg laid on יום טוב is forbidden: the comparisons of רב יוסף and רבי יצחק, the problem of גזרה לגזרה, and the proof that רבי יוחנן agrees with רבי יצחק",
+  "overview": "This amud continues the גמרא's search for why an egg laid on יום טוב is forbidden. רב יוסף compares the egg to פירות הנושרין, fruit that fell from a tree. רבי יצחק compares it to משקין שזבו, juice that seeped out of fruit. Each comparison is challenged as a גזרה לגזרה, a decree on top of a decree. Each challenge is answered the same way: the egg was part of one single original decree. The גמרא then explains why these אמוראים did not follow רב נחמן or רבה. It also explains why רב יוסף and רבי יצחק each preferred his own comparison: one says food matches food, the other says something hidden inside matches something hidden inside. Finally, the גמרא proves that רבי יוחנן agrees with רבי יצחק. רבי יוחנן set רבי יהודה's ruling on juice against his ruling on the egg as a contradiction, and that shows both rulings rest on one reason.",
+  "steps": [
+    {
+      "stepNumber": 1,
+      "hebrewStepName": "תשובה",
+      "title": "Why fallen fruit is forbidden: he might climb and pick",
+      "stepSummary": "The reason fallen fruit (פירות הנושרין) is forbidden on יום טוב is a decree. The worry is that a person might climb the tree and pick fruit.",
+      "simpleTranslation": "It is a decree, in case he climbs up and picks.",
+      "whatsHappening": "The גמרא answers the question it just asked about רב יוסף's comparison: why is fruit that fell on יום טוב forbidden? The answer is that the חכמים made a decree so that a person would not climb the tree and pick fruit, which is real harvesting.",
+      "deeperAnalysis": "רב יוסף compared the egg to פירות הנושרין. To understand the egg, we first need the reason for the fruit. That reason is a גזרה: if fallen fruit were allowed, people might pick fruit straight off the tree, which is the מלאכה of קוצר.",
+      "keyTerms": [
+        {
+          "term": "גְּזֵרָה",
+          "meaning": "A rabbinic decree, made to stop a person from coming to a real איסור"
+        },
+        {
+          "term": "שֶׁמָּא",
+          "meaning": "Lest; in case"
+        },
+        {
+          "term": "יַעֲלֶה",
+          "meaning": "He will climb up (the tree)"
+        },
+        {
+          "term": "וְיִתְלוֹשׁ",
+          "meaning": "And he will pick or detach (the fruit), which is harvesting"
+        }
+      ],
+      "confusionAlert": "This line is not a new opinion. It is the answer to the question about רב יוסף's comparison, a question asked just before this amud begins.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "גְּזֵרָה שֶׁמָּא יַעֲלֶה וְיִתְלוֹשׁ.",
+          "english": "It is a decree, lest he climb up and pick.",
+          "notes": "Explains why פירות הנושרין are forbidden."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "מימרא",
+      "triggerLanguage": "גְּזֵרָה שֶׁמָּא יַעֲלֶה וְיִתְלוֹשׁ",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Answers the question about the reason behind רב יוסף's comparison (asked in the text on the previous amud).",
+      "sheelahInformationSought": "Why are פירות הנושרין forbidden?",
+      "teshuvahAnswerProvided": "It is a decree, in case one climbs the tree and picks fruit."
+    },
+    {
+      "stepNumber": 2,
+      "hebrewStepName": "קשיא",
+      "title": "A decree on top of a decree?",
+      "stepSummary": "The fruit's איסור is already only a decree. Forbidding the egg because of the fruit would be a decree to protect a decree, which the חכמים normally do not make.",
+      "simpleTranslation": "That itself is a decree. Should we then get up and make a decree to protect a decree?",
+      "whatsHappening": "The גמרא challenges רב יוסף. The fruit is forbidden only because of a decree, so forbidding the egg to protect the fruit rule would be גזרה לגזרה.",
+      "deeperAnalysis": "The fruit rule is already a fence around the Torah's איסור of harvesting. Forbidding the egg to protect that fence would be a fence around a fence. The general rule is that the חכמים do not stack decrees like this, so רב יוסף's reason seems to fail.",
+      "keyTerms": [
+        {
+          "term": "הִיא גּוּפַהּ",
+          "meaning": "It itself"
+        },
+        {
+          "term": "נֵיקוּם וְנִגְזוֹר",
+          "meaning": "Shall we arise and decree"
+        },
+        {
+          "term": "גְּזֵרָה לִגְזֵרָה",
+          "meaning": "A decree to protect another decree, which is normally not done"
+        }
+      ],
+      "whyThisMatters": "The rule against גזרה לגזרה is a basic principle of rabbinic law. It comes up all across ש״ס as a test of whether a proposed reason can stand.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "הִיא גּוּפַהּ גְּזֵרָה,",
+          "english": "That itself is a decree,",
+          "notes": "The fruit's איסור is only rabbinic."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וַאֲנַן נֵיקוּם וְנִגְזוֹר גְּזֵרָה לִגְזֵרָה?",
+          "english": "and should we arise and decree a decree for a decree?",
+          "notes": "A rhetorical question that works as a challenge."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "הִיא גּוּפַהּ גְּזֵרָה, וַאֲנַן נֵיקוּם וְנִגְזוֹר גְּזֵרָה לִגְזֵרָה",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        1
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Attacks the reason just given by showing it leads to a decree on top of a decree.",
+      "kashyaTarget": "רב יוסף's explanation that the egg is forbidden because of פירות הנושרין",
+      "kashyaAttackLogic": "The fruit is forbidden only by a decree, so forbidding the egg because of the fruit is גזרה לגזרה, which the חכמים do not make."
+    },
+    {
+      "stepNumber": 3,
+      "hebrewStepName": "תירוץ",
+      "title": "It was all one decree",
+      "stepSummary": "The fruit and the egg were forbidden together, in one single decree. So there is no stacking.",
+      "simpleTranslation": "It is all one decree.",
+      "whatsHappening": "The challenge is answered: the חכמים forbade fallen fruit and the newly laid egg at the same moment, as one decree.",
+      "deeperAnalysis": "The problem with גזרה לגזרה comes from a second decree being added later to protect an earlier one. Here, the egg was included in the original decree from the start, because it is so similar to fallen fruit. So no second layer exists.",
+      "keyTerms": [
+        {
+          "term": "כּוּלָּהּ",
+          "meaning": "All of it"
+        },
+        {
+          "term": "חֲדָא",
+          "meaning": "One (Aramaic)"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "כּוּלָּהּ חֲדָא גְּזֵרָה הִיא.",
+          "english": "It is all one decree.",
+          "notes": "The egg and the fruit were forbidden together."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "כּוּלָּהּ חֲדָא גְּזֵרָה הִיא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        2
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Answers the קשיא of גזרה לגזרה.",
+      "terutzResolutionType": "Redefining the structure of the decree",
+      "terutzHavaAmina": "The egg decree was a second decree added to protect the fruit decree.",
+      "terutzMaskana": "Both were part of one original decree, so there is no stacking.",
+      "whatToRemember": "רב יוסף: the egg is forbidden like פירות הנושרין. It is not גזרה לגזרה, because it was all one decree."
+    },
+    {
+      "stepNumber": 4,
+      "hebrewStepName": "מימרא",
+      "title": "רבי יצחק: The egg is like juice that seeped out",
+      "stepSummary": "רבי יצחק gives a different reason: the egg is forbidden because of משקין שזבו, juice that seeped out of fruit on יום טוב.",
+      "simpleTranslation": "רבי יצחק said: It is a decree because of liquids that seeped out.",
+      "whatsHappening": "A new אמורא offers a different comparison. רבי יצחק says the egg is like juice that dripped out of fruit by itself on יום טוב, which is forbidden.",
+      "deeperAnalysis": "רב יוסף compared the egg to fruit falling from a tree. רבי יצחק compares it to juice coming out of fruit. In both cases something comes out on its own on יום טוב, and in both cases it is forbidden.",
+      "keyTerms": [
+        {
+          "term": "מַשְׁקִין",
+          "meaning": "Liquids, such as juices from fruit"
+        },
+        {
+          "term": "שֶׁזָּבוּ",
+          "meaning": "That flowed or seeped out by themselves"
+        },
+        {
+          "term": "מִשּׁוּם",
+          "meaning": "Because of"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "רַבִּי יִצְחָק אָמַר:",
+          "english": "Rabbi Yitzchak said:",
+          "notes": "Attribution line."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "גְּזֵרָה מִשּׁוּם מַשְׁקִין שֶׁזָּבוּ.",
+          "english": "It is a decree because of liquids that seeped out.",
+          "notes": "The egg is compared to juice that dripped from fruit on יום טוב."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "רַבִּי יִצְחָק אָמַר: גְּזֵרָה מִשּׁוּם מַשְׁקִין שֶׁזָּבוּ",
+      "macroPhase": "alternate_branch",
+      "branchRole": "alternative_approach",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Offers an alternative to רב יוסף's reason.",
+      "mimraCoreRuling": "The egg is forbidden as part of the decree on משקין שזבו."
+    },
+    {
+      "stepNumber": 5,
+      "hebrewStepName": "שאלה",
+      "title": "אביי asks: Why is seeped juice forbidden?",
+      "stepSummary": "אביי asks for the reason behind the juice rule. The answer: a decree, in case a person squeezes the fruit on purpose.",
+      "simpleTranslation": "אביי said to him: Juice that seeped out, what is the reason? It is a decree in case he squeezes.",
+      "whatsHappening": "אביי sets up his challenge by first spelling out why seeped juice is forbidden. It is a decree, so that a person will not squeeze fruit, which is a real מלאכה. This step prepares the attack that comes next.",
+      "deeperAnalysis": "This mirrors step 1 exactly. Just as fallen fruit is forbidden for fear of picking, seeped juice is forbidden for fear of squeezing (סחיטה). Showing that the juice rule is only a decree sets up the same problem of גזרה לגזרה.",
+      "keyTerms": [
+        {
+          "term": "אֲמַר לֵיהּ",
+          "meaning": "Said to him"
+        },
+        {
+          "term": "טַעְמָא מַאי",
+          "meaning": "What is the reason?"
+        },
+        {
+          "term": "יִסְחוֹט",
+          "meaning": "He will squeeze (fruit for its juice)"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֲמַר לֵיהּ אַבָּיֵי:",
+          "english": "Abaye said to him:",
+          "notes": "Attribution line."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "מַשְׁקִין שֶׁזָּבוּ טַעְמָא מַאי —",
+          "english": "Liquids that seeped out, what is the reason?",
+          "notes": "The question."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "גְּזֵרָה שֶׁמָּא יִסְחוֹט,",
+          "english": "A decree lest he squeeze,",
+          "notes": "The answer, which sets up the challenge."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "קשיא",
+      "triggerLanguage": "אֲמַר לֵיהּ אַבָּיֵי: מַשְׁקִין שֶׁזָּבוּ טַעְמָא מַאי",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        4
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Sets up a challenge to רבי יצחק by identifying the reason behind his comparison.",
+      "sheelahInformationSought": "Why are משקין שזבו forbidden?",
+      "teshuvahAnswerProvided": "It is a decree, in case one squeezes fruit."
+    },
+    {
+      "stepNumber": 6,
+      "hebrewStepName": "קשיא",
+      "title": "Again: a decree on top of a decree?",
+      "stepSummary": "The juice is forbidden only by decree, so forbidding the egg because of it would be גזרה לגזרה.",
+      "simpleTranslation": "That itself is a decree. Should we then get up and make a decree to protect a decree?",
+      "whatsHappening": "אביי now attacks רבי יצחק with the same problem raised earlier against רב יוסף.",
+      "deeperAnalysis": "Squeezing is the real מלאכה. Seeped juice is forbidden only as a fence around it. Forbidding the egg to protect that fence would again be a fence around a fence.",
+      "keyTerms": [],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "הִיא גּוּפַהּ גְּזֵרָה,",
+          "english": "That itself is a decree,",
+          "notes": "The juice rule is only rabbinic."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וַאֲנַן נֵיקוּם וְנִגְזוֹר גְּזֵרָה לִגְזֵרָה?",
+          "english": "and should we arise and decree a decree for a decree?",
+          "notes": "The same wording the גמרא used against רב יוסף."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "הִיא גּוּפַהּ גְּזֵרָה, וַאֲנַן נֵיקוּם וְנִגְזוֹר גְּזֵרָה לִגְזֵרָה",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        4,
+        5
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Uses the reason from step 5 to challenge רבי יצחק.",
+      "kashyaTarget": "רבי יצחק's comparison to משקין שזבו",
+      "kashyaAttackLogic": "Seeped juice is forbidden only by decree, so forbidding the egg because of it is גזרה לגזרה."
+    },
+    {
+      "stepNumber": 7,
+      "hebrewStepName": "תירוץ",
+      "title": "Again: it was all one decree",
+      "stepSummary": "The juice and the egg were forbidden together in one decree.",
+      "simpleTranslation": "It is all one decree.",
+      "whatsHappening": "רבי יצחק answers the same way רב יוסף did: the egg was included in the original juice decree.",
+      "deeperAnalysis": "Because the חכמים forbade both at once, the egg rule is not a second layer protecting the first. So the problem of גזרה לגזרה disappears here too.",
+      "keyTerms": [],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "כּוּלַּהּ חֲדָא גְּזֵרָה הִיא.",
+          "english": "It is all one decree.",
+          "notes": "The juice and the egg were forbidden together."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "כּוּלַּהּ חֲדָא גְּזֵרָה הִיא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        6
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Answers אביי's challenge.",
+      "terutzResolutionType": "Redefining the structure of the decree",
+      "terutzHavaAmina": "The egg decree was added later to protect the juice decree.",
+      "terutzMaskana": "Both were part of one original decree.",
+      "whatToRemember": "רבי יצחק: the egg is forbidden like משקין שזבו. It is not גזרה לגזרה, because it was all one decree."
+    },
+    {
+      "stepNumber": 8,
+      "hebrewStepName": "מסקנא",
+      "title": "Why no one followed רב נחמן",
+      "stepSummary": "None of these אמוראים used רב נחמן's explanation, because of the challenge the גמרא already raised against it.",
+      "simpleTranslation": "All of them did not say like רב נחמן, because of our challenge.",
+      "whatsHappening": "The גמרא now steps back to explain why each אמורא gave his own reason. They did not follow רב נחמן because his explanation was already challenged earlier.",
+      "deeperAnalysis": "Earlier on the daf, רב נחמן explained the משנה's case in terms of מוקצה. The גמרא challenged that explanation, and that challenge is why רבה, רב יוסף, and רבי יצחק each looked for a different reason.",
+      "keyTerms": [
+        {
+          "term": "כּוּלְּהוּ",
+          "meaning": "All of them"
+        },
+        {
+          "term": "לָא אָמְרִי",
+          "meaning": "They did not say"
+        },
+        {
+          "term": "קוּשְׁיַין",
+          "meaning": "Our challenge (the one raised earlier)"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "כּוּלְּהוּ כְּרַב נַחְמָן לָא אָמְרִי —",
+          "english": "All of them did not say like Rav Nachman,",
+          "notes": "Refers to רבה, רב יוסף, and רבי יצחק."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "כִּי קוּשְׁיַין.",
+          "english": "because of our challenge.",
+          "notes": "The challenge raised earlier against רב נחמן."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "תשובה",
+      "triggerLanguage": "כּוּלְּהוּ כְּרַב נַחְמָן לָא אָמְרִי",
+      "macroPhase": "conclusion",
+      "branchRole": "returns_to_previous_branch",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Steps back from the individual opinions to explain why multiple explanations exist.",
+      "maskanaFinalTakeaway": "רב נחמן's approach was set aside because of the earlier challenge."
+    },
+    {
+      "stepNumber": 9,
+      "hebrewStepName": "מסקנא",
+      "title": "Why the others did not follow רבה",
+      "stepSummary": "The other אמוראים did not follow רבה because they do not accept his idea of הכנה.",
+      "simpleTranslation": "They also did not say like רבה, because they do not hold of הכנה.",
+      "whatsHappening": "The גמרא explains why רב יוסף and רבי יצחק did not use רבה's reason. They disagree with the concept that רבה's whole explanation is built on.",
+      "deeperAnalysis": "רבה said the egg is forbidden because of הכנה: that by Torah law, a weekday must 'prepare' food for שבת or יום טוב, so something prepared on one holy day cannot be used on the next. The other אמוראים do not accept this concept, so they needed a different reason.",
+      "keyTerms": [
+        {
+          "term": "הֲכָנָה",
+          "meaning": "Preparation; the idea that a weekday must prepare things for שבת or יום טוב"
+        },
+        {
+          "term": "לֵית לְהוּ",
+          "meaning": "They do not hold of it"
+        },
+        {
+          "term": "נָמֵי",
+          "meaning": "Also"
+        }
+      ],
+      "whatToRemember": "There are several explanations for the egg: רבה (הכנה), רב יוסף (פירות הנושרין), and רבי יצחק (משקין שזבו). The others rejected רב נחמן because of the earlier challenge, and rejected רבה because they do not accept הכנה.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "כְּרַבָּה נָמֵי לָא אָמְרִי —",
+          "english": "They also did not say like Rabba,",
+          "notes": "Refers to רב יוסף and רבי יצחק."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "הֲכָנָה לֵית לְהוּ.",
+          "english": "because they do not hold of 'preparation.'",
+          "notes": "They reject רבה's foundation."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "תשובה",
+      "triggerLanguage": "כְּרַבָּה נָמֵי לָא אָמְרִי",
+      "macroPhase": "conclusion",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        8
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Continues explaining why each אמורא chose his own reason.",
+      "maskanaFinalTakeaway": "רב יוסף and רבי יצחק reject רבה's approach because they do not accept הכנה."
+    },
+    {
+      "stepNumber": 10,
+      "hebrewStepName": "שאלה",
+      "title": "Why did רב יוסף not explain like רבי יצחק?",
+      "stepSummary": "The גמרא asks why רב יוסף did not use רבי יצחק's comparison to juice.",
+      "simpleTranslation": "But what is the reason that רב יוסף did not explain it the way רבי יצחק did?",
+      "whatsHappening": "The גמרא asks why רב יוסף chose to compare the egg to falling fruit instead of to oozing juice, as רבי יצחק did. This sets up the answer in the next step.",
+      "deeperAnalysis": "Both רב יוסף and רבי יצחק agree that the egg is forbidden only as a decree. They differ only on what the egg is being compared to. The גמרא wants to know what made רב יוסף prefer falling fruit.",
+      "keyTerms": [
+        {
+          "term": "מַאי טַעְמָא",
+          "meaning": "What is the reason?"
+        },
+        {
+          "term": "לָא אָמַר כְּ...",
+          "meaning": "He did not say it like (someone else)"
+        },
+        {
+          "term": "פֵּירוֹת הַנּוֹשְׁרִין",
+          "meaning": "Fruit that falls off a tree on שבת or יום טוב, which is forbidden in case one picks fruit (רב יוסף's comparison)"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֶלָּא רַב יוֹסֵף מַאי טַעְמָא",
+          "english": "But Rav Yosef, what is the reason"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "לָא אָמַר כְּרַבִּי יִצְחָק?",
+          "english": "that he did not say like Rabbi Yitzchak?",
+          "notes": "Rabbi Yitzchak compared the egg to juice that oozes from fruit."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אֶלָּא רַב יוֹסֵף מַאי טַעְמָא לָא אָמַר כְּרַבִּי יִצְחָק",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "returns_to_previous_branch",
+      "dependsOnStepNumbers": [
+        1,
+        3,
+        4,
+        7
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "After explaining why the אמוראים rejected רב נחמן and רבה, the גמרא now compares the two remaining explanations to each other.",
+      "sheelahInformationSought": "Why did רב יוסף prefer the falling-fruit comparison over רבי יצחק's juice comparison?"
+    },
+    {
+      "stepNumber": 11,
+      "hebrewStepName": "תשובה",
+      "title": "רב יוסף: an egg is food, just like fruit",
+      "stepSummary": "An egg and fruit are both food, while juice is a drink, so the egg is closer to fruit.",
+      "simpleTranslation": "He can tell you: an egg is food, and fruit is food. That excludes juice, which is not food.",
+      "whatsHappening": "The גמרא answers for רב יוסף: an egg is closer to falling fruit, because both are things you eat.",
+      "deeperAnalysis": "רב יוסף holds that a decree should compare things of the same kind. An egg and fruit are both solid food (אוכל). Juice is a drink (משקה), so it is a weaker match for the egg.",
+      "keyTerms": [
+        {
+          "term": "אוּכְלָא",
+          "meaning": "Food (something eaten, not drunk)"
+        },
+        {
+          "term": "לְאַפּוֹקֵי",
+          "meaning": "To exclude"
+        },
+        {
+          "term": "מַשְׁקִין",
+          "meaning": "Liquids or juices"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר לָךְ: בֵּיצָה אוּכְלָא,",
+          "english": "He can say to you: an egg is food,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וּפֵירוֹת אוּכְלָא.",
+          "english": "and fruits are food."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "לְאַפּוֹקֵי מַשְׁקִין — דְּלָאו אוּכְלָא.",
+          "english": "This excludes juices, which are not food."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אָמַר לָךְ: בֵּיצָה אוּכְלָא, וּפֵירוֹת אוּכְלָא",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        10
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Answers the question of step 10.",
+      "teshuvahAnswerProvided": "The egg is food like fruit, while juice is a drink, so the fruit comparison fits better."
+    },
+    {
+      "stepNumber": 12,
+      "hebrewStepName": "שאלה",
+      "title": "Why did רבי יצחק not explain like רב יוסף?",
+      "stepSummary": "The גמרא asks the reverse question: why did רבי יצחק not use רב יוסף's comparison to falling fruit?",
+      "simpleTranslation": "And what is the reason that רבי יצחק did not explain it the way רב יוסף did?",
+      "whatsHappening": "The גמרא now flips the question and asks why רבי יצחק did not compare the egg to falling fruit. This sets up the answer in the next step.",
+      "deeperAnalysis": "רב יוסף's argument (food matches food) sounds strong. So the גמרא needs to show what רבי יצחק saw as an even better match between the egg and juice.",
+      "keyTerms": [
+        {
+          "term": "מַשְׁקִין שֶׁזָּבוּ",
+          "meaning": "Juice that oozed out of fruit by itself (רבי יצחק's comparison)"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְרַבִּי יִצְחָק מַאי טַעְמָא",
+          "english": "And Rabbi Yitzchak, what is the reason"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "לָא אָמַר כְּרַב יוֹסֵף?",
+          "english": "that he did not say like Rav Yosef?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וְרַבִּי יִצְחָק מַאי טַעְמָא לָא אָמַר כְּרַב יוֹסֵף",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        10,
+        11
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "The mirror image of step 10.",
+      "sheelahInformationSought": "Why did רבי יצחק prefer the juice comparison over רב יוסף's falling-fruit comparison?"
+    },
+    {
+      "stepNumber": 13,
+      "hebrewStepName": "תשובה",
+      "title": "רבי יצחק: an egg is hidden inside, just like juice",
+      "stepSummary": "An egg is hidden inside the hen and juice is hidden inside the fruit, while fruit on a tree is out in the open.",
+      "simpleTranslation": "He can tell you: an egg is hidden inside (the hen), and juice is hidden inside (the fruit). That excludes fruit, which is out in the open (on the tree).",
+      "whatsHappening": "The גמרא answers for רבי יצחק: an egg is closer to juice, because both are hidden inside something before they come out.",
+      "deeperAnalysis": "רבי יצחק looks at how the item comes into being, not at whether it is eaten or drunk. An egg inside a hen and juice inside a fruit both come out from something that was holding them. Fruit on a tree was always visible, so it is a weaker match.",
+      "keyTerms": [
+        {
+          "term": "בְּלוּעָה",
+          "meaning": "Swallowed up, hidden inside"
+        },
+        {
+          "term": "מִגַּלּוּ וְקָיְימוּ",
+          "meaning": "They stand exposed, out in the open"
+        }
+      ],
+      "whatToRemember": "Each אמורא picks the closest match by a different measure. רב יוסף asks what the item is (food, so fruit). רבי יצחק asks how the item comes out (from hiding, so juice).",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר לָךְ: בֵּיצָה בְּלוּעָה,",
+          "english": "He can say to you: an egg is hidden inside (the hen),"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וּמַשְׁקִין בְּלוּעִין.",
+          "english": "and juices are hidden inside (the fruit)."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "לְאַפּוֹקֵי פֵּירוֹת — דְּמִגַּלּוּ וְקָיְימוּ.",
+          "english": "This excludes fruits, which stand out in the open (on the tree)."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אָמַר לָךְ: בֵּיצָה בְּלוּעָה, וּמַשְׁקִין בְּלוּעִין",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        12
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Answers the question of step 12.",
+      "teshuvahAnswerProvided": "The egg is hidden inside its source like juice, while fruit hangs in the open, so the juice comparison fits better."
+    },
+    {
+      "stepNumber": 14,
+      "hebrewStepName": "מימרא",
+      "title": "רבי יוחנן also holds the decree is because of juice",
+      "stepSummary": "The גמרא states that רבי יוחנן agrees with רבי יצחק: the egg is forbidden as a decree because of juice that oozes out.",
+      "simpleTranslation": "And רבי יוחנן also holds that it is a decree because of juice that oozed out.",
+      "whatsHappening": "The גמרא adds that רבי יוחנן holds the same view as רבי יצחק. The proof comes in the next steps.",
+      "deeperAnalysis": "This adds another supporter for רבי יצחק's explanation. רבי יוחנן never said this openly about the egg. It is shown indirectly from how he handled a different topic.",
+      "keyTerms": [
+        {
+          "term": "וְאַף",
+          "meaning": "And also"
+        },
+        {
+          "term": "סָבַר",
+          "meaning": "He holds (this view)"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְאַף רַבִּי יוֹחָנָן סָבַר",
+          "english": "And Rabbi Yochanan also holds"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "גְּזֵרָה מִשּׁוּם מַשְׁקִין שֶׁזָּבוּ.",
+          "english": "(that the egg is) a decree because of juice that oozed out."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וְאַף רַבִּי יוֹחָנָן סָבַר גְּזֵרָה מִשּׁוּם מַשְׁקִין שֶׁזָּבוּ",
+      "macroPhase": "source_derivation",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [
+        4
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Adds a new authority who supports רבי יצחק's approach.",
+      "mimraCoreRuling": "רבי יוחנן holds that the egg is forbidden as a decree because of משקין שזבו."
+    },
+    {
+      "stepNumber": 15,
+      "hebrewStepName": "ראיה",
+      "title": "The proof: רבי יוחנן's contradiction in רבי יהודה",
+      "stepSummary": "The proof comes from the fact that רבי יוחנן pointed out a contradiction between two statements of רבי יהודה and resolved it.",
+      "simpleTranslation": "Because רבי יוחנן pointed out a contradiction between one statement of רבי יהודה and another statement of רבי יהודה, and he resolved it.",
+      "whatsHappening": "The גמרא names where the proof comes from: a contradiction רבי יוחנן raised in רבי יהודה's words. This is a setup line; the actual sources come next.",
+      "deeperAnalysis": "The way רבי יוחנן resolves the contradiction will show that he links the egg to oozing juice. The learner should expect two sources from רבי יהודה that seem to clash.",
+      "keyTerms": [
+        {
+          "term": "רָמֵי",
+          "meaning": "He throws together, meaning he points out a contradiction"
+        },
+        {
+          "term": "אַדְּ...",
+          "meaning": "Against (one source against another)"
+        },
+        {
+          "term": "מְשַׁנֵּי",
+          "meaning": "He answers or resolves it"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "דְּרַבִּי יוֹחָנָן רָמֵי",
+          "english": "For Rabbi Yochanan raised a contradiction"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "דְּרַבִּי יְהוּדָה אַדְּרַבִּי יְהוּדָה,",
+          "english": "between (a statement) of Rabbi Yehuda and (another) of Rabbi Yehuda,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וּמְשַׁנֵּי.",
+          "english": "and he resolved it."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "מימרא",
+      "triggerLanguage": "דְּרַבִּי יוֹחָנָן רָמֵי דְּרַבִּי יְהוּדָה אַדְּרַבִּי יְהוּדָה, וּמְשַׁנֵּי",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        14
+      ],
+      "scopeOfStep": "proof_mechanism",
+      "relationToPreviousStep": "Introduces the proof for the claim in step 14.",
+      "raayaObject": "That רבי יוחנן holds the egg decree is because of משקין שזבו.",
+      "raayaSupportSource": "רבי יוחנן's contradiction between two rulings of רבי יהודה, and how he resolved it."
+    },
+    {
+      "stepNumber": 16,
+      "hebrewStepName": "ראיה",
+      "title": "First source: the משנה about squeezing fruit on שבת",
+      "stepSummary": "The משנה in שבת rules that one may not squeeze fruit, and juice that oozes out by itself is forbidden. רבי יהודה says it depends on whether the fruit is meant for eating or for juice.",
+      "simpleTranslation": "We learned in a משנה: One may not squeeze fruit to get juice out of it, and if the juice came out by itself, it is forbidden. רבי יהודה says: if the fruit is meant for eating, what comes out of it is permitted; and if it is meant for juice, what comes out of it is forbidden.",
+      "whatsHappening": "The גמרא quotes the first side of the contradiction: רבי יהודה's ruling about juice that oozes out on שבת. The second, clashing statement of רבי יהודה will come next.",
+      "deeperAnalysis": "The תנא קמא forbids all oozed juice, in case a person comes to squeeze on purpose. רבי יהודה forbids it only when the fruit is meant for juice (like grapes), because only then would someone want to squeeze it. Fruit meant for eating (like apples) is not worried about, so its juice is permitted.",
+      "keyTerms": [
+        {
+          "term": "תְּנַן",
+          "meaning": "We learned in a משנה"
+        },
+        {
+          "term": "סוֹחֲטִין",
+          "meaning": "Squeezing (to get juice out)"
+        },
+        {
+          "term": "מֵעַצְמָן",
+          "meaning": "By themselves, on their own"
+        },
+        {
+          "term": "לָאוֹכָלִין / לְמַשְׁקִין",
+          "meaning": "Meant for eating / meant for making juice"
+        }
+      ],
+      "confusionAlert": "This is a משנה about שבת, not about eggs. The גמרא is building a proof. The link to the egg will appear only after the contradiction and רבי יוחנן's answer are shown in the next lines.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "תְּנַן: אֵין סוֹחֲטִין אֶת הַפֵּירוֹת",
+          "english": "We learned: One may not squeeze fruits"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "לְהוֹצִיא מֵהֶן מַשְׁקִין,",
+          "english": "to get juice out of them,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וְאִם יָצְאוּ מֵעַצְמָן — אֲסוּרִין.",
+          "english": "and if (the juices) came out by themselves, they are forbidden.",
+          "notes": "This is in case one comes to squeeze on purpose."
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "רַבִּי יְהוּדָה אוֹמֵר: אִם לָאוֹכָלִין —",
+          "english": "Rabbi Yehuda says: If (the fruit is meant) for eating,"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "הַיּוֹצֵא מֵהֶן מוּתָּר,",
+          "english": "what comes out of them is permitted,"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "וְאִם לְמַשְׁקִין — הַיּוֹצֵא מֵהֶן אָסוּר.",
+          "english": "and if (it is meant) for juice, what comes out of them is forbidden."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "מימרא",
+      "triggerLanguage": "תְּנַן: אֵין סוֹחֲטִין אֶת הַפֵּירוֹת לְהוֹצִיא מֵהֶן מַשְׁקִין",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        15
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Supplies the first of the two רבי יהודה sources mentioned in step 15.",
+      "raayaObject": "Part one of the contradiction in רבי יהודה's words.",
+      "raayaSupportSource": "משנה שבת קמג: — the law of juice that oozes out on שבת."
+    },
+    {
+      "stepNumber": 17,
+      "hebrewStepName": "ראיה",
+      "title": "Inference: For רבי יהודה, all food that comes out of food is 'separated food'",
+      "stepSummary": "From רבי יהודה's ruling that juice from eating-fruit is permitted, the גמרא infers a general rule. For him, anything that comes out of a food is just food that separated, not something new.",
+      "simpleTranslation": "We see that, according to רבי יהודה, all foods that come out of other foods count as food that simply separated.",
+      "whatsHappening": "The גמרא draws a general rule out of רבי יהודה's opinion in the משנה we just saw. This sets up the contradiction that comes next.",
+      "deeperAnalysis": "רבי יהודה allowed juice that oozes out of fruit meant for eating. That means he sees the juice as part of the fruit that was already there, not a newly 'born' item. If so, the same should apply to an egg coming out of a hen: it should be permitted on יום טוב.",
+      "keyTerms": [
+        {
+          "term": "אַלְמָא",
+          "meaning": "We see from here / apparently (introduces an inference)"
+        },
+        {
+          "term": "אוֹכָלִין",
+          "meaning": "Foods"
+        },
+        {
+          "term": "אוּכְלָא דְאִפְּרַת",
+          "meaning": "Food that separated: it was always food and just came apart"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אַלְמָא כָּל אוֹכָלִין לְרַבִּי יְהוּדָה",
+          "english": "Apparently, all foods according to Rabbi Yehuda",
+          "notes": "Inferred from his ruling that juice of eating-fruit is permitted."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "— אוּכְלָא דְאִפְּרַת הוּא.",
+          "english": "are food that separated.",
+          "notes": "Not a new item, so there is no problem of something 'born' on יום טוב."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "מסקנא",
+      "triggerLanguage": "אַלְמָא כָּל אוֹכָלִין לְרַבִּי יְהוּדָה",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        16
+      ],
+      "scopeOfStep": "inference",
+      "relationToPreviousStep": "Draws a general principle from רבי יהודה's ruling in the משנה quoted in step 16.",
+      "raayaObject": "רבי יהודה's view of food that comes out of food",
+      "raayaSupportSource": "רבי יהודה's ruling in the משנה in שבת permitting juice of fruit meant for eating"
+    },
+    {
+      "stepNumber": 18,
+      "hebrewStepName": "קשיא",
+      "title": "A contradicting ruling of רבי יהודה about two-day יום טוב",
+      "stepSummary": "The גמרא quotes another ruling of רבי יהודה. One may make a stipulation on a basket of untithed fruit on the first day of יום טוב and eat it on the second day. Likewise, an egg laid on the first day may be eaten on the second.",
+      "simpleTranslation": "And they contrasted: רבי יהודה also said: A person may make a stipulation on a basket of fruit on the first day of יום טוב and eat it on the second day. Similarly, an egg laid on the first day may be eaten on the second day.",
+      "whatsHappening": "The גמרא brings a second source from רבי יהודה that seems to clash with the rule we just inferred. It is setting up the contradiction, which is spelled out in the next step.",
+      "deeperAnalysis": "The case is the two days of יום טוב kept outside ארץ ישראל, where we are unsure which day is truly holy. רבי יהודה lets the egg laid on day one be eaten on day two. The wording suggests that the egg may NOT be eaten on day one itself.",
+      "keyTerms": [
+        {
+          "term": "וּרְמִינְהוּ",
+          "meaning": "And they contrasted it: introduces a contradiction from another source"
+        },
+        {
+          "term": "מַתְנֶה",
+          "meaning": "Makes a condition (stipulation)"
+        },
+        {
+          "term": "כַּלְכָּלָה",
+          "meaning": "Basket"
+        },
+        {
+          "term": "יוֹם טוֹב רִאשׁוֹן",
+          "meaning": "The first day of a two-day יום טוב"
+        }
+      ],
+      "confusionAlert": "The 'condition' is about untithed fruit: one may not tithe on יום טוב. He says: 'If today is the real holy day, I will tithe tomorrow; if today is a weekday, I tithe now.' That way the tithing happens on a weekday either way. The egg case is added as a similar ruling.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וּרְמִינְהוּ,",
+          "english": "And they contrasted:",
+          "notes": "Signals a contradiction is coming."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וְעוֹד אָמַר רַבִּי יְהוּדָה:",
+          "english": "And Rabbi Yehuda further said:"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "מַתְנֶה אָדָם עַל כַּלְכָּלָה שֶׁל פֵּירוֹת",
+          "english": "A person may stipulate regarding a basket of fruit",
+          "notes": "Untithed fruit."
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "בְּיוֹם טוֹב רִאשׁוֹן,",
+          "english": "on the first day of יום טוב,"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "וְאוֹכְלָהּ בַּשֵּׁנִי.",
+          "english": "and eat it on the second day."
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "וְכֵן בֵּיצָה שֶׁנּוֹלְדָה בָּרִאשׁוֹן,",
+          "english": "And likewise, an egg laid on the first day"
+        },
+        {
+          "phraseNumber": 7,
+          "aramaic": "תֵּאָכֵל בַּשֵּׁנִי.",
+          "english": "may be eaten on the second day."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "ראיה",
+      "triggerLanguage": "וּרְמִינְהוּ, וְעוֹד אָמַר רַבִּי יְהוּדָה",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        17
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Brings a source that appears to contradict the inference of step 17.",
+      "kashyaTarget": "The inference that for רבי יהודה, food that comes out of food is 'separated food'",
+      "kashyaAttackLogic": "A second ruling of רבי יהודה treats a newly laid egg as restricted on the day it is laid."
+    },
+    {
+      "stepNumber": 19,
+      "hebrewStepName": "קשיא",
+      "title": "The contradiction: only on the second day, not the first",
+      "stepSummary": "The גמרא points out the precise implication: the egg is allowed on the second day but not on the first. This contradicts רבי יהודה's view that food from food is just separated.",
+      "simpleTranslation": "On the second day, yes; on the first day, no!",
+      "whatsHappening": "The גמרא now states the contradiction outright. Saying 'eaten on the second day' implies the egg is forbidden on the first day.",
+      "deeperAnalysis": "If an egg were just 'separated food' for רבי יהודה, it would be permitted even on the very day it was laid. Since he restricts it on day one, he seems to treat the egg as a new item born on יום טוב. That clashes with his ruling on juice.",
+      "keyTerms": [
+        {
+          "term": "אִין",
+          "meaning": "Yes"
+        },
+        {
+          "term": "לָא",
+          "meaning": "No"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "בַּשֵּׁנִי אִין, בָּרִאשׁוֹן לָא!",
+          "english": "On the second day, yes; on the first day, no!",
+          "notes": "An inference from the wording of רבי יהודה's ruling."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "בַּשֵּׁנִי אִין, בָּרִאשׁוֹן לָא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        17,
+        18
+      ],
+      "scopeOfStep": "inference",
+      "relationToPreviousStep": "Completes the contradiction set up in step 18.",
+      "kashyaTarget": "רבי יהודה's consistency (juice permitted vs. egg forbidden on day one)",
+      "kashyaAttackLogic": "An egg forbidden on the day it is laid contradicts the idea that food from food is merely separated food."
+    },
+    {
+      "stepNumber": 20,
+      "hebrewStepName": "תירוץ",
+      "title": "רבי יוחנן: The opinions are reversed",
+      "stepSummary": "רבי יוחנן resolves the contradiction by switching the attributions. The ruling restricting the egg on day one is not רבי יהודה's, so רבי יהודה stays consistent.",
+      "simpleTranslation": "And רבי יוחנן answered: the opinions are switched.",
+      "whatsHappening": "רבי יוחנן answers the contradiction by saying the names in the second source must be swapped. The next step draws out what this exchange proves about his view.",
+      "deeperAnalysis": "Once the opinions are switched, the ruling that restricts the egg on day one is no longer רבי יהודה's, so it no longer clashes with his ruling on juice. רבי יוחנן did not answer that 'an egg is different from juice.' He instead treated the two cases as linked. That shows he holds the egg is forbidden because of juice, just as רבי יצחק said.",
+      "keyTerms": [
+        {
+          "term": "וּמְשַׁנֵּי",
+          "meaning": "And he answered / resolved"
+        },
+        {
+          "term": "מוּחְלֶפֶת הַשִּׁיטָה",
+          "meaning": "The opinions are reversed (switch who said what)"
+        }
+      ],
+      "whatToRemember": "רבי יוחנן ties the egg and juice together: whoever permits the juice also permits the egg. That is why the גמרא says he agrees with רבי יצחק that the egg is forbidden as a decree because of juice.",
+      "whyThisMatters": "This is the payoff of the proof that began in step 15. רבי יוחנן's way of resolving the contradiction reveals his reasoning about the egg.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וּמְשַׁנֵּי רַבִּי יוֹחָנָן:",
+          "english": "And Rabbi Yochanan resolved:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "מוּחְלֶפֶת הַשִּׁיטָה.",
+          "english": "The opinions are reversed.",
+          "notes": "The ruling that the egg may be eaten only on the second day belongs to the other side, not to רבי יהודה."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וּמְשַׁנֵּי רַבִּי יוֹחָנָן: מוּחְלֶפֶת הַשִּׁיטָה",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        14,
+        15,
+        17,
+        18,
+        19
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Resolves the contradiction raised in steps 18-19.",
+      "terutzResolutionType": "Emendation: reversing the attribution of opinions",
+      "terutzHavaAmina": "רבי יהודה seemed to forbid an egg on the day it was laid, despite permitting juice.",
+      "terutzMaskana": "The opinions are switched, so רבי יהודה permits both the egg and the juice. This shows that רבי יוחנן links the egg to juice."
+    },
+    {
+      "stepNumber": 21,
+      "hebrewStepName": "ראיה",
+      "title": "The contradiction itself proves the egg and the juice share one reason",
+      "stepSummary": "Because the egg ruling and the juice ruling were set against each other as a contradiction, the גמרא concludes that both are based on the same reason.",
+      "simpleTranslation": "And since he set them against each other as a contradiction, we learn from this that it is one reason.",
+      "whatsHappening": "The גמרא draws a conclusion from how the previous discussion worked. It is not raising a new case.",
+      "deeperAnalysis": "You can only call two rulings a contradiction if they rest on the same logic. Since the egg ruling was treated as clashing with רבי יהודה's view on juice, the egg must be forbidden for the same reason as juice that oozes out of fruit. So the earlier discussion becomes support for the explanation that the egg is forbidden because of the rule about משקין שזבו.",
+      "keyTerms": [
+        {
+          "term": "מַרְמֵי לְהוּ אַהֲדָדֵי",
+          "meaning": "He sets them against each other (raises a contradiction between them)"
+        },
+        {
+          "term": "שְׁמַע מִינַּהּ",
+          "meaning": "Learn from this; we can conclude"
+        },
+        {
+          "term": "חַד טַעְמָא",
+          "meaning": "One reason; the same underlying logic"
+        },
+        {
+          "term": "מַשְׁקִין שֶׁזָּבוּ",
+          "meaning": "Liquids (juice) that ooze out of fruit by themselves"
+        }
+      ],
+      "whatToRemember": "The egg laid on יום טוב is forbidden for the same reason as juice that oozes from fruit. We know this because the two cases were treated as contradicting each other.",
+      "confusionAlert": "Do not read this as a new question or challenge. The גמרא is not attacking anything here. It is pointing out what the previous contradiction proves.",
+      "whyThisMatters": "This shows a common גמרא technique: the very fact that a contradiction was raised tells you something. It shows that the two cases share a reason.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וּמִדְּקָא מַרְמֵי לְהוּ אַהֲדָדֵי,",
+          "english": "And since he sets them against each other (as a contradiction),",
+          "notes": "Refers to the contradiction between the egg ruling and the juice ruling (steps 18-20)."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "שְׁמַע מִינַּהּ חַד טַעְמָא הוּא.",
+          "english": "learn from this that it is one reason.",
+          "notes": "The egg is forbidden for the same reason as juice that oozed out of fruit."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "מסקנא",
+      "triggerLanguage": "וּמִדְּקָא מַרְמֵי לְהוּ אַהֲדָדֵי, שְׁמַע מִינַּהּ",
+      "macroPhase": "conclusion",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "scopeOfStep": "inference",
+      "relationToPreviousStep": "Builds on the contradiction (steps 18-19) and רבי יוחנן's answer (step 20). It draws out what that exchange proves about the reason the egg is forbidden.",
+      "raayaObject": "The claim of step 14 that רבי יוחנן holds an egg laid on יום טוב is forbidden for the same reason as משקין שזבו, like רבי יצחק.",
+      "raayaSupportSource": "The fact that the egg ruling and the juice ruling were treated as contradicting each other (steps 18-20). Such a contradiction only works if both rulings share one reason."
+    }
+  ]
+}

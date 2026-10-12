@@ -1,0 +1,1424 @@
+{
+  "mainTopic": "Fastenings according to רבי נחמיה, and the משנה on making a lamp, making charcoal, and cutting a wick on יום טוב.",
+  "overview": "The amud opens by defending שמואל with a ברייתא about untying, unraveling, and cutting fastenings on שבת and יום טוב. When the ברייתא's second clause seems to argue with שמואל, the גמרא assigns it to רבי נחמיה, who allows vessels to be handled only for their normal use. A proof from three ברייתות about kindling with vessels suggests that רבי נחמיה applies his rule on יום טוב too. The גמרא answers that two תנאים reported רבי נחמיה's view differently. A new משנה then forbids hollowing out a clay lamp, making charcoal, and cutting a wick on יום טוב, while רבי יהודה allows cutting the wick with fire. רב יוסף traces the lamp ruling to רבי מאיר, or in another version to רבי אליעזר ברבי צדוק. Each time אביי objects, and each time the גמרא answers that an unfired lamp can hold coins. The גמרא also defines חרניות pots, explains the charcoal ban through רבי חייא's bathhouse case, and begins asking why cutting a wick with a knife is forbidden, a question that continues on the next amud.",
+  "steps": [
+    {
+      "stepNumber": 1,
+      "hebrewStepName": "תירוץ",
+      "title": "שמואל follows the תנא of a ברייתא on fastenings",
+      "stepSummary": "The גמרא answers an earlier challenge against שמואל. It shows that שמואל's ruling matches a ברייתא that permits untying fastenings attached to the ground.",
+      "simpleTranslation": "שמואל spoke like this תנא, as a ברייתא teaches: fastenings attached to the ground may be untied, but not unraveled or cut, on both שבת and יום טוב. Fastenings on a vessel may be untied on שבת, but not unraveled or cut. On יום טוב they may be untied, unraveled, and cut.",
+      "whatsHappening": "The גמרא defends שמואל by showing that a תנא in a ברייתא holds the same view about untying fastenings, such as the ropes tied on doors.",
+      "deeperAnalysis": "On the previous amud, שמואל's lenient ruling was challenged. The answer is that שמואל did not invent his view; he follows a known תנא. This ברייתא splits fastenings into two groups: ones attached to the ground and ones on a vessel. It also gives different rules for שבת and for יום טוב.",
+      "keyTerms": [
+        {
+          "term": "חוֹתָמוֹת",
+          "meaning": "Fastenings, such as ropes tied around something to seal it closed"
+        },
+        {
+          "term": "שֶׁבַּקַּרְקַע",
+          "meaning": "Attached to the ground, for example a door or a pit cover"
+        },
+        {
+          "term": "מַתִּיר",
+          "meaning": "Unties (opens the knot)"
+        },
+        {
+          "term": "מַפְקִיעַ",
+          "meaning": "Unravels or untwists the rope itself"
+        },
+        {
+          "term": "חוֹתֵךְ",
+          "meaning": "Cuts"
+        },
+        {
+          "term": "דְּתַנְיָא",
+          "meaning": "As it was taught in a ברייתא"
+        }
+      ],
+      "confusionAlert": "There are three different actions here: untying the knot (מתיר), unraveling the rope (מפקיע), and cutting it (חותך). Keep them separate, because the ברייתא allows one and not the others in some cases.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "הוּא דְּאָמַר כִּי הַאי תַּנָּא, דְּתַנְיָא:",
+          "english": "He (Shmuel) spoke in accordance with this tanna, as it is taught in a baraita:",
+          "notes": "Answers the earlier challenge against שמואל"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "חוֹתָמוֹת שֶׁבַּקַּרְקַע — מַתִּיר,",
+          "english": "Fastenings that are attached to the ground: one may untie them,",
+          "notes": "For example, ropes on doors"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "אֲבָל לֹא מַפְקִיעַ וְלֹא חוֹתֵךְ,",
+          "english": "but one may not unravel or cut them,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "אֶחָד שַׁבָּת וְאֶחָד יוֹם טוֹב.",
+          "english": "both on Shabbat and on a Festival."
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "וְשֶׁבַּכְּלִי — בְּשַׁבָּת מַתִּיר,",
+          "english": "And those of a vessel: on Shabbat one may untie them,"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "אֲבָל לֹא מַפְקִיעַ וְלֹא חוֹתֵךְ,",
+          "english": "but one may not unravel or cut them;"
+        },
+        {
+          "phraseNumber": 7,
+          "aramaic": "בְּיוֹם טוֹב — מַתִּיר וּמַפְקִיעַ וְחוֹתֵךְ.",
+          "english": "on a Festival one may untie, unravel, and cut them."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "ראיה",
+      "triggerLanguage": "הוּא דְּאָמַר כִּי הַאי תַּנָּא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Answers a challenge against שמואל that was raised on the previous amud.",
+      "terutzResolutionType": "Identifying a תנא whose view matches the challenged ruling",
+      "terutzHavaAmina": "שמואל's ruling seemed to have no support among the תנאים.",
+      "terutzMaskana": "שמואל follows the תנא of this ברייתא, who permits untying fastenings attached to the ground."
+    },
+    {
+      "stepNumber": 2,
+      "hebrewStepName": "קשיא",
+      "title": "The second clause of the ברייתא still contradicts שמואל",
+      "stepSummary": "The ברייתא supports שמואל on untying ground fastenings. But its second clause forbids unraveling and cutting a vessel's fastenings on שבת, which contradicts שמואל.",
+      "simpleTranslation": "You have answered the first part, but the second part is still a problem!",
+      "whatsHappening": "The גמרא pushes back: the ברייתא helps שמואל with the first case, but its second case seems to go against him.",
+      "deeperAnalysis": "שמואל was lenient and allowed unraveling. The ברייתא, however, forbids unraveling and cutting a vessel's fastenings on שבת. So the source that was brought to defend שמואל now seems to argue with him on another point.",
+      "keyTerms": [
+        {
+          "term": "תָּרֵצְתְּ",
+          "meaning": "You have answered"
+        },
+        {
+          "term": "רֵישָׁא",
+          "meaning": "The first clause"
+        },
+        {
+          "term": "סֵיפָא",
+          "meaning": "The latter clause"
+        },
+        {
+          "term": "קַשְׁיָא",
+          "meaning": "It is difficult (a challenge)"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "תָּרֵצְתְּ לָךְ רֵישָׁא,",
+          "english": "You have answered for yourself the first clause,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אֶלָּא סֵיפָא קַשְׁיָא!",
+          "english": "but the latter clause is difficult!"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "תָּרֵצְתְּ לָךְ רֵישָׁא, אֶלָּא סֵיפָא קַשְׁיָא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        1
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Challenges the answer given in step 1.",
+      "kashyaTarget": "The claim that the ברייתא fully supports שמואל",
+      "kashyaAttackLogic": "The ברייתא's second clause forbids unraveling and cutting a vessel's fastenings on שבת, but שמואל permits unraveling."
+    },
+    {
+      "stepNumber": 3,
+      "hebrewStepName": "תירוץ",
+      "title": "The ברייתא follows רבי נחמיה",
+      "stepSummary": "The ברייתא follows רבי נחמיה, who holds that vessels may be handled only for their normal use. So the ban on cutting comes from a separate rule, not from the act of cutting itself.",
+      "simpleTranslation": "Whose view is this? It is רבי נחמיה's, for he said: all vessels may be handled only in the way they are normally used.",
+      "whatsHappening": "The גמרא answers the challenge by saying the second clause follows the single view of רבי נחמיה. It is not a general rule that argues with שמואל.",
+      "deeperAnalysis": "According to רבי נחמיה, the problem is not the cutting or unraveling. The problem is picking up a knife for a use it is not meant for. A knife is meant for food, not for cutting rope. So the ban in the ברייתא rests on רבי נחמיה's special rule about handling vessels, which שמואל does not have to accept.",
+      "keyTerms": [
+        {
+          "term": "הָא מַנִּי",
+          "meaning": "Whose view is this?"
+        },
+        {
+          "term": "רַבִּי נְחֶמְיָה",
+          "meaning": "A תנא with a strict view on handling vessels on שבת"
+        },
+        {
+          "term": "נִיטָּלִין",
+          "meaning": "Are handled or moved"
+        },
+        {
+          "term": "דֶּרֶךְ תַּשְׁמִישָׁן",
+          "meaning": "In the manner of their designated use"
+        }
+      ],
+      "whyThisMatters": "This changes the reason behind the ban. Cutting is not forbidden because of what it does to the rope. It is forbidden because of how the tool is being handled, which is a matter of מוקצה.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "הָא מַנִּי — רַבִּי נְחֶמְיָה הִיא,",
+          "english": "Whose view is this? It is Rabbi Nechemya's,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "דְּאָמַר: כׇּל הַכֵּלִים אֵין נִיטָּלִין",
+          "english": "who said: all vessels may not be handled"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "אֶלָּא דֶּרֶךְ תַּשְׁמִישָׁן.",
+          "english": "except in the manner of their designated use."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "הָא מַנִּי — רַבִּי נְחֶמְיָה הִיא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        2
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Answers the challenge from step 2.",
+      "terutzResolutionType": "Assigning the clause to a specific minority view",
+      "terutzHavaAmina": "The ברייתא forbids cutting and unraveling as actions in themselves.",
+      "terutzMaskana": "The ban comes from רבי נחמיה's rule about handling vessels only for their normal use, so שמואל can disagree."
+    },
+    {
+      "stepNumber": 4,
+      "hebrewStepName": "קשיא",
+      "title": "Why would רבי נחמיה's rule apply only to שבת?",
+      "stepSummary": "If the ברייתא follows רבי נחמיה, his handling rule should apply on יום טוב as well. So why does the ברייתא forbid this only on שבת?",
+      "simpleTranslation": "If it is רבי נחמיה, why mention only שבת? It should be forbidden on יום טוב too!",
+      "whatsHappening": "The גמרא attacks the last answer: רבי נחמיה's rule should apply on יום טוב as well, yet the ברייתא permits cutting on יום טוב.",
+      "deeperAnalysis": "The laws of handling vessels are generally the same on שבת and יום טוב. If the ban comes from רבי נחמיה's rule, the ברייתא should have forbidden it on both days. The fact that it permits cutting on יום טוב suggests the reason is something else.",
+      "keyTerms": [
+        {
+          "term": "אִי",
+          "meaning": "If"
+        },
+        {
+          "term": "מַאי אִירְיָא",
+          "meaning": "Why specifically this case?"
+        },
+        {
+          "term": "נָמֵי",
+          "meaning": "Also"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אִי רַבִּי נְחֶמְיָה,",
+          "english": "If it is Rabbi Nechemya,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "מַאי אִירְיָא שַׁבָּת?",
+          "english": "why speak specifically of Shabbat?"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "אֲפִילּוּ יוֹם טוֹב נָמֵי!",
+          "english": "Even on a Festival it should also be forbidden!"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אִי רַבִּי נְחֶמְיָה, מַאי אִירְיָא שַׁבָּת",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        3
+      ],
+      "scopeOfStep": "inference",
+      "relationToPreviousStep": "Challenges the answer given in step 3.",
+      "kashyaTarget": "Assigning the ברייתא to רבי נחמיה",
+      "kashyaAttackLogic": "רבי נחמיה's handling rule should apply equally on יום טוב, but the ברייתא permits cutting on יום טוב."
+    },
+    {
+      "stepNumber": 5,
+      "hebrewStepName": "דחיה",
+      "title": "Rejecting a possible distinction between שבת and יום טוב",
+      "stepSummary": "The גמרא suggests a possible defense: maybe רבי נחמיה treats a שבות of שבת differently from a שבות of יום טוב. It immediately questions whether he really makes that distinction.",
+      "simpleTranslation": "And if you say that רבי נחמיה distinguishes between a rabbinic prohibition of שבת and a rabbinic prohibition of יום טוב, does he really make such a distinction?",
+      "whatsHappening": "The גמרא offers a way to save the last answer, and then right away questions whether that way works.",
+      "deeperAnalysis": "The proposed defense is that רבי נחמיה is stricter about rabbinic rules on שבת than on יום טוב, which would explain why the ברייתא forbids cutting only on שבת. The גמרא doubts that רבי נחמיה ever makes such a distinction. If he does not, the challenge from step 4 still stands.",
+      "keyTerms": [
+        {
+          "term": "וְכִי תֵּימָא",
+          "meaning": "And if you will say"
+        },
+        {
+          "term": "שַׁנְיָא לֵיהּ",
+          "meaning": "He distinguishes (it is different to him)"
+        },
+        {
+          "term": "שְׁבוּת",
+          "meaning": "A rabbinic prohibition"
+        },
+        {
+          "term": "וּמִי",
+          "meaning": "And does he really...?"
+        }
+      ],
+      "confusionAlert": "The phrase \"וכי תימא\" is not the גמרא's real answer. It is only a possible defense that the גמרא raises so it can reject it with \"ומי שניא ליה\".",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְכִי תֵּימָא שַׁנְיָא לֵיהּ לְרַבִּי נְחֶמְיָה",
+          "english": "And if you say that Rabbi Nechemya distinguishes"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "בֵּין שְׁבוּת שַׁבָּת לִשְׁבוּת יוֹם טוֹב,",
+          "english": "between a rabbinic decree of Shabbat and a rabbinic decree of a Festival,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וּמִי שַׁנְיָא לֵיהּ?",
+          "english": "does he really distinguish?"
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "קשיא",
+      "triggerLanguage": "וְכִי תֵּימָא שַׁנְיָא לֵיהּ לְרַבִּי נְחֶמְיָה",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        4
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Raises and rejects a possible defense against the challenge in step 4.",
+      "dechiyaRejectionScope": "The suggested distinction between a שבות of שבת and a שבות of יום טוב according to רבי נחמיה",
+      "dechiyaFlawIdentified": "There is no evidence that רבי נחמיה makes such a distinction, so the challenge stays in place."
+    },
+    {
+      "stepNumber": 6,
+      "hebrewStepName": "קשיא",
+      "title": "Three teachings that disagree about kindling with vessels",
+      "stepSummary": "To test whether רבי נחמיה really makes the שבת/יום טוב distinction, the גמרא quotes three ברייתות about kindling a fire on יום טוב. One allows vessels but not broken pieces of vessels, one allows both, and one forbids both.",
+      "simpleTranslation": "But isn't it taught in one ברייתא: You may kindle a fire with vessels, but not with broken pieces of vessels. Another ברייתא teaches: You may kindle with both vessels and broken pieces. A third ברייתא teaches: You may kindle with neither vessels nor broken pieces.",
+      "whatsHappening": "The גמרא brings three ברייתות about kindling with vessels on יום טוב that seem to contradict each other. This step sets up the next move, where the standard way of settling the contradiction will show what רבי נחמיה holds on יום טוב.",
+      "deeperAnalysis": "All three ברייתות are about יום טוב, and each gives a different ruling. On their own they only show a contradiction. The real point comes in the next step, when one of the opinions is linked to רבי נחמיה.",
+      "keyTerms": [
+        {
+          "term": "מַסִּיקִין",
+          "meaning": "We kindle (light a fire with something as fuel)"
+        },
+        {
+          "term": "שִׁבְרֵי כֵלִים",
+          "meaning": "Broken pieces of vessels"
+        },
+        {
+          "term": "וְתַנְיָא אִידַּךְ",
+          "meaning": "And another ברייתא teaches"
+        },
+        {
+          "term": "וְהָתָנֵי",
+          "meaning": "But isn't it taught? (opens a challenge from a source)"
+        }
+      ],
+      "confusionAlert": "Using a vessel as firewood is not its normal job. That is why רבי נחמיה, who allows vessels to be handled only for their normal use, would forbid it.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְהָתָנֵי חֲדָא:",
+          "english": "But isn't it taught in one baraita:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "מַסִּיקִין בְּכֵלִים",
+          "english": "One may kindle a fire with vessels"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וְאֵין מַסִּיקִין בְּשִׁבְרֵי כֵלִים,",
+          "english": "but one may not kindle with broken pieces of vessels,",
+          "notes": "The broken pieces are מוקצה."
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וְתַנְיָא אִידַּךְ:",
+          "english": "And another ברייתא teaches:"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "מַסִּיקִין בֵּין בְּכֵלִים בֵּין בְּשִׁבְרֵי כֵּלִים,",
+          "english": "One may kindle with both vessels and broken pieces of vessels,"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "וְתַנְיָא אִידַּךְ:",
+          "english": "And yet another ברייתא teaches:"
+        },
+        {
+          "phraseNumber": 7,
+          "aramaic": "אֵין מַסִּיקִין לֹא בְּכֵלִים וְלֹא בְּשִׁבְרֵי כֵלִים.",
+          "english": "One may kindle with neither vessels nor broken pieces of vessels."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "ראיה",
+      "triggerLanguage": "וְהָתָנֵי חֲדָא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        5
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Backs up the doubt raised in step 5 by bringing sources about יום טוב.",
+      "kashyaTarget": "The suggestion that רבי נחמיה forbids handling vessels only on שבת and not on יום טוב.",
+      "kashyaAttackLogic": "These ברייתות about יום טוב will turn out to include a view of רבי נחמיה that forbids vessels on יום טוב too."
+    },
+    {
+      "stepNumber": 7,
+      "hebrewStepName": "ראיה",
+      "title": "Assigning each teaching to a different תנא",
+      "stepSummary": "The well-known solution gives the first ברייתא to רבי יהודה, the second to רבי שמעון, and the third to רבי נחמיה. This shows that רבי נחמיה forbids kindling with vessels even on יום טוב.",
+      "simpleTranslation": "And we settle it this way: It is not difficult. This ברייתא follows רבי יהודה, this one follows רבי שמעון, and this one follows רבי נחמיה!",
+      "whatsHappening": "The גמרא quotes the standard answer to the three-way contradiction: each ברייתא follows a different תנא. Because the strictest ruling belongs to רבי נחמיה, this completes the challenge.",
+      "deeperAnalysis": "רבי יהודה holds by מוקצה, so whole vessels are fine but broken pieces are not. רבי שמעון does not hold by מוקצה, so both are allowed. רבי נחמיה forbids even whole vessels, since burning is not their normal use. That is a proof that he applies his rule on יום טוב, which goes against the distinction suggested in step 5.",
+      "keyTerms": [
+        {
+          "term": "וּמְשַׁנֵּי",
+          "meaning": "And we resolve it (introduces an accepted answer)"
+        },
+        {
+          "term": "לָא קַשְׁיָא",
+          "meaning": "It is not difficult"
+        },
+        {
+          "term": "הָא",
+          "meaning": "This one (follows...)"
+        }
+      ],
+      "whyThisMatters": "This answer is already accepted. So it gives real evidence that רבי נחמיה's handling rule applies on יום טוב.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וּמְשַׁנֵּי, לָא קַשְׁיָא:",
+          "english": "And we resolve it: It is not difficult:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "הָא רַבִּי יְהוּדָה,",
+          "english": "this one follows Rabbi Yehuda,",
+          "notes": "He holds by מוקצה, so broken pieces are forbidden."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "הָא רַבִּי שִׁמְעוֹן,",
+          "english": "this one follows Rabbi Shimon,",
+          "notes": "He does not hold by מוקצה, so both are allowed."
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "הָא רַבִּי נְחֶמְיָה!",
+          "english": "and this one follows Rabbi Nechemya!",
+          "notes": "Vessels may be used only for their normal job, so both are forbidden."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "קשיא",
+      "triggerLanguage": "וּמְשַׁנֵּי, לָא קַשְׁיָא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        5,
+        6
+      ],
+      "scopeOfStep": "proof_mechanism",
+      "relationToPreviousStep": "Finishes the challenge begun in step 6 by giving the strictest ברייתא to רבי נחמיה.",
+      "raayaObject": "רבי נחמיה's handling rule applies on יום טוב, not only on שבת.",
+      "raayaSupportSource": "The accepted solution to the three ברייתות, which gives the ban on kindling even with whole vessels to רבי נחמיה."
+    },
+    {
+      "stepNumber": 8,
+      "hebrewStepName": "תירוץ",
+      "title": "Two תנאים disagree about what רבי נחמיה held",
+      "stepSummary": "The גמרא answers that two later תנאים reported רבי נחמיה's view differently. One says his rule applies on יום טוב too. The other, followed by our ברייתא, says it applies only on שבת.",
+      "simpleTranslation": "There are two תנאים, and they disagree about the opinion of רבי נחמיה.",
+      "whatsHappening": "The גמרא defends the ברייתא from step 2. It explains that there were two versions of what רבי נחמיה held.",
+      "deeperAnalysis": "Both versions agree that רבי נחמיה allows vessels only for their normal use. They disagree only about whether this rule covers יום טוב. So the ברייתא about kindling follows one version, and our ברייתא, which forbids only on שבת, follows the other.",
+      "keyTerms": [
+        {
+          "term": "תְּרֵי תַנָּאֵי",
+          "meaning": "Two תנאים"
+        },
+        {
+          "term": "אַלִּיבָּא דְּ־",
+          "meaning": "According to the view of"
+        }
+      ],
+      "whatToRemember": "The ברייתא that supports and challenges שמואל follows רבי נחמיה, as understood by the תנא who limits his rule to שבת. So the ban on cutting a vessel's fastenings comes from the handling rule, not from the cutting itself.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "תְּרֵי תַנָּאֵי",
+          "english": "There are two tannaim"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וְאַלִּיבָּא דְּרַבִּי נְחֶמְיָה.",
+          "english": "and they disagree about the opinion of Rabbi Nechemya."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "תְּרֵי תַנָּאֵי וְאַלִּיבָּא דְּרַבִּי נְחֶמְיָה",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        3,
+        4,
+        5,
+        7
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Answers the proof of step 7 by saying there were two traditions about רבי נחמיה's view.",
+      "terutzResolutionType": "Disagreement among later תנאים about what an earlier תנא held",
+      "terutzHavaAmina": "רבי נחמיה clearly forbids handling vessels on יום טוב, so our ברייתא should not limit its ban to שבת.",
+      "terutzMaskana": "Two תנאים disagree about רבי נחמיה. Our ברייתא follows the one who says his rule applies only on שבת."
+    },
+    {
+      "stepNumber": 9,
+      "hebrewStepName": "מימרא",
+      "title": "משנה: making a lamp, making charcoal, and cutting a wick",
+      "stepSummary": "A new משנה rules that on יום טוב one may not hollow out clay to make a lamp, may not make charcoal, and may not cut a wick. רבי יהודה allows cutting the wick with fire.",
+      "simpleTranslation": "משנה: One may not hollow out clay to make a lamp, because he is making a vessel. One may not make charcoal on יום טוב. And one may not cut the wick. רבי יהודה says: He may cut it with fire.",
+      "whatsHappening": "A new משנה begins. It lists three things that are forbidden on יום טוב, and רבי יהודה gives a way to shorten a wick.",
+      "deeperAnalysis": "Hollowing out a lamp creates a new vessel, so it is forbidden. Making charcoal is not work done for food on the holiday, so it is not allowed. Cutting a wick with a knife counts as fixing it for use, but רבי יהודה permits burning it to the needed length.",
+      "keyTerms": [
+        {
+          "term": "פּוֹחֲתִין",
+          "meaning": "Hollow out (shape clay into a lamp)"
+        },
+        {
+          "term": "עוֹשֶׂה כְּלִי",
+          "meaning": "Makes a vessel"
+        },
+        {
+          "term": "פֶּחָמִין",
+          "meaning": "Charcoal"
+        },
+        {
+          "term": "פְּתִילָה",
+          "meaning": "Wick"
+        },
+        {
+          "term": "בָּאוּר",
+          "meaning": "With fire"
+        }
+      ],
+      "confusionAlert": "רבי יהודה does not allow cutting the wick with a knife. He only allows separating it by burning it in a flame.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מַתְנִי׳",
+          "english": "MISHNA:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אֵין פּוֹחֲתִין אֶת הַנֵּר",
+          "english": "One may not hollow out clay to form a lamp"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "מִפְּנֵי שֶׁהוּא עוֹשֶׂה כֶּלִי,",
+          "english": "because he thereby makes a vessel,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וְאֵין עוֹשִׂין פֶּחָמִין בְּיוֹם טוֹב,",
+          "english": "and one may not make charcoal on a Festival,"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "וְאֵין חוֹתְכִין אֶת הַפְּתִילָה.",
+          "english": "and one may not cut the wick."
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "רַבִּי יְהוּדָה אוֹמֵר: חוֹתְכָהּ בָּאוּר.",
+          "english": "Rabbi Yehuda says: He may cut it with fire."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "מַתְנִי׳ אֵין פּוֹחֲתִין אֶת הַנֵּר",
+      "macroPhase": "mishnah",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Starts a new topic with a new משנה.",
+      "mimraCoreRuling": "On יום טוב one may not shape a lamp, make charcoal, or cut a wick. רבי יהודה permits cutting a wick with fire."
+    },
+    {
+      "stepNumber": 10,
+      "hebrewStepName": "שאלה",
+      "title": "Who holds that a hollowed-out lamp counts as a vessel?",
+      "stepSummary": "The גמרא asks which תנא holds that hollowing out clay into a lamp already makes it a כלי.",
+      "simpleTranslation": "Who is the תנא who holds that hollowing out a lamp makes a כלי?",
+      "whatsHappening": "The גמרא opens its discussion of the משנה with a question. This question sets up the search for the תנא behind the משנה's ruling.",
+      "deeperAnalysis": "The משנה forbade hollowing out clay into a lamp on יום טוב. The only reason to forbid it is that the act creates a new כלי, even though the clay has not been fired in a kiln yet. Not everyone agrees that unfired clay counts as a כלי, so the גמרא asks whose view this is.",
+      "keyTerms": [
+        {
+          "term": "מַאן תְּנָא",
+          "meaning": "Who is the תנא (which sage taught this)?"
+        },
+        {
+          "term": "פְּחִיתַת נֵר",
+          "meaning": "Hollowing out clay to form a lamp"
+        },
+        {
+          "term": "מָנָא",
+          "meaning": "A vessel (Aramaic for כלי)"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "גְּמָ׳ מַאן תְּנָא",
+          "english": "GEMARA: Who is the tanna",
+          "notes": "Opening of the גמרא on the new mishna"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "דִּפְחִיתַת נֵר מָנָא הוּא?",
+          "english": "who holds that hollowing out a lamp makes it a vessel?",
+          "notes": "Even without firing it in a kiln"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "מַאן תְּנָא דִּפְחִיתַת נֵר מָנָא הוּא",
+      "macroPhase": "opening_question",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [
+        9
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Opens the גמרא's analysis of the משנה quoted in step 9.",
+      "sheelahInformationSought": "The identity of the תנא who considers an unfired, hollowed-out lamp to be a כלי."
+    },
+    {
+      "stepNumber": 11,
+      "hebrewStepName": "תשובה",
+      "title": "רב יוסף says it is רבי מאיר",
+      "stepSummary": "רב יוסף attributes the משנה to רבי מאיר. רבי מאיר holds that a clay כלי can become טמא once it is shaped, even before it is fired.",
+      "simpleTranslation": "רב יוסף said: It is רבי מאיר. A ברייתא teaches: From when can a clay כלי become טמא? From when its shaping is finished, says רבי מאיר. רבי יהושע says: only from when it is fired in the kiln.",
+      "whatsHappening": "רב יוסף answers that the משנה follows רבי מאיר. His proof is a ברייתא about when a clay vessel can become טמא.",
+      "deeperAnalysis": "Something can only become טמא as a כלי if it already counts as a real כלי. רבי מאיר says a clay pot can become טמא once its shaping is done, so for him unfired clay is already a כלי. That fits our משנה, which treats hollowing out a lamp as making a כלי. רבי יהושע disagrees and requires firing in the kiln.",
+      "keyTerms": [
+        {
+          "term": "כְּלִי חֶרֶס",
+          "meaning": "An earthenware (clay) vessel"
+        },
+        {
+          "term": "מְקַבֵּל טֻמְאָה",
+          "meaning": "Able to become ritually impure"
+        },
+        {
+          "term": "נִגְמְרָה מְלַאכְתּוֹ",
+          "meaning": "Its work (shaping) is completed"
+        },
+        {
+          "term": "כִּבְשָׁן",
+          "meaning": "Kiln or furnace for firing clay"
+        },
+        {
+          "term": "צֵרוּף",
+          "meaning": "Firing or hardening clay in a kiln"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר רַב יוֹסֵף: רַבִּי מֵאִיר הִיא.",
+          "english": "Rav Yosef said: It is Rabbi Meir.",
+          "notes": ""
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "דְּתַנְיָא: כְּלִי חֶרֶס,",
+          "english": "As it is taught in a baraita: An earthenware vessel,",
+          "notes": ""
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "מֵאֵימָתַי מְקַבֵּל טוּמְאָה —",
+          "english": "from when can it become ritually impure?",
+          "notes": ""
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "מִשֶּׁנִּגְמְרָה מְלַאכְתּוֹ, דִּבְרֵי רַבִּי מֵאִיר.",
+          "english": "From when its work is completed; these are the words of Rabbi Meir.",
+          "notes": "Once it is shaped, even without firing"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "רַבִּי יְהוֹשֻׁעַ אוֹמֵר: מִשֶּׁיִּצְרְפוֹ בַּכִּבְשָׁן.",
+          "english": "Rabbi Yehoshua says: From when he fires it in the kiln.",
+          "notes": ""
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "ראיה",
+      "triggerLanguage": "אָמַר רַב יוֹסֵף: רַבִּי מֵאִיר הִיא",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        10
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Answers the question of step 10.",
+      "teshuvahAnswerProvided": "The משנה follows רבי מאיר, who holds that a shaped but unfired clay item is already a כלי.",
+      "raayaSupportSource": "The ברייתא about when a כלי חרס becomes susceptible to טומאה."
+    },
+    {
+      "stepNumber": 12,
+      "hebrewStepName": "דחיה",
+      "title": "אביי: a pot is useful, but what use is an unfired lamp?",
+      "stepSummary": "אביי argues that רבי מאיר may only have meant ordinary pots, which are useful for holding things. An unfired lamp might not be useful at all.",
+      "simpleTranslation": "אביי said to him: How do you know? Perhaps רבי מאיר only said this there, because a pot is fit to hold things. But here, what is the lamp fit for?",
+      "whatsHappening": "אביי pushes back on רב יוסף's proof. He suggests that רבי מאיר's ruling may not apply to a lamp.",
+      "deeperAnalysis": "An unfired pot can still hold dry things, so it already has a real use. That may be why רבי מאיר calls it a כלי. An unfired lamp is not yet usable as a lamp, so maybe even רבי מאיר would not call it a כלי.",
+      "keyTerms": [
+        {
+          "term": "מִמַּאי",
+          "meaning": "From where do you know?"
+        },
+        {
+          "term": "דִּלְמָא",
+          "meaning": "Perhaps"
+        },
+        {
+          "term": "עַד כָּאן לָא קָאָמַר",
+          "meaning": "He only said his ruling up to this point (limiting a ruling to its original case)"
+        },
+        {
+          "term": "חֲזֵי",
+          "meaning": "Fit or usable"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֲמַר לֵיהּ אַבָּיֵי: מִמַּאי?",
+          "english": "Abaye said to him: From where do you know this?",
+          "notes": ""
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "דִּלְמָא עַד כָּאן לָא קָאָמַר",
+          "english": "Perhaps he only said it",
+          "notes": ""
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "רַבִּי מֵאִיר הָתָם",
+          "english": "Rabbi Meir, there,",
+          "notes": "Regarding ordinary vessels"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "אֶלָּא דַּחֲזֵי לְקַבּוֹלֵי בֵּיהּ מִידֵּי,",
+          "english": "because it is fit to hold something in it,",
+          "notes": ""
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "אֲבָל הָכָא לְמַאי חֲזִי?",
+          "english": "but here, what is it fit for?",
+          "notes": "An unfired lamp cannot yet hold a flame"
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "קשיא",
+      "triggerLanguage": "אֲמַר לֵיהּ אַבָּיֵי: מִמַּאי? דִּלְמָא עַד כָּאן לָא קָאָמַר רַבִּי מֵאִיר הָתָם",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        11
+      ],
+      "scopeOfStep": "inference",
+      "relationToPreviousStep": "Challenges whether the source in step 11 really proves the point.",
+      "dechiyaRejectionScope": "Rejects the proof from רבי מאיר, not רבי מאיר's ruling itself.",
+      "dechiyaFlawIdentified": "The case of a pot is different, because a pot is useful even before firing. A lamp may not be."
+    },
+    {
+      "stepNumber": 13,
+      "hebrewStepName": "תירוץ",
+      "title": "The unfired lamp can hold coins",
+      "stepSummary": "The response is that an unfired lamp does have a use: it can hold small coins. So it counts as a כלי, just like a pot.",
+      "simpleTranslation": "It is fit to hold coins in it.",
+      "whatsHappening": "The גמרא answers אביי's question \"what is it fit for?\" The unfired lamp can be used as a small container for coins.",
+      "deeperAnalysis": "Since the lamp already has some practical use, it matches the pot that רבי מאיר discussed. This keeps רב יוסף's comparison working.",
+      "keyTerms": [
+        {
+          "term": "פְּשִׁיטֵי",
+          "meaning": "Small coins"
+        }
+      ],
+      "confusionAlert": "Some read this line as the end of אביי's own words, meaning a lamp is only good for something minor like coins. The translation used here follows the reading that it is a response defending רב יוסף.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "לְקַבּוֹלֵי בֵּיהּ פְּשִׁיטֵי.",
+          "english": "To hold small coins in it.",
+          "notes": "Answers the question \"what is it fit for?\""
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "דחיה",
+      "triggerLanguage": "לְקַבּוֹלֵי בֵּיהּ פְּשִׁיטֵי",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        12
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Responds to אביי's challenge in step 12.",
+      "terutzResolutionType": "Factual answer: the item does have a use.",
+      "terutzHavaAmina": "An unfired lamp has no use, so even רבי מאיר would not call it a כלי.",
+      "terutzMaskana": "An unfired lamp can hold coins, so it is useful and counts as a כלי for רבי מאיר."
+    },
+    {
+      "stepNumber": 14,
+      "hebrewStepName": "תשובה",
+      "title": "Another version: רב יוסף says it is רבי אליעזר ברבי צדוק",
+      "stepSummary": "In a second version, רב יוסף attributes the משנה to רבי אליעזר ברבי צדוק. The גמרא first quotes the opening of a משנה about unfinished pots.",
+      "simpleTranslation": "Some say that רב יוסף said: It is רבי אליעזר ברבי צדוק. As we learned in a משנה: Unfinished אלפסין חרניות are pure regarding the טומאה of a corpse in a tent, but impure through being carried by a זב.",
+      "whatsHappening": "The גמרא brings a different version of רב יוסף's answer. It starts by quoting the first opinion in the source and sets up רבי אליעזר ברבי צדוק's view in the next step.",
+      "deeperAnalysis": "These pots are made sealed with their lids attached, so they have no open space to hold anything yet. Without that space, they cannot get אהל המת טומאה. They can still become טמא through being carried by a זב, which applies to any clay item that has some use.",
+      "keyTerms": [
+        {
+          "term": "אִיכָּא דְּאָמְרִי",
+          "meaning": "Some say (an alternate version)"
+        },
+        {
+          "term": "אִלְפָּסִין חִרָנִיּוֹת",
+          "meaning": "Haran-style pots, made sealed together with their lids"
+        },
+        {
+          "term": "אֹהֶל הַמֵּת",
+          "meaning": "Impurity spread by a corpse under a shared roof"
+        },
+        {
+          "term": "מַשָּׂא הַזָּב",
+          "meaning": "Impurity caused when a זב carries or moves an item"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אִיכָּא דְּאָמְרִי, אָמַר רַב יוֹסֵף:",
+          "english": "Some say: Rav Yosef said:",
+          "notes": "Alternate version of רב יוסף's answer"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "רַבִּי אֱלִיעֶזֶר בְּרַבִּי צָדוֹק הִיא,",
+          "english": "It is Rabbi Eliezer son of Rabbi Tzadok,",
+          "notes": ""
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "דִּתְנַן: אִלְפָּסִין חִרָנִיּוֹת —",
+          "english": "as we learned in a mishna: Haran-style pots",
+          "notes": "Unfinished pots made with their lids attached"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "טְהוֹרוֹת בְּאֹהֶל הַמֵּת,",
+          "english": "are pure with regard to the impurity of a corpse in a tent,",
+          "notes": "They have no open space to hold anything"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "וּטְמֵאוֹת בְּמַשָּׂא הַזָּב.",
+          "english": "and impure through being carried by a zav.",
+          "notes": ""
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "ראיה",
+      "triggerLanguage": "אִיכָּא דְּאָמְרִי, אָמַר רַב יוֹסֵף: רַבִּי אֱלִיעֶזֶר בְּרַבִּי צָדוֹק הִיא",
+      "macroPhase": "alternate_branch",
+      "branchRole": "alternative_approach",
+      "dependsOnStepNumbers": [
+        10
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Gives an alternate version of the answer to step 10, in place of steps 11-13.",
+      "teshuvahAnswerProvided": "The משנה follows רבי אליעזר ברבי צדוק."
+    },
+    {
+      "stepNumber": 15,
+      "hebrewStepName": "ראיה",
+      "title": "Unfinished pots are pure because their work is not complete",
+      "stepSummary": "רבי אליעזר ברבי צדוק says the pots are pure even from a זב, because their work is unfinished. This implies that once they are finished, they are vessels even without firing.",
+      "simpleTranslation": "רבי אליעזר ברבי צדוק says: They are pure even regarding being carried by a זב, because their work is not completed.",
+      "whatsHappening": "This is the key line that supports רב יוסף's second version. רבי אליעזר ברבי צדוק's reason shows that finishing the shaping is what makes a clay item a כלי.",
+      "deeperAnalysis": "רבי אליעזר ברבי צדוק gives only one reason the pots are pure: their shaping is not finished. He does not say they are pure because they were not fired. So once the shaping is finished, they would count as vessels even without firing, just like the hollowed-out lamp in our משנה.",
+      "keyTerms": [
+        {
+          "term": "אַף טְהוֹרוֹת",
+          "meaning": "They are pure even (in this case too)"
+        },
+        {
+          "term": "לְפִי שֶׁלֹּא נִגְמְרָה מְלַאכְתָּן",
+          "meaning": "Because their work is not completed"
+        }
+      ],
+      "whatToRemember": "Both versions of רב יוסף agree on one idea. The משנה follows a תנא for whom a clay item becomes a כלי once its shaping is finished, even before firing. That is why hollowing out a lamp on יום טוב is forbidden.",
+      "whyThisMatters": "It explains the basis of the משנה's ban. Shaping clay into a usable form counts as making a כלי, which is forbidden on יום טוב.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "רַבִּי אֱלִיעֶזֶר בְּרַבִּי צָדוֹק אוֹמֵר:",
+          "english": "Rabbi Eliezer son of Rabbi Tzadok says:",
+          "notes": ""
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אַף טְהוֹרוֹת בְּמַשָּׂא הַזָּב,",
+          "english": "They are pure even through being carried by a zav,",
+          "notes": ""
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "לְפִי שֶׁלֹּא נִגְמְרָה מְלַאכְתָּן.",
+          "english": "because their work is not completed.",
+          "notes": "Implies that finished pots are vessels even without firing"
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "מסקנא",
+      "triggerLanguage": "לְפִי שֶׁלֹּא נִגְמְרָה מְלַאכְתָּן",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        14
+      ],
+      "scopeOfStep": "inference",
+      "relationToPreviousStep": "Completes the source quoted in step 14 and supplies the proof.",
+      "raayaObject": "That the משנה about hollowing out a lamp follows רבי אליעזר ברבי צדוק.",
+      "raayaSupportSource": "His reason, \"because their work is not completed,\" which implies that a finished but unfired clay item is a כלי.",
+      "maskanaFinalTakeaway": "In this version, the משנה follows רבי אליעזר ברבי צדוק. For him, completing the shaping of clay creates a כלי."
+    },
+    {
+      "stepNumber": 16,
+      "hebrewStepName": "דחיה",
+      "title": "אביי questions the proof from רבי אליעזר ברבי צדוק",
+      "stepSummary": "אביי argues that רבי אליעזר ברבי צדוק may only treat finished-but-unfired pots as כלים because pots can hold things. An unfired lamp seems useless.",
+      "simpleTranslation": "אביי said to him: Perhaps רבי אליעזר ברבי צדוק only said this there, about pots, because pots are useful for holding something. But here, with a lamp, what is it useful for?",
+      "whatsHappening": "אביי pushes back on רב יוסף's second suggestion, which was that the משנה follows רבי אליעזר ברבי צדוק. This is the same kind of objection he raised against the first suggestion about רבי מאיר.",
+      "deeperAnalysis": "Step 15 showed that for רבי אליעזר ברבי צדוק, a finished pot counts as a כלי even before firing. אביי says that may be true only because an unfired pot can already hold things. An unfired lamp cannot be used for light yet, so maybe it is not a כלי at all.",
+      "keyTerms": [
+        {
+          "term": "דִּלְמָא",
+          "meaning": "Perhaps; a word that opens a possible rejection"
+        },
+        {
+          "term": "עַד כָּאן לָא קָאָמַר",
+          "meaning": "He only said this far; that is, his ruling may be limited to that case"
+        },
+        {
+          "term": "חָזֵי",
+          "meaning": "Fit or useful for"
+        },
+        {
+          "term": "לְקַבּוֹלֵי",
+          "meaning": "To hold or contain"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֲמַר לֵיהּ אַבָּיֵי:",
+          "english": "Abaye said to him:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "דִּלְמָא עַד כָּאן לָא קָאָמַר",
+          "english": "Perhaps he only said this"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "רַבִּי אֱלִיעֶזֶר בְּרַבִּי צָדוֹק הָתָם,",
+          "english": "Rabbi Eliezer son of Rabbi Tzadok, there (about pots),"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "אֶלָּא דַּחֲזֵי לְקַבּוֹלֵי בֵּיהּ מִידֵּי,",
+          "english": "because it is fit to hold something in it,"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "אֲבָל הָכָא לְמַאי חָזֵי?",
+          "english": "but here (an unfired lamp), what is it fit for?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "קשיא",
+      "triggerLanguage": "אֲמַר לֵיהּ אַבָּיֵי: דִּלְמָא עַד כָּאן לָא קָאָמַר",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        14,
+        15
+      ],
+      "scopeOfStep": "proof_mechanism",
+      "relationToPreviousStep": "Rejects the proof brought in Step 15",
+      "dechiyaRejectionScope": "Rejects only the proof from רבי אליעזר ברבי צדוק as applied to a lamp",
+      "dechiyaFlawIdentified": "A pot is useful even before firing, but an unfired lamp may not be"
+    },
+    {
+      "stepNumber": 17,
+      "hebrewStepName": "תירוץ",
+      "title": "An unfired lamp can hold small coins",
+      "stepSummary": "The גמרא answers that an unfired lamp is useful for holding small coins, so the proof stands.",
+      "simpleTranslation": "It is useful for holding small coins in it.",
+      "whatsHappening": "The גמרא answers אביי's objection with the same answer it gave in Step 13: an unfired lamp can still hold small coins.",
+      "deeperAnalysis": "Since the unfired lamp has a real use, it is like the pots of רבי אליעזר ברבי צדוק. So his opinion can stand behind the משנה, and shaping a lamp on יום טוב counts as making a כלי.",
+      "keyTerms": [
+        {
+          "term": "פְּשִׁיטֵי",
+          "meaning": "Small coins (פרוטות)"
+        }
+      ],
+      "whatToRemember": "Both suggested sources for the משנה (רבי מאיר and רבי אליעזר ברבי צדוק) work, because an unfired lamp can hold coins. That use is enough to make it a כלי.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "לְקַבּוֹלֵי בֵּיהּ פְּשִׁיטֵי.",
+          "english": "To hold small coins in it."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "לְקַבּוֹלֵי בֵּיהּ פְּשִׁיטֵי",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        16
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Answers אביי's objection in Step 16",
+      "terutzResolutionType": "Shows that the lamp does have a use",
+      "terutzHavaAmina": "An unfired lamp is useless, so it is not a כלי",
+      "terutzMaskana": "It holds coins, so it is a כלי like the pots"
+    },
+    {
+      "stepNumber": 18,
+      "hebrewStepName": "מימרא",
+      "title": "A ברייתא about shaping lamps and making half-finished pots",
+      "stepSummary": "A ברייתא forbids shaping a lamp and making חרניות pots on יום טוב. רבן שמעון בן גמליאל permits making חרניות pots.",
+      "simpleTranslation": "The רבנן taught: One may not hollow out (shape) a lamp, and one may not make חרניות pots on יום טוב. רבן שמעון בן גמליאל permits making חרניות pots.",
+      "whatsHappening": "The גמרא brings a ברייתא that matches the משנה's ban on shaping a lamp. It adds a disagreement about a certain kind of rough pot called חרניות.",
+      "deeperAnalysis": "The תנא קמא says that shaping these clay items creates a כלי, which is forbidden on יום טוב. רבן שמעון בן גמליאל allows making חרניות pots, apparently because such rough pots do not count as real finished כלים. The next steps will explain what חרניות are.",
+      "keyTerms": [
+        {
+          "term": "תָּנוּ רַבָּנַן",
+          "meaning": "The רבנן taught; introduces a ברייתא"
+        },
+        {
+          "term": "פּוֹחֲתִין אֶת הַנֵּר",
+          "meaning": "Hollowing out (shaping) a clay lamp"
+        },
+        {
+          "term": "אִלְפָּסִין",
+          "meaning": "Pots or pans"
+        },
+        {
+          "term": "חִרָנִיּוֹת",
+          "meaning": "A type of rough, half-finished clay pot"
+        },
+        {
+          "term": "מַתִּיר",
+          "meaning": "Permits"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "תָּנוּ רַבָּנַן:",
+          "english": "The Rabbis taught:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אֵין פּוֹחֲתִין אֶת הַנֵּר,",
+          "english": "One may not hollow out a lamp,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וְאֵין עוֹשִׂין אִלְפָּסִין חִרָנִיּוֹת בְּיוֹם טוֹב.",
+          "english": "and one may not make charaniyos pots on a Festival."
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "רַבָּן שִׁמְעוֹן בֶּן גַּמְלִיאֵל",
+          "english": "Rabban Shimon ben Gamliel"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "מַתִּיר בְּאִלְפָּסִין חִרָנִיּוֹת.",
+          "english": "permits charaniyos pots."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "תָּנוּ רַבָּנַן: אֵין פּוֹחֲתִין אֶת הַנֵּר",
+      "macroPhase": "source_derivation",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Brings a related ברייתא after the discussion of who authored the משנה",
+      "mimraCoreRuling": "The תנא קמא forbids shaping a lamp and making חרניות pots on יום טוב, and רבן שמעון בן גמליאל permits the pots."
+    },
+    {
+      "stepNumber": 19,
+      "hebrewStepName": "תשובה",
+      "title": "רב יהודה explains the word חרניות",
+      "stepSummary": "The גמרא asks what חרניות means, and רב יהודה says it means ערניות.",
+      "simpleTranslation": "What are חרניות? רב יהודה said: ערניות.",
+      "whatsHappening": "The גמרא stops to define the unusual word חרניות, and רב יהודה gives another word for it.",
+      "deeperAnalysis": "רב יהודה explains חרניות as ערניות, which seems to be the same word with a different letter. That answer still needs explaining, which sets up the next step.",
+      "keyTerms": [
+        {
+          "term": "מַאי",
+          "meaning": "What is; asks for a definition"
+        },
+        {
+          "term": "עִרָנִיּוֹת",
+          "meaning": "Another name for the חרניות pots"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מַאי חִרָנִיּוֹת?",
+          "english": "What are charaniyos?"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אָמַר רַב יְהוּדָה: עִרָנִיּוֹת.",
+          "english": "Rav Yehuda said: Iraniyos."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "שאלה",
+      "triggerLanguage": "מַאי חִרָנִיּוֹת? אָמַר רַב יְהוּדָה",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        18
+      ],
+      "scopeOfStep": "wording",
+      "relationToPreviousStep": "Defines a term from the ברייתא in Step 18",
+      "sheelahInformationSought": "The meaning of חרניות",
+      "teshuvahAnswerProvided": "They are ערניות"
+    },
+    {
+      "stepNumber": 20,
+      "hebrewStepName": "תשובה",
+      "title": "אביי explains: villagers' bowls",
+      "stepSummary": "The גמרא asks what ערניות means, and אביי says they are the bowls used by country folk.",
+      "simpleTranslation": "What are ערניות? אביי said: bowls of the field-people (villagers).",
+      "whatsHappening": "The גמרא asks for a further explanation of רב יהודה's word, and אביי explains that these are simple bowls used by villagers.",
+      "deeperAnalysis": "Country people are not fussy, so they use even rough, half-made, unfired clay bowls. The גמרא here only identifies what these pots are. It does not spell out the reason for רבן שמעון בן גמליאל's permission.",
+      "keyTerms": [
+        {
+          "term": "צָעֵי",
+          "meaning": "Bowls"
+        },
+        {
+          "term": "חַקְלָיָיתָא",
+          "meaning": "Of the field; belonging to villagers or country folk"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מַאי עִרָנִיּוֹת?",
+          "english": "What are iraniyos?"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אָמַר אַבָּיֵי: צָעֵי חַקְלָיָיתָא.",
+          "english": "Abaye said: villagers' (field) bowls."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "שאלה",
+      "triggerLanguage": "מַאי עִרָנִיּוֹת? אָמַר אַבָּיֵי",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        19
+      ],
+      "scopeOfStep": "wording",
+      "relationToPreviousStep": "Explains the word given as an answer in Step 19",
+      "sheelahInformationSought": "The meaning of ערניות",
+      "teshuvahAnswerProvided": "Simple bowls used by villagers, who use even half-finished vessels"
+    },
+    {
+      "stepNumber": 21,
+      "hebrewStepName": "קשיא",
+      "title": "Why does the משנה need to forbid making charcoal?",
+      "stepSummary": "The גמרא quotes the משנה's ban on making charcoal and asks why it is needed, since charcoal has no food-related use on יום טוב.",
+      "simpleTranslation": "The משנה says: 'And one may not make charcoal.' That is obvious! What is charcoal useful for on יום טוב?",
+      "whatsHappening": "The גמרא moves to the next line of the משנה, the ban on making charcoal. It challenges this line as too obvious to need saying.",
+      "deeperAnalysis": "On יום טוב, you may only do מלאכה for אוכל נפש, meaning food needs. Making charcoal does not seem to serve any such need, so of course it is forbidden. Why would the משנה bother to say it?",
+      "keyTerms": [
+        {
+          "term": "פֶּחָמִין",
+          "meaning": "Charcoal"
+        },
+        {
+          "term": "פְּשִׁיטָא",
+          "meaning": "It is obvious; challenges a statement as unnecessary"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְאֵין עוֹשִׂין פֶּחָמִין.",
+          "english": "And one may not make charcoal."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "פְּשִׁיטָא, לְמַאי חָזֵי?",
+          "english": "That's obvious — what is it fit for?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וְאֵין עוֹשִׂין פֶּחָמִין. פְּשִׁיטָא, לְמַאי חָזֵי",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [
+        9
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Moves on to a new clause of the משנה",
+      "kashyaTarget": "The משנה's ban on making charcoal",
+      "kashyaAttackLogic": "Charcoal has no יום טוב food use, so the ban seems too obvious to state"
+    },
+    {
+      "stepNumber": 22,
+      "hebrewStepName": "תירוץ",
+      "title": "Charcoal for bathhouse attendants on that same day",
+      "stepSummary": "רבי חייא explains that the ban is needed for charcoal handed to bathhouse attendants to heat the bath for that same day.",
+      "simpleTranslation": "רבי חייא taught: The ban is needed only for the case of handing the charcoal to bathhouse attendants for use on that same day.",
+      "whatsHappening": "רבי חייא answers the challenge by pointing to a case where charcoal does have a יום טוב use: heating a bathhouse that day.",
+      "deeperAnalysis": "Washing is a bodily benefit, so one might have thought that making charcoal for it is allowed on יום טוב. The משנה teaches that it is still forbidden. So the ban is not obvious after all.",
+      "keyTerms": [
+        {
+          "term": "לֹא נִצְרְכָה אֶלָּא",
+          "meaning": "It was only needed for; points to the specific case the law is teaching"
+        },
+        {
+          "term": "אוֹלְיָירִין",
+          "meaning": "Bathhouse attendants"
+        },
+        {
+          "term": "לְבוֹ בַּיּוֹם",
+          "meaning": "For that same day"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "תָּנֵי רַבִּי חִיָּיא:",
+          "english": "Rabbi Chiya taught:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "לֹא נִצְרְכָה אֶלָּא",
+          "english": "It was only needed"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "לְמוֹסְרָן לְאוֹלְיָירִין לְבוֹ בַּיּוֹם.",
+          "english": "for handing them to bathhouse attendants for that same day."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "תָּנֵי רַבִּי חִיָּיא: לֹא נִצְרְכָה אֶלָּא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        21
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Answers the 'obvious' challenge in Step 21",
+      "terutzResolutionType": "Limits the ruling to a specific case where there is a reason to think it might be allowed",
+      "terutzHavaAmina": "Charcoal used to heat the bath on יום טוב serves a bodily need and might be allowed",
+      "terutzMaskana": "Even so, making charcoal is forbidden"
+    },
+    {
+      "stepNumber": 23,
+      "hebrewStepName": "קשיא",
+      "title": "Is bathing in a bathhouse even allowed on that day?",
+      "stepSummary": "The גמרא challenges רבי חייא: going to a bathhouse on יום טוב is itself forbidden, so how could the charcoal be for that day?",
+      "simpleTranslation": "But is it allowed on that same day?",
+      "whatsHappening": "The גמרא attacks רבי חייא's case. The חכמים forbade washing in a bathhouse on יום טוב, so his case seems impossible.",
+      "deeperAnalysis": "If washing in the bathhouse is forbidden anyway, no one would think making charcoal for it is allowed. So רבי חייא's case seems to give no reason for the משנה to state the ban.",
+      "keyTerms": [
+        {
+          "term": "מִי שְׁרֵי",
+          "meaning": "Is it permitted?"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וּבוֹ בַּיּוֹם מִי שְׁרֵי?",
+          "english": "And on that same day, is it permitted?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "שאלה",
+      "triggerLanguage": "וּבוֹ בַּיּוֹם מִי שְׁרֵי",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        22
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Challenges the case given in Step 22",
+      "kashyaTarget": "רבי חייא's case of heating a bath for that same day",
+      "kashyaAttackLogic": "Bathing on יום טוב is forbidden by a rabbinic decree, so the case cannot be real"
+    },
+    {
+      "stepNumber": 24,
+      "hebrewStepName": "תירוץ",
+      "title": "Like רבא: the case is sweating, before the decree",
+      "stepSummary": "Using רבא's answer from elsewhere, the גמרא explains that the case is going into the bathhouse to sweat, at a time before the decree against sweating.",
+      "simpleTranslation": "As רבא said elsewhere: the case is going in to sweat, and it was before the decree. Here too: the case is going in to sweat, and it was before the decree.",
+      "whatsHappening": "The גמרא borrows רבא's answer from another sugya and applies it here to save רבי חייא's case.",
+      "deeperAnalysis": "Bathing itself was forbidden on יום טוב, but just sitting in the heated bathhouse to sweat was allowed at first. Only later did the חכמים forbid that too. So רבי חייא's case is the early period, when sweating was still allowed, and the charcoal served a permitted use. Even then, making the charcoal was forbidden.",
+      "keyTerms": [
+        {
+          "term": "כִּדְאָמַר רָבָא",
+          "meaning": "As רבא said; borrows his answer from another place"
+        },
+        {
+          "term": "לְהַזִּיעַ",
+          "meaning": "To sweat (in a hot bathhouse)"
+        },
+        {
+          "term": "גְּזֵרָה",
+          "meaning": "A rabbinic decree"
+        },
+        {
+          "term": "הָכָא נָמֵי",
+          "meaning": "Here too; applies the same answer to this case"
+        }
+      ],
+      "whatToRemember": "The משנה's ban on making charcoal applies even when the charcoal heats a bathhouse for permitted sweating on יום טוב, in the period before the decree. Making charcoal is still not allowed.",
+      "confusionAlert": "There are two separate bans here. Washing in a bathhouse on יום טוב was forbidden first, and sweating there was forbidden later. רבי חייא's case fits only in the time between them.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "כִּדְאָמַר רָבָא:",
+          "english": "As Rava said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "לְהַזִּיעַ, וְקוֹדֶם גְּזֵרָה.",
+          "english": "To sweat, and before the decree."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "הָכָא נָמֵי:",
+          "english": "Here too:"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "לְהַזִּיעַ, וְקוֹדֶם גְּזֵרָה.",
+          "english": "To sweat, and before the decree."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "כִּדְאָמַר רָבָא: לְהַזִּיעַ, וְקוֹדֶם גְּזֵרָה",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        22,
+        23
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Answers the challenge in Step 23",
+      "terutzResolutionType": "Narrows the case to a specific activity (sweating) and time period (before the decree)",
+      "terutzHavaAmina": "Using the bathhouse on יום טוב is always forbidden, so רבי חייא's case is impossible",
+      "terutzMaskana": "Before the decree, going in to sweat was allowed, so the charcoal had a permitted use, and yet making it was forbidden"
+    },
+    {
+      "stepNumber": 25,
+      "hebrewStepName": "שאלה",
+      "title": "Why is cutting a wick with a knife different?",
+      "stepSummary": "The גמרא quotes the משנה's ban on cutting a wick into two. It then starts asking what makes cutting it with a knife forbidden, when רבי יהודה allows cutting it with fire.",
+      "simpleTranslation": "The משנה said: 'And one may not cut a wick into two.' What is different about doing it with a knife, that one may not?",
+      "whatsHappening": "The גמרא quotes a new line from the משנה about cutting a wick. It begins asking why a knife is forbidden. This sets up the explanation that comes next.",
+      "deeperAnalysis": "In the משנה, the תנא קמא forbids cutting a wick in two, and רבי יהודה permits it with fire. The גמרא wants the reason a knife is a problem, since the wick ends up in two pieces either way. Whatever reason it gives for the knife will then have to be checked against cutting with fire.",
+      "keyTerms": [
+        {
+          "term": "פְּתִילָה",
+          "meaning": "A wick for a lamp"
+        },
+        {
+          "term": "חוֹתְכִין",
+          "meaning": "Cutting"
+        },
+        {
+          "term": "לִשְׁנַיִם",
+          "meaning": "Into two pieces"
+        },
+        {
+          "term": "מַאי שְׁנָא",
+          "meaning": "What is different? The גמרא uses this phrase to ask why two cases are treated differently"
+        },
+        {
+          "term": "סַכִּין",
+          "meaning": "A knife"
+        }
+      ],
+      "confusionAlert": "Our text only quotes the first half of the משנה's line. The words about רבי יהודה permitting fire are not printed here. The question 'what is different about a knife' is comparing the knife to that fire method.",
+      "whyThisMatters": "This question opens a short discussion on the reason a knife is forbidden. It also explains why רבי יהודה treats fire differently.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְאֵין חוֹתְכִין אֶת הַפְּתִילָה לִשְׁנַיִם.",
+          "english": "And one may not cut the wick into two.",
+          "notes": "Quote from the משנה. In the full משנה, רבי יהודה permits cutting it with fire."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "מַאי שְׁנָא בְּסַכִּין דְּלָא —",
+          "english": "What is different about doing it with a knife, that one may not?",
+          "notes": "The question continues into the next passage, where the reason is given."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "קשיא",
+      "triggerLanguage": "מַאי שְׁנָא בְּסַכִּין דְּלָא",
+      "macroPhase": "opening_question",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [
+        9
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Starts a new topic by quoting the next line of the משנה. The bathhouse and charcoal discussion is now finished.",
+      "sheelahInformationSought": "The reason cutting a wick with a knife is forbidden, as opposed to cutting it with fire, which רבי יהודה permits."
+    }
+  ]
+}

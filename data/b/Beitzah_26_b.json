@@ -1,0 +1,1652 @@
+{
+  "mainTopic": "Examining a בכור's מום on יום טוב, and whether there is מוקצה for half of שבת",
+  "overview": "This amud has two topics. The first is a בכור (firstborn animal) that has a מום (blemish) on יום טוב: may an expert examine it on יום טוב so it can be slaughtered? רבה בר רב הונא says an animal born with its מום may be examined even לכתחילה. רב נחמן objects that his father taught it counts only בדיעבד. אביי supports רבה בר רב הונא from the three-part structure of a ברייתא. But רב אושעיא brings a different ברייתא, and the first ברייתא is dismissed as the garbled version of אדא בר אוכמי. רב נחמן בר יצחק then shows from the wording of our משנה that the examination counts only בדיעבד. The second topic begins when הלל asks רבא whether there is מוקצה for half of שבת. This would be an item that was fit, became unfit, and then became fit again. The גמרא gives two versions of רבא's answer. It then tests sources: the בכור born with its מום, and fruit drying on the roof. Each one is explained away. רבי זירא begins a new proof from beans and lentils cooked on יום טוב, and it continues on the next amud.",
+  "steps": [
+    {
+      "stepNumber": 1,
+      "hebrewStepName": "מימרא",
+      "title": "End of the ברייתא: blemish on יום טוב versus born with a blemish",
+      "stepSummary": "The ברייתא, which began on the previous page, ends. According to רבי שמעון, a מום that appeared on יום טוב makes the animal not 'prepared' for use. Everyone agrees that an animal born with its מום is 'prepared'.",
+      "simpleTranslation": "[If the בכור developed a blemish] on יום טוב, רבי שמעון says: it is not considered 'prepared'. And they agree that if it was born together with its blemish, it is considered 'prepared'.",
+      "whatsHappening": "The גמרא is finishing a ברייתא it started quoting on the previous page. This is the base text the rest of this passage will discuss.",
+      "deeperAnalysis": "An animal used on יום טוב must have been 'ready' for use in a person's mind before יום טוב began. A מום that showed up only on יום טוב means nobody expected to eat the animal when יום טוב started, so it is not מוכן. An animal born with its מום was always known to be fit for slaughter once examined, so both רבי יהודה and רבי שמעון agree it is מוכן.",
+      "keyTerms": [
+        {
+          "term": "מוּם",
+          "meaning": "A blemish. A בכור may only be slaughtered once it has a permanent one."
+        },
+        {
+          "term": "יוֹם טוֹב",
+          "meaning": "A Festival day"
+        },
+        {
+          "term": "מִן הַמּוּכָן",
+          "meaning": "Among the 'prepared' items, meaning things set aside in one's mind for use before the holiday began"
+        },
+        {
+          "term": "וְשָׁוִין",
+          "meaning": "And they agree (both sides of the argument hold the same view on this point)"
+        }
+      ],
+      "confusionAlert": "This amud starts in the middle of a sentence. The words 'נולד בו מום' ('it developed a blemish') come right before it, on the previous page. רבי שמעון is talking about a מום that appeared on יום טוב itself.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "בְּיוֹם טוֹב, רַבִּי שִׁמְעוֹן אוֹמֵר:",
+          "english": "[If it developed a blemish] on the Festival, Rabbi Shimon says:",
+          "notes": "Continues from the previous דף"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אֵין זֶה מִן הַמּוּכָן.",
+          "english": "This is not among the prepared [animals]."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וְשָׁוִין שֶׁאִם נוֹלַד הוּא וּמוּמוֹ עִמּוֹ —",
+          "english": "And they agree that if it was born with its blemish,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "שֶׁזֶּה מִן הַמּוּכָן.",
+          "english": "that this is among the prepared."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "רַבִּי שִׁמְעוֹן אוֹמֵר: אֵין זֶה מִן הַמּוּכָן",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Finishes the ברייתא quoted at the end of the previous דף",
+      "mimraCoreRuling": "A מום that appeared on יום טוב makes the animal not מוכן according to רבי שמעון. An animal born with its מום is מוכן according to everyone."
+    },
+    {
+      "stepNumber": 2,
+      "hebrewStepName": "מימרא",
+      "title": "רבה בר רב הונא: an animal born with its blemish may be examined on יום טוב from the start",
+      "stepSummary": "רבה בר רב הונא teaches that a בכור born with its מום may be examined on יום טוב even לכתחילה.",
+      "simpleTranslation": "רבה בר רב הונא taught publicly: if it was born with its blemish, we may examine it on יום טוב even from the outset.",
+      "whatsHappening": "An אמורא gives a practical ruling based on the last clause of the ברייתא.",
+      "deeperAnalysis": "The ברייתא only said that an animal born with its מום is 'מוכן'. It did not say whether a מומחה may examine it on יום טוב. רבה בר רב הונא adds that the examination is allowed לכתחילה, not just after the fact.",
+      "keyTerms": [
+        {
+          "term": "דָּרֵשׁ",
+          "meaning": "He taught publicly, in a lecture"
+        },
+        {
+          "term": "מְבַקְּרִין",
+          "meaning": "We examine. This is the expert's inspection to decide whether the מום is permanent."
+        },
+        {
+          "term": "לְכַתְּחִלָּה",
+          "meaning": "From the outset, as the proper way to act"
+        }
+      ],
+      "whyThisMatters": "Examining a מום on יום טוב can look like 'fixing' the animal (turning it from forbidden to permitted). That is why there is a question at all about whether it may be done לכתחילה.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "דָּרֵשׁ רַבָּה בַּר רַב הוּנָא:",
+          "english": "Rabba bar Rav Huna expounded:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "נוֹלַד הוּא וּמוּמוֹ עִמּוֹ —",
+          "english": "If it was born with its blemish,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "מְבַקְּרִין אוֹתוֹ בְּיוֹם טוֹב לְכַתְּחִלָּה.",
+          "english": "we examine it on the Festival ab initio."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "דָּרֵשׁ רַבָּה בַּר רַב הוּנָא",
+      "macroPhase": "opening_question",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [
+        1
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Draws a practical ruling from the ברייתא's final clause",
+      "mimraCoreRuling": "A בכור born with its מום may be examined on יום טוב לכתחילה."
+    },
+    {
+      "stepNumber": 3,
+      "hebrewStepName": "קשיא",
+      "title": "רב נחמן objects: his father taught it is only valid after the fact",
+      "stepSummary": "רב נחמן challenges רבה בר רב הונא. His father taught that if someone went ahead and examined such an animal, the examination counts. That wording suggests it should not be done לכתחילה.",
+      "simpleTranslation": "רב נחמן said to him: My father taught, 'If he transgressed and examined it, it is considered examined.' Yet you say we may examine it לכתחילה!",
+      "whatsHappening": "רב נחמן attacks רבה בר רב הונא's ruling using a teaching he received from his father.",
+      "deeperAnalysis": "The phrase 'if he transgressed' (אם עבר) only makes sense if doing it was wrong to begin with. So his father's teaching treats the examination as acceptable only בדיעבד. That directly contradicts a ruling that allows it לכתחילה.",
+      "keyTerms": [
+        {
+          "term": "אַבָּא תָּנֵי",
+          "meaning": "Father taught (רב נחמן is quoting his own father)"
+        },
+        {
+          "term": "אִם עָבַר",
+          "meaning": "If he transgressed, meaning he did something he was not supposed to do"
+        },
+        {
+          "term": "מְבוּקָּר",
+          "meaning": "It is considered examined; the examination is valid"
+        },
+        {
+          "term": "וְאַתְּ אָמְרַתְּ",
+          "meaning": "And you say...! (a formula for pointing out a contradiction)"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֲמַר לֵיהּ רַב נַחְמָן,",
+          "english": "Rav Nachman said to him:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אַבָּא תָּנֵי:",
+          "english": "Father would teach:"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "אִם עָבַר וּבִקְּרוֹ — מְבוּקָּר,",
+          "english": "if he transgressed and examined it, it is examined,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וְאַתְּ אָמְרַתְּ מְבַקְּרִין אוֹתוֹ לְכַתְּחִלָּה!",
+          "english": "and you say we examine it ab initio?!"
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "ראיה",
+      "triggerLanguage": "וְאַתְּ אָמְרַתְּ מְבַקְּרִין אוֹתוֹ לְכַתְּחִלָּה",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        2
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Challenges the ruling in step 2",
+      "kashyaTarget": "רבה בר רב הונא's ruling that the examination is allowed לכתחילה",
+      "kashyaAttackLogic": "The wording 'אם עבר' implies it is permitted only בדיעבד, which contradicts permitting it לכתחילה."
+    },
+    {
+      "stepNumber": 4,
+      "hebrewStepName": "ראיה",
+      "title": "אביי sides with רבה בר רב הונא: the first part of the ברייתא allows only after the fact",
+      "stepSummary": "אביי says logic supports רבה בר רב הונא, because the ברייתא is built in three parts. The first part, a מום from before יום טוב, implies that examining it on יום טוב is forbidden only לכתחילה and is fine בדיעבד.",
+      "simpleTranslation": "אביי said: It makes sense like רבה בר רב הונא, because the ברייתא teaches three parts. First: if it developed a blemish on the eve of יום טוב, we do not examine it on יום טוב. That means it is only לכתחילה that we don't. But בדיעבד, it is fine.",
+      "whatsHappening": "אביי begins a proof for רבה בר רב הונא by reading the ברייתא one part at a time. This step sets up the first part, which the proof will compare against later.",
+      "deeperAnalysis": "The phrase 'we do not examine' is a לכתחילה kind of wording. It implies that if someone did examine, the examination counts. So the first case already has the law 'forbidden לכתחילה, valid בדיעבד'. Keep this in mind for step 6.",
+      "keyTerms": [
+        {
+          "term": "כְּוָתֵיהּ",
+          "meaning": "In accordance with him"
+        },
+        {
+          "term": "מִסְתַּבְּרָא",
+          "meaning": "It stands to reason; it is logical"
+        },
+        {
+          "term": "תְּלָתָא בָּבֵי",
+          "meaning": "Three clauses or sections"
+        },
+        {
+          "term": "עֶרֶב יוֹם טוֹב",
+          "meaning": "The day before the Festival"
+        },
+        {
+          "term": "דִּיעֲבַד",
+          "meaning": "After the fact"
+        },
+        {
+          "term": "שַׁפִּיר דָּמֵי",
+          "meaning": "It is fine"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר אַבָּיֵי:",
+          "english": "Abaye said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "כְּוָתֵיהּ דְּרַבָּה בַּר רַב הוּנָא מִסְתַּבְּרָא,",
+          "english": "It stands to reason in accordance with Rabba bar Rav Huna,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "מִדְּקָתָנֵי תְּלָתָא בָּבֵי:",
+          "english": "since it teaches three clauses:"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "נוֹלַד בּוֹ מוּם מֵעֶרֶב יוֹם טוֹב —",
+          "english": "If a blemish developed on it from the eve of the Festival,"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "אֵין מְבַקְּרִין אוֹתוֹ בְּיוֹם טוֹב.",
+          "english": "we do not examine it on the Festival."
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "לְכַתְּחִלָּה הוּא דְּלָא,",
+          "english": "It is ab initio that [one may] not,"
+        },
+        {
+          "phraseNumber": 7,
+          "aramaic": "הָא דִּיעֲבַד — שַׁפִּיר דָּמֵי.",
+          "english": "but after the fact, it is fine."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "כְּוָתֵיהּ דְּרַבָּה בַּר רַב הוּנָא מִסְתַּבְּרָא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        2,
+        3
+      ],
+      "scopeOfStep": "inference",
+      "relationToPreviousStep": "Defends step 2 against the objection in step 3 by analyzing the ברייתא",
+      "raayaObject": "רבה בר רב הונא's ruling that the examination is allowed לכתחילה",
+      "raayaSupportSource": "The three-part structure of the ברייתא, starting with the case of a מום from before יום טוב"
+    },
+    {
+      "stepNumber": 5,
+      "hebrewStepName": "ראיה",
+      "title": "Second part of the ברייתא: a blemish on יום טוב is forbidden even after the fact",
+      "stepSummary": "In the second part, a מום that appeared on יום טוב, רבי שמעון says the animal is not מוכן. That means it is forbidden even בדיעבד.",
+      "simpleTranslation": "Second: if it developed a blemish on יום טוב, רבי שמעון says it is not 'prepared'. That means even בדיעבד it is not allowed.",
+      "whatsHappening": "אביי continues to the second part of the ברייתא and shows that it teaches a stricter law than the first part.",
+      "deeperAnalysis": "Since the animal is not מוכן at all, examining it does not help. Even if a מומחה already examined it, the animal may not be eaten on יום טוב. So the second part teaches something new beyond the first: forbidden even בדיעבד.",
+      "keyTerms": [
+        {
+          "term": "נוֹלַד בּוֹ מוּם בְּיוֹם טוֹב",
+          "meaning": "A blemish developed on it during the Festival itself"
+        },
+        {
+          "term": "דַּאֲפִילּוּ",
+          "meaning": "Meaning that even..."
+        },
+        {
+          "term": "לָא",
+          "meaning": "No; not permitted"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "נוֹלַד בּוֹ מוּם בְּיוֹם טוֹב,",
+          "english": "If a blemish developed on it on the Festival,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "רַבִּי שִׁמְעוֹן אוֹמֵר: אֵין זֶה מִן הַמּוּכָן —",
+          "english": "Rabbi Shimon says: This is not among the prepared,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "דַּאֲפִילּוּ דִּיעֲבַד נָמֵי לָא.",
+          "english": "meaning that even after the fact, no."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "דַּאֲפִילּוּ דִּיעֲבַד נָמֵי לָא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        4
+      ],
+      "scopeOfStep": "inference",
+      "relationToPreviousStep": "Continues אביי's reading with the second part of the ברייתא",
+      "raayaObject": "Each part of the ברייתא teaches its own distinct law",
+      "raayaSupportSource": "The second part of the ברייתא (רבי שמעון)"
+    },
+    {
+      "stepNumber": 6,
+      "hebrewStepName": "ראיה",
+      "title": "Third part of the ברייתא: born with a blemish is allowed even from the start",
+      "stepSummary": "The ברייתא then adds the case of an animal born with its מום. For this part to teach something new beyond the first part, it must allow examining even לכתחילה. This supports רבה בר רב הונא.",
+      "simpleTranslation": "And then it teaches: 'And they agree that if it was born with its blemish, it is prepared.' That means even לכתחילה it is allowed.",
+      "whatsHappening": "אביי finishes his proof. The ברייתא repeated the third case separately, so it must teach a law different from the first case: the examination is permitted even לכתחילה.",
+      "deeperAnalysis": "If the third case only allowed examining בדיעבד, it would be the same law as the first case. Then there would be no reason to teach it as a separate part. Since the ברייתא lists three separate parts, the third must go further and allow examining לכתחילה, exactly as רבה בר רב הונא said.",
+      "keyTerms": [
+        {
+          "term": "וַהֲדַר",
+          "meaning": "And then again"
+        },
+        {
+          "term": "תָּנֵי",
+          "meaning": "It teaches"
+        },
+        {
+          "term": "נָמֵי",
+          "meaning": "Also; as well"
+        }
+      ],
+      "whatToRemember": "As אביי reads it, the ברייתא has three levels. (1) A מום from before יום טוב: forbidden לכתחילה, valid בדיעבד. (2) A מום on יום טוב (רבי שמעון): forbidden even בדיעבד. (3) Born with its מום: allowed even לכתחילה. This supports רבה בר רב הונא, but the next steps knock out this ברייתא and side with רב נחמן.",
+      "confusionAlert": "אביי is not proving his point from the words of the third part alone. His proof comes from the fact that the ברייתא needed three separate parts, so each part must teach a different law.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וַהֲדַר תָּנֵי:",
+          "english": "And then it teaches:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וְשָׁוִין שֶׁאִם נוֹלַד וּמוּמוֹ עִמּוֹ,",
+          "english": "And they agree that if it was born with its blemish,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "שֶׁזֶּה מִן הַמּוּכָן —",
+          "english": "that this is among the prepared,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "דַּאֲפִילּוּ לְכַתְּחִלָּה נָמֵי.",
+          "english": "meaning that even ab initio as well."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "מסקנא",
+      "triggerLanguage": "וַהֲדַר תָּנֵי",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "scopeOfStep": "proof_mechanism",
+      "relationToPreviousStep": "Completes the three-part proof begun in step 4",
+      "raayaObject": "רבה בר רב הונא's ruling that the examination is allowed לכתחילה",
+      "raayaSupportSource": "The third part of the ברייתא, read against the first part: a separate part must teach a separate law",
+      "maskanaFinalTakeaway": "According to אביי's reading, an animal born with its מום may be examined on יום טוב even לכתחילה. The גמרא later rejects this reading (steps 7-11): the examination is valid only בדיעבד, as רב נחמן said."
+    },
+    {
+      "stepNumber": 7,
+      "hebrewStepName": "קשיא",
+      "title": "רב אושעיא's ברייתא says a מום from before יום טוב is also not מוכן",
+      "stepSummary": "The גמרא challenges אביי's proof using a different ברייתא brought by רב אושעיא. In it, the חכמים say a מום from ערב יום טוב and a מום from יום טוב are both not מוכן.",
+      "simpleTranslation": "But when רב אושעיא came, he brought a ברייתא with him. Whether the animal got its מום on ערב יום טוב or on יום טוב, the חכמים say it is not מוכן.",
+      "whatsHappening": "The גמרא attacks אביי's proof by quoting a different version of the ברייתא. In this version, even a מום from before יום טוב makes the animal not מוכן.",
+      "deeperAnalysis": "אביי's proof needed the first part of the ברייתא to be lenient בדיעבד. That is what made the born-with-מום case teach something new, namely that it is allowed לכתחילה. In רב אושעיא's version, a מום from before יום טוב is forbidden even בדיעבד. So the born-with-מום case only needs to teach that it works בדיעבד, which matches רב נחמן.",
+      "keyTerms": [
+        {
+          "term": "מַתְנִיתָא",
+          "meaning": "a ברייתא, a teaching from the time of the משנה that is not in the משנה itself"
+        },
+        {
+          "term": "מֵעֶרֶב יוֹם טוֹב",
+          "meaning": "from the day before the festival"
+        },
+        {
+          "term": "חֲכָמִים אוֹמְרִים",
+          "meaning": "the Sages say"
+        },
+        {
+          "term": "אֵין זֶה מִן הַמּוּכָן",
+          "meaning": "this is not considered prepared for use on the festival"
+        }
+      ],
+      "confusionAlert": "In the ברייתא אביי used, the strict view (not מוכן) belonged to רבי שמעון and covered only a מום that appeared on יום טוב. In רב אושעיא's version, the חכמים hold the strict view, and it covers both cases.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְהָא כִּי אֲתָא רַב אוֹשַׁעְיָא,",
+          "english": "But isn't it so that when Rav Oshaya came,",
+          "notes": "He came from ארץ ישראל to בבל."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אֲתָא וְאַיְיתִי מַתְנִיתָא בִּידֵיהּ:",
+          "english": "he came and brought a baraita in his hand:"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "בֵּין שֶׁנּוֹלַד בּוֹ מוּם מֵעֶרֶב יוֹם טוֹב,",
+          "english": "whether a blemish developed in it on the eve of the festival,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וּבֵין שֶׁנּוֹלַד בּוֹ מוּם בְּיוֹם טוֹב,",
+          "english": "or a blemish developed in it on the festival,"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "חֲכָמִים אוֹמְרִים:",
+          "english": "the Sages say:"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "אֵין זֶה מִן הַמּוּכָן.",
+          "english": "this is not among the prepared animals.",
+          "notes": "So it is forbidden even after the fact."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וְהָא כִּי אֲתָא רַב אוֹשַׁעְיָא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        4,
+        5,
+        6
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Challenges אביי's three-part proof from steps 4-6.",
+      "kashyaTarget": "אביי's proof for רבה בר רב הונא.",
+      "kashyaAttackLogic": "Another version of the ברייתא makes a pre-יום טוב מום forbidden even בדיעבד. That removes the 'only לכתחילה' first part that אביי's proof depended on."
+    },
+    {
+      "stepNumber": 8,
+      "hebrewStepName": "קשיא",
+      "title": "Then the earlier ברייתא becomes a problem",
+      "stepSummary": "The גמרא asks: if we follow רב אושעיא's ברייתא, how do we explain the earlier ברייתא that אביי quoted?",
+      "simpleTranslation": "But then that other ברייתא is difficult!",
+      "whatsHappening": "The גמרא points out that we now have two ברייתות that contradict each other. This line sets up the next step, which explains why one of them should be set aside.",
+      "deeperAnalysis": "The ברייתא אביי used gives the strict view to רבי שמעון, and only for a מום that appeared on יום טוב. רב אושעיא's ברייתא gives it to the חכמים, and for both cases. They cannot both be accurate, so the גמרא needs to decide which to trust.",
+      "keyTerms": [
+        {
+          "term": "וְאֶלָּא",
+          "meaning": "but if so, then..."
+        },
+        {
+          "term": "קַשְׁיָא",
+          "meaning": "it is difficult, a contradiction"
+        },
+        {
+          "term": "הָךְ",
+          "meaning": "that one, here meaning the earlier ברייתא"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְאֶלָּא קַשְׁיָא הָךְ!",
+          "english": "But then that one is difficult!",
+          "notes": "Refers to the ברייתא אביי relied on."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "שאלה",
+      "triggerLanguage": "וְאֶלָּא קַשְׁיָא הָךְ",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        4,
+        7
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Notes that accepting step 7's ברייתא creates a contradiction with the earlier ברייתא.",
+      "kashyaTarget": "The ברייתא used in steps 4-6.",
+      "kashyaAttackLogic": "Two ברייתות give opposite versions of the same dispute."
+    },
+    {
+      "stepNumber": 9,
+      "hebrewStepName": "תירוץ",
+      "title": "The earlier ברייתא came from a teacher who garbled texts",
+      "stepSummary": "The גמרא answers that the earlier ברייתא was taught by אדא בר אוכמי, who often mixed up the text. So his version is not reliable.",
+      "simpleTranslation": "That ברייתא is from אדא בר אוכמי, who would mix things up when he taught.",
+      "whatsHappening": "The גמרא resolves the contradiction by setting aside the earlier ברייתא. It came from a teacher known for reciting texts wrongly.",
+      "deeperAnalysis": "Once that ברייתא is dropped, אביי's proof for רבה בר רב הונא has nothing left to stand on. רב אושעיא's version stays, and it supports רב נחמן: a born-with-מום examination counts only בדיעבד.",
+      "keyTerms": [
+        {
+          "term": "אַדָּא בַּר אוּכָּמֵי",
+          "meaning": "a reciter of ברייתות whose versions were often inaccurate"
+        },
+        {
+          "term": "מְשַׁבֵּשׁ",
+          "meaning": "mixes up, garbles"
+        },
+        {
+          "term": "תָּנֵי",
+          "meaning": "teaches or recites a ברייתא"
+        }
+      ],
+      "whyThisMatters": "This shows that the גמרא will reject a source outright if the person who transmitted it is unreliable.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "הָהִיא — אַדָּא בַּר אוּכָּמֵי הִיא,",
+          "english": "That one is from Adda bar Ukhmei,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "דִּמְשַׁבֵּשׁ וְתָנֵי.",
+          "english": "who would confuse things and teach them that way."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "הָהִיא אַדָּא בַּר אוּכָּמֵי הִיא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        7,
+        8
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Answers step 8 by dismissing the earlier ברייתא.",
+      "terutzResolutionType": "Rejecting the reliability of one source",
+      "terutzHavaAmina": "Both ברייתות are equally reliable, so they contradict each other.",
+      "terutzMaskana": "Only רב אושעיא's version is reliable. The earlier one was garbled by אדא בר אוכמי."
+    },
+    {
+      "stepNumber": 10,
+      "hebrewStepName": "ראיה",
+      "title": "The משנה's wording also supports the strict view",
+      "stepSummary": "רב נחמן בר יצחק says the משנה's wording also supports this view. He starts by asking what רבי שמעון means by 'its מום is not visible,' and he rejects the simple meaning because it would be too obvious to need saying.",
+      "simpleTranslation": "רב נחמן בר יצחק said: our משנה is also precise this way. It teaches that רבי שמעון says any animal whose מום is not visible from ערב יום טוב is not מוכן. What does 'not visible' mean? If it means not visible at all, that is obvious! Does it need to be said?",
+      "whatsHappening": "רב נחמן בר יצחק begins a new proof from the משנה itself. He first rules out the plain reading of רבי שמעון's words, which prepares for the next step.",
+      "deeperAnalysis": "If 'not visible' meant there was no מום at all before יום טוב, the ruling would be obvious. Such an animal clearly was not ready for eating. So the phrase must mean something less obvious, and the next step explains what.",
+      "keyTerms": [
+        {
+          "term": "מַתְנִיתִין",
+          "meaning": "our משנה"
+        },
+        {
+          "term": "דַּיְיקָא",
+          "meaning": "is precise, its exact wording proves the point"
+        },
+        {
+          "term": "נִיכָּר",
+          "meaning": "visible, noticeable"
+        },
+        {
+          "term": "אִילֵּימָא",
+          "meaning": "if you say"
+        },
+        {
+          "term": "פְּשִׁיטָא",
+          "meaning": "it is obvious"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר רַב נַחְמָן בַּר יִצְחָק:",
+          "english": "Rav Nachman bar Yitzchak said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "מַתְנִיתִין נָמֵי דַּיְיקָא.",
+          "english": "Our Mishnah is also precise this way."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "דְּקָתָנֵי, רַבִּי שִׁמְעוֹן אוֹמֵר:",
+          "english": "For it teaches: Rabbi Shimon says:"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "כֹּל שֶׁאֵין מוּמוֹ נִיכָּר מֵעֶרֶב יוֹם טוֹב —",
+          "english": "any animal whose blemish is not visible from the eve of the festival,"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "אֵין זֶה מִן הַמּוּכָן.",
+          "english": "is not among the prepared animals."
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "מַאי אֵין מוּמוֹ נִיכָּר?",
+          "english": "What does 'its blemish is not visible' mean?"
+        },
+        {
+          "phraseNumber": 7,
+          "aramaic": "אִילֵּימָא שֶׁאֵין מוּמוֹ נִיכָּר כְּלָל —",
+          "english": "If you say its blemish was not visible at all,"
+        },
+        {
+          "phraseNumber": 8,
+          "aramaic": "פְּשִׁיטָא, צְרִיכָא לְמֵימַר?",
+          "english": "that is obvious! Does it need to be said?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "מַתְנִיתִין נָמֵי דַּיְיקָא",
+      "macroPhase": "source_derivation",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [
+        7,
+        9
+      ],
+      "scopeOfStep": "inference",
+      "relationToPreviousStep": "Adds support from the משנה to the view that won in steps 7-9.",
+      "raayaObject": "The stricter view (רב נחמן's): a pre-יום טוב מום that was not examined is not מוכן, even בדיעבד.",
+      "raayaSupportSource": "רבי שמעון's words in our משנה: 'כל שאין מומו ניכר מערב יום טוב.'"
+    },
+    {
+      "stepNumber": 11,
+      "hebrewStepName": "מסקנא",
+      "title": "The blemish was visible but not examined, and still the animal is not prepared",
+      "stepSummary": "The phrase must mean the מום was visible, but no חכם checked it before יום טוב to say whether it was permanent or temporary. Even so, the משנה says it is not מוכן. The proof stands.",
+      "simpleTranslation": "Rather, it means the animal was not shown to a חכם on ערב יום טוב to decide whether the מום was permanent or temporary. Even so, the משנה teaches that it is not מוכן. Learn from this.",
+      "whatsHappening": "The גמרא finishes רב נחמן בר יצחק's proof. A visible מום that no חכם checked before יום טוב still leaves the animal not מוכן.",
+      "deeperAnalysis": "The animal had a real מום from before יום טוב, and it still cannot be eaten, even בדיעבד. This matches רב אושעיא's ברייתא and undoes אביי's reading. So the born-with-מום case is allowed only בדיעבד, as רב נחמן said.",
+      "keyTerms": [
+        {
+          "term": "חָכָם",
+          "meaning": "a Torah scholar who rules on blemishes"
+        },
+        {
+          "term": "מוּם קָבוּעַ",
+          "meaning": "a permanent blemish, which permits slaughtering a בכור"
+        },
+        {
+          "term": "מוּם עוֹבֵר",
+          "meaning": "a temporary blemish, which does not permit it"
+        },
+        {
+          "term": "מִיהַת",
+          "meaning": "in any event"
+        },
+        {
+          "term": "שְׁמַע מִינַּהּ",
+          "meaning": "learn from this"
+        }
+      ],
+      "whatToRemember": "According to רב אושעיא's ברייתא and the precise wording of our משנה, a מום that existed before יום טוב but was not examined leaves the animal not מוכן. So examining a born-with-מום בכור on יום טוב counts only בדיעבד, as רב נחמן said, against אביי's support for רבה בר רב הונא.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֶלָּא, דְּלָא אִתְחֲזִי לְחָכָם מֵעֶרֶב יוֹם טוֹב",
+          "english": "Rather, it was not shown to a Sage on the eve of the festival"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אִם מוּם קָבוּעַ אִם מוּם עוֹבֵר.",
+          "english": "to determine whether it is a permanent blemish or a temporary blemish."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "קָתָנֵי מִיהַת",
+          "english": "In any event, it teaches:"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "אֵין זֶה מִן הַמּוּכָן,",
+          "english": "it is not among the prepared animals,"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "שְׁמַע מִינַּהּ.",
+          "english": "learn from this."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "ראיה",
+      "triggerLanguage": "קָתָנֵי מִיהַת אֵין זֶה מִן הַמּוּכָן שְׁמַע מִינַּהּ",
+      "macroPhase": "conclusion",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        10
+      ],
+      "scopeOfStep": "proof_mechanism",
+      "relationToPreviousStep": "Gives the correct reading of the משנה after step 10 rejected the simple one, and finishes the proof.",
+      "maskanaFinalTakeaway": "Even a visible pre-יום טוב מום that was not examined makes the animal not מוכן. This supports רב נחמן: a born-with-מום examination on יום טוב works only בדיעבד."
+    },
+    {
+      "stepNumber": 12,
+      "hebrewStepName": "שאלה",
+      "title": "הלל asks רבא about מוקצה for half a day",
+      "stepSummary": "הלל asks רבא whether there is מוקצה for half of שבת.",
+      "simpleTranslation": "הלל asked רבא: Is there מוקצה for half of שבת, or is there no מוקצה for half of שבת?",
+      "whatsHappening": "A new question starts here. הלל asks רבא whether something can be מוקצה for only part of שבת.",
+      "deeperAnalysis": "Up to now the sugya dealt with what counts as מוכן for יום טוב. Now הלל asks a wider question: if an item's status changes during the day, does a short time of being forbidden make it forbidden for the rest of the day?",
+      "keyTerms": [
+        {
+          "term": "בָּעֵי מִינֵּיהּ",
+          "meaning": "He asked him (a real question, not an attack)"
+        },
+        {
+          "term": "מוּקְצֶה",
+          "meaning": "An item set aside and not available for use on שבת or יום טוב"
+        },
+        {
+          "term": "לַחֲצִי שַׁבָּת",
+          "meaning": "For half (part) of שבת"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "בָּעֵי מִינֵּיהּ הִלֵּל מֵרָבָא:",
+          "english": "Hillel asked Rava:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "יֵשׁ מוּקְצֶה לַחֲצִי שַׁבָּת",
+          "english": "Is there muktzeh for half of Shabbat"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "אוֹ אֵין מוּקְצֶה לַחֲצִי שַׁבָּת?",
+          "english": "or is there no muktzeh for half of Shabbat?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "בָּעֵי מִינֵּיהּ הִלֵּל מֵרָבָא",
+      "macroPhase": "opening_question",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Opens a new topic after the proof about מוכן was finished in Step 11.",
+      "sheelahInformationSought": "Whether an item that is forbidden for part of שבת stays forbidden for the whole day."
+    },
+    {
+      "stepNumber": 13,
+      "hebrewStepName": "קשיא",
+      "title": "How could such a case even happen?",
+      "stepSummary": "The גמרא asks how there could be מוקצה for half of שבת, since everything depends on בין השמשות.",
+      "simpleTranslation": "What is the case? If it was fit at twilight, it is fit for the whole day. If it was not fit at twilight, it is not fit for the whole day.",
+      "whatsHappening": "The גמרא questions whether הלל's question makes sense. It looks like there is no such case.",
+      "deeperAnalysis": "Normally the status of an item is fixed at בין השמשות, the start of שבת. If it was usable then, it is usable all day; if not, it is forbidden all day. So how can something be מוקצה for only half the day?",
+      "keyTerms": [
+        {
+          "term": "הֵיכִי דָמֵי",
+          "meaning": "What is the case? How does this look?"
+        },
+        {
+          "term": "בֵּין הַשְּׁמָשׁוֹת",
+          "meaning": "Twilight, the moment שבת begins"
+        },
+        {
+          "term": "אִחֲזִי",
+          "meaning": "It was fit, usable"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "הֵיכִי דָמֵי:",
+          "english": "What is the case?"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אִי דְּאִחֲזִי בֵּין הַשְּׁמָשׁוֹת — אִחֲזִי.",
+          "english": "If it was fit at twilight, it is fit (all day)."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "אִי דְּלָא אִחֲזִי — לָא אִחֲזִי?",
+          "english": "If it was not fit, it is not fit (all day)?"
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "שאלה",
+      "triggerLanguage": "הֵיכִי דָמֵי",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        12
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Questions whether הלל's question in Step 12 has a real case.",
+      "kashyaTarget": "The question of 'מוקצה for half of שבת'",
+      "kashyaAttackLogic": "An item's status is set at בין השמשות for the whole day, so there seems to be no way to have מוקצה for only half the day."
+    },
+    {
+      "stepNumber": 14,
+      "hebrewStepName": "תירוץ",
+      "title": "The case: fit, then unfit, then fit again",
+      "stepSummary": "The גמרא explains the case: the item was usable, then became unusable during שבת, then became usable again.",
+      "simpleTranslation": "No, it is needed where it was fit, then was pushed away, and then became fit again. What is the law?",
+      "whatsHappening": "The גמרא answers its own question by describing the exact case הלל meant, and then asks again what the law is.",
+      "deeperAnalysis": "The item was fine at בין השמשות, so it was not מוקצה at the start. But during שבת something happened to make it unusable, and later it became usable again. The question is whether that middle period makes it forbidden for the rest of the day.",
+      "keyTerms": [
+        {
+          "term": "לָא צְרִיכָא",
+          "meaning": "No, it is needed (for this specific case)"
+        },
+        {
+          "term": "אִדְּחִי",
+          "meaning": "It was pushed away, became unfit"
+        },
+        {
+          "term": "וַהֲדַר",
+          "meaning": "And then again"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "לָא צְרִיכָא: דְּאִחֲזִי,",
+          "english": "No, it is needed where it was fit,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וַהֲדַר אִדְּחִי, וַהֲדַר אִחֲזִי.",
+          "english": "and then was pushed away, and then became fit again."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "מַאי?",
+          "english": "What is the law?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "לָא צְרִיכָא",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        13
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Answers Step 13 by giving a real case for הלל's question.",
+      "terutzResolutionType": "Defining the specific case",
+      "terutzHavaAmina": "There seemed to be no case, since status is set at בין השמשות.",
+      "terutzMaskana": "The case is an item fit at the start, then unfit, then fit again during שבת."
+    },
+    {
+      "stepNumber": 15,
+      "hebrewStepName": "תשובה",
+      "title": "רבא rules: yes, there is מוקצה",
+      "stepSummary": "רבא answers that there is מוקצה even for half of שבת.",
+      "simpleTranslation": "He said to him: There is מוקצה.",
+      "whatsHappening": "רבא answers הלל: once the item was pushed away during שבת, it stays מוקצה for the rest of the day.",
+      "deeperAnalysis": "Even though the item becomes usable again later, the time it was forbidden counts. Once something is pushed off during the day, it does not come back for that day.",
+      "keyTerms": [
+        {
+          "term": "אֲמַר לֵיהּ",
+          "meaning": "He said to him"
+        },
+        {
+          "term": "יֵשׁ מוּקְצֶה",
+          "meaning": "There is מוקצה (it stays forbidden)"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֲמַר לֵיהּ: יֵשׁ מוּקְצֶה.",
+          "english": "He said to him: There is muktzeh."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אֲמַר לֵיהּ: יֵשׁ מוּקְצֶה",
+      "macroPhase": "opening_question",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        12,
+        14
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Answers the question from Step 12, as explained in Step 14.",
+      "teshuvahAnswerProvided": "There is מוקצה for half of שבת: an item pushed away during the day stays forbidden for the rest of the day."
+    },
+    {
+      "stepNumber": 16,
+      "hebrewStepName": "קשיא",
+      "title": "Challenge from the firstborn born with its blemish",
+      "stepSummary": "הלל challenges רבא from the ברייתא saying a בכור born with its מום is מוכן, even though it seems to be pushed away and then permitted again.",
+      "simpleTranslation": "He challenged him: 'And they agree that if it was born with its blemish, it is among the prepared.' But why? Let us say: this firstborn was fit at first through its mother; once it was born, it was pushed away; when he showed it to a Sage, it became permitted again!",
+      "whatsHappening": "הלל attacks רבא's ruling using the ברייתא about a בכור born with a מום on יום טוב.",
+      "deeperAnalysis": "Before birth, the calf could be eaten as part of its mother if she were slaughtered. Once born, it is a בכור and is forbidden until a חכם confirms its מום, so it seems pushed away. Then the חכם permits it, and the ברייתא says it is fine, which looks like a case of being fit, then unfit, then fit again, with no lasting מוקצה. That contradicts רבא.",
+      "keyTerms": [
+        {
+          "term": "אֵיתִיבֵיהּ",
+          "meaning": "He challenged him from a source"
+        },
+        {
+          "term": "וְשָׁוִין",
+          "meaning": "And they agree (here, רבי יהודה and רבי שמעון)"
+        },
+        {
+          "term": "בְּכוֹר",
+          "meaning": "A firstborn animal"
+        },
+        {
+          "term": "אַגַּב אִמֵּיהּ",
+          "meaning": "Through its mother (as part of the mother's body)"
+        },
+        {
+          "term": "אִשְׁתְּרִי",
+          "meaning": "It became permitted"
+        }
+      ],
+      "confusionAlert": "Do not think the calf was forbidden before birth. While still inside its mother it was fit, since it could be eaten together with her. The 'pushing away' happens only at the moment of birth.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֵיתִיבֵיהּ: וְשָׁוִין שֶׁאִם נוֹלַד וּמוּמוֹ עִמּוֹ",
+          "english": "He challenged him: 'And they agree that if it was born with its blemish'"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "— שֶׁזֶּה מִן הַמּוּכָן.",
+          "english": "'that this is among the prepared.'"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וְאַמַּאי? נֵימָא:",
+          "english": "But why? Let us say:"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "הַאי בְּכוֹר מֵעִיקָּרָא הֲוָה חֲזֵי אַגַּב אִמֵּיהּ,",
+          "english": "This firstborn was fit at first through its mother;"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "אִתְיְלִיד לֵיהּ — אִדְּחִי לֵיהּ,",
+          "english": "once it was born, it was pushed away;"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "אַחְזְיֵיהּ לְחָכָם — אִשְׁתְּרִי לֵיהּ!",
+          "english": "he showed it to a Sage, and it became permitted to him!"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אֵיתִיבֵיהּ: וְשָׁוִין שֶׁאִם נוֹלַד וּמוּמוֹ עִמּוֹ",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        15
+      ],
+      "scopeOfStep": "proof_mechanism",
+      "relationToPreviousStep": "Challenges רבא's ruling in Step 15 using a ברייתא.",
+      "kashyaTarget": "רבא's ruling that there is מוקצה for half of שבת",
+      "kashyaAttackLogic": "The בכור born with a מום goes from fit, to pushed away, to permitted on the same day, yet the ברייתא calls it מוכן. That shows a middle period of being forbidden does not make it stay forbidden."
+    },
+    {
+      "stepNumber": 17,
+      "hebrewStepName": "תירוץ",
+      "title": "The judges were sitting right there",
+      "stepSummary": "אביי (or רב ספרא) answers that the ברייתא is talking about judges watching the birth, so the animal was never pushed away.",
+      "simpleTranslation": "אביי said, and some say רב ספרא: For example, where judges were sitting there.",
+      "whatsHappening": "אביי (or רב ספרא) defends רבא by explaining that the ברייתא deals with a case where judges saw the מום right at the birth.",
+      "deeperAnalysis": "If the judges were there and ruled right away, there was never a moment when the calf was forbidden. It went straight from fit through its mother to fit as a blemished בכור. So the ברייתא is not a case of fit, then unfit, then fit, and רבא's rule stands.",
+      "keyTerms": [
+        {
+          "term": "וְאִיתֵּימָא",
+          "meaning": "And some say (another name for who said it)"
+        },
+        {
+          "term": "כְּגוֹן",
+          "meaning": "For example, such as"
+        },
+        {
+          "term": "דַּיָּינֵי",
+          "meaning": "Judges (here, experts who can rule on a מום)"
+        }
+      ],
+      "whatToRemember": "In the first version, רבא holds there is מוקצה for half of שבת: if an item becomes unusable during the day, it stays forbidden for the rest of that day. The בכור in the ברייתא is not a problem, because the judges were present at the birth, so it was never pushed away. (The next step gives a second version of רבא's answer.)",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר אַבָּיֵי וְאִיתֵּימָא רַב סָפְרָא:",
+          "english": "Abaye said, and some say Rav Safra:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "כְּגוֹן דְּיָתְבִי דַּיָּינֵי הָתָם.",
+          "english": "For example, where judges were sitting there."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אָמַר אַבָּיֵי וְאִיתֵּימָא רַב סָפְרָא: כְּגוֹן דְּיָתְבִי דַּיָּינֵי הָתָם",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        15,
+        16
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Answers the challenge of Step 16 and keeps רבא's ruling from Step 15.",
+      "terutzResolutionType": "Limiting the case (אוקימתא)",
+      "terutzHavaAmina": "The בכור was forbidden for a moment after birth and then permitted, which would disprove רבא.",
+      "terutzMaskana": "The judges were present and ruled at once, so the בכור was never pushed away, and רבא's rule stands."
+    },
+    {
+      "stepNumber": 18,
+      "hebrewStepName": "תשובה",
+      "title": "Second version: רבא says there is no מוקצה for half of שבת",
+      "stepSummary": "According to a second version, רבא answered הלל the opposite way: there is no מוקצה for half of שבת.",
+      "simpleTranslation": "Some say that רבא said to him: there is no מוקצה for half of שבת.",
+      "whatsHappening": "The גמרא reports a different version of רבא's answer to הלל. In this version, רבא rules the opposite of what we saw in Step 15.",
+      "deeperAnalysis": "In the first version, something that became unusable during שבת stays מוקצה even after it becomes usable again. In this version, once the item becomes usable again it is permitted. Being pushed away for part of שבת does not make it forbidden for the rest of שבת.",
+      "keyTerms": [
+        {
+          "term": "אִיכָּא דְאָמְרִי",
+          "meaning": "Some say: introduces a second version of a statement"
+        },
+        {
+          "term": "אֵין מוּקְצֶה לַחֲצִי שַׁבָּת",
+          "meaning": "There is no מוקצה for half of שבת. An item pushed away during שבת becomes permitted again once it is fit."
+        }
+      ],
+      "confusionAlert": "Do not mix this up with Step 15. There, רבא said there IS מוקצה for half of שבת. Here, in the second version, he says there is NOT. These are two reports of one conversation, and they disagree.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אִיכָּא דְאָמְרִי, אֲמַר לֵיהּ:",
+          "english": "Some say: he (רבא) said to him (הלל):"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אֵין מוּקְצֶה לַחֲצִי שַׁבָּת.",
+          "english": "There is no מוקצה for half of שבת."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "מימרא",
+      "triggerLanguage": "אִיכָּא דְאָמְרִי, אֲמַר לֵיהּ",
+      "macroPhase": "alternate_branch",
+      "branchRole": "alternative_approach",
+      "dependsOnStepNumbers": [
+        13,
+        14,
+        15
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Gives an alternative version of רבא's answer from Step 15, which reverses his ruling.",
+      "teshuvahAnswerProvided": "An item that was pushed away during שבת and then became fit again is not מוקצה."
+    },
+    {
+      "stepNumber": 19,
+      "hebrewStepName": "ראיה",
+      "title": "Trying to support רבא from the בכור born with its blemish",
+      "stepSummary": "The גמרא suggests that the ברייתא about a בכור born with its מום supports the second version of רבא.",
+      "simpleTranslation": "Shall we say the ברייתא supports him? 'And they agree that if it was born with its blemish, it is considered prepared.' But the בכור was fit at first because of its mother. Once it was born it was pushed away. When he showed it to a חכם, it became permitted again.",
+      "whatsHappening": "The גמרא takes the same ברייתא that הלל used as a challenge in Step 16. Now it uses that ברייתא as a proof for the second version of רבא.",
+      "deeperAnalysis": "Before birth, the calf was part of its mother, and the mother could be eaten. At birth it became a בכור that cannot be eaten until a חכם checks its מום, so it was pushed away. After the חכם permitted it, it became usable again. The ברייתא still calls it מוכן, which seems to show there is no מוקצה for half of שבת or יום טוב.",
+      "keyTerms": [
+        {
+          "term": "לֵימָא מְסַיַּיע לֵיהּ",
+          "meaning": "Shall we say this supports him? Introduces a suggested proof"
+        },
+        {
+          "term": "מוּמוֹ עִמּוֹ",
+          "meaning": "Its blemish is with it: born already blemished"
+        },
+        {
+          "term": "מִן הַמּוּכָן",
+          "meaning": "Among the prepared items: allowed for use on the יום טוב"
+        },
+        {
+          "term": "אַגַּב אִמֵּיהּ",
+          "meaning": "On account of its mother: fit as part of the mother animal"
+        },
+        {
+          "term": "אִדְּחִי",
+          "meaning": "It was pushed away (became forbidden)"
+        }
+      ],
+      "confusionAlert": "This is the same ברייתא as in Step 16. There it attacked רבא's first version. Here it is brought to support רבא's second version. The source is the same, but its job is new.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "לֵימָא מְסַיַּיע לֵיהּ:",
+          "english": "Shall we say that this supports him:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וְשָׁוִין שֶׁאִם נוֹלַד וּמוּמוֹ עִמּוֹ —",
+          "english": "And they agree that if it was born with its blemish already on it,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "שֶׁזֶּה מִן הַמּוּכָן.",
+          "english": "this is among the prepared items."
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וְהָא בְּכוֹר מֵעִיקָּרָא הֲוָה חֲזִי",
+          "english": "But the firstborn was fit at the start"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "אַגַּב אִמֵּיהּ,",
+          "english": "on account of its mother,"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "אִתְיְלִיד לֵיהּ — אִדְּחִי לֵיהּ,",
+          "english": "it was born, and it was pushed away,"
+        },
+        {
+          "phraseNumber": 7,
+          "aramaic": "אַחְזְיֵיהּ לְחָכָם — אִשְׁתְּרִי לֵיהּ.",
+          "english": "he showed it to a Sage, and it became permitted to him."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "לֵימָא מְסַיַּיע לֵיהּ",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        16,
+        18
+      ],
+      "scopeOfStep": "proof_mechanism",
+      "relationToPreviousStep": "Brings a supporting proof for the second version of רבא given in Step 18.",
+      "raayaObject": "The second version of רבא: there is no מוקצה for half of שבת.",
+      "raayaSupportSource": "The ברייתא that a בכור born with its מום is considered מוכן, even though it was fit, then pushed away, then permitted."
+    },
+    {
+      "stepNumber": 20,
+      "hebrewStepName": "דחיה",
+      "title": "The proof is rejected: judges watched the birth",
+      "stepSummary": "אביי (or רב ספרא) rejects the proof. The ברייתא could be talking about a case where judges were present at the birth, so the animal was never pushed away.",
+      "simpleTranslation": "אביי said, and some say it was רב ספרא: it is a case where judges were sitting there.",
+      "whatsHappening": "The גמרא pushes away the proof from Step 19. It uses the same answer that it gave in Step 17.",
+      "deeperAnalysis": "If experts were there at the moment of birth, they saw the מום right away and permitted the animal. It went straight from being fit with its mother to being permitted, with no gap. So the ברייתא proves nothing about מוקצה for half of שבת.",
+      "keyTerms": [
+        {
+          "term": "אִיתֵּימָא",
+          "meaning": "And some say: gives another name for who said it"
+        },
+        {
+          "term": "דַּיָּינֵי",
+          "meaning": "Judges: experts able to rule on a בכור's מום"
+        }
+      ],
+      "whatToRemember": "The בכור ברייתא is neutral. In both versions of רבא, it is explained as judges watching the birth, so it neither attacks nor supports either side.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר אַבָּיֵי וְאִיתֵּימָא רַב סָפְרָא:",
+          "english": "Abaye said, and some say it was Rav Safra:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "כְּגוֹן דְּיָתְבִי דַּיָּינֵי הָתָם.",
+          "english": "For example, where judges were sitting there."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "תירוץ",
+      "triggerLanguage": "אָמַר אַבָּיֵי וְאִיתֵּימָא רַב סָפְרָא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        17,
+        19
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Rejects the proof brought in Step 19.",
+      "dechiyaRejectionScope": "Rejects only the proof from the בכור ברייתא. It does not reject the second version of רבא itself.",
+      "dechiyaFlawIdentified": "The proof assumes the animal was pushed away for a while. If judges were present, it was never pushed away."
+    },
+    {
+      "stepNumber": 21,
+      "hebrewStepName": "ראיה",
+      "title": "A new source: fruit left on the roof to dry",
+      "stepSummary": "The גמרא brings a ברייתא: grapes or figs left on the roof to dry may not be eaten on שבת unless they were designated for eating before שבת.",
+      "simpleTranslation": "Come and hear: someone was eating grapes, left some over, and took them up to the roof to make raisins. Or he was eating figs, left some over, and took them up to the roof to make dried figs. He may not eat from them unless he designates them while it is still day. The same is true of peaches, quinces, and all other kinds of fruit.",
+      "whatsHappening": "The גמרא brings a new ברייתא to test the question of מוקצה for half of שבת. This step sets up the source, and the analysis comes next.",
+      "deeperAnalysis": "Fruit put out to dry goes through stages. It is edible, then not good to eat while drying, then edible again when dry. The ברייתא says the fruit needs a הזמנה before שבת. The גמרא wants to see what this teaches about something that changes status.",
+      "keyTerms": [
+        {
+          "term": "תָּא שְׁמַע",
+          "meaning": "Come and hear: introduces a source brought as a proof"
+        },
+        {
+          "term": "צִמּוּקִין",
+          "meaning": "Raisins"
+        },
+        {
+          "term": "גְּרוֹגְרוֹת",
+          "meaning": "Dried figs"
+        },
+        {
+          "term": "שֶׁיַּזְמִין",
+          "meaning": "That he designates (הַזְמָנָה): sets the food aside for eating"
+        },
+        {
+          "term": "מִבְּעוֹד יוֹם",
+          "meaning": "While it is still day, before שבת begins"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "תָּא שְׁמַע:",
+          "english": "Come and hear:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "הָיָה אוֹכֵל בַּעֲנָבִים, וְהוֹתִיר",
+          "english": "If he was eating grapes and left some over"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וְהֶעֱלָן לַגָּג לַעֲשׂוֹת מֵהֶן צִמּוּקִין,",
+          "english": "and took them up to the roof to make raisins from them,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "בִּתְאֵנִים, וְהוֹתִיר",
+          "english": "or figs, and left some over"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "וְהֶעֱלָן לַגָּג לַעֲשׂוֹת מֵהֶן גְּרוֹגְרוֹת —",
+          "english": "and took them up to the roof to make dried figs from them,"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "לֹא יֹאכַל מֵהֶן עַד שֶׁיַּזְמִין מִבְּעוֹד יוֹם.",
+          "english": "he may not eat from them unless he designates them while it is still day."
+        },
+        {
+          "phraseNumber": 7,
+          "aramaic": "וְכֵן אַתָּה מוֹצֵא בַּאֲפַרְסְקִין",
+          "english": "And so you find with peaches"
+        },
+        {
+          "phraseNumber": 8,
+          "aramaic": "וּבַחֲבוּשִׁין וּבִשְׁאָר כׇּל מִינֵי פֵירוֹת.",
+          "english": "and quinces and all other kinds of fruit."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "מימרא",
+      "triggerLanguage": "תָּא שְׁמַע",
+      "macroPhase": "source_derivation",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [
+        15,
+        18
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "After the בכור proof was rejected, brings a new source to decide the question.",
+      "raayaObject": "The question of whether there is מוקצה for half of שבת.",
+      "raayaSupportSource": "The ברייתא about drying fruit on the roof, which needs a הזמנה before שבת."
+    },
+    {
+      "stepNumber": 22,
+      "hebrewStepName": "שאלה",
+      "title": "What exact case is the drying-fruit ברייתא talking about?",
+      "stepSummary": "The גמרא asks what case the ברייתא means. If the fruit is fit, why does it need a הזמנה? If it is not fit, what good does a הזמנה do?",
+      "simpleTranslation": "What is the case? If they are fit to eat, why does he need a הזמנה? If they are not fit to eat, what good does it do when he designates them?",
+      "whatsHappening": "The גמרא challenges the ברייתא's case from both sides so it can work out the exact situation. This sets up the answer that will come next.",
+      "deeperAnalysis": "If the fruit is already dry and edible, it should not need a special הזמנה, because he put it there in order to eat it. If it is still not dry, a הזמנה cannot make inedible fruit usable. Neither simple reading works, so the case must be something in between.",
+      "keyTerms": [
+        {
+          "term": "הֵיכִי דָמֵי",
+          "meaning": "What is the case? Asks for the exact situation"
+        },
+        {
+          "term": "חֲזוּ",
+          "meaning": "They are fit (to eat)"
+        },
+        {
+          "term": "מַאי הָוֵי",
+          "meaning": "What of it? What difference does it make?"
+        }
+      ],
+      "whyThisMatters": "The way the גמרא defines this case will decide whether the ברייתא shows that there is or is not מוקצה for half of שבת.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "הֵיכִי דָמֵי?",
+          "english": "What are the circumstances?"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אִי דַּחֲזוּ — לְמָה לֵיהּ הַזְמָנָה?",
+          "english": "If they are fit, why does he need designation?"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "אִי דְּלָא חֲזוּ — כִּי אַזְמֵין לְהוּ מַאי הָוֵי!",
+          "english": "If they are not fit, when he designates them, what of it!"
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "קשיא",
+      "triggerLanguage": "הֵיכִי דָמֵי",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        21
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Analyzes the ברייתא brought in Step 21 by asking what its exact case is.",
+      "sheelahInformationSought": "Whether the fruit in the ברייתא is fit or unfit to eat, since neither option seems to explain why a הזמנה is needed."
+    },
+    {
+      "stepNumber": 23,
+      "hebrewStepName": "דחיה",
+      "title": "The owner's not knowing cannot be the case",
+      "stepSummary": "The גמרא rejects the idea that the ברייתא is about an owner who did not know whether the fruit was ready, because רב כהנא rules that such fruit is permitted anyway.",
+      "simpleTranslation": "And if you say the case is where he did not know whether the fruit was fit or not, that cannot be. Didn't רב כהנא say: fruit set aside for drying that dried, even though the owner does not know it, is permitted?",
+      "whatsHappening": "The גמרא is trying out one possible answer to the question from step 22 and knocking it down.",
+      "deeperAnalysis": "One idea was that the owner did not know whether the fruit was fit, so he needed a הזמנה. רב כהנא teaches that fruit that dried is permitted even if the owner did not know. The owner only set it aside until it became edible, so no הזמנה would be needed. This option is eliminated.",
+      "keyTerms": [
+        {
+          "term": "וְכִי תֵּימָא",
+          "meaning": "And if you say (introduces a possible suggestion)"
+        },
+        {
+          "term": "רַב כָּהֲנָא",
+          "meaning": "An אמורא whose ruling is quoted here"
+        },
+        {
+          "term": "שֶׁיָּבַשׁ",
+          "meaning": "That dried out and became edible"
+        },
+        {
+          "term": "אֵין הַבְּעָלִים מַכִּירִין בּוֹ",
+          "meaning": "The owners are not aware of it"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְכִי תֵּימָא, דְּלָא יָדַע",
+          "english": "And if you say that he did not know"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אִי חֲזוּ אִי לָא חֲזוּ,",
+          "english": "whether they were fit or not fit,",
+          "notes": "For example, he could not climb up to the roof to check."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וְהָאָמַר רַב כָּהֲנָא:",
+          "english": "but didn't Rav Kahana say:"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "מוּקְצֶה שֶׁיָּבַשׁ",
+          "english": "set-aside fruit that dried"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "וְאֵין הַבְּעָלִים מַכִּירִין בּוֹ",
+          "english": "and the owners are not aware of it"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "— מוּתָּר.",
+          "english": "— is permitted."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "קשיא",
+      "triggerLanguage": "וְכִי תֵּימָא, דְּלָא יָדַע אִי חֲזוּ אִי לָא חֲזוּ, וְהָאָמַר רַב כָּהֲנָא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        21,
+        22
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Eliminates one possible case for the ברייתא raised by the question in step 22.",
+      "dechiyaRejectionScope": "The case definition 'he did not know whether they were fit'.",
+      "dechiyaFlawIdentified": "רב כהנא rules that dried fruit is permitted even without the owner's knowledge, so a הזמנה would be pointless in that case."
+    },
+    {
+      "stepNumber": 24,
+      "hebrewStepName": "ראיה",
+      "title": "Fit, then unfit, then fit again proves there is מוקצה",
+      "stepSummary": "The גמרא concludes the ברייתא must mean fruit that was fit, became unfit, and became fit again. The requirement of הזמנה would then show that there is מוקצה for half of שבת.",
+      "simpleTranslation": "Rather, isn't the case where the fruit was fit, then was pushed away, and then became fit again? And if you say there is no מוקצה for half of שבת, why do they need a הזמנה?",
+      "whatsHappening": "Having eliminated the other options, the גמרא lands on a case and uses it as a proof against the second version of רבא.",
+      "deeperAnalysis": "Picture the fruit as edible when fresh, then unfit while it is partly dried on the roof, then dry and edible again. If there were no מוקצה for half of שבת, the fruit would be automatically permitted once it became fit again. The ברייתא requires a הזמנה, so it seems that once something is pushed away, it stays forbidden.",
+      "keyTerms": [
+        {
+          "term": "אֶלָּא לָאו",
+          "meaning": "Rather, is it not that (introduces the only remaining option)"
+        },
+        {
+          "term": "אִדְּחוֹ",
+          "meaning": "They were pushed away (became unfit)"
+        },
+        {
+          "term": "וַהֲדַר אִחֲזוֹ",
+          "meaning": "And then became fit again"
+        },
+        {
+          "term": "הַזְמָנָה",
+          "meaning": "Designation before יום טוב or שבת that something will be used"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֶלָּא לָאו, דִּחֲזוֹ וְאִדְּחוֹ,",
+          "english": "Rather, is it not where they were fit and then were pushed away,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וַהֲדַר אִחֲזוֹ.",
+          "english": "and then became fit again?"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וְאִי אָמְרַתְּ אֵין מוּקְצֶה,",
+          "english": "And if you say there is no muktzeh (for half of Shabbat),"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "לְמָה לְהוּ הַזְמָנָה?",
+          "english": "why do they need designation?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "קשיא",
+      "triggerLanguage": "אֶלָּא לָאו, דִּחֲזוֹ וְאִדְּחוֹ, וַהֲדַר אִחֲזוֹ. וְאִי אָמְרַתְּ אֵין מוּקְצֶה",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        18,
+        21,
+        22,
+        23
+      ],
+      "scopeOfStep": "proof_mechanism",
+      "relationToPreviousStep": "After eliminating the 'did not know' case, it settles on the remaining case and draws a proof from it.",
+      "raayaObject": "That there IS מוקצה for half of שבת, against the second version of רבא.",
+      "raayaSupportSource": "The ברייתא about grapes and figs on the roof, which requires a הזמנה."
+    },
+    {
+      "stepNumber": 25,
+      "hebrewStepName": "קשיא",
+      "title": "But if there is מוקצה, how would a הזמנה help?",
+      "stepSummary": "The גמרא turns the proof around. Even if there is מוקצה, a הזמנה before שבת should not be able to undo it, so the ברייתא does not fit that view either.",
+      "simpleTranslation": "Rather, what are you saying, that there is מוקצה? Then if he designates them, what difference does it make?",
+      "whatsHappening": "The גמרא challenges the proof it just made by showing that the opposite view has the same problem.",
+      "deeperAnalysis": "If fruit that became unfit stays forbidden as מוקצה, an earlier הזמנה could not permit it. So the ברייתא's case, 'fit, unfit, fit again', fails under both views. The case must be something else.",
+      "keyTerms": [
+        {
+          "term": "אֶלָּא מַאי",
+          "meaning": "Rather, what? (turns the question back on the other side)"
+        },
+        {
+          "term": "מַאי הָוֵי",
+          "meaning": "What of it? What difference does it make?"
+        },
+        {
+          "term": "אַזְמֵין",
+          "meaning": "He designated"
+        }
+      ],
+      "confusionAlert": "This is not the גמרא proving there is NO מוקצה. It only shows that this case cannot prove either side, so a different case is needed.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֶלָּא מַאי יֵשׁ מוּקְצֶה?",
+          "english": "Rather, what? There is muktzeh?"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "כִּי אַזְמֵין לְהוּ מַאי הָוֵי!",
+          "english": "When he designates them, what of it!"
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "דחיה",
+      "triggerLanguage": "אֶלָּא מַאי יֵשׁ מוּקְצֶה? כִּי אַזְמֵין לְהוּ מַאי הָוֵי",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        24
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Undercuts the proof of step 24 by showing the case is impossible under the opposing view too.",
+      "kashyaTarget": "The reading of the ברייתא as 'fit, then unfit, then fit again'.",
+      "kashyaAttackLogic": "Under 'there is מוקצה', a הזמנה cannot remove the מוקצה status, so the ברייתא's requirement of הזמנה makes no sense in that case either."
+    },
+    {
+      "stepNumber": 26,
+      "hebrewStepName": "תירוץ",
+      "title": "The case is half-fit fruit",
+      "stepSummary": "The גמרא explains that the ברייתא deals with fruit that is only partly dried, which some people eat and some do not. A הזמנה shows that this owner is one who eats it, so there is no proof about מוקצה.",
+      "simpleTranslation": "No, the ברייתא is needed for fruit that is fit and not fit. Some people eat it like this and some people do not. If he designated it, he showed his intention to eat it. If he did not designate it, he did not show his intention.",
+      "whatsHappening": "The גמרא gives the real case of the ברייתא. This removes the proof from step 24.",
+      "deeperAnalysis": "Partly dried fruit is in between: edible for some people, not for others. The הזמנה is not undoing מוקצה. It reveals that this owner treats the fruit as food. Since the fruit was never pushed away and then fit again, the ברייתא says nothing about מוקצה for half of שבת.",
+      "keyTerms": [
+        {
+          "term": "לָא צְרִיכָא",
+          "meaning": "It is only needed for (the specific case where)"
+        },
+        {
+          "term": "אִחֲזוֹ וְלָא אִחֲזוֹ",
+          "meaning": "Fit and not fit, meaning half-ready"
+        },
+        {
+          "term": "גַּלִּי דַּעְתֵּיהּ",
+          "meaning": "He revealed his intention"
+        },
+        {
+          "term": "אִינָשֵׁי",
+          "meaning": "People"
+        }
+      ],
+      "whatToRemember": "The ברייתא of grapes and figs on the roof does not prove anything about מוקצה for half of שבת. The הזמנה works because the fruit is in between, and the הזמנה shows that the owner intends to eat it.",
+      "whyThisMatters": "This shows a key idea about מוקצה: often the issue is the owner's intention, and a הזמנה can reveal it.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "לָא צְרִיכָא: דְּאִחֲזוֹ וְלָא אִחֲזוֹ.",
+          "english": "No, it is needed where they were fit and not fit."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "דְּאִיכָּא אִינָשֵׁי דְּאָכְלִי,",
+          "english": "For there are people who eat them,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וְאִיכָּא אִינָשֵׁי דְּלָא אָכְלִי.",
+          "english": "and there are people who do not eat them."
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "אַזְמֵין — גַּלִּי דַּעְתֵּיהּ,",
+          "english": "If he designated them, he revealed his intention,"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "לָא אַזְמֵין — לָא גַּלִּי דַּעְתֵּיהּ.",
+          "english": "if he did not designate them, he did not reveal his intention."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "דחיה",
+      "triggerLanguage": "לָא צְרִיכָא: דְּאִחֲזוֹ וְלָא אִחֲזוֹ",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        22,
+        24,
+        25
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Resolves the dilemma of step 22 by finding a case where הזמנה makes sense, which removes the proof of step 24.",
+      "terutzResolutionType": "Redefining the case (אוקימתא)",
+      "terutzHavaAmina": "The ברייתא is about fruit that was fit, became unfit, and became fit again, which would prove there is מוקצה for half of שבת.",
+      "terutzMaskana": "The ברייתא is about half-fit fruit. The הזמנה only reveals the owner's intent to eat it, so there is no proof about מוקצה."
+    },
+    {
+      "stepNumber": 27,
+      "hebrewStepName": "ראיה",
+      "title": "רבי זירא begins a proof from beans and lentils",
+      "stepSummary": "רבי זירא offers a new source. Beans and lentils are fit to chew raw at the start of the day, but once thrown into the pot they become unfit.",
+      "simpleTranslation": "רבי זירא said: Come and hear a proof from beans and lentils. Beans and lentils at the start are fit to chew raw. Once he throws them into the pot, they are pushed away.",
+      "whatsHappening": "רבי זירא opens a new attempt to settle the question. This passage ends while he is still setting up the case.",
+      "deeperAnalysis": "Raw beans and lentils can be chewed, so they are not מוקצה at the start. While cooking, they are too soft to chew raw and not yet cooked enough to eat, so they are 'pushed away'. Later they will be cooked and fit again, so this is a case of fit, then unfit, then fit again.",
+      "keyTerms": [
+        {
+          "term": "רַבִּי זֵירָא",
+          "meaning": "An אמורא who brings the new proof"
+        },
+        {
+          "term": "תָּא שְׁמַע",
+          "meaning": "Come and hear (introduces a proof)"
+        },
+        {
+          "term": "פּוֹלִין וַעֲדָשִׁים",
+          "meaning": "Beans and lentils"
+        },
+        {
+          "term": "לָכוֹס",
+          "meaning": "To chew raw"
+        },
+        {
+          "term": "קְדֵרָה",
+          "meaning": "A cooking pot"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר רַבִּי זֵירָא:",
+          "english": "Rabbi Zeira said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "תָּא שְׁמַע מִפּוֹלִין וַעֲדָשִׁים.",
+          "english": "Come and hear from beans and lentils."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "דְּהָא פּוֹלִין וַעֲדָשִׁים",
+          "english": "For beans and lentils"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "מֵעִיקָּרָא חֲזוּ לָכוֹס,",
+          "english": "at the outset are fit to chew raw,"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "שְׁדִינְהוּ בִּקְדֵרָה —",
+          "english": "once he cast them into the pot —"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "אִדְּחוֹ לְהוּ,",
+          "english": "they are pushed away,",
+          "notes": "Half-cooked: not good raw, not yet good cooked. The proof continues on the next amud."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "שאלה",
+      "triggerLanguage": "אָמַר רַבִּי זֵירָא: תָּא שְׁמַע מִפּוֹלִין וַעֲדָשִׁים",
+      "macroPhase": "source_derivation",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [
+        18
+      ],
+      "scopeOfStep": "proof_mechanism",
+      "relationToPreviousStep": "After the grapes-and-figs proof fails, a new proof is attempted on the same question.",
+      "raayaObject": "Whether there is מוקצה for half of שבת or יום טוב.",
+      "raayaSupportSource": "The law of beans and lentils cooked on יום טוב, which are fit, then unfit, then fit again."
+    }
+  ]
+}

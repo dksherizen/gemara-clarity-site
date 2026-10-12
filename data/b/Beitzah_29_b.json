@@ -1,0 +1,992 @@
+{
+  "mainTopic": "Sifting flour on יום טוב, getting food from regular sellers without trade, and the opening of פרק המביא on carrying with a change.",
+  "overview": "This amud opens by finishing an earlier discussion: שמואל came to teach the practical הלכה, even though a ברייתא permits the practice. A ברייתא then argues about sifting flour a second time on יום טוב. The תנא קמא forbids it, רבי פפייס and רבי יהודה בן בתירא permit it, and all agree it is allowed when a pebble or wood chip fell in. רבינא rejects a version that says to pick the pebble out by hand, since that looks like בורר. רבא בר רב הונא זוטי publicly permits a second sifting, and רב נחמן says everyone in נהרדעא already does it. Two stories follow: רב יוסף hints to his wife that she need not sift with a change, while רב אשי upholds his wife's practice of sifting onto a table. A new משנה and a ברייתא teach how to get food from a regular seller on יום טוב without it looking like trade: by counting, without a measure or, according to רבי שמעון בן אלעזר, without a price. The chapter אין צדין then ends, and פרק המביא begins with a משנה on carrying wine jugs and straw with a change from the weekday way, continuing on the next amud.",
+  "steps": [
+    {
+      "stepNumber": 1,
+      "hebrewStepName": "מסקנא",
+      "title": "שמואל's statement teaches the practical הלכה",
+      "stepSummary": "The גמרא closes the previous discussion: שמואל made his statement to tell us what to actually do in practice.",
+      "simpleTranslation": "שמואל came to teach us the practical הלכה.",
+      "whatsHappening": "The גמרא is finishing an earlier question about why שמואל needed to say his ruling at all. The answer is that he came to tell us the הלכה למעשה, meaning what we actually do.",
+      "deeperAnalysis": "A ברייתא from the previous amud permits the practice, so it was unclear what שמואל's statement was meant to do. The גמרא concludes that שמואל knew the ברייתא and came to give the practical ruling, telling us that in practice the הלכה is otherwise.",
+      "keyTerms": [
+        {
+          "term": "הֲלָכָה לְמַעֲשֶׂה",
+          "meaning": "The practical ruling; what one actually does"
+        },
+        {
+          "term": "אֲתָא לְאַשְׁמוֹעִינַן",
+          "meaning": "He came to teach us"
+        }
+      ],
+      "whatToRemember": "An אמורא's ruling can be needed even when a ברייתא already discusses the case, because it tells us how to rule in practice, even against what the ברייתא allows.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "שְׁמוּאֵל — הֲלָכָה לְמַעֲשֶׂה",
+          "english": "Shmuel — the practical halacha",
+          "notes": "Closes the sugya from the previous page."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אֲתָא לְאַשְׁמוֹעִינַן.",
+          "english": "he came to teach us."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "תירוץ",
+      "triggerLanguage": "הֲלָכָה לְמַעֲשֶׂה אֲתָא לְאַשְׁמוֹעִינַן",
+      "macroPhase": "conclusion",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Ends the discussion carried over on the previous amud.",
+      "maskanaFinalTakeaway": "שמואל's statement fixes the practical הלכה rather than repeating a source."
+    },
+    {
+      "stepNumber": 2,
+      "hebrewStepName": "מימרא",
+      "title": "A ברייתא disputes sifting flour a second time on יום טוב",
+      "stepSummary": "A ברייתא brings a dispute. The תנא קמא forbids sifting flour a second time on יום טוב. רבי פפייס and רבי יהודה בן בתירא permit it.",
+      "simpleTranslation": "The Sages taught: One may not sift flour a second time on יום טוב. In the name of רבי פפייס and רבי יהודה בן בתירא they said: One may sift it a second time.",
+      "whatsHappening": "The גמרא opens a new topic by quoting a ברייתא. It argues about whether flour that was already sifted may be sifted again on יום טוב.",
+      "deeperAnalysis": "The flour was already sifted before יום טוב, so a second sifting only makes it a bit finer. The תנא קמא treats this as extra effort that is not needed and forbids it. רבי פפייס and רבי יהודה בן בתירא allow it as part of preparing food.",
+      "keyTerms": [
+        {
+          "term": "תָּנוּ רַבָּנַן",
+          "meaning": "The Sages taught; introduces a ברייתא"
+        },
+        {
+          "term": "שׁוֹנִין",
+          "meaning": "Doing it a second time (here, sifting again)"
+        },
+        {
+          "term": "קֶמַח",
+          "meaning": "Flour"
+        },
+        {
+          "term": "יוֹם טוֹב",
+          "meaning": "Festival day"
+        }
+      ],
+      "confusionAlert": "שונין here does not mean 'learning' (as in שונה משנה). It means doing the sifting a second time.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "תָּנוּ רַבָּנַן:",
+          "english": "The Sages taught:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אֵין שׁוֹנִין קֶמַח בְּיוֹם טוֹב.",
+          "english": "One may not sift flour a second time on Yom Tov."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "מִשּׁוּם רַבִּי פַּפְּיָיס",
+          "english": "In the name of Rabbi Papeyyas"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וְרַבִּי יְהוּדָה בֶּן בְּתִירָא אָמְרוּ:",
+          "english": "and Rabbi Yehuda ben Beteira they said:"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "שׁוֹנִין.",
+          "english": "One may sift it a second time."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "תָּנוּ רַבָּנַן: אֵין שׁוֹנִין קֶמַח בְּיוֹם טוֹב",
+      "macroPhase": "source_derivation",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Starts a new topic after the previous sugya closed.",
+      "mimraCoreRuling": "תנא קמא: sifting a second time is forbidden. רבי פפייס and רבי יהודה בן בתירא: it is permitted."
+    },
+    {
+      "stepNumber": 3,
+      "hebrewStepName": "מימרא",
+      "title": "Everyone agrees: if a pebble fell in, one may sift again",
+      "stepSummary": "All the opinions agree that if a pebble or wood chip fell into the flour, it may be sifted a second time.",
+      "simpleTranslation": "And they agree that if a pebble or a wood chip fell into it, one may sift it a second time.",
+      "whatsHappening": "The ברייתא adds a point both sides agree on. When something unwanted fell into the flour, sifting it again is allowed.",
+      "deeperAnalysis": "In this case the second sifting is not just to make the flour finer. It fixes a real problem, so even the תנא קמא permits it. This limits the מחלוקת to sifting clean flour with nothing in it.",
+      "keyTerms": [
+        {
+          "term": "וְשָׁוִין",
+          "meaning": "And they agree"
+        },
+        {
+          "term": "צְרוֹר",
+          "meaning": "A pebble or small stone"
+        },
+        {
+          "term": "קֵיסָם",
+          "meaning": "A wood chip or splinter"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְשָׁוִין שֶׁאִם נָפַל לְתוֹכָן",
+          "english": "And they agree that if there fell into it"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "צְרוֹר אוֹ קֵיסָם,",
+          "english": "a pebble or a wood chip,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "שֶׁשּׁוֹנִין.",
+          "english": "one may sift it a second time."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וְשָׁוִין שֶׁאִם נָפַל לְתוֹכָן צְרוֹר אוֹ קֵיסָם",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        2
+      ],
+      "scopeOfStep": "exception_case",
+      "relationToPreviousStep": "Narrows the dispute from step 2 by giving a case where both sides agree.",
+      "mimraCoreRuling": "When a pebble or wood chip fell in, sifting a second time is permitted by all opinions."
+    },
+    {
+      "stepNumber": 4,
+      "hebrewStepName": "מימרא",
+      "title": "Another version: remove the pebble by hand",
+      "stepSummary": "A תנא recites a version of the ברייתא before רבינא. It says that when a pebble or wood chip fell in, one picks it out by hand instead of sifting.",
+      "simpleTranslation": "A תנא taught before רבינא: One may not sift flour a second time on יום טוב, but if a pebble or a wood chip fell in, he picks it out with his hand.",
+      "whatsHappening": "A different wording of the ברייתא is said in front of רבינא. It gives a different method for the pebble case. This sets up רבינא's objection in the next step.",
+      "deeperAnalysis": "The first version said one may sift the flour again to get the pebble out. This version keeps the ban on sifting and allows only picking the pebble out by hand. The question now is which method is less of a problem on יום טוב.",
+      "keyTerms": [
+        {
+          "term": "תָּנֵי תַּנָּא קַמֵּיהּ דְּ",
+          "meaning": "A reciter of ברייתות taught before..."
+        },
+        {
+          "term": "בּוֹרֵר בְּיָדוֹ",
+          "meaning": "He picks it out with his hand"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "תָּנֵי תַּנָּא קַמֵּיהּ דְּרָבִינָא:",
+          "english": "A tanna taught before Ravina:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אֵין שׁוֹנִין קֶמַח בְּיוֹם טוֹב,",
+          "english": "One may not sift flour a second time on Yom Tov,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "אֲבָל נָפַל צְרוֹר אוֹ קֵיסָם —",
+          "english": "but if a pebble or a wood chip fell in —"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "בּוֹרֵר בְּיָדוֹ.",
+          "english": "he picks it out with his hand."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "תָּנֵי תַּנָּא קַמֵּיהּ דְּרָבִינָא",
+      "macroPhase": "source_derivation",
+      "branchRole": "alternative_approach",
+      "dependsOnStepNumbers": [
+        3
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Gives a different version of the pebble case from step 3.",
+      "mimraCoreRuling": "In this version, sifting a second time stays forbidden, and a fallen pebble is removed by hand."
+    },
+    {
+      "stepNumber": 5,
+      "hebrewStepName": "קשיא",
+      "title": "רבינא: picking by hand is even more forbidden",
+      "stepSummary": "רבינא rejects the version he heard. Picking the pebble out by hand is even worse, because it looks like the מלאכה of בורר.",
+      "simpleTranslation": "He said to him: All the more so it is forbidden, because it is like selecting.",
+      "whatsHappening": "רבינא challenges the תנא's version. Taking the pebble out by hand is more problematic than sifting.",
+      "deeperAnalysis": "Picking unwanted items out of food by hand looks like the forbidden מלאכה of בורר (selecting). Sifting with a sieve is ordinary food preparation. So if sifting is forbidden, picking by hand must be forbidden כל שכן (all the more so). The correct method is to sift, as the first ברייתא said.",
+      "keyTerms": [
+        {
+          "term": "כׇּל שֶׁכֵּן",
+          "meaning": "All the more so"
+        },
+        {
+          "term": "בּוֹרֵר",
+          "meaning": "Selecting; the מלאכה of separating unwanted items from food"
+        },
+        {
+          "term": "דְּהָוֵה לֵיהּ כְּ",
+          "meaning": "Because it is like..."
+        }
+      ],
+      "confusionAlert": "This seems backwards, since one might think a small hand action is lighter than sifting. The point is that hand-picking looks exactly like בורר, while sifting does not.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֲמַר לֵיהּ:",
+          "english": "He said to him:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "כׇּל שֶׁכֵּן דְּאָסוּר,",
+          "english": "All the more so it is forbidden,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "דְּהָוֵה לֵיהּ כְּבוֹרֵר.",
+          "english": "because it is like selecting."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "דחיה",
+      "triggerLanguage": "אֲמַר לֵיהּ: כׇּל שֶׁכֵּן דְּאָסוּר",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        4
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Attacks the version of the ברייתא given in step 4.",
+      "kashyaTarget": "The version saying a fallen pebble is picked out by hand.",
+      "kashyaAttackLogic": "Hand-picking looks like בורר, which is worse than sifting. So it cannot be the permitted method when sifting itself is forbidden."
+    },
+    {
+      "stepNumber": 6,
+      "hebrewStepName": "מימרא",
+      "title": "רבא בר רב הונא זוטי publicly permits sifting again",
+      "stepSummary": "רבא בר רב הונא זוטי taught publicly at the entrance to נהרדעא that one may sift flour a second time on יום טוב.",
+      "simpleTranslation": "רבא בר רב הונא זוטי (the Short) expounded at the entrance to נהרדעא: One may sift flour a second time on יום טוב.",
+      "whatsHappening": "An אמורא gives a public teaching that follows the lenient view. This sets up רב נחמן's reaction in the next step.",
+      "deeperAnalysis": "This ruling sides with רבי פפייס and רבי יהודה בן בתירא against the תנא קמא of the ברייתא. He presented it as a new public teaching for the people of נהרדעא.",
+      "keyTerms": [
+        {
+          "term": "דָּרֵשׁ",
+          "meaning": "Expounded or taught publicly"
+        },
+        {
+          "term": "אַפִּתְחָא",
+          "meaning": "At the entrance (of the city)"
+        },
+        {
+          "term": "זוּטֵי",
+          "meaning": "The short one; a nickname"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "דָּרֵשׁ רָבָא בַּר רַב הוּנָא זוּטֵי",
+          "english": "Rava bar Rav Huna the Short expounded"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אַפִּתְחָא דִנְהַרְדְּעָא:",
+          "english": "at the entrance to Neharde'a:"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "שׁוֹנִין קֶמַח בְּיוֹם טוֹב.",
+          "english": "One may sift flour a second time on Yom Tov."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "דָּרֵשׁ רָבָא בַּר רַב הוּנָא זוּטֵי אַפִּתְחָא דִנְהַרְדְּעָא",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        2
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Returns to the main dispute of step 2 and rules leniently.",
+      "mimraCoreRuling": "Sifting flour a second time on יום טוב is permitted."
+    },
+    {
+      "stepNumber": 7,
+      "hebrewStepName": "דחיה",
+      "title": "רב נחמן: your teaching is not needed",
+      "stepSummary": "רב נחמן sends word to רבא בר רב הונא that his public teaching is wasted, because everyone in נהרדעא is already sifting.",
+      "simpleTranslation": "רב נחמן said to them: Go out and tell אבא: Your good has been taken and thrown on thorns. Go out and see how many sieves go around in נהרדעא.",
+      "whatsHappening": "רב נחמן responds to the public teaching. He says it was unnecessary, since the people already practice this.",
+      "deeperAnalysis": "רב נחמן does not argue with the ruling. He rejects only the need to announce it. Sieves are already passed from house to house in נהרדעא, so everyone knows sifting a second time is allowed. 'Thrown on thorns' means his effort was wasted.",
+      "keyTerms": [
+        {
+          "term": "פּוּקוּ וֶאֱמַרוּ לֵיהּ",
+          "meaning": "Go out and tell him"
+        },
+        {
+          "term": "שְׁקִילָא טֵיבוּתָךְ",
+          "meaning": "Your good has been taken"
+        },
+        {
+          "term": "אַחִזְרֵי",
+          "meaning": "Onto thorns"
+        },
+        {
+          "term": "מַהוֹלָתָא",
+          "meaning": "Sieves"
+        }
+      ],
+      "whatToRemember": "The practical outcome follows the lenient view: one may sift flour a second time on יום טוב. In נהרדעא this was already common practice.",
+      "confusionAlert": "רב נחמן is not saying the ruling is wrong. He is saying it was not new, because people already did it.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֲמַר לְהוּ רַב נַחְמָן:",
+          "english": "Rav Nachman said to them:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "פּוּקוּ וֶאֱמַרוּ לֵיהּ לְאַבָּא:",
+          "english": "Go out and say to Abba:",
+          "notes": "אבא is רבא בר רב הונא; רבא is short for רב אבא."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "שְׁקִילָא טֵיבוּתָךְ",
+          "english": "Your good has been taken"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וְשַׁדְיָ[א] אַחִזְרֵי,",
+          "english": "and thrown upon thorns,",
+          "notes": "An idiom: your teaching was wasted."
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "פּוֹק חֲזִי",
+          "english": "Go out and see"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "כַּמָּה מַהוֹלָתָא הַדְרָן בִּנְהַרְדְּעָא.",
+          "english": "how many sieves go around in Neharde'a."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "מסקנא",
+      "triggerLanguage": "פּוּקוּ וֶאֱמַרוּ לֵיהּ לְאַבָּא: שְׁקִילָא טֵיבוּתָךְ וְשַׁדְיָא אַחִזְרֵי",
+      "macroPhase": "conclusion",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        6
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Reacts to the public teaching of step 6.",
+      "dechiyaRejectionScope": "Only the need to teach this publicly. The lenient ruling itself is not rejected.",
+      "dechiyaFlawIdentified": "The teaching added nothing new, since the people of נהרדעא already sift flour a second time on יום טוב."
+    },
+    {
+      "stepNumber": 8,
+      "hebrewStepName": "מימרא",
+      "title": "רב יוסף's wife sifts on the back of the sieve",
+      "stepSummary": "רב יוסף's wife sifted flour on the back of the sieve as a change from the usual way. He told her he wants good bread, hinting she does not need to do this.",
+      "simpleTranslation": "רב יוסף's wife was sifting flour on the back side of a sieve. He said to her: Look, I want good-quality bread.",
+      "whatsHappening": "The גמרא tells a story about how people actually sifted flour on יום טוב. רב יוסף's wife changed the normal way by using the back of the sieve.",
+      "deeperAnalysis": "Sifting with a change (שינוי) was a way to avoid looking like a regular weekday job. רב יוסף hints that this change makes the bread worse, and he wants good bread. This matches the earlier conclusion that a second sifting is allowed on יום טוב, so she can sift in the regular way.",
+      "keyTerms": [
+        {
+          "term": "דְּבֵיתְהוּ",
+          "meaning": "his wife (literally: 'the one of his house')"
+        },
+        {
+          "term": "נָהֲלָא",
+          "meaning": "was sifting"
+        },
+        {
+          "term": "מַהוֹלְתָּא",
+          "meaning": "a sieve"
+        },
+        {
+          "term": "רִפְתָּא מְעַלַּיְתָא",
+          "meaning": "good-quality bread"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "דְּבֵיתְהוּ דְּרַב יוֹסֵף",
+          "english": "The wife of Rav Yosef"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "נָהֲלָא קִמְחָא אַגַּבָּא דְּמַהוֹלְתָּא.",
+          "english": "was sifting flour on the back of a sieve.",
+          "notes": "She was making a change from the usual way of sifting."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "אֲמַר לַהּ: חֲזַי,",
+          "english": "He said to her: Look,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "דַּאֲנָא רִפְתָּא מְעַלַּיְתָא בָּעֵינָא.",
+          "english": "I want good-quality bread.",
+          "notes": "A hint: sift the normal way, because that is permitted."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "ראיה",
+      "triggerLanguage": "דְּבֵיתְהוּ דְּרַב יוֹסֵף נָהֲלָא קִמְחָא",
+      "macroPhase": "narrative_aggadah",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        6,
+        7
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Continues the topic of sifting a second time on יום טוב with a story about how it was done in practice.",
+      "mimraCoreRuling": "A change in how one sifts is not needed. One may sift normally to make good bread."
+    },
+    {
+      "stepNumber": 9,
+      "hebrewStepName": "מימרא",
+      "title": "רב אשי's wife sifts onto a table",
+      "stepSummary": "רב אשי's wife sifted flour onto a table instead of into the usual bowl.",
+      "simpleTranslation": "רב אשי's wife was sifting flour onto a table.",
+      "whatsHappening": "The גמרא tells a second story, about רב אשי's wife, who also sifted with a change. This sets up רב אשי's comment in the next step.",
+      "deeperAnalysis": "Normally flour is sifted into a bowl. Sifting onto a table is a שינוי, a change that makes the act look different from weekday work. The story alone does not tell us whether this change is required, so רב אשי explains it next.",
+      "keyTerms": [
+        {
+          "term": "פָּתוּרָא",
+          "meaning": "a table"
+        },
+        {
+          "term": "אַגַּבָּא",
+          "meaning": "on the back / surface of"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "דְּבֵיתְהוּ דְּרַב אָשֵׁי",
+          "english": "The wife of Rav Ashi"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "נָהֲלָא קִמְחָא אַגַּבָּא דְּפָתוּרָא.",
+          "english": "was sifting flour onto a table."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "ראיה",
+      "triggerLanguage": "דְּבֵיתְהוּ דְּרַב אָשֵׁי נָהֲלָא קִמְחָא אַגַּבָּא דְּפָתוּרָא",
+      "macroPhase": "narrative_aggadah",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        8
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "A second, parallel story about sifting with a change.",
+      "mimraCoreRuling": "In practice, רב אשי's household sifted on יום טוב with a change, onto a table."
+    },
+    {
+      "stepNumber": 10,
+      "hebrewStepName": "ראיה",
+      "title": "רב אשי trusts his wife's practice because of her father",
+      "stepSummary": "רב אשי says his wife is the daughter of רמי בר חמא, a careful man in practice. She must have learned this from his home, so her practice shows the correct way to act.",
+      "simpleTranslation": "רב אשי said: This wife of ours is the daughter of רמי בר חמא, and רמי בר חמא was a master of good deeds. If she had not seen this in her father's house, she would not have done it.",
+      "whatsHappening": "רב אשי explains why his wife's unusual sifting is a reliable example. She grew up in the home of רמי בר חמא, who was careful about how he kept the הלכה.",
+      "deeperAnalysis": "Here a household custom serves as evidence for הלכה in practice (מעשה רב). Because רמי בר חמא was known as a מרא דעובדא, his family's habits can be relied on. So sifting with a change, onto a table, is a proper way to sift on יום טוב. Note the contrast with step 8: there רב יוסף hinted that no change was needed, while here רב אשי upholds sifting with a change.",
+      "keyTerms": [
+        {
+          "term": "מָרָא דְעוֹבָדָא",
+          "meaning": "a master of deeds: someone careful about doing מצוות correctly in practice"
+        },
+        {
+          "term": "בְּרַתֵּיה",
+          "meaning": "his daughter"
+        },
+        {
+          "term": "מִבֵּי נָשָׁא",
+          "meaning": "from (her father's) household"
+        }
+      ],
+      "whyThisMatters": "It shows that the גמרא treats the practice of a careful family as real evidence for הלכה in practice.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר רַב אָשֵׁי:",
+          "english": "Rav Ashi said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "הָא דִּידַן, בְּרַתֵּיה דְּרָמֵי בַּר חָמָא,",
+          "english": "This one of ours (my wife) is the daughter of Rami bar Ḥama,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וְרָמֵי בַּר חָמָא מָרָא דְעוֹבָדָא הֲוָה,",
+          "english": "and Rami bar Ḥama was a master of good deeds,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וְאִי לָאו דַּחֲזַאי מִבֵּי נָשָׁא",
+          "english": "and if she had not seen this in her father's house,"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "לָא הֲוָה עָבְדָא.",
+          "english": "she would not have done it."
+        }
+      ],
+      "whatToRemember": "The sifting discussion ends here. A second sifting is allowed on יום טוב. Careful households sometimes sifted with a change, for example onto a table.",
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "מסקנא",
+      "triggerLanguage": "אָמַר רַב אָשֵׁי: הָא דִּידַן, בְּרַתֵּיה דְּרָמֵי בַּר חָמָא",
+      "macroPhase": "narrative_aggadah",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        9
+      ],
+      "scopeOfStep": "proof_mechanism",
+      "relationToPreviousStep": "Explains and backs up the story in the previous step.",
+      "raayaObject": "Sifting with a change, onto a table, is a proper practice on יום טוב.",
+      "raayaSupportSource": "The practice his wife learned in the home of רמי בר חמא, a man careful in practice."
+    },
+    {
+      "stepNumber": 11,
+      "hebrewStepName": "מימרא",
+      "title": "New משנה: asking the grocer for eggs and nuts by number",
+      "stepSummary": "On יום טוב a person may go to his regular grocer and ask for eggs and nuts by number, because people count these items at home anyway.",
+      "simpleTranslation": "A person may go to a grocer he regularly buys from and say: Give me eggs and nuts, a certain number of them. This is allowed because a homeowner normally counts these items in his own house.",
+      "whatsHappening": "A new משנה begins. It teaches how a person can get food from a store on יום טוב without it looking like regular buying and selling.",
+      "deeperAnalysis": "Business deals are forbidden on יום טוב. Counting eggs and nuts is not a 'business' act, because people count them at home too, so asking for a number does not look like trade. The phrase 'his regular grocer' matters: they trust each other, so they can settle the payment after יום טוב.",
+      "keyTerms": [
+        {
+          "term": "חֶנְוָנִי",
+          "meaning": "a grocer / shopkeeper"
+        },
+        {
+          "term": "הָרָגִיל אֶצְלוֹ",
+          "meaning": "whom he regularly deals with"
+        },
+        {
+          "term": "בְּמִנְיָן",
+          "meaning": "by number (counting)"
+        },
+        {
+          "term": "בַּעַל הַבַּיִת",
+          "meaning": "a homeowner"
+        }
+      ],
+      "confusionAlert": "The משנה is not allowing ordinary shopping on יום טוב. It allows asking for items in a way that does not look like a sale, such as by count. (The condition of not mentioning a price is not in the משנה. It comes later in the ברייתא as the view of רבי שמעון בן אלעזר.)",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מַתְנִי׳ הוֹלֵךְ אָדָם אֵצֶל חֶנְוָנִי",
+          "english": "MISHNA: A person may go to a grocer"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "הָרָגִיל אֶצְלוֹ וְאוֹמֵר לוֹ:",
+          "english": "whom he regularly deals with, and say to him:"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "תֵּן לִי בֵּיצִים וֶאֱגוֹזִים בְּמִנְיָן,",
+          "english": "Give me eggs and nuts by number,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "שֶׁכֵּן דֶּרֶךְ בַּעַל הַבַּיִת",
+          "english": "for that is the way of a homeowner,"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "לִהְיוֹת מוֹנֶה בְּתוֹךְ בֵּיתוֹ.",
+          "english": "to count inside his own house."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "מַתְנִי׳ הוֹלֵךְ אָדָם אֵצֶל חֶנְוָנִי הָרָגִיל אֶצְלוֹ",
+      "macroPhase": "mishnah",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "A new topic: getting food from a merchant on יום טוב.",
+      "mimraCoreRuling": "A person may ask his regular grocer for eggs and nuts by number on יום טוב, because counting is a normal household act."
+    },
+    {
+      "stepNumber": 12,
+      "hebrewStepName": "מימרא",
+      "title": "ברייתא: shepherd, butcher, poultry dealer and baker",
+      "stepSummary": "A ברייתא extends the משנה's rule. On יום טוב one may ask his regular shepherd, butcher, poultry dealer or baker for 'one' item, such as a kid, a foreleg, a dove or a loaf.",
+      "simpleTranslation": "The Sages taught: A person may go to a shepherd he regularly deals with and say: Give me one kid or one lamb. He may go to a butcher and say: Give me one foreleg or one thigh. He may go to a poultry dealer and say: Give me one dove or one pigeon. He may go to a baker and say: Give me one loaf or one fine cake.",
+      "whatsHappening": "The גמרא brings a ברייתא that applies the משנה's idea to other kinds of sellers. Each time, the person asks for a single counted item.",
+      "deeperAnalysis": "The משנה mentioned only the grocer. The ברייתא shows the same rule works with every regular seller. Asking for 'one' item names something specific without a measure or a price, so it does not look like a business deal.",
+      "keyTerms": [
+        {
+          "term": "תָּנוּ רַבָּנַן",
+          "meaning": "the Sages taught (introduces a ברייתא)"
+        },
+        {
+          "term": "טַבָּח",
+          "meaning": "a butcher"
+        },
+        {
+          "term": "פַּטָּם",
+          "meaning": "one who fattens and sells birds (a poultry dealer)"
+        },
+        {
+          "term": "נַחְתּוֹם",
+          "meaning": "a baker"
+        },
+        {
+          "term": "גְּלוּסְקָא",
+          "meaning": "a fine loaf or cake"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "גְּמָ׳ תָּנוּ רַבָּנַן:",
+          "english": "GEMARA: The Sages taught:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "הוֹלֵךְ אָדָם אֵצֶל רוֹעֶה הָרָגִיל אֶצְלוֹ",
+          "english": "A person may go to a shepherd he regularly deals with"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וְאוֹמֵר לוֹ: תֵּן לִי גְּדִי אֶחָד אוֹ טָלֶה אֶחָד.",
+          "english": "and say to him: Give me one kid or one lamb."
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "אֵצֶל טַבָּח הָרָגִיל אֶצְלוֹ",
+          "english": "To a butcher he regularly deals with"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "וְאוֹמֵר לוֹ: תֵּן לִי כַּף אַחַת אוֹ יָרֵךְ אַחַת.",
+          "english": "and say to him: Give me one foreleg or one thigh."
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "אֵצֶל פַּטָּם הָרָגִיל אֶצְלוֹ",
+          "english": "To a poultry dealer he regularly deals with"
+        },
+        {
+          "phraseNumber": 7,
+          "aramaic": "וְאוֹמֵר לוֹ: תֵּן לִי תּוֹר אֶחָד אוֹ גּוֹזָל אֶחָד.",
+          "english": "and say to him: Give me one dove or one pigeon."
+        },
+        {
+          "phraseNumber": 8,
+          "aramaic": "אֵצֶל נַחְתּוֹם הָרָגִיל אֶצְלוֹ",
+          "english": "To a baker he regularly deals with"
+        },
+        {
+          "phraseNumber": 9,
+          "aramaic": "וְאוֹמֵר לוֹ: תֵּן לִי כִּכָּר אֶחָד אוֹ גְּלוּסְקָא אַחַת.",
+          "english": "and say to him: Give me one loaf or one fine cake."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "ראיה",
+      "triggerLanguage": "תָּנוּ רַבָּנַן: הוֹלֵךְ אָדָם אֵצֶל רוֹעֶה הָרָגִיל אֶצְלוֹ",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        11
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Extends the משנה's grocer rule to other regular sellers.",
+      "mimraCoreRuling": "One may ask any regular seller for single, specific items on יום טוב."
+    },
+    {
+      "stepNumber": 13,
+      "hebrewStepName": "מימרא",
+      "title": "ברייתא: the grocer, as long as no measure is mentioned",
+      "stepSummary": "From the grocer one may ask for a number of eggs, nuts, peaches, pomegranates or an אתרוג. The condition is that he must not mention a measure.",
+      "simpleTranslation": "And to a grocer he regularly deals with he may say: Give me twenty eggs, or fifty nuts, ten peaches, five pomegranates and one אתרוג. This is allowed only as long as he does not mention a measure to him.",
+      "whatsHappening": "The ברייתא continues with the grocer case from the משנה and adds a condition: no measures.",
+      "deeperAnalysis": "Counting items is allowed. Naming a unit of measure, such as a קב or a pound, is how a real sale sounds, so it is forbidden. This sets the line between counting, which is permitted, and measuring, which is not.",
+      "keyTerms": [
+        {
+          "term": "וּבִלְבַד",
+          "meaning": "provided that / only as long as"
+        },
+        {
+          "term": "סְכוּם מִדָּה",
+          "meaning": "a stated measure (a unit of volume or weight)"
+        },
+        {
+          "term": "אֲפַרְסְקִין",
+          "meaning": "peaches"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְאֵצֶל חֶנְוָנִי הָרָגִיל אֶצְלוֹ",
+          "english": "And to a grocer he regularly deals with"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וְאוֹמֵר לוֹ: תֵּן לִי עֶשְׂרִים בֵּיצִים,",
+          "english": "he may say to him: Give me twenty eggs,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "אוֹ חֲמִשִּׁים אֱגוֹזִים, עֲשָׂרָה אֲפַרְסְקִין,",
+          "english": "or fifty nuts, ten peaches,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וַחֲמִשָּׁה רִמּוֹנִים וְאֶתְרוֹג אֶחָד.",
+          "english": "and five pomegranates and one etrog."
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "וּבִלְבַד שֶׁלֹּא יַזְכִּיר לוֹ סְכוּם מִדָּה.",
+          "english": "Provided that he does not mention to him a measure.",
+          "notes": "He may count items but not use a unit of measure."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וּבִלְבַד שֶׁלֹּא יַזְכִּיר לוֹ סְכוּם מִדָּה",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        11,
+        12
+      ],
+      "scopeOfStep": "exception_case",
+      "relationToPreviousStep": "Continues the ברייתא and adds a limiting condition.",
+      "mimraCoreRuling": "Counting items from the grocer is allowed, but naming a measure is not."
+    },
+    {
+      "stepNumber": 14,
+      "hebrewStepName": "מימרא",
+      "title": "רבי שמעון בן אלעזר: as long as no price is mentioned",
+      "stepSummary": "רבי שמעון בן אלעזר gives a different condition: the person must not mention the price of the purchase.",
+      "simpleTranslation": "רבי שמעון בן אלעזר says: This is allowed only as long as he does not mention to him the price of the purchase.",
+      "whatsHappening": "A second opinion in the ברייתא puts the limit in a different place. What must not be mentioned is the money, not the measure.",
+      "deeperAnalysis": "According to רבי שמעון בן אלעזר, what makes it a forbidden business deal is stating the price. So the person takes what he needs, and they settle the payment after יום טוב.",
+      "keyTerms": [
+        {
+          "term": "סְכוּם מִקָּח",
+          "meaning": "the price or amount of money of the purchase"
+        },
+        {
+          "term": "רַבִּי שִׁמְעוֹן בֶּן אֶלְעָזָר",
+          "meaning": "a תנא who gives a different condition"
+        }
+      ],
+      "whatToRemember": "On יום טוב one may get food from a regular seller only in a way that does not look like trade. The תנא קמא forbids mentioning a measure, and רבי שמעון בן אלעזר forbids mentioning the price.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "רַבִּי שִׁמְעוֹן בֶּן אֶלְעָזָר אוֹמֵר:",
+          "english": "Rabbi Shimon ben Elazar says:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וּבִלְבַד שֶׁלֹּא יַזְכִּיר לוֹ סְכוּם מִקָּח.",
+          "english": "Provided that he does not mention to him the price of the purchase."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "רַבִּי שִׁמְעוֹן בֶּן אֶלְעָזָר אוֹמֵר: וּבִלְבַד שֶׁלֹּא יַזְכִּיר לוֹ סְכוּם מִקָּח",
+      "macroPhase": "alternate_branch",
+      "branchRole": "alternative_approach",
+      "dependsOnStepNumbers": [
+        13
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "A different opinion about which detail turns the request into forbidden trade.",
+      "mimraCoreRuling": "The forbidden element is mentioning the price. Payment is settled after יום טוב."
+    },
+    {
+      "stepNumber": 15,
+      "hebrewStepName": "מסקנא",
+      "title": "הדרן — Closing the chapter אין צדין",
+      "stepSummary": "The standard farewell line that ends the third chapter, פרק אין צדין.",
+      "simpleTranslation": "We will return to you, chapter 'אין צדין'.",
+      "whatsHappening": "The chapter ends here. The גמרא says the traditional farewell line, promising to come back and learn this chapter again.",
+      "deeperAnalysis": "No new law is taught here. This line only marks the end of the discussion about hunting and preparing animals and food on יום טוב. A new chapter with a new topic starts right after it.",
+      "keyTerms": [
+        {
+          "term": "הֲדְרַן עֲלָךְ",
+          "meaning": "'We will return to you': the farewell formula said when a chapter is finished"
+        },
+        {
+          "term": "אֵין צָדִין",
+          "meaning": "'One may not trap': the opening words and name of the third chapter of בֵּיצָה"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "הֲדַרַן עֲלָךְ אֵין צָדִין",
+          "english": "We will return to you, [chapter] 'One may not trap'",
+          "notes": "A chapter is named after its opening words."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "הֲדַרַן עֲלָךְ",
+      "macroPhase": "conclusion",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        14
+      ],
+      "scopeOfStep": "wording",
+      "relationToPreviousStep": "Formally closes the chapter whose final discussion (Steps 11-14) was about getting food from regular sellers on יום טוב.",
+      "maskanaFinalTakeaway": "The chapter אין צדין is complete; a new chapter begins."
+    },
+    {
+      "stepNumber": 16,
+      "hebrewStepName": "מימרא",
+      "title": "Carrying wine jugs on a festival: not in a basket, but on the shoulder or in front",
+      "stepSummary": "The new chapter's opening משנה rules that wine jugs may not be carried in a basket or tub on יום טוב, but may be carried on the shoulder or in front of the body.",
+      "simpleTranslation": "Someone bringing jugs of wine from one place to another may not bring them in a basket or a tub. But he may carry them on his shoulder or in front of him.",
+      "whatsHappening": "A new chapter, פרק המביא, begins with a משנה about how to carry wine jugs on יום טוב.",
+      "deeperAnalysis": "Carrying the wine is allowed, because it is needed for the festival. Only the method is limited. A basket or tub is the normal weekday way to move many jugs, and doing it that way would look like ordinary hard work. Carrying on the shoulder or in front is a change (שינוי), which keeps the day feeling different from a weekday.",
+      "keyTerms": [
+        {
+          "term": "הַמֵּבִיא",
+          "meaning": "'One who brings': the opening word, which also gives the new chapter its name"
+        },
+        {
+          "term": "כַּדֵּי יַיִן",
+          "meaning": "Jugs or barrels of wine"
+        },
+        {
+          "term": "סַל וְקוּפָּה",
+          "meaning": "Basket and tub: containers for carrying many items the weekday way"
+        },
+        {
+          "term": "כְּתֵפוֹ",
+          "meaning": "His shoulder"
+        },
+        {
+          "term": "שִׁינּוּי",
+          "meaning": "A change from the usual weekday method of doing an action"
+        }
+      ],
+      "confusionAlert": "Do not think the משנה bans moving wine on יום טוב. Moving it is allowed. The משנה only limits HOW you move it, so that it does not look like regular weekday work.",
+      "whyThisMatters": "This sets the theme of the whole chapter: even permitted festival actions should be done with a change, so they do not look like weekday labor (עובדין דחול).",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "הַמֵּבִיא כַּדֵּי יַיִן",
+          "english": "One who brings jugs of wine",
+          "notes": "Start of the new chapter's משנה."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "מִמָּקוֹם לְמָקוֹם —",
+          "english": "from place to place"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "לֹא יְבִיאֵם בְּסַל וּבְקוּפָּה,",
+          "english": "may not bring them in a basket or in a tub,",
+          "notes": "This is the normal weekday way of carrying many jugs at once."
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "אֲבָל מֵבִיא הוּא",
+          "english": "but he may bring [them]"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "עַל כְּתֵפוֹ אוֹ לְפָנָיו.",
+          "english": "on his shoulder or in front of him.",
+          "notes": "An unusual method, so it is a change from weekday practice."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "מסקנא",
+      "triggerLanguage": "הַמֵּבִיא כַּדֵּי יַיִן מִמָּקוֹם לְמָקוֹם",
+      "macroPhase": "mishnah",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Opens a new chapter and a new topic after the הדרן in Step 15.",
+      "mimraCoreRuling": "On יום טוב, wine jugs may be carried only with a change: on the shoulder or in front, not in a basket or tub."
+    },
+    {
+      "stepNumber": 17,
+      "hebrewStepName": "מימרא",
+      "title": "Carrying straw: not slung behind the back, but held in the hand",
+      "stepSummary": "The משנה applies the same idea to straw: do not carry the tub on your back the usual way; carry it in your hand. This passage ends with the first word of the next rule.",
+      "simpleTranslation": "Likewise, someone bringing straw may not sling the tub behind his back. But he may carry it in his hand. And one may begin...",
+      "whatsHappening": "The משנה gives a second example of the same principle, this time with straw. It then begins a new rule ('and one may begin'), which continues on the next amud.",
+      "deeperAnalysis": "The word וכן ('likewise') tells us this is the same rule as the wine jugs. Slinging a tub of straw over the back is the normal weekday way, so it is not allowed. Carrying it in the hand is a change, so it is allowed. The last word, ומתחילין, opens a separate rule about taking straw from a pile; the rest of that rule comes on the next amud.",
+      "keyTerms": [
+        {
+          "term": "וְכֵן",
+          "meaning": "'And likewise': the same principle applies here"
+        },
+        {
+          "term": "תֶּבֶן",
+          "meaning": "Straw, used for burning as fuel or as animal feed"
+        },
+        {
+          "term": "יַפְשִׁיל",
+          "meaning": "Sling or throw over the back"
+        },
+        {
+          "term": "לַאֲחוֹרָיו",
+          "meaning": "Behind him, on his back"
+        },
+        {
+          "term": "וּמַתְחִילִין",
+          "meaning": "'And one may begin': the opening of the next rule"
+        }
+      ],
+      "whatToRemember": "The opening of פרק המביא teaches one principle with two examples: on יום טוב you may carry what you need, but with a שינוי from the weekday way. Wine goes on the shoulder or in front, not in a basket. Straw goes in the hand, not slung on the back.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְכֵן הַמּוֹלִיךְ אֶת הַתֶּבֶן —",
+          "english": "And likewise, one who carries the straw",
+          "notes": "Same principle as the wine jugs in Step 16."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "לֹא יַפְשִׁיל אֶת הַקּוּפָּה לַאֲחוֹרָיו,",
+          "english": "may not sling the tub behind him,",
+          "notes": "Carrying a load on the back is the regular weekday method."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "אֲבָל מְבִיאָהּ הוּא בְּיָדוֹ.",
+          "english": "but he may bring it in his hand.",
+          "notes": "Holding it in the hand is a change, so it is allowed."
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וּמַתְחִילִין",
+          "english": "And one may begin",
+          "notes": "Setup for the next rule of the משנה (about starting to take from a pile), which continues on the next amud."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וְכֵן הַמּוֹלִיךְ אֶת הַתֶּבֶן",
+      "macroPhase": "mishnah",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        16
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Applies the same 'carry with a change' principle from Step 16 to a second case (straw), then begins the next clause.",
+      "mimraCoreRuling": "Straw may be carried on יום טוב in the hand, but not in a tub slung behind the back."
+    }
+  ]
+}

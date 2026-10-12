@@ -1,0 +1,1501 @@
+{
+  "mainTopic": "Manners, aggadot about ישראל's boldness, being carried in a chair on יום טוב, and the start of the משנה about a בכור in a pit",
+  "overview": "This עמוד opens by finishing an earlier discussion: רמי בר אבא's statement teaches good manners (אורח ארעא), not an איסור. ברייתות on eating garlic and onions and on drinking a cup in two sips show that חכמים teach manners. More sayings of רמי בר אבא follow, about plants that 'cut off the feet' of sinners: the border plant, the young tree, and the bitter תורמוס bean. רבי אלעזר explains that ישראל did not soften even like the bean that is cooked seven times. This leads to teachings that ישראל are bold (עזין), that the תורה was given to them because of this, and to ריש לקיש's list of the three bold ones. The גמרא then returns to the משנה: on יום טוב one may not carry a slaughtered animal on a pole, and a ברייתא forbids going out in a carried chair. Stories of sages being carried are explained as cases where the public needed them, and רבי אמי adds that even then the chair may not ride on shoulder-poles, except for real needs like fear of falling. A new משנה begins about a בכור that fell into a pit on יום טוב, and it continues on the next עמוד.",
+  "steps": [
+    {
+      "stepNumber": 1,
+      "hebrewStepName": "תירוץ",
+      "title": "The earlier teaching is about good manners, not a prohibition",
+      "stepSummary": "The גמרא answers the question it was just asking. רמי בר אבא's statement teaches proper manners, not an איסור.",
+      "simpleTranslation": "It is teaching us proper manners.",
+      "whatsHappening": "On the previous עמוד, the גמרא asked what איסור could be involved in רמי בר אבא's statement. Here it answers: there is no איסור, he is only teaching proper manners.",
+      "deeperAnalysis": "The question assumed that every ruling must be about something forbidden. The answer changes the category. Some teachings exist only to train good behavior, and a person who ignores them is acting crudely, not sinning.",
+      "keyTerms": [
+        {
+          "term": "אוֹרַח אַרְעָא",
+          "meaning": "The way of the world; proper manners and etiquette"
+        },
+        {
+          "term": "קָא מַשְׁמַע לַן",
+          "meaning": "It teaches us; the new point being made"
+        }
+      ],
+      "confusionAlert": "Do not think this line is a new topic. It is the answer to a question from the previous עמוד.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אוֹרַח אַרְעָא קָא מַשְׁמַע לַן.",
+          "english": "It is teaching us proper etiquette.",
+          "notes": "This answers the earlier question about what איסור is involved."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "תשובה",
+      "triggerLanguage": "אוֹרַח אַרְעָא קָא מַשְׁמַע לַן",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Answers a question raised on the previous amud about what is forbidden in רמי בר אבא's statement.",
+      "terutzResolutionType": "Recategorization: the statement teaches manners, not an איסור.",
+      "terutzHavaAmina": "We assumed the statement must be about something forbidden.",
+      "terutzMaskana": "It is only a lesson in proper manners."
+    },
+    {
+      "stepNumber": 2,
+      "hebrewStepName": "ראיה",
+      "title": "A ברייתא that teaches eating and drinking manners",
+      "stepSummary": "A ברייתא shows that חכמים teach manners. Eat garlic and onions from the leaves, not the head, and do not gulp a cup all at once.",
+      "simpleTranslation": "As it was taught: A person should not eat garlic or onion starting from its head, only from its leaves. If he did, he is a glutton. Similarly, a person should not drink his cup in one gulp. If he did, he is a greedy drinker.",
+      "whatsHappening": "The גמרא brings a ברייתא to show that חכמים really do give rules that are only about good manners.",
+      "deeperAnalysis": "These rules carry no punishment. Breaking them simply shows bad character: being a glutton, or a greedy drinker. This supports the idea from step 1 that a teaching can be purely about manners.",
+      "keyTerms": [
+        {
+          "term": "כִּדְתַנְיָא",
+          "meaning": "As was taught in a ברייתא; introduces a supporting source"
+        },
+        {
+          "term": "רַעַבְתָּן",
+          "meaning": "A glutton; someone who eats greedily"
+        },
+        {
+          "term": "גַּרְגְּרָן",
+          "meaning": "A greedy drinker; someone who gulps"
+        },
+        {
+          "term": "כַּיּוֹצֵא בוֹ",
+          "meaning": "Similarly; a parallel case"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "כִּדְתַנְיָא:",
+          "english": "As it was taught in a baraita:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "לֹא יֹאכַל אָדָם שׁוּם וּבָצָל מֵרֹאשׁוֹ,",
+          "english": "A person should not eat garlic or onion from its head (root end),"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "אֶלָּא מֵעָלָיו.",
+          "english": "but rather from its leaves."
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וְאִם אָכַל — הֲרֵי זֶה רְעַבְתָּן.",
+          "english": "And if he did eat that way, he is a glutton."
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "כַּיּוֹצֵא בוֹ:",
+          "english": "Similarly:"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "לֹא יִשְׁתֶּה אָדָם כּוֹסוֹ בְּבַת אַחַת,",
+          "english": "A person should not drink his cup all at once,"
+        },
+        {
+          "phraseNumber": 7,
+          "aramaic": "וְאִם שָׁתָה — הֲרֵי זֶה גַּרְגְּרָן.",
+          "english": "and if he drank that way, he is a greedy drinker."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "מימרא",
+      "triggerLanguage": "כִּדְתַנְיָא",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        1
+      ],
+      "scopeOfStep": "proof_mechanism",
+      "relationToPreviousStep": "Gives a source showing that teachings about manners alone are common.",
+      "raayaObject": "The claim that חכמים teach manners even when no איסור is involved.",
+      "raayaSupportSource": "A ברייתא about eating garlic and onions and drinking a cup."
+    },
+    {
+      "stepNumber": 3,
+      "hebrewStepName": "מימרא",
+      "title": "How many sips a cup should take",
+      "stepSummary": "Another ברייתא explains the cup rule more fully. One gulp is greedy, two sips is proper, three sips is arrogant.",
+      "simpleTranslation": "The Rabbis taught: One who drinks his cup in one gulp is a greedy drinker. In two sips, that is proper manners. In three sips, he is one of the haughty.",
+      "whatsHappening": "The גמרא adds a ברייתא that takes the drinking rule further. It shows that you can go wrong in either direction.",
+      "deeperAnalysis": "The first ברייתא only warned against gulping. This one shows that too many sips is also wrong, because it looks like showing off how delicate and refined you are. The proper way is the middle: two sips.",
+      "keyTerms": [
+        {
+          "term": "תָּנוּ רַבָּנַן",
+          "meaning": "The Rabbis taught; introduces a ברייתא"
+        },
+        {
+          "term": "בְּבַת אַחַת",
+          "meaning": "All at once; in one go"
+        },
+        {
+          "term": "דֶּרֶךְ אֶרֶץ",
+          "meaning": "Proper manners (Hebrew for אורח ארעא)"
+        },
+        {
+          "term": "גַּסֵּי הָרוּחַ",
+          "meaning": "The haughty; people who are arrogant"
+        }
+      ],
+      "whatToRemember": "Good manners means the middle path. One gulp is greedy, three sips is showing off, and two sips is right.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "תָּנוּ רַבָּנַן:",
+          "english": "The Rabbis taught:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "הַשּׁוֹתֶה כּוֹסוֹ בְּבַת אַחַת — הֲרֵי זֶה גַּרְגְּרָן,",
+          "english": "One who drinks his cup all at once is a greedy drinker;"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "שְׁנַיִם — דֶּרֶךְ אֶרֶץ,",
+          "english": "in two sips, that is proper etiquette;"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "שְׁלֹשָׁה — מִגַּסֵּי הָרוּחַ.",
+          "english": "in three sips, he is of the haughty."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "ראיה",
+      "triggerLanguage": "תָּנוּ רַבָּנַן",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        2
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Expands the drinking rule from the previous ברייתא.",
+      "mimraCoreRuling": "One gulp is greedy, two sips is proper manners, and three sips is arrogant."
+    },
+    {
+      "stepNumber": 4,
+      "hebrewStepName": "מימרא",
+      "title": "The boundary plant will punish those who stole land",
+      "stepSummary": "רמי בר אבא says the חצובא plant, used to mark field borders, will 'cut off the feet' of the wicked who crossed those borders.",
+      "simpleTranslation": "And רמי בר אבא said: The sea squill cuts off the feet of the wicked.",
+      "whatsHappening": "רמי בר אבא was just mentioned, so the גמרא now adds other teachings of his. This one is a moral lesson about a plant used to mark field borders.",
+      "deeperAnalysis": "Farmers planted חצובא at the edges of fields because its roots go straight down and do not spread. Those roots stay inside their border. People who pushed into their neighbor's land should have learned from the plant and stopped. On the Day of Judgment it will testify against them.",
+      "keyTerms": [
+        {
+          "term": "חֲצוּבָא",
+          "meaning": "Sea squill; a plant used to mark field borders"
+        },
+        {
+          "term": "מְקַטַּע רַגְלֵיהוֹן",
+          "meaning": "Cuts off their feet; a picture of punishment"
+        },
+        {
+          "term": "רַשִּׁיעַיָּא",
+          "meaning": "The wicked ones"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְאָמַר רָמֵי בַּר אַבָּא:",
+          "english": "And Rami bar Abba said:",
+          "notes": "Brought here only because he was already being quoted."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "חֲצוּבָא — מְקַטַּע רַגְלֵיהוֹן דְּרַשִּׁיעַיָּא.",
+          "english": "The sea squill cuts off the feet of the wicked.",
+          "notes": "Those who crossed borders into other people's land."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וְאָמַר רָמֵי בַּר אַבָּא",
+      "macroPhase": "narrative_aggadah",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "A side teaching from the same speaker, not part of the argument.",
+      "mimraCoreRuling": "The boundary plant, which never spreads past its border, will testify against people who stole their neighbors' land."
+    },
+    {
+      "stepNumber": 5,
+      "hebrewStepName": "מימרא",
+      "title": "Young trees will punish those who do not wait",
+      "stepSummary": "רמי בר אבא continues: young trees will 'cut off the feet' of butchers who eat too early and of men who are with a נדה.",
+      "simpleTranslation": "A young tree cuts off the feet of butchers and of those who have relations with women who are נדה.",
+      "whatsHappening": "This continues רמי בר אבא's teaching with a second example: a newly planted tree.",
+      "deeperAnalysis": "After a tree is planted, its fruit may not be eaten for three years (ערלה). That waiting is a lesson in patience. Butchers who eat the meat before the animal is skinned, and men who do not wait until their wife becomes טהורה, failed to learn that lesson.",
+      "keyTerms": [
+        {
+          "term": "נְטִיעָה",
+          "meaning": "A young, newly planted tree"
+        },
+        {
+          "term": "קַצָּבַיָּא",
+          "meaning": "Butchers"
+        },
+        {
+          "term": "בּוֹעֲלֵי נִדּוֹת",
+          "meaning": "Men who have relations with women who are נדה"
+        }
+      ],
+      "whatToRemember": "Nature teaches discipline. The border plant teaches staying in your limits, and the young tree teaches waiting patiently.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "נְטִיעָה — מְקַטַּע רַגְלֵיהוֹן",
+          "english": "A young tree cuts off the feet"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "דְּקַצָּבַיָּא וּדְבוֹעֲלֵי נִדּוֹת.",
+          "english": "of butchers and of those who have relations with menstruating women.",
+          "notes": "Both groups failed to wait, unlike the three-year wait for a young tree's fruit."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "נְטִיעָה — מְקַטַּע רַגְלֵיהוֹן",
+      "macroPhase": "narrative_aggadah",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        4
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "A second example in the same pattern from רמי בר אבא.",
+      "mimraCoreRuling": "The three-year wait for a young tree's fruit will testify against people who did not wait: hasty butchers and men who are with a נדה."
+    },
+    {
+      "stepNumber": 6,
+      "hebrewStepName": "מימרא",
+      "title": "The lupine bean cuts off the feet of Israel's enemies",
+      "stepSummary": "רמי בר אבא's last 'cuts off the feet' statement: the תורמוס is a sign against ישראל, and he brings a פסוק listing seven kinds of עבודה זרה.",
+      "simpleTranslation": "The lupine bean cuts off the feet of 'the enemies of Israel.' As the verse says: 'The children of Israel continued to do evil in ה׳'s eyes. They served the Baalim, the Ashtaroth, the gods of Aram, Zidon, Moab, Ammon, and the Philistines. They abandoned ה׳ and did not serve Him.'",
+      "whatsHappening": "This is the last line in רמי בר אבא's list of things that 'cut off the feet' of sinners. He says the bitter תורמוס bean stands as an accusation against ישראל, and he quotes a פסוק to show why.",
+      "deeperAnalysis": "The פסוק lists seven types of idols ישראל served. It ends with two phrases that seem to say the same thing: 'they abandoned ה׳' and 'they did not serve Him.' This apparent repetition sets up the next step, where the גמרא will ask what the extra words add.",
+      "keyTerms": [
+        {
+          "term": "תּוֹרְמוֹס",
+          "meaning": "Lupine, a very bitter bean that is only edible after being cooked many times"
+        },
+        {
+          "term": "מְקַטַּע רַגְלֵיהוֹן",
+          "meaning": "Cuts off their feet, meaning it brings about their downfall"
+        },
+        {
+          "term": "שׂוֹנְאֵיהֶם שֶׁל יִשְׂרָאֵל",
+          "meaning": "'The enemies of Israel,' a polite way of saying ישראל themselves"
+        },
+        {
+          "term": "בְּעָלִים וְעַשְׁתָּרוֹת",
+          "meaning": "Names of Canaanite idols"
+        }
+      ],
+      "confusionAlert": "'The enemies of Israel' does NOT mean the other nations here. The גמרא avoids saying something bad about ישראל directly, so it says 'their enemies.' It really means ישראל themselves.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "תּוֹרְמוֹסָא — מְקַטַּע רַגְלֵיהוֹן",
+          "english": "The lupine bean cuts off the feet",
+          "notes": "Continues רמי בר אבא's list from the previous steps"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "דְּשָׂנְאֵיהוֹן שֶׁל יִשְׂרָאֵל.",
+          "english": "of the enemies of Israel.",
+          "notes": "A polite way of referring to ישראל themselves"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "שֶׁנֶּאֱמַר: ״וַיּוֹסִיפוּ בְּנֵי יִשְׂרָאֵל",
+          "english": "As it says: 'And the children of Israel continued",
+          "notes": "שופטים י:ו"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "לַעֲשׂוֹת הָרַע בְּעֵינֵי ה׳",
+          "english": "to do evil in the eyes of ה׳"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "וַיַּעַבְדוּ אֶת הַבְּעָלִים וְאֶת הָעַשְׁתָּרוֹת",
+          "english": "and they served the Baalim and the Ashtaroth",
+          "notes": "Types 1 and 2"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "וְאֶת אֱלֹהֵי אֲרָם וְאֶת אֱלֹהֵי צִידוֹן",
+          "english": "and the gods of Aram and the gods of Zidon",
+          "notes": "Types 3 and 4"
+        },
+        {
+          "phraseNumber": 7,
+          "aramaic": "וְאֵת אֱלֹהֵי מוֹאָב וְאֵת אֱלֹהֵי בְנֵי עַמּוֹן",
+          "english": "and the gods of Moab and the gods of the children of Ammon",
+          "notes": "Types 5 and 6"
+        },
+        {
+          "phraseNumber": 8,
+          "aramaic": "וְאֵת אֱלֹהֵי פְלִשְׁתִּים",
+          "english": "and the gods of the Philistines",
+          "notes": "Type 7"
+        },
+        {
+          "phraseNumber": 9,
+          "aramaic": "וַיַּעַזְבוּ אֶת ה׳ וְלֹא עֲבָדוּהוּ״.",
+          "english": "and they abandoned ה׳ and did not serve Him.'",
+          "notes": "The ending sounds repetitive. This sets up the next question."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "תּוֹרְמוֹסָא — מְקַטַּע רַגְלֵיהוֹן דְּשָׂנְאֵיהוֹן שֶׁל יִשְׂרָאֵל",
+      "macroPhase": "narrative_aggadah",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        4,
+        5
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Third and final item in רמי בר אבא's 'cuts off the feet' series",
+      "mimraCoreRuling": "The תורמוס testifies against ישראל for their idolatry, as shown by the פסוק in שופטים."
+    },
+    {
+      "stepNumber": 7,
+      "hebrewStepName": "שאלה",
+      "title": "Why does the verse add 'and did not serve Him'?",
+      "stepSummary": "The גמרא points out that 'they did not serve Him' seems unnecessary after 'they abandoned ה׳.'",
+      "simpleTranslation": "Since the verse already says 'they abandoned ה׳,' don't I already know they did not serve Him? So why does the verse add 'and did not serve Him'?",
+      "whatsHappening": "The גמרא asks why the פסוק includes words that seem extra. This question sets up the next step, where רבי אלעזר explains the connection to the תורמוס.",
+      "deeperAnalysis": "If someone abandons ה׳, then obviously he is not serving Him. Because the תורה does not waste words, the extra phrase must be teaching something new. The answer will explain what that is.",
+      "keyTerms": [
+        {
+          "term": "מִמַּשְׁמַע",
+          "meaning": "From the implication of"
+        },
+        {
+          "term": "אֵינִי יוֹדֵעַ",
+          "meaning": "Do I not know? (a rhetorical question)"
+        },
+        {
+          "term": "מַה תַּלְמוּד לוֹמַר",
+          "meaning": "Why does the verse need to say this?"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מִמַּשְׁמַע שֶׁנֶּאֱמַר ״וַיַּעַזְבוּ אֶת ה׳״,",
+          "english": "From the implication of what is said, 'and they abandoned ה׳,'"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אֵינִי יוֹדֵעַ שֶׁלֹּא עֲבָדוּהוּ?!",
+          "english": "do I not know that they did not serve Him?!"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וּמָה תַּלְמוּד לוֹמַר ״וְלֹא עֲבָדוּהוּ״ —",
+          "english": "So why does the verse say 'and did not serve Him'?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "קשיא",
+      "triggerLanguage": "מִמַּשְׁמַע שֶׁנֶּאֱמַר וַיַּעַזְבוּ אֶת ה׳ אֵינִי יוֹדֵעַ שֶׁלֹּא עֲבָדוּהוּ",
+      "macroPhase": "narrative_aggadah",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        6
+      ],
+      "scopeOfStep": "wording",
+      "relationToPreviousStep": "Questions the wording of the פסוק quoted in step 6",
+      "sheelahInformationSought": "What the seemingly extra words 'and did not serve Him' come to teach"
+    },
+    {
+      "stepNumber": 8,
+      "hebrewStepName": "תשובה",
+      "title": "Not even like a lupine bean",
+      "stepSummary": "רבי אלעזר explains that ישראל did not soften even the way a bitter bean softens after seven cookings.",
+      "simpleTranslation": "רבי אלעזר said: ה׳ said, 'My children did not treat Me even like this lupine bean. People cook it seven times, and then they eat it as dessert at the end of a meal.'",
+      "whatsHappening": "רבי אלעזר answers the question: the extra words mean ישראל did not 'soften' toward ה׳ at all. This also explains why the תורמוס was the bean that 'cuts off their feet.'",
+      "deeperAnalysis": "Even a very bitter bean becomes sweet after being cooked seven times. ישראל served seven kinds of idols and were punished for each one, yet they still did not soften and come back to serve ה׳. The bean that becomes sweet stands as an accusation against a people who stayed bitter.",
+      "keyTerms": [
+        {
+          "term": "שׁוֹלְקִין",
+          "meaning": "They boil or cook it"
+        },
+        {
+          "term": "שֶׁבַע פְּעָמִים",
+          "meaning": "Seven times, matching the seven idols in the פסוק"
+        },
+        {
+          "term": "קִנּוּחַ סְעוּדָה",
+          "meaning": "Dessert, the end of a meal"
+        },
+        {
+          "term": "הַקָּדוֹשׁ בָּרוּךְ הוּא",
+          "meaning": "The Holy One, Blessed be He"
+        }
+      ],
+      "whatToRemember": "The תורמוס softens after seven cookings, but ישראל did not soften after seven idolatries and their punishments. The bean is a reproach against ישראל's stubbornness.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר רַבִּי אֶלְעָזָר,",
+          "english": "Rabbi Elazar said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אָמַר הַקָּדוֹשׁ בָּרוּךְ הוּא:",
+          "english": "The Holy One, Blessed be He, said:"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "אֲפִילּוּ כַּתּוֹרְמוֹס הַזֶּה",
+          "english": "Even like this lupine bean"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "שֶׁשּׁוֹלְקִין אוֹתוֹ שֶׁבַע פְּעָמִים",
+          "english": "which people cook seven times"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "וְאוֹכְלִין אוֹתוֹ בְּקִנּוּחַ סְעוּדָה",
+          "english": "and then eat it as dessert at the end of a meal"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "לֹא עֲשָׂאוּנִי בָּנַי.",
+          "english": "My children did not treat Me."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אָמַר רַבִּי אֶלְעָזָר אָמַר הַקָּדוֹשׁ בָּרוּךְ הוּא אֲפִילּוּ כַּתּוֹרְמוֹס הַזֶּה",
+      "macroPhase": "narrative_aggadah",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        6,
+        7
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Answers the question of step 7",
+      "teshuvahAnswerProvided": "'And did not serve Him' means ישראל did not soften even after seven idolatries and their punishments, unlike the תורמוס, which softens after seven cookings."
+    },
+    {
+      "stepNumber": 9,
+      "hebrewStepName": "מימרא",
+      "title": "The תורה was given to ישראל because they are bold",
+      "stepSummary": "A ברייתא in the name of רבי מאיר: the תורה was given to ישראל because they are עזין, bold and stubborn.",
+      "simpleTranslation": "It was taught in the name of רבי מאיר: Why was the תורה given to ישראל? Because they are bold.",
+      "whatsHappening": "The גמרא moves from ישראל's stubbornness to a related idea: the reason the תורה was given to them.",
+      "deeperAnalysis": "רבי מאיר says ישראל's boldness is the reason they received the תורה. The תורה softens and refines them, which channels their stubborn nature. This turns the criticism of the previous steps into a description of their character and how the תורה works on it.",
+      "keyTerms": [
+        {
+          "term": "תָּנָא מִשְּׁמֵיהּ",
+          "meaning": "It was taught in a ברייתא in the name of"
+        },
+        {
+          "term": "עַזִּין",
+          "meaning": "Bold, brazen, stubborn"
+        },
+        {
+          "term": "מִפְּנֵי מָה",
+          "meaning": "For what reason?"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "תָּנָא מִשְּׁמֵיהּ דְּרַבִּי מֵאִיר:",
+          "english": "It was taught in the name of Rabbi Meir:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "מִפְּנֵי מָה נִתְּנָה תּוֹרָה לְיִשְׂרָאֵל —",
+          "english": "Why was the Torah given to Israel?"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "מִפְּנֵי שֶׁהֵן עַזִּין.",
+          "english": "Because they are bold."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "תָּנָא מִשְּׁמֵיהּ דְּרַבִּי מֵאִיר מִפְּנֵי מָה נִתְּנָה תּוֹרָה לְיִשְׂרָאֵל",
+      "macroPhase": "narrative_aggadah",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [
+        8
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Picks up the theme of ישראל's stubbornness and opens a new topic",
+      "mimraCoreRuling": "The תורה was given to ישראל because of their bold, stubborn nature."
+    },
+    {
+      "stepNumber": 10,
+      "hebrewStepName": "מימרא",
+      "title": "A fiery law for a fiery people",
+      "stepSummary": "דבי רבי ישמעאל reads 'אש דת למו' to mean ישראל are fit to receive a fiery law.",
+      "simpleTranslation": "The school of רבי ישמעאל taught on the verse 'From His right hand, a fiery law for them': ה׳ said, 'These people are fit to be given a fiery law.'",
+      "whatsHappening": "Another ברייתא supports the same idea using a פסוק. A strong, fiery people needs a strong, fiery law.",
+      "deeperAnalysis": "The words 'אש דת' are read to mean that the תורה given to ישראל matches their intense nature. A gentle law would not be enough for such a bold people.",
+      "keyTerms": [
+        {
+          "term": "תָּנָא דְּבֵי רַבִּי יִשְׁמָעֵאל",
+          "meaning": "A ברייתא from the study hall of רבי ישמעאל"
+        },
+        {
+          "term": "אֵשׁ דָּת",
+          "meaning": "A fiery law"
+        },
+        {
+          "term": "רְאוּיִין",
+          "meaning": "Fit, deserving"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "תָּנָא דְּבֵי רַבִּי יִשְׁמָעֵאל:",
+          "english": "The school of Rabbi Yishmael taught:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "״מִימִינוֹ אֵשׁ דָּת לָמוֹ״.",
+          "english": "'From His right hand, a fiery law for them.'",
+          "notes": "דברים לג:ב"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "אָמַר הַקָּדוֹשׁ בָּרוּךְ הוּא:",
+          "english": "The Holy One, Blessed be He, said:"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "רְאוּיִין הַלָּלוּ שֶׁתִּנָּתֵן לָהֶם דָּת אֵשׁ.",
+          "english": "These people are fit to be given a fiery law."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "ראיה",
+      "triggerLanguage": "תָּנָא דְּבֵי רַבִּי יִשְׁמָעֵאל מִימִינוֹ אֵשׁ דָּת לָמוֹ",
+      "macroPhase": "narrative_aggadah",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        9
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Gives a פסוק-based version of רבי מאיר's idea",
+      "mimraCoreRuling": "ישראל's fiery nature makes them fit for a fiery תורה."
+    },
+    {
+      "stepNumber": 11,
+      "hebrewStepName": "מימרא",
+      "title": "Another version: their nature is fire, held back by the תורה",
+      "stepSummary": "A second reading: ישראל's own nature is like fire, and without the תורה no nation could stand against them.",
+      "simpleTranslation": "Some say the reading is: 'The nature of these people is fire. If the תורה had not been given to ישראל, no nation or language could stand up to them.'",
+      "whatsHappening": "The גמרא gives a different version of the same ברייתא. Here the 'fire' describes ישראל themselves, not the law.",
+      "deeperAnalysis": "In the first version, the law is fiery to match the people. In this version, the people are the fire, and the תורה is what restrains them. Without the תורה, their boldness would overpower every other nation.",
+      "keyTerms": [
+        {
+          "term": "אִיכָּא דְּאָמְרִי",
+          "meaning": "Some say (introduces another version)"
+        },
+        {
+          "term": "דָּתֵיהֶם",
+          "meaning": "Their nature or ways"
+        },
+        {
+          "term": "אִלְמָלֵא",
+          "meaning": "Were it not for"
+        }
+      ],
+      "confusionAlert": "The word (לֹא) in parentheses is a textual correction and should not be read. The meaning is 'were it not that the תורה was given,' not 'were it not that the תורה was NOT given.'",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אִיכָּא דְּאָמְרִי:",
+          "english": "Some say:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "דָּתֵיהֶם שֶׁל אֵלּוּ — אֵשׁ.",
+          "english": "The nature of these people is fire."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "שֶׁאִלְמָלֵא (לֹא) נִתְּנָה תּוֹרָה לְיִשְׂרָאֵל —",
+          "english": "For were it not that the Torah was given to Israel,",
+          "notes": "(לֹא) is bracketed in the text and should be left out"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "אֵין כׇּל אוּמָּה וְלָשׁוֹן",
+          "english": "no nation or language"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "יְכוֹלִין לַעֲמוֹד בִּפְנֵיהֶם.",
+          "english": "would be able to stand up to them."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "triggerLanguage": "אִיכָּא דְּאָמְרִי דָּתֵיהֶם שֶׁל אֵלּוּ אֵשׁ",
+      "macroPhase": "alternate_branch",
+      "branchRole": "alternative_approach",
+      "dependsOnStepNumbers": [
+        10
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Alternative reading of the ברייתא in step 10",
+      "mimraCoreRuling": "ישראל's nature is fire, and the תורה restrains it. Without the תורה, no nation could withstand them."
+    },
+    {
+      "stepNumber": 12,
+      "hebrewStepName": "ראיה",
+      "title": "Three bold ones: ישראל, the dog, and the rooster",
+      "stepSummary": "ריש לקיש's list of the three boldest creatures fits the idea that ישראל are עזין. Others add the goat and the caper bush.",
+      "simpleTranslation": "This matches what רבי שמעון בן לקיש said: There are three bold ones: ישראל among the nations, the dog among animals, and the rooster among birds. Some add the goat among small livestock. Some add the caper bush among trees.",
+      "whatsHappening": "The גמרא says ריש לקיש's statement matches the idea that ישראל are bold. This closes out the theme.",
+      "deeperAnalysis": "'והיינו' tells us ריש לקיש is saying the same idea we just learned: ישראל are the boldest among the nations. Others extend his list to the goat and the caper bush, which also stand out for boldness or toughness in their category.",
+      "keyTerms": [
+        {
+          "term": "וְהַיְינוּ דְּאָמַר",
+          "meaning": "And this is what [so-and-so] said, meaning this matches his statement"
+        },
+        {
+          "term": "תַּרְנְגוֹל",
+          "meaning": "Rooster"
+        },
+        {
+          "term": "בְּהֵמָה דַּקָּה",
+          "meaning": "Small livestock, such as sheep and goats"
+        },
+        {
+          "term": "צָלָף",
+          "meaning": "Caper bush, a hardy, fast-growing plant"
+        },
+        {
+          "term": "יֵשׁ אוֹמְרִים",
+          "meaning": "Some say"
+        }
+      ],
+      "whatToRemember": "ישראל are naturally bold and stubborn. This can lead to sin, as with the תורמוס, but it is also why they received the תורה, which channels and restrains that strength.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְהַיְינוּ דְּאָמַר רַבִּי שִׁמְעוֹן בֶּן לָקִישׁ,",
+          "english": "And this matches what Rabbi Shimon ben Lakish said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "שְׁלֹשָׁה עַזִּין הֵן:",
+          "english": "There are three bold ones:"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "יִשְׂרָאֵל בָּאוּמּוֹת, כֶּלֶב בַּחַיּוֹת,",
+          "english": "Israel among the nations, the dog among animals,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "תַּרְנְגוֹל בָּעוֹפוֹת.",
+          "english": "the rooster among birds."
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "וְיֵשׁ אוֹמְרִים: אַף עֵז בִּבְהֵמָה דַּקָּה.",
+          "english": "Some say: also the goat among small livestock."
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "וְיֵשׁ אוֹמְרִים: אַף צָלָף בָּאִילָנוֹת.",
+          "english": "Some say: also the caper bush among trees."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "מימרא",
+      "triggerLanguage": "וְהַיְינוּ דְּאָמַר רַבִּי שִׁמְעוֹן בֶּן לָקִישׁ שְׁלֹשָׁה עַזִּין הֵן",
+      "macroPhase": "narrative_aggadah",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        9,
+        10,
+        11
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Supports the claim that ישראל are עזין with ריש לקיש's statement",
+      "raayaObject": "The claim that ישראל are by nature עזין",
+      "raayaSupportSource": "ריש לקיש's list of the three boldest creatures, which puts ישראל first"
+    },
+    {
+      "stepNumber": 13,
+      "hebrewStepName": "מימרא",
+      "title": "Back to the משנה: no carrying slaughtered meat on a pole",
+      "stepSummary": "The גמרא returns to the משנה's rule that an animal slaughtered in the field on יום טוב may not be carried home on a pole.",
+      "simpleTranslation": "If he slaughtered it in the field, he may not bring it home on a pole.",
+      "whatsHappening": "The גמרא quotes a new line of the משנה to start a new discussion. It is setting up the ברייתא that comes next.",
+      "deeperAnalysis": "Carrying is generally allowed on יום טוב for food needs. But carrying a carcass on a pole looks like weekday work, like a merchant bringing meat to market. So the issue is not the carrying itself but how it looks.",
+      "keyTerms": [
+        {
+          "term": "שְׁחָטָהּ",
+          "meaning": "He slaughtered it (the animal)"
+        },
+        {
+          "term": "שָׂדֶה",
+          "meaning": "Field"
+        },
+        {
+          "term": "מוֹט",
+          "meaning": "A pole (carried on the shoulders, often by two people)"
+        }
+      ],
+      "confusionAlert": "Do not think carrying is forbidden on יום טוב. It is permitted for food needs. Only the weekday-looking way of carrying, on a pole, is forbidden.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "שְׁחָטָהּ בַּשָּׂדֶה —",
+          "english": "If he slaughtered it in the field"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "לֹא יְבִיאֶנָּה בַּמּוֹט.",
+          "english": "he may not bring it on a pole.",
+          "notes": "Because it looks like a weekday activity (עובדא דחול)."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "שְׁחָטָהּ בַּשָּׂדֶה לֹא יְבִיאֶנָּה בַּמּוֹט",
+      "macroPhase": "mishnah",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Leaves the אגדה about ישראל being עזין and returns to the halachic text of the משנה.",
+      "mimraCoreRuling": "An animal slaughtered in the field on יום טוב may not be carried home on a pole, because that looks like weekday work."
+    },
+    {
+      "stepNumber": 14,
+      "hebrewStepName": "מימרא",
+      "title": "A ברייתא lists more forbidden weekday-style activities",
+      "stepSummary": "A ברייתא forbids a blind man going out with his cane, a shepherd with his bag, and anyone, man or woman, being carried in a chair on יום טוב.",
+      "simpleTranslation": "The רבנן taught: A blind man may not go out with his cane, and a shepherd may not go out with his bag. And people may not go out in a carried chair, whether a man or a woman.",
+      "whatsHappening": "The גמרא brings a ברייתא that gives more examples of the same idea as the משנה: things that make יום טוב look like a regular weekday.",
+      "deeperAnalysis": "Like the pole in the משנה, each case here looks like ordinary weekday behavior. The chair case is the one the rest of the סוגיא will focus on, since it is about being carried on poles by other people.",
+      "keyTerms": [
+        {
+          "term": "תָּנוּ רַבָּנַן",
+          "meaning": "The רבנן taught (introduces a ברייתא)"
+        },
+        {
+          "term": "סוּמָא",
+          "meaning": "A blind person"
+        },
+        {
+          "term": "מַקֵּל",
+          "meaning": "Cane, walking stick"
+        },
+        {
+          "term": "רוֹעֶה",
+          "meaning": "Shepherd"
+        },
+        {
+          "term": "תַּרְמִיל",
+          "meaning": "Satchel, shepherd's bag"
+        },
+        {
+          "term": "כִּסֵּא",
+          "meaning": "Chair, here a sedan chair carried on poles by others"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "תָּנוּ רַבָּנַן:",
+          "english": "The Rabbis taught:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אֵין הַסּוֹמֵא יוֹצֵא בְּמַקְלוֹ,",
+          "english": "A blind person may not go out with his cane,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וְלֹא הָרוֹעֶה בְּתַרְמִילוֹ.",
+          "english": "nor a shepherd with his satchel."
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וְאֵין יוֹצְאִין בְּכִסֵּא —",
+          "english": "And one may not go out in a chair"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "אֶחָד הָאִישׁ וְאֶחָד הָאִשָּׁה.",
+          "english": "both a man and a woman.",
+          "notes": "The rule applies equally to everyone."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "ראיה",
+      "triggerLanguage": "תָּנוּ רַבָּנַן",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        13
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Extends the משנה's principle about weekday-looking carrying to more cases.",
+      "mimraCoreRuling": "On יום טוב one may not go out with a blind man's cane, a shepherd's bag, or in a carried chair, whether man or woman."
+    },
+    {
+      "stepNumber": 15,
+      "hebrewStepName": "קשיא",
+      "title": "Challenge: רבי יהושע בן לוי allowed an old man to be carried",
+      "stepSummary": "The גמרא challenges the ban on chairs with a report from רבי יעקב בר אידי: רבי יהושע בן לוי permitted an elderly man to be carried in a litter if the public needed him.",
+      "simpleTranslation": "Is that really so? But רבי יעקב בר אידי sent a message: There was an old man in our neighborhood who used to go out in his litter on יום טוב. People came and asked רבי יהושע בן לוי, and he said: If many people need him, it is permitted.",
+      "whatsHappening": "The גמרא asks \"Is that so?\" and brings a case where being carried was allowed. This seems to contradict the ברייתא that forbids going out in a chair.",
+      "deeperAnalysis": "The ברייתא forbids the chair with no exceptions. But רבי יהושע בן לוי, a major authority, allowed it in a real case. The challenge is that an actual ruling seems to clash with the ברייתא.",
+      "keyTerms": [
+        {
+          "term": "אִינִי",
+          "meaning": "Is that so? (introduces a challenge)"
+        },
+        {
+          "term": "וְהָא שָׁלַח",
+          "meaning": "But he sent (a message, usually from ארץ ישראל)"
+        },
+        {
+          "term": "גְּלוּדְקֵי",
+          "meaning": "A litter, a carried seat"
+        },
+        {
+          "term": "רַבִּים צְרִיכִין לוֹ",
+          "meaning": "The public needs him (for example, to teach them)"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אִינִי?!",
+          "english": "Is that so?!"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וְהָא שָׁלַח רַבִּי יַעֲקֹב בַּר אִידִי:",
+          "english": "But didn't Rabbi Ya'akov bar Idi send:"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "זָקֵן אֶחָד הָיָה בִּשְׁכוּנָתֵינוּ",
+          "english": "There was a certain old man in our neighborhood"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וְהָיָה יוֹצֵא בִּגְלוּדְקֵי שֶׁלּוֹ,",
+          "english": "and he would go out in his litter,"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "וּבָאוּ וְשָׁאֲלוּ אֶת רַבִּי יְהוֹשֻׁעַ בֶּן לֵוִי,",
+          "english": "and they came and asked Rabbi Yehoshua ben Levi,"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "וְאָמַר: אִם רַבִּים צְרִיכִין לוֹ — מוּתָּר.",
+          "english": "and he said: If many need him, it is permitted."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אִינִי וְהָא שָׁלַח רַבִּי יַעֲקֹב בַּר אִידִי",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        14
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Attacks the chair rule from the ברייתא in step 14.",
+      "kashyaTarget": "The ברייתא's ban on going out in a chair on יום טוב.",
+      "kashyaAttackLogic": "A real ruling by רבי יהושע בן לוי allowed someone to be carried in a litter, which seems to contradict a total ban."
+    },
+    {
+      "stepNumber": 16,
+      "hebrewStepName": "קשיא",
+      "title": "More cases: רב הונא and שמואל were carried",
+      "stepSummary": "The challenge is strengthened. The sages relied on אחי שקיא, who carried רב הונא between towns, and רב נחמן בר יצחק carried שמואל between sun and shade.",
+      "simpleTranslation": "Also, our sages relied on what אחי שקיא said: I carried רב הונא from הינֵי to שילֵי and from שילי back to הינֵי. And רב נחמן בר יצחק said: I carried מר שמואל from the sun to the shade and from the shade to the sun.",
+      "whatsHappening": "The גמרא adds two more stories where great רבנים were carried on יום טוב. This makes the question against the ברייתא even stronger.",
+      "deeperAnalysis": "Now there are three cases against the ברייתא, not just one. The sages even relied on אחי שקיא's report as a practical precedent. The שמואל case is striking, since moving between sun and shade seems to be only for comfort.",
+      "keyTerms": [
+        {
+          "term": "וְסָמְכוּ רַבּוֹתֵינוּ",
+          "meaning": "And our sages relied (treated it as a precedent)"
+        },
+        {
+          "term": "אַפֵּיקְתֵּיהּ",
+          "meaning": "I carried him out, I brought him"
+        },
+        {
+          "term": "שִׁמְשָׁא",
+          "meaning": "The sun"
+        },
+        {
+          "term": "טוּלָּא",
+          "meaning": "The shade"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְסָמְכוּ רַבּוֹתֵינוּ עַל דִּבְרֵי אַחַי שָׁקְיָא,",
+          "english": "And our Rabbis relied on the words of Achi Shakya,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "דְּאָמַר: אֲנָא אַפֵּיקְתֵּיהּ לְרַב הוּנָא",
+          "english": "who said: I carried Rav Huna"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "מֵהִינֵי לְשִׁילֵי וּמִשִּׁילֵי לְהִינֵי.",
+          "english": "from Hinei to Shilei and from Shilei to Hinei.",
+          "notes": "Names of two towns."
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וְאָמַר רַב נַחְמָן בַּר יִצְחָק:",
+          "english": "And Rav Nachman bar Yitzchak said:"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "אֲנָא אַפֵּיקְתֵּיהּ לְמָר שְׁמוּאֵל",
+          "english": "I carried Mar Shmuel"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "מִשִּׁמְשָׁא לְטוּלָּא וּמִטּוּלָּא לְשִׁמְשָׁא!",
+          "english": "from the sun to the shade and from the shade to the sun!"
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "ראיה",
+      "triggerLanguage": "וְסָמְכוּ רַבּוֹתֵינוּ עַל דִּבְרֵי אַחַי שָׁקְיָא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        14,
+        15
+      ],
+      "scopeOfStep": "proof_mechanism",
+      "relationToPreviousStep": "Adds more precedents to the same challenge begun in step 15.",
+      "kashyaTarget": "The ברייתא's ban on going out in a chair.",
+      "kashyaAttackLogic": "Several great sages (רב הונא, שמואל) were actually carried on יום טוב, and the sages relied on it, so the ban seems not to hold."
+    },
+    {
+      "stepNumber": 17,
+      "hebrewStepName": "תירוץ",
+      "title": "Answer: allowed only when the public needs the person",
+      "stepSummary": "The גמרא answers that all these cases follow רבי יהושע בן לוי's reason: when the public needs the person, it is permitted.",
+      "simpleTranslation": "There, it is like the reason that was stated: If many people needed him, it is permitted.",
+      "whatsHappening": "The גמרא resolves the contradiction. The ברייתא's ban stays in place, and the stories are an exception because the public needed these people.",
+      "deeperAnalysis": "The ban on chairs is the general rule. When the community needs a person, for example a great teacher, there is an exception. רב הונא and שמואל were leaders the public needed, so their cases fit the exception.",
+      "keyTerms": [
+        {
+          "term": "הָתָם",
+          "meaning": "There (in those cases)"
+        },
+        {
+          "term": "כִּדְאָמַר טַעְמָא",
+          "meaning": "According to the reason that was stated"
+        },
+        {
+          "term": "מוּתָּר",
+          "meaning": "Permitted"
+        }
+      ],
+      "whatToRemember": "Being carried in a chair on יום טוב is forbidden as weekday-like behavior, unless the public needs the person (רבים צריכין לו).",
+      "confusionAlert": "The answer does not cancel the ברייתא. The ban still applies to ordinary people. Only someone the public needs is an exception.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "הָתָם כִּדְאָמַר טַעְמָא:",
+          "english": "There, it is like the reason he stated:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אִם הָיוּ רַבִּים צְרִיכִין לוֹ — מוּתָּר.",
+          "english": "If many needed him, it is permitted."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "הָתָם כִּדְאָמַר טַעְמָא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        14,
+        15,
+        16
+      ],
+      "scopeOfStep": "exception_case",
+      "relationToPreviousStep": "Answers the challenges of steps 15 and 16.",
+      "terutzResolutionType": "Limiting the precedents to an exception (public need) while keeping the general ban.",
+      "terutzHavaAmina": "The stories seemed to show that being carried in a chair is simply allowed.",
+      "terutzMaskana": "The ban stands. Being carried is allowed only for someone the public needs."
+    },
+    {
+      "stepNumber": 18,
+      "hebrewStepName": "שאלה",
+      "title": "רב נחמן sends a messenger to ask about the chair",
+      "stepSummary": "רב נחמן tells חמא בר אדא, the messenger to ארץ ישראל, to make a detour to צור and ask רבי יעקב בר אידי what their practice is about a chair.",
+      "simpleTranslation": "רב נחמן said to חמא בר אדא, the messenger of ציון: When you go up there, take the longer route and go by the Ladder of צור. Go to רבי יעקב בר אידי and ask him: About a chair, what do you hold?",
+      "whatsHappening": "רב נחמן sets up a question to send to רבי יעקב בר אידי about being carried in a chair. Steps 19 and 20 tell what happened and give the answer.",
+      "deeperAnalysis": "רבי יעקב בר אידי was the one who reported רבי יהושע בן לוי's ruling, so he is the right person to ask. רב נחמן wants to hear directly what the practice is regarding a chair on יום טוב.",
+      "keyTerms": [
+        {
+          "term": "שְׁלִיחַ צִיּוֹן",
+          "meaning": "Messenger of ציון, someone who traveled between ארץ ישראל and בבל carrying rulings"
+        },
+        {
+          "term": "סָלְקַתְּ",
+          "meaning": "You go up (to ארץ ישראל)"
+        },
+        {
+          "term": "אַקֵּיף",
+          "meaning": "Go around, take a roundabout route"
+        },
+        {
+          "term": "סוּלָּמָא דְצוֹר",
+          "meaning": "The Ladder of צור, a place near the city of צור"
+        },
+        {
+          "term": "בְּעִי מִינֵּיהּ",
+          "meaning": "Ask him"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֲמַר לֵיהּ רַב נַחְמָן",
+          "english": "Rav Nachman said to"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "לְחָמָא בַּר אַדָּא שְׁלִיחַ צִיּוֹן:",
+          "english": "Chama bar Adda, the messenger of Zion:"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "כִּי סָלְקַתְּ לְהָתָם,",
+          "english": "When you go up there,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "אַקֵּיף וְזִיל אַסּוּלָּמָא דְצוֹר,",
+          "english": "go around and go by the Ladder of Tyre,"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "וְזִיל לְגַבֵּי דְּרַבִּי יַעֲקֹב בַּר אִידִי",
+          "english": "and go to Rabbi Ya'akov bar Idi"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "וּבְעִי מִינֵּיהּ:",
+          "english": "and ask him:"
+        },
+        {
+          "phraseNumber": 7,
+          "aramaic": "כִּסֵּא, מָה אַתּוּן בֵּיהּ?",
+          "english": "A chair, what do you hold about it?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אֲמַר לֵיהּ רַב נַחְמָן לְחָמָא בַּר אַדָּא שְׁלִיחַ צִיּוֹן",
+      "macroPhase": "opening_question",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [
+        14,
+        15,
+        17
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Opens a new inquiry into the practice regarding a chair, directed to the same רבי יעקב בר אידי quoted in step 15.",
+      "sheelahInformationSought": "What is the practice in ארץ ישראל about being carried in a chair on יום טוב?"
+    },
+    {
+      "stepNumber": 19,
+      "hebrewStepName": "שאלה",
+      "title": "The messenger finds a different sage and asks about the chair",
+      "stepSummary": "חמא בר אדא arrives to find רבי יעקב בר אידי has died. He asks רבי זריקא what the practice is about a chair on יום טוב.",
+      "simpleTranslation": "By the time he got there, רבי יעקב בר אידי had passed away. When he went up to ארץ ישראל, he found רבי זריקא and asked him: What is your practice about a chair?",
+      "whatsHappening": "The story from step 18 continues. The person he was sent to ask has died, so the messenger asks the same question to another sage, setting up the answer in the next step.",
+      "deeperAnalysis": "The question is the same one רב נחמן sent from step 18. Only the person being asked has changed, from רבי יעקב בר אידי to רבי זריקא. The question is open-ended: how do you in ארץ ישראל handle being carried in a chair?",
+      "keyTerms": [
+        {
+          "term": "נָח נַפְשֵׁיהּ",
+          "meaning": "His soul rested, meaning he passed away"
+        },
+        {
+          "term": "סְלֵיק",
+          "meaning": "Went up (to ארץ ישראל)"
+        },
+        {
+          "term": "אַשְׁכְּחֵיהּ",
+          "meaning": "He found him"
+        },
+        {
+          "term": "מָה אַתּוּן בֵּיהּ",
+          "meaning": "What do you (hold or do) about it?"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אַדַּאֲזַל לְהָתָם,",
+          "english": "By the time he went there,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "נָח נַפְשֵׁיהּ דְּרַבִּי יַעֲקֹב בַּר אִידִי.",
+          "english": "Rabbi Ya'akov bar Idi had passed away."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "כִּי סְלֵיק, אַשְׁכְּחֵיהּ לְרַבִּי זְרִיקָא,",
+          "english": "When he went up, he found Rabbi Zerika,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "אֲמַר לֵיהּ: כִּסֵּא מָה אַתּוּן בֵּיהּ?",
+          "english": "He said to him: A chair, what do you hold about it?",
+          "notes": "A chair that is carried with people sitting in it."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "מימרא (narrative)",
+      "triggerLanguage": "כִּסֵּא מָה אַתּוּן בֵּיהּ",
+      "macroPhase": "narrative_aggadah",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        18
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Carries out the mission given in step 18, but with a substitute sage.",
+      "sheelahInformationSought": "What is the practice in ארץ ישראל about being carried in a chair on יום טוב?"
+    },
+    {
+      "stepNumber": 20,
+      "hebrewStepName": "תשובה",
+      "title": "רבי אמי: allowed, as long as he is not carried on shoulders",
+      "stepSummary": "רבי זריקא quotes רבי אמי: being carried in a chair is allowed, as long as the person is not carried up on the shoulders.",
+      "simpleTranslation": "He answered him: This is what רבי אמי said: It is allowed, as long as he is not carried on the shoulders.",
+      "whatsHappening": "רבי זריקא answers the question by quoting רבי אמי: a chair is allowed, but with one condition.",
+      "deeperAnalysis": "The words \"ובלבד\" (as long as) show that the basic practice is to allow it. The new point is a limit: the chair may not be lifted up onto people's shoulders. This lets the ban from step 14 and the permits from steps 15 to 17 live together.",
+      "keyTerms": [
+        {
+          "term": "וּבִלְבַד",
+          "meaning": "As long as, provided that (introduces a condition)"
+        },
+        {
+          "term": "יְכַתֵּף",
+          "meaning": "Carry on the shoulders (from כָּתֵף, shoulder)"
+        }
+      ],
+      "confusionAlert": "Do not read this as a full ban on chairs. It is a permit with a condition: the problem is only being carried high up on shoulders.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֲמַר לֵיהּ, הָכִי אָמַר רַבִּי אַמֵּי:",
+          "english": "He said to him: Thus said Rabbi Ami:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וּבִלְבַד שֶׁלֹּא יְכַתֵּף.",
+          "english": "provided that he is not carried on the shoulders."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "הָכִי אָמַר רַבִּי אַמֵּי",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        18,
+        19
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Answers the question asked in step 19.",
+      "teshuvahAnswerProvided": "A chair is allowed, provided the person is not carried on the shoulders."
+    },
+    {
+      "stepNumber": 21,
+      "hebrewStepName": "שאלה",
+      "title": "What does 'not carried on the shoulders' mean?",
+      "stepSummary": "The גמרא asks what exactly רבי אמי's condition means.",
+      "simpleTranslation": "What does \"provided that he is not carried on the shoulders\" mean?",
+      "whatsHappening": "The גמרא asks for a clear definition of the condition from רבי אמי. This sets up the explanation in the next step.",
+      "deeperAnalysis": "The phrase \"not carried on the shoulders\" is not clear enough by itself. The גמרא wants to know what kind of carrying is actually forbidden.",
+      "keyTerms": [
+        {
+          "term": "מַאי",
+          "meaning": "What (is the meaning of)?"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מַאי וּבִלְבַד שֶׁלֹּא יְכַתֵּף?",
+          "english": "What is the meaning of: Provided that he is not carried on the shoulders?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "מַאי וּבִלְבַד שֶׁלֹּא יְכַתֵּף",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        20
+      ],
+      "scopeOfStep": "wording",
+      "relationToPreviousStep": "Asks for a definition of the condition stated in step 20.",
+      "sheelahInformationSought": "What kind of carrying is meant by \"יכתף\"?"
+    },
+    {
+      "stepNumber": 22,
+      "hebrewStepName": "תשובה",
+      "title": "It means on carrying poles",
+      "stepSummary": "רב יוסף בריה דרבא explains that the forbidden way is a chair raised up on poles resting on the bearers' shoulders.",
+      "simpleTranslation": "רב יוסף, son of רבא, said: It means on poles (אלונקי).",
+      "whatsHappening": "רב יוסף בריה דרבא defines the forbidden carrying: a chair raised on poles that rest on people's shoulders.",
+      "deeperAnalysis": "A chair up on shoulder-poles is very noticeable and looks like weekday hauling, which shows disrespect for יום טוב. A chair held low in the hands is allowed. So the line is drawn between a low chair (allowed) and a raised one on poles (forbidden).",
+      "keyTerms": [
+        {
+          "term": "אֲלוּנְקִי",
+          "meaning": "Carrying poles resting on the shoulders of two people"
+        }
+      ],
+      "whatToRemember": "Final rule: someone the public needs (רבים צריכין לו) may be carried in a chair on יום טוב, but not raised up on shoulder-poles (אלונקי), because that looks too much like weekday hauling.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר רַב יוֹסֵף בְּרֵיהּ דְּרָבָא: בַּאֲלוּנְקִי.",
+          "english": "Rav Yosef, son of Rava, said: On poles."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אָמַר רַב יוֹסֵף בְּרֵיהּ דְּרָבָא",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        21
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Answers the definition question of step 21.",
+      "teshuvahAnswerProvided": "\"Carried on the shoulders\" means on shoulder-poles (אלונקי)."
+    },
+    {
+      "stepNumber": 23,
+      "hebrewStepName": "קשיא",
+      "title": "But רב נחמן let ילתא be carried on poles",
+      "stepSummary": "The גמרא challenges the rule: רב נחמן allowed his wife ילתא to go out on shoulder-poles.",
+      "simpleTranslation": "Is that really so? But רב נחמן allowed ילתא to go out on poles!",
+      "whatsHappening": "The גמרא attacks the rule from step 22 with a real case: רב נחמן let his wife ילתא be carried on poles on יום טוב.",
+      "deeperAnalysis": "Step 22 said poles are forbidden. Yet a great sage, רב נחמן, allowed exactly that for ילתא. This looks like a direct contradiction.",
+      "keyTerms": [
+        {
+          "term": "אִינִי",
+          "meaning": "Is that so? (opens a challenge)"
+        },
+        {
+          "term": "וְהָא",
+          "meaning": "But look, here is a case that..."
+        },
+        {
+          "term": "שְׁרָא",
+          "meaning": "Permitted"
+        },
+        {
+          "term": "יַלְתָּא",
+          "meaning": "ילתא, the wife of רב נחמן"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אִינִי?! וְהָא רַב נַחְמָן שְׁרָא לַהּ לְיַלְתָּא",
+          "english": "Is that so? But Rav Nachman permitted Yalta"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "לְמִיפַּק אַאֲלוּנְקִי!",
+          "english": "to go out on poles!"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אִינִי וְהָא רַב נַחְמָן שְׁרָא לַהּ לְיַלְתָּא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        22
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Challenges the definition given in step 22.",
+      "kashyaTarget": "The rule that being carried on poles is forbidden.",
+      "kashyaAttackLogic": "רב נחמן actually allowed poles for ילתא, which contradicts the ban."
+    },
+    {
+      "stepNumber": 24,
+      "hebrewStepName": "תירוץ",
+      "title": "ילתא was different because she was afraid",
+      "stepSummary": "The גמרא answers that ילתא was afraid of falling, so she was a special case.",
+      "simpleTranslation": "ילתא is different, because she was afraid.",
+      "whatsHappening": "The גמרא answers the challenge: ילתא's case was an exception, because she was afraid of falling.",
+      "deeperAnalysis": "The general ban on poles stays in place. ילתא had a personal fear of falling, so the more secure poles were allowed for her. Her case is an exception, not a reason to cancel the rule.",
+      "keyTerms": [
+        {
+          "term": "שָׁאנֵי",
+          "meaning": "Is different"
+        },
+        {
+          "term": "בְּעִיתָא",
+          "meaning": "Frightened, afraid"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "שָׁאנֵי יַלְתָּא דִּבְעִיתָא.",
+          "english": "Yalta is different, as she was afraid."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "שָׁאנֵי יַלְתָּא דִּבְעִיתָא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        22,
+        23
+      ],
+      "scopeOfStep": "exception_case",
+      "relationToPreviousStep": "Answers the challenge of step 23.",
+      "terutzResolutionType": "Distinguishing the case (special circumstance)",
+      "terutzHavaAmina": "ילתא's case proves that poles are allowed for anyone.",
+      "terutzMaskana": "Poles are normally forbidden. ילתא was allowed because of her fear of falling."
+    },
+    {
+      "stepNumber": 25,
+      "hebrewStepName": "מימרא",
+      "title": "אמימר and מר זוטרא were carried on shoulders",
+      "stepSummary": "אמימר and מר זוטרא were carried on shoulders on the שבת of the festival, either from fear of falling or because of the pushing crowd.",
+      "simpleTranslation": "אמימר and מר זוטרא were carried on shoulders on the שבת of the festival because of fear. Some say it was because of the pushing of the crowd.",
+      "whatsHappening": "The גמרא reports how two later sages were carried on shoulders on the festival שבת, and gives two possible reasons.",
+      "deeperAnalysis": "This fits the exception from step 24. Shoulder-carrying was allowed for a real need. Version one: fear of falling, like ילתא. Version two: to protect them from being crushed by the large crowd at the lecture.",
+      "keyTerms": [
+        {
+          "term": "מְכַתְּפִי לְהוּ",
+          "meaning": "They would carry them on the shoulders"
+        },
+        {
+          "term": "שַׁבְּתָא דְרִגְלָא",
+          "meaning": "The שבת of the festival, when a big public lecture was given"
+        },
+        {
+          "term": "בִּיעֲתוּתָא",
+          "meaning": "Fear"
+        },
+        {
+          "term": "וְאָמְרִי לַהּ",
+          "meaning": "And some say (another version)"
+        },
+        {
+          "term": "דּוּחְקָא דְצִבּוּרָא",
+          "meaning": "The pushing of the crowd"
+        }
+      ],
+      "whatToRemember": "Carrying a person on shoulders on יום טוב is normally forbidden. It is allowed for a real need, such as fear of falling or danger from a pushing crowd.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אַמֵּימָר וּמָר זוּטְרָא מְכַתְּפִי לְהוּ",
+          "english": "Ameimar and Mar Zutra would be carried on the shoulders"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "בְּשַׁבְּתָא דְרִגְלָא מִשּׁוּם בִּיעֲתוּתָא,",
+          "english": "on the Shabbat of the Festival, because of fear,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וְאָמְרִי לַהּ מִשּׁוּם דּוּחְקָא דְצִבּוּרָא.",
+          "english": "and some say: because of the pushing of the crowd."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "ראיה",
+      "triggerLanguage": "אַמֵּימָר וּמָר זוּטְרָא מְכַתְּפִי לְהוּ",
+      "macroPhase": "narrative_aggadah",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        24
+      ],
+      "scopeOfStep": "exception_case",
+      "relationToPreviousStep": "Adds a practical example that fits the special-need exception from step 24.",
+      "mimraCoreRuling": "Sages were carried on shoulders on the festival שבת because of a real need (fear, or the crowd)."
+    },
+    {
+      "stepNumber": 26,
+      "hebrewStepName": "מימרא",
+      "title": "New משנה: a firstborn animal that fell into a pit",
+      "stepSummary": "A new משנה begins: if a בכור fell into a pit on יום טוב, רבי יהודה says an expert goes down and examines it.",
+      "simpleTranslation": "משנה: A firstborn animal that fell into a pit: רבי יהודה says: An expert goes down and examines it,",
+      "whatsHappening": "A new משנה starts with a new topic: a firstborn animal (בכור) that fell into a pit on יום טוב. This step opens the case and the beginning of רבי יהודה's view, which continues on the next עמוד.",
+      "deeperAnalysis": "A בכור may only be slaughtered and eaten if it has a blemish (מום) that an expert has confirmed. Here, the expert goes down into the pit to look for a blemish. What happens next depends on what he finds, which the משנה continues to explain.",
+      "keyTerms": [
+        {
+          "term": "מַתְנִי׳",
+          "meaning": "Our משנה (marks the start of a new משנה)"
+        },
+        {
+          "term": "בְּכוֹר",
+          "meaning": "A firstborn male animal, which is holy and given to a כהן"
+        },
+        {
+          "term": "בּוֹר",
+          "meaning": "Pit or cistern"
+        },
+        {
+          "term": "מוּמְחֶה",
+          "meaning": "An expert who judges blemishes on a בכור"
+        },
+        {
+          "term": "וְיִרְאֶה",
+          "meaning": "And he will look (examine for a blemish)"
+        }
+      ],
+      "confusionAlert": "The expert is not going down simply to rescue the animal. He goes down to check whether it has a blemish that would allow it to be slaughtered.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מַתְנִי׳ בְּכוֹר שֶׁנָּפַל לַבּוֹר,",
+          "english": "MISHNA: A firstborn animal that fell into a pit,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "רַבִּי יְהוּדָה אוֹמֵר: יֵרֵד מוּמְחֶה וְיִרְאֶה,",
+          "english": "Rabbi Yehuda says: An expert goes down and examines it,",
+          "notes": "The sentence continues on the next עמוד."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "מַתְנִי׳ בְּכוֹר שֶׁנָּפַל לַבּוֹר",
+      "macroPhase": "mishnah",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Starts a new topic, unrelated to being carried in a chair.",
+      "mimraCoreRuling": "According to רבי יהודה, if a בכור falls into a pit on יום טוב, an expert goes down to examine it for a blemish (continued on the next amud)."
+    }
+  ]
+}

@@ -1,0 +1,1071 @@
+{
+  "mainTopic": "Work on יום טוב that might be wasted or that finishes a vessel: new tiles, a doubtful bird, group cooking, and food-preparation rules",
+  "overview": "The amud opens by finishing the reason why new רעפים (clay tiles) may not be heated on יום טוב. Either they must first be tested, since they might crack, or the first heating hardens them into finished vessels. The גמרא then quotes a משנה from חולין about an injured bird that survived twenty-four hours. רבי אלעזר בר ינאי adds that it still needs a בדיקה. רבי ירמיה asks רבי זירא whether such a bird may be slaughtered on יום טוב. רבי זירא tries to prove from the tiles that it may not, but רבי ירמיה rejects the proof: his version of the tile ruling is about hardening, not testing. Next, a ברייתא about six people cooking together on שבת is reconciled with a contradicting ברייתא, depending on when the fire was brought. ריש לקיש explains that the one who placed the pot is liable because a new pot is hardened, like tiles. The amud closes with several ברייתות on what food preparation is allowed on יום טוב. It then begins a new משנה with another leniency of רבי אליעזר about standing over מוקצה produce, which continues on the next amud.",
+  "steps": [
+    {
+      "stepNumber": 1,
+      "hebrewStepName": "תירוץ",
+      "title": "Two reasons why new tiles may not be heated on יום טוב",
+      "stepSummary": "The גמרא finishes explaining the ban on heating new רעפים on יום טוב. Either they must first be tested, or they must be hardened.",
+      "simpleTranslation": "Because it is necessary to test them. And some say: because it is necessary to harden them.",
+      "whatsHappening": "The גמרא is finishing its answer to why one may not heat new tiles on יום טוב. It gives two possible reasons.",
+      "deeperAnalysis": "Reason one (לבדקן): new tiles might crack when heated. If they crack, the heating was work done for nothing, not for food. Reason two (לחסמן): the first heating hardens the tile and makes it usable, which counts as finishing a vessel (תיקון כלי) and is forbidden on יום טוב.",
+      "keyTerms": [
+        {
+          "term": "לְבׇדְקָן",
+          "meaning": "to test them, to see whether they hold up under heat"
+        },
+        {
+          "term": "לְחׇסְמָן",
+          "meaning": "to harden or temper them, which makes the vessel usable"
+        },
+        {
+          "term": "וְאָמְרִי לַהּ",
+          "meaning": "and some say it this way (an alternate version of the explanation)"
+        }
+      ],
+      "confusionAlert": "The first reason is NOT that testing is forbidden in itself. The worry is that the tile might crack, so the heating would turn out to be pointless work on יום טוב. Keep this in mind, because the next part of the sugya depends on it.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "שֶׁצָּרִיךְ לְבׇדְקָן.",
+          "english": "because it is necessary to test them.",
+          "notes": "The end of רבי יוחנן's explanation, which began on the previous amud."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וְאָמְרִי לַהּ:",
+          "english": "And some say it:",
+          "notes": "Introduces a second version of the reason."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "מִפְּנֵי שֶׁצָּרִיךְ לְחׇסְמָן.",
+          "english": "because it is necessary to harden them.",
+          "notes": "Hardening a tile counts as completing a vessel."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "מימרא",
+      "triggerLanguage": "שֶׁצָּרִיךְ לְבׇדְקָן. וְאָמְרִי לַהּ: מִפְּנֵי שֶׁצָּרִיךְ לְחׇסְמָן",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Completes the answer to the question 'מאי קא עביד', which was asked on the previous amud.",
+      "terutzResolutionType": "Identifies the hidden problem in an act that looks permitted, with two alternate versions.",
+      "terutzHavaAmina": "Heating tiles for roasting seems like normal food preparation, which is permitted on יום טוב.",
+      "terutzMaskana": "New tiles are different. They might crack, making the work pointless, or the first heating finishes the vessel."
+    },
+    {
+      "stepNumber": 2,
+      "hebrewStepName": "מימרא",
+      "title": "A משנה: an injured bird that survives 24 hours is kosher",
+      "stepSummary": "The גמרא quotes a משנה from מסכת חולין. A bird that was trampled, thrown, or crushed, but lived twenty-four hours and was then slaughtered, is כשרה.",
+      "simpleTranslation": "We learned there: If one trampled it, or threw it against the wall, or an animal crushed it, and it is twitching, and it survived twenty-four hours and he then slaughtered it, it is kosher.",
+      "whatsHappening": "The גמרא brings in a new source from another מסכת. It is setting up a question about יום טוב that will soon tie back to the tiles.",
+      "deeperAnalysis": "A badly hurt bird might be a טריפה, meaning it has a fatal injury. The משנה says that if it survived a full day, we treat it as כשרה. This sets up the issue of a case where there is a real reason to suspect a flaw.",
+      "keyTerms": [
+        {
+          "term": "תְּנַן הָתָם",
+          "meaning": "we learned there (quoting a משנה from a different place)"
+        },
+        {
+          "term": "דְּרָסָהּ",
+          "meaning": "he trampled it"
+        },
+        {
+          "term": "מְפַרְכֶּסֶת",
+          "meaning": "twitching or convulsing, still moving but unable to stand"
+        },
+        {
+          "term": "מֵעֵת לְעֵת",
+          "meaning": "a full twenty-four hours, from one moment to the same moment the next day"
+        },
+        {
+          "term": "כְּשֵׁרָה",
+          "meaning": "kosher, fit to eat"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "תְּנַן הָתָם:",
+          "english": "We learned there:",
+          "notes": "משנה in חולין."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "דְּרָסָהּ אוֹ שֶׁטְּרָפָהּ בַּכּוֹתֶל,",
+          "english": "If one trampled it or threw it against the wall,",
+          "notes": "The subject is a bird."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "אוֹ שֶׁרְצָצַתָּה בְּהֵמָה וּמְפַרְכֶּסֶת,",
+          "english": "or an animal crushed it, and it is twitching,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וְשָׁהֲתָה מֵעֵת לְעֵת וּשְׁחָטָהּ —",
+          "english": "and it survived twenty-four hours and he slaughtered it —"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "כְּשֵׁרָה.",
+          "english": "it is kosher."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "תְּנַן הָתָם",
+      "macroPhase": "source_derivation",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Starts a new topic that will later connect to the tile case.",
+      "mimraCoreRuling": "A bird injured by trampling, being thrown, or being crushed that survives twenty-four hours and is then slaughtered is כשרה."
+    },
+    {
+      "stepNumber": 3,
+      "hebrewStepName": "מימרא",
+      "title": "רבי אלעזר בר ינאי: the bird still needs a check",
+      "stepSummary": "רבי אלעזר בר ינאי, quoting רבי אלעזר בן אנטיגנוס, adds that this bird requires a בדיקה after שחיטה.",
+      "simpleTranslation": "רבי אלעזר בר ינאי said in the name of רבי אלעזר בן אנטיגנוס: It requires examination.",
+      "whatsHappening": "A sage, quoting the תנא רבי אלעזר בן אנטיגנוס, adds a condition to the משנה. Surviving twenty-four hours is not enough; the bird must also be checked for internal damage.",
+      "deeperAnalysis": "Even after the bird survives a day, there is still a real doubt that it might be a טריפה. So after שחיטה we must look inside it. This leftover doubt is exactly what the next question is about.",
+      "keyTerms": [
+        {
+          "term": "מִשּׁוּם",
+          "meaning": "in the name of"
+        },
+        {
+          "term": "צְרִיכָה בְּדִיקָה",
+          "meaning": "it requires examination for internal defects"
+        }
+      ],
+      "whyThisMatters": "Because the bird needs a check, slaughtering it might turn out to be pointless if it is found to be a טריפה. That sets up רבי ירמיה's יום טוב question.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר רַבִּי אֶלְעָזָר בַּר יַנַּאי",
+          "english": "Rabbi Elazar bar Yannai said",
+          "notes": "Attribution, merged into this step."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "מִשּׁוּם רַבִּי אֶלְעָזָר בֶּן אַנְטִיגְנוֹס:",
+          "english": "in the name of Rabbi Elazar ben Antigonus:"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "צְרִיכָה בְּדִיקָה.",
+          "english": "It requires examination."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אָמַר רַבִּי אֶלְעָזָר בַּר יַנַּאי מִשּׁוּם רַבִּי אֶלְעָזָר בֶּן אַנְטִיגְנוֹס",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        2
+      ],
+      "scopeOfStep": "exception_case",
+      "relationToPreviousStep": "Adds a condition to the משנה's ruling.",
+      "mimraCoreRuling": "An injured bird that survived twenty-four hours must still be examined after שחיטה."
+    },
+    {
+      "stepNumber": 4,
+      "hebrewStepName": "שאלה",
+      "title": "May this bird be slaughtered on יום טוב?",
+      "stepSummary": "רבי ירמיה asks רבי זירא whether one may slaughter such a doubtful bird on יום טוב. Do we worry about its possible flaw on יום טוב?",
+      "simpleTranslation": "רבי ירמיה asked רבי זירא: What is the law about slaughtering it on יום טוב? Do we suspect a flaw on יום טוב, or not?",
+      "whatsHappening": "A new question is asked about the bird that needs a check. Is it allowed to slaughter it on יום טוב?",
+      "deeperAnalysis": "שחיטה on יום טוב is allowed only for food. If the bird turns out to be a טריפה, the שחיטה was work done for nothing. The question is whether this possible flaw should stop us, or whether we may go ahead.",
+      "keyTerms": [
+        {
+          "term": "בְּעָא מִינֵּיהּ",
+          "meaning": "he asked of him"
+        },
+        {
+          "term": "מִי מַחְזְקִינַן",
+          "meaning": "do we presume or establish"
+        },
+        {
+          "term": "רֵעוּתָא",
+          "meaning": "a flaw or bad sign"
+        },
+        {
+          "term": "יוֹם טוֹב",
+          "meaning": "Festival day, when only food-related work is permitted"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "בְּעָא מִינֵּיהּ רַבִּי יִרְמְיָה מֵרַבִּי זֵירָא:",
+          "english": "Rabbi Yirmeya asked of Rabbi Zeira:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "מַהוּ לְשׇׁחְטָהּ בְּיוֹם טוֹב?",
+          "english": "What is the law about slaughtering it on Yom Tov?"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "מִי מַחְזְקִינַן רֵעוּתָא בְּיוֹם טוֹב,",
+          "english": "Do we presume a flaw on Yom Tov,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "אוֹ לָא?",
+          "english": "or not?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "בְּעָא מִינֵּיהּ רַבִּי יִרְמְיָה מֵרַבִּי זֵירָא",
+      "macroPhase": "opening_question",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        3
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Applies the בדיקה requirement to יום טוב.",
+      "sheelahInformationSought": "Does the possibility that the bird is a טריפה forbid slaughtering it on יום טוב, since the work might turn out to be unnecessary?"
+    },
+    {
+      "stepNumber": 5,
+      "hebrewStepName": "תשובה",
+      "title": "רבי זירא answers from the case of the new tiles",
+      "stepSummary": "רבי זירא answers by quoting the tile ruling. New רעפים may not be heated because they might crack. The same logic suggests the doubtful bird may not be slaughtered on יום טוב.",
+      "simpleTranslation": "He said to him: We already learned: One may not whiten tiles to roast on them. And we discussed it: What is he doing wrong? And רבה בר בר חנה said in the name of רבי יוחנן: Here we are dealing with new tiles, because it is necessary to test them.",
+      "whatsHappening": "רבי זירא answers the question by pointing back to the tile case from just before. The גמרא repeats that text on purpose, this time as a proof.",
+      "deeperAnalysis": "New tiles might crack, so heating them might be pointless work, and therefore it is forbidden on יום טוב. In the same way, the bird might be a טריפה, so slaughtering it might be pointless. So it too should be forbidden on יום טוב.",
+      "keyTerms": [
+        {
+          "term": "תְּנֵינָא",
+          "meaning": "we have already learned this (introduces a proof from a known source)"
+        },
+        {
+          "term": "מְלַבְּנִין",
+          "meaning": "heating until white-hot"
+        },
+        {
+          "term": "רְעָפִים",
+          "meaning": "clay tiles"
+        },
+        {
+          "term": "וַהֲוֵינַן בַּהּ",
+          "meaning": "and we discussed it (we raised a difficulty about it)"
+        },
+        {
+          "term": "הָכָא בְּ... עָסְקִינַן",
+          "meaning": "here we are dealing with (narrows a case to a specific situation)"
+        }
+      ],
+      "confusionAlert": "This is not a pointless repeat of the earlier tile text. The גמרא brings it again for a new job: as the proof for רבי ירמיה's question about the bird.",
+      "whatToRemember": "The comparison is: new tiles might crack, and the bird might be a טריפה. In both cases the action might turn out to be unnecessary work, so רבי זירא argues it is forbidden on יום טוב. The next step rejects this proof.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֲמַר לֵיהּ, תְּנֵינָא:",
+          "english": "He said to him: We have learned:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אֵין מְלַבְּנִין אֶת הָרְעָפִים לִצְלוֹת בָּהֶן.",
+          "english": "One may not whiten tiles in order to roast on them."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וַהֲוֵינַן בַּהּ: מַאי קָא עָבֵיד?",
+          "english": "And we discussed it: What is he doing?",
+          "notes": "In other words, what forbidden act is involved?"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וְאָמַר רַבָּה בַּר בַּר חָנָה אָמַר רַבִּי יוֹחָנָן:",
+          "english": "And Rabba bar bar Chana said that Rabbi Yochanan said:"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "הָכָא בִּרְעָפִים חֲדָשִׁים עָסְקִינַן,",
+          "english": "Here we are dealing with new tiles,"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "מִפְּנֵי שֶׁצָּרִיךְ לְבׇדְקָן.",
+          "english": "because it is necessary to test them.",
+          "notes": "They might crack, so the heating would be pointless."
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "ראיה",
+      "triggerLanguage": "אֲמַר לֵיהּ, תְּנֵינָא",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        1,
+        4
+      ],
+      "scopeOfStep": "proof_mechanism",
+      "relationToPreviousStep": "Answers רבי ירמיה's question by comparing it to the tile ruling.",
+      "teshuvahAnswerProvided": "Just as new tiles that might crack may not be heated on יום טוב, a bird that might be a טריפה may not be slaughtered on יום טוב.",
+      "raayaObject": "Forbidding שחיטה of a doubtful bird on יום טוב.",
+      "raayaSupportSource": "The ruling against heating new tiles, as explained by רבי יוחנן with the reason 'שצריך לבדקן'."
+    },
+    {
+      "stepNumber": 6,
+      "hebrewStepName": "דחיה",
+      "title": "The tile ruling is about hardening, not testing",
+      "stepSummary": "רבי ירמיה rejects רבי זירא's proof. The tile ban exists because heating hardens the tiles. That is a matter of making a vessel, and it has nothing to do with testing.",
+      "simpleTranslation": "He said to him: We learn that ruling with the reason \"because they need to be hardened.\"",
+      "whatsHappening": "רבי ירמיה pushes back against the proof רבי זירא just brought from the tiles. He says the tile ruling is built on a different reason.",
+      "deeperAnalysis": "רבי זירא's proof relied on the reason that new tiles must be tested, because they might crack and the work would be wasted. רבי ירמיה says his tradition gives a different reason: the first heating hardens the tiles into finished vessels, which is forbidden on יום טוב. Slaughtering a bird does not make anything into a vessel, so the tile ruling proves nothing about the bird.",
+      "keyTerms": [
+        {
+          "term": "אֲנַן",
+          "meaning": "We (meaning: our tradition of learning)"
+        },
+        {
+          "term": "לְחׇסְמָן",
+          "meaning": "To harden them (to firm up a new clay vessel)"
+        },
+        {
+          "term": "מַתְנִינַן",
+          "meaning": "We learn / we teach (this ruling)"
+        }
+      ],
+      "whyThisMatters": "This connects back to Step 1, which gave two versions of the reason for the tile ban: testing or hardening. On the hardening version, the tile case cannot serve as a proof for the bird question.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֲמַר לֵיהּ:",
+          "english": "He said to him:",
+          "notes": "רבי ירמיה responds to רבי זירא."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אֲנַן מִפְּנֵי שֶׁצָּרִיךְ לְחׇסְמָן",
+          "english": "We, [with the reason] \"because one needs to harden them\"",
+          "notes": "The reason is hardening, not testing."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "מַתְנִינַן לַהּ.",
+          "english": "learn it.",
+          "notes": "So there is no proof about the bird."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "תשובה",
+      "triggerLanguage": "אֲמַר לֵיהּ: אֲנַן מִפְּנֵי שֶׁצָּרִיךְ לְחׇסְמָן מַתְנִינַן לַהּ",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        1,
+        4,
+        5
+      ],
+      "scopeOfStep": "proof_mechanism",
+      "relationToPreviousStep": "Rejects the proof given in Step 5",
+      "dechiyaRejectionScope": "The comparison between the tile ruling and the doubtful bird",
+      "dechiyaFlawIdentified": "The tile ban is about hardening a vessel, not about testing, so it does not apply to checking a bird."
+    },
+    {
+      "stepNumber": 7,
+      "hebrewStepName": "מימרא",
+      "title": "Several people cooking together are all liable",
+      "stepSummary": "A ברייתא says that when six people each do one part of cooking on שבת, all of them are liable.",
+      "simpleTranslation": "It was taught: One brings the fire, one brings the wood, one puts the pot on the stove, one brings the water, one puts in spices, and one stirs. All of them are liable.",
+      "whatsHappening": "The גמרא starts a new topic by quoting a ברייתא about a group that cooks together on שבת.",
+      "deeperAnalysis": "The cooking is split into six small jobs done by six different people. The ברייתא rules that each one shares in the forbidden act of cooking, so each one is liable.",
+      "keyTerms": [
+        {
+          "term": "תַּנְיָא",
+          "meaning": "It was taught in a ברייתא"
+        },
+        {
+          "term": "שׁוֹפֵת אֶת הַקְּדֵרָה",
+          "meaning": "Places the pot on the stove"
+        },
+        {
+          "term": "מֵגִיס",
+          "meaning": "Stirs"
+        },
+        {
+          "term": "חַיָּיבִין",
+          "meaning": "Liable"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "תַּנְיָא: אֶחָד מֵבִיא אֶת הָאוּר,",
+          "english": "It was taught: One brings the fire,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וְאֶחָד מֵבִיא אֶת הָעֵצִים,",
+          "english": "and one brings the wood,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וְאֶחָד שׁוֹפֵת אֶת הַקְּדֵרָה,",
+          "english": "and one places the pot [on the stove],"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וְאֶחָד מֵבִיא אֶת הַמַּיִם,",
+          "english": "and one brings the water,"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "וְאֶחָד נוֹתֵן בְּתוֹכוֹ תַּבְלִין,",
+          "english": "and one puts spices into it,"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "וְאֶחָד מֵגִיס — כּוּלָּן חַיָּיבִין.",
+          "english": "and one stirs — they are all liable."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "תַּנְיָא: אֶחָד מֵבִיא אֶת הָאוּר",
+      "macroPhase": "source_derivation",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Opens a new topic about group cooking on שבת",
+      "mimraCoreRuling": "Each person who does part of the cooking is liable."
+    },
+    {
+      "stepNumber": 8,
+      "hebrewStepName": "קשיא",
+      "title": "A different ברייתא says only the last one is liable",
+      "stepSummary": "Another ברייתא rules the opposite: only the last person is liable, and everyone else is exempt.",
+      "simpleTranslation": "But it was taught: The last one is liable and all the others are exempt!",
+      "whatsHappening": "The גמרא points out that a second ברייתא contradicts the first one.",
+      "deeperAnalysis": "The first ברייתא makes everyone liable. This one makes only the last person liable. Both cannot be true in the same case, so the גמרא needs to explain the difference.",
+      "keyTerms": [
+        {
+          "term": "וְהָתַנְיָא",
+          "meaning": "But wasn't it taught? (introduces a contradicting source)"
+        },
+        {
+          "term": "אַחֲרוֹן",
+          "meaning": "The last one"
+        },
+        {
+          "term": "פְּטוּרִין",
+          "meaning": "Exempt"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְהָתַנְיָא: אַחֲרוֹן חַיָּיב",
+          "english": "But it was taught: The last one is liable"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וְכוּלָּן פְּטוּרִין!",
+          "english": "and all [the others] are exempt!"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וְהָתַנְיָא: אַחֲרוֹן חַיָּיב וְכוּלָּן פְּטוּרִין",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        7
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Challenges Step 7 with a contradicting ברייתא",
+      "kashyaTarget": "The ruling in Step 7 that all are liable",
+      "kashyaAttackLogic": "Two ברייתות give opposite rulings for what looks like the same group-cooking case."
+    },
+    {
+      "stepNumber": 9,
+      "hebrewStepName": "תירוץ",
+      "title": "It depends on when the fire was brought",
+      "stepSummary": "If the fire was brought first, every later step adds to the cooking, so all are liable. If the fire was brought last, only the one who brought it actually cooked.",
+      "simpleTranslation": "It is not difficult. This ruling is where he brought the fire at the start. That ruling is where he brought the fire at the end.",
+      "whatsHappening": "The גמרא resolves the contradiction by placing each ברייתא in a different case.",
+      "deeperAnalysis": "Cooking only begins once there is fire. If the fire came first, everyone after it is helping to cook, so all are liable. If the fire came last, the earlier people only prepared, and the one who brought the fire is the only one who cooked.",
+      "keyTerms": [
+        {
+          "term": "לָא קַשְׁיָא",
+          "meaning": "It is not difficult"
+        },
+        {
+          "term": "מֵעִיקָּרָא",
+          "meaning": "At the start"
+        },
+        {
+          "term": "לְבַסּוֹף",
+          "meaning": "At the end"
+        }
+      ],
+      "whatToRemember": "The forbidden act of cooking only begins once the fire is there.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "לָא קַשְׁיָא:",
+          "english": "It is not difficult:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "הָא דְּאַיְיתִי אוּר מֵעִיקָּרָא,",
+          "english": "this is where he brought fire at the start,",
+          "notes": "Here all are liable."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "הָא דְּאַיְיתִי אוּר לְבַסּוֹף.",
+          "english": "that is where he brought fire at the end.",
+          "notes": "Here only the last one, who brought the fire, is liable."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "לָא קַשְׁיָא: הָא דְּאַיְיתִי אוּר מֵעִיקָּרָא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        7,
+        8
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Answers the contradiction raised in Step 8",
+      "terutzResolutionType": "Splitting into two cases (אוקימתא by order of actions)",
+      "terutzHavaAmina": "The two ברייתות truly disagree about the same case.",
+      "terutzMaskana": "The first ברייתא speaks of fire brought first, and the second speaks of fire brought last."
+    },
+    {
+      "stepNumber": 10,
+      "hebrewStepName": "קשיא",
+      "title": "What did the one who placed the pot do?",
+      "stepSummary": "The גמרא asks why the person who just set the pot on the stove is liable. He seems to have done no forbidden act.",
+      "simpleTranslation": "It makes sense that all the others did a real act. But the one who placed the pot, what did he do?",
+      "whatsHappening": "The גמרא questions one detail of the first ברייתא: the person who only placed the pot on the stove.",
+      "deeperAnalysis": "Bringing fire, adding water or spices, and stirring all help the food cook. Just setting a pot on the fire seems like nothing in itself. So why does the ברייתא count him as liable?",
+      "keyTerms": [
+        {
+          "term": "בִּשְׁלָמָא",
+          "meaning": "It makes sense that... (introduces what is clear before the difficulty)"
+        },
+        {
+          "term": "מַאי קָא עָבֵיד",
+          "meaning": "What did he do?"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "בִּשְׁלָמָא כּוּלְּהוּ קָא עָבְדִי מַעֲשֶׂה,",
+          "english": "It makes sense that all of them performed an act,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אֶלָּא שׁוֹפֵת אֶת הַקְּדֵרָה",
+          "english": "but the one who places the pot,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "מַאי קָא עָבֵיד?",
+          "english": "what has he done?"
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "שאלה",
+      "triggerLanguage": "בִּשְׁלָמָא כּוּלְּהוּ קָא עָבְדִי מַעֲשֶׂה, אֶלָּא שׁוֹפֵת אֶת הַקְּדֵרָה מַאי קָא עָבֵיד",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        7,
+        9
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Questions one detail of the ברייתא in Step 7",
+      "kashyaTarget": "Including the pot-placer among those who are liable",
+      "kashyaAttackLogic": "Placing a pot on the stove does not seem to add anything to the cooking itself."
+    },
+    {
+      "stepNumber": 11,
+      "hebrewStepName": "תירוץ",
+      "title": "A new pot is hardened by the heat, like tiles",
+      "stepSummary": "ריש לקיש explains that the ברייתא is talking about a new pot. Heating it hardens it, just like heating new tiles, so the one who placed it is liable for that.",
+      "simpleTranslation": "רבי שמעון בן לקיש said: Here we are dealing with a new pot, and they treated it like the heating of tiles.",
+      "whatsHappening": "ריש לקיש answers the question by saying the pot in the ברייתא is new.",
+      "deeperAnalysis": "The pot-placer is not liable for cooking the food. He is liable because putting a new clay pot on the fire hardens it and finishes it as a vessel, the same reason we saw with the tiles. This brings the sugya back to the idea of hardening from Step 6.",
+      "keyTerms": [
+        {
+          "term": "הָכָא עָסְקִינַן",
+          "meaning": "Here we are dealing with (sets up a specific case)"
+        },
+        {
+          "term": "קְדֵרָה חֲדָשָׁה",
+          "meaning": "A new pot"
+        },
+        {
+          "term": "לִבּוּן רְעָפִים",
+          "meaning": "Heating tiles (to harden them)"
+        }
+      ],
+      "confusionAlert": "The pot-placer is liable for hardening the pot, not for cooking the food inside it.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר רַבִּי שִׁמְעוֹן בֶּן לָקִישׁ:",
+          "english": "Rabbi Shimon ben Lakish said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "הָכָא בִּקְדֵרָה חֲדָשָׁה עָסְקִינַן,",
+          "english": "Here we are dealing with a new pot,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וּמִשּׁוּם לִבּוּן רְעָפִים נָגְעוּ בָּהּ.",
+          "english": "and because of heating tiles they touched upon it.",
+          "notes": "The same law as hardening tiles applies to it."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אָמַר רַבִּי שִׁמְעוֹן בֶּן לָקִישׁ: הָכָא בִּקְדֵרָה חֲדָשָׁה עָסְקִינַן",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        1,
+        6,
+        10
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Answers the question of Step 10",
+      "terutzResolutionType": "Narrowing the case (new pot)",
+      "terutzHavaAmina": "Placing the pot does nothing forbidden.",
+      "terutzMaskana": "Placing a new pot on the fire hardens it like tiles, which is forbidden."
+    },
+    {
+      "stepNumber": 12,
+      "hebrewStepName": "מימרא",
+      "title": "Rules for new ovens and stoves on יום טוב",
+      "stepSummary": "A ברייתא rules that new ovens and stoves may be moved like any vessel. They may not be oiled, rubbed, or cooled to harden them, but doing so in order to bake is permitted.",
+      "simpleTranslation": "The רבנן taught: New ovens and stoves are like all vessels that may be moved in a courtyard. But one may not smear them with oil, rub them with a rag, or cool them with cold water in order to harden them. If it is done in order to bake, it is permitted.",
+      "whatsHappening": "The גמרא brings another ברייתא that continues the theme of hardening new vessels, this time new ovens and stoves on יום טוב.",
+      "deeperAnalysis": "New ovens and stoves count as regular vessels, so they are not מוקצה and may be moved. Treating them just to harden them is forbidden, because that is finishing a vessel. If the treatment is done in order to bake on יום טוב itself, it counts as food preparation and is permitted.",
+      "keyTerms": [
+        {
+          "term": "תַּנּוּר וְכִירַיִם",
+          "meaning": "Oven and stove"
+        },
+        {
+          "term": "סָכִין",
+          "meaning": "Smear (with oil)"
+        },
+        {
+          "term": "טָשִׁין",
+          "meaning": "Rub / smooth"
+        },
+        {
+          "term": "מְפִיגִין בְּצוֹנֵן",
+          "meaning": "Cool down with cold liquid"
+        },
+        {
+          "term": "לֶאֱפוֹת",
+          "meaning": "To bake"
+        }
+      ],
+      "whatToRemember": "Hardening a new vessel is forbidden on יום טוב because it is making a vessel. Doing the same act in order to prepare food that day is permitted.",
+      "whyThisMatters": "This sharpens the line drawn in Step 6. The problem is making a vessel, not doing something to it, so the purpose of the act changes the ruling.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "תָּנוּ רַבָּנַן: תַּנּוּר וְכִירַיִם חֲדָשִׁים —",
+          "english": "The Sages taught: New ovens and stoves —"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "הֲרֵי הֵן כְּכׇל הַכֵּלִים",
+          "english": "they are like all the vessels"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "הַנִּטָּלִין בֶּחָצֵר.",
+          "english": "that may be carried in a courtyard."
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "אֲבָל אֵין סָכִין אוֹתָם שֶׁמֶן,",
+          "english": "But one may not smear them with oil,"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "וְאֵין טָשִׁין אוֹתָן בְּמַטְלִית,",
+          "english": "and one may not rub them with a rag,"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "וְאֵין מְפִיגִין אוֹתָן בְּצוֹנֵן",
+          "english": "and one may not cool them with cold [liquid]"
+        },
+        {
+          "phraseNumber": 7,
+          "aramaic": "כְּדֵי לְחׇסְמָן,",
+          "english": "in order to harden them,"
+        },
+        {
+          "phraseNumber": 8,
+          "aramaic": "וְאִם בִּשְׁבִיל לֶאֱפוֹת —",
+          "english": "and if it is in order to bake —"
+        },
+        {
+          "phraseNumber": 9,
+          "aramaic": "הֲרֵי זֶה מוּתָּר.",
+          "english": "this is permitted."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "תָּנוּ רַבָּנַן: תַּנּוּר וְכִירַיִם חֲדָשִׁים",
+      "macroPhase": "source_derivation",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [
+        6,
+        11
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Brings a related ברייתא on hardening new vessels",
+      "mimraCoreRuling": "New ovens and stoves may be moved. Treating them to harden them is forbidden, but treating them in order to bake is permitted."
+    },
+    {
+      "stepNumber": 13,
+      "hebrewStepName": "מימרא",
+      "title": "Removing hair from the head and feet of an animal",
+      "stepSummary": "A ברייתא permits scalding and singeing the hair off an animal's head and feet on יום טוב. It forbids smearing them with clay, earth, or lime, and forbids cutting the hair with scissors.",
+      "simpleTranslation": "The רבנן taught: On יום טוב you may scald the head and feet in hot water and singe them in fire to remove the hair. But you may not smear them with clay, earth, or lime, and you may not cut the hair off with scissors.",
+      "whatsHappening": "The גמרא brings a new ברייתא about cleaning the hair off an animal's head and feet so they can be cooked on יום טוב.",
+      "deeperAnalysis": "Scalding and singeing are the quick, normal ways to prepare the meat, so they are allowed. Smearing with clay or lime is a lot of effort and looks like processing the hide. Cutting with scissors looks like shearing done to collect the hair itself, not like cooking.",
+      "keyTerms": [
+        {
+          "term": "מוֹלְגִין",
+          "meaning": "Scalding in hot water to loosen hair"
+        },
+        {
+          "term": "מְהַבְהֲבִין",
+          "meaning": "Singeing in a flame"
+        },
+        {
+          "term": "טוֹפְלִין",
+          "meaning": "Smearing or plastering"
+        },
+        {
+          "term": "חַרְסִית",
+          "meaning": "A type of clay"
+        },
+        {
+          "term": "גּוֹזְזִין",
+          "meaning": "Shearing or cutting hair"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "תָּנוּ רַבָּנַן:",
+          "english": "The Rabbis taught:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "מוֹלְגִין אֶת הָרֹאשׁ וְאֶת הָרַגְלַיִם",
+          "english": "One may scald the head and the feet"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וּמְהַבְהֲבִין אוֹתָן בָּאוּר,",
+          "english": "and one may singe them in the fire,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "אֲבָל אֵין טוֹפְלִין אוֹתָם בְּחַרְסִית,",
+          "english": "but one may not smear them with clay,",
+          "notes": "Too much effort, and it looks like treating the hide"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "וְלֹא בַּאֲדָמָה, וְלֹא בְּסִיד.",
+          "english": "nor with earth, nor with lime."
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "וְאֵין גּוֹזְזִין אוֹתָן בְּמִסְפָּרַיִם.",
+          "english": "And one may not shear them with scissors.",
+          "notes": "Looks like the work of shearing"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "תָּנוּ רַבָּנַן: מוֹלְגִין אֶת הָרֹאשׁ וְאֶת הָרַגְלַיִם",
+      "macroPhase": "source_derivation",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "After the ruling on new ovens in step 12, the גמרא continues with more ברייתות on what food-prep is allowed on יום טוב.",
+      "mimraCoreRuling": "Scalding and singeing are permitted. Smearing with clay, earth, or lime is forbidden, and so is cutting the hair with scissors."
+    },
+    {
+      "stepNumber": 14,
+      "hebrewStepName": "מימרא",
+      "title": "Trimming vegetables, preparing bitter greens, and using large ovens",
+      "stepSummary": "The ברייתא continues. One may not trim vegetables with special shears. One may prepare bitter vegetables, bake in a large oven, and heat water in an urn. One may not bake in a new large oven, in case it cracks.",
+      "simpleTranslation": "You may not trim vegetables with their special shears. But you may prepare קונדס and עכביות, light and bake in a big oven, and heat water in an אנטיכי. You may not bake in a brand-new big oven, because it might crack.",
+      "whatsHappening": "The same ברייתא keeps listing what is allowed and forbidden on יום טוב, now for vegetables and ovens.",
+      "deeperAnalysis": "Trimming with the special shears looks like professional weekday work. Preparing bitter greens is allowed even though it takes effort, because it is food prep. A new oven is forbidden because if it cracks, the heating turns out to be wasted work done on יום טוב. This is the same worry as the 'testing' reason (לבדקן) for new tiles in step 1, not the hardening concern of step 12.",
+      "keyTerms": [
+        {
+          "term": "תִּסְפּוֹרֶת",
+          "meaning": "Special shears for trimming vegetables"
+        },
+        {
+          "term": "קוּנְדָּס",
+          "meaning": "A bitter vegetable that needs long preparation"
+        },
+        {
+          "term": "עַכָּבִיּוֹת",
+          "meaning": "Thistle-like bitter greens"
+        },
+        {
+          "term": "פּוּרְנִי",
+          "meaning": "A large baker's oven"
+        },
+        {
+          "term": "אַנְטִיכִי",
+          "meaning": "A large urn for heating water"
+        },
+        {
+          "term": "שֶׁמָּא תִּפָּחֵת",
+          "meaning": "Lest it crack or break"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְאֵין גּוֹזְזִין אֶת הַיָּרָק",
+          "english": "And one may not trim the vegetable"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "בַּתִּסְפּוֹרֶת שֶׁלּוֹ.",
+          "english": "with its special shears."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "אֲבָל מְתַקְּנִין אֶת הַקּוּנְדָּס וְאֶת הָעַכָּבִיּוֹת,",
+          "english": "But one may prepare kundas and akaviyot,",
+          "notes": "Bitter vegetables that need a lot of work"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וּמַסִּיקִין וְאוֹפִין בְּפוּרְנִי,",
+          "english": "and one may light a fire and bake in a large oven,"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "וּמְחַמִּין חַמִּין בְּאַנְטִיכִי,",
+          "english": "and one may heat water in an antikhi,"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "וְאֵין אוֹפִין בְּפוּרְנִי חֲדָשָׁה",
+          "english": "but one may not bake in a new large oven"
+        },
+        {
+          "phraseNumber": 7,
+          "aramaic": "שֶׁמָּא תִּפָּחֵת.",
+          "english": "lest it crack.",
+          "notes": "Then the heating would be wasted work on יום טוב"
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "Continuation of step 13",
+      "triggerLanguage": "וְאֵין גּוֹזְזִין אֶת הַיָּרָק בַּתִּסְפּוֹרֶת שֶׁלּוֹ",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        1,
+        13
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Continues the same ברייתא with more cases.",
+      "mimraCoreRuling": "Trimming with special shears is forbidden. Bitter greens, a large oven, and an urn are permitted. A new oven is forbidden because it may crack."
+    },
+    {
+      "stepNumber": 15,
+      "hebrewStepName": "מימרא",
+      "title": "Blowing on a fire and fixing a skewer",
+      "stepSummary": "A ברייתא forbids blowing on a fire with bellows but permits blowing through a tube. It also forbids fixing or sharpening a skewer.",
+      "simpleTranslation": "The רבנן taught: You may not blow on a fire with bellows, but you may blow through a tube. You may not fix a skewer, and you may not sharpen it.",
+      "whatsHappening": "The גמרא brings another ברייתא about fire and cooking tools on יום טוב.",
+      "deeperAnalysis": "Bellows are the regular weekday tool for this, so using them is forbidden. A tube is an unusual way to blow, so it is allowed. Fixing or sharpening a skewer is repairing a tool, not preparing food, so it is forbidden.",
+      "keyTerms": [
+        {
+          "term": "נוֹפְחִין",
+          "meaning": "Blowing on a fire"
+        },
+        {
+          "term": "מַפּוּחַ",
+          "meaning": "Bellows"
+        },
+        {
+          "term": "שְׁפוֹפֶרֶת",
+          "meaning": "A tube"
+        },
+        {
+          "term": "שַׁפּוּד",
+          "meaning": "A roasting skewer"
+        },
+        {
+          "term": "מְחַדְּדִין",
+          "meaning": "Sharpening"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "תָּנוּ רַבָּנַן: אֵין נוֹפְחִין בְּמַפּוּחַ,",
+          "english": "The Rabbis taught: one may not blow a fire with bellows,",
+          "notes": "That is the normal weekday way"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אֲבָל נוֹפְחִין בִּשְׁפוֹפֶרֶת.",
+          "english": "but one may blow with a tube."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וְאֵין מְתַקְּנִין אֶת הַשַּׁפּוּד,",
+          "english": "And one may not fix the skewer,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וְאֵין מְחַדְּדִין אוֹתוֹ.",
+          "english": "and one may not sharpen it."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "תָּנוּ רַבָּנַן: אֵין נוֹפְחִין בְּמַפּוּחַ",
+      "macroPhase": "source_derivation",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Another ברייתא in the same list of יום טוב food-prep rules.",
+      "mimraCoreRuling": "Bellows are forbidden and a tube is permitted. Fixing or sharpening a skewer is forbidden."
+    },
+    {
+      "stepNumber": 16,
+      "hebrewStepName": "מימרא",
+      "title": "Splitting a reed versus cracking a nut in a cloth",
+      "stepSummary": "A ברייתא forbids splitting a reed to make a skewer for roasting salted fish. It permits cracking a nut wrapped in a cloth, without worrying that the cloth might tear.",
+      "simpleTranslation": "The רבנן taught: You may not split a reed to roast salted fish on it. But you may crack a nut inside a cloth, and you do not need to worry that the cloth might tear.",
+      "whatsHappening": "The גמרא brings one more ברייתא, comparing making a tool with simply cracking food.",
+      "deeperAnalysis": "Splitting the reed turns it into a new skewer, which counts as making a tool, so it is forbidden. Cracking a nut is just food prep. Even if the cloth tears, no forbidden act was done, so there is nothing to worry about.",
+      "keyTerms": [
+        {
+          "term": "מְפַצְּעִין",
+          "meaning": "Splitting or cracking"
+        },
+        {
+          "term": "קָנֶה",
+          "meaning": "A reed"
+        },
+        {
+          "term": "מָלִיחַ",
+          "meaning": "Salted fish"
+        },
+        {
+          "term": "מַטְלִית",
+          "meaning": "A rag or cloth"
+        },
+        {
+          "term": "אֵין חוֹשְׁשִׁין",
+          "meaning": "We are not concerned"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "תָּנוּ רַבָּנַן: אֵין מְפַצְּעִין אֶת הַקָּנֶה",
+          "english": "The Rabbis taught: one may not split the reed"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "לִצְלוֹת בּוֹ מָלִיחַ,",
+          "english": "to roast salted fish on it,",
+          "notes": "Splitting it makes a new tool, a kind of skewer"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "אֲבָל מְפַצְּעִין אֶת הָאֱגוֹז בְּמַטְלִית,",
+          "english": "but one may crack a nut in a cloth,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וְאֵין חוֹשְׁשִׁין שֶׁמָּא תִּקָּרַע.",
+          "english": "and we are not concerned that it might tear."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "תָּנוּ רַבָּנַן: אֵין מְפַצְּעִין אֶת הַקָּנֶה",
+      "macroPhase": "source_derivation",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        15
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Continues the skewer theme from step 15 and closes the list of ברייתות.",
+      "mimraCoreRuling": "Making a skewer from a reed is forbidden. Cracking a nut in a cloth is permitted, with no concern about tearing.",
+      "whatToRemember": "Across these ברייתות, simple food prep is allowed on יום טוב. Great effort, weekday-style methods, and making or fixing tools are forbidden.",
+      "whyThisMatters": "It sums up the guiding line of the whole section: preparing food versus doing tool-work or weekday-style work."
+    },
+    {
+      "stepNumber": 17,
+      "hebrewStepName": "מימרא",
+      "title": "New משנה: רבי אליעזר on standing over set-aside produce",
+      "stepSummary": "A new משנה opens with another lenient ruling from רבי אליעזר: a person may stand over מוקצה produce. The ruling continues on the next amud.",
+      "simpleTranslation": "משנה: And רבי אליעזר also said: a person may stand over the מוקצה produce...",
+      "whatsHappening": "A new משנה begins here, adding another leniency of רבי אליעזר. This line only sets up the case, and the rest continues on the next amud.",
+      "deeperAnalysis": "The word ועוד (\"and further\") tells us this is one more ruling in a series of רבי אליעזר's leniencies. The case is about produce that was set aside and not meant for use. The full ruling, explaining what he may do there, comes next.",
+      "keyTerms": [
+        {
+          "term": "מַתְנִי׳",
+          "meaning": "Our משנה"
+        },
+        {
+          "term": "וְעוֹד אָמַר",
+          "meaning": "And he further said"
+        },
+        {
+          "term": "מוּקְצֶה",
+          "meaning": "Items set aside and not meant for use, here stored produce"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מַתְנִי׳ וְעוֹד אָמַר רַבִּי אֱלִיעֶזֶר:",
+          "english": "Mishnah: And Rabbi Eliezer further said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "עוֹמֵד אָדָם עַל הַמּוּקְצֶה",
+          "english": "A person may stand over the set-aside produce",
+          "notes": "The sentence continues on the next amud"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וְעוֹד אָמַר רַבִּי אֱלִיעֶזֶר: עוֹמֵד אָדָם עַל הַמּוּקְצֶה",
+      "macroPhase": "mishnah",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Ends the ברייתות section and opens a new משנה.",
+      "mimraCoreRuling": "רבי אליעזר permits a person to stand over מוקצה produce. The details continue on the next amud."
+    }
+  ]
+}

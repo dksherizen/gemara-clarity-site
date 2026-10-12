@@ -1,0 +1,1660 @@
+{
+  "mainTopic": "Nullifying borrowed ingredients, the coal-versus-flame distinction, and the תחום of cistern water on יום טוב",
+  "overview": "This עמוד first finishes the discussion of borrowed water, salt and spices in dough on יום טוב. רב אשי explains that they are not בטל because they are a דבר שיש לו מתירין. The גמרא then settles two contradictions about רבי יהודה's view. It distinguishes coarse salt from fine salt, and a thick dish from a soupy one. A new משנה teaches that a coal counts as a real object but a flame does not, and a ברייתא lists five areas where this matters. The גמרא explains why a flame of הקדש is forbidden while a flame of עבודה זרה is permitted. It also works out when carrying a flame on שבת makes one liable, through רב ששת's wood chip and אביי's oiled shard. Another משנה teaches that water from a cistern follows the תחום of its owners. רב נחמן and רב ששת then argue about water drawn from a public cistern for someone else. רבא begins a challenge to רב נחמן that continues on the next עמוד.",
+  "steps": [
+    {
+      "stepNumber": 1,
+      "hebrewStepName": "מימרא",
+      "title": "רב אשי: Borrowed ingredients are not nullified because their prohibition is temporary",
+      "stepSummary": "רב אשי explains that the borrowed items are not בטל because they are a דבר שיש לו מתירין. Such an item is never nullified, even in a thousand times its amount.",
+      "simpleTranslation": "And רב אשי said: It is because it is an item whose prohibition will go away on its own. Anything whose prohibition will go away on its own is not nullified, even in a thousand.",
+      "whatsHappening": "The גמרא brings רב אשי's own reason why the borrowed water, salt and spices are not nullified in the dough. This is a different approach from the reason given earlier.",
+      "deeperAnalysis": "The ban on carrying these items past the owner's תחום only lasts for the יום טוב. Once יום טוב ends, they are permitted again. The rule is that an item which will soon become permitted anyway is never nullified, because one can simply wait rather than rely on בטול.",
+      "keyTerms": [
+        {
+          "term": "דָּבָר שֶׁיֵּשׁ לוֹ מַתִּירִין",
+          "meaning": "An item whose prohibition will lapse by itself later"
+        },
+        {
+          "term": "בָּטֵיל",
+          "meaning": "Becomes nullified (it loses its separate identity in a mixture)"
+        },
+        {
+          "term": "בְּאֶלֶף",
+          "meaning": "In a thousand (in a mixture of 1,000 to 1)"
+        },
+        {
+          "term": "מִשּׁוּם דְּהָוֵי לֵיהּ",
+          "meaning": "Because it is considered"
+        }
+      ],
+      "whyThisMatters": "The rule of דבר שיש לו מתירין is a major principle throughout the laws of mixtures in ש״ס. It applies, for example, to an egg laid on יום טוב.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְרַב אָשֵׁי אָמַר:",
+          "english": "And Rav Ashi said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "מִשּׁוּם דְּהָוֵי לֵיהּ",
+          "english": "Because it is considered"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "דָּבָר שֶׁיֵּשׁ לוֹ מַתִּירִין,",
+          "english": "an item that will later become permitted,",
+          "notes": "After יום טוב, the תחום limits no longer apply."
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "וְכׇל דָּבָר שֶׁיֵּשׁ לוֹ מַתִּירִין —",
+          "english": "and anything that will later become permitted"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "אֲפִילּוּ בְּאֶלֶף לֹא בָּטֵיל.",
+          "english": "is not nullified, even in a thousand."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "תירוץ",
+      "triggerLanguage": "וְרַב אָשֵׁי אָמַר",
+      "macroPhase": "alternate_branch",
+      "branchRole": "alternative_approach",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Offers an alternative reason, alongside the earlier explanation on the previous עמוד, for why the borrowed ingredients are not nullified.",
+      "mimraCoreRuling": "Borrowed ingredients are not בטל in the dough because they are a דבר שיש לו מתירין, and such items are never nullified."
+    },
+    {
+      "stepNumber": 2,
+      "hebrewStepName": "שאלה",
+      "title": "Inference from the משנה: only water, not salt?",
+      "stepSummary": "The גמרא quotes the משנה, where רבי יהודה exempts water. It then infers that he does not exempt salt.",
+      "simpleTranslation": "The משנה said: רבי יהודה exempts in the case of water. Does that mean water yes, but salt no?",
+      "whatsHappening": "The גמרא quotes רבי יהודה's words in the משנה and draws a careful inference from them. This sets up the contradiction in the next step.",
+      "deeperAnalysis": "רבי יהודה mentioned only water as being exempt. That suggests salt is not exempt, meaning salt keeps the owner's תחום. The גמרא is building toward a challenge.",
+      "keyTerms": [
+        {
+          "term": "פּוֹטֵר",
+          "meaning": "Exempts (here: frees the item from the owner's תחום restriction)"
+        },
+        {
+          "term": "אִין",
+          "meaning": "Yes"
+        },
+        {
+          "term": "לָא",
+          "meaning": "No"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "רַבִּי יְהוּדָה פּוֹטֵר בַּמַּיִם.",
+          "english": "Rabbi Yehuda exempts in the case of water.",
+          "notes": "This is a quote from the משנה."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "מַיִם אִין, מֶלַח לָא?",
+          "english": "Water, yes; salt, no?"
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "קשיא",
+      "triggerLanguage": "מַיִם אִין, מֶלַח לָא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "inference",
+      "relationToPreviousStep": "Opens a new topic: analyzing רבי יהודה's view in the משנה.",
+      "sheelahInformationSought": "Does רבי יהודה really hold that salt is not exempt?"
+    },
+    {
+      "stepNumber": 3,
+      "hebrewStepName": "קשיא",
+      "title": "A ברייתא says רבי יהודה nullifies salt too",
+      "stepSummary": "A ברייתא quotes רבי יהודה saying that water and salt are both nullified, in dough and in a pot. This contradicts the inference from the משנה.",
+      "simpleTranslation": "But a ברייתא teaches: רבי יהודה says, water and salt are nullified, both in dough and in a pot!",
+      "whatsHappening": "The גמרא challenges the inference from the משנה using a ברייתא. In that ברייתא, רבי יהודה treats salt exactly like water.",
+      "deeperAnalysis": "From the משנה it seemed that salt is not nullified. The ברייתא says clearly that salt is nullified. So רבי יהודה appears to contradict himself.",
+      "keyTerms": [
+        {
+          "term": "וְהָא תַּנְיָא",
+          "meaning": "But it was taught in a ברייתא (introduces a contradiction)"
+        },
+        {
+          "term": "עִיסָּה",
+          "meaning": "Dough"
+        },
+        {
+          "term": "קְדֵרָה",
+          "meaning": "A cooking pot (a cooked dish)"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְהָא תַּנְיָא, רַבִּי יְהוּדָה אוֹמֵר:",
+          "english": "But was it not taught: Rabbi Yehuda says:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "מַיִם וָמֶלַח בְּטֵלִין",
+          "english": "Water and salt are nullified"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "בֵּין בָּעִיסָּה בֵּין בַּקְּדֵרָה!",
+          "english": "whether in dough or in a pot!"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וְהָא תַּנְיָא, רַבִּי יְהוּדָה אוֹמֵר",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        2
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Attacks the inference made in Step 2.",
+      "kashyaTarget": "The inference that רבי יהודה does not nullify salt",
+      "kashyaAttackLogic": "A ברייתא quotes רבי יהודה explicitly nullifying salt, which contradicts what the משנה seems to imply."
+    },
+    {
+      "stepNumber": 4,
+      "hebrewStepName": "תירוץ",
+      "title": "Two kinds of salt: coarse Sodom salt versus fine salt",
+      "stepSummary": "The גמרא answers that the משנה is talking about coarse Sodom salt, which is not nullified. The ברייתא is talking about fine אסתרוקנית salt, which is nullified.",
+      "simpleTranslation": "This is not difficult. This source is talking about Sodom salt, and that source is talking about אסתרוקנית salt.",
+      "whatsHappening": "The גמרא resolves the contradiction by showing that the two sources are talking about different kinds of salt.",
+      "deeperAnalysis": "Sodom salt is coarse. It stays noticeable in the food, so it is not nullified, and that is the משנה's case. Fine salt blends in completely, so it is nullified, and that is the ברייתא's case. Both sources agree on the principle: only something that blends in can be nullified.",
+      "keyTerms": [
+        {
+          "term": "לָא קַשְׁיָא",
+          "meaning": "It is not difficult (introduces a resolution)"
+        },
+        {
+          "term": "הָא ... הָא",
+          "meaning": "This case ... that case"
+        },
+        {
+          "term": "מֶלַח סְדוֹמִית",
+          "meaning": "Sodom salt (coarse salt)"
+        },
+        {
+          "term": "מֶלַח אִסְתְּרוֹקָנִית",
+          "meaning": "A fine type of salt"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "לָא קַשְׁיָא:",
+          "english": "It is not difficult:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "הָא — בְּמֶלַח סְדוֹמִית,",
+          "english": "this is about Sodom salt,",
+          "notes": "This is the משנה: the salt is coarse and noticeable, so it is not nullified."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "הָא — בְּמֶלַח אִסְתְּרוֹקָנִית.",
+          "english": "that is about isterokanit salt.",
+          "notes": "This is the ברייתא: the salt is fine and blends in, so it is nullified."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "לָא קַשְׁיָא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        3
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Answers the contradiction raised in Step 3.",
+      "terutzResolutionType": "Splitting the cases (אוקימתא): each source is about a different kind of salt",
+      "terutzHavaAmina": "רבי יהודה seemed to contradict himself about whether salt is nullified.",
+      "terutzMaskana": "Coarse Sodom salt is not nullified, while fine salt is nullified."
+    },
+    {
+      "stepNumber": 5,
+      "hebrewStepName": "קשיא",
+      "title": "Another ברייתא: not nullified in a pot because of its sauce",
+      "stepSummary": "A second ברייתא quotes רבי יהודה saying that water and salt are nullified in dough but not in a pot, because of the pot's liquid. This contradicts the first ברייתא.",
+      "simpleTranslation": "But a ברייתא teaches: רבי יהודה says, water and salt are nullified in dough, but they are not nullified in a pot because of its sauce!",
+      "whatsHappening": "The גמרא raises a new contradiction. Another ברייתא in רבי יהודה's name says that in a pot the water and salt are not nullified.",
+      "deeperAnalysis": "The first ברייתא said they are nullified \"whether in dough or in a pot.\" This ברייתא excludes the pot, because the liquid sauce keeps the borrowed water recognizable. The question is now about the pot, not about the type of salt.",
+      "keyTerms": [
+        {
+          "term": "וְהָתַנְיָא",
+          "meaning": "But was it not taught (introduces another contradiction)"
+        },
+        {
+          "term": "רוֹטְבָּהּ",
+          "meaning": "Its sauce or gravy"
+        },
+        {
+          "term": "מִפְּנֵי",
+          "meaning": "Because of"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְהָתַנְיָא, רַבִּי יְהוּדָה אוֹמֵר:",
+          "english": "But was it not taught: Rabbi Yehuda says:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "מַיִם וָמֶלַח בְּטֵלִין בָּעִיסָּה,",
+          "english": "Water and salt are nullified in dough,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וְאֵין בְּטֵלִין בַּקְּדֵרָה מִפְּנֵי רוֹטְבָּהּ!",
+          "english": "but are not nullified in a pot, because of its sauce!"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וְהָתַנְיָא, רַבִּי יְהוּדָה אוֹמֵר",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [
+        3
+      ],
+      "scopeOfStep": "source_reading",
+      "relationToPreviousStep": "Opens a second contradiction. This one is about the pot rather than the type of salt.",
+      "kashyaTarget": "The teaching that רבי יהודה nullifies water and salt even in a pot",
+      "kashyaAttackLogic": "Another ברייתא in רבי יהודה's name says they are not nullified in a pot, because the sauce keeps them noticeable."
+    },
+    {
+      "stepNumber": 6,
+      "hebrewStepName": "תירוץ",
+      "title": "Thick dish versus thin dish",
+      "stepSummary": "The גמרא answers that where they are nullified, the dish is thick. Where they are not nullified, the dish is thin and has a sauce.",
+      "simpleTranslation": "This is not difficult. This source is talking about a thick dish, and that source is talking about a thin dish.",
+      "whatsHappening": "The גמרא resolves the second contradiction by splitting the cases: a thick cooked dish versus a thin, soupy one.",
+      "deeperAnalysis": "In a thick dish there is no visible liquid, so the water is absorbed and nullified. In a thin dish the liquid can still be seen, so the borrowed water is not nullified. This matches the reason given in the ברייתא: \"because of its sauce.\"",
+      "keyTerms": [
+        {
+          "term": "עָבָה",
+          "meaning": "Thick"
+        },
+        {
+          "term": "רַכָּה",
+          "meaning": "Thin or soft (a soupy dish)"
+        }
+      ],
+      "whatToRemember": "For רבי יהודה, something is nullified only when it blends in and cannot be recognized. That is why fine salt and a thick dish lead to nullification, while coarse salt and a soupy dish do not.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "לָא קַשְׁיָא:",
+          "english": "It is not difficult:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "הָא — בְּעָבָה,",
+          "english": "this is about a thick dish,",
+          "notes": "There is no sauce, so the water is nullified."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "הָא — בְּרַכָּה.",
+          "english": "that is about a thin dish.",
+          "notes": "The sauce is visible, so the water is not nullified."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "לָא קַשְׁיָא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        5
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Answers the contradiction raised in Step 5.",
+      "terutzResolutionType": "Splitting the cases (אוקימתא): a thick dish versus a thin dish",
+      "terutzHavaAmina": "The two ברייתות seemed to disagree about whether water and salt are nullified in a pot.",
+      "terutzMaskana": "In a thick dish they are nullified. In a thin dish with sauce they are not."
+    },
+    {
+      "stepNumber": 7,
+      "hebrewStepName": "מימרא",
+      "title": "New משנה: A coal follows its owner, a flame goes anywhere",
+      "stepSummary": "A borrowed coal is limited to the owner's תחום. A flame lit from someone else's fire may be taken anywhere.",
+      "simpleTranslation": "משנה: A coal is like the feet of its owner, and a flame may go anywhere.",
+      "whatsHappening": "A new משנה begins. It teaches that a borrowed coal is limited to the owner's תחום, but a flame is not limited at all.",
+      "deeperAnalysis": "A coal is a real physical object that belongs to its owner, so it keeps the owner's תחום. A flame has no real substance, so it does not belong to the owner in this way and has no תחום limit.",
+      "keyTerms": [
+        {
+          "term": "מַתְנִי׳",
+          "meaning": "משנה (introduces the משנה text)"
+        },
+        {
+          "term": "גַּחֶלֶת",
+          "meaning": "A burning coal"
+        },
+        {
+          "term": "שַׁלְהֶבֶת",
+          "meaning": "A flame"
+        },
+        {
+          "term": "כְּרַגְלֵי הַבְּעָלִים",
+          "meaning": "Like the feet of the owner (it may go only where the owner may walk)"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מַתְנִי׳",
+          "english": "MISHNA:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "הַגַּחֶלֶת כְּרַגְלֵי הַבְּעָלִים,",
+          "english": "A coal is like the feet of its owner,",
+          "notes": "It has substance, so it stays attached to its owner."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וְשַׁלְהֶבֶת בְּכׇל מָקוֹם.",
+          "english": "and a flame may go anywhere.",
+          "notes": "It has no substance, so it has no owner's תחום."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "הַגַּחֶלֶת כְּרַגְלֵי הַבְּעָלִים",
+      "macroPhase": "mishnah",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Starts a new משנה. It continues the general theme of how borrowed items relate to תחומין.",
+      "mimraCoreRuling": "A coal keeps the owner's תחום. A flame has no תחום restriction."
+    },
+    {
+      "stepNumber": 8,
+      "hebrewStepName": "מימרא",
+      "title": "Consecrated coal brings מעילה, a consecrated flame does not",
+      "stepSummary": "Using a coal of הקדש brings liability for מעילה. With a flame of הקדש, one should not benefit from it to begin with, but if one does, there is no מעילה.",
+      "simpleTranslation": "With a coal of הקדש, one is liable for מעילה. With a flame, one should not benefit from it, but one is not liable for מעילה.",
+      "whatsHappening": "The משנה applies the same coal-versus-flame difference to the laws of benefiting from הקדש.",
+      "deeperAnalysis": "מעילה applies only to something with real substance, so a coal qualifies and a flame does not. Even so, the חכמים forbade benefiting from a consecrated flame in the first place.",
+      "keyTerms": [
+        {
+          "term": "הֶקְדֵּשׁ",
+          "meaning": "Property consecrated to the בית המקדש"
+        },
+        {
+          "term": "מוֹעֲלִין",
+          "meaning": "One is liable for מעילה (misuse of הקדש)"
+        },
+        {
+          "term": "נֶהֱנִין",
+          "meaning": "One may benefit"
+        }
+      ],
+      "confusionAlert": "\"Not liable for מעילה\" does not mean the flame is permitted. It is still forbidden to benefit from it to begin with (לא נהנין). The only difference is that there is no מעילה penalty.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "גַּחֶלֶת שֶׁל הֶקְדֵּשׁ — מוֹעֲלִין בָּהּ,",
+          "english": "A coal of consecrated property: one is liable for misuse of it,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וְשַׁלְהֶבֶת — לֹא נֶהֱנִין, וְלֹא מוֹעֲלִין.",
+          "english": "but a flame: one may not benefit from it, yet one is not liable for misuse.",
+          "notes": "The ban on benefit here is rabbinic. There is no מעילה because a flame has no substance."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "גַּחֶלֶת שֶׁל הֶקְדֵּשׁ — מוֹעֲלִין בָּהּ",
+      "macroPhase": "mishnah",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        7
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Applies the same coal-versus-flame difference to a second area of law, מעילה.",
+      "mimraCoreRuling": "A consecrated coal brings מעילה. A consecrated flame is forbidden for benefit, but there is no מעילה."
+    },
+    {
+      "stepNumber": 9,
+      "hebrewStepName": "מימרא",
+      "title": "Carrying on שבת: coal is liable, flame is exempt",
+      "stepSummary": "Taking a coal out into רשות הרבים on שבת makes one liable. Taking out a flame does not.",
+      "simpleTranslation": "One who takes a coal out into the public domain is liable, but one who takes out a flame is exempt.",
+      "whatsHappening": "The משנה applies the coal-versus-flame difference to a third area: the מלאכה of carrying on שבת.",
+      "deeperAnalysis": "Carrying (הוצאה) applies only to an object with substance. A coal is such an object, so one is liable. A flame is not, so one is exempt.",
+      "keyTerms": [
+        {
+          "term": "הַמּוֹצִיא",
+          "meaning": "One who carries out (from one domain to another)"
+        },
+        {
+          "term": "רְשׁוּת הָרַבִּים",
+          "meaning": "The public domain"
+        },
+        {
+          "term": "חַיָּיב",
+          "meaning": "Liable"
+        },
+        {
+          "term": "פָּטוּר",
+          "meaning": "Exempt"
+        }
+      ],
+      "whatToRemember": "In all three areas (תחומין, מעילה, and הוצאה on שבת), a coal counts as a real object, while a flame is treated as having no substance.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "הַמּוֹצִיא גַּחֶלֶת לִרְשׁוּת הָרַבִּים — חַיָּיב,",
+          "english": "One who takes out a coal to the public domain is liable,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וְשַׁלְהֶבֶת — פָּטוּר.",
+          "english": "but for a flame he is exempt."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "הַמּוֹצִיא גַּחֶלֶת לִרְשׁוּת הָרַבִּים",
+      "macroPhase": "mishnah",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        7,
+        8
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Applies the same coal-versus-flame difference to a third area, carrying on שבת.",
+      "mimraCoreRuling": "Carrying a coal into רשות הרבים on שבת makes one liable. Carrying a flame does not."
+    },
+    {
+      "stepNumber": 10,
+      "hebrewStepName": "מימרא",
+      "title": "Five differences between a coal and a flame",
+      "stepSummary": "A ברייתא lists five areas of הלכה where a coal and a flame are treated differently.",
+      "simpleTranslation": "The Sages taught: Five things were said about a coal. (1) A coal is like the feet of its owner, but a flame may go anywhere. (2) With a coal of הקדש one commits מעילה. With a flame of הקדש one may not benefit, but there is no מעילה. (3) A coal of עבודה זרה is forbidden, but its flame is permitted. (4) One who carries a coal into רשות הרבים is liable, but for a flame he is exempt. (5) One who is forbidden by a vow to benefit from his friend may not use his friend's coal, but he may use his friend's flame.",
+      "whatsHappening": "The גמרא brings a ברייתא that collects five cases, each showing that a coal is treated as a real object and a flame is not.",
+      "deeperAnalysis": "A coal is a physical thing, so it carries ownership, holiness, and prohibitions with it. A flame has no real body, so it mostly does not. This list is the base text the rest of the סוגיא will question.",
+      "keyTerms": [
+        {
+          "term": "תָּנוּ רַבָּנַן",
+          "meaning": "The Sages taught. This introduces a ברייתא."
+        },
+        {
+          "term": "גַּחֶלֶת",
+          "meaning": "A burning coal, which is a physical object."
+        },
+        {
+          "term": "שַׁלְהֶבֶת",
+          "meaning": "A flame, which has no real body."
+        },
+        {
+          "term": "עֲבוֹדָה זָרָה",
+          "meaning": "Idol worship. Benefit from its items is forbidden."
+        },
+        {
+          "term": "הַמּוּדָּר הֲנָאָה",
+          "meaning": "Someone forbidden by a vow to benefit from another person."
+        }
+      ],
+      "confusionAlert": "Watch the הקדש line carefully. It does NOT say a flame of הקדש is permitted. It says you may not benefit from it to begin with, but there is no מעילה if you did. The next step depends on this.",
+      "whyThisMatters": "Every later step here works off one line or another of this list.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "גְּמָ׳",
+          "english": "GEMARA"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "תָּנוּ רַבָּנַן:",
+          "english": "The Sages taught:"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "חֲמִשָּׁה דְּבָרִים נֶאֶמְרוּ בַּגַּחֶלֶת:",
+          "english": "Five things were said about a coal:"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "הַגַּחֶלֶת כְּרַגְלֵי הַבְּעָלִים,",
+          "english": "A coal is like the feet of its owner,",
+          "notes": "It may only be carried where the owner may walk on יום טוב."
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "וְשַׁלְהֶבֶת בְּכׇל מָקוֹם.",
+          "english": "but a flame may go anywhere."
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "גַּחֶלֶת שֶׁל הֶקְדֵּשׁ — מוֹעֲלִין בָּהּ,",
+          "english": "With a coal of הקדש, one is liable for misusing it,"
+        },
+        {
+          "phraseNumber": 7,
+          "aramaic": "וְשַׁלְהֶבֶת — לֹא נֶהֱנִין וְלֹא מוֹעֲלִין.",
+          "english": "but with a flame, one may not benefit, yet there is no liability for misuse."
+        },
+        {
+          "phraseNumber": 8,
+          "aramaic": "גַּחֶלֶת שֶׁל עֲבוֹדָה זָרָה — אֲסוּרָה,",
+          "english": "A coal of idol worship is forbidden,"
+        },
+        {
+          "phraseNumber": 9,
+          "aramaic": "וְשַׁלְהֶבֶת — מוּתֶּרֶת.",
+          "english": "but its flame is permitted."
+        },
+        {
+          "phraseNumber": 10,
+          "aramaic": "הַמּוֹצִיא גַּחֶלֶת לִרְשׁוּת הָרַבִּים — חַיָּיב,",
+          "english": "One who carries a coal out to the public domain is liable,"
+        },
+        {
+          "phraseNumber": 11,
+          "aramaic": "וְשַׁלְהֶבֶת — פָּטוּר.",
+          "english": "but for a flame, he is exempt."
+        },
+        {
+          "phraseNumber": 12,
+          "aramaic": "הַמּוּדָּר הֲנָאָה מֵחֲבֵירוֹ —",
+          "english": "One who is forbidden by a vow to benefit from his friend"
+        },
+        {
+          "phraseNumber": 13,
+          "aramaic": "אָסוּר בְּגַחַלְתּוֹ,",
+          "english": "may not use his friend's coal,"
+        },
+        {
+          "phraseNumber": 14,
+          "aramaic": "וּמוּתָּר בְּשַׁלְהַבְתּוֹ.",
+          "english": "but may use his friend's flame."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "תָּנוּ רַבָּנַן: חֲמִשָּׁה דְּבָרִים נֶאֶמְרוּ בַּגַּחֶלֶת",
+      "macroPhase": "source_derivation",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [
+        7,
+        8,
+        9
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Brings a ברייתא that expands the coal-and-flame rules from the earlier statements into a full list of five.",
+      "mimraCoreRuling": "A coal carries ownership, holiness, prohibition, and liability for carrying out. A flame generally does not."
+    },
+    {
+      "stepNumber": 11,
+      "hebrewStepName": "שאלה",
+      "title": "Why is an idol's flame permitted but a הקדש flame forbidden?",
+      "stepSummary": "The גמרא asks why the ברייתא fully permits a flame of עבודה זרה but forbids benefiting from a flame of הקדש.",
+      "simpleTranslation": "What is different about a flame of עבודה זרה, that it is permitted? And what is different about a flame of הקדש, that it is forbidden?",
+      "whatsHappening": "The גמרא notices that two lines of the ברייתא seem uneven and asks for the reason. The answer comes in the next step.",
+      "deeperAnalysis": "Both flames have the same basic status: a flame is not a real object. So why did the רבנן add a prohibition only for הקדש? The question is looking for the logic behind that difference.",
+      "keyTerms": [
+        {
+          "term": "מַאי שְׁנָא",
+          "meaning": "What is different? This asks for the reason two cases are treated differently."
+        },
+        {
+          "term": "שַׁרְיָא",
+          "meaning": "It is permitted."
+        },
+        {
+          "term": "אֲסִירָא",
+          "meaning": "It is forbidden."
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מַאי שְׁנָא שַׁלְהֶבֶת עֲבוֹדָה זָרָה דְּשַׁרְיָא,",
+          "english": "What is different about a flame of idol worship, that it is permitted,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וּמַאי שְׁנָא דְּהֶקְדֵּשׁ דַּאֲסִירָא?",
+          "english": "and what is different about one of הקדש, that it is forbidden?"
+        }
+      ],
+      "classificationConfidence": "Medium",
+      "alternativePossibleLabel": "קשיא",
+      "triggerLanguage": "מַאי שְׁנָא שַׁלְהֶבֶת עֲבוֹדָה זָרָה דְּשַׁרְיָא",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        10
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Questions the reasoning behind lines 2 and 3 of the ברייתא.",
+      "sheelahInformationSought": "The reason the רבנן forbade a הקדש flame but not an עבודה זרה flame."
+    },
+    {
+      "stepNumber": 12,
+      "hebrewStepName": "תשובה",
+      "title": "People naturally avoid idolatry but not הקדש",
+      "stepSummary": "עבודה זרה is disgusting to people, so no decree was needed. הקדש is not disgusting, so the רבנן made a decree to protect it.",
+      "simpleTranslation": "עבודה זרה is disgusting and people keep away from it, so the רבנן made no decree about it. הקדש is not disgusting and people do not keep away from it, so the רבנן made a decree about it.",
+      "whatsHappening": "The גמרא answers the question: the difference depends on how people naturally behave toward each thing.",
+      "deeperAnalysis": "By the law of the תורה, neither flame is forbidden. A decree (גזירה) is needed only where people might get careless. People already stay far from idolatry. They might treat holy property casually, so the רבנן added a fence for הקדש.",
+      "keyTerms": [
+        {
+          "term": "מְאִיסָה",
+          "meaning": "Disgusting or repulsive."
+        },
+        {
+          "term": "בְּדִילִי אִינָשֵׁי",
+          "meaning": "People keep themselves away."
+        },
+        {
+          "term": "גְּזַרוּ רַבָּנַן",
+          "meaning": "The Sages made a rabbinic decree."
+        }
+      ],
+      "whatToRemember": "A rabbinic decree is made where people are likely to slip up. Where people naturally stay away, no decree is needed.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "עֲבוֹדָה זָרָה, דִּמְאִיסָה",
+          "english": "Idol worship, which is disgusting"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וּבְדִילִי אִינָשֵׁי מִינַּהּ —",
+          "english": "and people keep away from it,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "לָא גְּזַרוּ בַּהּ רַבָּנַן.",
+          "english": "the Sages did not make a decree about it."
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "הֶקְדֵּשׁ, דְּלָא מְאִיס",
+          "english": "Consecrated property, which is not disgusting"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "וְלָא בְּדִילִי אִינָשֵׁי מִינֵּיהּ —",
+          "english": "and people do not keep away from it,"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "גְּזַרוּ בֵּיהּ רַבָּנַן.",
+          "english": "the Sages made a decree about it."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "עֲבוֹדָה זָרָה, דִּמְאִיסָה וּבְדִילִי אִינָשֵׁי מִינַּהּ",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        11
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Answers the question of step 11.",
+      "teshuvahAnswerProvided": "A decree was needed only for הקדש, because people do not naturally avoid it the way they avoid idolatry."
+    },
+    {
+      "stepNumber": 13,
+      "hebrewStepName": "קשיא",
+      "title": "Another ברייתא says carrying a flame makes one liable",
+      "stepSummary": "The גמרא quotes the rule that carrying out a flame is exempt and challenges it with a ברייתא saying any flame makes one liable.",
+      "simpleTranslation": "The ברייתא said: one who carries a coal into רשות הרבים is liable, but for a flame he is exempt. But another ברייתא teaches: one who carries out a flame of any size is liable!",
+      "whatsHappening": "The גמרא goes back to line 4 of the ברייתא and attacks it with a contradicting ברייתא.",
+      "deeperAnalysis": "Our ברייתא says a flame is not a real object, so carrying it on שבת is exempt. The other ברייתא says carrying out even a tiny flame makes one liable. Both cannot be true as they stand.",
+      "keyTerms": [
+        {
+          "term": "וְהָא תַּנְיָא",
+          "meaning": "But it was taught in a ברייתא. This introduces a contradicting source."
+        },
+        {
+          "term": "כׇּל שֶׁהוּא",
+          "meaning": "Any amount, even the smallest."
+        },
+        {
+          "term": "רְשׁוּת הָרַבִּים",
+          "meaning": "The public domain, where carrying on שבת is forbidden."
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "הַמּוֹצִיא גַּחֶלֶת לִרְשׁוּת הָרַבִּים — חַיָּיב,",
+          "english": "One who carries a coal out to the public domain is liable,"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וְשַׁלְהֶבֶת — פָּטוּר.",
+          "english": "but for a flame, he is exempt."
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וְהָא תַּנְיָא:",
+          "english": "But it was taught:"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "הַמּוֹצִיא שַׁלְהֶבֶת כׇּל שֶׁהוּא — חַיָּיב!",
+          "english": "One who carries out a flame of any size is liable!"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וְהָא תַּנְיָא: הַמּוֹצִיא שַׁלְהֶבֶת כׇּל שֶׁהוּא — חַיָּיב",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [
+        10
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Returns to line 4 of the ברייתא and opens a new challenge.",
+      "kashyaTarget": "The ruling that one who carries out a flame on שבת is exempt.",
+      "kashyaAttackLogic": "A second ברייתא directly says a flame of any size makes one liable."
+    },
+    {
+      "stepNumber": 14,
+      "hebrewStepName": "תירוץ",
+      "title": "רב ששת: the flame was carried on a wood chip",
+      "stepSummary": "רב ששת explains that the liable case is a flame carried attached to a small piece of wood.",
+      "simpleTranslation": "רב ששת said: the case is where he carried it out on a wood chip.",
+      "whatsHappening": "רב ששת resolves the contradiction by saying the two ברייתות are talking about different cases.",
+      "deeperAnalysis": "A flame alone has no body, so carrying it is exempt. When the flame sits on a wood chip, it is attached to something physical. Then carrying it out makes one liable.",
+      "keyTerms": [
+        {
+          "term": "רַב שֵׁשֶׁת",
+          "meaning": "An אמורא who gives the answer."
+        },
+        {
+          "term": "קֵיסָם",
+          "meaning": "A wood chip or splinter."
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר רַב שֵׁשֶׁת:",
+          "english": "Rav Sheshet said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "כְּגוֹן שֶׁהוֹצִיאוֹ בְּקֵיסָם.",
+          "english": "For example, where he carried it out on a wood chip."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אָמַר רַב שֵׁשֶׁת: כְּגוֹן שֶׁהוֹצִיאוֹ בְּקֵיסָם",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        13
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Answers the contradiction raised in step 13.",
+      "terutzResolutionType": "Splitting the cases (אוקימתא): the liable ruling refers to a flame on a chip.",
+      "terutzHavaAmina": "Both ברייתות speak of a bare flame, so they contradict.",
+      "terutzMaskana": "A bare flame is exempt. A flame attached to a chip makes one liable."
+    },
+    {
+      "stepNumber": 15,
+      "hebrewStepName": "קשיא",
+      "title": "Why not make him liable because of the chip itself?",
+      "stepSummary": "The גמרא asks: if there is a chip, the liability should come from carrying the chip, so why mention the flame?",
+      "simpleTranslation": "Let him be liable because of the wood chip!",
+      "whatsHappening": "The גמרא challenges רב ששת's answer.",
+      "deeperAnalysis": "If he carried a piece of wood, the wood is the obvious reason for liability. So the ברייתא's emphasis on the flame seems pointless.",
+      "keyTerms": [
+        {
+          "term": "תִּיפּוֹק לֵיהּ",
+          "meaning": "Let him derive it from. This means: there is already a simpler reason."
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְתִיפּוֹק לֵיהּ מִשּׁוּם קֵיסָם!",
+          "english": "But let him derive liability because of the wood chip!"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וְתִיפּוֹק לֵיהּ מִשּׁוּם קֵיסָם",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        14
+      ],
+      "scopeOfStep": "inference",
+      "relationToPreviousStep": "Attacks רב ששת's answer.",
+      "kashyaTarget": "רב ששת's explanation that the flame was carried on a chip.",
+      "kashyaAttackLogic": "The chip alone should already make him liable, so the flame would add nothing."
+    },
+    {
+      "stepNumber": 16,
+      "hebrewStepName": "תירוץ",
+      "title": "The chip is too small to count",
+      "stepSummary": "The chip is smaller than the minimum amount of wood for liability, so only the flame makes him liable. A משנה is brought to show this minimum.",
+      "simpleTranslation": "The case is where the chip does not have the minimum size. As we learned in a משנה: one who carries out wood is liable only if there is enough to cook a light egg.",
+      "whatsHappening": "The גמרא defends רב ששת: the chip alone is too small to make anyone liable, so the liability really comes from the flame.",
+      "deeperAnalysis": "Carrying wood on שבת makes one liable only for enough wood to cook an easy egg. A tiny chip falls below that amount. So the chip only gives the flame a body, and the flame is what makes him liable.",
+      "keyTerms": [
+        {
+          "term": "שִׁעוּרָא",
+          "meaning": "The minimum amount needed for liability."
+        },
+        {
+          "term": "דִּתְנַן",
+          "meaning": "As we learned in a משנה."
+        },
+        {
+          "term": "בֵּיצָה קַלָּה",
+          "meaning": "An egg that is easy to cook, meaning a chicken egg."
+        }
+      ],
+      "whatToRemember": "A bare flame is exempt. A flame on a tiny chip makes one liable because of the flame, since the chip alone is below the minimum amount.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "בִּדְלֵית לֵיהּ שִׁעוּרָא.",
+          "english": "It is where the chip does not have the minimum size."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "דִּתְנַן:",
+          "english": "As we learned in a mishna:"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "הַמּוֹצִיא עֵצִים —",
+          "english": "One who carries out wood"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "כְּדֵי לְבַשֵּׁל בֵּיצָה קַלָּה.",
+          "english": "is liable for enough to cook a light egg."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "בִּדְלֵית לֵיהּ שִׁעוּרָא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        14,
+        15
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Answers the challenge of step 15 and saves רב ששת's explanation.",
+      "terutzResolutionType": "Narrowing the case: the chip is below the minimum amount.",
+      "terutzHavaAmina": "The chip itself would make him liable, so the flame adds nothing.",
+      "terutzMaskana": "The chip is too small to count, so the flame attached to it is what makes him liable."
+    },
+    {
+      "stepNumber": 17,
+      "hebrewStepName": "תירוץ",
+      "title": "אביי's case: a flame burning on oil smeared on a vessel",
+      "stepSummary": "אביי resolves the contradiction a different way. The ברייתא that makes one liable is talking about a flame burning on oil smeared on a vessel.",
+      "simpleTranslation": "אביי said: It is a case where he smeared a vessel with oil and lit a fire on it.",
+      "whatsHappening": "אביי gives his own answer to the contradiction from Step 13. He replaces רב ששת's wood chip with a vessel smeared with oil and set on fire.",
+      "deeperAnalysis": "רב ששת said the flame sat on a small chip of wood. אביי says it sat on oil coated on a vessel. Either way, the flame is attached to something physical, and that is why carrying it can make someone liable.",
+      "keyTerms": [
+        {
+          "term": "שַׁיְיפֵיהּ",
+          "meaning": "he smeared it"
+        },
+        {
+          "term": "מָנָא",
+          "meaning": "a vessel, utensil"
+        },
+        {
+          "term": "מִשְׁחָא",
+          "meaning": "oil"
+        },
+        {
+          "term": "אַתְלִי בֵּיהּ נוּרָא",
+          "meaning": "he lit a fire on it"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אַבָּיֵי אָמַר:",
+          "english": "Abaye said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "כְּגוֹן דְּשַׁיְיפֵיהּ [לְ]מָנָא מִשְׁחָא",
+          "english": "For example, where he smeared a vessel with oil"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וְאַתְלִי בֵּיהּ נוּרָא.",
+          "english": "and lit a fire on it."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "מימרא",
+      "triggerLanguage": "אַבָּיֵי אָמַר: כְּגוֹן דְּשַׁיְיפֵיהּ",
+      "macroPhase": "alternate_branch",
+      "branchRole": "alternative_approach",
+      "dependsOnStepNumbers": [
+        13,
+        14
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Offers a second resolution of the contradiction, in place of רב ששת's wood chip.",
+      "terutzResolutionType": "Case limitation (אוקימתא)",
+      "terutzHavaAmina": "A flame by itself could never make someone liable, so the ברייתא saying 'a flame of any size is liable' seems to contradict the rule that carrying a flame is exempt.",
+      "terutzMaskana": "The ברייתא is talking about a flame burning on oil smeared on a vessel."
+    },
+    {
+      "stepNumber": 18,
+      "hebrewStepName": "קשיא",
+      "title": "Liability should come from the vessel",
+      "stepSummary": "If a vessel is being carried, the liability comes from the vessel itself. Why credit the flame?",
+      "simpleTranslation": "But let him be liable because of the vessel!",
+      "whatsHappening": "The גמרא challenges אביי's case. Carrying a vessel already makes a person liable, so the flame adds nothing.",
+      "deeperAnalysis": "This is the same kind of attack that was made against רב ששת in Step 15. If something else being carried already causes liability, the ברייתא's point about a flame becomes meaningless.",
+      "keyTerms": [
+        {
+          "term": "וְתִיפּוֹק לֵיהּ",
+          "meaning": "let it come out (derive the ruling) from"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְתִיפּוֹק לֵיהּ מִשּׁוּם מָנָא?",
+          "english": "But let him derive liability because of the vessel?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וְתִיפּוֹק לֵיהּ מִשּׁוּם מָנָא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        17
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Attacks אביי's case.",
+      "kashyaTarget": "אביי's vessel case",
+      "kashyaAttackLogic": "The vessel already makes him liable, so the flame would not be the reason for liability."
+    },
+    {
+      "stepNumber": 19,
+      "hebrewStepName": "תירוץ",
+      "title": "It was a pottery shard, not a whole vessel",
+      "stepSummary": "The flame was on a broken piece of pottery, not a real vessel.",
+      "simpleTranslation": "It was on a shard of earthenware.",
+      "whatsHappening": "The גמרא answers that the oil and flame were on a broken piece of pottery, not on a whole vessel.",
+      "deeperAnalysis": "A broken shard is not a usable vessel, so carrying it does not automatically make someone liable.",
+      "keyTerms": [
+        {
+          "term": "חַסְפָּא",
+          "meaning": "a broken shard of earthenware"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "בְּחַסְפָּא.",
+          "english": "With an earthenware shard."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "בְּחַסְפָּא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        18
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Answers the קשיא by narrowing the case.",
+      "terutzResolutionType": "Case refinement",
+      "terutzHavaAmina": "It was a whole vessel, which would make him liable by itself.",
+      "terutzMaskana": "It was only a pottery shard."
+    },
+    {
+      "stepNumber": 20,
+      "hebrewStepName": "קשיא",
+      "title": "Liability should come from the shard",
+      "stepSummary": "Carrying even a shard can make someone liable, so the shard should be the reason.",
+      "simpleTranslation": "But let him be liable because of the shard!",
+      "whatsHappening": "The גמרא pushes again. A pottery shard is also an object that can make a person liable for carrying it.",
+      "deeperAnalysis": "Moving from a vessel to a shard does not fully solve the problem. A shard also has a minimum size that makes carrying it liable.",
+      "keyTerms": [],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְתִיפּוֹק לֵיהּ מִשּׁוּם חַסְפָּא!",
+          "english": "But let him derive liability because of the shard!"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "וְתִיפּוֹק לֵיהּ מִשּׁוּם חַסְפָּא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        19
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Attacks the answer given in Step 19.",
+      "kashyaTarget": "The shard case",
+      "kashyaAttackLogic": "The shard itself should make him liable, so the flame is again not the reason."
+    },
+    {
+      "stepNumber": 21,
+      "hebrewStepName": "תירוץ",
+      "title": "The shard is below the minimum size",
+      "stepSummary": "The shard is smaller than the minimum size for liability, as a משנה teaches.",
+      "simpleTranslation": "It is a shard that does not have the minimum size. As we learned in a משנה: The minimum for earthenware is enough to place between one window frame and another. These are the words of רבי יהודה.",
+      "whatsHappening": "The גמרא answers that the shard is too small to make anyone liable by itself. It quotes a משנה that sets the minimum size for a shard.",
+      "deeperAnalysis": "This mirrors the answer to רב ששת in Step 16. Since the shard is below the minimum, only the flame can explain the liability. רבי יהודה sets the shard's minimum as a piece big enough to be wedged between window frames.",
+      "keyTerms": [
+        {
+          "term": "שִׁעוּרָא",
+          "meaning": "the minimum amount needed for liability"
+        },
+        {
+          "term": "חֶרֶס",
+          "meaning": "earthenware, pottery"
+        },
+        {
+          "term": "פַּצִּים",
+          "meaning": "window frames (boards)"
+        },
+        {
+          "term": "רַבִּי יְהוּדָה",
+          "meaning": "the תנא who gives this minimum"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "בִּדְלֵית לֵיהּ שִׁעוּרָא.",
+          "english": "In a case where it does not have the minimum measure."
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "דִּתְנַן: חֶרֶס —",
+          "english": "As we learned in a mishna: Earthenware —"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "כְּדֵי לִיתֵּן בֵּין פַּצִּים לַחֲבֵירוֹ,",
+          "english": "enough to place between one window frame and another,"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "דִּבְרֵי רַבִּי יְהוּדָה.",
+          "english": "the words of Rabbi Yehuda."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "ראיה",
+      "triggerLanguage": "בִּדְלֵית לֵיהּ שִׁעוּרָא",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        16,
+        20
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Answers the קשיא and supports the answer with a משנה.",
+      "terutzResolutionType": "Quantitative limitation",
+      "terutzHavaAmina": "The shard is large enough to make him liable by itself.",
+      "terutzMaskana": "The shard is below the minimum, so only the flame makes him liable.",
+      "raayaSupportSource": "משנה in שבת 82a about the minimum size of a pottery shard"
+    },
+    {
+      "stepNumber": 22,
+      "hebrewStepName": "קשיא",
+      "title": "When would the משנה's 'exempt' ruling ever apply?",
+      "stepSummary": "If a flame on any object makes someone liable, when is carrying a flame exempt, as the משנה says?",
+      "simpleTranslation": "But if so, the משנה we learned, 'One who carries out a flame is exempt' — how can you find such a case?",
+      "whatsHappening": "The גמרא turns back to the משנה. If a flame is almost always attached to something, when would the משנה's exemption ever apply?",
+      "deeperAnalysis": "Both רב ששת and אביי placed the liable flame on some small object. But a flame almost always rests on something, so the משנה's case of an exempt flame now seems impossible to find.",
+      "keyTerms": [
+        {
+          "term": "שַׁלְהֶבֶת",
+          "meaning": "a flame"
+        },
+        {
+          "term": "הֵיכִי מַשְׁכַּחַתְּ לַהּ",
+          "meaning": "how can you find such a case?"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֶלָּא הָא דִּתְנַן:",
+          "english": "But that which we learned:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "הַמּוֹצִיא שַׁלְהֶבֶת פָּטוּר,",
+          "english": "One who carries out a flame is exempt,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "הֵיכִי מַשְׁכַּחַתְּ לַהּ?",
+          "english": "how can you find it?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "שאלה",
+      "triggerLanguage": "אֶלָּא הָא דִּתְנַן: הַמּוֹצִיא שַׁלְהֶבֶת פָּטוּר, הֵיכִי מַשְׁכַּחַתְּ לַהּ",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "returns_to_previous_branch",
+      "dependsOnStepNumbers": [
+        13,
+        14,
+        17
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "After defining the liable case, the גמרא questions whether the exempt case can still exist.",
+      "kashyaTarget": "The משנה's rule that carrying a flame is exempt",
+      "kashyaAttackLogic": "If every flame resting on an object makes someone liable, the exemption seems to have no real case."
+    },
+    {
+      "stepNumber": 23,
+      "hebrewStepName": "תירוץ",
+      "title": "The flame was fanned by hand into the public domain",
+      "stepSummary": "The exempt case is where he fanned the flame with his hand into the public domain, with no object holding it.",
+      "simpleTranslation": "For example, where he fanned it with his hand into the public domain.",
+      "whatsHappening": "The גמרא answers that the משנה is talking about a flame pushed into the public domain by fanning. Nothing physical holds it.",
+      "deeperAnalysis": "A flame alone, with nothing physical holding it, has no substance to be 'carried.' That is why it is exempt. This brings the whole section to a close: a flame on some object makes him liable, and a free flame does not.",
+      "keyTerms": [
+        {
+          "term": "אַדְּיֵיהּ אַדּוֹיֵי",
+          "meaning": "he fanned it (waved it along with his hand)"
+        },
+        {
+          "term": "רְשׁוּת הָרַבִּים",
+          "meaning": "the public domain"
+        }
+      ],
+      "whatToRemember": "Carrying a flame is exempt only when the flame is free, like one fanned into the public domain. If the flame rests on oil or wood, even a piece too small to count by itself, the flame makes him liable.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "כְּגוֹן דְּאַדְּיֵיהּ אַדּוֹיֵי",
+          "english": "For example, where he fanned it with his hand"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "לִרְשׁוּת הָרַבִּים.",
+          "english": "into the public domain."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "מסקנא",
+      "triggerLanguage": "כְּגוֹן דְּאַדְּיֵיהּ אַדּוֹיֵי לִרְשׁוּת הָרַבִּים",
+      "macroPhase": "conclusion",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        22
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Answers the קשיא by giving a real case for the משנה's exemption.",
+      "terutzResolutionType": "Case limitation (אוקימתא)",
+      "terutzHavaAmina": "Every flame rests on something, so the משנה's exemption has no case.",
+      "terutzMaskana": "A flame fanned into the public domain with nothing holding it is exempt."
+    },
+    {
+      "stepNumber": 24,
+      "hebrewStepName": "מימרא",
+      "title": "New משנה: the travel limit of water drawn from a cistern",
+      "stepSummary": "Water from a cistern has the same תחום as its owners: one person, the people of a town, or anyone at all for a public cistern.",
+      "simpleTranslation": "משנה: Water from a cistern of one person is like the feet of that person. Water from a cistern of the people of a town is like the feet of the people of that town. Water from a cistern of those who came up from Babylonia is like the feet of whoever fills it.",
+      "whatsHappening": "A new משנה begins. It teaches how far on יום טוב someone may carry water taken from different kinds of cisterns.",
+      "deeperAnalysis": "Objects follow the תחום of their owners. A private cistern's water follows its owner. A town cistern's water follows the townspeople. A cistern made for all travelers (עולי בבל) belongs to no one in particular, so its water follows whoever draws it.",
+      "keyTerms": [
+        {
+          "term": "מַתְנִי׳",
+          "meaning": "our משנה (a new משנה begins)"
+        },
+        {
+          "term": "בּוֹר",
+          "meaning": "a cistern, a pit holding water"
+        },
+        {
+          "term": "כְּרַגְלֵי",
+          "meaning": "like the feet of (has the same travel limit as)"
+        },
+        {
+          "term": "עוֹלֵי בָבֶל",
+          "meaning": "those who came up from Babylonia (public cisterns made for travelers)"
+        },
+        {
+          "term": "הַמְמַלֵּא",
+          "meaning": "the one who fills (draws the water)"
+        }
+      ],
+      "confusionAlert": "'Like the feet of' does not mean the water itself walks. It means the water may only be carried as far as its owner (or the one who draws it) may walk on יום טוב.",
+      "whyThisMatters": "This continues the פרק's main theme: objects and food take on the travel limits (תחומין) of their owners on יום טוב.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "<big><strong>מַתְנִי׳</strong></big>",
+          "english": "MISHNA:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "בּוֹר שֶׁל יָחִיד — כְּרַגְלֵי הַיָּחִיד,",
+          "english": "A cistern of an individual — is like the feet of the individual,"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "וְשֶׁל אַנְשֵׁי אוֹתָהּ הָעִיר —",
+          "english": "and that of the people of that town —"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "כְּרַגְלֵי אַנְשֵׁי אוֹתָהּ הָעִיר,",
+          "english": "is like the feet of the people of that town,"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "וְשֶׁל עוֹלֵי בָבֶל —",
+          "english": "and that of those who came up from Babylonia —"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "כְּרַגְלֵי הַמְמַלֵּא.",
+          "english": "is like the feet of the one who fills."
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "מַתְנִי׳ בּוֹר שֶׁל יָחִיד",
+      "macroPhase": "mishnah",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Starts a new topic after the flame discussion ends.",
+      "mimraCoreRuling": "Water from a cistern takes the תחום of its owners, and water from a public cistern takes the תחום of whoever draws it."
+    },
+    {
+      "stepNumber": 25,
+      "hebrewStepName": "קשיא",
+      "title": "A private cistern versus flowing rivers and springs",
+      "stepSummary": "רבא sets a ברייתא, which says flowing rivers and springs follow everyone, against the משנה, which says a private cistern follows its owner.",
+      "simpleTranslation": "רבא pointed out a contradiction to רב נחמן. We learned in the משנה: water from an individual's cistern is like the feet of that individual. But another source says: flowing rivers and gushing springs are like the feet of all people!",
+      "whatsHappening": "The גמרא starts by showing that two sources seem to clash about whose תחום water follows.",
+      "deeperAnalysis": "The משנה says a private cistern's water may go only where its owner may go. The ברייתא says water from flowing rivers and springs is not tied to any owner, so it may go wherever the person who draws it may go. A cistern is usually fed by such flowing water, so it seems its water should also follow everyone, like the river.",
+      "keyTerms": [
+        {
+          "term": "רָמֵי",
+          "meaning": "Raised a contradiction between two sources"
+        },
+        {
+          "term": "וּרְמִינְהוּ",
+          "meaning": "And contrast it with another source"
+        },
+        {
+          "term": "כְּרַגְלֵי",
+          "meaning": "Like the feet of; it may go only where that person may walk on יום טוב"
+        },
+        {
+          "term": "נְהָרוֹת הַמּוֹשְׁכִין",
+          "meaning": "Rivers that flow"
+        },
+        {
+          "term": "מַעֲיָנוֹת הַנּוֹבְעִין",
+          "meaning": "Springs that gush out"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "גְּמָ׳",
+          "english": "Gemara"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "רָמֵי לֵיהּ רָבָא לְרַב נַחְמָן",
+          "english": "Rava raised a contradiction to Rav Nachman"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "תְּנַן: בּוֹר שֶׁל יָחִיד",
+          "english": "We learned: a cistern of an individual"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "כְּרַגְלֵי הַיָּחִיד",
+          "english": "is like the feet of the individual"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "וּרְמִינְהוּ",
+          "english": "And contrast it with this"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "נְהָרוֹת הַמּוֹשְׁכִין וּמַעֲיָנוֹת הַנּוֹבְעִין",
+          "english": "Flowing rivers and gushing springs"
+        },
+        {
+          "phraseNumber": 7,
+          "aramaic": "הֲרֵי הֵן כְּרַגְלֵי כׇּל אָדָם",
+          "english": "are like the feet of all people!",
+          "notes": "Whoever draws the water may take it wherever he himself may go."
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "שאלה",
+      "triggerLanguage": "רָמֵי לֵיהּ רָבָא לְרַב נַחְמָן",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [
+        24
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Challenges the משנה's rule from Step 24 about a private cistern.",
+      "kashyaTarget": "The משנה's rule that a private cistern is כרגלי היחיד",
+      "kashyaAttackLogic": "The ברייתא says flowing spring and river water follows everyone. A cistern is usually fed by such water, so tying private cistern water to its owner seems to clash with it."
+    },
+    {
+      "stepNumber": 26,
+      "hebrewStepName": "תירוץ",
+      "title": "The משנה is about collected water",
+      "stepSummary": "The משנה refers to a cistern of collected, still water, not water that flows.",
+      "simpleTranslation": "He said (the printed text marks the name רבא here as doubtful): What case are we dealing with here? Collected water.",
+      "whatsHappening": "The answer narrows the case in the משנה. The printed text puts the name רבא here in parentheses, marking it as doubtful; without it, the answer would be רב נחמן's, the one רבא challenged.",
+      "deeperAnalysis": "Collected water sits still and belongs to the cistern's owner, so it follows him. Flowing water keeps moving and belongs to no one, so it follows whoever draws it. The two sources are describing different kinds of water, so they do not clash.",
+      "keyTerms": [
+        {
+          "term": "הָכָא בְּמַאי עָסְקִינַן",
+          "meaning": "What case are we dealing with here? A formula that limits a source to a specific case"
+        },
+        {
+          "term": "מְכוּנָּסִין",
+          "meaning": "Collected, gathered, still water"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אָמַר (רָבָא):",
+          "english": "Rava said:"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "הָכָא בְּמַאי עָסְקִינַן",
+          "english": "What case are we dealing with here?"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "בִּמְכוּנָּסִין",
+          "english": "With collected water"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "הָכָא בְּמַאי עָסְקִינַן",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        25
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Resolves the contradiction raised in Step 25.",
+      "terutzResolutionType": "Limiting the case (אוקימתא)",
+      "terutzHavaAmina": "The משנה seemed to cover any water in a private cistern, even flowing water.",
+      "terutzMaskana": "Only collected, still water follows its owner. Flowing water follows everyone."
+    },
+    {
+      "stepNumber": 27,
+      "hebrewStepName": "ראיה",
+      "title": "שמואל said the same thing",
+      "stepSummary": "A statement of the אמורא שמואל backs up רבא's answer.",
+      "simpleTranslation": "It was also stated: רבי חייא בר אבין said in the name of שמואל: The משנה is about collected water.",
+      "whatsHappening": "The גמרא shows that רבא's answer was already said by שמואל.",
+      "deeperAnalysis": "The formula ואתמר נמי means 'it was also stated.' It adds a second, independent source that limits the משנה to collected water in the same way, which makes רבא's answer stronger.",
+      "keyTerms": [
+        {
+          "term": "וְאִתְּמַר נָמֵי",
+          "meaning": "And it was also stated; introduces support from another אמורא"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְאִתְּמַר נָמֵי",
+          "english": "And it was also stated"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "אָמַר רַבִּי חִיָּיא בַּר אָבִין אָמַר שְׁמוּאֵל",
+          "english": "Rabbi Chiyya bar Avin said in the name of Shmuel"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "בִּמְכוּנָּסִין",
+          "english": "It refers to collected water"
+        }
+      ],
+      "classificationConfidence": "High",
+      "alternativePossibleLabel": "מסקנא",
+      "triggerLanguage": "וְאִתְּמַר נָמֵי",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        26
+      ],
+      "scopeOfStep": "case_definition",
+      "relationToPreviousStep": "Supports the answer given in Step 26.",
+      "raayaObject": "רבא's answer that the משנה refers to collected water",
+      "raayaSupportSource": "רבי חייא בר אבין, quoting שמואל",
+      "whatToRemember": "A private cistern of collected water follows its owner. Flowing rivers and springs follow whoever draws the water."
+    },
+    {
+      "stepNumber": 28,
+      "hebrewStepName": "מימרא",
+      "title": "Water drawn from the public cistern for someone else",
+      "stepSummary": "The משנה says water from a public cistern follows whoever fills it. רב נחמן and רב ששת argue about water filled for another person.",
+      "simpleTranslation": "The משנה says: water from the cistern of those who came up from Babylonia is like the feet of whoever fills it. It was stated: if someone filled water and gave it to his friend, רב נחמן said: it is like the feet of the one it was filled for. רב ששת said: it is like the feet of the one who filled it.",
+      "whatsHappening": "The גמרא moves to the next line of the משנה, about a public cistern, and presents a dispute about one detail of it.",
+      "deeperAnalysis": "The משנה says public cistern water follows the person who draws it. The question is what happens when one person draws water for someone else. רב נחמן says it follows the person it was drawn for. רב ששת says it still follows the person who drew it.",
+      "keyTerms": [
+        {
+          "term": "עוֹלֵי בָבֶל",
+          "meaning": "Those who came up from Babylonia; a public cistern made for travelers"
+        },
+        {
+          "term": "הַמְמַלֵּא",
+          "meaning": "The one who fills, meaning the person who draws the water"
+        },
+        {
+          "term": "אִתְּמַר",
+          "meaning": "It was stated; introduces an amoraic dispute"
+        },
+        {
+          "term": "מִי שֶׁנִּתְמַלְּאוּ לוֹ",
+          "meaning": "The one the water was filled for"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "וְשֶׁל עוֹלֵי בָבֶל",
+          "english": "And the cistern of those who came up from Babylonia"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "כְּרַגְלֵי הַמְמַלֵּא",
+          "english": "is like the feet of the one who fills"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "אִתְּמַר: מִילֵּא וְנָתַן לַחֲבֵירוֹ",
+          "english": "It was stated: if one filled and gave to his friend"
+        },
+        {
+          "phraseNumber": 4,
+          "aramaic": "רַב נַחְמָן אָמַר:",
+          "english": "Rav Nachman said:"
+        },
+        {
+          "phraseNumber": 5,
+          "aramaic": "כְּרַגְלֵי מִי שֶׁנִּתְמַלְּאוּ לוֹ",
+          "english": "Like the feet of the one it was filled for"
+        },
+        {
+          "phraseNumber": 6,
+          "aramaic": "רַב שֵׁשֶׁת אָמַר: כְּרַגְלֵי הַמְמַלֵּא",
+          "english": "Rav Sheshet said: Like the feet of the one who filled"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אִתְּמַר: מִילֵּא וְנָתַן לַחֲבֵירוֹ",
+      "macroPhase": "opening_question",
+      "branchRole": "opens_new_branch",
+      "dependsOnStepNumbers": [
+        24
+      ],
+      "scopeOfStep": "legal_rule",
+      "relationToPreviousStep": "Starts a new section on the משנה's line about the public cistern.",
+      "mimraCoreRuling": "רב נחמן: water drawn for someone else follows that person. רב ששת: it follows the person who drew it."
+    },
+    {
+      "stepNumber": 29,
+      "hebrewStepName": "שאלה",
+      "title": "What is the root of their dispute",
+      "stepSummary": "The גמרא asks what principle רב נחמן and רב ששת disagree about.",
+      "simpleTranslation": "About what do they disagree?",
+      "whatsHappening": "This is a setup line: the גמרא asks for the reason behind the dispute and will answer in the next step.",
+      "deeperAnalysis": "The גמרא wants to find the legal idea underneath the two rulings, instead of leaving them as two bare opinions.",
+      "keyTerms": [
+        {
+          "term": "בְּמַאי קָא מִיפַּלְגִי",
+          "meaning": "About what do they disagree?"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "בְּמַאי קָא מִיפַּלְגִי?",
+          "english": "About what do they disagree?"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "בְּמַאי קָא מִיפַּלְגִי",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        28
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Asks for the reasoning behind the dispute in Step 28.",
+      "sheelahInformationSought": "The principle that explains why the two אמוראים disagree"
+    },
+    {
+      "stepNumber": 30,
+      "hebrewStepName": "תשובה",
+      "title": "Ownerless cistern or partnership cistern",
+      "stepSummary": "רב ששת holds the public cistern is ownerless. רב נחמן holds it belongs to partners.",
+      "simpleTranslation": "One master holds: the cistern is ownerless. The other master holds: the cistern belongs to partners.",
+      "whatsHappening": "The גמרא answers that the dispute depends on who owns the public cistern.",
+      "deeperAnalysis": "If the cistern is הפקר, you cannot acquire ownerless property for someone else, so the water belongs to the person who drew it (רב ששת). If it belongs to שותפים, every Jew is a partner, so one partner can draw water for another and it belongs to that person right away (רב נחמן).",
+      "keyTerms": [
+        {
+          "term": "מָר סָבַר",
+          "meaning": "One master holds"
+        },
+        {
+          "term": "הֶפְקֵרָא",
+          "meaning": "Ownerless property"
+        },
+        {
+          "term": "שׁוּתָּפֵי",
+          "meaning": "Partners, joint owners"
+        }
+      ],
+      "confusionAlert": "The first 'מר' (ownerless) is רב ששת and the second 'מר' (partners) is רב נחמן. This is the reverse of the order they were quoted in.",
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "מָר סָבַר: בֵּירָא דְהֶפְקֵרָא הוּא",
+          "english": "One master holds: it is an ownerless cistern",
+          "notes": "רב ששת"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "וּמָר סָבַר: בֵּירָא דְשׁוּתָּפֵי הוּא",
+          "english": "And the other master holds: it is a partners' cistern",
+          "notes": "רב נחמן"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "מָר סָבַר: בֵּירָא דְהֶפְקֵרָא הוּא",
+      "macroPhase": "clarification_of_terms",
+      "branchRole": "conclusion_of_branch",
+      "dependsOnStepNumbers": [
+        29
+      ],
+      "scopeOfStep": "general_logic",
+      "relationToPreviousStep": "Answers the question asked in Step 29.",
+      "teshuvahAnswerProvided": "The dispute is whether a public cistern is הפקר (רב ששת) or owned by שותפים (רב נחמן).",
+      "whyThisMatters": "It shows that the תחום of an object follows its legal owner. So the question of who owns the water decides whose feet it follows."
+    },
+    {
+      "stepNumber": 31,
+      "hebrewStepName": "קשיא",
+      "title": "רבא begins a challenge from a vow of חרם",
+      "stepSummary": "רבא starts a challenge to רב נחמן from a משנה about someone who forbids himself to another person with a חרם.",
+      "simpleTranslation": "רבא challenged רב נחמן: If someone says, 'I am hereby forbidden to you like a חרם,' the one affected by the vow is forbidden.",
+      "whatsHappening": "This is a setup line: רבא quotes a משנה from נדרים to begin challenging רב נחמן, and the full argument continues on the next עמוד.",
+      "deeperAnalysis": "In this vow, the person addressed may not get any benefit from the one who made the vow. רבא will use this case to question רב נחמן's idea that a partner can draw from a shared cistern for someone else.",
+      "keyTerms": [
+        {
+          "term": "אֵיתִיבֵיהּ",
+          "meaning": "He challenged him from an authoritative source"
+        },
+        {
+          "term": "חֵרֶם",
+          "meaning": "A vow that forbids something, as if it were consecrated"
+        },
+        {
+          "term": "הַמּוּדָּר",
+          "meaning": "The person affected by the vow"
+        }
+      ],
+      "phrases": [
+        {
+          "phraseNumber": 1,
+          "aramaic": "אֵיתִיבֵיהּ רָבָא לְרַב נַחְמָן",
+          "english": "Rava challenged Rav Nachman"
+        },
+        {
+          "phraseNumber": 2,
+          "aramaic": "הֲרֵינִי עָלֶיךָ חֵרֶם",
+          "english": "I am hereby forbidden to you like a חרם"
+        },
+        {
+          "phraseNumber": 3,
+          "aramaic": "הַמּוּדָּר אָסוּר",
+          "english": "The one affected by the vow is forbidden"
+        }
+      ],
+      "classificationConfidence": "High",
+      "triggerLanguage": "אֵיתִיבֵיהּ רָבָא לְרַב נַחְמָן",
+      "macroPhase": "objection_defense_cycle",
+      "branchRole": "continues_current_line",
+      "dependsOnStepNumbers": [
+        30
+      ],
+      "scopeOfStep": "proof_mechanism",
+      "relationToPreviousStep": "Challenges רב נחמן's position, explained in Step 30.",
+      "kashyaTarget": "רב נחמן's view that a public cistern belongs to partners",
+      "kashyaAttackLogic": "Setup only: a משנה about vows will be used to test the partnership model. The full argument comes on the next עמוד."
+    }
+  ]
+}
