@@ -1,4 +1,4 @@
-const V = "gc2-shell-v27";
+const V = "gc2-shell-v28";
 const SHELL = ["./", "index.html", "styles.css", "app.js", "mishnah.js", "manifest.json", "icon-192.png", "icon-512.png", "fonts/frank-ruhl-hebrew.woff2", "data/perakim.json"];
 self.addEventListener("install", e => { e.waitUntil(caches.open(V).then(c => c.addAll(SHELL)).then(() => self.skipWaiting())); });
 self.addEventListener("activate", e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k.startsWith("gc2-shell") && k !== V).map(k => caches.delete(k)))).then(() => self.clients.claim())); });
