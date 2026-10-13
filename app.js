@@ -51,6 +51,7 @@ const saveJSON = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); }
 
 try { localStorage.removeItem("gc2-openai-key"); } catch {} // the old bring-your-own-key mode is gone; forget any key a device saved
 const settings = Object.assign({ scale:1, nikud:true, translation:true, colors:true, notes:true, terms:true, logic:false, expandAll:false, theme:"dark" }, loadJSON(LS.settings, {}));
+delete settings.byPerek; // the old "By perek / All dapim" switch is gone: perek view is always on
 let cloudIds = new Set();
 let cloudLoaded = false;
 let current = null; // {m, i, id, analysis, source:'cloud'|null, text, tab}
@@ -268,6 +269,16 @@ function perekLineHtml(m, i){
     + `</button>`;
 }
 
+/* perek grouping: always on wherever a masechet's dapim are listed (the picker grid and the home library) */
+function perekGroups(k){ // null when the masechet has one perek or no perakim data: those list as a plain grid
+  const ps = perakimOf(k); if (!ps || ps.length < 2) return null;
+  return ps.map((p, n) => { const prev = ps[n-1], nxt = ps[n+1];
+    return { p, midOf: i => (prev && i === prev.end && i === p.start) ? `Perek ${p.n} begins partway down this amud` : (nxt && i === nxt.start && i === p.end) ? `Perek ${nxt.n} begins partway down this amud` : "" }; });
+}
+const perekHeadHtml = p => `<h4 class="pk-h"><span>Perek ${p.n} · <span class="he">${esc(perekHe(p))}</span></span><span class="pk-r">${amudLbl(p.start)}–${amudLbl(p.end)}</span></h4>`;
+const perekJumpHtml = (ps, attr = "data-jump") => `<nav class="pk-jump" aria-label="Jump to a perek">${ps.map(p => `<button class="chip" ${attr}="${p.jump || p.n}"><b>${p.n}</b><span class="he">${esc(p.he)}</span></button>`).join("")}</nav>`;
+const midLegendHtml = `<span><i class="mid"></i>new perek starts partway down</span>`;
+
 /* ---------- picker ---------- */
 function openPicker(focusMas, focusPerek){
   const html = `
@@ -308,20 +319,15 @@ function openPicker(focusMas, focusPerek){
     };
     const showDafGrid = (k, focusPerek) => {
       const [, he, first, last] = masInfo(k);
-      const ps = perakimOf(k), byPerek = !!(ps && ps.length > 1 && settings.byPerek !== false);
+      const gs = perekGroups(k), byPerek = !!gs;
       let grid;
       if (byPerek) {
-        grid = `<nav class="pk-jump" aria-label="Jump to a perek">${ps.map(p => `<button class="chip" data-jump="${p.n}"><b>${p.n}</b><span class="he">${esc(p.he)}</span></button>`).join("")}</nav>`
-          + ps.map((p, n) => {
-            const prev = ps[n-1], nxt = ps[n+1];
-            const midOf = i => (prev && i === prev.end && i === p.start) ? `Perek ${p.n} begins partway down this amud` : (nxt && i === nxt.start && i === p.end) ? `Perek ${nxt.n} begins partway down this amud` : "";
-            return `<section class="pk" id="pk-${p.n}"><h4 class="pk-h"><span>Perek ${p.n} · <span class="he">${esc(perekHe(p))}</span></span><span class="pk-r">${amudLbl(p.start)}–${amudLbl(p.end)}</span></h4>${rows(k, Math.max(p.start, first), Math.min(p.end, last), midOf)}</section>`;
-          }).join("");
+        grid = perekJumpHtml(gs.map(g => g.p))
+          + gs.map(({ p, midOf }) => `<section class="pk" id="pk-${p.n}">${perekHeadHtml(p)}${rows(k, Math.max(p.start, first), Math.min(p.end, last), midOf)}</section>`).join("");
       } else grid = rows(k, first, last);
       $("#pickBody", body).innerHTML = `<div class="seder"><button class="chip" data-back>‹ All masechtot</button></div>
         <h3 style="margin:8px 0 0;display:flex;justify-content:space-between">${masName(k)} <span class="he en-he" style="color:var(--muted);font-weight:500">${he}</span></h3>
-        ${ps && ps.length > 1 ? `<div class="tabs pk-mode" role="tablist" aria-label="How to list the dapim"><button role="tab" data-mode="perek" aria-selected="${byPerek}">By perek</button><button role="tab" data-mode="all" aria-selected="${!byPerek}">All dapim</button></div>` : ""}
-        <div class="legend-mini"><span><i></i>full step-by-step breakdown</span><span>others: text and translation</span>${byPerek ? `<span><i class="mid"></i>new perek starts partway down</span>` : ""}</div>
+        <div class="legend-mini"><span><i></i>full step-by-step breakdown</span><span>others: text and translation</span>${byPerek ? midLegendHtml : ""}</div>
         ${grid}`;
       $("#pickBody", body).dataset.mas = k;
       const activeN = focusPerek || (current && current.m === k && (perakimAt(k, current.i)[0] || {}).n);
@@ -330,9 +336,8 @@ function openPicker(focusMas, focusPerek){
       else { const c = $("button.cur", body); c && c.scrollIntoView({ block: "center" }); }
     };
     body.addEventListener("click", e => {
-      const t = e.target.closest("[data-mas],[data-go],[data-back],[data-jump],[data-mode]"); if (!t) return;
+      const t = e.target.closest("[data-mas],[data-go],[data-back],[data-jump]"); if (!t) return;
       if (t.dataset.jump) { markJump(t.dataset.jump); scrollToPerek(t.dataset.jump, true); }
-      else if (t.dataset.mode) { const want = t.dataset.mode === "perek"; if ((settings.byPerek !== false) !== want) { settings.byPerek = want; saveJSON(LS.settings, settings); } const k = $("#pickBody", body).dataset.mas; const ps = current && current.m === k ? perakimAt(k, current.i) : []; showDafGrid(k, ps[0] && ps[0].n); }
       else if (t.dataset.mas) showDafGrid(t.dataset.mas);
       else if (t.dataset.back !== undefined) showMasList();
       else { const [k, i] = t.dataset.go.split("|"); closeSheet(); go(k, +i); }
@@ -401,8 +406,35 @@ function libraryHtml(){
   const by = {};
   for (const id of cloudIds) { const p = parseId(id); (by[p.m] ||= []).push(p.i); }
   const lastM = (history_()[0] && parseId(history_()[0].id).m) || "";
-  return `<div class="lib">${MAS.filter(x => by[x[0]]).map(([k, he]) => `<details class="card lib-row"${k === lastM ? " open" : ""}><summary><span class="lr-en">${masName(k)}</span><span class="he lr-he">${he}</span><span class="lr-n">${by[k].length}</span>${chev}</summary>
-    <div class="chips">${by[k].sort((a,b) => a-b).map(i => `<a class="chip" href="${hashFor(k, i)}">${dafOf(i).daf}${dafOf(i).amud}</a>`).join("")}</div></details>`).join("")}</div>`;
+  const chip = (k, i, mid = "") => `<a class="chip${mid ? " mid" : ""}" href="${hashFor(k, i)}"${mid ? ` title="${mid}" aria-label="${masName(k)} ${amudLbl(i)}, ${mid}"` : ""}>${amudLbl(i)}</a>`;
+  const body = (k, list) => { // grouped by perek, the same way the picker lists them; one perek or no perakim data: plain chips
+    const gs = perekGroups(k);
+    if (!gs) return `<div class="chips">${list.map(i => chip(k, i)).join("")}</div>`;
+    const secs = gs.map(g => ({ ...g, list: list.filter(i => i >= g.p.start && i <= g.p.end) })).filter(g => g.list.length);
+    const hasMid = secs.some(g => g.list.some(i => g.midOf(i)));
+    return (secs.length > 1 ? perekJumpHtml(secs.map(g => ({ ...g.p, jump: `${k}|${g.p.n}` })), "data-libjump") : "")
+      + (hasMid ? `<div class="legend-mini">${midLegendHtml}</div>` : "")
+      + secs.map(({ p, midOf, list }) => `<section class="pk" id="lib-${k}-pk-${p.n}">${perekHeadHtml(p)}<div class="chips">${list.map(i => chip(k, i, midOf(i))).join("")}</div></section>`).join("");
+  };
+  return `<div class="lib">${MAS.filter(x => by[x[0]]).map(([k, he]) => `<details class="card lib-row" data-mas="${k}"${k === lastM ? " open" : ""}><summary><span class="lr-en">${masName(k)}</span><span class="he lr-he">${he}</span><span class="lr-n">${by[k].length}</span>${chev}</summary>
+    <div class="lib-body">${body(k, by[k].sort((a,b) => a-b))}</div></details>`).join("")}</div>`;
+}
+function refreshLibrary(){ // re-list after the library index or the perakim arrive, keeping open rows open
+  const s = $("#libSlot"); if (!s || current) return;
+  const open = new Set($$("details.lib-row[open]", s).map(d => d.dataset.mas));
+  s.innerHTML = libraryHtml();
+  if (open.size) $$("details.lib-row", s).forEach(d => { d.open = open.has(d.dataset.mas); });
+  const hdr = s.previousElementSibling; if (hdr && hdr.querySelector("small")) hdr.querySelector("small").textContent = cloudIds.size ? cloudIds.size + " amudim" : "";
+}
+function wireLibrary(){
+  const s = $("#libSlot"); if (!s) return;
+  s.addEventListener("click", e => {
+    const t = e.target.closest("[data-libjump]"); if (!t) return;
+    const [k, n] = t.dataset.libjump.split("|"), sec = document.getElementById(`lib-${k}-pk-${n}`); if (!sec) return;
+    const bar = t.parentElement; $$(".chip", bar).forEach(c => c.classList.toggle("on", c === t));
+    const top = ($("#topbar") || {}).offsetHeight || 0, sticky = bar.offsetHeight || 0;
+    scrollTo({ top: scrollY + sec.getBoundingClientRect().top - top - sticky - 6, behavior: "smooth" });
+  });
 }
 function renderHome(){
   current = null; document.title = "Gemara Clarity: every sugya, step by step";
@@ -424,6 +456,7 @@ function renderHome(){
     <div class="section-h">The eight kinds of step</div>
     <div class="legend">${Object.entries(TYPES).map(([he, t]) => `<div class="lg t-${t.k}"><span class="swatch"></span><div><b><span class="en-he">${he}</span> · ${t.en}</b><div class="d">${t.d}</div></div></div>`).join("")}<div class="lg t-mishnah"><span class="swatch"></span><div><b><span class="en-he">${MISHNAH.he}</span> · ${MISHNAH.en} badge</b><div class="d">${MISHNAH.d}</div></div></div></div>`;
   $("#homeSearch").onclick = () => openPicker();
+  wireLibrary();
   dafYomi().then(y => {
     const tile = $("#yomiTile"); if (!tile) return;
     if (!y) { $("#yomiV").textContent = "Unavailable offline"; return; }
@@ -789,10 +822,10 @@ document.addEventListener("keydown", e => {
 
 applySettings();
 route(false);
-loadPerakim().then(() => { const s = $("#perekSlot"); if (s && current && !s.firstChild) { s.innerHTML = perekLineHtml(current.m, current.i); wirePerek(); } });
+loadPerakim().then(() => { const s = $("#perekSlot"); if (s && current && !s.firstChild) { s.innerHTML = perekLineHtml(current.m, current.i); wirePerek(); } if (!current) refreshLibrary(); });
 loadCloudIndex().then(() => {
   $$("#pickBody [data-go]").forEach(b => { const [k, i] = b.dataset.go.split("|"); b.classList.toggle("has", hasBreakdown(refId(k, +i))); }); // a picker opened before the library list arrived
-  if (!current) { const s = $("#libSlot"); if (s) { s.innerHTML = libraryHtml(); const hdr = s.previousElementSibling; if (hdr) hdr.querySelector("small").textContent = cloudIds.size ? cloudIds.size + " amudim" : ""; } }
+  if (!current) refreshLibrary();
   else if (!current.analysis && cloudIds.has(current.id)) { const c = current; current = null; openDaf(c.m, c.i); }
   else renderDafNoticeCount();
 });
