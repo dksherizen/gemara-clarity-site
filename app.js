@@ -155,10 +155,10 @@ function fsDecode(v){
   return x;
 }
 // Breakdowns generated with the original app's exact prompt, stored as static JSON beside the site (data/b/<id>.json).
-let staticIds = new Set(), fsIds = new Set(), staticVersion = "";
+let staticIds = new Set(), fsIds = new Set(), staticVersion = "", preferStatic = new Set();
 // index.json carries a data version; each amud is fetched as <id>.json?v=<version>, so a re-reviewed library reaches phones at once
 const staticReady = cachedJSON("data/b/index.json", { ttl: 10*60e3, timeout: 8000 })
-  .then(j => { staticIds = new Set(j.ids || []); staticVersion = String(j.version || j.generated || ""); }).catch(e => console.warn("static library index unavailable", e));
+  .then(j => { staticIds = new Set(j.ids || []); preferStatic = new Set(j.prefer || []); staticVersion = String(j.version || j.generated || ""); }).catch(e => console.warn("static library index unavailable", e));
 async function loadCloudIndex(){
   const fsPart = (async () => {
     try {
@@ -177,7 +177,7 @@ async function loadCloudIndex(){
 }
 async function loadCloudAnalysis(id){
   await staticReady;
-  if (staticIds.has(id) && !fsIds.has(id)) {
+  if (staticIds.has(id) && (!fsIds.has(id) || preferStatic.has(id))) {
     const a = await cachedJSON(`data/b/${encodeURIComponent(id)}.json${staticVersion ? "?v=" + encodeURIComponent(staticVersion) : ""}`, { ttl: 3*864e5 });
     return a && Array.isArray(a.steps) && a.steps.length ? a : null;
   }
