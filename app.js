@@ -246,7 +246,7 @@ function closeSheet(){ if ($("#sheet").hidden) return; $("#sheet").hidden = true
 const bookmarks = () => loadJSON(LS.bookmarks, []);
 const history_ = () => loadJSON(LS.history, []);
 function pushHistory(id){ const h = history_().filter(x => x.id !== id); h.unshift({ id, t: Date.now() }); saveJSON(LS.history, h.slice(0, 30)); }
-function go(m, i, extra=""){ location.hash = hashFor(m, i, extra); }
+function go(m, i, extra=""){ if (!extra && current && current.am) extra = "/ameilus"; location.hash = hashFor(m, i, extra); } // in Ameilus, the picker and the keys stay in Ameilus
 const chev = `<svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>`;
 const hasBreakdown = id => cloudIds.has(id);
 
@@ -472,6 +472,7 @@ function setChrome(onDaf){
   $(".layout").classList.toggle("with-side", !!(onDaf && current && current.analysis && current.tab === "steps"));
   $("#refBtnText").textContent = current ? label(current.m, current.i) : "Choose a daf";
   if (!onDaf) { $("#sidebar").innerHTML = ""; $("#progressFill").style.width = "0"; }
+  setModeSwitch(onDaf && current ? "shiur" : null);
 }
 function updateNav(){
   if (!current) return;
@@ -579,6 +580,7 @@ function renderDaf(){
   const p = neighbor(c.m, c.i, -1), n = neighbor(c.m, c.i, 1);
   $("#endnav").innerHTML = `${p ? `<a class="btn" href="${hashFor(p.m, p.i)}">‹ ${label(p.m, p.i)}</a>` : ""}${n ? `<a class="btn primary" href="${hashFor(n.m, n.i)}">${label(n.m, n.i)} ›</a>` : ""}`;
   markMishnah();
+  if (pendingJump && a && pendingJump.id === c.id && c.tab === "steps") { const k = pendingJump.n; pendingJump = null; setTimeout(() => { const el = document.getElementById("s" + k); if (!el || current !== c) return; toggleStep(el, true); jumpTo(k); }, 0); }
 }
 /* ---------- Mishnah badge: worked out here from Sefaria's מתני׳ / גמ׳ markers, nothing regenerated ---------- */
 function mishCountHtml(){
@@ -698,6 +700,7 @@ function markCurrent(n){
   $("#stepCounter").textContent = `step ${n}/${total}`;
 }
 window.addEventListener("scroll", () => {
+  if (current && current.am) return; // Ameilus fills the bar with the pieces done
   const h = document.documentElement; const max = h.scrollHeight - h.clientHeight;
   $("#progressFill").style.width = current && max > 0 ? Math.min(100, h.scrollTop / max * 100) + "%" : "0";
 }, { passive: true });
@@ -786,25 +789,119 @@ function runCards(terms){
   show();
 }
 
+/* ---------- Ameilus mode: #/<Masechet>/<daf><a|b>/ameilus ----------
+   The learner reads the raw daf and marks where each statement ends (ameilus/ui.js + ameilus/core.js, with the
+   reading glossary in data/glossary.json). It reads the same breakdown the Shiur view loads (loadCloudAnalysis),
+   mounts into #view, hides the bottom bar and the flow sidebar (it has its own bar and sugya map), and is torn
+   down by the router on any other route. Nothing here changes how Shiur loads or looks. */
+const AM_VER = "3.1.0", AM_SKEY = "gc-am3-settings";
+let amMounted = null, amModP = null, amGlossP = null, pendingJump = null;
+const amPrefs = () => { try { return Object.assign({ bare: false }, JSON.parse(localStorage.getItem(AM_SKEY) || "{}")); } catch { return { bare: false }; } };
+function amModule(){ return amModP || (amModP = import(`./ameilus/ui.js?v=${AM_VER}`).catch(e => { amModP = null; throw e; })); }
+function amGloss(){
+  return amGlossP || (amGlossP = fetch(`data/glossary.json?v=${AM_VER}`).then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+    .then(g => (g && g.entries) || {}).catch(e => { console.warn("glossary unavailable", e); amGlossP = null; return {}; }));
+}
+function setModeSwitch(mode){ // the Shiur/Ameilus switch in the top bar, on every amud
+  const sw = $("#modeSw"); if (!sw) return;
+  const on = !!(mode && current);
+  sw.hidden = !on; document.body.classList.toggle("has-modesw", on);
+  if (!on) return;
+  const s = $("#modeShiur"), a = $("#modeAm");
+  s.href = hashFor(current.m, current.i); a.href = hashFor(current.m, current.i, "/ameilus");
+  s.classList.toggle("on", mode === "shiur"); a.classList.toggle("on", mode === "ameilus");
+  if (mode === "shiur") { s.setAttribute("aria-current", "page"); a.removeAttribute("aria-current"); } else { a.setAttribute("aria-current", "page"); s.removeAttribute("aria-current"); }
+}
+function amTeardown(){
+  if (amMounted) { try { amMounted.destroy(); } catch (e) { console.warn(e); } amMounted = null; }
+  document.body.classList.remove("am-mode", "map-open", "am-word-open");
+  const mb = $("#amMapBtn"); if (mb) mb.setAttribute("aria-pressed", "false");
+  if (current && current.am) current = null;
+}
+async function renderAmeilus(m, i){
+  const id = refId(m, i);
+  const reuse = current && !current.am && current.id === id && current.analysis ? current.analysis : null; // coming from Shiur on the same amud
+  amTeardown();
+  if (observer) observer.disconnect();
+  const me = current = { m, i, id, analysis: reuse, source: reuse ? "cloud" : null, text: null, tab: "ameilus", am: true };
+  document.title = `${label(m, i)} · Ameilus · Gemara Clarity`;
+  pushHistory(id);
+  document.body.classList.add("am-mode");
+  setChrome(false); setModeSwitch("ameilus");
+  { const { daf, amud } = dafOf(i); $("#refBtnText").innerHTML = `<span class="ref-m">${esc(masName(m))} </span>${daf}${amud}`; } // phones show just the daf here; the page head names the masechet
+  const view = $("#view"); view.onclick = null;
+  view.innerHTML = `<div class="loading"><div class="spinner"></div>Loading ${esc(label(m, i))}…</div>`;
+  window.scrollTo(0, 0);
+  let a = reuse, err = null, mod = null, gloss = {};
+  if (!a) { try { a = await loadCloudAnalysis(id); } catch (e) { err = e; } }
+  try { [mod, gloss] = await Promise.all([amModule(), amGloss()]); } catch (e) { err = err || e; }
+  if (current !== me) return; // moved on meanwhile
+  me.analysis = a; me.source = a ? "cloud" : null;
+  const shiur = hashFor(m, i);
+  const notice = (head, body) => { view.innerHTML = `<div class="notice am-notice"><b>${head}</b><p>${body}</p><a class="btn" href="${shiur}">Open ${esc(label(m, i))} in Shiur</a></div>`; };
+  if (!a) return notice(err && !mod ? "Ameilus couldn’t load just now." : "Ameilus needs this amud’s breakdown, and it isn’t ready yet.", err ? "Check your connection and try again." : "The full text is in Shiur meanwhile.");
+  if (!mod) return notice("Ameilus couldn’t load just now.", "Check your connection and try again.");
+  const p = neighbor(m, i, -1), n = neighbor(m, i, 1);
+  try {
+    amMounted = mod.mountAmeilus(view, {
+      id, data: a, gloss, settings: { bare: !!amPrefs().bare }, label: label(m, i), heLabel: heLabel(m, i),
+      prevHref: p ? hashFor(p.m, p.i, "/ameilus") : null, nextHref: n ? hashFor(n.m, n.i, "/ameilus") : null,
+      shiurHref: k => hashFor(m, i, k ? "/s" + k : ""),
+      onProgress: f => { if (current === me) $("#progressFill").style.width = (f * 100).toFixed(1) + "%"; },
+      onMapPick: () => { document.body.classList.remove("map-open"); const mb = $("#amMapBtn"); mb && mb.setAttribute("aria-pressed", "false"); }
+    });
+  } catch (e) {
+    console.warn("ameilus could not open", id, e); amMounted = null;
+    notice("Ameilus can’t open this amud yet.", "Its breakdown has a shape Ameilus doesn’t read. The full step-by-step is in Shiur.");
+  }
+}
+function amSettingsSection(body){
+  if (!body) return;
+  const bare = !!amPrefs().bare;
+  body.insertAdjacentHTML("afterbegin", `<section class="am-set">
+    <h3 style="margin:4px 0 4px;font-size:16px">Ameilus</h3>
+    <label class="setrow"><span class="lbl"><b>Bare mode</b><span>Just the daf and the marker: no hints, no checks</span></span><span class="switch"><input type="checkbox" id="amBare" ${bare ? "checked" : ""}><span></span></span></label>
+    <h4 style="margin:12px 0 4px;font-size:15px">My words <span class="small" id="amWordsN"></span></h4>
+    <div id="amWords" class="small">${amModP ? "…" : "Long-press a word, then “Add to My words”."}</div>
+    <p class="small" style="margin:10px 0 18px">How it works: tap the last word of each statement. A real break counts even where we split it later. Hints come one at a time: punctuation, vowels, the signal word, then where it ends. Long-press (or right-click) a word for its meaning. Keys: ← → move the marker, Enter confirms, H for the next hint.</p>
+    <h3 style="margin:0 0 4px;font-size:16px">Display</h3></section>`);
+  const box = $("#amWords", body);
+  if (amModP) amModP.then(mod => {
+    const mw = mod.myWords.all(); $("#amWordsN", body).textContent = mw.length ? `(${mw.length})` : "";
+    box.innerHTML = mw.length ? `<ul class="am-mw">${mw.map(x => { const p = x.id ? parseId(String(x.id)) : null; return `<li><span class="he" lang="he">${esc(x.v || x.raw)}</span> <span>${esc(x.gloss || "")}</span>${p && masInfo(p.m) ? ` <a href="${hashFor(p.m, p.i, "/ameilus")}">${esc(label(p.m, p.i))}</a>` : ""}</li>`; }).join("")}</ul>` : "Long-press a word, then “Add to My words”.";
+    box.onclick = e => { if (e.target.closest("a")) closeSheet(); };
+  }).catch(() => { box.textContent = "Unavailable offline."; });
+  $("#amBare", body).addEventListener("change", e => {
+    e.stopPropagation();
+    let s = {}; try { s = JSON.parse(localStorage.getItem(AM_SKEY) || "{}") || {}; } catch {}
+    s.bare = e.target.checked; localStorage.setItem(AM_SKEY, JSON.stringify(s));
+    if (current && current.am) renderAmeilus(current.m, current.i);
+  });
+}
+$("#amMapBtn").onclick = () => { const on = document.body.classList.toggle("map-open"); $("#amMapBtn").setAttribute("aria-pressed", String(on)); };
+
 /* ---------- router ---------- */
 function rerender(){ route(true); }
 function route(keepScroll){
   if (!keepScroll) closeSheet();
   const h = decodeURIComponent(location.hash.replace(/^#\/?/, ""));
   const parts = h.split("/").filter(Boolean);
+  if (parts[2] !== "ameilus" && (amMounted || (current && current.am) || document.body.classList.contains("am-mode"))) amTeardown();
   if (!parts.length) return renderHome();
   const [m, df, extra] = parts; const info = masInfo(m);
   const dm = (df || "").match(/^(\d{1,3})([ab])?$/);
   if (!info || !dm) { if (info) { openPicker(m); return; } return renderHome(); }
   let i = idxOf(+dm[1], dm[2] || "a"); i = Math.min(Math.max(i, info[2]), info[3]);
   if (extra === "review") return renderReview(m, i);
+  if (extra === "ameilus") { if (keepScroll && amMounted && current && current.am && current.id === refId(m, i)) return; return renderAmeilus(m, i); }
+  const sj = /^s(\d+)$/.exec(extra || ""); if (sj && !keepScroll) pendingJump = { id: refId(m, i), n: +sj[1] };
   if (keepScroll && current && current.id === refId(m, i)) { const y = scrollY; renderDaf(); scrollTo(0, y); return; }
   openDaf(m, i);
 }
 window.addEventListener("hashchange", () => route(false));
 $("#homeBtn").onclick = () => { location.hash = "#/"; };
 $("#refBtn").onclick = () => openPicker();
-$("#settingsBtn").onclick = openSettings;
+$("#settingsBtn").onclick = () => { openSettings(); if (current && current.am) amSettingsSection($("#sheetBody")); };
 $("#sheetClose").onclick = closeSheet; $("#backdrop").onclick = closeSheet;
 $("#flowBtn").onclick = () => { if (current && current.analysis) openSheet(`The flow of ${label(current.m, current.i)}`, flowHtml(current.analysis.steps), b => { const cur = $$(".step.cur")[0]; if (cur) { const f = $(`.fnode[data-jump="${cur.dataset.n}"]`, b); f && f.classList.add("cur"); f && f.scrollIntoView({ block: "center" }); } b.onclick = e => { const j = e.target.closest("[data-jump]"); if (j) { e.preventDefault(); jumpTo(+j.dataset.jump); } }; }); };
 $("#reviewBtn").onclick = () => current && (location.hash = hashFor(current.m, current.i, "/review"));
@@ -812,6 +909,7 @@ document.addEventListener("keydown", e => {
   if (e.key === "Escape" && !$("#sheet").hidden) return closeSheet();
   if (e.target.matches("input, textarea") || e.metaKey || e.ctrlKey || e.altKey || !$("#sheet").hidden) return;
   if (!current) { if (e.key === "/") { e.preventDefault(); openPicker(); } return; }
+  if (current.am && (e.defaultPrevented || e.key === "j" || e.key === "k")) return; // Ameilus: the marker keys win
   if (e.key === "ArrowRight" || e.key === "]") { const n = neighbor(current.m, current.i, 1); n && go(n.m, n.i); }
   else if (e.key === "ArrowLeft" || e.key === "[") { const p = neighbor(current.m, current.i, -1); p && go(p.m, p.i); }
   else if (e.key === "/") { e.preventDefault(); openPicker(); }
@@ -875,6 +973,7 @@ loadPerakim().then(() => { const s = $("#perekSlot"); if (s && current && !s.fir
 loadCloudIndex().then(() => {
   $$("#pickBody [data-go]").forEach(b => { const [k, i] = b.dataset.go.split("|"); b.classList.toggle("has", hasBreakdown(refId(k, +i))); }); // a picker opened before the library list arrived
   if (!current) refreshLibrary();
+  else if (!current.analysis && current.am && cloudIds.has(current.id)) renderAmeilus(current.m, current.i);
   else if (!current.analysis && cloudIds.has(current.id)) { const c = current; current = null; openDaf(c.m, c.i); }
   else renderDafNoticeCount();
 });
