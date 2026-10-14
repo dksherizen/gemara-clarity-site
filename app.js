@@ -39,7 +39,7 @@ const isMish = k => !!(current && current.mish && current.mish[k]);
 const PHASES = {mishnah:"On the Mishnah",opening_question:"Opening question",source_derivation:"Finding the source",objection_defense_cycle:"Challenge and defence",alternate_branch:"Another approach",clarification_of_terms:"Defining terms",narrative_aggadah:"Story / aggadah",conclusion:"Conclusion"};
 const FS_BASE = "https://firestore.googleapis.com/v1/projects/gemara-clarity/databases/(default)/documents/artifacts/gemara-clarity-public/public/data/gemara_cache_v5";
 const SEFARIA = "https://www.sefaria.org";
-const LS = { settings:"gc2-settings", bookmarks:"gc2-bookmarks", history:"gc2-history", explained:"gc2-open" };
+const LS = { settings:"gc2-settings", bookmarks:"gc2-bookmarks", history:"gc2-history", explained:"gc2-open", ui:"gc2-ui" };
 const DATA_CACHE = "gc2-data-v1";
 
 const $ = (s, r=document) => r.querySelector(s);
@@ -819,6 +819,55 @@ document.addEventListener("keydown", e => {
     const cur = +(($(".step.cur") || {}).dataset?.n || 0); const nx = Math.min(current.analysis.steps.length, Math.max(1, cur + (e.key === "j" ? 1 : -1))); jumpTo(nx);
   }
 });
+
+// layout controls (remembered on this device): the desktop flow sidebar can be dragged wider or narrower and hidden;
+// the bottom bar can be tucked away to a small handle so the text gets the full height
+const SIDE_MIN = 200, SIDE_MAX = 520, SIDE_DEFAULT = 300;
+function clampSide(w, vw){ const max = Math.max(SIDE_MIN, Math.min(SIDE_MAX, Math.round((vw || 1e4) * 0.45))); const n = Math.round(+w); return Number.isFinite(n) && n > 0 ? Math.min(max, Math.max(SIDE_MIN, n)) : Math.min(max, SIDE_DEFAULT); }
+function readUi(raw){ const o = raw && typeof raw === "object" ? raw : {}; return { sideW: clampSide(o.sideW), sideHidden: o.sideHidden === true, barHidden: o.barHidden === true }; }
+const ui = readUi(loadJSON(LS.ui, {}));
+const saveUi = () => saveJSON(LS.ui, ui);
+function applyUi(){
+  const w = clampSide(ui.sideW, innerWidth);
+  $(".layout").style.setProperty("--side-w", w + "px");
+  $("#sideResize").setAttribute("aria-valuenow", w);
+  document.body.classList.toggle("side-collapsed", ui.sideHidden);
+  document.body.classList.toggle("bb-collapsed", ui.barHidden);
+  const t = $("#bbToggle");
+  t.setAttribute("aria-expanded", String(!ui.barHidden));
+  t.setAttribute("aria-label", ui.barHidden ? "Show the bottom bar" : "Hide the bottom bar");
+  t.title = ui.barHidden ? "Show bar" : "Hide bar";
+}
+function setSideHidden(h){
+  ui.sideHidden = h; saveUi(); applyUi();
+  const f = h ? $("#sideShow") : $("#sideHide"); f && f.focus({ preventScroll: true });
+  if (!h) { const cur = $("#sidebar .fnode.cur"); cur && cur.scrollIntoView({ block: "nearest" }); }
+}
+$("#sideHide").onclick = () => setSideHidden(true);
+$("#sideShow").onclick = () => setSideHidden(false);
+$("#bbToggle").onclick = () => { ui.barHidden = !ui.barHidden; saveUi(); applyUi(); };
+(() => {
+  const h = $("#sideResize");
+  let drag = null;
+  const setW = (w, save) => { ui.sideW = clampSide(w, innerWidth); applyUi(); if (save) saveUi(); };
+  h.addEventListener("pointerdown", e => {
+    if (e.button !== 0) return;
+    e.preventDefault(); h.setPointerCapture(e.pointerId);
+    drag = { left: $("#sideWrap").getBoundingClientRect().left };
+    document.body.classList.add("side-resizing");
+  });
+  h.addEventListener("pointermove", e => { if (drag) setW(e.clientX - drag.left, false); });
+  const end = () => { if (!drag) return; drag = null; document.body.classList.remove("side-resizing"); saveUi(); };
+  h.addEventListener("pointerup", end); h.addEventListener("pointercancel", end); h.addEventListener("lostpointercapture", end);
+  h.addEventListener("dblclick", () => setW(SIDE_DEFAULT, true));
+  h.addEventListener("keydown", e => { // arrows here resize the sidebar instead of turning the page
+    const step = e.shiftKey ? 48 : 16;
+    if (e.key === "ArrowLeft" || e.key === "ArrowRight") { e.preventDefault(); e.stopPropagation(); setW(clampSide(ui.sideW, innerWidth) + (e.key === "ArrowRight" ? step : -step), true); }
+    else if (e.key === "Home" || e.key === "End") { e.preventDefault(); e.stopPropagation(); setW(e.key === "Home" ? SIDE_MIN : SIDE_MAX, true); }
+  });
+  addEventListener("resize", () => applyUi());
+})();
+applyUi();
 
 applySettings();
 route(false);
