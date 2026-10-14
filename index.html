@@ -38,7 +38,12 @@
 </header>
 
 <div class="layout">
-  <aside class="sidebar" id="sidebar" aria-label="Flow of the sugya"></aside>
+  <div class="side-wrap" id="sideWrap">
+    <button class="side-hide" id="sideHide" aria-label="Hide the flow sidebar" aria-controls="sideWrap" title="Hide sidebar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
+    <aside class="sidebar" id="sidebar" aria-label="Flow of the sugya"></aside>
+    <div class="side-resize" id="sideResize" role="separator" aria-orientation="vertical" aria-label="Resize the flow sidebar" aria-valuemin="200" aria-valuemax="520" aria-valuenow="300" tabindex="0" title="Drag to resize · double-click to reset"></div>
+  </div>
+  <button class="side-show" id="sideShow" aria-label="Show the flow sidebar" aria-controls="sideWrap" title="Show sidebar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg><span>Flow</span></button>
   <main id="view" tabindex="-1"></main>
 </div>
 
@@ -47,6 +52,7 @@
   <button id="flowBtn" class="bb-btn bb-mid" aria-label="Show the flow of the sugya"><span class="bb-k">Flow</span><span id="stepCounter" class="bb-sub"></span></button>
   <button id="reviewBtn" class="bb-btn bb-mid" aria-label="Review this amud"><span class="bb-k">Review</span><span class="bb-sub">quiz</span></button>
   <button id="nextBtn" class="bb-btn" aria-label="Next amud"><span id="nextLabel"></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+  <button id="bbToggle" class="bb-toggle" aria-label="Hide the bottom bar" aria-expanded="true" title="Hide bar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
 </nav>
 
 <div class="sheet-backdrop" id="backdrop" hidden></div>
