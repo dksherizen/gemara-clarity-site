@@ -747,6 +747,7 @@ async function renderClassics(focusId){
     $$(".clx-mas", list).forEach(s => { s.hidden = !s.querySelector("[data-q]:not([hidden])"); });
     $$(".clx-seder", list).forEach(s => { const any = !!s.querySelector("[data-q]:not([hidden])"); s.hidden = words.length ? !any : false; if (words.length && any) s.open = true; }); // home3c: an empty Seder (Kodashim, Taharos) stays visible and says "No classics here yet"
     $$(".cl-theme", list).forEach(s => { s.hidden = !s.querySelector("[data-q]:not([hidden])"); });
+    $$(".clx-chip").forEach(b => { const s = $(`#sd-${b.dataset.jumpSeder}`); $(".clx-cn", b).textContent = s ? s.querySelectorAll("[data-q]:not([hidden])").length : 0; }); // U5: chip counts follow the search
     $("#clEmpty").hidden = shown > 0;
   };
   const back = history.state && history.state.gcClassics; // D1: Back from a Classic's Learn, steps or continues link brings back the search, the open Seders and the scroll
