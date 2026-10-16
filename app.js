@@ -730,7 +730,7 @@ async function renderClassics(focusId){
       const items = C.items.filter(x => !x.partOf);
       list.innerHTML = (C.groups || []).map(g => {
         const its = items.filter(x => !x.draft && x.group === g.id).sort((a, b) => a.order - b.order), dr = items.filter(x => x.draft && x.group === g.id).sort((a, b) => a.order - b.order);
-        return its.length || dr.length ? `<section class="cl-theme">${g.id === "more" ? "" : `<h2 class="section-h">${esc(g.name)}</h2>`}${g.intro ? `<p class="cl-gi">${esc(g.intro)}</p>` : ""}${its.map(it => classicCard(it, C).replace('<article class="cl-card"', `<article data-q="${esc(clQ(it))}" class="cl-card"`)).join("")}${dr.length ? `<div class="clx-rows clx-draftlist">${dr.map(it => clRow(it, C)).join("")}</div>` : ""}</section>` : "";
+        return its.length || dr.length ? `<section class="cl-theme">${g.id === "more" ? `<hr class="section-sep" aria-hidden="true">` : `<h2 class="section-h">${esc(g.name)}</h2>`}${g.intro ? `<p class="cl-gi">${esc(g.intro)}</p>` : ""}${its.map(it => classicCard(it, C).replace('<article class="cl-card"', `<article data-q="${esc(clQ(it))}" class="cl-card"`)).join("")}${dr.length ? `<div class="clx-rows clx-draftlist">${dr.map(it => clRow(it, C)).join("")}</div>` : ""}</section>` : "";
       }).join("");
     }
     $$(".clx-chip").forEach(b => { const s = $(`#sd-${b.dataset.jumpSeder}`); const n = s ? s.querySelectorAll(".clx-row").length : 0; $(".clx-cn", b).textContent = n; });
