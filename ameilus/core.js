@@ -269,6 +269,8 @@ export function attackCheck(steps, si){
   if (!labelFor(primary, [st])) return null;
   // the obvious case (an answer to the line right before it) isn't worth a question
   if (kind !== "קשיא" && primary.stepNumber === n - 1 && steps[si - 1] && steps[si - 1].stepNumber === n - 1) return null;
+  // a proof is brought to support a claim: when its target is itself a proof, push-back or challenge, no check
+  if (kind === "ראיה" && !["מימרא", "שאלה", "תשובה", "תירוץ"].includes(primary.hebrewStepName)) return null;
   // distractors come from other branches: never something the right answer itself rests on
   const byNum = new Map(steps.map(o => [o.stepNumber, o]));
   const chain = new Set(deps); const walk = x => (x.dependsOnStepNumbers || []).forEach(d => { if (!chain.has(d) && byNum.has(d) && d < x.stepNumber) { chain.add(d); walk(byNum.get(d)); } });
