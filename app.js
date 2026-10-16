@@ -318,6 +318,9 @@ function sanitize(html, he){
   return walk(doc.body.firstChild).replace(/\s+/g, " ").trim();
 }
 const heTxt = t => { t = String(t||"").replace(/<[^>]+>/g, ""); return esc(settings.nikud ? t : t.replace(NIKUD, "")); };
+// kt3 (Oct 16 2026, David's voice note, 12:12 AM: "if they can tap on a word and see the translation, it'll really, really help them"): each Hebrew/Aramaic word of a
+// step's phrase line is its own <span class="fw"> so a tap can open its word help (wordHelpFlow). The visible text is exactly heTxt's; nothing else changes.
+const heWords = t => { let k = 0; return heTxt(t).split(/(\s+|\u05BE)/).map(x => /[\u05D0-\u05EA]/.test(x) ? `<span class="fw" data-k="${k++}">${x}</span>` : x).join(""); };
 
 /* ---------- UI helpers ---------- */
 function toast(msg){ const t = $("#toast"); t.textContent = msg; t.classList.add("show"); clearTimeout(toast._t); toast._t = setTimeout(() => t.classList.remove("show"), 2400); }
@@ -693,7 +696,7 @@ function stepHtml(s, k, open){
       ${relatedLineHtml(relatedSteps(current && current.id, s, k + 1, (current && current.analysis && current.analysis.steps || []).length || k + 1), k + 1)}
       <h3 class="stitle">${px(s.title)}</h3>
       ${s.stepSummary ? `<p class="ssum">${px(s.stepSummary)}</p>` : ""}
-      <div class="phrases">${(s.phrases||[]).map(p => `<div class="ph"><div class="pa he" lang="he">${heTxt(p.aramaic)}</div><div class="pe">${px(p.english)}${p.notes ? `<div class="pnote">${px(p.notes)}</div>` : ""}</div></div>`).join("")}</div>
+      <div class="phrases">${(s.phrases||[]).map((p, pi) => `<div class="ph" data-ph="${pi}"><div class="pa he" lang="he">${heWords(p.aramaic)}</div><div class="pe">${px(p.english)}${p.notes ? `<div class="pnote">${px(p.notes)}</div>` : ""}</div></div>`).join("")}</div>
       <button class="explain-btn" aria-expanded="${open}" aria-controls="x${k+1}">${open ? "Hide explanation" : "Explain this step"}</button>
       <div class="explain" id="x${k+1}" ${open ? "" : "hidden"}>
         ${P("What’s happening", s.whatsHappening)}
@@ -873,6 +876,9 @@ function wireDaf(){
     const j = e.target.closest("[data-jump]"); if (j) { e.preventDefault(); jumpTo(+j.dataset.jump, j.hasAttribute("data-rel")); return; }
     // calm4: phrase notes are shown in full, so a tap on a note no longer opens or folds it (links and pasuk buttons inside work at once)
     if (e.target.closest("#stripFlow")) { $("#flowBtn").onclick(); return; }
+    // kt3: a tap (or click) on a word of the Gemara text opens its word help; a drag-selection does not; a tap anywhere else closes it
+    const fw = e.target.closest(".pa .fw"); if (fw) { const sel = window.getSelection && window.getSelection(); if (!sel || sel.isCollapsed) wordHelpFlow(fw); return; }
+    if (wfOpen() && !e.target.closest("#wfWord")) closeWordFlow();
     const t = e.target.closest(".sh, .explain-btn"); if (t) toggleStep(t.closest(".step"));
   };
   $("#sidebar").onclick = e => { const j = e.target.closest("[data-jump]"); if (j) { e.preventDefault(); jumpTo(+j.dataset.jump); } };
@@ -1017,6 +1023,67 @@ function amGloss(){
   return amGlossP || (amGlossP = fetch(`data/glossary.json?v=${AM_VER}`).then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
     .then(g => (g && g.entries) || {}).catch(e => { console.warn("glossary unavailable", e); amGlossP = null; return {}; }));
 }
+/* ---------- kt3: tap a word in Sugya Flow (Oct 16 2026) ----------
+   The same word help Ameilus gives, from the same sources, with no second dictionary: the reading glossary (data/glossary.json via amGloss,
+   looked up with ameilus/core.js lookupGloss and phraseAt on core.js's own tokenize of this amud) and, when the glossary has nothing, this
+   amud's key terms (the keyTerms data, matched by the same rule as ameilus/ui.js: the word is one of the term's words, or is one after a
+   one-letter prefix; other steps' terms only if this step has none). Shown in the Ameilus word sheet (.am-word): non-modal, fixed at the
+   bottom on phones and at the bottom right on wide screens, so nothing in the page moves. A word with no entry says so, as in Ameilus. */
+let wfCoreP = null; const wfTok = new WeakMap();
+const wfCore = () => wfCoreP || (wfCoreP = import(`./ameilus/core.js?v=${AM_VER}`).catch(e => { wfCoreP = null; throw e; }));
+const wfBare = w => String(w || "").replace(/[\u05F3\u05F4'"]/g, "");
+const wfLetters = w => String(w || "").replace(/[^\u05D0-\u05EA]/g, "");
+const wfMixed = s => esc(s).replace(/([\u0590-\u05FF][\u0590-\u05FF\u05F3\u05F4"'׳״\- ]*[\u0590-\u05FF׳״]|[\u0590-\u05FF])/g, m => `<span class="he" lang="he">${m}</span>`);
+const wfHe = s => `<span class="he" dir="rtl" lang="he">${esc(s)}</span>`;
+function wfSheet(){
+  let el = document.getElementById("wfWord");
+  if (!el) {
+    el = document.createElement("section"); el.id = "wfWord"; el.className = "am-word wf-word"; el.setAttribute("role", "dialog"); el.setAttribute("aria-label", "Word help"); el.hidden = true;
+    el.addEventListener("click", e => { if (e.target.closest("[data-x=close]")) closeWordFlow(); });
+    document.body.appendChild(el);
+  }
+  return el;
+}
+function closeWordFlow(){ const el = document.getElementById("wfWord"); if (el) el.hidden = true; document.querySelectorAll(".pa .fw.on").forEach(x => x.classList.remove("on")); }
+function wfOpen(){ const el = document.getElementById("wfWord"); return !!(el && !el.hidden); }
+async function wordHelpFlow(el){
+  const c = current, a = c && c.analysis, stepEl = el.closest(".step"), phEl = el.closest(".ph");
+  if (!a || !stepEl || !phEl) return;
+  const s = +stepEl.dataset.n - 1, ph = +phEl.dataset.ph, k = +el.dataset.k, shown = el.textContent;
+  document.querySelectorAll(".pa .fw.on").forEach(x => x.classList.remove("on")); el.classList.add("on");
+  let C = null, gloss = {};
+  try { [C, gloss] = await Promise.all([wfCore(), amGloss()]); } catch (e) { console.warn("word help unavailable", e); }
+  if (current !== c || !el.isConnected || !el.classList.contains("on")) return;
+  const parts = [];
+  if (C) {
+    let T = wfTok.get(a); if (!T) { T = C.tokenize(a.steps || []); wfTok.set(a, T); }
+    const mine = []; T.forEach((t, j) => { if (t.s === s && t.ph === ph) mine.push(j); });
+    let i = mine[k]; const want = wfLetters(shown);
+    if (i == null || wfLetters(T[i].raw) !== want) i = mine.find(j => wfLetters(T[j].raw) === want);
+    const w = wfBare(i != null ? T[i].raw : C.unvowel(shown));
+    let phr = null; // a glossary phrase this word belongs to (starting up to 2 words earlier), as in Ameilus
+    if (i != null) for (let b = Math.max(0, i - 2); b <= i && !phr; b++) { const h = C.phraseAt(gloss, T, b); if (h && h.n > 1 && b + h.n > i) phr = h; }
+    if (phr) parts.push(`<div class="am-ent"><div class="am-ent-he">${wfHe(phr.entry[0] || phr.form)}</div><div class="am-ent-g">${wfMixed(phr.entry[1])}</div>${phr.entry[2] ? `<div class="am-ent-u">${wfMixed(phr.entry[2])}</div>` : ""}<div class="am-src">Reading glossary</div></div>`);
+    const g = C.lookupGloss(gloss, w);
+    if (g) parts.push(`<div class="am-ent"><div class="am-ent-he">${g.prefix ? `${wfHe(g.prefix + "־")} ` : ""}${wfHe(g.entry[0] || g.form)}</div>${g.prefix ? `<div class="am-ent-p">${wfHe(g.prefix)} = ${esc(g.prefixEn)}</div>` : ""}<div class="am-ent-g">${wfMixed(g.entry[1])}</div>${g.entry[2] ? `<div class="am-ent-u">${wfMixed(g.entry[2])}</div>` : ""}${g.entry[4] ? `<div class="am-src">Jastrow: ${wfHe(g.entry[4])}</div>` : `<div class="am-src">Reading glossary</div>`}</div>`);
+    const kts = [], seen = new Set([phr && phr.form, g && g.form].filter(Boolean));
+    const consider = kt => {
+      const tw = C.unvowel(kt.term).replace(/[,.:;?!״"“”׳']/g, " ").split(/\s+/).filter(Boolean).map(wfBare);
+      if (seen.has(tw.join(" "))) return; // same thing the glossary already says
+      if (!(tw.includes(w) || (w.length > 2 && /^[ודהבלכמש]/.test(w) && tw.includes(w.slice(1))))) return;
+      kts.push(`<div class="am-ent"><div class="am-ent-he">${wfHe(kt.term)}</div><div class="am-ent-g">${wfMixed(kt.meaning)}</div><div class="am-src">Key term on this amud</div></div>`);
+    };
+    ((a.steps[s] || {}).keyTerms || []).forEach(consider);
+    if (!kts.length) (a.steps || []).forEach((o, si) => { if (si !== s && kts.length < 1) (o.keyTerms || []).forEach(x => { if (!kts.length) consider(x); }); });
+    parts.push(...kts);
+  }
+  const sheet = wfSheet();
+  sheet.innerHTML = `<div class="am-word-head"><div class="am-word-w" dir="rtl" lang="he">${esc(shown)}</div><button class="iconbtn" data-x="close" aria-label="Close word help">✕</button></div>
+    <div class="am-word-body">${parts.length ? parts.join("") : `<p class="am-none">${C ? "No entry yet for this word. We'd rather leave it blank than guess." : "Word help couldn’t load just now. Check your connection and tap the word again."}</p>`}</div>`;
+  sheet.hidden = false;
+  // keep the tapped word in view above the sheet: the page scrolls, nothing in it moves
+  requestAnimationFrame(() => { if (!el.isConnected || sheet.hidden) return; const r = el.getBoundingClientRect(), top = sheet.getBoundingClientRect().top; if (r.bottom > top - 12 && r.left < sheet.getBoundingClientRect().right && r.right > sheet.getBoundingClientRect().left) window.scrollBy({ top: r.bottom - top + 40, behavior: "smooth" }); });
+}
 function setModeSwitch(mode){ // the old top-bar Shiur/Ameilus switch: retired Oct 15 2026 (Ameilus is a path of its own; the in-page bar, modeBarHtml, switches), kept hidden
   const sw = $("#modeSw"); if (!sw) return;
   const on = false;
@@ -1112,6 +1179,7 @@ $("#amMapBtn").onclick = () => { const on = document.body.classList.toggle("map-
 function rerender(){ route(true); }
 function route(keepScroll){
   if (!keepScroll) closeSheet();
+  closeWordFlow(); // kt3
   const h = decodeURIComponent(location.hash.replace(/^#\/?/, ""));
   const parts = h.split("/").filter(Boolean);
   if (parts[2] !== "ameilus" && (amMounted || (current && current.am) || document.body.classList.contains("am-mode"))) amTeardown();
@@ -1141,6 +1209,7 @@ $("#sheetClose").onclick = closeSheet; $("#backdrop").onclick = closeSheet;
 $("#flowBtn").onclick = () => { if (current && current.analysis) openSheet(`The steps of ${label(current.m, current.i)}`, flowHtml(current.analysis.steps), b => { const cur = $$(".step.cur")[0]; if (cur) { const f = $(`.fnode[data-jump="${cur.dataset.n}"]`, b); f && f.classList.add("cur"); f && f.scrollIntoView({ block: "center" }); } b.onclick = e => { const j = e.target.closest("[data-jump]"); if (j) { e.preventDefault(); jumpTo(+j.dataset.jump); } }; }); };
 $("#reviewBtn").onclick = () => current && (location.hash = hashFor(current.m, current.i, "/review"));
 document.addEventListener("keydown", e => {
+  if (e.key === "Escape" && wfOpen()) return closeWordFlow(); // kt3: word help first
   if (e.key === "Escape" && !$("#sheet").hidden) return closeSheet();
   if (e.target.matches("input, textarea") || e.metaKey || e.ctrlKey || e.altKey || !$("#sheet").hidden) return;
   if (!current) { if (e.key === "/") { e.preventDefault(); openPicker(); } return; }

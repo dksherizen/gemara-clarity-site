@@ -1035,3 +1035,11 @@ body.hide-notes .pnote{display:none}
 .sheet-head .iconbtn{border-color:transparent;background:transparent}
 .pk-h{margin-top:24px}
 body.hide-logic .more .ml-logic,body.hide-logic details.more.only-logic{display:none}
+
+/* kt3 (Oct 16 2026): tap a word of the Gemara text in Sugya Flow for its meaning. No underline or marker; the pointer changes over a word on
+   desktop, and the word you tapped gets a soft tint while its help is open. Background/box-shadow only, so no text moves. */
+.pa .fw{cursor:pointer;border-radius:4px;-webkit-tap-highlight-color:transparent}
+.pa .fw.on{background:var(--panel-2);box-shadow:0 0 0 2px var(--panel-2)}
+@media (hover:hover) and (pointer:fine){.pa .fw:hover{background:var(--panel-2);box-shadow:0 0 0 2px var(--panel-2)}}
+.wf-word{z-index:37}
+@media (min-width:1100px){.wf-word{bottom:calc(84px + env(safe-area-inset-bottom))}} /* Sugya Flow has no --bar-h (that is Ameilus's); sit above the floating bottom bar */
