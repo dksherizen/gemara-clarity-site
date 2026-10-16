@@ -168,10 +168,14 @@ body.no-colors .step,body.no-colors .fnode,body.no-colors .strip span,body.no-co
 .sh .chev{margin-left:auto;width:20px;height:20px;fill:none;stroke:var(--muted);stroke-width:2.2;transition:transform .2s}
 .step.open .sh .chev{transform:rotate(180deg)}
 .sbody{padding:4px 16px 16px}
-.srel{margin:8px 0 0;font-size:max(12px,calc(13px * var(--scale)));line-height:1.5;color:var(--muted)}
-.srel a{display:inline-block;min-width:28px;padding:3px 6px;margin:-3px 0;text-align:center;border-radius:8px;color:var(--accent);font-weight:700;text-decoration:underline;text-underline-offset:2px}
+.srel{position:relative;z-index:0;margin:8px 0 0;font-size:max(12px,calc(13px * var(--scale)));line-height:1.5;color:var(--muted)}
+.srel a{display:inline-block;position:relative;pointer-events:none;min-width:28px;padding:3px 6px;margin:-3px 0;text-align:center;border-radius:8px;color:var(--accent);font-weight:700;text-decoration:underline;text-underline-offset:2px}
 .srel a:hover,.srel a:focus-visible{background:var(--panel-2)}
-.srel-sep{margin-left:-4px}
+.srel-sep{position:relative;margin-left:-4px}
+.srel a::before,.srel a::after{content:"";position:absolute;left:calc(2px - .275em);right:calc(2px - .275em);top:3px;bottom:3px;z-index:2;pointer-events:auto}
+.srel a::after{top:-8px;bottom:-8px;z-index:-2}
+.srel::before{content:"";position:absolute;inset:0 -4px;z-index:-1}
+@media (max-width:640px){.srel a::after{top:-4px;bottom:-4px}}
 .step:focus{outline:none}
 .step.arrive{animation:stepArrive 1.5s ease-out}
 @keyframes stepArrive{0%,35%{box-shadow:0 0 0 3px var(--accent);background:color-mix(in srgb,var(--accent) 12%,var(--panel))}100%{box-shadow:0 0 0 0 transparent}}
@@ -1188,7 +1192,7 @@ h3.am-fin{font-size:inherit;line-height:inherit}
 .clx-then{margin:12px 0 0;padding:10px 0 0 12px;border-left:2px solid var(--border);scroll-margin-top:calc(var(--top-h) + 70px)}
 .clx-then .clx-t{font-size:15.5px;margin-top:4px}
 .clx-more{margin-top:8px}
-.clx-more>summary{list-style:none;cursor:pointer;font-size:13px;font-weight:650;color:var(--accent);padding:4px 0;display:inline-flex;align-items:center;gap:4px}
+.clx-more>summary{list-style:none;cursor:pointer;font-size:13px;font-weight:650;color:var(--accent);padding:12px 0;margin:-8px 0;display:inline-flex;align-items:center;gap:4px}
 .clx-more>summary::-webkit-details-marker{display:none}
 .clx-more>summary::after{content:"›";transform:rotate(90deg);display:inline-block;transition:transform .15s}
 .clx-more[open]>summary::after{transform:rotate(-90deg)}
