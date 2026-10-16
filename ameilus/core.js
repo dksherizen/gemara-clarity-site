@@ -185,7 +185,7 @@ export function signalFor(gloss, tokens, ranges, pos){
     }
     return null;
   };
-  return look(pos, ranges[s].end, "this") || (ranges[s + 1] && ranges[s + 1].start >= 0 ? look(ranges[s + 1].start, ranges[s + 1].end, "next") : null);
+  return look(pos, ranges[s].end, "this");
 }
 
 /** The signal-word hint as words for the learner. It names the word, what it means and how it is
