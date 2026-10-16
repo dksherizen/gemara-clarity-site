@@ -1,5 +1,8 @@
 {
   "name": "gemara-clarity-site",
   "compatibility_date": "2025-10-01",
-  "assets": { "directory": "./" }
+  // Tiny Worker that only does host redirects (.com / www -> gemaraclarity.org); see _worker/index.js.
+  "main": "_worker/index.js",
+  // run_worker_first: the redirect must run before any static asset is matched.
+  "assets": { "directory": "./", "binding": "ASSETS", "run_worker_first": true }
 }
