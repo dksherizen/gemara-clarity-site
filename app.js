@@ -748,11 +748,15 @@ async function renderClassics(focusId){
     $$(".cl-theme", list).forEach(s => { s.hidden = !s.querySelector("[data-q]:not([hidden])"); });
     $("#clEmpty").hidden = shown > 0;
   };
+  const back = history.state && history.state.gcClassics; // D1: Back from a Classic's Learn, steps or continues link brings back the search, the open Seders and the scroll
+  if (back) $("#clSearch").value = back.q || "";
   draw(view);
+  if (back) $$(".clx-seder", list).forEach(s => { s.open = (back.open || []).includes(s.dataset.seder); });
   if (focusId) {
     const f = document.getElementById("cl-" + focusId);
-    if (f) { const sd = f.closest(".clx-seder"); if (sd) sd.open = true; f.classList.add("arrive"); f.scrollIntoView({ block: "start" }); }
+    if (f) { const sd = f.closest(".clx-seder"); if (sd) sd.open = true; f.classList.add("arrive"); if (back) scrollTo(0, back.y); const r = f.getBoundingClientRect(); if (!back || r.bottom < 0 || r.top > innerHeight) f.scrollIntoView({ block: "start" }); }
   }
+  list.addEventListener("click", e => { const a = e.target.closest(".cl-go a, .cl-ctx a"), row = a && a.closest('[id^="cl-"]'); if (row) history.replaceState({ gcClassics: { q: $("#clSearch").value, open: $$(".clx-seder[open]", list).map(s => s.dataset.seder), y: scrollY } }, "", "#/classics/" + row.id.slice(3)); });
   $("#clSearch").addEventListener("input", filter);
   $(".clx-jump").addEventListener("click", e => {
     const b = e.target.closest("[data-jump-seder]"); if (!b) return;

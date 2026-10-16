@@ -1231,3 +1231,5 @@ body.theme-dark .clx-seder{box-shadow:0 1px 0 rgba(255,255,255,.03) inset}
 /* home3c: an empty Seder (Kodashim, Taharos) shows a clear message when opened */
 .clx-none{margin:12px 4px 6px;padding:14px 16px;border:1px dashed var(--border);border-radius:12px;background:var(--panel-2);color:var(--muted);font-size:15px;line-height:1.45}
 /* nb3: unlabeled divider where the unheaded Suggested-order cards begin */ .section-sep{height:0;border:0;border-top:1px solid var(--border);margin:34px 4px 14px}
+.clx-then.arrive,.cl-then.arrive{box-shadow:0 0 0 2px var(--accent)}
+.clx-row.arrive .clx-t:focus-visible,.cl-card.arrive .cl-q:focus-visible,.clx-then.arrive:focus-visible,.cl-then.arrive .cl-then-h:focus-visible{outline:none}

@@ -1,4 +1,4 @@
-const V = "gc2-shell-v98p";
+const V = "gc2-shell-v98q";
 const SHELL = ["./", "index.html", "styles.css", "app.js", "mishnah.js", "manifest.json", "icon-192.png", "icon-512.png", "fonts/frank-ruhl-hebrew.woff2", "data/perakim.json", "data/perek-nikud.json", "ameilus/ui.js", "ameilus/core.js", "ameilus/words.js", "data/glossary.json"];
 self.addEventListener("install", e => { e.waitUntil(caches.open(V).then(c => c.addAll(SHELL)).then(() => self.skipWaiting())); });
 self.addEventListener("activate", e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k !== V && k.startsWith("gc2-") && !k.startsWith("gc2-data")).map(k => caches.delete(k)))).then(() => self.clients.claim())); });
