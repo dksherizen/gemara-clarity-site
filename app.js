@@ -683,7 +683,7 @@ function clRow(it, C){
       ${clClean(x.excluded) ? `<p class="cl-ex">${px(dispNames(clClean(x.excluded)))}</p>` : ""}</details>`;
   const meta = x => [x.reading && x.reading.steps ? `${x.reading.steps} steps` : "", x.time || ""].filter(Boolean).join(" · ");
   return `<article class="clx-row${it.draft ? " is-draft" : ""}" id="cl-${esc(it.id)}" data-q="${esc(clQ(it) + (nx ? " " + clQ(nx) : ""))}">
-    <div class="clx-top"><span class="clx-ref">${esc(clDafRange(it))}</span>${clGroupName(C, it) ? `<span class="clx-lv">${esc(clGroupName(C, it))}</span>` : ""}${it.draft ? `<span class="clx-draft" title="From the draft list, still being checked">Draft</span>` : ""}</div>
+    <div class="clx-top"><span class="clx-ref">${esc(clDafRange(it))}</span>${clGroupName(C, it) && it.group !== "more" ? `<span class="clx-lv">${esc(clGroupName(C, it))}</span>` : ""}${it.draft ? `<span class="clx-draft" title="From the draft list, still being checked">Draft</span>` : ""}</div>
     <h4 class="clx-t">${esc(clName(it))}</h4>
     <p class="clx-hook" dir="ltr">${bidiHe(clHook(it))}</p>
     ${meta(it) ? `<p class="clx-meta">${esc(meta(it))}</p>` : ""}
