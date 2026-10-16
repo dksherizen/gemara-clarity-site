@@ -958,3 +958,81 @@ html.am-shell .am-dafwrap{-webkit-mask-image:linear-gradient(to bottom,#000 calc
 .pz-sef{display:block;padding:10px 16px 12px;border-top:1px solid var(--border-2);font-size:14px;font-weight:700;color:var(--accent);text-decoration:none}
 .pz-sef:hover{text-decoration:underline}
 @media (max-width:480px){.pz-back{align-items:center;padding:12px}.pz{width:100%}}
+
+/* ===== calm preview (gc2-calm-1): everything still reachable, one thing in focus at a time ===== */
+/* 1. one colour at a time: only the step you are on (or have opened) carries its type colour */
+.step:not(.cur):not(.open){--c:var(--faint)}
+.step{border:0;border-left:3px solid transparent;background:transparent;transition:background .2s,border-color .2s}
+.step.cur,.step.open{background:var(--panel);border-left-color:var(--c)}
+.step.cur{box-shadow:none}
+.steps{gap:22px}
+.sh{background:none;padding:12px 16px 6px}
+.sh .num{background:transparent;color:var(--c);box-shadow:inset 0 0 0 1.5px currentColor;width:28px;height:28px;font-weight:700}
+.step.cur .sh .num{background:var(--c);color:#06101c;box-shadow:none}
+.sh .tname{font-weight:650;font-size:13.5px;letter-spacing:.01em}
+.sh .tname .he{font-size:16px;font-weight:600}
+.sh .sh-x{border-color:transparent;color:var(--faint);font-weight:600}
+.step:not(.cur):not(.open) .sh .sh-x{opacity:0}
+.step:not(.cur):not(.open) .sh:hover .sh-x,.step:not(.cur):not(.open) .sh:focus-visible .sh-x{opacity:1}
+.mbadge{background:none;border-color:color-mix(in srgb,var(--mishnah) 30%,transparent)}
+/* steps you are not on step back a little */
+.steps .step:not(.cur) .sbody{opacity:.8;transition:opacity .25s}
+.steps .step.cur .sbody{opacity:1}
+.srel{font-size:12.5px;color:var(--faint)}
+/* fewer lines: phrases separated by space, not rules */
+.phrases{border-top:0}
+.ph{border-bottom:0;padding:12px 0}
+/* 2. the explanation: core first, the deeper layers behind one quiet fold */
+.explain-btn{border:0;background:none;color:var(--accent);font-weight:650;justify-content:flex-start;padding:0;min-height:40px;width:auto}
+.explain{gap:18px}
+.explain h4{letter-spacing:.06em;font-weight:650;color:var(--faint)}
+.box{background:none;border:0;border-left:2px solid var(--border);border-radius:0;padding:2px 0 2px 14px}
+.box.remember{border-left-color:color-mix(in srgb,var(--terutz) 55%,transparent)}
+.box.alert{background:none;border-left-color:color-mix(in srgb,var(--warn) 70%,transparent)}
+.more{border-top:1px solid var(--border-2);padding-top:6px}
+.more>summary{list-style:none;cursor:pointer;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;min-height:40px;padding:8px 0;color:var(--muted)}
+.more>summary::-webkit-details-marker{display:none}
+.more>summary::after{content:"›";margin-left:auto;font-size:20px;line-height:1;color:var(--faint);transition:transform .2s}
+.more[open]>summary::after{transform:rotate(90deg)}
+.more .more-k{font-weight:700;font-size:14px;color:var(--text)}
+.more .more-l{font-size:13px;color:var(--faint)}
+.more-b{display:grid;gap:18px;padding:6px 0 4px}
+.terms .chips .chip{border-color:transparent;background:var(--panel-2)}
+/* 3. one clear next action */
+.next-step{display:flex;align-items:center;justify-content:center;gap:4px;margin:16px 0 2px auto;min-height:44px;padding:8px 20px;border-radius:999px;border:1px solid var(--border);background:transparent;color:var(--muted);font-weight:700;font-size:15px}
+.step.cur .next-step{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+/* 4. phrase notes: one quiet line, tap to read the whole note */
+.pnote{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:1;overflow:hidden;cursor:pointer;margin-top:4px}
+.pnote::before{content:"Note · ";font-weight:700;color:var(--muted)}
+.pnote.show{display:block;-webkit-line-clamp:unset;cursor:auto}
+body.hide-notes .pnote{display:none}
+/* 5. quieter chrome: no outlines on bars, no counters shouting, a one-colour progress line */
+.brand-mark i{background:var(--muted)!important;opacity:.75}
+.refbtn,.topbar .iconbtn{border-color:transparent;background:transparent}
+.progress div{background:var(--accent);opacity:.7}
+.bottombar{border-top:1px solid var(--border-2)}
+.bb-btn{border-color:transparent;background:transparent;color:var(--muted);font-weight:650}
+.bb-btn:hover{background:var(--panel);color:var(--text)}
+.bb-sub{color:var(--faint);font-weight:500} /* nothing hidden: the step counter stays, just quieter */
+.bb-toggle{border-color:transparent}
+/* desktop flow list: colour only on the step you are on */
+.fnode:not(.cur){--c:var(--faint)}
+.fnode .dot{background:transparent;color:var(--muted);box-shadow:inset 0 0 0 1.5px var(--border);font-weight:700}
+.fnode.cur .dot{background:var(--c);color:#06101c;box-shadow:none}
+.fnode .fty{font-weight:600}
+.fnode:not(.cur) .ft{color:var(--muted)}
+.strip button:not(.cur){--c:var(--faint);border-color:transparent;border-bottom-color:var(--border)}
+/* 6. calm picker: flat cells, quiet legend and perek chips */
+.dafcell{border-color:transparent;background:var(--panel-2)}
+.dafcell button{border-left-color:transparent}
+.dafcell button.has{background-color:color-mix(in srgb,var(--accent) 12%,transparent)}
+.dafgrid{gap:8px}
+.legend-mini{font-size:12px;color:var(--faint);gap:6px 14px}
+.legend-mini i{border-color:transparent}
+.pk-jump{border-bottom:0}
+.pk-jump .chip,.sheet .seder .chip,#yomiSlot .chip{border-color:transparent;background:transparent}
+.pk-jump .chip.on{background:var(--panel)}
+.masbtn{border-color:transparent;background:var(--panel-2)}
+.sheet-head .iconbtn{border-color:transparent;background:transparent}
+.pk-h{margin-top:24px}
+body.hide-logic .more .ml-logic,body.hide-logic details.more.only-logic{display:none}

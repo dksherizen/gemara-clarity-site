@@ -668,6 +668,10 @@ function relatedLineHtml(nums, n){                                     // n = th
   return nums.length ? `<p class="srel">Related earlier steps: ${nums.map(v => `<a href="#s${v}" data-jump="${v}" data-rel="1" aria-label="Go to step ${v}">${v}</a>`).join('<span class="srel-sep">, </span>')}</p>` : "";
 }
 // ---- end related steps ----
+function moreHtml(items, open){ // calm: one fold for the deeper layers; its label names what is inside
+  if (!items.length) return "";
+  return `<details class="more${items.length === 1 && items[0][0] === "Logic" ? " only-logic" : ""}"${open ? " open" : ""}><summary><span class="more-k">More detail</span><span class="more-l">${items.map((x, i) => `<span class="ml${x[0] === "Logic" ? " ml-logic" : ""}">${i ? " · " : ""}${x[0]}</span>`).join("")}</span></summary><div class="more-b">${items.map(x => x[1]).join("")}</div></details>`;
+}
 function stepHtml(s, k, open){
   const t = TYPES[s.hebrewStepName] || TYPES["מימרא"];
   const P = (h, v, cls="") => v ? `<section class="${cls}"><h4>${h}</h4><p>${px(v)}</p></section>` : "";
@@ -677,6 +681,14 @@ function stepHtml(s, k, open){
     ["What is rejected", s.dechiyaRejectionScope], ["The flaw", s.dechiyaFlawIdentified], ["Core ruling", s.mimraCoreRuling], ["Final takeaway", s.maskanaFinalTakeaway],
     ["Classification", s.classificationConfidence ? `${s.classificationConfidence} confidence` : ""]].filter(r => r[1]);
   const terms = (s.keyTerms||[]).filter(x => x && x.term);
+  // calm (gc2-calm-1): the secondary layers sit behind one quiet "More detail" fold; nothing is dropped
+  const more = [
+    s.classificationConfidence && s.classificationConfidence !== "High" && s.alternativePossibleLabel ? ["Another reading", `<p class="maybe">Could also be read as: ${px(s.alternativePossibleLabel)}</p>`] : null,
+    s.deeperAnalysis ? ["Going deeper", P("Going deeper", s.deeperAnalysis)] : null,
+    terms.length ? ["Key terms", `<section class="terms"><h4>Key terms</h4><div class="chips">${terms.map(x => `<span class="chip"><span class="he">${heTxt(x.term)}</span><span class="m">${px(x.meaning)}</span></span>`).join("")}</div></section>`] : null,
+    s.whyThisMatters ? ["Why it matters", P("Why it matters", s.whyThisMatters)] : null,
+    logicRows.length ? ["Logic", `<section class="logic box"><h4>Logic</h4><dl>${logicRows.map(r => `<dt>${r[0]}</dt><dd>${px(r[1])}</dd>`).join("")}</dl></section>`] : null].filter(Boolean);
+  const total = (current && current.analysis && current.analysis.steps || []).length, nextN = total && k + 2 <= total ? k + 2 : 0;
   return `<article class="step t-${t.k}${open ? " open" : ""}${isMish(k) ? " is-mishnah" : ""}" id="s${k+1}" data-n="${k+1}">
     <button class="sh" aria-expanded="${open}" aria-controls="x${k+1}"><span class="num">${k+1}</span><span class="tname">${t.en}<span class="he" lang="he">${stepHe(s.hebrewStepName)}</span>${isMish(k) ? MBADGE : ""}</span><span class="sh-x">${open ? "Hide" : "Explain"}${chev}</span></button>
     <div class="sbody">
@@ -686,16 +698,13 @@ function stepHtml(s, k, open){
       <div class="phrases">${(s.phrases||[]).map(p => `<div class="ph"><div class="pa he" lang="he">${heTxt(p.aramaic)}</div><div class="pe">${px(p.english)}${p.notes ? `<div class="pnote">${px(p.notes)}</div>` : ""}</div></div>`).join("")}</div>
       <button class="explain-btn" aria-expanded="${open}" aria-controls="x${k+1}">${open ? "Hide explanation" : "Explain this step"}</button>
       <div class="explain" id="x${k+1}" ${open ? "" : "hidden"}>
-        ${s.classificationConfidence && s.classificationConfidence !== "High" && s.alternativePossibleLabel ? `<p class="maybe">Could also be read as: ${px(s.alternativePossibleLabel)}</p>` : ""}
         ${P("What’s happening", s.whatsHappening)}
         ${P("In plain words", s.simpleTranslation)}
-        ${P("Going deeper", s.deeperAnalysis)}
-        ${terms.length ? `<section class="terms"><h4>Key terms</h4><div class="chips">${terms.map(x => `<span class="chip"><span class="he">${heTxt(x.term)}</span><span class="m">${px(x.meaning)}</span></span>`).join("")}</div></section>` : ""}
         ${s.whatToRemember ? `<div class="box remember"><h4>Remember</h4><p>${px(s.whatToRemember)}</p></div>` : ""}
         ${s.confusionAlert ? `<div class="box alert"><h4>Careful</h4><p>${px(s.confusionAlert)}</p></div>` : ""}
-        ${P("Why it matters", s.whyThisMatters)}
-        ${logicRows.length ? `<section class="logic box"><h4>Logic</h4><dl>${logicRows.map(r => `<dt>${r[0]}</dt><dd>${px(r[1])}</dd>`).join("")}</dl></section>` : ""}
+        ${moreHtml(more, settings.expandAll)}
       </div>
+      ${nextN ? `<button class="next-step" data-jump="${nextN}" aria-label="Go to step ${nextN}">Next step<span aria-hidden="true"> ›</span></button>` : ""}
     </div></article>`;
 }
 async function openDaf(m, i, tab, choose){
@@ -864,6 +873,9 @@ function wireDaf(){
   const view = $("#view");
   view.onclick = e => {
     const j = e.target.closest("[data-jump]"); if (j) { e.preventDefault(); jumpTo(+j.dataset.jump, j.hasAttribute("data-rel")); return; }
+    const pn = e.target.closest(".pnote"); // calm: a phrase note shows one quiet line until tapped
+    if (pn && !pn.classList.contains("show")) { e.preventDefault(); e.stopPropagation(); pn.classList.add("show"); return; }
+    if (pn && !e.target.closest("button,a")) { pn.classList.remove("show"); return; }
     if (e.target.closest("#stripFlow")) { $("#flowBtn").onclick(); return; }
     const t = e.target.closest(".sh, .explain-btn"); if (t) toggleStep(t.closest(".step"));
   };
