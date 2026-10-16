@@ -998,7 +998,7 @@ function renderDaf(){
       ${a ? `<div class="tabs" role="tablist"><button role="tab" data-tab="steps" aria-selected="${c.tab === "steps"}">Step by step <small>${a.steps.length} steps</small></button><button role="tab" data-tab="text" aria-selected="${c.tab === "text"}">Full text</button></div>
         <p class="note-ai">AI-generated: check it against the text and your teacher.</p>` : ""}
     </section>
-    ${!a ? `<div class="notice">${c.cloudErr ? `<b>The breakdown couldn’t be loaded just now.</b>
+    ${!a && !c.noText ? `<div class="notice">${c.cloudErr ? `<b>The breakdown couldn’t be loaded just now.</b>
         <p>Check your connection and try again. Meanwhile, here is the full text with translation, side by side.</p>` : `<b>Step-by-step breakdown coming soon.</b>
         <p>This amud is on its way. Meanwhile, here is the full text with translation, side by side.${cloudIds.size ? ` ${cloudIds.size} amudim are fully broken down so far.` : ""}</p>`}
         <button class="btn" id="libBtn">See broken-down dapim</button>
@@ -1071,7 +1071,7 @@ async function renderText(){
   try {
     const t = c.text || await loadText(c.m, c.i); if (!current || current.id !== id) return; c.text = t;
     const n = Math.max(t.he.length, t.en.length);
-    if (!n) throw new Error("empty");
+    if (!n) { html = `<p class="notice">Sefaria has no text for this amud.</p>`; c.noText = true; const lb = $("#libBtn"); if (lb) lb.closest(".notice").remove(); } else // D3: an empty answer from Sefaria (Nazir 33b) is not a failure: only this notice (no retry, no link) and the breakdown notice above is dropped
     html = `<div class="segs">${Array.from({ length: n }, (_, k) => `<div class="seg${segMishClass(k)}"><div class="he" lang="he">${sanitize(t.he[k]||"", true)}</div><div class="en">${sanitize(t.en[k]||"", false)}</div></div>`).join("")}</div>
       <p class="src">Text: ${esc(t.heVersion || "Sefaria")}. Translation: ${esc(t.version || "Sefaria")}. Bold words are the literal translation; the rest is explanation. From <a href="https://www.sefaria.org/${c.m}.${dafOf(c.i).daf}${dafOf(c.i).amud}" target="_blank" rel="noopener">Sefaria</a>.</p>`;
   } catch (e) {
