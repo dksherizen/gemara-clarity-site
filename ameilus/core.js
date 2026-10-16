@@ -145,12 +145,14 @@ export const ownCount = done => Object.values(done || {}).filter(d => d && d.own
 
 /** Glossary lookup with the common one-letter prefixes (ו ד ה ב ל כ מ ש) peeled off, longest form first. */
 const PREFIX_EN = { "ו": "and", "ד": "that / of", "ה": "the", "ב": "in", "ל": "to", "כ": "like", "מ": "from", "ש": "that" };
+const NO_PEEL = new Set(["שמאי","מתנא","לואי","מאמר","משכן","מלא","מתא","שתא","שבתא","שמתא","מדרש","שפחות","שלומי","מלתא","מלאי"]); // whole words that only look prefixed (שמאי is Shammai, not ש + מאי)
 export function lookupGloss(gloss, raw){
   const w = String(raw || "").replace(/[\u05F3\u05F4]/g, m => m);
   if (!gloss) return null;
   if (gloss[w]) return { form: w, prefix: "", entry: gloss[w] };
   let rest = w, pre = "";
   for (let k = 0; k < 2 && rest.length > 2; k++) {
+    if (NO_PEEL.has(rest)) break;
     const c = rest[0]; if (!PREFIX_EN[c]) break;
     pre += c; rest = rest.slice(1);
     if (gloss[rest]) return { form: rest, prefix: pre, prefixEn: [...pre].map(x => PREFIX_EN[x]).join(" + "), entry: gloss[rest] };
