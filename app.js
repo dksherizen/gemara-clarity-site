@@ -573,7 +573,7 @@ function pathsHtml(hrefOf, opts = {}){ // two equal cards; hrefOf(mode) gives ea
 }
 function modeBarHtml(m, i, mode){ // the compact chooser on every amud once a choice is remembered
   const o = (k, b, sub) => `<a class="mb-o${mode === k ? " on" : ""}" href="${hashFor(m, i, "/" + k)}" data-path-pick="${k}"${mode === k ? ' aria-current="page"' : ""}><b>${b}</b><span>${sub}</span></a>`;
-  return `<nav class="modebar" aria-label="How to learn this amud">${o("shiur", "Shiur", "explained step by step")}${o("ameilus", "Ameilus", "try it yourself")}</nav>`;
+  return `<nav class="modebar" aria-label="How to learn this amud">${o("shiur", "Sugya Flow", "explained step by step")}${o("ameilus", "Ameilus", "try it yourself")}</nav>`;
 }
 // ---- end two paths ----
 function renderHome(){
@@ -641,7 +641,7 @@ function flowHtml(steps){
     out += `<a class="fnode t-${t.k}${isMish(k) ? " is-mishnah" : ""}" href="#s${k+1}" data-jump="${k+1}" style="--d:${depth}"><span class="dot">${k+1}</span><span class="ft"><span class="fty">${t.en} <span class="he" lang="he">${stepHe(s.hebrewStepName || "")}</span>${isMish(k) ? MBADGE : ""}</span>${px(s.title || s.stepSummary || "")}</span></a>`;
     if (s.branchRole === "conclusion_of_branch") depth = Math.max(depth - 1, 0);
   });
-  return `<nav class="flow" aria-label="Flow of the sugya"><h2>The flow</h2>${out}</nav>`;
+  return `<nav class="flow" aria-label="Steps of the sugya"><h2>Steps</h2>${out}</nav>`;
 }
 // ---- Related earlier steps (display only; Oct 15 2026) ----
 // Each step may carry dependsOnStepNumbers. An outside spot-check (Ber 2a, Pes 2a, BM 2a) found the links mostly sound but mixed
@@ -873,9 +873,7 @@ function wireDaf(){
   const view = $("#view");
   view.onclick = e => {
     const j = e.target.closest("[data-jump]"); if (j) { e.preventDefault(); jumpTo(+j.dataset.jump, j.hasAttribute("data-rel")); return; }
-    const pn = e.target.closest(".pnote"); // calm: a phrase note shows one quiet line until tapped
-    if (pn && !pn.classList.contains("show")) { e.preventDefault(); e.stopPropagation(); pn.classList.add("show"); return; }
-    if (pn && !e.target.closest("button,a")) { pn.classList.remove("show"); return; }
+    // calm4: phrase notes are shown in full, so a tap on a note no longer opens or folds it (links and pasuk buttons inside work at once)
     if (e.target.closest("#stripFlow")) { $("#flowBtn").onclick(); return; }
     const t = e.target.closest(".sh, .explain-btn"); if (t) toggleStep(t.closest(".step"));
   };
@@ -1059,8 +1057,8 @@ async function renderAmeilus(m, i){
   if (current !== me) return; // moved on meanwhile
   me.analysis = a; me.source = a ? "cloud" : null;
   const shiur = hashFor(m, i);
-  const notice = (head, body) => { view.innerHTML = `<div class="notice am-notice"><b>${head}</b><p>${body}</p><a class="btn" href="${shiur}">Open ${esc(label(m, i))} in Shiur</a></div>`; };
-  if (!a) return notice(err && !mod ? "Ameilus couldn’t load just now." : "Ameilus needs this amud’s breakdown, and it isn’t ready yet.", err ? "Check your connection and try again." : "The full text is in Shiur meanwhile.");
+  const notice = (head, body) => { view.innerHTML = `<div class="notice am-notice"><b>${head}</b><p>${body}</p><a class="btn" href="${shiur}">Open ${esc(label(m, i))} in Sugya Flow</a></div>`; };
+  if (!a) return notice(err && !mod ? "Ameilus couldn’t load just now." : "Ameilus needs this amud’s breakdown, and it isn’t ready yet.", err ? "Check your connection and try again." : "The full text is in Sugya Flow meanwhile.");
   if (!mod) return notice("Ameilus couldn’t load just now.", "Check your connection and try again.");
   const p = neighbor(m, i, -1), n = neighbor(m, i, 1);
   try {
@@ -1076,7 +1074,7 @@ async function renderAmeilus(m, i){
     });
   } catch (e) {
     console.warn("ameilus could not open", id, e); amMounted = null;
-    notice("Ameilus can’t open this amud yet.", "Its breakdown has a shape Ameilus doesn’t read. The full step-by-step is in Shiur.");
+    notice("Ameilus can’t open this amud yet.", "Its breakdown has a shape Ameilus doesn’t read. The full step-by-step is in Sugya Flow.");
   }
 }
 function amSettingsSection(body){
@@ -1142,7 +1140,7 @@ $("#homeBtn").onclick = () => { location.hash = "#/"; };
 $("#refBtn").onclick = () => openPicker();
 $("#settingsBtn").onclick = () => { openSettings(); if (current && current.am) amSettingsSection($("#sheetBody")); };
 $("#sheetClose").onclick = closeSheet; $("#backdrop").onclick = closeSheet;
-$("#flowBtn").onclick = () => { if (current && current.analysis) openSheet(`The flow of ${label(current.m, current.i)}`, flowHtml(current.analysis.steps), b => { const cur = $$(".step.cur")[0]; if (cur) { const f = $(`.fnode[data-jump="${cur.dataset.n}"]`, b); f && f.classList.add("cur"); f && f.scrollIntoView({ block: "center" }); } b.onclick = e => { const j = e.target.closest("[data-jump]"); if (j) { e.preventDefault(); jumpTo(+j.dataset.jump); } }; }); };
+$("#flowBtn").onclick = () => { if (current && current.analysis) openSheet(`The steps of ${label(current.m, current.i)}`, flowHtml(current.analysis.steps), b => { const cur = $$(".step.cur")[0]; if (cur) { const f = $(`.fnode[data-jump="${cur.dataset.n}"]`, b); f && f.classList.add("cur"); f && f.scrollIntoView({ block: "center" }); } b.onclick = e => { const j = e.target.closest("[data-jump]"); if (j) { e.preventDefault(); jumpTo(+j.dataset.jump); } }; }); };
 $("#reviewBtn").onclick = () => current && (location.hash = hashFor(current.m, current.i, "/review"));
 document.addEventListener("keydown", e => {
   if (e.key === "Escape" && !$("#sheet").hidden) return closeSheet();

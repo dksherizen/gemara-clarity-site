@@ -13,9 +13,9 @@ export const AMW = {
   unit: UNIT, units: UNITS, aUnit: A_UNIT,
   goal: `Mark where each ${UNIT} ends`,                       // the walkthrough's goal line
   // the two paths (home and every amud)
-  shiurTitle: "Learn with Shiur",
+  shiurTitle: "Learn with Sugya Flow",
   shiurLine: "The app explains each step: the Aramaic beside the English, every question and answer laid out.",
-  shiurGo: "Start Shiur",
+  shiurGo: "Start Sugya Flow",
   amTitle: "Try it yourself with Ameilus",
   amLine: `Work the amud yourself: read the raw text and mark where each ${UNIT} ends.`,
   amGo: "Start Ameilus",

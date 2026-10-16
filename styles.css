@@ -961,7 +961,7 @@ html.am-shell .am-dafwrap{-webkit-mask-image:linear-gradient(to bottom,#000 calc
 
 /* ===== calm preview (gc2-calm-1): everything still reachable, one thing in focus at a time ===== */
 /* 1. one colour at a time: only the step you are on (or have opened) carries its type colour */
-.step:not(.cur):not(.open){--c:var(--faint)}
+.step:not(.cur):not(.open){--c:var(--muted)} /* calm4: steps you are not on use the muted colour (was faint) so scrolling back stays readable; the current step keeps its type colour, filled badge, card and edge */
 .step{border:0;border-left:3px solid transparent;background:transparent;transition:background .2s,border-color .2s}
 .step.cur,.step.open{background:var(--panel);border-left-color:var(--c)}
 .step.cur{box-shadow:none}
@@ -976,7 +976,7 @@ html.am-shell .am-dafwrap{-webkit-mask-image:linear-gradient(to bottom,#000 calc
 .step:not(.cur):not(.open) .sh:hover .sh-x,.step:not(.cur):not(.open) .sh:focus-visible .sh-x{opacity:1}
 .mbadge{background:none;border-color:color-mix(in srgb,var(--mishnah) 30%,transparent)}
 /* steps you are not on step back a little */
-.steps .step:not(.cur) .sbody{opacity:.8;transition:opacity .25s}
+.steps .step:not(.cur) .sbody{opacity:.94;transition:opacity .25s} /* calm4: was .8, which took the summary below AA in light and sepia */
 .steps .step.cur .sbody{opacity:1}
 .srel{font-size:12.5px;color:var(--faint)}
 /* fewer lines: phrases separated by space, not rules */
@@ -1001,10 +1001,9 @@ html.am-shell .am-dafwrap{-webkit-mask-image:linear-gradient(to bottom,#000 calc
 /* 3. one clear next action */
 .next-step{display:flex;align-items:center;justify-content:center;gap:4px;margin:16px 0 2px auto;min-height:44px;padding:8px 20px;border-radius:999px;border:1px solid var(--border);background:transparent;color:var(--muted);font-weight:700;font-size:15px}
 .step.cur .next-step{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
-/* 4. phrase notes: one quiet line, tap to read the whole note */
-.pnote{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:1;overflow:hidden;cursor:pointer;margin-top:4px}
+/* 4. phrase notes (calm4): always shown in full; a caveat is never cut off. The "Note ·" lead-in stays */
+.pnote{display:block;margin-top:4px}
 .pnote::before{content:"Note · ";font-weight:700;color:var(--muted)}
-.pnote.show{display:block;-webkit-line-clamp:unset;cursor:auto}
 body.hide-notes .pnote{display:none}
 /* 5. quieter chrome: no outlines on bars, no counters shouting, a one-colour progress line */
 .brand-mark i{background:var(--muted)!important;opacity:.75}

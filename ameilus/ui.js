@@ -173,7 +173,7 @@ export function mountAmeilus(root, ctx){
           <p class="am-tr">${prose(s.simpleTranslation || "")}</p>
           <details><summary>Phrase by phrase</summary>${(s.phrases || []).map(p => `<div class="am-ph"><div class="he" dir="rtl" lang="he">${esc(p.aramaic)}</div><div>${prose(p.english)}</div>${p.notes ? `<div class="am-pnote">${prose(p.notes)}</div>` : ""}</div>`).join("")}</details>
           ${s.whatsHappening ? `<p class="am-wh">${prose(s.whatsHappening)}</p>` : ""}
-          <a class="am-shiur" href="${ctx.shiurHref(s.stepNumber)}"${ctx.shiurNewTab ? ' target="_blank" rel="noopener"' : ""}>Full explanation in Shiur${ctx.shiurNewTab ? " ↗" : " ›"}</a></div>`);
+          <a class="am-shiur" href="${ctx.shiurHref(s.stepNumber)}"${ctx.shiurNewTab ? ' target="_blank" rel="noopener"' : ""}>Full explanation in Sugya Flow${ctx.shiurNewTab ? " ↗" : " ›"}</a></div>`);
       });
     }
     return `<div class="am-card" id="amCard" dir="ltr" lang="en">${lines.join("")}</div>`;
