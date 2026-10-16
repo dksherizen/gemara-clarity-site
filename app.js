@@ -229,6 +229,7 @@ function parseGoto(q){
       for (const am of amud ? [amud] : ["a","b"]) { const i = idxOf(daf, am); if (i >= first && i <= last) res.push({ m:key, i }); }
     } else res.push({ m:key, i:null });
   }
+  if (daf && !res.length) for (const key of keys) res.push({ m:key, i:null, out:true }); // U4: daf out of range: keep the masechta, the hint names its range
   return res;
 }
 
@@ -479,6 +480,7 @@ function openPicker(focusMas, focusPerek, mode){
         ? `<button class="chip" data-mas="${x.m}"><span>${masName(x.m)}</span><span class="he en-he x">${masInfo(x.m)[1]}</span></button>`
         : `<button class="chip" data-go="${x.m}|${x.i}"><span>${label(x.m, x.i)}${hasBreakdown(refId(x.m, x.i)) ? ` <span style="color:var(--accent)">● breakdown</span>` : ""}</span><span class="he x">${heLabel(x.m, x.i)}</span></button>`).join("")
         || (input.value.trim() ? `<div class="empty">No match yet. Try “Berachos 2a”.</div>` : "");
+      const out = r.filter(x => x.out).map(x => { const [, , f, l] = masInfo(x.m), d = i => dafOf(i).daf + dafOf(i).amud; return `${masName(x.m)} runs ${d(f)}–${d(l)}.`; }); if (out.length) sugg.insertAdjacentHTML("beforeend", `<div class="empty">${out.join(" ")}</div>`); // U4
     });
     input.addEventListener("keydown", e => { if (e.key === "Enter") { const f = $("button", sugg); f && f.click(); } });
     const startGrid = () => { if (focusMas) showDafGrid(focusMas, focusPerek); else if (current) showDafGrid(current.m); else showMasList(); };
