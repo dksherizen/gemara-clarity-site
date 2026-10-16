@@ -626,7 +626,7 @@ function classicCard(it, C){
       <div><dt>Starts</dt><dd>${it.start.daf} step ${it.start.step} · <span class="he" lang="he">${heTxt(it.start.words)}</span></dd></div>
       <div><dt>Ends</dt><dd>${it.end.daf} step ${it.end.step} · <span class="he" lang="he">${heTxt(it.end.words)}</span></dd></div>
       ${it.background ? `<div><dt>Background</dt><dd>${px(dispNames(it.background))}</dd></div>` : ""}
-      <div><dt>Reading</dt><dd>${it.reading.steps} steps · about ${Math.round(it.reading.words / 10) * 10} words of Gemara text (not counting the explanations)${it.time ? `; ${esc(it.time)}` : ""}</dd></div>
+      <div><dt>Reading</dt><dd>${it.reading.steps} steps${Number.isFinite(it.reading.words) && it.reading.words > 0 ? ` · about ${Math.round(it.reading.words / 10) * 10} words of Gemara text (not counting the explanations)` : ""}${it.time ? `; ${esc(it.time)}` : ""}</dd></div>
     </dl>
     ${it.excluded ? `<p class="cl-ex">${px(dispNames(it.excluded))}</p>` : ""}
     ${ctxLine}
@@ -683,7 +683,7 @@ function clRow(it, C){
       ${clClean(x.excluded) ? `<p class="cl-ex">${px(dispNames(clClean(x.excluded)))}</p>` : ""}</details>`;
   const meta = x => [x.reading && x.reading.steps ? `${x.reading.steps} steps` : "", x.time || ""].filter(Boolean).join(" · ");
   return `<article class="clx-row${it.draft ? " is-draft" : ""}" id="cl-${esc(it.id)}" data-q="${esc(clQ(it) + (nx ? " " + clQ(nx) : ""))}">
-    <div class="clx-top"><span class="clx-ref">${esc(clDafRange(it))}</span>${clGroupName(C, it) && it.group !== "more" ? `<span class="clx-lv">${esc(clGroupName(C, it))}</span>` : ""}${it.draft ? `<span class="clx-draft" title="From the draft list, still being checked">Draft</span>` : ""}</div>
+    <div class="clx-top"><span class="clx-ref">${esc(clDafRange(it))}</span>${it.draft ? `<span class="clx-draft" title="From the draft list, still being checked">Draft</span>` : ""}</div>
     <h4 class="clx-t">${esc(clName(it))}</h4>
     <p class="clx-hook" dir="ltr">${bidiHe(clHook(it))}</p>
     ${meta(it) ? `<p class="clx-meta">${esc(meta(it))}</p>` : ""}
@@ -730,7 +730,7 @@ async function renderClassics(focusId){
       const items = C.items.filter(x => !x.partOf);
       list.innerHTML = (C.groups || []).map(g => {
         const its = items.filter(x => !x.draft && x.group === g.id).sort((a, b) => a.order - b.order), dr = items.filter(x => x.draft && x.group === g.id).sort((a, b) => a.order - b.order);
-        return its.length || dr.length ? `<section class="cl-theme"><h2 class="section-h">${esc(g.name)}</h2>${g.intro ? `<p class="cl-gi">${esc(g.intro)}</p>` : ""}${its.map(it => classicCard(it, C).replace('<article class="cl-card"', `<article data-q="${esc(clQ(it))}" class="cl-card"`)).join("")}${dr.length ? `<div class="clx-rows clx-draftlist">${dr.map(it => clRow(it, C)).join("")}</div>` : ""}</section>` : "";
+        return its.length || dr.length ? `<section class="cl-theme">${g.id === "more" ? "" : `<h2 class="section-h">${esc(g.name)}</h2>`}${g.intro ? `<p class="cl-gi">${esc(g.intro)}</p>` : ""}${its.map(it => classicCard(it, C).replace('<article class="cl-card"', `<article data-q="${esc(clQ(it))}" class="cl-card"`)).join("")}${dr.length ? `<div class="clx-rows clx-draftlist">${dr.map(it => clRow(it, C)).join("")}</div>` : ""}</section>` : "";
       }).join("");
     }
     $$(".clx-chip").forEach(b => { const s = $(`#sd-${b.dataset.jumpSeder}`); const n = s ? s.querySelectorAll(".clx-row").length : 0; $(".clx-cn", b).textContent = n; });
