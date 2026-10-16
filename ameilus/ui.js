@@ -158,14 +158,8 @@ export function mountAmeilus(root, ctx){
     if (!card) return "";
     const lines = [];
     if (card.fb) lines.push(`<p class="am-fb am-fb-${card.fbKind}">${mixed(card.fb)}</p>`);
-    if (card.check && !card.checked) {
-      const ch = card.check;
-      lines.push(`<div class="am-check"><p class="am-q">${esc(ch.q)} <span class="am-opt">optional</span></p><div class="am-opts">${ch.options.map((o, k) => `<button class="am-optbtn" data-opt="${k}" dir="${ch.source === "dependsOn" ? "rtl" : "ltr"}">${mixed(o.label)}</button>`).join("")}</div><button class="linkbtn" data-act="skipcheck">Skip</button></div>`);
-    } else if (card.check && card.checked) {
-      const ch = card.check, picked = ch.options[card.picked];
-      lines.push(`<div class="am-check done"><p class="am-q">${esc(ch.q)}</p><div class="am-opts">${ch.options.map((o, k) => `<span class="am-optbtn ${o.ok ? "ok" : ""} ${k === card.picked && !o.ok ? "miss" : ""}" dir="${ch.source === "dependsOn" ? "rtl" : "ltr"}">${mixed(o.label)}</span>`).join("")}</div><p class="am-fb">${picked ? (picked.ok ? "Yes, that's how we read it." : "We read it as going after the one marked.") : "Skipped. The one marked is how we read it."}</p></div>`);
-    }
-    if (card.steps && card.steps.length && (!card.check || card.checked || card.skipped)) {
+    // no check question on a card, even if the card data carries one; "Show our reading" comes right after the passage
+    if (card.steps && card.steps.length) {
       if (!card.shown) lines.push(`<p class="am-own">Say it in your own words first. Then check it.</p><button class="btn primary" data-act="show">Show our reading</button>`);
       else card.steps.forEach(si => {
         const s = steps[si], kc = C.KIND_CLASS[s.hebrewStepName] || "mimra";
@@ -303,7 +297,7 @@ export function mountAmeilus(root, ctx){
     ev.completes.forEach(s => { st.done[s] = { own: own && (st.done[s] ? st.done[s].own : true), sig: !!(st.used[s] && st.used[s].sig), rev: !!viaReveal }; });
     st.pos = ev.carveTo + 1; st.tries = 0; st.sig = null; mark = null; msg = null;
     const lastDone = ev.completes[ev.completes.length - 1];
-    const check = (!bare && lastDone != null) ? C.attackCheck(steps, lastDone) : null;
+    const check = null; // no check question after a passage
     card = { at: ev.carveTo, fb: viaReveal ? "Here's where we split it." : ev.text, fbKind: ev.rel, steps: ev.completes, check, checked: false, shown: false };
     if (ev.rel === "inner") card.steps = [];
     save(); render(); say(card.fb);
