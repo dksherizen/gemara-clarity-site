@@ -308,9 +308,12 @@ async function dafYomi(){
   const j = await cachedJSON(`${SEFARIA}/api/calendars?year=${d.getFullYear()}&month=${d.getMonth()+1}&day=${d.getDate()}`, { ttl: 12*3600e3, key: "/" + key, timeout: 8000 });
   const item = (j.calendar_items||[]).find(c => c.title && c.title.en === "Daf Yomi");
   if (!item) return null;
-  const mm = item.ref.match(/^(.*) (\d+)$/); if (!mm) return null;
-  const key2 = mm[1].replace(/ /g,"_"); if (!masInfo(key2)) return null;
-  return { m: key2, i: Math.max(idxOf(+mm[2], "a"), masInfo(key2)[2]) };
+  // Daf Yomi fix (dafyomi-trace.txt): accept an amud letter ("Meilah 22a") and handle Mishnah-only days (Kinnim, Middot), which
+  // are not masechtos in the app: the tile says so in plain text, with no link (English links stay off), instead of "Unavailable offline"
+  const mm = typeof item.ref === "string" && item.ref.match(/^(.*) (\d+)([ab])?$/);
+  const key2 = mm && mm[1].replace(/ /g,"_");
+  if (!mm || !masInfo(key2)) return { m: null };
+  return { m: key2, i: Math.max(idxOf(+mm[2], mm[3] || "a"), masInfo(key2)[2]) };
 }
 
 /* ---------- sanitising Sefaria markup ---------- */
@@ -480,7 +483,7 @@ function openPicker(focusMas, focusPerek, mode){
     const startGrid = () => { if (focusMas) showDafGrid(focusMas, focusPerek); else if (current) showDafGrid(current.m); else showMasList(); };
     if (perakim || !(focusMas || current)) startGrid();
     else { $("#pickBody", body).innerHTML = `<div class="loading"><div class="spinner"></div></div>`; loadPerakim().then(() => { if ($("#pickBody", body) && $("#pickBody", body).isConnected) startGrid(); }); }
-    dafYomi().then(y => { if (y && $("#yomiSlot", body)) $("#yomiSlot", body).innerHTML = `<button class="chip" data-go="${y.m}|${y.i}" style="width:100%;justify-content:space-between;min-height:46px;border-radius:12px"><span>Today’s Daf Yomi: <b>${masName(y.m)} ${dafOf(y.i).daf}</b></span><span class="x">›</span></button>`; }).catch(()=>{});
+    dafYomi().then(y => { if (y && y.m && $("#yomiSlot", body)) $("#yomiSlot", body).innerHTML = `<button class="chip" data-go="${y.m}|${y.i}" style="width:100%;justify-content:space-between;min-height:46px;border-radius:12px"><span>Today’s Daf Yomi: <b>${masName(y.m)} ${dafOf(y.i).daf}</b></span><span class="x">›</span></button>`; }).catch(()=>{}); // Daf Yomi fix: a Mishnah-only day shows no chip here
   });
 }
 
@@ -821,13 +824,17 @@ function renderHome(){
   $("#homeSearch").onclick = () => openPicker();
   $$("[data-home-pick]").forEach(b => b.onclick = () => openPicker(undefined, undefined, b.dataset.homePick));
   wireLibrary();
-  dafYomi().then(y => {
-    const tile = $("#yomiTile"); if (!tile) return;
-    if (!y) { $("#yomiV").textContent = "Unavailable offline"; return; }
-    tile.href = hashFor(y.m, y.i); tile.removeAttribute("aria-busy");
-    $("#yomiV").textContent = `${masName(y.m)} ${dafOf(y.i).daf}`;
+  // Daf Yomi fix: "Unavailable offline" only when the phone is offline; any other failure (rate limit, 5xx, timeout) says so and a tap retries
+  const showYomi = () => dafYomi().then(y => {
+    const tile = $("#yomiTile"); if (!tile) return; if (!y) throw 0;
+    tile.onclick = null; tile.removeAttribute("aria-busy");
+    if (y.m) { tile.href = hashFor(y.m, y.i); $("#yomiV").textContent = `${masName(y.m)} ${dafOf(y.i).daf}`; }
+    else { const d = document.createElement("div"); d.className = tile.className; d.id = tile.id; d.innerHTML = tile.innerHTML; tile.replaceWith(d); $("#yomiV").textContent = "Today’s daf isn’t in the app"; } // no link (English links stay off)
     $("#yomiS").textContent = ""; // round 2: the compact tile names the daf only
-  }).catch(() => { const v = $("#yomiV"); if (v) v.textContent = "Unavailable offline"; });
+  }).catch(() => { const v = $("#yomiV"), tile = $("#yomiTile"); if (!v || !tile) return;
+    v.textContent = navigator.onLine ? "Couldn’t load · tap to retry" : "Unavailable offline";
+    tile.onclick = e => { e.preventDefault(); v.textContent = "…"; showYomi(); }; });
+  showYomi();
 }
 
 /* ---------- daf view ---------- */
