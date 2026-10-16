@@ -9,7 +9,7 @@ const SEDARIM = [
   ["Nashim","נשים",["Yevamot","Ketubot","Nedarim","Nazir","Sotah","Gittin","Kiddushin"]],
   ["Nezikin","נזיקין",["Bava_Kamma","Bava_Metzia","Bava_Batra","Sanhedrin","Makkot","Shevuot","Avodah_Zarah","Horayot"]],
   ["Kodashim","קדשים",["Zevachim","Menachot","Chullin","Bekhorot","Arakhin","Temurah","Keritot","Meilah","Tamid"]],
-  ["Taharot","טהרות",["Niddah"]]
+  ["Taharos","טהרות",["Niddah"]]
 ];
 const ALIASES = {
   Berakhot:["berachot","brachot","brachos","berachos","berakhos","berakot"], Shabbat:["shabbos","shabat","shabbath"], Eruvin:["eiruvin","erubin"],
@@ -33,7 +33,6 @@ const TYPES = {
   "דחיה":{k:"dechiya",en:"Rejection",tr:"Dechiya",d:"A proof is pushed aside: it doesn't have to mean that."},
   "מסקנא":{k:"maskana",en:"Conclusion",tr:"Maskana",d:"Where the discussion lands."}
 };
-const CONFUSABLE = {mimra:["maskana","teshuvah"],maskana:["mimra","terutz"],kashya:["sheelah","dechiya"],sheelah:["kashya","raaya"],terutz:["teshuvah","dechiya"],teshuvah:["terutz","maskana"],raaya:["dechiya","mimra"],dechiya:["raaya","kashya"]};
 const MISHNAH = { en:"Mishnah", he:"משנה", d:"Not a type of step but where it stands: the step is the Mishnah itself, from <bdi>מתני׳</bdi> up to <bdi>גמ׳</bdi>. Its own type colour stays beside the badge." };
 const MBADGE = { toString: () => `<span class="mbadge">Mishnah<span class="mb-he"> · <span class="he">${settings.nikud ? "מִשְׁנָה" : "משנה"}</span></span></span>` }; // read where it is interpolated, so the Vowels switch applies
 const isMish = k => !!(current && current.mish && current.mish[k]);
@@ -158,13 +157,25 @@ let observer = null;
 
 /* ---------- refs ---------- */
 const masInfo = key => MAS.find(x => x[0] === key);
-const masName = key => key.replace(/_/g, " ");
+// home3 (Oct 16 2026, David): masechta names on screen use the ArtScroll (Schottenstein) Ashkenazi spellings. DISPLAY ONLY: routes
+// (#/Berakhot/41b), data file names, JSON keys and Sefaria refs keep the keys. This one map is the only place a name is spelled;
+// everything on screen goes through masName (and dispNames for the few names inside Classics text).
+const MAS_DISPLAY = { Berakhot: "Berachos", Shabbat: "Shabbos", Eruvin: "Eruvin", Pesachim: "Pesachim", Yoma: "Yoma", Sukkah: "Succah", Beitzah: "Beitzah",
+  Rosh_Hashanah: "Rosh Hashanah", Taanit: "Taanis", Megillah: "Megillah", Moed_Katan: "Moed Katan", Chagigah: "Chagigah", Yevamot: "Yevamos", Ketubot: "Kesubos",
+  Nedarim: "Nedarim", Nazir: "Nazir", Sotah: "Sotah", Gittin: "Gittin", Kiddushin: "Kiddushin", Bava_Kamma: "Bava Kamma", Bava_Metzia: "Bava Metzia",
+  Bava_Batra: "Bava Basra", Sanhedrin: "Sanhedrin", Makkot: "Makkos", Shevuot: "Shevuos", Avodah_Zarah: "Avodah Zarah", Horayot: "Horayos", Zevachim: "Zevachim",
+  Menachot: "Menachos", Chullin: "Chullin", Bekhorot: "Bechoros", Arakhin: "Arachin", Temurah: "Temurah", Keritot: "Kereisos", Meilah: "Me’ilah", Tamid: "Tamid", Niddah: "Niddah" };
+const masName = key => MAS_DISPLAY[key] || key.replace(/_/g, " ");
+const DISP_RE = new RegExp(`\\b(${Object.keys(MAS_DISPLAY).filter(k => masName(k) !== k.replace(/_/g, " ")).map(k => k.replace(/_/g, " ")).join("|")})\\b`, "g");
+const dispNames = s => String(s || "").replace(DISP_RE, n => masName(n.replace(/ /g, "_")));
 const dafOf = i => ({ daf: Math.floor(i/2) + 1, amud: i % 2 ? "b" : "a" });
 const idxOf = (daf, amud) => (daf - 1) * 2 + (amud === "b" ? 1 : 0);
 const label = (m, i) => { const {daf, amud} = dafOf(i); return `${masName(m)} ${daf}${amud}`; };
 const refId = (m, i) => { const {daf, amud} = dafOf(i); return `${m}_${daf}_${amud}`; };
 const parseId = id => { const p = id.split("_"); const amud = p.pop(); const daf = +p.pop(); return { m: p.join("_"), i: idxOf(daf, amud) }; };
-const hashFor = (m, i, extra="") => `#/${m}/${dafOf(i).daf}${dafOf(i).amud}${extra}`;
+// home3b: the Sugya Flow link is written #/<m>/<daf>/steps (approved route name); old #/<m>/<daf>/shiur links still open (alias in route()).
+// The mode key stays "shiur" inside the app (storage keys and data-path-pick unchanged).
+const hashFor = (m, i, extra="") => `#/${m}/${dafOf(i).daf}${dafOf(i).amud}${extra === "/shiur" ? "/steps" : extra}`;
 function gematria(n){
   const ones=["","א","ב","ג","ד","ה","ו","ז","ח","ט"], tens=["","י","כ","ל","מ","נ","ס","ע","פ","צ"], hund=["","ק","ר","ש","ת"];
   let s = hund[Math.floor(n/100)] || ""; n %= 100;
@@ -185,7 +196,7 @@ function matchMasechet(q){
   q = norm(q); if (!q) return [];
   const out = [];
   for (const [key, he] of MAS) {
-    const names = [norm(masName(key)), ...(ALIASES[key]||[]).map(norm)];
+    const names = [norm(masName(key)), norm(key.replace(/_/g, " ")), ...(ALIASES[key]||[]).map(norm)];
     const compact = names.map(n => n.replace(/ /g,""));
     const qc = q.replace(/ /g,"");
     let score = 0;
@@ -392,13 +403,17 @@ const perekJumpHtml = (ps, attr = "data-jump") => `<nav class="pk-jump" aria-lab
 const midLegendHtml = `<span><i class="mid"></i>new perek starts partway down</span>`;
 
 /* ---------- picker ---------- */
-function openPicker(focusMas, focusPerek){
-  const html = `
-    <input class="input" id="gotoInput" type="search" autocomplete="off" placeholder="Type a daf, e.g. Makkot 5b" aria-label="Go to a daf"${focusPerek ? "" : " autofocus"}>
+// home3: the Sugya Flow and Ameilus cards on home open this same picker with a way already chosen; the daf picked opens in that way
+let pickMode = null;
+function openPicker(focusMas, focusPerek, mode){
+  pickMode = mode === "ameilus" || mode === "shiur" ? mode : null;
+  const pm = pickMode;
+  const html = `${pm ? `<div class="pick-mode pm-${pm}"><span class="pm-dot" aria-hidden="true"></span><span><b>${pm === "ameilus" ? "Ameilus" : "Sugya Flow"}</b> · ${pm === "ameilus" ? "pick a daf, then try it yourself" : "pick a daf to learn it step by step"}</span></div>` : ""}
+    <input class="input" id="gotoInput" type="search" autocomplete="off" placeholder="Type a daf, e.g. Makkos 5b" aria-label="Go to a daf"${focusPerek ? "" : " autofocus"}>
     <div class="sugg" id="gotoSugg"></div>
     <div id="yomiSlot"></div>
     <div id="pickBody"></div>`;
-  openSheet("Go to a daf", html, body => {
+  openSheet(pm ? "Choose a daf" : "Go to a daf", html, body => {
     const input = $("#gotoInput", body), sugg = $("#gotoSugg", body);
     const showMasList = () => {
       $("#pickBody", body).innerHTML = SEDARIM.map(([en, he, list]) => `<div class="seder">Seder ${en} · <span class="en-he">${he}</span></div><div class="masgrid">${list.map(k => {
@@ -452,14 +467,14 @@ function openPicker(focusMas, focusPerek){
       if (t.dataset.jump) { markJump(t.dataset.jump); scrollToPerek(t.dataset.jump, true); }
       else if (t.dataset.mas) showDafGrid(t.dataset.mas);
       else if (t.dataset.back !== undefined) showMasList();
-      else { const [k, i] = t.dataset.go.split("|"); closeSheet(); go(k, +i); }
+      else { const [k, i] = t.dataset.go.split("|"); closeSheet(); go(k, +i, pm ? "/" + pm : ""); }
     });
     input.addEventListener("input", () => {
       const r = parseGoto(input.value).slice(0, 6);
       sugg.innerHTML = r.map(x => x.i == null
         ? `<button class="chip" data-mas="${x.m}"><span>${masName(x.m)}</span><span class="he en-he x">${masInfo(x.m)[1]}</span></button>`
         : `<button class="chip" data-go="${x.m}|${x.i}"><span>${label(x.m, x.i)}${hasBreakdown(refId(x.m, x.i)) ? ` <span style="color:var(--accent)">● breakdown</span>` : ""}</span><span class="he x">${heLabel(x.m, x.i)}</span></button>`).join("")
-        || (input.value.trim() ? `<div class="empty">No match yet. Try “Berakhot 2a”.</div>` : "");
+        || (input.value.trim() ? `<div class="empty">No match yet. Try “Berachos 2a”.</div>` : "");
     });
     input.addEventListener("keydown", e => { if (e.key === "Enter") { const f = $("button", sugg); f && f.click(); } });
     const startGrid = () => { if (focusMas) showDafGrid(focusMas, focusPerek); else if (current) showDafGrid(current.m); else showMasList(); };
@@ -578,23 +593,223 @@ function modeBarHtml(m, i, mode){ // the compact chooser on every amud once a ch
   return `<nav class="modebar" aria-label="How to learn this amud">${o("shiur", "Sugya Flow", "explained step by step")}${o("ameilus", "Ameilus", "try it yourself")}</nav>`;
 }
 // ---- end two paths ----
+// ---- Classics (classics1, Oct 16 2026; ported from the Classics v1 preview and widened) ----
+// A Classic is a selected passage with a clear start and end step (data/classics.json). It opens in Sugya Flow at its exact start
+// step (home3c: Classic-in-Ameilus was removed, Oct 16 2026). A range may run across several amudim; a two-part
+// Classic keeps its second part as its own entry (partOf), shown inside the first part's card. The 'source' fields are not shown.
+const CL_REV = "home3c";
+const clJSON = {};
+function clData(name){ return clJSON[name] || (clJSON[name] = cachedJSON(`data/${name}.json?v=${CL_REV}`, { ttl: 10*60e3, timeout: 8000 }).catch(() => { delete clJSON[name]; return null; })); }
+const dafIdx = (m, daf) => { const d = /^(\d+)([ab])$/.exec(daf); return idxOf(+d[1], d[2]); };
+const clAt = p => ({ m: p.m, i: dafIdx(p.m, p.daf) });
+const clRange = it => it.start.daf === it.end.daf ? `${masName(it.start.m)} ${it.start.daf} · steps ${it.start.step}–${it.end.step}` : `${masName(it.start.m)} ${it.start.daf} step ${it.start.step} → ${it.end.daf} step ${it.end.step}`;
+const clName = it => it.title || it.question;
+const CL_VIEW = "gc-classics-view";
+function clGo(it){
+  const s = clAt(it.start);
+  return `<div class="cl-go"><a class="btn primary" href="${hashFor(s.m, s.i, "/s" + it.start.step)}">Learn with Sugya Flow</a></div>`;
+}
+function classicCard(it, C){
+  const s = clAt(it.start);
+  const ctxLine = it.context ? `<p class="cl-ctx">${esc(dispNames(it.context.why))} <a href="${hashFor(it.context.m, dafIdx(it.context.m, it.context.daf), "/s" + it.context.from)}">${masName(it.context.m)} ${it.context.daf}, steps ${it.context.from}–${it.context.to}</a></p>` : "";
+  const nx = it.next && C ? (C.items || []).find(x => x.id === it.next.id) : null;
+  const thenRow = nx ? `<div class="cl-then" id="cl-${esc(nx.id)}"><h4 class="cl-then-h">${esc(clName(nx))}</h4>
+      <p class="cl-then-ref">${esc(clRange(nx))} · ${nx.reading.steps} steps${nx.time ? ` · ${esc(nx.time)}` : ""}</p>
+      <p class="cl-sum">${px(dispNames(nx.summary))}</p>
+      <dl class="cl-facts cl-then-f"><div><dt>Starts</dt><dd>${nx.start.daf} step ${nx.start.step} · <span class="he" lang="he">${heTxt(nx.start.words)}</span></dd></div><div><dt>Ends</dt><dd>${nx.end.daf} step ${nx.end.step} · <span class="he" lang="he">${heTxt(nx.end.words)}</span></dd></div></dl>
+      ${clGo(nx)}</div>` : "";
+  return `<article class="cl-card" id="cl-${esc(it.id)}">
+    <div class="cl-ref">${esc(clRange(it))} <span class="he" lang="he">${heLabel(s.m, s.i)}</span></div>
+    <h3 class="cl-q">${esc(clName(it))}</h3>
+    <p class="cl-sum">${px(dispNames(it.summary))}</p>
+    <dl class="cl-facts">
+      <div><dt>Starts</dt><dd>${it.start.daf} step ${it.start.step} · <span class="he" lang="he">${heTxt(it.start.words)}</span></dd></div>
+      <div><dt>Ends</dt><dd>${it.end.daf} step ${it.end.step} · <span class="he" lang="he">${heTxt(it.end.words)}</span></dd></div>
+      ${it.background ? `<div><dt>Background</dt><dd>${px(dispNames(it.background))}</dd></div>` : ""}
+      <div><dt>Reading</dt><dd>${it.reading.steps} steps · about ${Math.round(it.reading.words / 10) * 10} words of Gemara text (not counting the explanations)${it.time ? `; ${esc(it.time)}` : ""}</dd></div>
+    </dl>
+    ${it.excluded ? `<p class="cl-ex">${px(dispNames(it.excluded))}</p>` : ""}
+    ${ctxLine}
+    ${it.continues ? `<p class="cl-ctx"><a href="${hashFor(it.continues.m, dafIdx(it.continues.m, it.continues.daf), "/shiur")}">${esc(dispNames(it.continues.label))} ›</a></p>` : ""}
+    ${clGo(it)}
+    ${thenRow}
+    <p class="cl-status">Selected passage; AI-generated explanations may contain mistakes. No haskama or rabbinic review.</p>
+  </article>`;
+}
+// ---- home3 Classics library (Oct 16 2026, David: "a huge list… by the different Sedarim, like Nezikin… then the different Masechtos and
+// the classic sugyos in there"). By Seder (default): Seder → masechta → the sugyos, each a compact card that opens in Sugya Flow; a sticky
+// Seder bar and a search box on top. Suggested order keeps the classics1 cards. The 51-item draft list (data/classics-draft.json, not
+// verified, file unchanged) is merged in for this mock only: de-duplicated against the verified list by masechta + daf, marked "Draft",
+// and given buttons only when it names a usable start and end step.
+const CL_SEDARIM = [["Zeraim", "זרעים"], ["Moed", "מועד"], ["Nashim", "נשים"], ["Nezikin", "נזיקין"], ["Kodashim", "קדשים"], ["Taharos", "טהרות"]];
+const CL_SEDER = { // the 37 masechtos of the Bavli, by Seder (keys as in the data and the routes)
+  Berakhot: "Zeraim",
+  Shabbat: "Moed", Eruvin: "Moed", Pesachim: "Moed", Yoma: "Moed", Sukkah: "Moed", Beitzah: "Moed", Rosh_Hashanah: "Moed", Taanit: "Moed", Megillah: "Moed", Moed_Katan: "Moed", Chagigah: "Moed",
+  Yevamot: "Nashim", Ketubot: "Nashim", Nedarim: "Nashim", Nazir: "Nashim", Sotah: "Nashim", Gittin: "Nashim", Kiddushin: "Nashim",
+  Bava_Kamma: "Nezikin", Bava_Metzia: "Nezikin", Bava_Batra: "Nezikin", Sanhedrin: "Nezikin", Makkot: "Nezikin", Shevuot: "Nezikin", Avodah_Zarah: "Nezikin", Horayot: "Nezikin",
+  Zevachim: "Kodashim", Menachot: "Kodashim", Chullin: "Kodashim", Bekhorot: "Kodashim", Arakhin: "Kodashim", Temurah: "Kodashim", Keritot: "Kodashim", Meilah: "Kodashim", Tamid: "Kodashim",
+  Niddah: "Taharos"
+};
+const CL_TIER = { "First win": "first", "Getting hooked": "hooked", "Harder": "harder", "Following a halachic argument": "halacha" };
+// home3b (Oct 16 2026): the draft rows (data/classics-draft.json, not yet verified) are HIDDEN from users. The file ships
+// unchanged and is not even fetched while this is false; set it to true to show them again, marked "Draft", as in the home3 mock.
+const CL_SHOW_DRAFTS = false;
+function clAll(){
+  return clAll.p || (clAll.p = Promise.all([clData("classics"), CL_SHOW_DRAFTS ? clData("classics-draft") : null]).then(([C, Dr]) => {
+    if (!C) { clAll.p = null; return null; }
+    const seen = new Set(C.items.map(x => x.start.m + "|" + x.start.daf));
+    const drafts = ((Dr && Dr.items) || []).filter(x => x && x.id && x.start && CL_SEDER[x.start.m] && !seen.has(x.start.m + "|" + x.start.daf) && !C.items.some(v => v.id === x.id))
+      .map(x => ({ ...x, draft: true, group: CL_TIER[x.tier] || "hooked" }));
+    return { groups: C.groups || [], items: [...C.items, ...drafts], verified: C.items.filter(x => !x.partOf).length, drafts: drafts.length };
+  }));
+}
+// draft text is shown as written except a clause that points at another list's numbering ("X's #5 starts at…"; the draft file stays unchanged)
+const clClean = s => { s = String(s || ""); const parts = s.split(/(?<=[;.])\s+/).filter(x => !/\b\w+['’]s #\d+/.test(x)); const out = parts.join(" ").trim(); return out && out !== s.trim() ? out.replace(/;$/, ".") : out; };
+const clStepOk = p => !!(p && masInfo(p.m) && /^\d+[ab]$/.test(p.daf || "") && Number.isInteger(p.step) && p.step > 0);
+const clLaunchable = it => !it.draft || (clStepOk(it.start) && clStepOk(it.end) && it.start.m === it.end.m && dafIdx(it.start.m, it.start.daf) <= dafIdx(it.end.m, it.end.daf));
+const clHook = it => { const s = dispNames(clClean(it.summary || it.why || "")); const m = /^(.+?[.!?])(\s|$)/.exec(s); return m ? m[1] : s; };
+// a one-line hook is English with Hebrew names inside: each Hebrew run is isolated (<bdi>) so "רב חסדא's question" keeps its order
+const bidiHe = t => esc(t).replace(/[\u0590-\u05FF\uFB1D-\uFB4F](?:[\u0590-\u05FF\uFB1D-\uFB4F"״׳]|\s(?=[\u0590-\u05FF]))*/g, r => `<bdi class="he-in" lang="he" dir="rtl">${r}</bdi>`);
+const clDafRange = it => it.start.daf === it.end.daf ? `${it.start.daf} · steps ${it.start.step}–${it.end.step}` : `${it.start.daf} step ${it.start.step} → ${it.end.daf} step ${it.end.step}`;
+const clQ = it => [clName(it), it.question, it.summary, masName(it.start.m), it.start.m.replace(/_/g, " "), ...(ALIASES[it.start.m] || []), masInfo(it.start.m)[1], it.start.daf, it.end.daf, CL_SEDER[it.start.m]].filter(Boolean).join(" ").toLowerCase();
+const clGroupName = (C, it) => ((C.groups || []).find(g => g.id === it.group) || {}).name || it.tier || "";
+function clRow(it, C){
+  const nx = it.next ? C.items.find(x => x.id === it.next.id) : null;
+  const go = x => clLaunchable(x) ? clGo(x) : `<p class="clx-wait">This one opens once its start and end steps are set.</p>`;
+  const more = x => `<details class="clx-more"><summary>Where it starts and ends</summary><dl class="cl-facts">
+      <div><dt>Starts</dt><dd>${x.start.daf} step ${x.start.step} · <span class="he" lang="he">${heTxt(x.start.words || "")}</span></dd></div>
+      <div><dt>Ends</dt><dd>${x.end.daf} step ${x.end.step} · <span class="he" lang="he">${heTxt(x.end.words || "")}</span></dd></div>
+      ${x.background && x.background !== "None." && clClean(x.background) ? `<div><dt>Background</dt><dd>${px(dispNames(clClean(x.background)))}</dd></div>` : ""}</dl>
+      ${clClean(x.excluded) ? `<p class="cl-ex">${px(dispNames(clClean(x.excluded)))}</p>` : ""}</details>`;
+  const meta = x => [x.reading && x.reading.steps ? `${x.reading.steps} steps` : "", x.time || ""].filter(Boolean).join(" · ");
+  return `<article class="clx-row${it.draft ? " is-draft" : ""}" id="cl-${esc(it.id)}" data-q="${esc(clQ(it) + (nx ? " " + clQ(nx) : ""))}">
+    <div class="clx-top"><span class="clx-ref">${esc(clDafRange(it))}</span>${clGroupName(C, it) ? `<span class="clx-lv">${esc(clGroupName(C, it))}</span>` : ""}${it.draft ? `<span class="clx-draft" title="From the draft list, still being checked">Draft</span>` : ""}</div>
+    <h4 class="clx-t">${esc(clName(it))}</h4>
+    <p class="clx-hook" dir="ltr">${bidiHe(clHook(it))}</p>
+    ${meta(it) ? `<p class="clx-meta">${esc(meta(it))}</p>` : ""}
+    ${go(it)}
+    ${nx ? `<div class="clx-then" id="cl-${esc(nx.id)}"><div class="clx-top"><span class="clx-ref">${esc(clDafRange(nx))}</span></div><h5 class="clx-t">${esc(clName(nx))}</h5>${meta(nx) ? `<p class="clx-meta">${esc(meta(nx))}</p>` : ""}${go(nx)}</div>` : ""}
+    ${more(it)}
+  </article>`;
+}
+function clSederHtml(C){
+  const items = C.items.filter(x => !x.partOf);
+  return CL_SEDARIM.map(([sd, he]) => {
+    const masList = SEDARIM.flatMap(x => x[2]).filter(m => CL_SEDER[m] === sd);
+    const groups = masList.map(m => [m, items.filter(x => x.start.m === m).sort((a, b) => dafIdx(m, a.start.daf) - dafIdx(m, b.start.daf) || a.start.step - b.start.step)]).filter(g => g[1].length);
+    const n = groups.reduce((t, g) => t + g[1].length, 0);
+    const body = groups.length ? groups.map(([m, its]) => `<section class="clx-mas" id="clm-${m}"><h3 class="clx-mh"><span class="clx-mn">${esc(masName(m))}</span><span class="he clx-mhe" lang="he">${masInfo(m)[1]}</span><span class="clx-mc">${its.length}</span></h3>
+        <div class="clx-rows">${its.map(it => clRow(it, C)).join("")}</div></section>`).join("") : `<p class="clx-none" role="status">No classics here yet. We are still choosing the sugyos for ${sd}.</p>`;
+    return `<details class="clx-seder" id="sd-${sd}" data-seder="${sd}">
+      <summary><span class="clx-sw"><span class="clx-sn"><b>${sd}</b> <span class="clx-dot">·</span> <span class="he clx-she" lang="he" dir="rtl">${he}</span></span>
+        <span class="clx-ss">${n} ${n === 1 ? "sugya" : "sugyos"} · ${groups.map(g => esc(masName(g[0]))).join(", ") || "coming soon"}</span></span>${chev}</summary>
+      <div class="clx-body">${body}</div></details>`;
+  }).join("");
+}
+async function renderClassics(focusId){
+  current = null; document.title = "Classics · Gemara Clarity"; setChrome(false);
+  let view = "seder"; try { view = localStorage.getItem(CL_VIEW) === "level" ? "level" : "seder"; } catch {}
+  $("#view").innerHTML = `<div class="cl-wrap clx">
+      <header class="clx-head"><p class="clx-eyebrow">Classics</p><h1 class="cl-h">Famous sugyos to start with</h1>
+      <p class="cl-intro">Each one is a selected passage with a clear start and end. Pick one and learn it step by step with Sugya Flow.</p></header>
+      <div class="clx-tools">
+        <label class="clx-search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input type="search" id="clSearch" autocomplete="off" placeholder="Search a sugya, masechta or daf" aria-label="Search the Classics"></label>
+        <div class="cl-seg" role="group" aria-label="Order"><button type="button" data-clv="seder" aria-pressed="${view === "seder"}">By Seder</button><button type="button" data-clv="level" aria-pressed="${view === "level"}">Suggested order</button></div>
+      </div>
+      <nav class="clx-jump" aria-label="Jump to a Seder"${view === "seder" ? "" : " hidden"}>${CL_SEDARIM.map(([sd]) => `<button type="button" class="clx-chip" data-jump-seder="${sd}">${sd}<span class="clx-cn"></span></button>`).join("")}</nav>
+      <p class="cl-status clx-status">Selected passage; AI-generated explanations may contain mistakes. No haskama or rabbinic review.</p>
+      <div id="clList" aria-busy="true"><div class="skel"></div><div class="skel"></div></div>
+      <p class="clx-empty" id="clEmpty" hidden>No classic matches that yet.</p>
+    </div>`;
+  const C = await clAll(); const list = $("#clList"); if (!list || current) return;
+  if (!C) { list.removeAttribute("aria-busy"); list.innerHTML = `<p class="notice">Couldn’t load the Classics just now.</p>`; return; }
+  const draw = v => {
+    $(".clx-jump").hidden = v !== "seder";
+    if (v === "seder") list.innerHTML = clSederHtml(C);
+    else {
+      const items = C.items.filter(x => !x.partOf);
+      list.innerHTML = (C.groups || []).map(g => {
+        const its = items.filter(x => !x.draft && x.group === g.id).sort((a, b) => a.order - b.order), dr = items.filter(x => x.draft && x.group === g.id).sort((a, b) => a.order - b.order);
+        return its.length || dr.length ? `<section class="cl-theme"><h2 class="section-h">${esc(g.name)}</h2>${g.intro ? `<p class="cl-gi">${esc(g.intro)}</p>` : ""}${its.map(it => classicCard(it, C).replace('<article class="cl-card"', `<article data-q="${esc(clQ(it))}" class="cl-card"`)).join("")}${dr.length ? `<div class="clx-rows clx-draftlist">${dr.map(it => clRow(it, C)).join("")}</div>` : ""}</section>` : "";
+      }).join("");
+    }
+    $$(".clx-chip").forEach(b => { const s = $(`#sd-${b.dataset.jumpSeder}`); const n = s ? s.querySelectorAll(".clx-row").length : 0; $(".clx-cn", b).textContent = n; });
+    list.removeAttribute("aria-busy"); filter();
+  };
+  const filter = () => {
+    const q = ($("#clSearch").value || "").trim().toLowerCase(), words = q.split(/\s+/).filter(Boolean);
+    let shown = 0;
+    $$("[data-q]", list).forEach(el => { const ok = words.every(w => el.dataset.q.includes(w)); el.hidden = !ok; if (ok) shown++; });
+    $$(".clx-mas", list).forEach(s => { s.hidden = !s.querySelector("[data-q]:not([hidden])"); });
+    $$(".clx-seder", list).forEach(s => { const any = !!s.querySelector("[data-q]:not([hidden])"); s.hidden = words.length ? !any : false; if (words.length && any) s.open = true; }); // home3c: an empty Seder (Kodashim, Taharos) stays visible and says "No classics here yet"
+    $$(".cl-theme", list).forEach(s => { s.hidden = !s.querySelector("[data-q]:not([hidden])"); });
+    $("#clEmpty").hidden = shown > 0;
+  };
+  draw(view);
+  if (focusId) {
+    const f = document.getElementById("cl-" + focusId);
+    if (f) { const sd = f.closest(".clx-seder"); if (sd) sd.open = true; f.classList.add("arrive"); f.scrollIntoView({ block: "start" }); }
+  }
+  $("#clSearch").addEventListener("input", filter);
+  $(".clx-jump").addEventListener("click", e => {
+    const b = e.target.closest("[data-jump-seder]"); if (!b) return;
+    const s = $(`#sd-${b.dataset.jumpSeder}`); if (!s) return;
+    if (s.hidden) { $("#clSearch").value = ""; filter(); } // home3c: a chip always lands on its Seder, even mid-search
+    s.open = true; $$(".clx-chip").forEach(c => c.classList.toggle("on", c === b));
+    const top = ($("#topbar") || {}).offsetHeight || 0, bar = $(".clx-jump").offsetHeight || 0;
+    scrollTo({ top: scrollY + s.getBoundingClientRect().top - top - bar - 8, behavior: "smooth" });
+  });
+  $(".cl-seg").addEventListener("click", e => { const b = e.target.closest("[data-clv]"); if (!b) return; const v = b.dataset.clv; try { localStorage.setItem(CL_VIEW, v); } catch {} $$(".cl-seg [data-clv]").forEach(x => x.setAttribute("aria-pressed", x === b)); draw(v); });
+}
+// in Sugya Flow, a Classic's start and end steps are marked inside the amud (and the middle amudim of a longer one say so)
+function markClassics(c, a){
+  if (!a || c.tab !== "steps") return;
+  clData("classics").then(C => {
+    if (!C || current !== c) return;
+    for (const it of C.items) {
+      const s = clAt(it.start), e = clAt(it.end), back = it.partOf || it.id, name = `<a href="#/classics/${esc(back)}">${esc(clName(it))}</a>`;
+      const mark = (n, where, html) => { const el = document.getElementById("s" + n); if (el && !el.parentNode.querySelector(`.classic-mark[data-cl="${it.id}"][data-w="${where}"]`)) el.insertAdjacentHTML(where === "end" ? "afterend" : "beforebegin", `<div class="classic-mark ${where}" data-cl="${esc(it.id)}" data-w="${where}" role="note">${html}</div>`); };
+      if (s.m !== c.m) continue;
+      if (s.i === c.i) mark(it.start.step, "start", `<b>Classic starts here</b> · ${name} · ends at ${it.end.daf} step ${it.end.step}`);
+      if (e.i === c.i) mark(it.end.step, "end", `<b>Classic ends here</b> · ${name} · <a href="#/classics">More Classics</a>`);
+      if (s.i < c.i && c.i < e.i && a.steps && a.steps.length) mark(1, "start", `<b>Classic continues</b> · ${name} · this whole amud, to ${it.end.daf} step ${it.end.step}`);
+      if (it.context && refId(it.context.m, dafIdx(it.context.m, it.context.daf)) === c.id) mark(it.context.from, "ctx", `<b>Context for a Classic</b> · steps ${it.context.from}–${it.context.to} frame ${name}`);
+    }
+  });
+}
+// ---- end Classics ----
+
+// ---- home3: three ways in (Oct 16 2026, David: "three different options… the steps mode / Sugya Flow, Ameilus, and the classics") ----
+// Sugya Flow and Ameilus open the daf picker with that way chosen; Classics opens the library of famous sugyos.
+const H3_ART = {
+  shiur: `<svg viewBox="0 0 64 64" aria-hidden="true"><path class="a-ln" d="M19 17v12.5a5 5 0 0 0 5 5h3.5M27 34.5V47"/><circle cx="19" cy="17" r="5.5" fill="var(--mimra)"/><circle cx="27" cy="34.5" r="5.5" fill="var(--kashya)"/><circle cx="27" cy="49" r="5.5" fill="var(--terutz)"/><rect class="a-tx" x="29" y="14.5" width="22" height="5" rx="2.5"/><rect class="a-tx" x="37" y="32" width="17" height="5" rx="2.5"/><rect class="a-tx" x="37" y="46.5" width="13" height="5" rx="2.5"/></svg>`,
+  ameilus: `<svg viewBox="0 0 64 64" aria-hidden="true"><rect class="a-tx" x="10" y="15" width="34" height="5" rx="2.5"/><rect class="a-tx" x="10" y="26" width="26" height="5" rx="2.5"/><rect class="a-hl" x="10" y="37" width="20" height="6" rx="3"/><path class="a-ul" d="M10 48.5c6-2.6 12 2.6 18 0"/><g transform="rotate(42 44 36)"><rect x="39" y="12" width="10" height="34" rx="3" fill="var(--terutz)"/><rect x="39" y="12" width="10" height="7" rx="3" class="a-cap"/><path d="M39 46l5 9 5-9z" class="a-tip"/></g></svg>`,
+  classics: `<svg viewBox="0 0 64 64" aria-hidden="true"><path class="a-pg" d="M32 19c-6-4.2-13.5-5.2-21-4v32c7.5-1.2 15 0 21 4z"/><path class="a-pg" d="M32 19c6-4.2 13.5-5.2 21-4v32c-7.5-1.2-15 0-21 4z"/><path class="a-ln" d="M32 19v32"/><rect class="a-tx" x="15" y="23" width="12" height="3.2" rx="1.6"/><rect class="a-tx" x="15" y="30" width="10" height="3.2" rx="1.6"/><rect class="a-tx" x="37" y="23" width="12" height="3.2" rx="1.6"/><rect class="a-tx" x="39" y="30" width="10" height="3.2" rx="1.6"/><path d="M42 13h7v17l-3.5-3-3.5 3z" fill="var(--sheelah)"/></svg>`
+};
+function homeChoicesHtml(last){
+  const card = (k, h, p, go, attrs) => `<${k === "classics" ? "a" : "button type=\"button\""} class="h3-card h3-${k}" ${attrs}>
+      <span class="h3-art">${H3_ART[k]}</span>
+      <span class="h3-tx"><b class="h3-h">${h}</b><span class="h3-p">${p}</span><span class="h3-gotx">${go}</span></span>
+      <span class="h3-chev" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></span>
+      ${last === k ? `<span class="h3-last">Last used</span>` : ""}</${k === "classics" ? "a" : "button"}>`;
+  return `<div class="h3-grid">${card("shiur", "Sugya Flow", "Learn any daf step by step", "Choose a daf", `data-home-pick="shiur" aria-haspopup="dialog"`)}${card("ameilus", "Ameilus", "Try each step yourself first", "Choose a daf", `data-home-pick="ameilus" aria-haspopup="dialog"`)}${card("classics", "Classics", "Famous sugyos to start with", "Browse by Seder", `href="#/classics"`)}</div>`;
+}
 function renderHome(){
   current = null; document.title = "Gemara Clarity: every sugya, step by step";
   setChrome(false);
   const h = history_(), bm = bookmarks();
   const last = h[0] && parseId(h[0].id);
   const hasLast = !!(last && masInfo(last.m));
-  const start = hasLast ? last : { m: "Berakhot", i: idxOf(2, "a") }; // the two paths open where the reader left off, else Berakhot 2a
   // Round 2 (Oct 15 2026): one "continue where you left off" (no second tile for the same amud next to the paths), Daf Yomi beside it, both compact
   const tilesHtml = `<div class="home-grid two home-quick">
       ${hasLast ? `<a class="tile accent qt" href="${hashFor(last.m, last.i)}"><div class="k">Continue where you left off</div><div class="v">${label(last.m, last.i)} <span class="s he">${heLabel(last.m, last.i)}</span></div></a>` : ""}
       <a class="tile qt" id="yomiTile" href="#" aria-busy="true"><div class="k">Today’s Daf Yomi</div><div class="v"><span id="yomiV">…</span> <span class="s" id="yomiS"></span></div></a>
     </div>`;
   $("#view").innerHTML = `
-    <div class="hero hero-r2"><h1>Gemara Clarity</h1><p>Every sugya of Shas, two ways.</p>
-      <button class="searchbox" id="homeSearch"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>Go to any daf…</button></div>
-    <section class="home-paths" aria-labelledby="pathsH"><h2 class="section-h" id="pathsH">Two ways to learn</h2>
-      ${pathsHtml(mode => hashFor(start.m, start.i, "/" + mode), { last: modePref(), compact: true })}</section>
+    <div class="hero hero-h3"><h1>Gemara Clarity</h1><p>Every sugya of Shas, step by step.</p></div>
+    <section class="h3-choices" aria-labelledby="choicesH"><h2 class="h3-kicker" id="choicesH">How would you like to learn?</h2>
+      ${homeChoicesHtml(modePref())}</section>
+    <button class="searchbox h3-search" id="homeSearch"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>Go to any daf…</button>
     ${tilesHtml}
     ${bm.length ? `<div class="section-h">Bookmarks</div><div class="chips">${bm.map(id => { const p = parseId(id); return masInfo(p.m) ? `<a class="chip" href="${hashFor(p.m, p.i)}">★ ${label(p.m, p.i)}</a>` : ""; }).join("")}</div>` : ""}
     ${h.length > 1 ? `<div class="section-h">Recently learned</div><div class="chips">${h.slice(0, 10).map(x => { const p = parseId(x.id); return masInfo(p.m) ? `<a class="chip" href="${hashFor(p.m, p.i)}">${label(p.m, p.i)}${hasBreakdown(x.id) ? "" : ` <span class="x">text</span>`}</a>` : ""; }).join("")}</div>` : ""}
@@ -604,6 +819,7 @@ function renderHome(){
     <details class="legend-wrap"><summary class="section-h">The eight kinds of step <small>colour key</small></summary>
     <div class="legend">${Object.entries(TYPES).map(([he, t]) => `<div class="lg t-${t.k}"><span class="swatch"></span><div><b>${t.en} · <span class="en-he">${stepHe(he)}</span></b><div class="d">${t.d}</div></div></div>`).join("")}<div class="lg t-mishnah"><span class="swatch"></span><div><b>${MISHNAH.en} badge · <span class="en-he">${px(MISHNAH.he)}</span></b><div class="d">${MISHNAH.d}</div></div></div></div></details>`;
   $("#homeSearch").onclick = () => openPicker();
+  $$("[data-home-pick]").forEach(b => b.onclick = () => openPicker(undefined, undefined, b.dataset.homePick));
   wireLibrary();
   dafYomi().then(y => {
     const tile = $("#yomiTile"); if (!tile) return;
@@ -630,7 +846,7 @@ function updateNav(){
   $("#prevLabel").textContent = short(p); $("#nextLabel").textContent = short(n);
   $("#prevBtn").onclick = () => p && go(p.m, p.i); $("#nextBtn").onclick = () => n && go(n.m, n.i);
   const hasSteps = !!current.analysis;
-  $("#flowBtn").hidden = !hasSteps || current.tab !== "steps"; $("#reviewBtn").hidden = !hasSteps;
+  $("#flowBtn").hidden = !hasSteps || current.tab !== "steps";
   $("#stepCounter").textContent = hasSteps ? `${current.analysis.steps.length} steps` : "";
 }
 function flowHtml(steps){
@@ -691,13 +907,13 @@ function stepHtml(s, k, open){
     logicRows.length ? ["Logic", `<section class="logic box"><h4>Logic</h4><dl>${logicRows.map(r => `<dt>${r[0]}</dt><dd>${px(r[1])}</dd>`).join("")}</dl></section>`] : null].filter(Boolean);
   const total = (current && current.analysis && current.analysis.steps || []).length, nextN = total && k + 2 <= total ? k + 2 : 0;
   return `<article class="step t-${t.k}${open ? " open" : ""}${isMish(k) ? " is-mishnah" : ""}" id="s${k+1}" data-n="${k+1}">
-    <button class="sh" aria-expanded="${open}" aria-controls="x${k+1}"><span class="num">${k+1}</span><span class="tname">${t.en}<span class="he" lang="he">${stepHe(s.hebrewStepName)}</span>${isMish(k) ? MBADGE : ""}</span><span class="sh-x">${open ? "Hide" : "Explain"}${chev}</span></button>
+    <button class="sh" aria-expanded="${open}" aria-controls="x${k+1}"><span class="num">${k+1}</span><span class="tname">${t.en}<span class="he" lang="he">${stepHe(s.hebrewStepName)}</span>${isMish(k) ? MBADGE : ""}</span></button>
     <div class="sbody">
       ${relatedLineHtml(relatedSteps(current && current.id, s, k + 1, (current && current.analysis && current.analysis.steps || []).length || k + 1), k + 1)}
       <h3 class="stitle">${px(s.title)}</h3>
       ${s.stepSummary ? `<p class="ssum">${px(s.stepSummary)}</p>` : ""}
       <div class="phrases">${(s.phrases||[]).map((p, pi) => `<div class="ph" data-ph="${pi}"><div class="pa he" lang="he">${heWords(p.aramaic)}</div><div class="pe">${px(p.english)}${p.notes ? `<div class="pnote">${px(p.notes)}</div>` : ""}</div></div>`).join("")}</div>
-      <button class="explain-btn" aria-expanded="${open}" aria-controls="x${k+1}">${open ? "Hide explanation" : "Explain this step"}</button>
+      <button class="explain-btn" aria-expanded="${open}" aria-controls="x${k+1}"><span class="xb-l">${open ? "Hide explanation" : "Explain"}</span>${chev}</button>
       <div class="explain" id="x${k+1}" ${open ? "" : "hidden"}>
         ${P("What’s happening", s.whatsHappening)}
         ${P("In plain words", s.simpleTranslation)}
@@ -762,7 +978,6 @@ function renderDaf(){
         ${a ? `<button class="ovbtn" id="ovBtn" aria-expanded="${ovOpen()}" aria-controls="ovPanel"><span class="ovl">${ovOpen() ? "Hide overview" : "Show overview"}</span>${chev}</button>` : ""}
         <div class="headactions">
           <button class="btn ${bm ? "on" : ""}" id="bmBtn" aria-pressed="${bm}" aria-label="${bm ? "Bookmarked" : "Bookmark"}" title="${bm ? "Bookmarked" : "Bookmark"}"><svg viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4z"/></svg><span class="hl">${bm ? "Bookmarked" : "Bookmark"}</span></button>
-          ${a ? `<a class="btn" href="${hashFor(c.m, c.i, "/review")}" aria-label="Review quiz" title="Review quiz"><svg viewBox="0 0 24 24"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9"/></svg><span class="hl">Review</span></a>` : ""}
           <button class="btn" id="shareBtn" aria-label="Share" title="Share"><svg viewBox="0 0 24 24"><path d="M4 12v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7"/><path d="M16 6l-4-4-4 4"/><path d="M12 2v14"/></svg><span class="hl">Share</span></button>
           <button class="btn" id="pdfBtn" aria-label="Print or save as PDF" title="Print or save as PDF"><svg viewBox="0 0 24 24"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 14h12v8H6z"/></svg><span class="hl">PDF</span></button>
         </div>
@@ -785,7 +1000,7 @@ function renderDaf(){
   if (c.tab === "text" || !a) renderText();
   const p = neighbor(c.m, c.i, -1), n = neighbor(c.m, c.i, 1);
   $("#endnav").innerHTML = `${p ? `<a class="btn" href="${hashFor(p.m, p.i)}">‹ ${label(p.m, p.i)}</a>` : ""}${n ? `<a class="btn primary" href="${hashFor(n.m, n.i)}">${label(n.m, n.i)} ›</a>` : ""}`;
-  markMishnah();
+  markMishnah(); markClassics(c, a);
   if (pendingJump && a && pendingJump.id === c.id && c.tab === "steps") { const k = pendingJump.n; pendingJump = null; setTimeout(() => { const el = document.getElementById("s" + k); if (!el || current !== c) return; toggleStep(el, true); jumpTo(k); }, 0); }
 }
 /* ---------- Mishnah badge: worked out here from Sefaria's מתני׳ / גמ׳ markers, nothing regenerated ---------- */
@@ -888,7 +1103,7 @@ function toggleStep(card, force){
   const ex = $(".explain", card); const open = force ?? ex.hidden;
   ex.hidden = !open; card.classList.toggle("open", open);
   $$("[aria-controls]", card).forEach(b => b.setAttribute("aria-expanded", open));
-  $(".explain-btn", card).textContent = open ? "Hide explanation" : "Explain this step";
+  $(".explain-btn .xb-l", card).textContent = open ? "Hide explanation" : "Explain"; // home3b (David, Oct 16 2026): Explain sits at the END of the step
   const x = $(".sh-x", card); if (x) x.firstChild.textContent = open ? "Hide" : "Explain";
 }
 function jumpTo(n, flash){
@@ -925,90 +1140,6 @@ window.addEventListener("scroll", () => {
   const h = document.documentElement; const max = h.scrollHeight - h.clientHeight;
   $("#progressFill").style.width = current && max > 0 ? Math.min(100, h.scrollTop / max * 100) + "%" : "0";
 }, { passive: true });
-
-/* ---------- review ---------- */
-function shuffle(a){ a = a.slice(); for (let k = a.length - 1; k > 0; k--) { const j = Math.floor(Math.random() * (k + 1)); [a[k], a[j]] = [a[j], a[k]]; } return a; }
-function buildQuiz(steps){
-  const qs = [];
-  steps.forEach((s, k) => {
-    const t = TYPES[s.hebrewStepName]; if (!t) return;
-    const pool = Object.entries(TYPES).filter(([he]) => he !== s.hebrewStepName);
-    const near = (CONFUSABLE[t.k] || []).map(kk => pool.find(([, v]) => v.k === kk)).filter(Boolean);
-    const rest = shuffle(pool.filter(p => !near.includes(p)));
-    const opts = shuffle([[s.hebrewStepName, t], ...near.slice(0, 2), ...rest].slice(0, 4));
-    qs.push({ kind: "type", k, prompt: "What is this step doing?", he: (s.phrases||[]).map(p => p.aramaic).join(" "), en: s.simpleTranslation || (s.phrases||[]).map(p => p.english).join(" "),
-      opts: opts.map(([he, v]) => ({ html: `<span class="swatch t-${v.k}"></span><span><span class="en-he">${stepHe(he)}</span> · ${v.en}</span>`, right: he === s.hebrewStepName })),
-      explain: `${px(s.title || "")}${s.whatsHappening ? " · " + px(s.whatsHappening) : ""}` });
-    if (k < steps.length - 1 && steps.length >= 4) {
-      const nx = steps[k + 1]; const others = shuffle(steps.filter((_, j) => j !== k + 1 && j !== k)).slice(0, 2);
-      const lbl = st => { const tt = TYPES[st.hebrewStepName] || TYPES["מימרא"]; return `<span class="swatch t-${tt.k}"></span><span>${px(st.title || st.stepSummary)}</span>`; };
-      qs.push({ kind: "next", k, prompt: "What comes next?", he: "", en: `Step ${k+1}: ${s.title || ""}. ${s.stepSummary || ""}`,
-        opts: shuffle([{ html: lbl(nx), right: true }, ...others.map(o => ({ html: lbl(o), right: false }))]),
-        explain: `Step ${k+2} is a ${esc((TYPES[nx.hebrewStepName]||{}).en || "step")}: ${px(nx.stepSummary || nx.title || "")}` });
-    }
-  });
-  const types = shuffle(qs.filter(q => q.kind === "type")).slice(0, 8), nexts = shuffle(qs.filter(q => q.kind === "next")).slice(0, 4);
-  return [...types, ...nexts].sort((a, b) => a.k - b.k || (a.kind === "type" ? -1 : 1));
-}
-function renderReview(m, i){
-  const id = refId(m, i);
-  const start = a => {
-    current = current && current.id === id ? current : { m, i, id, analysis: a, tab: "steps" };
-    current.analysis = a; setChrome(true); updateNav(); $(".layout").classList.remove("with-side"); $("#sidebar").innerHTML = ""; $("#flowBtn").hidden = true;
-    document.title = `Review ${label(m, i)} · Gemara Clarity`;
-    const terms = []; const seen = new Set();
-    a.steps.forEach(s => (s.keyTerms||[]).forEach(t => { const key = (t.term||"").replace(NIKUD, ""); if (t.term && !seen.has(key)) { seen.add(key); terms.push(t); } }));
-    $("#view").innerHTML = `<section class="card dafhead"><div class="refline"><h1>Review ${esc(label(m, i))}</h1><span class="he">${heLabel(m, i)}</span></div>
-      <p class="overview" style="margin-top:8px">${px(a.mainTopic || "", a)}</p>
-      <div class="tabs" role="tablist"><button role="tab" data-r="flow" aria-selected="true">Flow quiz</button></div></section>
-      <section class="card quiz" id="quiz" style="margin-top:14px"></section>
-      <div class="endnav"><a class="btn" href="${hashFor(m, i)}">‹ Back to the daf</a></div>`;
-    $$("[data-r]").forEach(b => b.onclick = () => { $$("[data-r]").forEach(x => x.setAttribute("aria-selected", x === b)); b.dataset.r === "flow" ? runQuiz(a) : runCards(terms); });
-    runQuiz(a);
-  };
-  if (current && current.id === id && current.analysis) return start(current.analysis);
-  $("#view").innerHTML = `<div class="loading"><div class="spinner"></div>Preparing review…</div>`;
-  (async () => { const a = await loadCloudAnalysis(id).catch(() => null); if (a) start(a); else { location.hash = hashFor(m, i); } })();
-}
-function runQuiz(a){
-  const qs = buildQuiz(a.steps); let n = 0, score = 0; const box = $("#quiz");
-  const show = () => {
-    if (n >= qs.length) {
-      box.innerHTML = `<div class="score">${score} / ${qs.length}</div><p style="text-align:center;color:var(--muted)">${score === qs.length ? "Every step in place. Yasher koach!" : score >= qs.length * .7 ? "Strong. Look again at the ones you missed." : "Worth another pass through the steps."}</p>
-        <div class="endnav"><button class="btn" id="again">Try again</button><a class="btn primary" href="${hashFor(current.m, current.i)}">Back to the daf</a></div>`;
-      $("#again").onclick = () => runQuiz(a); return;
-    }
-    const q = qs[n];
-    box.innerHTML = `<div class="qmeta"><span>Question ${n+1} of ${qs.length}</span><span>${score} right</span></div><div class="qbar"><div style="width:${n / qs.length * 100}%"></div></div>
-      <p class="qprompt">${q.prompt}</p>
-      <div class="qtext">${q.he ? `<div class="he" lang="he">${heTxt(q.he)}</div>` : ""}${q.en ? `<div class="en">${px(q.en)}</div>` : ""}</div>
-      <div class="opts">${q.opts.map((o, j) => `<button class="opt" data-o="${j}">${o.html}</button>`).join("")}</div><div id="fb"></div>`;
-    $$(".opt", box).forEach(b => b.onclick = () => {
-      if (box.dataset.answered === "1") return; box.dataset.answered = "1";
-      const o = q.opts[+b.dataset.o]; if (o.right) score++;
-      $$(".opt", box).forEach((x, j) => { if (q.opts[j].right) x.classList.add("right"); else if (x === b) x.classList.add("wrong"); x.disabled = true; });
-      $("#fb", box).innerHTML = `<div class="feedback"><b class="${o.right ? "ok" : "no"}">${o.right ? "Right." : "Not quite."}</b> ${q.explain}<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="nextQ">${n + 1 < qs.length ? "Next" : "See score"}</button><a class="btn" href="${hashFor(current.m, current.i)}" data-step="${q.k+1}">See step ${q.k+1}</a></div></div>`;
-      $("#nextQ").onclick = () => { n++; box.dataset.answered = "0"; show(); }; $("#nextQ").focus();
-      $("[data-step]", box).onclick = e => { e.preventDefault(); const k = q.k + 1; location.hash = hashFor(current.m, current.i); setTimeout(() => jumpTo(k), 400); };
-    });
-  };
-  box.dataset.answered = "0"; show();
-}
-function runCards(terms){
-  const box = $("#quiz"); if (!terms.length) { box.innerHTML = `<p class="empty">No key terms on this amud.</p>`; return; }
-  let order = shuffle(terms), n = 0, flipped = false;
-  const show = () => {
-    const t = order[n];
-    box.innerHTML = `<div class="qmeta"><span>Card ${n+1} of ${order.length}</span><span>Tap the card to flip</span></div><div class="qbar"><div style="width:${(n+1) / order.length * 100}%"></div></div>
-      <button class="flash" id="card" aria-live="polite">${flipped ? `<span><span class="he" style="display:block;font-size:calc(22px * var(--scale));opacity:.7">${heTxt(t.term)}</span><span class="m">${px(t.meaning)}</span></span>` : `<span class="he" lang="he">${heTxt(t.term)}</span>`}</button>
-      <div class="endnav"><button class="btn" id="prevC" ${n ? "" : "disabled"}>‹ Back</button><button class="btn" id="shuf">Shuffle</button><button class="btn primary" id="nextC">${n + 1 < order.length ? "Next ›" : "Start over"}</button></div>`;
-    $("#card").onclick = () => { flipped = !flipped; show(); };
-    $("#prevC").onclick = () => { n = Math.max(0, n - 1); flipped = false; show(); };
-    $("#nextC").onclick = () => { n = (n + 1) % order.length; flipped = false; show(); };
-    $("#shuf").onclick = () => { order = shuffle(order); n = 0; flipped = false; show(); };
-  };
-  show();
-}
 
 /* ---------- Ameilus mode: #/<Masechet>/<daf><a|b>/ameilus ----------
    The learner reads the raw daf and marks where each passage ends (ameilus/ui.js + ameilus/core.js, with the
@@ -1184,30 +1315,42 @@ function route(keepScroll){
   const parts = h.split("/").filter(Boolean);
   if (parts[2] !== "ameilus" && (amMounted || (current && current.am) || document.body.classList.contains("am-mode"))) amTeardown();
   if (!parts.length) return renderHome();
+  if (parts[0] === "classics") return renderClassics(parts[1]);
   const [m, df, extra] = parts; const info = masInfo(m);
   const dm = (df || "").match(/^(\d{1,3})([ab])?$/);
   if (!info || !dm) { if (info) { openPicker(m); return; } return renderHome(); }
   let i = idxOf(+dm[1], dm[2] || "a"); i = Math.min(Math.max(i, info[2]), info[3]);
-  if (extra === "review") return renderReview(m, i);
+  // rv1: the Review feature is gone; an old #/<m>/<daf>/review link opens the same daf (the reader's last way of learning it, else Sugya Flow)
+  if (extra === "review") { location.replace(hashFor(m, i, modePref() ? "" : "/shiur")); return; }
   if (extra === "ameilus") { if (keepScroll && amMounted && current && current.am && current.id === refId(m, i)) return; return renderAmeilus(m, i); }
   const sj = /^s(\d+)$/.exec(extra || ""); if (sj && !keepScroll) pendingJump = { id: refId(m, i), n: +sj[1] };
   if (keepScroll && current && current.id === refId(m, i)) { const y = scrollY; renderDaf(); scrollTo(0, y); return; }
   // which way to open: an explicit Shiur link (/shiur, /s<n>) is a choice; a plain link follows the remembered
   // choice; with none remembered, an amud that Ameilus can open asks first (amud chooser)
-  const explicit = extra === "shiur" || !!sj, id = refId(m, i);
+  const explicit = extra === "steps" || extra === "shiur" || !!sj, id = refId(m, i); // home3b: /steps, with the old /shiur kept as an alias
   const canAm = !cloudLoaded || !cloudIds.size || hasBreakdown(id);
   if (explicit) setModePref("shiur");
   else if (canAm && modePref() === "ameilus") { location.replace(hashFor(m, i, "/ameilus")); return; }
   else if (canAm && !modePref()) return openDaf(m, i, null, true);
   openDaf(m, i);
 }
-window.addEventListener("hashchange", () => route(false));
+// after a route change to Home or Classics, the new view's main heading takes a programmatic focus (only when focus was lost; never
+// with a sheet, a notice or the pasuk pop-up open). Ameilus places its own focus; the amud (Sugya Flow) view is unchanged.
+function focusAfterRoute(){
+  const a = document.activeElement; if (a && a !== document.body) return;
+  const p = decodeURIComponent(location.hash.replace(/^#\/?/, "")).split("/").filter(Boolean);
+  if (p.length && p[0] !== "classics") return;
+  if (!$("#sheet").hidden || $("#pasukPop") || document.querySelector('[role="dialog"]:not([hidden]), [role="alertdialog"]:not([hidden])')) return;
+  const card = p[0] === "classics" && p[1] ? document.getElementById("cl-" + p[1]) : null; // back from a Classic: its own card (already scrolled into view)
+  const h = card ? (card.querySelector("h2, h3, h4") || card) : document.querySelector("#view h1, #view h2"); if (!h) return;
+  if (!h.hasAttribute("tabindex")) h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true });
+}
+window.addEventListener("hashchange", () => { Promise.resolve(route(false)).then(() => requestAnimationFrame(focusAfterRoute), () => {}); });
 $("#homeBtn").onclick = () => { location.hash = "#/"; };
 $("#refBtn").onclick = () => openPicker();
 $("#settingsBtn").onclick = () => { openSettings(); if (current && current.am) amSettingsSection($("#sheetBody")); };
 $("#sheetClose").onclick = closeSheet; $("#backdrop").onclick = closeSheet;
 $("#flowBtn").onclick = () => { if (current && current.analysis) openSheet(`The steps of ${label(current.m, current.i)}`, flowHtml(current.analysis.steps), b => { const cur = $$(".step.cur")[0]; if (cur) { const f = $(`.fnode[data-jump="${cur.dataset.n}"]`, b); f && f.classList.add("cur"); f && f.scrollIntoView({ block: "center" }); } b.onclick = e => { const j = e.target.closest("[data-jump]"); if (j) { e.preventDefault(); jumpTo(+j.dataset.jump); } }; }); };
-$("#reviewBtn").onclick = () => current && (location.hash = hashFor(current.m, current.i, "/review"));
 document.addEventListener("keydown", e => {
   if (e.key === "Escape" && wfOpen()) return closeWordFlow(); // kt3: word help first
   if (e.key === "Escape" && !$("#sheet").hidden) return closeSheet();

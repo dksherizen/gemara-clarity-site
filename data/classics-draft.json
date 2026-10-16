@@ -1,0 +1,2170 @@
+{
+ "note": "Classics v2 DRAFT (Oct 16 2026), for review only; not built, not live. The next batch beyond the 4 v1 items and Instinct's 12-entry list (none of those 16 repeated). Same schema as v1 plus Instinct's fields (n, tier, title, why, daf, app_links, where, time, audit, fully_audited) and two draft-only fields (confidence, note). Start/end steps and opening words are taken from the live v95 data files. 'words' counts the Hebrew/Aramaic Gemara text in the range only. Selected passage; AI-generated explanations may contain mistakes. No haskama or rabbinic review.",
+ "themes": [
+  {
+   "id": "prayer",
+   "name": "Prayer & blessings"
+  },
+  {
+   "id": "ownership",
+   "name": "Disputes & ownership"
+  },
+  {
+   "id": "authority",
+   "name": "Authority, disagreement and the cost of hurting others"
+  },
+  {
+   "id": "damages",
+   "name": "Damages & responsibility"
+  },
+  {
+   "id": "shabbos",
+   "name": "Shabbos"
+  },
+  {
+   "id": "festivals",
+   "name": "Festivals & the calendar"
+  },
+  {
+   "id": "marriage",
+   "name": "Marriage & family"
+  },
+  {
+   "id": "courts",
+   "name": "Courts, life & punishment"
+  },
+  {
+   "id": "concepts",
+   "name": "Key halachic concepts"
+  },
+  {
+   "id": "aggadah",
+   "name": "Stories & beliefs (aggadah)"
+  }
+ ],
+ "items": [
+  {
+   "id": "ber2a-shema",
+   "theme": "prayer",
+   "order": 1,
+   "n": 1,
+   "tier": "Getting hooked",
+   "title": "From when do we say the evening Shema?",
+   "question": "From what time may the evening שמע be said, and until when?",
+   "summary": "The first Mishnah in Shas: three views on the deadline, רבן גמליאל's sons coming home late, and why the Sages set midnight. Then the Gemara asks why the Mishnah starts with evening at all.",
+   "why": "The first Mishnah in Shas: three views on the deadline, רבן גמליאל's sons coming home late, and why the Sages set midnight. Then the Gemara asks why the Mishnah starts with evening at all.",
+   "daf": "Berakhot 2a",
+   "app_links": [
+    "https://gemara-clarity.sites.tab.bot/#/Berakhot/2a"
+   ],
+   "where": "Steps 1 to 14 (14 steps)",
+   "time": "about 20 minutes",
+   "start": {
+    "m": "Berakhot",
+    "daf": "2a",
+    "step": 1,
+    "words": "מֵאֵימָתַי קוֹרִין אֶת שְׁמַע בָּעֲרָבִין?"
+   },
+   "end": {
+    "m": "Berakhot",
+    "daf": "2a",
+    "step": 14,
+    "words": "וַהֲדַר פָּרֵישׁ מִילֵּי דְעַרְבִית"
+   },
+   "excluded": "Stops before 'why not say when the stars come out' and the תרומה discussion (steps 15–19), which runs onto 2b.",
+   "background": "What קריאת שמע is; that a Mishnah is the base text and the Gemara asks about it.",
+   "reading": {
+    "steps": 14,
+    "words": 176
+   },
+   "audit": "Not tagged yet: Tab has no audit record for this range. Please tag it from your audit list.",
+   "fully_audited": null,
+   "confidence": "high",
+   "note": "Opening of Shas; Daf Yomi starts here."
+  },
+  {
+   "id": "ber6a-tefillin",
+   "theme": "prayer",
+   "order": 2,
+   "n": 2,
+   "tier": "Getting hooked",
+   "title": "God's tefillin",
+   "question": "If God wears תפילין, what is written in them?",
+   "summary": "From \"ה׳ swore by His right hand and His strong arm\" the Gemara learns that God wears תפילין. Ours praise Him; His praise ישראל: \"who is like Your people Israel, one nation in the land\". Then it fits the verses into four compartments.",
+   "why": "From \"ה׳ swore by His right hand and His strong arm\" the Gemara learns that God wears תפילין. Ours praise Him; His praise ישראל: \"who is like Your people Israel, one nation in the land\". Then it fits the verses into four compartments.",
+   "daf": "Berakhot 6a",
+   "app_links": [
+    "https://gemara-clarity.sites.tab.bot/#/Berakhot/6a"
+   ],
+   "where": "Steps 23 to 35 (13 steps)",
+   "time": "about 20 minutes",
+   "start": {
+    "m": "Berakhot",
+    "daf": "6a",
+    "step": 23,
+    "words": "אָמַר רַבִּי אָבִין בַּר רַב אַדָּא"
+   },
+   "end": {
+    "m": "Berakhot",
+    "daf": "6a",
+    "step": 35,
+    "words": "״וּלְתִתְּךָ עֶלְיוֹן״ — בְּחַד בֵּיתָא"
+   },
+   "excluded": "Starts after the teachings on the שכינה resting on ten, three and two (steps 18–22).",
+   "background": "What תפילין are and that they have four compartments (בתים).",
+   "reading": {
+    "steps": 13,
+    "words": 217
+   },
+   "audit": "Not tagged yet: Tab has no audit record for this range. Please tag it from your audit list.",
+   "fully_audited": null,
+   "confidence": "high",
+   "note": "6b step 1 closes the thought in one line (\"all are written on His arm\"); could add it."
+  },
+  {
+   "id": "ber7a-godprays",
+   "theme": "prayer",
+   "order": 3,
+   "n": 3,
+   "tier": "First win",
+   "title": "God prays",
+   "question": "Does God pray, and what does He pray for?",
+   "summary": "God's own prayer: \"May My mercy overcome My anger\". Then רבי ישמעאל in the קדש הקדשים is asked to bless God, and the lesson that an ordinary person's blessing is not small.",
+   "why": "God's own prayer: \"May My mercy overcome My anger\". Then רבי ישמעאל in the קדש הקדשים is asked to bless God, and the lesson that an ordinary person's blessing is not small.",
+   "daf": "Berakhot 7a",
+   "app_links": [
+    "https://gemara-clarity.sites.tab.bot/#/Berakhot/7a"
+   ],
+   "where": "Steps 1 to 5 (5 steps)",
+   "time": "about 5 minutes",
+   "start": {
+    "m": "Berakhot",
+    "daf": "7a",
+    "step": 1,
+    "words": "אָמַר רַבִּי יוֹחָנָן מִשּׁוּם רַבִּי יוֹסֵי"
+   },
+   "end": {
+    "m": "Berakhot",
+    "daf": "7a",
+    "step": 5,
+    "words": "קַלָּה בְּעֵינֶיךָ"
+   },
+   "excluded": "Stops before the teaching on calming an angry person and בלעם (steps 6 on).",
+   "background": "None.",
+   "reading": {
+    "steps": 5,
+    "words": 122
+   },
+   "audit": "Not tagged yet: Tab has no audit record for this range. Please tag it from your audit list.",
+   "fully_audited": null,
+   "confidence": "medium",
+   "note": "Short. Could extend to step 20 for the \"God's anger lasts a moment\" piece."
+  },
+  {
+   "id": "bm21a-eilu",
+   "theme": "ownership",
+   "order": 4,
+   "n": 4,
+   "tier": "Getting hooked",
+   "title": "Eilu Metzios: what may a finder keep?",
+   "question": "When you find something, when may you keep it and when must you announce it?",
+   "summary": "The Mishnah of אלו מציאות lists what is the finder's (scattered fruit, scattered coins) and what must be announced. The Gemara starts with \"how much is scattered?\": a קב over four אמות, and a string of questions left unresolved.",
+   "why": "The Mishnah of אלו מציאות lists what is the finder's (scattered fruit, scattered coins) and what must be announced. The Gemara starts with \"how much is scattered?\": a קב over four אמות, and a string of questions left unresolved.",
+   "daf": "Bava Metzia 21a",
+   "app_links": [
+    "https://gemara-clarity.sites.tab.bot/#/Bava_Metzia/21a"
+   ],
+   "where": "Steps 8 to 21 (14 steps)",
+   "time": "about 20 minutes",
+   "start": {
+    "m": "Bava_Metzia",
+    "daf": "21a",
+    "step": 8,
+    "words": "מַתְנִי׳ אֵלּוּ מְצִיאוֹת שֶׁלּוֹ"
+   },
+   "end": {
+    "m": "Bava_Metzia",
+    "daf": "21a",
+    "step": 21,
+    "words": "מַאי? תֵּיקוּ"
+   },
+   "excluded": "Starts at the new perek (steps 1–7 finish שנים אוחזין); stops before the יאוש discussion (step 22 on).",
+   "background": "השבת אבידה: the mitzvah to return a lost item; what a סימן (identifying mark) is.",
+   "reading": {
+    "steps": 14,
+    "words": 314
+   },
+   "continues": {
+    "m": "Bava_Metzia",
+    "daf": "21b",
+    "label": "Continue: יאוש שלא מדעת"
+   },
+   "audit": "Not tagged yet: Tab has no audit record for this range. Please tag it from your audit list.",
+   "fully_audited": null,
+   "confidence": "high",
+   "note": "Leads straight into the יאוש שלא מדעת item."
+  },
+  {
+   "id": "bb28a-chazakah",
+   "theme": "ownership",
+   "order": 5,
+   "n": 5,
+   "tier": "Getting hooked",
+   "title": "Chezkas habatim: three years",
+   "question": "How does living on a property for three years prove you own it?",
+   "summary": "The Mishnah: houses, pits and fields are held for three years; רבי ישמעאל and רבי עקיבא shorten it. The Gemara looks for the source of three years and tries the ox that gored three times.",
+   "why": "The Mishnah: houses, pits and fields are held for three years; רבי ישמעאל and רבי עקיבא shorten it. The Gemara looks for the source of three years and tries the ox that gored three times.",
+   "daf": "Bava Batra 28a",
+   "app_links": [
+    "https://gemara-clarity.sites.tab.bot/#/Bava_Batra/28a"
+   ],
+   "where": "Steps 1 to 8 (8 steps)",
+   "time": "about 10 minutes",
+   "start": {
+    "m": "Bava_Batra",
+    "daf": "28a",
+    "step": 1,
+    "words": "חֶזְקַת הַבָּתִּים, וְהַבּוֹרוֹת, וְהַשִּׁיחִין"
+   },
+   "end": {
+    "m": "Bava_Batra",
+    "daf": "28a",
+    "step": 8,
+    "words": "הָוֵי מוּעָד"
+   },
+   "excluded": "The whole amud; the source discussion continues on 28b.",
+   "background": "What a חזקה is: use that backs a claim of a lost deed.",
+   "reading": {
+    "steps": 8,
+    "words": 165
+   },
+   "continues": {
+    "m": "Bava_Batra",
+    "daf": "28b",
+    "label": "Continue on 28b"
+   },
+   "audit": "Not tagged yet: Tab has no audit record for this range. Please tag it from your audit list.",
+   "fully_audited": null,
+   "confidence": "high",
+   "note": "Short amud (8 steps); 28b has the main source discussion."
+  },
+  {
+   "id": "bb2a-mechitza",
+   "theme": "ownership",
+   "order": 6,
+   "n": 6,
+   "tier": "Getting hooked",
+   "title": "Partners build a wall",
+   "question": "Two partners want to divide a courtyard: who pays for the wall, and why does it matter?",
+   "summary": "The opening Mishnah of Bava Basra: partners build the wall in the middle and each gives land. The Gemara asks what מחיצה means, which decides whether being seen (היזק ראיה) counts as damage.",
+   "why": "The opening Mishnah of Bava Basra: partners build the wall in the middle and each gives land. The Gemara asks what מחיצה means, which decides whether being seen (היזק ראיה) counts as damage.",
+   "daf": "Bava Batra 2a",
+   "app_links": [
+    "https://gemara-clarity.sites.tab.bot/#/Bava_Batra/2a"
+   ],
+   "where": "Steps 1 to 7 (7 steps)",
+   "time": "about 10 minutes",
+   "start": {
+    "m": "Bava_Batra",
+    "daf": "2a",
+    "step": 1,
+    "words": "הַשּׁוּתָּפִין שֶׁרָצוּ לַעֲשׂוֹת מְחִיצָה בְּחָצֵר"
+   },
+   "end": {
+    "m": "Bava_Batra",
+    "daf": "2a",
+    "step": 7,
+    "words": "אוֹמֵר לוֹ: ״גְּדוֹר״"
+   },
+   "excluded": "The whole amud; the היזק ראיה question continues on 2b.",
+   "background": "None.",
+   "reading": {
+    "steps": 7,
+    "words": 148
+   },
+   "continues": {
+    "m": "Bava_Batra",
+    "daf": "2b",
+    "label": "Continue on 2b"
+   },
+   "audit": "Not tagged yet: Tab has no audit record for this range. Please tag it from your audit list.",
+   "fully_audited": null,
+   "confidence": "high",
+   "note": "Opening of Bava Basra."
+  },
+  {
+   "id": "bm62a-chayecha",
+   "theme": "ownership",
+   "order": 7,
+   "n": 7,
+   "tier": "First win",
+   "title": "Two travelers, one jug of water",
+   "question": "Two people are in the desert with water for one: share it, or does the owner drink?",
+   "summary": "בן פטורא says share it so neither sees the other die; רבי עקיבא learns from \"your brother shall live with you\" that your own life comes first.",
+   "why": "בן פטורא says share it so neither sees the other die; רבי עקיבא learns from \"your brother shall live with you\" that your own life comes first.",
+   "daf": "Bava Metzia 62a",
+   "app_links": [
+    "https://gemara-clarity.sites.tab.bot/#/Bava_Metzia/62a"
+   ],
+   "where": "Steps 1 to 3 (3 steps)",
+   "time": "about 5 minutes",
+   "start": {
+    "m": "Bava_Metzia",
+    "daf": "62a",
+    "step": 1,
+    "words": "״וְחֵי אָחִיךָ עִמָּךְ״"
+   },
+   "end": {
+    "m": "Bava_Metzia",
+    "daf": "62a",
+    "step": 3,
+    "words": "חַיֶּיךָ קוֹדְמִים לְחַיֵּי חֲבֵירֶךָ"
+   },
+   "excluded": "Starts inside the laws of interest; the verse is quoted there.",
+   "background": "None.",
+   "reading": {
+    "steps": 3,
+    "words": 68
+   },
+   "audit": "Not tagged yet: Tab has no audit record for this range. Please tag it from your audit list.",
+   "fully_audited": null,
+   "confidence": "high",
+   "note": "Very short (3 steps). Step 1 is the interest discussion that brings the verse."
+  },
+  {
+   "id": "bm30b-lifnim",
+   "theme": "ownership",
+   "order": 8,
+   "n": 8,
+   "tier": "Getting hooked",
+   "title": "Beyond the letter of the law",
+   "question": "If the law exempts you, is that the end of the matter?",
+   "summary": "רבי ישמעאל בר' יוסי is exempt from helping with a load but pays for the wood anyway. The Gemara learns \"beyond the line of the law\" from a verse, and says ירושלים was destroyed because people kept only to strict law.",
+   "why": "רבי ישמעאל בר' יוסי is exempt from helping with a load but pays for the wood anyway. The Gemara learns \"beyond the line of the law\" from a verse, and says ירושלים was destroyed because people kept only to strict law.",
+   "daf": "Bava Metzia 30b",
+   "app_links": [
+    "https://gemara-clarity.sites.tab.bot/#/Bava_Metzia/30b"
+   ],
+   "where": "Steps 9 to 22 (14 steps)",
+   "time": "about 20 minutes",
+   "start": {
+    "m": "Bava_Metzia",
+    "daf": "30b",
+    "step": 9,
+    "words": "רַבִּי יִשְׁמָעֵאל בְּרַבִּי יוֹסֵי הֲוָה קָאָזֵיל בְּאוֹרְחָא"
+   },
+   "end": {
+    "m": "Bava_Metzia",
+    "daf": "30b",
+    "step": 22,
+    "words": "וְלָא עֲבַדוּ לִפְנִים מִשּׁוּרַת הַדִּין"
+   },
+   "excluded": "Stops before the next Mishnah on what counts as a lost item (step 23).",
+   "background": "That an elder is exempt from returning an item beneath his dignity (זקן ואינו לפי כבודו).",
+   "reading": {
+    "steps": 14,
+    "words": 230
+   },
+   "audit": "Not tagged yet: Tab has no audit record for this range. Please tag it from your audit list.",
+   "fully_audited": null,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "id": "rh25a-calendar",
+   "theme": "authority",
+   "order": 9,
+   "n": 9,
+   "tier": "Harder",
+   "title": "Rabban Gamliel, Rabbi Yehoshua and the calendar",
+   "question": "Must you follow the court's date even if it is wrong?",
+   "summary": "רבן גמליאל orders רבי יהושע to come on his own יום כיפור with his staff and money. רבי עקיבא and רבי דוסא show the court's ruling stands; יפתח בדורו כשמואל בדורו.",
+   "why": "רבן גמליאל orders רבי יהושע to come on his own יום כיפור with his staff and money. רבי עקיבא and רבי דוסא show the court's ruling stands; יפתח בדורו כשמואל בדורו.",
+   "daf": "Rosh Hashanah 25a to 25b",
+   "app_links": [
+    "https://gemara-clarity.sites.tab.bot/#/Rosh_Hashanah/25a",
+    "https://gemara-clarity.sites.tab.bot/#/Rosh_Hashanah/25b"
+   ],
+   "where": "25a steps 3 to 30, then 25b steps 1 to 10 (38 steps)",
+   "time": "about 55 minutes",
+   "start": {
+    "m": "Rosh_Hashanah",
+    "daf": "25a",
+    "step": 3,
+    "words": "וְעוֹד, בָּאוּ שְׁנַיִם וְאָמְרוּ"
+   },
+   "end": {
+    "m": "Rosh_Hashanah",
+    "daf": "25b",
+    "step": 10,
+    "words": "נוֹשְׂאִין קְטַנִּים קַל וָחוֹמֶר בְּעַצְמָן"
+   },
+   "excluded": "Steps 12–18 on 25a are about the moon's cycle and can be skimmed.",
+   "background": "That the court declared the new month by witnesses.",
+   "reading": {
+    "steps": 38,
+    "words": 656
+   },
+   "audit": "Not tagged yet: Tab has no audit record for this range. Please tag it from your audit list.",
+   "fully_audited": null,
+   "confidence": "high",
+   "note": "Long (38 steps)."
+  },
+  {
+   "id": "eruvin13b-eilu",
+   "theme": "authority",
+   "order": 10,
+   "n": 10,
+   "tier": "First win",
+   "title": "Eilu v'eilu",
+   "question": "If both views are the words of the living God, why does the halacha follow בית הלל?",
+   "summary": "A Heavenly voice: both are the words of the living God, and the law follows בית הלל, because they were gentle and quoted בית שמאי first. Then: would it have been better not to be created?",
+   "why": "A Heavenly voice: both are the words of the living God, and the law follows בית הלל, because they were gentle and quoted בית שמאי first. Then: would it have been better not to be created?",
+   "daf": "Eruvin 13b",
+   "app_links": [
+    "https://gemara-clarity.sites.tab.bot/#/Eruvin/13b"
+   ],
+   "where": "Steps 11 to 19 (9 steps)",
+   "time": "about 15 minutes",
+   "start": {
+    "m": "Eruvin",
+    "daf": "13b",
+    "step": 11,
+    "words": "אָמַר רַבִּי אַבָּא אָמַר שְׁמוּאֵל"
+   },
+   "end": {
+    "m": "Eruvin",
+    "daf": "13b",
+    "step": 19,
+    "words": "יְמַשְׁמֵשׁ בְּמַעֲשָׂיו"
+   },
+   "excluded": "Starts after the stories of רבי מאיר's sharpness (steps 3–10).",
+   "background": "None.",
+   "reading": {
+    "steps": 9,
+    "words": 225
+   },
+   "audit": "Not tagged yet: Tab has no audit record for this range. Please tag it from your audit list.",
+   "fully_audited": null,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "id": "men29b-moshe",
+   "theme": "authority",
+   "order": 11,
+   "n": 11,
+   "tier": "First win",
+   "title": "Moshe in Rabbi Akiva's class",
+   "question": "Moshe sits in Rabbi Akiva's class and doesn't understand. What happens?",
+   "summary": "God ties crowns on the letters for רבי עקיבא's derashos. משה sits in the back and is lost, until a student asks for a source and Akiva says \"a law given to Moshe at Sinai\". Then משה sees Akiva's death.",
+   "why": "God ties crowns on the letters for רבי עקיבא's derashos. משה sits in the back and is lost, until a student asks for a source and Akiva says \"a law given to Moshe at Sinai\". Then משה sees Akiva's death.",
+   "daf": "Menachot 29b",
+   "app_links": [
+    "https://gemara-clarity.sites.tab.bot/#/Menachot/29b"
+   ],
+   "where": "Steps 5 to 13 (9 steps)",
+   "time": "about 15 minutes",
+   "start": {
+    "m": "Menachot",
+    "daf": "29b",
+    "step": 5,
+    "words": "אָמַר רַב יְהוּדָה, אָמַר רַב"
+   },
+   "end": {
+    "m": "Menachot",
+    "daf": "29b",
+    "step": 13,
+    "words": "כָּךְ עָלָה בְּמַחְשָׁבָה לְפָנַי"
+   },
+   "excluded": "Starts after the scribal rules (steps 1–4).",
+   "background": "None.",
+   "reading": {
+    "steps": 9,
+    "words": 152
+   },
+   "audit": "Not tagged yet: Tab has no audit record for this range. Please tag it from your audit list.",
+   "fully_audited": null,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "id": "chag10a-nedarim",
+   "theme": "authority",
+   "order": 12,
+   "n": 12,
+   "tier": "Getting hooked",
+   "title": "Mountains hanging by a hair",
+   "question": "Which laws have almost no source in the written Torah?",
+   "summary": "Releasing vows floats in the air; שבת and מעילה are mountains hanging by a hair. Then the Sages look for a hint for התרת נדרים.",
+   "why": "Releasing vows floats in the air; שבת and מעילה are mountains hanging by a hair. Then the Sages look for a hint for התרת נדרים.",
+   "daf": "Chagigah 10a",
+   "app_links": [
+    "https://gemara-clarity.sites.tab.bot/#/Chagigah/10a"
+   ],
+   "where": "Steps 6 to 12 (7 steps)",
+   "time": "about 10 minutes",
+   "start": {
+    "m": "Chagigah",
+    "daf": "10a",
+    "step": 6,
+    "words": "מַתְנִי׳"
+   },
+   "end": {
+    "m": "Chagigah",
+    "daf": "10a",
+    "step": 12,
+    "words": "לִשְׁמוֹר מִשְׁפְּטֵי צִדְקֶךָ״"
+   },
+   "excluded": "Starts at the Mishnah; continues on 10b.",
+   "background": "That a sage can release a vow (התרת נדרים).",
+   "reading": {
+    "steps": 7,
+    "words": 110
+   },
+   "continues": {
+    "m": "Chagigah",
+    "daf": "10b",
+    "label": "Continue on 10b"
+   },
+   "audit": "Not tagged yet: Tab has no audit record for this range. Please tag it from your audit list.",
+   "fully_audited": null,
+   "confidence": "medium",
+   "note": "For the Kol Nidrei / hataras nedarim idea."
+  },
+  {
+   "id": "bb12a-chacham",
+   "theme": "authority",
+   "order": 13,
+   "n": 13,
+   "tier": "Getting hooked",
+   "title": "A sage is greater than a prophet",
+   "question": "After prophecy ended, where did it go?",
+   "summary": "Since the Temple fell prophecy was taken from the prophets and given to the sages; a sage is greater than a prophet. אביי and רבא look for proof.",
+   "why": "Since the Temple fell prophecy was taken from the prophets and given to the sages; a sage is greater than a prophet. אביי and רבא look for proof.",
+   "daf": "Bava Batra 12a",
+   "app_links": [
+    "https://gemara-clarity.sites.tab.bot/#/Bava_Batra/12a"
+   ],
+   "where": "Steps 22 to 27 (6 steps)",
+   "time": "about 10 minutes",
+   "start": {
+    "m": "Bava_Batra",
+    "daf": "12a",
+    "step": 22,
+    "words": "אָמַר רַבִּי אַבְדִּימִי דְּמִן חֵיפָה"
+   },
+   "end": {
+    "m": "Bava_Batra",
+    "daf": "12a",
+    "step": 27,
+    "words": "בְּנֵי חַד מַזָּלָא נִינְהוּ!"
+   },
+   "excluded": "Starts after the measurements; continues on 12b.",
+   "background": "None.",
+   "reading": {
+    "steps": 6,
+    "words": 73
+   },
+   "continues": {
+    "m": "Bava_Batra",
+    "daf": "12b",
+    "label": "Continue on 12b"
+   },
+   "audit": "Not tagged yet: Tab has no audit record for this range. Please tag it from your audit list.",
+   "fully_audited": null,
+   "confidence": "medium",
+   "note": ""
+  },
+  {
+   "id": "bb21a-schools",
+   "theme": "authority",
+   "order": 14,
+   "n": 14,
+   "tier": "Getting hooked",
+   "title": "Yehoshua ben Gamla and the first schools",
+   "question": "How did Jewish schooling begin?",
+   "summary": "Torah would have been forgotten if not for יהושע בן גמלא, who put teachers in every town. Then class sizes, discipline, and קנאת סופרים: rivalry between teachers makes learning grow.",
+   "why": "Torah would have been forgotten if not for יהושע בן גמלא, who put teachers in every town. Then class sizes, discipline, and קנאת סופרים: rivalry between teachers makes learning grow.",
+   "daf": "Bava Batra 21a",
+   "app_links": [
+    "https://gemara-clarity.sites.tab.bot/#/Bava_Batra/21a"
+   ],
+   "where": "Steps 2 to 20 (19 steps)",
+   "time": "about 25 minutes",
+   "start": {
+    "m": "Bava_Batra",
+    "daf": "21a",
+    "step": 2,
+    "words": "דְּאָמַר רַב יְהוּדָה אָמַר רַב"
+   },
+   "end": {
+    "m": "Bava_Batra",
+    "daf": "21a",
+    "step": 20,
+    "words": "שַׁבֶּשְׁתָּא, כֵּיוָן דְּעָל – עָל"
+   },
+   "excluded": "Starts after the end of the Mishnah (step 1).",
+   "background": "None.",
+   "reading": {
+    "steps": 19,
+    "words": 365
+   },
+   "audit": "Not tagged yet: Tab has no audit record for this range. Please tag it from your audit list.",
+   "fully_audited": null,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "id": "bk2a-avos",
+   "theme": "damages",
+   "order": 15,
+   "n": 15,
+   "tier": "Getting hooked",
+   "title": "The four main kinds of damage",
+   "question": "What are the four main kinds of damage, and what makes something an אב or a תולדה?",
+   "summary": "The opening Mishnah of Bava Kamma: ox, pit, מבעה and fire, and what each adds. The Gemara asks whether their subcategories work like those of שבת.",
+   "why": "The opening Mishnah of Bava Kamma: ox, pit, מבעה and fire, and what each adds. The Gemara asks whether their subcategories work like those of שבת.",
+   "daf": "Bava Kamma 2a",
+   "app_links": [
+    "https://gemara-clarity.sites.tab.bot/#/Bava_Kamma/2a"
+   ],
+   "where": "Steps 1 to 11 (11 steps)",
+   "time": "about 15 minutes",
+   "start": {
+    "m": "Bava_Kamma",
+    "daf": "2a",
+    "step": 1,
+    "words": "מַתְנִי׳ <big><strong>אַרְבָּעָה</big></strong> אֲבוֹת נְזִיקִין"
+   },
+   "end": {
+    "m": "Bava_Kamma",
+    "daf": "2a",
+    "step": 11,
+    "words": "קָרֵי לַהּ תּוֹלָדָה"
+   },
+   "excluded": "Stops before the אבות of טומאה (step 12), which runs onto 2b.",
+   "background": "None.",
+   "reading": {
+    "steps": 11,
+    "words": 176
+   },
+   "continues": {
+    "m": "Bava_Kamma",
+    "daf": "2b",
+    "label": "Continue on 2b"
+   },
+   "audit": "Not tagged yet: Tab has no audit record for this range. Please tag it from your audit list.",
+   "fully_audited": null,
+   "confidence": "high",
+   "note": "Opening of Bava Kamma."
+  },
+  {
+   "id": "bk46a-parah",
+   "theme": "damages",
+   "order": 16,
+   "n": 16,
+   "tier": "Getting hooked",
+   "title": "The ox, the cow and the calf",
+   "question": "An ox gored a pregnant cow and the calf is found dead: who has to prove what?",
+   "summary": "The Mishnah of שור שנגח את הפרה, then סומכוס's \"split the doubtful money\" against the Sages' great rule: המוציא מחבירו עליו הראיה, whoever takes money from another must bring proof.",
+   "why": "The Mishnah of שור שנגח את הפרה, then סומכוס's \"split the doubtful money\" against the Sages' great rule: המוציא מחבירו עליו הראיה, whoever takes money from another must bring proof.",
+   "daf": "Bava Kamma 46a",
+   "app_links": [
+    "https://gemara-clarity.sites.tab.bot/#/Bava_Kamma/46a"
+   ],
+   "where": "Steps 8 to 17 (10 steps)",
+   "time": "about 15 minutes",
+   "start": {
+    "m": "Bava_Kamma",
+    "daf": "46a",
+    "step": 8,
+    "words": "מַתְנִי׳ שׁוֹר שֶׁנָּגַח אֶת הַפָּרָה"
+   },
+   "end": {
+    "m": "Bava_Kamma",
+    "daf": "46a",
+    "step": 17,
+    "words": "וְקָאֵי בִּדְמֵי רִדְיָא"
+   },
+   "excluded": "Starts at the new perek (steps 1–7 close the previous one); continues on 46b.",
+   "background": "What an owner pays when his ox gores (half or full damage).",
+   "reading": {
+    "steps": 10,
+    "words": 161
+   },
+   "continues": {
+    "m": "Bava_Kamma",
+    "daf": "46b",
+    "label": "Continue on 46b"
+   },
+   "audit": "Not tagged yet: Tab has no audit record for this range. Please tag it from your audit list.",
+   "fully_audited": null,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "id": "bk20a-zehnehene",
+   "theme": "damages",
+   "order": 17,
+   "n": 17,
+   "tier": "Harder",
+   "title": "Zeh nehene v'zeh lo chaser",
+   "question": "Someone lives in your empty courtyard without asking: he gained and you lost nothing. Does he owe rent?",
+   "summary": "רב חסדא's question to רמי בר חמא, and a long line of attempted proofs from Mishnayos and ברייתות, each pushed off, ending with רבי יוחנן's silence.",
+   "why": "רב חסדא's question to רמי בר חמא, and a long line of attempted proofs from Mishnayos and ברייתות, each pushed off, ending with רבי יוחנן's silence.",
+   "daf": "Bava Kamma 20a to 20b",
+   "app_links": [
+    "https://gemara-clarity.sites.tab.bot/#/Bava_Kamma/20a",
+    "https://gemara-clarity.sites.tab.bot/#/Bava_Kamma/20b"
+   ],
+   "where": "20a steps 30 to 35, then 20b steps 1 to 22 (28 steps)",
+   "time": "about 40 minutes",
+   "start": {
+    "m": "Bava_Kamma",
+    "daf": "20a",
+    "step": 30,
+    "words": "אֲמַר לֵיהּ רַב חִסְדָּא לְרָמֵי בַּר חָמָא"
+   },
+   "end": {
+    "m": "Bava_Kamma",
+    "daf": "20b",
+    "step": 22,
+    "words": "אַשְׁגּוֹחֵי לָא אַשְׁגַּח בֵּיהּ"
+   },
+   "excluded": "Starts after the animal-eating discussion; the treasurer case continues onto 21a.",
+   "background": "None.",
+   "reading": {
+    "steps": 28,
+    "words": 464
+   },
+   "continues": {
+    "m": "Bava_Kamma",
+    "daf": "21a",
+    "label": "Continue on 21a"
+   },
+   "audit": "Not tagged yet: Tab has no audit record for this range. Please tag it from your audit list.",
+   "fully_audited": null,
+   "confidence": "high",
+   "note": "Two amudim, 28 steps."
+  },
+  {
+   "id": "bk83b-ayin",
+   "theme": "damages",
+   "order": 18,
+   "n": 18,
+   "tier": "Harder",
+   "title": "An eye for an eye",
+   "question": "Does the Torah really mean \"an eye for an eye\", or money?",
+   "summary": "The Mishnah lists five payments for injury; the Gemara asks how we know \"eye for an eye\" means money. Proof after proof, with each one challenged and defended.",
+   "why": "The Mishnah lists five payments for injury; the Gemara asks how we know \"eye for an eye\" means money. Proof after proof, with each one challenged and defended.",
+   "daf": "Bava Kamma 83b",
+   "app_links": [
+    "https://gemara-clarity.sites.tab.bot/#/Bava_Kamma/83b"
+   ],
+   "where": "Steps 7 to 34 (28 steps)",
+   "time": "about 40 minutes",
+   "start": {
+    "m": "Bava_Kamma",
+    "daf": "83b",
+    "step": 7,
+    "words": "גְּמָ׳ אַמַּאי?"
+   },
+   "end": {
+    "m": "Bava_Kamma",
+    "daf": "83b",
+    "step": 34,
+    "words": "דְּאִי לָא תֵּימָא הָכִי"
+   },
+   "excluded": "Continues on 84a with more proofs.",
+   "background": "The five payments: damage, pain, healing, lost work and embarrassment.",
+   "reading": {
+    "steps": 28,
+    "words": 436
+   },
+   "context": {
+    "m": "Bava_Kamma",
+    "daf": "83b",
+    "from": 1,
+    "to": 6,
+    "why": "For context, read the Mishnah first:"
+   },
+   "continues": {
+    "m": "Bava_Kamma",
+    "daf": "84a",
+    "label": "Continue on 84a"
+   },
+   "audit": "Not tagged yet: Tab has no audit record for this range. Please tag it from your audit list.",
+   "fully_audited": null,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "id": "bb22b-gerama",
+   "theme": "damages",
+   "order": 19,
+   "n": 19,
+   "tier": "Getting hooked",
+   "title": "Gerama: indirect damage",
+   "question": "Is causing damage indirectly allowed?",
+   "summary": "The Mishnah: keep a ladder four אמות from a neighbor's dovecote. The Gemara asks whether this goes against רבי יוסי, and answers: indirect damage (גרמא בניזקין) is forbidden.",
+   "why": "The Mishnah: keep a ladder four אמות from a neighbor's dovecote. The Gemara asks whether this goes against רבי יוסי, and answers: indirect damage (גרמא בניזקין) is forbidden.",
+   "daf": "Bava Batra 22b",
+   "app_links": [
+    "https://gemara-clarity.sites.tab.bot/#/Bava_Batra/22b"
+   ],
+   "where": "Steps 20 to 24 (5 steps)",
+   "time": "about 5 minutes",
+   "start": {
+    "m": "Bava_Batra",
+    "daf": "22b",
+    "step": 20,
+    "words": "מַתְנִי׳"
+   },
+   "end": {
+    "m": "Bava_Batra",
+    "daf": "22b",
+    "step": 24,
+    "words": "גְּרָמָא בְּנִיזָּקִין אָסוּר"
+   },
+   "excluded": "Stops before the story of רב יוסף's palm trees (step 25).",
+   "background": "That רבי יוסי makes the damaged party keep his distance.",
+   "reading": {
+    "steps": 5,
+    "words": 85
+   },
+   "audit": "Not tagged yet: Tab has no audit record for this range. Please tag it from your audit list.",
+   "fully_audited": null,
+   "confidence": "medium",
+   "note": "Short. Whether to add the רב יוסף palm story (step 25 on) is a judgment call."
+  },
+  {
+   "id": "shab2a-yetzios",
+   "theme": "shabbos",
+   "order": 20,
+   "n": 20,
+   "tier": "Getting hooked",
+   "title": "The ways out on Shabbos",
+   "question": "On שבת, who is liable when a poor man and a homeowner pass something through a doorway?",
+   "summary": "The opening Mishnah of Shabbos: two that are four inside and outside, with the cases of the poor man and the homeowner reaching in and out.",
+   "why": "The opening Mishnah of Shabbos: two that are four inside and outside, with the cases of the poor man and the homeowner reaching in and out.",
+   "daf": "Shabbat 2a",
+   "app_links": [
+    "https://gemara-clarity.sites.tab.bot/#/Shabbat/2a"
+   ],
+   "where": "Steps 1 to 7 (7 steps)",
+   "time": "about 10 minutes",
+   "start": {
+    "m": "Shabbat",
+    "daf": "2a",
+    "step": 1,
+    "words": "מַתְנִי׳"
+   },
+   "end": {
+    "m": "Shabbat",
+    "daf": "2a",
+    "step": 7,
+    "words": "שְׁבוּעוֹת, שְׁתַּיִם שֶׁהֵן אַרְבַּע"
+   },
+   "excluded": "The whole amud; the Gemara continues on 2b.",
+   "background": "The idea of private and public domain (רשות היחיד / רשות הרבים).",
+   "reading": {
+    "steps": 7,
+    "words": 97
+   },
+   "continues": {
+    "m": "Shabbat",
+    "daf": "2b",
+    "label": "Continue on 2b"
+   },
+   "audit": "Not tagged yet: Tab has no audit record for this range. Please tag it from your audit list.",
+   "fully_audited": null,
+   "confidence": "medium",
+   "note": "Opening of Shabbos, but the amud is almost all Mishnah; the real Gemara starts on 2b."
+  },
+  {
+   "id": "shab73a-39",
+   "theme": "shabbos",
+   "order": 21,
+   "n": 21,
+   "tier": "First win",
+   "title": "The 39 melachos",
+   "question": "What are the 39 kinds of work forbidden on שבת?",
+   "summary": "The Mishnah of אבות מלאכות: the bread series, the cloth series, the hide series, and building, fire and carrying.",
+   "why": "The Mishnah of אבות מלאכות: the bread series, the cloth series, the hide series, and building, fire and carrying.",
+   "daf": "Shabbat 73a",
+   "app_links": [
+    "https://gemara-clarity.sites.tab.bot/#/Shabbat/73a"
+   ],
+   "where": "Steps 13 to 17 (5 steps)",
+   "time": "about 5 minutes",
+   "start": {
+    "m": "Shabbat",
+    "daf": "73a",
+    "step": 13,
+    "words": "מַתְנִי׳"
+   },
+   "end": {
+    "m": "Shabbat",
+    "daf": "73a",
+    "step": 17,
+    "words": "אַרְבָּעִים חָסֵר אַחַת"
+   },
+   "excluded": "Starts at the Mishnah (steps 1–12 finish the previous sugya).",
+   "background": "None.",
+   "reading": {
+    "steps": 5,
+    "words": 81
+   },
+   "continues": {
+    "m": "Shabbat",
+    "daf": "73b",
+    "label": "Continue on 73b"
+   },
+   "audit": "Not tagged yet: Tab has no audit record for this range. Please tag it from your audit list.",
+   "fully_audited": null,
+   "confidence": "high",
+   "note": "Short list; the Gemara on it is on 73b."
+  },
+  {
+   "id": "shab34b-bein",
+   "theme": "shabbos",
+   "order": 22,
+   "n": 22,
+   "tier": "Getting hooked",
+   "title": "Bein hashmashos: twilight",
+   "question": "Is twilight day or night, and how long does it last?",
+   "summary": "Twilight is a doubt, so both days' stringencies apply. רבי יהודה, רבי נחמיה and רבי יוסי define it; רבה and רב יוסף argue over its length.",
+   "why": "Twilight is a doubt, so both days' stringencies apply. רבי יהודה, רבי נחמיה and רבי יוסי define it; רבה and רב יוסף argue over its length.",
+   "daf": "Shabbat 34b",
+   "app_links": [
+    "https://gemara-clarity.sites.tab.bot/#/Shabbat/34b"
+   ],
+   "where": "Steps 5 to 20 (16 steps)",
+   "time": "about 20 minutes",
+   "start": {
+    "m": "Shabbat",
+    "daf": "34b",
+    "step": 5,
+    "words": "תָּנוּ רַבָּנַן"
+   },
+   "end": {
+    "m": "Shabbat",
+    "daf": "34b",
+    "step": 20,
+    "words": "אֶלָּא"
+   },
+   "excluded": "Starts after the insulating-food decrees (steps 1–4); continues on 35a.",
+   "background": "A מיל (a walking distance used as a time).",
+   "reading": {
+    "steps": 16,
+    "words": 283
+   },
+   "continues": {
+    "m": "Shabbat",
+    "daf": "35a",
+    "label": "Continue on 35a"
+   },
+   "audit": "Not tagged yet: Tab has no audit record for this range. Please tag it from your audit list.",
+   "fully_audited": null,
+   "confidence": "medium",
+   "note": "Ends mid-discussion; check whether 35a is needed."
+  },
+  {
+   "id": "yoma85a-pikuach",
+   "theme": "shabbos",
+   "order": 23,
+   "n": 23,
+   "tier": "Getting hooked",
+   "title": "Saving a life overrides Shabbos",
+   "question": "Where do we learn that saving a life pushes aside שבת?",
+   "summary": "The sages on the road are asked for a source: רבי ישמעאל's break-in, רבי עקיבא's altar, מילה, \"the Sabbath is given to you\", and \"break one שבת to keep many\". רבא: only שמואל's \"and live by them\" cannot be refuted.",
+   "why": "The sages on the road are asked for a source: רבי ישמעאל's break-in, רבי עקיבא's altar, מילה, \"the Sabbath is given to you\", and \"break one שבת to keep many\". רבא: only שמואל's \"and live by them\" cannot be refuted.",
+   "daf": "Yoma 85a to 85b",
+   "app_links": [
+    "https://gemara-clarity.sites.tab.bot/#/Yoma/85a",
+    "https://gemara-clarity.sites.tab.bot/#/Yoma/85b"
+   ],
+   "where": "85a steps 23 to 26, then 85b steps 1 to 12 (16 steps)",
+   "time": "about 20 minutes",
+   "start": {
+    "m": "Yoma",
+    "daf": "85a",
+    "step": 23,
+    "words": "וּכְבָר הָיָה רַבִּי יִשְׁמָעֵאל"
+   },
+   "end": {
+    "m": "Yoma",
+    "daf": "85b",
+    "step": 12,
+    "words": "וְדִשְׁמוּאֵל, וַדַּאי לֵית לֵיהּ פִּירְכָא"
+   },
+   "excluded": "Starts after the rockslide Mishnah's details (steps 1–22).",
+   "background": "None.",
+   "reading": {
+    "steps": 16,
+    "words": 309
+   },
+   "audit": "Not tagged yet: Tab has no audit record for this range. Please tag it from your audit list.",
+   "fully_audited": null,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "id": "shab21b-chanukah",
+   "theme": "festivals",
+   "order": 24,
+   "n": 24,
+   "tier": "Getting hooked",
+   "title": "What is Chanukah?",
+   "question": "How many lights, which way, and what is Chanukah?",
+   "summary": "נר איש וביתו and the מהדרין, בית שמאי and בית הלל on adding or removing lights, where the light goes, and then \"מאי חנוכה\": eight days and the jug of oil.",
+   "why": "נר איש וביתו and the מהדרין, בית שמאי and בית הלל on adding or removing lights, where the light goes, and then \"מאי חנוכה\": eight days and the jug of oil.",
+   "daf": "Shabbat 21b",
+   "app_links": [
+    "https://gemara-clarity.sites.tab.bot/#/Shabbat/21b"
+   ],
+   "where": "Steps 13 to 23 (11 steps)",
+   "time": "about 15 minutes",
+   "start": {
+    "m": "Shabbat",
+    "daf": "21b",
+    "step": 13,
+    "words": "תָּנוּ רַבָּנַן"
+   },
+   "end": {
+    "m": "Shabbat",
+    "daf": "21b",
+    "step": 23,
+    "words": "וַעֲשָׂאוּם יָמִים טוֹבִים בְּהַלֵּל וְהוֹדָאָה"
+   },
+   "excluded": "Stops before the fire-damage Mishnah (step 24).",
+   "background": "None.",
+   "reading": {
+    "steps": 11,
+    "words": 234
+   },
+   "audit": "Not tagged yet: Tab has no audit record for this range. Please tag it from your audit list.",
+   "fully_audited": null,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "id": "pes2a-or",
+   "theme": "festivals",
+   "order": 25,
+   "n": 25,
+   "tier": "Getting hooked",
+   "title": "Or l'arba'ah asar",
+   "question": "The search for חמץ is on the \"אור\" of the 14th: does אור mean light or night?",
+   "summary": "The Mishnah on בדיקת חמץ, then רב הונא and רב יהודה on the word אור, tested against verses about morning light.",
+   "why": "The Mishnah on בדיקת חמץ, then רב הונא and רב יהודה on the word אור, tested against verses about morning light.",
+   "daf": "Pesachim 2a",
+   "app_links": [
+    "https://gemara-clarity.sites.tab.bot/#/Pesachim/2a"
+   ],
+   "where": "Steps 1 to 9 (9 steps)",
+   "time": "about 15 minutes",
+   "start": {
+    "m": "Pesachim",
+    "daf": "2a",
+    "step": 1,
+    "words": "מַתְנִי׳ אוֹר לְאַרְבָּעָה עָשָׂר"
+   },
+   "end": {
+    "m": "Pesachim",
+    "daf": "2a",
+    "step": 9,
+    "words": "כְּמַאן דְּאָמַר: צַפְרָא נְהַר"
+   },
+   "excluded": "Stops before רב's travel advice (step 10); the verses continue to step 23 and onto 2b.",
+   "background": "What בדיקת חמץ is.",
+   "reading": {
+    "steps": 9,
+    "words": 92
+   },
+   "continues": {
+    "m": "Pesachim",
+    "daf": "2b",
+    "label": "Continue on 2b"
+   },
+   "audit": "Not tagged yet: Tab has no audit record for this range. Please tag it from your audit list.",
+   "fully_audited": null,
+   "confidence": "high",
+   "note": "Opening of Pesachim."
+  },
+  {
+   "id": "beitzah2a-egg",
+   "theme": "festivals",
+   "order": 26,
+   "n": 26,
+   "tier": "Getting hooked",
+   "title": "An egg laid on Yom Tov",
+   "question": "May you eat an egg laid on יום טוב?",
+   "summary": "בית שמאי say yes, בית הלל say no. The Gemara asks which hen is meant, and reaches מוקצה and נולד.",
+   "why": "בית שמאי say yes, בית הלל say no. The Gemara asks which hen is meant, and reaches מוקצה and נולד.",
+   "daf": "Beitzah 2a",
+   "app_links": [
+    "https://gemara-clarity.sites.tab.bot/#/Beitzah/2a"
+   ],
+   "where": "Steps 1 to 14 (14 steps)",
+   "time": "about 20 minutes",
+   "start": {
+    "m": "Beitzah",
+    "daf": "2a",
+    "step": 1,
+    "words": "בֵּיצָה שֶׁנּוֹלְדָה בְּיוֹם טוֹב"
+   },
+   "end": {
+    "m": "Beitzah",
+    "daf": "2a",
+    "step": 14,
+    "words": "אֲבָל"
+   },
+   "excluded": "The whole amud; continues on 2b.",
+   "background": "What מוקצה is.",
+   "reading": {
+    "steps": 14,
+    "words": 204
+   },
+   "continues": {
+    "m": "Beitzah",
+    "daf": "2b",
+    "label": "Continue on 2b"
+   },
+   "audit": "Not tagged yet: Tab has no audit record for this range. Please tag it from your audit list.",
+   "fully_audited": null,
+   "confidence": "high",
+   "note": "Opening of Beitzah."
+  },
+  {
+   "id": "sukkah2a-twenty",
+   "theme": "festivals",
+   "order": 27,
+   "n": 27,
+   "tier": "Getting hooked",
+   "title": "A sukkah taller than twenty amos",
+   "question": "Why is a סוכה over twenty אמות unfit?",
+   "summary": "The opening Mishnah, then three sources: \"so your generations will know\" (רבה), shade (רבי זירא), and a temporary home (רבא).",
+   "why": "The opening Mishnah, then three sources: \"so your generations will know\" (רבה), shade (רבי זירא), and a temporary home (רבא).",
+   "daf": "Sukkah 2a",
+   "app_links": [
+    "https://gemara-clarity.sites.tab.bot/#/Sukkah/2a"
+   ],
+   "where": "Steps 1 to 14 (14 steps)",
+   "time": "about 20 minutes",
+   "start": {
+    "m": "Sukkah",
+    "daf": "2a",
+    "step": 1,
+    "words": "סוּכָּה שֶׁהִיא גְּבוֹהָה"
+   },
+   "end": {
+    "m": "Sukkah",
+    "daf": "2a",
+    "step": 14,
+    "words": "נָמֵי לָא נָפֵיק"
+   },
+   "excluded": "The whole amud; continues on 2b.",
+   "background": "None.",
+   "reading": {
+    "steps": 14,
+    "words": 265
+   },
+   "continues": {
+    "m": "Sukkah",
+    "daf": "2b",
+    "label": "Continue on 2b"
+   },
+   "audit": "Not tagged yet: Tab has no audit record for this range. Please tag it from your audit list.",
+   "fully_audited": null,
+   "confidence": "high",
+   "note": "Opening of Sukkah."
+  },
+  {
+   "id": "rh26a-kategor",
+   "theme": "festivals",
+   "order": 28,
+   "n": 28,
+   "tier": "Getting hooked",
+   "title": "A prosecutor can't be a defender",
+   "question": "Why is a cow's horn unfit for a שופר?",
+   "summary": "The Mishnah: every horn except a cow's. עולא: אין קטיגור נעשה סניגור, the horn recalls the golden calf. The Gemara presses on the כהן גדול's gold and on blowing outside.",
+   "why": "The Mishnah: every horn except a cow's. עולא: אין קטיגור נעשה סניגור, the horn recalls the golden calf. The Gemara presses on the כהן גדול's gold and on blowing outside.",
+   "daf": "Rosh Hashanah 26a",
+   "app_links": [
+    "https://gemara-clarity.sites.tab.bot/#/Rosh_Hashanah/26a"
+   ],
+   "where": "Steps 3 to 21 (19 steps)",
+   "time": "about 25 minutes",
+   "start": {
+    "m": "Rosh_Hashanah",
+    "daf": "26a",
+    "step": 3,
+    "words": "מַתְנִי׳ כׇּל הַשּׁוֹפָרוֹת כְּשֵׁרִים"
+   },
+   "end": {
+    "m": "Rosh_Hashanah",
+    "daf": "26a",
+    "step": 21,
+    "words": "וְעוֹד — מִפְּנֵי שֶׁהוּא קֶרֶן"
+   },
+   "excluded": "Starts at the שופר Mishnah; stops before אביי's \"one shofar\" reason (step 24).",
+   "background": "None.",
+   "reading": {
+    "steps": 19,
+    "words": 185
+   },
+   "audit": "Not tagged yet: Tab has no audit record for this range. Please tag it from your audit list.",
+   "fully_audited": null,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "id": "meg7b-purim",
+   "theme": "festivals",
+   "order": 29,
+   "n": 29,
+   "tier": "First win",
+   "title": "Drinking on Purim",
+   "question": "How much must one drink on Purim?",
+   "summary": "רבא: until he cannot tell \"cursed is המן\" from \"blessed is מרדכי\". Then רבה and רבי זירא's feast that went terribly wrong, and why the meal must be by day.",
+   "why": "רבא: until he cannot tell \"cursed is המן\" from \"blessed is מרדכי\". Then רבה and רבי זירא's feast that went terribly wrong, and why the meal must be by day.",
+   "daf": "Megillah 7b",
+   "app_links": [
+    "https://gemara-clarity.sites.tab.bot/#/Megillah/7b"
+   ],
+   "where": "Steps 7 to 10 (4 steps)",
+   "time": "about 5 minutes",
+   "start": {
+    "m": "Megillah",
+    "daf": "7b",
+    "step": 7,
+    "words": "אָמַר רָבָא: מִיחַיַּיב אִינִישׁ לְבַסּוֹמֵי בְּפוּרַיָּא"
+   },
+   "end": {
+    "m": "Megillah",
+    "daf": "7b",
+    "step": 10,
+    "words": "״יְמֵי מִשְׁתֶּה וְשִׂמְחָה״, כְּתִיב"
+   },
+   "excluded": "Starts after the gifts of food (steps 1–6).",
+   "background": "None.",
+   "reading": {
+    "steps": 4,
+    "words": 67
+   },
+   "audit": "Not tagged yet: Tab has no audit record for this range. Please tag it from your audit list.",
+   "fully_audited": null,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "id": "kid2a-niknes",
+   "theme": "marriage",
+   "order": 30,
+   "n": 30,
+   "tier": "Getting hooked",
+   "title": "How a woman is married",
+   "question": "By what three ways is a woman married, and how is money learned?",
+   "summary": "The opening Mishnah of Kiddushin: money, document and relations. The Gemara asks why it says \"acquired\" and learns money from קיחה קיחה משדה עפרון.",
+   "why": "The opening Mishnah of Kiddushin: money, document and relations. The Gemara asks why it says \"acquired\" and learns money from קיחה קיחה משדה עפרון.",
+   "daf": "Kiddushin 2a",
+   "app_links": [
+    "https://gemara-clarity.sites.tab.bot/#/Kiddushin/2a"
+   ],
+   "where": "Steps 1 to 9 (9 steps)",
+   "time": "about 15 minutes",
+   "start": {
+    "m": "Kiddushin",
+    "daf": "2a",
+    "step": 1,
+    "words": "הָאִשָּׁה נִקְנֵית בְּשָׁלֹשׁ דְּרָכִים"
+   },
+   "end": {
+    "m": "Kiddushin",
+    "daf": "2a",
+    "step": 9,
+    "words": "דִּכְתִיב: ״הַשָּׂדֶה אֲשֶׁר קָנָה אַבְרָהָם״"
+   },
+   "excluded": "The whole amud; continues on 2b.",
+   "background": "None.",
+   "reading": {
+    "steps": 9,
+    "words": 99
+   },
+   "continues": {
+    "m": "Kiddushin",
+    "daf": "2b",
+    "label": "Continue on 2b"
+   },
+   "audit": "Not tagged yet: Tab has no audit record for this range. Please tag it from your audit list.",
+   "fully_audited": null,
+   "confidence": "high",
+   "note": "Opening of Kiddushin."
+  },
+  {
+   "id": "ket16b-kallah",
+   "theme": "marriage",
+   "order": 31,
+   "n": 31,
+   "tier": "First win",
+   "title": "How do we dance before the bride?",
+   "question": "What do you sing to a bride, even if she is not beautiful?",
+   "summary": "בית שמאי: describe her as she is. בית הלל: \"a beautiful and gracious bride\". Then the rabbis who danced: רבי יהודה בר אילעאי with myrtle, and רב שמואל בר רב יצחק who juggled branches.",
+   "why": "בית שמאי: describe her as she is. בית הלל: \"a beautiful and gracious bride\". Then the rabbis who danced: רבי יהודה בר אילעאי with myrtle, and רב שמואל בר רב יצחק who juggled branches.",
+   "daf": "Ketubot 16b to 17a",
+   "app_links": [
+    "https://gemara-clarity.sites.tab.bot/#/Ketubot/16b",
+    "https://gemara-clarity.sites.tab.bot/#/Ketubot/17a"
+   ],
+   "where": "16b steps 29 to 29, then 17a steps 1 to 12 (13 steps)",
+   "time": "about 20 minutes",
+   "start": {
+    "m": "Ketubot",
+    "daf": "16b",
+    "step": 29,
+    "words": "תָּנוּ רַבָּנַן"
+   },
+   "end": {
+    "m": "Ketubot",
+    "daf": "17a",
+    "step": 12,
+    "words": "אִי לִתְרֵי בְּדָרָא"
+   },
+   "excluded": "Stops before the teachings on halting Torah study for a funeral (step 13 on).",
+   "background": "None.",
+   "reading": {
+    "steps": 13,
+    "words": 221
+   },
+   "audit": "Not tagged yet: Tab has no audit record for this range. Please tag it from your audit list.",
+   "fully_audited": null,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "id": "ket62b-rachel",
+   "theme": "marriage",
+   "order": 32,
+   "n": 32,
+   "tier": "First win",
+   "title": "Rabbi Akiva and Rachel",
+   "question": "What did Rabbi Akiva's wife give up for his learning?",
+   "summary": "Kalba Savua's daughter marries the shepherd on condition he learns; her father throws her out. He returns after twenty-four years with 24,000 students: \"what is mine and what is yours is hers\".",
+   "why": "Kalba Savua's daughter marries the shepherd on condition he learns; her father throws her out. He returns after twenty-four years with 24,000 students: \"what is mine and what is yours is hers\".",
+   "daf": "Ketubot 62b to 63a",
+   "app_links": [
+    "https://gemara-clarity.sites.tab.bot/#/Ketubot/62b",
+    "https://gemara-clarity.sites.tab.bot/#/Ketubot/63a"
+   ],
+   "where": "62b steps 33 to 35, then 63a steps 1 to 4 (7 steps)",
+   "time": "about 10 minutes",
+   "start": {
+    "m": "Ketubot",
+    "daf": "62b",
+    "step": 33,
+    "words": "רַבִּי עֲקִיבָא רָעֲיָא"
+   },
+   "end": {
+    "m": "Ketubot",
+    "daf": "63a",
+    "step": 4,
+    "words": "כְּעוֹבָדֵי אִמָּא כָּךְ עוֹבָדֵי בְּרַתָּא"
+   },
+   "excluded": "Starts after the other scholars who left home to learn (steps 25–32).",
+   "background": "None.",
+   "reading": {
+    "steps": 7,
+    "words": 196
+   },
+   "audit": "Not tagged yet: Tab has no audit record for this range. Please tag it from your audit list.",
+   "fully_audited": null,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "id": "git90a-divorce",
+   "theme": "marriage",
+   "order": 33,
+   "n": 33,
+   "tier": "Getting hooked",
+   "title": "Grounds for divorce",
+   "question": "When may a man divorce his wife?",
+   "summary": "בית שמאי: only for immorality. בית הלל: even if she burned his food. רבי עקיבא: even if he found someone prettier. The Gemara reads ערות דבר and the word כי.",
+   "why": "בית שמאי: only for immorality. בית הלל: even if she burned his food. רבי עקיבא: even if he found someone prettier. The Gemara reads ערות דבר and the word כי.",
+   "daf": "Gittin 90a",
+   "app_links": [
+    "https://gemara-clarity.sites.tab.bot/#/Gittin/90a"
+   ],
+   "where": "Steps 2 to 15 (14 steps)",
+   "time": "about 20 minutes",
+   "start": {
+    "m": "Gittin",
+    "daf": "90a",
+    "step": 2,
+    "words": "מַתְנִי׳"
+   },
+   "end": {
+    "m": "Gittin",
+    "daf": "90a",
+    "step": 15,
+    "words": "אִי נָמֵי, מָצָא בָהּ עֶרְוַת דָּבָר"
+   },
+   "excluded": "Stops before רב פפא's question; the end of Gittin (90b, \"the altar sheds tears\") can follow.",
+   "background": "None.",
+   "reading": {
+    "steps": 14,
+    "words": 237
+   },
+   "continues": {
+    "m": "Gittin",
+    "daf": "90b",
+    "label": "Continue to the end of Gittin"
+   },
+   "audit": "Not tagged yet: Tab has no audit record for this range. Please tag it from your audit list.",
+   "fully_audited": null,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "id": "yev62b-students",
+   "theme": "marriage",
+   "order": 34,
+   "n": 34,
+   "tier": "First win",
+   "title": "Rabbi Akiva's 24,000 students",
+   "question": "Why did Rabbi Akiva's students die, and what did he do next?",
+   "summary": "\"Teach in your old age too\": 24,000 students died between פסח and שבועות for not giving each other respect, and he started again with five in the south.",
+   "why": "\"Teach in your old age too\": 24,000 students died between פסח and שבועות for not giving each other respect, and he started again with five in the south.",
+   "daf": "Yevamot 62b",
+   "app_links": [
+    "https://gemara-clarity.sites.tab.bot/#/Yevamot/62b"
+   ],
+   "where": "Steps 15 to 22 (8 steps)",
+   "time": "about 10 minutes",
+   "start": {
+    "m": "Yevamot",
+    "daf": "62b",
+    "step": 15,
+    "words": "רַבִּי עֲקִיבָא אוֹמֵר"
+   },
+   "end": {
+    "m": "Yevamot",
+    "daf": "62b",
+    "step": 22,
+    "words": "הֲלָכָה כְּרַבִּי יְהוֹשֻׁעַ"
+   },
+   "excluded": "Starts after the grandchildren discussion.",
+   "background": "None.",
+   "reading": {
+    "steps": 8,
+    "words": 108
+   },
+   "audit": "Not tagged yet: Tab has no audit record for this range. Please tag it from your audit list.",
+   "fully_audited": null,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "id": "san71a-sorer",
+   "theme": "courts",
+   "order": 35,
+   "n": 35,
+   "tier": "Getting hooked",
+   "title": "The rebellious son that never was",
+   "question": "Was there ever a בן סורר ומורה, an עיר הנדחת or a leprous house?",
+   "summary": "One view: there never was and never will be; it was written so we would learn. רבי יונתן: I saw one and sat on his grave; I sat on the ruins of the city. Then the leprous house.",
+   "why": "One view: there never was and never will be; it was written so we would learn. רבי יונתן: I saw one and sat on his grave; I sat on the ruins of the city. Then the leprous house.",
+   "daf": "Sanhedrin 71a",
+   "app_links": [
+    "https://gemara-clarity.sites.tab.bot/#/Sanhedrin/71a"
+   ],
+   "where": "Steps 24 to 38 (15 steps)",
+   "time": "about 20 minutes",
+   "start": {
+    "m": "Sanhedrin",
+    "daf": "71a",
+    "step": 24,
+    "words": "כְּמַאן אָזְלָא הָא דְּתַנְיָא"
+   },
+   "end": {
+    "m": "Sanhedrin",
+    "daf": "71a",
+    "step": 38,
+    "words": "וְאָמְרוּ: אֲבָנִים מְנוּגָּעוֹת פִּינוּ לְשָׁם"
+   },
+   "excluded": "Starts after the conditions on the parents (steps 15–23).",
+   "background": "What בן סורר ומורה and עיר הנדחת are in the Torah.",
+   "reading": {
+    "steps": 15,
+    "words": 233
+   },
+   "audit": "Not tagged yet: Tab has no audit record for this range. Please tag it from your audit list.",
+   "fully_audited": null,
+   "confidence": "high",
+   "note": "Covers both Ben Sorer UMoreh and Ir HaNidachat."
+  },
+  {
+   "id": "san37a-nefesh",
+   "theme": "courts",
+   "order": 36,
+   "n": 36,
+   "tier": "First win",
+   "title": "One life is a whole world",
+   "question": "How does a court warn witnesses in a capital case?",
+   "summary": "\"Your brother's bloods\": the witness is told that one who destroys one life destroys a whole world, and that each person must say \"the world was created for me\".",
+   "why": "\"Your brother's bloods\": the witness is told that one who destroys one life destroys a whole world, and that each person must say \"the world was created for me\".",
+   "daf": "Sanhedrin 37a",
+   "app_links": [
+    "https://gemara-clarity.sites.tab.bot/#/Sanhedrin/37a"
+   ],
+   "where": "Steps 19 to 26 (8 steps)",
+   "time": "about 10 minutes",
+   "start": {
+    "m": "Sanhedrin",
+    "daf": "37a",
+    "step": 19,
+    "words": "מַתְנִי׳"
+   },
+   "end": {
+    "m": "Sanhedrin",
+    "daf": "37a",
+    "step": 26,
+    "words": "בִּשְׁבִילִי נִבְרָא הָעוֹלָם"
+   },
+   "excluded": "Starts at the Mishnah on warning witnesses.",
+   "background": "None.",
+   "reading": {
+    "steps": 8,
+    "words": 181
+   },
+   "audit": "Not tagged yet: Tab has no audit record for this range. Please tag it from your audit list.",
+   "fully_audited": null,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "id": "san74a-yehareg",
+   "theme": "courts",
+   "order": 37,
+   "n": 37,
+   "tier": "Getting hooked",
+   "title": "Be killed rather than sin",
+   "question": "For which sins must you give up your life?",
+   "summary": "The vote in the attic in לוד: idolatry, forbidden relations and murder. For murder it is logic: \"who says your blood is redder?\" Then times of persecution and in public.",
+   "why": "The vote in the attic in לוד: idolatry, forbidden relations and murder. For murder it is logic: \"who says your blood is redder?\" Then times of persecution and in public.",
+   "daf": "Sanhedrin 74a",
+   "app_links": [
+    "https://gemara-clarity.sites.tab.bot/#/Sanhedrin/74a"
+   ],
+   "where": "Steps 19 to 31 (13 steps)",
+   "time": "about 20 minutes",
+   "start": {
+    "m": "Sanhedrin",
+    "daf": "74a",
+    "step": 19,
+    "words": "אָמַר רַבִּי יוֹחָנָן מִשּׁוּם רַבִּי שִׁמְעוֹן בֶּן"
+   },
+   "end": {
+    "m": "Sanhedrin",
+    "daf": "74a",
+    "step": 31,
+    "words": "דִּילְמָא דְּמָא דְּהוּא גַּבְרָא סוּמָּק טְפֵי"
+   },
+   "excluded": "Stops before the rules on persecution and public (steps 32–34).",
+   "background": "None.",
+   "reading": {
+    "steps": 13,
+    "words": 235
+   },
+   "audit": "Not tagged yet: Tab has no audit record for this range. Please tag it from your audit list.",
+   "fully_audited": null,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "id": "makkot7a-chovlanis",
+   "theme": "courts",
+   "order": 38,
+   "n": 38,
+   "tier": "Getting hooked",
+   "title": "A court that kills once in seventy years",
+   "question": "How often may a Sanhedrin carry out a death sentence?",
+   "summary": "A court that executes once in seven years, or seventy, is destructive. רבי טרפון and רבי עקיבא: we would never execute. רבן שמעון בן גמליאל: you would multiply murderers. The Gemara asks how they would have avoided it.",
+   "why": "A court that executes once in seven years, or seventy, is destructive. רבי טרפון and רבי עקיבא: we would never execute. רבן שמעון בן גמליאל: you would multiply murderers. The Gemara asks how they would have avoided it.",
+   "daf": "Makkot 7a",
+   "app_links": [
+    "https://gemara-clarity.sites.tab.bot/#/Makkot/7a"
+   ],
+   "where": "Steps 5 to 22 (18 steps)",
+   "time": "about 25 minutes",
+   "start": {
+    "m": "Makkot",
+    "daf": "7a",
+    "step": 5,
+    "words": "סַנְהֶדְרִין הַהוֹרֶגֶת אֶחָד בְּשָׁבוּעַ"
+   },
+   "end": {
+    "m": "Makkot",
+    "daf": "7a",
+    "step": 22,
+    "words": "בִּמְנָאֲפִים – מִשֶּׁיִּרְאוּ כִּמְנָאֲפִים"
+   },
+   "excluded": "Steps 6–15 are about courts outside Israel and can be skimmed.",
+   "background": "None.",
+   "reading": {
+    "steps": 18,
+    "words": 243
+   },
+   "audit": "Not tagged yet: Tab has no audit record for this range. Please tag it from your audit list.",
+   "fully_audited": null,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "id": "bm21b-yeiush",
+   "theme": "concepts",
+   "order": 39,
+   "n": 39,
+   "tier": "Harder",
+   "title": "Yi'ush shelo mida'as",
+   "question": "If an owner would give up hope once he knew of his loss, but does not know yet, may a finder keep it?",
+   "summary": "אביי and רבא argue about יאוש שלא מדעת. The Gemara tests them against a run of cases: scattered produce, coins, fig cakes, purple wool, gleanings and fallen figs.",
+   "why": "אביי and רבא argue about יאוש שלא מדעת. The Gemara tests them against a run of cases: scattered produce, coins, fig cakes, purple wool, gleanings and fallen figs.",
+   "daf": "Bava Metzia 21b",
+   "app_links": [
+    "https://gemara-clarity.sites.tab.bot/#/Bava_Metzia/21b"
+   ],
+   "where": "Steps 1 to 25 (25 steps)",
+   "time": "about 35 minutes",
+   "start": {
+    "m": "Bava_Metzia",
+    "daf": "21b",
+    "step": 1,
+    "words": "יֵאוּשׁ שֶׁלֹּא מִדַּעַת"
+   },
+   "end": {
+    "m": "Bava_Metzia",
+    "daf": "21b",
+    "step": 25,
+    "words": "רַב פָּפָּא: תְּאֵנָה עִם נְפִילָתָהּ נִמְאֶסֶת"
+   },
+   "excluded": "Stops before the case of the thief and robber (step 26), which runs onto 22a.",
+   "background": "What יאוש (giving up hope) does to ownership; the Eilu Metzios Mishnah.",
+   "reading": {
+    "steps": 25,
+    "words": 387
+   },
+   "continues": {
+    "m": "Bava_Metzia",
+    "daf": "22a",
+    "label": "Continue on 22a"
+   },
+   "audit": "Not tagged yet: Tab has no audit record for this range. Please tag it from your audit list.",
+   "fully_audited": null,
+   "confidence": "high",
+   "note": "Long-running sugya; continues to 22b, ending יע\"ל קג\"ם."
+  },
+  {
+   "id": "beitzah12a-mitoch",
+   "theme": "concepts",
+   "order": 40,
+   "n": 40,
+   "tier": "Getting hooked",
+   "title": "Mitoch",
+   "question": "If carrying is allowed on יום טוב for cooking, is it allowed for anything?",
+   "summary": "בית שמאי and בית הלל on carrying a child, a לולב or a ספר תורה. בית הלל's principle: מתוך שהותרה לצורך, הותרה נמי שלא לצורך.",
+   "why": "בית שמאי and בית הלל on carrying a child, a לולב or a ספר תורה. בית הלל's principle: מתוך שהותרה לצורך, הותרה נמי שלא לצורך.",
+   "daf": "Beitzah 12a",
+   "app_links": [
+    "https://gemara-clarity.sites.tab.bot/#/Beitzah/12a"
+   ],
+   "where": "Steps 2 to 12 (11 steps)",
+   "time": "about 15 minutes",
+   "start": {
+    "m": "Beitzah",
+    "daf": "12a",
+    "step": 2,
+    "words": "מַתְנִי׳ בֵּית שַׁמַּאי אוֹמְרִים"
+   },
+   "end": {
+    "m": "Beitzah",
+    "daf": "12a",
+    "step": 12,
+    "words": "הוּתְּרָה נָמֵי שֶׁלֹּא לְצוֹרֶךְ פְּלִיגִי"
+   },
+   "excluded": "Starts at the carrying Mishnah (step 1 closes the previous one); stops before the גיד הנשה ברייתא.",
+   "background": "That cooking and carrying are allowed on יום טוב for food.",
+   "reading": {
+    "steps": 11,
+    "words": 167
+   },
+   "continues": {
+    "m": "Beitzah",
+    "daf": "12b",
+    "label": "Continue on 12b"
+   },
+   "audit": "Not tagged yet: Tab has no audit record for this range. Please tag it from your audit list.",
+   "fully_audited": null,
+   "confidence": "medium",
+   "note": "Step range is my judgment; the מתוך discussion also runs onto 12b."
+  },
+  {
+   "id": "kid42b-shaliach",
+   "theme": "concepts",
+   "order": 41,
+   "n": 41,
+   "tier": "Getting hooked",
+   "title": "No agent for a sin",
+   "question": "If you send someone to do a sin, who is responsible?",
+   "summary": "אין שליח לדבר עבירה: \"the words of the teacher and the words of the student, whose do you obey?\" Then why מעילה is different.",
+   "why": "אין שליח לדבר עבירה: \"the words of the teacher and the words of the student, whose do you obey?\" Then why מעילה is different.",
+   "daf": "Kiddushin 42b",
+   "app_links": [
+    "https://gemara-clarity.sites.tab.bot/#/Kiddushin/42b"
+   ],
+   "where": "Steps 11 to 16 (6 steps)",
+   "time": "about 10 minutes",
+   "start": {
+    "m": "Kiddushin",
+    "daf": "42b",
+    "step": 11,
+    "words": "וְהָא דִּתְנַן"
+   },
+   "end": {
+    "m": "Kiddushin",
+    "daf": "42b",
+    "step": 16,
+    "words": "אֵין מְלַמְּדִין"
+   },
+   "excluded": "Starts at fire sent with a messenger.",
+   "background": "How שליחות (agency) works.",
+   "reading": {
+    "steps": 6,
+    "words": 106
+   },
+   "continues": {
+    "m": "Kiddushin",
+    "daf": "43a",
+    "label": "Continue on 43a"
+   },
+   "audit": "Not tagged yet: Tab has no audit record for this range. Please tag it from your audit list.",
+   "fully_audited": null,
+   "confidence": "medium",
+   "note": "Short; continues on 43a."
+  },
+  {
+   "id": "git25a-bereirah",
+   "theme": "concepts",
+   "order": 42,
+   "n": 42,
+   "tier": "Harder",
+   "title": "Bereirah",
+   "question": "Can a later choice decide what was true earlier?",
+   "summary": "רבי יוחנן on brothers who split an estate, a גט \"for whichever wife leaves first\", and the father's קרבן פסח \"for whichever son gets to Jerusalem first\".",
+   "why": "רבי יוחנן on brothers who split an estate, a גט \"for whichever wife leaves first\", and the father's קרבן פסח \"for whichever son gets to Jerusalem first\".",
+   "daf": "Gittin 25a",
+   "app_links": [
+    "https://gemara-clarity.sites.tab.bot/#/Gittin/25a"
+   ],
+   "where": "Steps 4 to 17 (14 steps)",
+   "time": "about 20 minutes",
+   "start": {
+    "m": "Gittin",
+    "daf": "25a",
+    "step": 4,
+    "words": "וְרַבִּי יוֹחָנָן אָמַר"
+   },
+   "end": {
+    "m": "Gittin",
+    "daf": "25a",
+    "step": 17,
+    "words": "תִּשְׁעָה מַעֲשֵׂר שֵׁנִי"
+   },
+   "excluded": "Starts at רבי יוחנן's view; continues on 25b.",
+   "background": "That a גט must be written for a specific woman (לשמה).",
+   "reading": {
+    "steps": 14,
+    "words": 303
+   },
+   "continues": {
+    "m": "Gittin",
+    "daf": "25b",
+    "label": "Continue on 25b"
+   },
+   "audit": "Not tagged yet: Tab has no audit record for this range. Please tag it from your audit list.",
+   "fully_audited": null,
+   "confidence": "medium",
+   "note": "Bereirah is spread across Shas; this is one standard place, not the only one."
+  },
+  {
+   "id": "yev93a-shelo-ba",
+   "theme": "concepts",
+   "order": 43,
+   "n": 43,
+   "tier": "Harder",
+   "title": "Davar shelo ba la'olam",
+   "question": "Can you sell something that does not exist yet?",
+   "summary": "A chain of rabbis back to רבי עקיבא: a person can transfer something not yet in the world. Then רב הונא's palm-tree fruit, רב נחמן's limits, and רבי ינאי's sharecropper.",
+   "why": "A chain of rabbis back to רבי עקיבא: a person can transfer something not yet in the world. Then רב הונא's palm-tree fruit, רב נחמן's limits, and רבי ינאי's sharecropper.",
+   "daf": "Yevamot 93a",
+   "app_links": [
+    "https://gemara-clarity.sites.tab.bot/#/Yevamot/93a"
+   ],
+   "where": "Steps 4 to 10 (7 steps)",
+   "time": "about 10 minutes",
+   "start": {
+    "m": "Yevamot",
+    "daf": "93a",
+    "step": 4,
+    "words": "וּפְלִיגָא דְּרַב נַחְמָן בַּר יִצְחָק"
+   },
+   "end": {
+    "m": "Yevamot",
+    "daf": "93a",
+    "step": 10,
+    "words": "אֲמַר לֵיהּ: שַׁפִּיר עֲבַדְתְּ"
+   },
+   "excluded": "Starts inside a sugya that begins on 92b.",
+   "background": "That a sale needs an existing object (קנין).",
+   "reading": {
+    "steps": 7,
+    "words": 149
+   },
+   "audit": "Not tagged yet: Tab has no audit record for this range. Please tag it from your audit list.",
+   "fully_audited": null,
+   "confidence": "medium",
+   "note": "Starts mid-sugya; the context is on 92b."
+  },
+  {
+   "id": "shab33b-rashbi",
+   "theme": "aggadah",
+   "order": 44,
+   "n": 44,
+   "tier": "Getting hooked",
+   "title": "Rabbi Shimon bar Yochai in the cave",
+   "question": "What happened to רבי שמעון בר יוחאי in the cave?",
+   "summary": "רבי יהודה praises Rome, רבי שמעון criticizes it and must hide. Twelve years in a cave with a carob tree and a spring; he comes out too harsh and is sent back; the old man with two myrtle bundles.",
+   "why": "רבי יהודה praises Rome, רבי שמעון criticizes it and must hide. Twelve years in a cave with a carob tree and a spring; he comes out too harsh and is sent back; the old man with two myrtle bundles.",
+   "daf": "Shabbat 33b",
+   "app_links": [
+    "https://gemara-clarity.sites.tab.bot/#/Shabbat/33b"
+   ],
+   "where": "Steps 20 to 33 (14 steps)",
+   "time": "about 20 minutes",
+   "start": {
+    "m": "Shabbat",
+    "daf": "33b",
+    "step": 20,
+    "words": "וְאַמַּאי קָרוּ לֵיהּ"
+   },
+   "end": {
+    "m": "Shabbat",
+    "daf": "33b",
+    "step": 33,
+    "words": "שָׁלֵם בְּמָמוֹנוֹ, שָׁלֵם בְּתוֹרָתוֹ"
+   },
+   "excluded": "Starts after the causes of אסכרה; the story ends on 34a.",
+   "background": "None.",
+   "reading": {
+    "steps": 14,
+    "words": 390
+   },
+   "continues": {
+    "m": "Shabbat",
+    "daf": "34a",
+    "label": "Continue on 34a"
+   },
+   "audit": "Not tagged yet: Tab has no audit record for this range. Please tag it from your audit list.",
+   "fully_audited": null,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "id": "yoma9b-sinah",
+   "theme": "aggadah",
+   "order": 45,
+   "n": 45,
+   "tier": "Getting hooked",
+   "title": "Why the Temples were destroyed",
+   "question": "Why was the First Temple destroyed, and why the Second?",
+   "summary": "The First Temple fell for idolatry, forbidden relations and bloodshed. The Second, in a generation of Torah, mitzvos and kindness, fell for שנאת חנם, which the Gemara weighs as equal to all three.",
+   "why": "The First Temple fell for idolatry, forbidden relations and bloodshed. The Second, in a generation of Torah, mitzvos and kindness, fell for שנאת חנם, which the Gemara weighs as equal to all three.",
+   "daf": "Yoma 9b",
+   "app_links": [
+    "https://gemara-clarity.sites.tab.bot/#/Yoma/9b"
+   ],
+   "where": "Steps 3 to 21 (19 steps)",
+   "time": "about 25 minutes",
+   "start": {
+    "m": "Yoma",
+    "daf": "9b",
+    "step": 3,
+    "words": "מִקְדָּשׁ רִאשׁוֹן מִפְּנֵי מָה חָרַב —"
+   },
+   "end": {
+    "m": "Yoma",
+    "daf": "9b",
+    "step": 21,
+    "words": "לֹא נִתְגַּלָּה קִצָּם"
+   },
+   "excluded": "Stops before the \"earlier generations\" debate (step 22 on).",
+   "background": "None.",
+   "reading": {
+    "steps": 19,
+    "words": 331
+   },
+   "audit": "Not tagged yet: Tab has no audit record for this range. Please tag it from your audit list.",
+   "fully_audited": null,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "id": "chag14b-pardes",
+   "theme": "aggadah",
+   "order": 46,
+   "n": 46,
+   "tier": "First win",
+   "title": "Four entered the Pardes",
+   "question": "Four sages entered the Pardes. Why did only one come out whole?",
+   "summary": "בן עזאי looked and died, בן זומא looked and was harmed, אחר cut the shoots, and רבי עקיבא entered in peace and left in peace.",
+   "why": "בן עזאי looked and died, בן זומא looked and was harmed, אחר cut the shoots, and רבי עקיבא entered in peace and left in peace.",
+   "daf": "Chagigah 14b",
+   "app_links": [
+    "https://gemara-clarity.sites.tab.bot/#/Chagigah/14b"
+   ],
+   "where": "Steps 16 to 21 (6 steps)",
+   "time": "about 10 minutes",
+   "start": {
+    "m": "Chagigah",
+    "daf": "14b",
+    "step": 16,
+    "words": "תָּנוּ רַבָּנַן"
+   },
+   "end": {
+    "m": "Chagigah",
+    "daf": "14b",
+    "step": 21,
+    "words": "רַבִּי עֲקִיבָא יָצָא בְּשָׁלוֹם"
+   },
+   "excluded": "Short; the story of אחר continues on 15a.",
+   "background": "None.",
+   "reading": {
+    "steps": 6,
+    "words": 69
+   },
+   "audit": "Not tagged yet: Tab has no audit record for this range. Please tag it from your audit list.",
+   "fully_audited": null,
+   "confidence": "high",
+   "note": "Adjacent to Instinct's #11 (Acher, 15a 12–33) but no overlap; could be paired as a lead-in."
+  },
+  {
+   "id": "az2a-nations",
+   "theme": "aggadah",
+   "order": 47,
+   "n": 47,
+   "tier": "Getting hooked",
+   "title": "The nations ask for their reward",
+   "question": "In the future, what will the nations say they did for Torah?",
+   "summary": "God calls those who learned Torah to take their reward. Each nation comes forward: Rome says it built markets and bathhouses for Israel's sake, Persia says bridges and wars, and each leaves disappointed.",
+   "why": "God calls those who learned Torah to take their reward. Each nation comes forward: Rome says it built markets and bathhouses for Israel's sake, Persia says bridges and wars, and each leaves disappointed.",
+   "daf": "Avodah Zarah 2a to 2b",
+   "app_links": [
+    "https://gemara-clarity.sites.tab.bot/#/Avodah_Zarah/2a",
+    "https://gemara-clarity.sites.tab.bot/#/Avodah_Zarah/2b"
+   ],
+   "where": "2a steps 13 to 14, then 2b steps 1 to 33 (35 steps)",
+   "time": "about 50 minutes",
+   "start": {
+    "m": "Avodah_Zarah",
+    "daf": "2a",
+    "step": 13,
+    "words": "דָּרֵשׁ רַבִּי חֲנִינָא בַּר פָּפָּא"
+   },
+   "end": {
+    "m": "Avodah_Zarah",
+    "daf": "2b",
+    "step": 33,
+    "words": "עַד דְּאָתֵי מְשִׁיחָא"
+   },
+   "excluded": "Starts at the aggadah; the Gemara's opening steps are on the Mishnah's wording.",
+   "background": "None.",
+   "reading": {
+    "steps": 35,
+    "words": 423
+   },
+   "continues": {
+    "m": "Avodah_Zarah",
+    "daf": "3a",
+    "label": "Continue on 3a"
+   },
+   "audit": "Not tagged yet: Tab has no audit record for this range. Please tag it from your audit list.",
+   "fully_audited": null,
+   "confidence": "medium",
+   "note": "End step is my choice: 2b step 34 on (the nations' claims and the סוכה test) runs onto 3a."
+  },
+  {
+   "id": "nid30b-womb",
+   "theme": "aggadah",
+   "order": 48,
+   "n": 48,
+   "tier": "Getting hooked",
+   "title": "The baby learns Torah in the womb",
+   "question": "What does a baby learn before it is born?",
+   "summary": "A candle over its head, the whole Torah taught to it, an angel who makes it forget at birth, and the oath it swears: be righteous, not wicked.",
+   "why": "A candle over its head, the whole Torah taught to it, an angel who makes it forget at birth, and the oath it swears: be righteous, not wicked.",
+   "daf": "Niddah 30b",
+   "app_links": [
+    "https://gemara-clarity.sites.tab.bot/#/Niddah/30b"
+   ],
+   "where": "Steps 25 to 38 (14 steps)",
+   "time": "about 20 minutes",
+   "start": {
+    "m": "Niddah",
+    "daf": "30b",
+    "step": 25,
+    "words": "דָּרֵשׁ רַבִּי שִׂמְלַאי"
+   },
+   "end": {
+    "m": "Niddah",
+    "daf": "30b",
+    "step": 38,
+    "words": "וְאִם לָאו — הֲרֵינִי שׂוֹרְפָהּ לְפָנֶיךָ"
+   },
+   "excluded": "Starts after the forty-one days discussion.",
+   "background": "None.",
+   "reading": {
+    "steps": 14,
+    "words": 296
+   },
+   "audit": "Not tagged yet: Tab has no audit record for this range. Please tag it from your audit list.",
+   "fully_audited": null,
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "id": "makkot23b-613",
+   "theme": "aggadah",
+   "order": 49,
+   "n": 49,
+   "tier": "Harder",
+   "title": "613 mitzvos, summed up",
+   "question": "How did the prophets sum up the 613 mitzvos?",
+   "summary": "רבי שמלאי: 613 mitzvos. Then דוד sums them in eleven, ישעיהו in six, מיכה in three, ישעיהו again in two, עמוס in one, and חבקוק: \"the righteous shall live by his faith\".",
+   "why": "רבי שמלאי: 613 mitzvos. Then דוד sums them in eleven, ישעיהו in six, מיכה in three, ישעיהו again in two, עמוס in one, and חבקוק: \"the righteous shall live by his faith\".",
+   "daf": "Makkot 23b to 24a",
+   "app_links": [
+    "https://gemara-clarity.sites.tab.bot/#/Makkot/23b",
+    "https://gemara-clarity.sites.tab.bot/#/Makkot/24a"
+   ],
+   "where": "23b steps 33 to 34, then 24a steps 1 to 33 (35 steps)",
+   "time": "about 50 minutes",
+   "start": {
+    "m": "Makkot",
+    "daf": "23b",
+    "step": 33,
+    "words": "דָּרַשׁ רַבִּי שִׂמְלַאי"
+   },
+   "end": {
+    "m": "Makkot",
+    "daf": "24a",
+    "step": 33,
+    "words": "שֶׁנֶּאֱמַר ״וְצַדִּיק בֶּאֱמוּנָתוֹ יִחְיֶה״"
+   },
+   "excluded": "Stops before the four decrees of משה (24a step 34); Instinct's #5 starts at 24a step 43.",
+   "background": "None.",
+   "reading": {
+    "steps": 35,
+    "words": 542
+   },
+   "audit": "Not tagged yet: Tab has no audit record for this range. Please tag it from your audit list.",
+   "fully_audited": null,
+   "confidence": "high",
+   "note": "Long (35 steps); ends right before Instinct's Rabbi Akiva item, which can follow."
+  },
+  {
+   "id": "san90a-chelek",
+   "theme": "aggadah",
+   "order": 50,
+   "n": 50,
+   "tier": "Getting hooked",
+   "title": "All Israel has a share in the World to Come",
+   "question": "Who has a share in the World to Come, and who loses it?",
+   "summary": "The Mishnah of חלק: all Israel has a share, except those who deny basic beliefs, three kings and four commoners. Measure for measure: he denied it, so he will not have it.",
+   "why": "The Mishnah of חלק: all Israel has a share, except those who deny basic beliefs, three kings and four commoners. Measure for measure: he denied it, so he will not have it.",
+   "daf": "Sanhedrin 90a",
+   "app_links": [
+    "https://gemara-clarity.sites.tab.bot/#/Sanhedrin/90a"
+   ],
+   "where": "Steps 18 to 29 (12 steps)",
+   "time": "about 15 minutes",
+   "start": {
+    "m": "Sanhedrin",
+    "daf": "90a",
+    "step": 18,
+    "words": "מַתְנִי׳ כׇּל יִשְׂרָאֵל"
+   },
+   "end": {
+    "m": "Sanhedrin",
+    "daf": "90a",
+    "step": 29,
+    "words": "וּמִשָּׁם לֹא תֹאכֵל״"
+   },
+   "excluded": "Starts at the Mishnah (steps 1–17 close the previous perek).",
+   "background": "None.",
+   "reading": {
+    "steps": 12,
+    "words": 201
+   },
+   "continues": {
+    "m": "Sanhedrin",
+    "daf": "90b",
+    "label": "Continue on 90b"
+   },
+   "audit": "Not tagged yet: Tab has no audit record for this range. Please tag it from your audit list.",
+   "fully_audited": null,
+   "confidence": "high",
+   "note": "Opening of Perek Chelek."
+  },
+  {
+   "id": "kid40b-talmud",
+   "theme": "aggadah",
+   "order": 51,
+   "n": 51,
+   "tier": "First win",
+   "title": "Learning or doing: which is greater?",
+   "question": "Is learning Torah greater, or doing it?",
+   "summary": "The elders in Lod: רבי טרפון says doing, רבי עקיבא says learning, and everyone agrees: learning is greater because it leads to doing. A person is judged first on Torah.",
+   "why": "The elders in Lod: רבי טרפון says doing, רבי עקיבא says learning, and everyone agrees: learning is greater because it leads to doing. A person is judged first on Torah.",
+   "daf": "Kiddushin 40b",
+   "app_links": [
+    "https://gemara-clarity.sites.tab.bot/#/Kiddushin/40b"
+   ],
+   "where": "Steps 9 to 16 (8 steps)",
+   "time": "about 10 minutes",
+   "start": {
+    "m": "Kiddushin",
+    "daf": "40b",
+    "step": 9,
+    "words": "וּכְבָר הָיָה רַבִּי טַרְפוֹן וּזְקֵנִים"
+   },
+   "end": {
+    "m": "Kiddushin",
+    "daf": "40b",
+    "step": 16,
+    "words": "וְתוֹרֹתָיו יִנְצֹרוּ״"
+   },
+   "excluded": "Starts after \"see yourself as half guilty\" (steps 1–8).",
+   "background": "None.",
+   "reading": {
+    "steps": 8,
+    "words": 118
+   },
+   "audit": "Not tagged yet: Tab has no audit record for this range. Please tag it from your audit list.",
+   "fully_audited": null,
+   "confidence": "high",
+   "note": ""
+  }
+ ]
+}

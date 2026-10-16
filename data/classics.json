@@ -1,0 +1,3310 @@
+{
+ "note": "Classics list for home3c: Instinct's batch3 (mail 04851cd2), entries as sent; group/order/reading added for the reader. Titles and summaries are not yet approved wording.",
+ "build": "home3c",
+ "groups": [
+  {
+   "id": "first",
+   "name": "First win",
+   "intro": "Short stories with almost no argument to follow."
+  },
+  {
+   "id": "hooked",
+   "name": "Getting hooked",
+   "intro": "A little longer, with a question at the heart of the story."
+  },
+  {
+   "id": "harder",
+   "name": "Harder",
+   "intro": "Longer stories, some across two or three amudim."
+  },
+  {
+   "id": "halacha",
+   "name": "Following a halachic argument",
+   "intro": "Classic sugyos where the Gemara builds an argument step by step."
+  },
+  {
+   "id": "more",
+   "name": "More classics",
+   "intro": ""
+  }
+ ],
+ "items": [
+  {
+   "id": "taa31a-tubav",
+   "title": "Tu B’Av: the vineyard dances",
+   "summary": "Everyone borrows white clothes so no one is embarrassed, and the young people go out to dance in the vineyards. It closes with the dance of the righteous in Gan Eden, and the end of the masechta. No argument to follow.",
+   "seder": "Moed",
+   "masechta": "Taanit",
+   "start": {
+    "m": "Taanit",
+    "daf": "31a",
+    "step": 10,
+    "words": "שֶׁבָּהֶן בְּנוֹת יְרוּשָׁלַיִם כּוּ׳."
+   },
+   "end": {
+    "m": "Taanit",
+    "daf": "31a",
+    "step": 15,
+    "words": "וּסְלִיקָא לַהּ מַסֶּכֶת תַּעֲנִית"
+   },
+   "steps": 6,
+   "status": "pointer-checked only",
+   "note": "live in Classics now (Tab/Instinct list); pointer check passed, boundaries not read by me",
+   "source": "shown",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "first",
+   "order": 1,
+   "reading": {
+    "steps": 6
+   }
+  },
+  {
+   "id": "taa23a-honi",
+   "title": "Honi and the carob tree",
+   "summary": "A man plants a carob tree for his grandchildren, falls asleep for seventy years, wakes up, and nobody believes who he is. Start there, then go back for the story of him drawing a circle and refusing to move until it rains.",
+   "seder": "Moed",
+   "masechta": "Taanit",
+   "start": {
+    "m": "Taanit",
+    "daf": "23a",
+    "step": 22,
+    "words": "יוֹמָא חַד הֲוָה אָזֵל בְּאוֹרְחָא,"
+   },
+   "end": {
+    "m": "Taanit",
+    "daf": "23a",
+    "step": 27,
+    "words": "אוֹ חַבְרוּתָא אוֹ מִיתוּתָא."
+   },
+   "steps": 6,
+   "status": "pointer-checked only",
+   "note": "live in Classics now (Tab/Instinct list); pointer check passed, boundaries not read by me",
+   "source": "shown",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "first",
+   "order": 2,
+   "reading": {
+    "steps": 6
+   }
+  },
+  {
+   "id": "taa23a-honi-circle",
+   "title": "Then: Honi draws a circle and waits for rain",
+   "summary": "Go back to the start of the story: the circle, the oath not to move, and the rain that comes too little, then too much.",
+   "seder": "Moed",
+   "masechta": "Taanit",
+   "start": {
+    "m": "Taanit",
+    "daf": "23a",
+    "step": 4,
+    "words": "מַעֲשֶׂה שֶׁשָּׁלְחוּ לְחוֹנִי הַמְעַגֵּל וְכוּ׳."
+   },
+   "end": {
+    "m": "Taanit",
+    "daf": "23a",
+    "step": 14,
+    "words": "וְהֵבִיאוּ לָהֶם כְּמֵהִין וּפִטְרִיּוֹת."
+   },
+   "steps": 11,
+   "status": "pointer-checked only",
+   "note": "live in Classics now (Tab/Instinct list); pointer check passed, boundaries not read by me",
+   "source": "shown",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "first",
+   "order": 2.5,
+   "reading": {
+    "steps": 11
+   }
+  },
+  {
+   "id": "shab31a-hillel",
+   "title": "Hillel and the three converts",
+   "summary": "A man bets 400 zuz he can make Hillel lose his temper, and fails three times. Then comes “what is hateful to you, do not do to others,” told on one foot. Stories first, argument almost none.",
+   "seder": "Moed",
+   "masechta": "Shabbat",
+   "start": {
+    "m": "Shabbat",
+    "daf": "31a",
+    "step": 1,
+    "words": "שֶׁהִמְרוּ זֶה אֶת זֶה,"
+   },
+   "end": {
+    "m": "Shabbat",
+    "daf": "31a",
+    "step": 8,
+    "words": "וְהִלֵּל לֹא יַקְפִּיד."
+   },
+   "steps": 8,
+   "status": "pointer-checked only",
+   "note": "live in Classics now (Tab/Instinct list); pointer check passed, boundaries not read by me",
+   "source": "shown",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "first",
+   "order": 3,
+   "reading": {
+    "steps": 8
+   }
+  },
+  {
+   "id": "shab31a-onefoot",
+   "title": "Then: the whole Torah on one foot",
+   "summary": "A second man asks to learn the whole Torah while standing on one foot. Shammai pushes him away; Hillel answers.",
+   "seder": "Moed",
+   "masechta": "Shabbat",
+   "start": {
+    "m": "Shabbat",
+    "daf": "31a",
+    "step": 14,
+    "words": "שׁוּב מַעֲשֶׂה בְּגוֹי אֶחָד שֶׁבָּא לִפְנֵי שַׁמַּאי."
+   },
+   "end": {
+    "m": "Shabbat",
+    "daf": "31a",
+    "step": 15,
+    "words": "וְאִידַּךְ פֵּירוּשָׁהּ הוּא, זִיל גְּמוֹר."
+   },
+   "steps": 2,
+   "status": "pointer-checked only",
+   "note": "live in Classics now (Tab/Instinct list); pointer check passed, boundaries not read by me",
+   "source": "shown",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "first",
+   "order": 3.5,
+   "reading": {
+    "steps": 2
+   }
+  },
+  {
+   "id": "kid31a-dama",
+   "title": "Dama ben Netina honors his father",
+   "summary": "A non-Jew loses a fortune rather than wake his sleeping father, and is later rewarded with a red heifer. It then asks how far honoring parents really goes, and who comes first when both ask.",
+   "seder": "Nashim",
+   "masechta": "Kiddushin",
+   "start": {
+    "m": "Kiddushin",
+    "daf": "31a",
+    "step": 14,
+    "words": "בְּעוֹ מִינֵּיהּ מֵרַב עוּלָּא:"
+   },
+   "end": {
+    "m": "Kiddushin",
+    "daf": "31a",
+    "step": 23,
+    "words": "וְיֵשׁ מַטְחִינוֹ בָּרֵיחַיִם"
+   },
+   "steps": 10,
+   "status": "pointer-checked only",
+   "note": "live in Classics now (Tab/Instinct list); pointer check passed, boundaries not read by me",
+   "source": "shown",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "first",
+   "order": 4,
+   "reading": {
+    "steps": 10
+   }
+  },
+  {
+   "id": "mak24a-akiva",
+   "title": "Rabbi Akiva laughs at the ruins",
+   "summary": "Four sages walk past the ruined Temple. Three cry. Akiva laughs. His reason: the destruction prophesied came true, so the rebuilding will too. “Akiva, you have comforted us.”",
+   "seder": "Nezikin",
+   "masechta": "Makkot",
+   "start": {
+    "m": "Makkot",
+    "daf": "24a",
+    "step": 43,
+    "words": "וּכְבָר הָיָה רַבָּן גַּמְלִיאֵל וְרַבִּי אֶלְעָזָר בֶּן עֲזַרְיָה"
+   },
+   "end": {
+    "m": "Makkot",
+    "daf": "24b",
+    "step": 8,
+    "words": "עֲקִיבָא נִיחַמְתָּנוּ, עֲקִיבָא נִיחַמְתָּנוּ."
+   },
+   "steps": 12,
+   "status": "pointer-checked only",
+   "note": "live in Classics now (Tab/Instinct list); pointer check passed, boundaries not read by me",
+   "source": "shown",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "hooked",
+   "order": 5,
+   "reading": {
+    "steps": 12
+   }
+  },
+  {
+   "id": "shab88a-mountain",
+   "title": "The mountain held over Israel like a tub",
+   "summary": "Was the Torah accepted freely or under threat? The answer turns on na’aseh v’nishma, “we will do and we will hear,” the crowns Israel earned and lost, and the angels’ secret.",
+   "seder": "Moed",
+   "masechta": "Shabbat",
+   "start": {
+    "m": "Shabbat",
+    "daf": "88a",
+    "step": 11,
+    "words": "״וַיִּתְיַצְּבוּ בְּתַחְתִּית הָהָר״,"
+   },
+   "end": {
+    "m": "Shabbat",
+    "daf": "88a",
+    "step": 23,
+    "words": "אַף יִשְׂרָאֵל הִקְדִּימוּ ״נַעֲשֶׂה״ לְ״נִשְׁמָע״."
+   },
+   "steps": 13,
+   "status": "pointer-checked only",
+   "note": "live in Classics now (Tab/Instinct list); pointer check passed, boundaries not read by me",
+   "source": "shown",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "hooked",
+   "order": 6,
+   "reading": {
+    "steps": 13
+   }
+  },
+  {
+   "id": "bm59b-achnai",
+   "title": "The oven of Akhnai",
+   "summary": "Rabbi Eliezer has every argument and a string of miracles: a carob tree moves, a stream runs backward, the walls lean. A voice from Heaven backs him. The sages answer: “It is not in heaven.” God’s reaction: “My children have defeated Me.” Then the aftermath.",
+   "seder": "Nezikin",
+   "masechta": "Bava_Metzia",
+   "start": {
+    "m": "Bava_Metzia",
+    "daf": "59a",
+    "step": 23,
+    "words": "תְּנַן הָתָם:"
+   },
+   "end": {
+    "m": "Bava_Metzia",
+    "daf": "59b",
+    "step": 33,
+    "words": "חוּץ מִשַּׁעֲרֵי אוֹנָאָה."
+   },
+   "steps": 34,
+   "status": "pointer-checked only",
+   "note": "live in Classics now (Tab/Instinct list); pointer check passed, boundaries not read by me",
+   "source": "shown",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "hooked",
+   "order": 7,
+   "reading": {
+    "steps": 34
+   }
+  },
+  {
+   "id": "ber61b-akiva",
+   "title": "Rabbi Akiva’s last Shema",
+   "summary": "Papus asks Akiva if he isn’t afraid, and Akiva answers with the fox and the fish. Later, under torture, he says Shema and his soul leaves at the word “echad.” Berakhot is also where the next Daf Yomi cycle begins.",
+   "seder": "Zeraim",
+   "masechta": "Berakhot",
+   "start": {
+    "m": "Berakhot",
+    "daf": "61b",
+    "step": 13,
+    "words": "רַבִּי עֲקִיבָא אוֹמֵר:"
+   },
+   "end": {
+    "m": "Berakhot",
+    "daf": "61b",
+    "step": 26,
+    "words": "שֶׁאַתָּה מְזוּמָּן לְחַיֵּי הָעוֹלָם הַבָּא״."
+   },
+   "steps": 14,
+   "status": "pointer-checked only",
+   "note": "live in Classics now (Tab/Instinct list); pointer check passed, boundaries not read by me",
+   "source": "shown",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "hooked",
+   "order": 8,
+   "reading": {
+    "steps": 14
+   }
+  },
+  {
+   "id": "git55b-kamtza",
+   "title": "Kamtza and Bar Kamtza: why Jerusalem fell",
+   "summary": "A party invitation goes to the wrong man. He is thrown out in front of the rabbis, who stay silent, and he takes revenge. The story runs through the siege to Rabban Yochanan ben Zakkai being carried out in a coffin to meet Vespasian, and asks for Yavneh.",
+   "seder": "Nashim",
+   "masechta": "Gittin",
+   "start": {
+    "m": "Gittin",
+    "daf": "55b",
+    "step": 22,
+    "words": "אַקַּמְצָא וּבַר קַמְצָא חֲרוּב יְרוּשָׁלַיִם –"
+   },
+   "end": {
+    "m": "Gittin",
+    "daf": "56b",
+    "step": 14,
+    "words": "עַד דִּרְוַוח מְיעֵיהּ פּוּרְתָּא פּוּרְתָּא."
+   },
+   "steps": 48,
+   "status": "pointer-checked only",
+   "note": "live in Classics now (Tab/Instinct list); pointer check passed, boundaries not read by me",
+   "source": "shown",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "harder",
+   "order": 9,
+   "reading": {
+    "steps": 48
+   }
+  },
+  {
+   "id": "bm84a-reishlakish",
+   "title": "Reish Lakish and Rabbi Yochanan",
+   "summary": "Rabbi Yochanan sits by the river, Reish Lakish the bandit jumps in after him and becomes his greatest student. Then a quarrel in the study hall, a hurt that cannot be undone, and Rabbi Yochanan’s grief.",
+   "seder": "Nezikin",
+   "masechta": "Bava_Metzia",
+   "start": {
+    "m": "Bava_Metzia",
+    "daf": "84a",
+    "step": 21,
+    "words": "יוֹמָא חַד הֲוָה קָא סָחֵי"
+   },
+   "end": {
+    "m": "Bava_Metzia",
+    "daf": "84a",
+    "step": 38,
+    "words": "וְנָח נַפְשֵׁיהּ."
+   },
+   "steps": 18,
+   "status": "pointer-checked only",
+   "note": "live in Classics now (Tab/Instinct list); pointer check passed, boundaries not read by me",
+   "source": "shown",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "harder",
+   "order": 10,
+   "reading": {
+    "steps": 18
+   }
+  },
+  {
+   "id": "chag15a-acher",
+   "title": "Acher and Rabbi Meir",
+   "summary": "Elisha ben Avuya, the great sage who left, and Rabbi Meir, who kept learning from him and begged him to come back. He answers that he heard a voice saying there was no return for him. A heavy sugya, and a gripping one.",
+   "seder": "Moed",
+   "masechta": "Chagigah",
+   "start": {
+    "m": "Chagigah",
+    "daf": "15a",
+    "step": 12,
+    "words": "אַחֵר קִיצֵּץ בִּנְטִיעוֹת,"
+   },
+   "end": {
+    "m": "Chagigah",
+    "daf": "15a",
+    "step": 33,
+    "words": "אֲמַר לֵיהּ"
+   },
+   "steps": 22,
+   "status": "pointer-checked only",
+   "note": "live in Classics now (Tab/Instinct list); pointer check passed, boundaries not read by me",
+   "source": "shown",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "harder",
+   "order": 11,
+   "reading": {
+    "steps": 22
+   }
+  },
+  {
+   "id": "ber27b-gamliel",
+   "title": "Rabban Gamliel is removed",
+   "summary": "The head of the court humiliates Rabbi Yehoshua, the people force him out, and a new leader is picked. The next day the doors open and every student may enter. Politics, pride, and an apology.",
+   "seder": "Zeraim",
+   "masechta": "Berakhot",
+   "start": {
+    "m": "Berakhot",
+    "daf": "27b",
+    "step": 21,
+    "words": "דְּאָמַר רַב יְהוּדָה אָמַר שְׁמוּאֵל:"
+   },
+   "end": {
+    "m": "Berakhot",
+    "daf": "28a",
+    "step": 24,
+    "words": "לְמָחָר אֲנִי וְאַתָּה נַשְׁכִּים לְפִתְחוֹ."
+   },
+   "steps": 44,
+   "status": "pointer-checked only",
+   "note": "live in Classics now (Tab/Instinct list); pointer check passed, boundaries not read by me",
+   "source": "shown",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "harder",
+   "order": 12,
+   "reading": {
+    "steps": 44
+   }
+  },
+  {
+   "id": "ber26b-prayers",
+   "title": "Where do the three daily prayers come from: the Avos, or the Temple offerings?",
+   "summary": "Two Amoraim disagree, each with a supporting ברייתא; the Gemara ends by holding both: the אבות instituted the prayers and the Rabbis tied them to the offerings.",
+   "seder": "Zeraim",
+   "masechta": "Berakhot",
+   "start": {
+    "m": "Berakhot",
+    "daf": "26b",
+    "step": 5,
+    "words": "אִיתְּמַר,"
+   },
+   "end": {
+    "m": "Berakhot",
+    "daf": "26b",
+    "step": 20,
+    "words": "וְאַסְמְכִינְהוּ רַבָּנַן אַקׇּרְבָּנוֹת."
+   },
+   "steps": 16,
+   "status": "pointer-checked only",
+   "note": "live in Classics now (Tab/Instinct list); pointer check passed, boundaries not read by me",
+   "source": "shown",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "halacha",
+   "order": 13,
+   "reading": {
+    "steps": 16
+   }
+  },
+  {
+   "id": "ber35a-brachos",
+   "title": "Why must we say a ברכה before we eat?",
+   "summary": "The Gemara looks for a verse, tries a בנין אב from the vineyard and grain, and finally rests on reason: it is forbidden to enjoy this world without a ברכה. Then: what should someone who already did so do?",
+   "seder": "Zeraim",
+   "masechta": "Berakhot",
+   "start": {
+    "m": "Berakhot",
+    "daf": "35a",
+    "step": 4,
+    "words": "<big><strong>גְּמָ׳</strong></big> מְנָא הָנֵי מִילֵּי?"
+   },
+   "end": {
+    "m": "Berakhot",
+    "daf": "35a",
+    "step": 38,
+    "words": "כְּדֵי שֶׁלֹּא יָבֹא לִידֵי מְעִילָה."
+   },
+   "steps": 35,
+   "status": "pointer-checked only",
+   "note": "live in Classics now (Tab/Instinct list); pointer check passed, boundaries not read by me",
+   "source": "shown",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "halacha",
+   "order": 14,
+   "reading": {
+    "steps": 35
+   }
+  },
+  {
+   "id": "bm2a-shnayim",
+   "title": "Two people hold one garment and each says \"I found it\": who gets it?",
+   "summary": "The opening Mishnah of Bava Metzia (split it, each with an oath) and the Gemara's first questions on why the Mishnah gives two claims.",
+   "seder": "Nezikin",
+   "masechta": "Bava_Metzia",
+   "start": {
+    "m": "Bava_Metzia",
+    "daf": "2a",
+    "step": 1,
+    "words": "שְׁנַיִם אוֹחֲזִין בְּטַלִּית,"
+   },
+   "end": {
+    "m": "Bava_Metzia",
+    "daf": "2a",
+    "step": 14,
+    "words": "וְסֵיפָא בְּמִקָּח וּמִמְכָּר."
+   },
+   "steps": 14,
+   "status": "pointer-checked only",
+   "note": "live in Classics now (Tab/Instinct list); pointer check passed, boundaries not read by me",
+   "source": "shown",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "halacha",
+   "order": 15,
+   "reading": {
+    "steps": 14
+   }
+  },
+  {
+   "id": "ber2a-shema",
+   "title": "From when do we say the evening Shema?",
+   "summary": "The first Mishnah in Shas: three views on the deadline, רבן גמליאל's sons coming home late, and why the Sages set midnight. Then the Gemara asks why the Mishnah starts with evening at all.",
+   "seder": "Zeraim",
+   "masechta": "Berakhot",
+   "start": {
+    "m": "Berakhot",
+    "daf": "2a",
+    "step": 1,
+    "words": "מֵאֵימָתַי קוֹרִין אֶת שְׁמַע בָּעֲרָבִין?"
+   },
+   "end": {
+    "m": "Berakhot",
+    "daf": "2a",
+    "step": 14,
+    "words": "וַהֲדַר פָּרֵישׁ מִילֵּי דְעַרְבִית."
+   },
+   "steps": 14,
+   "status": "verified-read",
+   "note": "pointer-checked; automated check: ends on a conclusion or answer and the next step is not a continuation. Not manually read.",
+   "source": "draft",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 117,
+   "reading": {
+    "steps": 14
+   }
+  },
+  {
+   "id": "ber6a-tefillin",
+   "title": "God's tefillin",
+   "summary": "From \"ה׳ swore by His right hand and His strong arm\" the Gemara learns that God wears תפילין. Ours praise Him; His praise ישראל: \"who is like Your people Israel, one nation in the land\". Then it fits the verses into four compartments.",
+   "seder": "Zeraim",
+   "masechta": "Berakhot",
+   "start": {
+    "m": "Berakhot",
+    "daf": "6a",
+    "step": 23,
+    "words": "אָמַר רַבִּי אָבִין בַּר רַב אַדָּא,"
+   },
+   "end": {
+    "m": "Berakhot",
+    "daf": "6b",
+    "step": 1,
+    "words": "וְכוּלְּהוּ כְּתִיבִי בְּאֶדְרָעֵיהּ."
+   },
+   "steps": 14,
+   "status": "verified-read",
+   "note": "end extended to 6b step 1 (conclusion); cross-amud",
+   "source": "draft",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 118,
+   "reading": {
+    "steps": 14
+   }
+  },
+  {
+   "id": "ber7a-godprays",
+   "title": "God prays",
+   "summary": "God's own prayer: \"May My mercy overcome My anger\". Then רבי ישמעאל in the קדש הקדשים is asked to bless God, and the lesson that an ordinary person's blessing is not small.",
+   "seder": "Zeraim",
+   "masechta": "Berakhot",
+   "start": {
+    "m": "Berakhot",
+    "daf": "7a",
+    "step": 1,
+    "words": "אָמַר רַבִּי יוֹחָנָן מִשּׁוּם רַבִּי יוֹסֵי:"
+   },
+   "end": {
+    "m": "Berakhot",
+    "daf": "7a",
+    "step": 5,
+    "words": "קַלָּה בְּעֵינֶיךָ."
+   },
+   "steps": 5,
+   "status": "verified-read",
+   "note": "",
+   "source": "draft",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 119,
+   "reading": {
+    "steps": 5
+   }
+  },
+  {
+   "id": "bm21a-eilu",
+   "title": "Eilu Metzios: what may a finder keep?",
+   "summary": "The Mishnah of אלו מציאות lists what is the finder's (scattered fruit, scattered coins) and what must be announced. The Gemara starts with \"how much is scattered?\": a קב over four אמות, and a string of questions left unresolved.",
+   "seder": "Nezikin",
+   "masechta": "Bava_Metzia",
+   "start": {
+    "m": "Bava_Metzia",
+    "daf": "21a",
+    "step": 8,
+    "words": "מַתְנִי׳ אֵלּוּ מְצִיאוֹת שֶׁלּוֹ,"
+   },
+   "end": {
+    "m": "Bava_Metzia",
+    "daf": "21a",
+    "step": 21,
+    "words": "מַאי? תֵּיקוּ."
+   },
+   "steps": 14,
+   "status": "verified-read",
+   "note": "pointer-checked; automated check: ends on a conclusion or answer and the next step is not a continuation. Not manually read.",
+   "source": "draft",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 120,
+   "reading": {
+    "steps": 14
+   }
+  },
+  {
+   "id": "bb28a-chazakah",
+   "title": "Chezkas habatim: three years",
+   "summary": "The Mishnah: houses, pits and fields are held for three years; רבי ישמעאל and רבי עקיבא shorten it. The Gemara looks for the source of three years and tries the ox that gored three times.",
+   "seder": "Nezikin",
+   "masechta": "Bava_Batra",
+   "start": {
+    "m": "Bava_Batra",
+    "daf": "28a",
+    "step": 1,
+    "words": "חֶזְקַת הַבָּתִּים, וְהַבּוֹרוֹת, וְהַשִּׁיחִין,"
+   },
+   "end": {
+    "m": "Bava_Batra",
+    "daf": "28b",
+    "step": 3,
+    "words": "אֲנַן לִיטְעוֹן לֵיהּ?!"
+   },
+   "steps": 11,
+   "status": "verified-read",
+   "note": "extended to 28b step 3 (resolved challenge); partial: the opening sugya continues",
+   "source": "draft",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 121,
+   "reading": {
+    "steps": 11
+   }
+  },
+  {
+   "id": "bb2a-mechitza",
+   "title": "Partners build a wall",
+   "summary": "The opening Mishnah of Bava Basra: partners build the wall in the middle and each gives land. The Gemara asks what מחיצה means, which decides whether being seen (היזק ראיה) counts as damage.",
+   "seder": "Nezikin",
+   "masechta": "Bava_Batra",
+   "start": {
+    "m": "Bava_Batra",
+    "daf": "2a",
+    "step": 1,
+    "words": "הַשּׁוּתָּפִין שֶׁרָצוּ לַעֲשׂוֹת מְחִיצָה בְּחָצֵר"
+   },
+   "end": {
+    "m": "Bava_Batra",
+    "daf": "2b",
+    "step": 8,
+    "words": "קָא מַשְׁמַע לַן."
+   },
+   "steps": 15,
+   "status": "verified-read",
+   "note": "extended to 2b step 8 (answer on the Mishnah's wording); partial: the sugya continues",
+   "source": "draft",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 122,
+   "reading": {
+    "steps": 15
+   }
+  },
+  {
+   "id": "bm62a-chayecha",
+   "title": "Two travelers, one jug of water",
+   "summary": "בן פטורא says share it so neither sees the other die; רבי עקיבא learns from \"your brother shall live with you\" that your own life comes first.",
+   "seder": "Nezikin",
+   "masechta": "Bava_Metzia",
+   "start": {
+    "m": "Bava_Metzia",
+    "daf": "62a",
+    "step": 1,
+    "words": "״וְחֵי אָחִיךָ עִמָּךְ״."
+   },
+   "end": {
+    "m": "Bava_Metzia",
+    "daf": "62a",
+    "step": 3,
+    "words": "חַיֶּיךָ קוֹדְמִים לְחַיֵּי חֲבֵירֶךָ."
+   },
+   "steps": 3,
+   "status": "verified-read",
+   "note": "start/end read; clean (starts at the question that opens the story)",
+   "source": "draft",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 123,
+   "reading": {
+    "steps": 3
+   }
+  },
+  {
+   "id": "bm30b-lifnim",
+   "title": "Beyond the letter of the law",
+   "summary": "רבי ישמעאל בר' יוסי is exempt from helping with a load but pays for the wood anyway. The Gemara learns \"beyond the line of the law\" from a verse, and says ירושלים was destroyed because people kept only to strict law.",
+   "seder": "Nezikin",
+   "masechta": "Bava_Metzia",
+   "start": {
+    "m": "Bava_Metzia",
+    "daf": "30b",
+    "step": 9,
+    "words": "רַבִּי יִשְׁמָעֵאל בְּרַבִּי יוֹסֵי הֲוָה קָאָזֵיל בְּאוֹרְחָא,"
+   },
+   "end": {
+    "m": "Bava_Metzia",
+    "daf": "30b",
+    "step": 22,
+    "words": "וְלָא עֲבַדוּ לִפְנִים מִשּׁוּרַת הַדִּין."
+   },
+   "steps": 14,
+   "status": "verified-read",
+   "note": "pointer-checked; automated check: ends on a conclusion or answer and the next step is not a continuation. Not manually read.",
+   "source": "draft",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 124,
+   "reading": {
+    "steps": 14
+   }
+  },
+  {
+   "id": "rh25a-calendar",
+   "title": "Rabban Gamliel, Rabbi Yehoshua and the calendar",
+   "summary": "רבן גמליאל orders רבי יהושע to come on his own יום כיפור with his staff and money. רבי עקיבא and רבי דוסא show the court's ruling stands; יפתח בדורו כשמואל בדורו.",
+   "seder": "Moed",
+   "masechta": "Rosh_Hashanah",
+   "start": {
+    "m": "Rosh_Hashanah",
+    "daf": "25a",
+    "step": 3,
+    "words": "וְעוֹד, בָּאוּ שְׁנַיִם וְאָמְרוּ:"
+   },
+   "end": {
+    "m": "Rosh_Hashanah",
+    "daf": "25b",
+    "step": 10,
+    "words": "נוֹשְׂאִין קְטַנִּים קַל וָחוֹמֶר בְּעַצְמָן."
+   },
+   "steps": 38,
+   "status": "verified-read",
+   "note": "pointer-checked; automated check: ends on a conclusion or answer and the next step is not a continuation. Not manually read.",
+   "source": "draft",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 125,
+   "reading": {
+    "steps": 38
+   }
+  },
+  {
+   "id": "eruvin13b-eilu",
+   "title": "Eilu v'eilu",
+   "summary": "A Heavenly voice: both are the words of the living God, and the law follows בית הלל, because they were gentle and quoted בית שמאי first. Then: would it have been better not to be created?",
+   "seder": "Moed",
+   "masechta": "Eruvin",
+   "start": {
+    "m": "Eruvin",
+    "daf": "13b",
+    "step": 11,
+    "words": "אָמַר רַבִּי אַבָּא אָמַר שְׁמוּאֵל:"
+   },
+   "end": {
+    "m": "Eruvin",
+    "daf": "13b",
+    "step": 19,
+    "words": "יְמַשְׁמֵשׁ בְּמַעֲשָׂיו."
+   },
+   "steps": 9,
+   "status": "verified-read",
+   "note": "pointer-checked; automated check: ends on a conclusion or answer and the next step is not a continuation. Not manually read.",
+   "source": "draft",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 126,
+   "reading": {
+    "steps": 9
+   }
+  },
+  {
+   "id": "men29b-moshe",
+   "title": "Moshe in Rabbi Akiva's class",
+   "summary": "God ties crowns on the letters for רבי עקיבא's derashos. משה sits in the back and is lost, until a student asks for a source and Akiva says \"a law given to Moshe at Sinai\". Then משה sees Akiva's death.",
+   "seder": "Kodashim",
+   "masechta": "Menachot",
+   "start": {
+    "m": "Menachot",
+    "daf": "29b",
+    "step": 5,
+    "words": "אָמַר רַב יְהוּדָה, אָמַר רַב:"
+   },
+   "end": {
+    "m": "Menachot",
+    "daf": "29b",
+    "step": 13,
+    "words": "כָּךְ עָלָה בְּמַחְשָׁבָה לְפָנַי."
+   },
+   "steps": 9,
+   "status": "verified-read",
+   "note": "pointer-checked; automated check: ends on a conclusion or answer and the next step is not a continuation. Not manually read.",
+   "source": "draft",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 127,
+   "reading": {
+    "steps": 9
+   }
+  },
+  {
+   "id": "chag10a-nedarim",
+   "title": "Mountains hanging by a hair",
+   "summary": "Releasing vows floats in the air; שבת and מעילה are mountains hanging by a hair. Then the Sages look for a hint for התרת נדרים.",
+   "seder": "Moed",
+   "masechta": "Chagigah",
+   "start": {
+    "m": "Chagigah",
+    "daf": "10a",
+    "step": 6,
+    "words": "מַתְנִי׳"
+   },
+   "end": {
+    "m": "Chagigah",
+    "daf": "10a",
+    "step": 19,
+    "words": "אֶלָּא דִּשְׁמוּאֵל לֵית לֵיהּ פִּירְכָא."
+   },
+   "steps": 14,
+   "status": "verified-read",
+   "note": "end extended 12->19 (Shmuel's source stands unrefuted); changed, needs pointer re-check by repair agent",
+   "source": "draft",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 128,
+   "reading": {
+    "steps": 14
+   }
+  },
+  {
+   "id": "bb12a-chacham",
+   "title": "A sage is greater than a prophet",
+   "summary": "Since the Temple fell prophecy was taken from the prophets and given to the sages; a sage is greater than a prophet. אביי and רבא look for proof.",
+   "seder": "Nezikin",
+   "masechta": "Bava_Batra",
+   "start": {
+    "m": "Bava_Batra",
+    "daf": "12a",
+    "step": 22,
+    "words": "אָמַר רַבִּי אַבְדִּימִי דְּמִן חֵיפָה:"
+   },
+   "end": {
+    "m": "Bava_Batra",
+    "daf": "12b",
+    "step": 5,
+    "words": "וְלָאו טַעַם יְהֵיב?!"
+   },
+   "steps": 12,
+   "status": "verified-read",
+   "note": "end extended to 12b step 5, resolves the skylight objection; cross-amud",
+   "source": "draft",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 129,
+   "reading": {
+    "steps": 12
+   }
+  },
+  {
+   "id": "bk2a-avos",
+   "title": "The four main kinds of damage",
+   "summary": "The opening Mishnah of Bava Kamma: ox, pit, מבעה and fire, and what each adds. The Gemara asks whether their subcategories work like those of שבת.",
+   "seder": "Nezikin",
+   "masechta": "Bava_Kamma",
+   "start": {
+    "m": "Bava_Kamma",
+    "daf": "2a",
+    "step": 1,
+    "words": "מַתְנִי׳ <big><strong>אַרְבָּעָה</big></strong> אֲבוֹת נְזִיקִין:"
+   },
+   "end": {
+    "m": "Bava_Kamma",
+    "daf": "2a",
+    "step": 11,
+    "words": "קָרֵי לַהּ תּוֹלָדָה."
+   },
+   "steps": 11,
+   "status": "verified-read",
+   "note": "pointer-checked; automated check: ends on a conclusion or answer and the next step is not a continuation. Not manually read.",
+   "source": "draft",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 130,
+   "reading": {
+    "steps": 11
+   }
+  },
+  {
+   "id": "bk46a-parah",
+   "title": "The ox, the cow and the calf",
+   "summary": "The Mishnah of שור שנגח את הפרה, then סומכוס's \"split the doubtful money\" against the Sages' great rule: המוציא מחבירו עליו הראיה, whoever takes money from another must bring proof.",
+   "seder": "Nezikin",
+   "masechta": "Bava_Kamma",
+   "start": {
+    "m": "Bava_Kamma",
+    "daf": "46a",
+    "step": 8,
+    "words": "מַתְנִי׳ שׁוֹר שֶׁנָּגַח אֶת הַפָּרָה"
+   },
+   "end": {
+    "m": "Bava_Kamma",
+    "daf": "46a",
+    "step": 17,
+    "words": "וְקָאֵי בִּדְמֵי רִדְיָא."
+   },
+   "steps": 10,
+   "status": "verified-read",
+   "note": "pointer-checked; automated check: ends on a conclusion or answer and the next step is not a continuation. Not manually read.",
+   "source": "draft",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 131,
+   "reading": {
+    "steps": 10
+   }
+  },
+  {
+   "id": "bk20a-zehnehene",
+   "title": "Zeh nehene v'zeh lo chaser",
+   "summary": "רב חסדא's question to רמי בר חמא, and a long line of attempted proofs from Mishnayos and ברייתות, each pushed off, ending with רבי יוחנן's silence.",
+   "seder": "Nezikin",
+   "masechta": "Bava_Kamma",
+   "start": {
+    "m": "Bava_Kamma",
+    "daf": "20a",
+    "step": 30,
+    "words": "אֲמַר לֵיהּ רַב חִסְדָּא לְרָמֵי בַּר חָמָא:"
+   },
+   "end": {
+    "m": "Bava_Kamma",
+    "daf": "20b",
+    "step": 23,
+    "words": "הֶקְדֵּשׁ שֶׁלֹּא מִדַּעַת –"
+   },
+   "steps": 29,
+   "status": "verified-read",
+   "note": "end extended 22->23 to close on the resolution",
+   "source": "draft",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 132,
+   "reading": {
+    "steps": 29
+   }
+  },
+  {
+   "id": "bk83b-ayin",
+   "title": "An eye for an eye",
+   "summary": "The Mishnah lists five payments for injury; the Gemara asks how we know \"eye for an eye\" means money. Proof after proof, with each one challenged and defended.",
+   "seder": "Nezikin",
+   "masechta": "Bava_Kamma",
+   "start": {
+    "m": "Bava_Kamma",
+    "daf": "83b",
+    "step": 7,
+    "words": "גְּמָ׳ אַמַּאי?"
+   },
+   "end": {
+    "m": "Bava_Kamma",
+    "daf": "84a",
+    "step": 7,
+    "words": "וּפָטְרִינַן לֵיהּ!"
+   },
+   "steps": 35,
+   "status": "verified-read",
+   "note": "end moved to 84a step 7 (conclusion); starts at the 'literal eye?' question, step 7",
+   "source": "draft",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 133,
+   "reading": {
+    "steps": 35
+   }
+  },
+  {
+   "id": "bb22b-gerama",
+   "title": "Gerama: indirect damage",
+   "summary": "The Mishnah: keep a ladder four אמות from a neighbor's dovecote. The Gemara asks whether this goes against רבי יוסי, and answers: indirect damage (גרמא בניזקין) is forbidden.",
+   "seder": "Nezikin",
+   "masechta": "Bava_Batra",
+   "start": {
+    "m": "Bava_Batra",
+    "daf": "22b",
+    "step": 20,
+    "words": "מַתְנִי׳"
+   },
+   "end": {
+    "m": "Bava_Batra",
+    "daf": "22b",
+    "step": 24,
+    "words": "גְּרָמָא בְּנִיזָּקִין אָסוּר."
+   },
+   "steps": 5,
+   "status": "verified-read",
+   "note": "",
+   "source": "draft",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 134,
+   "reading": {
+    "steps": 5
+   }
+  },
+  {
+   "id": "shab2a-yetzios",
+   "title": "The ways out on Shabbos",
+   "summary": "The opening Mishnah of Shabbos: two that are four inside and outside, with the cases of the poor man and the homeowner reaching in and out.",
+   "seder": "Moed",
+   "masechta": "Shabbat",
+   "start": {
+    "m": "Shabbat",
+    "daf": "2a",
+    "step": 1,
+    "words": "מַתְנִי׳"
+   },
+   "end": {
+    "m": "Shabbat",
+    "daf": "2a",
+    "step": 6,
+    "words": "— שְׁנֵיהֶם פְּטוּרִין."
+   },
+   "steps": 6,
+   "status": "verified-read",
+   "note": "trimmed to the Mishnah only (steps 1-6); step 7 is the Gemara",
+   "source": "draft",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 135,
+   "reading": {
+    "steps": 6
+   }
+  },
+  {
+   "id": "shab73a-39",
+   "title": "The 39 melachos",
+   "summary": "The Mishnah of אבות מלאכות: the bread series, the cloth series, the hide series, and building, fire and carrying.",
+   "seder": "Moed",
+   "masechta": "Shabbat",
+   "start": {
+    "m": "Shabbat",
+    "daf": "73a",
+    "step": 13,
+    "words": "מַתְנִי׳"
+   },
+   "end": {
+    "m": "Shabbat",
+    "daf": "73a",
+    "step": 17,
+    "words": "אַרְבָּעִים חָסֵר אַחַת."
+   },
+   "steps": 5,
+   "status": "verified-read",
+   "note": "the 39 categories list; ends on the conclusion at step 17",
+   "source": "draft",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 136,
+   "reading": {
+    "steps": 5
+   }
+  },
+  {
+   "id": "shab34b-bein",
+   "title": "Bein hashmashos: twilight",
+   "summary": "Twilight is a doubt, so both days' stringencies apply. רבי יהודה, רבי נחמיה and רבי יוסי define it; רבה and רב יוסף argue over its length.",
+   "seder": "Moed",
+   "masechta": "Shabbat",
+   "start": {
+    "m": "Shabbat",
+    "daf": "34b",
+    "step": 5,
+    "words": "תָּנוּ רַבָּנַן:"
+   },
+   "end": {
+    "m": "Shabbat",
+    "daf": "35a",
+    "step": 3,
+    "words": "— אִיכָּא בֵּינַיְיהוּ פַּלְגָא דְּדַנְקָא."
+   },
+   "steps": 19,
+   "status": "verified-read",
+   "note": "end extended to 35a step 3; step 4 is the wicker-basket topic; cross-amud",
+   "source": "draft",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 137,
+   "reading": {
+    "steps": 19
+   }
+  },
+  {
+   "id": "yoma85a-pikuach",
+   "title": "Saving a life overrides Shabbos",
+   "summary": "The sages on the road are asked for a source: רבי ישמעאל's break-in, רבי עקיבא's altar, מילה, \"the Sabbath is given to you\", and \"break one שבת to keep many\". רבא: only שמואל's \"and live by them\" cannot be refuted.",
+   "seder": "Moed",
+   "masechta": "Yoma",
+   "start": {
+    "m": "Yoma",
+    "daf": "85a",
+    "step": 23,
+    "words": "וּכְבָר הָיָה רַבִּי יִשְׁמָעֵאל"
+   },
+   "end": {
+    "m": "Yoma",
+    "daf": "85b",
+    "step": 12,
+    "words": "וְדִשְׁמוּאֵל, וַדַּאי לֵית לֵיהּ פִּירְכָא."
+   },
+   "steps": 16,
+   "status": "verified-read",
+   "note": "start/end read; clean (starts at the question that opens the story)",
+   "source": "draft",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 138,
+   "reading": {
+    "steps": 16
+   }
+  },
+  {
+   "id": "shab21b-chanukah",
+   "title": "What is Chanukah?",
+   "summary": "נר איש וביתו and the מהדרין, בית שמאי and בית הלל on adding or removing lights, where the light goes, and then \"מאי חנוכה\": eight days and the jug of oil.",
+   "seder": "Moed",
+   "masechta": "Shabbat",
+   "start": {
+    "m": "Shabbat",
+    "daf": "21b",
+    "step": 13,
+    "words": "תָּנוּ רַבָּנַן:"
+   },
+   "end": {
+    "m": "Shabbat",
+    "daf": "21b",
+    "step": 23,
+    "words": "וַעֲשָׂאוּם יָמִים טוֹבִים בְּהַלֵּל וְהוֹדָאָה."
+   },
+   "steps": 11,
+   "status": "verified-read",
+   "note": "pointer-checked; automated check: ends on a conclusion or answer and the next step is not a continuation. Not manually read.",
+   "source": "draft",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 139,
+   "reading": {
+    "steps": 11
+   }
+  },
+  {
+   "id": "pes2a-or",
+   "title": "Or l'arba'ah asar",
+   "summary": "The Mishnah on בדיקת חמץ, then רב הונא and רב יהודה on the word אור, tested against verses about morning light.",
+   "seder": "Moed",
+   "masechta": "Pesachim",
+   "start": {
+    "m": "Pesachim",
+    "daf": "2a",
+    "step": 1,
+    "words": "מַתְנִי׳ אוֹר לְאַרְבָּעָה עָשָׂר"
+   },
+   "end": {
+    "m": "Pesachim",
+    "daf": "2b",
+    "step": 4,
+    "words": "וְלָא לַישְׁכְּחֵיהּ."
+   },
+   "steps": 27,
+   "status": "verified-read",
+   "note": "extended to 2b step 4; partial: the 'or' sugya continues",
+   "source": "draft",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 140,
+   "reading": {
+    "steps": 27
+   }
+  },
+  {
+   "id": "beitzah2a-egg",
+   "title": "An egg laid on Yom Tov",
+   "summary": "בית שמאי say yes, בית הלל say no. The Gemara asks which hen is meant, and reaches מוקצה and נולד.",
+   "seder": "Moed",
+   "masechta": "Beitzah",
+   "start": {
+    "m": "Beitzah",
+    "daf": "2a",
+    "step": 1,
+    "words": "בֵּיצָה שֶׁנּוֹלְדָה בְּיוֹם טוֹב,"
+   },
+   "end": {
+    "m": "Beitzah",
+    "daf": "2b",
+    "step": 8,
+    "words": "וּמִשּׁוּם הֲכָנָה."
+   },
+   "steps": 22,
+   "status": "verified-read",
+   "note": "extended to 2b step 8 (Rabbah's answer); partial: the sugya continues",
+   "source": "draft",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 141,
+   "reading": {
+    "steps": 22
+   }
+  },
+  {
+   "id": "sukkah2a-twenty",
+   "title": "A sukkah taller than twenty amos",
+   "summary": "The opening Mishnah, then three sources: \"so your generations will know\" (רבה), shade (רבי זירא), and a temporary home (רבא).",
+   "seder": "Moed",
+   "masechta": "Sukkah",
+   "start": {
+    "m": "Sukkah",
+    "daf": "2a",
+    "step": 1,
+    "words": "סוּכָּה שֶׁהִיא גְּבוֹהָה"
+   },
+   "end": {
+    "m": "Sukkah",
+    "daf": "2b",
+    "step": 4,
+    "words": "מִשּׁוּם קוּשְׁיָא דְאַבָּיֵי."
+   },
+   "steps": 18,
+   "status": "verified-read",
+   "note": "extended to 2b step 4 (the three reasons dispute closes); partial",
+   "source": "draft",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 142,
+   "reading": {
+    "steps": 18
+   }
+  },
+  {
+   "id": "meg7b-purim",
+   "title": "Drinking on Purim",
+   "summary": "רבא: until he cannot tell \"cursed is המן\" from \"blessed is מרדכי\". Then רבה and רבי זירא's feast that went terribly wrong, and why the meal must be by day.",
+   "seder": "Moed",
+   "masechta": "Megillah",
+   "start": {
+    "m": "Megillah",
+    "daf": "7b",
+    "step": 7,
+    "words": "אָמַר רָבָא: מִיחַיַּיב אִינִישׁ לְבַסּוֹמֵי בְּפוּרַיָּא"
+   },
+   "end": {
+    "m": "Megillah",
+    "daf": "7b",
+    "step": 10,
+    "words": "״יְמֵי מִשְׁתֶּה וְשִׂמְחָה״, כְּתִיב:"
+   },
+   "steps": 4,
+   "status": "verified-read",
+   "note": "pointer-checked; automated check: ends on a conclusion or answer and the next step is not a continuation. Not manually read.",
+   "source": "draft",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 143,
+   "reading": {
+    "steps": 4
+   }
+  },
+  {
+   "id": "kid2a-niknes",
+   "title": "How a woman is married",
+   "summary": "The opening Mishnah of Kiddushin: money, document and relations. The Gemara asks why it says \"acquired\" and learns money from קיחה קיחה משדה עפרון.",
+   "seder": "Nashim",
+   "masechta": "Kiddushin",
+   "start": {
+    "m": "Kiddushin",
+    "daf": "2a",
+    "step": 1,
+    "words": "הָאִשָּׁה נִקְנֵית בְּשָׁלֹשׁ דְּרָכִים,"
+   },
+   "end": {
+    "m": "Kiddushin",
+    "daf": "2b",
+    "step": 3,
+    "words": "וּלְבַסּוֹף תָּנֵי לִישָּׁנָא דְרַבָּנַן,"
+   },
+   "steps": 12,
+   "status": "verified-read",
+   "note": "extended to 2b step 3 (language of the Mishnah answered); partial",
+   "source": "draft",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 144,
+   "reading": {
+    "steps": 12
+   }
+  },
+  {
+   "id": "ket16b-kallah",
+   "title": "How do we dance before the bride?",
+   "summary": "בית שמאי: describe her as she is. בית הלל: \"a beautiful and gracious bride\". Then the rabbis who danced: רבי יהודה בר אילעאי with myrtle, and רב שמואל בר רב יצחק who juggled branches.",
+   "seder": "Nashim",
+   "masechta": "Ketubot",
+   "start": {
+    "m": "Ketubot",
+    "daf": "16b",
+    "step": 29,
+    "words": "תָּנוּ רַבָּנַן:"
+   },
+   "end": {
+    "m": "Ketubot",
+    "daf": "17a",
+    "step": 13,
+    "words": "וְאָמְרִי לַהּ: שִׁיטְתֵיהּ לְסָבָא."
+   },
+   "steps": 14,
+   "status": "verified-read",
+   "note": "end extended 12->13 (conclusion)",
+   "source": "draft",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 145,
+   "reading": {
+    "steps": 14
+   }
+  },
+  {
+   "id": "ket62b-rachel",
+   "title": "Rabbi Akiva and Rachel",
+   "summary": "Kalba Savua's daughter marries the shepherd on condition he learns; her father throws her out. He returns after twenty-four years with 24,000 students: \"what is mine and what is yours is hers\".",
+   "seder": "Nashim",
+   "masechta": "Ketubot",
+   "start": {
+    "m": "Ketubot",
+    "daf": "62b",
+    "step": 33,
+    "words": "רַבִּי עֲקִיבָא רָעֲיָא"
+   },
+   "end": {
+    "m": "Ketubot",
+    "daf": "63a",
+    "step": 4,
+    "words": "כְּעוֹבָדֵי אִמָּא כָּךְ עוֹבָדֵי בְּרַתָּא."
+   },
+   "steps": 7,
+   "status": "verified-read",
+   "note": "pointer-checked; automated check: ends on a conclusion or answer and the next step is not a continuation. Not manually read.",
+   "source": "draft",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 146,
+   "reading": {
+    "steps": 7
+   }
+  },
+  {
+   "id": "git90a-divorce",
+   "title": "Grounds for divorce",
+   "summary": "בית שמאי: only for immorality. בית הלל: even if she burned his food. רבי עקיבא: even if he found someone prettier. The Gemara reads ערות דבר and the word כי.",
+   "seder": "Nashim",
+   "masechta": "Gittin",
+   "start": {
+    "m": "Gittin",
+    "daf": "90a",
+    "step": 2,
+    "words": "מַתְנִי׳"
+   },
+   "end": {
+    "m": "Gittin",
+    "daf": "90a",
+    "step": 15,
+    "words": "אִי נָמֵי, מָצָא בָהּ עֶרְוַת דָּבָר."
+   },
+   "steps": 14,
+   "status": "verified-read",
+   "note": "pointer-checked; automated check: ends on a conclusion or answer and the next step is not a continuation. Not manually read.",
+   "source": "draft",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 147,
+   "reading": {
+    "steps": 14
+   }
+  },
+  {
+   "id": "yev62b-students",
+   "title": "Rabbi Akiva's 24,000 students",
+   "summary": "\"Teach in your old age too\": 24,000 students died between פסח and שבועות for not giving each other respect, and he started again with five in the south.",
+   "seder": "Nashim",
+   "masechta": "Yevamot",
+   "start": {
+    "m": "Yevamot",
+    "daf": "62b",
+    "step": 15,
+    "words": "רַבִּי עֲקִיבָא אוֹמֵר:"
+   },
+   "end": {
+    "m": "Yevamot",
+    "daf": "62b",
+    "step": 22,
+    "words": "הֲלָכָה כְּרַבִּי יְהוֹשֻׁעַ."
+   },
+   "steps": 8,
+   "status": "verified-read",
+   "note": "pointer-checked; automated check: ends on a conclusion or answer and the next step is not a continuation. Not manually read.",
+   "source": "draft",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 148,
+   "reading": {
+    "steps": 8
+   }
+  },
+  {
+   "id": "san71a-sorer",
+   "title": "The rebellious son that never was",
+   "summary": "One view: there never was and never will be; it was written so we would learn. רבי יונתן: I saw one and sat on his grave; I sat on the ruins of the city. Then the leprous house.",
+   "seder": "Nezikin",
+   "masechta": "Sanhedrin",
+   "start": {
+    "m": "Sanhedrin",
+    "daf": "71a",
+    "step": 24,
+    "words": "כְּמַאן אָזְלָא הָא דְּתַנְיָא:"
+   },
+   "end": {
+    "m": "Sanhedrin",
+    "daf": "71a",
+    "step": 38,
+    "words": "וְאָמְרוּ: אֲבָנִים מְנוּגָּעוֹת פִּינוּ לְשָׁם."
+   },
+   "steps": 15,
+   "status": "verified-read",
+   "note": "start/end read; clean (starts at the question that opens the story)",
+   "source": "draft",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 149,
+   "reading": {
+    "steps": 15
+   }
+  },
+  {
+   "id": "san37a-nefesh",
+   "title": "One life is a whole world",
+   "summary": "\"Your brother's bloods\": the witness is told that one who destroys one life destroys a whole world, and that each person must say \"the world was created for me\".",
+   "seder": "Nezikin",
+   "masechta": "Sanhedrin",
+   "start": {
+    "m": "Sanhedrin",
+    "daf": "37a",
+    "step": 19,
+    "words": "מַתְנִי׳"
+   },
+   "end": {
+    "m": "Sanhedrin",
+    "daf": "37a",
+    "step": 26,
+    "words": "בִּשְׁבִילִי נִבְרָא הָעוֹלָם."
+   },
+   "steps": 8,
+   "status": "verified-read",
+   "note": "pointer-checked; automated check: ends on a conclusion or answer and the next step is not a continuation. Not manually read.",
+   "source": "draft",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 150,
+   "reading": {
+    "steps": 8
+   }
+  },
+  {
+   "id": "san74a-yehareg",
+   "title": "Be killed rather than sin",
+   "summary": "The vote in the attic in לוד: idolatry, forbidden relations and murder. For murder it is logic: \"who says your blood is redder?\" Then times of persecution and in public.",
+   "seder": "Nezikin",
+   "masechta": "Sanhedrin",
+   "start": {
+    "m": "Sanhedrin",
+    "daf": "74a",
+    "step": 19,
+    "words": "אָמַר רַבִּי יוֹחָנָן מִשּׁוּם רַבִּי שִׁמְעוֹן בֶּן יְהוֹצָדָק:"
+   },
+   "end": {
+    "m": "Sanhedrin",
+    "daf": "74a",
+    "step": 31,
+    "words": "דִּילְמָא דְּמָא דְּהוּא גַּבְרָא סוּמָּק טְפֵי."
+   },
+   "steps": 13,
+   "status": "verified-read",
+   "note": "pointer-checked; automated check: ends on a conclusion or answer and the next step is not a continuation. Not manually read.",
+   "source": "draft",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 151,
+   "reading": {
+    "steps": 13
+   }
+  },
+  {
+   "id": "makkot7a-chovlanis",
+   "title": "A court that kills once in seventy years",
+   "summary": "A court that executes once in seven years, or seventy, is destructive. רבי טרפון and רבי עקיבא: we would never execute. רבן שמעון בן גמליאל: you would multiply murderers. The Gemara asks how they would have avoided it.",
+   "seder": "Nezikin",
+   "masechta": "Makkot",
+   "start": {
+    "m": "Makkot",
+    "daf": "7a",
+    "step": 5,
+    "words": "סַנְהֶדְרִין הַהוֹרֶגֶת אֶחָד בְּשָׁבוּעַ"
+   },
+   "end": {
+    "m": "Makkot",
+    "daf": "7a",
+    "step": 22,
+    "words": "בִּמְנָאֲפִים – מִשֶּׁיִּרְאוּ כִּמְנָאֲפִים."
+   },
+   "steps": 18,
+   "status": "verified-read",
+   "note": "pointer-checked; automated check: ends on a conclusion or answer and the next step is not a continuation. Not manually read.",
+   "source": "draft",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 152,
+   "reading": {
+    "steps": 18
+   }
+  },
+  {
+   "id": "beitzah12a-mitoch",
+   "title": "Mitoch",
+   "summary": "בית שמאי and בית הלל on carrying a child, a לולב or a ספר תורה. בית הלל's principle: מתוך שהותרה לצורך, הותרה נמי שלא לצורך.",
+   "seder": "Moed",
+   "masechta": "Beitzah",
+   "start": {
+    "m": "Beitzah",
+    "daf": "12a",
+    "step": 2,
+    "words": "מַתְנִי׳ בֵּית שַׁמַּאי אוֹמְרִים:"
+   },
+   "end": {
+    "m": "Beitzah",
+    "daf": "12a",
+    "step": 12,
+    "words": "הוּתְּרָה נָמֵי שֶׁלֹּא לְצוֹרֶךְ פְּלִיגִי."
+   },
+   "steps": 11,
+   "status": "verified-read",
+   "note": "",
+   "source": "draft",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 153,
+   "reading": {
+    "steps": 11
+   }
+  },
+  {
+   "id": "kid42b-shaliach",
+   "title": "No agent for a sin",
+   "summary": "אין שליח לדבר עבירה: \"the words of the teacher and the words of the student, whose do you obey?\" Then why מעילה is different.",
+   "seder": "Nashim",
+   "masechta": "Kiddushin",
+   "start": {
+    "m": "Kiddushin",
+    "daf": "42b",
+    "step": 11,
+    "words": "וְהָא דִּתְנַן:"
+   },
+   "end": {
+    "m": "Kiddushin",
+    "daf": "42b",
+    "step": 16,
+    "words": "אֵין מְלַמְּדִין."
+   },
+   "steps": 6,
+   "status": "verified-read",
+   "note": "end at 16 is the answer to the question; step 17 starts a separate question",
+   "source": "draft",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 154,
+   "reading": {
+    "steps": 6
+   }
+  },
+  {
+   "id": "git25a-bereirah",
+   "title": "Bereirah",
+   "summary": "רבי יוחנן on brothers who split an estate, a גט \"for whichever wife leaves first\", and the father's קרבן פסח \"for whichever son gets to Jerusalem first\".",
+   "seder": "Nashim",
+   "masechta": "Gittin",
+   "start": {
+    "m": "Gittin",
+    "daf": "25a",
+    "step": 4,
+    "words": "וְרַבִּי יוֹחָנָן אָמַר:"
+   },
+   "end": {
+    "m": "Gittin",
+    "daf": "26a",
+    "step": 3,
+    "words": "אָמַר לָהֶם: לִכְשֶׁיִּבָּקַע."
+   },
+   "steps": 23,
+   "status": "verified-read",
+   "note": "end extended to 26a step 3; step 4 is a new Mishnah; cross-amud",
+   "source": "draft",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 155,
+   "reading": {
+    "steps": 23
+   }
+  },
+  {
+   "id": "yev93a-shelo-ba",
+   "title": "Davar shelo ba la'olam",
+   "summary": "A chain of rabbis back to רבי עקיבא: a person can transfer something not yet in the world. Then רב הונא's palm-tree fruit, רב נחמן's limits, and רבי ינאי's sharecropper.",
+   "seder": "Nashim",
+   "masechta": "Yevamot",
+   "start": {
+    "m": "Yevamot",
+    "daf": "93a",
+    "step": 1,
+    "words": "קֻוֽנָּם שֶׁאֲנִי עוֹשָׂה לְפִיךָ —"
+   },
+   "end": {
+    "m": "Yevamot",
+    "daf": "93a",
+    "step": 10,
+    "words": "אֲמַר לֵיהּ: שַׁפִּיר עֲבַדְתְּ."
+   },
+   "steps": 10,
+   "status": "verified-read",
+   "note": "start moved 4->1 so the Mishnah is included",
+   "source": "draft",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 156,
+   "reading": {
+    "steps": 10
+   }
+  },
+  {
+   "id": "shab33b-rashbi",
+   "title": "Rabbi Shimon bar Yochai in the cave",
+   "summary": "רבי יהודה praises Rome, רבי שמעון criticizes it and must hide. Twelve years in a cave with a carob tree and a spring; he comes out too harsh and is sent back; the old man with two myrtle bundles.",
+   "seder": "Moed",
+   "masechta": "Shabbat",
+   "start": {
+    "m": "Shabbat",
+    "daf": "33b",
+    "step": 20,
+    "words": "וְאַמַּאי קָרוּ לֵיהּ"
+   },
+   "end": {
+    "m": "Shabbat",
+    "daf": "33b",
+    "step": 33,
+    "words": "שָׁלֵם בְּמָמוֹנוֹ, שָׁלֵם בְּתוֹרָתוֹ."
+   },
+   "steps": 14,
+   "status": "verified-read",
+   "note": "start/end read; clean (starts at the question that opens the story)",
+   "source": "draft",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 157,
+   "reading": {
+    "steps": 14
+   }
+  },
+  {
+   "id": "yoma9b-sinah",
+   "title": "Why the Temples were destroyed",
+   "summary": "The First Temple fell for idolatry, forbidden relations and bloodshed. The Second, in a generation of Torah, mitzvos and kindness, fell for שנאת חנם, which the Gemara weighs as equal to all three.",
+   "seder": "Moed",
+   "masechta": "Yoma",
+   "start": {
+    "m": "Yoma",
+    "daf": "9b",
+    "step": 3,
+    "words": "מִקְדָּשׁ רִאשׁוֹן מִפְּנֵי מָה חָרַב —"
+   },
+   "end": {
+    "m": "Yoma",
+    "daf": "9b",
+    "step": 21,
+    "words": "לֹא נִתְגַּלָּה קִצָּם."
+   },
+   "steps": 19,
+   "status": "verified-read",
+   "note": "pointer-checked; automated check: ends on a conclusion or answer and the next step is not a continuation. Not manually read.",
+   "source": "draft",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 158,
+   "reading": {
+    "steps": 19
+   }
+  },
+  {
+   "id": "chag14b-pardes",
+   "title": "Four entered the Pardes",
+   "summary": "בן עזאי looked and died, בן זומא looked and was harmed, אחר cut the shoots, and רבי עקיבא entered in peace and left in peace.",
+   "seder": "Moed",
+   "masechta": "Chagigah",
+   "start": {
+    "m": "Chagigah",
+    "daf": "14b",
+    "step": 16,
+    "words": "תָּנוּ רַבָּנַן:"
+   },
+   "end": {
+    "m": "Chagigah",
+    "daf": "14b",
+    "step": 21,
+    "words": "רַבִּי עֲקִיבָא יָצָא בְּשָׁלוֹם."
+   },
+   "steps": 6,
+   "status": "verified-read",
+   "note": "pointer-checked; automated check: ends on a conclusion or answer and the next step is not a continuation. Not manually read.",
+   "source": "draft",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 159,
+   "reading": {
+    "steps": 6
+   }
+  },
+  {
+   "id": "az2a-nations",
+   "title": "The nations ask for their reward",
+   "summary": "God calls those who learned Torah to take their reward. Each nation comes forward: Rome says it built markets and bathhouses for Israel's sake, Persia says bridges and wars, and each leaves disappointed.",
+   "seder": "Nezikin",
+   "masechta": "Avodah_Zarah",
+   "start": {
+    "m": "Avodah_Zarah",
+    "daf": "2a",
+    "step": 13,
+    "words": "דָּרֵשׁ רַבִּי חֲנִינָא בַּר פָּפָּא,"
+   },
+   "end": {
+    "m": "Avodah_Zarah",
+    "daf": "2b",
+    "step": 33,
+    "words": "עַד דְּאָתֵי מְשִׁיחָא."
+   },
+   "steps": 35,
+   "status": "verified-read",
+   "note": "unchanged; long (about 35 steps). Natural break at 2b 33. The Torah-claim half (2b 34 onward through 3a) is a separate unit, not included",
+   "source": "draft",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 160,
+   "reading": {
+    "steps": 35
+   }
+  },
+  {
+   "id": "nid30b-womb",
+   "title": "The baby learns Torah in the womb",
+   "summary": "A candle over its head, the whole Torah taught to it, an angel who makes it forget at birth, and the oath it swears: be righteous, not wicked.",
+   "seder": "Taharos",
+   "masechta": "Niddah",
+   "start": {
+    "m": "Niddah",
+    "daf": "30b",
+    "step": 25,
+    "words": "דָּרֵשׁ רַבִּי שִׂמְלַאי:"
+   },
+   "end": {
+    "m": "Niddah",
+    "daf": "30b",
+    "step": 38,
+    "words": "וְאִם לָאו — הֲרֵינִי שׂוֹרְפָהּ לְפָנֶיךָ."
+   },
+   "steps": 14,
+   "status": "verified-read",
+   "note": "pointer-checked; automated check: ends on a conclusion or answer and the next step is not a continuation. Not manually read.",
+   "source": "draft",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 161,
+   "reading": {
+    "steps": 14
+   }
+  },
+  {
+   "id": "makkot23b-613",
+   "title": "613 mitzvos, summed up",
+   "summary": "רבי שמלאי: 613 mitzvos. Then דוד sums them in eleven, ישעיהו in six, מיכה in three, ישעיהו again in two, עמוס in one, and חבקוק: \"the righteous shall live by his faith\".",
+   "seder": "Nezikin",
+   "masechta": "Makkot",
+   "start": {
+    "m": "Makkot",
+    "daf": "23b",
+    "step": 33,
+    "words": "דָּרַשׁ רַבִּי שִׂמְלַאי:"
+   },
+   "end": {
+    "m": "Makkot",
+    "daf": "24a",
+    "step": 33,
+    "words": "שֶׁנֶּאֱמַר ״וְצַדִּיק בֶּאֱמוּנָתוֹ יִחְיֶה״."
+   },
+   "steps": 35,
+   "status": "verified-read",
+   "note": "pointer-checked; automated check: ends on a conclusion or answer and the next step is not a continuation. Not manually read.",
+   "source": "draft",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 162,
+   "reading": {
+    "steps": 35
+   }
+  },
+  {
+   "id": "san90a-chelek",
+   "title": "All Israel has a share in the World to Come",
+   "summary": "The Mishnah of חלק: all Israel has a share, except those who deny basic beliefs, three kings and four commoners. Measure for measure: he denied it, so he will not have it.",
+   "seder": "Nezikin",
+   "masechta": "Sanhedrin",
+   "start": {
+    "m": "Sanhedrin",
+    "daf": "90a",
+    "step": 18,
+    "words": "מַתְנִי׳ כׇּל יִשְׂרָאֵל"
+   },
+   "end": {
+    "m": "Sanhedrin",
+    "daf": "90b",
+    "step": 3,
+    "words": "עַל עִסְקֵי שַׁעַר."
+   },
+   "steps": 15,
+   "status": "verified-read",
+   "note": "extended to 90b step 3 (closes the Elisha proof); step 4 starts a new proof",
+   "source": "draft",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 163,
+   "reading": {
+    "steps": 15
+   }
+  },
+  {
+   "id": "kid40b-talmud",
+   "title": "Learning or doing: which is greater?",
+   "summary": "The elders in Lod: רבי טרפון says doing, רבי עקיבא says learning, and everyone agrees: learning is greater because it leads to doing. A person is judged first on Torah.",
+   "seder": "Nashim",
+   "masechta": "Kiddushin",
+   "start": {
+    "m": "Kiddushin",
+    "daf": "40b",
+    "step": 9,
+    "words": "וּכְבָר הָיָה רַבִּי טַרְפוֹן וּזְקֵנִים"
+   },
+   "end": {
+    "m": "Kiddushin",
+    "daf": "40b",
+    "step": 16,
+    "words": "וְתוֹרֹתָיו יִנְצֹרוּ״."
+   },
+   "steps": 8,
+   "status": "verified-read",
+   "note": "start/end read; clean (starts at the question that opens the story)",
+   "source": "draft",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 164,
+   "reading": {
+    "steps": 8
+   }
+  },
+  {
+   "id": "men44a-tzitzis",
+   "title": "The man, the harlot and the tzitzis",
+   "summary": "A man careful with tzitzis is summoned by a harlot, and the four fringes seem to testify against him. She converts and marries him.",
+   "seder": "Kodashim",
+   "masechta": "Menachot",
+   "start": {
+    "m": "Menachot",
+    "daf": "44a",
+    "step": 4,
+    "words": "מַעֲשֶׂה בְּאָדָם אֶחָד"
+   },
+   "end": {
+    "m": "Menachot",
+    "daf": "44a",
+    "step": 12,
+    "words": "וְלָעוֹלָם הַבָּא אֵינִי יוֹדֵעַ כַּמָּה."
+   },
+   "steps": 9,
+   "status": "verified-read",
+   "note": "short story; full reward for even a light mitzvah",
+   "source": "kodashim-taharos",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 165,
+   "reading": {
+    "steps": 9
+   }
+  },
+  {
+   "id": "chul7a-pinchas",
+   "title": "Rabbi Pinchas ben Yair and the river Ginai",
+   "summary": "Rabbi Pinchas ben Yair goes to redeem captives and the river Ginai splits for him, then splits again for others.",
+   "seder": "Kodashim",
+   "masechta": "Chullin",
+   "start": {
+    "m": "Chullin",
+    "daf": "7a",
+    "step": 15,
+    "words": "מַאי בְּהֶמְתָּן שֶׁל צַדִּיקִים?"
+   },
+   "end": {
+    "m": "Chullin",
+    "daf": "7a",
+    "step": 24,
+    "words": "אֶלָּא כְּמֹשֶׁה וְשִׁתִּין רִבְּוָון."
+   },
+   "steps": 10,
+   "status": "verified-read",
+   "note": "starts at 'the animals of the righteous' question; the donkey-at-the-inn story follows at step 25 and is not included",
+   "source": "kodashim-taharos",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 166,
+   "reading": {
+    "steps": 10
+   }
+  },
+  {
+   "id": "bek8b-athens",
+   "title": "Rabbi Yehoshua ben Chananya outwits the sages of Athens",
+   "summary": "The emperor and the wise men of Athens. Rabbi Yehoshua ben Chananya sails to them, answers their riddles and brings them back.",
+   "seder": "Kodashim",
+   "masechta": "Bekhorot",
+   "start": {
+    "m": "Bekhorot",
+    "daf": "8b",
+    "step": 5,
+    "words": "אֲמַר לֵיהּ קֵיסָר לְרַבִּי יְהוֹשֻׁעַ בֶּן חֲנַנְיָה:"
+   },
+   "end": {
+    "m": "Bekhorot",
+    "daf": "9a",
+    "step": 5,
+    "words": "וּבְלוֹ לְהוּ וַאֲזוּל."
+   },
+   "steps": 63,
+   "status": "verified-read",
+   "note": "LONG: about 63 steps across two amudim; story-driven, little argument",
+   "source": "kodashim-taharos",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 167,
+   "reading": {
+    "steps": 63
+   }
+  },
+  {
+   "id": "tem16a-othniel",
+   "title": "The 3,000 forgotten halachos and Othniel ben Kenaz",
+   "summary": "Three thousand halachos were forgotten when Moshe died. Othniel ben Kenaz won them back by sharp reasoning.",
+   "seder": "Kodashim",
+   "masechta": "Temurah",
+   "start": {
+    "m": "Temurah",
+    "daf": "16a",
+    "step": 4,
+    "words": "גּוּפָא, אָמַר רַב יְהוּדָה אָמַר שְׁמוּאֵל:"
+   },
+   "end": {
+    "m": "Temurah",
+    "daf": "16a",
+    "step": 11,
+    "words": "וַיִּתֶּן לוֹ אֶת עַכְסָה בִתּוֹ לְאִשָּׁה״."
+   },
+   "steps": 8,
+   "status": "verified-read",
+   "note": "step 4 opens with 'Back to the main statement' so it starts from the statement itself; steps 12-14 move to Achsah and are excluded",
+   "source": "kodashim-taharos",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 168,
+   "reading": {
+    "steps": 8
+   }
+  },
+  {
+   "id": "nid69b-alexandria",
+   "title": "The twelve questions of the Alexandrians",
+   "summary": "The people of Alexandria ask Rabbi Yehoshua ben Chananya twelve questions: wisdom, stories, foolish and conduct.",
+   "seder": "Taharos",
+   "masechta": "Niddah",
+   "start": {
+    "m": "Niddah",
+    "daf": "69b",
+    "step": 20,
+    "words": "תָּנוּ רַבָּנַן:"
+   },
+   "end": {
+    "m": "Niddah",
+    "daf": "71a",
+    "step": 5,
+    "words": "לָא סַגִּי."
+   },
+   "steps": 51,
+   "status": "verified-read",
+   "note": "LONG: about 50 steps across three amudim; includes a legal digression on 70a (two metzoras, steps 2-9) inside the question series",
+   "source": "kodashim-taharos",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 169,
+   "reading": {
+    "steps": 51
+   }
+  },
+  {
+   "id": "ber5b-visiting-sick",
+   "title": "Rabbi Yochanan visits the sick: 'Give me your hand'",
+   "summary": "Rabbi Yochanan heals Rabbi Chiya bar Abba and is healed in turn, then sits and cries with the ailing Rabbi Elazar.",
+   "seder": "Zeraim",
+   "masechta": "Berakhot",
+   "start": {
+    "m": "Berakhot",
+    "daf": "5b",
+    "step": 11,
+    "words": "רַבִּי חִיָּיא בַּר אַבָּא חֲלַשׁ."
+   },
+   "end": {
+    "m": "Berakhot",
+    "daf": "5b",
+    "step": 18,
+    "words": "יְהַב לֵיהּ יְדֵיהּ, וְאוֹקְמֵיהּ."
+   },
+   "steps": 8,
+   "status": "verified-read",
+   "note": "",
+   "source": "new",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 170,
+   "reading": {
+    "steps": 8
+   }
+  },
+  {
+   "id": "ber10a-beruriah",
+   "title": "Beruriah and the thugs: pray they stop sinning",
+   "summary": "Rabbi Meir wants his neighbours to die. His wife Beruriah reads the verse differently, and he prays that they repent.",
+   "seder": "Zeraim",
+   "masechta": "Berakhot",
+   "start": {
+    "m": "Berakhot",
+    "daf": "10a",
+    "step": 2,
+    "words": "הָנְהוּ בִּרְיוֹנֵי"
+   },
+   "end": {
+    "m": "Berakhot",
+    "daf": "10a",
+    "step": 6,
+    "words": "וַהֲדַרוּ בִּתְשׁוּבָה."
+   },
+   "steps": 5,
+   "status": "verified-read",
+   "note": "",
+   "source": "new",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 171,
+   "reading": {
+    "steps": 5
+   }
+  },
+  {
+   "id": "ber10a-hezekiah",
+   "title": "Hezekiah, Isaiah and the sick king",
+   "summary": "Isaiah visits the sick King Hezekiah and tells him he will die. Hezekiah argues, and the lesson is never to hold back from prayer.",
+   "seder": "Zeraim",
+   "masechta": "Berakhot",
+   "start": {
+    "m": "Berakhot",
+    "daf": "10a",
+    "step": 38,
+    "words": "חִזְקִיָּהוּ אֲמַר: לֵיתֵי יְשַׁעְיָהוּ גַּבַּאי,"
+   },
+   "end": {
+    "m": "Berakhot",
+    "daf": "10a",
+    "step": 51,
+    "words": "שֶׁנֶּאֱמַר: ״הֵן יִקְטְלֵנִי לוֹ אֲיַחֵל״."
+   },
+   "steps": 14,
+   "status": "verified-read",
+   "note": "",
+   "source": "new",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 172,
+   "reading": {
+    "steps": 14
+   }
+  },
+  {
+   "id": "ber28b-yochanan",
+   "title": "Rabban Yochanan ben Zakkai on his deathbed",
+   "summary": "His students visit him in his last illness and ask for a blessing. His answers, and his last words to them.",
+   "seder": "Zeraim",
+   "masechta": "Berakhot",
+   "start": {
+    "m": "Berakhot",
+    "daf": "28b",
+    "step": 17,
+    "words": "וּכְשֶׁחָלָה רַבִּי יוֹחָנָן בֶּן זַכַּאי"
+   },
+   "end": {
+    "m": "Berakhot",
+    "daf": "28b",
+    "step": 22,
+    "words": "לְחִזְקִיָּהוּ מֶלֶךְ יְהוּדָה שֶׁבָּא."
+   },
+   "steps": 6,
+   "status": "verified-read",
+   "note": "",
+   "source": "new",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 173,
+   "reading": {
+    "steps": 6
+   }
+  },
+  {
+   "id": "ber62a-kahana",
+   "title": "Rav Kahana under Rav's bed",
+   "summary": "Rabbi Akiva, Ben Azzai and Rav Kahana each hide to learn Torah from a teacher's private conduct. 'It is Torah, and I need to learn.'",
+   "seder": "Zeraim",
+   "masechta": "Berakhot",
+   "start": {
+    "m": "Berakhot",
+    "daf": "62a",
+    "step": 1,
+    "words": "תַּנְיָא, אָמַר רַבִּי עֲקִיבָא:"
+   },
+   "end": {
+    "m": "Berakhot",
+    "daf": "62a",
+    "step": 9,
+    "words": "וְלִלְמוֹד אֲנִי צָרִיךְ."
+   },
+   "steps": 9,
+   "status": "verified-read",
+   "note": "",
+   "source": "new",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 174,
+   "reading": {
+    "steps": 9
+   }
+  },
+  {
+   "id": "shab30b-david",
+   "title": "King David dies on Shabbos",
+   "summary": "The Angel of Death cannot touch David while he learns, so he shakes the garden trees. Then Shlomo asks what to do with the body.",
+   "seder": "Moed",
+   "masechta": "Shabbat",
+   "start": {
+    "m": "Shabbat",
+    "daf": "30b",
+    "step": 1,
+    "words": "כׇּל יוֹמָא דְשַׁבְּתָא"
+   },
+   "end": {
+    "m": "Shabbat",
+    "daf": "30b",
+    "step": 5,
+    "words": "מִן הָאַרְיֵה הַמֵּת״."
+   },
+   "steps": 5,
+   "status": "verified-read",
+   "note": "",
+   "source": "new",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 175,
+   "reading": {
+    "steps": 5
+   }
+  },
+  {
+   "id": "eruvin21b-akiva-prison",
+   "title": "Rabbi Akiva in prison: water for washing hands",
+   "summary": "In prison, Rabbi Akiva insists on using his scarce water to wash his hands, and refuses to eat without washing.",
+   "seder": "Moed",
+   "masechta": "Eruvin",
+   "start": {
+    "m": "Eruvin",
+    "daf": "21b",
+    "step": 18,
+    "words": "תָּנוּ רַבָּנַן:"
+   },
+   "end": {
+    "m": "Eruvin",
+    "daf": "21b",
+    "step": 25,
+    "words": "שֶׁלֹּא בְּבֵית הָאֲסוּרִין עַל אַחַת כַּמָּה וְכַמָּה."
+   },
+   "steps": 8,
+   "status": "verified-read",
+   "note": "",
+   "source": "new",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 176,
+   "reading": {
+    "steps": 8
+   }
+  },
+  {
+   "id": "yoma35b-hillel",
+   "title": "Hillel and the poor man's excuse",
+   "summary": "The court asks the poor, the rich and the wicked why they did not learn. Hillel, Rabbi Elazar ben Charsom and Yosef answer for all three.",
+   "seder": "Moed",
+   "masechta": "Yoma",
+   "start": {
+    "m": "Yoma",
+    "daf": "35b",
+    "step": 10,
+    "words": "תָּנוּ רַבָּנַן:"
+   },
+   "end": {
+    "m": "Yoma",
+    "daf": "35b",
+    "step": 23,
+    "words": "יוֹסֵף מְחַיֵּיב אֶת הָרְשָׁעִים."
+   },
+   "steps": 14,
+   "status": "verified-read",
+   "note": "",
+   "source": "new",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 177,
+   "reading": {
+    "steps": 14
+   }
+  },
+  {
+   "id": "yoma69b-yetzer",
+   "title": "Capturing the evil inclination",
+   "summary": "The Men of the Great Assembly cry out and catch the evil inclination of idol worship, then decide whether to kill it.",
+   "seder": "Moed",
+   "masechta": "Yoma",
+   "start": {
+    "m": "Yoma",
+    "daf": "69b",
+    "step": 13,
+    "words": "״וַיִּצְעֲקוּ אֶל ה׳ אֱלֹהִים"
+   },
+   "end": {
+    "m": "Yoma",
+    "daf": "69b",
+    "step": 23,
+    "words": "לְאִינִישׁ בְּקָרִיבְתֵּהּ."
+   },
+   "steps": 11,
+   "status": "verified-read",
+   "note": "",
+   "source": "new",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 178,
+   "reading": {
+    "steps": 11
+   }
+  },
+  {
+   "id": "taan20a-ugly",
+   "title": "Rabbi Elazar and the ugly man",
+   "summary": "Riding home from his teacher's house, Rabbi Elazar insults an ugly man he meets, and spends the day begging his forgiveness. Preceded by the reed and the cedar.",
+   "seder": "Moed",
+   "masechta": "Taanit",
+   "start": {
+    "m": "Taanit",
+    "daf": "20a",
+    "step": 19,
+    "words": "תָּנוּ רַבָּנַן:"
+   },
+   "end": {
+    "m": "Taanit",
+    "daf": "20b",
+    "step": 6,
+    "words": "לִכְתּוֹב בּוֹ סֵפֶר תּוֹרָה תְּפִילִּין וּמְזוּזוֹת."
+   },
+   "steps": 8,
+   "status": "verified-read",
+   "note": "",
+   "source": "new",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 179,
+   "reading": {
+    "steps": 8
+   }
+  },
+  {
+   "id": "taan25a-hanina",
+   "title": "Rabbi Chanina ben Dosa: the lamp, the goats, the beams",
+   "summary": "Miracles around Rabbi Chanina ben Dosa: a lamp that burns through Shabbos, goats, and beams that grow.",
+   "seder": "Moed",
+   "masechta": "Taanit",
+   "start": {
+    "m": "Taanit",
+    "daf": "25a",
+    "step": 8,
+    "words": "חַד בֵּי שִׁמְשֵׁי"
+   },
+   "end": {
+    "m": "Taanit",
+    "daf": "25a",
+    "step": 16,
+    "words": "דְּאַיְיתוֹ דּוּבֵּי בְּקַרְנַיְיהוּ."
+   },
+   "steps": 9,
+   "status": "verified-read",
+   "note": "",
+   "source": "new",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 180,
+   "reading": {
+    "steps": 9
+   }
+  },
+  {
+   "id": "taan25a-elazar",
+   "title": "Rabbi Elazar ben Pedas and the dream",
+   "summary": "Weak and poor, Rabbi Elazar ben Pedas tells what he saw in a dream when his students ask.",
+   "seder": "Moed",
+   "masechta": "Taanit",
+   "start": {
+    "m": "Taanit",
+    "daf": "25a",
+    "step": 17,
+    "words": "רַבִּי אֶלְעָזָר בֶּן פְּדָת"
+   },
+   "end": {
+    "m": "Taanit",
+    "daf": "25a",
+    "step": 27,
+    "words": "גָּרוֹ בָּךְ גִּירַי."
+   },
+   "steps": 11,
+   "status": "verified-read",
+   "note": "",
+   "source": "new",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 181,
+   "reading": {
+    "steps": 11
+   }
+  },
+  {
+   "id": "taan25a-rain",
+   "title": "Sky, sky, cover your face",
+   "summary": "Rabbi Chama bar Chanina's fast brings no rain. His students try to move the community's hearts, and rain finally comes.",
+   "seder": "Moed",
+   "masechta": "Taanit",
+   "start": {
+    "m": "Taanit",
+    "daf": "25a",
+    "step": 28,
+    "words": "רַבִּי חָמָא בַּר חֲנִינָא גְּזַר תַּעֲנִיתָא"
+   },
+   "end": {
+    "m": "Taanit",
+    "daf": "25a",
+    "step": 35,
+    "words": "אִיכַּסִּי וַאֲתָא מִיטְרָא."
+   },
+   "steps": 8,
+   "status": "verified-read",
+   "note": "",
+   "source": "new",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 182,
+   "reading": {
+    "steps": 8
+   }
+  },
+  {
+   "id": "sukkah28a-students",
+   "title": "Rabban Yochanan ben Zakkai and his students",
+   "summary": "What the greatest of his students, down to the least, had learned. 'If the smallest of them was like this...'",
+   "seder": "Moed",
+   "masechta": "Sukkah",
+   "start": {
+    "m": "Sukkah",
+    "daf": "28a",
+    "step": 2,
+    "words": "תָּנוּ רַבָּנַן:"
+   },
+   "end": {
+    "m": "Sukkah",
+    "daf": "28a",
+    "step": 11,
+    "words": "כׇּל עוֹף שֶׁפּוֹרֵחַ עָלָיו מִיָּד נִשְׂרָף."
+   },
+   "steps": 10,
+   "status": "verified-read",
+   "note": "",
+   "source": "new",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 183,
+   "reading": {
+    "steps": 10
+   }
+  },
+  {
+   "id": "ket103b-rabbi-death",
+   "title": "Rabbi's last instructions and passing",
+   "summary": "Rabbi forbids eulogies in the towns and asks that the yeshiva reopen after thirty days. On the day of his funeral, a heavenly voice speaks.",
+   "seder": "Nashim",
+   "masechta": "Ketubot",
+   "start": {
+    "m": "Ketubot",
+    "daf": "103b",
+    "step": 2,
+    "words": "אַל תִּסְפְּדוּנִי בָּעֲיָירוֹת —"
+   },
+   "end": {
+    "m": "Ketubot",
+    "daf": "103b",
+    "step": 8,
+    "words": "מְזוּמָּן הוּא לְחַיֵּי הָעוֹלָם הַבָּא."
+   },
+   "steps": 7,
+   "status": "verified-read",
+   "note": "",
+   "source": "new",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 184,
+   "reading": {
+    "steps": 7
+   }
+  },
+  {
+   "id": "sotah12a-amram",
+   "title": "Amram, Miriam and the decree",
+   "summary": "When Pharaoh decrees against baby boys, Amram divorces his wife. His daughter Miriam convinces him to take her back.",
+   "seder": "Nashim",
+   "masechta": "Sotah",
+   "start": {
+    "m": "Sotah",
+    "daf": "12a",
+    "step": 16,
+    "words": "תָּנָא: עַמְרָם גְּדוֹל הַדּוֹר הָיָה."
+   },
+   "end": {
+    "m": "Sotah",
+    "daf": "12a",
+    "step": 19,
+    "words": "עָמְדוּ כּוּלָּן וְהֶחְזִירוּ אֶת נְשׁוֹתֵיהֶן."
+   },
+   "steps": 4,
+   "status": "verified-read",
+   "note": "",
+   "source": "new",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 185,
+   "reading": {
+    "steps": 4
+   }
+  },
+  {
+   "id": "sotah14a-imitate",
+   "title": "Walk after the Holy One: four acts of kindness",
+   "summary": "How can one walk after God? Clothe the naked, visit the sick, comfort mourners, bury the dead.",
+   "seder": "Nashim",
+   "masechta": "Sotah",
+   "start": {
+    "m": "Sotah",
+    "daf": "14a",
+    "step": 5,
+    "words": "וְאָמַר רַבִּי חָמָא בְּרַבִּי חֲנִינָא,"
+   },
+   "end": {
+    "m": "Sotah",
+    "daf": "14a",
+    "step": 11,
+    "words": "אַף אַתָּה קְבוֹר מֵתִים."
+   },
+   "steps": 7,
+   "status": "verified-read",
+   "note": "",
+   "source": "new",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 186,
+   "reading": {
+    "steps": 7
+   }
+  },
+  {
+   "id": "bm83a-porters",
+   "title": "The porters and the broken wine",
+   "summary": "Some porters break a barrel of wine. Rav tells the owner to return their coats and pay them, citing 'so that you may walk in the way of good people'.",
+   "seder": "Nezikin",
+   "masechta": "Bava_Metzia",
+   "start": {
+    "m": "Bava_Metzia",
+    "daf": "83a",
+    "step": 23,
+    "words": "רַבָּה בַּר בַּר חָנָן"
+   },
+   "end": {
+    "m": "Bava_Metzia",
+    "daf": "83a",
+    "step": 30,
+    "words": "אֲמַר לֵיהּ: אִין, ״וְאׇרְחוֹת צַדִּיקִים תִּשְׁמֹר״."
+   },
+   "steps": 8,
+   "status": "verified-read",
+   "note": "",
+   "source": "new",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 187,
+   "reading": {
+    "steps": 8
+   }
+  },
+  {
+   "id": "bm85a-rabbi-suffering",
+   "title": "Rabbi's thirteen years of suffering",
+   "summary": "Rabbi accepts suffering after he fails to save a calf. It leaves him when he shows mercy to baby weasels.",
+   "seder": "Nezikin",
+   "masechta": "Bava_Metzia",
+   "start": {
+    "m": "Bava_Metzia",
+    "daf": "85a",
+    "step": 4,
+    "words": "אָמַר רַבִּי, חֲבִיבִין יִסּוּרִין."
+   },
+   "end": {
+    "m": "Bava_Metzia",
+    "daf": "85a",
+    "step": 9,
+    "words": "נְרַחֵם עֲלֵיהּ."
+   },
+   "steps": 6,
+   "status": "verified-read",
+   "note": "",
+   "source": "new",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 188,
+   "reading": {
+    "steps": 6
+   }
+  },
+  {
+   "id": "bb10a-turnus",
+   "title": "Turnus Rufus asks Rabbi Akiva: why does God not feed the poor?",
+   "summary": "The Roman governor asks Rabbi Akiva why God does not feed the poor. Akiva answers with parables and a verse about charity.",
+   "seder": "Nezikin",
+   "masechta": "Bava_Batra",
+   "start": {
+    "m": "Bava_Batra",
+    "daf": "10a",
+    "step": 3,
+    "words": "תַּנְיָא: הָיָה רַבִּי מֵאִיר אוֹמֵר,"
+   },
+   "end": {
+    "m": "Bava_Batra",
+    "daf": "10a",
+    "step": 9,
+    "words": "וְקָאָמַר: ״הֲלֹא פָרֹס לָרָעֵב לַחְמֶךָ״."
+   },
+   "steps": 7,
+   "status": "verified-read",
+   "note": "",
+   "source": "new",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 189,
+   "reading": {
+    "steps": 7
+   }
+  },
+  {
+   "id": "bb58a-banaah",
+   "title": "Rabbi Bana'ah in the cave of the Patriarchs",
+   "summary": "Marking burial caves, Rabbi Bana'ah finds Avraham and Sarah, then Adam, and is stopped by a heavenly voice.",
+   "seder": "Nezikin",
+   "masechta": "Bava_Batra",
+   "start": {
+    "m": "Bava_Batra",
+    "daf": "58a",
+    "step": 3,
+    "words": "רַבִּי בְּנָאָה הֲוָה קָא מְצַיֵּין מְעָרָתָא."
+   },
+   "end": {
+    "m": "Bava_Batra",
+    "daf": "58a",
+    "step": 10,
+    "words": "כָּךְ מִדַּת הַפְּנִימִית."
+   },
+   "steps": 8,
+   "status": "verified-read",
+   "note": "",
+   "source": "new",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 190,
+   "reading": {
+    "steps": 8
+   }
+  },
+  {
+   "id": "bb73b-sea",
+   "title": "Rabbah bar Bar Chana's sea stories",
+   "summary": "A fish like an island, a ship sailing along one fin, a bird standing in the sea. The Rabbis explain them.",
+   "seder": "Nezikin",
+   "masechta": "Bava_Batra",
+   "start": {
+    "m": "Bava_Batra",
+    "daf": "73b",
+    "step": 5,
+    "words": "וְאָמַר רַבָּה בַּר בַּר חָנָה:"
+   },
+   "end": {
+    "m": "Bava_Batra",
+    "daf": "73b",
+    "step": 12,
+    "words": "דִּכְתִיב: ״וְזִיז שָׂדַי עִמָּדִי״."
+   },
+   "steps": 8,
+   "status": "verified-read",
+   "note": "",
+   "source": "new",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 191,
+   "reading": {
+    "steps": 8
+   }
+  },
+  {
+   "id": "sanh98a-moshiach",
+   "title": "Rabbi Yehoshua ben Levi finds the Messiah",
+   "summary": "He meets Eliyahu and asks where Moshiach sits. The Messiah answers 'Today', and Eliyahu explains.",
+   "seder": "Nezikin",
+   "masechta": "Sanhedrin",
+   "start": {
+    "m": "Sanhedrin",
+    "daf": "98a",
+    "step": 26,
+    "words": "רַבִּי יְהוֹשֻׁעַ בֶּן לֵוִי אַשְׁכַּח לְאֵלִיָּהוּ"
+   },
+   "end": {
+    "m": "Sanhedrin",
+    "daf": "98a",
+    "step": 36,
+    "words": "״הַיּוֹם אִם בְּקֹלוֹ תִשְׁמָעוּ״."
+   },
+   "steps": 11,
+   "status": "verified-read",
+   "note": "",
+   "source": "new",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 192,
+   "reading": {
+    "steps": 11
+   }
+  },
+  {
+   "id": "az10b-ketia",
+   "title": "Ketiah bar Shalom argues for the Jews before the emperor",
+   "summary": "An emperor plots against the Jews. Ketiah argues against the decree, and gives his life.",
+   "seder": "Nezikin",
+   "masechta": "Avodah_Zarah",
+   "start": {
+    "m": "Avodah_Zarah",
+    "daf": "10b",
+    "step": 19,
+    "words": "קְטִיעָה בַּר שָׁלוֹם מַאי הָוֵי?"
+   },
+   "end": {
+    "m": "Avodah_Zarah",
+    "daf": "10b",
+    "step": 30,
+    "words": "וְיֵשׁ קוֹנֶה עוֹלָמוֹ בְּכַמָּה שָׁנִים."
+   },
+   "steps": 12,
+   "status": "verified-read",
+   "note": "",
+   "source": "new",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 193,
+   "reading": {
+    "steps": 12
+   }
+  },
+  {
+   "id": "az18a-chanina",
+   "title": "Rabbi Chanina ben Teradyon's death",
+   "summary": "His teacher is sick, and Chanina is executed for teaching Torah in public. He accepts God's judgment.",
+   "seder": "Nezikin",
+   "masechta": "Avodah_Zarah",
+   "start": {
+    "m": "Avodah_Zarah",
+    "daf": "18a",
+    "step": 11,
+    "words": "תָּנוּ רַבָּנַן:"
+   },
+   "end": {
+    "m": "Avodah_Zarah",
+    "daf": "18a",
+    "step": 30,
+    "words": "וְיֵשׁ קוֹנֶה עוֹלָמוֹ בְּכַמָּה שָׁנִים."
+   },
+   "steps": 20,
+   "status": "verified-read",
+   "note": "long; combines Rabbi Yose ben Kisma's illness and the death of Rabbi Chanina ben Teradyon",
+   "source": "new",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 194,
+   "reading": {
+    "steps": 20
+   }
+  },
+  {
+   "id": "az17a-elazar",
+   "title": "Elazar ben Dordai and the prostitute",
+   "summary": "Elazar crosses the sea for a harlot, then sits between the mountains and cries until his soul leaves.",
+   "seder": "Nezikin",
+   "masechta": "Avodah_Zarah",
+   "start": {
+    "m": "Avodah_Zarah",
+    "daf": "17a",
+    "step": 23,
+    "words": "וּמֵעֲבֵירָה לָא?"
+   },
+   "end": {
+    "m": "Avodah_Zarah",
+    "daf": "17a",
+    "step": 29,
+    "words": "אֶלָּא שֶׁקּוֹרִין אוֹתָן ״רַבִּי״."
+   },
+   "steps": 7,
+   "status": "verified-read",
+   "note": "start moved 24->23 so the person is named (step 23 introduces Elazar ben Dordai)",
+   "source": "changed",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 195,
+   "reading": {
+    "steps": 7
+   }
+  },
+  {
+   "id": "bb21a-schools",
+   "title": "Yehoshua ben Gamla and the first schools",
+   "summary": "Torah would have been forgotten if not for יהושע בן גמלא, who put teachers in every town. Then class sizes, discipline, and קנאת סופרים: rivalry between teachers makes learning grow.",
+   "seder": "Nezikin",
+   "masechta": "Bava_Batra",
+   "start": {
+    "m": "Bava_Batra",
+    "daf": "21a",
+    "step": 2,
+    "words": "דְּאָמַר רַב יְהוּדָה אָמַר רַב:"
+   },
+   "end": {
+    "m": "Bava_Batra",
+    "daf": "21a",
+    "step": 20,
+    "words": "שַׁבֶּשְׁתָּא, כֵּיוָן דְּעָל – עָל;"
+   },
+   "steps": 19,
+   "status": "verified-read",
+   "note": "re-read: step 2 names Yehoshua ben Gamla, so the start is clean enough; ends at Rav Dimi's ruling, step 21 continues with a proof",
+   "source": "changed",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 196,
+   "reading": {
+    "steps": 19
+   }
+  },
+  {
+   "id": "rh26a-kategor",
+   "title": "A prosecutor can't be a defender",
+   "summary": "The Mishnah: every horn except a cow's. עולא: אין קטיגור נעשה סניגור, the horn recalls the golden calf. The Gemara presses on the כהן גדול's gold and on blowing outside.",
+   "seder": "Moed",
+   "masechta": "Rosh_Hashanah",
+   "start": {
+    "m": "Rosh_Hashanah",
+    "daf": "26a",
+    "step": 3,
+    "words": "מַתְנִי׳ כׇּל הַשּׁוֹפָרוֹת כְּשֵׁרִים,"
+   },
+   "end": {
+    "m": "Rosh_Hashanah",
+    "daf": "26a",
+    "step": 23,
+    "words": "כׇּל הַשּׁוֹפָרוֹת נָמֵי אִקְּרוֹ קֶרֶן."
+   },
+   "steps": 21,
+   "status": "verified-read",
+   "note": "end moved 21->23 to include Rabbi Yosi's reply; partial: Abaye's second reason follows",
+   "source": "changed",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 197,
+   "reading": {
+    "steps": 21
+   }
+  },
+  {
+   "id": "bm21b-yeiush",
+   "title": "Yi'ush shelo mida'as",
+   "summary": "אביי and רבא argue about יאוש שלא מדעת. The Gemara tests them against a run of cases: scattered produce, coins, fig cakes, purple wool, gleanings and fallen figs.",
+   "seder": "Nezikin",
+   "masechta": "Bava_Metzia",
+   "start": {
+    "m": "Bava_Metzia",
+    "daf": "21a",
+    "step": 22,
+    "words": "אִיתְּמַר:"
+   },
+   "end": {
+    "m": "Bava_Metzia",
+    "daf": "21b",
+    "step": 25,
+    "words": "אָמַר רַב פָּפָּא: תְּאֵנָה עִם נְפִילָתָהּ נִמְאֶסֶת."
+   },
+   "steps": 26,
+   "status": "verified-read",
+   "note": "start moved to 21a step 22 ('It was stated:'), which introduces the Abaye/Rava dispute",
+   "source": "changed",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 198,
+   "reading": {
+    "steps": 26
+   }
+  },
+  {
+   "id": "ber56a-bar-hedya",
+   "title": "Bar Hedya the dream interpreter and Rava",
+   "summary": "Bar Hedya gives good readings to those who pay and bad to those who do not. Rava and Abaye test him, and the story ends on a ship.",
+   "seder": "Zeraim",
+   "masechta": "Berakhot",
+   "start": {
+    "m": "Berakhot",
+    "daf": "56a",
+    "step": 5,
+    "words": "בַּר הֶדְיָא מְפַשַּׁר חֶלְמֵי הֲוָה."
+   },
+   "end": {
+    "m": "Berakhot",
+    "daf": "56a",
+    "step": 35,
+    "words": "דַּאֲמַר מָר: גָּלוּת מְכַפֶּרֶת עָוֹן."
+   },
+   "steps": 31,
+   "status": "verified-read",
+   "note": "story continues in exile at steps 36-38 and into 56b; long (31 steps)",
+   "source": "new",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 199,
+   "reading": {
+    "steps": 31
+   }
+  },
+  {
+   "id": "ber58a-sheshet",
+   "title": "Rav Sheshet, the blind man and the king",
+   "summary": "Blind Rav Sheshet goes with the crowd to greet the king, and tells a mocking skeptic which troop is the king's.",
+   "seder": "Zeraim",
+   "masechta": "Berakhot",
+   "start": {
+    "m": "Berakhot",
+    "daf": "58a",
+    "step": 20,
+    "words": "רַב שֵׁשֶׁת סַגִּי נְהוֹר הֲוָה."
+   },
+   "end": {
+    "m": "Berakhot",
+    "daf": "58a",
+    "step": 28,
+    "words": "וְנַעֲשָׂה גַּל שֶׁל עֲצָמוֹת."
+   },
+   "steps": 9,
+   "status": "verified-read",
+   "note": "",
+   "source": "new",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 200,
+   "reading": {
+    "steps": 9
+   }
+  },
+  {
+   "id": "ber58a-shila",
+   "title": "Rabbi Shila before the royal court",
+   "summary": "Rabbi Shila has a man flogged and is called before the Roman court. A verse he recites saves him.",
+   "seder": "Zeraim",
+   "masechta": "Berakhot",
+   "start": {
+    "m": "Berakhot",
+    "daf": "58a",
+    "step": 29,
+    "words": "רַבִּי שֵׁילָא נַגְּדֵיהּ לְהָהוּא גַּבְרָא"
+   },
+   "end": {
+    "m": "Berakhot",
+    "daf": "58a",
+    "step": 36,
+    "words": "שֶׁנֶּאֱמַר: ״וַיַּרְא יִשְׂרָאֵל אֶת הַיָּד הַגְּדֹלָה וְגוֹ׳״."
+   },
+   "steps": 8,
+   "status": "verified-read",
+   "note": "",
+   "source": "new",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 201,
+   "reading": {
+    "steps": 8
+   }
+  },
+  {
+   "id": "tamid32a-alexander",
+   "title": "Alexander of Macedon and the Elders of the Negev",
+   "summary": "Alexander puts questions to the Elders: heaven and earth, who is wise, who is rich, what to do to live. He dresses them in purple.",
+   "seder": "Kodashim",
+   "masechta": "Tamid",
+   "start": {
+    "m": "Tamid",
+    "daf": "32a",
+    "step": 1,
+    "words": "מִן הַשָּׁמַיִם לָאָרֶץ רָחוֹק,"
+   },
+   "end": {
+    "m": "Tamid",
+    "daf": "32a",
+    "step": 36,
+    "words": "עַל צַוְּארֵיהוֹן."
+   },
+   "steps": 36,
+   "status": "verified-read",
+   "note": "the story goes on at step 37 (Alexander's journey)",
+   "source": "new",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 202,
+   "reading": {
+    "steps": 36
+   }
+  },
+  {
+   "id": "chul7b-pinchas-rabbi",
+   "title": "Rabbi Pinchas ben Yair and Rabbi (Yehuda HaNasi)",
+   "summary": "Rabbi invites Rabbi Pinchas to eat and then tries to buy his mules, and Pinchas refuses until a mountain rises between them.",
+   "seder": "Kodashim",
+   "masechta": "Chullin",
+   "start": {
+    "m": "Chullin",
+    "daf": "7b",
+    "step": 6,
+    "words": "שְׁמַע רַבִּי, נְפַק לְאַפֵּיהּ,"
+   },
+   "end": {
+    "m": "Chullin",
+    "daf": "7b",
+    "step": 13,
+    "words": "בְּמִיתָתָן עַל אַחַת כַּמָּה וְכַמָּה!"
+   },
+   "steps": 8,
+   "status": "verified-read",
+   "note": "",
+   "source": "new",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 203,
+   "reading": {
+    "steps": 8
+   }
+  },
+  {
+   "id": "meilah17b-bentemalyon",
+   "title": "Rabbi Shimon bar Yochai goes to Rome",
+   "summary": "Rabbi Shimon is sent on a mission to Rome and meets Ben Temalyon, a demon, who enters the emperor's daughter.",
+   "seder": "Kodashim",
+   "masechta": "Meilah",
+   "start": {
+    "m": "Meilah",
+    "daf": "17b",
+    "step": 1,
+    "words": "יֵלֵךְ רַבִּי שִׁמְעוֹן בֶּן יוֹחַאי,"
+   },
+   "end": {
+    "m": "Meilah",
+    "daf": "17b",
+    "step": 10,
+    "words": "וַהֲווֹ עָלֶיהָ כַּמָּה טִיפֵּי דָמִים."
+   },
+   "steps": 10,
+   "status": "verified-read",
+   "note": "",
+   "source": "new",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 204,
+   "reading": {
+    "steps": 10
+   }
+  },
+  {
+   "id": "men109b-chonyo",
+   "title": "Chonyo, Shimi and the altar in Alexandria",
+   "summary": "A dying priest's two sons, Chonyo and Shimi, dispute who serves in his place. One flees to Alexandria in Egypt and builds an altar. Two versions of the story.",
+   "seder": "Kodashim",
+   "masechta": "Menachot",
+   "start": {
+    "m": "Menachot",
+    "daf": "109b",
+    "step": 12,
+    "words": "לְאַחַר הָרֶגֶל,"
+   },
+   "end": {
+    "m": "Menachot",
+    "daf": "109b",
+    "step": 21,
+    "words": "עַל אַחַת כַּמָּה וְכַמָּה."
+   },
+   "steps": 10,
+   "status": "verified-read",
+   "note": "",
+   "source": "new",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 205,
+   "reading": {
+    "steps": 10
+   }
+  },
+  {
+   "id": "men64b-pig",
+   "title": "The besieged Jerusalem, the basket and the pig",
+   "summary": "During the Hasmonean war, a Greek-wise old man hints that as long as the service continues, the city will not fall. The pig and the basket.",
+   "seder": "Kodashim",
+   "masechta": "Menachot",
+   "start": {
+    "m": "Menachot",
+    "daf": "64b",
+    "step": 7,
+    "words": "מַעֲשֶׂה שֶׁבָּא [הָעוֹמֶר] מִגַּגּוֹת צְרִיפִין."
+   },
+   "end": {
+    "m": "Menachot",
+    "daf": "64b",
+    "step": 9,
+    "words": "וּשְׁתֵּי הַלֶּחֶם מִבִּקְעַת עֵין סוֹכֵר."
+   },
+   "steps": 3,
+   "status": "verified-read",
+   "note": "",
+   "source": "new",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 206,
+   "reading": {
+    "steps": 3
+   }
+  },
+  {
+   "id": "zev101a-aharon",
+   "title": "Aharon answers Moshe about the burned chatas",
+   "summary": "Moshe asks why Aharon did not eat the chatas. Aharon argues, and Moshe agrees without embarrassment.",
+   "seder": "Kodashim",
+   "masechta": "Zevachim",
+   "start": {
+    "m": "Zevachim",
+    "daf": "101a",
+    "step": 9,
+    "words": "רַבִּי נְחֶמְיָה מְתָרֵיץ לְהוּ הָכִי:"
+   },
+   "end": {
+    "m": "Zevachim",
+    "daf": "101a",
+    "step": 15,
+    "words": "אֶלָּא אָמַר: ״שָׁמַעְתִּי וְשָׁכַחְתִּי״."
+   },
+   "steps": 7,
+   "status": "verified-read",
+   "note": "",
+   "source": "new",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 207,
+   "reading": {
+    "steps": 7
+   }
+  },
+  {
+   "id": "git57b-zechariah",
+   "title": "Nevuzaradan and the blood of Zechariah",
+   "summary": "Nevuzaradan finds Zechariah's blood boiling in the Temple and kills the Sanhedrin until it settles.",
+   "seder": "Nashim",
+   "masechta": "Gittin",
+   "start": {
+    "m": "Gittin",
+    "daf": "57b",
+    "step": 1,
+    "words": "אָמַר רַבִּי חִיָּיא בַּר אָבִין"
+   },
+   "end": {
+    "m": "Gittin",
+    "daf": "57b",
+    "step": 7,
+    "words": "וְאִגַּיַּיר."
+   },
+   "steps": 7,
+   "status": "verified-read",
+   "note": "",
+   "source": "new",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 208,
+   "reading": {
+    "steps": 7
+   }
+  },
+  {
+   "id": "kid81b-chiya-bar-ashi",
+   "title": "Rabbi Chiya bar Ashi and the evil inclination",
+   "summary": "He prays every day to be saved from the evil inclination, and what happens when a woman comes to his garden.",
+   "seder": "Nashim",
+   "masechta": "Kiddushin",
+   "start": {
+    "m": "Kiddushin",
+    "daf": "81b",
+    "step": 4,
+    "words": "רַבִּי חִיָּיא בַּר אָשֵׁי הֲוָה רְגִיל"
+   },
+   "end": {
+    "m": "Kiddushin",
+    "daf": "81b",
+    "step": 7,
+    "words": "עַד שֶׁמֵּת בְּאוֹתָהּ מִיתָה."
+   },
+   "steps": 4,
+   "status": "verified-read",
+   "note": "",
+   "source": "new",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 209,
+   "reading": {
+    "steps": 4
+   }
+  },
+  {
+   "id": "ned40a-visiting",
+   "title": "Rav Chelbo is ill and no one visits him",
+   "summary": "Rabbi Akiva teaches that one who does not visit the sick is as if he spills blood.",
+   "seder": "Nashim",
+   "masechta": "Nedarim",
+   "start": {
+    "m": "Nedarim",
+    "daf": "40a",
+    "step": 1,
+    "words": "רַב חֶלְבּוֹ בְּאֵישׁ."
+   },
+   "end": {
+    "m": "Nedarim",
+    "daf": "40a",
+    "step": 3,
+    "words": "כְּאִילּוּ שׁוֹפֵךְ דָּמִים."
+   },
+   "steps": 3,
+   "status": "verified-read",
+   "note": "",
+   "source": "new",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 210,
+   "reading": {
+    "steps": 3
+   }
+  },
+  {
+   "id": "git6b-evyatar",
+   "title": "Rabbi Evyatar asks Eliyahu what God is doing",
+   "summary": "'These and those are the words of the living God.'",
+   "seder": "Nashim",
+   "masechta": "Gittin",
+   "start": {
+    "m": "Gittin",
+    "daf": "6b",
+    "step": 17,
+    "words": "וְאַשְׁכְּחֵיהּ רַבִּי אֶבְיָתָר לְאֵלִיָּהוּ,"
+   },
+   "end": {
+    "m": "Gittin",
+    "daf": "6b",
+    "step": 19,
+    "words": "נִימָא מָצָא וְהִקְפִּיד."
+   },
+   "steps": 3,
+   "status": "verified-read",
+   "note": "",
+   "source": "new",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 211,
+   "reading": {
+    "steps": 3
+   }
+  },
+  {
+   "id": "sanh109a-nachum",
+   "title": "Nachum Ish Gamzu and the dirt of Avraham",
+   "summary": "Sent to the emperor with a chest of dirt, Nachum meets Eliyahu at an inn, and the dirt wins a war.",
+   "seder": "Nezikin",
+   "masechta": "Sanhedrin",
+   "start": {
+    "m": "Sanhedrin",
+    "daf": "109a",
+    "step": 1,
+    "words": "מַאן נְשַׁדַּר?"
+   },
+   "end": {
+    "m": "Sanhedrin",
+    "daf": "109a",
+    "step": 5,
+    "words": "קַטְלִינְהוּ לְהָנָךְ דָּיוֹרֵי."
+   },
+   "steps": 5,
+   "status": "verified-read",
+   "note": "starts at 'whom should we send?'; the setup is on the previous amud",
+   "source": "new",
+   "summaryNote": "summary written by us (Instinct), not approved wording",
+   "group": "more",
+   "order": 212,
+   "reading": {
+    "steps": 5
+   }
+  }
+ ]
+}
