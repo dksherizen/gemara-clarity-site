@@ -334,7 +334,8 @@ function sanitize(html, he){
 const heTxt = t => { t = String(t||"").replace(/<[^>]+>/g, ""); return esc(settings.nikud ? t : t.replace(NIKUD, "")); };
 // kt3 (Oct 16 2026, David's voice note, 12:12 AM: "if they can tap on a word and see the translation, it'll really, really help them"): each Hebrew/Aramaic word of a
 // step's phrase line is its own <span class="fw"> so a tap can open its word help (wordHelpFlow). The visible text is exactly heTxt's; nothing else changes.
-const heWords = t => { let k = 0; return heTxt(t).split(/(\s+|\u05BE)/).map(x => /[\u05D0-\u05EA]/.test(x) ? `<span class="fw" data-k="${k++}">${x}</span>` : x).join(""); };
+// e5: each word is a button for the keyboard; st (one per step) gives the step's first word the step's one Tab stop (roving tabindex)
+const heWords = (t, st) => { let k = 0; return heTxt(t).split(/(\s+|\u05BE)/).map(x => /[\u05D0-\u05EA]/.test(x) ? `<span class="fw" data-k="${k++}" role="button" tabindex="${st && !st.n++ ? 0 : -1}">${x}</span>` : x).join(""); };
 
 /* ---------- UI helpers ---------- */
 function toast(msg){ const t = $("#toast"); t.textContent = msg; t.classList.add("show"); clearTimeout(toast._t); toast._t = setTimeout(() => t.classList.remove("show"), 2400); }
@@ -917,13 +918,14 @@ function stepHtml(s, k, open){
     s.whyThisMatters ? ["Why it matters", P("Why it matters", s.whyThisMatters)] : null,
     logicRows.length ? ["Logic", `<section class="logic box"><h4>Logic</h4><dl>${logicRows.map(r => `<dt>${r[0]}</dt><dd>${px(r[1])}</dd>`).join("")}</dl></section>`] : null].filter(Boolean);
   const total = (current && current.analysis && current.analysis.steps || []).length, nextN = total && k + 2 <= total ? k + 2 : 0;
+  const fwStop = { n: 0 }; // e5: the first word of this step is its one Tab stop
   return `<article class="step t-${t.k}${open ? " open" : ""}${isMish(k) ? " is-mishnah" : ""}" id="s${k+1}" data-n="${k+1}">
     <button class="sh" aria-expanded="${open}" aria-controls="x${k+1}"><span class="num">${k+1}</span><span class="tname">${t.en}<span class="he" lang="he">${stepHe(s.hebrewStepName)}</span>${isMish(k) ? MBADGE : ""}</span></button>
     <div class="sbody">
       ${relatedLineHtml(relatedSteps(current && current.id, s, k + 1, (current && current.analysis && current.analysis.steps || []).length || k + 1), k + 1)}
       <h3 class="stitle">${px(s.title)}</h3>
       ${s.stepSummary ? `<p class="ssum">${px(s.stepSummary)}</p>` : ""}
-      <div class="phrases">${(s.phrases||[]).map((p, pi) => `<div class="ph" data-ph="${pi}"><div class="pa he" lang="he">${heWords(p.aramaic)}</div><div class="pe">${px(p.english)}${p.notes ? `<div class="pnote">${px(p.notes)}</div>` : ""}</div></div>`).join("")}</div>
+      <div class="phrases">${(s.phrases||[]).map((p, pi) => `<div class="ph" data-ph="${pi}"><div class="pa he" lang="he">${heWords(p.aramaic, fwStop)}</div><div class="pe">${px(p.english)}${p.notes ? `<div class="pnote">${px(p.notes)}</div>` : ""}</div></div>`).join("")}</div>
       <button class="explain-btn" aria-expanded="${open}" aria-controls="x${k+1}"><span class="xb-l">${open ? "Hide explanation" : "Explain"}</span>${chev}</button>
       <div class="explain" id="x${k+1}" ${open ? "" : "hidden"}>
         ${P("What’s happening", s.whatsHappening)}
@@ -1107,6 +1109,15 @@ function wireDaf(){
     if (wfOpen() && !e.target.closest("#wfWord")) closeWordFlow();
     const t = e.target.closest(".sh, .explain-btn"); if (t) toggleStep(t.closest(".step"));
   };
+  view.onkeydown = e => { // e5: Enter or Space opens the word help; arrows (Left = next word) and Home/End move inside the step, so the amud does not change
+    const fw = e.target.closest && e.target.closest(".pa .fw"); if (!fw || e.metaKey || e.ctrlKey || e.altKey) return;
+    if (e.key === "Enter" || e.key === " ") { e.preventDefault(); wordHelpFlow(fw, true); return; }
+    const ws = $$(".pa .fw", fw.closest(".step")), i = ws.indexOf(fw);
+    const j = e.key === "ArrowLeft" ? i + 1 : e.key === "ArrowRight" ? i - 1 : e.key === "Home" ? 0 : e.key === "End" ? ws.length - 1 : null;
+    if (j == null) return;
+    e.preventDefault(); e.stopPropagation();
+    const t = ws[Math.max(0, Math.min(ws.length - 1, j))]; ws.forEach(w => { w.tabIndex = w === t ? 0 : -1; }); t.focus();
+  };
   $("#sidebar").onclick = e => { const j = e.target.closest("[data-jump]"); if (j) { e.preventDefault(); jumpTo(+j.dataset.jump); } };
   observeSteps();
 }
@@ -1180,15 +1191,16 @@ const wfHe = s => `<span class="he" dir="rtl" lang="he">${esc(s)}</span>`;
 function wfSheet(){
   let el = document.getElementById("wfWord");
   if (!el) {
-    el = document.createElement("section"); el.id = "wfWord"; el.className = "am-word wf-word"; el.setAttribute("role", "dialog"); el.setAttribute("aria-label", "Word help"); el.hidden = true;
+    el = document.createElement("section"); el.id = "wfWord"; el.className = "am-word wf-word"; el.setAttribute("role", "dialog"); el.setAttribute("aria-label", "Word help"); el.setAttribute("aria-describedby", "wfBody"); el.hidden = true;
     el.addEventListener("click", e => { if (e.target.closest("[data-x=close]")) closeWordFlow(); });
     document.body.appendChild(el);
   }
   return el;
 }
-function closeWordFlow(){ const el = document.getElementById("wfWord"); if (el) el.hidden = true; document.querySelectorAll(".pa .fw.on").forEach(x => x.classList.remove("on")); }
+let wfKbd = null; // e5: the word whose help was opened from the keyboard; closing puts focus back on it
+function closeWordFlow(){ const el = document.getElementById("wfWord"), back = wfKbd, inSheet = !!(el && el.contains(document.activeElement)); wfKbd = null; if (el) el.hidden = true; document.querySelectorAll(".pa .fw.on").forEach(x => x.classList.remove("on")); if (back && back.isConnected && inSheet) back.focus({ preventScroll: true }); }
 function wfOpen(){ const el = document.getElementById("wfWord"); return !!(el && !el.hidden); }
-async function wordHelpFlow(el){
+async function wordHelpFlow(el, kbd){
   const c = current, a = c && c.analysis, stepEl = el.closest(".step"), phEl = el.closest(".ph");
   if (!a || !stepEl || !phEl) return;
   const s = +stepEl.dataset.n - 1, ph = +phEl.dataset.ph, k = +el.dataset.k, shown = el.textContent;
@@ -1221,8 +1233,9 @@ async function wordHelpFlow(el){
   }
   const sheet = wfSheet();
   sheet.innerHTML = `<div class="am-word-head"><div class="am-word-w" dir="rtl" lang="he">${esc(shown)}</div><button class="iconbtn" data-x="close" aria-label="Close word help">✕</button></div>
-    <div class="am-word-body">${parts.length ? parts.join("") : `<p class="am-none">${C ? "No entry yet for this word. We'd rather leave it blank than guess." : "Word help couldn’t load just now. Check your connection and tap the word again."}</p>`}</div>`;
+    <div class="am-word-body" id="wfBody">${parts.length ? parts.join("") : `<p class="am-none">${C ? "No entry yet for this word. We'd rather leave it blank than guess." : "Word help couldn’t load just now. Check your connection and tap the word again."}</p>`}</div>`;
   sheet.hidden = false;
+  wfKbd = kbd ? el : null; if (kbd) { const x = sheet.querySelector("[data-x=close]"); if (x) x.focus({ preventScroll: true }); }
   // keep the tapped word in view above the sheet: the page scrolls, nothing in it moves
   requestAnimationFrame(() => { if (!el.isConnected || sheet.hidden) return; const r = el.getBoundingClientRect(), top = sheet.getBoundingClientRect().top; if (r.bottom > top - 12 && r.left < sheet.getBoundingClientRect().right && r.right > sheet.getBoundingClientRect().left) window.scrollBy({ top: r.bottom - top + 40, behavior: "smooth" }); });
 }
