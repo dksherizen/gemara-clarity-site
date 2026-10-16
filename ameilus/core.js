@@ -1,5 +1,8 @@
 // Ameilus v3 core: pure functions over Gemara Clarity step data (data/b/<id>.json).
 // No DOM, no network. Shared by the UI (ui.js) and the unit tests (test/*.test.mjs).
+import { AMW } from "./words.js?v=3.6.0";
+// marking a real break before the passage's end (David's wording, Oct 14 2026; unit renamed "passage" Oct 15 2026); the walkthrough quotes it too
+export const NEAR_MISS_TEXT = AMW.nearMiss;
 export const NIK = /[\u0591-\u05C7]/g;
 export const unvowel = t => String(t || "").replace(/\u05BE/g, " ").replace(NIK, "");
 const HEB = /[\u05D0-\u05EA]/;
@@ -11,10 +14,10 @@ const TRAIL = /[,.:;?!״"“”'’)\]—–]+$/;
 export function tokenize(steps){
   const out = [];
   (steps || []).forEach((st, s) => (st.phrases || []).forEach((p, ph) => {
-    String(p.aramaic || "").replace(/<[^>]+>/g, " ").replace(/\u05BE/g, " ").split(/\s+/).filter(Boolean).forEach(piece => {
-      if (!HEB.test(piece)) { const last = out[out.length - 1]; if (last && last.s === s) last.trail += piece; return; }
-      const lead = (piece.match(LEAD) || [""])[0];
-      let rest = piece.slice(lead.length);
+    String(p.aramaic || "").replace(/<[^>]+>/g, " ").replace(/\u05BE/g, " ").split(/\s+/).filter(Boolean).forEach(frag => {
+      if (!HEB.test(frag)) { const last = out[out.length - 1]; if (last && last.s === s) last.trail += frag; return; }
+      const lead = (frag.match(LEAD) || [""])[0];
+      let rest = frag.slice(lead.length);
       const trail = (rest.match(TRAIL) || [""])[0];
       const v = rest.slice(0, rest.length - trail.length);
       out.push({ v, raw: unvowel(v), lead, trail, s, ph });
@@ -46,7 +49,7 @@ function isAttribution(words){
   return words.slice(1).every(w => ATTR_W.has(w) || NAMEW.has(w) || NAMEW.has(w.replace(/^[ודל]/, "")));
 }
 
-/** Where a learner may end a piece: 'step' = our split; 'sentence' = a sentence ends in our
+/** Where a learner may end a passage: 'step' = our split; 'sentence' = a sentence ends in our
  *  punctuation (. ? ! ; and : unless it introduces speech or a quote); 'voice' = a comma or dash
  *  right before a new speaker or a new move. Returns an array (same length as tokens) of kind|null. */
 export function breakKinds(tokens){
@@ -74,7 +77,7 @@ export function breakKinds(tokens){
     }
   });
   // a break needs at least two words since the previous break (no "אלא," on its own), and an
-  // attribution chain ("אמר רבי X בר Y:") is never a piece by itself
+  // attribution chain ("אמר רבי X בר Y:") is never a passage by itself
   let last = -1;
   for (let i = 0; i < k.length; i++) {
     if (!k[i]) continue;
@@ -93,7 +96,7 @@ const NUM = ["zero","one","two","three","four","five","six","seven","eight","nin
 export const nw = (n, w) => `${NUM[n] || n} ${w}${n === 1 ? "" : "s"}`;
 
 /** Judge the learner's end marker. pos = first token not yet carved off; mark = index of the
- *  last word of the learner's piece. Never says "wrong": it says what kind of break this is. */
+ *  last word of the learner's passage. Never says "wrong": it says what kind of break this is. */
 export function evaluateMark(tokens, kinds, ranges, pos, mark){
   if (mark == null || mark < pos || mark >= tokens.length) return { ok: false, kind: "invalid", text: "Tap a word in the part you haven't done yet." };
   const cur = tokens[pos].s, end = ranges[cur].end;
@@ -104,17 +107,41 @@ export function evaluateMark(tokens, kinds, ranges, pos, mark){
     for (let s = cur; s < ranges.length && ranges[s].end <= mark; s++) passed.push(s);
     if (mark === end) return { ok: true, kind, rel: "exact", carveTo: mark, completes: passed, text: "Same place we split it." };
     if (mark < end) return { ok: true, kind, rel: "inner", carveTo: mark, completes: passed,
-      text: kind === "voice" ? "A real break: a new voice starts right after it. Our piece runs a little further, so keep going and mark where it ends." : "A real break: the sentence ends there. Our piece runs a little further, so keep going and mark where it ends." };
+      text: NEAR_MISS_TEXT }; // wording from David, Oct 14 2026 (same for a new voice or a sentence end)
     return { ok: true, kind, rel: "beyond", carveTo: mark, completes: passed, n: passed.length,
-      text: `A real break. We split it sooner too, after ${w(end)}, so that's ${nw(passed.length + (ranges[tokens[mark].s].end === mark ? 0 : 1), "piece")} in one.` };
+      text: AMW.beyond(w(end), passed.length + (ranges[tokens[mark].s].end === mark ? 0 : 1)) };
   }
   let nextBreak = pos; while (nextBreak < tokens.length && !kinds[nextBreak]) nextBreak++;
-  if (mark < nextBreak) return { ok: false, kind: null, rel: "short", text: "We don't split it there: the statement isn't finished yet. Read on a bit." };
+  if (mark < nextBreak) return { ok: false, kind: null, rel: "short", text: AMW.notYet };
   return { ok: false, kind: null, rel: "long", text: "That runs past a break. Look a little earlier." };
 }
 
-export const RUNGS = ["punct", "vowels", "signal", "reveal"];
-export const RUNG_LABEL = { punct: "Show punctuation", vowels: "Show vowels", signal: "Signal word", reveal: "Reveal" };
+/** Hints (Oct 15 2026, David): every hint is its own option, usable in any order, never a ladder.
+ *  Vowels and punctuation are PAGE-WIDE on/off toggles over the whole amud (a hint shown only on the
+ *  current passage stops at its last word and gives the split away). Signal word and reveal are per passage. */
+export const HINTS = { page: ["vowels", "punct"], piece: ["signal", "reveal"] };
+export const HINT_LABEL = { vowels: "Vowels", punct: "Punctuation", signal: "Signal word", reveal: "Show where it ends" };
+
+/** What one word of the daf shows. Done words always show our edition; for every other word the
+ *  page-wide toggles decide, the same for every word, so nothing marks where a passage ends.
+ *  o = { pos, vowels, punct, bare, vowelWord:Set } */
+export function wordView(t, i, o){
+  const done = i < o.pos;
+  const showP = done || (!!o.punct && !o.bare);
+  const showV = done || (!!o.vowels && !o.bare) || !!(o.vowelWord && o.vowelWord.has(i));
+  return { showP, showV, text: (showP ? t.lead : "") + (showV ? t.v : t.raw) + (showP ? t.trail : "") };
+}
+
+/** "Redo this passage": back to the end of the last finished passage; inner cuts in the current passage go. */
+export function resetPiece(st, ranges){
+  let pos = 0;
+  Object.keys(st.done).forEach(s => { if (ranges[s] && ranges[s].end >= 0) pos = Math.max(pos, ranges[s].end + 1); });
+  return { ...st, pos, cuts: st.cuts.filter(c => c < pos), tries: 0 };
+}
+
+/** Passages done on your own = finished without "Show where it ends". Vowels, punctuation and the
+ *  signal word don't count against you. */
+export const ownCount = done => Object.values(done || {}).filter(d => d && d.own).length;
 
 /** Glossary lookup with the common one-letter prefixes (ו ד ה ב ל כ מ ש) peeled off, longest form first. */
 const PREFIX_EN = { "ו": "and", "ד": "that / of", "ה": "the", "ב": "in", "ל": "to", "כ": "like", "מ": "from", "ש": "that" };
@@ -145,8 +172,8 @@ export function phraseAt(gloss, tokens, i, maxLen = 3){
 }
 
 const SIGNAL_TYPES = new Set(["formula", "connective", "question"]);
-/** Rung 3: the signal word that opens this piece (what kind of move it is), never what it says.
- *  Falls back to the signal that opens the NEXT piece. entry = [he, gloss, use, type]. */
+/** The signal word that opens this passage (what kind of move it is), never what it says.
+ *  Falls back to the signal that opens the NEXT passage. entry = [he, gloss, use, type]. */
 export function signalFor(gloss, tokens, ranges, pos){
   const s = tokens[pos].s;
   const look = (from, to, where) => {
@@ -157,6 +184,18 @@ export function signalFor(gloss, tokens, ranges, pos){
     return null;
   };
   return look(pos, ranges[s].end, "this") || (ranges[s + 1] && ranges[s + 1].start >= 0 ? look(ranges[s + 1].start, ranges[s + 1].end, "next") : null);
+}
+
+/** The signal-word hint as words for the learner. It names the word, what it means and how it is
+ *  used, and nothing about where the passage ends: a signal at the opening of this passage is highlighted
+ *  (it says what kind of move this is); one further on is named but never pointed at, since pointing
+ *  at it would mark the split. -> { text, at: token index to highlight or null, where } */
+export function signalHint(gloss, tokens, ranges, pos){
+  const sg = signalFor(gloss, tokens, ranges, pos);
+  if (!sg) return { text: "No signal word near here. Read it aloud: who is talking, and where do they stop?", at: null, where: null };
+  const he = sg.entry[0] || sg.form;
+  if (sg.where === "this") return { text: `${he}: “${sg.entry[1]}.” ${sg.entry[2]}`, at: sg.at, where: "this" };
+  return { text: `A signal word to know here: ${he} (“${sg.entry[1]}”). ${sg.entry[2]}`, at: null, where: "next" };
 }
 
 const KIND_Q = {

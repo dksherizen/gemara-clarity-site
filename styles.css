@@ -14,7 +14,7 @@ body.theme-dark{
   color-scheme:dark;
   --bg:#07101d;--panel:#0f1728;--panel-2:#0b1322;--raise:#141f35;
   --border:rgba(255,255,255,.10);--border-2:rgba(255,255,255,.06);
-  --text:#e9eef8;--muted:#9aa9c2;--faint:#6b7a94;--accent:#7dd3fc;--accent-ink:#04121f;
+  --text:#e9eef8;--muted:#9aa9c2;--faint:#8a99b3;--accent:#7dd3fc;--accent-ink:#04121f;
   --mimra:#38bdf8;--kashya:#fb7185;--terutz:#34d399;--raaya:#a78bfa;--dechiya:#fb923c;--sheelah:#fbbf24;--teshuvah:#22d3ee;--maskana:#e879f9;--mishnah:#bef264;
   --tint:.13;--warn-bg:rgba(251,191,36,.10);--warn:#fbbf24;--good:#34d399;--bad:#fb7185;
 }
@@ -22,16 +22,16 @@ body.theme-light{
   color-scheme:light;
   --bg:#f6f4ee;--panel:#ffffff;--panel-2:#f1eee6;--raise:#ffffff;
   --border:rgba(15,23,42,.12);--border-2:rgba(15,23,42,.07);
-  --text:#151b26;--muted:#4f5b6e;--faint:#7c8799;--accent:#0369a1;--accent-ink:#fff;
-  --mimra:#0284c7;--kashya:#e11d48;--terutz:#059669;--raaya:#7c3aed;--dechiya:#ea580c;--sheelah:#b45309;--teshuvah:#0e7490;--maskana:#c026d3;--mishnah:#4d7c0f;
+  --text:#151b26;--muted:#4f5b6e;--faint:#5f6b7d;--accent:#0369a1;--accent-ink:#fff;
+  --mimra:#075985;--kashya:#be123c;--terutz:#065f46;--raaya:#6d28d9;--dechiya:#9a3412;--sheelah:#92400e;--teshuvah:#155e75;--maskana:#a21caf;--mishnah:#3f6212;
   --tint:.09;--warn-bg:#fff7e0;--warn:#92400e;--good:#047857;--bad:#be123c;
 }
 body.theme-sepia{
   color-scheme:light;
   --bg:#f3e9d2;--panel:#fbf4e3;--panel-2:#efe3c7;--raise:#fdf8ec;
   --border:rgba(80,55,20,.16);--border-2:rgba(80,55,20,.09);
-  --text:#2b2216;--muted:#5e4f39;--faint:#8a7859;--accent:#8a4b0f;--accent-ink:#fff;
-  --mimra:#0369a1;--kashya:#be123c;--terutz:#047857;--raaya:#6d28d9;--dechiya:#c2410c;--sheelah:#a16207;--teshuvah:#0e7490;--maskana:#a21caf;--mishnah:#4d6b12;
+  --text:#2b2216;--muted:#5e4f39;--faint:#6b5b42;--accent:#7c4309;--accent-ink:#fff;
+  --mimra:#075985;--kashya:#9f1239;--terutz:#065f46;--raaya:#5b21b6;--dechiya:#9a3412;--sheelah:#854d0e;--teshuvah:#155e75;--maskana:#86198f;--mishnah:#3f6212;
   --tint:.10;--warn-bg:#f8e7bd;--warn:#7c4a03;--good:#047857;--bad:#be123c;
 }
 html{-webkit-text-size-adjust:100%;scroll-padding-top:calc(var(--top-h) + 12px)}
@@ -147,7 +147,7 @@ body.no-colors .step,body.no-colors .fnode,body.no-colors .strip span,body.no-co
 .flow{display:flex;flex-direction:column;gap:2px}
 .flow h2{font-size:13px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin:0 0 8px 6px}
 .sidebar .flow h2{padding-right:40px;min-height:22px}
-.phase{font-size:11.5px;text-transform:uppercase;letter-spacing:.1em;font-weight:800;color:var(--faint);margin:12px 0 4px 6px}
+.phase{font-size:12.5px;text-transform:uppercase;letter-spacing:.1em;font-weight:800;color:var(--faint);margin:12px 0 4px 6px}
 .phase:first-of-type{margin-top:0}
 .fnode{display:grid;grid-template-columns:28px 1fr;gap:9px;align-items:start;padding:7px 8px;border-radius:10px;text-decoration:none;color:var(--text);margin-left:calc(var(--d,0) * 16px);border-left:2px solid transparent}
 .fnode:hover{background:var(--panel)}
@@ -168,6 +168,14 @@ body.no-colors .step,body.no-colors .fnode,body.no-colors .strip span,body.no-co
 .sh .chev{margin-left:auto;width:20px;height:20px;fill:none;stroke:var(--muted);stroke-width:2.2;transition:transform .2s}
 .step.open .sh .chev{transform:rotate(180deg)}
 .sbody{padding:4px 16px 16px}
+.srel{margin:8px 0 0;font-size:max(12px,calc(13px * var(--scale)));line-height:1.5;color:var(--muted)}
+.srel a{display:inline-block;min-width:28px;padding:3px 6px;margin:-3px 0;text-align:center;border-radius:8px;color:var(--accent);font-weight:700;text-decoration:underline;text-underline-offset:2px}
+.srel a:hover,.srel a:focus-visible{background:var(--panel-2)}
+.srel-sep{margin-left:-4px}
+.step:focus{outline:none}
+.step.arrive{animation:stepArrive 1.5s ease-out}
+@keyframes stepArrive{0%,35%{box-shadow:0 0 0 3px var(--accent);background:color-mix(in srgb,var(--accent) 12%,var(--panel))}100%{box-shadow:0 0 0 0 transparent}}
+@media (prefers-reduced-motion:reduce){.step.arrive{animation:none;box-shadow:0 0 0 3px var(--accent)}}
 .stitle{font-size:calc(18.5px * var(--scale));line-height:1.35;margin:10px 0 4px}
 .ssum{margin:0 0 6px;color:var(--muted);font-size:calc(15.5px * var(--scale))}
 .maybe{font-size:13px;color:var(--faint);margin:2px 0 6px}
@@ -209,7 +217,7 @@ body.hide-logic .logic{display:none}
 .seg .he{font-size:var(--he-size);line-height:1.7}
 .seg .en{font-size:var(--en-size);color:var(--muted);line-height:1.55}
 .seg .en b{color:var(--text);font-weight:650}
-.seg .num{font-size:11px;color:var(--faint);font-weight:700}
+.seg .num{font-size:12px;color:var(--faint);font-weight:700}
 @media (min-width:760px){.seg{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px;align-items:start}.seg .he{order:2}.seg .en{order:1}body.hide-translation .seg{grid-template-columns:1fr}.seg.mstart::before{grid-column:1/-1}}
 .src{font-size:12.5px;color:var(--faint);margin:16px 4px}
 
@@ -370,7 +378,7 @@ body.side-resizing *{cursor:col-resize!important}
 .step.is-mishnah{box-shadow:inset 0 3px 0 var(--mishnah)}
 .step.is-mishnah .sh .num{box-shadow:0 0 0 2px var(--panel),0 0 0 4px var(--mishnah)}
 .fnode.is-mishnah .dot{box-shadow:0 0 0 2px var(--bg),0 0 0 4px var(--mishnah)}
-.fnode .fty .mbadge{margin-left:6px;font-size:10.5px;padding:3px 7px;vertical-align:1px}
+.fnode .fty .mbadge{margin-left:6px;font-size:11.5px;padding:3px 7px;vertical-align:1px}
 .strip span.is-mishnah{box-shadow:inset 0 4px 0 var(--mishnah)}
 .seg.seg-mishnah{box-shadow:inset 3px 0 0 var(--mishnah)}
 .seg.mstart::before{content:"Mishnah · משנה";display:block;font-size:11.5px;font-weight:800;color:var(--mishnah);letter-spacing:.02em}
@@ -457,12 +465,11 @@ body.am-mode .am-mapbtn[aria-pressed="true"]{border-color:var(--accent);color:va
   body.has-modesw .refbtn{max-width:40vw;padding:6px 8px 6px 11px;font-size:14.5px;gap:3px}
   .modesw-a{padding:6px 9px;font-size:13.5px}
 }
-@media (max-width:520px){body.am-mode .ref-m{display:none}}
 @media (max-width:360px){.modesw-a{padding:6px 7px;font-size:13px}body.has-modesw .refbtn{max-width:32vw}}
 body.theme-dark{--done:#b9c6dc}
 body.theme-light{--done:#3d4757}
 body.theme-sepia{--done:#4a3d2a}
-body.am-mode{--bar-h:118px;--daf-size:calc(25px * var(--scale))}
+body.am-mode{--bar-h:150px;--daf-size:calc(25px * var(--scale))}
 body.am-mode,body.am-mode.bb-collapsed{padding-bottom:calc(var(--bar-h) + env(safe-area-inset-bottom))}
 body.am-mode .side-wrap,body.am-mode .side-show,body.am-mode .bottombar{display:none !important}
 body.am-mode .layout,body.am-mode .layout.with-side{display:block;max-width:none;padding:0}
@@ -531,11 +538,24 @@ button.am-optbtn:hover{border-color:var(--accent)}
 .am-msg-try{color:var(--warn)}.am-msg-hint{color:var(--text)}
 .am-acts{display:flex;gap:6px;justify-content:center;flex-wrap:nowrap;max-width:760px;margin:0 auto}
 @media (max-width:400px){.am-acts .btn.btn{padding:9px 10px;font-size:14.5px}.am-acts .btn.btn.sm{min-width:38px}}
+/* Hints (Oct 15 2026): every hint is its own button, any order. Vowels/Punctuation are page-wide on/off toggles. */
+.am-hints{display:flex;gap:5px;justify-content:center;align-items:center;flex-wrap:nowrap;max-width:760px;margin:0 auto}
+.am-hints .hb{border:1px solid var(--border);background:var(--panel-2);border-radius:999px;padding:7px 12px;font:inherit;font-weight:700;font-size:14px;min-height:38px;color:var(--text);white-space:nowrap;cursor:pointer;display:inline-flex;align-items:center;justify-content:center}
+.am-hints .hb.ic{min-width:38px;padding:7px 0;font-size:17px}
+.am-hints .hb.on{background:var(--warn-bg);border-color:var(--warn);color:var(--text)}
+.am-hints .hb.on[data-act=toggle]::before{content:"✓";margin-right:4px;color:var(--warn)}
+.am-hints .hb.warn{border-color:var(--bad);color:var(--bad)}
+.am-hints .hb:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.am-hints .hb-s{display:none}
+.am-bar .am-acts{margin-top:6px}
+@media (max-width:480px){.am-hints{gap:4px}.am-hints .hb{padding:7px 7px;font-size:13.5px}.am-hints .hb-l{display:none}.am-hints .hb-s{display:inline}.am-hints .hb.ic{min-width:34px;padding:7px 0}.am-hints .hb.on[data-act=toggle]::before{margin-right:2px}}
+@media (max-width:374px){.am-hints{gap:3px}.am-hints .hb{padding:6px 5px;font-size:12.5px}.am-hints .hb.ic{min-width:30px}}
+@media (max-width:340px){.am-hints .hb.on[data-act=toggle]::before{display:none}}
 
 /* sugya map */
 .am-map{display:none}
 .am-maph{font-size:15px;margin:0 0 2px}.am-mapsub{font-size:12.5px;color:var(--faint);margin:0 0 8px}
-.am-phase{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--faint);margin:10px 0 4px}
+.am-phase{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--faint);margin:10px 0 4px}
 .am-node{display:flex;align-items:flex-start;gap:6px;width:100%;text-align:left;background:none;border:0;border-left:1px dashed var(--border);margin-left:calc(var(--d) * 14px);padding:5px 6px;border-radius:0 8px 8px 0;font-size:13.5px;line-height:1.35;width:calc(100% - var(--d) * 14px)}
 button.am-node:hover{background:var(--panel)}
 .am-node .kdot{width:8px;height:8px;border-radius:50%;background:var(--c,var(--faint));flex:none;margin-top:5px}
@@ -569,3 +589,372 @@ body.am-mode.am-word-open,body.am-mode.bb-collapsed.am-word-open{padding-bottom:
 :is(.am,.am-word) .chip{border:1px solid var(--border);background:var(--panel);border-radius:999px;padding:7px 12px;font-size:14px}
 :is(.am,.am-word) .chip[aria-pressed="true"]{border-color:var(--good);color:var(--good)}
 
+
+/* ---------- UI pass, Oct 15 2026: folded overview, numbered step strip, home example, contrast, compact phone layout ---------- */
+.sh .num,.fnode .dot{color:var(--bg)}
+.tname .he,.fty .he,.ds-t .he,.lr-he,.demo-ref .he{unicode-bidi:isolate}
+/* daf head: topic + one row (overview toggle, actions); the overview itself folds */
+.dafhead .topic{margin:10px 0 0}
+.dafhead:not(.ov-open) .topic{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.headbar{display:flex;align-items:center;gap:8px;margin-top:12px;flex-wrap:wrap}
+.ovbtn{display:inline-flex;align-items:center;gap:6px;min-height:40px;padding:6px 10px 6px 14px;border-radius:12px;border:1px solid var(--border);background:var(--panel-2);font-weight:700;font-size:14.5px;color:var(--text)}
+.ovbtn .chev{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2.2;transition:transform .2s;flex:none}
+.ovbtn[aria-expanded=true] .chev{transform:rotate(180deg)}
+.headbar .headactions{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 0 auto}
+.headbar .headactions .btn{min-height:40px;padding:6px 12px}
+.ovpanel{margin-top:12px}
+.ovpanel .overview{display:block;cursor:auto;margin:0}
+.ovpanel .typecounts{margin-top:12px}
+.tabs button small{font-weight:600;color:var(--muted);font-size:12.5px;margin-left:5px}
+.tabs button[aria-selected=true] small{color:var(--muted)}
+.note-ai{margin:8px 2px 0;font-size:12.5px}
+/* step strip: a numbered button per step, in its step colour, with the current step named under it */
+.strip{display:flex;gap:4px;height:auto;margin:14px 0 0;padding:2px 1px 4px;border-radius:0;overflow-x:auto;overflow-y:hidden;scrollbar-width:none;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain}
+.strip::-webkit-scrollbar{display:none}
+.strip button{flex:1 0 36px;min-width:36px;max-width:58px;height:40px;padding:0;border-radius:9px;border:1px solid color-mix(in srgb,var(--c) 40%,transparent);border-bottom:4px solid var(--c);background:color-mix(in srgb,var(--c) calc(var(--tint)*100%),var(--panel));color:var(--text);font-weight:800;font-size:14px;font-variant-numeric:tabular-nums;scroll-snap-align:center;cursor:pointer}
+.strip button.cur{background:var(--c);border-color:var(--c);color:var(--bg)}
+.strip button.is-mishnah{box-shadow:inset 0 3px 0 var(--mishnah)}
+@media (hover:hover){.strip button:hover{background:color-mix(in srgb,var(--c) 30%,var(--panel))}.strip button.cur:hover{background:var(--c)}}
+.strip-cap{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:2px;font-size:14px;color:var(--muted)}
+.strip-now b{color:var(--c);font-weight:800}
+.strip-flow{display:inline-flex;align-items:center;gap:2px;min-height:36px;padding:4px 2px 4px 10px;border:0;background:none;color:var(--accent);font-weight:700;font-size:14px;flex:none}
+.strip-flow svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+@media (min-width:1100px){body:not(.side-collapsed) .layout.with-side .strip-flow{display:none}}
+body.no-colors .strip button{--c:var(--faint)!important}
+/* step header: English type name, Hebrew beside it, and an Explain toggle that replaces the full-width button */
+.sh .tname{align-items:center;gap:8px}
+.sh .tname .he{font-size:16.5px;font-weight:600}
+.sh .sh-x{margin-left:auto;display:inline-flex;align-items:center;gap:3px;flex:none;font-size:13px;font-weight:750;color:var(--c);padding:4px 7px 4px 11px;border-radius:999px;border:1px solid color-mix(in srgb,var(--c) 40%,transparent);white-space:nowrap}
+.sh .sh-x .chev{margin-left:0;width:16px;height:16px;stroke:currentColor}
+.step:not(.open) .explain-btn{display:none}
+.explain-btn{min-height:40px;margin-top:10px;font-size:14px}
+.explain .maybe{margin:0}
+/* home: a real exchange up top */
+.demo{padding:16px 16px 16px;margin-top:6px}
+.demo-h{display:flex;align-items:baseline;justify-content:space-between;gap:4px 10px;flex-wrap:wrap}
+.demo-h h2{margin:0;font-size:19px;letter-spacing:-.01em}
+.demo-ref{font-size:14px;font-weight:700;color:var(--muted)}
+.demo-ref .he{font-size:16px;font-weight:600}
+.demo-sub{margin:6px 0 12px;color:var(--muted);font-size:15px;line-height:1.45}
+.demo-steps{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.demo-steps .skel{height:92px;border-radius:12px;margin:0}
+.demo-step{border:1px solid var(--border);border-left:5px solid var(--c);border-radius:12px;padding:10px 12px 4px;background:color-mix(in srgb,var(--c) 5%,var(--panel))}
+.ds-h{display:flex;align-items:center;gap:8px}
+.ds-h .num{width:24px;height:24px;border-radius:50%;display:grid;place-items:center;font-size:12px;font-weight:800;background:var(--c);color:var(--bg);flex:none}
+.ds-t{font-weight:800;color:var(--c);font-size:14px;display:flex;gap:8px;align-items:center}
+.ds-t .he{font-size:16px;font-weight:600}
+.ds-title{font-weight:700;margin:6px 0 0;font-size:15.5px;line-height:1.35}
+.demo-step .ph{padding:6px 0;border-bottom:1px solid var(--border-2)}
+.demo-step .ph:last-child{border-bottom:0}
+.demo-step .ph .pa{font-size:calc(21px * var(--scale));line-height:1.55}
+.demo-step .ph .pe{font-size:calc(15.5px * var(--scale));line-height:1.45}
+.demo-go{display:flex;align-items:center;gap:8px 16px;flex-wrap:wrap;margin-top:14px}
+.demo-go .btn svg{width:16px;height:16px;margin-right:-4px}
+.demo-jump{font-size:14.5px;font-weight:650}
+.home-grid{margin-top:14px}
+/* Shiur / Ameilus: each says what it is */
+.modesw-a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;padding:4px 12px;line-height:1.1}
+.modesw-a b{font-weight:750}
+.modesw-a small{font-size:11px;font-weight:600;letter-spacing:.01em;white-space:nowrap}
+.lr-n{min-width:0;white-space:nowrap}
+@media (max-width:640px){
+  main{padding-top:8px}
+  .hero{padding:2px 6px 12px}
+  .hero p{font-size:16px}
+  .searchbox{margin-top:14px}
+  .demo{padding:14px 12px 14px}
+  .dafhead{padding:12px 12px 12px}
+  .dafhead .topic{margin-top:8px;font-size:calc(16.5px * var(--scale));line-height:1.35}
+  .headbar{flex-wrap:nowrap;gap:6px;margin-top:10px}
+  .ovbtn{flex:1;justify-content:space-between;min-width:0;font-size:14px;padding-left:12px}
+  .headbar .headactions{display:flex;gap:6px;margin:0;flex:none}
+  .headbar .headactions .btn{width:40px;min-height:40px;padding:0;flex-direction:row;gap:0}
+  .headbar .headactions .hl{display:none}
+  .tabs{margin:10px 0 0}
+  .tabs button{min-height:36px}
+  .tabs button small{display:none}
+  .sh .mbadge .mb-he{display:none}
+  .sh .sh-x{padding:4px 6px 4px 9px}
+  .note-ai{margin-top:6px}
+  .strip{margin-top:10px;-webkit-mask-image:linear-gradient(90deg,#000 0,#000 calc(100% - 28px),transparent);mask-image:linear-gradient(90deg,#000 0,#000 calc(100% - 28px),transparent);padding-right:24px}
+  .steps{gap:10px;margin-top:8px}
+  .sh{padding:7px 8px 7px 10px;gap:8px}
+  .sh .num{width:26px;height:26px;font-size:12.5px}
+  .sh .tname{font-size:14px;gap:6px}
+  .sh .tname .he{font-size:15.5px}
+  .sbody{padding:0 12px 10px}
+  .stitle{font-size:calc(17px * var(--scale));line-height:1.3;margin:8px 0 2px}
+  .ssum{font-size:calc(15px * var(--scale));line-height:1.45;margin:0 0 2px}
+  .phrases{margin-top:6px}
+  .ph{padding:7px 0;gap:1px}
+  .ph .pa{line-height:1.55}
+  .ph .pe{line-height:1.42}
+  .pnote{line-height:1.4;margin-top:1px}
+  .explain{gap:10px;margin-top:8px}
+  .explain-btn{margin-top:8px}
+  .endnav{margin-top:14px}
+}
+@media (max-width:560px){
+  .modesw-a{padding:3px 9px}
+  .modesw-a small{font-size:10.5px}
+}
+@media (max-width:360px){.modesw-a{padding:3px 6px}.modesw-a small{font-size:10px}}
+@media (max-width:340px){.modesw-a{padding:3px 4px}body.has-modesw .topbar{gap:4px;padding-left:8px;padding-right:8px}}
+@media print{.headbar .ovbtn,.strip-flow{display:none!important}.ovpanel[hidden]{display:block!important}.dafhead .topic{display:block!important;-webkit-line-clamp:unset!important}}
+
+/* ---------- Two paths: Shiur and Ameilus (Oct 15 2026) ---------- */
+.home-paths{margin-top:2px}
+.home-paths .section-h{margin-top:4px}
+.paths{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.path{position:relative;display:flex;gap:12px;align-items:flex-start;padding:16px 16px 14px;border-radius:var(--radius);border:1px solid var(--border);background:var(--panel);color:var(--text);text-decoration:none;transition:border-color .15s,background .15s}
+.path:hover{border-color:color-mix(in srgb,var(--accent) 55%,var(--border))}
+.path:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.path-ic{flex:none;width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:color-mix(in srgb,var(--accent) 14%,var(--panel));color:var(--accent)}
+.path-ic svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.path-tx{display:flex;flex-direction:column;gap:4px;min-width:0}
+.path-h{font-size:17.5px;font-weight:800;line-height:1.25;letter-spacing:-.01em}
+.path:has(.path-last) .path-h{padding-right:78px}
+.path-p{font-size:15px;line-height:1.45;color:var(--muted)}
+.path-go{margin-top:6px;font-size:14.5px;font-weight:750;color:var(--accent)}
+.path-last{position:absolute;top:12px;right:12px;font-size:12px;font-weight:700;color:var(--muted);border:1px solid var(--border);border-radius:999px;padding:2px 8px;background:var(--panel-2)}
+@media (max-width:640px){.paths{grid-template-columns:1fr;gap:10px}.path{padding:14px 14px 12px}.path-h{font-size:17px}}
+/* the amud chooser: shown when an amud opens and no way of learning is remembered yet */
+.chooser .choose-h{font-size:18px;font-weight:800;margin:16px 0 10px;letter-spacing:-.01em}
+.chooser .topic{display:block;-webkit-line-clamp:unset;overflow:visible}
+.chooser .paths{grid-template-columns:1fr 1fr}
+.chooser .path{background:var(--panel-2)}
+.choose-note{margin:12px 2px 0;font-size:14px;color:var(--muted);line-height:1.45}
+@media (max-width:640px){.chooser .paths{grid-template-columns:1fr}}
+/* the compact chooser on every amud once a choice is remembered: two equal options, full labels */
+.modebar{display:grid;grid-template-columns:1fr 1fr;gap:4px;padding:4px;margin:12px 0 2px;border:1px solid var(--border);border-radius:14px;background:var(--panel-2)}
+.mb-o{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;min-height:46px;padding:5px 8px;border-radius:10px;text-decoration:none;color:var(--muted);text-align:center;line-height:1.2}
+.mb-o b{font-size:15px;font-weight:800;color:var(--text)}
+.mb-o span{font-size:12.5px;font-weight:600}
+.mb-o:hover b{color:var(--accent)}
+.mb-o.on{background:var(--panel);box-shadow:0 0 0 1px color-mix(in srgb,var(--accent) 55%,transparent) inset}
+.mb-o.on b{color:var(--accent)}
+.mb-o:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.am .modebar{margin:0 0 10px;max-width:560px}
+/* Ameilus first-use walkthrough, round 2 (Oct 15 2026): a short sheet at the bottom, the amud's first lines stay in view; once per device, the ? in the head reopens it */
+.am-help{font-size:16px !important;font-weight:800}
+.am-tip:has(.am-walk){display:block;padding:0;margin:0;background:none;border:0;color:var(--text)}
+.am-walk{position:fixed;z-index:30;left:50%;transform:translateX(-50%);bottom:calc(10px + env(safe-area-inset-bottom));width:min(520px,calc(100% - 20px));max-height:min(420px,52vh);overflow:auto;box-sizing:border-box;
+  background:var(--panel);border:1px solid color-mix(in srgb,var(--accent) 40%,var(--border));border-radius:16px;padding:10px 14px 12px;font-size:15px;line-height:1.45;box-shadow:0 -6px 30px rgba(0,0,0,.28)}
+body.am-walk-open .am-bar{visibility:hidden}
+body.am-walk-open .am-daf{opacity:.92}
+.am-walk-top{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.am-walk-k{font-size:12px;text-transform:uppercase;letter-spacing:.1em;font-weight:800;color:var(--muted)}
+.am-walk-top .iconbtn{min-width:32px;height:32px;font-size:14px}
+.am-walk-h{font-size:19px;font-weight:800;letter-spacing:-.01em;margin:0 0 6px;line-height:1.25;outline:0}
+.am-walk-steps{margin:0 0 8px;padding-left:18px;display:grid;gap:2px;color:var(--text)}
+.am-walk-steps li::marker{color:var(--accent)}
+.am-walk-ex{border:1px solid var(--border);border-radius:12px;background:var(--panel-2);padding:4px 10px 6px}
+.am-ex-he{font-family:var(--he-font);font-size:calc(20px * var(--scale));line-height:1.8;margin:0;text-align:right}
+.ex-w{border-radius:6px;padding:0 3px}
+.ex-end{background:color-mix(in srgb,var(--good) 22%,transparent);box-shadow:0 0 0 1.5px var(--good) inset}
+.ex-near{background:color-mix(in srgb,var(--warn) 16%,transparent);border:1.5px dashed var(--warn)}
+.am-ex-key{margin:2px 0 0;font-size:13px;color:var(--muted);display:flex;flex-wrap:wrap;align-items:center;gap:4px 6px}
+.am-ex-k{display:inline-flex;align-items:center;gap:5px;white-space:nowrap;margin-right:10px}
+.exk{flex:none;width:18px;height:18px;border-radius:50%;display:inline-grid;place-items:center;font-size:12px;font-weight:800}
+.exk-end{background:var(--good);color:var(--panel)}
+.exk-near{background:var(--warn);color:var(--panel)}
+.am-walk-acts{margin-top:10px;display:flex;justify-content:flex-end;gap:8px}
+.am-walk-acts .btn{min-height:40px;padding:8px 18px}
+.am-walk :is(.he,[lang=he]){unicode-bidi:isolate}
+/* Ameilus bar, round 2 (Oct 15 2026): idle = the prompt + one row (Hints · Word help · ↺); the four hints open from Hints in a panel above the row */
+body.am-mode,body.am-mode.bb-collapsed{padding-bottom:calc(var(--am-bar-h,var(--bar-h)) + 16px + env(safe-area-inset-bottom))}
+.am-bar{padding:6px 10px calc(7px + env(safe-area-inset-bottom))}
+.am-msg{margin-bottom:5px}
+.am-hints .hb{gap:0}
+.am-row{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr) 40px;gap:6px;max-width:440px}
+.am-row .hb{min-width:0}
+.am-row .hb.ic{min-width:0}
+.hb-h .hb-n{margin-left:6px;font-size:12px;font-weight:700;color:var(--text);background:var(--warn-bg);border:1px solid var(--warn);border-radius:999px;padding:0 6px;line-height:18px}
+.hb-h .hb-car{margin-left:6px;font-size:12px;color:var(--muted)}
+.am-hints .hb-h.open{border-color:var(--accent)}
+.am-hintpanel{display:grid;grid-template-columns:repeat(4,auto);justify-content:center;gap:6px;margin:0 auto 6px;padding:0 0 6px;border-bottom:1px solid var(--border-2);max-width:620px}
+.am-hintpanel.am-hints-bare{grid-template-columns:auto}
+.am-acts[dir=rtl] .btn{direction:ltr;unicode-bidi:isolate} /* the arrow glyphs are not mirrored: › points right, ‹ points left */
+@media (max-width:560px){
+  body.am-mode{--bar-h:82px}
+  .am-hintpanel{grid-template-columns:repeat(2,minmax(0,1fr));max-width:none}
+  .am-hints .hb{padding:6px 6px;font-size:14px;min-height:38px;white-space:nowrap}
+  .am-hints .hb-l{display:inline;overflow:hidden;text-overflow:ellipsis}
+  .am-hints.am-reset{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px}
+  .am-hints.am-reset .hb{white-space:normal;line-height:1.2}
+  .am-hints .hb.on[data-act=toggle]::before{margin-right:3px;display:inline}
+}
+@media (max-width:374px){.am-hints .hb{font-size:13px;padding:6px 3px}.mb-o b{font-size:14px}.mb-o span{font-size:12px}}
+/* reading area, round 2: more air between lines, slightly larger Hebrew, a comfortable measure; finished pieces settle back, the unread text stays full strength */
+@media (max-width:1099px){body.am-mode{--daf-size:calc(26.5px * var(--scale))}}
+.am-daf{line-height:2.05;word-spacing:.16em;max-width:36em}
+.am-daf .w.done{font-size:.9em;opacity:1} /* settled: muted colour (AA: dark 6.9, light 5.3, sepia 5.5 on the page) and a touch smaller */
+.am-daf .w.next{box-shadow:inset 0 -2px 0 color-mix(in srgb,var(--accent) 70%,transparent)}
+body.theme-dark{--done:#8f9db5}
+body.theme-light{--done:#5b6577}
+body.theme-sepia{--done:#6a5a42}
+/* phone top bar in Ameilus names the masechet with the daf ("Berakhot 2a"); the brand word gives way to make room */
+@media (max-width:560px){
+  body.am-mode .brand-name{display:none}
+  body.am-mode .ref-m{display:inline}
+  body.am-mode .am-head{margin:0 0 6px}
+  body.am-mode .am-title{font-size:16px}
+  body.am-mode .am .modebar{margin-bottom:8px}
+  body.am-mode .mb-o{padding-top:6px;padding-bottom:6px}
+}
+body.choosing :is(#flowBtn,#reviewBtn){visibility:hidden}
+/* Home, round 2 (Oct 15 2026): a shorter hero, compact equal path cards, one "continue where you left off" beside Daf Yomi, the colour key folded away below the library */
+.hero.hero-r2{padding:0 8px 6px}
+.hero-r2 h1{font-size:clamp(26px,6vw,36px);margin:4px 0 4px}
+.hero-r2 p{font-size:16px}
+.hero-r2 .searchbox{margin-top:12px;padding:11px 14px}
+.home-paths .section-h{margin:16px 4px 8px}
+.paths .path:not(:has(.path-go)){align-items:center;padding:12px 40px 12px 14px}
+.paths .path:not(:has(.path-go)) .path-tx{gap:2px}
+.paths .path:not(:has(.path-go)) .path-ic{width:36px;height:36px;border-radius:10px}
+.paths .path:not(:has(.path-go)) .path-p{font-size:14.5px;line-height:1.4}
+.path-def{font-size:13px;line-height:1.35;color:var(--muted)}
+.path-def::before{content:"";display:inline-block;width:14px;height:1px;background:currentColor;vertical-align:middle;margin-right:6px;opacity:.7}
+.path-chev{position:absolute;right:14px;top:50%;transform:translateY(-50%);font-size:24px;line-height:1;color:var(--accent);font-weight:400}
+.path:has(.path-chev):has(.path-last) .path-last{top:8px;right:34px}
+.home-quick{margin-top:10px;gap:10px}
+.home-quick .tile.qt{padding:10px 14px}
+.home-quick .tile.qt .v{font-size:18px;display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.home-quick .tile.qt .v .s{font-size:14px;font-weight:600;color:var(--muted);margin:0}
+.home-quick:has(.tile:only-child){grid-template-columns:1fr}
+.legend-wrap{margin-top:8px}
+.legend-wrap>summary{cursor:pointer;list-style:none;justify-content:flex-start}
+.legend-wrap>summary::-webkit-details-marker{display:none}
+.legend-wrap>summary::after{content:"›";font-size:16px;letter-spacing:0;transform:rotate(90deg);display:inline-block;margin-left:auto}
+.legend-wrap[open]>summary::after{transform:rotate(-90deg)}
+.legend-wrap>summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:6px}
+
+/* Round 3 (Oct 15 2026). (b) On phones the Ameilus heading drops the English name the top bar already shows ("Berakhot 2a"):
+   the Hebrew name and the progress stay; the English stays in the heading for screen readers. */
+@media (max-width:560px){
+  body.am-mode .am-entitle{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}
+  body.am-mode .am-hetitle{margin-left:0;color:var(--text);font-size:19px;font-weight:700}
+}
+/* (a) the home top bar keeps "Gemara Clarity" on one line down to 360px: the word never wraps, the bar tightens a little
+   under 380px, the daf button's label can ellipsize, and below 330px the word gives way to the logo alone. */
+.brand-name{white-space:nowrap}
+#refBtnText{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+.refbtn{min-width:0}
+@media (max-width:380px){
+  body:not(.has-modesw) .topbar{gap:6px;padding-left:10px;padding-right:10px}
+  body:not(.has-modesw) .brand{gap:7px;font-size:16px;padding:6px 2px}
+  body:not(.has-modesw) .refbtn{padding:6px 9px 6px 12px;font-size:14px;gap:4px}
+}
+@media (max-width:330px){body:not(.has-modesw) .brand-name{display:none}}
+
+/* ---------- Round 4 (Oct 15 2026, David: "in Ameilus the explanation could scroll and the rest of the screen would stay frozen") ----------
+   Ameilus is an app shell: the page never scrolls. The top bar and the Shiur/Ameilus bar stay put, the amud scrolls in its own
+   box (.am-dafwrap), the explanation scrolls in its own panel (.am-exp). Phones: the panel is a sheet above the controls
+   (up to 45% of the space, 80% when made taller). 900px and wider: the panel is a column left of the amud (where the Hebrew
+   lines end; English beside Hebrew, as on Sefaria), above the sugya map from 1100px. The column is always there on wide
+   screens, so a new explanation never changes the amud's width. */
+html.am-shell,html.am-shell body{overflow:hidden;overscroll-behavior:none}
+html.am-shell body.am-mode,html.am-shell body.am-mode.bb-collapsed,html.am-shell body.am-mode.am-word-open{padding-bottom:0}
+html.am-shell .am{position:fixed;top:calc(var(--top-h) + env(safe-area-inset-top));bottom:var(--am-bar-h,var(--bar-h));left:0;right:0;margin:0 auto;max-width:1320px;box-sizing:border-box;padding:8px 14px 0;display:flex;flex-direction:column}
+html.am-shell .am-main{flex:1 1 0;min-height:0;display:flex;flex-direction:column;max-width:none}
+html.am-shell .am-head,html.am-shell .am .modebar,html.am-shell .am-tip{flex:none}
+html.am-shell .am-dafwrap{flex:1 1 0;min-height:0;overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;margin:0 -14px;padding:2px 14px 18px;scrollbar-width:thin;scrollbar-color:var(--border) transparent}
+html.am-shell .am-dafwrap:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+html.am-shell .am-daf{margin:0 0 0 auto}
+.am-daf .cut-here{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--accent);vertical-align:.15em;margin:0 .2em 0 0}
+html.am-shell .am-side{flex:none;display:flex;flex-direction:column;min-height:0;max-height:45%}
+html.am-shell .am.exp-tall .am-side{max-height:80%}
+html.am-shell body.am-word-open .am{bottom:max(var(--am-bar-h,var(--bar-h)),var(--am-word-h,0px))}
+html.am-shell body.map-open .am{z-index:40} /* the phone map sheet lives inside the shell; lift it over the controls as before */
+/* the explanation panel */
+.am-exp{position:relative;display:flex;flex-direction:column;min-height:0;flex:0 1 auto;background:var(--panel);border:1px solid var(--border);border-bottom:0;border-radius:16px 16px 0 0;margin:8px -14px 0;box-shadow:0 -8px 24px rgba(0,0,0,.22)}
+.am-exp.empty{display:none}
+.am-exp-head{display:flex;align-items:center;gap:6px;padding:5px 8px 5px 14px;border-bottom:1px solid var(--border-2);flex:none}
+.am-exp-h{flex:1;margin:0;font-size:12.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.am-exp-head .iconbtn{min-width:34px;height:34px;font-size:14px;color:var(--muted)}
+.am-exp.scrolled .am-exp-head{box-shadow:0 6px 10px -8px rgba(0,0,0,.45)}
+.am-exp-body{flex:1 1 auto;min-height:0;overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;padding:0 14px 16px;scrollbar-width:thin;scrollbar-color:var(--faint) transparent}
+.am-exp-body:focus-visible{outline:2px solid var(--accent);outline-offset:-3px;border-radius:0 0 12px 12px}
+.am-exp-body::-webkit-scrollbar{width:8px}.am-exp-body::-webkit-scrollbar-thumb{background:var(--border);border-radius:8px}
+.am-exp::after{content:"";position:absolute;left:1px;right:12px;bottom:0;height:40px;pointer-events:none;background:linear-gradient(to bottom,transparent,var(--panel) 85%);opacity:0;transition:opacity .15s;border-radius:0 0 14px 14px}
+.am-exp.more::after{opacity:1}
+.am-exp .am-card{margin:0;border:0;border-radius:0;background:none;padding:10px 0 2px;box-shadow:none}
+.am-exp-empty{margin:0;padding:14px 0 6px;color:var(--muted);font-size:14.5px;line-height:1.45}
+@media (min-width:900px){
+  html.am-shell .am{display:grid;grid-template-columns:clamp(300px,34vw,420px) minmax(0,1fr);grid-template-rows:minmax(0,1fr);grid-template-areas:"side main";gap:24px;padding:10px 20px 10px}
+  html.am-shell .am-main{grid-area:main;order:0;max-width:820px;height:100%}
+  html.am-shell .am-side{grid-area:side;order:0;max-height:none;height:100%;gap:12px}
+  html.am-shell .am.exp-tall .am-side{max-height:none}
+  html.am-shell .am-dafwrap{margin:0;padding:2px 10px 18px 0}
+  .am-exp{margin:0;border-bottom:1px solid var(--border);border-radius:14px;box-shadow:none;max-height:100%}
+  .am-exp.empty{display:flex;flex:none;background:var(--panel-2);border-color:var(--border-2)}
+  .am-exp.empty .am-exp-head .iconbtn{display:none}
+  .am-exp-grow{display:none}
+  .am-exp::after{border-radius:0 0 14px 14px}
+}
+@media (min-width:1100px){
+  html.am-shell .am{grid-template-columns:clamp(300px,30vw,400px) minmax(0,1fr)}
+  html.am-shell .am-map,html.am-shell body.map-open .am-map{display:block;position:static;flex:1 0 150px;min-height:150px;max-height:none;overflow-y:auto;overscroll-behavior:contain;box-shadow:none;border-radius:14px;padding:12px 14px}
+}
+/* short laptop windows (David's 1024x600): a tighter head so the amud keeps its room */
+@media (min-width:900px) and (max-height:720px){
+  html.am-shell .am{padding-top:6px;gap:18px}
+  html.am-shell .am-head{margin:0 0 4px}
+  html.am-shell .am-title,html.am-shell .am-hetitle{font-size:16px}
+  html.am-shell .am .modebar{margin-bottom:6px}
+  html.am-shell .am .mb-o{padding-top:5px;padding-bottom:5px}
+}
+@media (max-width:899px){html.am-shell .am-exp-grow{display:inline-flex;align-items:center;justify-content:center}}
+@media (prefers-reduced-motion:reduce){.am-exp::after{transition:none}}
+
+/* ---------- first-visit notice (Oct 15 2026): the whole site, once per device; only "I understand" closes it ---------- */
+.disc-back{position:fixed;inset:0;z-index:100;display:flex;align-items:center;justify-content:center;padding:16px;background:rgba(5,8,14,.72);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px)}
+.disc{box-sizing:border-box;width:min(460px,100%);max-height:calc(100dvh - 32px);overflow:auto;background:var(--raise,var(--panel));color:var(--text);border:1px solid var(--border);border-radius:20px;padding:22px 22px 20px;box-shadow:0 24px 60px rgba(0,0,0,.5);text-align:center}
+.disc-ic{width:44px;height:44px;margin:0 auto 10px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:22px;color:var(--warn);border:2px solid var(--warn);background:var(--warn-bg)}
+.disc-h{margin:0 0 10px;font-size:22px;font-weight:800;letter-spacing:-.01em}
+.disc-b{margin:0 0 18px;font-size:16.5px;line-height:1.55;color:var(--text);text-align:left}
+.disc-ok{width:100%;min-height:48px;font-size:16.5px;justify-content:center}
+.disc .btn.primary{background:var(--accent);border:1px solid var(--accent);color:var(--accent-ink);border-radius:999px;font-weight:800;display:inline-flex;align-items:center;cursor:pointer}
+.disc-ok:focus-visible{outline:3px solid var(--text);outline-offset:3px}
+body.disc-open{overflow:hidden}
+.disc-link{background:none;border:0;padding:4px 0;color:var(--accent);font:inherit;font-weight:700;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+@media (max-width:400px){.disc{padding:18px 16px 16px;border-radius:18px}.disc-h{font-size:20px}.disc-b{font-size:15.5px;margin-bottom:14px}}
+
+/* round 4: the polite live region is for screen readers only (it showed under the amud once the page stopped scrolling) */
+.am-live.sr{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;border:0}
+/* the amud's own box fades at its bottom edge so it reads as "more below" */
+html.am-shell .am-dafwrap{-webkit-mask-image:linear-gradient(to bottom,#000 calc(100% - 22px),transparent);mask-image:linear-gradient(to bottom,#000 calc(100% - 22px),transparent)}
+/* short phones (e.g. 360x640): the head and the Shiur/Ameilus bar get compact so the amud keeps more room above the panel */
+@media (max-width:899px) and (max-height:720px){
+  html.am-shell .am{padding-top:4px}
+  html.am-shell .am-head{margin:0 0 4px}
+  html.am-shell .am-headnav .iconbtn{min-width:36px;height:36px}
+  html.am-shell .am .modebar{margin-bottom:4px;padding:3px}
+  html.am-shell .am .mb-o{padding-top:4px;padding-bottom:4px}
+  html.am-shell .am .mb-o span{display:none}
+  html.am-shell .am-side{max-height:42%}
+}
+@media (max-width:899px) and (max-height:720px){html.am-shell .am .mb-o{min-height:40px}}
+
+/* ---------- quoted pasuk references (Oct 15 2026): the reference is a quiet button; the pasuk opens in a small pop-up over the page ---------- */
+.pasuk-ref{display:inline;font:inherit;font-size:inherit;color:var(--accent);background:none;border:0;padding:0 1px;margin:0;border-bottom:1px dotted currentColor;border-radius:2px;cursor:pointer;line-height:inherit;text-align:inherit}
+.pasuk-ref:hover{background:color-mix(in srgb,var(--accent) 12%,transparent)}
+.pasuk-ref:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.pasuk-ref .he{unicode-bidi:isolate}
+.pasuk-cv{unicode-bidi:isolate;direction:ltr;display:inline-block}
+.am-pnote{font-size:13.5px;color:var(--muted);margin-top:2px}
+.pz-back{position:fixed;inset:0;z-index:90;display:flex;align-items:center;justify-content:center;padding:14px;background:rgba(5,8,14,.55)}
+.pz{box-sizing:border-box;width:min(380px,100%);max-height:min(560px,calc(100dvh - 28px));display:flex;flex-direction:column;background:var(--raise,var(--panel));color:var(--text);border:1px solid var(--border);border-radius:16px;box-shadow:0 20px 50px rgba(0,0,0,.45);overflow:hidden}
+.pz-head{display:flex;align-items:center;gap:8px;padding:10px 8px 8px 16px;border-bottom:1px solid var(--border-2)}
+.pz-h{flex:1;margin:0;font-size:17px;font-weight:800;line-height:1.3}
+.pz-h .he{font-size:1.1em}.pz-en{font-size:13px;font-weight:600;color:var(--muted);margin-left:6px;white-space:nowrap}
+.pz-x{min-width:36px;height:36px;font-size:14px}
+.pz-body{overflow-y:auto;overscroll-behavior:contain;padding:12px 16px 4px}
+.pz-he{font-family:var(--he-font);font-size:22px;line-height:1.8;text-align:right;margin:0 0 10px}
+.pz-tr{font-size:15.5px;line-height:1.5;margin:0 0 10px;color:var(--text)}
+.pz-load{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:14.5px;padding:8px 0 14px}
+.pz-load .spinner{width:18px;height:18px;margin:0}
+.pz-fail{color:var(--muted);margin:0 0 10px;font-size:14.5px}
+.pz-sef{display:block;padding:10px 16px 12px;border-top:1px solid var(--border-2);font-size:14px;font-weight:700;color:var(--accent);text-decoration:none}
+.pz-sef:hover{text-decoration:underline}
+@media (max-width:480px){.pz-back{align-items:center;padding:12px}.pz{width:100%}}

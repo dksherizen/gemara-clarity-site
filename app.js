@@ -1,6 +1,7 @@
 // Gemara Clarity, rebuilt. Static, no keys, no trackers.
 // Text: Sefaria public API. Breakdowns: read-only from the original app's public cloud library.
 import { segmentMarker, segmentFlags, stepFlags, endState } from "./mishnah.js";
+import { AMW } from "./ameilus/words.js?v=3.6.0"; // Ameilus names itself from one table (the word for what the learner marks may change)
 const MAS = [["Berakhot", "ברכות", 2, 126], ["Shabbat", "שבת", 2, 313], ["Eruvin", "עירובין", 2, 208], ["Pesachim", "פסחים", 2, 241], ["Yoma", "יומא", 2, 174], ["Sukkah", "סוכה", 2, 111], ["Beitzah", "ביצה", 2, 79], ["Rosh_Hashanah", "ראש השנה", 2, 68], ["Taanit", "תענית", 2, 60], ["Megillah", "מגילה", 2, 62], ["Moed_Katan", "מועד קטן", 2, 56], ["Chagigah", "חגיגה", 2, 52], ["Yevamot", "יבמות", 2, 243], ["Ketubot", "כתובות", 2, 223], ["Nedarim", "נדרים", 2, 181], ["Nazir", "נזיר", 2, 131], ["Sotah", "סוטה", 2, 97], ["Gittin", "גיטין", 2, 179], ["Kiddushin", "קידושין", 2, 163], ["Bava_Kamma", "בבא קמא", 2, 237], ["Bava_Metzia", "בבא מציעא", 2, 236], ["Bava_Batra", "בבא בתרא", 2, 351], ["Sanhedrin", "סנהדרין", 2, 225], ["Makkot", "מכות", 2, 47], ["Shevuot", "שבועות", 2, 97], ["Avodah_Zarah", "עבודה זרה", 2, 151], ["Horayot", "הוריות", 2, 26], ["Zevachim", "זבחים", 2, 239], ["Menachot", "מנחות", 2, 218], ["Chullin", "חולין", 2, 282], ["Bekhorot", "בכורות", 2, 120], ["Arakhin", "ערכין", 2, 66], ["Temurah", "תמורה", 2, 66], ["Keritot", "כריתות", 2, 55], ["Meilah", "מעילה", 2, 42], ["Tamid", "תמיד", 49, 65], ["Niddah", "נדה", 2, 144]]; // [key, hebrew, firstAmudIndex, lastAmudIndex]  index: 2 = 2a, 3 = 2b ...
 const SEDARIM = [
   ["Zeraim","זרעים",["Berakhot"]],
@@ -34,18 +35,116 @@ const TYPES = {
 };
 const CONFUSABLE = {mimra:["maskana","teshuvah"],maskana:["mimra","terutz"],kashya:["sheelah","dechiya"],sheelah:["kashya","raaya"],terutz:["teshuvah","dechiya"],teshuvah:["terutz","maskana"],raaya:["dechiya","mimra"],dechiya:["raaya","kashya"]};
 const MISHNAH = { en:"Mishnah", he:"משנה", d:"Not a type of step but where it stands: the step is the Mishnah itself, from <bdi>מתני׳</bdi> up to <bdi>גמ׳</bdi>. Its own type colour stays beside the badge." };
-const MBADGE = `<span class="mbadge">Mishnah · <span class="he">משנה</span></span>`;
+const MBADGE = { toString: () => `<span class="mbadge">Mishnah<span class="mb-he"> · <span class="he">${settings.nikud ? "מִשְׁנָה" : "משנה"}</span></span></span>` }; // read where it is interpolated, so the Vowels switch applies
 const isMish = k => !!(current && current.mish && current.mish[k]);
 const PHASES = {mishnah:"On the Mishnah",opening_question:"Opening question",source_derivation:"Finding the source",objection_defense_cycle:"Challenge and defence",alternate_branch:"Another approach",clarification_of_terms:"Defining terms",narrative_aggadah:"Story / aggadah",conclusion:"Conclusion"};
 const FS_BASE = "https://firestore.googleapis.com/v1/projects/gemara-clarity/databases/(default)/documents/artifacts/gemara-clarity-public/public/data/gemara_cache_v5";
 const SEFARIA = "https://www.sefaria.org";
-const LS = { settings:"gc2-settings", bookmarks:"gc2-bookmarks", history:"gc2-history", explained:"gc2-open", ui:"gc2-ui" };
+const LS = { settings:"gc2-settings", bookmarks:"gc2-bookmarks", history:"gc2-history", explained:"gc2-open", ui:"gc2-ui", overview:"gc2-overview", mode:"gc2-mode" }; // mode: the reader's last way of learning an amud ("shiur" | "ameilus"), per device
 const DATA_CACHE = "gc2-data-v1";
 
 const $ = (s, r=document) => r.querySelector(s);
 const $$ = (s, r=document) => [...r.querySelectorAll(s)];
 const esc = v => String(v ?? "").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#39;");
 const NIKUD = /[\u0591-\u05BD\u05BF\u05C1\u05C2\u05C4\u05C5\u05C7]/g;
+
+// ---- Nikud borrowing (display only, Oct 15 2026): a bare Hebrew word in the English prose borrows the vowels this amud's own vocalized text gives it (phrases, key terms, trigger words); multi-word quotes first, then single words; a word the amud vocalizes two different ways, a 1-letter word, or a word with no exact match stays bare. Nothing in the data changes. ----
+const VOC_PT = "\u0591-\u05BD\u05BF\u05C1\u05C2\u05C4\u05C5\u05C7";
+const VOC_ANY = new RegExp("[" + VOC_PT + "]", "g");                 // every point and accent (the lookup key drops them)
+const VOC_VOW = /[\u05B0-\u05BC\u05C1\u05C2\u05C7]/;                  // a real vowel / dagesh / shin dot: the word is vocalized
+const VOC_ACC = /[\u0591-\u05AF\u05BD\u05BF]/g;                       // cantillation, meteg, rafe: not carried into the prose
+const VOC_TOK = new RegExp("[\u05D0-\u05EA][\u05D0-\u05EA" + VOC_PT + "]*(?:[\"'\u05F3\u05F4][\u05D0-\u05EA][\u05D0-\u05EA" + VOC_PT + "]*)*", "g");
+const VOC_MAXN = 5;
+const vocKey = w => w.replace(VOC_ANY, "");
+const vocClean = w => w.replace(VOC_ACC, "").normalize("NFC");
+const VOC_LEAD = /^([בגדכפת][\u0591-\u05BB\u05BD-\u05C7]*)\u05BC/;          // a word-initial בגדכפת carrying a dagesh (points in any order)
+const vocCmp = w => w.replace(VOC_LEAD, "$1");                        // word-initial dagesh lene comes and goes with context: same word
+const vocLead = w => /^[בגדכפת]/.test(w) && !VOC_LEAD.test(w) ? (w[0] + "\u05BC" + w.slice(1)).normalize("NFC") : w; // standing alone in the prose, the word opens with its dagesh
+function vocTokens(s) {                                               // [{w, i, j}] in logical order
+  const out = []; let m; VOC_TOK.lastIndex = 0;
+  while ((m = VOC_TOK.exec(s))) out.push({ w: m[0], i: m.index, j: m.index + m[0].length });
+  return out;
+}
+function vocBuild(texts) {
+  const one = new Map(), multi = new Map();
+  const put = (map, k, forms) => {
+    const cmp = forms.map(vocCmp).join(" "), e = map.get(k);
+    if (!e) map.set(k, { forms, cmp, bad: false });
+    else if (e.cmp !== cmp) e.bad = true;
+    else forms.forEach((f, n) => { if (VOC_LEAD.test(f) && !VOC_LEAD.test(e.forms[n])) e.forms[n] = f; }); // standalone: keep the dagesh
+  };
+  for (const t of texts) {
+    if (!t) continue;
+    const s = String(t), toks = vocTokens(s); let run = [];
+    const flush = () => {
+      for (let a = 0; a < run.length; a++) for (let n = 1; n <= VOC_MAXN && a + n <= run.length; n++) {
+        const seg = run.slice(a, a + n), keys = seg.map(x => vocKey(x.w));
+        if (n === 1) { if (keys[0].length >= 2 && !/["'\u05F3\u05F4]/.test(keys[0])) put(one, keys[0], [vocClean(seg[0].w)]); }
+        else put(multi, keys.join(" "), seg.map(x => vocClean(x.w)));
+      }
+      run = [];
+    };
+    toks.forEach((x, n) => {
+      const gap = n ? s.slice(toks[n - 1].j, x.i) : "";
+      if (n && !/^[\s\u05BE]+$/.test(gap)) flush();                 // punctuation ends a run: n-grams never cross it
+      if (VOC_VOW.test(x.w)) run.push(x); else flush();             // a bare word in the source can teach nothing
+    });
+    flush();
+  }
+  return { one, multi };
+}
+function vocTextsOf(a) {
+  const out = [];
+  for (const s of (a && a.steps) || []) {
+    for (const p of s.phrases || []) out.push(p.aramaic);
+    for (const k of s.keyTerms || []) out.push(k.term);
+    out.push(s.triggerLanguage);
+  }
+  return out;
+}
+function vocApply(text, V, gloss) {                                   // -> the same text with matched bare words vocalized
+  const s = String(text ?? ""); if (!/[\u05D0-\u05EA]/.test(s)) return s;
+  V = V || { one: new Map(), multi: new Map() };
+  const toks = vocTokens(s); if (!toks.length) return s;
+  const rep = new Array(toks.length).fill(null);
+  let k = 0;
+  while (k < toks.length) {
+    if (VOC_VOW.test(toks[k].w)) { k++; continue; }               // already vocalized in the prose: leave it
+    let end = k + 1;                                                // the bare run that starts here (words joined by plain spaces)
+    while (end < toks.length && end - k < VOC_MAXN && !VOC_VOW.test(toks[end].w) && /^ +$/.test(s.slice(toks[end - 1].j, toks[end].i))) end++;
+    let done = false;
+    for (let n = end - k; n >= 2 && !done; n--) {
+      const e = V.multi.get(toks.slice(k, k + n).map(x => x.w).join(" "));
+      if (e && !e.bad) { for (let q = 0; q < n; q++) rep[k + q] = q ? e.forms[q] : vocLead(e.forms[q]); k += n; done = true; }
+    }
+    for (let n = end - k; n >= 2 && !done; n--) {
+      const f = VOC_META[toks.slice(k, k + n).map(x => x.w).join(" ")];
+      if (f) { f.split(" ").forEach((w, q) => { rep[k + q] = w; }); k += n; done = true; }
+    }
+    if (done) continue;
+    const w = toks[k].w;
+    if (w.length >= 2 && !/["'\u05F3\u05F4]/.test(w)) {
+      const e = V.one.get(w);
+      if (VOC_META[w]) rep[k] = VOC_META[w];
+      else if (e && !e.bad) rep[k] = vocLead(e.forms[0]);
+      else if (!e && gloss && gloss[w] && gloss[w][0] && VOC_VOW.test(gloss[w][0]) && vocKey(gloss[w][0]) === w) rep[k] = vocLead(vocClean(gloss[w][0]));
+    }
+    k++;
+  }
+  let out = "", at = 0;
+  toks.forEach((x, n) => { if (rep[n]) { out += s.slice(at, x.i) + rep[n]; at = x.j; } });
+  return out + s.slice(at);
+}
+
+// The study words the explanations lean on (the amud's own text rarely carries them, or carries them two ways), and the eight step types: one fixed vocalization, used after the amud's own multi-word matches and before its single words.
+const STEP_NIKUD = { "מימרא":"מֵימְרָא", "קשיא":"קֻשְׁיָא", "תירוץ":"תֵּירוּץ", "שאלה":"שְׁאֵלָה", "ראיה":"רְאָיָה", "תשובה":"תְּשׁוּבָה", "דחיה":"דְּחִיָּה", "מסקנא":"מַסְקָנָא" };
+const VOC_META = Object.assign({ "משנה":"מִשְׁנָה", "גמרא":"גְּמָרָא", "ברייתא":"בָּרַיְיתָא", "ברייתות":"בָּרַיְיתוֹת", "פסוק":"פָּסוּק", "פסוקים":"פְּסוּקִים",
+  "תנאים":"תַּנָּאִים", "אמוראים":"אֲמוֹרָאִים", "מחלוקת":"מַחֲלוֹקֶת", "מתניתין":"מַתְנִיתִין", "סוגיא":"סוּגְיָא", "סוגיה":"סוּגְיָה", "קושיא":"קוּשְׁיָא", "מסכת":"מַסֶּכֶת", "תורה":"תּוֹרָה", "תוספות":"תּוֹסָפוֹת", "קל וחומר":"קַל וָחוֹמֶר" }, STEP_NIKUD);
+// ---- end nikud borrowing ----
+const vocCache = new WeakMap(); let vocGloss = null;          // vocGloss: data/glossary.json entries once loaded (the Ameilus reading glossary)
+const vocFor = a => { if (!a || typeof a !== "object") return null; let V = vocCache.get(a); if (!V) { V = vocBuild(vocTextsOf(a)); vocCache.set(a, V); } return V; };
+const px = (v, a) => refHtml(settings.nikud ? vocApply(v, vocFor(a || (current && current.analysis)), vocGloss) : v); // round 4: Tanakh references become pasuk buttons // English prose with its Hebrew words vocalized where the amud says how
+const stepHe = h => esc(settings.nikud ? (STEP_NIKUD[h] || h) : h);  // a step-type label (מימרא, קשיא…) with its vowels
 const loadJSON = (k, d) => { try { const v = JSON.parse(localStorage.getItem(k)); return v ?? d; } catch { return d; } };
 const saveJSON = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} };
 
@@ -253,13 +352,23 @@ const hasBreakdown = id => cloudIds.has(id);
 /* ---------- perakim (static data/perakim.json, from Sefaria's chapter map) ---------- */
 let perakim = null;
 function loadPerakim(){
-  return loadPerakim.p || (loadPerakim.p = fetch("data/perakim.json").then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
-    .then(d => (perakim = d && d.masechtot || null)).catch(() => { loadPerakim.p = null; return null; }));
+  // round 4 (Oct 15 2026, David): the perek names show with nikud, from a display-only map (data/perek-nikud.json); a name without an entry stays bare
+  if (loadPerakim.p) return loadPerakim.p;
+  const nik = fetch("data/perek-nikud.json").then(r => r.ok ? r.json() : null).catch(() => null);
+  return (loadPerakim.p = fetch("data/perakim.json").then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+    .then(async d => { const ms = d && d.masechtot || null, v = await nik; if (ms) applyPerekNikud(ms, v); return (perakim = ms); }).catch(() => { loadPerakim.p = null; return null; }));
+}
+function applyPerekNikud(ms, v){
+  const strip = s => String(s || "").replace(/[\u0591-\u05C7]/g, "");
+  for (const [m, list] of Object.entries(ms)) for (const p of list || []) {
+    const cand = v && ((v.byRef || {})[`${m}|${p.n}`] || (v.byName || {})[p.he]);
+    p.heV = cand && strip(cand) === p.he ? cand : p.he; // only ever adds vowels to the same letters
+  }
 }
 const perakimOf = m => (perakim && perakim[m]) || null;
 const perakimAt = (m, i) => (perakimOf(m) || []).filter(p => i >= p.start && i <= p.end);
 const amudLbl = i => { const {daf, amud} = dafOf(i); return `${daf}${amud}`; };
-const perekHe = p => `פרק ${p.he}`;
+const perekHe = p => `פֶּרֶק ${p.heV || p.he}`;
 function perekLineHtml(m, i){
   const ps = perakimAt(m, i); if (!ps.length) return "";
   const main = ps[0], next = ps[1];
@@ -276,7 +385,7 @@ function perekGroups(k){ // null when the masechet has one perek or no perakim d
     return { p, midOf: i => (prev && i === prev.end && i === p.start) ? `Perek ${p.n} begins partway down this amud` : (nxt && i === nxt.start && i === p.end) ? `Perek ${nxt.n} begins partway down this amud` : "" }; });
 }
 const perekHeadHtml = p => `<h4 class="pk-h"><span>Perek ${p.n} · <span class="he">${esc(perekHe(p))}</span></span><span class="pk-r">${amudLbl(p.start)}–${amudLbl(p.end)}</span></h4>`;
-const perekJumpHtml = (ps, attr = "data-jump") => `<nav class="pk-jump" aria-label="Jump to a perek">${ps.map(p => `<button class="chip" ${attr}="${p.jump || p.n}"><b>${p.n}</b><span class="he">${esc(p.he)}</span></button>`).join("")}</nav>`;
+const perekJumpHtml = (ps, attr = "data-jump") => `<nav class="pk-jump" aria-label="Jump to a perek">${ps.map(p => `<button class="chip" ${attr}="${p.jump || p.n}"><b>${p.n}</b><span class="he">${esc(p.heV || p.he)}</span></button>`).join("")}</nav>`;
 const midLegendHtml = `<span><i class="mid"></i>new perek starts partway down</span>`;
 
 /* ---------- picker ---------- */
@@ -291,7 +400,7 @@ function openPicker(focusMas, focusPerek){
     const showMasList = () => {
       $("#pickBody", body).innerHTML = SEDARIM.map(([en, he, list]) => `<div class="seder">Seder ${en} · <span class="en-he">${he}</span></div><div class="masgrid">${list.map(k => {
         const n = [...cloudIds].filter(id => parseId(id).m === k).length;
-        return `<button class="masbtn" data-mas="${k}"><span class="mb-names"><span class="mb-en">${masName(k)}</span><span class="mb-he">${masInfo(k)[1]}</span></span>${n ? `<span class="badge" title="${n} amudim with breakdown">${n}</span>` : ""}</button>`; }).join("")}</div>`).join("");
+        return `<button class="masbtn" data-mas="${k}"><span class="mb-names"><span class="mb-en">${masName(k)}</span><span class="mb-he">${masInfo(k)[1]}</span></span>${n ? `<span class="badge" title="${n} amudim with a step-by-step breakdown">${n} amudim</span>` : ""}</button>`; }).join("")}</div>`).join("");
     };
     const cellHtml = (k, i, inRange, mid) => {
       const [, , first, last] = masInfo(k), {daf: d, amud: am} = dafOf(i);
@@ -378,6 +487,7 @@ function openSettings(){
     <button class="btn" id="saveAll">Save library for offline</button> <span class="small" id="saveAllMsg"></span>
     <h3 style="margin:22px 0 4px;font-size:16px">About</h3>
     <p class="small" style="margin:0">Text and translation: Sefaria, William Davidson Edition (CC BY-NC). Step-by-step breakdowns are AI-generated with the original <a href="https://gemara-clarity.netlify.app/" target="_blank" rel="noopener">Gemara Clarity</a> prompt (his library, plus amudim generated the same way); check them against the text and your teacher.</p>
+    <p class="small" style="margin:8px 0 0"><button class="linkbtn disc-link" id="discAgain" type="button">About this content (AI disclaimer)</button></p>
     <p class="small"><button class="btn" id="clearData" style="margin-top:10px">Clear my bookmarks, history and saved data</button></p>`;
   openSheet("Text and display", html, body => {
     body.addEventListener("change", e => { const k = e.target.dataset.set; if (k) { settings[k] = e.target.checked; applySettings(); rerender(); } });
@@ -386,6 +496,7 @@ function openSettings(){
       if (t.dataset.size) { settings.scale = Math.min(1.7, Math.max(0.85, +(settings.scale + 0.1 * +t.dataset.size).toFixed(2))); applySettings(); }
       if (t.dataset.theme) { settings.theme = t.dataset.theme; applySettings(); $$("[data-theme]", body).forEach(b => b.setAttribute("aria-pressed", b.dataset.theme === settings.theme)); }
       if (t.id === "saveAll") saveLibrary($("#saveAllMsg", body), t);
+      if (t.id === "discAgain") { closeSheet(); showDisclaimer(true); }
       if (t.id === "clearData") { if (confirm("Clear bookmarks, history, saved dapim and settings on this device?")) { Object.values(LS).forEach(k => localStorage.removeItem(k)); try { await caches.delete(DATA_CACHE); } catch {} location.hash = "#/"; location.reload(); } }
     });
     if (!settings.nikud) $(".preview-he", body).textContent = "אמר רבי יוחנן משום רבי שמעון בן יוחי";
@@ -416,7 +527,7 @@ function libraryHtml(){
       + (hasMid ? `<div class="legend-mini">${midLegendHtml}</div>` : "")
       + secs.map(({ p, midOf, list }) => `<section class="pk" id="lib-${k}-pk-${p.n}">${perekHeadHtml(p)}<div class="chips">${list.map(i => chip(k, i, midOf(i))).join("")}</div></section>`).join("");
   };
-  return `<div class="lib">${MAS.filter(x => by[x[0]]).map(([k, he]) => `<details class="card lib-row" data-mas="${k}"${k === lastM ? " open" : ""}><summary><span class="lr-en">${masName(k)}</span><span class="he lr-he">${he}</span><span class="lr-n">${by[k].length}</span>${chev}</summary>
+  return `<div class="lib">${MAS.filter(x => by[x[0]]).map(([k, he]) => `<details class="card lib-row" data-mas="${k}"${k === lastM ? " open" : ""}><summary><span class="lr-en">${masName(k)}</span><span class="he lr-he">${he}</span><span class="lr-n">${by[k].length} amudim</span>${chev}</summary>
     <div class="lib-body">${body(k, by[k].sort((a,b) => a-b))}</div></details>`).join("")}</div>`;
 }
 function refreshLibrary(){ // re-list after the library index or the perakim arrive, keeping open rows open
@@ -436,25 +547,60 @@ function wireLibrary(){
     scrollTo({ top: scrollY + sec.getBoundingClientRect().top - top - sticky - 6, behavior: "smooth" });
   });
 }
+// ---- Two paths: Shiur and Ameilus (Oct 15 2026) ----
+// Ameilus is its own way of learning, not a switch: home offers both paths up front, an amud opened with no
+// remembered choice asks which way (equal weight, no default), and once a choice is remembered on this device
+// the amud opens that way with a compact two-option bar to switch, which keeps the place.
+const MODES = ["shiur", "ameilus"];
+function modePref(){ const v = loadJSON(LS.mode, null); return MODES.includes(v) ? v : null; }
+function setModePref(v){ if (MODES.includes(v) && modePref() !== v) saveJSON(LS.mode, v); }
+const PATH_ICON = {
+  shiur: `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/><path d="M8 8h8M8 12h6"/></svg>`,
+  ameilus: `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg>`
+};
+function pathsHtml(hrefOf, opts = {}){ // two equal cards; hrefOf(mode) gives each card's link
+  const one = mode => {
+    const t = mode === "shiur" ? { h: AMW.shiurTitle, p: AMW.shiurLine, go: AMW.shiurGo } : { h: AMW.amTitle, p: AMW.amLine, go: AMW.amGo };
+    return `<a class="path path-${mode}" href="${hrefOf(mode)}" data-path-pick="${mode}">
+        <span class="path-ic">${PATH_ICON[mode]}</span>
+        <span class="path-tx"><b class="path-h">${esc(t.h)}</b><span class="path-p">${esc(t.p)}</span>
+        ${mode === "ameilus" ? `<span class="path-def">${esc(AMW.amDef)}</span>` : ""}
+        ${opts.compact ? "" : `<span class="path-go">${esc(opts.goText ? opts.goText(mode) : t.go)} <span aria-hidden="true">›</span></span>`}</span>
+        ${opts.compact ? `<span class="path-chev" aria-hidden="true">›</span>` : ""}
+        ${opts.last === mode ? `<span class="path-last">Last used</span>` : ""}</a>`;
+  };
+  return `<div class="paths">${one("shiur")}${one("ameilus")}</div>`;
+}
+function modeBarHtml(m, i, mode){ // the compact chooser on every amud once a choice is remembered
+  const o = (k, b, sub) => `<a class="mb-o${mode === k ? " on" : ""}" href="${hashFor(m, i, "/" + k)}" data-path-pick="${k}"${mode === k ? ' aria-current="page"' : ""}><b>${b}</b><span>${sub}</span></a>`;
+  return `<nav class="modebar" aria-label="How to learn this amud">${o("shiur", "Shiur", "explained step by step")}${o("ameilus", "Ameilus", "try it yourself")}</nav>`;
+}
+// ---- end two paths ----
 function renderHome(){
   current = null; document.title = "Gemara Clarity: every sugya, step by step";
   setChrome(false);
   const h = history_(), bm = bookmarks();
   const last = h[0] && parseId(h[0].id);
+  const hasLast = !!(last && masInfo(last.m));
+  const start = hasLast ? last : { m: "Berakhot", i: idxOf(2, "a") }; // the two paths open where the reader left off, else Berakhot 2a
+  // Round 2 (Oct 15 2026): one "continue where you left off" (no second tile for the same amud next to the paths), Daf Yomi beside it, both compact
+  const tilesHtml = `<div class="home-grid two home-quick">
+      ${hasLast ? `<a class="tile accent qt" href="${hashFor(last.m, last.i)}"><div class="k">Continue where you left off</div><div class="v">${label(last.m, last.i)} <span class="s he">${heLabel(last.m, last.i)}</span></div></a>` : ""}
+      <a class="tile qt" id="yomiTile" href="#" aria-busy="true"><div class="k">Today’s Daf Yomi</div><div class="v"><span id="yomiV">…</span> <span class="s" id="yomiS"></span></div></a>
+    </div>`;
   $("#view").innerHTML = `
-    <div class="hero"><h1>Gemara Clarity</h1><p>Every sugya, step by step: the Aramaic beside the English, phrase by phrase, with every question, challenge, answer and conclusion in its own colour.</p>
+    <div class="hero hero-r2"><h1>Gemara Clarity</h1><p>Every sugya of Shas, two ways.</p>
       <button class="searchbox" id="homeSearch"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>Go to any daf…</button></div>
-    <div class="home-grid two">
-      ${last && masInfo(last.m) ? `<a class="tile accent" href="${hashFor(last.m, last.i)}"><div class="k">Continue</div><div class="v">${label(last.m, last.i)}</div><div class="s he" style="text-align:left">${heLabel(last.m, last.i)}</div></a>` : `<a class="tile accent" href="#/Berakhot/2a"><div class="k">Start here</div><div class="v">Berakhot 2a</div><div class="s">The first daf of Shas, fully broken down</div></a>`}
-      <a class="tile" id="yomiTile" href="#" aria-busy="true"><div class="k">Today’s Daf Yomi</div><div class="v" id="yomiV">…</div><div class="s" id="yomiS">&nbsp;</div></a>
-    </div>
+    <section class="home-paths" aria-labelledby="pathsH"><h2 class="section-h" id="pathsH">Two ways to learn</h2>
+      ${pathsHtml(mode => hashFor(start.m, start.i, "/" + mode), { last: modePref(), compact: true })}</section>
+    ${tilesHtml}
     ${bm.length ? `<div class="section-h">Bookmarks</div><div class="chips">${bm.map(id => { const p = parseId(id); return masInfo(p.m) ? `<a class="chip" href="${hashFor(p.m, p.i)}">★ ${label(p.m, p.i)}</a>` : ""; }).join("")}</div>` : ""}
     ${h.length > 1 ? `<div class="section-h">Recently learned</div><div class="chips">${h.slice(0, 10).map(x => { const p = parseId(x.id); return masInfo(p.m) ? `<a class="chip" href="${hashFor(p.m, p.i)}">${label(p.m, p.i)}${hasBreakdown(x.id) ? "" : ` <span class="x">text</span>`}</a>` : ""; }).join("")}</div>` : ""}
-    <div class="section-h">Fully broken down <small>${cloudIds.size ? cloudIds.size + " amudim" : ""}</small></div>
+    <div class="section-h">Browse the library <small>${cloudIds.size ? cloudIds.size + " amudim" : ""}</small></div>
     <div id="libSlot">${libraryHtml()}</div>
     <p class="small" style="margin:10px 4px 0">Every other daf in Shas opens too, with the full text and translation side by side.</p>
-    <div class="section-h">The eight kinds of step</div>
-    <div class="legend">${Object.entries(TYPES).map(([he, t]) => `<div class="lg t-${t.k}"><span class="swatch"></span><div><b><span class="en-he">${he}</span> · ${t.en}</b><div class="d">${t.d}</div></div></div>`).join("")}<div class="lg t-mishnah"><span class="swatch"></span><div><b><span class="en-he">${MISHNAH.he}</span> · ${MISHNAH.en} badge</b><div class="d">${MISHNAH.d}</div></div></div></div>`;
+    <details class="legend-wrap"><summary class="section-h">The eight kinds of step <small>colour key</small></summary>
+    <div class="legend">${Object.entries(TYPES).map(([he, t]) => `<div class="lg t-${t.k}"><span class="swatch"></span><div><b>${t.en} · <span class="en-he">${stepHe(he)}</span></b><div class="d">${t.d}</div></div></div>`).join("")}<div class="lg t-mishnah"><span class="swatch"></span><div><b>${MISHNAH.en} badge · <span class="en-he">${px(MISHNAH.he)}</span></b><div class="d">${MISHNAH.d}</div></div></div></div></details>`;
   $("#homeSearch").onclick = () => openPicker();
   wireLibrary();
   dafYomi().then(y => {
@@ -462,13 +608,13 @@ function renderHome(){
     if (!y) { $("#yomiV").textContent = "Unavailable offline"; return; }
     tile.href = hashFor(y.m, y.i); tile.removeAttribute("aria-busy");
     $("#yomiV").textContent = `${masName(y.m)} ${dafOf(y.i).daf}`;
-    $("#yomiS").textContent = hasBreakdown(refId(y.m, y.i)) ? "Full breakdown available" : "Text and translation, side by side";
+    $("#yomiS").textContent = ""; // round 2: the compact tile names the daf only
   }).catch(() => { const v = $("#yomiV"); if (v) v.textContent = "Unavailable offline"; });
 }
 
 /* ---------- daf view ---------- */
 function setChrome(onDaf){
-  $("#bottombar").hidden = !onDaf;
+  $("#bottombar").hidden = !onDaf; document.body.classList.remove("choosing");
   $(".layout").classList.toggle("with-side", !!(onDaf && current && current.analysis && current.tab === "steps"));
   $("#refBtnText").textContent = current ? label(current.m, current.i) : "Choose a daf";
   if (!onDaf) { $("#sidebar").innerHTML = ""; $("#progressFill").style.width = "0"; }
@@ -492,44 +638,70 @@ function flowHtml(steps){
     if (s.macroPhase && s.macroPhase !== phase) { phase = s.macroPhase; out += `<div class="phase">${esc(PHASES[phase] || phase)}</div>`; }
     if (k > 0 && (s.branchRole === "opens_new_branch" || s.branchRole === "alternative_approach")) depth = Math.min(depth + 1, 3);
     if (s.branchRole === "returns_to_previous_branch") depth = Math.max(depth - 1, 0);
-    out += `<a class="fnode t-${t.k}${isMish(k) ? " is-mishnah" : ""}" href="#s${k+1}" data-jump="${k+1}" style="--d:${depth}"><span class="dot">${k+1}</span><span class="ft"><span class="fty"><span class="he">${esc(s.hebrewStepName || "")}</span> ${t.en}${isMish(k) ? MBADGE : ""}</span>${esc(s.title || s.stepSummary || "")}</span></a>`;
+    out += `<a class="fnode t-${t.k}${isMish(k) ? " is-mishnah" : ""}" href="#s${k+1}" data-jump="${k+1}" style="--d:${depth}"><span class="dot">${k+1}</span><span class="ft"><span class="fty">${t.en} <span class="he" lang="he">${stepHe(s.hebrewStepName || "")}</span>${isMish(k) ? MBADGE : ""}</span>${px(s.title || s.stepSummary || "")}</span></a>`;
     if (s.branchRole === "conclusion_of_branch") depth = Math.max(depth - 1, 0);
   });
   return `<nav class="flow" aria-label="Flow of the sugya"><h2>The flow</h2>${out}</nav>`;
 }
+// ---- Related earlier steps (display only; Oct 15 2026) ----
+// Each step may carry dependsOnStepNumbers. An outside spot-check (Ber 2a, Pes 2a, BM 2a) found the links mostly sound but mixed
+// (replies, evidence, context, parallels, branches), so the label is neutral. Fixes from that check apply at display time; data/b is untouched.
+// A fix only applies when the step still has the type it had when checked (a different copy of the amud is left alone).
+const STEP_LINK_FIXES = {
+  Berakhot_2_a: { 9: { type: "שאלה", add: [1] }, 10: { type: "קשיא", add: [1], drop: [9] } },
+  Pesachim_2_a: { 13: { type: "קשיא", set: [6, 7] } }
+};
+function relatedSteps(id, s, n, total){                                // -> sorted earlier step numbers to show for step n (1-based)
+  let list = Array.isArray(s && s.dependsOnStepNumbers) ? s.dependsOnStepNumbers.slice() : [];
+  const fx = STEP_LINK_FIXES[id] && STEP_LINK_FIXES[id][n];
+  if (fx && (!fx.type || fx.type === s.hebrewStepName)) {
+    if (fx.set) list = fx.set.slice();
+    if (fx.drop) list = list.filter(x => !fx.drop.includes(+x));
+    if (fx.add) list = list.concat(fx.add);
+  }
+  const out = [];
+  for (const x of list) { const v = typeof x === "string" && /^\d+$/.test(x.trim()) ? +x : x; if (Number.isInteger(v) && v >= 1 && v < n && v <= total && !out.includes(v)) out.push(v); }
+  return out.sort((p, q) => p - q);
+}
+function relatedLineHtml(nums, n){                                     // n = this step's number; a line that only points to step n-1 is hidden (David, Oct 14 2026)
+  if (n && nums.length === 1 && nums[0] === n - 1) return "";
+  return nums.length ? `<p class="srel">Related earlier steps: ${nums.map(v => `<a href="#s${v}" data-jump="${v}" data-rel="1" aria-label="Go to step ${v}">${v}</a>`).join('<span class="srel-sep">, </span>')}</p>` : "";
+}
+// ---- end related steps ----
 function stepHtml(s, k, open){
   const t = TYPES[s.hebrewStepName] || TYPES["מימרא"];
-  const P = (h, v, cls="") => v ? `<section class="${cls}"><h4>${h}</h4><p>${esc(v)}</p></section>` : "";
-  const logicRows = [["Trigger words", s.triggerLanguage], ["Relation to before", s.relationToPreviousStep], ["Builds on step", (s.dependsOnStepNumbers||[]).join(", ")],
+  const P = (h, v, cls="") => v ? `<section class="${cls}"><h4>${h}</h4><p>${px(v)}</p></section>` : "";
+  const logicRows = [["Trigger words", s.triggerLanguage], ["Relation to before", s.relationToPreviousStep], 
     ["Challenge targets", s.kashyaTarget], ["How it attacks", s.kashyaAttackLogic], ["Kind of answer", s.terutzResolutionType], ["We might have thought", s.terutzHavaAmina], ["Now we know", s.terutzMaskana],
     ["Information sought", s.sheelahInformationSought], ["Answer given", s.teshuvahAnswerProvided], ["Proving", s.raayaObject], ["Source of proof", s.raayaSupportSource],
     ["What is rejected", s.dechiyaRejectionScope], ["The flaw", s.dechiyaFlawIdentified], ["Core ruling", s.mimraCoreRuling], ["Final takeaway", s.maskanaFinalTakeaway],
     ["Classification", s.classificationConfidence ? `${s.classificationConfidence} confidence` : ""]].filter(r => r[1]);
   const terms = (s.keyTerms||[]).filter(x => x && x.term);
   return `<article class="step t-${t.k}${open ? " open" : ""}${isMish(k) ? " is-mishnah" : ""}" id="s${k+1}" data-n="${k+1}">
-    <button class="sh" aria-expanded="${open}" aria-controls="x${k+1}"><span class="num">${k+1}</span><span class="tname"><span class="he">${esc(s.hebrewStepName)}</span>${t.en}${isMish(k) ? MBADGE : ""}</span>${chev}</button>
+    <button class="sh" aria-expanded="${open}" aria-controls="x${k+1}"><span class="num">${k+1}</span><span class="tname">${t.en}<span class="he" lang="he">${stepHe(s.hebrewStepName)}</span>${isMish(k) ? MBADGE : ""}</span><span class="sh-x">${open ? "Hide" : "Explain"}${chev}</span></button>
     <div class="sbody">
-      <h3 class="stitle">${esc(s.title)}</h3>
-      ${s.stepSummary ? `<p class="ssum">${esc(s.stepSummary)}</p>` : ""}
-      ${s.classificationConfidence && s.classificationConfidence !== "High" && s.alternativePossibleLabel ? `<p class="maybe">Could also be read as: ${esc(s.alternativePossibleLabel)}</p>` : ""}
-      <div class="phrases">${(s.phrases||[]).map(p => `<div class="ph"><div class="pa he" lang="he">${heTxt(p.aramaic)}</div><div class="pe">${esc(p.english)}${p.notes ? `<div class="pnote">${esc(p.notes)}</div>` : ""}</div></div>`).join("")}</div>
+      ${relatedLineHtml(relatedSteps(current && current.id, s, k + 1, (current && current.analysis && current.analysis.steps || []).length || k + 1), k + 1)}
+      <h3 class="stitle">${px(s.title)}</h3>
+      ${s.stepSummary ? `<p class="ssum">${px(s.stepSummary)}</p>` : ""}
+      <div class="phrases">${(s.phrases||[]).map(p => `<div class="ph"><div class="pa he" lang="he">${heTxt(p.aramaic)}</div><div class="pe">${px(p.english)}${p.notes ? `<div class="pnote">${px(p.notes)}</div>` : ""}</div></div>`).join("")}</div>
       <button class="explain-btn" aria-expanded="${open}" aria-controls="x${k+1}">${open ? "Hide explanation" : "Explain this step"}</button>
       <div class="explain" id="x${k+1}" ${open ? "" : "hidden"}>
+        ${s.classificationConfidence && s.classificationConfidence !== "High" && s.alternativePossibleLabel ? `<p class="maybe">Could also be read as: ${px(s.alternativePossibleLabel)}</p>` : ""}
         ${P("What’s happening", s.whatsHappening)}
         ${P("In plain words", s.simpleTranslation)}
         ${P("Going deeper", s.deeperAnalysis)}
-        ${terms.length ? `<section class="terms"><h4>Key terms</h4><div class="chips">${terms.map(x => `<span class="chip"><span class="he">${heTxt(x.term)}</span><span class="m">${esc(x.meaning)}</span></span>`).join("")}</div></section>` : ""}
-        ${s.whatToRemember ? `<div class="box remember"><h4>Remember</h4><p>${esc(s.whatToRemember)}</p></div>` : ""}
-        ${s.confusionAlert ? `<div class="box alert"><h4>Careful</h4><p>${esc(s.confusionAlert)}</p></div>` : ""}
+        ${terms.length ? `<section class="terms"><h4>Key terms</h4><div class="chips">${terms.map(x => `<span class="chip"><span class="he">${heTxt(x.term)}</span><span class="m">${px(x.meaning)}</span></span>`).join("")}</div></section>` : ""}
+        ${s.whatToRemember ? `<div class="box remember"><h4>Remember</h4><p>${px(s.whatToRemember)}</p></div>` : ""}
+        ${s.confusionAlert ? `<div class="box alert"><h4>Careful</h4><p>${px(s.confusionAlert)}</p></div>` : ""}
         ${P("Why it matters", s.whyThisMatters)}
-        ${logicRows.length ? `<section class="logic box"><h4>Logic</h4><dl>${logicRows.map(r => `<dt>${r[0]}</dt><dd>${esc(r[1])}</dd>`).join("")}</dl></section>` : ""}
+        ${logicRows.length ? `<section class="logic box"><h4>Logic</h4><dl>${logicRows.map(r => `<dt>${r[0]}</dt><dd>${px(r[1])}</dd>`).join("")}</dl></section>` : ""}
       </div>
     </div></article>`;
 }
-async function openDaf(m, i, tab){
+async function openDaf(m, i, tab, choose){
   const id = refId(m, i);
-  const same = current && current.id === id;
-  current = { m, i, id, analysis: same ? current.analysis : null, source: same ? current.source : null, text: same ? current.text : null, tab: tab || (same ? current.tab : null) };
+  const same = current && current.id === id && !current.am;
+  current = { m, i, id, analysis: same ? current.analysis : null, source: same ? current.source : null, text: same ? current.text : null, tab: tab || (same ? current.tab : null), choose: !!choose };
   document.title = `${label(m, i)} · Gemara Clarity`;
   pushHistory(id);
   setChrome(true); updateNav();
@@ -537,7 +709,9 @@ async function openDaf(m, i, tab){
     $("#view").innerHTML = `<div class="loading"><div class="spinner"></div>Loading ${esc(label(m, i))}…</div>`;
     window.scrollTo(0, 0);
     let cloud = null, cloudErr = null;
+    const gP = vocGloss ? null : amGloss().then(g => { vocGloss = g; }).catch(() => {}); // the reading glossary also vocalizes common words in the prose (precached; loads beside the breakdown)
     if ((hasBreakdown(id) || !cloudLoaded || !cloudIds.size)) { try { cloud = await loadCloudAnalysis(id); } catch (e) { cloudErr = e; } }
+    if (gP) await Promise.race([gP, new Promise(r => setTimeout(r, 1500))]);
     if (!current || current.id !== id) return;
     current.analysis = cloud; current.source = cloud ? "cloud" : null; current.cloudErr = cloudErr;
     if (!current.tab) current.tab = current.analysis ? "steps" : "text";
@@ -546,25 +720,47 @@ async function openDaf(m, i, tab){
   // warm the neighbours quietly
   const n = neighbor(m, i, 1); if (n) setTimeout(() => { loadText(n.m, n.i).catch(()=>{}); if (hasBreakdown(refId(n.m, n.i))) loadCloudAnalysis(refId(n.m, n.i)).catch(()=>{}); }, 1500);
 }
+const ovOpen = () => loadJSON(LS.overview, false) === true; // the amud overview starts folded so step 1 leads; the reader's choice is remembered
+function renderChooser(){ // an amud opened with no remembered way of learning: two equal choices, nothing preselected
+  const c = current, a = c.analysis;
+  setChrome(true); updateNav(); document.body.classList.add("choosing"); // the amud chooser keeps prev/next only
+  $(".layout").classList.remove("with-side"); $("#sidebar").innerHTML = ""; $("#progressFill").style.width = "0";
+  $("#view").innerHTML = `
+    <section class="card dafhead chooser" aria-labelledby="chooseH">
+      <div class="refline"><h1>${esc(label(c.m, c.i))}</h1><span class="he">${heLabel(c.m, c.i)}</span></div>
+      <div id="perekSlot">${perekLineHtml(c.m, c.i)}</div>
+      ${a && a.mainTopic ? `<p class="topic">${px(a.mainTopic, a)}</p>` : ""}
+      <h2 class="choose-h" id="chooseH">How do you want to learn this amud?</h2>
+      ${pathsHtml(mode => hashFor(c.m, c.i, "/" + mode))}
+      <p class="choose-note">Your choice is remembered on this device. You can switch at any time from the top of the amud.</p>
+    </section>`;
+}
 function renderDaf(){
   const c = current; if (!c) return;
+  if (c.choose && c.analysis) return renderChooser();
+  c.choose = false;
   const a = c.analysis, bm = bookmarks().includes(c.id);
   const counts = {}; if (a) a.steps.forEach(s => { counts[s.hebrewStepName] = (counts[s.hebrewStepName]||0) + 1; });
   setChrome(true); updateNav();
   $("#view").innerHTML = `
-    <section class="card dafhead">
+    <section class="card dafhead${a && ovOpen() ? " ov-open" : ""}">
       <div class="refline"><h1>${esc(label(c.m, c.i))}</h1><span class="he">${heLabel(c.m, c.i)}</span></div>
       <div id="perekSlot">${perekLineHtml(c.m, c.i)}</div>
-      ${a ? `<div class="topic">${esc(a.mainTopic || "")}</div>${a.overview ? `<p class="overview">${esc(a.overview)}</p>` : ""}
-        <div class="typecounts">${Object.entries(TYPES).filter(([he]) => counts[he]).map(([he, t]) => `<span class="typecount t-${t.k}">${counts[he]} ${t.en}${counts[he] > 1 ? "s" : ""}</span>`).join("")}${mishCountHtml()}</div>` : ""}
-      <div class="headactions">
-        <button class="btn ${bm ? "on" : ""}" id="bmBtn" aria-pressed="${bm}"><svg viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4z"/></svg>${bm ? "Bookmarked" : "Bookmark"}</button>
-        ${a ? `<a class="btn" href="${hashFor(c.m, c.i, "/review")}"><svg viewBox="0 0 24 24"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9"/></svg>Review</a>` : ""}
-        <button class="btn" id="shareBtn"><svg viewBox="0 0 24 24"><path d="M4 12v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7"/><path d="M16 6l-4-4-4 4"/><path d="M12 2v14"/></svg>Share</button>
-        <button class="btn" id="pdfBtn"><svg viewBox="0 0 24 24"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 14h12v8H6z"/></svg>PDF</button>
+      ${a ? modeBarHtml(c.m, c.i, "shiur") : ""}
+      ${a && a.mainTopic ? `<p class="topic">${px(a.mainTopic, a)}</p>` : ""}
+      <div class="headbar">
+        ${a ? `<button class="ovbtn" id="ovBtn" aria-expanded="${ovOpen()}" aria-controls="ovPanel"><span class="ovl">${ovOpen() ? "Hide overview" : "Show overview"}</span>${chev}</button>` : ""}
+        <div class="headactions">
+          <button class="btn ${bm ? "on" : ""}" id="bmBtn" aria-pressed="${bm}" aria-label="${bm ? "Bookmarked" : "Bookmark"}" title="${bm ? "Bookmarked" : "Bookmark"}"><svg viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4z"/></svg><span class="hl">${bm ? "Bookmarked" : "Bookmark"}</span></button>
+          ${a ? `<a class="btn" href="${hashFor(c.m, c.i, "/review")}" aria-label="Review quiz" title="Review quiz"><svg viewBox="0 0 24 24"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9"/></svg><span class="hl">Review</span></a>` : ""}
+          <button class="btn" id="shareBtn" aria-label="Share" title="Share"><svg viewBox="0 0 24 24"><path d="M4 12v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7"/><path d="M16 6l-4-4-4 4"/><path d="M12 2v14"/></svg><span class="hl">Share</span></button>
+          <button class="btn" id="pdfBtn" aria-label="Print or save as PDF" title="Print or save as PDF"><svg viewBox="0 0 24 24"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 14h12v8H6z"/></svg><span class="hl">PDF</span></button>
+        </div>
       </div>
-      ${a ? `<div class="tabs" role="tablist"><button role="tab" data-tab="steps" aria-selected="${c.tab === "steps"}">Step by step</button><button role="tab" data-tab="text" aria-selected="${c.tab === "text"}">Full text</button></div>
-        <p class="note-ai">AI-generated breakdown: check it against the text and your teacher.</p>` : ""}
+      ${a ? `<div class="ovpanel" id="ovPanel"${ovOpen() ? "" : " hidden"}>${a.overview ? `<p class="overview">${px(a.overview, a)}</p>` : ""}
+        <div class="typecounts">${Object.entries(TYPES).filter(([he]) => counts[he]).map(([he, t]) => `<span class="typecount t-${t.k}">${counts[he]} ${t.en}${counts[he] > 1 ? "s" : ""}</span>`).join("")}${mishCountHtml()}</div></div>` : ""}
+      ${a ? `<div class="tabs" role="tablist"><button role="tab" data-tab="steps" aria-selected="${c.tab === "steps"}">Step by step <small>${a.steps.length} steps</small></button><button role="tab" data-tab="text" aria-selected="${c.tab === "text"}">Full text</button></div>
+        <p class="note-ai">AI-generated: check it against the text and your teacher.</p>` : ""}
     </section>
     ${!a ? `<div class="notice">${c.cloudErr ? `<b>The breakdown couldn’t be loaded just now.</b>
         <p>Check your connection and try again. Meanwhile, here is the full text with translation, side by side.</p>` : `<b>Step-by-step breakdown coming soon.</b>
@@ -620,16 +816,17 @@ function applyMishnah(){
   const c = current; if (!c) return;
   (c.mish || []).forEach((on, k) => {
     if (!on) return;
-    $$(`.step[data-n="${k+1}"]:not(.is-mishnah)`).forEach(el => { el.classList.add("is-mishnah"); const tn = $(".tname", el); tn && tn.insertAdjacentHTML("beforeend", MBADGE); });
-    $$(`.fnode[data-jump="${k+1}"]:not(.is-mishnah)`).forEach(el => { el.classList.add("is-mishnah"); const ft = $(".fty", el); ft && ft.insertAdjacentHTML("beforeend", MBADGE); });
-    $$(`.strip span[data-jump="${k+1}"]`).forEach(el => el.classList.add("is-mishnah"));
+    $$(`.step[data-n="${k+1}"]:not(.is-mishnah)`).forEach(el => { el.classList.add("is-mishnah"); const tn = $(".tname", el); tn && tn.insertAdjacentHTML("beforeend", String(MBADGE)); });
+    $$(`.fnode[data-jump="${k+1}"]:not(.is-mishnah)`).forEach(el => { el.classList.add("is-mishnah"); const ft = $(".fty", el); ft && ft.insertAdjacentHTML("beforeend", String(MBADGE)); });
+    $$(`.strip button[data-jump="${k+1}"]`).forEach(el => el.classList.add("is-mishnah"));
   });
   const tc = $(".typecounts"); if (tc && !$(".t-mishnah", tc)) tc.insertAdjacentHTML("beforeend", mishCountHtml());
   $$(".segs .seg").forEach((el, k) => { const cl = segMishClass(k).trim(); if (cl) el.classList.add(...cl.split(" ")); });
 }
-function stepsBlock(a){
-  return `<div class="strip" role="navigation" aria-label="Jump to a step">${a.steps.map((s, k) => `<span class="t-${(TYPES[s.hebrewStepName]||TYPES["מימרא"]).k}${isMish(k) ? " is-mishnah" : ""}" data-jump="${k+1}" title="${k+1}. ${esc(s.title||"")}"></span>`).join("")}</div>
-    <div class="strip-cap"><span>Start</span><span>Tap a colour to jump</span><span>End</span></div>
+const stripNowHtml = (a, n) => { const s = a.steps[n - 1]; if (!s) return ""; const t = TYPES[s.hebrewStepName] || TYPES["מימרא"]; return `Step ${n} of ${a.steps.length} · <b class="t-${t.k}">${t.en}</b>`; };
+function stepsBlock(a){ // the step strip: one numbered, colour-coded button per step (tap to jump); the line under it names the step you are on
+  return `<nav class="strip" aria-label="Jump to a step">${a.steps.map((s, k) => { const t = TYPES[s.hebrewStepName] || TYPES["מימרא"]; return `<button class="t-${t.k}${isMish(k) ? " is-mishnah" : ""}" data-jump="${k+1}" aria-label="Step ${k+1}, ${t.en}: ${esc(s.title||"")}" title="${k+1}. ${t.en}: ${esc(s.title||"")}">${k+1}</button>`; }).join("")}</nav>
+    <div class="strip-cap"><span class="strip-now" id="stripNow">${stripNowHtml(a, 1)}</span><button class="strip-flow" id="stripFlow" type="button">All steps<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div>
     <div class="steps">${a.steps.map((s, k) => stepHtml(s, k, settings.expandAll)).join("")}</div>`;
 }
 async function renderText(){
@@ -658,11 +855,16 @@ function wireDaf(){
   $("#shareBtn").onclick = async () => { const url = location.href; try { if (navigator.share) await navigator.share({ title: `${label(c.m, c.i)} · Gemara Clarity`, url }); else { await navigator.clipboard.writeText(url); toast("Link copied"); } } catch {} };
   $("#pdfBtn").onclick = () => { const was = settings.expandAll; const old = document.title; document.title = `${label(c.m, c.i)} - Gemara Clarity`; $$(".explain").forEach(x => x.hidden = false); setTimeout(() => { window.print(); document.title = old; if (!was) renderDaf(); }, 120); };
   $$("[data-tab]").forEach(b => b.onclick = () => { c.tab = b.dataset.tab; renderDaf(); });
-  const ov = $(".dafhead .overview"); if (ov) ov.onclick = () => ov.classList.toggle("full");
+  const ovb = $("#ovBtn"); if (ovb) ovb.onclick = () => {
+    const open = ovb.getAttribute("aria-expanded") !== "true"; saveJSON(LS.overview, open);
+    ovb.setAttribute("aria-expanded", open); $(".ovl", ovb).textContent = open ? "Hide overview" : "Show overview";
+    $("#ovPanel").hidden = !open; $(".dafhead").classList.toggle("ov-open", open);
+  };
   const lib = $("#libBtn"); if (lib) lib.onclick = () => { location.hash = "#/"; setTimeout(() => { const s = $("#libSlot"); s && s.scrollIntoView({ behavior: "smooth" }); }, 60); };
   const view = $("#view");
   view.onclick = e => {
-    const j = e.target.closest("[data-jump]"); if (j) { e.preventDefault(); jumpTo(+j.dataset.jump); return; }
+    const j = e.target.closest("[data-jump]"); if (j) { e.preventDefault(); jumpTo(+j.dataset.jump, j.hasAttribute("data-rel")); return; }
+    if (e.target.closest("#stripFlow")) { $("#flowBtn").onclick(); return; }
     const t = e.target.closest(".sh, .explain-btn"); if (t) toggleStep(t.closest(".step"));
   };
   $("#sidebar").onclick = e => { const j = e.target.closest("[data-jump]"); if (j) { e.preventDefault(); jumpTo(+j.dataset.jump); } };
@@ -673,13 +875,15 @@ function toggleStep(card, force){
   ex.hidden = !open; card.classList.toggle("open", open);
   $$("[aria-controls]", card).forEach(b => b.setAttribute("aria-expanded", open));
   $(".explain-btn", card).textContent = open ? "Hide explanation" : "Explain this step";
+  const x = $(".sh-x", card); if (x) x.firstChild.textContent = open ? "Hide" : "Explain";
 }
-function jumpTo(n){
+function jumpTo(n, flash){
   if (current && current.tab !== "steps") { current.tab = "steps"; renderDaf(); }
   const el = document.getElementById("s" + n); if (!el) return;
   closeSheet(); jumpTo.lock = Date.now() + 700;
   el.scrollIntoView({ behavior: "auto", block: "start" });
   markCurrent(n);
+  if (flash) { el.classList.remove("arrive"); void el.offsetWidth; el.classList.add("arrive"); clearTimeout(jumpTo.t); jumpTo.t = setTimeout(() => el.classList.remove("arrive"), 1600); el.focus && el.setAttribute("tabindex", "-1"); try { el.focus({ preventScroll: true }); } catch {} }
 }
 function observeSteps(){
   if (observer) observer.disconnect();
@@ -694,13 +898,16 @@ function markCurrent(n){
   if (!current || !current.analysis) return;
   const total = current.analysis.steps.length;
   $$(".step.cur").forEach(x => x.classList.remove("cur")); const el = document.getElementById("s" + n); el && el.classList.add("cur");
-  $$(".fnode.cur, .strip span.cur").forEach(x => x.classList.remove("cur"));
-  $$(`.fnode[data-jump="${n}"], .strip span[data-jump="${n}"]`).forEach(x => x.classList.add("cur"));
+  $$(".fnode.cur, .strip button.cur").forEach(x => x.classList.remove("cur"));
+  $$(`.fnode[data-jump="${n}"], .strip button[data-jump="${n}"]`).forEach(x => x.classList.add("cur"));
+  const sb = $(`.strip button[data-jump="${n}"]`), strip = sb && sb.parentElement; // keep the current step's button in view inside the strip, without moving the page
+  if (strip && strip.scrollWidth > strip.clientWidth) { const l = sb.offsetLeft - strip.offsetLeft, w = strip.clientWidth; if (l < strip.scrollLeft + 8 || l + sb.offsetWidth > strip.scrollLeft + w - 8) strip.scrollLeft = Math.max(0, l - w / 2 + sb.offsetWidth / 2); }
+  const now = $("#stripNow"); if (now) now.innerHTML = stripNowHtml(current.analysis, n);
   const side = $(`#sidebar .fnode[data-jump="${n}"]`); if (side && $(".layout").classList.contains("with-side")) side.scrollIntoView({ block: "nearest" });
   $("#stepCounter").textContent = `step ${n}/${total}`;
 }
 window.addEventListener("scroll", () => {
-  if (current && current.am) return; // Ameilus fills the bar with the pieces done
+  if (current && current.am) return; // Ameilus fills the bar with the passages done
   const h = document.documentElement; const max = h.scrollHeight - h.clientHeight;
   $("#progressFill").style.width = current && max > 0 ? Math.min(100, h.scrollTop / max * 100) + "%" : "0";
 }, { passive: true });
@@ -716,14 +923,14 @@ function buildQuiz(steps){
     const rest = shuffle(pool.filter(p => !near.includes(p)));
     const opts = shuffle([[s.hebrewStepName, t], ...near.slice(0, 2), ...rest].slice(0, 4));
     qs.push({ kind: "type", k, prompt: "What is this step doing?", he: (s.phrases||[]).map(p => p.aramaic).join(" "), en: s.simpleTranslation || (s.phrases||[]).map(p => p.english).join(" "),
-      opts: opts.map(([he, v]) => ({ html: `<span class="swatch t-${v.k}"></span><span><span class="en-he">${he}</span> · ${v.en}</span>`, right: he === s.hebrewStepName })),
-      explain: `${esc(s.title || "")}${s.whatsHappening ? " · " + esc(s.whatsHappening) : ""}` });
+      opts: opts.map(([he, v]) => ({ html: `<span class="swatch t-${v.k}"></span><span><span class="en-he">${stepHe(he)}</span> · ${v.en}</span>`, right: he === s.hebrewStepName })),
+      explain: `${px(s.title || "")}${s.whatsHappening ? " · " + px(s.whatsHappening) : ""}` });
     if (k < steps.length - 1 && steps.length >= 4) {
       const nx = steps[k + 1]; const others = shuffle(steps.filter((_, j) => j !== k + 1 && j !== k)).slice(0, 2);
-      const lbl = st => { const tt = TYPES[st.hebrewStepName] || TYPES["מימרא"]; return `<span class="swatch t-${tt.k}"></span><span>${esc(st.title || st.stepSummary)}</span>`; };
+      const lbl = st => { const tt = TYPES[st.hebrewStepName] || TYPES["מימרא"]; return `<span class="swatch t-${tt.k}"></span><span>${px(st.title || st.stepSummary)}</span>`; };
       qs.push({ kind: "next", k, prompt: "What comes next?", he: "", en: `Step ${k+1}: ${s.title || ""}. ${s.stepSummary || ""}`,
         opts: shuffle([{ html: lbl(nx), right: true }, ...others.map(o => ({ html: lbl(o), right: false }))]),
-        explain: `Step ${k+2} is a ${esc((TYPES[nx.hebrewStepName]||{}).en || "step")}: ${esc(nx.stepSummary || nx.title || "")}` });
+        explain: `Step ${k+2} is a ${esc((TYPES[nx.hebrewStepName]||{}).en || "step")}: ${px(nx.stepSummary || nx.title || "")}` });
     }
   });
   const types = shuffle(qs.filter(q => q.kind === "type")).slice(0, 8), nexts = shuffle(qs.filter(q => q.kind === "next")).slice(0, 4);
@@ -738,7 +945,7 @@ function renderReview(m, i){
     const terms = []; const seen = new Set();
     a.steps.forEach(s => (s.keyTerms||[]).forEach(t => { const key = (t.term||"").replace(NIKUD, ""); if (t.term && !seen.has(key)) { seen.add(key); terms.push(t); } }));
     $("#view").innerHTML = `<section class="card dafhead"><div class="refline"><h1>Review ${esc(label(m, i))}</h1><span class="he">${heLabel(m, i)}</span></div>
-      <p class="overview" style="margin-top:8px">${esc(a.mainTopic || "")}</p>
+      <p class="overview" style="margin-top:8px">${px(a.mainTopic || "", a)}</p>
       <div class="tabs" role="tablist"><button role="tab" data-r="flow" aria-selected="true">Flow quiz</button><button role="tab" data-r="terms" aria-selected="false">Key terms (${terms.length})</button></div></section>
       <section class="card quiz" id="quiz" style="margin-top:14px"></section>
       <div class="endnav"><a class="btn" href="${hashFor(m, i)}">‹ Back to the daf</a></div>`;
@@ -760,7 +967,7 @@ function runQuiz(a){
     const q = qs[n];
     box.innerHTML = `<div class="qmeta"><span>Question ${n+1} of ${qs.length}</span><span>${score} right</span></div><div class="qbar"><div style="width:${n / qs.length * 100}%"></div></div>
       <p class="qprompt">${q.prompt}</p>
-      <div class="qtext">${q.he ? `<div class="he" lang="he">${heTxt(q.he)}</div>` : ""}${q.en ? `<div class="en">${esc(q.en)}</div>` : ""}</div>
+      <div class="qtext">${q.he ? `<div class="he" lang="he">${heTxt(q.he)}</div>` : ""}${q.en ? `<div class="en">${px(q.en)}</div>` : ""}</div>
       <div class="opts">${q.opts.map((o, j) => `<button class="opt" data-o="${j}">${o.html}</button>`).join("")}</div><div id="fb"></div>`;
     $$(".opt", box).forEach(b => b.onclick = () => {
       if (box.dataset.answered === "1") return; box.dataset.answered = "1";
@@ -779,7 +986,7 @@ function runCards(terms){
   const show = () => {
     const t = order[n];
     box.innerHTML = `<div class="qmeta"><span>Card ${n+1} of ${order.length}</span><span>Tap the card to flip</span></div><div class="qbar"><div style="width:${(n+1) / order.length * 100}%"></div></div>
-      <button class="flash" id="card" aria-live="polite">${flipped ? `<span><span class="he" style="display:block;font-size:calc(22px * var(--scale));opacity:.7">${heTxt(t.term)}</span><span class="m">${esc(t.meaning)}</span></span>` : `<span class="he" lang="he">${heTxt(t.term)}</span>`}</button>
+      <button class="flash" id="card" aria-live="polite">${flipped ? `<span><span class="he" style="display:block;font-size:calc(22px * var(--scale));opacity:.7">${heTxt(t.term)}</span><span class="m">${px(t.meaning)}</span></span>` : `<span class="he" lang="he">${heTxt(t.term)}</span>`}</button>
       <div class="endnav"><button class="btn" id="prevC" ${n ? "" : "disabled"}>‹ Back</button><button class="btn" id="shuf">Shuffle</button><button class="btn primary" id="nextC">${n + 1 < order.length ? "Next ›" : "Start over"}</button></div>`;
     $("#card").onclick = () => { flipped = !flipped; show(); };
     $("#prevC").onclick = () => { n = Math.max(0, n - 1); flipped = false; show(); };
@@ -790,11 +997,11 @@ function runCards(terms){
 }
 
 /* ---------- Ameilus mode: #/<Masechet>/<daf><a|b>/ameilus ----------
-   The learner reads the raw daf and marks where each statement ends (ameilus/ui.js + ameilus/core.js, with the
+   The learner reads the raw daf and marks where each passage ends (ameilus/ui.js + ameilus/core.js, with the
    reading glossary in data/glossary.json). It reads the same breakdown the Shiur view loads (loadCloudAnalysis),
    mounts into #view, hides the bottom bar and the flow sidebar (it has its own bar and sugya map), and is torn
    down by the router on any other route. Nothing here changes how Shiur loads or looks. */
-const AM_VER = "3.1.0", AM_SKEY = "gc-am3-settings";
+const AM_VER = "3.6.0", AM_SKEY = "gc-am3-settings";
 let amMounted = null, amModP = null, amGlossP = null, pendingJump = null;
 const amPrefs = () => { try { return Object.assign({ bare: false }, JSON.parse(localStorage.getItem(AM_SKEY) || "{}")); } catch { return { bare: false }; } };
 function amModule(){ return amModP || (amModP = import(`./ameilus/ui.js?v=${AM_VER}`).catch(e => { amModP = null; throw e; })); }
@@ -802,9 +1009,9 @@ function amGloss(){
   return amGlossP || (amGlossP = fetch(`data/glossary.json?v=${AM_VER}`).then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
     .then(g => (g && g.entries) || {}).catch(e => { console.warn("glossary unavailable", e); amGlossP = null; return {}; }));
 }
-function setModeSwitch(mode){ // the Shiur/Ameilus switch in the top bar, on every amud
+function setModeSwitch(mode){ // the old top-bar Shiur/Ameilus switch: retired Oct 15 2026 (Ameilus is a path of its own; the in-page bar, modeBarHtml, switches), kept hidden
   const sw = $("#modeSw"); if (!sw) return;
-  const on = !!(mode && current);
+  const on = false;
   sw.hidden = !on; document.body.classList.toggle("has-modesw", on);
   if (!on) return;
   const s = $("#modeShiur"), a = $("#modeAm");
@@ -814,7 +1021,8 @@ function setModeSwitch(mode){ // the Shiur/Ameilus switch in the top bar, on eve
 }
 function amTeardown(){
   if (amMounted) { try { amMounted.destroy(); } catch (e) { console.warn(e); } amMounted = null; }
-  document.body.classList.remove("am-mode", "map-open", "am-word-open");
+  document.body.classList.remove("am-mode", "map-open", "am-word-open", "am-exp-open");
+  document.documentElement.classList.remove("am-shell"); // round 4: the page scrolls again outside Ameilus
   const mb = $("#amMapBtn"); if (mb) mb.setAttribute("aria-pressed", "false");
   if (current && current.am) current = null;
 }
@@ -825,8 +1033,9 @@ async function renderAmeilus(m, i){
   if (observer) observer.disconnect();
   const me = current = { m, i, id, analysis: reuse, source: reuse ? "cloud" : null, text: null, tab: "ameilus", am: true };
   document.title = `${label(m, i)} · Ameilus · Gemara Clarity`;
-  pushHistory(id);
+  pushHistory(id); setModePref("ameilus");
   document.body.classList.add("am-mode");
+  document.documentElement.classList.add("am-shell"); // round 4 (Oct 15 2026): an app shell; the page never scrolls, the amud and the explanation scroll in their own boxes
   setChrome(false); setModeSwitch("ameilus");
   { const { daf, amud } = dafOf(i); $("#refBtnText").innerHTML = `<span class="ref-m">${esc(masName(m))} </span>${daf}${amud}`; } // phones show just the daf here; the page head names the masechet
   const view = $("#view"); view.onclick = null;
@@ -844,10 +1053,13 @@ async function renderAmeilus(m, i){
   const p = neighbor(m, i, -1), n = neighbor(m, i, 1);
   try {
     amMounted = mod.mountAmeilus(view, {
-      id, data: a, gloss, settings: { bare: !!amPrefs().bare }, label: label(m, i), heLabel: heLabel(m, i),
+      id, data: a, gloss, settings: { bare: !!amPrefs().bare }, label: label(m, i), heLabel: heLabel(m, i), modeBar: modeBarHtml(m, i, "ameilus"),
       prevHref: p ? hashFor(p.m, p.i, "/ameilus") : null, nextHref: n ? hashFor(n.m, n.i, "/ameilus") : null,
       shiurHref: k => hashFor(m, i, k ? "/s" + k : ""),
+      vocalize: t => vocApply(t, vocFor(a), vocGloss || gloss), // explanations of finished passages get the same borrowed vowels as Shiur (always on: they are answers already shown)
       onProgress: f => { if (current === me) $("#progressFill").style.width = (f * 100).toFixed(1) + "%"; },
+      whenReady: whenDisclaimerDone,
+      refParts, refButton, // quoted-pasuk references in the explanation open the same pop-up as in Shiur // the first-use walkthrough waits for the site's first-visit notice
       onMapPick: () => { document.body.classList.remove("map-open"); const mb = $("#amMapBtn"); mb && mb.setAttribute("aria-pressed", "false"); }
     });
   } catch (e) {
@@ -863,7 +1075,7 @@ function amSettingsSection(body){
     <label class="setrow"><span class="lbl"><b>Bare mode</b><span>Just the daf and the marker: no hints, no checks</span></span><span class="switch"><input type="checkbox" id="amBare" ${bare ? "checked" : ""}><span></span></span></label>
     <h4 style="margin:12px 0 4px;font-size:15px">My words <span class="small" id="amWordsN"></span></h4>
     <div id="amWords" class="small">${amModP ? "…" : "Long-press a word, then “Add to My words”."}</div>
-    <p class="small" style="margin:10px 0 18px">How it works: tap the last word of each statement. A real break counts even where we split it later. Hints come one at a time: punctuation, vowels, the signal word, then where it ends. Long-press (or right-click) a word for its meaning. Keys: ← → move the marker, Enter confirms, H for the next hint.</p>
+    <p class="small" style="margin:10px 0 18px">How it works: ${esc(AMW.settingsHow)}</p>
     <h3 style="margin:0 0 4px;font-size:16px">Display</h3></section>`);
   const box = $("#amWords", body);
   if (amModP) amModP.then(mod => {
@@ -878,6 +1090,14 @@ function amSettingsSection(body){
     if (current && current.am) renderAmeilus(current.m, current.i);
   });
 }
+// switching ways keeps the place: from Ameilus, Shiur opens at the step of the passage the learner is on
+document.addEventListener("click", e => {
+  const o = e.target.closest && e.target.closest("[data-path-pick]"); if (!o || e.defaultPrevented || e.button > 0 || e.metaKey || e.ctrlKey) return;
+  if (o.dataset.pathPick === "shiur" && current && current.am && amMounted && amMounted.placeStep) {
+    const k = amMounted.placeStep();
+    if (k) { e.preventDefault(); location.hash = hashFor(current.m, current.i, "/s" + k); }
+  }
+});
 $("#amMapBtn").onclick = () => { const on = document.body.classList.toggle("map-open"); $("#amMapBtn").setAttribute("aria-pressed", String(on)); };
 
 /* ---------- router ---------- */
@@ -896,6 +1116,13 @@ function route(keepScroll){
   if (extra === "ameilus") { if (keepScroll && amMounted && current && current.am && current.id === refId(m, i)) return; return renderAmeilus(m, i); }
   const sj = /^s(\d+)$/.exec(extra || ""); if (sj && !keepScroll) pendingJump = { id: refId(m, i), n: +sj[1] };
   if (keepScroll && current && current.id === refId(m, i)) { const y = scrollY; renderDaf(); scrollTo(0, y); return; }
+  // which way to open: an explicit Shiur link (/shiur, /s<n>) is a choice; a plain link follows the remembered
+  // choice; with none remembered, an amud that Ameilus can open asks first (amud chooser)
+  const explicit = extra === "shiur" || !!sj, id = refId(m, i);
+  const canAm = !cloudLoaded || !cloudIds.size || hasBreakdown(id);
+  if (explicit) setModePref("shiur");
+  else if (canAm && modePref() === "ameilus") { location.replace(hashFor(m, i, "/ameilus")); return; }
+  else if (canAm && !modePref()) return openDaf(m, i, null, true);
   openDaf(m, i);
 }
 window.addEventListener("hashchange", () => route(false));
@@ -966,6 +1193,129 @@ $("#bbToggle").onclick = () => { ui.barHidden = !ui.barHidden; saveUi(); applyUi
   addEventListener("resize", () => applyUi());
 })();
 applyUi();
+
+/* ---------- quoted pasuk references (Oct 15 2026, David 11:09 PM): "ישעיהו 60:21" in a note is a button; it opens the pasuk in a small
+   pop-up over the page (Hebrew with nikud, English, "Open on Sefaria"), fetched from Sefaria's public API and cached for the session ---------- */
+const TANAKH = { "בראשית":"Genesis", "שמות":"Exodus", "ויקרא":"Leviticus", "במדבר":"Numbers", "דברים":"Deuteronomy", "יהושע":"Joshua", "שופטים":"Judges",
+  "שמואל א":"I Samuel", "שמואל ב":"II Samuel", "מלכים א":"I Kings", "מלכים ב":"II Kings", "ישעיהו":"Isaiah", "ישעיה":"Isaiah", "ירמיהו":"Jeremiah", "ירמיה":"Jeremiah",
+  "יחזקאל":"Ezekiel", "הושע":"Hosea", "יואל":"Joel", "עמוס":"Amos", "עובדיה":"Obadiah", "יונה":"Jonah", "מיכה":"Micah", "נחום":"Nahum", "חבקוק":"Habakkuk",
+  "צפניה":"Zephaniah", "חגי":"Haggai", "זכריה":"Zechariah", "מלאכי":"Malachi", "תהלים":"Psalms", "תהילים":"Psalms", "משלי":"Proverbs", "איוב":"Job",
+  "שיר השירים":"Song of Songs", "רות":"Ruth", "איכה":"Lamentations", "קהלת":"Ecclesiastes", "אסתר":"Esther", "דניאל":"Daniel", "עזרא":"Ezra", "נחמיה":"Nehemiah",
+  "דברי הימים א":"I Chronicles", "דברי הימים ב":"II Chronicles" };
+const bookKey = s => String(s).replace(/[\u0591-\u05C7]/g, "").replace(/[\u05F3\u05F4'"]/g, "").replace(/\s+/g, " ").trim();
+const REF_RX = /((?:[\u05D0-\u05EA][\u05D0-\u05EA\u0591-\u05C7\u05F3\u05F4'"]*\s+){0,2}[\u05D0-\u05EA][\u05D0-\u05EA\u0591-\u05C7\u05F3\u05F4'"]*)\s+(\d{1,3}):(\d{1,3})(?:\s?[-–]\s?(\d{1,3}))?(?![\d:])(?!\s?[-–]\s?\d)/g; // a range across chapters ("ישעיהו 60:21-61:1") stays whole as plain text, never cut to its first verse
+/** split text into plain parts and Tanakh references: [{ text }, { ref: "Isaiah.60.21", label: "ישעיהו 60:21", book, he }] */
+function refParts(raw){
+  const s = String(raw == null ? "" : raw), out = []; let last = 0, m;
+  REF_RX.lastIndex = 0;
+  while ((m = REF_RX.exec(s))) {
+    const words = m[1].split(/\s+/); let book = null, k = 0;
+    for (k = Math.max(0, words.length - 3); k < words.length; k++) { const key = bookKey(words.slice(k).join(" ")); if (TANAKH[key]) { book = TANAKH[key]; break; } }
+    if (!book) continue;
+    const pre = words.slice(0, k).join(" "), name = words.slice(k).join(" ");
+    const start = m.index + (pre ? m[1].indexOf(name, pre.length) : 0);
+    if (start > last) out.push({ text: s.slice(last, start) });
+    const ref = `${book.replace(/ /g, "_")}.${m[2]}.${m[3]}${m[4] ? "-" + m[4] : ""}`;
+    out.push({ ref, he: name, label: `${name} ${m[2]}:${m[3]}${m[4] ? "–" + m[4] : ""}`, cv: `${m[2]}:${m[3]}${m[4] ? "–" + m[4] : ""}` });
+    last = m.index + m[0].length;
+  }
+  if (last < s.length) out.push({ text: s.slice(last) });
+  return out;
+}
+function refButton(p){ return `<button type="button" class="pasuk-ref" data-pasuk="${esc(p.ref)}" data-label="${esc(p.label)}" aria-haspopup="dialog" title="Show this pasuk"><span class="he" lang="he">${esc(p.he)}</span> <span class="pasuk-cv">${esc(p.cv)}</span></button>`; }
+const refHtml = raw => refParts(raw).map(p => p.ref ? refButton(p) : esc(p.text)).join("");
+const pasukCache = new Map();
+const cleanHe = t => String(t).replace(/<[^>]+>/g, "").replace(/&nbsp;/g, " ").replace(/&[a-z]+;|&#\d+;/g, " ").replace(/\{[ספ]\}/g, "").replace(/\(([^)]*)\)\s*\[([^\]]*)\]/g, "$2").replace(/[\u0591-\u05AF\u05BD]/g, "").replace(/\s+/g, " ").trim();
+const cleanEn = t => String(t).replace(/<sup[^>]*>.*?<\/sup>/g, "").replace(/<i class="footnote">.*?<\/i>/g, "").replace(/<br\s*\/?>/g, " ").replace(/<[^>]+>/g, "").replace(/&nbsp;/g, " ").replace(/&amp;/g, "&").replace(/&#39;|&rsquo;/g, "’").replace(/&quot;/g, '"').replace(/\s+/g, " ").trim();
+async function fetchPasuk(ref){
+  if (pasukCache.has(ref)) return pasukCache.get(ref);
+  try { const s = sessionStorage.getItem("gc-pasuk:" + ref); if (s) { const v = JSON.parse(s); pasukCache.set(ref, v); return v; } } catch {}
+  const ac = typeof AbortController === "function" ? new AbortController() : null, t = setTimeout(() => ac && ac.abort(), 9000);
+  try {
+    const r = await fetch(`https://www.sefaria.org/api/v3/texts/${encodeURIComponent(ref)}?version=hebrew&version=english&return_format=text_only`, ac ? { signal: ac.signal } : {});
+    if (!r.ok) throw new Error("HTTP " + r.status);
+    const d = await r.json(), vs = d.versions || [];
+    const pick = lang => { const v = vs.find(x => x.language === lang); return v ? [].concat(v.text || []).flat(Infinity) : []; };
+    const he = pick("he").map(cleanHe).filter(Boolean), en = pick("en").map(cleanEn).filter(Boolean);
+    if (!he.length && !en.length) throw new Error("empty");
+    const v = { he, en, heRef: d.heRef || "", enRef: d.ref || ref.replace(/_/g, " ") };
+    pasukCache.set(ref, v); try { sessionStorage.setItem("gc-pasuk:" + ref, JSON.stringify(v)); } catch {}
+    return v;
+  } finally { clearTimeout(t); }
+}
+let pasukPrev = null;
+function closePasuk(){ const w = $("#pasukPop"); if (!w) return; w.remove(); document.removeEventListener("keydown", pasukKey, true); try { pasukPrev && pasukPrev.isConnected && pasukPrev.focus({ preventScroll: true }); } catch {} pasukPrev = null; }
+function pasukKey(e){ if (e.key === "Escape" && $("#pasukPop")) { e.preventDefault(); e.stopImmediatePropagation(); closePasuk(); } else if (e.key === "Tab" && $("#pasukPop")) { const f = [...$("#pasukPop").querySelectorAll("button,a[href]")]; if (!f.length) return; const i = f.indexOf(document.activeElement); if (e.shiftKey && i <= 0) { e.preventDefault(); f[f.length - 1].focus(); } else if (!e.shiftKey && i === f.length - 1) { e.preventDefault(); f[0].focus(); } } }
+function openPasuk(ref, label, from){
+  closePasuk(); pasukPrev = from || document.activeElement;
+  const url = `https://www.sefaria.org/${ref.split(".").map(encodeURIComponent).join(".")}?lang=bi`;
+  const w = document.createElement("div"); w.id = "pasukPop"; w.className = "pz-back";
+  w.innerHTML = `<section class="pz" role="dialog" aria-modal="true" aria-labelledby="pzH">
+      <div class="pz-head"><h2 class="pz-h" id="pzH"><span class="he" lang="he">${esc(label)}</span></h2><button type="button" class="iconbtn pz-x" data-pz="close" aria-label="Close">✕</button></div>
+      <div class="pz-body" aria-live="polite"><div class="pz-load"><span class="spinner" aria-hidden="true"></span> Loading the pasuk…</div></div>
+      <a class="pz-sef" href="${esc(url)}" target="_blank" rel="noopener">Open on Sefaria ↗</a>
+    </section>`;
+  w.addEventListener("click", e => { if (e.target === w || e.target.closest("[data-pz=close]")) closePasuk(); });
+  document.body.appendChild(w); document.addEventListener("keydown", pasukKey, true);
+  w.querySelector(".pz-x").focus({ preventScroll: true });
+  fetchPasuk(ref).then(v => {
+    const body = w.querySelector(".pz-body"); if (!body || !w.isConnected) return;
+    if (v.heRef) w.querySelector(".pz-h").innerHTML = `<span class="he" lang="he">${esc(v.heRef)}</span> <span class="pz-en">${esc(v.enRef)}</span>`;
+    body.innerHTML = `${v.he.length ? `<p class="pz-he he" dir="rtl" lang="he">${v.he.map(esc).join(" ")}</p>` : ""}${v.en.length ? `<p class="pz-tr" lang="en">${v.en.map(esc).join(" ")}</p>` : ""}`;
+  }).catch(() => {
+    const body = w.querySelector(".pz-body"); if (!body || !w.isConnected) return;
+    body.innerHTML = `<p class="pz-fail">Couldn’t load the text just now. It’s on Sefaria:</p>`;
+  });
+}
+document.addEventListener("click", e => {
+  const b = e.target.closest && e.target.closest("[data-pasuk]"); if (!b) return;
+  e.preventDefault(); e.stopPropagation(); openPasuk(b.dataset.pasuk, b.dataset.label || b.textContent, b);
+}, true);
+
+/* ---------- first-visit notice (Oct 15 2026, David 11:03-11:06 PM): the whole site, once per device, acknowledged with the button only ---------- */
+const DISC_KEY = "gc-disclaimer";
+const DISC = {
+  title: "Before you start",
+  body: "Everything in Gemara Clarity — translations, explanations and step breakdowns — is generated by AI. It has no haskama and has not been reviewed by a rav. It can contain mistakes.",
+  ok: "I understand"
+};
+let discOpen = false, discWaiters = [];
+function disclaimerSeen(){ try { return !!localStorage.getItem(DISC_KEY); } catch { return false; } }
+// run fn now if the notice is not up, else right after "I understand" (the Ameilus walkthrough waits for it)
+function whenDisclaimerDone(fn){ if (discOpen) discWaiters.push(fn); else fn(); }
+function showDisclaimer(again){
+  if (discOpen) return;
+  discOpen = true;
+  const prevFocus = document.activeElement;
+  const wrap = document.createElement("div");
+  wrap.className = "disc-back"; wrap.id = "disc";
+  wrap.innerHTML = `<section class="disc" role="alertdialog" aria-modal="true" aria-labelledby="discH" aria-describedby="discB">
+      <div class="disc-ic" aria-hidden="true">!</div>
+      <h2 class="disc-h" id="discH">${esc(DISC.title)}</h2>
+      <p class="disc-b" id="discB">${esc(DISC.body)}</p>
+      <button class="btn primary disc-ok" id="discOk" type="button">${esc(DISC.ok)}</button>
+    </section>`;
+  // everything else on the page is inert (not clickable, not focusable, hidden from screen readers) until the button is pressed
+  const others = [...document.body.children].filter(el => el !== wrap && !el.hasAttribute("inert"));
+  others.forEach(el => el.setAttribute("inert", ""));
+  document.body.appendChild(wrap); document.body.classList.add("disc-open");
+  const ok = wrap.querySelector("#discOk");
+  const onKey = e => {
+    if (e.key === "Escape") { e.preventDefault(); e.stopImmediatePropagation(); return; } // only the button closes it
+    if (e.key === "Tab") { e.preventDefault(); ok.focus(); } // focus stays on the one control
+  };
+  document.addEventListener("keydown", onKey, true);
+  ok.addEventListener("click", () => {
+    try { localStorage.setItem(DISC_KEY, "1"); } catch {}
+    document.removeEventListener("keydown", onKey, true);
+    others.forEach(el => el.removeAttribute("inert"));
+    wrap.remove(); document.body.classList.remove("disc-open"); discOpen = false;
+    const w = discWaiters; discWaiters = []; w.forEach(f => { try { f(); } catch (e) { console.warn(e); } });
+    try { if (again && prevFocus && prevFocus.isConnected) prevFocus.focus({ preventScroll: true }); else $("#view").focus({ preventScroll: true }); } catch {}
+  });
+  setTimeout(() => ok.focus({ preventScroll: true }), 0);
+}
+if (!disclaimerSeen()) showDisclaimer(false);
 
 applySettings();
 route(false);
