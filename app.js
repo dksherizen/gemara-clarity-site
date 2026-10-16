@@ -479,7 +479,6 @@ function openSettings(){
     ${sw("nikud","Vowels (nikud)","Turn off to practise reading plain text")}
     ${sw("colors","Step colours")}
     ${sw("notes","Phrase notes")}
-    ${sw("terms","Key terms")}
     ${sw("logic","Logic details","Trigger words, what attacks what, how it is resolved")}
     ${sw("expandAll","Open every explanation","Otherwise tap a step to open it")}
     <h3 style="margin:22px 0 4px;font-size:16px">Offline</h3>
@@ -680,12 +679,11 @@ function stepHtml(s, k, open){
     ["Information sought", s.sheelahInformationSought], ["Answer given", s.teshuvahAnswerProvided], ["Proving", s.raayaObject], ["Source of proof", s.raayaSupportSource],
     ["What is rejected", s.dechiyaRejectionScope], ["The flaw", s.dechiyaFlawIdentified], ["Core ruling", s.mimraCoreRuling], ["Final takeaway", s.maskanaFinalTakeaway],
     ["Classification", s.classificationConfidence ? `${s.classificationConfidence} confidence` : ""]].filter(r => r[1]);
-  const terms = (s.keyTerms||[]).filter(x => x && x.term);
   // calm (gc2-calm-1): the secondary layers sit behind one quiet "More detail" fold; nothing is dropped
   const more = [
     s.classificationConfidence && s.classificationConfidence !== "High" && s.alternativePossibleLabel ? ["Another reading", `<p class="maybe">Could also be read as: ${px(s.alternativePossibleLabel)}</p>`] : null,
     s.deeperAnalysis ? ["Going deeper", P("Going deeper", s.deeperAnalysis)] : null,
-    terms.length ? ["Key terms", `<section class="terms"><h4>Key terms</h4><div class="chips">${terms.map(x => `<span class="chip"><span class="he">${heTxt(x.term)}</span><span class="m">${px(x.meaning)}</span></span>`).join("")}</div></section>`] : null,
+    // kt2 (Oct 16 2026, David: no Key Terms at all): the Key terms section is not shown; keyTerms stay in the data for nikud borrowing (vocTextsOf)
     s.whyThisMatters ? ["Why it matters", P("Why it matters", s.whyThisMatters)] : null,
     logicRows.length ? ["Logic", `<section class="logic box"><h4>Logic</h4><dl>${logicRows.map(r => `<dt>${r[0]}</dt><dd>${px(r[1])}</dd>`).join("")}</dl></section>`] : null].filter(Boolean);
   const total = (current && current.analysis && current.analysis.steps || []).length, nextN = total && k + 2 <= total ? k + 2 : 0;
@@ -956,7 +954,7 @@ function renderReview(m, i){
     a.steps.forEach(s => (s.keyTerms||[]).forEach(t => { const key = (t.term||"").replace(NIKUD, ""); if (t.term && !seen.has(key)) { seen.add(key); terms.push(t); } }));
     $("#view").innerHTML = `<section class="card dafhead"><div class="refline"><h1>Review ${esc(label(m, i))}</h1><span class="he">${heLabel(m, i)}</span></div>
       <p class="overview" style="margin-top:8px">${px(a.mainTopic || "", a)}</p>
-      <div class="tabs" role="tablist"><button role="tab" data-r="flow" aria-selected="true">Flow quiz</button><button role="tab" data-r="terms" aria-selected="false">Key terms (${terms.length})</button></div></section>
+      <div class="tabs" role="tablist"><button role="tab" data-r="flow" aria-selected="true">Flow quiz</button></div></section>
       <section class="card quiz" id="quiz" style="margin-top:14px"></section>
       <div class="endnav"><a class="btn" href="${hashFor(m, i)}">‹ Back to the daf</a></div>`;
     $$("[data-r]").forEach(b => b.onclick = () => { $$("[data-r]").forEach(x => x.setAttribute("aria-selected", x === b)); b.dataset.r === "flow" ? runQuiz(a) : runCards(terms); });
