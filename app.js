@@ -287,20 +287,11 @@ let staticIds = new Set(), fsIds = new Set(), staticVersion = "", preferStatic =
 // index.json carries a data version; each amud is fetched as <id>.json?v=<version>, so a re-reviewed library reaches phones at once
 const staticReady = cachedJSON("data/b/index.json", { ttl: 10*60e3, timeout: 8000 })
   .then(j => { staticIds = new Set(j.ids || []); preferStatic = new Set(j.prefer || []); staticVersion = String(j.version || j.generated || ""); }).catch(e => console.warn("static library index unavailable", e));
+// v99l: the library is data/b/index.json alone (it lists every amud); the Firestore collection is no longer paged on load.
+// fsIds stays empty, so an amud the static index lists loads data/b/<id>.json, and Firestore is asked for one document only
+// when the static index does not list the id (loadCloudAnalysis).
 async function loadCloudIndex(){
-  const fsPart = (async () => {
-    try {
-      const ids = []; let tok = "";
-      for (let page = 0; page < 20; page++) {
-        const url = `${FS_BASE}?pageSize=300&mask.fieldPaths=timestamp${tok ? "&pageToken="+encodeURIComponent(tok) : ""}`;
-        const j = await cachedJSON(url, { ttl: 30*60e3 });
-        for (const d of j.documents || []) ids.push(d.name.split("/").pop());
-        tok = j.nextPageToken; if (!tok) break;
-      }
-      fsIds = new Set(ids);
-    } catch (e) { console.warn("library index unavailable", e); }
-  })();
-  await Promise.all([fsPart, staticReady]);
+  await staticReady;
   cloudIds = new Set([...fsIds, ...staticIds]); cloudLoaded = true;
 }
 async function loadCloudAnalysis(id){
@@ -553,7 +544,7 @@ async function saveLibrary(msg, btn){
 /* ---------- home ---------- */
 function libraryHtml(){
   if (!cloudLoaded) return `<div class="skel"></div><div class="skel" style="width:70%"></div>`;
-  if (!cloudIds.size) return `<div class="empty">The breakdown library couldn’t be reached right now. Every daf still opens with text and translation.</div>`;
+  if (!cloudIds.size) return `<div class="empty">The library list didn’t load just now. Any daf still opens from “Go to any daf…” above.</div>`; // v99lb: index.json failed; each amud still loads (one Firestore document)
   const by = {};
   for (const id of cloudIds) { const p = parseId(id); (by[p.m] ||= []).push(p.i); }
   const lastM = (history_()[0] && parseId(history_()[0].id).m) || "";
@@ -957,6 +948,7 @@ function stepHtml(s, k, open){
       ${nextN ? `<button class="next-step" data-jump="${nextN}" aria-label="Go to step ${nextN}">Next step<span aria-hidden="true"> ›</span></button>` : ""}
     </div></article>`;
 }
+let dafOpening = null; // v99lb: the amud whose breakdown load has started (the boot re-open below skips it)
 async function openDaf(m, i, tab, choose){
   const id = refId(m, i);
   const same = current && current.id === id && !current.am;
@@ -966,7 +958,7 @@ async function openDaf(m, i, tab, choose){
   setChrome(true); updateNav();
   if (!same) {
     $("#view").innerHTML = `<div class="loading"><div class="spinner"></div>Loading ${esc(label(m, i))}…</div>`;
-    window.scrollTo(0, 0);
+    window.scrollTo(0, 0); dafOpening = id;
     let cloud = null, cloudErr = null;
     const gP = vocGloss ? null : Promise.all([amGloss(), vocNxLoad()]).then(([g]) => { vocGloss = g; }).catch(() => {}); // the reading glossary also vocalizes common words in the prose (precached; loads beside the breakdown)
     if ((hasBreakdown(id) || !cloudLoaded || !cloudIds.size)) { try { cloud = await loadCloudAnalysis(id); } catch (e) { cloudErr = e; } }
@@ -1590,7 +1582,7 @@ loadCloudIndex().then(() => {
   $$("#pickBody [data-go]").forEach(b => { const [k, i] = b.dataset.go.split("|"); b.classList.toggle("has", hasBreakdown(refId(k, +i))); }); // a picker opened before the library list arrived
   if (!current) refreshLibrary();
   else if (!current.analysis && current.am && cloudIds.has(current.id)) renderAmeilus(current.m, current.i);
-  else if (!current.analysis && cloudIds.has(current.id)) { const c = current; current = null; openDaf(c.m, c.i); }
+  else if (!current.analysis && cloudIds.has(current.id) && dafOpening !== current.id) { const c = current; current = null; openDaf(c.m, c.i); } // v99lb: not while the first open of this amud is loading or done (it would drop the /s<n> step and the chooser)
   else renderDafNoticeCount();
 });
 function renderDafNoticeCount(){ /* counts appear on next render; nothing urgent */ }
