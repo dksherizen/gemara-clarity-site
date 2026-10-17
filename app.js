@@ -1351,10 +1351,36 @@ document.addEventListener("click", e => {
 $("#amMapBtn").onclick = () => { const on = document.body.classList.toggle("map-open"); $("#amMapBtn").setAttribute("aria-pressed", String(on)); };
 
 /* ---------- router ---------- */
+// v99q: an odd but unambiguous form of a route (letter case, no amud letter (a, as route() already defaults; b when b is the only amud of that daf), leading zeros,
+// a trailing or a missing leading slash, an encoded space) is rewritten in place to the form the app's own links use (hashFor), with no new history entry; a route
+// naming no masechta, or a daf the masechta does not have, gets the "Daf not found" notice and nothing is fetched for it. Home, Classics and the skip link (#view, index.html) stay as they were.
+function routeCanon(){
+  const raw = location.hash; if (raw === "#view") return null;
+  let h; try { h = decodeURIComponent(raw); } catch { return { nf: raw.replace(/^#\/?/, "") }; }
+  const p = h.replace(/^#\/?/, "").split("/").filter(Boolean), nf = { nf: h.replace(/^#\/?/, "") }; if (!p.length) return null;
+  let to;
+  if (p[0].toLowerCase() === "classics") to = ["classics", ...p.slice(1)];
+  else {
+    const info = MAS.find(x => x[0].toLowerCase() === p[0].replace(/ /g, "_").toLowerCase()); if (!info) return nf;
+    const dm = p.length > 1 ? /^0*(\d{1,3})([ab])?$/i.exec(p[1]) : null; if (p.length > 1 && !dm) return nf;
+    const inR = a => idxOf(+dm[1], a) >= info[2] && idxOf(+dm[1], a) <= info[3], am = dm && (dm[2] ? dm[2].toLowerCase() : (inR("a") || !inR("b")) ? "a" : "b"); if (dm && !inR(am)) return nf;
+    to = [info[0], ...(dm ? [+dm[1] + am] : []), ...p.slice(2)];
+  }
+  const url = encodeURI("#/" + to.join("/")); if (url !== raw) history.replaceState(history.state, "", url);
+  return null;
+}
+function renderNotFound(asked){ // v99q: the one notice for a route that is not a daf, in the existing notice style
+  if (amMounted || (current && current.am) || document.body.classList.contains("am-mode")) amTeardown();
+  current = null; document.title = "Daf not found · Gemara Clarity"; setChrome(false);
+  const c = [...asked], a = c.length > 80 ? c.slice(0, 80).join("") + "…" : asked;
+  $("#view").innerHTML = `<div class="notice" id="notFound"><b>Daf not found</b><p style="overflow-wrap:anywhere">There is no daf at “<bdi>${esc(a)}</bdi>”. Check the masechta and the daf, or start again from the home page.</p><a class="btn" href="#/">Back to the home page</a></div>`;
+  scrollTo(0, 0);
+}
 function rerender(){ route(true); }
 function route(keepScroll){
   if (!keepScroll) closeSheet();
   closeWordFlow(); // kt3
+  const rc = routeCanon(); if (rc) return renderNotFound(rc.nf); // v99q: odd forms were rewritten in place; a route that is not a daf gets the notice
   const h = decodeURIComponent(location.hash.replace(/^#\/?/, ""));
   const parts = h.split("/").filter(Boolean);
   if (parts[2] !== "ameilus" && (amMounted || (current && current.am) || document.body.classList.contains("am-mode"))) amTeardown();
@@ -1382,7 +1408,7 @@ function route(keepScroll){
 // with a sheet, a notice or the pasuk pop-up open). Ameilus places its own focus; the amud (Sugya Flow) view is unchanged.
 function focusAfterRoute(){
   const a = document.activeElement; if (a && a !== document.body) return;
-  const p = decodeURIComponent(location.hash.replace(/^#\/?/, "")).split("/").filter(Boolean);
+  let p; try { p = decodeURIComponent(location.hash.replace(/^#\/?/, "")).split("/").filter(Boolean); } catch { return; } // v99q: a malformed %-escape shows the notice; nothing to focus
   if (p.length && p[0] !== "classics") return;
   if (!$("#sheet").hidden || $("#pasukPop") || document.querySelector('[role="dialog"]:not([hidden]), [role="alertdialog"]:not([hidden])')) return;
   const card = p[0] === "classics" && p[1] ? document.getElementById("cl-" + p[1]) : null; // back from a Classic: its own card (already scrolled into view)
