@@ -368,10 +368,18 @@ function openSheet(title, html, onMount){
   $("#sheetTitle").textContent = title; fresh.innerHTML = html;
   $("#sheet").hidden = false; $("#backdrop").hidden = false; document.body.style.overflow = "hidden";
   openSheet.last = document.activeElement;
+  if (!openSheet.inert) { openSheet.inert = [...document.body.children].filter(el => !["sheet", "backdrop", "toast", "disc"].includes(el.id) && !el.hasAttribute("inert")); openSheet.inert.forEach(el => el.setAttribute("inert", "")); } // v99r: the page behind the open sheet takes no focus
   onMount && onMount($("#sheetBody"));
   setTimeout(() => { const f = $("#sheetBody [autofocus]") || $("#sheetClose"); f && f.focus(); }, 30);
 }
-function closeSheet(){ if ($("#sheet").hidden) return; $("#sheet").hidden = true; $("#backdrop").hidden = true; document.body.style.overflow = ""; try { openSheet.last && openSheet.last.focus && openSheet.last.focus({ preventScroll: true }); } catch {} }
+function closeSheet(){ if ($("#sheet").hidden) return; $("#sheet").hidden = true; $("#backdrop").hidden = true; document.body.style.overflow = ""; if (openSheet.inert) { openSheet.inert.forEach(el => el.removeAttribute("inert")); openSheet.inert = null; } try { openSheet.last && openSheet.last.focus && openSheet.last.focus({ preventScroll: true }); } catch {} }
+function sheetTab(e){ // v99r: while the sheet is open, Tab on its last control goes to the first and Shift-Tab on its first goes to the last
+  if (document.querySelector("#pasukPop, #disc")) return; // those keep their own focus rules
+  const s = $("#sheet"), a = document.activeElement;
+  const f = [...s.querySelectorAll("a[href], button, input, select, textarea, [tabindex]")].filter(el => el.tabIndex >= 0 && !el.disabled && el.getClientRects().length && getComputedStyle(el).visibility !== "hidden");
+  if (s.contains(a) && f.some(el => a.compareDocumentPosition(el) & (e.shiftKey ? Node.DOCUMENT_POSITION_PRECEDING : Node.DOCUMENT_POSITION_FOLLOWING))) return; // the browser moves on inside the sheet
+  e.preventDefault(); const t = e.shiftKey ? f[f.length - 1] : f[0]; if (t) t.focus();
+}
 const bookmarks = () => loadJSON(LS.bookmarks, []);
 const history_ = () => loadJSON(LS.history, []);
 function pushHistory(id){ const h = history_().filter(x => x.id !== id); h.unshift({ id, t: Date.now() }); saveJSON(LS.history, h.slice(0, 30)); }
@@ -1424,6 +1432,7 @@ $("#flowBtn").onclick = () => { if (current && current.analysis) openSheet(`The 
 document.addEventListener("keydown", e => {
   if (e.key === "Escape" && wfOpen()) return closeWordFlow(); // kt3: word help first
   if (e.key === "Escape" && !$("#sheet").hidden) return closeSheet();
+  if (e.key === "Tab" && !$("#sheet").hidden && !e.defaultPrevented) return sheetTab(e); // v99r
   if (e.target.matches("input, textarea") || e.metaKey || e.ctrlKey || e.altKey || !$("#sheet").hidden) return;
   if (!current) { if (e.key === "/") { e.preventDefault(); openPicker(); } return; }
   if (current.am && (e.defaultPrevented || e.key === "j" || e.key === "k")) return; // Ameilus: the marker keys win
