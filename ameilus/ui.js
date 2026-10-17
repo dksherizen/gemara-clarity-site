@@ -30,7 +30,8 @@ export function mountAmeilus(root, ctx){
   let st; try { st = Object.assign(blank(), JSON.parse(localStorage.getItem(KEY) || "null") || {}); } catch { st = blank(); }
   if (!st.used || typeof st.used !== "object") st.used = {};
   let mark = null, msg = null, card = null, wordMode = false, vowelWord = new Set(), resetOpen = false, hintsOpen = false;
-  const save = () => { try { localStorage.setItem(KEY, JSON.stringify({ pos: st.pos, cuts: st.cuts, done: st.done, used: st.used, tries: st.tries })); } catch {} };
+  const save = () => { try { localStorage.setItem(KEY, JSON.stringify({ pos: st.pos, cuts: st.cuts, done: st.done, used: st.used, tries: st.tries, open: card ? { at: card.at, steps: card.steps, shown: !!card.shown, fb: card.fb || null, fbKind: card.fb ? card.fbKind : null } : null })); } catch {} }; // open: the explanation in the panel, so a reload shows it again (v99p)
+  { const o = st.open; if (o && Number.isInteger(o.at) && o.at >= 0 && o.at < st.pos && o.at < tokens.length && Array.isArray(o.steps) && o.steps.every(s => Number.isInteger(s) && steps[s] && st.done[s]) && (st.cuts.includes(o.at) || o.steps.some(s => ranges[s].end === o.at)) && (o.fb == null || (typeof o.fb === "string" && /^[a-z]+$/.test(String(o.fbKind))))) card = { at: o.at, steps: o.steps.slice(), shown: !!o.shown, fb: o.fb || null, fbKind: o.fb ? o.fbKind : undefined, check: null, checked: false }; } // a saved record without a valid open field opens nothing
   const curStep = () => st.pos < tokens.length ? tokens[st.pos].s : -1;
   const bare = !!settings.bare;
   // explanation prose of a finished/revealed passage: its Hebrew words borrow the amud's vowels (the host's nikud-borrowing renderer, display only, Oct 15 2026). The unsolved Gemara text never goes through here.
@@ -219,7 +220,7 @@ export function mountAmeilus(root, ctx){
   exp.addEventListener("click", e => {
     const b = e.target.closest("[data-exp]"); if (!b) return;
     if (b.dataset.exp === "grow") setTall(!expTall);
-    if (b.dataset.exp === "close") { const fin = st.pos >= tokens.length; if (card) card = null; else if (fin) finHidden = true; render(); const f = daf.querySelector(`[data-i="${Math.min(st.pos, tokens.length - 1)}"]`); f && f.focus({ preventScroll: true }); }
+    if (b.dataset.exp === "close") { const fin = st.pos >= tokens.length; if (card) { card = null; save(); } else if (fin) finHidden = true; render(); const f = daf.querySelector(`[data-i="${Math.min(st.pos, tokens.length - 1)}"]`); f && f.focus({ preventScroll: true }); }
   });
   function renderSub(){
     const done = Object.keys(st.done).length;
@@ -279,13 +280,13 @@ export function mountAmeilus(root, ctx){
     if (i < st.pos) { // tapping a finished passage reopens its reading
       const s = tokens[i].s; if (st.done[s]) openReading(s); return;
     }
-    if (card) card = null;
+    if (card) { card = null; save(); }
     mark = i; msg = null; render(); say(`Marker after ${tokens[i].raw}`);
     if (fromKey) { const el = daf.querySelector(`[data-i="${i}"]`); el && el.focus({ preventScroll: true }); }
   }
   function openReading(s){
     const at = ranges[s].end;
-    card = { at, steps: [s], shown: true, fb: null }; mark = null; render();
+    card = { at, steps: [s], shown: true, fb: null }; mark = null; save(); render();
     requestAnimationFrame(() => scrollInBox(dafBox, daf.querySelector(`[data-i="${at}"]`))); // the passage's end stays in view beside / above the panel
   }
   function commit(viaReveal){
@@ -350,7 +351,7 @@ export function mountAmeilus(root, ctx){
     const b = e.target.closest("[data-act],[data-opt]");
     if (b && b.dataset.opt != null && card && card.check) { card.picked = +b.dataset.opt; card.checked = true; render(); return; }
     if (b && b.dataset.act === "skipcheck") { card.checked = true; card.skipped = true; card.picked = null; render(); return; }
-    if (b && b.dataset.act === "show") { card.shown = true; render(); return; }
+    if (b && b.dataset.act === "show") { card.shown = true; save(); render(); return; }
     if (b && b.dataset.act === "restart") { restartAsk(); return; }
   });
   mapEl.addEventListener("click", e => { const n = e.target.closest("[data-node]"); if (n) { openReading(+n.dataset.node); if (ctx.onMapPick) ctx.onMapPick(); } });
