@@ -34,7 +34,7 @@ const TYPES = {
   "מסקנא":{k:"maskana",en:"Conclusion",tr:"Maskana",d:"Where the discussion lands."}
 };
 const MISHNAH = { en:"Mishnah", he:"משנה", d:"Not a type of step but where it stands: the step is the Mishnah itself, from <bdi>מתני׳</bdi> up to <bdi>גמ׳</bdi>. Its own type colour stays beside the badge." };
-const MBADGE = { toString: () => `<span class="mbadge">Mishnah<span class="mb-he"> · <span class="he">${settings.nikud ? "מִשְׁנָה" : "משנה"}</span></span></span>` }; // read where it is interpolated, so the Vowels switch applies
+const MBADGE = { toString: () => `<span class="mbadge">Mishnah<span class="mb-he"> · <span class="he">מִשְׁנָה</span></span></span>` }; // read where it is interpolated; always pointed, whatever the Vowels switch says
 const isMish = k => !!(current && current.mish && current.mish[k]);
 const PHASES = {mishnah:"On the Mishnah",opening_question:"Opening question",source_derivation:"Finding the source",objection_defense_cycle:"Challenge and defence",alternate_branch:"Another approach",clarification_of_terms:"Defining terms",narrative_aggadah:"Story / aggadah",conclusion:"Conclusion"};
 const FS_BASE = "https://firestore.googleapis.com/v1/projects/gemara-clarity/databases/(default)/documents/artifacts/gemara-clarity-public/public/data/gemara_cache_v5";
@@ -101,7 +101,7 @@ function vocTextsOf(a) {
   }
   return out;
 }
-function vocApply(text, V, gloss) {                                   // -> the same text with matched bare words vocalized
+function vocApply(text, V, gloss, ok) {                               // -> the same text with matched bare words vocalized; ok (optional): (word, source, form) -> false keeps that one word bare
   const s = String(text ?? ""); if (!/[\u05D0-\u05EA]/.test(s)) return s;
   V = V || { one: new Map(), multi: new Map() };
   const toks = vocTokens(s); if (!toks.length) return s;
@@ -114,7 +114,7 @@ function vocApply(text, V, gloss) {                                   // -> the 
     let done = false;
     for (let n = end - k; n >= 2 && !done; n--) {
       const e = V.multi.get(toks.slice(k, k + n).map(x => x.w).join(" "));
-      if (e && !e.bad) { for (let q = 0; q < n; q++) rep[k + q] = q ? e.forms[q] : vocLead(e.forms[q]); k += n; done = true; }
+      if (e && !e.bad && !(ok && toks.slice(k, k + n).some((x, q) => vocBare(x.w) || vocYosi(e.forms[q])))) { for (let q = 0; q < n; q++) rep[k + q] = q ? e.forms[q] : vocLead(e.forms[q]); k += n; done = true; } // N1: with ok, a quote holding a VOC_BARE word is not matched as a whole
     }
     for (let n = end - k; n >= 2 && !done; n--) {
       const f = VOC_META[toks.slice(k, k + n).map(x => x.w).join(" ")];
@@ -124,9 +124,10 @@ function vocApply(text, V, gloss) {                                   // -> the 
     const w = toks[k].w;
     if (w.length >= 2 && !/["'\u05F3\u05F4]/.test(w)) {
       const e = V.one.get(w);
-      if (VOC_META[w]) rep[k] = VOC_META[w];
-      else if (e && !e.bad) rep[k] = vocLead(e.forms[0]);
-      else if (!e && gloss && gloss[w] && gloss[w][0] && VOC_VOW.test(gloss[w][0]) && vocKey(gloss[w][0]) === w) rep[k] = vocLead(vocClean(gloss[w][0]));
+      if (VOC_META[w]) { if (!ok || ok(w, "fixed", VOC_META[w])) rep[k] = VOC_META[w]; }
+      else if (e && !e.bad) { if (!ok || ok(w, "amud", e.forms[0])) rep[k] = vocLead(e.forms[0]); }
+      else if (!e && gloss && gloss[w] && gloss[w][0] && VOC_VOW.test(gloss[w][0]) && vocKey(gloss[w][0]) === w) { if (!ok || ok(w, "glossary", gloss[w][0])) rep[k] = vocLead(vocClean(gloss[w][0])); }
+      else if (!e && VOC_NX[w] && !vocBare(w) && !vocYosi(VOC_NX[w])) rep[k] = vocLead(VOC_NX[w]); // N1: letters the whole data writes one way only, as a word of its own (data/prose-nikud.json)
     }
     k++;
   }
@@ -140,10 +141,26 @@ const STEP_NIKUD = { "מימרא":"מֵימְרָא", "קשיא":"קֻשְׁיָ
 const VOC_META = Object.assign({ "משנה":"מִשְׁנָה", "גמרא":"גְּמָרָא", "ברייתא":"בָּרַיְיתָא", "ברייתות":"בָּרַיְיתוֹת", "פסוק":"פָּסוּק", "פסוקים":"פְּסוּקִים",
   "תנאים":"תַּנָּאִים", "אמוראים":"אֲמוֹרָאִים", "מחלוקת":"מַחֲלוֹקֶת", "מתניתין":"מַתְנִיתִין", "סוגיא":"סוּגְיָא", "סוגיה":"סוּגְיָה", "קושיא":"קוּשְׁיָא", "מסכת":"מַסֶּכֶת", "תורה":"תּוֹרָה", "תוספות":"תּוֹסָפוֹת", "קל וחומר":"קַל וָחוֹמֶר" }, STEP_NIKUD);
 // ---- end nikud borrowing ----
+// N1 (display only): VOC_NX = letters -> the one pointed form the whole data gives them, kept only when that form also occurs as a word of its own, the letters
+// are not on the homograph list below and the form is not a construct that the absolute shares letters with; plus 92 words whose dominant form was hand-checked
+// against every bare use (data/prose-nikud.json). Lines never vocalized before (word help, the signal
+// hint) use vocNew: a homograph stays bare even where the fixed list or glossary would point it, and the amud's own form counts only when the amud writes the word
+// one way (vocBuild marks it bad otherwise) and that form is not a construct.
+let VOC_NX = {}, vocNxP = null;
+const vocNxLoad = () => vocNxP || (vocNxP = fetch("data/prose-nikud.json").then(r => r.ok ? r.json() : {}).then(j => { VOC_NX = j || {}; }).catch(() => {}));
+const VOC_HOMO = new Set("דברים מועד קל משנה שמע תחיית העיבור גווני הלכה טמא בית תנא שוה שווה הפנים כרת בן שני רצה התרה קנים הלל שכם הערה העדות תנאי בני ספר מולד דרשות עולה מקדש אמות שלמים ברכה דוד ברכות עבד מלך דבר פטר חמור עגלה שרת נח עדות עם נתן שמונה עשרה מר קרי אמה מוכה אל בר קומץ הקדש קרבן ארץ שלמה חלה מנה ביתר".split(" "));
+const vocCst = f => { const m = f.match(/([\u05D0-\u05EA])([\u05B0-\u05C7]*)([\u05D0-\u05EA])([\u05B0-\u05C7]*)$/); return f.replace(/[^\u05D0-\u05EA]/g, "").length >= 3 && !!m && /\u05B7/.test(m[2]) && !/[\u05B0-\u05BB]/.test(m[4]) && !"אהחעת".includes(m[3]); }; // construct form (קׇרְבַּן): patah, then a bare last letter
+// N1: VOC_BARE_LIST is the bare list and the one place to change it. Each word stays bare on every new route (word help, the signal hint, the table),
+// also after one or two prefix letters (ודהבכלמש); a word written with a leading "=" stays bare as that exact word only. Today's prose step does not read it.
+const VOC_BARE_LIST = "פדא ממון אדא כנען =לד =כו =וכו =הו ואידי אידי =מר =בר הלל חנה ספרא מחנה נחמני דרוסאי פפי =מרי מתנה אויא מל";
+const VOC_BARE = new Set(VOC_BARE_LIST.split(" ").map(w => w.replace(/^=/, ""))), VOC_BARE_N = new Set(VOC_BARE_LIST.split(" ").filter(w => !w.startsWith("=")));
+const vocBare = w => VOC_BARE.has(w) || (/^[ודהבכלמש]/.test(w) && (VOC_BARE_N.has(w.slice(1)) || (/^[ודהבכלמש]/.test(w.slice(1)) && VOC_BARE_N.has(w.slice(2)))));
+const vocYosi = f => /^[ודהבכלמש]{0,2}יוסי$/.test(String(f || "").replace(/[^\u05D0-\u05EA]/g, "")) && /ס\u05B4י$/.test(String(f).replace(/[^\u05D0-\u05EA\u05B4]/g, "")); // N1: יוסי is pointed only as יוֹסֵי; a יוֹסִי form stays bare
+const vocNew = (w, how, f) => !vocBare(w) && !VOC_HOMO.has(w) && !(how === "amud" && vocCst(f)) && !vocYosi(f);
 const vocCache = new WeakMap(); let vocGloss = null;          // vocGloss: data/glossary.json entries once loaded (the Ameilus reading glossary)
 const vocFor = a => { if (!a || typeof a !== "object") return null; let V = vocCache.get(a); if (!V) { V = vocBuild(vocTextsOf(a)); vocCache.set(a, V); } return V; };
-const px = (v, a) => refHtml(settings.nikud ? vocApply(v, vocFor(a || (current && current.analysis)), vocGloss) : v); // round 4: Tanakh references become pasuk buttons // English prose with its Hebrew words vocalized where the amud says how
-const stepHe = h => esc(settings.nikud ? (STEP_NIKUD[h] || h) : h);  // a step-type label (מימרא, קשיא…) with its vowels
+const px = (v, a) => refHtml(vocApply(v, vocFor(a || (current && current.analysis)), vocGloss)); // round 4: Tanakh references become pasuk buttons // English prose with its Hebrew words vocalized where the amud says how
+const stepHe = h => esc(STEP_NIKUD[h] || h);  // a step-type label (מימרא, קשיא…) with its vowels
 const loadJSON = (k, d) => { try { const v = JSON.parse(localStorage.getItem(k)); return v ?? d; } catch { return d; } };
 const saveJSON = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} };
 
@@ -951,7 +968,7 @@ async function openDaf(m, i, tab, choose){
     $("#view").innerHTML = `<div class="loading"><div class="spinner"></div>Loading ${esc(label(m, i))}…</div>`;
     window.scrollTo(0, 0);
     let cloud = null, cloudErr = null;
-    const gP = vocGloss ? null : amGloss().then(g => { vocGloss = g; }).catch(() => {}); // the reading glossary also vocalizes common words in the prose (precached; loads beside the breakdown)
+    const gP = vocGloss ? null : Promise.all([amGloss(), vocNxLoad()]).then(([g]) => { vocGloss = g; }).catch(() => {}); // the reading glossary also vocalizes common words in the prose (precached; loads beside the breakdown)
     if ((hasBreakdown(id) || !cloudLoaded || !cloudIds.size)) { try { cloud = await loadCloudAnalysis(id); } catch (e) { cloudErr = e; } }
     if (gP) await Promise.race([gP, new Promise(r => setTimeout(r, 1500))]);
     if (!current || current.id !== id) return;
@@ -1189,6 +1206,7 @@ let wfCoreP = null; const wfTok = new WeakMap();
 const wfCore = () => wfCoreP || (wfCoreP = import(`./ameilus/core.js?v=${AM_VER}`).catch(e => { wfCoreP = null; throw e; }));
 const wfBare = w => String(w || "").replace(/[\u05F3\u05F4'"]/g, "");
 const wfLetters = w => String(w || "").replace(/[^\u05D0-\u05EA]/g, "");
+const wfV = (t, g) => vocApply(t, vocFor(current && current.analysis), vocGloss || g, vocNew); // N1: word-help English lines get vowels (homographs stay bare)
 const wfMixed = s => esc(s).replace(/([\u0590-\u05FF][\u0590-\u05FF\u05F3\u05F4"'׳״\- ]*[\u0590-\u05FF׳״]|[\u0590-\u05FF])/g, m => `<span class="he" lang="he">${m}</span>`);
 const wfHe = s => `<span class="he" dir="rtl" lang="he">${esc(s)}</span>`;
 function wfSheet(){
@@ -1209,7 +1227,7 @@ async function wordHelpFlow(el, kbd){
   const s = +stepEl.dataset.n - 1, ph = +phEl.dataset.ph, k = +el.dataset.k, shown = el.textContent;
   document.querySelectorAll(".pa .fw.on").forEach(x => x.classList.remove("on")); el.classList.add("on");
   let C = null, gloss = {};
-  try { [C, gloss] = await Promise.all([wfCore(), amGloss()]); } catch (e) { console.warn("word help unavailable", e); }
+  try { [C, gloss] = await Promise.all([wfCore(), amGloss(), vocNxLoad()]); } catch (e) { console.warn("word help unavailable", e); }
   if (current !== c || !el.isConnected || !el.classList.contains("on")) return;
   const parts = [];
   if (C) {
@@ -1220,15 +1238,15 @@ async function wordHelpFlow(el, kbd){
     const w = wfBare(i != null ? T[i].raw : C.unvowel(shown));
     let phr = null; // a glossary phrase this word belongs to (starting up to 2 words earlier), as in Ameilus
     if (i != null) for (let b = Math.max(0, i - 2); b <= i && !phr; b++) { const h = C.phraseAt(gloss, T, b); if (h && h.n > 1 && b + h.n > i) phr = h; }
-    if (phr) parts.push(`<div class="am-ent"><div class="am-ent-he">${wfHe(phr.entry[0] || phr.form)}</div><div class="am-ent-g">${wfMixed(phr.entry[1])}</div>${phr.entry[2] ? `<div class="am-ent-u">${wfMixed(phr.entry[2])}</div>` : ""}<div class="am-src">Reading glossary</div></div>`);
+    if (phr) parts.push(`<div class="am-ent"><div class="am-ent-he">${wfHe(phr.entry[0] || phr.form)}</div><div class="am-ent-g">${wfMixed(wfV(phr.entry[1], gloss))}</div>${phr.entry[2] ? `<div class="am-ent-u">${wfMixed(wfV(phr.entry[2], gloss))}</div>` : ""}<div class="am-src">Reading glossary</div></div>`);
     const g = C.lookupGloss(gloss, w);
-    if (g) parts.push(`<div class="am-ent"><div class="am-ent-he">${g.prefix ? `${wfHe(g.prefix + "־")} ` : ""}${wfHe(g.entry[0] || g.form)}</div>${g.prefix ? `<div class="am-ent-p">${wfHe(g.prefix)} = ${esc(g.prefixEn)}</div>` : ""}<div class="am-ent-g">${wfMixed(g.entry[1])}</div>${g.entry[2] ? `<div class="am-ent-u">${wfMixed(g.entry[2])}</div>` : ""}${g.entry[4] ? `<div class="am-src">Jastrow: ${wfHe(g.entry[4])}</div>` : `<div class="am-src">Reading glossary</div>`}</div>`);
+    if (g) parts.push(`<div class="am-ent"><div class="am-ent-he">${g.prefix ? `${wfHe(g.prefix + "־")} ` : ""}${wfHe(g.entry[0] || g.form)}</div>${g.prefix ? `<div class="am-ent-p">${wfHe(g.prefix)} = ${esc(g.prefixEn)}</div>` : ""}<div class="am-ent-g">${wfMixed(wfV(g.entry[1], gloss))}</div>${g.entry[2] ? `<div class="am-ent-u">${wfMixed(wfV(g.entry[2], gloss))}</div>` : ""}${g.entry[4] ? `<div class="am-src">Jastrow: ${wfHe(g.entry[4])}</div>` : `<div class="am-src">Reading glossary</div>`}</div>`);
     const kts = [], seen = new Set([phr && phr.form, g && g.form].filter(Boolean));
     const consider = kt => {
       const tw = C.unvowel(kt.term).replace(/[,.:;?!״"“”׳']/g, " ").split(/\s+/).filter(Boolean).map(wfBare);
       if (seen.has(tw.join(" "))) return; // same thing the glossary already says
       if (!(tw.includes(w) || (w.length > 2 && /^[ודהבלכמש]/.test(w) && tw.includes(w.slice(1))))) return;
-      kts.push(`<div class="am-ent"><div class="am-ent-he">${wfHe(kt.term)}</div><div class="am-ent-g">${wfMixed(kt.meaning)}</div><div class="am-src">Key term on this amud</div></div>`);
+      kts.push(`<div class="am-ent"><div class="am-ent-he">${wfHe(kt.term)}</div><div class="am-ent-g">${wfMixed(wfV(kt.meaning, gloss))}</div><div class="am-src">Key term on this amud</div></div>`);
     };
     ((a.steps[s] || {}).keyTerms || []).forEach(consider);
     if (!kts.length) (a.steps || []).forEach((o, si) => { if (si !== s && kts.length < 1) (o.keyTerms || []).forEach(x => { if (!kts.length) consider(x); }); });
@@ -1276,7 +1294,7 @@ async function renderAmeilus(m, i){
   window.scrollTo(0, 0);
   let a = reuse, err = null, mod = null, gloss = {};
   if (!a) { try { a = await loadCloudAnalysis(id); } catch (e) { err = e; } }
-  try { [mod, gloss] = await Promise.all([amModule(), amGloss()]); } catch (e) { err = err || e; }
+  try { [mod, gloss] = await Promise.all([amModule(), amGloss(), vocNxLoad()]); } catch (e) { err = err || e; }
   if (current !== me) return; // moved on meanwhile
   me.analysis = a; me.source = a ? "cloud" : null;
   const shiur = hashFor(m, i);
@@ -1290,6 +1308,7 @@ async function renderAmeilus(m, i){
       prevHref: p ? hashFor(p.m, p.i, "/ameilus") : null, nextHref: n ? hashFor(n.m, n.i, "/ameilus") : null,
       shiurHref: k => hashFor(m, i, k ? "/s" + k : ""),
       vocalize: t => vocApply(t, vocFor(a), vocGloss || gloss), // explanations of finished passages get the same borrowed vowels as Shiur (always on: they are answers already shown)
+      vocalizeHelp: t => vocApply(t, vocFor(a), vocGloss || gloss, vocNew), // N1: word-help lines and the signal hint (homographs stay bare)
       onProgress: f => { if (current === me) $("#progressFill").style.width = (f * 100).toFixed(1) + "%"; },
       whenReady: whenDisclaimerDone,
       refParts, refButton, // quoted-pasuk references in the explanation open the same pop-up as in Shiur // the first-use walkthrough waits for the site's first-visit notice

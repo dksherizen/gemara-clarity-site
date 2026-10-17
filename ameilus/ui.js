@@ -34,6 +34,7 @@ export function mountAmeilus(root, ctx){
   const curStep = () => st.pos < tokens.length ? tokens[st.pos].s : -1;
   const bare = !!settings.bare;
   // explanation prose of a finished/revealed passage: its Hebrew words borrow the amud's vowels (the host's nikud-borrowing renderer, display only, Oct 15 2026). The unsolved Gemara text never goes through here.
+  const voc = s => typeof ctx.vocalizeHelp === "function" ? ctx.vocalizeHelp(String(s == null ? "" : s)) : String(s == null ? "" : s); // N1: word-help lines and the signal hint get vowels
   const prose = s => { const v = typeof ctx.vocalize === "function" ? ctx.vocalize(String(s == null ? "" : s)) : String(s == null ? "" : s);
     return typeof ctx.refParts === "function" ? ctx.refParts(v).map(p => p.ref ? ctx.refButton(p) : mixed(p.text)).join("") : mixed(v); }; // round 4: a Tanakh reference opens the pasuk pop-up
   // page-wide hint toggles: they cover every word of the amud, so they never mark where a passage ends
@@ -103,9 +104,9 @@ export function mountAmeilus(root, ctx){
     // a glossary phrase this word belongs to (starting up to 2 words earlier)
     let ph = null;
     for (let b = Math.max(0, i - 2); b <= i && !ph; b++) { const h = C.phraseAt(gloss, tokens, b); if (h && h.n > 1 && b + h.n > i) ph = h; }
-    if (ph) parts.push(`<div class="am-ent"><div class="am-ent-he">${he(ph.entry[0] || ph.form)}</div><div class="am-ent-g">${mixed(ph.entry[1])}</div>${ph.entry[2] ? `<div class="am-ent-u">${mixed(ph.entry[2])}</div>` : ""}<div class="am-src">Reading glossary</div></div>`);
+    if (ph) parts.push(`<div class="am-ent"><div class="am-ent-he">${he(ph.entry[0] || ph.form)}</div><div class="am-ent-g">${mixed(voc(ph.entry[1]))}</div>${ph.entry[2] ? `<div class="am-ent-u">${mixed(voc(ph.entry[2]))}</div>` : ""}<div class="am-src">Reading glossary</div></div>`);
     const g = C.lookupGloss(gloss, w);
-    if (g) parts.push(`<div class="am-ent"><div class="am-ent-he">${g.prefix ? `${he(g.prefix + "־")} ` : ""}${he(g.entry[0] || g.form)}</div>${g.prefix ? `<div class="am-ent-p">${he(g.prefix)} = ${esc(g.prefixEn)}</div>` : ""}<div class="am-ent-g">${mixed(g.entry[1])}</div>${g.entry[2] ? `<div class="am-ent-u">${mixed(g.entry[2])}</div>` : ""}${g.entry[4] ? `<div class="am-src">Jastrow: ${he(g.entry[4])}</div>` : `<div class="am-src">Reading glossary</div>`}</div>`);
+    if (g) parts.push(`<div class="am-ent"><div class="am-ent-he">${g.prefix ? `${he(g.prefix + "־")} ` : ""}${he(g.entry[0] || g.form)}</div>${g.prefix ? `<div class="am-ent-p">${he(g.prefix)} = ${esc(g.prefixEn)}</div>` : ""}<div class="am-ent-g">${mixed(voc(g.entry[1]))}</div>${g.entry[2] ? `<div class="am-ent-u">${mixed(voc(g.entry[2]))}</div>` : ""}${g.entry[4] ? `<div class="am-src">Jastrow: ${he(g.entry[4])}</div>` : `<div class="am-src">Reading glossary</div>`}</div>`);
     // key terms from this amud; one that is most of an unfinished passage would give it away
     const kts = [];
     const shownForms = new Set([ph && ph.form, g && g.form].filter(Boolean));
@@ -116,7 +117,7 @@ export function mountAmeilus(root, ctx){
       const pieceDone = !!st.done[si];
       const lw = Math.max(1, ranges[si].end - ranges[si].start + 1);
       if (!pieceDone && (tw.length >= 3 || tw.length / lw >= 0.5)) { kts.push(`<div class="am-ent held">${he(k.term)} <span class="am-src">${esc(AMW.heldTerm)}</span></div>`); return; }
-      kts.push(`<div class="am-ent"><div class="am-ent-he">${he(k.term)}</div><div class="am-ent-g">${mixed(k.meaning)}</div><div class="am-src">Key term on this amud</div></div>`);
+      kts.push(`<div class="am-ent"><div class="am-ent-he">${he(k.term)}</div><div class="am-ent-g">${mixed(voc(k.meaning))}</div><div class="am-src">Key term on this amud</div></div>`);
     };
     (s.keyTerms || []).forEach(k => consider(k, t.s));
     if (!kts.length) steps.forEach((o, si) => { if (si !== t.s && kts.length < 1) (o.keyTerms || []).forEach(k => { if (!kts.length) consider(k, si); }); });
@@ -245,7 +246,7 @@ export function mountAmeilus(root, ctx){
       </div>`;
     // the nudge arrows follow the Hebrew: the row runs right-to-left, so "one word back" sits on the right pointing right (›) and "one word on" sits on the left pointing left (‹), the way the marker moves
     bar.innerHTML = `
-      ${msg ? `<div class="am-msg am-msg-${msg.k}" role="status">${mixed(msg.text)}</div>` : `<div class="am-msg am-msg-idle">${mark == null ? (wordMode ? "Word help is on: tap any word for its meaning." : esc(AMW.idle)) : "Marker set. Nudge it, or confirm."}</div>`}
+      ${msg ? `<div class="am-msg am-msg-${msg.k}" role="status">${mixed(msg.k === "hint" ? voc(msg.text) : msg.text)}</div>` : `<div class="am-msg am-msg-idle">${mark == null ? (wordMode ? "Word help is on: tap any word for its meaning." : esc(AMW.idle)) : "Marker set. Nudge it, or confirm."}</div>`}
       ${panel}
       ${row}
       ${mark != null ? `<div class="am-acts" dir="rtl"><button class="btn sm" data-act="nudge" data-d="-1" aria-label="Move marker one word back" title="One word back">›</button><button class="btn primary" data-act="commit">Ends here ✓</button><button class="btn sm" data-act="nudge" data-d="1" aria-label="Move marker one word on" title="One word on">‹</button></div>` : ""}`;
