@@ -1077,9 +1077,12 @@ function applyMishnah(){
   $$(".segs .seg").forEach((el, k) => { const cl = segMishClass(k).trim(); if (cl) el.classList.add(...cl.split(" ")); });
 }
 const stripNowHtml = (a, n) => { const s = a.steps[n - 1]; if (!s) return ""; const t = TYPES[s.hebrewStepName] || TYPES["מימרא"]; return `Step ${n} of ${a.steps.length} · <b class="t-${t.k}">${t.en}</b>`; };
+const colourKeyHtml = () => `<details class="legend-wrap"><summary class="section-h">The eight kinds of step <small>colour key</small></summary>
+    <div class="legend">${Object.entries(TYPES).map(([he, t]) => `<div class="lg t-${t.k}"><span class="swatch"></span><div><b>${t.en} · <span class="en-he">${stepHe(he)}</span></b><div class="d">${t.d}</div></div></div>`).join("")}<div class="lg t-mishnah"><span class="swatch"></span><div><b>${MISHNAH.en} badge · <span class="en-he">${refHtml(vocApply(MISHNAH.he, null, vocGloss))}</span></b><div class="d">${MISHNAH.d}</div></div></div></div></details>`; // v99o: the homepage colour key, same markup and words (the homepage builds it with current = null, so px() there is this call), for the steps view
 function stepsBlock(a){ // the step strip: one numbered, colour-coded button per step (tap to jump); the line under it names the step you are on
   return `<nav class="strip" aria-label="Jump to a step">${a.steps.map((s, k) => { const t = TYPES[s.hebrewStepName] || TYPES["מימרא"]; return `<button class="t-${t.k}${isMish(k) ? " is-mishnah" : ""}" data-jump="${k+1}" aria-label="Step ${k+1}, ${t.en}: ${esc(s.title||"")}" title="${k+1}. ${t.en}: ${esc(s.title||"")}">${k+1}</button>`; }).join("")}</nav>
     <div class="strip-cap"><span class="strip-now" id="stripNow">${stripNowHtml(a, 1)}</span><button class="strip-flow" id="stripFlow" type="button">All steps<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div>
+    ${colourKeyHtml()}
     <div class="steps">${a.steps.map((s, k) => stepHtml(s, k, settings.expandAll)).join("")}</div>`;
 }
 async function renderText(){

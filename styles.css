@@ -1237,3 +1237,5 @@ body.theme-dark .clx-seder{box-shadow:0 1px 0 rgba(255,255,255,.03) inset}
 /* nb3: unlabeled divider where the unheaded Suggested-order cards begin */ .section-sep{height:0;border:0;border-top:1px solid var(--border);margin:34px 4px 14px}
 .clx-then.arrive,.cl-then.arrive{box-shadow:0 0 0 2px var(--accent)}
 .clx-row.arrive .clx-t:focus-visible,.cl-card.arrive .cl-q:focus-visible,.clx-then.arrive:focus-visible,.cl-then.arrive .cl-then-h:focus-visible{outline:none}
+/* v99o: the homepage colour key, also under the strip caption of the steps view: a tighter fold there; not shown when step colours are off (the steps are all one colour then) or in print (the strip is not printed either) */
+#dafBody .legend-wrap{margin-top:0}#dafBody .legend-wrap>summary{margin:2px 4px 0;min-height:44px;align-items:center}#dafBody .legend-wrap>.legend{margin:6px 0 8px}body.no-colors #dafBody .legend-wrap{display:none}@media print{#dafBody .legend-wrap{display:none}}
