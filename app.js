@@ -296,6 +296,9 @@ async function loadCloudIndex(){
 }
 async function loadCloudAnalysis(id){
   await staticReady;
+  if (!staticIds.size) { // v99n: data/b/index.json did not load, so its version is unknown: the amud's static file (plain URL) first, then the one Firestore document below
+    try { const a = await cachedJSON(`data/b/${encodeURIComponent(id)}.json`, { ttl: 3*864e5, timeout: 8000 }); if (a && Array.isArray(a.steps) && a.steps.length) return a; } catch {}
+  }
   if (staticIds.has(id) && (!fsIds.has(id) || preferStatic.has(id))) {
     const a = await cachedJSON(`data/b/${encodeURIComponent(id)}.json${staticVersion ? "?v=" + encodeURIComponent(staticVersion) : ""}`, { ttl: 3*864e5 });
     return a && Array.isArray(a.steps) && a.steps.length ? a : null;
