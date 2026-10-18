@@ -109,7 +109,7 @@ export function mountAmeilus(root, ctx){
     const g = C.lookupGloss(gloss, w);
     if (g) parts.push(`<div class="am-ent"><div class="am-ent-he">${g.prefix ? `${he(g.prefix + "־")} ` : ""}${he(g.entry[0] || g.form)}</div>${g.prefix ? `<div class="am-ent-p">${he(g.prefix)} = ${esc(g.prefixEn)}</div>` : ""}<div class="am-ent-g">${mixed(voc(g.entry[1]))}</div>${g.entry[2] ? `<div class="am-ent-u">${mixed(voc(g.entry[2]))}</div>` : ""}${g.entry[4] ? `<div class="am-src">Jastrow: ${he(g.entry[4])}</div>` : `<div class="am-src">Reading glossary</div>`}</div>`);
     // key terms from this amud; one that is most of an unfinished passage would give it away
-    const kts = [];
+    const kts = []; let ktShown = null; // the first key-term meaning the sheet shows (My words keeps it when the dictionary has no entry, v99t)
     const shownForms = new Set([ph && ph.form, g && g.form].filter(Boolean));
     const consider = (k, si) => {
       const tw = C.unvowel(k.term).replace(/[,.:;?!״"“”׳']/g, " ").split(/\s+/).filter(Boolean).map(bareRaw);
@@ -118,7 +118,7 @@ export function mountAmeilus(root, ctx){
       const pieceDone = !!st.done[si];
       const lw = Math.max(1, ranges[si].end - ranges[si].start + 1);
       if (!pieceDone && (tw.length >= 3 || tw.length / lw >= 0.5)) { kts.push(`<div class="am-ent held">${he(k.term)} <span class="am-src">${esc(AMW.heldTerm)}</span></div>`); return; }
-      kts.push(`<div class="am-ent"><div class="am-ent-he">${he(k.term)}</div><div class="am-ent-g">${mixed(voc(k.meaning))}</div><div class="am-src">Key term on this amud</div></div>`);
+      if (!ktShown && k.meaning) ktShown = k; kts.push(`<div class="am-ent"><div class="am-ent-he">${he(k.term)}</div><div class="am-ent-g">${mixed(voc(k.meaning))}</div><div class="am-src">Key term on this amud</div></div>`);
     };
     (s.keyTerms || []).forEach(k => consider(k, t.s));
     if (!kts.length) steps.forEach((o, si) => { if (si !== t.s && kts.length < 1) (o.keyTerms || []).forEach(k => { if (!kts.length) consider(k, si); }); });
@@ -140,7 +140,7 @@ export function mountAmeilus(root, ctx){
       const x = e.target.closest("[data-x]"); if (!x) return;
       if (x.dataset.x === "close") closeWord();
       if (x.dataset.x === "vowel") { vowelWord.add(i); render(); wordHelp(i); }
-      if (x.dataset.x === "save") { if (myWords.has(w)) myWords.remove(w); else myWords.add({ raw: w, v: t.v, id, gloss: g ? g.entry[1] : "" }); wordHelp(i); }
+      if (x.dataset.x === "save") { if (myWords.has(w)) myWords.remove(w); else myWords.add(Object.assign({ raw: w, v: t.v, id, gloss: g ? g.entry[1] : "" }, g && g.entry[1] ? null : ph && ph.entry[1] ? { gloss: voc(ph.entry[1]), src: "glossary phrase" } : ktShown ? { gloss: voc(ktShown.meaning), src: "key term" } : null)); wordHelp(i); } // no dictionary entry: keep the text the sheet showed, and where it came from (v99t)
     };
     // keep the word visible above the sheet
     const el = daf.querySelector(`[data-i="${i}"]`);
@@ -236,7 +236,7 @@ export function mountAmeilus(root, ctx){
     // Round 2 (Oct 15 2026): the idle bar is one row (Hints · Word help · ↺); the four hints open from "Hints" in a panel above it
     const nOn = bare ? 0 : (show.vowels ? 1 : 0) + (show.punct ? 1 : 0);
     const panel = hintsOpen && !resetOpen ? `<div class="am-hints am-hintpanel${bare ? " am-hints-bare" : ""}" id="amHintPanel" role="group" aria-label="Hints: use any, in any order">
-        ${bare ? "" : tog("vowels", "Vowels") + tog("punct", "Punctuation")}
+        ${bare ? "" : tog("vowels", "Gemara vowels") + tog("punct", "Punctuation")}
         ${bare ? "" : `<button class="hb hb-t" data-act="signal" title="Point out a signal word and what it means"><span class="hb-l">Signal word</span></button>`}
         <button class="hb hb-w" data-act="reveal" title="${esc(AMW.revealTitle)}"><span class="hb-l">Show where it ends</span></button>
       </div>` : "";
@@ -308,7 +308,7 @@ export function mountAmeilus(root, ctx){
   function toggleShow(k){
     if (bare) return;
     show[k] = !show[k]; saveShow(); render();
-    say(`${k === "vowels" ? "Vowels" : "Punctuation"} ${show[k] ? "on" : "off"} for the whole amud.`);
+    say(`${k === "vowels" ? "Gemara vowels" : "Punctuation"} ${show[k] ? "on" : "off"} for the whole amud.`);
   }
   function signal(){
     const cs = curStep(); if (cs < 0 || bare) return;
