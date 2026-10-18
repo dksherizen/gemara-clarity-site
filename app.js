@@ -35,6 +35,17 @@ const TYPES = {
 };
 const MISHNAH = { en:"Mishnah", he:"משנה", d:"Not a type of step but where it stands: the step is the Mishnah itself, from <bdi>מתני׳</bdi> up to <bdi>גמ׳</bdi>. Its own type colour stays beside the badge." };
 const MBADGE = { toString: () => `<span class="mbadge">Mishnah<span class="mb-he"> · <span class="he">מִשְׁנָה</span></span></span>` }; // read where it is interpolated; always pointed, whatever the Vowels switch says
+// markers (v99u): an optional step.marks array ("unresolved" for teiku, "end-marker" for hadran, "story" for a maaseh) adds small outlined tags to the
+// step's own chip. Not a ninth kind and no new colour: Unresolved takes the chip's colour, Story and End marker the muted grey. Unknown values and repeats are
+// dropped and the tags always come in one order (MARK_ORDER), whatever the array says. A step without marks, or with marks = [], renders exactly as before.
+const STEP_TAGS = { unresolved: { en: "Unresolved", he: "תֵּיקוּ", d: "A tag on the chip, not a kind of step: the Gemara leaves the question standing (teiku). The step keeps its own colour." },
+  story: { en: "Story", he: "מַעֲשֶׂה", d: "A tag on the chip, not a kind of step: the step tells a story (a maaseh). In the steps list, a run of story steps sits in one grey band. The step keeps its own colour." },
+  "end-marker": { en: "End marker", he: "הַדְרָן", d: "A tag on the chip, not a kind of step: the hadran said where a perek ends. The step keeps its own colour." } };
+const MARK_ORDER = ["unresolved", "story", "end-marker"]; // what the step says first (left open), then what kind of passage it is, then where it stands
+const marksOf = s => s && Array.isArray(s.marks) ? MARK_ORDER.filter(g => s.marks.includes(g)) : [];
+const stagHtml = (s, quietStory) => { const gs = marksOf(s); return gs.length ? `<span class="vh">${stagAria(s)}</span>` + gs.filter(g => !(quietStory && g === "story")).map(g => `<span class="stag stag-${g}" aria-hidden="true">${STEP_TAGS[g].en}</span>`).join("") : ""; }; // one hidden phrase names every tag (", story, end marker"); the visible tags are aria-hidden. quietStory: inside its band (whose caption shows Story once) a story step shows no Story tag of its own
+const stagAria = s => marksOf(s).map(g => `, ${STEP_TAGS[g].en.toLowerCase()}`).join("");
+const tagKeyRowsHtml = a => { const used = MARK_ORDER.filter(g => a && Array.isArray(a.steps) && a.steps.some(s => marksOf(s).includes(g))); return used.length ? `<div class="lg-sub">Tags on a step (not kinds of step)</div>${used.map(g => `<div class="lg lg-tag"><span class="stag stag-${g}" aria-hidden="true">${STEP_TAGS[g].en}</span><div><b>${STEP_TAGS[g].en} · <span class="en-he">${STEP_TAGS[g].he}</span></b><div class="d">${STEP_TAGS[g].d}</div></div></div>`).join("")}` : ""; };
 const isMish = k => !!(current && current.mish && current.mish[k]);
 const PHASES = {mishnah:"On the Mishnah",opening_question:"Opening question",source_derivation:"Finding the source",objection_defense_cycle:"Challenge and defence",alternate_branch:"Another approach",clarification_of_terms:"Defining terms",narrative_aggadah:"Story / aggadah",conclusion:"Conclusion"};
 const FS_BASE = "https://firestore.googleapis.com/v1/projects/gemara-clarity/databases/(default)/documents/artifacts/gemara-clarity-public/public/data/gemara_cache_v5";
@@ -890,7 +901,10 @@ function flowHtml(steps){
     if (s.macroPhase && s.macroPhase !== phase) { phase = s.macroPhase; out += `<div class="phase">${esc(PHASES[phase] || phase)}</div>`; }
     if (k > 0 && (s.branchRole === "opens_new_branch" || s.branchRole === "alternative_approach")) depth = Math.min(depth + 1, 3);
     if (s.branchRole === "returns_to_previous_branch") depth = Math.max(depth - 1, 0);
-    out += `<a class="fnode t-${t.k}${isMish(k) ? " is-mishnah" : ""}" href="#s${k+1}" data-jump="${k+1}" style="--d:${depth}"><span class="dot">${k+1}</span><span class="ft"><span class="fty">${t.en} <span class="he" lang="he">${stepHe(s.hebrewStepName || "")}</span>${isMish(k) ? MBADGE : ""}</span>${px(s.title || s.stepSummary || "")}</span></a>`;
+    const story = marksOf(s).includes("story"); // markers (v99u): a run of consecutive story steps sits in one band, derived here (nothing stored)
+    if (story && !marksOf(steps[k - 1]).includes("story")) out += `<div class="fband" role="group" aria-label="Story"><span class="stag stag-story fband-cap" aria-hidden="true">Story</span>`;
+    out += `<a class="fnode t-${t.k}${isMish(k) ? " is-mishnah" : ""}" href="#s${k+1}" data-jump="${k+1}" style="--d:${depth}"><span class="dot">${k+1}</span><span class="ft"><span class="fty">${t.en} <span class="he" lang="he">${stepHe(s.hebrewStepName || "")}</span>${stagHtml(s, true)}${isMish(k) ? MBADGE : ""}</span>${px(s.title || s.stepSummary || "")}</span></a>`;
+    if (story && !marksOf(steps[k + 1]).includes("story")) out += `</div>`;
     if (s.branchRole === "conclusion_of_branch") depth = Math.max(depth - 1, 0);
   });
   return `<nav class="flow" aria-label="Steps of the sugya"><h2>Steps</h2>${out}</nav>`;
@@ -930,7 +944,7 @@ function stepHtml(s, k, open){
   const logicRows = [["Trigger words", s.triggerLanguage], ["Relation to before", s.relationToPreviousStep], 
     ["Challenge targets", s.kashyaTarget], ["How it attacks", s.kashyaAttackLogic], ["Kind of answer", s.terutzResolutionType], ["We might have thought", s.terutzHavaAmina], ["Now we know", s.terutzMaskana],
     ["Information sought", s.sheelahInformationSought], ["Answer given", s.teshuvahAnswerProvided], ["Proving", s.raayaObject], ["Source of proof", s.raayaSupportSource],
-    ["What is rejected", s.dechiyaRejectionScope], ["The flaw", s.dechiyaFlawIdentified], ["Core ruling", s.mimraCoreRuling], ["Final takeaway", s.maskanaFinalTakeaway],
+    ["What is rejected", s.dechiyaRejectionScope], ["The flaw", s.dechiyaFlawIdentified], ["Core ruling", s.mimraCoreRuling], [marksOf(s).includes("unresolved") ? "Where it is left" : "Final takeaway", s.maskanaFinalTakeaway],
     ["Classification", s.classificationConfidence ? `${s.classificationConfidence} confidence` : ""]].filter(r => r[1]);
   // calm (gc2-calm-1): the secondary layers sit behind one quiet "More detail" fold; nothing is dropped
   const more = [
@@ -942,7 +956,7 @@ function stepHtml(s, k, open){
   const total = (current && current.analysis && current.analysis.steps || []).length, nextN = total && k + 2 <= total ? k + 2 : 0;
   const fwStop = { n: 0 }; // e5: the first word of this step is its one Tab stop
   return `<article class="step t-${t.k}${open ? " open" : ""}${isMish(k) ? " is-mishnah" : ""}" id="s${k+1}" data-n="${k+1}">
-    <button class="sh" aria-expanded="${open}" aria-controls="x${k+1}"><span class="num">${k+1}</span><span class="tname">${t.en}<span class="he" lang="he">${stepHe(s.hebrewStepName)}</span>${isMish(k) ? MBADGE : ""}</span></button>
+    <button class="sh" aria-expanded="${open}" aria-controls="x${k+1}"><span class="num">${k+1}</span><span class="tname">${t.en}<span class="he" lang="he">${stepHe(s.hebrewStepName)}</span>${stagHtml(s)}${isMish(k) ? MBADGE : ""}</span></button>
     <div class="sbody">
       ${relatedLineHtml(relatedSteps(current && current.id, s, k + 1, (current && current.analysis && current.analysis.steps || []).length || k + 1), k + 1)}
       <h3 class="stitle">${px(s.title)}</h3>
@@ -1084,13 +1098,13 @@ function applyMishnah(){
   const tc = $(".typecounts"); if (tc && !$(".t-mishnah", tc)) tc.insertAdjacentHTML("beforeend", mishCountHtml());
   $$(".segs .seg").forEach((el, k) => { const cl = segMishClass(k).trim(); if (cl) el.classList.add(...cl.split(" ")); });
 }
-const stripNowHtml = (a, n) => { const s = a.steps[n - 1]; if (!s) return ""; const t = TYPES[s.hebrewStepName] || TYPES["מימרא"]; return `Step ${n} of ${a.steps.length} · <b class="t-${t.k}">${t.en}</b>`; };
-const colourKeyHtml = () => `<details class="legend-wrap"><summary class="section-h">The eight kinds of step <small>colour key</small></summary>
-    <div class="legend">${Object.entries(TYPES).map(([he, t]) => `<div class="lg t-${t.k}"><span class="swatch"></span><div><b>${t.en} · <span class="en-he">${stepHe(he)}</span></b><div class="d">${t.d}</div></div></div>`).join("")}<div class="lg t-mishnah"><span class="swatch"></span><div><b>${MISHNAH.en} badge · <span class="en-he">${refHtml(vocApply(MISHNAH.he, null, vocGloss))}</span></b><div class="d">${MISHNAH.d}</div></div></div></div></details>`; // v99o: the homepage colour key, same markup and words (the homepage builds it with current = null, so px() there is this call), for the steps view
+const stripNowHtml = (a, n) => { const s = a.steps[n - 1]; if (!s) return ""; const t = TYPES[s.hebrewStepName] || TYPES["מימרא"]; return `Step ${n} of ${a.steps.length} · <b class="t-${t.k}">${t.en}</b>${stagHtml(s) ? ` <span class="t-${t.k}">${stagHtml(s)}</span>` : ""}`; };
+const colourKeyHtml = (a) => `<details class="legend-wrap"><summary class="section-h">The eight kinds of step <small>colour key</small></summary>
+    <div class="legend">${Object.entries(TYPES).map(([he, t]) => `<div class="lg t-${t.k}"><span class="swatch"></span><div><b>${t.en} · <span class="en-he">${stepHe(he)}</span></b><div class="d">${t.d}</div></div></div>`).join("")}<div class="lg t-mishnah"><span class="swatch"></span><div><b>${MISHNAH.en} badge · <span class="en-he">${refHtml(vocApply(MISHNAH.he, null, vocGloss))}</span></b><div class="d">${MISHNAH.d}</div></div></div>${tagKeyRowsHtml(a)}</div></details>`; // v99o: the homepage colour key, same markup and words (the homepage builds it with current = null, so px() there is this call), for the steps view
 function stepsBlock(a){ // the step strip: one numbered, colour-coded button per step (tap to jump); the line under it names the step you are on
-  return `<nav class="strip" aria-label="Jump to a step">${a.steps.map((s, k) => { const t = TYPES[s.hebrewStepName] || TYPES["מימרא"]; return `<button class="t-${t.k}${isMish(k) ? " is-mishnah" : ""}" data-jump="${k+1}" aria-label="Step ${k+1}, ${t.en}: ${esc(s.title||"")}" title="${k+1}. ${t.en}: ${esc(s.title||"")}">${k+1}</button>`; }).join("")}</nav>
+  return `<nav class="strip" aria-label="Jump to a step">${a.steps.map((s, k) => { const t = TYPES[s.hebrewStepName] || TYPES["מימרא"]; return `<button class="t-${t.k}${isMish(k) ? " is-mishnah" : ""}" data-jump="${k+1}" aria-label="Step ${k+1}, ${t.en}${stagAria(s)}: ${esc(s.title||"")}" title="${k+1}. ${t.en}${stagAria(s)}: ${esc(s.title||"")}">${k+1}</button>`; }).join("")}</nav>
     <div class="strip-cap"><span class="strip-now" id="stripNow">${stripNowHtml(a, 1)}</span><button class="strip-flow" id="stripFlow" type="button">All steps<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div>
-    ${colourKeyHtml()}
+    ${colourKeyHtml(a)}
     <div class="steps">${a.steps.map((s, k) => stepHtml(s, k, settings.expandAll)).join("")}</div>`;
 }
 async function renderText(){

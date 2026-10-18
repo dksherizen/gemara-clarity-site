@@ -259,6 +259,7 @@ export function mountAmeilus(root, ctx){
         <button class="hb" data-act="resetcancel">Cancel</button>
       </div>`;
   }
+  const STAG_EN = { unresolved: "Unresolved", story: "Story", "end-marker": "End marker" }, STAG_ORDER = ["unresolved", "story", "end-marker"]; // markers (v99u): the optional step.marks array shows as the same small outlined tags the steps view uses, in the same order, at the start of the node's title line (so they wrap with it)
   function renderMap(){
     const cs = curStep();
     let lastPhase = null, rows = "";
@@ -268,7 +269,7 @@ export function mountAmeilus(root, ctx){
       if (done && nd.phase !== lastPhase) { rows += `<div class="am-phase">${esc(C.PHASE_EN[nd.phase] || "")}</div>`; lastPhase = nd.phase; }
       const kc = C.KIND_CLASS[s.hebrewStepName] || "mimra";
       rows += done
-        ? `<button class="am-node k-${kc}" style="--d:${nd.depth}" data-node="${nd.i}"><span class="kdot"></span><span class="am-nk">${esc(C.KIND_EN[s.hebrewStepName] || "")}</span><span class="am-nt">${prose(String(s.title || "").slice(0, 90))}</span></button>`
+        ? `<button class="am-node k-${kc}" style="--d:${nd.depth}" data-node="${nd.i}"><span class="kdot"></span><span class="am-nk">${esc(C.KIND_EN[s.hebrewStepName] || "")}</span><span class="am-nt">${Array.isArray(s.marks) && STAG_ORDER.some(g => s.marks.includes(g)) ? `<span class="vh">${STAG_ORDER.filter(g => s.marks.includes(g)).map(g => ", " + STAG_EN[g].toLowerCase()).join("")}</span>` + STAG_ORDER.filter(g => s.marks.includes(g)).map(g => `<span class="stag stag-${g}" aria-hidden="true">${STAG_EN[g]}</span> `).join("") : ""}${prose(String(s.title || "").slice(0, 90))}</span></button>`
         : `<div class="am-node here" style="--d:0"><span class="kdot"></span><span class="am-nt">You are here</span></div>`;
     });
     mapEl.innerHTML = `<h2 class="am-maph">Sugya map</h2><p class="am-mapsub">${esc(AMW.mapSub)}</p>${rows || `<p class="am-mapsub">${esc(AMW.mapEmpty)}</p>`}`;
