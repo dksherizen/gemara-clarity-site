@@ -176,7 +176,7 @@ const loadJSON = (k, d) => { try { const v = JSON.parse(localStorage.getItem(k))
 const saveJSON = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} };
 
 try { localStorage.removeItem("gc2-openai-key"); } catch {} // the old bring-your-own-key mode is gone; forget any key a device saved
-const settings = Object.assign({ scale:1, nikud:true, translation:true, colors:true, notes:true, terms:true, logic:false, expandAll:false, theme:"dark" }, loadJSON(LS.settings, {}));
+const settings = Object.assign({ scale:1, nikud:true, translation:true, colors:true, kindtext:true, notes:true, terms:true, logic:false, expandAll:false, theme:"dark" }, loadJSON(LS.settings, {}));
 delete settings.byPerek; // the old "By perek / All dapim" switch is gone: perek view is always on
 let cloudIds = new Set();
 let cloudLoaded = false;
@@ -367,6 +367,7 @@ function applySettings(){
   b.classList.remove("theme-dark","theme-light","theme-sepia"); b.classList.add("theme-" + settings.theme);
   b.classList.toggle("hide-translation", !settings.translation);
   b.classList.toggle("no-colors", !settings.colors);
+  b.classList.toggle("no-kindtext", !settings.kindtext);
   b.classList.toggle("hide-notes", !settings.notes);
   b.classList.toggle("hide-terms", !settings.terms);
   b.classList.toggle("hide-logic", !settings.logic);
@@ -532,6 +533,7 @@ function openSettings(){
     ${sw("translation","English translation","Beside each phrase")}
     ${sw("nikud","Vowels (nikud)","Turn off to practise reading plain text")}
     ${sw("colors","Step colours")}
+    ${sw("kindtext","Color the text","Tint the Hebrew and English with each step's colour.")}
     ${sw("notes","Phrase notes")}
     ${sw("logic","Logic details","Trigger words, what attacks what, how it is resolved")}
     ${sw("expandAll","Open every explanation","Otherwise tap a step to open it")}
