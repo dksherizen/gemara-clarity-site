@@ -108,6 +108,10 @@ export function evaluateMark(tokens, kinds, ranges, pos, mark){
     if (mark === end) return { ok: true, kind, rel: "exact", carveTo: mark, completes: passed, text: "Same place we split it." };
     if (mark < end) return { ok: true, kind, rel: "inner", carveTo: mark, completes: passed,
       text: NEAR_MISS_TEXT }; // wording from David, Oct 14 2026 (same for a new voice or a sentence end)
+    // v99z (reading A; scope ruling Oct 18 2026): the passages strictly between the current one and the tapped one are unmarked, skipped over.
+    // One or more: the tap marks nothing (the current passage included) and counts nothing, and says so. None: the beyond path below, unchanged.
+    const skipped = []; for (let s = cur + 1; s < tokens[mark].s; s++) skipped.push(s);
+    if (skipped.length) return { ok: false, kind, rel: "skipped", n: skipped.length, skipped, text: AMW.skipped(skipped.length) };
     return { ok: true, kind, rel: "beyond", carveTo: mark, completes: passed, n: passed.length,
       text: AMW.beyond(w(end), passed.length + (ranges[tokens[mark].s].end === mark ? 0 : 1)) };
   }

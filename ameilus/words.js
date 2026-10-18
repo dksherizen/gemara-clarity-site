@@ -8,6 +8,9 @@ export const UNIT = "passage", UNITS = "passages", A_UNIT = "a passage";
 const NUM = ["zero","one","two","three","four","five","six","seven","eight","nine","ten","eleven","twelve"];
 /** "one passage", "three passages" (words up to twelve, digits after) */
 export const nUnits = n => `${NUM[n] || n} ${n === 1 ? UNIT : UNITS}`;
+// v99z: the skipped-passages message spells its count out. NUMW runs to sixty-two, the most passages on any amud (Bekhorot 8b, counted over every amud on Oct 18 2026).
+const NUMW = NUM.concat(["thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty", "twenty-one", "twenty-two", "twenty-three", "twenty-four", "twenty-five", "twenty-six", "twenty-seven", "twenty-eight", "twenty-nine", "thirty", "thirty-one", "thirty-two", "thirty-three", "thirty-four", "thirty-five", "thirty-six", "thirty-seven", "thirty-eight", "thirty-nine", "forty", "forty-one", "forty-two", "forty-three", "forty-four", "forty-five", "forty-six", "forty-seven", "forty-eight", "forty-nine", "fifty", "fifty-one", "fifty-two", "fifty-three", "fifty-four", "fifty-five", "fifty-six", "fifty-seven", "fifty-eight", "fifty-nine", "sixty", "sixty-one", "sixty-two"]);
+export const numWord = n => NUMW[n] || String(n);
 
 export const AMW = {
   unit: UNIT, units: UNITS, aUnit: A_UNIT,
@@ -49,6 +52,9 @@ export const AMW = {
   // the marker messages (core.js evaluateMark)
   nearMiss: `Good instinct — that is a real break. This ${UNIT} runs a little further; keep going and mark its end.`,
   beyond: (endWord, n) => `A real break. We split it sooner too, after ${endWord}, so that's ${nUnits(n)} in one.`,
+  // v99z (reading A): a break past the current passage while n passages between it and the tapped one are unmarked (skipped). Nothing is marked; "this one" is always the tapped passage.
+  skipped: n => n === 1 ? `A real break - but one ${UNIT} before it isn't marked yet, so it doesn't count as yours. Mark it first; this one will count when you reach it.`
+    : `A real break - but ${numWord(n)} ${UNITS} before it aren't marked yet, so they don't count as yours. Mark those first; this one will count when you reach it.`,
   notYet: `We don't split it there: the ${UNIT} isn't finished yet. Read on a bit.`,
   // Settings > Ameilus > How it works (app.js prints "How it works: " + this)
   settingsHow: `tap the last word of each ${UNIT}. A real break counts even where we split it later. Hints are separate buttons, use any in any order: Vowels and Punctuation switch on and off for the whole amud; Signal word and Show where it ends are for the ${UNIT} you're on (only Show where it ends stops ${A_UNIT} counting as on your own). ↺ redoes the ${UNIT} or starts the amud over. The ? at the top of the amud opens the walkthrough again. Long-press (or right-click) a word for its meaning. Keys: ← → move the marker, Enter confirms, V vowels, P punctuation, S signal word.`
