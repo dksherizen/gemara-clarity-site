@@ -194,7 +194,7 @@ export function signalFor(gloss, tokens, ranges, pos){
  *  at it would mark the split. -> { text, at: token index to highlight or null, where } */
 export function signalHint(gloss, tokens, ranges, pos){
   const sg = signalFor(gloss, tokens, ranges, pos);
-  if (!sg) return { text: "No signal word near here. Read it aloud: who is talking, and where do they stop?", at: null, where: null };
+  if (!sg) return { text: "Read it aloud: who is talking, and where do they stop?", at: null, where: null };
   const he = sg.entry[0] || sg.form;
   if (sg.where === "this") return { text: `${he}: “${sg.entry[1]}.” ${sg.entry[2]}`, at: sg.at, where: "this" };
   return { text: `A signal word to know here: ${he} (“${sg.entry[1]}”). ${sg.entry[2]}`, at: null, where: "next" };
