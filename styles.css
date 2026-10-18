@@ -15,7 +15,7 @@ body.theme-dark{
   --bg:#07101d;--panel:#0f1728;--panel-2:#0b1322;--raise:#141f35;
   --border:rgba(255,255,255,.10);--border-2:rgba(255,255,255,.06);
   --text:#e9eef8;--muted:#9aa9c2;--faint:#8a99b3;--accent:#7dd3fc;--accent-ink:#04121f;
-  --mimra:#38bdf8;--kashya:#fb7185;--terutz:#34d399;--raaya:#a78bfa;--dechiya:#fb923c;--sheelah:#fbbf24;--teshuvah:#22d3ee;--maskana:#e879f9;--mishnah:#bef264;
+  --mimra:#4da9f2;--kashya:#f65058;--terutz:#63f6af;--raaya:#a274fa;--dechiya:#e9a470;--sheelah:#e3d440;--teshuvah:#64e9f7;--maskana:#e79ec5;--mishnah:#8a9f72;
   --tint:.13;--warn-bg:rgba(251,191,36,.10);--warn:#fbbf24;--good:#34d399;--bad:#fb7185;
 }
 body.theme-light{
@@ -23,7 +23,7 @@ body.theme-light{
   --bg:#f6f4ee;--panel:#ffffff;--panel-2:#f1eee6;--raise:#ffffff;
   --border:rgba(15,23,42,.12);--border-2:rgba(15,23,42,.07);
   --text:#151b26;--muted:#4f5b6e;--faint:#5f6b7d;--accent:#0369a1;--accent-ink:#fff;
-  --mimra:#075985;--kashya:#be123c;--terutz:#065f46;--raaya:#6d28d9;--dechiya:#9a3412;--sheelah:#92400e;--teshuvah:#155e75;--maskana:#a21caf;--mishnah:#3f6212;
+  --mimra:#0959c6;--kashya:#831228;--terutz:#147b41;--raaya:#3d058b;--dechiya:#bc450d;--sheelah:#856810;--teshuvah:#14707e;--maskana:#ba0ea5;--mishnah:#2d3609;
   --tint:.09;--warn-bg:#fff7e0;--warn:#92400e;--good:#047857;--bad:#be123c;
 }
 body.theme-sepia{
@@ -31,7 +31,7 @@ body.theme-sepia{
   --bg:#f3e9d2;--panel:#fbf4e3;--panel-2:#efe3c7;--raise:#fdf8ec;
   --border:rgba(80,55,20,.16);--border-2:rgba(80,55,20,.09);
   --text:#2b2216;--muted:#5e4f39;--faint:#6b5b42;--accent:#7c4309;--accent-ink:#fff;
-  --mimra:#075985;--kashya:#9f1239;--terutz:#065f46;--raaya:#5b21b6;--dechiya:#9a3412;--sheelah:#854d0e;--teshuvah:#155e75;--maskana:#86198f;--mishnah:#3f6212;
+  --mimra:#0959c6;--kashya:#760f23;--terutz:#13753e;--raaya:#3d058b;--dechiya:#b1410c;--sheelah:#7d620e;--teshuvah:#14707e;--maskana:#b60da1;--mishnah:#2d3609;
   --tint:.10;--warn-bg:#f8e7bd;--warn:#7c4a03;--good:#047857;--bad:#be123c;
 }
 html{-webkit-text-size-adjust:100%;scroll-padding-top:calc(var(--top-h) + 12px)}
@@ -505,7 +505,7 @@ button.am-optbtn:hover{border-color:var(--accent)}
 :is(.am,.am-bar,.am-word) .btn .rung{font-weight:500;color:var(--faint);font-size:12px;margin-left:2px}
 .am-read{border-left:3px solid var(--c,var(--mimra));padding:2px 0 2px 10px;margin:10px 0}
 .am-kind{font-size:13px;color:var(--muted);margin-bottom:4px}
-.kchip{display:inline-block;background:color-mix(in srgb,var(--c,var(--mimra)) 18%,transparent);color:var(--c,var(--mimra));border-radius:999px;padding:1px 9px;font-weight:700;font-size:12px}
+.kchip{display:inline-block;background:color-mix(in srgb,var(--c,var(--mimra)) 9%,transparent);color:var(--c,var(--mimra));border-radius:999px;padding:1px 9px;font-weight:700;font-size:12px}
 .am-tr{margin:4px 0 8px}
 .am-wh{color:var(--muted);margin:8px 0}
 .am-ph{border-top:1px solid var(--border-2);padding:6px 0}.am-ph .he{text-align:right;font-size:1.15em}
@@ -954,6 +954,7 @@ html.am-shell .am-dafwrap{-webkit-mask-image:linear-gradient(to bottom,#000 calc
 .sh{background:none;padding:12px 16px 6px}
 .sh .num{background:transparent;color:var(--c);box-shadow:inset 0 0 0 1.5px currentColor;width:28px;height:28px;font-weight:700}
 .step.cur .sh .num{background:var(--c);color:#06101c;box-shadow:none}
+body.theme-light:not(.no-colors) .step.cur .sh .num,body.theme-sepia:not(.no-colors) .step.cur .sh .num{color:#fff} /* v99w: the digit on the filled current-step circle in light and sepia is white, the higher-contrast choice for every kind (at least 4.5:1); dark keeps #06101c */
 .sh .tname{font-weight:650;font-size:13.5px;letter-spacing:.01em}
 .sh .tname .he{font-size:16px;font-weight:600}
 .sh .sh-x{border-color:transparent;color:var(--faint);font-weight:600}
