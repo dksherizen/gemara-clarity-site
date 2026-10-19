@@ -1439,7 +1439,7 @@ function focusAfterRoute(){
   const h = card ? (card.querySelector("h2, h3, h4") || card) : document.querySelector("#view h1, #view h2"); if (!h) return;
   if (!h.hasAttribute("tabindex")) h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true });
 }
-window.addEventListener("hashchange", () => { Promise.resolve(route(false)).then(() => requestAnimationFrame(focusAfterRoute), () => {}); });
+window.addEventListener("hashchange", () => { if (swReload()) return; Promise.resolve(route(false)).then(() => requestAnimationFrame(focusAfterRoute), () => {}); });
 $("#homeBtn").onclick = () => { location.hash = "#/"; };
 $("#refBtn").onclick = () => openPicker();
 $("#settingsBtn").onclick = () => { openSettings(); if (current && current.am) amSettingsSection($("#sheetBody")); };
@@ -1643,4 +1643,19 @@ loadCloudIndex().then(() => {
   else renderDafNoticeCount();
 });
 function renderDafNoticeCount(){ /* counts appear on next render; nothing urgent */ }
-if ("serviceWorker" in navigator) addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
+// v100: a newly published version takes over by itself, at a quiet moment. After the worker is registered the browser is asked for a new sw.js on load and
+// each time the page is shown again, at most once per 10 minutes (an offline check fails quietly). When a new worker takes control of a page that already had
+// one (a first install never counts), its cache name (the one gc2-shell-* cache its activate step leaves) is noted; the page reloads the next time it is
+// hidden and shown again, or at the next route change, never in the middle of what the learner is doing, and at most once per version (a sessionStorage
+// guard keyed by that cache name). Nothing is shown. Marks, position, settings and hints are already saved, so the reload keeps them.
+let swNext = null; const SW_EVERY = 600000;
+function swReload(){ if (!swNext) return false; const g = "gc-sw-reload:" + swNext; try { if (sessionStorage.getItem(g)) return false; sessionStorage.setItem(g, "1"); } catch { return false; } location.reload(); return true; }
+if ("serviceWorker" in navigator) {
+  const sw = navigator.serviceWorker; let reg = null, last = -Infinity, had = !!sw.controller;
+  const check = () => { if (!reg || Date.now() - last < SW_EVERY) return; last = Date.now(); reg.update().catch(() => {}); };
+  // the new worker controls the page as soon as it activates (skipWaiting), before its activate step has removed the old cache, so its name is read once it is activated
+  const note = () => caches.keys().then(ks => { const v = ks.filter(k => k.startsWith("gc2-shell-")).sort().join(","); if (v) swNext = v; }).catch(() => {});
+  sw.addEventListener("controllerchange", () => { const was = had, c = sw.controller; had = !!c; if (!was || !c) return; if (c.state === "activated") return note(); c.addEventListener("statechange", function on(){ if (c.state !== "activated") return; c.removeEventListener("statechange", on); note(); }); });
+  document.addEventListener("visibilitychange", () => { if (document.visibilityState !== "visible") return; if (swReload()) return; check(); });
+  addEventListener("load", () => sw.register("sw.js").then(r => { reg = r; check(); }).catch(() => {}));
+}
