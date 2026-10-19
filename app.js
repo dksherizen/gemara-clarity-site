@@ -438,6 +438,93 @@ const perekHeadHtml = p => `<h4 class="pk-h"><span>Perek ${p.n} · <span class="
 const perekJumpHtml = (ps, attr = "data-jump") => `<nav class="pk-jump" aria-label="Jump to a perek">${ps.map(p => `<button class="chip" ${attr}="${p.jump || p.n}"><b>${p.n}</b><span class="he">${esc(p.heV || p.he)}</span></button>`).join("")}</nav>`;
 const midLegendHtml = `<span><i class="mid"></i>new perek starts partway down</span>`;
 
+/* ---------- Mishnah index (Oct 19 2026, David: "an option where we can get to each mishna"; "Can't it take it directly to that step?") ----------
+   The daf picker gets a "By daf | By Mishnah" switch. By Mishnah lists every Mishnah of the masechet under its perek, with its opening
+   words and its amud, from a small static file per masechet (data/mishnah/<masechet>.json, loaded when the switch is first opened).
+   Each row: l = the standard Mishnah number in the chapter ("1–2" when one Gemara block covers several; "10:1" when the standard chapter
+   differs from the Gemara's perek; absent when no standard number was found, so none is shown), c = the block starts partway into that
+   Mishnah, i = the amud, s = the step on that amud where the Mishnah starts (0 = not found: the amud opens at the top), h = opening words.
+   A row opens the amud scrolled to that step, opened and outlined, under a band naming the Mishnah with previous / next buttons. */
+let pickBy = "daf", miLand = null, miState = null, miTapped = false;
+const miData = {};
+function loadMishnah(m){
+  if (!miData[m]) miData[m] = fetch(`data/mishnah/${m}.json`).then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+    .then(d => { if (!d || !Array.isArray(d.p)) throw new Error("bad data"); return d; }).catch(e => { delete miData[m]; throw e; });
+  return miData[m];
+}
+const miFlat = d => d.p.flatMap(p => p.r.map(r => ({ ...r, n: p.n })));
+const miName = r => (!r.l ? "Mishnah" : r.l.includes("–") ? `Mishnayot ${r.l}` : `Mishnah ${r.l}`) + (r.c ? ", continued" : "");
+const miChev = d => `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="${d < 0 ? "M15 6l-6 6 6 6" : "M9 6l6 6-6 6"}"/></svg>`;
+const miTabsHtml = by => `<div class="tabs mi-tabs" role="tablist" aria-label="Browse the masechet">${[["daf", "By daf"], ["mishnah", "By Mishnah"]].map(([k, t]) => `<button role="tab" data-by="${k}" aria-selected="${by === k}" tabindex="${by === k ? 0 : -1}">${t}</button>`).join("")}</div>`;
+function miPickChrome(body, on){ ["#gotoInput", "#gotoSugg", "#yomiSlot"].forEach(s => { const e = $(s, body); if (e) e.style.display = on ? "none" : ""; }); } // the search box steps aside while By Mishnah shows
+function miWireTabs(body, k, show){
+  const t = $(".mi-tabs", body); if (!t) return;
+  t.addEventListener("click", e => { const b = e.target.closest("[data-by]"); if (!b || b.getAttribute("aria-selected") === "true") return; miTapped = true; show(k, null, b.dataset.by); miTapped = false; body.scrollTop = 0; const n = $(`.mi-tabs [data-by="${b.dataset.by}"]`, body); n && n.focus({ preventScroll: true }); });
+  t.addEventListener("keydown", e => { if (e.key !== "ArrowLeft" && e.key !== "ArrowRight") return; e.preventDefault(); const by = $('[aria-selected="false"]', t); by && by.click(); });
+}
+function miRowHtml(r, x){
+  const badge = r.l ? esc(r.l) : `<i class="mi-dot" aria-hidden="true"></i>`;
+  return `<li><button class="mi-row" data-mi="${x}" aria-label="${esc(miName(r))}, ${amudLbl(r.i)}"><span class="mi-n${r.l ? "" : " mi-nn"}"><span>${badge}</span>${r.c ? `<small>cont.</small>` : ""}</span><span class="mi-he" lang="he" dir="rtl">${esc(r.h || "")}</span><span class="mi-loc">${amudLbl(r.i)}${miChev(1)}</span></button></li>`;
+}
+function miShowIndex(body, k, he, focusPerek, fx){
+  const pb = $("#pickBody", body), ps = perakimOf(k) || [], tapped = miTapped; // opened by a tap on the switch: the list starts at its top, under the switch
+  
+  const head = `<div class="seder"><button class="chip" data-back>‹ All masechtot</button></div>
+    <h3 style="margin:8px 0 0;display:flex;justify-content:space-between">${masName(k)} <span class="he en-he" style="color:var(--muted);font-weight:500">${he}</span></h3>${miTabsHtml("mishnah")}`;
+  pb.innerHTML = head + `<div class="loading"><div class="spinner"></div></div>`; pb.dataset.mas = k;
+  miWireTabs(body, k, fx.showDafGrid);
+  const focusTab = () => setTimeout(() => { const a = document.activeElement; if (!a || a === document.body || a.id === "gotoInput") { const t = $('.mi-tabs [aria-selected="true"]', body); t && t.focus({ preventScroll: true }); } }, 40);
+  loadMishnah(k).then(d => {
+    if (!pb.isConnected || pb.dataset.mas !== k || !$('.mi-tabs [data-by="mishnah"][aria-selected="true"]', pb)) return;
+    const list = miFlat(d); let x = 0;
+    const secs = d.p.map(p => { const pk = ps.find(q => q.n === p.n) || { n: p.n, he: "", start: p.r[0].i, end: p.r[p.r.length - 1].i };
+      return `<section class="pk mi-pk" id="pk-${p.n}">${perekHeadHtml(pk)}<ol class="mi-list">${p.r.map(r => miRowHtml(r, x++)).join("")}</ol></section>`; }).join("");
+    $(".loading", pb).outerHTML = perekJumpHtml(d.p.map(p => ps.find(q => q.n === p.n) || { n: p.n, he: "" })) + secs;
+    pb.onclick = e => { const b = e.target.closest("[data-mi]"); if (b && pb.dataset.mas === k) miGo(k, list, +b.dataset.mi); };
+    const activeN = focusPerek || (current && current.m === k && (perakimAt(k, current.i)[0] || {}).n);
+    if (activeN) fx.markJump(activeN);
+    if (activeN && !tapped && (focusPerek || activeN > 1) && $(`#pk-${activeN}`, body)) fx.scrollToPerek(activeN); else body.scrollTop = 0;
+    focusTab();
+  }).catch(() => {
+    if (!pb.isConnected || pb.dataset.mas !== k) return;
+    const l = $(".loading", pb); if (!l) return;
+    l.outerHTML = `<div class="notice mi-err"><b>The Mishnah list couldn’t be loaded just now.</b><p>Check your connection and try again.</p><button class="btn" id="miRetry">Try again</button></div>`;
+    $("#miRetry", pb).onclick = () => { miTapped = true; miShowIndex(body, k, he, focusPerek, fx); miTapped = false; };
+  });
+  focusTab();
+}
+function miGo(m, list, x){
+  const r = list[x]; if (!r) return;
+  miLand = { id: refId(m, r.i), m, list, x, fresh: true };
+  closeSheet();
+  const h = hashFor(m, r.i, r.s ? "/s" + r.s : "/steps");
+  if (decodeURI(location.hash) === h) route(false); else location.hash = h;
+}
+function miAfterRender(c, a){
+  if (miLand && miLand.id !== c.id) miLand = null;
+  if (miState && miState.id !== c.id) miState = null;
+  if (miLand) { miState = miLand; miLand = null; }
+  if (!miState || !a || c.tab !== "steps") return;
+  const L = miState, fresh = L.fresh; L.fresh = false;
+  setTimeout(() => { if (current === c && current.tab === "steps") miBand(L, fresh); }, 0);
+}
+function miBand(L, fresh){
+  const r = L.list[L.x], prev = L.list[L.x - 1], next = L.list[L.x + 1];
+  const old = $("#miBand"); old && old.remove(); $$(".step.mi-landed").forEach(e => e.classList.remove("mi-landed"));
+  const el = r.s ? document.getElementById("s" + r.s) : null, p = (perakimOf(L.m) || []).find(q => q.n === r.n);
+  const nb = (d, o) => `<button class="mi-nb" type="button" data-mnav="${d}"${o ? ` aria-label="${d < 0 ? "Previous" : "Next"} Mishnah: ${esc(miName(o))}, ${amudLbl(o.i)}"` : ` disabled aria-label="${d < 0 ? "No previous" : "No next"} Mishnah"`}>${miChev(d)}</button>`;
+  const html = `<div class="mi-band" id="miBand" role="group" aria-label="${esc(miName(r))}, Perek ${r.n}"><div class="mi-bt"><b>${esc(miName(r))}</b><span>Perek ${r.n}${p ? ` · <span class="he">${esc(perekHe(p))}</span>` : ""}</span></div><nav class="mi-nav" aria-label="Other Mishnayot">${nb(-1, prev)}${nb(1, next)}</nav></div>`;
+  if (el) { el.insertAdjacentHTML("beforebegin", html); el.classList.add("mi-landed"); if (!el.classList.contains("open")) toggleStep(el, true); }
+  else { const db = $("#dafBody"); if (!db) return; db.insertAdjacentHTML("afterbegin", html); }
+  const band = $("#miBand");
+  band.addEventListener("click", e => { const b = e.target.closest("[data-mnav]"); if (b && !b.disabled) miGo(L.m, L.list, L.x + +b.dataset.mnav); });
+  if (fresh) {
+    jumpTo.lock = Date.now() + 900;
+    if (el) { const top = ($("#topbar") || { getBoundingClientRect: () => ({ height: 56 }) }).getBoundingClientRect().height; window.scrollTo(0, Math.max(0, band.getBoundingClientRect().top + scrollY - top - 10)); markCurrent(r.s); }
+    else window.scrollTo(0, 0);
+  }
+}
+
 /* ---------- picker ---------- */
 // home3: the Sugya Flow and Ameilus cards on home open this same picker with a way already chosen; the daf picked opens in that way
 let pickMode = null;
@@ -452,6 +539,7 @@ function openPicker(focusMas, focusPerek, mode){
   openSheet(pm ? "Choose a daf" : "Go to a daf", html, body => {
     const input = $("#gotoInput", body), sugg = $("#gotoSugg", body);
     const showMasList = () => {
+      miPickChrome(body, false);
       $("#pickBody", body).innerHTML = SEDARIM.map(([en, he, list]) => `<div class="seder">Seder ${en} · <span class="en-he">${he}</span></div><div class="masgrid">${list.map(k => {
         const n = [...cloudIds].filter(id => parseId(id).m === k).length;
         return `<button class="masbtn" data-mas="${k}"><span class="mb-names"><span class="mb-en">${masName(k)}</span><span class="mb-he">${masInfo(k)[1]}</span></span>${n ? `<span class="badge" title="${n} amudim with a step-by-step breakdown">${n} amudim</span>` : ""}</button>`; }).join("")}</div>`).join("");
@@ -480,9 +568,13 @@ function openPicker(focusMas, focusPerek, mode){
       $$(".chip", bar).forEach(c => c.classList.toggle("on", c.dataset.jump === String(n)));
       const c = $(`.chip[data-jump="${n}"]`, bar); if (c && bar.scrollWidth > bar.clientWidth) bar.scrollLeft = c.offsetLeft - (bar.clientWidth - c.offsetWidth) / 2;
     };
-    const showDafGrid = (k, focusPerek) => {
+    const showDafGrid = (k, focusPerek, by) => {
       const [, he, first, last] = masInfo(k);
       const gs = perekGroups(k), byPerek = !!gs;
+      const miOn = pm !== "ameilus" && byPerek; // Mishnah index: the switch shows wherever the daf grid is grouped by perek (not in the Ameilus picker)
+      by = miOn ? (by || pickBy) : "daf"; if (miOn) pickBy = by;
+      miPickChrome(body, by === "mishnah");
+      if (by === "mishnah") return miShowIndex(body, k, he, focusPerek, { markJump, scrollToPerek, showDafGrid });
       let grid;
       if (byPerek) {
         grid = perekJumpHtml(gs.map(g => g.p))
@@ -490,9 +582,10 @@ function openPicker(focusMas, focusPerek, mode){
       } else grid = rows(k, first, last);
       $("#pickBody", body).innerHTML = `<div class="seder"><button class="chip" data-back>‹ All masechtot</button></div>
         <h3 style="margin:8px 0 0;display:flex;justify-content:space-between">${masName(k)} <span class="he en-he" style="color:var(--muted);font-weight:500">${he}</span></h3>
-        <div class="legend-mini"><span><i></i>full step-by-step breakdown</span><span>others: text and translation</span>${byPerek ? midLegendHtml : ""}</div>
+        ${miOn ? miTabsHtml("daf") : ""}<div class="legend-mini"><span><i></i>full step-by-step breakdown</span><span>others: text and translation</span>${byPerek ? midLegendHtml : ""}</div>
         ${grid}`;
       $("#pickBody", body).dataset.mas = k;
+      if (miOn) miWireTabs(body, k, showDafGrid);
       const activeN = focusPerek || (current && current.m === k && (perakimAt(k, current.i)[0] || {}).n);
       if (byPerek && activeN) markJump(activeN);
       if (byPerek && focusPerek && $(`#pk-${focusPerek}`, body)) scrollToPerek(focusPerek);
@@ -1054,6 +1147,7 @@ function renderDaf(){
   $("#endnav").innerHTML = `${p ? `<a class="btn" href="${hashFor(p.m, p.i)}">‹ ${label(p.m, p.i)}</a>` : ""}${n ? `<a class="btn primary" href="${hashFor(n.m, n.i)}">${label(n.m, n.i)} ›</a>` : ""}`;
   markMishnah(); markClassics(c, a);
   if (pendingJump && a && pendingJump.id === c.id && c.tab === "steps") { const k = pendingJump.n; pendingJump = null; setTimeout(() => { const el = document.getElementById("s" + k); if (!el || current !== c) return; toggleStep(el, true); jumpTo(k); }, 0); }
+  miAfterRender(c, a);
 }
 /* ---------- Mishnah badge: worked out here from Sefaria's מתני׳ / גמ׳ markers, nothing regenerated ---------- */
 function mishCountHtml(){
