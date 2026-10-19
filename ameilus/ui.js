@@ -238,6 +238,7 @@ export function mountAmeilus(root, ctx){
     const panel = hintsOpen && !resetOpen ? `<div class="am-hints am-hintpanel${bare ? " am-hints-bare" : ""}" id="amHintPanel" role="group" aria-label="Hints: use any, in any order">
         ${bare ? "" : tog("vowels", "Gemara vowels") + tog("punct", "Punctuation")}
         ${bare ? "" : `<button class="hb hb-t" data-act="signal" title="Point out a signal word and what it means"><span class="hb-l">Signal word</span></button>`}
+        ${bare ? "" : `<button class="hb hb-t" data-act="head" title="The first three words, with their English"><span class="hb-l">Head start</span></button>`}
         <button class="hb hb-w" data-act="reveal" title="${esc(AMW.revealTitle)}"><span class="hb-l">Show where it ends</span></button>
       </div>` : "";
     const row = resetOpen ? resetHTML(false) : `<div class="am-hints am-row" role="group" aria-label="Help">
@@ -247,7 +248,7 @@ export function mountAmeilus(root, ctx){
       </div>`;
     // the nudge arrows follow the Hebrew: the row runs right-to-left, so "one word back" sits on the right pointing right (›) and "one word on" sits on the left pointing left (‹), the way the marker moves
     bar.innerHTML = `
-      ${msg ? `<div class="am-msg am-msg-${msg.k}" role="status">${mixed(msg.k === "hint" ? voc(msg.text) : msg.text)}</div>` : `<div class="am-msg am-msg-idle">${mark == null ? (wordMode ? "Word help is on: tap any word for its meaning." : esc(AMW.idle)) : "Marker set. Nudge it, or confirm."}</div>`}
+      ${msg ? `<div class="am-msg am-msg-${msg.k}" role="status">${msg.head ? `Head start: ${he(msg.head.he)}${msg.head.en ? ` - ${mixed(msg.head.en)}` : ""}` : mixed(msg.k === "hint" ? voc(msg.text) : msg.text)}</div>` : `<div class="am-msg am-msg-idle">${mark == null ? (wordMode ? "Word help is on: tap any word for its meaning." : esc(AMW.idle)) : "Marker set. Nudge it, or confirm."}</div>`}
       ${panel}
       ${row}
       ${mark != null ? `<div class="am-acts" dir="rtl"><button class="btn sm" data-act="nudge" data-d="-1" aria-label="Move marker one word back" title="One word back">›</button><button class="btn primary" data-act="commit">Ends here ✓</button><button class="btn sm" data-act="nudge" data-d="1" aria-label="Move marker one word on" title="One word on">‹</button></div>` : ""}`;
@@ -309,6 +310,7 @@ export function mountAmeilus(root, ctx){
   function toggleShow(k){
     if (bare) return;
     show[k] = !show[k]; saveShow(); render();
+    if (k === "punct" && msg && msg.head) { const h = C.headStart(steps, tokens, ranges, st.pos, { punct: show.punct }); msg = { k: "hint", head: h, text: C.headLine(h) }; renderBar(); } // a Head start line on screen follows the Punctuation switch
     say(`${k === "vowels" ? "Gemara vowels" : "Punctuation"} ${show[k] ? "on" : "off"} for the whole amud.`);
   }
   function signal(){
@@ -318,6 +320,12 @@ export function mountAmeilus(root, ctx){
     st.sig = h.at != null ? { i: h.at } : null;
     msg = { k: "hint", text: h.text };
     save(); render(); say(h.text);
+  }
+  function head(){ // v101 Head start: free like the Signal word; it saves nothing and never counts against "on your own"
+    const cs = curStep(); if (cs < 0 || bare) return;
+    const h = C.headStart(steps, tokens, ranges, st.pos, { punct: show.punct });
+    msg = { k: "hint", head: h, text: C.headLine(h) };
+    render(); say(msg.text);
   }
   function reveal(){ if (curStep() >= 0) { hintsOpen = false; commit(true); } }
   function restart(){ try { localStorage.removeItem(KEY); } catch {} st = blank(); card = null; finHidden = false; mark = null; msg = null; resetOpen = false; vowelWord = new Set(); save(); render(); dafBox.scrollTop = 0; say("Starting the amud over."); }
@@ -339,6 +347,7 @@ export function mountAmeilus(root, ctx){
     if (a === "commit") commit(false);
     if (a === "toggle") toggleShow(b.dataset.k);
     if (a === "signal") signal();
+    if (a === "head") head();
     if (a === "reveal") reveal();
     if (a === "reset") { resetOpen = true; renderBar(); const f = bar.querySelector(".am-reset .hb"); f && f.focus(); }
     if (a === "resetcancel") { resetOpen = false; renderBar(); }

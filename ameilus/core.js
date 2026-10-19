@@ -123,8 +123,8 @@ export function evaluateMark(tokens, kinds, ranges, pos, mark){
 /** Hints (Oct 15 2026, David): every hint is its own option, usable in any order, never a ladder.
  *  Vowels and punctuation are PAGE-WIDE on/off toggles over the whole amud (a hint shown only on the
  *  current passage stops at its last word and gives the split away). Signal word and reveal are per passage. */
-export const HINTS = { page: ["vowels", "punct"], piece: ["signal", "reveal"] };
-export const HINT_LABEL = { vowels: "Vowels", punct: "Punctuation", signal: "Signal word", reveal: "Show where it ends" };
+export const HINTS = { page: ["vowels", "punct"], piece: ["signal", "head", "reveal"] };
+export const HINT_LABEL = { vowels: "Vowels", punct: "Punctuation", signal: "Signal word", head: "Head start", reveal: "Show where it ends" };
 
 /** What one word of the daf shows. Done words always show our edition; for every other word the
  *  page-wide toggles decide, the same for every word, so nothing marks where a passage ends.
@@ -203,6 +203,34 @@ export function signalHint(gloss, tokens, ranges, pos){
   if (sg.where === "this") return { text: `${he}: “${sg.entry[1]}.” ${sg.entry[2]}`, at: sg.at, where: "this" };
   return { text: `A signal word to know here: ${he} (“${sg.entry[1]}”). ${sg.entry[2]}`, at: null, where: "next" };
 }
+
+/** v101 "Head start" (hint item 4, approved Oct 19 2026): the first three words of the CURRENT passage, with their English, and
+ *  nothing after them. The words run from the live pointer pos (the range Signal word and Show where it ends use, which can begin
+ *  inside a step after an inner carve) to at most its third word, never past the end of its step, so a one- or two-word passage
+ *  shows only what it has. Hebrew: our edition's own words with their vowels. With the Punctuation hint off (o.punct falsy, the
+ *  default) no word carries a leading or trailing mark (HEAD_BARE); with it on, each word's punctuation is kept exactly as on the amud.
+ *  English only when it is clean: pos starts a phrase, the words shown are exactly whole phrase(s) of the step, and those
+ *  phrases' English (trailing ,.;: and dashes trimmed) is HEAD_EN_MAX words or fewer with no inner clause break (comma,
+ *  semicolon, colon, full stop, question or exclamation mark, or dash inside it). Otherwise the line is Hebrew only: no English
+ *  is ever shown that covers more or other words than the three shown. Free like the Signal word: it changes no saved state
+ *  and never counts against "on your own". The Punctuation switch changes only the Hebrew text, never the English or which
+ *  passages get it. -> { he, en, how: "clean" | "hebrew", mid: pos is inside a phrase, n: words shown } */
+export const HEAD_EN_MAX = 8;
+// a word without its marks: quote marks, brackets, dashes and an ellipsis at its start; , . : ; ? ! quote marks, brackets, dashes and an ellipsis at its end;
+// a geresh that opens a quoted word goes with its closing geresh, while an abbreviation's geresh (גמ׳ מתני׳ וכו׳ ר׳) is part of the word and stays
+export const HEAD_BARE = w => { const q = /^[״"“”'‘(\[—–…]*׳/.test(w); return w.replace(q ? /^[״"“”'‘(\[—–…׳]+/ : /^[״"“”'‘(\[—–…]+/, "").replace(q ? /[,.:;?!״"“”'’)\]—–…׳]+$/ : /[,.:;?!״"“”'’)\]—–…]+$/, ""); };
+export function headStart(steps, tokens, ranges, pos, o){
+  if (!(pos >= 0 && pos < tokens.length)) return null;
+  const s = tokens[pos].s, last = Math.min(pos + 2, ranges[s].end), take = tokens.slice(pos, last + 1);
+  const he = take.map(t => o && o.punct ? t.lead + t.v + t.trail : HEAD_BARE(t.v)).join(" ");
+  const p0 = take[0].ph, p1 = take[take.length - 1].ph, n = take.length;
+  const mid = pos > 0 && tokens[pos - 1].s === s && tokens[pos - 1].ph === p0;
+  const whole = !mid && (last === ranges[s].end || tokens[last + 1].ph !== p1);
+  const en = whole ? ((steps[s] && steps[s].phrases) || []).slice(p0, p1 + 1).map(p => String(p.english || "").trim()).filter(Boolean).join(" ").replace(/[\s,.;:\u2014\u2013-]+$/, "") : "";
+  const clean = !!en && !/[,.;:?!\u2014\u2013]|\s-\s/.test(en.replace(/[?!]["'\u201D\u2019\])]*$/, "")) && en.split(/\s+/).length <= HEAD_EN_MAX;
+  return clean ? { he, en, how: "clean", mid, n } : { he, en: "", how: "hebrew", mid, n };
+}
+export const headLine = h => h ? `Head start: ${h.he}${h.en ? " - " + h.en : ""}` : "";
 
 const KIND_Q = {
   "קשיא": "Who is this attacking?",
