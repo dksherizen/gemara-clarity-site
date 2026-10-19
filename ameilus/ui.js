@@ -238,7 +238,7 @@ export function mountAmeilus(root, ctx){
     const panel = hintsOpen && !resetOpen ? `<div class="am-hints am-hintpanel${bare ? " am-hints-bare" : ""}" id="amHintPanel" role="group" aria-label="Hints: use any, in any order">
         ${bare ? "" : tog("vowels", "Gemara vowels") + tog("punct", "Punctuation")}
         ${bare ? "" : `<button class="hb hb-t" data-act="signal" title="Point out a signal word and what it means"><span class="hb-l">Signal word</span></button>`}
-        ${bare ? "" : `<button class="hb hb-t" data-act="head" title="The first three words, with their English"><span class="hb-l">Head start</span></button>`}
+        ${bare ? "" : `<button class="hb hb-t" data-act="head" title="The first phrase, with its English when it fits"${C.headOff(tokens, ranges, st.pos) ? ` disabled style="opacity:.35;cursor:default"` : ""}><span class="hb-l">Head start</span></button>`}
         <button class="hb hb-w" data-act="reveal" title="${esc(AMW.revealTitle)}"><span class="hb-l">Show where it ends</span></button>
       </div>` : "";
     const row = resetOpen ? resetHTML(false) : `<div class="am-hints am-row" role="group" aria-label="Help">
@@ -321,8 +321,8 @@ export function mountAmeilus(root, ctx){
     msg = { k: "hint", text: h.text };
     save(); render(); say(h.text);
   }
-  function head(){ // v101 Head start: free like the Signal word; it saves nothing and never counts against "on your own"
-    const cs = curStep(); if (cs < 0 || bare) return;
+  function head(){ // v102 Head start v2 (the first phrase): free like the Signal word; it saves nothing and never counts against "on your own"
+    const cs = curStep(); if (cs < 0 || bare || C.headOff(tokens, ranges, st.pos)) return; // one word left: the button is off and a tap does nothing
     const h = C.headStart(steps, tokens, ranges, st.pos, { punct: show.punct });
     msg = { k: "hint", head: h, text: C.headLine(h) };
     render(); say(msg.text);

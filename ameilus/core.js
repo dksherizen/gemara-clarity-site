@@ -204,31 +204,51 @@ export function signalHint(gloss, tokens, ranges, pos){
   return { text: `A signal word to know here: ${he} (“${sg.entry[1]}”). ${sg.entry[2]}`, at: null, where: "next" };
 }
 
-/** v101 "Head start" (hint item 4, approved Oct 19 2026): the first three words of the CURRENT passage, with their English, and
- *  nothing after them. The words run from the live pointer pos (the range Signal word and Show where it ends use, which can begin
- *  inside a step after an inner carve) to at most its third word, never past the end of its step, so a one- or two-word passage
- *  shows only what it has. Hebrew: our edition's own words with their vowels. With the Punctuation hint off (o.punct falsy, the
- *  default) no word carries a leading or trailing mark (HEAD_BARE); with it on, each word's punctuation is kept exactly as on the amud.
- *  English only when it is clean: pos starts a phrase, the words shown are exactly whole phrase(s) of the step, and those
- *  phrases' English (trailing ,.;: and dashes trimmed) is HEAD_EN_MAX words or fewer with no inner clause break (comma,
- *  semicolon, colon, full stop, question or exclamation mark, or dash inside it). Otherwise the line is Hebrew only: no English
- *  is ever shown that covers more or other words than the three shown. Free like the Signal word: it changes no saved state
- *  and never counts against "on your own". The Punctuation switch changes only the Hebrew text, never the English or which
- *  passages get it. -> { he, en, how: "clean" | "hebrew", mid: pos is inside a phrase, n: words shown } */
-export const HEAD_EN_MAX = 8;
+/** v102 "Head start" v2 (hint item 4; full first phrase, ruled Oct 19 2026): the first phrase of the CURRENT passage, with its English
+ *  when it fits, and never the passage's end. The current passage runs from the live pointer pos (the range Signal word and Show where
+ *  it ends use, which can begin inside a step after an inner carve) to the last word of its step. The phrase is the step's phrase at
+ *  the pointer (phrases[0] on a fresh passage; after a carve that lands on a phrase edge, the phrase that starts there), aligned to the
+ *  amud's word stream by its stripped text (no vowels, no marks); the words shown are the stream's own words, with their vowels.
+ *  With the Punctuation hint off (o.punct falsy, the default) no word carries a leading or trailing mark (HEAD_BARE); with it on,
+ *  each word keeps its punctuation exactly as on the amud. The switch changes only the Hebrew text, never the English or which case.
+ *    "en"    the pointer starts the phrase, the phrase ends before the passage's last word, its English is there, and
+ *            phrase words * 2 <= words left in the passage: the whole phrase with its English (trailing ,.;: and dashes trimmed)
+ *    "over"  the same, but the phrase is more than half of what is left: the whole phrase, Hebrew only
+ *    "noen"  the phrase has no English: the whole phrase, Hebrew only (no English is ever borrowed or made up)
+ *    "mid"   the pointer sits inside a phrase: from the pointer to that phrase's end, Hebrew only (its English covers words already passed)
+ *    "end"   the phrase (from the pointer) reaches the passage's last word, or runs past it: END PROTECTION, Hebrew only, at most
+ *            HEAD_END_MAX opening words and never the passage's last word
+ *    "fail"  the phrase cannot be matched to the word stream: Hebrew only, the opening words under the same end protection, and a
+ *            console warning for repair
+ *  Fewer than HEAD_MIN words left (a one-word passage, or one word left after a carve): nothing is shown, headStart returns null and
+ *  the button is off (headOff), since that word would be the passage's end itself.
+ *  No word past the passage's end is ever shown. Free like the Signal word: it changes no saved state and never counts against
+ *  "on your own". -> { he, en, how, mid: pos is inside a phrase, n: words shown, cross: the phrase runs past the passage's end } */
+export const HEAD_END_MAX = 3;
+export const HEAD_MIN = 2; // fewer words than this left in the current passage: no Head start (the button is off)
+export const headOff = (tokens, ranges, pos) => !(pos >= 0 && pos < tokens.length) || ranges[tokens[pos].s].end - pos + 1 < HEAD_MIN;
 // a word without its marks: quote marks, brackets, dashes and an ellipsis at its start; , . : ; ? ! quote marks, brackets, dashes and an ellipsis at its end;
 // a geresh that opens a quoted word goes with its closing geresh, while an abbreviation's geresh (גמ׳ מתני׳ וכו׳ ר׳) is part of the word and stays
 export const HEAD_BARE = w => { const q = /^[״"“”'‘(\[—–…]*׳/.test(w); return w.replace(q ? /^[״"“”'‘(\[—–…׳]+/ : /^[״"“”'‘(\[—–…]+/, "").replace(q ? /[,.:;?!״"“”'’)\]—–…׳]+$/ : /[,.:;?!״"“”'’)\]—–…]+$/, ""); };
+// a phrase's words by stripped text, split exactly as tokenize splits the amud (only fragments with a Hebrew letter are words)
+const phraseWords = p => String((p && p.aramaic) || "").replace(/<[^>]+>/g, " ").replace(/\u05BE/g, " ").split(/\s+/).filter(f => HEB.test(f)).map(f => { const lead = (f.match(LEAD) || [""])[0], rest = f.slice(lead.length), trail = (rest.match(TRAIL) || [""])[0]; return unvowel(rest.slice(0, rest.length - trail.length)); });
 export function headStart(steps, tokens, ranges, pos, o){
   if (!(pos >= 0 && pos < tokens.length)) return null;
-  const s = tokens[pos].s, last = Math.min(pos + 2, ranges[s].end), take = tokens.slice(pos, last + 1);
-  const he = take.map(t => o && o.punct ? t.lead + t.v + t.trail : HEAD_BARE(t.v)).join(" ");
-  const p0 = take[0].ph, p1 = take[take.length - 1].ph, n = take.length;
-  const mid = pos > 0 && tokens[pos - 1].s === s && tokens[pos - 1].ph === p0;
-  const whole = !mid && (last === ranges[s].end || tokens[last + 1].ph !== p1);
-  const en = whole ? ((steps[s] && steps[s].phrases) || []).slice(p0, p1 + 1).map(p => String(p.english || "").trim()).filter(Boolean).join(" ").replace(/[\s,.;:\u2014\u2013-]+$/, "") : "";
-  const clean = !!en && !/[,.;:?!\u2014\u2013]|\s-\s/.test(en.replace(/[?!]["'\u201D\u2019\])]*$/, "")) && en.split(/\s+/).length <= HEAD_EN_MAX;
-  return clean ? { he, en, how: "clean", mid, n } : { he, en: "", how: "hebrew", mid, n };
+  const s = tokens[pos].s, k = tokens[pos].ph, end = ranges[s].end, left = end - pos + 1;
+  if (left < HEAD_MIN) return null; // one word left: showing it would show the passage's end
+  let ps = pos; while (ps > 0 && tokens[ps - 1].s === s && tokens[ps - 1].ph === k) ps--;
+  const mid = ps < pos, ph = ((steps[s] && steps[s].phrases) || [])[k], words = phraseWords(ph);
+  const fit = words.length > 0 && words.every((w, j) => tokens[ps + j] && tokens[ps + j].raw === w);
+  const pe = ps + words.length - 1, cross = fit && pe > end;
+  const word = t => o && o.punct ? t.lead + t.v + t.trail : HEAD_BARE(t.v);
+  const out = (how, last, en) => ({ he: tokens.slice(pos, last + 1).map(word).join(" "), en, how, mid, n: last - pos + 1, cross });
+  const guard = how => out(how, pos + Math.min(HEAD_END_MAX, left - 1) - 1, ""); // never the passage's last word
+  if (!fit) { if (typeof console !== "undefined") console.warn("Head start: phrase not matched to the amud", s, k); return guard("fail"); }
+  if (pe >= end) return guard("end");
+  if (mid) return out("mid", pe, "");
+  const en = String((ph && ph.english) || "").trim().replace(/[\s,.;:\u2014\u2013-]+$/, "");
+  if (!en) return out("noen", pe, "");
+  return (pe - pos + 1) * 2 <= left ? out("en", pe, en) : out("over", pe, "");
 }
 export const headLine = h => h ? `Head start: ${h.he}${h.en ? " - " + h.en : ""}` : "";
 
