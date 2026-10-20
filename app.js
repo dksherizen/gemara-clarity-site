@@ -1421,7 +1421,7 @@ async function renderAmeilus(m, i){
   const p = neighbor(m, i, -1), n = neighbor(m, i, 1);
   try {
     amMounted = mod.mountAmeilus(view, {
-      id, data: a, gloss, settings: { bare: !!amPrefs().bare }, label: label(m, i), heLabel: heLabel(m, i), modeBar: modeBarHtml(m, i, "ameilus"),
+      id, data: a, gloss, settings: { bare: !!amPrefs().bare, guess: !!amPrefs().guess }, label: label(m, i), heLabel: heLabel(m, i), modeBar: modeBarHtml(m, i, "ameilus"),
       prevHref: p ? hashFor(p.m, p.i, "/ameilus") : null, nextHref: n ? hashFor(n.m, n.i, "/ameilus") : null,
       shiurHref: k => hashFor(m, i, k ? "/s" + k : ""),
       vocalize: t => vocApply(t, vocFor(a), vocGloss || gloss), // explanations of finished passages get the same borrowed vowels as Shiur (always on: they are answers already shown)
@@ -1438,10 +1438,11 @@ async function renderAmeilus(m, i){
 }
 function amSettingsSection(body){
   if (!body) return;
-  const bare = !!amPrefs().bare;
+  const bare = !!amPrefs().bare, guess = !!amPrefs().guess;
   body.insertAdjacentHTML("afterbegin", `<section class="am-set">
     <h3 style="margin:4px 0 4px;font-size:16px">Ameilus</h3>
     <label class="setrow"><span class="lbl"><b>Bare mode</b><span>Just the daf and the marker: no hints, no checks</span></span><span class="switch"><input type="checkbox" id="amBare" ${bare ? "checked" : ""}><span></span></span></label>
+    <label class="setrow"><span class="lbl"><b>Guess the kind first</b><span>Before our reading, guess what kind of move each passage makes, in two taps. Skip any time. Not shown in Bare mode.</span></span><span class="switch"><input type="checkbox" id="amGuess" ${guess ? "checked" : ""}><span></span></span></label>
     <h4 style="margin:12px 0 4px;font-size:15px">My words <span class="small" id="amWordsN"></span></h4>
     <div id="amWords" class="small">${amModP ? "…" : "Long-press a word, then “Add to My words”."}</div>
     <p class="small" style="margin:10px 0 18px">How it works: ${esc(AMW.settingsHow)}</p>
@@ -1456,6 +1457,12 @@ function amSettingsSection(body){
     e.stopPropagation();
     let s = {}; try { s = JSON.parse(localStorage.getItem(AM_SKEY) || "{}") || {}; } catch {}
     s.bare = e.target.checked; localStorage.setItem(AM_SKEY, JSON.stringify(s));
+    if (current && current.am) renderAmeilus(current.m, current.i);
+  });
+  $("#amGuess", body).addEventListener("change", e => { // Guess the kind first (opt-in, off by default): saved beside Bare mode
+    e.stopPropagation();
+    let s = {}; try { s = JSON.parse(localStorage.getItem(AM_SKEY) || "{}") || {}; } catch {}
+    s.guess = e.target.checked; localStorage.setItem(AM_SKEY, JSON.stringify(s));
     if (current && current.am) renderAmeilus(current.m, current.i);
   });
 }

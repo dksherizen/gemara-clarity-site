@@ -7,6 +7,38 @@ import { AMW } from "./words.js?v=3.6.0";
 const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const he = s => `<span class="he" dir="rtl" lang="he">${esc(s)}</span>`;
 const KIND_NIKUD = { "מימרא":"מֵימְרָא", "קשיא":"קֻשְׁיָא", "תירוץ":"תֵּירוּץ", "שאלה":"שְׁאֵלָה", "ראיה":"רְאָיָה", "תשובה":"תְּשׁוּבָה", "דחיה":"דְּחִיָּה", "מסקנא":"מַסְקָנָא" }; // step-type labels with their vowels (display only; same forms as app.js STEP_NIKUD)
+// Guess the kind first (opt-in in Aa > Ameilus, off by default; two taps). After a passage is marked and
+// before "Show our reading": tap 1 = what the passage does, tap 2 = which kind in that group. The answer is the step's own kind in the data
+// (hebrewStepName), the same label the reading shows. A miss gets a pointer to where to look, in directional words only. Kind names are Ameilus's own (KIND_EN).
+export const GUESS_FAM = [
+  { k: "states", label: "States or supports", sub: "Puts a point forward or backs one up", kinds: ["מימרא", "ראיה", "מסקנא"] },
+  { k: "asks", label: "Asks", sub: "Wants to know something", kinds: ["שאלה"] },
+  { k: "pushes", label: "Pushes against something", sub: "Finds a problem, or sets a proof aside", kinds: ["קשיא", "דחיה"] },
+  { k: "responds", label: "Responds", sub: "Answers what came just before", kinds: ["תירוץ", "תשובה"] }
+];
+export const GUESS_KIND = { "מימרא": "Puts a point or ruling forward", "ראיה": "Brings a source to back a point up", "מסקנא": "Wraps up what came before",
+  "שאלה": "Asks for information", "קשיא": "Raises a problem with what was said", "דחיה": "Sets aside a proof that was just brought",
+  "תירוץ": "Settles a problem that was raised", "תשובה": "Answers a question that was asked" };
+const GUESS_LOOK = { "מימרא": "Look at whether it puts a point of its own on the table.", "ראיה": "Look at what it brings in to back a point up.",
+  "מסקנא": "Look at whether it wraps up what came before.", "שאלה": "Look at whether it simply wants to know something.",
+  "קשיא": "Look at whether it finds a problem with what was said.", "דחיה": "Look at what it does to the proof just brought.",
+  "תירוץ": "Look at who it's answering: a problem was raised just before it.", "תשובה": "Look at who it's answering: a question was asked just before it." };
+const GUESS_NOT = { states: "It isn't just putting a point forward.", asks: "It isn't asking for information.", pushes: "It's not attacking anything.", responds: "It isn't answering anything." };
+const GUESS_CLOSE = { "קשיא>דחיה": "Close: it does push against something, but it doesn't raise a new problem.", "דחיה>קשיא": "Close: it does push against something, but there's no proof here for it to set aside.",
+  "תירוץ>תשובה": "Close: it does respond, but nothing was challenged.", "תשובה>תירוץ": "Close: it does respond, but to a problem, not a plain question.",
+  "מימרא>ראיה": "Close: right group, but it isn't a point of its own.", "מימרא>מסקנא": "Close: right group, but it isn't a fresh point.",
+  "ראיה>מימרא": "Close: right group, but it doesn't bring in a source as support.", "ראיה>מסקנא": "Close: right group, but it isn't bringing support.",
+  "מסקנא>מימרא": "Close: right group, but nothing is being wrapped up yet.", "מסקנא>ראיה": "Close: right group, but it doesn't wrap anything up." };
+export const guessFamOf = kind => (GUESS_FAM.find(f => f.kinds.includes(kind)) || {}).k || null;
+// pick: a group key (tap 1) or a kind (tap 2); real: the step's kind. -> null on a hit, else the pointer line (directional words only)
+export function guessHint(pick, real){
+  const rf = guessFamOf(real), look = GUESS_LOOK[real] || "";
+  if (!rf) return null;
+  if (GUESS_KIND[pick]) return pick === real ? null : `${GUESS_CLOSE[pick + ">" + real] || (guessFamOf(pick) === rf ? "Close: right group." : GUESS_NOT[guessFamOf(pick)] || "")} ${look}`.trim();
+  if (pick === rf) return null;
+  if (pick === "asks" && rf === "pushes") return `It's worded like a question, but it isn't asking for information. ${look}`;
+  return `${GUESS_NOT[pick] || ""} ${look}`.trim();
+}
 // English sentences with Hebrew words inside: wrap Hebrew runs so they render with the Hebrew font
 const mixed = s => esc(s).replace(/([\u0590-\u05FF][\u0590-\u05FF\u05F3\u05F4"'׳״\- ]*[\u0590-\u05FF׳״]|[\u0590-\u05FF])/g, m => `<span class="he" lang="he">${m}</span>`);
 const LONG_MS = 480, MOVE_PX = 10;
@@ -34,6 +66,7 @@ export function mountAmeilus(root, ctx){
   { const o = st.open; if (o && Number.isInteger(o.at) && o.at >= 0 && o.at < st.pos && o.at < tokens.length && Array.isArray(o.steps) && o.steps.every(s => Number.isInteger(s) && steps[s] && st.done[s]) && (st.cuts.includes(o.at) || o.steps.some(s => ranges[s].end === o.at)) && (o.fb == null || (typeof o.fb === "string" && /^[a-z]+$/.test(String(o.fbKind))))) card = { at: o.at, steps: o.steps.slice(), shown: !!o.shown, fb: o.fb || null, fbKind: o.fb ? o.fbKind : undefined, check: null, checked: false }; } // a saved record without a valid open field opens nothing
   const curStep = () => st.pos < tokens.length ? tokens[st.pos].s : -1;
   const bare = !!settings.bare;
+  const guessOn = !!settings.guess && !bare; // Guess the kind first: only when switched on in Aa, and not in Bare mode (no checks there)
   // explanation prose of a finished/revealed passage: its Hebrew words borrow the amud's vowels (the host's nikud-borrowing renderer, display only, Oct 15 2026). The unsolved Gemara text never goes through here.
   const voc = s => typeof ctx.vocalizeHelp === "function" ? ctx.vocalizeHelp(String(s == null ? "" : s)) : String(s == null ? "" : s); // N1: word-help lines and the signal hint get vowels
   const prose = s => { const v = typeof ctx.vocalize === "function" ? ctx.vocalize(String(s == null ? "" : s)) : String(s == null ? "" : s);
@@ -152,7 +185,7 @@ export function mountAmeilus(root, ctx){
     const done = i < st.pos;
     const txt = C.wordView(t, i, { pos: st.pos, vowels: show.vowels, punct: show.punct, bare, vowelWord }).text;
     const sel = mark != null && i >= st.pos && i <= mark;
-    const cls = ["w", done ? "done k-" + (C.KIND_CLASS[steps[t.s].hebrewStepName] || "mimra") : "", sel ? "sel" : "", i === mark ? "mark" : "",
+    const cls = ["w", done ? (guessHides(t.s) ? "done" : "done k-" + (C.KIND_CLASS[steps[t.s].hebrewStepName] || "mimra")) : "", sel ? "sel" : "", i === mark ? "mark" : "",
       (st.sig && st.sig.i === i) ? "sig" : "", i === st.pos && mark == null && i > 0 ? "next" : ""].filter(Boolean).join(" ");
     return `<span class="${cls}" data-i="${i}" tabindex="${i === (mark != null ? mark : st.pos) ? 0 : -1}">${esc(txt)}</span>`;
   }
@@ -162,7 +195,9 @@ export function mountAmeilus(root, ctx){
     if (card.fb) lines.push(`<p class="am-fb am-fb-${card.fbKind}">${mixed(card.fb)}</p>`);
     // no check question on a card, even if the card data carries one; "Show our reading" comes right after the passage
     if (card.steps && card.steps.length) {
-      if (!card.shown) lines.push(`<p class="am-own">Say it in your own words first. Then check it.</p><button class="btn primary" data-act="show">Show our reading</button>`);
+      if (!card.shown) { const g = guessOn ? guessHTML() : null; // Guess the kind first (opt-in): the guess comes first; the own-words line and "Show our reading" follow it unchanged
+        if (g && g.open) lines.push(g.html);
+        else lines.push((g ? g.html : "") + `<p class="am-own">Say it in your own words first. Then check it.</p><button class="btn primary" data-act="show">Show our reading</button>`); }
       else card.steps.forEach(si => {
         const s = steps[si], kc = C.KIND_CLASS[s.hebrewStepName] || "mimra";
         lines.push(`<div class="am-read k-${kc}"><div class="am-kind"><span class="kchip">${esc(C.KIND_EN[s.hebrewStepName] || s.hebrewStepName)}</span> ${he(KIND_NIKUD[s.hebrewStepName] || s.hebrewStepName)}</div>
@@ -173,6 +208,55 @@ export function mountAmeilus(root, ctx){
       });
     }
     return `<div class="am-card" id="amCard" dir="ltr" lang="en">${lines.join("")}</div>`;
+  }
+  // Guess the kind first: one question per step the passage covers, in order. Skip (one tap) ends the guessing for this passage.
+  function guessHTML(){
+    const gs = (card.steps || []).filter(si => steps[si] && guessFamOf(steps[si].hebrewStepName));
+    if (!gs.length) return null;
+    const g = card.g || (card.g = { i: 0, fam: null, tried: [], hint: null, hits: [] });
+    const chip = si => { const k = steps[si].hebrewStepName; return `<span class="am-gdk k-${C.KIND_CLASS[k] || "mimra"}"><span class="kchip">${esc(C.KIND_EN[k] || k)}</span></span>`; };
+    const hitLine = si => `<p class="am-gdone">That's it: ${chip(si)} ${esc(GUESS_KIND[steps[si].hebrewStepName])}.</p>`;
+    if (g.i >= gs.length) return { open: false, html: g.hits.map(hitLine).join("") };
+    const si = gs[g.i], multi = gs.length > 1, part = multi ? `Part ${g.i + 1} of ${gs.length}` : "";
+    const before = g.hits.filter(h => gs.indexOf(h) < g.i).map(hitLine).join("");
+    const tried = v => g.tried.includes(v);
+    const hint = g.hint ? `<p class="am-ghint" role="status">${esc(g.hint)}</p>` : "";
+    let body;
+    if (!g.fam) {
+      body = `<div class="am-gtop"><span>1 of 2</span>${part ? `<span>${part}</span>` : ""}</div>
+        <p class="am-gq" id="amGq">${multi ? `What does part ${g.i + 1} of this passage do?` : "What does this passage do?"}</p>${hint}
+        <div class="am-gopts">${GUESS_FAM.map(f => `<button class="am-gopt${tried(f.k) ? " tried" : ""}" data-gfam="${f.k}"${tried(f.k) ? ' aria-disabled="true"' : ""}><b>${esc(f.label)}</b><span>${esc(f.sub)}</span>${tried(f.k) ? '<span class="am-gtried">Tried</span>' : ""}</button>`).join("")}</div>
+        <div class="am-gacts"><button class="btn am-gskip" data-act="gskip">Skip</button></div>`;
+    } else {
+      const fam = GUESS_FAM.find(f => f.k === g.fam);
+      body = `<div class="am-gtop"><span>2 of 2</span>${part ? `<span>${part}</span>` : ""}</div>
+        <p class="am-gq" id="amGq">${esc(fam.label)}: which kind?</p>${hint}
+        <div class="am-gopts">${fam.kinds.map(k => `<button class="am-gopt am-gkind k-${C.KIND_CLASS[k] || "mimra"}${tried(k) ? " tried" : ""}" data-gkind="${esc(k)}"${tried(k) ? ' aria-disabled="true"' : ""}><b>${esc(C.KIND_EN[k] || k)}</b><span>${esc(GUESS_KIND[k])}</span>${tried(k) ? '<span class="am-gtried">Tried</span>' : ""}</button>`).join("")}</div>
+        <div class="am-gacts"><button class="btn am-gback" data-act="gback">‹ Back</button><button class="btn am-gskip" data-act="gskip">Skip</button></div>`;
+    }
+    return { open: true, html: `${before}<div class="am-guess" role="group" aria-labelledby="amGq">${body}</div>` };
+  }
+  function guessHides(si){ // true while step si belongs to the open passage and its guess has not landed (or been skipped) yet
+    if (guessOn && !st.done[si] && steps[si] && guessFamOf(steps[si].hebrewStepName)) return true; // a passage marked only part of the way (a real break inside it): no kind until it is finished and guessed
+    if (!guessOn || !card || card.shown || !card.steps || !card.steps.includes(si)) return false;
+    const gs = card.steps.filter(x => steps[x] && guessFamOf(steps[x].hebrewStepName)), k = gs.indexOf(si);
+    return k >= 0 && k >= (card.g ? card.g.i : 0);
+  }
+  function guessPick(kind, v){ // kind: "fam" (tap 1) or "kind" (tap 2)
+    const gs = (card.steps || []).filter(si => steps[si] && guessFamOf(steps[si].hebrewStepName));
+    const g = card.g; if (!g || g.i >= gs.length || g.tried.includes(v)) return;
+    const real = steps[gs[g.i]].hebrewStepName;
+    const hit = () => { g.hits.push(gs[g.i]); g.i++; g.fam = null; g.tried = []; g.hint = null; render(); say(`That's it: ${C.KIND_EN[real] || real}.`); };
+    if (kind === "fam") {
+      const h = guessHint(v, real);
+      if (h) { g.tried.push(v); g.hint = h; render(); say(h); return; }
+      const fam = GUESS_FAM.find(f => f.k === v);
+      if (fam.kinds.length === 1) return hit();
+      g.fam = v; g.tried = []; g.hint = null; render(); return;
+    }
+    const h = guessHint(v, real);
+    if (h) { g.tried.push(v); g.hint = h; render(); say(h); return; }
+    hit();
   }
   function finishHTML(){
     const total = steps.length, own = C.ownCount(st.done);
@@ -268,6 +352,7 @@ export function mountAmeilus(root, ctx){
       const s = steps[nd.i], done = !!st.done[nd.i];
       if (!done && nd.i !== cs) return;
       if (done && nd.phase !== lastPhase) { rows += `<div class="am-phase">${esc(C.PHASE_EN[nd.phase] || "")}</div>`; lastPhase = nd.phase; }
+      if (done && guessHides(nd.i)) { rows += `<div class="am-node am-gnode" style="--d:0"><span class="kdot"></span><span class="am-nt">Just marked</span></div>`; return; } // Guess the kind first: no kind, phase or title for it until the guess lands
       const kc = C.KIND_CLASS[s.hebrewStepName] || "mimra";
       rows += done
         ? `<button class="am-node k-${kc}" style="--d:${nd.depth}" data-node="${nd.i}"><span class="kdot"></span><span class="am-nk">${esc(C.KIND_EN[s.hebrewStepName] || "")}</span><span class="am-nt">${Array.isArray(s.marks) && STAG_ORDER.some(g => s.marks.includes(g)) ? `<span class="vh">${STAG_ORDER.filter(g => s.marks.includes(g)).map(g => ", " + STAG_EN[g].toLowerCase()).join("")}</span>` + STAG_ORDER.filter(g => s.marks.includes(g)).map(g => `<span class="stag stag-${g}" aria-hidden="true">${STAG_EN[g]}</span> `).join("") : ""}${prose(String(s.title || "").slice(0, 90))}</span></button>`
@@ -358,9 +443,13 @@ export function mountAmeilus(root, ctx){
     if (a === "hints") { hintsOpen = !hintsOpen; renderBar(); const f = bar.querySelector(hintsOpen ? "#amHintPanel .hb" : "[data-act=hints]"); f && f.focus({ preventScroll: true }); if (hintsOpen) keepUnreadInView(); }
   });
   expBody.addEventListener("click", e => { // the card's own buttons live in the panel now
-    const b = e.target.closest("[data-act],[data-opt]");
+    const b = e.target.closest("[data-act],[data-opt],[data-gfam],[data-gkind]"); // data-gfam / data-gkind: Guess the kind first
     if (b && b.dataset.opt != null && card && card.check) { card.picked = +b.dataset.opt; card.checked = true; render(); return; }
     if (b && b.dataset.act === "skipcheck") { card.checked = true; card.skipped = true; card.picked = null; render(); return; }
+    if (b && b.dataset.gfam && card && card.g) { guessPick("fam", b.dataset.gfam); return; } // Guess the kind first
+    if (b && b.dataset.gkind && card && card.g) { guessPick("kind", b.dataset.gkind); return; }
+    if (b && b.dataset.act === "gback" && card && card.g) { card.g.fam = null; card.g.tried = []; card.g.hint = null; render(); return; }
+    if (b && b.dataset.act === "gskip" && card && card.g) { card.g.i = Infinity; card.g.fam = null; card.g.hint = null; render(); return; }
     if (b && b.dataset.act === "show") { card.shown = true; save(); render(); return; }
     if (b && b.dataset.act === "restart") { restartAsk(); return; }
   });
