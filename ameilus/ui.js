@@ -85,7 +85,7 @@ export function mountAmeilus(root, ctx){
         <div class="am-head">
           <div><h1 class="am-title"><span class="am-entitle">${esc(label)}</span> <span class="he am-hetitle" lang="he">${esc(heLabel)}</span></h1>
           <div class="am-sub" id="amSub"></div></div>
-          <div class="am-headnav"><button class="iconbtn am-help" data-walk="open" aria-label="How Ameilus works" title="How Ameilus works" aria-controls="amTip">?</button>${ctx.prevHref ? `<a class="iconbtn" href="${ctx.prevHref}" aria-label="Previous amud" title="Previous amud">‹</a>` : ""}${ctx.nextHref ? `<a class="iconbtn" href="${ctx.nextHref}" aria-label="Next amud" title="Next amud">›</a>` : ""}</div>
+          <div class="am-headnav">${ctx.prevHref ? `<a class="iconbtn" href="${ctx.prevHref}" aria-label="Previous amud" title="Previous amud">‹</a>` : ""}${ctx.nextHref ? `<a class="iconbtn" href="${ctx.nextHref}" aria-label="Next amud" title="Next amud">›</a>` : ""}</div>
         </div>
         ${ctx.modeBar || ""}
         <div class="am-tip" id="amTip" hidden></div>
@@ -493,7 +493,7 @@ export function mountAmeilus(root, ctx){
   };
   document.addEventListener("keydown", onKey);
 
-  // first use: a short walkthrough, once per device (WALK_KEY); the ? in the head opens it again
+  // first use: a short walkthrough, once per device (WALK_KEY); Help (the ? beside Aa) › Replay the walkthrough opens it again (Oct 20 2026: the ? in the head is gone)
   const tipEl = $("#amTip");
   // Round 2 (Oct 15 2026): compact. A short sheet at the bottom of the screen (the amud's first lines stay in view above it),
   // the goal line, three short lines, a one-line example, and Start / Skip. The bottom controls hide while it is open.
@@ -546,4 +546,20 @@ export function mountAmeilus(root, ctx){
   const fitBar = () => { const bs = document.body.style; bs.setProperty("--am-bar-h", Math.ceil(bar.getBoundingClientRect().height) + "px"); bs.setProperty("--am-word-h", (sheet.hidden ? 0 : Math.ceil(sheet.getBoundingClientRect().height)) + "px"); };
   let barObs = null; try { barObs = new ResizeObserver(() => { fitBar(); expFade(); }); barObs.observe(bar); barObs.observe(sheet); barObs.observe(expBody); } catch { fitBar(); }
   return { destroy(){ closeWord(); document.removeEventListener("keydown", onKey); if (barObs) barObs.disconnect(); document.body.style.removeProperty("--am-bar-h"); document.body.style.removeProperty("--am-word-h"); document.body.classList.remove("am-walk-open", "am-exp-open"); root.innerHTML = ""; }, state: () => st, placeStep, openWalk: () => openWalk(true), tokens, kinds, ranges };
+}
+// ---- Help (Oct 20 2026): Ameilus registers its own Help topics here; the app's Help page (the ? beside Aa) lists them.
+// The walkthrough is replayed from Help: "Mark where each passage ends" › Replay the walkthrough. Nothing else in Ameilus changes.
+{
+  const reg = e => globalThis.registerHelp ? globalThis.registerHelp(e) : (globalThis.__gcHelpQ ||= []).push(e);
+  reg({ id:"am-mark", group:"Ameilus", order:1, icon:"check", where:["ameilus"], title:AMW.goal, sub:"Tap the last word, then “Ends here ✓”.",
+    body:[AMW.walkRead, `${AMW.walkTap} then “Ends here ✓”.`, "The first time you open Ameilus, a short walkthrough shows how. You can replay it here."],
+    action:{ label:"Replay the walkthrough", run: c => { if (c && c.am && c.am.openWalk) { c.close(); c.am.openWalk(); return; } try { localStorage.removeItem(WALK_KEY); } catch {} return "It will open the next time you start Ameilus on an amud."; } } });
+  reg({ id:"am-hints", group:"Ameilus", order:2, icon:"bulb", where:["ameilus"], title:"Hints", sub:"Vowels, punctuation, signal word and more.",
+    body:[AMW.walkHints, "Use any hint, in any order. If you use Show where it ends, that passage does not count as done on your own."] });
+  reg({ id:"am-words", group:"Ameilus", order:3, icon:"word", where:["ameilus"], title:"Word help and My words", sub:"Long-press any word.",
+    body:["Long-press a word to see what it means.", "Tap “Add to My words” to keep it. Your list is in Aa › Ameilus."] });
+  reg({ id:"am-map", group:"Ameilus", order:4, icon:"steps", where:["ameilus"], title:"Sugya map", sub:"How the passages hang together.",
+    body:["The map button at the top shows each passage under the one it answers or builds on.", "It fills in as you go."] });
+  reg({ id:"am-reading", group:"Ameilus", order:5, icon:"eye", where:["ameilus"], title:"Show our reading", sub:"Check yourself after each passage.",
+    body:["After you mark a passage, say it in your own words.", "Then tap Show our reading to see its kind, its translation and what is happening."] });
 }

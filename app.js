@@ -528,6 +528,14 @@ function miBand(L, fresh){
 /* ---------- picker ---------- */
 // home3: the Sugya Flow and Ameilus cards on home open this same picker with a way already chosen; the daf picked opens in that way
 let pickMode = null;
+// Help (Oct 20 2026): the daf list registers its own Help topics; the Help page (help, end of this file) lists every registered topic (guarded: registerHelp is the Help block at the end of this file, so a lone slice of this file still runs)
+if (typeof registerHelp === "function") {
+registerHelp({ id:"goto", group:"Start here", order:2, icon:"search", where:["home","flow","ameilus","classics"], title:"Go to any daf", sub:"Tap the daf name at the top.", settings:[],
+  body:["Tap the daf name at the top, or Go to any daf on the home screen.", "Type a name like “Berakhot 5b”, or pick from the list. Dapim are grouped by perek."],
+  action:{ label:"Open the daf list", run: c => { c.close(); openPicker(); } } });
+registerHelp({ id:"by-mishnah", group:"Start here", order:3, icon:"mishnah", where:["flow","home"], added:"2026-10-19", title:"Jump to a Mishnah", sub:"In the daf list, switch to By Mishnah.",
+  body:["Open a masechet’s daf list and switch to By Mishnah.", "Every Mishnah is listed under its perek. Tap one to go straight to its step."] });
+}
 function openPicker(focusMas, focusPerek, mode){
   pickMode = mode === "ameilus" || mode === "shiur" ? mode : null;
   const pm = pickMode;
@@ -615,6 +623,16 @@ function openPicker(focusMas, focusPerek, mode){
 }
 
 /* ---------- settings ---------- */
+// Help (Oct 20 2026): every control in Text and display (Aa) is named in a Help topic's settings list; help.test.mjs fails on a control that is not (guarded: registerHelp is the Help block at the end of this file, so a lone slice of this file still runs)
+if (typeof registerHelp === "function") {
+registerHelp({ id:"display", group:"Your things", order:3, icon:"aa", where:["home","flow","ameilus","classics"], title:"Text and display", sub:"Text size and theme.", settings:["size","theme"],
+  body:["Tap Aa at the top. A− and A+ change the size of the Hebrew, Aramaic and English together.", "Pick Dark, Light or Sepia."],
+  action:{ label:"Open Aa", run: c => { c.close(); $("#settingsBtn").click(); } } });
+registerHelp({ id:"about", group:"Your things", order:5, icon:"info", where:["home"], title:"About this content", sub:"Where the text and the steps come from.", settings:["discAgain"],
+  body:["The text and translation are from Sefaria (William Davidson Edition).", "The step-by-step breakdowns are AI-generated, so check anything important with a teacher.", "Aa › About this content shows the full note again."] });
+registerHelp({ id:"clear", group:"Your things", order:6, icon:"clear", where:[], title:"Clear my data", sub:"Start fresh on this device.", settings:["clearData"],
+  body:["Aa › Clear my bookmarks, history and saved data.", "It removes your bookmarks, history, saved dapim and settings from this device only."] });
+}
 function openSettings(){
   const sw = (key, title, sub) => `<label class="setrow"><span class="lbl"><b>${title}</b>${sub ? `<span>${sub}</span>` : ""}</span><span class="switch"><input type="checkbox" data-set="${key}" ${settings[key] ? "checked" : ""}><span></span></span></label>`;
   const html = `
@@ -931,6 +949,18 @@ function homeChoicesHtml(last){
       ${last === k ? `<span class="h3-last">Last used</span>` : ""}</${k === "classics" ? "a" : "button"}>`;
   return `<div class="h3-grid">${card("shiur", "Sugya Flow", "Learn any daf step by step", "Choose a daf", `data-home-pick="shiur" aria-haspopup="dialog"`)}${card("ameilus", "Ameilus", "Try each step yourself first", "Choose a daf", `data-home-pick="ameilus" aria-haspopup="dialog"`)}${card("classics", "Classics", "Famous sugyos to start with", "Browse by Seder", `href="#/classics"`)}</div>`;
 }
+// Help (Oct 20 2026): the home screen's own Help topics (guarded: registerHelp is the Help block at the end of this file, so a lone slice of this file still runs)
+if (typeof registerHelp === "function") {
+registerHelp({ id:"paths", group:"Start here", order:1, icon:"paths", where:["home","flow","ameilus"], title:"Two ways to learn", sub:"Sugya Flow explains. Ameilus lets you try first.",
+  body:["Sugya Flow walks you through each step: the Aramaic beside the English, every question and answer laid out.", "Ameilus gives you the raw daf. You mark where each passage ends, then check yourself.", "On any amud, switch with Sugya Flow | Ameilus at the top."] });
+registerHelp({ id:"yomi", group:"Start here", order:5, icon:"yomi", where:["home"], title:"Daf Yomi and where you left off", sub:"Both are on the home screen.",
+  body:["The home screen shows today’s Daf Yomi. Tap it to open it.", "Continue where you left off takes you back to your last amud."] });
+registerHelp({ id:"classics", group:"Start here", order:4, icon:"classics", where:["home","classics"], title:"Classics", sub:"Famous sugyos to start with.",
+  body:["A hand-picked list of famous sugyos, sorted by Seder. Each one opens where the sugya starts."],
+  action:{ label:"Open Classics", run: c => { c.close(); location.hash = "#/classics"; } } });
+registerHelp({ id:"bookmarks", group:"Your things", order:1, icon:"bookmark", where:["home","flow"], title:"Bookmarks and history", sub:"Tap the bookmark on any amud.",
+  body:["Tap the bookmark button under the amud’s title.", "Your bookmarks and the dapim you learned recently show on the home screen."] });
+}
 function renderHome(){
   current = null; document.title = "Gemara Clarity: every sugya, step by step";
   setChrome(false);
@@ -1033,6 +1063,21 @@ function relatedLineHtml(nums, n){                                     // n = th
 function moreHtml(items, open){ // calm: one fold for the deeper layers; its label names what is inside
   if (!items.length) return "";
   return `<details class="more${items.length === 1 && items[0][0] === "Logic" ? " only-logic" : ""}"${open ? " open" : ""}><summary><span class="more-k">More detail</span><span class="more-l">${items.map((x, i) => `<span class="ml${x[0] === "Logic" ? " ml-logic" : ""}">${i ? " · " : ""}${x[0]}</span>`).join("")}</span></summary><div class="more-b">${items.map(x => x[1]).join("")}</div></details>`;
+}
+// Help (Oct 20 2026): Sugya Flow's own Help topics; "kinds" lists the step names exactly as Sugya Flow shows them (TYPES) (guarded: registerHelp is the Help block at the end of this file, so a lone slice of this file still runs)
+if (typeof registerHelp === "function") {
+registerHelp({ id:"kinds", group:"Sugya Flow", order:1, icon:"kinds", where:["flow"], title:"The eight kinds of step", sub:"Each colour says what a step does.", kinds:true, settings:["colors","kindtext"],
+  body:["Every step gets a colour for what it does in the argument.", "In Aa, Step colours turns the colours on or off, and Color the text tints the words too."] });
+registerHelp({ id:"phrases", group:"Sugya Flow", order:2, icon:"lines", where:["flow"], title:"Aramaic beside English", sub:"One phrase at a time.", settings:["translation","nikud","notes"],
+  body:["Each step shows the Aramaic and the English one phrase at a time.", "In Aa you can turn off the English translation or the vowels to test yourself.", "Phrase notes adds short notes under some phrases."] });
+registerHelp({ id:"steps-list", group:"Sugya Flow", order:3, icon:"steps", where:["flow"], title:"The steps list", sub:"See the whole sugya at once.",
+  body:["Tap Steps at the bottom, or All steps, to see every step as a map.", "Tap any step to jump to it."] });
+registerHelp({ id:"more", group:"Sugya Flow", order:4, icon:"more", where:["flow"], title:"More detail", sub:"Going deeper, why it matters, the logic.", settings:["logic","expandAll"],
+  body:["Under each step, More detail opens the deeper layers: Another reading, Going deeper, Why it matters.", "Logic details in Aa adds the trigger words, what attacks what, and how it is resolved.", "Open every explanation in Aa opens each step without a tap."] });
+registerHelp({ id:"tags", group:"Sugya Flow", order:5, icon:"tag", where:["flow"], title:"Mishnah badge and tags", sub:"Mishnah, Story, Unresolved, End marker.",
+  body:["The Mishnah badge marks the Mishnah itself.", "Small tags mark a story (maaseh), a question left standing (teiku) and the hadran at the end of a perek. A tag never changes a step’s colour."] });
+registerHelp({ id:"pasuk", group:"Sugya Flow", order:6, icon:"verse", where:["flow"], title:"Verses", sub:"Tap a quoted pasuk to read it.",
+  body:["When a step quotes a pasuk, tap the reference to read the verse in full."] });
 }
 function stepHtml(s, k, open){
   const t = TYPES[s.hebrewStepName] || TYPES["מימרא"];
@@ -1436,6 +1481,13 @@ async function renderAmeilus(m, i){
     notice("Ameilus can’t open this amud yet.", "Its breakdown has a shape Ameilus doesn’t read. The full step-by-step is in Sugya Flow.");
   }
 }
+// Help (Oct 20 2026): Bare mode's Help topic. It says what Bare mode really does today: the hint buttons go, the marks are still checked (guarded: registerHelp is the Help block at the end of this file, so a lone slice of this file still runs)
+if (typeof registerHelp === "function") {
+registerHelp({ id:"am-bare", group:"Ameilus", order:6, icon:"bare", where:["ameilus"], title:"Bare mode", sub:"Just the daf and the marker.", settings:["amBare"],
+  body:["In Aa › Ameilus, while you are in Ameilus.", "Bare mode hides the vowel, punctuation and signal-word hints. Your marks are still checked."] });
+registerHelp({ id:"am-guess", group:"Ameilus", order:7, icon:"kinds", where:["ameilus"], added:"2026-10-20", title:"Guess the kind first", sub:"Guess what a passage does before we show it.", settings:["amGuess"],
+  body:["In Aa › Ameilus, while you are in Ameilus. It stays off until you turn it on.", "After you mark a passage, pick its kind in two taps, or tap Skip. Nothing is shown until you guess or skip, and it never says wrong. Bare mode leaves it off."] });
+}
 function amSettingsSection(body){
   if (!body) return;
   const bare = !!amPrefs().bare, guess = !!amPrefs().guess;
@@ -1832,6 +1884,12 @@ function oflLibDone(ids, bad){ // the whole library was saved: every masechet th
   const by = {}; ids.forEach(id => { const m = parseId(id).m; by[m] = (by[m] || 0) + 1; });
   caches.open(DATA_CACHE).then(async c => { for (const k of Object.keys(by)) if (OFL_KB[k] && !bad.has(k)) { await oflMishnah(k, c); oflPut(k, { st: "saved", n: by[k], of: by[k], at: Date.now() }); oflPaint(k); } }).catch(() => {});
 }
+// Help (Oct 20 2026): offline save's Help topic (guarded: registerHelp is the Help block at the end of this file, so a lone slice of this file still runs)
+if (typeof registerHelp === "function") {
+registerHelp({ id:"offline", group:"Your things", order:2, icon:"offline", where:["home","flow","ameilus"], added:"2026-10-20", title:"Learn without signal", sub:"Save a masechta to this device.", settings:["saveAll","ofl"],
+  body:["Every daf you open is saved on this device.", "To save a whole masechta, open its daf list and tap Save for offline. To save everything, go to Aa › Offline.", "If the app looks out of date, close it and open it again."],
+  action:{ label:"Open Offline settings", run: c => { c.close(); $("#settingsBtn").click(); const s = $("#saveAll"); s && s.scrollIntoView({ block:"center" }); } } });
+}
 function oflListHtml(){
   const o = oflAll(), ks = MAS.map(x => x[0]).filter(k => OFL_KB[k] && (o[k] || oflJobs[k]));
   const kbOf = k => { const r = o[k] || {}, kb = OFL_KB[k][1]; return r.st === "saved" ? kb : Math.round(kb * (r.n || 0) / (r.of || OFL_KB[k][0])); };
@@ -1880,4 +1938,76 @@ if ("serviceWorker" in navigator) {
   sw.addEventListener("controllerchange", () => { const was = had, c = sw.controller; had = !!c; if (!was || !c) return; if (c.state === "activated") return note(); c.addEventListener("statechange", function on(){ if (c.state !== "activated") return; c.removeEventListener("statechange", on); note(); }); });
   document.addEventListener("visibilitychange", () => { if (document.visibilityState !== "visible") return; if (swReload()) return; check(); });
   addEventListener("load", () => sw.register("sw.js").then(r => { reg = r; check(); }).catch(() => {}));
+}
+// ---- Help (Oct 20 2026): a "?" beside Aa on every screen opens Help: "On this screen" first, then "What's new", then all topics.
+// Each feature registers its own topic next to its own code with registerHelp({ id, group, order, icon, title, sub, body, where, settings, added, kinds, action });
+// Help only reads that registry, so a topic comes and goes with its feature. ameilus/ui.js registers the Ameilus topics (it is loaded when Help opens).
+// where: the screens a topic is "on" (home, classics, flow, ameilus). settings: the Aa controls it explains (help.test.mjs: every Aa control is in one).
+// added: the day it shipped; a topic is in "What's new" for 14 days. On a wide screen Help is a panel on the right, over the daf.
+function registerHelp(e){ if (!e || !e.id) return; (registerHelp.m ||= new Map()).set(e.id, Object.assign({ group:"More", order:99, icon:"info", where:[], body:[], settings:[] }, e)); }
+globalThis.registerHelp = registerHelp; (globalThis.__gcHelpQ || []).forEach(registerHelp); globalThis.__gcHelpQ = [];
+registerHelp({ id:"help", group:"Start here", order:6, icon:"help", where:["home"], added:"2026-10-20", title:"Help", sub:"Tap ? at the top of any screen.",
+  body:["Tap ? beside Aa on any screen.", "Help opens with the topics for the screen you are on, then what’s new, then everything else."] });
+const HELP_GROUPS = ["Start here", "Sugya Flow", "Ameilus", "Your things"];
+const HELP_KINDS = ["mimra", "kashya", "terutz", "raaya", "dechiya", "sheelah", "teshuvah", "maskana"]; // the colour key's order; the names are Sugya Flow's own (TYPES)
+const HELP_ICON = { paths:'<path d="M4 6h7v12H4zM13 6h7v12h-7z"/>', search:'<circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/>', mishnah:'<path d="M5 19V5l7 7 7-7v14"/>',
+  kinds:'<path d="M4 7h16M4 12h11M4 17h14"/>', lines:'<path d="M5 7h14M5 12h14M5 17h9"/>', steps:'<path d="M6 4v16M6 8h6v4h6M12 12v6h6"/>', more:'<path d="M6 9l6 6 6-6"/>',
+  tag:'<path d="M4 4h8l8 8-8 8-8-8z"/><circle cx="9" cy="9" r="1.5"/>', verse:'<path d="M5 4h10l4 4v12H5z"/><path d="M9 12h6M9 16h6"/>', check:'<path d="M5 12l4 4 10-10"/>',
+  bulb:'<path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10.5c.8.8 1 1.5 1 2.5h6c0-1 .2-1.7 1-2.5A6 6 0 0 0 12 3z"/>', word:'<path d="M4 6h16M4 12h10M4 18h7"/><circle cx="18" cy="16" r="3"/>',
+  eye:'<path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/>', bare:'<rect x="4" y="5" width="16" height="14" rx="2"/>', bookmark:'<path d="M6 4h12v17l-6-4-6 4z"/>',
+  offline:'<path d="M12 4v11M7 10l5 5 5-5M5 20h14"/>', aa:'<path d="M3 18l5-12 5 12M5 14h6M15 18v-5a2.5 2.5 0 0 1 5 0v5M15 15h5"/>', clear:'<path d="M5 7h14M9 7V4h6v3M7 7l1 13h8l1-13"/>',
+  yomi:'<rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/>', classics:'<path d="M5 4h4v16H5zM10 4h4v16h-4zM15 5l4 1-3 15-4-1z"/>',
+  info:'<circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/>', help:'<circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .8-1 1.5v.7M12 17v.5"/>' };
+const helpList = () => [...(registerHelp.m || new Map()).values()].sort((a, b) => (HELP_GROUPS.indexOf(a.group) + 1 || 99) - (HELP_GROUPS.indexOf(b.group) + 1 || 99) || a.order - b.order);
+const helpNew = e => !!e.added && (Date.now() - Date.parse(e.added + "T00:00:00")) / 864e5 < 14;
+function helpScreen(){
+  if (current && document.body.classList.contains("am-mode")) return ["ameilus", "Ameilus"];
+  if (current) return ["flow", "Sugya Flow"];
+  if (/^#\/classics/.test(location.hash)) return ["classics", "Classics"];
+  return ["home", "Home"];
+}
+function helpRowHtml(e){
+  const svg = `<svg viewBox="0 0 24 24" aria-hidden="true">${HELP_ICON[e.icon] || HELP_ICON.info}</svg>`;
+  const kinds = e.kinds ? `<div class="hp-kinds">${HELP_KINDS.map(k => { const t = Object.values(TYPES).find(x => x.k === k); return t ? `<div class="hp-k" data-k="${k}"><i></i><span><b>${esc(t.en)}</b> · ${esc(t.d)}</span></div>` : ""; }).join("")}</div>` : "";
+  return `<div class="hp-item" data-help="${esc(e.id)}"><button class="hp-row" type="button" aria-expanded="false"><span class="hp-ic">${svg}</span><span class="hp-tx"><span class="hp-t">${esc(e.title)}${helpNew(e) ? `<span class="hp-new">New</span>` : ""}</span><span class="hp-s">${esc(e.sub || "")}</span></span><svg class="hp-chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+    <div class="hp-body" hidden>${e.body.map(p => `<p>${esc(p)}</p>`).join("")}${kinds}${e.action ? `<button class="hp-act" type="button" data-help-act="${esc(e.id)}">${esc(e.action.label)}</button><span class="hp-msg" role="status"></span>` : ""}</div></div>`;
+}
+function helpHtml(){
+  const [scr, scrName] = helpScreen(), all = helpList();
+  const here = all.filter(e => e.where.includes(scr)).sort((a, b) => (b.group === scrName) - (a.group === scrName)).slice(0, 6);
+  const fresh = all.filter(e => helpNew(e) && !here.includes(e)), rest = all.filter(e => !here.includes(e) && !fresh.includes(e));
+  const card = list => `<div class="hp-card">${list.map(helpRowHtml).join("")}</div>`;
+  const groups = [...new Set(rest.map(e => e.group))];
+  return `<div class="hp" data-screen="${scr}">
+    <h3 class="hp-gh">On this screen <small>${esc(scrName)}</small></h3>${card(here)}
+    ${fresh.length ? `<h3 class="hp-gh">What’s new</h3>${card(fresh)}` : ""}
+    <h3 class="hp-gh">All topics</h3>${groups.map(g => `<h4 class="hp-gh hp-gh2">${esc(g)}</h4>${card(rest.filter(e => e.group === g))}`).join("")}</div>`;
+}
+async function openHelp(){
+  try { await Promise.race([amModule(), new Promise(r => setTimeout(r, 1500))]); } catch {} // the Ameilus topics live in ameilus/ui.js (saved with the app for offline use)
+  openSheet("Help", helpHtml(), body => {
+    body.addEventListener("click", e => {
+      const act = e.target.closest("[data-help-act]");
+      if (act) { const t = (registerHelp.m || new Map()).get(act.dataset.helpAct); if (!t || !t.action) return; const msg = t.action.run({ am: amMounted, close: closeSheet }); if (typeof msg === "string") { const m = act.nextElementSibling; if (m) m.textContent = msg; } return; }
+      const row = e.target.closest(".hp-row"); if (!row) return;
+      const box = row.nextElementSibling, open = row.getAttribute("aria-expanded") !== "true";
+      row.setAttribute("aria-expanded", String(open)); row.parentElement.classList.toggle("open", open); box.hidden = !open;
+    });
+  });
+  $("#sheet").classList.add("hp-sheet"); document.body.classList.add("help-open"); $("#helpBtn").setAttribute("aria-expanded", "true");
+}
+{
+  const b = document.createElement("button");
+  b.className = "iconbtn hp-q"; b.id = "helpBtn"; b.type = "button"; b.textContent = "?";
+  b.setAttribute("aria-label", "Help"); b.title = "Help"; b.setAttribute("aria-haspopup", "dialog"); b.setAttribute("aria-expanded", "false");
+  $("#settingsBtn").before(b);
+  b.onclick = () => { if (!$("#sheet").hidden && $("#sheet").classList.contains("hp-sheet")) closeSheet(); else openHelp(); };
+  // the panel look and the open state end when the sheet closes, or when another sheet takes its place
+  new MutationObserver(() => { if ($("#sheet").hidden || $("#sheetTitle").textContent !== "Help") { $("#sheet").classList.remove("hp-sheet"); document.body.classList.remove("help-open"); b.setAttribute("aria-expanded", "false"); } }).observe($("#sheet"), { attributes: true, attributeFilter: ["hidden"], subtree: true, childList: true, characterData: true });
+  globalThis.gcHelp = { list: helpList, open: openHelp, screen: helpScreen };
+}
+{
+  // phone top bar: on a daf page (Sugya Flow, the amud chooser, Ameilus) the brand words give way to make room for ?; the daf name sets it
+  const dafMark = () => document.body.classList.toggle("on-daf", !!current);
+  new MutationObserver(dafMark).observe($("#refBtnText"), { childList: true, characterData: true, subtree: true }); dafMark();
 }
