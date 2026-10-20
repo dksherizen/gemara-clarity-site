@@ -448,7 +448,7 @@ const midLegendHtml = `<span><i class="mid"></i>new perek starts partway down</s
 let pickBy = "daf", miLand = null, miState = null, miTapped = false;
 const miData = {};
 function loadMishnah(m){
-  if (!miData[m]) miData[m] = fetch(`data/mishnah/${m}.json`).then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+  if (!miData[m]) miData[m] = fetch(`data/mishnah/${m}.json`).then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json().then(d => oflMiKeep(m, d)); }).catch(e => oflMiCopy(m, e)) // offline: a saved masechet's own copy
     .then(d => { if (!d || !Array.isArray(d.p)) throw new Error("bad data"); return d; }).catch(e => { delete miData[m]; throw e; });
   return miData[m];
 }
@@ -470,7 +470,7 @@ function miShowIndex(body, k, he, focusPerek, fx){
   const pb = $("#pickBody", body), ps = perakimOf(k) || [], tapped = miTapped; // opened by a tap on the switch: the list starts at its top, under the switch
   
   const head = `<div class="seder"><button class="chip" data-back>‹ All masechtot</button></div>
-    <h3 style="margin:8px 0 0;display:flex;justify-content:space-between">${masName(k)} <span class="he en-he" style="color:var(--muted);font-weight:500">${he}</span></h3>${miTabsHtml("mishnah")}`;
+    <h3 style="margin:8px 0 0;display:flex;justify-content:space-between">${masName(k)} <span class="he en-he" style="color:var(--muted);font-weight:500">${he}</span></h3>${oflSlotHtml(k)}${miTabsHtml("mishnah")}`;
   pb.innerHTML = head + `<div class="loading"><div class="spinner"></div></div>`; pb.dataset.mas = k;
   miWireTabs(body, k, fx.showDafGrid);
   const focusTab = () => setTimeout(() => { const a = document.activeElement; if (!a || a === document.body || a.id === "gotoInput") { const t = $('.mi-tabs [aria-selected="true"]', body); t && t.focus({ preventScroll: true }); } }, 40);
@@ -582,7 +582,7 @@ function openPicker(focusMas, focusPerek, mode){
       } else grid = rows(k, first, last);
       $("#pickBody", body).innerHTML = `<div class="seder"><button class="chip" data-back>‹ All masechtot</button></div>
         <h3 style="margin:8px 0 0;display:flex;justify-content:space-between">${masName(k)} <span class="he en-he" style="color:var(--muted);font-weight:500">${he}</span></h3>
-        ${miOn ? miTabsHtml("daf") : ""}<div class="legend-mini"><span><i></i>full step-by-step breakdown</span><span>others: text and translation</span>${byPerek ? midLegendHtml : ""}</div>
+        ${oflSlotHtml(k)}${miOn ? miTabsHtml("daf") : ""}<div class="legend-mini"><span><i></i>full step-by-step breakdown</span><span>others: text and translation</span>${byPerek ? midLegendHtml : ""}</div>
         ${grid}`;
       $("#pickBody", body).dataset.mas = k;
       if (miOn) miWireTabs(body, k, showDafGrid);
@@ -632,7 +632,7 @@ function openSettings(){
     ${sw("expandAll","Open every explanation","Otherwise tap a step to open it")}
     <h3 style="margin:22px 0 4px;font-size:16px">Offline</h3>
     <p class="small" style="margin:0 0 8px">Every daf you open is saved on this device automatically. You can also save the whole breakdown library now (${cloudIds.size || "all"} amudim) for learning without signal.</p>
-    <button class="btn" id="saveAll">Save library for offline</button> <span class="small" id="saveAllMsg"></span>
+    <button class="btn ofl-all" id="saveAll">Save library for offline<span class="sz">${oflMB(OFL_ALL_KB)}</span></button> <span class="small" id="saveAllMsg"></span><div id="oflList" class="ofl-list">${oflListHtml()}</div>
     <h3 style="margin:22px 0 4px;font-size:16px">About</h3>
     <p class="small" style="margin:0">Text and translation: Sefaria, William Davidson Edition (CC BY-NC). Step-by-step breakdowns are AI-generated with the original <a href="https://gemara-clarity.netlify.app/" target="_blank" rel="noopener">Gemara Clarity</a> prompt (his library, plus amudim generated the same way); check them against the text and your teacher.</p>
     <p class="small" style="margin:8px 0 0"><button class="linkbtn disc-link" id="discAgain" type="button">About this content (AI disclaimer)</button></p>
@@ -651,10 +651,11 @@ function openSettings(){
   });
 }
 async function saveLibrary(msg, btn){
-  btn.disabled = true; const ids = [...cloudIds]; let done = 0, fail = 0;
-  const run = async id => { try { await loadCloudAnalysis(id); const p = parseId(id); await loadText(p.m, p.i); } catch { fail++; } done++; msg.textContent = ` ${done}/${ids.length}`; };
+  btn.disabled = true; const ids = [...cloudIds]; let done = 0, fail = 0; const bad = new Set();
+  const run = async id => { try { await loadCloudAnalysis(id); const p = parseId(id); await loadText(p.m, p.i); } catch { fail++; bad.add(parseId(id).m); } done++; msg.textContent = ` ${done}/${ids.length}`; };
   for (let k = 0; k < ids.length; k += 4) await Promise.all(ids.slice(k, k + 4).map(run));
   msg.textContent = fail ? ` Saved ${done - fail}; ${fail} failed (try again with signal)` : ` Saved all ${done}.`;
+  oflLibDone(ids, bad);
   btn.disabled = false;
 }
 
@@ -1724,6 +1725,126 @@ function showDisclaimer(again){
   });
   setTimeout(() => ok.focus({ preventScroll: true }), 0);
 }
+/* ---------- offline: save one masechta (v105, Oct 19 2026) ----------
+   A masechta is saved with the same loaders and into the same cache as any daf that is opened (loadCloudAnalysis + loadText into gc2-data-v1),
+   plus its Mishnah list (data/mishnah/<masechet>.json), so a saved amud and a visited amud are the same entries. OFL_KB = [amudim, KB on the
+   device] per masechet, measured Oct 19 2026 over every amud (the JSON the cache stores: breakdown + Sefaria text + Mishnah list; next-qa/offline1-build).
+   The record per masechet is in localStorage (gc2-offline): { st: "saved" | "partial", n, of, err }. Saving runs while the app is open: closing the
+   app leaves the record partial ("Saving paused"), and Resume skips every amud already on the device. Nothing here deletes bookmarks or settings. */
+const OFL_KEY = "gc2-offline"; // localStorage: { masechet: { st: "saved" | "partial", n, of, err, at } }
+const OFL_KB = { Berakhot: [125, 14635], Shabbat: [312, 26321], Eruvin: [207, 17402], Pesachim: [240, 20098], Yoma: [173, 13846], Sukkah: [110, 8394], Beitzah: [78, 6169], Rosh_Hashanah: [67, 5613], Taanit: [59, 5408], Megillah: [61, 6799], Moed_Katan: [55, 5118], Chagigah: [51, 4239], Yevamot: [242, 20896], Ketubot: [222, 17505], Nedarim: [180, 8982], Nazir: [129, 7293], Sotah: [96, 8666], Gittin: [178, 14906], Kiddushin: [162, 14053], Bava_Kamma: [236, 20612], Bava_Metzia: [235, 19663], Bava_Batra: [350, 21846], Sanhedrin: [224, 22613], Makkot: [46, 4062], Shevuot: [96, 7943], Avodah_Zarah: [150, 11985], Horayot: [25, 2738], Zevachim: [238, 18561], Menachot: [217, 18261], Chullin: [281, 22362], Bekhorot: [119, 10321], Arakhin: [65, 6086], Temurah: [65, 5811], Keritot: [54, 6029], Meilah: [41, 2448], Tamid: [17, 1136], Niddah: [143, 12711] };
+const OFL_ALL_KB = Object.values(OFL_KB).reduce((s, x) => s + x[1], 0);
+const OFL_DL = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10.5l5 5 5-5M5 20h14"/></svg>`;
+const oflJobs = {}, oflSeen = new Set();
+const oflMB = kb => { const mb = kb / 1000; return (mb < 10 ? String(Math.max(0.1, +mb.toFixed(1))) : String(Math.round(mb))) + " MB"; };
+const oflAll = () => { const o = loadJSON(OFL_KEY, {}); return o && typeof o === "object" ? o : {}; };
+const oflGet = k => oflAll()[k] || null;
+function oflPut(k, r){ const o = oflAll(); if (r) o[k] = r; else delete o[k]; try { localStorage.setItem(OFL_KEY, JSON.stringify(o)); } catch {} }
+const oflIds = k => [...cloudIds].filter(id => parseId(id).m === k).sort((a, b) => parseId(a).i - parseId(b).i);
+const oflBk = id => `data/b/${encodeURIComponent(id)}.json${staticVersion ? "?v=" + encodeURIComponent(staticVersion) : ""}`; // the key loadCloudAnalysis stores
+const oflTx = (m, i) => { const { daf, amud } = dafOf(i); return `${SEFARIA}/api/texts/${m}.${daf}${amud}?context=0&commentary=0&pad=0`; }; // the key loadText stores
+async function oflHas(c, id, any){ const p = parseId(id); return !!(await c.match(any ? `data/b/${encodeURIComponent(id)}.json` : oflBk(id), { ignoreSearch: !!any })) && !!(await c.match(oflTx(p.m, p.i))); }
+async function oflCount(c, ids, any){ let n = 0; for (const id of ids) if (await oflHas(c, id, any)) n++; return n; }
+const oflJson = d => new Response(typeof d === "string" ? d : JSON.stringify(d), { headers: { "content-type": "application/json", "x-saved": String(Date.now()) } });
+function oflMiKeep(m, d){ if (oflGet(m)) caches.open(DATA_CACHE).then(c => c.put(`data/mishnah/${m}.json`, oflJson(d))).catch(() => {}); return d; } // a saved masechet keeps its newest Mishnah list
+async function oflMiCopy(m, e){ try { const h = await (await caches.open(DATA_CACHE)).match(`data/mishnah/${m}.json`); if (h) return await h.json(); } catch {} throw e; }
+async function oflMishnah(k, c){ try { const r = await fetch(`data/mishnah/${k}.json`); if (r.ok && c) await c.put(`data/mishnah/${k}.json`, oflJson(await r.text())); } catch {} }
+function oflBox(t, d, of, btns, sub, st){
+  const pct = of ? Math.min(100, d / of * 100) : 0;
+  return `<div class="ofl" data-st="${st}"><div class="ofl-row"><span class="ofl-t">${t}</span><span class="ofl-n">${d} of ${of}</span></div><div class="ofl-bar" role="progressbar" aria-label="Amudim saved" aria-valuemin="0" aria-valuemax="${of}" aria-valuenow="${d}"><i style="width:${pct.toFixed(1)}%"></i></div><div class="ofl-btns">${btns}</div><div class="ofl-sub">${sub}</div></div>`;
+}
+function oflInner(k){
+  const [n, kb] = OFL_KB[k], nm = esc(masName(k)), j = oflJobs[k], r = oflGet(k) || {};
+  if (j && !j.stop) return oflBox(`Saving ${nm} for offline…`, j.done, j.of, `<button class="btn" type="button" data-ofl="pause">Pause</button><button class="btn" type="button" data-ofl="cancel">Cancel</button>`, "Keep the app open. Pages you've saved stay saved if you stop.", "run");
+  if (r.st === "saved" && !j) return `<div class="ofl" data-st="saved"><div class="ofl-row"><span><span class="ofl-t ofl-ok">Saved for offline ✓</span><span class="ofl-sub">All ${r.of || n} amudim · ${oflMB(kb)} · works without signal</span></span><button class="ofl-rm" type="button" data-ofl="remove" aria-label="Remove ${nm} from this device">Remove</button></div></div>`;
+  if (r.st || j) return oflBox(r.err && !j ? "Saving stopped" : "Saving paused", j ? j.done : r.n || 0, j ? j.of : r.of || n, `<button class="btn" type="button" data-ofl="resume">Resume</button><button class="btn" type="button" data-ofl="cancel">Cancel</button>`, r.err && !j ? `${esc(r.err)} Pages you've saved stay saved.` : "Pages you've saved stay saved. Resume picks up where it stopped.", "paused");
+  return `<button class="btn ofl-save" type="button" data-ofl="save"><span class="ic">${OFL_DL}</span>Save ${nm} for offline<span class="sz">${oflMB(kb)}</span></button>`;
+}
+function oflSlotHtml(k){ if (!OFL_KB[k]) return ""; setTimeout(() => oflVerify(k), 0); return `<div class="ofl-slot" data-ofl-m="${k}">${oflInner(k)}</div>`; }
+function oflPaint(k, tick){
+  const j = oflJobs[k];
+  $$(".ofl-slot").filter(s => s.dataset.oflM === k).forEach(s => {
+    const box = $(".ofl", s);
+    if (tick && j && !j.stop && box && box.dataset.st === "run") { // progress only: the buttons stay where the finger is
+      $(".ofl-n", box).textContent = `${j.done} of ${j.of}`; const b = $(".ofl-bar", box); b.setAttribute("aria-valuenow", j.done); $("i", b).style.width = Math.min(100, j.done / j.of * 100).toFixed(1) + "%"; return;
+    }
+    const had = s.contains(document.activeElement); s.innerHTML = oflInner(k); if (had) { const f = $("button", s); f && f.focus({ preventScroll: true }); }
+  });
+  if (tick && j) { $$("[data-ofl-n]").filter(e => e.dataset.oflN === k).forEach(e => { e.textContent = `${j.done} of ${j.of}`; }); return; }
+  const list = $("#oflList"); if (list) list.innerHTML = oflListHtml();
+}
+async function oflSave(k){
+  const j0 = oflJobs[k]; if (j0) { if (j0.stop === "pause") { j0.again = true; } return; }
+  if (!OFL_KB[k]) return;
+  await loadCloudIndex(); const ids = oflIds(k);
+  if (!ids.length) { toast("The library list didn’t load. Try again with signal."); return; }
+  const j = oflJobs[k] = { done: 0, of: ids.length, fail: 0, stop: null, again: false };
+  const r0 = oflGet(k) || {}; oflPut(k, { st: "partial", n: r0.n || 0, of: ids.length });
+  try { if (navigator.storage && navigator.storage.persist) navigator.storage.persist().catch(() => {}); } catch {}
+  oflPaint(k);
+  let c = null; try { c = await caches.open(DATA_CACHE); } catch {}
+  await oflMishnah(k, c);
+  let x = 0, last = 0;
+  const work = async () => { while (!j.stop && x < ids.length) { const id = ids[x++], p = parseId(id);
+    try { if (!c || !(await oflHas(c, id))) { await loadCloudAnalysis(id); await loadText(p.m, p.i); } } catch { j.fail++; if (!navigator.onLine) j.stop = "offline"; }
+    j.done++; if (Date.now() - last > 500) { last = Date.now(); oflPut(k, { st: "partial", n: j.done - j.fail, of: j.of }); } oflPaint(k, true); } };
+  await Promise.all([work(), work(), work(), work()]);
+  if (j.stop === "cancel") { delete oflJobs[k]; oflPut(k, null); oflPaint(k); return; }
+  let have = c ? await oflCount(c, ids) : 0;
+  if (c && have && have < ids.length) { await new Promise(res => setTimeout(res, 400)); have = await oflCount(c, ids); } // a page's own cache write can lag its answer by a moment
+  delete oflJobs[k];
+  const all = have >= ids.length;
+  if (all) { oflPut(k, { st: "saved", n: ids.length, of: ids.length, at: Date.now() }); toast(`${masName(k)} is saved for offline`); }
+  else oflPut(k, { st: "partial", n: have, of: ids.length, err: j.stop === "pause" ? "" : navigator.onLine ? "Some amudim didn’t load. Try again." : "No signal. Try again with signal." });
+  oflPaint(k);
+  if (j.again && !all) oflSave(k);
+}
+async function oflVerify(k){ // once per session: a saved masechet whose pages the browser cleared says so, and Resume fetches what is missing
+  const r = oflGet(k); if (oflSeen.has(k) || oflJobs[k] || !r || r.st !== "saved") return; oflSeen.add(k);
+  try { await loadCloudIndex(); const ids = oflIds(k); if (!ids.length) return; const c = await caches.open(DATA_CACHE);
+    for (const id of [ids[0], ids[ids.length >> 1], ids[ids.length - 1]]) if (!(await oflHas(c, id, true))) { oflPut(k, { st: "partial", n: await oflCount(c, ids, true), of: ids.length, err: "Some pages were cleared from this device." }); oflPaint(k); return; }
+  } catch {}
+}
+async function oflDrop(test, dataOnly){ // delete matching entries: gc2-data-v1 always; older copies in a gc2- shell cache too, unless dataOnly
+  try { for (const name of await caches.keys()) { if (!/^gc2-/.test(name) || (dataOnly && name !== DATA_CACHE)) continue; const c = await caches.open(name);
+    for (const q of await c.keys()) { const u = new URL(q.url); if (test(u, name === DATA_CACHE)) await c.delete(q); } } } catch {}
+}
+async function oflRemove(k){
+  if (oflJobs[k]) oflJobs[k].stop = "cancel";
+  const bk = new RegExp(`/data/b/${k}_\\d+_[ab]\\.json$`), tx = new RegExp(`/api/texts/${k}\\.\\d+[ab]$`);
+  await oflDrop((u, data) => bk.test(u.pathname) || (data && (tx.test(u.pathname) || u.pathname.endsWith(`/data/mishnah/${k}.json`))));
+  oflPut(k, null); oflSeen.delete(k); oflPaint(k); toast(`${masName(k)} removed from this device`);
+}
+async function oflRemoveAll(){
+  Object.values(oflJobs).forEach(j => { j.stop = "cancel"; });
+  await oflDrop((u, data) => /\/data\/b\/[^/]+_\d+_[ab]\.json$/.test(u.pathname) || (data && (/\/api\/texts\//.test(u.pathname) || /\/data\/mishnah\//.test(u.pathname))));
+  const ks = Object.keys(oflAll()); try { localStorage.removeItem(OFL_KEY); } catch {}
+  ks.forEach(k => oflPaint(k)); oflPaint(""); toast("Offline data removed");
+}
+function oflLibDone(ids, bad){ // the whole library was saved: every masechet that came through whole is marked saved
+  const by = {}; ids.forEach(id => { const m = parseId(id).m; by[m] = (by[m] || 0) + 1; });
+  caches.open(DATA_CACHE).then(async c => { for (const k of Object.keys(by)) if (OFL_KB[k] && !bad.has(k)) { await oflMishnah(k, c); oflPut(k, { st: "saved", n: by[k], of: by[k], at: Date.now() }); oflPaint(k); } }).catch(() => {});
+}
+function oflListHtml(){
+  const o = oflAll(), ks = MAS.map(x => x[0]).filter(k => OFL_KB[k] && (o[k] || oflJobs[k]));
+  const kbOf = k => { const r = o[k] || {}, kb = OFL_KB[k][1]; return r.st === "saved" ? kb : Math.round(kb * (r.n || 0) / (r.of || OFL_KB[k][0])); };
+  const rows = ks.map(k => { const r = o[k] || {}, j = oflJobs[k], nm = esc(masName(k));
+    const sub = j && !j.stop ? `Saving · <span data-ofl-n="${k}">${j.done} of ${j.of}</span>` : r.st === "saved" ? `${r.of || OFL_KB[k][0]} amudim` : `Paused · ${r.n || 0} of ${r.of || OFL_KB[k][0]} amudim`;
+    return `<div class="sv-row"><span class="lbl"><b>${nm}</b><span>${sub}</span></span><span class="rt"><span class="mb">${oflMB(r.st === "saved" ? OFL_KB[k][1] : kbOf(k))}</span><button class="btn" type="button" data-ofl="remove" data-ofl-k="${k}" aria-label="Remove ${nm} from this device">Remove</button></span></div>`; }).join("");
+  const tot = ks.reduce((s, k) => s + kbOf(k), 0);
+  return `<h4 class="sv-h">Saved masechtot</h4>${rows || `<p class="small sv-none">None yet.</p>`}${ks.length ? `<div class="sv-tot"><b>Total on this device</b><b>${oflMB(tot)}</b></div>` : ""}<p class="small sv-hint">To save another masechta, open it from “Choose a daf”.</p><button class="btn ofl-rmall" type="button" data-ofl="removeall">Remove all offline data</button>`;
+}
+document.addEventListener("click", e => { // capture: the picker's own click handler (data-mas on #pickBody) never sees these buttons
+  const b = e.target.closest && e.target.closest("[data-ofl]"); if (!b) return;
+  e.stopPropagation(); e.preventDefault();
+  const a = b.dataset.ofl, slot = b.closest(".ofl-slot"), k = b.dataset.oflK || (slot ? slot.dataset.oflM : "");
+  if (a === "save" || a === "resume") oflSave(k);
+  else if (a === "pause") { if (oflJobs[k]) { oflJobs[k].stop = "pause"; oflPaint(k); } }
+  else if (a === "cancel") { if (oflJobs[k]) { oflJobs[k].stop = "cancel"; oflJobs[k].again = false; } else oflPut(k, null); oflPaint(k); }
+  else if (a === "remove") { if (confirm(`Remove ${masName(k)} from this device? You can save it again any time.`)) oflRemove(k); }
+  else if (a === "removeall") { if (confirm("Remove all offline data? Saved masechtot and every daf saved on this device will need signal again. Bookmarks and settings stay.")) oflRemoveAll(); }
+}, true);
+
 if (!disclaimerSeen()) showDisclaimer(false);
 
 applySettings();

@@ -1283,3 +1283,32 @@ body.theme-dark .clx-seder{box-shadow:0 1px 0 rgba(255,255,255,.03) inset}
 .mi-nb:disabled{opacity:.4;cursor:default}
 .step.mi-landed{outline:2px solid color-mix(in srgb,var(--mishnah) 70%,transparent);outline-offset:2px}
 body.no-colors .mi-n,body.no-colors .mi-bt b{color:var(--text)}
+
+/* offline (v105, Oct 19 2026): "Save <masechta> for offline" under the masechet heading in the daf picker (save, saving with a thin bar, paused, saved),
+   and "Saved masechtot" in Settings -> Offline. The app's own colours only (--panel, --panel-2, --border, --border-2, --accent, --good, --muted); every
+   button is at least 44px tall; the smallest text is 13px. */
+.ofl-slot{margin:12px 0 2px}
+.ofl{padding:12px 14px;border-radius:14px;background:var(--panel);border:1px solid var(--border)}
+.ofl-row{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.ofl-save{width:100%;min-height:48px;justify-content:flex-start;background:var(--panel);text-align:left}
+.ofl-save .sz,.ofl-all .sz{margin-left:auto;color:var(--muted);font-weight:600;font-size:14px}
+.ofl-all{min-height:44px}.ofl-all .sz{margin-left:8px}
+.ofl-save svg{width:18px;height:18px;flex:none}
+.ofl-save .ic{color:var(--accent);display:inline-flex}
+.ofl-t{font-weight:700;font-size:14.5px;display:flex;align-items:center;gap:7px}
+.ofl-ok{color:var(--good)}
+.ofl-n{font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+.ofl-bar{height:6px;border-radius:99px;background:var(--panel-2);border:1px solid var(--border-2);margin:10px 0;overflow:hidden}
+.ofl-bar i{display:block;height:100%;background:var(--accent);border-radius:99px;transition:width .3s}
+.ofl-btns{display:flex;gap:8px}.ofl-btns .btn{flex:1;min-height:44px}
+.ofl-sub{display:block;font-size:13px;color:var(--muted);margin-top:8px}
+.ofl[data-st=saved] .ofl-sub{margin-top:2px}
+.ofl-rm{min-height:44px;min-width:44px;padding:0 6px;border:0;background:none;color:var(--accent);font-weight:700;font-size:14.5px;flex:none}
+.sv-h{margin:18px 0 2px;font-size:14.5px}
+.sv-row{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:6px 2px;border-bottom:1px solid var(--border-2);min-height:56px}
+.sv-row .lbl b{display:block;font-size:15px}.sv-row .lbl span{font-size:13px;color:var(--muted)}
+.sv-row .rt{display:flex;align-items:center;gap:10px}.sv-row .mb{font-size:14px;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+.sv-row .btn{min-height:44px;padding:6px 12px;font-size:14px}
+.sv-tot{display:flex;justify-content:space-between;align-items:center;padding:12px 2px 4px;font-size:14.5px}
+.sv-none{margin:6px 0}.sv-hint{margin:2px 0 10px}
+.ofl-rmall{width:100%;min-height:44px}
