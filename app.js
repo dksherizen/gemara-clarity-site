@@ -33,21 +33,21 @@ const TYPES = {
   "דחיה":{k:"dechiya",en:"Rejection",tr:"Dechiya",d:"A proof is pushed aside: it doesn't have to mean that."},
   "מסקנא":{k:"maskana",en:"Conclusion",tr:"Maskana",d:"Where the discussion lands."}
 };
-const MISHNAH = { en:"Mishnah", he:"משנה", d:"Not a type of step but where it stands: the step is the Mishnah itself, from <bdi>מתני׳</bdi> up to <bdi>גמ׳</bdi>. Its own type colour stays beside the badge." };
+const MISHNAH = { en:"Mishnah", he:"משנה", d:"Not a type of step but where it stands: the step is the Mishnah itself, from <bdi>מתני׳</bdi> up to <bdi>גמ׳</bdi>. Its own type color stays beside the badge." };
 const MBADGE = { toString: () => `<span class="mbadge">Mishnah<span class="mb-he"> · <span class="he">מִשְׁנָה</span></span></span>` }; // read where it is interpolated; always pointed, whatever the Vowels switch says
 // markers (v99u): an optional step.marks array ("unresolved" for teiku, "end-marker" for hadran, "story" for a maaseh) adds small outlined tags to the
 // step's own chip. Not a ninth kind and no new colour: Unresolved takes the chip's colour, Story and End marker the muted grey. Unknown values and repeats are
 // dropped and the tags always come in one order (MARK_ORDER), whatever the array says. A step without marks, or with marks = [], renders exactly as before.
-const STEP_TAGS = { unresolved: { en: "Unresolved", he: "תֵּיקוּ", d: "A tag on the chip, not a kind of step: the Gemara leaves the question standing (teiku). The step keeps its own colour." },
-  story: { en: "Story", he: "מַעֲשֶׂה", d: "A tag on the chip, not a kind of step: the step tells a story (a maaseh). In the steps list, a run of story steps sits in one grey band. The step keeps its own colour." },
-  "end-marker": { en: "End marker", he: "הַדְרָן", d: "A tag on the chip, not a kind of step: the hadran said where a perek ends. The step keeps its own colour." } };
+const STEP_TAGS = { unresolved: { en: "Unresolved", he: "תֵּיקוּ", d: "A tag on the chip, not a kind of step: the Gemara leaves the question standing (teiku). The step keeps its own color." },
+  story: { en: "Story", he: "מַעֲשֶׂה", d: "A tag on the chip, not a kind of step: the step tells a story (a maaseh). In the steps list, a run of story steps sits in one gray band. The step keeps its own color." },
+  "end-marker": { en: "End marker", he: "הַדְרָן", d: "A tag on the chip, not a kind of step: the hadran said where a perek ends. The step keeps its own color." } };
 const MARK_ORDER = ["unresolved", "story", "end-marker"]; // what the step says first (left open), then what kind of passage it is, then where it stands
 const marksOf = s => s && Array.isArray(s.marks) ? MARK_ORDER.filter(g => s.marks.includes(g)) : [];
 const stagHtml = (s, quietStory) => { const gs = marksOf(s); return gs.length ? `<span class="vh">${stagAria(s)}</span>` + gs.filter(g => !(quietStory && g === "story")).map(g => `<span class="stag stag-${g}" aria-hidden="true">${STEP_TAGS[g].en}</span>`).join("") : ""; }; // one hidden phrase names every tag (", story, end marker"); the visible tags are aria-hidden. quietStory: inside its band (whose caption shows Story once) a story step shows no Story tag of its own
 const stagAria = s => marksOf(s).map(g => `, ${STEP_TAGS[g].en.toLowerCase()}`).join("");
 const tagKeyRowsHtml = a => { const used = MARK_ORDER.filter(g => a && Array.isArray(a.steps) && a.steps.some(s => marksOf(s).includes(g))); return used.length ? `<div class="lg-sub">Tags on a step (not kinds of step)</div>${used.map(g => `<div class="lg lg-tag"><span class="stag stag-${g}" aria-hidden="true">${STEP_TAGS[g].en}</span><div><b>${STEP_TAGS[g].en} · <span class="en-he">${STEP_TAGS[g].he}</span></b><div class="d">${STEP_TAGS[g].d}</div></div></div>`).join("")}` : ""; };
 const isMish = k => !!(current && current.mish && current.mish[k]);
-const PHASES = {mishnah:"On the Mishnah",opening_question:"Opening question",source_derivation:"Finding the source",objection_defense_cycle:"Challenge and defence",alternate_branch:"Another approach",clarification_of_terms:"Defining terms",narrative_aggadah:"Story / aggadah",conclusion:"Conclusion"};
+const PHASES = {mishnah:"On the Mishnah",opening_question:"Opening question",source_derivation:"Finding the source",objection_defense_cycle:"Challenge and defense",alternate_branch:"Another approach",clarification_of_terms:"Defining terms",narrative_aggadah:"Story / aggadah",conclusion:"Conclusion"};
 const FS_BASE = "https://firestore.googleapis.com/v1/projects/gemara-clarity/databases/(default)/documents/artifacts/gemara-clarity-public/public/data/gemara_cache_v5";
 const SEFARIA = "https://www.sefaria.org";
 const LS = { settings:"gc2-settings", bookmarks:"gc2-bookmarks", history:"gc2-history", explained:"gc2-open", ui:"gc2-ui", overview:"gc2-overview", mode:"gc2-mode" }; // mode: the reader's last way of learning an amud ("shiur" | "ameilus"), per device
@@ -642,9 +642,9 @@ function openSettings(){
     <div class="preview-en">Rabbi Yoḥanan said in the name of Rabbi Shimon ben Yoḥai…</div>
     <div class="setrow"><span class="lbl"><b>Theme</b></span><span class="seg3">${["dark","light","sepia"].map(t => `<button data-theme="${t}" aria-pressed="${settings.theme === t}">${t[0].toUpperCase() + t.slice(1)}</button>`).join("")}</span></div>
     ${sw("translation","English translation","Beside each phrase")}
-    ${sw("nikud","Vowels (nikud)","Turn off to practise reading plain text")}
-    ${sw("colors","Step colours")}
-    ${sw("kindtext","Color the text","Tint the Hebrew and English with each step's colour.")}
+    ${sw("nikud","Vowels (nikud)","Turn off to practice reading plain text")}
+    ${sw("colors","Step colors")}
+    ${sw("kindtext","Color the text","Tint the Hebrew and English with each step's color.")}
     ${sw("notes","Phrase notes")}
     ${sw("logic","Logic details","Trigger words, what attacks what, how it is resolved")}
     ${sw("expandAll","Open every explanation","Otherwise tap a step to open it")}
@@ -983,7 +983,7 @@ function renderHome(){
     <div class="section-h">Browse the library <small>${cloudIds.size ? cloudIds.size + " amudim" : ""}</small></div>
     <div id="libSlot">${libraryHtml()}</div>
     <p class="small" style="margin:10px 4px 0">Every other daf in Shas opens too, with the full text and translation side by side.</p>
-    <details class="legend-wrap"><summary class="section-h">The eight kinds of step <small>colour key</small></summary>
+    <details class="legend-wrap"><summary class="section-h">The eight kinds of step <small>color key</small></summary>
     <div class="legend">${Object.entries(TYPES).map(([he, t]) => `<div class="lg t-${t.k}"><span class="swatch"></span><div><b>${t.en} · <span class="en-he">${stepHe(he)}</span></b><div class="d">${t.d}</div></div></div>`).join("")}<div class="lg t-mishnah"><span class="swatch"></span><div><b>${MISHNAH.en} badge · <span class="en-he">${px(MISHNAH.he)}</span></b><div class="d">${MISHNAH.d}</div></div></div></div></details>`;
   $("#homeSearch").onclick = () => openPicker();
   $$("[data-home-pick]").forEach(b => b.onclick = () => openPicker(undefined, undefined, b.dataset.homePick));
@@ -1066,8 +1066,8 @@ function moreHtml(items, open){ // calm: one fold for the deeper layers; its lab
 }
 // Help (Oct 20 2026): Sugya Flow's own Help topics; "kinds" lists the step names exactly as Sugya Flow shows them (TYPES) (guarded: registerHelp is the Help block at the end of this file, so a lone slice of this file still runs)
 if (typeof registerHelp === "function") {
-registerHelp({ id:"kinds", group:"Sugya Flow", order:1, icon:"kinds", where:["flow"], title:"The eight kinds of step", sub:"Each colour says what a step does.", kinds:true, settings:["colors","kindtext"],
-  body:["Every step gets a colour for what it does in the argument.", "In Aa, Step colours turns the colours on or off, and Color the text tints the words too."] });
+registerHelp({ id:"kinds", group:"Sugya Flow", order:1, icon:"kinds", where:["flow"], title:"The eight kinds of step", sub:"Each color says what a step does.", kinds:true, settings:["colors","kindtext"],
+  body:["Every step gets a color for what it does in the argument.", "In Aa, Step colors turns the colors on or off, and Color the text tints the words too."] });
 registerHelp({ id:"phrases", group:"Sugya Flow", order:2, icon:"lines", where:["flow"], title:"Aramaic beside English", sub:"One phrase at a time.", settings:["translation","nikud","notes"],
   body:["Each step shows the Aramaic and the English one phrase at a time.", "In Aa you can turn off the English translation or the vowels to test yourself.", "Phrase notes adds short notes under some phrases."] });
 registerHelp({ id:"steps-list", group:"Sugya Flow", order:3, icon:"steps", where:["flow"], title:"The steps list", sub:"See the whole sugya at once.",
@@ -1075,7 +1075,7 @@ registerHelp({ id:"steps-list", group:"Sugya Flow", order:3, icon:"steps", where
 registerHelp({ id:"more", group:"Sugya Flow", order:4, icon:"more", where:["flow"], title:"More detail", sub:"Going deeper, why it matters, the logic.", settings:["logic","expandAll"],
   body:["Under each step, More detail opens the deeper layers: Another reading, Going deeper, Why it matters.", "Logic details in Aa adds the trigger words, what attacks what, and how it is resolved.", "Open every explanation in Aa opens each step without a tap."] });
 registerHelp({ id:"tags", group:"Sugya Flow", order:5, icon:"tag", where:["flow"], title:"Mishnah badge and tags", sub:"Mishnah, Story, Unresolved, End marker.",
-  body:["The Mishnah badge marks the Mishnah itself.", "Small tags mark a story (maaseh), a question left standing (teiku) and the hadran at the end of a perek. A tag never changes a step’s colour."] });
+  body:["The Mishnah badge marks the Mishnah itself.", "Small tags mark a story (maaseh), a question left standing (teiku) and the hadran at the end of a perek. A tag never changes a step’s color."] });
 registerHelp({ id:"pasuk", group:"Sugya Flow", order:6, icon:"verse", where:["flow"], title:"Verses", sub:"Tap a quoted pasuk to read it.",
   body:["When a step quotes a pasuk, tap the reference to read the verse in full."] });
 }
@@ -1241,7 +1241,7 @@ function applyMishnah(){
   $$(".segs .seg").forEach((el, k) => { const cl = segMishClass(k).trim(); if (cl) el.classList.add(...cl.split(" ")); });
 }
 const stripNowHtml = (a, n) => { const s = a.steps[n - 1]; if (!s) return ""; const t = TYPES[s.hebrewStepName] || TYPES["מימרא"]; return `Step ${n} of ${a.steps.length} · <b class="t-${t.k}">${t.en}</b>${stagHtml(s) ? ` <span class="t-${t.k}">${stagHtml(s)}</span>` : ""}`; };
-const colourKeyHtml = (a) => `<details class="legend-wrap"><summary class="section-h">The eight kinds of step <small>colour key</small></summary>
+const colourKeyHtml = (a) => `<details class="legend-wrap"><summary class="section-h">The eight kinds of step <small>color key</small></summary>
     <div class="legend">${Object.entries(TYPES).map(([he, t]) => `<div class="lg t-${t.k}"><span class="swatch"></span><div><b>${t.en} · <span class="en-he">${stepHe(he)}</span></b><div class="d">${t.d}</div></div></div>`).join("")}<div class="lg t-mishnah"><span class="swatch"></span><div><b>${MISHNAH.en} badge · <span class="en-he">${refHtml(vocApply(MISHNAH.he, null, vocGloss))}</span></b><div class="d">${MISHNAH.d}</div></div></div>${tagKeyRowsHtml(a)}</div></details>`; // v99o: the homepage colour key, same markup and words (the homepage builds it with current = null, so px() there is this call), for the steps view
 function stepsBlock(a){ // the step strip: one numbered, colour-coded button per step (tap to jump); the line under it names the step you are on
   return `<nav class="strip" aria-label="Jump to a step">${a.steps.map((s, k) => { const t = TYPES[s.hebrewStepName] || TYPES["מימרא"]; return `<button class="t-${t.k}${isMish(k) ? " is-mishnah" : ""}" data-jump="${k+1}" aria-label="Step ${k+1}, ${t.en}${stagAria(s)}: ${esc(s.title||"")}" title="${k+1}. ${t.en}${stagAria(s)}: ${esc(s.title||"")}">${k+1}</button>`; }).join("")}</nav>

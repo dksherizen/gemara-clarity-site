@@ -365,4 +365,4 @@ export function mapTree(steps){
 
 export const KIND_CLASS = { "מימרא": "mimra", "קשיא": "kashya", "תירוץ": "terutz", "ראיה": "raaya", "דחיה": "dechiya", "שאלה": "sheelah", "תשובה": "teshuvah", "מסקנא": "maskana" };
 export const KIND_EN = { "מימרא": "Statement", "קשיא": "Challenge", "תירוץ": "Answer", "ראיה": "Proof", "דחיה": "Push-back", "שאלה": "Question", "תשובה": "Reply", "מסקנא": "Conclusion" };
-export const PHASE_EN = { mishnah: "Mishnah", opening_question: "Opening question", source_derivation: "Finding the source", objection_defense_cycle: "Challenge and defence", alternate_branch: "Another approach", clarification_of_terms: "Defining terms", narrative_aggadah: "Story", conclusion: "Conclusion" };
+export const PHASE_EN = { mishnah: "Mishnah", opening_question: "Opening question", source_derivation: "Finding the source", objection_defense_cycle: "Challenge and defense", alternate_branch: "Another approach", clarification_of_terms: "Defining terms", narrative_aggadah: "Story", conclusion: "Conclusion" };
