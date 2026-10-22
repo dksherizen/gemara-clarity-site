@@ -1,6 +1,6 @@
 // Gemara Clarity, rebuilt. Static, no keys, no trackers.
 // Text: Sefaria public API. Breakdowns: read-only from the original app's public cloud library.
-import { segmentMarker, segmentFlags, stepFlags, endState } from "./mishnah.js";
+import { segmentMarker, segmentFlags, stepFlags, endState } from "./mishnah.js"; import * as acct from "./acct.js"; // v106-acct: optional sign-in (the corner profile button opens Account, Settings, Help); guests load no Firebase
 import { AMW } from "./ameilus/words.js?v=3.6.0"; // Ameilus names itself from one table (the word for what the learner marks may change)
 const MAS = [["Berakhot", "ברכות", 2, 126], ["Shabbat", "שבת", 2, 313], ["Eruvin", "עירובין", 2, 208], ["Pesachim", "פסחים", 2, 241], ["Yoma", "יומא", 2, 174], ["Sukkah", "סוכה", 2, 111], ["Beitzah", "ביצה", 2, 79], ["Rosh_Hashanah", "ראש השנה", 2, 68], ["Taanit", "תענית", 2, 60], ["Megillah", "מגילה", 2, 62], ["Moed_Katan", "מועד קטן", 2, 56], ["Chagigah", "חגיגה", 2, 52], ["Yevamot", "יבמות", 2, 243], ["Ketubot", "כתובות", 2, 223], ["Nedarim", "נדרים", 2, 181], ["Nazir", "נזיר", 2, 131], ["Sotah", "סוטה", 2, 97], ["Gittin", "גיטין", 2, 179], ["Kiddushin", "קידושין", 2, 163], ["Bava_Kamma", "בבא קמא", 2, 237], ["Bava_Metzia", "בבא מציעא", 2, 236], ["Bava_Batra", "בבא בתרא", 2, 351], ["Sanhedrin", "סנהדרין", 2, 225], ["Makkot", "מכות", 2, 47], ["Shevuot", "שבועות", 2, 97], ["Avodah_Zarah", "עבודה זרה", 2, 151], ["Horayot", "הוריות", 2, 26], ["Zevachim", "זבחים", 2, 239], ["Menachot", "מנחות", 2, 218], ["Chullin", "חולין", 2, 282], ["Bekhorot", "בכורות", 2, 120], ["Arakhin", "ערכין", 2, 66], ["Temurah", "תמורה", 2, 66], ["Keritot", "כריתות", 2, 55], ["Meilah", "מעילה", 2, 42], ["Tamid", "תמיד", 49, 65], ["Niddah", "נדה", 2, 144]]; // [key, hebrew, firstAmudIndex, lastAmudIndex]  index: 2 = 2a, 3 = 2b ...
 const SEDARIM = [
@@ -185,7 +185,7 @@ let observer = null;
 
 /* ---------- refs ---------- */
 const masInfo = key => MAS.find(x => x[0] === key);
-// home3 (Oct 16 2026, David): masechta names on screen use the ArtScroll (Schottenstein) Ashkenazi spellings. DISPLAY ONLY: routes
+// home3 (Oct 16 2026): masechta names on screen use the ArtScroll (Schottenstein) Ashkenazi spellings. DISPLAY ONLY: routes
 // (#/Berakhot/41b), data file names, JSON keys and Sefaria refs keep the keys. This one map is the only place a name is spelled;
 // everything on screen goes through masName (and dispNames for the few names inside Classics text).
 const MAS_DISPLAY = { Berakhot: "Berachos", Shabbat: "Shabbos", Eruvin: "Eruvin", Pesachim: "Pesachim", Yoma: "Yoma", Sukkah: "Succah", Beitzah: "Beitzah",
@@ -201,7 +201,7 @@ const idxOf = (daf, amud) => (daf - 1) * 2 + (amud === "b" ? 1 : 0);
 const label = (m, i) => { const {daf, amud} = dafOf(i); return `${masName(m)} ${daf}${amud}`; };
 const refId = (m, i) => { const {daf, amud} = dafOf(i); return `${m}_${daf}_${amud}`; };
 const parseId = id => { const p = id.split("_"); const amud = p.pop(); const daf = +p.pop(); return { m: p.join("_"), i: idxOf(daf, amud) }; };
-// home3b: the Sugya Flow link is written #/<m>/<daf>/steps (approved route name); old #/<m>/<daf>/shiur links still open (alias in route()).
+// home3b: the Sugya Flow link is written #/<m>/<daf>/steps; links with the earlier route word still open (alias in route()).
 // The mode key stays "shiur" inside the app (storage keys and data-path-pick unchanged).
 const hashFor = (m, i, extra="") => `#/${m}/${dafOf(i).daf}${dafOf(i).amud}${extra === "/shiur" ? "/steps" : extra}`;
 function gematria(n){
@@ -355,7 +355,7 @@ function sanitize(html, he){
   return walk(doc.body.firstChild).replace(/\s+/g, " ").trim();
 }
 const heTxt = t => { t = String(t||"").replace(/<[^>]+>/g, ""); return esc(settings.nikud ? t : t.replace(NIKUD, "")); };
-// kt3 (Oct 16 2026, David's voice note, 12:12 AM: "if they can tap on a word and see the translation, it'll really, really help them"): each Hebrew/Aramaic word of a
+// kt3 (Oct 16 2026: tap a word to see its translation): each Hebrew/Aramaic word of a
 // step's phrase line is its own <span class="fw"> so a tap can open its word help (wordHelpFlow). The visible text is exactly heTxt's; nothing else changes.
 // e5: each word is a button for the keyboard; st (one per step) gives the step's first word the step's one Tab stop (roving tabindex)
 const heWords = (t, st) => { let k = 0; return heTxt(t).split(/(\s+|\u05BE)/).map(x => /[\u05D0-\u05EA]/.test(x) ? `<span class="fw" data-k="${k++}" role="button" tabindex="${st && !st.n++ ? 0 : -1}">${x}</span>` : x).join(""); };
@@ -402,7 +402,7 @@ const hasBreakdown = id => cloudIds.has(id);
 /* ---------- perakim (static data/perakim.json, from Sefaria's chapter map) ---------- */
 let perakim = null;
 function loadPerakim(){
-  // round 4 (Oct 15 2026, David): the perek names show with nikud, from a display-only map (data/perek-nikud.json); a name without an entry stays bare
+  // round 4 (Oct 15 2026): the perek names show with nikud, from a display-only map (data/perek-nikud.json); a name without an entry stays bare
   if (loadPerakim.p) return loadPerakim.p;
   const nik = fetch("data/perek-nikud.json").then(r => r.ok ? r.json() : null).catch(() => null);
   return (loadPerakim.p = fetch("data/perakim.json").then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
@@ -438,7 +438,7 @@ const perekHeadHtml = p => `<h4 class="pk-h"><span>Perek ${p.n} · <span class="
 const perekJumpHtml = (ps, attr = "data-jump") => `<nav class="pk-jump" aria-label="Jump to a perek">${ps.map(p => `<button class="chip" ${attr}="${p.jump || p.n}"><b>${p.n}</b><span class="he">${esc(p.heV || p.he)}</span></button>`).join("")}</nav>`;
 const midLegendHtml = `<span><i class="mid"></i>new perek starts partway down</span>`;
 
-/* ---------- Mishnah index (Oct 19 2026, David: "an option where we can get to each mishna"; "Can't it take it directly to that step?") ----------
+/* ---------- Mishnah index (Oct 19 2026: reach each mishnah and open it at its own step) ----------
    The daf picker gets a "By daf | By Mishnah" switch. By Mishnah lists every Mishnah of the masechet under its perek, with its opening
    words and its amud, from a small static file per masechet (data/mishnah/<masechet>.json, loaded when the switch is first opened).
    Each row: l = the standard Mishnah number in the chapter ("1–2" when one Gemara block covers several; "10:1" when the standard chapter
@@ -526,7 +526,7 @@ function miBand(L, fresh){
 }
 
 /* ---------- picker ---------- */
-// home3: the Sugya Flow and Ameilus cards on home open this same picker with a way already chosen; the daf picked opens in that way
+// home3: the Sugya Flow and Ameilus cards on home open this same picker with a way already chosen; the chosen daf opens in that way
 let pickMode = null;
 // Help (Oct 20 2026): the daf list registers its own Help topics; the Help page (help, end of this file) lists every registered topic (guarded: registerHelp is the Help block at the end of this file, so a lone slice of this file still runs)
 if (typeof registerHelp === "function") {
@@ -626,12 +626,12 @@ function openPicker(focusMas, focusPerek, mode){
 // Help (Oct 20 2026): every control in Text and display (Aa) is named in a Help topic's settings list; help.test.mjs fails on a control that is not (guarded: registerHelp is the Help block at the end of this file, so a lone slice of this file still runs)
 if (typeof registerHelp === "function") {
 registerHelp({ id:"display", group:"Your things", order:3, icon:"aa", where:["home","flow","ameilus","classics"], title:"Text and display", sub:"Text size and theme.", settings:["size","theme"],
-  body:["Tap Aa at the top. A− and A+ change the size of the Hebrew, Aramaic and English together.", "Pick Dark, Light or Sepia."],
-  action:{ label:"Open Aa", run: c => { c.close(); $("#settingsBtn").click(); } } });
+  body:["Open Settings from the menu at the top right. A− and A+ change the size of the Hebrew, Aramaic and English together.", "Pick Dark, Light or Sepia."],
+  action:{ label:"Open Settings", run: c => { c.close(); openSettingsAll(); } } });
 registerHelp({ id:"about", group:"Your things", order:5, icon:"info", where:["home"], title:"About this content", sub:"Where the text and the steps come from.", settings:["discAgain"],
-  body:["The text and translation are from Sefaria (William Davidson Edition).", "The step-by-step breakdowns are AI-generated, so check anything important with a teacher.", "Aa › About this content shows the full note again."] });
+  body:["The text and translation are from Sefaria (William Davidson Edition).", "The step-by-step breakdowns are AI-generated, so check anything important with a teacher.", "Settings › About this content shows the full note again."] });
 registerHelp({ id:"clear", group:"Your things", order:6, icon:"clear", where:[], title:"Clear my data", sub:"Start fresh on this device.", settings:["clearData"],
-  body:["Aa › Clear my bookmarks, history and saved data.", "It removes your bookmarks, history, saved dapim and settings from this device only."] });
+  body:["Settings › Clear my bookmarks, history and saved data.", "It removes your bookmarks, history, saved dapim and settings from this device only."] });
 }
 function openSettings(){
   const sw = (key, title, sub) => `<label class="setrow"><span class="lbl"><b>${title}</b>${sub ? `<span>${sub}</span>` : ""}</span><span class="switch"><input type="checkbox" data-set="${key}" ${settings[key] ? "checked" : ""}><span></span></span></label>`;
@@ -655,7 +655,7 @@ function openSettings(){
     <p class="small" style="margin:0">Text and translation: Sefaria, William Davidson Edition (CC BY-NC). Step-by-step breakdowns are AI-generated with the original <a href="https://gemara-clarity.netlify.app/" target="_blank" rel="noopener">Gemara Clarity</a> prompt (his library, plus amudim generated the same way); check them against the text and your teacher.</p>
     <p class="small" style="margin:8px 0 0"><button class="linkbtn disc-link" id="discAgain" type="button">About this content (AI disclaimer)</button></p>
     <p class="small"><button class="btn" id="clearData" style="margin-top:10px">Clear my bookmarks, history and saved data</button></p>`;
-  openSheet("Text and display", html, body => {
+  openSheet("Settings", html, body => {
     body.addEventListener("change", e => { const k = e.target.dataset.set; if (k) { settings[k] = e.target.checked; applySettings(); rerender(); } });
     body.addEventListener("click", async e => {
       const t = e.target.closest("button"); if (!t) return;
@@ -663,7 +663,7 @@ function openSettings(){
       if (t.dataset.theme) { settings.theme = t.dataset.theme; applySettings(); $$("[data-theme]", body).forEach(b => b.setAttribute("aria-pressed", b.dataset.theme === settings.theme)); }
       if (t.id === "saveAll") saveLibrary($("#saveAllMsg", body), t);
       if (t.id === "discAgain") { closeSheet(); showDisclaimer(true); }
-      if (t.id === "clearData") { if (confirm("Clear bookmarks, history, saved dapim and settings on this device?")) { Object.values(LS).forEach(k => localStorage.removeItem(k)); try { await caches.delete(DATA_CACHE); } catch {} location.hash = "#/"; location.reload(); } }
+      if (t.id === "clearData") { if (confirm("Clear bookmarks, history, saved dapim and settings on this device?")) { acct.forgetDevice(); Object.values(LS).forEach(k => localStorage.removeItem(k)); try { await caches.delete(DATA_CACHE); } catch {} location.hash = "#/"; location.reload(); } }
     });
     if (!settings.nikud) $(".preview-he", body).textContent = "אמר רבי יוחנן משום רבי שמעון בן יוחי";
   });
@@ -786,8 +786,7 @@ function classicCard(it, C){
     <p class="cl-status">Selected passage; AI-generated explanations may contain mistakes. No haskama or rabbinic review.</p>
   </article>`;
 }
-// ---- home3 Classics library (Oct 16 2026, David: "a huge list… by the different Sedarim, like Nezikin… then the different Masechtos and
-// the classic sugyos in there"). By Seder (default): Seder → masechta → the sugyos, each a compact card that opens in Sugya Flow; a sticky
+// ---- home3 Classics library (Oct 16 2026: the classic sugyos, listed by Seder and masechta). By Seder (default): Seder → masechta → the sugyos, each a compact card that opens in Sugya Flow; a sticky
 // Seder bar and a search box on top. Suggested order keeps the classics1 cards. The 51-item draft list (data/classics-draft.json, not
 // verified, file unchanged) is merged in for this mock only: de-duplicated against the verified list by masechta + daf, marked "Draft",
 // and given buttons only when it names a usable start and end step.
@@ -934,7 +933,7 @@ function markClassics(c, a){
 }
 // ---- end Classics ----
 
-// ---- home3: three ways in (Oct 16 2026, David: "three different options… the steps mode / Sugya Flow, Ameilus, and the classics") ----
+// ---- home3: three ways in (Oct 16 2026: three ways in: Sugya Flow, Ameilus and the classics) ----
 // Sugya Flow and Ameilus open the daf picker with that way chosen; Classics opens the library of famous sugyos.
 const H3_ART = {
   shiur: `<svg viewBox="0 0 64 64" aria-hidden="true"><path class="a-ln" d="M19 17v12.5a5 5 0 0 0 5 5h3.5M27 34.5V47"/><circle cx="19" cy="17" r="5.5" fill="var(--mimra)"/><circle cx="27" cy="34.5" r="5.5" fill="var(--kashya)"/><circle cx="27" cy="49" r="5.5" fill="var(--terutz)"/><rect class="a-tx" x="29" y="14.5" width="22" height="5" rx="2.5"/><rect class="a-tx" x="37" y="32" width="17" height="5" rx="2.5"/><rect class="a-tx" x="37" y="46.5" width="13" height="5" rx="2.5"/></svg>`,
@@ -1055,7 +1054,7 @@ function relatedSteps(id, s, n, total){                                // -> sor
   for (const x of list) { const v = typeof x === "string" && /^\d+$/.test(x.trim()) ? +x : x; if (Number.isInteger(v) && v >= 1 && v < n && v <= total && !out.includes(v)) out.push(v); }
   return out.sort((p, q) => p - q);
 }
-function relatedLineHtml(nums, n){                                     // n = this step's number; a line that only points to step n-1 is hidden (David, Oct 14 2026)
+function relatedLineHtml(nums, n){                                     // n = this step's number; a line that only points to step n-1 is hidden (Oct 14 2026)
   if (n && nums.length === 1 && nums[0] === n - 1) return "";
   return nums.length ? `<p class="srel">Related earlier steps: ${nums.map(v => `<a href="#s${v}" data-jump="${v}" data-rel="1" aria-label="Go to step ${v}">${v}</a>`).join('<span class="srel-sep">, </span>')}</p>` : "";
 }
@@ -1067,13 +1066,13 @@ function moreHtml(items, open){ // calm: one fold for the deeper layers; its lab
 // Help (Oct 20 2026): Sugya Flow's own Help topics; "kinds" lists the step names exactly as Sugya Flow shows them (TYPES) (guarded: registerHelp is the Help block at the end of this file, so a lone slice of this file still runs)
 if (typeof registerHelp === "function") {
 registerHelp({ id:"kinds", group:"Sugya Flow", order:1, icon:"kinds", where:["flow"], title:"The eight kinds of step", sub:"Each color says what a step does.", kinds:true, settings:["colors","kindtext"],
-  body:["Every step gets a color for what it does in the argument.", "In Aa, Step colors turns the colors on or off, and Color the text tints the words too."] });
+  body:["Every step gets a color for what it does in the argument.", "In Settings, Step colors turns the colors on or off, and Color the text tints the words too."] });
 registerHelp({ id:"phrases", group:"Sugya Flow", order:2, icon:"lines", where:["flow"], title:"Aramaic beside English", sub:"One phrase at a time.", settings:["translation","nikud","notes"],
-  body:["Each step shows the Aramaic and the English one phrase at a time.", "In Aa you can turn off the English translation or the vowels to test yourself.", "Phrase notes adds short notes under some phrases."] });
+  body:["Each step shows the Aramaic and the English one phrase at a time.", "In Settings you can turn off the English translation or the vowels to test yourself.", "Phrase notes adds short notes under some phrases."] });
 registerHelp({ id:"steps-list", group:"Sugya Flow", order:3, icon:"steps", where:["flow"], title:"The steps list", sub:"See the whole sugya at once.",
   body:["Tap Steps at the bottom, or All steps, to see every step as a map.", "Tap any step to jump to it."] });
 registerHelp({ id:"more", group:"Sugya Flow", order:4, icon:"more", where:["flow"], title:"More detail", sub:"Going deeper, why it matters, the logic.", settings:["logic","expandAll"],
-  body:["Under each step, More detail opens the deeper layers: Another reading, Going deeper, Why it matters.", "Logic details in Aa adds the trigger words, what attacks what, and how it is resolved.", "Open every explanation in Aa opens each step without a tap."] });
+  body:["Under each step, More detail opens the deeper layers: Another reading, Going deeper, Why it matters.", "Logic details in Settings adds the trigger words, what attacks what, and how it is resolved.", "Open every explanation in Aa opens each step without a tap."] });
 registerHelp({ id:"tags", group:"Sugya Flow", order:5, icon:"tag", where:["flow"], title:"Mishnah badge and tags", sub:"Mishnah, Story, Unresolved, End marker.",
   body:["The Mishnah badge marks the Mishnah itself.", "Small tags mark a story (maaseh), a question left standing (teiku) and the hadran at the end of a perek. A tag never changes a step’s color."] });
 registerHelp({ id:"pasuk", group:"Sugya Flow", order:6, icon:"verse", where:["flow"], title:"Verses", sub:"Tap a quoted pasuk to read it.",
@@ -1091,7 +1090,7 @@ function stepHtml(s, k, open){
   const more = [
     s.classificationConfidence && s.classificationConfidence !== "High" && s.alternativePossibleLabel ? ["Another reading", `<p class="maybe">Could also be read as: ${px(s.alternativePossibleLabel)}</p>`] : null,
     s.deeperAnalysis ? ["Going deeper", P("Going deeper", s.deeperAnalysis)] : null,
-    // kt2 (Oct 16 2026, David: no Key Terms at all): the Key terms section is not shown; keyTerms stay in the data for nikud borrowing (vocTextsOf)
+    // kt2 (Oct 16 2026: no Key Terms section): the Key terms section is not shown; keyTerms stay in the data for nikud borrowing (vocTextsOf)
     s.whyThisMatters ? ["Why it matters", P("Why it matters", s.whyThisMatters)] : null,
     logicRows.length ? ["Logic", `<section class="logic box"><h4>Logic</h4><dl>${logicRows.map(r => `<dt>${r[0]}</dt><dd>${px(r[1])}</dd>`).join("")}</dl></section>`] : null].filter(Boolean);
   const total = (current && current.analysis && current.analysis.steps || []).length, nextN = total && k + 2 <= total ? k + 2 : 0;
@@ -1307,7 +1306,7 @@ function toggleStep(card, force){
   const ex = $(".explain", card); const open = force ?? ex.hidden;
   ex.hidden = !open; card.classList.toggle("open", open);
   $$("[aria-controls]", card).forEach(b => b.setAttribute("aria-expanded", open));
-  $(".explain-btn .xb-l", card).textContent = open ? "Hide explanation" : "Explain"; // home3b (David, Oct 16 2026): Explain sits at the END of the step
+  $(".explain-btn .xb-l", card).textContent = open ? "Hide explanation" : "Explain"; // home3b (Oct 16 2026): Explain sits at the END of the step
   const x = $(".sh-x", card); if (x) x.firstChild.textContent = open ? "Hide" : "Explain";
 }
 function jumpTo(n, flash){
@@ -1484,9 +1483,9 @@ async function renderAmeilus(m, i){
 // Help (Oct 20 2026): Bare mode's Help topic. It says what Bare mode really does today: the hint buttons go, the marks are still checked (guarded: registerHelp is the Help block at the end of this file, so a lone slice of this file still runs)
 if (typeof registerHelp === "function") {
 registerHelp({ id:"am-bare", group:"Ameilus", order:6, icon:"bare", where:["ameilus"], title:"Bare mode", sub:"Just the daf and the marker.", settings:["amBare"],
-  body:["In Aa › Ameilus, while you are in Ameilus.", "Bare mode hides the vowel, punctuation and signal-word hints. Your marks are still checked."] });
+  body:["In Settings › Ameilus, while you are in Ameilus.", "Bare mode hides the vowel, punctuation and signal-word hints. Your marks are still checked."] });
 registerHelp({ id:"am-guess", group:"Ameilus", order:7, icon:"kinds", where:["ameilus"], added:"2026-10-20", title:"Guess the kind first", sub:"Guess what a passage does before we show it.", settings:["amGuess"],
-  body:["In Aa › Ameilus, while you are in Ameilus. It stays off until you turn it on.", "After you mark a passage, pick its kind in two taps, or tap Skip. Nothing is shown until you guess or skip, and it never says wrong. Bare mode leaves it off."] });
+  body:["In Settings › Ameilus, while you are in Ameilus. It stays off until you turn it on.", "After you mark a passage, pick its kind in two taps, or tap Skip. Nothing is shown until you guess or skip, and it never says wrong. Bare mode leaves it off."] });
 }
 function amSettingsSection(body){
   if (!body) return;
@@ -1596,7 +1595,7 @@ function focusAfterRoute(){
 window.addEventListener("hashchange", () => { if (swReload()) return; Promise.resolve(route(false)).then(() => requestAnimationFrame(focusAfterRoute), () => {}); });
 $("#homeBtn").onclick = () => { location.hash = "#/"; };
 $("#refBtn").onclick = () => openPicker();
-$("#settingsBtn").onclick = () => { openSettings(); if (current && current.am) amSettingsSection($("#sheetBody")); };
+function openSettingsAll(){ openSettings(); if (current && current.am) amSettingsSection($("#sheetBody")); } $("#settingsBtn").onclick = e => acct.toggleMenu(e); // v106-acct: the corner button opens the profile menu; its Settings row opens openSettingsAll
 $("#sheetClose").onclick = closeSheet; $("#backdrop").onclick = closeSheet;
 $("#flowBtn").onclick = () => { if (current && current.analysis) openSheet(`The steps of ${label(current.m, current.i)}`, flowHtml(current.analysis.steps), b => { const cur = $$(".step.cur")[0]; if (cur) { const f = $(`.fnode[data-jump="${cur.dataset.n}"]`, b); f && f.classList.add("cur"); f && f.scrollIntoView({ block: "center" }); } b.onclick = e => { const j = e.target.closest("[data-jump]"); if (j) { e.preventDefault(); jumpTo(+j.dataset.jump); } }; }); };
 document.addEventListener("keydown", e => {
@@ -1663,7 +1662,7 @@ $("#bbToggle").onclick = () => { ui.barHidden = !ui.barHidden; saveUi(); applyUi
 })();
 applyUi();
 
-/* ---------- quoted pasuk references (Oct 15 2026, David 11:09 PM): "ישעיהו 60:21" in a note is a button; it opens the pasuk in a small
+/* ---------- quoted pasuk references (Oct 15 2026): "ישעיהו 60:21" in a note is a button; it opens the pasuk in a small
    pop-up over the page (Hebrew with nikud, English, "Open on Sefaria"), fetched from Sefaria's public API and cached for the session ---------- */
 const TANAKH = { "בראשית":"Genesis", "שמות":"Exodus", "ויקרא":"Leviticus", "במדבר":"Numbers", "דברים":"Deuteronomy", "יהושע":"Joshua", "שופטים":"Judges",
   "שמואל א":"I Samuel", "שמואל ב":"II Samuel", "מלכים א":"I Kings", "מלכים ב":"II Kings", "ישעיהו":"Isaiah", "ישעיה":"Isaiah", "ירמיהו":"Jeremiah", "ירמיה":"Jeremiah",
@@ -1741,7 +1740,7 @@ document.addEventListener("click", e => {
   e.preventDefault(); e.stopPropagation(); openPasuk(b.dataset.pasuk, b.dataset.label || b.textContent, b);
 }, true);
 
-/* ---------- first-visit notice (Oct 15 2026, David 11:03-11:06 PM): the whole site, once per device, acknowledged with the button only ---------- */
+/* ---------- first-visit notice (Oct 15 2026): the whole site, once per device, acknowledged with the button only ---------- */
 const DISC_KEY = "gc-disclaimer";
 const DISC = {
   title: "Before you start",
@@ -1887,8 +1886,8 @@ function oflLibDone(ids, bad){ // the whole library was saved: every masechet th
 // Help (Oct 20 2026): offline save's Help topic (guarded: registerHelp is the Help block at the end of this file, so a lone slice of this file still runs)
 if (typeof registerHelp === "function") {
 registerHelp({ id:"offline", group:"Your things", order:2, icon:"offline", where:["home","flow","ameilus"], added:"2026-10-20", title:"Learn without signal", sub:"Save a masechta to this device.", settings:["saveAll","ofl"],
-  body:["Every daf you open is saved on this device.", "To save a whole masechta, open its daf list and tap Save for offline. To save everything, go to Aa › Offline.", "If the app looks out of date, close it and open it again."],
-  action:{ label:"Open Offline settings", run: c => { c.close(); $("#settingsBtn").click(); const s = $("#saveAll"); s && s.scrollIntoView({ block:"center" }); } } });
+  body:["Every daf you open is saved on this device.", "To save a whole masechta, open its daf list and tap Save for offline. To save everything, go to Settings › Offline.", "If the app looks out of date, close it and open it again."],
+  action:{ label:"Open Offline settings", run: c => { c.close(); openSettingsAll(); const s = $("#saveAll"); s && s.scrollIntoView({ block:"center" }); } } });
 }
 function oflListHtml(){
   const o = oflAll(), ks = MAS.map(x => x[0]).filter(k => OFL_KB[k] && (o[k] || oflJobs[k]));
@@ -1909,7 +1908,7 @@ document.addEventListener("click", e => { // capture: the picker's own click han
   else if (a === "remove") { if (confirm(`Remove ${masName(k)} from this device? You can save it again any time.`)) oflRemove(k); }
   else if (a === "removeall") { if (confirm("Remove all offline data? Saved masechtot and every daf saved on this device will need signal again. Bookmarks and settings stay.")) oflRemoveAll(); }
 }, true);
-
+acct.init({ openSheet, closeSheet, toast, openSettings: openSettingsAll, openHelp, onPulled: () => { Object.assign(settings, loadJSON(LS.settings, {})); applySettings(); if (!current) renderHome(); } }); // v106-acct
 if (!disclaimerSeen()) showDisclaimer(false);
 
 applySettings();
@@ -1947,7 +1946,7 @@ if ("serviceWorker" in navigator) {
 function registerHelp(e){ if (!e || !e.id) return; (registerHelp.m ||= new Map()).set(e.id, Object.assign({ group:"More", order:99, icon:"info", where:[], body:[], settings:[] }, e)); }
 globalThis.registerHelp = registerHelp; (globalThis.__gcHelpQ || []).forEach(registerHelp); globalThis.__gcHelpQ = [];
 registerHelp({ id:"help", group:"Start here", order:6, icon:"help", where:["home"], added:"2026-10-20", title:"Help", sub:"Tap ? at the top of any screen.",
-  body:["Tap ? beside Aa on any screen.", "Help opens with the topics for the screen you are on, then what’s new, then everything else."] });
+  body:["Tap ? at the top of any screen, or tap Help in the menu beside it.", "Help opens with the topics for the screen you are on, then what’s new, then everything else."] });
 const HELP_GROUPS = ["Start here", "Sugya Flow", "Ameilus", "Your things"];
 const HELP_KINDS = ["mimra", "kashya", "terutz", "raaya", "dechiya", "sheelah", "teshuvah", "maskana"]; // the colour key's order; the names are Sugya Flow's own (TYPES)
 const HELP_ICON = { paths:'<path d="M4 6h7v12H4zM13 6h7v12h-7z"/>', search:'<circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/>', mishnah:'<path d="M5 19V5l7 7 7-7v14"/>',

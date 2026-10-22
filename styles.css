@@ -833,7 +833,7 @@ body.choosing #flowBtn{visibility:hidden}
 }
 @media (max-width:330px){body:not(.has-modesw) .brand-name{display:none}}
 
-/* ---------- Round 4 (Oct 15 2026, David: "in Ameilus the explanation could scroll and the rest of the screen would stay frozen") ----------
+/* ---------- Round 4 (Oct 15 2026: in Ameilus the explanation scrolls and the rest of the screen stays put) ----------
    Ameilus is an app shell: the page never scrolls. The top bar and the Shiur/Ameilus bar stay put, the amud scrolls in its own
    box (.am-dafwrap), the explanation scrolls in its own panel (.am-exp). Phones: the panel is a sheet above the controls
    (up to 45% of the space, 80% when made taller). 900px and wider: the panel is a column left of the amud (where the Hebrew
@@ -882,7 +882,7 @@ html.am-shell body.map-open .am{z-index:40} /* the phone map sheet lives inside 
   html.am-shell .am{grid-template-columns:clamp(300px,30vw,400px) minmax(0,1fr)}
   html.am-shell .am-map,html.am-shell body.map-open .am-map{display:block;position:static;flex:1 0 150px;min-height:150px;max-height:none;overflow-y:auto;overscroll-behavior:contain;box-shadow:none;border-radius:14px;padding:12px 14px}
 }
-/* short laptop windows (David's 1024x600): a tighter head so the amud keeps its room */
+/* short laptop windows (1024x600): a tighter head so the amud keeps its room */
 @media (min-width:900px) and (max-height:720px){
   html.am-shell .am{padding-top:6px;gap:18px}
   html.am-shell .am-head{margin:0 0 4px}
@@ -1216,7 +1216,7 @@ body.theme-light .h3-card,body.theme-sepia .h3-card{box-shadow:0 1px 1px rgba(15
 body.theme-dark .h3-card{box-shadow:0 1px 0 rgba(255,255,255,.04) inset,0 14px 32px -22px rgba(0,0,0,.9)}
 body.theme-dark .clx-seder{box-shadow:0 1px 0 rgba(255,255,255,.03) inset}
 
-/* home3b (Oct 16 2026, David: "explain should be at the end of the step"): no Explain chip in the step header; the Explain button sits
+/* home3b (Oct 16 2026: Explain at the end of the step): no Explain chip in the step header; the Explain button sits
    at the end of every step card, after the last text line and its translation, and the explanation opens right below it. */
 .step:not(.open) .explain-btn{display:inline-flex}
 .explain-btn{gap:4px;align-items:center}
@@ -1330,7 +1330,7 @@ body.no-colors .mi-n,body.no-colors .mi-bt b{color:var(--text)}
 .am-gdone{margin:0 0 8px;font-weight:650;line-height:1.45}
 .am-gdone .kchip{font-size:13px}
 
-/* Help (Oct 20 2026, option B): the ? beside Aa (44px), and the Help sheet: "On this screen", "What's new", all topics. On a wide screen it is a panel on the right, over the daf.
+/* Help (Oct 20 2026): the ? beside Aa (44px), and the Help sheet: "On this screen", "What's new", all topics. On a wide screen it is a panel on the right, over the daf.
    The app's own theme colours in every theme; kind colours from the theme's kind variables. */
 .iconbtn.hp-q{min-width:44px;height:44px;font-size:20px;font-weight:800}
 .hp{font-size:16px}
@@ -1376,3 +1376,11 @@ body.no-colors .mi-n,body.no-colors .mi-bt b{color:var(--text)}
   body:not(.on-daf) .topbar{padding-left:6px}
   body:not(.on-daf) .brand{gap:5px;font-size:15px}
 }
+
+/* v106-acct (Oct 20 2026): the Settings controls that measured under 44px now meet 44×44 (close 40, A−/A+ 42, theme 36, AI-disclaimer link 28, Clear my data 42) */
+.sheet-head .iconbtn{min-width:44px;height:44px}
+.sheet-head{padding-top:12px;padding-bottom:6px} /* the head keeps its 62px height, so nothing below it moves */
+.sizer button{width:44px;height:44px}
+.seg3 button{min-height:44px}
+.disc-link{display:inline-flex;align-items:center;min-height:44px}
+#clearData{min-height:44px}
