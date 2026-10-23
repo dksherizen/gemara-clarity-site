@@ -3,7 +3,7 @@
 // someone who signed in, and never before the first paint. localStorage stays the source of truth; the cloud is one Firestore doc, users/{uid}.
 // If Firebase can't load (offline, blocked), the app works exactly as before; only the row says it isn't synced.
 export const FB_VER = "13.0.0";
-export const FB_CONFIG = { apiKey: "AIzaSyAFJ4rN7kfZ5cTZEsTxIatjnx5DDfIXg08", authDomain: "gemara-clarity-accounts.firebaseapp.com", projectId: "gemara-clarity-accounts", storageBucket: "gemara-clarity-accounts.firebasestorage.app", messagingSenderId: "834361636262", appId: "1:834361636262:web:1f46aeefc1567cad2c4b67" }; // a web config, public by design
+export const FB_CONFIG = { apiKey: "AIzaSyAFJ4rN7kfZ5cTZEsTxIatjnx5DDfIXg08", authDomain: "gemaraclarity.org", projectId: "gemara-clarity-accounts", storageBucket: "gemara-clarity-accounts.firebasestorage.app", messagingSenderId: "834361636262", appId: "1:834361636262:web:1f46aeefc1567cad2c4b67" }; // a web config, public by design
 const FB_BASE = `https://www.gstatic.com/firebasejs/${FB_VER}/`;
 const HOSTS = /^(gemaraclarity\.org|www\.gemaraclarity\.org|gc-acct-test\.sites\.tab\.bot|localhost|127\.0\.0\.1)$/; // where sign-in is offered (authorized in Firebase, or a local test)
 export const K = { acct: "gc-acct", meta: "gc-acct-meta", hint: "gc-acct-hint" }; // acct: {uid,name,email,photo} while signed in; meta: last synced values + times; hint: the old home line, dismissed

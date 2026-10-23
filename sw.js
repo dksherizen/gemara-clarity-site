@@ -1,10 +1,11 @@
-const V = "gc2-shell-v110-acct";
+const V = "gc2-shell-v111-authdomain";
 const SHELL = ["./", "index.html", "styles.css", "app.js", "mishnah.js", "manifest.json", "icon-192.png", "icon-512.png", "fonts/frank-ruhl-hebrew.woff2", "data/perakim.json", "data/perek-nikud.json", "ameilus/ui.js", "ameilus/core.js", "ameilus/words.js", "acct.js", "data/glossary.json", "data/prose-nikud.json"];
 self.addEventListener("install", e => { e.waitUntil(caches.open(V).then(c => c.addAll(SHELL)).then(() => self.skipWaiting())); });
 self.addEventListener("activate", e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k !== V && k.startsWith("gc2-") && !k.startsWith("gc2-data")).map(k => caches.delete(k)))).then(() => self.clients.claim())); });
 self.addEventListener("fetch", e => {
   const u = new URL(e.request.url);
   if (e.request.method !== "GET" || u.origin !== location.origin) return; // data requests are cached by the page itself
+  if (u.pathname.startsWith("/__/")) return; // v111: Google sign-in pages (/__/auth/*, proxied to Firebase by the Worker) always go straight to the network, never cached
   const root = new URL("./", location).pathname; if (e.request.mode === "navigate" && u.pathname !== root && u.pathname !== root + "index.html") return; // a static daf page (/shabbat/21b/) loads from the network as itself, never as the app shell
   // network first (so updates arrive at once), but never wait more than 2.5 s: then the saved copy answers
   e.respondWith(caches.open(V).then(async c => {
