@@ -1083,7 +1083,7 @@ registerHelp({ id:"kinds", group:"Sugya Flow", order:1, icon:"kinds", where:["fl
 registerHelp({ id:"phrases", group:"Sugya Flow", order:2, icon:"lines", where:["flow"], title:"Aramaic beside English", sub:"One phrase at a time.", settings:["translation","nikud","notes"],
   body:["Each step shows the Aramaic and the English one phrase at a time.", "In Settings you can turn off the English translation or the vowels to test yourself.", "Phrase notes adds short notes under some phrases."] });
 registerHelp({ id:"steps-list", group:"Sugya Flow", order:3, icon:"steps", where:["flow"], title:"The steps list", sub:"See the whole sugya at once.",
-  body:["Tap Steps at the bottom, or All steps, to see every step as a map.", "Tap any step to jump to it."] });
+  body:["Tap Steps at the bottom to see every step as a map.", "Tap any step to jump to it."] });
 registerHelp({ id:"more", group:"Sugya Flow", order:4, icon:"more", where:["flow"], title:"More detail", sub:"Going deeper, why it matters, the logic.", settings:["logic","expandAll"],
   body:["Under each step, More detail opens the deeper layers: Another reading, Going deeper, Why it matters.", "Logic details in Settings adds the trigger words, what attacks what, and how it is resolved.", "Open every explanation in Aa opens each step without a tap."] });
 registerHelp({ id:"tags", group:"Sugya Flow", order:5, icon:"tag", where:["flow"], title:"Mishnah badge and tags", sub:"Mishnah, Story, Unresolved, End marker.",
@@ -1255,10 +1255,8 @@ function applyMishnah(){
 const stripNowHtml = (a, n) => { const s = a.steps[n - 1]; if (!s) return ""; const t = TYPES[s.hebrewStepName] || TYPES["מימרא"]; return `Step ${n} of ${a.steps.length} · <b class="t-${t.k}">${t.en}</b>${stagHtml(s) ? ` <span class="t-${t.k}">${stagHtml(s)}</span>` : ""}`; };
 const colourKeyHtml = (a) => `<details class="legend-wrap"><summary class="section-h">The eight kinds of step <small>color key</small></summary>
     <div class="legend">${Object.entries(TYPES).map(([he, t]) => `<div class="lg t-${t.k}"><span class="swatch"></span><div><b>${t.en} · <span class="en-he">${stepHe(he)}</span></b><div class="d">${t.d}</div></div></div>`).join("")}<div class="lg t-mishnah"><span class="swatch"></span><div><b>${MISHNAH.en} badge · <span class="en-he">${refHtml(vocApply(MISHNAH.he, null, vocGloss))}</span></b><div class="d">${MISHNAH.d}</div></div></div>${tagKeyRowsHtml(a)}</div></details>`; // v99o: the homepage colour key, same markup and words (the homepage builds it with current = null, so px() there is this call), for the steps view
-function stepsBlock(a){ // the step strip: one numbered, colour-coded button per step (tap to jump); the line under it names the step you are on
-  return `<nav class="strip" aria-label="Jump to a step">${a.steps.map((s, k) => { const t = TYPES[s.hebrewStepName] || TYPES["מימרא"]; return `<button class="t-${t.k}${isMish(k) ? " is-mishnah" : ""}" data-jump="${k+1}" aria-label="Step ${k+1}, ${t.en}${stagAria(s)}: ${esc(s.title||"")}" title="${k+1}. ${t.en}${stagAria(s)}: ${esc(s.title||"")}">${k+1}</button>`; }).join("")}</nav>
-    <div class="strip-cap"><span class="strip-now" id="stripNow">${stripNowHtml(a, 1)}</span><button class="strip-flow" id="stripFlow" type="button">All steps<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div>
-    ${colourKeyHtml(a)}
+function stepsBlock(a){ // v116 (nostrip): the numbered step strip and its "Step N of M" line are removed; steps are reached by scrolling, the bottom bar's Steps sheet and the sidebar
+  return `${colourKeyHtml(a)}
     <div class="steps">${a.steps.map((s, k) => stepHtml(s, k, settings.expandAll)).join("")}</div>`;
 }
 async function renderText(){
