@@ -162,6 +162,7 @@ const G = `<svg viewBox="0 0 48 48" width="18" height="18" aria-hidden="true"><p
 const I = d => `<svg viewBox="0 0 24 24" aria-hidden="true">${d}</svg>`;
 const PERSON = I('<circle cx="12" cy="8.5" r="3.8"/><path d="M4.5 20c1.2-3.6 4-5.4 7.5-5.4s6.3 1.8 7.5 5.4"/>');
 const GEAR = I('<circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/>');
+const WORDS = I('<rect x="3.5" y="7" width="13" height="13" rx="2"/><path d="M7.5 3.5h11a2 2 0 0 1 2 2v11"/>'); // My words (Oct 25 2026)
 const HELP = I('<circle cx="12" cy="12" r="9"/><path d="M9.6 9.3a2.5 2.5 0 0 1 4.8.9c0 1.7-2.4 2.2-2.4 3.6M12 17h.01"/>');
 const OUT = I('<path d="M15 4h3a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-3M10 16l-4-4 4-4M6 12h10"/>');
 const CHEV = `<svg class="pf-chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>`;
@@ -293,9 +294,9 @@ export function toggleMenu(e){
   const a = allowed() ? me() : null;
   if (a && !fb) connect().catch(() => {});
   menu = document.createElement("div"); menu.className = "pm"; menu.id = "pfMenu"; menu.setAttribute("role", "menu"); menu.setAttribute("aria-label", a ? "Account" : "Menu");
-  menu.innerHTML = a ? head(a) + HR + item("account", PERSON, "Account") + item("settings", GEAR, "Settings") + item("help", HELP, "Help") + HR + item("signout", OUT, "Sign out")
+  menu.innerHTML = a ? head(a) + HR + item("account", PERSON, "Account") + item("words", WORDS, "My words") + item("settings", GEAR, "Settings") + item("help", HELP, "Help") + HR + item("signout", OUT, "Sign out")
     : (allowed() ? `<div class="pm-so"><h3>Sign in to sync your progress</h3><p>Optional. Keeps bookmarks and progress on all your devices.</p><button class="gbtn" type="button" data-pm="google">${G}<span>Continue with Google</span></button><p class="si-err" role="alert" hidden></p></div>` + HR : "")
-      + item("settings", GEAR, "Settings") + item("help", HELP, "Help");
+      + item("words", WORDS, "My words") + item("settings", GEAR, "Settings") + item("help", HELP, "Help");
   if (a) fixPhotos(menu, a);
   document.body.append(menu); place();
   b.setAttribute("aria-expanded", "true"); b.classList.add("open");
@@ -307,7 +308,8 @@ export function toggleMenu(e){
 function pick(k, el){
   if (k === "google") { const err = menu.querySelector(".si-err"); return googleSignIn(el, t => { err.textContent = t; err.hidden = !t; }); }
   closeMenu(true); // focus back on the corner button, so closing the sheet returns there
-  if (k === "settings") deps.openSettings();
+  if (k === "words") location.hash = "#/words";
+  else if (k === "settings") deps.openSettings();
   else if (k === "help") openHelp();
   else if (k === "account") openAccount();
   else if (k === "signout") openSignOut();

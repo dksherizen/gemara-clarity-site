@@ -557,7 +557,7 @@ export function mountAmeilus(root, ctx){
   reg({ id:"am-hints", group:"Ameilus", order:2, icon:"bulb", where:["ameilus"], title:"Hints", sub:"Vowels, punctuation, signal word and more.",
     body:[AMW.walkHints, "Use any hint, in any order. If you use Show where it ends, that passage does not count as done on your own."] });
   reg({ id:"am-words", group:"Ameilus", order:3, icon:"word", where:["ameilus"], title:"Word help and My words", sub:"Long-press any word.",
-    body:["Long-press a word to see what it means.", "Tap “Add to My words” to keep it. Your list is in Settings › Ameilus."] });
+    body:["Long-press a word to see what it means.", "Tap “Add to My words” to keep it. Your list and flashcards are in My words, in the menu at the top right."] });
   reg({ id:"am-map", group:"Ameilus", order:4, icon:"steps", where:["ameilus"], title:"Sugya map", sub:"How the passages hang together.",
     body:["The map button at the top shows each passage under the one it answers or builds on.", "It fills in as you go."] });
   reg({ id:"am-reading", group:"Ameilus", order:5, icon:"eye", where:["ameilus"], title:"Show our reading", sub:"Check yourself after each passage.",

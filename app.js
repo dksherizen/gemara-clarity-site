@@ -960,10 +960,22 @@ registerHelp({ id:"classics", group:"Start here", order:4, icon:"classics", wher
 registerHelp({ id:"bookmarks", group:"Your things", order:1, icon:"bookmark", where:["home","flow"], title:"Bookmarks and history", sub:"Tap the bookmark on any amud.",
   body:["Tap the bookmark button under the amud’s title.", "Your bookmarks and the dapim you learned recently show on the home screen."] });
 }
+// My words (Oct 25 2026): the saved-words list and flashcards are their own screen
+// (#/words, #/words/cards; mywords.js). Ameilus still saves into the same list ("gc-am3-mywords"); Settings › Ameilus links here instead of listing them.
+let mwModP = null;
+const mwModule = () => mwModP || (mwModP = import("./mywords.js?v=1").catch(e => { mwModP = null; throw e; }));
+function mwCount(){ try { const a = JSON.parse(localStorage.getItem("gc-am3-mywords") || "[]"); return Array.isArray(a) ? a.length : 0; } catch { return 0; } }
+function renderWords(sub){
+  current = null; document.title = (sub === "cards" ? "Flashcards · " : "") + "My words · Gemara Clarity"; setChrome(false);
+  if (!$("#view").querySelector(".mw")) $("#view").innerHTML = `<div class="mw"><div class="hero hero-h3 mw-hero"><h1>My words</h1><p>…</p></div></div>`;
+  scrollTo(0, 0);
+  return mwModule().then(mod => { if (!/^#\/?words/i.test(location.hash)) return; mod.renderMyWords($("#view"), { esc, parseId, masInfo, hashFor, label }, sub); },
+    () => { $("#view").innerHTML = `<div class="notice"><b>My words can’t open right now.</b><p>${navigator.onLine ? "Please try again." : "You’re offline. It opens once the app has been online once since this update."}</p><a class="btn" href="#/words">Try again</a></div>`; });
+}
 function renderHome(){
   current = null; document.title = "Gemara Clarity: every sugya, step by step";
   setChrome(false);
-  const h = history_(), bm = bookmarks();
+  const h = history_(), bm = bookmarks(), mwN = mwCount();
   const last = h[0] && parseId(h[0].id);
   const hasLast = !!(last && masInfo(last.m));
   // Round 2 (Oct 15 2026): one "continue where you left off" (no second tile for the same amud next to the paths), Daf Yomi beside it, both compact
@@ -977,6 +989,7 @@ function renderHome(){
       ${homeChoicesHtml(modePref())}</section>
     <button class="searchbox h3-search" id="homeSearch"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>Go to any daf…</button>
     ${tilesHtml}
+    ${mwN ? `<div class="section-h">My words <small>${mwN} saved</small></div><div class="chips mw-homechips"><a class="chip" href="#/words">List</a><a class="chip" href="#/words/cards">Flashcards</a></div>` : ""}
     ${bm.length ? `<div class="section-h">Bookmarks</div><div class="chips">${bm.map(id => { const p = parseId(id); return masInfo(p.m) ? `<a class="chip" href="${hashFor(p.m, p.i)}">★ ${label(p.m, p.i)}</a>` : ""; }).join("")}</div>` : ""}
     ${h.length > 1 ? `<div class="section-h">Recently learned</div><div class="chips">${h.slice(0, 10).map(x => { const p = parseId(x.id); return masInfo(p.m) ? `<a class="chip" href="${hashFor(p.m, p.i)}">${label(p.m, p.i)}${hasBreakdown(x.id) ? "" : ` <span class="x">text</span>`}</a>` : ""; }).join("")}</div>` : ""}
     <div class="section-h">Browse the library <small>${cloudIds.size ? cloudIds.size + " amudim" : ""}</small></div>
@@ -1352,7 +1365,7 @@ window.addEventListener("scroll", () => {
 const AM_VER = "3.6.0", AM_SKEY = "gc-am3-settings";
 let amMounted = null, amModP = null, amGlossP = null, pendingJump = null;
 const amPrefs = () => { try { return Object.assign({ bare: false }, JSON.parse(localStorage.getItem(AM_SKEY) || "{}")); } catch { return { bare: false }; } };
-function amModule(){ return amModP || (amModP = import(`./ameilus/ui.js?v=${AM_VER}`).catch(e => { amModP = null; throw e; })); }
+function amModule(){ return amModP || (amModP = import(`./ameilus/ui.js?v=${AM_VER}-mw1`).catch(e => { amModP = null; throw e; })); }
 function amGloss(){
   return amGlossP || (amGlossP = fetch(`data/glossary.json?v=${AM_VER}`).then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
     .then(g => (g && g.entries) || {}).catch(e => { console.warn("glossary unavailable", e); amGlossP = null; return {}; }));
@@ -1494,16 +1507,10 @@ function amSettingsSection(body){
     <h3 style="margin:4px 0 4px;font-size:16px">Ameilus</h3>
     <label class="setrow"><span class="lbl"><b>Bare mode</b><span>Just the daf and the marker: no hints, no checks</span></span><span class="switch"><input type="checkbox" id="amBare" ${bare ? "checked" : ""}><span></span></span></label>
     <label class="setrow"><span class="lbl"><b>Guess the kind first</b><span>Before our reading, guess what kind of move each passage makes, in two taps. Skip any time. Not shown in Bare mode.</span></span><span class="switch"><input type="checkbox" id="amGuess" ${guess ? "checked" : ""}><span></span></span></label>
-    <h4 style="margin:12px 0 4px;font-size:15px">My words <span class="small" id="amWordsN"></span></h4>
-    <div id="amWords" class="small">${amModP ? "…" : "Long-press a word, then “Add to My words”."}</div>
+    <a class="setrow mw-setlink" href="#/words" id="amWordsLink"><span class="lbl"><b>My words${mwCount() ? ` (${mwCount()})` : ""}</b><span>Your saved words and flashcards have their own page now.</span></span><span class="mw-chev" aria-hidden="true">›</span></a>
     <p class="small" style="margin:10px 0 18px">How it works: ${esc(AMW.settingsHow)}</p>
     <h3 style="margin:0 0 4px;font-size:16px">Display</h3></section>`);
-  const box = $("#amWords", body);
-  if (amModP) amModP.then(mod => {
-    const mw = mod.myWords.all(); $("#amWordsN", body).textContent = mw.length ? `(${mw.length})` : "";
-    box.innerHTML = mw.length ? `<ul class="am-mw">${mw.map(x => { const p = x.id ? parseId(String(x.id)) : null; return `<li><span class="he" lang="he">${esc(x.v || x.raw)}</span> <span>${esc(x.gloss || "")}</span>${p && masInfo(p.m) ? ` <a href="${hashFor(p.m, p.i, "/ameilus")}">${esc(label(p.m, p.i))}</a>` : ""}</li>`; }).join("")}</ul>` : "Long-press a word, then “Add to My words”.";
-    box.onclick = e => { if (e.target.closest("a")) closeSheet(); };
-  }).catch(() => { box.textContent = "Unavailable offline."; });
+  $("#amWordsLink", body).addEventListener("click", () => closeSheet());
   $("#amBare", body).addEventListener("change", e => {
     e.stopPropagation();
     let s = {}; try { s = JSON.parse(localStorage.getItem(AM_SKEY) || "{}") || {}; } catch {}
@@ -1537,6 +1544,7 @@ function routeCanon(){
   const p = h.replace(/^#\/?/, "").split("/").filter(Boolean), nf = { nf: h.replace(/^#\/?/, "") }; if (!p.length) return null;
   let to;
   if (p[0].toLowerCase() === "classics") to = ["classics", ...p.slice(1)];
+  else if (p[0].toLowerCase() === "words") to = ["words", ...(p[1] && p[1].toLowerCase() === "cards" ? ["cards"] : [])]; // My words (Oct 25 2026): #/words, #/words/cards
   else {
     const info = MAS.find(x => x[0].toLowerCase() === p[0].replace(/ /g, "_").toLowerCase()); if (!info) return nf;
     const dm = p.length > 1 ? /^0*(\d{1,3})([ab])?$/i.exec(p[1]) : null; if (p.length > 1 && !dm) return nf;
@@ -1563,6 +1571,7 @@ function route(keepScroll){
   if (parts[2] !== "ameilus" && (amMounted || (current && current.am) || document.body.classList.contains("am-mode"))) amTeardown();
   if (!parts.length) return renderHome();
   if (parts[0] === "classics") return renderClassics(parts[1]);
+  if (parts[0] === "words") return renderWords(parts[1]);
   const [m, df, extra] = parts; const info = masInfo(m);
   const dm = (df || "").match(/^(\d{1,3})([ab])?$/);
   if (!info || !dm) { if (info) { openPicker(m); return; } return renderHome(); }
@@ -1586,7 +1595,7 @@ function route(keepScroll){
 function focusAfterRoute(){
   const a = document.activeElement; if (a && a !== document.body) return;
   let p; try { p = decodeURIComponent(location.hash.replace(/^#\/?/, "")).split("/").filter(Boolean); } catch { return; } // v99q: a malformed %-escape shows the notice; nothing to focus
-  if (p.length && p[0] !== "classics") return;
+  if (p.length && p[0] !== "classics" && p[0] !== "words") return;
   if (!$("#sheet").hidden || $("#pasukPop") || document.querySelector('[role="dialog"]:not([hidden]), [role="alertdialog"]:not([hidden])')) return;
   const card = p[0] === "classics" && p[1] ? document.getElementById("cl-" + p[1]) : null; // back from a Classic: its own card (already scrolled into view)
   const h = card ? (card.querySelector("h2, h3, h4") || card) : document.querySelector("#view h1, #view h2"); if (!h) return;
