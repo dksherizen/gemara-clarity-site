@@ -1,0 +1,27 @@
+{
+ "name": "Bava Metzia course",
+ "short_name": "Gemara course",
+ "start_url": "/course/",
+ "scope": "/",
+ "display": "standalone",
+ "background_color": "#141413",
+ "theme_color": "#141413",
+ "icons": [
+  {
+   "src": "/course/icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png"
+  },
+  {
+   "src": "/course/icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png"
+  },
+  {
+   "src": "/course/icon-maskable-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "maskable"
+  }
+ ]
+}
