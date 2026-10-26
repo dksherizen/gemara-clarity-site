@@ -8,9 +8,12 @@
 // /api/course-assertion and /.well-known/course-assertion-jwks.json are the course sign-in
 // (see course-assertion.js): a learner's GC ID token, POSTed same-origin by /course-link/, becomes a
 // 5-minute ES256 assertion for the course; the ID token itself never leaves gemaraclarity.org.
+// course.gemaraclarity.org is the Bava Metzia course, proxied to the course's own live site (see course-host.js);
+// on every other host a /course-site/ path answers 404 like any missing file.
 // Every other request (gemaraclarity.org itself, *.workers.dev, preview URLs) is served
 // the static assets unchanged.
 import { courseLink, ASSERTION_PATH, JWKS_PATH } from "./course-assertion.js";
+import { COURSE_HOST, inCourseDir, hideCourseDir, serveCourse } from "./course-host.js";
 
 const CANONICAL_HOST = "gemaraclarity.org";
 const REDIRECT_HOSTS = new Set([
@@ -37,6 +40,8 @@ export default {
       return Response.redirect("https://" + CANONICAL_HOST + url.pathname + url.search, 301);
     }
     if (AUTH_PREFIXES.some(p => url.pathname.startsWith(p))) return proxyAuth(request, url);
+    if (host === COURSE_HOST) return serveCourse(request, url, env);
+    if (inCourseDir(url.pathname)) return hideCourseDir(request, url, env);
     if (url.pathname === ASSERTION_PATH || url.pathname === JWKS_PATH) return courseLink(request, url, env);
     return env.ASSETS.fetch(request);
   },
