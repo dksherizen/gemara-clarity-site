@@ -35,7 +35,7 @@ svg{width:18px;height:18px;flex:none}
 // Course sign-in hop. The learner's Gemara Clarity ID token is POSTed to THIS site's own Worker
 // (/api/course-assertion, same origin) and never leaves gemaraclarity.org; the course gets only a
 // 5-minute assertion bound to the nonce the course issued, and only after an explicit "Continue" tap.
-const RETURN_ORIGINS = ["https://morgan-look-b.sites.tab.bot"]; // exact allowlist
+const RETURN_ORIGINS = ["https://course.gemaraclarity.org", "https://morgan-look-b.sites.tab.bot"]; // exact allowlist
 const AUD = "morgan-course";
 const FB_VER = "13.0.0", FB_BASE = `https://www.gstatic.com/firebasejs/${FB_VER}/`;
 const FB_CONFIG = { apiKey: "AIzaSyAFJ4rN7kfZ5cTZEsTxIatjnx5DDfIXg08", authDomain: "gemaraclarity.org", projectId: "gemara-clarity-accounts", storageBucket: "gemara-clarity-accounts.firebasestorage.app", messagingSenderId: "834361636262", appId: "1:834361636262:web:1f46aeefc1567cad2c4b67" }; // same web config as /acct.js (public by design)
