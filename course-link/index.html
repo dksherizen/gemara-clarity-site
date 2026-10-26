@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sign in to the course · Gemara Clarity</title><meta name="robots" content="noindex"><meta name="theme-color" content="#141413">
+<!-- gc-course-link-v2 : the course checks for this marker (and the JWKS) before it offers "Sign in with Google" -->
+<style>
+:root{color-scheme:dark}*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#141413;color:#ece8df;font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;padding:24px}
+main{width:100%;max-width:380px}
+h1{font-size:22px;line-height:1.3;margin:0 0 8px;font-weight:600}
+p{margin:0 0 20px;color:#cfcabe;font-size:15px}
+.who{font-size:14px;color:#9c978b;margin:0 0 12px;word-break:break-all}
+button{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:48px;margin:0 0 12px;padding:10px 16px;line-height:1.3;text-align:center;overflow-wrap:anywhere;border-radius:4px;font:inherit;font-size:16px;cursor:pointer}
+.pri{background:#c8963e;color:#141413;border:0;font-weight:600}.pri:hover{background:#d9a854}
+.sec{background:transparent;color:#ece8df;border:1px solid #3a3934}.sec:hover{border-color:#c8963e}
+button:focus-visible{outline:2px solid #c8963e;outline-offset:2px}button:disabled{opacity:.5;cursor:default}
+.err{color:#d9846c;font-size:14px;min-height:20px;margin:4px 0 0}
+.small{font-size:13px;color:#9c978b;margin-top:16px}
+svg{width:18px;height:18px;flex:none}
+[hidden]{display:none!important}
+</style></head>
+<body><main>
+<h1>Sign in to the course</h1>
+<p id="lead">Use your Gemara Clarity Google account, so your course progress follows you to every device.</p>
+<div id="go" hidden>
+  <div class="who" id="who"></div>
+  <button class="pri" id="cont" type="button">Continue to the course</button>
+  <button class="sec" id="other" type="button">Use another Google account</button>
+</div>
+<div id="fresh" hidden><button class="pri" id="google" type="button"><svg viewBox="0 0 18 18" aria-hidden="true"><path fill="#fff" d="M17.64 9.2c0-.64-.06-1.25-.16-1.84H9v3.48h4.84a4.14 4.14 0 0 1-1.8 2.72v2.26h2.92c1.7-1.57 2.68-3.88 2.68-6.62zM9 18c2.43 0 4.47-.8 5.96-2.18l-2.92-2.26c-.8.54-1.84.86-3.04.86-2.34 0-4.32-1.58-5.03-3.7H.96v2.33A9 9 0 0 0 9 18zM3.97 10.72a5.4 5.4 0 0 1 0-3.44V4.95H.96a9 9 0 0 0 0 8.1l3.01-2.33zM9 3.58c1.32 0 2.5.45 3.44 1.35l2.58-2.58A9 9 0 0 0 .96 4.95l3.01 2.33C4.68 5.16 6.66 3.58 9 3.58z"/></svg><span>Sign in with Google</span></button></div>
+<button class="sec" id="back" type="button" hidden>Back to the course</button>
+<div class="err" id="err" role="alert"></div>
+<div class="small">The course learns only your account id, email and name, through a one-time pass that expires in 5 minutes. Nothing in your Gemara Clarity account changes.</div>
+</main>
+<script type="module">
+// Course sign-in hop. The learner's Gemara Clarity ID token is POSTed to THIS site's own Worker
+// (/api/course-assertion, same origin) and never leaves gemaraclarity.org; the course gets only a
+// 5-minute assertion bound to the nonce the course issued, and only after an explicit "Continue" tap.
+const RETURN_ORIGINS = ["https://morgan-look-b.sites.tab.bot"]; // exact allowlist
+const AUD = "morgan-course";
+const FB_VER = "13.0.0", FB_BASE = `https://www.gstatic.com/firebasejs/${FB_VER}/`;
+const FB_CONFIG = { apiKey: "AIzaSyAFJ4rN7kfZ5cTZEsTxIatjnx5DDfIXg08", authDomain: "gemaraclarity.org", projectId: "gemara-clarity-accounts", storageBucket: "gemara-clarity-accounts.firebasestorage.app", messagingSenderId: "834361636262", appId: "1:834361636262:web:1f46aeefc1567cad2c4b67" }; // same web config as /acct.js (public by design)
+const $ = id => document.getElementById(id);
+const say = t => { $("err").textContent = t || ""; };
+const KEEP = "gc-course-link-2";
+// return + nonce: from the query, or (after a Google redirect) from this tab's session storage
+const q = new URLSearchParams(location.search);
+let ret = q.get("return"), nonce = q.get("nonce");
+if (ret == null) { try { const k = JSON.parse(sessionStorage.getItem(KEEP) || "null"); if (k) { ret = k.ret; nonce = k.nonce; } } catch {} }
+const okNonce = typeof nonce === "string" && /^[A-Za-z0-9_-]{22,128}$/.test(nonce);
+let target = null;
+try { const u = new URL(ret); if (u.protocol === "https:" && RETURN_ORIGINS.includes(u.origin) && !u.username && !u.password) { u.hash = ""; target = u; } } catch {}
+if (!target || !okNonce) {
+  $("lead").textContent = "This sign-in link isn't valid. Open the course and tap Sign in with Google again.";
+  document.querySelector(".small").hidden = true;
+} else {
+  try { sessionStorage.setItem(KEEP, JSON.stringify({ ret: target.href, nonce })); } catch {}
+  if (q.has("return")) history.replaceState(null, "", location.pathname); // keep the address bar clean
+  $("back").hidden = false;
+  $("back").onclick = () => leave("gcaerr=cancel");
+  run().catch(() => { $("fresh").hidden = false; say("Couldn't reach Google. Check your connection and try again."); });
+}
+function leave(frag) { try { sessionStorage.removeItem(KEEP); } catch {} location.replace(target.origin + target.pathname + target.search + "#" + frag); }
+// The one place the ID token goes: this site's own Worker. The answer is the course assertion.
+async function hand(user) {
+  const idToken = await user.getIdToken();
+  const r = await fetch("/api/course-assertion", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ idToken, nonce, aud: AUD }), credentials: "same-origin", cache: "no-store", redirect: "error" });
+  const j = await r.json().catch(() => ({}));
+  if (!r.ok || typeof j.assertion !== "string") throw Object.assign(new Error("assertion"), { code: r.status === 400 ? "link/stale" : "link/failed" });
+  leave("gca=" + encodeURIComponent(j.assertion));
+}
+function offer(user, fromHere) {
+  $("fresh").hidden = true; $("go").hidden = false;
+  const who = user.email || user.displayName || "your Google account";
+  $("who").textContent = (fromHere ? "Signed in as " : "Signed in to Gemara Clarity as ") + who;
+  $("cont").textContent = "Continue to the course as " + who;
+  $("cont").disabled = false;
+  $("cont").onclick = async () => { $("cont").disabled = true; say(""); try { await hand(user); } catch (e) { $("cont").disabled = false; say(errText(e)); } };
+}
+async function run() {
+  const [a, au] = await Promise.all([import(FB_BASE + "firebase-app.js"), import(FB_BASE + "firebase-auth.js")]);
+  // The site's own sign-in (default app, saved on this device): read only, used for "Continue as …".
+  const app = a.getApps().find(x => x.name === "[DEFAULT]") || a.initializeApp(FB_CONFIG);
+  const auth = au.getAuth(app);
+  // A separate session-only app for a fresh sign-in here, so this page never changes who is signed in on Gemara Clarity itself.
+  const app2 = a.getApps().find(x => x.name === "course-link") || a.initializeApp(FB_CONFIG, "course-link");
+  let auth2; try { auth2 = au.initializeAuth(app2, { persistence: [au.browserSessionPersistence], popupRedirectResolver: au.browserPopupRedirectResolver }); } catch { auth2 = au.getAuth(app2); }
+  $("other").onclick = () => google($("other"));
+  $("google").onclick = () => google($("google"));
+  const pending = (() => { try { return !!sessionStorage.getItem(KEEP + "-redirect"); } catch { return false; } })();
+  if (pending) {
+    try { sessionStorage.removeItem(KEEP + "-redirect"); } catch {}
+    try { const r = await au.getRedirectResult(auth2); if (r && r.user) return offer(r.user, true); } catch (e) { say(errText(e)); }
+  }
+  await auth.authStateReady();
+  const u = auth.currentUser;
+  if (u) offer(u, false); else $("fresh").hidden = false;
+  async function google(btn) {
+    btn.disabled = true; say("");
+    const p = new au.GoogleAuthProvider(); p.setCustomParameters({ prompt: "select_account" });
+    try { const r = await au.signInWithPopup(auth2, p); btn.disabled = false; offer(r.user, true); }
+    catch (e) {
+      const c = (e && e.code) || "";
+      if (c === "auth/popup-blocked" || c === "auth/operation-not-supported-in-this-environment") { try { sessionStorage.setItem(KEEP + "-redirect", "1"); } catch {} return au.signInWithRedirect(auth2, p).catch(e2 => { btn.disabled = false; say(errText(e2)); }); }
+      btn.disabled = false;
+      if (c === "auth/popup-closed-by-user" || c === "auth/cancelled-popup-request") return;
+      say(errText(e));
+    }
+  }
+}
+function errText(e) {
+  const c = (e && e.code) || "";
+  if (c === "auth/network-request-failed") return "Couldn't reach Google. Check your connection and try again.";
+  if (c === "auth/user-disabled") return "This account has been turned off.";
+  if (c === "link/stale") return "This sign-in link is out of date. Go back to the course and tap Sign in with Google again.";
+  return "Sign-in didn't finish. Please try again.";
+}
+</script>
+</body></html>
