@@ -176,7 +176,7 @@ const loadJSON = (k, d) => { try { const v = JSON.parse(localStorage.getItem(k))
 const saveJSON = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} };
 
 try { localStorage.removeItem("gc2-openai-key"); } catch {} // the old bring-your-own-key mode is gone; forget any key a device saved
-const settings = Object.assign({ scale:1, nikud:true, translation:true, colors:true, kindtext:true, notes:true, terms:true, logic:false, expandAll:false, theme:"dark" }, loadJSON(LS.settings, {}));
+const settings = Object.assign({ scale:1, nikud:true, translation:true, colors:true, kindtext:false, notes:true, terms:true, logic:false, expandAll:false, theme:"light" }, loadJSON(LS.settings, {}));
 delete settings.byPerek; // the old "By perek / All dapim" switch is gone: perek view is always on
 let cloudIds = new Set();
 let cloudLoaded = false;
@@ -210,6 +210,7 @@ function gematria(n){
   if (n === 15) s += "טו"; else if (n === 16) s += "טז"; else s += tens[Math.floor(n/10)] + ones[n%10];
   return s.length > 1 ? s.slice(0,-1) + "״" + s.slice(-1) : s + "׳";
 }
+const heShort = i => { const {daf, amud} = dafOf(i); return `דף ${gematria(daf).replace(/[׳״'"]/g, "")}${amud === "a" ? "." : ":"}`; }; // v5: the printed form (ב. / ב:) for the running head
 const heLabel = (m, i) => { const {daf, amud} = dafOf(i); return `${masInfo(m)[1]} ${gematria(daf)} ${amud === "a" ? "ע״א" : "ע״ב"}`; };
 function neighbor(m, i, dir){
   const mi = MAS.findIndex(x => x[0] === m); const [, , first, last] = MAS[mi];
@@ -423,8 +424,8 @@ function perekLineHtml(m, i){
   const ps = perakimAt(m, i); if (!ps.length) return "";
   const main = ps[0], next = ps[1];
   return `<button class="perekline" id="perekBtn" data-perek="${main.n}" aria-label="Perek ${main.n}, ${esc(perekHe(main))}${next ? `; perek ${next.n} begins on this amud` : ""}. Show the perakim">`
-    + `<span>Perek ${main.n} · <span class="he">${esc(perekHe(main))}</span></span>`
-    + (next ? `<span class="pk-next">Perek ${next.n} · <span class="he">${esc(perekHe(next))}</span> begins here</span>` : "")
+    + `<span class="he" lang="he">${esc(perekHe(main))}</span>`
+    + (next ? `<span class="pk-next"><span class="he" lang="he">${esc(perekHe(next))}</span> begins here</span>` : "")
     + `</button>`;
 }
 
@@ -548,9 +549,9 @@ function openPicker(focusMas, focusPerek, mode){
     const input = $("#gotoInput", body), sugg = $("#gotoSugg", body);
     const showMasList = () => {
       miPickChrome(body, false);
-      $("#pickBody", body).innerHTML = SEDARIM.map(([en, he, list]) => `<div class="seder">Seder ${en} · <span class="en-he">${he}</span></div><div class="masgrid">${list.map(k => {
+      $("#pickBody", body).innerHTML = SEDARIM.map(([en, he, list]) => `<div class="seder dp-seder">Seder ${en} <span class="en-he">${he}</span></div><div class="masgrid dp-list">${list.map(k => {
         const n = [...cloudIds].filter(id => parseId(id).m === k).length;
-        return `<button class="masbtn" data-mas="${k}"><span class="mb-names"><span class="mb-en">${masName(k)}</span><span class="mb-he">${masInfo(k)[1]}</span></span>${n ? `<span class="badge" title="${n} amudim with a step-by-step breakdown">${n} amudim</span>` : ""}</button>`; }).join("")}</div>`).join("");
+        return `<button class="masbtn" data-mas="${k}"><span class="mb-names"><span class="mb-en">${masName(k)}</span><span class="mb-he">${masInfo(k)[1]}</span></span>${n ? `<span class="dp-n" title="${n} amudim with a step-by-step breakdown">${n} amudim</span>` : ""}</button>`; }).join("")}</div>`).join("");
     };
     const cellHtml = (k, i, inRange, mid) => {
       const [, , first, last] = masInfo(k), {daf: d, amud: am} = dafOf(i);
@@ -562,7 +563,7 @@ function openPicker(focusMas, focusPerek, mode){
       let cells = "";
       for (let d = Math.floor(from/2)+1; d <= Math.floor(to/2)+1; d++) {
         const c = am => { const i = idxOf(d, am); return cellHtml(k, i, i >= from && i <= to, midOf(i)); };
-        cells += `<div class="dafcell"><span class="dn">${d}</span>${c("a")}${c("b")}</div>`;
+        cells += `<div class="dafcell"><span class="dn"><b lang="he">${gematria(d)}</b><small>${d}</small></span>${c("a")}${c("b")}</div>`;
       }
       return `<div class="dafgrid">${cells}</div>`;
     };
@@ -922,12 +923,12 @@ function markClassics(c, a){
     if (!C || current !== c) return;
     for (const it of C.items) {
       const s = clAt(it.start), e = clAt(it.end), back = it.partOf || it.id, name = `<a href="#/classics/${esc(back)}">${esc(clName(it))}</a>`;
-      const mark = (n, where, html) => { const el = document.getElementById("s" + n); if (el && !el.parentNode.querySelector(`.classic-mark[data-cl="${it.id}"][data-w="${where}"]`)) el.insertAdjacentHTML(where === "end" ? "afterend" : "beforebegin", `<div class="classic-mark ${where}" data-cl="${esc(it.id)}" data-w="${where}" role="note">${html}</div>`); };
+      const mark = (n, where, html) => { const el = document.getElementById("s" + n); const sb = el && $(".sbody", el); if (sb && !el.querySelector(`.classic-mark[data-cl="${it.id}"][data-w="${where}"]`)) sb.insertAdjacentHTML(where === "end" ? "beforeend" : "afterbegin", `<div class="classic-mark ${where}" data-cl="${esc(it.id)}" data-w="${where}" role="note">${html}</div>`); }; // v4: the note sits inside its own step, so it shows with that step only
       if (s.m !== c.m) continue;
-      if (s.i === c.i) mark(it.start.step, "start", `<b>Classic starts here</b> · ${name} · ends at ${it.end.daf} step ${it.end.step}`);
-      if (e.i === c.i) mark(it.end.step, "end", `<b>Classic ends here</b> · ${name} · <a href="#/classics">More Classics</a>`);
-      if (s.i < c.i && c.i < e.i && a.steps && a.steps.length) mark(1, "start", `<b>Classic continues</b> · ${name} · this whole amud, to ${it.end.daf} step ${it.end.step}`);
-      if (it.context && refId(it.context.m, dafIdx(it.context.m, it.context.daf)) === c.id) mark(it.context.from, "ctx", `<b>Context for a Classic</b> · steps ${it.context.from}–${it.context.to} frame ${name}`);
+      if (s.i === c.i) mark(it.start.step, "start", `The classic sugya ${name} begins with this step. It runs to ${it.end.daf}, step ${it.end.step}.`);
+      if (e.i === c.i) mark(it.end.step, "end", `The classic sugya ${name} ends with this step. <a href="#/classics">More classics</a>`);
+      if (s.i < c.i && c.i < e.i && a.steps && a.steps.length) mark(1, "start", `This whole amud is part of the classic sugya ${name}, which runs to ${it.end.daf}, step ${it.end.step}.`);
+      if (it.context && refId(it.context.m, dafIdx(it.context.m, it.context.daf)) === c.id) mark(it.context.from, "ctx", `Steps ${it.context.from}–${it.context.to} set the scene for the classic sugya ${name}.`);
     }
   });
 }
@@ -978,39 +979,63 @@ function renderHome(){
   const h = history_(), bm = bookmarks(), mwN = mwCount();
   const last = h[0] && parseId(h[0].id);
   const hasLast = !!(last && masInfo(last.m));
-  // Round 2 (Oct 15 2026): one "continue where you left off" (no second tile for the same amud next to the paths), Daf Yomi beside it, both compact
-  const tilesHtml = `<div class="home-grid two home-quick">
-      ${hasLast ? `<a class="tile accent qt" href="${hashFor(last.m, last.i)}"><div class="k">Continue where you left off</div><div class="v">${label(last.m, last.i)} <span class="s he">${heLabel(last.m, last.i)}</span></div></a>` : ""}
-      <a class="tile qt" id="yomiTile" href="#" aria-busy="true"><div class="k">Today’s Daf Yomi</div><div class="v"><span id="yomiV">…</span> <span class="s" id="yomiS"></span></div></a>
-    </div>`;
-  $("#view").innerHTML = `
-    <div class="hero hero-h3"><h1>Gemara Clarity</h1><p>Every sugya of Shas, step by step.</p></div>
-    <section class="h3-choices" aria-labelledby="choicesH"><h2 class="h3-kicker" id="choicesH">How would you like to learn?</h2>
-      ${homeChoicesHtml(modePref())}</section>
-    <button class="searchbox h3-search" id="homeSearch"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>Go to any daf…</button>
-    ${tilesHtml}
-    ${mwN ? `<div class="section-h">My words <small>${mwN} saved</small></div><div class="chips mw-homechips"><a class="chip" href="#/words">List</a><a class="chip" href="#/words/cards">Flashcards</a></div>` : ""}
-    ${bm.length ? `<div class="section-h">Bookmarks</div><div class="chips">${bm.map(id => { const p = parseId(id); return masInfo(p.m) ? `<a class="chip" href="${hashFor(p.m, p.i)}">★ ${label(p.m, p.i)}</a>` : ""; }).join("")}</div>` : ""}
-    ${h.length > 1 ? `<div class="section-h">Recently learned</div><div class="chips">${h.slice(0, 10).map(x => { const p = parseId(x.id); return masInfo(p.m) ? `<a class="chip" href="${hashFor(p.m, p.i)}">${label(p.m, p.i)}${hasBreakdown(x.id) ? "" : ` <span class="x">text</span>`}</a>` : ""; }).join("")}</div>` : ""}
-    <div class="section-h">Browse the library <small>${cloudIds.size ? cloudIds.size + " amudim" : ""}</small></div>
-    <div id="libSlot">${libraryHtml()}</div>
-    <p class="small" style="margin:10px 4px 0">Every other daf in Shas opens too, with the full text and translation side by side.</p>
-    <details class="legend-wrap"><summary class="section-h">The eight kinds of step <small>color key</small></summary>
-    <div class="legend">${Object.entries(TYPES).map(([he, t]) => `<div class="lg t-${t.k}"><span class="swatch"></span><div><b>${t.en} · <span class="en-he">${stepHe(he)}</span></b><div class="d">${t.d}</div></div></div>`).join("")}<div class="lg t-mishnah"><span class="swatch"></span><div><b>${MISHNAH.en} badge · <span class="en-he">${px(MISHNAH.he)}</span></b><div class="d">${MISHNAH.d}</div></div></div></div></details>`;
+  let pos = null; try { pos = JSON.parse(localStorage.getItem("gc5-pos") || "null"); } catch {}
+  // v5 (Oct 29 2026, design bible): home opens on today's amud itself, the real text marked in the step colours, with one Start / Continue
+  const row = (k, he, en, p, attrs) => `<li><${k === "classics" ? "a" : "button type=\"button\""} class="h4-way h3-${k}" ${attrs}><span class="rw-he" lang="he">${he}</span><b>${en}</b><span class="rw-d">${p}</span></${k === "classics" ? "a" : "button"}></li>`;
+  const links = (he, en, items) => `<section class="h5-sec"><h2 class="section-h"><span lang="he">${he}</span> ${en}</h2><p class="h4-links">${items}</p></section>`;
+  const amudLink = id => { const p = parseId(id); return masInfo(p.m) ? `<a href="${hashFor(p.m, p.i)}"><span class="he" lang="he">${heLabel(p.m, p.i)}</span> ${label(p.m, p.i)}</a>` : ""; };
+  $("#view").innerHTML = `<div class="homewrap h5">
+    <section class="amud" id="homeAmud" aria-busy="true">
+      <p class="amud-k" id="yomiTile"><span lang="he">דף היומי</span> <span id="yomiV">Today’s daf</span><span id="yomiS" class="s"></span></p>
+      <div class="amud-page" id="amudPage"><div class="amud-wait">&nbsp;</div></div>
+    </section>
+    ${hasLast ? (() => { const n = pos && pos.id === h[0].id && pos.n > 1 ? pos.n : 0; return `<p class="h5-cont" id="homeCont" data-id="${h[0].id}"><a class="h4-line" href="${hashFor(last.m, last.i, n ? "/s" + n : "")}"><span class="k">Continue</span> <span class="v"><span class="s he" lang="he">${heLabel(last.m, last.i)}</span> ${label(last.m, last.i)}${n ? `, step ${n}` : ""}</span></a></p>`; })() : ""}
+    <section class="h5-sec">
+      <h2 class="section-h"><span lang="he">דרכי לימוד</span> Ways to learn</h2>
+      <ul class="h4-ways">${row("shiur", "מהלך הסוגיא", "Sugya Flow", "Each step explained, one at a time.", `data-home-pick="shiur" aria-haspopup="dialog"`)}${row("ameilus", "עמלות", "Ameilus", "Work through the daf yourself first, then check.", `data-home-pick="ameilus" aria-haspopup="dialog"`)}${row("classics", "סוגיות יסוד", "Classics", "Famous sugyos to begin with.", `href="#/classics"`)}</ul>
+      <button class="h4-search" id="homeSearch" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><span>Go to any daf</span></button>
+    </section>
+    ${mwN ? links("המילים שלי", "My words", `<a href="#/words">${mwN} saved words</a>, <a href="#/words/cards">flashcards</a>`) : ""}
+    ${bm.length ? links("סימניות", "Bookmarks", bm.map(amudLink).filter(Boolean).join("")) : ""}
+    ${h.length > 1 ? links("נלמד לאחרונה", "Recently learned", h.slice(0, 8).map(x => amudLink(x.id)).filter(Boolean).join("")) : ""}
+    <details class="legend-wrap"><summary class="section-h"><span lang="he">סימני העיפרון</span> What the colours mean</summary>
+    <div class="legend">${Object.entries(TYPES).map(([he, t]) => `<div class="lg t-${t.k}"><span class="swatch"></span><div><b><span class="en-he" lang="he">${stepHe(he)}</span> ${t.en}</b><div class="d">${t.d}</div></div></div>`).join("")}<div class="lg t-mishnah"><span class="swatch"></span><div><b><span class="en-he" lang="he">${px(MISHNAH.he)}</span> ${MISHNAH.en}</b><div class="d">${MISHNAH.d}</div></div></div></div></details></div>`;
   $("#homeSearch").onclick = () => openPicker();
   $$("[data-home-pick]").forEach(b => b.onclick = () => openPicker(undefined, undefined, b.dataset.homePick));
-  wireLibrary();
-  // Daf Yomi fix: "Unavailable offline" only when the phone is offline; any other failure (rate limit, 5xx, timeout) says so and a tap retries
-  const showYomi = () => dafYomi().then(y => {
-    const tile = $("#yomiTile"); if (!tile) return; if (!y) throw 0;
-    tile.onclick = null; tile.removeAttribute("aria-busy");
-    if (y.m) { tile.href = hashFor(y.m, y.i); $("#yomiV").textContent = `${masName(y.m)} ${dafOf(y.i).daf}`; }
-    else { const d = document.createElement("div"); d.className = tile.className; d.id = tile.id; d.innerHTML = tile.innerHTML; tile.replaceWith(d); $("#yomiV").textContent = "Today’s daf isn’t in the app"; } // no link (English links stay off)
-    $("#yomiS").textContent = ""; // round 2: the compact tile names the daf only
-  }).catch(() => { const v = $("#yomiV"), tile = $("#yomiTile"); if (!v || !tile) return;
-    v.textContent = navigator.onLine ? "Couldn’t load · tap to retry" : "Unavailable offline";
-    tile.onclick = e => { e.preventDefault(); v.textContent = "…"; showYomi(); }; });
-  showYomi();
+  // the amud on the first screen: today's Daf Yomi; if that can't be reached (offline, Mishnah-only day), the amud last learned, else Berakhot 2a
+  const plain = t => String(t || "").replace(/[\u0591-\u05BD\u05BF-\u05C7]/g, "").replace(/[?!,;:.]+(?=\s|$)/g, m0 => m0 === "." || m0 === ":" ? m0 : "").trim();
+  const paint = async (m, i, kind) => {
+    const page = $("#amudPage"), box = $("#homeAmud"); if (!page) return;
+    const id = refId(m, i);
+    const k = $("#yomiTile");
+    if (k) k.innerHTML = kind === "yomi" ? `<span lang="he">דף היומי</span> Today’s daf` : kind === "last" ? `<span lang="he">המשך</span> Where you left off` : `<span lang="he">תחילת הש״ס</span> Where Shas begins`;
+    let a = null; try { await staticReady; if (!staticIds.size || staticIds.has(id)) a = await loadCloudAnalysis(id); } catch {}
+    if (!$("#amudPage")) return;
+    box.removeAttribute("aria-busy");
+    const hc = $("#homeCont"); if (hc && hc.dataset.id === id) hc.hidden = true; // the amud above is the one to continue: its own button says so
+    const at = pos && pos.id === id && a && pos.n > 1 && pos.n <= a.steps.length ? pos.n : 0;
+    const go = n => hashFor(m, i, n ? "/s" + n : "/steps");
+    let words = 0, first = true, body = "";
+    if (a) for (let s = 0; s < a.steps.length && words < 46; s++) {
+      const st = a.steps[s], t = TYPES[st.hebrewStepName] || TYPES["מימרא"];
+      let txt = plain((st.phrases || []).map(p => p.aramaic).join(" ")); if (!txt) continue;
+      let ws = txt.split(/\s+/); const room = 46 - words; const cut = ws.length > room + 6; if (cut) ws = ws.slice(0, room);
+      words += ws.length;
+      let open = "";
+      if (first) { open = `<span class="ow">${esc(ws.shift())}</span> `; first = false; }
+      body += `${open}<a class="mk t-${t.k}" href="${go(s + 1)}" title="Step ${s + 1}: ${t.en}">${esc(ws.join(" "))}${cut ? "…" : ""}</a> `;
+      if (cut) break;
+    }
+    page.innerHTML = `
+      <div class="amud-rh" lang="he" dir="rtl"><span>${masInfo(m)[1]}</span><span>${heShort(i)}</span></div>
+      ${a ? `<p class="amud-text" lang="he" dir="rtl">${body}</p>
+      <nav class="ticks" aria-label="Steps of this sugya">${ticksHtml(a.steps, at || 0, go)}</nav>` : ""}
+      <p class="amud-meta"><span class="he" lang="he">${heLabel(m, i)}</span> <span class="en">${label(m, i)}${a ? `, ${a.steps.length} steps` : ""}</span></p>
+      ${a && a.mainTopic ? `<p class="amud-topic">${px(a.mainTopic, a)}</p>` : ""}
+      <p class="amud-go"><a class="btn-primary" href="${a ? go(at) : hashFor(m, i)}">${at ? `Continue at step ${at}` : a ? "Start" : "Open the daf"}</a></p>`;
+  };
+  const fallback = () => hasLast ? paint(last.m, last.i, "last") : paint("Berakhot", masInfo("Berakhot")[2], "start");
+  dafYomi().then(y => { if (y && y.m) paint(y.m, y.i, "yomi"); else fallback(); }).catch(fallback);
 }
 
 /* ---------- daf view ---------- */
@@ -1020,6 +1045,38 @@ function setChrome(onDaf){
   $("#refBtnText").textContent = current ? label(current.m, current.i) : "Choose a daf";
   if (!onDaf) { $("#sidebar").innerHTML = ""; $("#progressFill").style.width = "0"; }
   setModeSwitch(onDaf && current ? "shiur" : null);
+  syncPaged();
+}
+/* v2 (Oct 29 2026, test): paged "book" reading at desktop width — one step open as a two-page spread, the others a numbered ribbon, a pill pager at the foot */
+function paged(){ return document.body.classList.contains("onestep"); }
+function syncPaged(){ // v4: one step at a time on every width (David, Oct 29: "one step at a time on the screen")
+  const on = !!(current && current.analysis && current.tab === "steps" && !current.am && !current.choose && document.querySelector("#dafBody .steps .step"));
+  document.body.classList.toggle("onestep", on);
+  if (on && !$(".step.cur") && $("#s1")) markCurrent(1);
+  else if (on) { const c = $(".step.cur"); c && updPager(+c.dataset.n, current.analysis.steps.length); }
+}
+/* v5: the sugya's shape as a row of pencil ticks, one per step in its kind colour; the current one is taller. Each tick goes to its step. */
+function ticksHtml(steps, n, href){
+  return steps.map((s, k) => { const t = TYPES[s.hebrewStepName] || TYPES["מימרא"];
+    return href ? `<a class="tk t-${t.k}${k + 1 === n ? " cur" : ""}" href="${href(k + 1)}" aria-label="Step ${k + 1}: ${t.en}"></a>`
+      : `<button class="tk t-${t.k}${k + 1 === n ? " cur" : ""}" data-jump="${k + 1}" aria-label="Step ${k + 1}: ${t.en}"></button>`; }).join("");
+}
+function ticksSync(n, total){
+  const body = $("#dafBody"); if (!body || !current || !current.analysis) return;
+  let row = $("#ticks");
+  if (!row) { row = document.createElement("nav"); row.id = "ticks"; row.className = "ticks"; row.setAttribute("aria-label", "Steps of this sugya"); body.prepend(row); }
+  if (row.children.length !== total) row.innerHTML = ticksHtml(current.analysis.steps, n);
+  else [...row.children].forEach((b, k) => { b.classList.toggle("cur", k + 1 === n); b.setAttribute("aria-current", k + 1 === n ? "step" : "false"); });
+}
+function updPager(n, total){ // v4: the thin bottom bar: "5 of 24 · Kind" over a progress line; tapping it opens the step list
+  const w = $("#stepCounter"); if (!w || !current || !current.analysis) return;
+  const el = document.getElementById("s" + n), tn = el && $(".tname", el), k = (el && (el.className.match(/\bt-(\w+)/) || [])[1]) || "mimra";
+  const kn = tn && $(".ten", tn), kind = kn ? kn.textContent.trim() : "";
+  w.innerHTML = `<span class="sc-n">${n}</span> of ${total}${kind ? ` <span class="sc-k t-${k}">${kind}</span>` : ""}`;
+  ticksSync(n, total);
+  try { localStorage.setItem("gc5-pos", JSON.stringify({ id: current.id, n })); } catch {}
+  const f = $("#stepFill"); if (f) f.style.width = (total ? n / total * 100 : 0) + "%";
+  document.body.classList.toggle("at-last", n >= total);
 }
 function updateNav(){
   if (!current) return;
@@ -1109,7 +1166,7 @@ function stepHtml(s, k, open){
   const total = (current && current.analysis && current.analysis.steps || []).length, nextN = total && k + 2 <= total ? k + 2 : 0;
   const fwStop = { n: 0 }; // e5: the first word of this step is its one Tab stop
   return `<article class="step t-${t.k}${open ? " open" : ""}${isMish(k) ? " is-mishnah" : ""}" id="s${k+1}" data-n="${k+1}">
-    <button class="sh" aria-expanded="${open}" aria-controls="x${k+1}"><span class="num">${k+1}</span><span class="tname">${t.en}<span class="he" lang="he">${stepHe(s.hebrewStepName)}</span>${stagHtml(s)}${isMish(k) ? MBADGE : ""}</span></button>
+    <button class="sh" aria-expanded="${open}" aria-controls="x${k+1}"><span class="num">${k+1}</span><span class="tname"><span class="he" lang="he">${stepHe(s.hebrewStepName)}</span><span class="ten">${t.en}</span>${stagHtml(s)}${isMish(k) ? MBADGE : ""}</span></button>
     <div class="sbody">
       ${relatedLineHtml(relatedSteps(current && current.id, s, k + 1, (current && current.analysis && current.analysis.steps || []).length || k + 1), k + 1)}
       <h3 class="stitle">${px(s.title)}</h3>
@@ -1123,14 +1180,20 @@ function stepHtml(s, k, open){
         ${s.confusionAlert ? `<div class="box alert"><h4>Careful</h4><p>${px(s.confusionAlert)}</p></div>` : ""}
         ${moreHtml(more, settings.expandAll)}
       </div>
-      ${nextN ? `<button class="next-step" data-jump="${nextN}" aria-label="Go to step ${nextN}">Next step<span aria-hidden="true"> ›</span></button>` : ""}
+      ${k > 0 || nextN ? `<div class="stepnav">${k > 0 ? `<button class="bwd" data-jump="${k}" aria-label="Back to step ${k}" title="Step ${k} (or swipe, or press ←)"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M19 12H6M11 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>` : ""}${nextN ? `<button class="fwd next-cue" data-jump="${nextN}" aria-label="Go on to step ${nextN}" title="Step ${nextN} (or swipe, or press →)"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>` : ""}</div>` : ""}${!nextN && total && k + 1 === total ? dafEndHtml() : ""}
     </div></article>`;
+}
+// v4: the daf's own prev/next links appear once, at the end of the last step, as quiet text
+function dafEndHtml(){
+  if (!current) return "";
+  const p = neighbor(current.m, current.i, -1), n = neighbor(current.m, current.i, 1);
+  return `<nav class="dafend" aria-label="Other dapim"><span class="de-end">End of ${esc(label(current.m, current.i))}</span>${n ? `<a class="de-n" href="${hashFor(n.m, n.i)}">Continue to ${esc(label(n.m, n.i))} →</a>` : ""}${p ? `<a class="de-p" href="${hashFor(p.m, p.i)}">← ${esc(label(p.m, p.i))}</a>` : ""}</nav>`;
 }
 let dafOpening = null; // v99lb: the amud whose breakdown load has started (the boot re-open below skips it)
 async function openDaf(m, i, tab, choose){
   const id = refId(m, i);
   const same = current && current.id === id && !current.am;
-  current = { m, i, id, analysis: same ? current.analysis : null, source: same ? current.source : null, text: same ? current.text : null, tab: tab || (same ? current.tab : null), choose: !!choose };
+  current = { m, i, id, analysis: same ? current.analysis : null, source: same ? current.source : null, text: same ? current.text : null, tab: (tab && tab !== "text") ? tab : (same && current.tab !== "text" ? current.tab : null), choose: !!choose };
   document.title = `${label(m, i)} · Gemara Clarity`;
   pushHistory(id);
   setChrome(true); updateNav();
@@ -1143,7 +1206,7 @@ async function openDaf(m, i, tab, choose){
     if (gP) await Promise.race([gP, new Promise(r => setTimeout(r, 1500))]);
     if (!current || current.id !== id) return;
     current.analysis = cloud; current.source = cloud ? "cloud" : null; current.cloudErr = cloudErr;
-    if (!current.tab) current.tab = current.analysis ? "steps" : "text";
+    if (!current.tab || current.tab === "text") current.tab = "steps"; // v4c: the Full text tab is gone (David, Oct 29); an amud with no breakdown still shows its text below the notice
   }
   renderDaf();
   // warm the neighbours quietly
@@ -1156,8 +1219,8 @@ function renderChooser(){ // an amud opened with no remembered way of learning: 
   $(".layout").classList.remove("with-side"); $("#sidebar").innerHTML = ""; $("#progressFill").style.width = "0";
   $("#view").innerHTML = `
     <section class="card dafhead chooser" aria-labelledby="chooseH">
-      <div class="refline"><h1>${esc(label(c.m, c.i))}</h1><span class="he">${heLabel(c.m, c.i)}</span></div>
-      <div id="perekSlot">${perekLineHtml(c.m, c.i)}</div>
+      <div class="runhead"><span class="rh-m he" lang="he">${masInfo(c.m)[1]}</span><div id="perekSlot">${perekLineHtml(c.m, c.i)}</div><span class="rh-d he" lang="he">${heShort(c.i)}</span></div>
+      <div class="refline"><span class="he" lang="he">${heLabel(c.m, c.i)}</span><h1>${esc(label(c.m, c.i))}</h1></div>
       ${a && a.mainTopic ? `<p class="topic">${px(a.mainTopic, a)}</p>` : ""}
       <h2 class="choose-h" id="chooseH">How do you want to learn this amud?</h2>
       ${pathsHtml(mode => hashFor(c.m, c.i, "/" + mode))}
@@ -1165,6 +1228,7 @@ function renderChooser(){ // an amud opened with no remembered way of learning: 
     </section>`;
 }
 function renderDaf(){
+  if (current && !current.am && current.tab === "text") current.tab = "steps"; // v4c: an old "Full text" choice falls back to the steps
   const c = current; if (!c) return;
   if (c.choose && c.analysis) return renderChooser();
   c.choose = false;
@@ -1173,8 +1237,8 @@ function renderDaf(){
   setChrome(true); updateNav();
   $("#view").innerHTML = `
     <section class="card dafhead${a && ovOpen() ? " ov-open" : ""}">
-      <div class="refline"><h1>${esc(label(c.m, c.i))}</h1><span class="he">${heLabel(c.m, c.i)}</span></div>
-      <div id="perekSlot">${perekLineHtml(c.m, c.i)}</div>
+      <div class="runhead"><span class="rh-m he" lang="he">${masInfo(c.m)[1]}</span><div id="perekSlot">${perekLineHtml(c.m, c.i)}</div><span class="rh-d he" lang="he">${heShort(c.i)}</span></div>
+      <div class="refline"><span class="he" lang="he">${heLabel(c.m, c.i)}</span><h1>${esc(label(c.m, c.i))}</h1></div>
       ${a ? modeBarHtml(c.m, c.i, "shiur") : ""}
       ${a && a.mainTopic ? `<p class="topic">${px(a.mainTopic, a)}</p>` : ""}
       <div class="headbar">
@@ -1182,13 +1246,11 @@ function renderDaf(){
         <div class="headactions">
           <button class="btn ${bm ? "on" : ""}" id="bmBtn" aria-pressed="${bm}" aria-label="${bm ? "Bookmarked" : "Bookmark"}" title="${bm ? "Bookmarked" : "Bookmark"}"><svg viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4z"/></svg><span class="hl">${bm ? "Bookmarked" : "Bookmark"}</span></button>
           <button class="btn" id="shareBtn" aria-label="Share" title="Share"><svg viewBox="0 0 24 24"><path d="M4 12v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7"/><path d="M16 6l-4-4-4 4"/><path d="M12 2v14"/></svg><span class="hl">Share</span></button>
-          <button class="btn" id="pdfBtn" aria-label="Print or save as PDF" title="Print or save as PDF"><svg viewBox="0 0 24 24"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 14h12v8H6z"/></svg><span class="hl">PDF</span></button>
         </div>
       </div>
       ${a ? `<div class="ovpanel" id="ovPanel"${ovOpen() ? "" : " hidden"}>${a.overview ? `<p class="overview">${px(a.overview, a)}</p>` : ""}
         <div class="typecounts">${Object.entries(TYPES).filter(([he]) => counts[he]).map(([he, t]) => `<span class="typecount t-${t.k}">${counts[he]} ${t.en}${counts[he] > 1 ? "s" : ""}</span>`).join("")}${mishCountHtml()}</div></div>` : ""}
-      ${a ? `<div class="tabs" role="tablist"><button role="tab" data-tab="steps" aria-selected="${c.tab === "steps"}">Step by step <small>${a.steps.length} steps</small></button><button role="tab" data-tab="text" aria-selected="${c.tab === "text"}">Full text</button></div>
-        <p class="note-ai">AI-generated: check it against the text and your teacher.</p>` : ""}
+      ${a ? `<p class="note-ai">AI-generated: check it against the text and your teacher.</p>` : ""}
     </section>
     ${!a && !c.noText ? `<div class="notice">${c.cloudErr ? `<b>The breakdown couldn’t be loaded just now.</b>
         <p>Check your connection and try again. Meanwhile, here is the full text with translation, side by side.</p>` : `<b>Step-by-step breakdown coming soon.</b>
@@ -1202,7 +1264,7 @@ function renderDaf(){
   wireDaf();
   if (c.tab === "text" || !a) renderText();
   const p = neighbor(c.m, c.i, -1), n = neighbor(c.m, c.i, 1);
-  $("#endnav").innerHTML = `${p ? `<a class="btn" href="${hashFor(p.m, p.i)}">‹ ${label(p.m, p.i)}</a>` : ""}${n ? `<a class="btn primary" href="${hashFor(n.m, n.i)}">${label(n.m, n.i)} ›</a>` : ""}`;
+  $("#endnav").innerHTML = `${p ? `<a class="de-p" href="${hashFor(p.m, p.i)}">← ${label(p.m, p.i)}</a>` : ""}${n ? `<a class="de-n" href="${hashFor(n.m, n.i)}">${label(n.m, n.i)} →</a>` : ""}`;
   markMishnah(); markClassics(c, a);
   if (pendingJump && a && pendingJump.id === c.id && c.tab === "steps") { const k = pendingJump.n; pendingJump = null; setTimeout(() => { const el = document.getElementById("s" + k); if (!el || current !== c) return; toggleStep(el, true); jumpTo(k); }, 0); }
   miAfterRender(c, a);
@@ -1283,14 +1345,14 @@ function wireDaf(){
   wirePerek();
   $("#bmBtn").onclick = () => { let b = bookmarks(); b = b.includes(c.id) ? b.filter(x => x !== c.id) : [c.id, ...b]; saveJSON(LS.bookmarks, b); toast(b.includes(c.id) ? "Bookmarked" : "Bookmark removed"); renderDaf(); };
   $("#shareBtn").onclick = async () => { const url = location.href; try { if (navigator.share) await navigator.share({ title: `${label(c.m, c.i)} · Gemara Clarity`, url }); else { await navigator.clipboard.writeText(url); toast("Link copied"); } } catch {} };
-  $("#pdfBtn").onclick = () => { const was = settings.expandAll; const old = document.title; document.title = `${label(c.m, c.i)} - Gemara Clarity`; $$(".explain").forEach(x => x.hidden = false); setTimeout(() => { window.print(); document.title = old; if (!was) renderDaf(); }, 120); };
+  // v4 (Oct 29 2026): print-to-PDF removed at David's request
   $$("[data-tab]").forEach(b => b.onclick = () => { c.tab = b.dataset.tab; renderDaf(); });
   const ovb = $("#ovBtn"); if (ovb) ovb.onclick = () => {
     const open = ovb.getAttribute("aria-expanded") !== "true"; saveJSON(LS.overview, open);
     ovb.setAttribute("aria-expanded", open); $(".ovl", ovb).textContent = open ? "Hide overview" : "Show overview";
     $("#ovPanel").hidden = !open; $(".dafhead").classList.toggle("ov-open", open);
   };
-  const lib = $("#libBtn"); if (lib) lib.onclick = () => { location.hash = "#/"; setTimeout(() => { const s = $("#libSlot"); s && s.scrollIntoView({ behavior: "smooth" }); }, 60); };
+  const lib = $("#libBtn"); if (lib) lib.onclick = () => openPicker(); // v4d: the home library is gone; the daf picker lists every masechta
   const view = $("#view");
   view.onclick = e => {
     const j = e.target.closest("[data-jump]"); if (j) { e.preventDefault(); jumpTo(+j.dataset.jump, j.hasAttribute("data-rel")); return; }
@@ -1299,7 +1361,9 @@ function wireDaf(){
     // kt3: a tap (or click) on a word of the Gemara text opens its word help; a drag-selection does not; a tap anywhere else closes it
     const fw = e.target.closest(".pa .fw"); if (fw) { const sel = window.getSelection && window.getSelection(); if (!sel || sel.isCollapsed) wordHelpFlow(fw); return; }
     if (wfOpen() && !e.target.closest("#wfWord")) closeWordFlow();
-    const t = e.target.closest(".sh, .explain-btn"); if (t) toggleStep(t.closest(".step"));
+    const t = e.target.closest(".sh, .explain-btn"); if (t) { toggleStep(t.closest(".step")); return; }
+    // v4: on the phone a tap on the very edge of the step turns to the step before or after
+    if (paged() && innerWidth < 1000 && e.target.closest("#dafBody .step") && !e.target.closest("a, button, .fw, input, label, summary")) { const x = e.clientX; if (x < 26) stepBy(-1); else if (x > innerWidth - 26) stepBy(1); }
   };
   view.onkeydown = e => { // e5: Enter or Space opens the word help; arrows (Left = next word) and Home/End move inside the step, so the amud does not change
     const fw = e.target.closest && e.target.closest(".pa .fw"); if (!fw || e.metaKey || e.ctrlKey || e.altKey) return;
@@ -1324,7 +1388,8 @@ function jumpTo(n, flash){
   if (current && current.tab !== "steps") { current.tab = "steps"; renderDaf(); }
   const el = document.getElementById("s" + n); if (!el) return;
   closeSheet(); jumpTo.lock = Date.now() + 700;
-  el.scrollIntoView({ behavior: "auto", block: "start" });
+  if (paged()) { markCurrent(n); const top = $("#dafBody .steps"); const y = top ? top.getBoundingClientRect().top + scrollY - 70 : 0; if (scrollY > y + 4 || scrollY < y - 400) scrollTo({ top: Math.max(0, y), behavior: "auto" }); }
+  else el.scrollIntoView({ behavior: "auto", block: "start" });
   markCurrent(n);
   if (flash) { el.classList.remove("arrive"); void el.offsetWidth; el.classList.add("arrive"); clearTimeout(jumpTo.t); jumpTo.t = setTimeout(() => el.classList.remove("arrive"), 1600); el.focus && el.setAttribute("tabindex", "-1"); try { el.focus({ preventScroll: true }); } catch {} }
 }
@@ -1332,10 +1397,11 @@ function observeSteps(){
   if (observer) observer.disconnect();
   const steps = $$(".step"); if (!steps.length) return;
   observer = new IntersectionObserver(entries => {
-    if (Date.now() < (jumpTo.lock || 0)) return;
+    if (Date.now() < (jumpTo.lock || 0) || paged()) return; // v2: in the paged (book) view only explicit jumps change the step
     for (const en of entries) if (en.isIntersecting) markCurrent(+en.target.dataset.n);
   }, { rootMargin: "-20% 0px -70% 0px" });
   steps.forEach(s => observer.observe(s));
+  syncPaged();
 }
 function markCurrent(n){
   if (!current || !current.analysis) return;
@@ -1347,7 +1413,7 @@ function markCurrent(n){
   if (strip && strip.scrollWidth > strip.clientWidth) { const l = sb.offsetLeft - strip.offsetLeft, w = strip.clientWidth; if (l < strip.scrollLeft + 8 || l + sb.offsetWidth > strip.scrollLeft + w - 8) strip.scrollLeft = Math.max(0, l - w / 2 + sb.offsetWidth / 2); }
   const now = $("#stripNow"); if (now) now.innerHTML = stripNowHtml(current.analysis, n);
   const side = $(`#sidebar .fnode[data-jump="${n}"]`); if (side && $(".layout").classList.contains("with-side")) side.scrollIntoView({ block: "nearest" });
-  $("#stepCounter").textContent = `step ${n}/${total}`;
+  updPager(n, total);
 }
 window.addEventListener("scroll", () => {
   if (current && current.am) return; // Ameilus fills the bar with the passages done
@@ -1363,7 +1429,7 @@ window.addEventListener("scroll", () => {
 const AM_VER = "3.6.0", AM_SKEY = "gc-am3-settings";
 let amMounted = null, amModP = null, amGlossP = null, pendingJump = null;
 const amPrefs = () => { try { return Object.assign({ bare: false }, JSON.parse(localStorage.getItem(AM_SKEY) || "{}")); } catch { return { bare: false }; } };
-function amModule(){ return amModP || (amModP = import(`./ameilus/ui.js?v=${AM_VER}-mw1`).catch(e => { amModP = null; throw e; })); }
+function amModule(){ return amModP || (amModP = import(`./ameilus/ui.js?v=${AM_VER}-mw2`).catch(e => { amModP = null; throw e; })); }
 function amGloss(){
   return amGlossP || (amGlossP = fetch(`data/glossary.json?v=${AM_VER}`).then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
     .then(g => (g && g.entries) || {}).catch(e => { console.warn("glossary unavailable", e); amGlossP = null; return {}; }));
@@ -1471,7 +1537,7 @@ async function renderAmeilus(m, i){
   me.analysis = a; me.source = a ? "cloud" : null;
   const shiur = hashFor(m, i);
   const notice = (head, body) => { view.innerHTML = `<div class="notice am-notice"><b>${head}</b><p>${body}</p><a class="btn" href="${shiur}">Open ${esc(label(m, i))} in Sugya Flow</a></div>`; };
-  if (!a) return notice(err && !mod ? "Ameilus couldn’t load just now." : "Ameilus needs this amud’s breakdown, and it isn’t ready yet.", err ? "Check your connection and try again." : "The full text is in Sugya Flow meanwhile.");
+  if (!a) return notice(err && !mod ? "Ameilus couldn’t load just now." : "Ameilus needs this amud’s breakdown, and it isn’t ready yet.", err ? "Check your connection and try again." : "Sugya Flow shows the text and translation meanwhile.");
   if (!mod) return notice("Ameilus couldn’t load just now.", "Check your connection and try again.");
   const p = neighbor(m, i, -1), n = neighbor(m, i, 1);
   try {
@@ -1605,6 +1671,17 @@ $("#refBtn").onclick = () => openPicker();
 function openSettingsAll(){ openSettings(); if (current && current.am) amSettingsSection($("#sheetBody")); } $("#settingsBtn").onclick = e => acct.toggleMenu(e); // v106-acct: the corner button opens the profile menu; its Settings row opens openSettingsAll
 $("#sheetClose").onclick = closeSheet; $("#backdrop").onclick = closeSheet;
 $("#flowBtn").onclick = () => { if (current && current.analysis) openSheet(`The steps of ${label(current.m, current.i)}`, flowHtml(current.analysis.steps), b => { const cur = $$(".step.cur")[0]; if (cur) { const f = $(`.fnode[data-jump="${cur.dataset.n}"]`, b); f && f.classList.add("cur"); f && f.scrollIntoView({ block: "center" }); } b.onclick = e => { const j = e.target.closest("[data-jump]"); if (j) { e.preventDefault(); jumpTo(+j.dataset.jump); } }; }); };
+// v4: moving between steps — swipe, a tap on the left/right edge, the arrow keys (or j/k), or the one arrow at the foot of the step
+function stepBy(d){ if (!paged() || !current || !current.analysis) return false; const c = +(($(".step.cur") || {}).dataset?.n || 1), t = current.analysis.steps.length, n = c + d; if (n < 1 || n > t) return false; jumpTo(n); return true; }
+$$(".edge").forEach(b => b.onclick = () => stepBy(+b.dataset.d));
+(() => { let sx = 0, sy = 0, st = 0, ok = false;
+  document.addEventListener("touchstart", e => { const t = e.touches[0]; ok = e.touches.length === 1 && paged() && !!e.target.closest("#dafBody .step") && !e.target.closest("input, textarea, .wf, #sheet"); sx = t.clientX; sy = t.clientY; st = Date.now(); }, { passive: true });
+  document.addEventListener("touchend", e => { if (!ok) return; ok = false; const t = e.changedTouches[0], dx = t.clientX - sx, dy = t.clientY - sy;
+    const sel = window.getSelection && window.getSelection(); if (sel && !sel.isCollapsed) return;
+    if (Math.abs(dx) > 60 && Math.abs(dy) < Math.abs(dx) * 0.6 && Date.now() - st < 800) stepBy(dx < 0 ? 1 : -1); }, { passive: true });
+})();
+document.addEventListener("click", e => { if (!paged()) return; const sh = e.target.closest(".step:not(.cur) > .sh"); if (!sh) return; e.preventDefault(); e.stopImmediatePropagation(); jumpTo(+sh.parentElement.dataset.n); }, true);
+addEventListener("resize", () => { clearTimeout(syncPaged.t); syncPaged.t = setTimeout(syncPaged, 150); });
 document.addEventListener("keydown", e => {
   if (e.key === "Escape" && wfOpen()) return closeWordFlow(); // kt3: word help first
   if (e.key === "Escape" && !$("#sheet").hidden) return closeSheet();
@@ -1612,6 +1689,7 @@ document.addEventListener("keydown", e => {
   if (e.target.matches("input, textarea") || e.metaKey || e.ctrlKey || e.altKey || !$("#sheet").hidden) return;
   if (!current) { if (e.key === "/") { e.preventDefault(); openPicker(); } return; }
   if (current.am && (e.defaultPrevented || e.key === "j" || e.key === "k")) return; // Ameilus: the marker keys win
+  if (paged() && current.analysis && (e.key === "ArrowRight" || e.key === "ArrowLeft") && !e.target.closest(".ph, [role=tab], .side-resize")) { e.preventDefault(); stepBy(e.key === "ArrowRight" ? 1 : -1); return; }
   if (e.key === "ArrowRight" || e.key === "]") { const n = neighbor(current.m, current.i, 1); n && go(n.m, n.i); }
   else if (e.key === "ArrowLeft" || e.key === "[") { const p = neighbor(current.m, current.i, -1); p && go(p.m, p.i); }
   else if (e.key === "/") { e.preventDefault(); openPicker(); }
@@ -1632,7 +1710,7 @@ function applyUi(){
   $(".layout").style.setProperty("--side-w", w + "px");
   $("#sideResize").setAttribute("aria-valuenow", w);
   document.body.classList.toggle("side-collapsed", ui.sideHidden);
-  document.body.classList.toggle("bb-collapsed", ui.barHidden);
+  document.body.classList.toggle("bb-collapsed", false); // v4: the bar is one thin line now and is never tucked away
   const t = $("#bbToggle");
   t.setAttribute("aria-expanded", String(!ui.barHidden));
   t.setAttribute("aria-label", ui.barHidden ? "Show the bottom bar" : "Hide the bottom bar");

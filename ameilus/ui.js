@@ -521,7 +521,7 @@ export function mountAmeilus(root, ctx){
   root.addEventListener("click", e => {
     const w = e.target.closest("[data-walk]"); if (!w) return;
     if (w.dataset.walk === "open") { if (tipEl.hidden) openWalk(true); else closeWalk(); }
-    else { closeWalk(); if (w.dataset.walk === "start") { dafBox.scrollTop = 0; const f = daf.querySelector(`[data-i="${st.pos}"]`); f && f.focus({ preventScroll: true }); } }
+    else { closeWalk(); if (w.dataset.walk === "start") { dafBox.scrollTop = 0; const f = daf.querySelector(`[data-i="${st.pos}"]`); if (f) { f.focus({ preventScroll: true }); f.classList.add("am-startcue"); setTimeout(() => f.classList.remove("am-startcue"), 2600); } } }
   });
   let seen = false; try { seen = !!localStorage.getItem(WALK_KEY); } catch {}
   if (!seen) { if (typeof ctx.whenReady === "function") ctx.whenReady(() => { if (root.isConnected && !localStorage.getItem(WALK_KEY)) openWalk(false); }); else openWalk(false); } // the site's first-visit notice comes first
