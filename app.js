@@ -555,7 +555,7 @@ function openPicker(focusMas, focusPerek, mode){
     };
     const cellHtml = (k, i, inRange, mid) => {
       const [, , first, last] = masInfo(k), {daf: d, amud: am} = dafOf(i);
-      if (!inRange) return `<span class="ph" aria-hidden="true"></span>`;
+      if (!inRange) return `<span class="am-x" aria-hidden="true"></span>`; /* Oct 30: was class "ph", which also picked up the phrase-row rules (.ph); its own class now */
       const ok = i >= first && i <= last, id = refId(k, i), cur = current && current.m === k && current.i === i;
       return `<button ${ok ? "" : "disabled"} data-go="${k}|${i}" class="${hasBreakdown(id) ? "has" : ""} ${cur ? "cur" : ""} ${mid ? "mid" : ""}"${mid ? ` title="${mid}"` : ""} aria-label="${masName(k)} ${d}${am}${hasBreakdown(id) ? ", has breakdown" : ""}${mid ? ", " + mid : ""}">${am}</button>`;
     };

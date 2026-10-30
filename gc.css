@@ -1718,6 +1718,7 @@ body.onestep .step .sh .num{display:none}
 .tabs,.mi-tabs{display:flex;gap:20px;border:0;background:none;padding:0;margin:8px 0 0;border-radius:0}
 .tabs button,.mi-tabs button{min-height:40px;padding:0;border:0;border-radius:0;background:none;color:var(--muted);font:400 15px var(--ui-font);box-shadow:none}
 .tabs button.on,.tabs button[aria-selected="true"],.mi-tabs button.on,.mi-tabs button[aria-selected="true"]{color:var(--ink);font-weight:600;text-decoration:underline;text-underline-offset:6px}
+.mi-tabs{justify-content:flex-start}.mi-tabs button{flex:none} /* Oct 30: "By daf | By Mishnah" sit together at the start of the line, not stretched to opposite halves */
 .legend-mini{margin:8px 0 0;font:400 12px/16px var(--ui-font);color:var(--muted);gap:12px}
 .legend-mini i{width:5px;height:5px;border-radius:50%;background:var(--ink);border:0;vertical-align:2px}
 .legend-mini i.mid{background:none;border:1px solid var(--ink)}
@@ -1726,22 +1727,41 @@ body.onestep .step .sh .num{display:none}
 .pk-h{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin:0;padding:0 0 4px;border-bottom:1px solid var(--ink);font:500 18px/26px var(--he-font);color:var(--ink);direction:rtl}
 .pk-h .he{font-size:18px}
 .pk-r{font:400 12px/16px var(--ui-font);color:var(--muted);font-variant-numeric:tabular-nums;direction:ltr}
-.dafgrid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:0;margin:0;direction:rtl}
-@media (min-width:600px){.dafgrid{grid-template-columns:repeat(10,minmax(0,1fr))}}
-.dafcell{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto auto;border:0;border-bottom:1px solid var(--rule);border-radius:0;background:none;overflow:visible;direction:rtl}
-.dafcell .dn{grid-column:1 / 3;display:flex;flex-direction:column;align-items:center;padding:6px 0 0;min-width:0;font-weight:400;color:var(--ink)}
+/* Oct 30 2026 (David: the daf picker looked "off balance"): one even ledger for every perek. Each daf is a cell of the same width on a fixed
+   column grid (5 across on a phone, 10 on a wider screen), filled from the right, so a short last row lines up under the full row above it and
+   the columns line up from perek to perek. The ruled lines are drawn by the grid itself, one under every row and the full width of the perek,
+   so a short row is ruled as wide as a full one. Each daf's two amudim sit as a pair close under its number (the tap area still fills each
+   half of the cell), with clear room between one daf and the next; an amud that belongs to the neighbouring perek leaves a faint dash so the
+   pair keeps its shape. */
+.dafgrid{--row:90px;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));grid-auto-rows:var(--row);gap:0;margin:0;direction:rtl;border:0;background:linear-gradient(to top,var(--rule) 1px,transparent 1px) 0 0/100% var(--row) repeat-y}
+.dafcell{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto auto;align-content:start;column-gap:2px;min-width:0;padding:0 4px;border:0;border-radius:0;background:none;overflow:visible;direction:rtl}
+.dafcell .dn{grid-column:1 / 3;display:flex;flex-direction:column;align-items:center;padding:7px 0 2px;min-width:0;font-weight:400;color:var(--ink)}
 .dafcell .dn b{font:500 18px/22px var(--he-font);color:var(--ink)}
 .dafcell .dn small{font:400 11px/14px var(--ui-font);color:var(--muted);font-variant-numeric:tabular-nums}
-.dafcell button,.dafcell .ph{min-height:36px;border:0;border-radius:0;background:none;color:var(--muted);font:400 15px/1 var(--ui-font);padding:0;position:relative}
+.dafcell button,.dafcell .am-x{--o:0px;display:block;min-width:0;min-height:40px;margin:0;border:0;border-radius:0;background:none;color:var(--muted);font:400 15px/1 var(--ui-font);text-align:center;padding:0;position:relative;isolation:isolate}
+.dafcell>:nth-child(2){--o:-6px;padding-right:12px}
+.dafcell>:nth-child(3){--o:6px;padding-left:12px}
+.dafcell button::before{content:"";position:absolute;z-index:-1;top:50%;left:calc(50% + var(--o));width:22px;height:30px;transform:translate(-50%,-50%);border-radius:3px;background:transparent}
+.dafcell .am-x::before{content:"";position:absolute;left:calc(50% + var(--o));top:50%;width:8px;height:1px;margin-left:-4px;background:var(--rule)}
 .dafcell button.has{background:none;color:var(--ink);font-weight:600}
-.dafcell button.has::after{content:"";position:absolute;left:50%;bottom:5px;width:4px;height:4px;margin-left:-2px;border-radius:50%;background:var(--ink)}
+.dafcell button.has::after{content:"";position:absolute;left:calc(50% + var(--o));bottom:5px;width:4px;height:4px;margin-left:-2px;border-radius:50%;background:var(--ink)}
 .dafcell button.mid{background-image:none}
-.dafcell button.has.mid::after{background:none;border:1px solid var(--ink);width:5px;height:5px}
-.dafcell button.cur{outline:0;background:var(--binding);color:var(--on-binding)}
-.dafcell button.cur::after{background:var(--on-binding)}
-.dafcell button:hover{background:var(--panel-2)}
+.dafcell button.has.mid::after{background:none;border:1px solid var(--ink);width:5px;height:5px;margin-left:-2.5px}
+.dafcell button:hover{background:none}
+.dafcell button:hover::before{background:var(--panel-2)}
+.dafcell button.cur{outline:0;background:none;color:var(--on-binding)}
+.dafcell button.cur::before{background:var(--binding)}
+.dafcell button.cur::after{background:var(--on-binding);bottom:8px}
+.dafcell button.cur.has.mid::after{background:none;border-color:var(--on-binding)}
 .dafcell button:disabled{opacity:.3}
-.dafcell .ph{border:0}
+@media (min-width:600px){
+  .dafgrid{--row:84px;grid-template-columns:repeat(10,minmax(0,1fr))}
+  .dafcell{padding:0 3px}
+  .dafcell button,.dafcell .am-x{min-height:36px}
+  .dafcell>:nth-child(2){--o:-4px;padding-right:8px}
+  .dafcell>:nth-child(3){--o:4px;padding-left:8px}
+  .dafcell button::before{width:18px;height:28px}
+}
 
 /* settings and other sheet lists: rows, quiet controls */
 .sheet .seg,.sheet .segmented{border:1px solid var(--rule);border-radius:3px;background:none}
