@@ -1451,7 +1451,7 @@ function wfSheet(){
   let el = document.getElementById("wfWord");
   if (!el) {
     el = document.createElement("section"); el.id = "wfWord"; el.className = "am-word wf-word"; el.setAttribute("role", "dialog"); el.setAttribute("aria-label", "Word help"); el.setAttribute("aria-describedby", "wfBody"); el.hidden = true;
-    el.addEventListener("click", e => { if (e.target.closest("[data-x=close]")) closeWordFlow(); });
+    el.addEventListener("click", e => { if (e.target.closest("[data-x=close]")) return closeWordFlow(); if (e.target.closest("[data-x=save]")) wfSave(el); });
     document.body.appendChild(el);
   }
   return el;
@@ -1459,6 +1459,21 @@ function wfSheet(){
 let wfKbd = null; // e5: the word whose help was opened from the keyboard; closing puts focus back on it
 function closeWordFlow(){ const el = document.getElementById("wfWord"), back = wfKbd, inSheet = !!(el && el.contains(document.activeElement)); wfKbd = null; if (el) el.hidden = true; document.querySelectorAll(".pa .fw.on").forEach(x => x.classList.remove("on")); if (back && back.isConnected && inSheet) back.focus({ preventScroll: true }); }
 function wfOpen(){ const el = document.getElementById("wfWord"); return !!(el && !el.hidden); }
+/* words (Oct 29 2026): Sugya Flow saves to My words too. Same list and record shape as Ameilus (ameilus/ui.js myWords: {raw, v, id, gloss[, src]},
+   newest first, one per raw, at most 500), so it shows in #/words and the flashcards and acct.js syncs it like any other saved word.
+   A second tap keeps it saved (removing is done in My words). */
+const WF_MW = "gc-am3-mywords";
+const wfMwAll = () => { try { const a = JSON.parse(localStorage.getItem(WF_MW) || "[]"); return Array.isArray(a) ? a : []; } catch { return []; } };
+const wfMwHas = raw => wfMwAll().some(x => x && x.raw === raw);
+const wfSaveHtml = saved => saved
+  ? `<button class="chip" data-x="save" aria-pressed="true">Saved ✓</button><a class="wf-mw-open" href="#/words">See My words</a>`
+  : `<button class="chip" data-x="save" aria-pressed="false">+ <span class="he" lang="he">המילים שלי</span> · My words</button>`;
+function wfSave(sheet){
+  const rec = sheet._mw; if (!rec) return;
+  if (!wfMwHas(rec.raw)) { try { const a = wfMwAll().filter(y => y && y.raw !== rec.raw); a.unshift(rec); localStorage.setItem(WF_MW, JSON.stringify(a.slice(0, 500))); } catch (e) { console.warn("My words: could not save", e); return; } }
+  const acts = sheet.querySelector(".am-word-acts"); if (acts) acts.innerHTML = wfSaveHtml(true);
+  const b = sheet.querySelector("[data-x=save]"); if (b) b.focus({ preventScroll: true });
+}
 async function wordHelpFlow(el, kbd){
   const c = current, a = c && c.analysis, stepEl = el.closest(".step"), phEl = el.closest(".ph");
   if (!a || !stepEl || !phEl) return;
@@ -1467,7 +1482,7 @@ async function wordHelpFlow(el, kbd){
   let C = null, gloss = {};
   try { [C, gloss] = await Promise.all([wfCore(), amGloss(), vocNxLoad()]); } catch (e) { console.warn("word help unavailable", e); }
   if (current !== c || !el.isConnected || !el.classList.contains("on")) return;
-  const parts = [];
+  const parts = []; let mw = null;
   if (C) {
     let T = wfTok.get(a); if (!T) { T = C.tokenize(a.steps || []); wfTok.set(a, T); }
     const mine = []; T.forEach((t, j) => { if (t.s === s && t.ph === ph) mine.push(j); });
@@ -1479,20 +1494,23 @@ async function wordHelpFlow(el, kbd){
     if (phr) parts.push(`<div class="am-ent"><div class="am-ent-he">${wfHe(phr.entry[0] || phr.form)}</div><div class="am-ent-g">${wfMixed(wfV(phr.entry[1], gloss))}</div>${phr.entry[2] ? `<div class="am-ent-u">${wfMixed(wfV(phr.entry[2], gloss))}</div>` : ""}<div class="am-src">Reading glossary</div></div>`);
     const g = C.lookupGloss(gloss, w);
     if (g) parts.push(`<div class="am-ent"><div class="am-ent-he">${g.prefix ? `${wfHe(g.prefix + "־")} ` : ""}${wfHe(g.entry[0] || g.form)}</div>${g.prefix ? `<div class="am-ent-p">${wfHe(g.prefix)} = ${esc(g.prefixEn)}</div>` : ""}<div class="am-ent-g">${wfMixed(wfV(g.entry[1], gloss))}</div>${g.entry[2] ? `<div class="am-ent-u">${wfMixed(wfV(g.entry[2], gloss))}</div>` : ""}${g.entry[4] ? `<div class="am-src">Jastrow: ${wfHe(g.entry[4])}</div>` : `<div class="am-src">Reading glossary</div>`}</div>`);
-    const kts = [], seen = new Set([phr && phr.form, g && g.form].filter(Boolean));
+    let ktShown = null; const kts = [], seen = new Set([phr && phr.form, g && g.form].filter(Boolean));
     const consider = kt => {
       const tw = C.unvowel(kt.term).replace(/[,.:;?!״"“”׳']/g, " ").split(/\s+/).filter(Boolean).map(wfBare);
       if (seen.has(tw.join(" "))) return; // same thing the glossary already says
       if (!(tw.includes(w) || (w.length > 2 && /^[ודהבלכמש]/.test(w) && tw.includes(w.slice(1))))) return;
+      if (!ktShown && kt.meaning) ktShown = kt;
       kts.push(`<div class="am-ent"><div class="am-ent-he">${wfHe(kt.term)}</div><div class="am-ent-g">${wfMixed(wfV(kt.meaning, gloss))}</div><div class="am-src">Key term on this amud</div></div>`);
     };
     ((a.steps[s] || {}).keyTerms || []).forEach(consider);
     if (!kts.length) (a.steps || []).forEach((o, si) => { if (si !== s && kts.length < 1) (o.keyTerms || []).forEach(x => { if (!kts.length) consider(x); }); });
     parts.push(...kts);
+    if (w) mw = Object.assign({ raw: w, v: i != null ? T[i].v : C.unvowel(shown), id: c.id, gloss: g ? g.entry[1] : "" }, g && g.entry[1] ? null : phr && phr.entry[1] ? { gloss: wfV(phr.entry[1], gloss), src: "glossary phrase" } : ktShown ? { gloss: wfV(ktShown.meaning, gloss), src: "key term" } : null); // the same fallbacks as Ameilus's save (v99t)
   }
-  const sheet = wfSheet();
+  const sheet = wfSheet(); sheet._mw = mw;
   sheet.innerHTML = `<div class="am-word-head"><div class="am-word-w" dir="rtl" lang="he">${esc(shown)}</div><button class="iconbtn" data-x="close" aria-label="Close word help">✕</button></div>
-    <div class="am-word-body" id="wfBody">${parts.length ? parts.join("") : `<p class="am-none">${C ? "No entry yet for this word. We'd rather leave it blank than guess." : "Word help couldn’t load just now. Check your connection and tap the word again."}</p>`}</div>`;
+    <div class="am-word-body" id="wfBody">${parts.length ? parts.join("") : `<p class="am-none">${C ? "No entry yet for this word. We'd rather leave it blank than guess." : "Word help couldn’t load just now. Check your connection and tap the word again."}</p>`}</div>${mw ? `
+    <div class="am-word-acts">${wfSaveHtml(wfMwHas(mw.raw))}</div>` : ""}`;
   sheet.hidden = false;
   wfKbd = kbd ? el : null; if (kbd) { const x = sheet.querySelector("[data-x=close]"); if (x) x.focus({ preventScroll: true }); }
   // keep the tapped word in view above the sheet: the page scrolls, nothing in it moves
