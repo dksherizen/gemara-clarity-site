@@ -973,6 +973,113 @@ function renderWords(sub){
   return mwModule().then(mod => { if (!/^#\/?words/i.test(location.hash)) return; mod.renderMyWords($("#view"), { esc, parseId, masInfo, hashFor, label }, sub); },
     () => { $("#view").innerHTML = `<div class="notice"><b>My words can’t open right now.</b><p>${navigator.onLine ? "Please try again." : "You’re offline. It opens once the app has been online once since this update."}</p><a class="btn" href="#/words">Try again</a></div>`; });
 }
+
+/* ---------- Ways to learn (option B, chosen by David Oct 30 2026) ----------
+   The home section under today's amud. Built from today's real amud (waysFill runs once the amud has painted) and data/classics.json. */
+const WY_OPT = "b";
+const WY_CL = ["taa23a-honi", "bm59b-achnai", "shab31a-hillel", "ber61b-akiva", "git55b-kamtza"];
+let wyDay = null; // { m, i, a } once today's amud is in
+const wyPlain = t => String(t || "").replace(/[\u0591-\u05BD\u05BF-\u05C7]/g, "").trim();
+const wyShort = (t, n) => { const w = String(t || "").split(/\s+/); return w.length > n ? w.slice(0, n).join(" ") + "…" : w.join(" "); };
+function wyPick(a, from){ // a step whose phrase is short enough to show whole, with its English
+  let best = null;
+  ((a && a.steps) || []).forEach((st, k) => { if (k < (from || 0) || k > 12) return; const ph = (st.phrases || []).find(p => p.aramaic && p.english); if (!ph) return;
+    const n = ph.aramaic.split(/\s+/).length; if (n < 3 || n > 14) return; const sc = Math.abs(n - 6); if (!best || sc < best.sc) best = { st, ph, k, n, sc }; });
+  return best;
+}
+const wyKind = st => TYPES[st.hebrewStepName] || TYPES["מימרא"];
+const wyTicks = (steps, cur) => steps.map((s, k) => `<span class="tk t-${wyKind(s).k}${k + 1 === cur ? " cur" : ""}"></span>`).join("");
+const wyLegend = () => `<div class="legend">${Object.entries(TYPES).map(([he, t]) => `<div class="lg t-${t.k}"><span class="swatch"></span><div><b><span class="en-he" lang="he">${stepHe(he)}</span> ${t.en}</b><div class="d">${t.d}</div></div></div>`).join("")}<div class="lg t-mishnah"><span class="swatch"></span><div><b><span class="en-he" lang="he">${px(MISHNAH.he)}</span> ${MISHNAH.en}</b><div class="d">${MISHNAH.d}</div></div></div></div>`;
+const wySearchSvg = `<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>`;
+function wyClassics(){ // the featured classics, in WY_CL order, with their Sugya Flow links
+  return clData("classics").then(C => { const items = (C && C.items) || []; const by = Object.fromEntries(items.map(x => [x.id, x]));
+    return { all: items.filter(x => !x.partOf), pick: WY_CL.map(id => by[id]).filter(Boolean).map(it => { const s = clAt(it.start); return { it, href: hashFor(s.m, s.i, "/s" + it.start.step), he: heLabel(s.m, s.i), en: label(s.m, s.i) }; }) }; });
+}
+function wyOpened(all){ // how many classics start on an amud this device has opened
+  const seen = new Set(history_().map(x => x.id));
+  return all.filter(it => { const s = clAt(it.start); return s.i != null && seen.has(refId(s.m, s.i)); }).length;
+}
+
+const wyRaw = t => wyPlain(t).replace(/[.,:;?!–—"“”„‘’׳״()\[\]]/g, "").replace(/\s+/g, " ").trim();
+function wyMarkHtml(a, cls){ // Ameilus in miniature: the raw text across a passage boundary; the learner taps where the passage ends
+  const s = (a && a.steps) || [];
+  for (let k = 0; k + 1 < Math.min(s.length, 14); k++) {
+    const A = wyRaw(((s[k].phrases || []).slice(-1)[0] || {}).aramaic).split(" ").filter(Boolean), B = wyRaw(((s[k + 1].phrases || [])[0] || {}).aramaic).split(" ").filter(Boolean);
+    if (A.length < 3 || B.length < 2) continue;
+    const left = A.slice(-5), right = B.slice(0, 4), end = left.length - 1;
+    return `<p class="${cls}-raw" lang="he" dir="rtl">${[...left, ...right].map((w, j) => `<button type="button" class="wy-w" data-ok="${j === end ? 1 : 0}">${esc(w)}</button>`).join(" ")}</p>`;
+  }
+  return "";
+}
+function wyMarkBind(root, msg){
+  if (!root) return;
+  root.addEventListener("click", e => { const b = e.target.closest(".wy-w"); if (!b) return;
+    $$(".wy-w", root).forEach(x => x.classList.remove("ok", "no"));
+    const ok = b.dataset.ok === "1"; b.classList.add(ok ? "ok" : "no");
+    const m = $(msg, root); if (m) m.innerHTML = ok ? `<span class="wy-okm">✓</span> Right: the passage ends here.` : `Not there yet. Keep reading.`; });
+}
+
+const WB_MODES = [["shiur", "מהלך הסוגיא", "Sugya Flow"], ["ameilus", "עמלות", "Ameilus"], ["classics", "סוגיות יסוד", "Classics"]];
+function waysHtml(){
+  const sel = modePref() === "ameilus" ? "ameilus" : "shiur";
+  const tab = ([k, he, en]) => `<button type="button" role="tab" class="wB-tab" id="wbt-${k}" data-wb="${k}" aria-controls="wbp-${k}" aria-selected="${k === sel}"><span lang="he">${he}</span><small>${en}</small></button>`;
+  return `<section class="h5-sec wy wB" aria-labelledby="wyH">
+    <h2 class="wy-h" id="wyH"><span lang="he">דרכי לימוד</span> <span class="en">Ways to learn</span></h2>
+    <div class="wB-box">
+      <div class="wB-tabs" role="tablist" aria-label="Ways to learn">${WB_MODES.map(tab).join("")}</div>
+      <div class="wB-stage">
+        <div class="wB-p" role="tabpanel" id="wbp-shiur" aria-labelledby="wbt-shiur"${sel === "shiur" ? "" : " hidden"}>
+          <a class="wB-art wB-deck" id="wbDeck" href="#" aria-label="Today’s daf in Sugya Flow"><span class="wB-slip s3"></span><span class="wB-slip s2"></span><span class="wB-slip s1"><span class="wB-wait">Today’s daf is opening…</span></span></a>
+          <p class="wB-line">The whole sugya laid out step by step: who asks, who answers, and why each step is there.</p>
+          <p class="wB-act"><a class="wB-btn" id="wbFlowGo" href="#">Learn today’s daf</a><button type="button" class="wB-alt" data-home-pick="shiur" aria-haspopup="dialog">Choose a daf</button></p>
+        </div>
+        <div class="wB-p" role="tabpanel" id="wbp-ameilus" aria-labelledby="wbt-ameilus"${sel === "ameilus" ? "" : " hidden"}>
+          <div class="wB-art wB-sheet" id="wbSheet"><span class="wB-wait">Today’s daf is opening…</span></div>
+          <p class="wB-line">The raw amud, no vowels, no punctuation. You work out where each passage ends, and the hints are there when you want them.</p>
+          <p class="wB-act"><a class="wB-btn" id="wbAmGo" href="#">Try today’s daf</a><button type="button" class="wB-alt" data-home-pick="ameilus" aria-haspopup="dialog">Choose a daf</button></p>
+        </div>
+        <div class="wB-p" role="tabpanel" id="wbp-classics" aria-labelledby="wbt-classics" hidden>
+          <div class="wB-art wB-shelf" id="wbShelf"><span class="wB-wait">&nbsp;</span></div>
+          <p class="wB-line" id="wbClLine">The famous sugyos, each with a clear start and end. Tap a volume to begin.</p>
+          <p class="wB-act"><a class="wB-btn" href="#/classics">All classics</a></p>
+        </div>
+      </div>
+    </div>
+    <button class="wB-search" id="homeSearch" type="button">${wySearchSvg}<span class="t">Go to any daf</span><span class="eg">e.g. Bechoros 42a</span></button>
+  </section>`;
+}
+function keyHtml(){
+  return `<details class="legend-wrap wy-key wB-key"><summary><span class="wy-key-t"><span lang="he">סימני העיפרון</span> What the colours mean</span><span class="wB-case" aria-hidden="true">${Object.values(TYPES).map(t => `<i class="t-${t.k}"></i>`).join("")}</span></summary>${wyLegend()}</details>`;
+}
+function waysFill(m, i, a){
+  wyDay = { m, i, a };
+  const deck = $("#wbDeck"), sheet = $("#wbSheet"); if (!deck || !sheet) return;
+  $("#wbFlowGo").href = hashFor(m, i, "/steps"); $("#wbFlowGo").textContent = `Learn ${label(m, i)}`;
+  $("#wbAmGo").href = hashFor(m, i, "/ameilus"); $("#wbAmGo").textContent = `Try ${label(m, i)} yourself`;
+  if (!a || !a.steps || !a.steps.length) return;
+  deck.href = hashFor(m, i, "/s1");
+  const slip = (st, n) => { const t = wyKind(st), ph = (st.phrases || [])[0] || {};
+    return `<span class="wB-k t-${t.k}"><span lang="he">${stepHe(st.hebrewStepName)}</span> ${t.en}<span class="n">${n} of ${a.steps.length}</span></span>
+      <span class="wB-ar t-${t.k}" lang="he" dir="rtl">${esc(wyShort(ph.aramaic, 9))}</span><span class="wB-tr">${px(wyShort(st.simpleTranslation || ph.english || st.title, 24), a)}</span>`; };
+  const s = a.steps;
+  deck.innerHTML = `<span class="wB-slip s3"></span><span class="wB-slip s2"></span>
+    <span class="wB-slip s1">${slip(s[0], 1)}</span><span class="wB-ticks">${wyTicks(s, 1)}</span>`;
+  // Ameilus: the raw text on a worksheet; the learner marks where the passage ends
+  const mk = wyMarkHtml(a, "wB");
+  if (!mk) return;
+  sheet.innerHTML = `${mk}<p class="wB-yours"><span class="lbl" id="wbMsg">Where does the passage end? Tap the word.</span><span class="ln"></span><svg class="wB-pencil" viewBox="0 0 64 12" aria-hidden="true"><path d="M2 3h44l14 3-14 3H2z" fill="var(--gold)"/><path d="M46 3l14 3-14 3z" fill="#e3c69c"/><path d="M56 5.1L60 6l-4 .9z" fill="var(--ink)"/><path d="M2 3h6v6H2z" fill="var(--binding)"/></svg></p>`;
+  wyMarkBind(sheet, "#wbMsg");
+}
+function waysBind(){
+  $$(".wB-tab").forEach(b => b.onclick = () => { $$(".wB-tab").forEach(x => x.setAttribute("aria-selected", x === b)); $$(".wB-p").forEach(p => p.hidden = p.id !== "wbp-" + b.dataset.wb); });
+  $(".wB-tabs") && $(".wB-tabs").addEventListener("keydown", e => { if (!/Arrow(Left|Right)/.test(e.key)) return; const t = $$(".wB-tab"), k = t.indexOf(document.activeElement); if (k < 0) return; const n = t[(k + (e.key === "ArrowRight" ? 1 : t.length - 1)) % t.length]; n.focus(); n.click(); });
+  wyClassics().then(({ all, pick }) => { const sh = $("#wbShelf"); if (!sh || !pick.length) return;
+    const hs = [148, 132, 156, 140, 126];
+    sh.innerHTML = `<span class="wB-books">${pick.map((c, k) => `<a class="wB-book" href="${c.href}" style="--h:${hs[k % hs.length]}px" title="${esc(clName(c.it))}"><span class="sp" lang="he">${esc(masInfo(c.it.start.m)[1])}</span><span class="nm">${esc(clName(c.it))}</span></a>`).join("")}</span><span class="wB-plank"></span>`;
+    const line = $("#wbClLine"); if (line) line.innerHTML = `${all.length} classic sugyos, each with a clear start and end. Start with ${pick.slice(0, 3).map(c => `<a href="${c.href}">${esc(clName(c.it))}</a>`).join(", ")}.`;
+  }).catch(() => {});
+}
+
 function renderHome(){
   current = null; document.title = "Gemara Clarity: every sugya, step by step";
   setChrome(false);
@@ -990,18 +1097,14 @@ function renderHome(){
       <div class="amud-page" id="amudPage"><div class="amud-wait">&nbsp;</div></div>
     </section>
     ${hasLast ? (() => { const n = pos && pos.id === h[0].id && pos.n > 1 ? pos.n : 0; return `<p class="h5-cont" id="homeCont" data-id="${h[0].id}"><a class="h4-line" href="${hashFor(last.m, last.i, n ? "/s" + n : "")}"><span class="k">Continue</span> <span class="v"><span class="s he" lang="he">${heLabel(last.m, last.i)}</span> ${label(last.m, last.i)}${n ? `, step ${n}` : ""}</span></a></p>`; })() : ""}
-    <section class="h5-sec">
-      <h2 class="section-h"><span lang="he">דרכי לימוד</span> Ways to learn</h2>
-      <ul class="h4-ways">${row("shiur", "מהלך הסוגיא", "Sugya Flow", "Each step explained, one at a time.", `data-home-pick="shiur" aria-haspopup="dialog"`)}${row("ameilus", "עמלות", "Ameilus", "Work through the daf yourself first, then check.", `data-home-pick="ameilus" aria-haspopup="dialog"`)}${row("classics", "סוגיות יסוד", "Classics", "Famous sugyos to begin with.", `href="#/classics"`)}</ul>
-      <button class="h4-search" id="homeSearch" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><span>Go to any daf</span></button>
-    </section>
+    ${waysHtml()}
     ${mwN ? links("המילים שלי", "My words", `<a href="#/words">${mwN} saved words</a>, <a href="#/words/cards">flashcards</a>`) : ""}
     ${bm.length ? links("סימניות", "Bookmarks", bm.map(amudLink).filter(Boolean).join("")) : ""}
     ${h.length > 1 ? links("נלמד לאחרונה", "Recently learned", h.slice(0, 8).map(x => amudLink(x.id)).filter(Boolean).join("")) : ""}
-    <details class="legend-wrap"><summary class="section-h"><span lang="he">סימני העיפרון</span> What the colours mean</summary>
-    <div class="legend">${Object.entries(TYPES).map(([he, t]) => `<div class="lg t-${t.k}"><span class="swatch"></span><div><b><span class="en-he" lang="he">${stepHe(he)}</span> ${t.en}</b><div class="d">${t.d}</div></div></div>`).join("")}<div class="lg t-mishnah"><span class="swatch"></span><div><b><span class="en-he" lang="he">${px(MISHNAH.he)}</span> ${MISHNAH.en}</b><div class="d">${MISHNAH.d}</div></div></div></div></details></div>`;
+    ${keyHtml()}</div>`;
   $("#homeSearch").onclick = () => openPicker();
   $$("[data-home-pick]").forEach(b => b.onclick = () => openPicker(undefined, undefined, b.dataset.homePick));
+  try { waysBind(); } catch (e) { console.warn("ways", e); }
   // the amud on the first screen: today's Daf Yomi; if that can't be reached (offline, Mishnah-only day), the amud last learned, else Berakhot 2a
   const plain = t => String(t || "").replace(/[\u0591-\u05BD\u05BF-\u05C7]/g, "").replace(/[?!,;:.]+(?=\s|$)/g, m0 => m0 === "." || m0 === ":" ? m0 : "").trim();
   const paint = async (m, i, kind) => {
@@ -1033,6 +1136,7 @@ function renderHome(){
       <p class="amud-meta"><span class="he" lang="he">${heLabel(m, i)}</span> <span class="en">${label(m, i)}${a ? `, ${a.steps.length} steps` : ""}</span></p>
       ${a && a.mainTopic ? `<p class="amud-topic">${px(a.mainTopic, a)}</p>` : ""}
       <p class="amud-go"><a class="btn-primary" href="${a ? go(at) : hashFor(m, i)}">${at ? `Continue at step ${at}` : a ? "Start" : "Open the daf"}</a></p>`;
+    try { waysFill(m, i, a, at); } catch (e) { console.warn("ways", e); }
   };
   const fallback = () => hasLast ? paint(last.m, last.i, "last") : paint("Berakhot", masInfo("Berakhot")[2], "start");
   dafYomi().then(y => { if (y && y.m) paint(y.m, y.i, "yomi"); else fallback(); }).catch(fallback);
