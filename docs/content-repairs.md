@@ -2,6 +2,167 @@
 
 Every change to the AI-written content, newest first. Each entry says what was wrong, the source used, and who approved it.
 
+## 202611060311-rev108-arakhin-11-20
+
+Approved: Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.
+
+- **Arakhin 13a, step 1** (confusionAlert): The whole point of the ברייתא is that יהויריב's watch was not in the Second בית המקדש; the alert says it served there in second place. Source: Arakhin 12b משמרתו של יהויריב בשניה מי הואי; 13a שאפילו יהויריב ראש משמרות עולה; Rashi 13a s.v. וכן חרים: ויהויריב שוב לא עלה.
+  - was: It was still a watch, but in the Second בית המקדש it ranked behind ידעיה.
+  - now: The prophets only ruled that if יהויריב ever came up, it would rank behind ידעיה. יהויריב never did come up, so it did not serve in the Second בית המקדש at all.
+- **Arakhin 13a, step 3** (whatsHappening): The difficulty was that the count leaves six years over, so the destruction falls in the שמיטה year itself; years that divided evenly would give the year after שמיטה, the opposite. Source: Arakhin 12b פשו להו שית הוה ליה בשיתא בשבוע; Rashi 12b s.v. הוה ליה בשיתא: ובשביעית עצמה חרב.
+  - was: when its 420 years divide evenly into שמיטה cycles?
+  - now: when counting its 420 years puts the destruction in a שמיטה year?
+- **Arakhin 11b, step 1** (hebrewStepName): This is the second half of חנניא's source from 11a step 29, which is labelled מימרא; a second half takes the first half's label across the amud break (rule 5). Source: Arakhin 11a-b חנניא בן אחי רבי יהושע אמר מהכא ... על עסקי קול; rulebook rule 5.
+  - was: ראיה
+  - now: מימרא
+- **Arakhin 11b, step 7** (hebrewStepName): It rules out a possible reading of זר (אילימא זר ממש, הכתיב חדא זימנא); no proof is being pushed aside, so it is an objection, not a Rejection (rule 2). Source: Arakhin 11b מאי זר? אילימא זר ממש הכתיב חדא זימנא; rulebook rule 2.
+  - was: דחיה
+  - now: קשיא
+- **Arakhin 12a, step 14** (hebrewStepName): The ברייתא of the exile dates (דאמר מר גלו בשבע...) is quoted to back up the challenge to רבינא in step 13, so it is part of the Challenge, not a Proof (rule 1). Source: Arakhin 12a אי הכי בעשרים וחמש שנה? עשרים ושש הויין! דאמר מר...; rulebook rule 1.
+  - was: ראיה
+  - now: קשיא
+- **Arakhin 12b, step 7** (hebrewStepName): The ברייתא of seventeen יובלות is the source of the challenge in step 6 against the רבי יהודה answer (אי רבי יהודה בראשונה לא משכחת לה! דתניא...), so it is a Challenge (rule 1). Source: Arakhin 12b אי רבי יהודה בראשונה לא משכחת לה! דתניא: שבעה עשר יובלות; rulebook rule 1.
+  - was: ראיה
+  - now: קשיא
+- **Arakhin 13a, step 9** (hebrewStepName): This is the second half of the answer to שבע שכיבשו מנלן (step 7), begun in step 8 (תשובה); an answer that quotes a source is a Response, and a second half takes the first half's label (rules 5, 7). Source: Arakhin 13a שבע שכיבשו מנלן? דקאמר כלב... ואמר מר... אישתכח דשבע כיבשו; rulebook rules 5, 7.
+  - was: ראיה
+  - now: תשובה
+- **Arakhin 13b, step 18** (hebrewStepName): Continues רבי יהודה's ברייתא, quoted to challenge the משנה (לימא מתניתין דלא כרבי יהודה, דתניא...); every step quoting that source is a Challenge (rule 1). Source: Arakhin 13b לימא מתניתין דלא כרבי יהודה דתניא...; rulebook rule 1.
+  - was: מימרא
+  - now: קשיא
+- **Arakhin 13b, step 19** (hebrewStepName): Same ברייתא of רבי יהודה quoted against the משנה (rule 1). Source: Arakhin 13b של עולם הבא עשר...; rulebook rule 1.
+  - was: מימרא
+  - now: קשיא
+- **Arakhin 13b, step 20** (hebrewStepName): Same ברייתא of רבי יהודה quoted against the משנה; its last verse completes the challenge, not a proof (rule 1). Source: Arakhin 13b ואומר: הודו לה׳ בכנור בנבל עשור...!; rulebook rule 1.
+  - was: ראיה
+  - now: קשיא
+- **Arakhin 14a, step 21** (hebrewStepName): This ברייתא is brought (דתניא) as the basis of the challenge in step 20 against assigning the tree ברייתא to רבי שמעון, so it belongs to the Challenge (rule 1). Source: Arakhin 14a ואי רבי שמעון ליזיל בתר פדיון... דהא שמעינן ליה... דתניא; rulebook rule 1.
+  - was: ראיה
+  - now: קשיא
+- **Arakhin 14a, step 22** (hebrewStepName): Continuation of the same ברייתא quoted for the challenge (rule 1). Source: Arakhin 14a דברי רבי יהודה ורבי שמעון; rulebook rule 1.
+  - was: ראיה
+  - now: קשיא
+- **Arakhin 14a, step 23** (hebrewStepName): Continuation of the same ברייתא quoted for the challenge (rule 1); the challenge goes on through 14b steps 1-3. Source: Arakhin 14a רבי מאיר אומר: מנין ללוקח שדה מאביו...; rulebook rule 1.
+  - was: מימרא
+  - now: קשיא
+- **Arakhin 14b, step 1** (hebrewStepName): End of the same ברייתא (רבי מאיר's verse) quoted as part of the challenge against the רבי שמעון answer; continuation steps take the Challenge label (rules 1, 5). Source: Arakhin 14b תלמוד לומר אם את שדה מקנתו...; rulebook rules 1, 5.
+  - was: מימרא
+  - now: קשיא
+- **Arakhin 14b, step 3** (hebrewStepName): אלא לאו משום דאזיל בתר פדיון is the inference that completes the challenge to the answer of 14a step 17 (that the tree ברייתא is רבי שמעון), not a Proof of a position (rules 1, 2). Source: Arakhin 14b אלא לאו משום דאזיל בתר פדיון; 14a ואי רבי שמעון ליזיל בתר פדיון; rulebook rules 1, 2.
+  - was: ראיה
+  - now: קשיא
+- **Arakhin 14b, step 4** (hebrewStepName): רב נחמן בר יצחק answers a Challenge (to the רבי שמעון answer), so it is a Resolution; Rejection is only for pushing aside a Proof (rule 2). Source: Arakhin 14b אמר רב נחמן בר יצחק: רבי יהודה ורבי שמעון קרא אשכחו ודרוש; rulebook rule 2.
+  - was: דחיה
+  - now: תירוץ
+- **Arakhin 14b, step 5** (hebrewStepName): No שאלה precedes it; it is the second half of רב נחמן בר יצחק's answer in step 4 (Rashi s.v. אם כן) and takes that step's label (rules 5, 6). Source: Arakhin 14b אם כן לכתוב רחמנא... מאי משדה; Rashi s.v. א״כ; rulebook rules 5, 6.
+  - was: תשובה
+  - now: תירוץ
+- **Arakhin 15a, step 1** (hebrewStepName): This is the second half of רב זירא's answer to the challenge 'why pay beyond the fifty?' (labelled תירוץ on 14b), so it takes the same label (rulebook rule 5); it is not a Proof. Source: Arakhin 14b-15a: אמר רבי זירא... אילו באו עליה שנים; 14b step 30 is תירוץ.
+  - was: ראיה
+  - now: תירוץ
+- **Arakhin 15a, step 2** (hebrewStepName): אביי objects to רב זירא's answer, not to a proof; an objection to an answer is a Challenge (rule 2). Source: Arakhin 15a: אמר ליה אביי: אי הכי, גבי עבד נמי יאמרו.
+  - was: דחיה
+  - now: קשיא
+- **Arakhin 15a, step 2** (title): Title names the step as a Rejection; it is a Challenge to רב זירא's answer. Source: Arakhin 15a: אמר ליה אביי: אי הכי.
+  - was: אביי rejects the logic
+  - now: אביי challenges the logic
+- **Arakhin 15a, step 2** (relationToPreviousStep): Same relabel: אביי challenges an answer, not a proof. Source: Arakhin 15a.
+  - was: Rejects the logical proof given in Step 1.
+  - now: Challenges the logical argument given in Step 1.
+- **Arakhin 15a, step 3** (hebrewStepName): אביי's source answers the challenge 'why pay beyond the fifty?' (a קשיא on 14b); an answer to a Challenge is a Resolution (rule 6). Source: Arakhin 15a: אלא אמר אביי, אמר קרא תחת אשר ענה.
+  - was: תשובה
+  - now: תירוץ
+- **Arakhin 15a, step 4** (hebrewStepName): רבא's source answers the same challenge, so it is a Resolution (rule 6). Source: Arakhin 15a: רבא אמר, דאמר קרא ונתן האיש השוכב עמה.
+  - was: תשובה
+  - now: תירוץ
+- **Arakhin 15b, step 4** (hebrewStepName): This is the last item of רבי יהודה's list of ten trials, the second half of a list, so it takes the list's label (rule 5); nothing is concluded. Source: Arakhin 15b: בעגל כדאיתיה, במדבר פארן כדאיתיה.
+  - was: מסקנא
+  - now: מימרא
+- **Arakhin 15b, step 8** (hebrewStepName): The משנה about מצורע מוחלט is the last link of רבי יוסי בן זימרא's own derivation begun in step 7 (מימרא); second halves take the first half's label (rule 5). Source: Arakhin 15b: ותנן אין בין מצורע מוסגר למצורע מוחלט; Rashi s.v. למצורע מוחלט.
+  - was: ראיה
+  - now: מימרא
+- **Arakhin 15b, step 16** (hebrewStepName): This finishes מר עוקבא's own derivation from step 15 (מימרא); the second half takes the same label (rule 5). Source: Arakhin 15b: ואין גבור אלא הקדוש ברוך הוא... גחלי רתמים היינו גיהנם.
+  - was: ראיה
+  - now: מימרא
+- **Arakhin 15b, step 22** (hebrewStepName): This finishes the school of רבי ישמעאל's derivation from step 21 (מימרא); the second half takes the same label (rule 5). Source: Arakhin 15b: בגילוי עריות כתיב... בשפיכות דמים כתיב.
+  - was: ראיה
+  - now: מימרא
+- **Arakhin 16a, step 19** (hebrewStepName): This is the rest of רבי ענני בר ששון's teaching, quoted with איני? והא אמר to attack רבי יוחנן's list; every step quoting the attacking source is a Challenge (rule 1). Source: Arakhin 16a: איני? והא אמר רבי ענני בר ששון... כתונת מכפרת.
+  - was: ראיה
+  - now: קשיא
+- **Arakhin 16a, step 20** (hebrewStepName): Continuation of the same attacking source (rule 1). Source: Arakhin 16a: מצנפת מכפרת... אבנט מכפר.
+  - was: ראיה
+  - now: קשיא
+- **Arakhin 16a, step 22** (hebrewStepName): Continuation of the same attacking source (rule 1). Source: Arakhin 16a: ציץ מכפר על מעשה עזי פנים.
+  - was: ראיה
+  - now: קשיא
+- **Arakhin 16a, step 25** (hebrewStepName): This is the second half of רבי יהושע בן לוי's teaching, brought with והאמר to challenge; every step quoting the attacking source is a Challenge (rule 1). Source: Arakhin 16a: והאמר רבי סימון... ולשון הרע בקטרת.
+  - was: ראיה
+  - now: קשיא
+- **Arakhin 16b, step 18** (hebrewStepName): This is the second half of רבי שמעון's answer to his son's question begun in step 17 (תשובה), and a new question on it follows; it takes the answer's label (rule 5). Source: Arakhin 16b: שלא לשמה נמי עדיפא, דאמר רב יהודה אמר רב.
+  - was: מסקנא
+  - now: תשובה
+- **Arakhin 16b, step 38** (hebrewStepName): This finishes רבי יוחנן's own derivation from חירם begun in step 37 (מימרא); the second half takes the same label (rule 5). Source: Arakhin 16b: ואמר מר אימיה מבית דן.
+  - was: ראיה
+  - now: מימרא
+- **Arakhin 17a, step 1** (hebrewStepName): These are the last words of the במערבא אמרי line that begins in 16b step 46 (תשובה); a second half takes the first half's label, including across the amud break (rule 5). Source: Arakhin 16b-17a: במערבא אמרי: פורענות מזדמנת לו.
+  - was: מסקנא
+  - now: תשובה
+- **Arakhin 17a, step 7** (hebrewStepName): רבי יוחנן's teaching is the source for the facts used to attack the 'goodness' reading (step 6); a source used in an attack is part of the Challenge, never a Proof (rule 1). Source: Arakhin 17a: הא איכא צדקיה... דאמר רבי יוחנן משום רבי שמעון בן יוחי.
+  - was: ראיה
+  - now: קשיא
+- **Arakhin 17a, step 7** (title): Title calls the step a Proof; it is the source behind the challenge. Source: Arakhin 17a.
+  - was: Proof that יהויקים and צדקיה
+  - now: Source that יהויקים and צדקיה
+- **Arakhin 18a, step 5** (hebrewStepName): This is the second half of the ברייתא that answers 'why do I need והוא' (step 4, תירוץ); there is no שאלה here, so it takes the Resolution label (rules 5-6). Source: Arakhin 18a: יכול אפילו אמר כל מי? תלמוד לומר והוא עד, והרי ייחד עדיו.
+  - was: תשובה
+  - now: תירוץ
+- **Arakhin 18a, step 17** (hebrewStepName): The משנה of רבי אליעזר is quoted as part of the answer 'הא מני רבי אליעזר היא' to the challenge about the ship; an answer that cites a source is a Resolution (rule 7). Source: Arakhin 18a: הא מני? רבי אליעזר היא, דתנן: רבי אליעזר אומר.
+  - was: ראיה
+  - now: תירוץ
+- **Arakhin 18a, step 17** (title): Title calls the step a Proof; it is the second half of the answer. Source: Arakhin 18a.
+  - was: Proof: רבי אליעזר lets
+  - now: Source: רבי אליעזר lets
+- **Arakhin 18a, step 23** (hebrewStepName): The תלמוד לומר answers the ברייתא's יכול in step 22, which the site labels קשיא; the answer to a Challenge is a Resolution (rules 6-7). Source: Arakhin 18a: יכול נקיש ערכין לדמים... תלמוד לומר כערכך כן יקום.
+  - was: ראיה
+  - now: תירוץ
+- **Arakhin 18a, step 25** (hebrewStepName): The פסוק is the second half of the משנה's own statement in step 24 (מימרא); it takes the same label (rule 5). Source: Arakhin 18a: שנאמר ואם מבן ששים שנה ומעלה, הרי אנו למדים.
+  - was: ראיה
+  - now: מימרא
+- **Arakhin 18a, step 30** (hebrewStepName): This finishes the גמרא's statement in step 29 that the גזירה שוה is מופנה; the second half takes the same label (rule 5). Source: Arakhin 18a: מופנה... שנה שנה יתירא כתיבי.
+  - was: ראיה
+  - now: מימרא
+- **Arakhin 18a, step 32** (hebrewStepName): The ברייתא is quoted as the source of רבי's view that the גמרא uses to challenge the משנה (step 31); a source used in an attack is a Challenge (rule 1). Source: Arakhin 18a: לימא מתניתין דלא כרבי... דתניא מיום הראשון ועד יום השביעי.
+  - was: ראיה
+  - now: קשיא
+- **Arakhin 18b, step 1** (hebrewStepName): Continuation of the ברייתא quoted on 18a to challenge the משנה from רבי's view; every step quoting the attacking source is a Challenge (rule 1). Source: Arakhin 18b: כענין שנאמר מראשו ועד רגליו.
+  - was: שאלה
+  - now: קשיא
+- **Arakhin 18b, step 2** (hebrewStepName): Continuation of the same attacking ברייתא (rule 1). Source: Arakhin 18b: תלמוד לומר עד יום האחד ועשרים לחדש בערב.
+  - was: תשובה
+  - now: קשיא
+- **Arakhin 18b, step 26** (hebrewStepName): ואידך asks how רב יוסף explains it and gives his reason (finished on 19a), parallel to the שאלה/תשובה in steps 24-25; it pushes aside no proof, so it is not a Rejection (rule 2). Source: Arakhin 18b-19a: ואידך, אי סלקא דעתך דכתיבא... שבזכר ושבנקבה מיבעי ליה; Rashi s.v. אמר לך.
+  - was: דחיה
+  - now: תשובה
+- **Arakhin 19a, step 1** (hebrewStepName): These are the last words of רב יוסף's reply begun on 18b (step 26), so they take the same label (rule 5), not Conclusion. Source: Arakhin 19a: שבזכר ושבנקבה מיבעי ליה.
+  - was: מסקנא
+  - now: תשובה
+- **Arakhin 19a, step 6** (hebrewStepName): A מעשה told inside a משנה is a Statement unless the גמרא uses it as a proof (rule 8); here the גמרא actually calls it מעשה לסתור. Source: Arakhin 19a: מעשה באמה של ירמטיא; גמ' מעשה לסתור?!.
+  - was: ראיה
+  - now: מימרא
+- **Arakhin 19a, step 24** (hebrewStepName): The משנה about the pit and cistern is quoted as part of the answer to the מיתיבי (הוא דאמר כרבי עקיבא... דתנן); an answer citing a source is a Resolution (rule 7). Source: Arakhin 19a: הוא דאמר כרבי עקיבא, דדייק לישנא יתירא, דתנן.
+  - was: ראיה
+  - now: תירוץ
+- **Arakhin 19a, step 25** (hebrewStepName): Continuation of the same answer (rules 5, 7). Source: Arakhin 19a: וחכמים אומרים אינו צריך, ומודה רבי עקיבא.
+  - was: ראיה
+  - now: תירוץ
+- **Arakhin 19a, step 26** (hebrewStepName): אלמא... finishes the same answer to the מיתיבי; the second half of an answer takes its label (rule 5). Source: Arakhin 19a: אלמא כיון דלא צריך וקאמר לטפויי מילתא קאתי.
+  - was: מסקנא
+  - now: תירוץ
+- **Arakhin 19b, step 19** (hebrewStepName): רב פפא's שמע מינה is an inference that רב אשי pushes aside in step 20 (labelled דחיה); a שמע מינה inference is a Proof, and a Rejection needs a Proof before it. Source: Arakhin 19b: אמר רב פפא שמע מינה... רב אשי אמר אפילו תימא מיפסק פסיק.
+  - was: מימרא
+  - now: ראיה
+
 ## 202611060311-rev107-labels-shas-d
 
 Approved: Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.
