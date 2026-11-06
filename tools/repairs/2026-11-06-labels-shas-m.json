@@ -1,0 +1,1482 @@
+{
+ "name": "labels-shas-m",
+ "approved": "Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.",
+ "repairs": [
+  {
+   "id": "Yevamot_105_a",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "ראיה",
+   "why": "אלא לאו לאחין שמע מינה closes an inference from the ברייתא and is challenged at once (step 8)",
+   "source": "Yevamot 105a"
+  },
+  {
+   "id": "Yevamot_108_b",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "רבא's ומאי קושיא ודלמא answers the contradiction of step 4, a second answer beside שמואל's",
+   "source": "Yevamot 108b"
+  },
+  {
+   "id": "Yevamot_108_b",
+   "step": 16,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "לזו לא הוצרכנו objects to the reported question (a story/statement), not a proof",
+   "source": "Yevamot 108b"
+  },
+  {
+   "id": "Yevamot_108_b",
+   "step": 16,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the version",
+   "replace": "Objects to the version",
+   "why": "relation names a Rejection",
+   "source": "Yevamot 108b"
+  },
+  {
+   "id": "Yevamot_10_a",
+   "step": 10,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "ראיה",
+   "why": "completes the proof begun in step 9 and is challenged at once in step 11",
+   "source": "Yevamot 10a"
+  },
+  {
+   "id": "Yevamot_10_b",
+   "step": 2,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "end of the statement about a sixteenth case, challenged at once in step 3",
+   "source": "Yevamot 10b"
+  },
+  {
+   "id": "Yevamot_111_b",
+   "step": 19,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "והא תגדלנו קאמר objects to רבי חנינא חוזאה's answer (step 18)",
+   "source": "Yevamot 111b"
+  },
+  {
+   "id": "Yevamot_111_b",
+   "step": 19,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the answer",
+   "replace": "Challenges the answer",
+   "why": "relation names a Rejection",
+   "source": "Yevamot 111b"
+  },
+  {
+   "id": "Yevamot_113_a",
+   "step": 14,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תשובה",
+   "why": "טעמא דרצה... is the inference that completes the Response of step 13, and step 15 challenges it",
+   "source": "Yevamot 113a"
+  },
+  {
+   "id": "Yevamot_115_b",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רבינא quotes the סיפא of the same משנה to attack מר קשישא's point (rule 1)",
+   "source": "Yevamot 115b"
+  },
+  {
+   "id": "Yevamot_115_b",
+   "step": 6,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the proof in step 5",
+   "replace": "Challenges the argument in step 5",
+   "why": "relation names a Rejection",
+   "source": "Yevamot 115b"
+  },
+  {
+   "id": "Yevamot_116_b",
+   "step": 15,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "קשיא",
+   "why": "second half of the ברייתא's argument (step 14 קשיא), answered at once in step 16",
+   "source": "Yevamot 116b"
+  },
+  {
+   "id": "Yevamot_116_b",
+   "step": 17,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "ובית שמאי: הכא נמי שכיחי שיירתא objects to בית הלל's reasoning; no proof involved",
+   "source": "Yevamot 116b"
+  },
+  {
+   "id": "Yevamot_116_b",
+   "step": 17,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the reasoning",
+   "replace": "Challenges the reasoning",
+   "why": "relation names a Rejection",
+   "source": "Yevamot 116b"
+  },
+  {
+   "id": "Yevamot_119_a",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "אפילו תימא רבנן answers the challenge of step 6",
+   "source": "Yevamot 119a"
+  },
+  {
+   "id": "Yevamot_119_a",
+   "step": 8,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the need",
+   "replace": "Avoids the need",
+   "why": "relation names a Rejection",
+   "source": "Yevamot 119a"
+  },
+  {
+   "id": "Yevamot_119_a",
+   "step": 13,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "מחוורתא מתניתין רבי מאיר returns to the answer of step 7 and is challenged at once in step 14",
+   "source": "Yevamot 119a"
+  },
+  {
+   "id": "Yevamot_119_a",
+   "step": 18,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רבא's מכדי... objects to רב נחמן's answer (step 17)",
+   "source": "Yevamot 119a"
+  },
+  {
+   "id": "Yevamot_119_a",
+   "step": 18,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the answer",
+   "replace": "Challenges the answer",
+   "why": "relation names a Rejection",
+   "source": "Yevamot 119a"
+  },
+  {
+   "id": "Yevamot_121_b",
+   "step": 14,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "ורבנן דשישא הוו objects to רב כהנא's answer (step 13); רבי מאיר's reply follows as תירוץ",
+   "source": "Yevamot 121b"
+  },
+  {
+   "id": "Yevamot_122_b",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "last line of the רבי טרפון story, challenged at once in step 9 (rule 8)",
+   "source": "Yevamot 122b"
+  },
+  {
+   "id": "Yevamot_12_b",
+   "step": 1,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "הלכתא ruling that is challenged at once in step 2 (rule 5)",
+   "source": "Yevamot 12b"
+  },
+  {
+   "id": "Yevamot_13_b",
+   "step": 28,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "ריש לקיש objects to רבי יוחנן's answer (step 27) to his own challenge (step 22)",
+   "source": "Yevamot 13b"
+  },
+  {
+   "id": "Yevamot_13_b",
+   "step": 28,
+   "field": "title",
+   "find": "rejects the proof",
+   "replace": "objects",
+   "why": "title names a Rejection",
+   "source": "Yevamot 13b"
+  },
+  {
+   "id": "Yevamot_13_b",
+   "step": 28,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the proof from",
+   "replace": "Challenges the comparison to",
+   "why": "relation names a Rejection",
+   "source": "Yevamot 13b"
+  },
+  {
+   "id": "Yevamot_14_a",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רבא objects to אביי's answer (step 10)",
+   "source": "Yevamot 14a"
+  },
+  {
+   "id": "Yevamot_14_a",
+   "step": 11,
+   "field": "relationToPreviousStep",
+   "find": "Rejects",
+   "replace": "Challenges",
+   "why": "relation names a Rejection",
+   "source": "Yevamot 14a"
+  },
+  {
+   "id": "Yevamot_14_a",
+   "step": 15,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "והאי מאי תיובתא, מקומות מקומות שאני answers the challenge of steps 13-14",
+   "source": "Yevamot 14a"
+  },
+  {
+   "id": "Yevamot_14_a",
+   "step": 15,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the idea that the source",
+   "replace": "Answers the challenge: the source",
+   "why": "relation names a Rejection",
+   "source": "Yevamot 14a"
+  },
+  {
+   "id": "Yevamot_14_a",
+   "step": 29,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "והאמר רבי אלעזר knocks out the וכי תימא defense (step 28)",
+   "source": "Yevamot 14a"
+  },
+  {
+   "id": "Yevamot_14_a",
+   "step": 29,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the defense",
+   "replace": "Challenges the defense",
+   "why": "relation names a Rejection",
+   "source": "Yevamot 14a"
+  },
+  {
+   "id": "Yevamot_16_b",
+   "step": 2,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וכי תימא... והא אמר רבי יוחנן continues the challenge of step 1",
+   "source": "Yevamot 16b"
+  },
+  {
+   "id": "Yevamot_16_b",
+   "step": 2,
+   "field": "title",
+   "find": "Rejecting the idea",
+   "replace": "Blocking the idea",
+   "why": "title names a Rejection",
+   "source": "Yevamot 16b"
+  },
+  {
+   "id": "Yevamot_17_b",
+   "step": 17,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "second half of the צריכא statement (steps 15-16), challenged at once in step 18",
+   "source": "Yevamot 17b"
+  },
+  {
+   "id": "Yevamot_19_a",
+   "step": 16,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "והתניא knocks out רב עמרם's answer (step 15)",
+   "source": "Yevamot 19a"
+  },
+  {
+   "id": "Yevamot_19_a",
+   "step": 16,
+   "field": "relationToPreviousStep",
+   "find": "Rejects",
+   "replace": "Challenges",
+   "why": "relation names a Rejection",
+   "source": "Yevamot 19a"
+  },
+  {
+   "id": "Yevamot_19_a",
+   "step": 18,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "קא טעי רבא objects to רבא's answer (step 17)",
+   "source": "Yevamot 19a"
+  },
+  {
+   "id": "Yevamot_19_a",
+   "step": 18,
+   "field": "relationToPreviousStep",
+   "find": "Rejects",
+   "replace": "Challenges",
+   "why": "relation names a Rejection",
+   "source": "Yevamot 19a"
+  },
+  {
+   "id": "Yevamot_19_a",
+   "step": 19,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "ועוד תניא: a second ברייתא against רבא's answer (not flagged, same window)",
+   "source": "Yevamot 19a"
+  },
+  {
+   "id": "Yevamot_19_a",
+   "step": 19,
+   "field": "relationToPreviousStep",
+   "find": "rejection",
+   "replace": "challenge",
+   "why": "relation names a Rejection",
+   "source": "Yevamot 19a"
+  },
+  {
+   "id": "Yevamot_20_b",
+   "step": 24,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "רבא retracts his own reason and gives a new answer via ריש לקיש (not flagged, first half of step 25)",
+   "source": "Yevamot 20b"
+  },
+  {
+   "id": "Yevamot_20_b",
+   "step": 25,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "second half of רבא's new answer (step 24), refuted at once in steps 26-27",
+   "source": "Yevamot 20b"
+  },
+  {
+   "id": "Yevamot_21_b",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רבא's אטו כולהו לאו גזירה לגזירה objects to רב ספרא's Response (step 10)",
+   "source": "Yevamot 21b"
+  },
+  {
+   "id": "Yevamot_21_b",
+   "step": 11,
+   "field": "relationToPreviousStep",
+   "find": "Rejects",
+   "replace": "Challenges",
+   "why": "relation names a Rejection",
+   "source": "Yevamot 21b"
+  },
+  {
+   "id": "Yevamot_22_a",
+   "step": 3,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "רב אשי's וליטעמיך answers רב הלל's challenge (step 2)",
+   "source": "Yevamot 22a"
+  },
+  {
+   "id": "Yevamot_22_a",
+   "step": 3,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the evidence",
+   "replace": "Answers the evidence",
+   "why": "relation names a Rejection",
+   "source": "Yevamot 22a"
+  },
+  {
+   "id": "Yevamot_23_a",
+   "step": 21,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "נהי דממזר לא הוי answers the challenge of step 20",
+   "source": "Yevamot 23a"
+  },
+  {
+   "id": "Yevamot_23_a",
+   "step": 21,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the suggestion",
+   "replace": "Answers the challenge",
+   "why": "relation names a Rejection",
+   "source": "Yevamot 23a"
+  },
+  {
+   "id": "Yevamot_23_b",
+   "step": 25,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "הכי השתא answers the challenge of step 24",
+   "source": "Yevamot 23b"
+  },
+  {
+   "id": "Yevamot_23_b",
+   "step": 25,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the comparison",
+   "replace": "Answers the comparison",
+   "why": "relation names a Rejection",
+   "source": "Yevamot 23b"
+  },
+  {
+   "id": "Yevamot_25_a",
+   "step": 4,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "הלכתא כרב וכרבי, challenged at once in step 5 (rule 5)",
+   "source": "Yevamot 25a"
+  },
+  {
+   "id": "Yevamot_25_a",
+   "step": 29,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וכי תימא... והאמר רב מנשה continues the challenge of step 28",
+   "source": "Yevamot 25a"
+  },
+  {
+   "id": "Yevamot_25_a",
+   "step": 29,
+   "field": "title",
+   "find": "Rejecting the idea",
+   "replace": "Blocking the idea",
+   "why": "title names a Rejection",
+   "source": "Yevamot 25a"
+  },
+  {
+   "id": "Yevamot_25_a",
+   "step": 29,
+   "field": "relationToPreviousStep",
+   "find": "begins rejecting it",
+   "replace": "begins knocking it out",
+   "why": "relation names a Rejection",
+   "source": "Yevamot 25a"
+  },
+  {
+   "id": "Yevamot_27_b",
+   "step": 15,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "חולצות קתני answers the challenge of step 14 (why not answer otherwise)",
+   "source": "Yevamot 27b"
+  },
+  {
+   "id": "Yevamot_27_b",
+   "step": 15,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the suggestion",
+   "replace": "Answers the challenge",
+   "why": "relation names a Rejection",
+   "source": "Yevamot 27b"
+  },
+  {
+   "id": "Yevamot_27_b",
+   "step": 17,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "הרי אלו קתני answers the challenge of step 16",
+   "source": "Yevamot 27b"
+  },
+  {
+   "id": "Yevamot_27_b",
+   "step": 17,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the suggestion",
+   "replace": "Answers the challenge",
+   "why": "relation names a Rejection",
+   "source": "Yevamot 27b"
+  },
+  {
+   "id": "Yevamot_27_b",
+   "step": 19,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "חולצות begins answering the challenge of step 18",
+   "source": "Yevamot 27b"
+  },
+  {
+   "id": "Yevamot_27_b",
+   "step": 19,
+   "field": "relationToPreviousStep",
+   "find": "Begins rejecting the suggestion",
+   "replace": "Begins answering the challenge",
+   "why": "relation names a Rejection",
+   "source": "Yevamot 27b"
+  },
+  {
+   "id": "Yevamot_2_b",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "אי הכי ליתני חמותו objects to the וכי תימא answer (step 10)",
+   "source": "Yevamot 2b"
+  },
+  {
+   "id": "Yevamot_2_b",
+   "step": 11,
+   "field": "relationToPreviousStep",
+   "find": "Rejects",
+   "replace": "Challenges",
+   "why": "relation names a Rejection",
+   "source": "Yevamot 2b"
+  },
+  {
+   "id": "Yevamot_2_b",
+   "step": 12,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "ועוד: second objection to the same answer (not flagged, same window)",
+   "source": "Yevamot 2b"
+  },
+  {
+   "id": "Yevamot_2_b",
+   "step": 12,
+   "field": "relationToPreviousStep",
+   "find": "second rejection of",
+   "replace": "second challenge to",
+   "why": "relation names a Rejection",
+   "source": "Yevamot 2b"
+  },
+  {
+   "id": "Yevamot_32_b",
+   "step": 4,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "הא איסור כולל הוא knocks out the וכי תימא defense (step 3)",
+   "source": "Yevamot 32b"
+  },
+  {
+   "id": "Yevamot_32_b",
+   "step": 4,
+   "field": "relationToPreviousStep",
+   "find": "Rejects",
+   "replace": "Challenges",
+   "why": "relation names a Rejection",
+   "source": "Yevamot 32b"
+  },
+  {
+   "id": "Yevamot_33_b",
+   "step": 12,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "מתקיף לה רב אשי objects; no proof is pushed aside",
+   "source": "Yevamot 33b"
+  },
+  {
+   "id": "Yevamot_33_b",
+   "step": 12,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the problem",
+   "replace": "Attacks the problem",
+   "why": "relation names a Rejection",
+   "source": "Yevamot 33b"
+  },
+  {
+   "id": "Yevamot_35_a",
+   "step": 13,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וכי תימא... והתנן continues אביי's challenge of step 12",
+   "source": "Yevamot 35a"
+  },
+  {
+   "id": "Yevamot_38_b",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "ראיה",
+   "why": "שמע מינה closes the proof of steps 5-6 and is challenged at once in step 8",
+   "source": "Yevamot 38b"
+  },
+  {
+   "id": "Yevamot_38_b",
+   "step": 20,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "ראיה",
+   "why": "שמע מינה completes the proof begun in step 19; step 21 asks about it at once",
+   "source": "Yevamot 38b"
+  },
+  {
+   "id": "Yevamot_3_a",
+   "step": 15,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "אלמה לא objects to the answer of step 14",
+   "source": "Yevamot 3a"
+  },
+  {
+   "id": "Yevamot_3_a",
+   "step": 15,
+   "field": "relationToPreviousStep",
+   "find": "Rejects",
+   "replace": "Challenges",
+   "why": "relation names a Rejection",
+   "source": "Yevamot 3a"
+  },
+  {
+   "id": "Yevamot_40_a",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objects to the suggestion of step 6 (וכי תימא)",
+   "source": "Yevamot 40a"
+  },
+  {
+   "id": "Yevamot_40_a",
+   "step": 7,
+   "field": "relationToPreviousStep",
+   "find": "Rejects",
+   "replace": "Challenges",
+   "why": "relation names a Rejection",
+   "source": "Yevamot 40a"
+  },
+  {
+   "id": "Yevamot_40_a",
+   "step": 29,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "מידי יבום בנחלה תליא answers the challenge of step 28",
+   "source": "Yevamot 40a"
+  },
+  {
+   "id": "Yevamot_40_a",
+   "step": 29,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the suggestion",
+   "replace": "Answers the challenge",
+   "why": "relation names a Rejection",
+   "source": "Yevamot 40a"
+  },
+  {
+   "id": "Yevamot_41_b",
+   "step": 16,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "הכי השתא answers רב חיננא's challenge (steps 13-15)",
+   "source": "Yevamot 41b"
+  },
+  {
+   "id": "Yevamot_41_b",
+   "step": 16,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the challenge",
+   "replace": "Answers the challenge",
+   "why": "relation names a Rejection",
+   "source": "Yevamot 41b"
+  },
+  {
+   "id": "Yevamot_42_a",
+   "step": 2,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "inference from the ברייתא's wording, challenged at once in step 3",
+   "source": "Yevamot 42a"
+  },
+  {
+   "id": "Yevamot_43_a",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "ומאי קושיא objects to the Response of step 6 (why the משנה is not a משנה); no proof involved",
+   "source": "Yevamot 43a"
+  },
+  {
+   "id": "Yevamot_43_a",
+   "step": 7,
+   "field": "relationToPreviousStep",
+   "find": "Rejects",
+   "replace": "Challenges",
+   "why": "relation names a Rejection",
+   "source": "Yevamot 43a"
+  },
+  {
+   "id": "Yevamot_43_a",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "אביי's ומאי קושיא objects to the second answer (step 8)",
+   "source": "Yevamot 43a"
+  },
+  {
+   "id": "Yevamot_43_a",
+   "step": 9,
+   "field": "relationToPreviousStep",
+   "find": "Rejects",
+   "replace": "Challenges",
+   "why": "relation names a Rejection",
+   "source": "Yevamot 43a"
+  },
+  {
+   "id": "Yevamot_43_a",
+   "step": 10,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רב פפא's parallel objection to step 8 (not flagged, same window)",
+   "source": "Yevamot 43a"
+  },
+  {
+   "id": "Yevamot_43_b",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "האי מאי קושיא answers the first part of the challenge of step 6",
+   "source": "Yevamot 43b"
+  },
+  {
+   "id": "Yevamot_43_b",
+   "step": 15,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "הכי השתא answers the challenge of step 14",
+   "source": "Yevamot 43b"
+  },
+  {
+   "id": "Yevamot_43_b",
+   "step": 15,
+   "field": "relationToPreviousStep",
+   "find": "Rejects",
+   "replace": "Answers",
+   "why": "relation names a Rejection",
+   "source": "Yevamot 43b"
+  },
+  {
+   "id": "Yevamot_44_a",
+   "step": 33,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "ראיה",
+   "why": "שמע מינה closes the proof begun in step 28 and is pushed aside at once in step 34",
+   "source": "Yevamot 44a"
+  },
+  {
+   "id": "Yevamot_44_b",
+   "step": 14,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "ראיה",
+   "why": "completes the proof of steps 12-13; step 15 goes back to another objection",
+   "source": "Yevamot 44b"
+  },
+  {
+   "id": "Yevamot_45_a",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רב יוסף's רבותא למחשב גברי objects to רבי אמי's Response (step 6)",
+   "source": "Yevamot 45a"
+  },
+  {
+   "id": "Yevamot_45_a",
+   "step": 7,
+   "field": "relationToPreviousStep",
+   "find": "Rejects",
+   "replace": "Challenges",
+   "why": "relation names a Rejection",
+   "source": "Yevamot 45a"
+  },
+  {
+   "id": "Yevamot_45_a",
+   "step": 23,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "inside the story שימי objects to רב's reply (rule 3)",
+   "source": "Yevamot 45a"
+  },
+  {
+   "id": "Yevamot_45_a",
+   "step": 23,
+   "field": "relationToPreviousStep",
+   "find": "Rejects",
+   "replace": "Challenges",
+   "why": "relation names a Rejection",
+   "source": "Yevamot 45a"
+  },
+  {
+   "id": "Yevamot_46_a",
+   "step": 29,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "והתניא knocks out the וכי תימא answer (step 28)",
+   "source": "Yevamot 46a"
+  },
+  {
+   "id": "Yevamot_46_a",
+   "step": 30,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "rest of the ברייתא quoted to attack in step 29 (rule 1; not flagged, same window)",
+   "source": "Yevamot 46a"
+  },
+  {
+   "id": "Yevamot_46_a",
+   "step": 30,
+   "field": "relationToPreviousStep",
+   "find": "seals the rejection",
+   "replace": "seals the challenge",
+   "why": "relation names a Rejection",
+   "source": "Yevamot 46a"
+  },
+  {
+   "id": "Yevamot_47_a",
+   "step": 21,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "הלכתא ruling that is challenged straight away (והתניא כרבינא); a statement, not where the thread lands",
+   "source": "Yevamot 47a"
+  },
+  {
+   "id": "Yevamot_48_b",
+   "step": 24,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וליטעמיך pushback on רב זביד's challenge, not pushing aside a proof",
+   "source": "Yevamot 48b"
+  },
+  {
+   "id": "Yevamot_54_a",
+   "step": 38,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "רב אחא מדפתי answers רב אחא בריה דרב איקא's objection (אטו...), defending the pair",
+   "source": "Yevamot 54a"
+  },
+  {
+   "id": "Yevamot_54_b",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "ודילמא answers the challenge of step 8 (why a hint is needed), not a rejection of a proof",
+   "source": "Yevamot 54b"
+  },
+  {
+   "id": "Yevamot_54_b",
+   "step": 9,
+   "field": "relationToPreviousStep",
+   "find": "Rejects Step 8's claim",
+   "replace": "Answers Step 8's claim",
+   "why": "relation named the wrong kind",
+   "source": "Yevamot 54b"
+  },
+  {
+   "id": "Yevamot_54_b",
+   "step": 13,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objection to the answer of step 12 (בזכור? משכבי אשה כתיב), not pushing aside a proof",
+   "source": "Yevamot 54b"
+  },
+  {
+   "id": "Yevamot_54_b",
+   "step": 13,
+   "field": "relationToPreviousStep",
+   "find": "Rejects step 12's answer",
+   "replace": "Challenges step 12's answer",
+   "why": "relation named the wrong kind",
+   "source": "Yevamot 54b"
+  },
+  {
+   "id": "Yevamot_55_a",
+   "step": 15,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "ת״ל settles the tie of steps 13-14 and is challenged straight away (ואימא...); end of the answer, not a landing",
+   "source": "Yevamot 55a"
+  },
+  {
+   "id": "Yevamot_55_a",
+   "step": 20,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "ודילמא objects to the answer of step 19 (an inference), not a proof",
+   "source": "Yevamot 55a"
+  },
+  {
+   "id": "Yevamot_55_a",
+   "step": 20,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the inference used in step 19",
+   "replace": "Challenges the inference used in step 19",
+   "why": "relation named the wrong kind",
+   "source": "Yevamot 55a"
+  },
+  {
+   "id": "Yevamot_55_a",
+   "step": 21,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "second half (אי נמי) of the objection in step 20; same label",
+   "source": "Yevamot 55a"
+  },
+  {
+   "id": "Yevamot_55_a",
+   "step": 21,
+   "field": "relationToPreviousStep",
+   "find": "rejection in step 20",
+   "replace": "challenge in step 20",
+   "why": "relation named the wrong kind",
+   "source": "Yevamot 55a"
+  },
+  {
+   "id": "Yevamot_56_b",
+   "step": 15,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "inference (אלמא) completing the second version's statement in step 14, which is challenged straight away",
+   "source": "Yevamot 56b"
+  },
+  {
+   "id": "Yevamot_58_a",
+   "step": 18,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תשובה",
+   "why": "ושמע מינה is the end of the answer in step 17, challenged straight away by רבא",
+   "source": "Yevamot 58a"
+  },
+  {
+   "id": "Yevamot_58_b",
+   "step": 3,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objection to the answer of step 2 (מידי הוא טעמא...), not pushing aside a proof",
+   "source": "Yevamot 58b"
+  },
+  {
+   "id": "Yevamot_58_b",
+   "step": 3,
+   "field": "title",
+   "find": "Rejected:",
+   "replace": "Challenged:",
+   "why": "title named the wrong kind",
+   "source": "Yevamot 58b"
+  },
+  {
+   "id": "Yevamot_58_b",
+   "step": 3,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the answer of step 2",
+   "replace": "Challenges the answer of step 2",
+   "why": "relation named the wrong kind",
+   "source": "Yevamot 58b"
+  },
+  {
+   "id": "Yevamot_59_b",
+   "step": 5,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וכי תימא closing off a defense; strengthens אביי's challenge",
+   "source": "Yevamot 59b"
+  },
+  {
+   "id": "Yevamot_60_b",
+   "step": 37,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "הכי השתא objects to the answer of step 36, not a proof",
+   "source": "Yevamot 60b"
+  },
+  {
+   "id": "Yevamot_60_b",
+   "step": 37,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the comparison offered in step 36",
+   "replace": "Challenges the comparison offered in step 36",
+   "why": "relation named the wrong kind",
+   "source": "Yevamot 60b"
+  },
+  {
+   "id": "Yevamot_62_a",
+   "step": 26,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תשובה",
+   "why": "second half of the צריכא begun in step 25 takes the same label (rule 5)",
+   "source": "Yevamot 62a"
+  },
+  {
+   "id": "Yevamot_66_b",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "ותסברא answers the challenge of step 5 (a renter is not fully responsible)",
+   "source": "Yevamot 66b"
+  },
+  {
+   "id": "Yevamot_68_a",
+   "step": 18,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objection to the answer of step 17 (אי מההיא...), not a proof",
+   "source": "Yevamot 68a"
+  },
+  {
+   "id": "Yevamot_68_a",
+   "step": 18,
+   "field": "relationToPreviousStep",
+   "find": "Rejects step 17's answer",
+   "replace": "Challenges step 17's answer",
+   "why": "relation named the wrong kind",
+   "source": "Yevamot 68a"
+  },
+  {
+   "id": "Yevamot_68_b",
+   "step": 13,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objection (אלמה לא...) to the reasoning of step 12; step 14 answers it as a Resolution",
+   "source": "Yevamot 68b"
+  },
+  {
+   "id": "Yevamot_68_b",
+   "step": 13,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the argument of step 12",
+   "replace": "Challenges the argument of step 12",
+   "why": "relation named the wrong kind",
+   "source": "Yevamot 68b"
+  },
+  {
+   "id": "Yevamot_6_a",
+   "step": 4,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "והא תנא בעלמא קאי objects to the defense of step 3, not to a proof",
+   "source": "Yevamot 6a"
+  },
+  {
+   "id": "Yevamot_6_a",
+   "step": 4,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the defense offered in step 3",
+   "replace": "Challenges the defense offered in step 3",
+   "why": "relation named the wrong kind",
+   "source": "Yevamot 6a"
+  },
+  {
+   "id": "Yevamot_6_a",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וכי תימא ... והא תנא: closes off a defense and reinforces the challenge of step 10",
+   "source": "Yevamot 6a"
+  },
+  {
+   "id": "Yevamot_70_b",
+   "step": 1,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "ראיה",
+   "why": "אלמא ... closes the proof begun on 70a (step 33) and is challenged straight away in step 2",
+   "source": "Yevamot 70b"
+  },
+  {
+   "id": "Yevamot_72_b",
+   "step": 18,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "answers the challenge of step 17 (התם משום דמאיס)",
+   "source": "Yevamot 72b"
+  },
+  {
+   "id": "Yevamot_72_b",
+   "step": 18,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the proof brought in Step 17",
+   "replace": "Answers the challenge brought in Step 17",
+   "why": "relation named the wrong kind",
+   "source": "Yevamot 72b"
+  },
+  {
+   "id": "Yevamot_74_a",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "בשלמא... objects to the וליטעמיך answer of step 5 and renews step 4's challenge; the push-off of the proof resumes in step 7",
+   "source": "Yevamot 74a"
+  },
+  {
+   "id": "Yevamot_74_a",
+   "step": 6,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the comparison in step 5",
+   "replace": "Challenges the comparison in step 5",
+   "why": "relation named the wrong kind",
+   "source": "Yevamot 74a"
+  },
+  {
+   "id": "Yevamot_75_b",
+   "step": 22,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "רבא's opinion (מסתברא), continued in step 23; a statement, not a landing",
+   "source": "Yevamot 75b"
+  },
+  {
+   "id": "Yevamot_75_b",
+   "step": 23,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "מימרא",
+   "why": "second half of רבא's statement in step 22 (answering רב חסדא's reason), not pushing aside a proof",
+   "source": "Yevamot 75b"
+  },
+  {
+   "id": "Yevamot_76_a",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "אביי objects to רב יוסף's practical answer (אטו כולי עלמא...)",
+   "source": "Yevamot 76a"
+  },
+  {
+   "id": "Yevamot_76_a",
+   "step": 10,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רבא objects to אביי's alternative method",
+   "source": "Yevamot 76a"
+  },
+  {
+   "id": "Yevamot_76_a",
+   "step": 10,
+   "field": "relationToPreviousStep",
+   "find": "Rejects אביי's alternative method",
+   "replace": "Challenges אביי's alternative method",
+   "why": "relation named the wrong kind",
+   "source": "Yevamot 76a"
+  },
+  {
+   "id": "Yevamot_76_a",
+   "step": 28,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "מימרא",
+   "why": "רבא retracts his own premise (הדר אמר... לאו מילתא היא); a statement, then challenged",
+   "source": "Yevamot 76a"
+  },
+  {
+   "id": "Yevamot_76_b",
+   "step": 4,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "והא תניא knocks out the suggested defense of step 3; objection, not pushing aside a proof",
+   "source": "Yevamot 76b"
+  },
+  {
+   "id": "Yevamot_76_b",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "רב אשי answers רבינא's challenge (וליטעמיך ... מהא ליכא למשמע מינה)",
+   "source": "Yevamot 76b"
+  },
+  {
+   "id": "Yevamot_76_b",
+   "step": 9,
+   "field": "relationToPreviousStep",
+   "find": "Rejects רבינא's implication",
+   "replace": "Answers רבינא's implication",
+   "why": "relation named the wrong kind",
+   "source": "Yevamot 76b"
+  },
+  {
+   "id": "Yevamot_78_a",
+   "step": 3,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objection to the answer of step 2 (דאי לא כתיב קרא)",
+   "source": "Yevamot 78a"
+  },
+  {
+   "id": "Yevamot_78_a",
+   "step": 3,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the answer of step 2",
+   "replace": "Challenges the answer of step 2",
+   "why": "relation named the wrong kind",
+   "source": "Yevamot 78a"
+  },
+  {
+   "id": "Yevamot_7_a",
+   "step": 15,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "מי דמי objects to the application in step 14, which is part of an answer, not a proof",
+   "source": "Yevamot 7a"
+  },
+  {
+   "id": "Yevamot_7_a",
+   "step": 15,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the application made in step 14",
+   "replace": "Challenges the application made in step 14",
+   "why": "relation named the wrong kind",
+   "source": "Yevamot 7a"
+  },
+  {
+   "id": "Yevamot_82_a",
+   "step": 12,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "בדותא היא dismisses רב אשי's answer; objection to an answer",
+   "source": "Yevamot 82a"
+  },
+  {
+   "id": "Yevamot_82_a",
+   "step": 12,
+   "field": "relationToPreviousStep",
+   "find": "Directly rejects the answer",
+   "replace": "Directly challenges the answer",
+   "why": "relation named the wrong kind",
+   "source": "Yevamot 82a"
+  },
+  {
+   "id": "Yevamot_82_b",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "לא, דלא נשקול רובו answers the challenge of steps 4-5",
+   "source": "Yevamot 82b"
+  },
+  {
+   "id": "Yevamot_82_b",
+   "step": 6,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the reading proposed in step 5",
+   "replace": "Answers step 5 by rejecting its reading",
+   "why": "relation named the wrong kind",
+   "source": "Yevamot 82b"
+  },
+  {
+   "id": "Yevamot_82_b",
+   "step": 12,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "אמרי, לא objects to the answer of step 11 and brings back the challenge",
+   "source": "Yevamot 82b"
+  },
+  {
+   "id": "Yevamot_82_b",
+   "step": 12,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the answer of Step 11",
+   "replace": "Challenges the answer of Step 11",
+   "why": "relation named the wrong kind",
+   "source": "Yevamot 82b"
+  },
+  {
+   "id": "Yevamot_84_a",
+   "step": 14,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וכי תימא ... והא: proposes and knocks out an answer, reinforcing the challenge of step 13",
+   "source": "Yevamot 84a"
+  },
+  {
+   "id": "Yevamot_84_b",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objection to the answer of step 10; step 12 continues the objection",
+   "source": "Yevamot 84b"
+  },
+  {
+   "id": "Yevamot_84_b",
+   "step": 11,
+   "field": "relationToPreviousStep",
+   "find": "Rejects Step 10's proof",
+   "replace": "Challenges Step 10's answer",
+   "why": "relation named the wrong kind",
+   "source": "Yevamot 84b"
+  },
+  {
+   "id": "Yevamot_84_b",
+   "step": 20,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "מידי איריא answers the challenge of step 19",
+   "source": "Yevamot 84b"
+  },
+  {
+   "id": "Yevamot_84_b",
+   "step": 20,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the challenge in step 19",
+   "replace": "Answers the challenge in step 19",
+   "why": "relation named the wrong kind",
+   "source": "Yevamot 84b"
+  },
+  {
+   "id": "Yevamot_85_a",
+   "step": 22,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "ואלא, התניא renews the challenge; step 23 answers it as a Resolution",
+   "source": "Yevamot 85a"
+  },
+  {
+   "id": "Yevamot_91_b",
+   "step": 19,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "in the story, רב הונא objects to רב פפא's defense (rule 3)",
+   "source": "Yevamot 91b"
+  },
+  {
+   "id": "Yevamot_91_b",
+   "step": 19,
+   "field": "relationToPreviousStep",
+   "find": "Rejects רב פפא's defense",
+   "replace": "Challenges רב פפא's defense",
+   "why": "relation named the wrong kind",
+   "source": "Yevamot 91b"
+  },
+  {
+   "id": "Yevamot_92_b",
+   "step": 16,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "ריש לקיש answers רבי יוחנן's challenge (the משנה may be רבי עקיבא); step 17 challenges it",
+   "source": "Yevamot 92b"
+  },
+  {
+   "id": "Yevamot_92_b",
+   "step": 16,
+   "field": "relationToPreviousStep",
+   "find": "Rejects רבי יוחנן's proof",
+   "replace": "Answers רבי יוחנן's challenge",
+   "why": "relation named the wrong kind",
+   "source": "Yevamot 92b"
+  },
+  {
+   "id": "Yevamot_94_a",
+   "step": 5,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וכי תימא לא דק: closes off a defense, continuing the objections of steps 3-4",
+   "source": "Yevamot 94a"
+  },
+  {
+   "id": "Yevamot_94_b",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "דחיה",
+   "why": "end of רב's push-aside of the proof (steps 7-8); second half takes the same label",
+   "source": "Yevamot 94b"
+  },
+  {
+   "id": "Yevamot_95_b",
+   "step": 23,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "אביי answers רב יוסף's challenge (ממאי... דלמא)",
+   "source": "Yevamot 95b"
+  },
+  {
+   "id": "Yevamot_95_b",
+   "step": 24,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "second, fallback answer to רב יוסף's challenge",
+   "source": "Yevamot 95b"
+  }
+ ]
+}

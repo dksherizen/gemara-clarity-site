@@ -2,6 +2,503 @@
 
 Every change to the AI-written content, newest first. Each entry says what was wrong, the source used, and who approved it.
 
+## 202611060555-rev117-labels-shas-m
+
+Approved: Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.
+
+- **Yevamot 105a, step 7** (hebrewStepName): אלא לאו לאחין שמע מינה closes an inference from the ברייתא and is challenged at once (step 8) Source: Yevamot 105a.
+  - was: מסקנא
+  - now: ראיה
+- **Yevamot 108b, step 6** (hebrewStepName): רבא's ומאי קושיא ודלמא answers the contradiction of step 4, a second answer beside שמואל's Source: Yevamot 108b.
+  - was: דחיה
+  - now: תירוץ
+- **Yevamot 108b, step 16** (hebrewStepName): לזו לא הוצרכנו objects to the reported question (a story/statement), not a proof Source: Yevamot 108b.
+  - was: דחיה
+  - now: קשיא
+- **Yevamot 108b, step 16** (relationToPreviousStep): relation names a Rejection Source: Yevamot 108b.
+  - was: Rejects the version
+  - now: Objects to the version
+- **Yevamot 10a, step 10** (hebrewStepName): completes the proof begun in step 9 and is challenged at once in step 11 Source: Yevamot 10a.
+  - was: מסקנא
+  - now: ראיה
+- **Yevamot 10b, step 2** (hebrewStepName): end of the statement about a sixteenth case, challenged at once in step 3 Source: Yevamot 10b.
+  - was: מסקנא
+  - now: מימרא
+- **Yevamot 111b, step 19** (hebrewStepName): והא תגדלנו קאמר objects to רבי חנינא חוזאה's answer (step 18) Source: Yevamot 111b.
+  - was: דחיה
+  - now: קשיא
+- **Yevamot 111b, step 19** (relationToPreviousStep): relation names a Rejection Source: Yevamot 111b.
+  - was: Rejects the answer
+  - now: Challenges the answer
+- **Yevamot 113a, step 14** (hebrewStepName): טעמא דרצה... is the inference that completes the Response of step 13, and step 15 challenges it Source: Yevamot 113a.
+  - was: מסקנא
+  - now: תשובה
+- **Yevamot 115b, step 6** (hebrewStepName): רבינא quotes the סיפא of the same משנה to attack מר קשישא's point (rule 1) Source: Yevamot 115b.
+  - was: דחיה
+  - now: קשיא
+- **Yevamot 115b, step 6** (relationToPreviousStep): relation names a Rejection Source: Yevamot 115b.
+  - was: Rejects the proof in step 5
+  - now: Challenges the argument in step 5
+- **Yevamot 116b, step 15** (hebrewStepName): second half of the ברייתא's argument (step 14 קשיא), answered at once in step 16 Source: Yevamot 116b.
+  - was: מסקנא
+  - now: קשיא
+- **Yevamot 116b, step 17** (hebrewStepName): ובית שמאי: הכא נמי שכיחי שיירתא objects to בית הלל's reasoning; no proof involved Source: Yevamot 116b.
+  - was: דחיה
+  - now: קשיא
+- **Yevamot 116b, step 17** (relationToPreviousStep): relation names a Rejection Source: Yevamot 116b.
+  - was: Rejects the reasoning
+  - now: Challenges the reasoning
+- **Yevamot 119a, step 8** (hebrewStepName): אפילו תימא רבנן answers the challenge of step 6 Source: Yevamot 119a.
+  - was: דחיה
+  - now: תירוץ
+- **Yevamot 119a, step 8** (relationToPreviousStep): relation names a Rejection Source: Yevamot 119a.
+  - was: Rejects the need
+  - now: Avoids the need
+- **Yevamot 119a, step 13** (hebrewStepName): מחוורתא מתניתין רבי מאיר returns to the answer of step 7 and is challenged at once in step 14 Source: Yevamot 119a.
+  - was: מסקנא
+  - now: תירוץ
+- **Yevamot 119a, step 18** (hebrewStepName): רבא's מכדי... objects to רב נחמן's answer (step 17) Source: Yevamot 119a.
+  - was: דחיה
+  - now: קשיא
+- **Yevamot 119a, step 18** (relationToPreviousStep): relation names a Rejection Source: Yevamot 119a.
+  - was: Rejects the answer
+  - now: Challenges the answer
+- **Yevamot 121b, step 14** (hebrewStepName): ורבנן דשישא הוו objects to רב כהנא's answer (step 13); רבי מאיר's reply follows as תירוץ Source: Yevamot 121b.
+  - was: דחיה
+  - now: קשיא
+- **Yevamot 122b, step 8** (hebrewStepName): last line of the רבי טרפון story, challenged at once in step 9 (rule 8) Source: Yevamot 122b.
+  - was: מסקנא
+  - now: מימרא
+- **Yevamot 12b, step 1** (hebrewStepName): הלכתא ruling that is challenged at once in step 2 (rule 5) Source: Yevamot 12b.
+  - was: מסקנא
+  - now: מימרא
+- **Yevamot 13b, step 28** (hebrewStepName): ריש לקיש objects to רבי יוחנן's answer (step 27) to his own challenge (step 22) Source: Yevamot 13b.
+  - was: דחיה
+  - now: קשיא
+- **Yevamot 13b, step 28** (title): title names a Rejection Source: Yevamot 13b.
+  - was: rejects the proof
+  - now: objects
+- **Yevamot 13b, step 28** (relationToPreviousStep): relation names a Rejection Source: Yevamot 13b.
+  - was: Rejects the proof from
+  - now: Challenges the comparison to
+- **Yevamot 14a, step 11** (hebrewStepName): רבא objects to אביי's answer (step 10) Source: Yevamot 14a.
+  - was: דחיה
+  - now: קשיא
+- **Yevamot 14a, step 11** (relationToPreviousStep): relation names a Rejection Source: Yevamot 14a.
+  - was: Rejects
+  - now: Challenges
+- **Yevamot 14a, step 15** (hebrewStepName): והאי מאי תיובתא, מקומות מקומות שאני answers the challenge of steps 13-14 Source: Yevamot 14a.
+  - was: דחיה
+  - now: תירוץ
+- **Yevamot 14a, step 15** (relationToPreviousStep): relation names a Rejection Source: Yevamot 14a.
+  - was: Rejects the idea that the source
+  - now: Answers the challenge: the source
+- **Yevamot 14a, step 29** (hebrewStepName): והאמר רבי אלעזר knocks out the וכי תימא defense (step 28) Source: Yevamot 14a.
+  - was: דחיה
+  - now: קשיא
+- **Yevamot 14a, step 29** (relationToPreviousStep): relation names a Rejection Source: Yevamot 14a.
+  - was: Rejects the defense
+  - now: Challenges the defense
+- **Yevamot 16b, step 2** (hebrewStepName): וכי תימא... והא אמר רבי יוחנן continues the challenge of step 1 Source: Yevamot 16b.
+  - was: דחיה
+  - now: קשיא
+- **Yevamot 16b, step 2** (title): title names a Rejection Source: Yevamot 16b.
+  - was: Rejecting the idea
+  - now: Blocking the idea
+- **Yevamot 17b, step 17** (hebrewStepName): second half of the צריכא statement (steps 15-16), challenged at once in step 18 Source: Yevamot 17b.
+  - was: מסקנא
+  - now: מימרא
+- **Yevamot 19a, step 16** (hebrewStepName): והתניא knocks out רב עמרם's answer (step 15) Source: Yevamot 19a.
+  - was: דחיה
+  - now: קשיא
+- **Yevamot 19a, step 16** (relationToPreviousStep): relation names a Rejection Source: Yevamot 19a.
+  - was: Rejects
+  - now: Challenges
+- **Yevamot 19a, step 18** (hebrewStepName): קא טעי רבא objects to רבא's answer (step 17) Source: Yevamot 19a.
+  - was: דחיה
+  - now: קשיא
+- **Yevamot 19a, step 18** (relationToPreviousStep): relation names a Rejection Source: Yevamot 19a.
+  - was: Rejects
+  - now: Challenges
+- **Yevamot 19a, step 19** (hebrewStepName): ועוד תניא: a second ברייתא against רבא's answer (not flagged, same window) Source: Yevamot 19a.
+  - was: דחיה
+  - now: קשיא
+- **Yevamot 19a, step 19** (relationToPreviousStep): relation names a Rejection Source: Yevamot 19a.
+  - was: rejection
+  - now: challenge
+- **Yevamot 20b, step 24** (hebrewStepName): רבא retracts his own reason and gives a new answer via ריש לקיש (not flagged, first half of step 25) Source: Yevamot 20b.
+  - was: דחיה
+  - now: תירוץ
+- **Yevamot 20b, step 25** (hebrewStepName): second half of רבא's new answer (step 24), refuted at once in steps 26-27 Source: Yevamot 20b.
+  - was: מסקנא
+  - now: תירוץ
+- **Yevamot 21b, step 11** (hebrewStepName): רבא's אטו כולהו לאו גזירה לגזירה objects to רב ספרא's Response (step 10) Source: Yevamot 21b.
+  - was: דחיה
+  - now: קשיא
+- **Yevamot 21b, step 11** (relationToPreviousStep): relation names a Rejection Source: Yevamot 21b.
+  - was: Rejects
+  - now: Challenges
+- **Yevamot 22a, step 3** (hebrewStepName): רב אשי's וליטעמיך answers רב הלל's challenge (step 2) Source: Yevamot 22a.
+  - was: דחיה
+  - now: תירוץ
+- **Yevamot 22a, step 3** (relationToPreviousStep): relation names a Rejection Source: Yevamot 22a.
+  - was: Rejects the evidence
+  - now: Answers the evidence
+- **Yevamot 23a, step 21** (hebrewStepName): נהי דממזר לא הוי answers the challenge of step 20 Source: Yevamot 23a.
+  - was: דחיה
+  - now: תירוץ
+- **Yevamot 23a, step 21** (relationToPreviousStep): relation names a Rejection Source: Yevamot 23a.
+  - was: Rejects the suggestion
+  - now: Answers the challenge
+- **Yevamot 23b, step 25** (hebrewStepName): הכי השתא answers the challenge of step 24 Source: Yevamot 23b.
+  - was: דחיה
+  - now: תירוץ
+- **Yevamot 23b, step 25** (relationToPreviousStep): relation names a Rejection Source: Yevamot 23b.
+  - was: Rejects the comparison
+  - now: Answers the comparison
+- **Yevamot 25a, step 4** (hebrewStepName): הלכתא כרב וכרבי, challenged at once in step 5 (rule 5) Source: Yevamot 25a.
+  - was: מסקנא
+  - now: מימרא
+- **Yevamot 25a, step 29** (hebrewStepName): וכי תימא... והאמר רב מנשה continues the challenge of step 28 Source: Yevamot 25a.
+  - was: דחיה
+  - now: קשיא
+- **Yevamot 25a, step 29** (title): title names a Rejection Source: Yevamot 25a.
+  - was: Rejecting the idea
+  - now: Blocking the idea
+- **Yevamot 25a, step 29** (relationToPreviousStep): relation names a Rejection Source: Yevamot 25a.
+  - was: begins rejecting it
+  - now: begins knocking it out
+- **Yevamot 27b, step 15** (hebrewStepName): חולצות קתני answers the challenge of step 14 (why not answer otherwise) Source: Yevamot 27b.
+  - was: דחיה
+  - now: תירוץ
+- **Yevamot 27b, step 15** (relationToPreviousStep): relation names a Rejection Source: Yevamot 27b.
+  - was: Rejects the suggestion
+  - now: Answers the challenge
+- **Yevamot 27b, step 17** (hebrewStepName): הרי אלו קתני answers the challenge of step 16 Source: Yevamot 27b.
+  - was: דחיה
+  - now: תירוץ
+- **Yevamot 27b, step 17** (relationToPreviousStep): relation names a Rejection Source: Yevamot 27b.
+  - was: Rejects the suggestion
+  - now: Answers the challenge
+- **Yevamot 27b, step 19** (hebrewStepName): חולצות begins answering the challenge of step 18 Source: Yevamot 27b.
+  - was: דחיה
+  - now: תירוץ
+- **Yevamot 27b, step 19** (relationToPreviousStep): relation names a Rejection Source: Yevamot 27b.
+  - was: Begins rejecting the suggestion
+  - now: Begins answering the challenge
+- **Yevamot 2b, step 11** (hebrewStepName): אי הכי ליתני חמותו objects to the וכי תימא answer (step 10) Source: Yevamot 2b.
+  - was: דחיה
+  - now: קשיא
+- **Yevamot 2b, step 11** (relationToPreviousStep): relation names a Rejection Source: Yevamot 2b.
+  - was: Rejects
+  - now: Challenges
+- **Yevamot 2b, step 12** (hebrewStepName): ועוד: second objection to the same answer (not flagged, same window) Source: Yevamot 2b.
+  - was: דחיה
+  - now: קשיא
+- **Yevamot 2b, step 12** (relationToPreviousStep): relation names a Rejection Source: Yevamot 2b.
+  - was: second rejection of
+  - now: second challenge to
+- **Yevamot 32b, step 4** (hebrewStepName): הא איסור כולל הוא knocks out the וכי תימא defense (step 3) Source: Yevamot 32b.
+  - was: דחיה
+  - now: קשיא
+- **Yevamot 32b, step 4** (relationToPreviousStep): relation names a Rejection Source: Yevamot 32b.
+  - was: Rejects
+  - now: Challenges
+- **Yevamot 33b, step 12** (hebrewStepName): מתקיף לה רב אשי objects; no proof is pushed aside Source: Yevamot 33b.
+  - was: דחיה
+  - now: קשיא
+- **Yevamot 33b, step 12** (relationToPreviousStep): relation names a Rejection Source: Yevamot 33b.
+  - was: Rejects the problem
+  - now: Attacks the problem
+- **Yevamot 35a, step 13** (hebrewStepName): וכי תימא... והתנן continues אביי's challenge of step 12 Source: Yevamot 35a.
+  - was: דחיה
+  - now: קשיא
+- **Yevamot 38b, step 7** (hebrewStepName): שמע מינה closes the proof of steps 5-6 and is challenged at once in step 8 Source: Yevamot 38b.
+  - was: מסקנא
+  - now: ראיה
+- **Yevamot 38b, step 20** (hebrewStepName): שמע מינה completes the proof begun in step 19; step 21 asks about it at once Source: Yevamot 38b.
+  - was: מסקנא
+  - now: ראיה
+- **Yevamot 3a, step 15** (hebrewStepName): אלמה לא objects to the answer of step 14 Source: Yevamot 3a.
+  - was: דחיה
+  - now: קשיא
+- **Yevamot 3a, step 15** (relationToPreviousStep): relation names a Rejection Source: Yevamot 3a.
+  - was: Rejects
+  - now: Challenges
+- **Yevamot 40a, step 7** (hebrewStepName): objects to the suggestion of step 6 (וכי תימא) Source: Yevamot 40a.
+  - was: דחיה
+  - now: קשיא
+- **Yevamot 40a, step 7** (relationToPreviousStep): relation names a Rejection Source: Yevamot 40a.
+  - was: Rejects
+  - now: Challenges
+- **Yevamot 40a, step 29** (hebrewStepName): מידי יבום בנחלה תליא answers the challenge of step 28 Source: Yevamot 40a.
+  - was: דחיה
+  - now: תירוץ
+- **Yevamot 40a, step 29** (relationToPreviousStep): relation names a Rejection Source: Yevamot 40a.
+  - was: Rejects the suggestion
+  - now: Answers the challenge
+- **Yevamot 41b, step 16** (hebrewStepName): הכי השתא answers רב חיננא's challenge (steps 13-15) Source: Yevamot 41b.
+  - was: דחיה
+  - now: תירוץ
+- **Yevamot 41b, step 16** (relationToPreviousStep): relation names a Rejection Source: Yevamot 41b.
+  - was: Rejects the challenge
+  - now: Answers the challenge
+- **Yevamot 42a, step 2** (hebrewStepName): inference from the ברייתא's wording, challenged at once in step 3 Source: Yevamot 42a.
+  - was: מסקנא
+  - now: מימרא
+- **Yevamot 43a, step 7** (hebrewStepName): ומאי קושיא objects to the Response of step 6 (why the משנה is not a משנה); no proof involved Source: Yevamot 43a.
+  - was: דחיה
+  - now: קשיא
+- **Yevamot 43a, step 7** (relationToPreviousStep): relation names a Rejection Source: Yevamot 43a.
+  - was: Rejects
+  - now: Challenges
+- **Yevamot 43a, step 9** (hebrewStepName): אביי's ומאי קושיא objects to the second answer (step 8) Source: Yevamot 43a.
+  - was: דחיה
+  - now: קשיא
+- **Yevamot 43a, step 9** (relationToPreviousStep): relation names a Rejection Source: Yevamot 43a.
+  - was: Rejects
+  - now: Challenges
+- **Yevamot 43a, step 10** (hebrewStepName): רב פפא's parallel objection to step 8 (not flagged, same window) Source: Yevamot 43a.
+  - was: דחיה
+  - now: קשיא
+- **Yevamot 43b, step 7** (hebrewStepName): האי מאי קושיא answers the first part of the challenge of step 6 Source: Yevamot 43b.
+  - was: דחיה
+  - now: תירוץ
+- **Yevamot 43b, step 15** (hebrewStepName): הכי השתא answers the challenge of step 14 Source: Yevamot 43b.
+  - was: דחיה
+  - now: תירוץ
+- **Yevamot 43b, step 15** (relationToPreviousStep): relation names a Rejection Source: Yevamot 43b.
+  - was: Rejects
+  - now: Answers
+- **Yevamot 44a, step 33** (hebrewStepName): שמע מינה closes the proof begun in step 28 and is pushed aside at once in step 34 Source: Yevamot 44a.
+  - was: מסקנא
+  - now: ראיה
+- **Yevamot 44b, step 14** (hebrewStepName): completes the proof of steps 12-13; step 15 goes back to another objection Source: Yevamot 44b.
+  - was: מסקנא
+  - now: ראיה
+- **Yevamot 45a, step 7** (hebrewStepName): רב יוסף's רבותא למחשב גברי objects to רבי אמי's Response (step 6) Source: Yevamot 45a.
+  - was: דחיה
+  - now: קשיא
+- **Yevamot 45a, step 7** (relationToPreviousStep): relation names a Rejection Source: Yevamot 45a.
+  - was: Rejects
+  - now: Challenges
+- **Yevamot 45a, step 23** (hebrewStepName): inside the story שימי objects to רב's reply (rule 3) Source: Yevamot 45a.
+  - was: דחיה
+  - now: קשיא
+- **Yevamot 45a, step 23** (relationToPreviousStep): relation names a Rejection Source: Yevamot 45a.
+  - was: Rejects
+  - now: Challenges
+- **Yevamot 46a, step 29** (hebrewStepName): והתניא knocks out the וכי תימא answer (step 28) Source: Yevamot 46a.
+  - was: דחיה
+  - now: קשיא
+- **Yevamot 46a, step 30** (hebrewStepName): rest of the ברייתא quoted to attack in step 29 (rule 1; not flagged, same window) Source: Yevamot 46a.
+  - was: ראיה
+  - now: קשיא
+- **Yevamot 46a, step 30** (relationToPreviousStep): relation names a Rejection Source: Yevamot 46a.
+  - was: seals the rejection
+  - now: seals the challenge
+- **Yevamot 47a, step 21** (hebrewStepName): הלכתא ruling that is challenged straight away (והתניא כרבינא); a statement, not where the thread lands Source: Yevamot 47a.
+  - was: מסקנא
+  - now: מימרא
+- **Yevamot 48b, step 24** (hebrewStepName): וליטעמיך pushback on רב זביד's challenge, not pushing aside a proof Source: Yevamot 48b.
+  - was: דחיה
+  - now: קשיא
+- **Yevamot 54a, step 38** (hebrewStepName): רב אחא מדפתי answers רב אחא בריה דרב איקא's objection (אטו...), defending the pair Source: Yevamot 54a.
+  - was: דחיה
+  - now: תירוץ
+- **Yevamot 54b, step 9** (hebrewStepName): ודילמא answers the challenge of step 8 (why a hint is needed), not a rejection of a proof Source: Yevamot 54b.
+  - was: דחיה
+  - now: תירוץ
+- **Yevamot 54b, step 9** (relationToPreviousStep): relation named the wrong kind Source: Yevamot 54b.
+  - was: Rejects Step 8's claim
+  - now: Answers Step 8's claim
+- **Yevamot 54b, step 13** (hebrewStepName): objection to the answer of step 12 (בזכור? משכבי אשה כתיב), not pushing aside a proof Source: Yevamot 54b.
+  - was: דחיה
+  - now: קשיא
+- **Yevamot 54b, step 13** (relationToPreviousStep): relation named the wrong kind Source: Yevamot 54b.
+  - was: Rejects step 12's answer
+  - now: Challenges step 12's answer
+- **Yevamot 55a, step 15** (hebrewStepName): ת״ל settles the tie of steps 13-14 and is challenged straight away (ואימא...); end of the answer, not a landing Source: Yevamot 55a.
+  - was: מסקנא
+  - now: תירוץ
+- **Yevamot 55a, step 20** (hebrewStepName): ודילמא objects to the answer of step 19 (an inference), not a proof Source: Yevamot 55a.
+  - was: דחיה
+  - now: קשיא
+- **Yevamot 55a, step 20** (relationToPreviousStep): relation named the wrong kind Source: Yevamot 55a.
+  - was: Rejects the inference used in step 19
+  - now: Challenges the inference used in step 19
+- **Yevamot 55a, step 21** (hebrewStepName): second half (אי נמי) of the objection in step 20; same label Source: Yevamot 55a.
+  - was: דחיה
+  - now: קשיא
+- **Yevamot 55a, step 21** (relationToPreviousStep): relation named the wrong kind Source: Yevamot 55a.
+  - was: rejection in step 20
+  - now: challenge in step 20
+- **Yevamot 56b, step 15** (hebrewStepName): inference (אלמא) completing the second version's statement in step 14, which is challenged straight away Source: Yevamot 56b.
+  - was: מסקנא
+  - now: מימרא
+- **Yevamot 58a, step 18** (hebrewStepName): ושמע מינה is the end of the answer in step 17, challenged straight away by רבא Source: Yevamot 58a.
+  - was: מסקנא
+  - now: תשובה
+- **Yevamot 58b, step 3** (hebrewStepName): objection to the answer of step 2 (מידי הוא טעמא...), not pushing aside a proof Source: Yevamot 58b.
+  - was: דחיה
+  - now: קשיא
+- **Yevamot 58b, step 3** (title): title named the wrong kind Source: Yevamot 58b.
+  - was: Rejected:
+  - now: Challenged:
+- **Yevamot 58b, step 3** (relationToPreviousStep): relation named the wrong kind Source: Yevamot 58b.
+  - was: Rejects the answer of step 2
+  - now: Challenges the answer of step 2
+- **Yevamot 59b, step 5** (hebrewStepName): וכי תימא closing off a defense; strengthens אביי's challenge Source: Yevamot 59b.
+  - was: דחיה
+  - now: קשיא
+- **Yevamot 60b, step 37** (hebrewStepName): הכי השתא objects to the answer of step 36, not a proof Source: Yevamot 60b.
+  - was: דחיה
+  - now: קשיא
+- **Yevamot 60b, step 37** (relationToPreviousStep): relation named the wrong kind Source: Yevamot 60b.
+  - was: Rejects the comparison offered in step 36
+  - now: Challenges the comparison offered in step 36
+- **Yevamot 62a, step 26** (hebrewStepName): second half of the צריכא begun in step 25 takes the same label (rule 5) Source: Yevamot 62a.
+  - was: מסקנא
+  - now: תשובה
+- **Yevamot 66b, step 6** (hebrewStepName): ותסברא answers the challenge of step 5 (a renter is not fully responsible) Source: Yevamot 66b.
+  - was: דחיה
+  - now: תירוץ
+- **Yevamot 68a, step 18** (hebrewStepName): objection to the answer of step 17 (אי מההיא...), not a proof Source: Yevamot 68a.
+  - was: דחיה
+  - now: קשיא
+- **Yevamot 68a, step 18** (relationToPreviousStep): relation named the wrong kind Source: Yevamot 68a.
+  - was: Rejects step 17's answer
+  - now: Challenges step 17's answer
+- **Yevamot 68b, step 13** (hebrewStepName): objection (אלמה לא...) to the reasoning of step 12; step 14 answers it as a Resolution Source: Yevamot 68b.
+  - was: דחיה
+  - now: קשיא
+- **Yevamot 68b, step 13** (relationToPreviousStep): relation named the wrong kind Source: Yevamot 68b.
+  - was: Rejects the argument of step 12
+  - now: Challenges the argument of step 12
+- **Yevamot 6a, step 4** (hebrewStepName): והא תנא בעלמא קאי objects to the defense of step 3, not to a proof Source: Yevamot 6a.
+  - was: דחיה
+  - now: קשיא
+- **Yevamot 6a, step 4** (relationToPreviousStep): relation named the wrong kind Source: Yevamot 6a.
+  - was: Rejects the defense offered in step 3
+  - now: Challenges the defense offered in step 3
+- **Yevamot 6a, step 11** (hebrewStepName): וכי תימא ... והא תנא: closes off a defense and reinforces the challenge of step 10 Source: Yevamot 6a.
+  - was: דחיה
+  - now: קשיא
+- **Yevamot 70b, step 1** (hebrewStepName): אלמא ... closes the proof begun on 70a (step 33) and is challenged straight away in step 2 Source: Yevamot 70b.
+  - was: מסקנא
+  - now: ראיה
+- **Yevamot 72b, step 18** (hebrewStepName): answers the challenge of step 17 (התם משום דמאיס) Source: Yevamot 72b.
+  - was: דחיה
+  - now: תירוץ
+- **Yevamot 72b, step 18** (relationToPreviousStep): relation named the wrong kind Source: Yevamot 72b.
+  - was: Rejects the proof brought in Step 17
+  - now: Answers the challenge brought in Step 17
+- **Yevamot 74a, step 6** (hebrewStepName): בשלמא... objects to the וליטעמיך answer of step 5 and renews step 4's challenge; the push-off of the proof resumes in step 7 Source: Yevamot 74a.
+  - was: דחיה
+  - now: קשיא
+- **Yevamot 74a, step 6** (relationToPreviousStep): relation named the wrong kind Source: Yevamot 74a.
+  - was: Rejects the comparison in step 5
+  - now: Challenges the comparison in step 5
+- **Yevamot 75b, step 22** (hebrewStepName): רבא's opinion (מסתברא), continued in step 23; a statement, not a landing Source: Yevamot 75b.
+  - was: מסקנא
+  - now: מימרא
+- **Yevamot 75b, step 23** (hebrewStepName): second half of רבא's statement in step 22 (answering רב חסדא's reason), not pushing aside a proof Source: Yevamot 75b.
+  - was: דחיה
+  - now: מימרא
+- **Yevamot 76a, step 8** (hebrewStepName): אביי objects to רב יוסף's practical answer (אטו כולי עלמא...) Source: Yevamot 76a.
+  - was: דחיה
+  - now: קשיא
+- **Yevamot 76a, step 10** (hebrewStepName): רבא objects to אביי's alternative method Source: Yevamot 76a.
+  - was: דחיה
+  - now: קשיא
+- **Yevamot 76a, step 10** (relationToPreviousStep): relation named the wrong kind Source: Yevamot 76a.
+  - was: Rejects אביי's alternative method
+  - now: Challenges אביי's alternative method
+- **Yevamot 76a, step 28** (hebrewStepName): רבא retracts his own premise (הדר אמר... לאו מילתא היא); a statement, then challenged Source: Yevamot 76a.
+  - was: דחיה
+  - now: מימרא
+- **Yevamot 76b, step 4** (hebrewStepName): והא תניא knocks out the suggested defense of step 3; objection, not pushing aside a proof Source: Yevamot 76b.
+  - was: דחיה
+  - now: קשיא
+- **Yevamot 76b, step 9** (hebrewStepName): רב אשי answers רבינא's challenge (וליטעמיך ... מהא ליכא למשמע מינה) Source: Yevamot 76b.
+  - was: דחיה
+  - now: תירוץ
+- **Yevamot 76b, step 9** (relationToPreviousStep): relation named the wrong kind Source: Yevamot 76b.
+  - was: Rejects רבינא's implication
+  - now: Answers רבינא's implication
+- **Yevamot 78a, step 3** (hebrewStepName): objection to the answer of step 2 (דאי לא כתיב קרא) Source: Yevamot 78a.
+  - was: דחיה
+  - now: קשיא
+- **Yevamot 78a, step 3** (relationToPreviousStep): relation named the wrong kind Source: Yevamot 78a.
+  - was: Rejects the answer of step 2
+  - now: Challenges the answer of step 2
+- **Yevamot 7a, step 15** (hebrewStepName): מי דמי objects to the application in step 14, which is part of an answer, not a proof Source: Yevamot 7a.
+  - was: דחיה
+  - now: קשיא
+- **Yevamot 7a, step 15** (relationToPreviousStep): relation named the wrong kind Source: Yevamot 7a.
+  - was: Rejects the application made in step 14
+  - now: Challenges the application made in step 14
+- **Yevamot 82a, step 12** (hebrewStepName): בדותא היא dismisses רב אשי's answer; objection to an answer Source: Yevamot 82a.
+  - was: דחיה
+  - now: קשיא
+- **Yevamot 82a, step 12** (relationToPreviousStep): relation named the wrong kind Source: Yevamot 82a.
+  - was: Directly rejects the answer
+  - now: Directly challenges the answer
+- **Yevamot 82b, step 6** (hebrewStepName): לא, דלא נשקול רובו answers the challenge of steps 4-5 Source: Yevamot 82b.
+  - was: דחיה
+  - now: תירוץ
+- **Yevamot 82b, step 6** (relationToPreviousStep): relation named the wrong kind Source: Yevamot 82b.
+  - was: Rejects the reading proposed in step 5
+  - now: Answers step 5 by rejecting its reading
+- **Yevamot 82b, step 12** (hebrewStepName): אמרי, לא objects to the answer of step 11 and brings back the challenge Source: Yevamot 82b.
+  - was: דחיה
+  - now: קשיא
+- **Yevamot 82b, step 12** (relationToPreviousStep): relation named the wrong kind Source: Yevamot 82b.
+  - was: Rejects the answer of Step 11
+  - now: Challenges the answer of Step 11
+- **Yevamot 84a, step 14** (hebrewStepName): וכי תימא ... והא: proposes and knocks out an answer, reinforcing the challenge of step 13 Source: Yevamot 84a.
+  - was: דחיה
+  - now: קשיא
+- **Yevamot 84b, step 11** (hebrewStepName): objection to the answer of step 10; step 12 continues the objection Source: Yevamot 84b.
+  - was: דחיה
+  - now: קשיא
+- **Yevamot 84b, step 11** (relationToPreviousStep): relation named the wrong kind Source: Yevamot 84b.
+  - was: Rejects Step 10's proof
+  - now: Challenges Step 10's answer
+- **Yevamot 84b, step 20** (hebrewStepName): מידי איריא answers the challenge of step 19 Source: Yevamot 84b.
+  - was: דחיה
+  - now: תירוץ
+- **Yevamot 84b, step 20** (relationToPreviousStep): relation named the wrong kind Source: Yevamot 84b.
+  - was: Rejects the challenge in step 19
+  - now: Answers the challenge in step 19
+- **Yevamot 85a, step 22** (hebrewStepName): ואלא, התניא renews the challenge; step 23 answers it as a Resolution Source: Yevamot 85a.
+  - was: דחיה
+  - now: קשיא
+- **Yevamot 91b, step 19** (hebrewStepName): in the story, רב הונא objects to רב פפא's defense (rule 3) Source: Yevamot 91b.
+  - was: דחיה
+  - now: קשיא
+- **Yevamot 91b, step 19** (relationToPreviousStep): relation named the wrong kind Source: Yevamot 91b.
+  - was: Rejects רב פפא's defense
+  - now: Challenges רב פפא's defense
+- **Yevamot 92b, step 16** (hebrewStepName): ריש לקיש answers רבי יוחנן's challenge (the משנה may be רבי עקיבא); step 17 challenges it Source: Yevamot 92b.
+  - was: דחיה
+  - now: תירוץ
+- **Yevamot 92b, step 16** (relationToPreviousStep): relation named the wrong kind Source: Yevamot 92b.
+  - was: Rejects רבי יוחנן's proof
+  - now: Answers רבי יוחנן's challenge
+- **Yevamot 94a, step 5** (hebrewStepName): וכי תימא לא דק: closes off a defense, continuing the objections of steps 3-4 Source: Yevamot 94a.
+  - was: דחיה
+  - now: קשיא
+- **Yevamot 94b, step 9** (hebrewStepName): end of רב's push-aside of the proof (steps 7-8); second half takes the same label Source: Yevamot 94b.
+  - was: מסקנא
+  - now: דחיה
+- **Yevamot 95b, step 23** (hebrewStepName): אביי answers רב יוסף's challenge (ממאי... דלמא) Source: Yevamot 95b.
+  - was: דחיה
+  - now: תירוץ
+- **Yevamot 95b, step 24** (hebrewStepName): second, fallback answer to רב יוסף's challenge Source: Yevamot 95b.
+  - was: דחיה
+  - now: תירוץ
+
 ## 202611060553-rev116-labels-shas-l
 
 Approved: Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.
