@@ -10,7 +10,7 @@ How the site works and how to change it safely. Written Nov 5 2026 for David and
 | Hosting | Cloudflare (Workers + static assets), account owned by David | `wrangler.jsonc` configures it. Domains: gemaraclarity.org (main), gemaraclarity.com and www (both redirect). Workers Paid plan ($5/month, confirmed Nov 5 2026), so there is no daily request cap to hit. |
 | Visitor numbers | Cloudflare dashboard › Web Analytics | Cookie-free. |
 | Google Search | Google Search Console, domain property `gemaraclarity.org` (verified Nov 5 2026) | Verified by a TXT record `google-site-verification=…` in Cloudflare DNS. **Don't delete that record.** Sitemap submitted. |
-| Sign-in and synced data | Firebase project `gemara-clarity-accounts` | Google sign-in only. Each user's data is one document, `users/{uid}`. Firestore rules (checked Nov 5 2026): a signed-in user can read, write and delete only their own document, and writes must have exactly `schema`, `updatedAt` and `items`. |
+| Sign-in and synced data | Firebase project `gemara-clarity-accounts` | Google sign-in only; allowed sign-in addresses are gemaraclarity.org, course.gemaraclarity.org, localhost and Firebase's own (Tab's old test copy removed Nov 5 2026). Each user's data is one document, `users/{uid}`. Firestore rules (checked Nov 5 2026): a signed-in user can read, write and delete only their own document, and writes must have exactly `schema`, `updatedAt` and `items`. |
 | The Gemara text | Sefaria's public API, fetched by the browser | Credited on every page (William Davidson Edition, CC BY-NC 4.0). |
 | Old original app | gemara-clarity.netlify.app, Firebase project `gemara-clarity` | Left up on purpose. The new site no longer reads from it. |
 | Course site | course.gemaraclarity.org | The Worker passes it through to the course's own site on Tab hosting (`_worker/course-host.js`). Course sign-in uses two Worker secrets: `COURSE_ASSERTION_PRIVATE_JWK` and `COURSE_ASSERTION_EXTRA_PUBLIC_JWKS`. |
@@ -64,7 +64,6 @@ On this computer a push runs the check automatically and stops if something is b
 ## Open items (Nov 5 2026)
 
 - Bing Webmaster Tools: skipped by choice (Nov 5 2026). It can import the Google Search Console setup later.
-- Firebase › Authentication › Authorized domains still lists `gc-acct-test.sites.tab.bot` (Tab's old test copy); remove when David agrees.
 - About 20 more Classics need checking against the Gemara. All 113 summaries are still marked "not approved wording".
 - A rav should review the corrections in `docs/content-repairs.md` and the delicate passages.
 - Weekly Daf Yomi checks: Daf Yomi stays in Kodashim and Taharos until June 2027, where the AI makes the most mistakes.
