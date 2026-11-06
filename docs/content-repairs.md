@@ -2,6 +2,278 @@
 
 Every change to the AI-written content, newest first. Each entry says what was wrong, the source used, and who approved it.
 
+## 202611060543-rev109-labels-shas-e
+
+Approved: Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.
+
+- **Ketubot 110a, step 27** (hebrewStepName): רבא's objection (שתי תשובות) to the answer of step 26, not pushing aside a proof Source: Ketubot 110a.
+  - was: דחיה
+  - now: קשיא
+- **Ketubot 110a, step 27** (relationToPreviousStep): relation named the wrong kind Source: Ketubot 110a.
+  - was: Rejects the answer of step 26
+  - now: Challenges the answer of step 26
+- **Ketubot 111a, step 31** (hebrewStepName): continuation of רבי אבא בר ממל's challenge (neutralizing רבי אלעזר's verse) Source: Ketubot 111a.
+  - was: דחיה
+  - now: קשיא
+- **Ketubot 11a, step 17** (hebrewStepName): explains why אביי didn't use רבא's source; no proof is pushed aside Source: Ketubot 11a.
+  - was: דחיה
+  - now: מימרא
+- **Ketubot 11b, step 21** (hebrewStepName): רבא sides with the objection against the answer of step 20 Source: Ketubot 11b.
+  - was: דחיה
+  - now: קשיא
+- **Ketubot 11b, step 21** (relationToPreviousStep): relation named the wrong kind Source: Ketubot 11b.
+  - was: Rejects the narrow reading
+  - now: Challenges the narrow reading
+- **Ketubot 12a, step 23** (hebrewStepName): והא ... קתני objection to אביי's answer Source: Ketubot 12a.
+  - was: דחיה
+  - now: קשיא
+- **Ketubot 12a, step 23** (relationToPreviousStep): relation named the wrong kind Source: Ketubot 12a.
+  - was: Rejects אביי's answer
+  - now: Challenges אביי's answer
+- **Ketubot 13b, step 4** (hebrewStepName): והא ... קתני objection to the answer of step 3 Source: Ketubot 13b.
+  - was: דחיה
+  - now: קשיא
+- **Ketubot 13b, step 4** (relationToPreviousStep): relation named the wrong kind Source: Ketubot 13b.
+  - was: Rejects the answer of step 3
+  - now: Challenges the answer of step 3
+- **Ketubot 13b, step 7** (hebrewStepName): second half of the צריכותא begun in step 6 (מימרא) Source: Ketubot 13b.
+  - was: מסקנא
+  - now: מימרא
+- **Ketubot 13b, step 13** (hebrewStepName): רבי יהושע objects to the חכמים' distinction (an answer), not a proof Source: Ketubot 13b.
+  - was: דחיה
+  - now: קשיא
+- **Ketubot 13b, step 13** (relationToPreviousStep): relation named the wrong kind Source: Ketubot 13b.
+  - was: Rejects the majority-based distinction
+  - now: Challenges the majority-based distinction
+- **Ketubot 14a, step 4** (hebrewStepName): וליטעמיך counter-objection (rule 2) Source: Ketubot 14a.
+  - was: דחיה
+  - now: קשיא
+- **Ketubot 15a, step 12** (hebrewStepName): וכי תימא ... והא אמר objection to a suggested answer Source: Ketubot 15a.
+  - was: דחיה
+  - now: קשיא
+- **Ketubot 16a, step 17** (hebrewStepName): end of the answer of steps 15-16, then challenged in 18 Source: Ketubot 16a.
+  - was: מסקנא
+  - now: תשובה
+- **Ketubot 17a, step 12** (hebrewStepName): story: the sign from Heaven answers רבי זירא's criticism Source: Ketubot 17a.
+  - was: דחיה
+  - now: תירוץ
+- **Ketubot 21a, step 23** (hebrewStepName): the ruling is dropped after רבא's challenge: thread lands (rule 4) Source: Ketubot 21a.
+  - was: דחיה
+  - now: מסקנא
+- **Ketubot 21b, step 7** (hebrewStepName): שמע מינה תלת inference, immediately challenged by רב אשי Source: Ketubot 21b.
+  - was: מסקנא
+  - now: ראיה
+- **Ketubot 25b, step 16** (hebrewStepName): רבי אלעזר answers ריש לקיש's challenge Source: Ketubot 25b.
+  - was: דחיה
+  - now: תירוץ
+- **Ketubot 25b, step 16** (relationToPreviousStep): relation named the wrong kind Source: Ketubot 25b.
+  - was: Rejects ריש לקיש's demand
+  - now: Answers ריש לקיש's demand
+- **Ketubot 25b, step 24** (hebrewStepName): תסתיים closes the proof begun in step 21; challenged in 25 Source: Ketubot 25b.
+  - was: מסקנא
+  - now: ראיה
+- **Ketubot 26a, step 19** (hebrewStepName): הא אמר objection to the וכי תימא answer Source: Ketubot 26a.
+  - was: דחיה
+  - now: קשיא
+- **Ketubot 26a, step 19** (relationToPreviousStep): relation named the wrong kind Source: Ketubot 26a.
+  - was: Rejects the answer offered in step 18
+  - now: Challenges the answer offered in step 18
+- **Ketubot 27a, step 26** (hebrewStepName): הכי השתא answers the challenge of step 25 Source: Ketubot 27a.
+  - was: דחיה
+  - now: תירוץ
+- **Ketubot 29b, step 1** (hebrewStepName): end of the corrected-wording answer begun at 29a step 10 (תירוץ) Source: Ketubot 29b.
+  - was: מסקנא
+  - now: תירוץ
+- **Ketubot 31a, step 4** (hebrewStepName): הכי השתא answers the challenge of step 3 Source: Ketubot 31a.
+  - was: דחיה
+  - now: תירוץ
+- **Ketubot 36a, step 7** (hebrewStepName): והתניא objection to the suggested answer Source: Ketubot 36a.
+  - was: דחיה
+  - now: קשיא
+- **Ketubot 36a, step 7** (relationToPreviousStep): relation named the wrong kind Source: Ketubot 36a.
+  - was: Rejects step 6's suggested answer
+  - now: Challenges step 6's suggested answer
+- **Ketubot 36a, step 15** (hebrewStepName): answers the contradiction of step 14 Source: Ketubot 36a.
+  - was: דחיה
+  - now: תירוץ
+- **Ketubot 36a, step 15** (relationToPreviousStep): relation named the wrong kind Source: Ketubot 36a.
+  - was: Rejects the contradiction of step 14
+  - now: Answers the contradiction of step 14
+- **Ketubot 37b, step 11** (hebrewStepName): second half of the צריכא begun in step 10 (תירוץ) Source: Ketubot 37b.
+  - was: מסקנא
+  - now: תירוץ
+- **Ketubot 38a, step 2** (hebrewStepName): רבא objects to the answer of step 1 Source: Ketubot 38a.
+  - was: דחיה
+  - now: קשיא
+- **Ketubot 38a, step 2** (relationToPreviousStep): relation named the wrong kind Source: Ketubot 38a.
+  - was: Rejects the reason given in Step 1
+  - now: Challenges the reason given in Step 1
+- **Ketubot 38a, step 5** (hebrewStepName): רבא objects to רמי בר חמא's answer Source: Ketubot 38a.
+  - was: דחיה
+  - now: קשיא
+- **Ketubot 38a, step 5** (relationToPreviousStep): relation named the wrong kind Source: Ketubot 38a.
+  - was: Rejects רמי בר חמא's reason
+  - now: Challenges רמי בר חמא's reason
+- **Ketubot 39a, step 6** (hebrewStepName): הא אלא קאמר objection to the answer of step 5 Source: Ketubot 39a.
+  - was: דחיה
+  - now: קשיא
+- **Ketubot 39a, step 6** (relationToPreviousStep): relation named the wrong kind Source: Ketubot 39a.
+  - was: Rejects the answer offered in step 5
+  - now: Challenges the answer offered in step 5
+- **Ketubot 39b, step 6** (hebrewStepName): objection to the parable answer Source: Ketubot 39b.
+  - was: דחיה
+  - now: קשיא
+- **Ketubot 39b, step 6** (relationToPreviousStep): relation named the wrong kind Source: Ketubot 39b.
+  - was: Rejects the parable from step 5
+  - now: Challenges the parable from step 5
+- **Ketubot 39b, step 18** (hebrewStepName): explains why רבא did not say like אביי; no proof pushed aside Source: Ketubot 39b.
+  - was: דחיה
+  - now: מימרא
+- **Ketubot 40b, step 10** (hebrewStepName): וכי תימא ... לא ילפינן blocks a suggestion (rule 2) Source: Ketubot 40b.
+  - was: דחיה
+  - now: קשיא
+- **Ketubot 41a, step 26** (hebrewStepName): objection to the answer of step 25 Source: Ketubot 41a.
+  - was: דחיה
+  - now: קשיא
+- **Ketubot 41a, step 26** (relationToPreviousStep): relation named the wrong kind Source: Ketubot 41a.
+  - was: Rejects the answer given in Step 25
+  - now: Challenges the answer given in Step 25
+- **Ketubot 41b, step 10** (hebrewStepName): והלכתא ruling immediately challenged (תיובתא והלכתא?!) Source: Ketubot 41b.
+  - was: מסקנא
+  - now: מימרא
+- **Ketubot 42b, step 7** (hebrewStepName): רבה's own objection to his forced answer Source: Ketubot 42b.
+  - was: דחיה
+  - now: קשיא
+- **Ketubot 43a, step 15** (hebrewStepName): רבא objects to רבה בר עולא's answer Source: Ketubot 43a.
+  - was: דחיה
+  - now: קשיא
+- **Ketubot 43a, step 15** (relationToPreviousStep): relation named the wrong kind Source: Ketubot 43a.
+  - was: Rejects the answer of step 14
+  - now: Challenges the answer of step 14
+- **Ketubot 43b, step 24** (hebrewStepName): ולטעמיך counter-objection (rule 2) Source: Ketubot 43b.
+  - was: דחיה
+  - now: קשיא
+- **Ketubot 45a, step 7** (hebrewStepName): דלמא objection to רבא's answer Source: Ketubot 45a.
+  - was: דחיה
+  - now: קשיא
+- **Ketubot 45a, step 7** (relationToPreviousStep): relation named the wrong kind Source: Ketubot 45a.
+  - was: Rejects רבא's answer from step 6
+  - now: Challenges רבא's answer from step 6
+- **Ketubot 45b, step 7** (hebrewStepName): רבי אילעא's reply to רבי חנניא's challenge Source: Ketubot 45b.
+  - was: דחיה
+  - now: תירוץ
+- **Ketubot 47a, step 6** (hebrewStepName): פריך רב אחאי: objection to the answer of step 5 Source: Ketubot 47a.
+  - was: דחיה
+  - now: קשיא
+- **Ketubot 47a, step 6** (relationToPreviousStep): relation named the wrong kind Source: Ketubot 47a.
+  - was: Rejects the logical argument of step 5
+  - now: Challenges the logical argument of step 5
+- **Ketubot 53a, step 5** (hebrewStepName): story: יהודה objects to רב פפא's answer Source: Ketubot 53a.
+  - was: דחיה
+  - now: קשיא
+- **Ketubot 53a, step 5** (relationToPreviousStep): relation named the wrong kind Source: Ketubot 53a.
+  - was: Rejects the answer of step 4
+  - now: Challenges the answer of step 4
+- **Ketubot 53a, step 15** (hebrewStepName): הדר פשטה answers the question of step 14; challenged in 16 Source: Ketubot 53a.
+  - was: מסקנא
+  - now: תשובה
+- **Ketubot 53b, step 14** (hebrewStepName): רב חסדא objects to רב יוסף's reasoned answer Source: Ketubot 53b.
+  - was: דחיה
+  - now: קשיא
+- **Ketubot 53b, step 16** (hebrewStepName): second version: objection to רב יוסף's answer Source: Ketubot 53b.
+  - was: דחיה
+  - now: קשיא
+- **Ketubot 53b, step 16** (relationToPreviousStep): relation named the wrong kind Source: Ketubot 53b.
+  - was: Rejects the second-version answer
+  - now: Challenges the second-version answer
+- **Ketubot 54a, step 17** (hebrewStepName): ולית הלכתא ... ruling, immediately challenged in 18 Source: Ketubot 54a.
+  - was: מסקנא
+  - now: מימרא
+- **Ketubot 59a, step 22** (hebrewStepName): מתקיף רבי ירמיה: objection to רבי אלעאי's answer Source: Ketubot 59a.
+  - was: דחיה
+  - now: קשיא
+- **Ketubot 59a, step 22** (relationToPreviousStep): relation named the wrong kind Source: Ketubot 59a.
+  - was: Rejects רבי אלעאי's comparison
+  - now: Challenges רבי אלעאי's comparison
+- **Ketubot 60b, step 7** (hebrewStepName): story: רב יוסף objects to אביי's ruling Source: Ketubot 60b.
+  - was: דחיה
+  - now: קשיא
+- **Ketubot 66a, step 10** (hebrewStepName): answers רבא בר רב חנן's challenge (a horse can't be shamed) Source: Ketubot 66a.
+  - was: דחיה
+  - now: תירוץ
+- **Ketubot 68b, step 20** (hebrewStepName): ברייתא brought against the explanation of step 19 Source: Ketubot 68b.
+  - was: דחיה
+  - now: קשיא
+- **Ketubot 68b, step 20** (relationToPreviousStep): relation named the wrong kind Source: Ketubot 68b.
+  - was: Rejects the explanation offered in Step 19
+  - now: Challenges the explanation offered in Step 19
+- **Ketubot 6b, step 8** (hebrewStepName): אביי's לא answers רב יוסף's מיתיב Source: Ketubot 6b.
+  - was: דחיה
+  - now: תירוץ
+- **Ketubot 6b, step 8** (relationToPreviousStep): relation named the wrong kind Source: Ketubot 6b.
+  - was: Rejects רב יוסף's proof from step 7
+  - now: Answers רב יוסף's challenge from step 7
+- **Ketubot 70b, step 21** (hebrewStepName): objection to the answer of step 20 Source: Ketubot 70b.
+  - was: דחיה
+  - now: קשיא
+- **Ketubot 70b, step 21** (relationToPreviousStep): relation named the wrong kind Source: Ketubot 70b.
+  - was: Rejects the תירוץ of step 20
+  - now: Challenges the תירוץ of step 20
+- **Ketubot 71a, step 21** (hebrewStepName): consequence of the pairs answer of step 20; followed by challenge Source: Ketubot 71a.
+  - was: מסקנא
+  - now: תירוץ
+- **Ketubot 74a, step 7** (hebrewStepName): רבי יוחנן objects to ריש לקיש's definition Source: Ketubot 74a.
+  - was: דחיה
+  - now: קשיא
+- **Ketubot 74a, step 7** (relationToPreviousStep): relation named the wrong kind Source: Ketubot 74a.
+  - was: Rejects the definition given in step 6
+  - now: Challenges the definition given in step 6
+- **Ketubot 77b, step 27** (hebrewStepName): ולא היא answers רב אדא בר מתנא's jab Source: Ketubot 77b.
+  - was: דחיה
+  - now: תירוץ
+- **Ketubot 77b, step 27** (relationToPreviousStep): relation named the wrong kind Source: Ketubot 77b.
+  - was: Rejects רב אדא בר מתנא's criticism
+  - now: Answers רב אדא בר מתנא's criticism
+- **Ketubot 81a, step 7** (hebrewStepName): רבא objects to אביי's answer Source: Ketubot 81a.
+  - was: דחיה
+  - now: קשיא
+- **Ketubot 81a, step 7** (relationToPreviousStep): relation named the wrong kind Source: Ketubot 81a.
+  - was: Rejects the second 'side'
+  - now: Challenges the second 'side'
+- **Ketubot 83b, step 28** (hebrewStepName): וליטעמיך objection to the answer of step 27 Source: Ketubot 83b.
+  - was: דחיה
+  - now: קשיא
+- **Ketubot 83b, step 28** (relationToPreviousStep): relation named the wrong kind Source: Ketubot 83b.
+  - was: Rejects the 'obvious' answer
+  - now: Challenges the 'obvious' answer
+- **Ketubot 85a, step 19** (hebrewStepName): story ruling, immediately challenged in step 20 Source: Ketubot 85a.
+  - was: מסקנא
+  - now: מימרא
+- **Ketubot 85a, step 29** (hebrewStepName): completes רב פפי's attack (steps 27-28); then rejected in 30 Source: Ketubot 85a.
+  - was: מסקנא
+  - now: קשיא
+- **Ketubot 86b, step 5** (hebrewStepName): לא answers the אדרבה challenge of step 4 Source: Ketubot 86b.
+  - was: דחיה
+  - now: תירוץ
+- **Ketubot 86b, step 8** (hebrewStepName): לא answers the אדרבה challenge of step 7 Source: Ketubot 86b.
+  - was: דחיה
+  - now: תירוץ
+- **Ketubot 86b, step 8** (relationToPreviousStep): relation named the wrong kind Source: Ketubot 86b.
+  - was: Rejects the challenge of step 7
+  - now: Answers the challenge of step 7
+- **Ketubot 88b, step 3** (hebrewStepName): end of the statement of steps 1-2; challenged by רב ששת in 4 Source: Ketubot 88b.
+  - was: מסקנא
+  - now: מימרא
+- **Ketubot 88b, step 8** (hebrewStepName): end of רב ששת's answer (steps 5-8); challenged by אביי in 9 Source: Ketubot 88b.
+  - was: מסקנא
+  - now: תירוץ
+- **Ketubot 88b, step 12** (hebrewStepName): end of אביי's answer (steps 10-12); challenged by רב פפא in 13 Source: Ketubot 88b.
+  - was: מסקנא
+  - now: תירוץ
+- **Ketubot 89b, step 4** (hebrewStepName): second half of the rebuilt-משנה answer of step 3 Source: Ketubot 89b.
+  - was: מסקנא
+  - now: תירוץ
+
 ## 202611060311-rev108-arakhin-11-20
 
 Approved: Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.

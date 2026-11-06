@@ -1,0 +1,807 @@
+{
+ "name": "labels-shas-e",
+ "approved": "Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.",
+ "repairs": [
+  {
+   "id": "Ketubot_110_a",
+   "step": 27,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רבא's objection (שתי תשובות) to the answer of step 26, not pushing aside a proof",
+   "source": "Ketubot 110a"
+  },
+  {
+   "id": "Ketubot_110_a",
+   "step": 27,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the answer of step 26",
+   "replace": "Challenges the answer of step 26",
+   "why": "relation named the wrong kind",
+   "source": "Ketubot 110a"
+  },
+  {
+   "id": "Ketubot_111_a",
+   "step": 31,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "continuation of רבי אבא בר ממל's challenge (neutralizing רבי אלעזר's verse)",
+   "source": "Ketubot 111a"
+  },
+  {
+   "id": "Ketubot_11_a",
+   "step": 17,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "מימרא",
+   "why": "explains why אביי didn't use רבא's source; no proof is pushed aside",
+   "source": "Ketubot 11a"
+  },
+  {
+   "id": "Ketubot_11_b",
+   "step": 21,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רבא sides with the objection against the answer of step 20",
+   "source": "Ketubot 11b"
+  },
+  {
+   "id": "Ketubot_11_b",
+   "step": 21,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the narrow reading",
+   "replace": "Challenges the narrow reading",
+   "why": "relation named the wrong kind",
+   "source": "Ketubot 11b"
+  },
+  {
+   "id": "Ketubot_12_a",
+   "step": 23,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "והא ... קתני objection to אביי's answer",
+   "source": "Ketubot 12a"
+  },
+  {
+   "id": "Ketubot_12_a",
+   "step": 23,
+   "field": "relationToPreviousStep",
+   "find": "Rejects אביי's answer",
+   "replace": "Challenges אביי's answer",
+   "why": "relation named the wrong kind",
+   "source": "Ketubot 12a"
+  },
+  {
+   "id": "Ketubot_13_b",
+   "step": 4,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "והא ... קתני objection to the answer of step 3",
+   "source": "Ketubot 13b"
+  },
+  {
+   "id": "Ketubot_13_b",
+   "step": 4,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the answer of step 3",
+   "replace": "Challenges the answer of step 3",
+   "why": "relation named the wrong kind",
+   "source": "Ketubot 13b"
+  },
+  {
+   "id": "Ketubot_13_b",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "second half of the צריכותא begun in step 6 (מימרא)",
+   "source": "Ketubot 13b"
+  },
+  {
+   "id": "Ketubot_13_b",
+   "step": 13,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רבי יהושע objects to the חכמים' distinction (an answer), not a proof",
+   "source": "Ketubot 13b"
+  },
+  {
+   "id": "Ketubot_13_b",
+   "step": 13,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the majority-based distinction",
+   "replace": "Challenges the majority-based distinction",
+   "why": "relation named the wrong kind",
+   "source": "Ketubot 13b"
+  },
+  {
+   "id": "Ketubot_14_a",
+   "step": 4,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וליטעמיך counter-objection (rule 2)",
+   "source": "Ketubot 14a"
+  },
+  {
+   "id": "Ketubot_15_a",
+   "step": 12,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וכי תימא ... והא אמר objection to a suggested answer",
+   "source": "Ketubot 15a"
+  },
+  {
+   "id": "Ketubot_16_a",
+   "step": 17,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תשובה",
+   "why": "end of the answer of steps 15-16, then challenged in 18",
+   "source": "Ketubot 16a"
+  },
+  {
+   "id": "Ketubot_17_a",
+   "step": 12,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "story: the sign from Heaven answers רבי זירא's criticism",
+   "source": "Ketubot 17a"
+  },
+  {
+   "id": "Ketubot_21_a",
+   "step": 23,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "מסקנא",
+   "why": "the ruling is dropped after רבא's challenge: thread lands (rule 4)",
+   "source": "Ketubot 21a"
+  },
+  {
+   "id": "Ketubot_21_b",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "ראיה",
+   "why": "שמע מינה תלת inference, immediately challenged by רב אשי",
+   "source": "Ketubot 21b"
+  },
+  {
+   "id": "Ketubot_25_b",
+   "step": 16,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "רבי אלעזר answers ריש לקיש's challenge",
+   "source": "Ketubot 25b"
+  },
+  {
+   "id": "Ketubot_25_b",
+   "step": 16,
+   "field": "relationToPreviousStep",
+   "find": "Rejects ריש לקיש's demand",
+   "replace": "Answers ריש לקיש's demand",
+   "why": "relation named the wrong kind",
+   "source": "Ketubot 25b"
+  },
+  {
+   "id": "Ketubot_25_b",
+   "step": 24,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "ראיה",
+   "why": "תסתיים closes the proof begun in step 21; challenged in 25",
+   "source": "Ketubot 25b"
+  },
+  {
+   "id": "Ketubot_26_a",
+   "step": 19,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "הא אמר objection to the וכי תימא answer",
+   "source": "Ketubot 26a"
+  },
+  {
+   "id": "Ketubot_26_a",
+   "step": 19,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the answer offered in step 18",
+   "replace": "Challenges the answer offered in step 18",
+   "why": "relation named the wrong kind",
+   "source": "Ketubot 26a"
+  },
+  {
+   "id": "Ketubot_27_a",
+   "step": 26,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "הכי השתא answers the challenge of step 25",
+   "source": "Ketubot 27a"
+  },
+  {
+   "id": "Ketubot_29_b",
+   "step": 1,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "end of the corrected-wording answer begun at 29a step 10 (תירוץ)",
+   "source": "Ketubot 29b"
+  },
+  {
+   "id": "Ketubot_31_a",
+   "step": 4,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "הכי השתא answers the challenge of step 3",
+   "source": "Ketubot 31a"
+  },
+  {
+   "id": "Ketubot_36_a",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "והתניא objection to the suggested answer",
+   "source": "Ketubot 36a"
+  },
+  {
+   "id": "Ketubot_36_a",
+   "step": 7,
+   "field": "relationToPreviousStep",
+   "find": "Rejects step 6's suggested answer",
+   "replace": "Challenges step 6's suggested answer",
+   "why": "relation named the wrong kind",
+   "source": "Ketubot 36a"
+  },
+  {
+   "id": "Ketubot_36_a",
+   "step": 15,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "answers the contradiction of step 14",
+   "source": "Ketubot 36a"
+  },
+  {
+   "id": "Ketubot_36_a",
+   "step": 15,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the contradiction of step 14",
+   "replace": "Answers the contradiction of step 14",
+   "why": "relation named the wrong kind",
+   "source": "Ketubot 36a"
+  },
+  {
+   "id": "Ketubot_37_b",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "second half of the צריכא begun in step 10 (תירוץ)",
+   "source": "Ketubot 37b"
+  },
+  {
+   "id": "Ketubot_38_a",
+   "step": 2,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רבא objects to the answer of step 1",
+   "source": "Ketubot 38a"
+  },
+  {
+   "id": "Ketubot_38_a",
+   "step": 2,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the reason given in Step 1",
+   "replace": "Challenges the reason given in Step 1",
+   "why": "relation named the wrong kind",
+   "source": "Ketubot 38a"
+  },
+  {
+   "id": "Ketubot_38_a",
+   "step": 5,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רבא objects to רמי בר חמא's answer",
+   "source": "Ketubot 38a"
+  },
+  {
+   "id": "Ketubot_38_a",
+   "step": 5,
+   "field": "relationToPreviousStep",
+   "find": "Rejects רמי בר חמא's reason",
+   "replace": "Challenges רמי בר חמא's reason",
+   "why": "relation named the wrong kind",
+   "source": "Ketubot 38a"
+  },
+  {
+   "id": "Ketubot_39_a",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "הא אלא קאמר objection to the answer of step 5",
+   "source": "Ketubot 39a"
+  },
+  {
+   "id": "Ketubot_39_a",
+   "step": 6,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the answer offered in step 5",
+   "replace": "Challenges the answer offered in step 5",
+   "why": "relation named the wrong kind",
+   "source": "Ketubot 39a"
+  },
+  {
+   "id": "Ketubot_39_b",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objection to the parable answer",
+   "source": "Ketubot 39b"
+  },
+  {
+   "id": "Ketubot_39_b",
+   "step": 6,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the parable from step 5",
+   "replace": "Challenges the parable from step 5",
+   "why": "relation named the wrong kind",
+   "source": "Ketubot 39b"
+  },
+  {
+   "id": "Ketubot_39_b",
+   "step": 18,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "מימרא",
+   "why": "explains why רבא did not say like אביי; no proof pushed aside",
+   "source": "Ketubot 39b"
+  },
+  {
+   "id": "Ketubot_40_b",
+   "step": 10,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וכי תימא ... לא ילפינן blocks a suggestion (rule 2)",
+   "source": "Ketubot 40b"
+  },
+  {
+   "id": "Ketubot_41_a",
+   "step": 26,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objection to the answer of step 25",
+   "source": "Ketubot 41a"
+  },
+  {
+   "id": "Ketubot_41_a",
+   "step": 26,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the answer given in Step 25",
+   "replace": "Challenges the answer given in Step 25",
+   "why": "relation named the wrong kind",
+   "source": "Ketubot 41a"
+  },
+  {
+   "id": "Ketubot_41_b",
+   "step": 10,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "והלכתא ruling immediately challenged (תיובתא והלכתא?!)",
+   "source": "Ketubot 41b"
+  },
+  {
+   "id": "Ketubot_42_b",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רבה's own objection to his forced answer",
+   "source": "Ketubot 42b"
+  },
+  {
+   "id": "Ketubot_43_a",
+   "step": 15,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רבא objects to רבה בר עולא's answer",
+   "source": "Ketubot 43a"
+  },
+  {
+   "id": "Ketubot_43_a",
+   "step": 15,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the answer of step 14",
+   "replace": "Challenges the answer of step 14",
+   "why": "relation named the wrong kind",
+   "source": "Ketubot 43a"
+  },
+  {
+   "id": "Ketubot_43_b",
+   "step": 24,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "ולטעמיך counter-objection (rule 2)",
+   "source": "Ketubot 43b"
+  },
+  {
+   "id": "Ketubot_45_a",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "דלמא objection to רבא's answer",
+   "source": "Ketubot 45a"
+  },
+  {
+   "id": "Ketubot_45_a",
+   "step": 7,
+   "field": "relationToPreviousStep",
+   "find": "Rejects רבא's answer from step 6",
+   "replace": "Challenges רבא's answer from step 6",
+   "why": "relation named the wrong kind",
+   "source": "Ketubot 45a"
+  },
+  {
+   "id": "Ketubot_45_b",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "רבי אילעא's reply to רבי חנניא's challenge",
+   "source": "Ketubot 45b"
+  },
+  {
+   "id": "Ketubot_47_a",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "פריך רב אחאי: objection to the answer of step 5",
+   "source": "Ketubot 47a"
+  },
+  {
+   "id": "Ketubot_47_a",
+   "step": 6,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the logical argument of step 5",
+   "replace": "Challenges the logical argument of step 5",
+   "why": "relation named the wrong kind",
+   "source": "Ketubot 47a"
+  },
+  {
+   "id": "Ketubot_53_a",
+   "step": 5,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "story: יהודה objects to רב פפא's answer",
+   "source": "Ketubot 53a"
+  },
+  {
+   "id": "Ketubot_53_a",
+   "step": 5,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the answer of step 4",
+   "replace": "Challenges the answer of step 4",
+   "why": "relation named the wrong kind",
+   "source": "Ketubot 53a"
+  },
+  {
+   "id": "Ketubot_53_a",
+   "step": 15,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תשובה",
+   "why": "הדר פשטה answers the question of step 14; challenged in 16",
+   "source": "Ketubot 53a"
+  },
+  {
+   "id": "Ketubot_53_b",
+   "step": 14,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רב חסדא objects to רב יוסף's reasoned answer",
+   "source": "Ketubot 53b"
+  },
+  {
+   "id": "Ketubot_53_b",
+   "step": 16,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "second version: objection to רב יוסף's answer",
+   "source": "Ketubot 53b"
+  },
+  {
+   "id": "Ketubot_53_b",
+   "step": 16,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the second-version answer",
+   "replace": "Challenges the second-version answer",
+   "why": "relation named the wrong kind",
+   "source": "Ketubot 53b"
+  },
+  {
+   "id": "Ketubot_54_a",
+   "step": 17,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "ולית הלכתא ... ruling, immediately challenged in 18",
+   "source": "Ketubot 54a"
+  },
+  {
+   "id": "Ketubot_59_a",
+   "step": 22,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "מתקיף רבי ירמיה: objection to רבי אלעאי's answer",
+   "source": "Ketubot 59a"
+  },
+  {
+   "id": "Ketubot_59_a",
+   "step": 22,
+   "field": "relationToPreviousStep",
+   "find": "Rejects רבי אלעאי's comparison",
+   "replace": "Challenges רבי אלעאי's comparison",
+   "why": "relation named the wrong kind",
+   "source": "Ketubot 59a"
+  },
+  {
+   "id": "Ketubot_60_b",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "story: רב יוסף objects to אביי's ruling",
+   "source": "Ketubot 60b"
+  },
+  {
+   "id": "Ketubot_66_a",
+   "step": 10,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "answers רבא בר רב חנן's challenge (a horse can't be shamed)",
+   "source": "Ketubot 66a"
+  },
+  {
+   "id": "Ketubot_68_b",
+   "step": 20,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "ברייתא brought against the explanation of step 19",
+   "source": "Ketubot 68b"
+  },
+  {
+   "id": "Ketubot_68_b",
+   "step": 20,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the explanation offered in Step 19",
+   "replace": "Challenges the explanation offered in Step 19",
+   "why": "relation named the wrong kind",
+   "source": "Ketubot 68b"
+  },
+  {
+   "id": "Ketubot_6_b",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "אביי's לא answers רב יוסף's מיתיב",
+   "source": "Ketubot 6b"
+  },
+  {
+   "id": "Ketubot_6_b",
+   "step": 8,
+   "field": "relationToPreviousStep",
+   "find": "Rejects רב יוסף's proof from step 7",
+   "replace": "Answers רב יוסף's challenge from step 7",
+   "why": "relation named the wrong kind",
+   "source": "Ketubot 6b"
+  },
+  {
+   "id": "Ketubot_70_b",
+   "step": 21,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objection to the answer of step 20",
+   "source": "Ketubot 70b"
+  },
+  {
+   "id": "Ketubot_70_b",
+   "step": 21,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the תירוץ of step 20",
+   "replace": "Challenges the תירוץ of step 20",
+   "why": "relation named the wrong kind",
+   "source": "Ketubot 70b"
+  },
+  {
+   "id": "Ketubot_71_a",
+   "step": 21,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "consequence of the pairs answer of step 20; followed by challenge",
+   "source": "Ketubot 71a"
+  },
+  {
+   "id": "Ketubot_74_a",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רבי יוחנן objects to ריש לקיש's definition",
+   "source": "Ketubot 74a"
+  },
+  {
+   "id": "Ketubot_74_a",
+   "step": 7,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the definition given in step 6",
+   "replace": "Challenges the definition given in step 6",
+   "why": "relation named the wrong kind",
+   "source": "Ketubot 74a"
+  },
+  {
+   "id": "Ketubot_77_b",
+   "step": 27,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "ולא היא answers רב אדא בר מתנא's jab",
+   "source": "Ketubot 77b"
+  },
+  {
+   "id": "Ketubot_77_b",
+   "step": 27,
+   "field": "relationToPreviousStep",
+   "find": "Rejects רב אדא בר מתנא's criticism",
+   "replace": "Answers רב אדא בר מתנא's criticism",
+   "why": "relation named the wrong kind",
+   "source": "Ketubot 77b"
+  },
+  {
+   "id": "Ketubot_81_a",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רבא objects to אביי's answer",
+   "source": "Ketubot 81a"
+  },
+  {
+   "id": "Ketubot_81_a",
+   "step": 7,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the second 'side'",
+   "replace": "Challenges the second 'side'",
+   "why": "relation named the wrong kind",
+   "source": "Ketubot 81a"
+  },
+  {
+   "id": "Ketubot_83_b",
+   "step": 28,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וליטעמיך objection to the answer of step 27",
+   "source": "Ketubot 83b"
+  },
+  {
+   "id": "Ketubot_83_b",
+   "step": 28,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the 'obvious' answer",
+   "replace": "Challenges the 'obvious' answer",
+   "why": "relation named the wrong kind",
+   "source": "Ketubot 83b"
+  },
+  {
+   "id": "Ketubot_85_a",
+   "step": 19,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "story ruling, immediately challenged in step 20",
+   "source": "Ketubot 85a"
+  },
+  {
+   "id": "Ketubot_85_a",
+   "step": 29,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "קשיא",
+   "why": "completes רב פפי's attack (steps 27-28); then rejected in 30",
+   "source": "Ketubot 85a"
+  },
+  {
+   "id": "Ketubot_86_b",
+   "step": 5,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "לא answers the אדרבה challenge of step 4",
+   "source": "Ketubot 86b"
+  },
+  {
+   "id": "Ketubot_86_b",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "לא answers the אדרבה challenge of step 7",
+   "source": "Ketubot 86b"
+  },
+  {
+   "id": "Ketubot_86_b",
+   "step": 8,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the challenge of step 7",
+   "replace": "Answers the challenge of step 7",
+   "why": "relation named the wrong kind",
+   "source": "Ketubot 86b"
+  },
+  {
+   "id": "Ketubot_88_b",
+   "step": 3,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "end of the statement of steps 1-2; challenged by רב ששת in 4",
+   "source": "Ketubot 88b"
+  },
+  {
+   "id": "Ketubot_88_b",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "end of רב ששת's answer (steps 5-8); challenged by אביי in 9",
+   "source": "Ketubot 88b"
+  },
+  {
+   "id": "Ketubot_88_b",
+   "step": 12,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "end of אביי's answer (steps 10-12); challenged by רב פפא in 13",
+   "source": "Ketubot 88b"
+  },
+  {
+   "id": "Ketubot_89_b",
+   "step": 4,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "second half of the rebuilt-משנה answer of step 3",
+   "source": "Ketubot 89b"
+  }
+ ]
+}
