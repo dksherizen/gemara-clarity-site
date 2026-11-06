@@ -1171,6 +1171,9 @@ h3.am-fin{font-size:inherit;line-height:inherit}
 @media (max-width:759px){.clx-jump{-webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 28px),transparent);mask-image:linear-gradient(90deg,#000 calc(100% - 28px),transparent)}}
 .clx-chip{flex:none;display:inline-flex;align-items:center;gap:7px;min-height:36px;padding:5px 12px 5px 14px;border-radius:3px;border:1px solid var(--border);background:var(--panel);font-weight:700;font-size:14px;color:var(--text)}
 .clx-chip.on{border-color:color-mix(in srgb,var(--accent) 60%,var(--border));color:var(--accent)}
+.clx-kinds{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0 2px}
+.clx-kind[aria-pressed="true"]{border-color:var(--accent);background:color-mix(in srgb,var(--accent) 12%,var(--panel));color:var(--accent)}
+.clx-kind:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .clx-cn{font-size:12px;font-weight:700;color:var(--muted);background:var(--panel-2);border-radius:3px;padding:0 7px;min-width:22px;text-align:center;font-variant-numeric:tabular-nums}
 .clx-status{border:0;padding:0;margin:4px 4px 14px;font-size:13px;color:var(--faint)}
 .clx-seder{margin:0 0 12px;border-radius:3px;background:var(--panel);border:1px solid var(--border-2);box-shadow:none;scroll-margin-top:calc(var(--top-h) + 64px)}

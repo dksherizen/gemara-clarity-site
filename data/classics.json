@@ -66,7 +66,8 @@
    "order": 1,
    "reading": {
     "steps": 6
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "taa23a-honi",
@@ -95,7 +96,8 @@
    "order": 2,
    "reading": {
     "steps": 7
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "taa23a-honi-circle",
@@ -124,7 +126,8 @@
    "order": 3,
    "reading": {
     "steps": 11
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "shab31a-hillel",
@@ -153,7 +156,8 @@
    "order": 4,
    "reading": {
     "steps": 9
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "shab31a-onefoot",
@@ -182,7 +186,8 @@
    "order": 5,
    "reading": {
     "steps": 2
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "kid31a-dama",
@@ -211,7 +216,8 @@
    "order": 6,
    "reading": {
     "steps": 11
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "mak24a-akiva",
@@ -240,7 +246,8 @@
    "order": 79,
    "reading": {
     "steps": 12
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "shab88a-mountain",
@@ -269,7 +276,8 @@
    "order": 80,
    "reading": {
     "steps": 13
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "bm59b-achnai",
@@ -298,7 +306,8 @@
    "order": 197,
    "reading": {
     "steps": 34
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "ber61b-akiva",
@@ -327,7 +336,8 @@
    "order": 81,
    "reading": {
     "steps": 14
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "git55b-kamtza",
@@ -356,7 +366,8 @@
    "order": 199,
    "reading": {
     "steps": 48
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "bm84a-reishlakish",
@@ -385,7 +396,8 @@
    "order": 196,
    "reading": {
     "steps": 18
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "chag15a-acher",
@@ -414,7 +426,8 @@
    "order": 198,
    "reading": {
     "steps": 27
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "ber27b-gamliel",
@@ -443,7 +456,8 @@
    "order": 223,
    "reading": {
     "steps": 50
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "ber26b-prayers",
@@ -472,7 +486,8 @@
    "order": 227,
    "reading": {
     "steps": 16
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "ber35a-brachos",
@@ -501,7 +516,8 @@
    "order": 287,
    "reading": {
     "steps": 35
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "bm2a-shnayim",
@@ -530,7 +546,8 @@
    "order": 226,
    "reading": {
     "steps": 14
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "ber2a-shema",
@@ -559,7 +576,8 @@
    "order": 240,
    "reading": {
     "steps": 14
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "ber6a-tefillin",
@@ -588,7 +606,8 @@
    "order": 172,
    "reading": {
     "steps": 14
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "ber7a-godprays",
@@ -617,7 +636,8 @@
    "order": 122,
    "reading": {
     "steps": 5
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "bm21a-eilu",
@@ -646,7 +666,8 @@
    "order": 241,
    "reading": {
     "steps": 14
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "bb28a-chazakah",
@@ -675,7 +696,8 @@
    "order": 233,
    "reading": {
     "steps": 11
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "bb2a-mechitza",
@@ -704,7 +726,8 @@
    "order": 245,
    "reading": {
     "steps": 15
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "bm62a-chayecha",
@@ -733,7 +756,8 @@
    "order": 124,
    "reading": {
     "steps": 2
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "bm30b-lifnim",
@@ -762,7 +786,8 @@
    "order": 173,
    "reading": {
     "steps": 14
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "rh25a-calendar",
@@ -791,7 +816,8 @@
    "order": 222,
    "reading": {
     "steps": 38
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "eruvin13b-eilu",
@@ -820,7 +846,8 @@
    "order": 57,
    "reading": {
     "steps": 9
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "men29b-moshe",
@@ -849,7 +876,8 @@
    "order": 60,
    "reading": {
     "steps": 9
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "chag10a-nedarim",
@@ -878,7 +906,8 @@
    "order": 247,
    "reading": {
     "steps": 15
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "bb12a-chacham",
@@ -907,7 +936,8 @@
    "order": 166,
    "reading": {
     "steps": 12
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "bk2a-avos",
@@ -936,7 +966,8 @@
    "order": 246,
    "reading": {
     "steps": 15
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "bk46a-parah",
@@ -965,7 +996,8 @@
    "order": 250,
    "reading": {
     "steps": 16
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "bk20a-zehnehene",
@@ -994,7 +1026,8 @@
    "order": 282,
    "reading": {
     "steps": 30
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "bk83b-ayin",
@@ -1023,7 +1056,8 @@
    "order": 288,
    "reading": {
     "steps": 35
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "bb22b-gerama",
@@ -1052,7 +1086,8 @@
    "order": 229,
    "reading": {
     "steps": 5
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "shab2a-yetzios",
@@ -1081,7 +1116,8 @@
    "order": 231,
    "reading": {
     "steps": 6
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "shab73a-39",
@@ -1110,7 +1146,8 @@
    "order": 228,
    "reading": {
     "steps": 5
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "shab34b-bein",
@@ -1139,7 +1176,8 @@
    "order": 260,
    "reading": {
     "steps": 19
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "yoma85a-pikuach",
@@ -1168,7 +1206,8 @@
    "order": 254,
    "reading": {
     "steps": 17
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "shab21b-chanukah",
@@ -1197,7 +1236,8 @@
    "order": 89,
    "reading": {
     "steps": 11
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "pes2a-or",
@@ -1226,7 +1266,8 @@
    "order": 283,
    "reading": {
     "steps": 31
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "beitzah2a-egg",
@@ -1255,7 +1296,8 @@
    "order": 268,
    "reading": {
     "steps": 22
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "sukkah2a-twenty",
@@ -1284,7 +1326,8 @@
    "order": 259,
    "reading": {
     "steps": 18
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "meg7b-purim",
@@ -1313,7 +1356,8 @@
    "order": 20,
    "reading": {
     "steps": 4
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "kid2a-niknes",
@@ -1342,7 +1386,8 @@
    "order": 253,
    "reading": {
     "steps": 16
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "ket16b-kallah",
@@ -1371,7 +1416,8 @@
    "order": 243,
    "reading": {
     "steps": 14
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "ket62b-rachel",
@@ -1400,7 +1446,8 @@
    "order": 8,
    "reading": {
     "steps": 7
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "git90a-divorce",
@@ -1429,7 +1476,8 @@
    "order": 242,
    "reading": {
     "steps": 14
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "yev62b-students",
@@ -1458,7 +1506,8 @@
    "order": 41,
    "reading": {
     "steps": 7
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "san71a-sorer",
@@ -1487,7 +1536,8 @@
    "order": 249,
    "reading": {
     "steps": 15
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "san37a-nefesh",
@@ -1516,7 +1566,8 @@
    "order": 153,
    "reading": {
     "steps": 8
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "san74a-yehareg",
@@ -1545,7 +1596,8 @@
    "order": 258,
    "reading": {
     "steps": 19
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "makkot7a-chovlanis",
@@ -1574,7 +1626,8 @@
    "order": 264,
    "reading": {
     "steps": 20
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "beitzah12a-mitoch",
@@ -1603,7 +1656,8 @@
    "order": 235,
    "reading": {
     "steps": 11
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "kid42b-shaliach",
@@ -1632,7 +1686,8 @@
    "order": 230,
    "reading": {
     "steps": 6
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "git25a-bereirah",
@@ -1661,7 +1716,8 @@
    "order": 278,
    "reading": {
     "steps": 25
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "yev93a-shelo-ba",
@@ -1690,7 +1746,8 @@
    "order": 261,
    "reading": {
     "steps": 19
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "shab33b-rashbi",
@@ -1719,7 +1776,8 @@
    "order": 211,
    "reading": {
     "steps": 23
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "yoma9b-sinah",
@@ -1748,7 +1806,8 @@
    "order": 182,
    "reading": {
     "steps": 19
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "chag14b-pardes",
@@ -1777,7 +1836,8 @@
    "order": 30,
    "reading": {
     "steps": 6
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "az2a-nations",
@@ -1806,7 +1866,8 @@
    "order": 217,
    "reading": {
     "steps": 35
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "nid30b-womb",
@@ -1835,7 +1896,8 @@
    "order": 174,
    "reading": {
     "steps": 14
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "makkot23b-613",
@@ -1864,7 +1926,8 @@
    "order": 192,
    "reading": {
     "steps": 35
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "san90a-chelek",
@@ -1893,7 +1956,8 @@
    "order": 176,
    "reading": {
     "steps": 15
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "kid40b-talmud",
@@ -1922,7 +1986,8 @@
    "order": 50,
    "reading": {
     "steps": 8
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "men44a-tzitzis",
@@ -1951,7 +2016,8 @@
    "order": 63,
    "reading": {
     "steps": 9
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "chul7a-pinchas",
@@ -1980,7 +2046,8 @@
    "order": 70,
    "reading": {
     "steps": 10
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "bek8b-athens",
@@ -2009,7 +2076,8 @@
    "order": 225,
    "reading": {
     "steps": 63
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "tem16a-othniel",
@@ -2038,7 +2106,8 @@
    "order": 53,
    "reading": {
     "steps": 8
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "nid69b-alexandria",
@@ -2067,7 +2136,8 @@
    "order": 224,
    "reading": {
     "steps": 51
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "ber5b-visiting-sick",
@@ -2096,7 +2166,8 @@
    "order": 46,
    "reading": {
     "steps": 8
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "ber10a-beruriah",
@@ -2125,7 +2196,8 @@
    "order": 25,
    "reading": {
     "steps": 5
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "ber10a-hezekiah",
@@ -2154,7 +2226,8 @@
    "order": 110,
    "reading": {
     "steps": 17
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "ber28b-yochanan",
@@ -2183,7 +2256,8 @@
    "order": 14,
    "reading": {
     "steps": 6
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "ber62a-kahana",
@@ -2212,7 +2286,8 @@
    "order": 62,
    "reading": {
     "steps": 9
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "shab30b-david",
@@ -2241,7 +2316,8 @@
    "order": 76,
    "reading": {
     "steps": 10
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "eruvin21b-akiva-prison",
@@ -2270,7 +2346,8 @@
    "order": 49,
    "reading": {
     "steps": 8
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "yoma35b-hillel",
@@ -2299,7 +2376,8 @@
    "order": 103,
    "reading": {
     "steps": 14
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "yoma69b-yetzer",
@@ -2328,7 +2406,8 @@
    "order": 95,
    "reading": {
     "steps": 11
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "taan20a-ugly",
@@ -2357,7 +2436,8 @@
    "order": 52,
    "reading": {
     "steps": 8
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "taan25a-hanina",
@@ -2386,7 +2466,8 @@
    "order": 64,
    "reading": {
     "steps": 9
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "taan25a-elazar",
@@ -2415,7 +2496,8 @@
    "order": 90,
    "reading": {
     "steps": 11
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "taan25a-rain",
@@ -2444,7 +2526,8 @@
    "order": 55,
    "reading": {
     "steps": 8
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "sukkah28a-students",
@@ -2473,7 +2556,8 @@
    "order": 77,
    "reading": {
     "steps": 10
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "ket103b-rabbi-death",
@@ -2502,7 +2586,8 @@
    "order": 72,
    "reading": {
     "steps": 10
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "sotah12a-amram",
@@ -2531,7 +2616,8 @@
    "order": 23,
    "reading": {
     "steps": 4
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "sotah14a-imitate",
@@ -2560,7 +2646,8 @@
    "order": 150,
    "reading": {
     "steps": 7
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "bm83a-porters",
@@ -2589,7 +2676,8 @@
    "order": 47,
    "reading": {
     "steps": 8
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "bm85a-rabbi-suffering",
@@ -2618,7 +2706,8 @@
    "order": 29,
    "reading": {
     "steps": 6
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "bb10a-turnus",
@@ -2647,7 +2736,8 @@
    "order": 35,
    "reading": {
     "steps": 7
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "bb58a-banaah",
@@ -2676,7 +2766,8 @@
    "order": 68,
    "reading": {
     "steps": 10
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "bb73b-sea",
@@ -2705,7 +2796,8 @@
    "order": 44,
    "reading": {
     "steps": 8
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "sanh98a-moshiach",
@@ -2734,7 +2826,8 @@
    "order": 87,
    "reading": {
     "steps": 11
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "az10b-ketia",
@@ -2763,7 +2856,8 @@
    "order": 93,
    "reading": {
     "steps": 12
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "az18a-chanina",
@@ -2792,7 +2886,8 @@
    "order": 116,
    "reading": {
     "steps": 20
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "az17a-elazar",
@@ -2821,7 +2916,8 @@
    "order": 34,
    "reading": {
     "steps": 7
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "bb21a-schools",
@@ -2850,7 +2946,8 @@
    "order": 212,
    "reading": {
     "steps": 30
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "rh26a-kategor",
@@ -2879,7 +2976,8 @@
    "order": 266,
    "reading": {
     "steps": 21
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "bm21b-yeiush",
@@ -2908,7 +3006,8 @@
    "order": 276,
    "reading": {
     "steps": 26
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "ber56a-bar-hedya",
@@ -2937,7 +3036,8 @@
    "order": 219,
    "reading": {
     "steps": 35
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "ber58a-sheshet",
@@ -2966,7 +3066,8 @@
    "order": 59,
    "reading": {
     "steps": 9
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "ber58a-shila",
@@ -2995,7 +3096,8 @@
    "order": 84,
    "reading": {
     "steps": 11
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "tamid32a-alexander",
@@ -3024,7 +3126,8 @@
    "order": 220,
    "reading": {
     "steps": 37
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "chul7b-pinchas-rabbi",
@@ -3053,7 +3156,8 @@
    "order": 48,
    "reading": {
     "steps": 8
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "meilah17b-bentemalyon",
@@ -3082,7 +3186,8 @@
    "order": 115,
    "reading": {
     "steps": 19
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "men109b-chonyo",
@@ -3111,7 +3216,8 @@
    "order": 96,
    "reading": {
     "steps": 12
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "men64b-pig",
@@ -3140,7 +3246,8 @@
    "order": 15,
    "reading": {
     "steps": 3
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "zev101a-aharon",
@@ -3169,7 +3276,8 @@
    "order": 42,
    "reading": {
     "steps": 7
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "git57b-zechariah",
@@ -3198,7 +3306,8 @@
    "order": 36,
    "reading": {
     "steps": 7
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "kid81b-chiya-bar-ashi",
@@ -3227,7 +3336,8 @@
    "order": 19,
    "reading": {
     "steps": 4
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "ned40a-visiting",
@@ -3256,7 +3366,8 @@
    "order": 22,
    "reading": {
     "steps": 4
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "git6b-evyatar",
@@ -3285,7 +3396,8 @@
    "order": 18,
    "reading": {
     "steps": 4
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "sanh109a-nachum",
@@ -3314,7 +3426,8 @@
    "order": 40,
    "reading": {
     "steps": 7
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "ber3a-ruins",
@@ -3343,7 +3456,8 @@
    "order": 69,
    "reading": {
     "steps": 10
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "ber5a-yissurin",
@@ -3372,7 +3486,8 @@
    "order": 169,
    "reading": {
     "steps": 13
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "ber20a-miracles",
@@ -3401,7 +3516,8 @@
    "order": 28,
    "reading": {
     "steps": 6
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "ber32a-leaveme",
@@ -3430,7 +3546,8 @@
    "order": 144,
    "reading": {
     "steps": 7
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "ber32b-officer",
@@ -3459,7 +3576,8 @@
    "order": 31,
    "reading": {
     "steps": 6
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "ber34b-chanina",
@@ -3488,7 +3606,8 @@
    "order": 56,
    "reading": {
     "steps": 9
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "ber54a-og",
@@ -3517,7 +3636,8 @@
    "order": 189,
    "reading": {
     "steps": 27
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "ber60b-forgood",
@@ -3546,7 +3666,8 @@
    "order": 7,
    "reading": {
     "steps": 5
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "shab13b-yechezkel",
@@ -3575,7 +3696,8 @@
    "order": 51,
    "reading": {
     "steps": 8
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "shab23b-chanukah-shabbos",
@@ -3604,7 +3726,8 @@
    "order": 234,
    "reading": {
     "steps": 8
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "shab55a-seal",
@@ -3633,7 +3756,8 @@
    "order": 185,
    "reading": {
     "steps": 23
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "shab88b-angels",
@@ -3662,7 +3786,8 @@
    "order": 78,
    "reading": {
     "steps": 10
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "shab104a-alefbeis",
@@ -3691,7 +3816,8 @@
    "order": 188,
    "reading": {
     "steps": 24
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "shab119a-yosef",
@@ -3720,7 +3846,8 @@
    "order": 11,
    "reading": {
     "steps": 9
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "shab119b-angels",
@@ -3749,7 +3876,8 @@
    "order": 136,
    "reading": {
     "steps": 5
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "shab127a-guests",
@@ -3778,7 +3906,8 @@
    "order": 191,
    "reading": {
     "steps": 25
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "shab153a-repent",
@@ -3807,7 +3936,8 @@
    "order": 161,
    "reading": {
     "steps": 10
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "shab156a-mazal",
@@ -3836,7 +3966,8 @@
    "order": 119,
    "reading": {
     "steps": 20
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "eruvin2a-mavoi",
@@ -3865,7 +3996,8 @@
    "order": 284,
    "reading": {
     "steps": 32
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "eruvin53b-yehoshua",
@@ -3894,7 +4026,8 @@
    "order": 107,
    "reading": {
     "steps": 16
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "eruvin54b-preida",
@@ -3923,7 +4056,8 @@
    "order": 184,
    "reading": {
     "steps": 23
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "eruvin100b-cat",
@@ -3952,7 +4086,8 @@
    "order": 121,
    "reading": {
     "steps": 3
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "pes25a-redder",
@@ -3981,7 +4116,8 @@
    "order": 160,
    "reading": {
     "steps": 10
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "pes54a-twilight",
@@ -4010,7 +4146,8 @@
    "order": 139,
    "reading": {
     "steps": 6
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "pes65b-hillel",
@@ -4039,7 +4176,8 @@
    "order": 274,
    "reading": {
     "steps": 23
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "pes112a-akiva",
@@ -4068,7 +4206,8 @@
    "order": 132,
    "reading": {
     "steps": 4
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "pes116a-shame",
@@ -4097,7 +4236,8 @@
    "order": 248,
    "reading": {
     "steps": 15
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "rh2a-newyears",
@@ -4126,7 +4266,8 @@
    "order": 270,
    "reading": {
     "steps": 22
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "rh16b-books",
@@ -4155,7 +4296,8 @@
    "order": 157,
    "reading": {
     "steps": 9
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "rh18a-eli",
@@ -4184,7 +4326,8 @@
    "order": 148,
    "reading": {
     "steps": 7
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "rh28a-kavanah",
@@ -4213,7 +4356,8 @@
    "order": 257,
    "reading": {
     "steps": 19
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "yoma2a-separate",
@@ -4242,7 +4386,8 @@
    "order": 262,
    "reading": {
     "steps": 19
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "yoma23a-stabbing",
@@ -4271,7 +4416,8 @@
    "order": 92,
    "reading": {
     "steps": 11
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "yoma38a-nikanor",
@@ -4300,7 +4446,8 @@
    "order": 65,
    "reading": {
     "steps": 9
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "yoma38a-secrets",
@@ -4329,7 +4476,8 @@
    "order": 66,
    "reading": {
     "steps": 40
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "yoma39a-shimon",
@@ -4358,7 +4506,8 @@
    "order": 112,
    "reading": {
     "steps": 17
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "yoma54a-keruvim",
@@ -4387,7 +4536,8 @@
    "order": 175,
    "reading": {
     "steps": 14
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "yoma71b-shemaya",
@@ -4416,7 +4566,8 @@
    "order": 17,
    "reading": {
     "steps": 3
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "yoma86a-teshuvah",
@@ -4445,7 +4596,8 @@
    "order": 194,
    "reading": {
     "steps": 36
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "suk29b-stolen",
@@ -4474,7 +4626,8 @@
    "order": 256,
    "reading": {
     "steps": 18
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "suk45b-few",
@@ -4503,7 +4656,8 @@
    "order": 142,
    "reading": {
     "steps": 6
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "suk51a-simchah",
@@ -4532,7 +4686,8 @@
    "order": 108,
    "reading": {
     "steps": 16
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "suk52a-yetzer",
@@ -4561,7 +4716,8 @@
    "order": 145,
    "reading": {
     "steps": 6
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "suk53a-hillel",
@@ -4590,7 +4746,8 @@
    "order": 208,
    "reading": {
     "steps": 21
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "bei15b-eruv",
@@ -4619,7 +4776,8 @@
    "order": 238,
    "reading": {
     "steps": 12
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "bei15b-income",
@@ -4648,7 +4806,8 @@
    "order": 54,
    "reading": {
     "steps": 9
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "taa5b-tree",
@@ -4677,7 +4836,8 @@
    "order": 27,
    "reading": {
     "steps": 4
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "taa7a-vessel",
@@ -4706,7 +4866,8 @@
    "order": 10,
    "reading": {
     "steps": 5
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "taa21a-gamzu",
@@ -4735,7 +4896,8 @@
    "order": 82,
    "reading": {
     "steps": 15
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "taa22a-eliyahu",
@@ -4764,7 +4926,8 @@
    "order": 98,
    "reading": {
     "steps": 12
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "taa23b-yokrat",
@@ -4793,7 +4956,8 @@
    "order": 113,
    "reading": {
     "steps": 18
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "taa24b-chanina",
@@ -4822,7 +4986,8 @@
    "order": 13,
    "reading": {
     "steps": 9
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "taa29a-keys",
@@ -4851,7 +5016,8 @@
    "order": 24,
    "reading": {
     "steps": 4
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "meg2a-reading",
@@ -4880,7 +5046,8 @@
    "order": 291,
    "reading": {
     "steps": 41
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "meg3a-targum",
@@ -4909,7 +5076,8 @@
    "order": 94,
    "reading": {
     "steps": 12
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "meg9a-ptolemy",
@@ -4938,7 +5106,8 @@
    "order": 86,
    "reading": {
     "steps": 11
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "meg10b-purim1",
@@ -4967,7 +5136,8 @@
    "order": 201,
    "reading": {
     "steps": 8
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "meg12a-purim2",
@@ -4996,7 +5166,8 @@
    "order": 202,
    "reading": {
     "steps": 47
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "meg13a-purim3",
@@ -5025,7 +5196,8 @@
    "order": 203,
    "reading": {
     "steps": 44
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "meg13b-purim4",
@@ -5054,7 +5226,8 @@
    "order": 204,
    "reading": {
     "steps": 28
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "meg15b-purim5",
@@ -5083,7 +5256,8 @@
    "order": 205,
    "reading": {
     "steps": 24
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "meg15b-purim6",
@@ -5112,7 +5286,8 @@
    "order": 206,
    "reading": {
     "steps": 41
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "meg31a-humility",
@@ -5141,7 +5316,8 @@
    "order": 123,
    "reading": {
     "steps": 4
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "mk2a-watering",
@@ -5170,7 +5346,8 @@
    "order": 273,
    "reading": {
     "steps": 23
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "mk9a-blessings",
@@ -5199,7 +5376,8 @@
    "order": 120,
    "reading": {
     "steps": 20
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "mk16b-tzaddik",
@@ -5228,7 +5406,8 @@
    "order": 167,
    "reading": {
     "steps": 12
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "mk17a-maid",
@@ -5257,7 +5436,8 @@
    "order": 118,
    "reading": {
     "steps": 20
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "mk27b-mourning",
@@ -5286,7 +5466,8 @@
    "order": 128,
    "reading": {
     "steps": 3
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "mk28a-mazal",
@@ -5315,7 +5496,8 @@
    "order": 178,
    "reading": {
     "steps": 16
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "chag2a-reiyah",
@@ -5344,7 +5526,8 @@
    "order": 251,
    "reading": {
     "steps": 16
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "chag3a-hakhel",
@@ -5373,7 +5556,8 @@
    "order": 213,
    "reading": {
     "steps": 30
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "chag4b-wept",
@@ -5402,7 +5586,8 @@
    "order": 207,
    "reading": {
     "steps": 21
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "chag9b-101",
@@ -5431,7 +5616,8 @@
    "order": 131,
    "reading": {
     "steps": 4
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "yev2a-fifteen",
@@ -5460,7 +5646,8 @@
    "order": 279,
    "reading": {
     "steps": 27
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "yev16a-dosa",
@@ -5489,7 +5676,8 @@
    "order": 101,
    "reading": {
     "steps": 13
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "yev47a-convert",
@@ -5518,7 +5706,8 @@
    "order": 289,
    "reading": {
     "steps": 38
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "yev62b-joy",
@@ -5547,7 +5736,8 @@
    "order": 134,
    "reading": {
     "steps": 4
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "yev63a-difficult-wives",
@@ -5576,7 +5766,8 @@
    "order": 104,
    "reading": {
     "steps": 13
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "yev65b-peace",
@@ -5605,7 +5796,8 @@
    "order": 130,
    "reading": {
     "steps": 3
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "yev121a-plank",
@@ -5634,7 +5826,8 @@
    "order": 9,
    "reading": {
     "steps": 4
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "ket2a-wednesday",
@@ -5663,7 +5856,8 @@
    "order": 236,
    "reading": {
     "steps": 11
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "ket50a-fifth",
@@ -5692,7 +5886,8 @@
    "order": 138,
    "reading": {
     "steps": 6
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "ket66b-nakdimon",
@@ -5721,7 +5916,8 @@
    "order": 91,
    "reading": {
     "steps": 11
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "ket77b-knife",
@@ -5750,7 +5946,8 @@
    "order": 39,
    "reading": {
     "steps": 7
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "ket104a-maid",
@@ -5779,7 +5976,8 @@
    "order": 85,
    "reading": {
     "steps": 11
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "ket105b-bribe-words",
@@ -5808,7 +6006,8 @@
    "order": 88,
    "reading": {
     "steps": 11
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "ned2a-kinuyim",
@@ -5837,7 +6036,8 @@
    "order": 280,
    "reading": {
     "steps": 28
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "ned50a-straw",
@@ -5866,7 +6066,8 @@
    "order": 74,
    "reading": {
     "steps": 10
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "ned62a-lishmah",
@@ -5895,7 +6096,8 @@
    "order": 97,
    "reading": {
     "steps": 12
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "ned66b-lamps",
@@ -5924,7 +6126,8 @@
    "order": 16,
    "reading": {
     "steps": 3
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "ned81a-scholars-sons",
@@ -5953,7 +6156,8 @@
    "order": 164,
    "reading": {
     "steps": 11
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "naz2a-words",
@@ -5982,7 +6186,8 @@
    "order": 285,
    "reading": {
     "steps": 32
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "naz4b-shepherd",
@@ -6011,7 +6216,8 @@
    "order": 21,
    "reading": {
     "steps": 4
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "naz19b-helene",
@@ -6040,7 +6246,8 @@
    "order": 73,
    "reading": {
     "steps": 10
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "naz23b-lishmah",
@@ -6069,7 +6276,8 @@
    "order": 168,
    "reading": {
     "steps": 12
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "naz66a-peace",
@@ -6098,7 +6306,8 @@
    "order": 156,
    "reading": {
     "steps": 9
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "sot2a-warning",
@@ -6127,7 +6336,8 @@
    "order": 267,
    "reading": {
     "steps": 21
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "sot10b-tamar",
@@ -6156,7 +6366,8 @@
    "order": 171,
    "reading": {
     "steps": 13
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "sot11b-women",
@@ -6185,7 +6396,8 @@
    "order": 165,
    "reading": {
     "steps": 11
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "sot13a-bones",
@@ -6214,7 +6426,8 @@
    "order": 214,
    "reading": {
     "steps": 32
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "sot36b-yosef",
@@ -6243,7 +6456,8 @@
    "order": 158,
    "reading": {
     "steps": 9
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "git2a-bfanai",
@@ -6272,7 +6486,8 @@
    "order": 252,
    "reading": {
     "steps": 16
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "git36a-prozbul",
@@ -6301,7 +6516,8 @@
    "order": 275,
    "reading": {
     "steps": 24
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "git56b-titus",
@@ -6330,7 +6546,8 @@
    "order": 200,
    "reading": {
     "steps": 21
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "git57b-seven-sons",
@@ -6359,7 +6576,8 @@
    "order": 99,
    "reading": {
     "steps": 13
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "git58a-yishmael",
@@ -6388,7 +6606,8 @@
    "order": 26,
    "reading": {
     "steps": 5
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "git68a-shamir",
@@ -6417,7 +6636,8 @@
    "order": 216,
    "reading": {
     "steps": 34
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "kid29b-demon",
@@ -6446,7 +6666,8 @@
    "order": 58,
    "reading": {
     "steps": 9
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "kid30b-antidote",
@@ -6475,7 +6696,8 @@
    "order": 162,
    "reading": {
     "steps": 11
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "kid39b-reward",
@@ -6504,7 +6726,8 @@
    "order": 187,
    "reading": {
     "steps": 26
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "kid66a-yannai",
@@ -6533,7 +6756,8 @@
    "order": 32,
    "reading": {
     "steps": 6
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "mak2a-zomemim",
@@ -6562,7 +6786,8 @@
    "order": 277,
    "reading": {
     "steps": 27
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "mak10a-refuge",
@@ -6591,7 +6816,8 @@
    "order": 163,
    "reading": {
     "steps": 11
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "mak11a-mothers",
@@ -6620,7 +6846,8 @@
    "order": 100,
    "reading": {
     "steps": 13
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "bk30a-hazards",
@@ -6649,7 +6876,8 @@
    "order": 263,
    "reading": {
     "steps": 20
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "bk50a-nechunya",
@@ -6678,7 +6906,8 @@
    "order": 83,
    "reading": {
     "steps": 11
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "bk60b-barley",
@@ -6707,7 +6936,8 @@
    "order": 117,
    "reading": {
     "steps": 20
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "bk79b-ganav",
@@ -6736,7 +6966,8 @@
    "order": 255,
    "reading": {
     "steps": 18
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "bk117a-kahana",
@@ -6765,7 +6996,8 @@
    "order": 105,
    "reading": {
     "steps": 15
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "bm33a-aveidah",
@@ -6794,7 +7026,8 @@
    "order": 269,
    "reading": {
     "steps": 22
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "bm58b-onaah",
@@ -6823,7 +7056,8 @@
    "order": 190,
    "reading": {
     "steps": 27
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "bm83b-thieves",
@@ -6852,7 +7086,8 @@
    "order": 106,
    "reading": {
     "steps": 16
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "bm86a-rabbah",
@@ -6881,7 +7116,8 @@
    "order": 109,
    "reading": {
     "steps": 16
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "bm86b-calves",
@@ -6910,7 +7146,8 @@
    "order": 193,
    "reading": {
     "steps": 31
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "bm107b-ayin",
@@ -6939,7 +7176,8 @@
    "order": 179,
    "reading": {
     "steps": 18
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "bb3b-herod",
@@ -6968,7 +7206,8 @@
    "order": 215,
    "reading": {
     "steps": 32
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "bb8a-storehouses",
@@ -6997,7 +7236,8 @@
    "order": 71,
    "reading": {
     "steps": 10
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "bb10a-tzedakah",
@@ -7026,7 +7266,8 @@
    "order": 186,
    "reading": {
     "steps": 26
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "bb11a-monbaz",
@@ -7055,7 +7296,8 @@
    "order": 38,
    "reading": {
     "steps": 7
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "bb14b-sfarim",
@@ -7084,7 +7326,8 @@
    "order": 195,
    "reading": {
     "steps": 38
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "bb73b-desert",
@@ -7113,7 +7356,8 @@
    "order": 45,
    "reading": {
     "steps": 18
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "shvu2a-shtayim",
@@ -7142,7 +7386,8 @@
    "order": 290,
    "reading": {
     "steps": 39
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "shvu20b-zachor",
@@ -7171,7 +7416,8 @@
    "order": 237,
    "reading": {
     "steps": 12
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "shvu30b-sheker",
@@ -7200,7 +7446,8 @@
    "order": 181,
    "reading": {
     "steps": 19
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "shvu38b-trembled",
@@ -7229,7 +7476,8 @@
    "order": 177,
    "reading": {
     "steps": 15
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "san6a-compromise",
@@ -7258,7 +7506,8 @@
    "order": 286,
    "reading": {
     "steps": 33
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "san17a-eldad",
@@ -7287,7 +7536,8 @@
    "order": 210,
    "reading": {
     "steps": 23
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "san19a-yannai",
@@ -7316,7 +7566,8 @@
    "order": 61,
    "reading": {
     "steps": 9
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "san39b-drowning",
@@ -7345,7 +7596,8 @@
    "order": 141,
    "reading": {
     "steps": 6
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "san91a-blindlame",
@@ -7374,7 +7626,8 @@
    "order": 12,
    "reading": {
     "steps": 5
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "san94a-chizkiyahu",
@@ -7403,7 +7656,8 @@
    "order": 149,
    "reading": {
     "steps": 7
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "san101a-akiva-laughs",
@@ -7432,7 +7686,8 @@
    "order": 111,
    "reading": {
     "steps": 17
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "san102b-menashe",
@@ -7461,7 +7716,8 @@
    "order": 75,
    "reading": {
     "steps": 10
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "san106b-heart",
@@ -7490,7 +7746,8 @@
    "order": 133,
    "reading": {
     "steps": 4
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "az2b-sukkah",
@@ -7519,7 +7776,8 @@
    "order": 218,
    "reading": {
     "steps": 39
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "az10a-antoninus",
@@ -7548,7 +7806,8 @@
    "order": 209,
    "reading": {
     "steps": 22
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "az11a-onkelos",
@@ -7577,7 +7836,8 @@
    "order": 43,
    "reading": {
     "steps": 8
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "az19a-heart",
@@ -7606,7 +7866,8 @@
    "order": 135,
    "reading": {
     "steps": 5
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "az20b-ladder",
@@ -7635,7 +7896,8 @@
    "order": 127,
    "reading": {
     "steps": 3
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "az55a-zunin",
@@ -7664,7 +7926,8 @@
    "order": 37,
    "reading": {
     "steps": 7
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "hor2a-court",
@@ -7693,7 +7956,8 @@
    "order": 281,
    "reading": {
     "steps": 29
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "hor10a-servitude",
@@ -7722,7 +7986,8 @@
    "order": 170,
    "reading": {
     "steps": 13
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "hor10b-lishmah",
@@ -7751,7 +8016,8 @@
    "order": 152,
    "reading": {
     "steps": 8
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "hor12a-signs",
@@ -7780,7 +8046,8 @@
    "order": 137,
    "reading": {
     "steps": 6
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "hor13a-mamzer",
@@ -7809,7 +8076,8 @@
    "order": 140,
    "reading": {
     "steps": 6
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "hor14a-sinai",
@@ -7838,7 +8106,8 @@
    "order": 155,
    "reading": {
     "steps": 8
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "zev2a-wrong-purpose",
@@ -7867,7 +8136,8 @@
    "order": 244,
    "reading": {
     "steps": 14
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "zev116a-yisro",
@@ -7896,7 +8166,8 @@
    "order": 143,
    "reading": {
     "steps": 6
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "men43b-hundred",
@@ -7925,7 +8196,8 @@
    "order": 146,
    "reading": {
     "steps": 7
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "men53b-beloved",
@@ -7954,7 +8226,8 @@
    "order": 33,
    "reading": {
     "steps": 6
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "men99b-ben-damah",
@@ -7983,7 +8256,8 @@
    "order": 67,
    "reading": {
     "steps": 9
-   }
+   },
+   "kind": "short"
   },
   {
    "id": "men110a-learning-offerings",
@@ -8012,7 +8286,8 @@
    "order": 180,
    "reading": {
     "steps": 19
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "chul2a-who-slaughters",
@@ -8041,7 +8316,8 @@
    "order": 265,
    "reading": {
     "steps": 21
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "chul59b-emperor",
@@ -8070,7 +8346,8 @@
    "order": 102,
    "reading": {
     "steps": 14
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "chul60b-moon",
@@ -8099,7 +8376,8 @@
    "order": 159,
    "reading": {
     "steps": 10
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "chul89a-humility",
@@ -8128,7 +8406,8 @@
    "order": 151,
    "reading": {
     "steps": 8
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "chul142a-ladder",
@@ -8157,7 +8436,8 @@
    "order": 114,
    "reading": {
     "steps": 19
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "bek2a-donkey",
@@ -8186,7 +8466,8 @@
    "order": 272,
    "reading": {
     "steps": 23
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "arak2a-everyone",
@@ -8215,7 +8496,8 @@
    "order": 239,
    "reading": {
     "steps": 14
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "arak15a-spies",
@@ -8244,7 +8526,8 @@
    "order": 154,
    "reading": {
     "steps": 9
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "arak16b-rebuke",
@@ -8273,7 +8556,8 @@
    "order": 183,
    "reading": {
     "steps": 23
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "tem2a-substitution",
@@ -8302,7 +8586,8 @@
    "order": 271,
    "reading": {
     "steps": 22
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "ker2a-36-kareis",
@@ -8331,7 +8616,8 @@
    "order": 232,
    "reading": {
     "steps": 10
-   }
+   },
+   "kind": "halacha"
   },
   {
    "id": "ker6b-chelbenah",
@@ -8360,7 +8646,8 @@
    "order": 125,
    "reading": {
     "steps": 2
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "tamid32a-gan-eden",
@@ -8389,7 +8676,8 @@
    "order": 221,
    "reading": {
     "steps": 17
-   }
+   },
+   "kind": "story"
   },
   {
    "id": "nid16b-angel",
@@ -8418,7 +8706,8 @@
    "order": 147,
    "reading": {
     "steps": 7
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "nid31a-partners",
@@ -8447,7 +8736,8 @@
    "order": 129,
    "reading": {
     "steps": 3
-   }
+   },
+   "kind": "idea"
   },
   {
    "id": "nid73a-halachos",
@@ -8476,7 +8766,8 @@
    "order": 126,
    "reading": {
     "steps": 2
-   }
+   },
+   "kind": "idea"
   }
  ]
 }

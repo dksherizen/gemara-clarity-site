@@ -763,7 +763,7 @@ function modeBarHtml(m, i, mode){ // the compact chooser on every amud once a ch
 // A Classic is a selected passage with a clear start and end step (data/classics.json). It opens in Sugya Flow at its exact start
 // step (home3c: Classic-in-Ameilus was removed, Oct 16 2026). A range may run across several amudim; a two-part
 // Classic keeps its second part as its own entry (partOf), shown inside the first part's card. The 'source' fields are not shown.
-const CL_REV = "home3c-r3"; // raise this whenever data/classics.json changes, so every phone fetches the new list at once
+const CL_REV = "home3c-r4"; // raise this whenever data/classics.json changes, so every phone fetches the new list at once
 const clJSON = {};
 function clData(name){ return clJSON[name] || (clJSON[name] = cachedJSON(`data/${name}.json?v=${CL_REV}`, { ttl: 10*60e3, timeout: 8000 }).catch(() => { delete clJSON[name]; return null; })); }
 const dafIdx = (m, daf) => { const d = /^(\d+)([ab])$/.exec(daf); return idxOf(+d[1], d[2]); };
@@ -771,6 +771,8 @@ const clAt = p => ({ m: p.m, i: dafIdx(p.m, p.daf) });
 const clRange = it => it.start.daf === it.end.daf ? `${masName(it.start.m)} ${it.start.daf} · steps ${it.start.step}–${it.end.step}` : `${masName(it.start.m)} ${it.start.daf} step ${it.start.step} → ${it.end.daf} step ${it.end.step}`;
 const clName = it => it.title || it.question;
 const CL_VIEW = "gc-classics-view";
+const CL_KIND = "gc-classics-kind"; // the type filter on the Classics screen; each Classic's "kind" is set in data/classics.json
+const CL_KINDS = [["all", "All"], ["short", "Short stories"], ["story", "Longer stories"], ["idea", "Big ideas"], ["halacha", "Halacha"]];
 function clGo(it){
   const s = clAt(it.start);
   return `<div class="cl-go"><a class="btn primary" href="${hashFor(s.m, s.i, "/s" + it.start.step)}">Learn with Sugya Flow</a></div>`;
@@ -847,7 +849,7 @@ function clRow(it, C){
       ${x.background && x.background !== "None." && clClean(x.background) ? `<div><dt>Background</dt><dd>${px(dispNames(clClean(x.background)))}</dd></div>` : ""}</dl>
       ${clClean(x.excluded) ? `<p class="cl-ex">${px(dispNames(clClean(x.excluded)))}</p>` : ""}</details>`;
   const meta = x => [x.reading && x.reading.steps ? `${x.reading.steps} steps` : "", x.time || ""].filter(Boolean).join(" · ");
-  return `<article class="clx-row${it.draft ? " is-draft" : ""}" id="cl-${esc(it.id)}" data-q="${esc(clQ(it) + (nx ? " " + clQ(nx) : ""))}">
+  return `<article class="clx-row${it.draft ? " is-draft" : ""}" id="cl-${esc(it.id)}" data-k="${esc(it.kind || "")}" data-q="${esc(clQ(it) + (nx ? " " + clQ(nx) : ""))}">
     <div class="clx-top"><span class="clx-ref">${esc(clDafRange(it))}</span>${it.draft ? `<span class="clx-draft" title="From the draft list, still being checked">Draft</span>` : ""}</div>
     <h4 class="clx-t">${esc(clName(it))}</h4>
     <p class="clx-hook" dir="ltr">${bidiHe(clHook(it))}</p>
@@ -874,6 +876,7 @@ function clSederHtml(C){
 async function renderClassics(focusId){
   current = null; document.title = "Classics · Gemara Clarity"; setChrome(false);
   let view = "seder"; try { view = localStorage.getItem(CL_VIEW) === "level" ? "level" : "seder"; } catch {}
+  let kind = "all"; try { const k = localStorage.getItem(CL_KIND); if (CL_KINDS.some(x => x[0] === k)) kind = k; } catch {}
   $("#view").innerHTML = `<div class="cl-wrap clx">
       <header class="clx-head"><p class="clx-eyebrow">Classics</p><h1 class="cl-h">Famous sugyos to start with</h1>
       <p class="cl-intro">Each one is a selected passage with a clear start and end. Pick one and learn it step by step with Sugya Flow.</p></header>
@@ -881,6 +884,7 @@ async function renderClassics(focusId){
         <label class="clx-search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input type="search" id="clSearch" autocomplete="off" placeholder="Search a sugya, masechta or daf" aria-label="Search the Classics"></label>
         <div class="cl-seg" role="group" aria-label="Order"><button type="button" data-clv="seder" aria-pressed="${view === "seder"}">By Seder</button><button type="button" data-clv="level" aria-pressed="${view === "level"}">Suggested order</button></div>
       </div>
+      <div class="clx-kinds" role="group" aria-label="Show">${CL_KINDS.map(([k, name]) => `<button type="button" class="clx-chip clx-kind" data-kind="${k}" aria-pressed="${k === kind}">${name}<span class="clx-cn"></span></button>`).join("")}</div>
       <nav class="clx-jump" aria-label="Jump to a Seder"${view === "seder" ? "" : " hidden"}>${CL_SEDARIM.map(([sd]) => `<button type="button" class="clx-chip" data-jump-seder="${sd}">${sd}<span class="clx-cn"></span></button>`).join("")}</nav>
       <p class="cl-status clx-status">Selected passage; AI-generated explanations may contain mistakes. No haskama or rabbinic review.</p>
       <div id="clList" aria-busy="true"><div class="skel"></div><div class="skel"></div></div>
@@ -895,20 +899,22 @@ async function renderClassics(focusId){
       const items = C.items.filter(x => !x.partOf);
       list.innerHTML = (C.groups || []).map(g => {
         const its = items.filter(x => !x.draft && x.group === g.id).sort((a, b) => a.order - b.order), dr = items.filter(x => x.draft && x.group === g.id).sort((a, b) => a.order - b.order);
-        return its.length || dr.length ? `<section class="cl-theme">${g.id === "more" ? `<hr class="section-sep" aria-hidden="true">` : `<h2 class="section-h">${esc(g.name)}</h2>`}${g.intro ? `<p class="cl-gi">${esc(g.intro)}</p>` : ""}${its.map(it => classicCard(it, C).replace('<article class="cl-card"', `<article data-q="${esc(clQ(it))}" class="cl-card"`)).join("")}${dr.length ? `<div class="clx-rows clx-draftlist">${dr.map(it => clRow(it, C)).join("")}</div>` : ""}</section>` : "";
+        return its.length || dr.length ? `<section class="cl-theme">${g.id === "more" ? `<hr class="section-sep" aria-hidden="true">` : `<h2 class="section-h">${esc(g.name)}</h2>`}${g.intro ? `<p class="cl-gi">${esc(g.intro)}</p>` : ""}${its.map(it => classicCard(it, C).replace('<article class="cl-card"', `<article data-q="${esc(clQ(it))}" data-k="${esc(it.kind || "")}" class="cl-card"`)).join("")}${dr.length ? `<div class="clx-rows clx-draftlist">${dr.map(it => clRow(it, C)).join("")}</div>` : ""}</section>` : "";
       }).join("");
     }
-    $$(".clx-chip").forEach(b => { const s = $(`#sd-${b.dataset.jumpSeder}`); const n = s ? s.querySelectorAll(".clx-row").length : 0; $(".clx-cn", b).textContent = n; });
+    $$(".clx-jump .clx-chip").forEach(b => { const s = $(`#sd-${b.dataset.jumpSeder}`); const n = s ? s.querySelectorAll(".clx-row").length : 0; $(".clx-cn", b).textContent = n; });
     list.removeAttribute("aria-busy"); filter();
   };
   const filter = () => {
     const q = ($("#clSearch").value || "").trim().toLowerCase(), words = q.split(/\s+/).filter(Boolean);
-    let shown = 0;
-    $$("[data-q]", list).forEach(el => { const ok = words.every(w => el.dataset.q.includes(w)); el.hidden = !ok; if (ok) shown++; });
+    let shown = 0; const narrowed = words.length || kind !== "all"; const byKind = {};
+    $$("[data-q]", list).forEach(el => { const okq = words.every(w => el.dataset.q.includes(w)); if (okq) { byKind.all = (byKind.all || 0) + 1; byKind[el.dataset.k] = (byKind[el.dataset.k] || 0) + 1; }
+      const ok = okq && (kind === "all" || el.dataset.k === kind); el.hidden = !ok; if (ok) shown++; });
+    $$(".clx-kind").forEach(b => { $(".clx-cn", b).textContent = byKind[b.dataset.kind] || 0; }); // the type chips count what the search leaves
     $$(".clx-mas", list).forEach(s => { s.hidden = !s.querySelector("[data-q]:not([hidden])"); });
-    $$(".clx-seder", list).forEach(s => { const any = !!s.querySelector("[data-q]:not([hidden])"); s.hidden = words.length ? !any : false; if (words.length && any) s.open = true; }); // home3c: an empty Seder (Kodashim, Taharos) stays visible and says "No classics here yet"
+    $$(".clx-seder", list).forEach(s => { const any = !!s.querySelector("[data-q]:not([hidden])"); s.hidden = narrowed ? !any : false; if (narrowed && any) s.open = true; }); // home3c: an empty Seder (Kodashim, Taharos) stays visible and says "No classics here yet"
     $$(".cl-theme", list).forEach(s => { s.hidden = !s.querySelector("[data-q]:not([hidden])"); });
-    $$(".clx-chip").forEach(b => { const s = $(`#sd-${b.dataset.jumpSeder}`); $(".clx-cn", b).textContent = s ? s.querySelectorAll("[data-q]:not([hidden])").length : 0; }); // U5: chip counts follow the search
+    $$(".clx-jump .clx-chip").forEach(b => { const s = $(`#sd-${b.dataset.jumpSeder}`); $(".clx-cn", b).textContent = s ? s.querySelectorAll("[data-q]:not([hidden])").length : 0; }); // U5: chip counts follow the search
     $("#clEmpty").hidden = shown > 0;
   };
   const back = history.state && history.state.gcClassics; // D1: Back from a Classic's Learn, steps or continues link brings back the search, the open Seders and the scroll
@@ -921,11 +927,15 @@ async function renderClassics(focusId){
   }
   list.addEventListener("click", e => { const a = e.target.closest(".cl-go a, .cl-ctx a"), row = a && a.closest('[id^="cl-"]'); if (row) history.replaceState({ gcClassics: { q: $("#clSearch").value, open: $$(".clx-seder[open]", list).map(s => s.dataset.seder), y: scrollY } }, "", "#/classics/" + row.id.slice(3)); });
   $("#clSearch").addEventListener("input", filter);
+  $(".clx-kinds").addEventListener("click", e => { const b = e.target.closest("[data-kind]"); if (!b) return; kind = b.dataset.kind; try { localStorage.setItem(CL_KIND, kind); } catch {}
+    $$(".clx-kind").forEach(x => x.setAttribute("aria-pressed", x === b));
+    if (kind === "all" && !($("#clSearch").value || "").trim()) $$(".clx-seder", list).forEach(sd => { sd.open = false; }); // back to All: the Seders fold up again
+    filter(); });
   $(".clx-jump").addEventListener("click", e => {
     const b = e.target.closest("[data-jump-seder]"); if (!b) return;
     const s = $(`#sd-${b.dataset.jumpSeder}`); if (!s) return;
     if (s.hidden) { $("#clSearch").value = ""; filter(); } // home3c: a chip always lands on its Seder, even mid-search
-    s.open = true; $$(".clx-chip").forEach(c => c.classList.toggle("on", c === b));
+    s.open = true; $$(".clx-jump .clx-chip").forEach(c => c.classList.toggle("on", c === b));
     const top = ($("#topbar") || {}).offsetHeight || 0, bar = $(".clx-jump").offsetHeight || 0;
     scrollTo({ top: scrollY + s.getBoundingClientRect().top - top - bar - 8, behavior: "smooth" });
   });
