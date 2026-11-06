@@ -2,6 +2,470 @@
 
 Every change to the AI-written content, newest first. Each entry says what was wrong, the source used, and who approved it.
 
+## 202611060551-rev115-labels-shas-k
+
+Approved: Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.
+
+- **Sanhedrin 55a, step 4** (hebrewStepName): תניא דלא כתרוייהו: a ברייתא quoted to attack both views (rule 1) Source: Sanhedrin 55a.
+  - was: דחיה
+  - now: קשיא
+- **Sanhedrin 61a, step 3** (hebrewStepName): מתקיף לה רב פפא: a further objection, not pushing aside a proof Source: Sanhedrin 61a.
+  - was: דחיה
+  - now: קשיא
+- **Sanhedrin 61a, step 7** (hebrewStepName): וכי תימא… מהשתחואה נפקא: objects to a possible answer Source: Sanhedrin 61a.
+  - was: דחיה
+  - now: קשיא
+- **Sanhedrin 62a, step 18** (hebrewStepName): tries the statue case and knocks it down; continues the challenge of step 17 Source: Sanhedrin 62a.
+  - was: דחיה
+  - now: קשיא
+- **Sanhedrin 62b, step 8** (hebrewStepName): answers the challenge of step 7 (לא מיתוקמא…) Source: Sanhedrin 62b.
+  - was: דחיה
+  - now: תירוץ
+- **Sanhedrin 65b, step 10** (hebrewStepName): לא, דיתיב בין הפרקים: answers the challenge of step 9 Source: Sanhedrin 65b.
+  - was: דחיה
+  - now: תירוץ
+- **Sanhedrin 69a, step 9** (hebrewStepName): לא, לעולם…: answers the challenge of steps 7-8 Source: Sanhedrin 69a.
+  - was: דחיה
+  - now: תירוץ
+- **Sanhedrin 6a, step 2** (hebrewStepName): גברא אגברא קא רמית: answers the challenge of step 1 Source: Sanhedrin 6a.
+  - was: דחיה
+  - now: תירוץ
+- **Sanhedrin 75a, step 2** (hebrewStepName): הא בצנעה הא בפרהסיא: answers the challenge of step 1 Source: Sanhedrin 75a.
+  - was: דחיה
+  - now: תירוץ
+- **Sanhedrin 8a, step 20** (hebrewStepName): וכי תימא… והתניא: knocks out a possible defence Source: Sanhedrin 8a.
+  - was: דחיה
+  - now: קשיא
+- **Shabbat 115a, step 13** (hebrewStepName): אמר לך רב הונא: answers the refutation of steps 11-12 Source: Shabbat 115a.
+  - was: דחיה
+  - now: תירוץ
+- **Shabbat 121b, step 17** (hebrewStepName): רבי ירמיה answers רב יוסף's challenge (maybe the ברייתא is corrupt) Source: Shabbat 121b.
+  - was: דחיה
+  - now: תירוץ
+- **Shabbat 125b, step 8** (hebrewStepName): ולא היא: answers the challenge of step 7 Source: Shabbat 125b.
+  - was: דחיה
+  - now: תירוץ
+- **Shabbat 125b, step 10** (hebrewStepName): ולא היא: answers the challenge of step 9 Source: Shabbat 125b.
+  - was: דחיה
+  - now: תירוץ
+- **Shabbat 126b, step 6** (hebrewStepName): אביי answers רב עמרם's challenge from the משנה Source: Shabbat 126b.
+  - was: דחיה
+  - now: תירוץ
+- **Sanhedrin 61b, step 24** (hebrewStepName): objects to the answer of step 23 (if he accepted it, he is מזיד) Source: Sanhedrin 61b.
+  - was: דחיה
+  - now: קשיא
+- **Sanhedrin 63b, step 24** (hebrewStepName): רבא objects to the explanation (answer) in step 23 Source: Sanhedrin 63b.
+  - was: דחיה
+  - now: קשיא
+- **Sanhedrin 64a, step 23** (hebrewStepName): story: the בית מדרש objects to רב מנשה's defence (rule 3) Source: Sanhedrin 64a.
+  - was: דחיה
+  - now: קשיא
+- **Sanhedrin 71a, step 27** (hebrewStepName): רבי יונתן's eyewitness statement; nothing proven is pushed aside Source: Sanhedrin 71a.
+  - was: דחיה
+  - now: מימרא
+- **Sanhedrin 71a, step 32** (hebrewStepName): רבי יונתן's eyewitness statement; nothing proven is pushed aside Source: Sanhedrin 71a.
+  - was: דחיה
+  - now: מימרא
+- **Sanhedrin 71a, step 37** (hebrewStepName): רבי אליעזר ברבי צדוק's report that it happened; a statement, not pushing aside a proof Source: Sanhedrin 71a.
+  - was: דחיה
+  - now: מימרא
+- **Sanhedrin 86b, step 4** (hebrewStepName): וכי תימא… והא איתמר: objects to the suggested answer of step 3 Source: Sanhedrin 86b.
+  - was: דחיה
+  - now: קשיא
+- **Sanhedrin 94a, step 11** (hebrewStepName): story line: the request and the בת קול's refusal Source: Sanhedrin 94a.
+  - was: דחיה
+  - now: מימרא
+- **Sanhedrin 96b, step 25** (hebrewStepName): story: נבוכדנצר objects to the plan (rule 3) Source: Sanhedrin 96b.
+  - was: דחיה
+  - now: קשיא
+- **Sanhedrin 96b, step 27** (hebrewStepName): story: נבוכדנצר objects to the plan (rule 3) Source: Sanhedrin 96b.
+  - was: דחיה
+  - now: קשיא
+- **Sanhedrin 96b, step 29** (hebrewStepName): story: נבוכדנצר objects to the plan (rule 3) Source: Sanhedrin 96b.
+  - was: דחיה
+  - now: קשיא
+- **Sanhedrin 96b, step 31** (hebrewStepName): story: נבוכדנצר objects to the plan (rule 3) Source: Sanhedrin 96b.
+  - was: דחיה
+  - now: קשיא
+- **Sanhedrin 96b, step 33** (hebrewStepName): story: נבוכדנצר objects to the plan (rule 3) Source: Sanhedrin 96b.
+  - was: דחיה
+  - now: קשיא
+- **Shabbat 101b, step 7** (hebrewStepName): רב ספרא objects to רבא's answer Source: Shabbat 101b.
+  - was: דחיה
+  - now: קשיא
+- **Shabbat 102b, step 6** (hebrewStepName): אביי objects to רבי ירמיה's answer Source: Shabbat 102b.
+  - was: דחיה
+  - now: קשיא
+- **Shabbat 102b, step 8** (hebrewStepName): רב אחא בר יעקב objects to אביי's answer Source: Shabbat 102b.
+  - was: דחיה
+  - now: קשיא
+- **Shabbat 106b, step 8** (hebrewStepName): והא בית…: objects to the proposed answer of step 7 Source: Shabbat 106b.
+  - was: דחיה
+  - now: קשיא
+- **Shabbat 110a, step 9** (hebrewStepName): איכא דאמרי: objects to the answer of step 8 Source: Shabbat 110a.
+  - was: דחיה
+  - now: קשיא
+- **Shabbat 111b, step 14** (hebrewStepName): objects to the proposed answer of step 13 Source: Shabbat 111b.
+  - was: דחיה
+  - now: קשיא
+- **Shabbat 120a, step 18** (hebrewStepName): רבא objects to רב חסדא's answer Source: Shabbat 120a.
+  - was: דחיה
+  - now: קשיא
+- **Shabbat 120b, step 10** (hebrewStepName): objects to the suggested answer of step 9 Source: Shabbat 120b.
+  - was: דחיה
+  - now: קשיא
+- **Shabbat 120b, step 18** (hebrewStepName): ומי מצית אפכת לה? והאמר…: objects to the proposed answer Source: Shabbat 120b.
+  - was: דחיה
+  - now: קשיא
+- **Shabbat 123a, step 20** (hebrewStepName): רבא: מאן דקמותיב שפיר קמותיב: objects to אביי's answer Source: Shabbat 123a.
+  - was: דחיה
+  - now: קשיא
+- **Shabbat 130b, step 4** (hebrewStepName): ומי שרו? והתניא: objects to the proposed answer Source: Shabbat 130b.
+  - was: דחיה
+  - now: קשיא
+- **Shabbat 131a, step 4** (hebrewStepName): סוף סוף: objects to the answer of step 3 Source: Shabbat 131a.
+  - was: דחיה
+  - now: קשיא
+- **Shabbat 131a, step 6** (hebrewStepName): סוף סוף: objects to the answer of step 5 Source: Shabbat 131a.
+  - was: דחיה
+  - now: קשיא
+- **Shabbat 138b, step 24** (hebrewStepName): second half of the answer in step 23 (quotes רבא's reply to רב אדא); not pushing aside a proof Source: Shabbat 138b.
+  - was: דחיה
+  - now: תירוץ
+- **Sanhedrin 5a, step 11** (hebrewStepName): שמע מינה ends the proof of step 10 and is challenged at once Source: Sanhedrin 5a.
+  - was: מסקנא
+  - now: ראיה
+- **Sanhedrin 60b, step 19** (hebrewStepName): last line of the ברייתא (steps 16-19); the next step examines the ברייתא Source: Sanhedrin 60b.
+  - was: מסקנא
+  - now: מימרא
+- **Sanhedrin 61b, step 11** (hebrewStepName): שמע מינה ends רבא's proof begun in step 10 Source: Sanhedrin 61b.
+  - was: מסקנא
+  - now: ראיה
+- **Sanhedrin 62b, step 6** (hebrewStepName): sums up the challenge of steps 4-5 and is challenged at once Source: Sanhedrin 62b.
+  - was: מסקנא
+  - now: קשיא
+- **Sanhedrin 71a, step 10** (hebrewStepName): third part of the explanation in steps 8-9 Source: Sanhedrin 71a.
+  - was: מסקנא
+  - now: מימרא
+- **Sanhedrin 82b, step 7** (hebrewStepName): story line, followed by more of the story Source: Sanhedrin 82b.
+  - was: מסקנא
+  - now: מימרא
+- **Shabbat 101b, step 11** (hebrewStepName): end of the ברייתא brought as proof in step 9; challenged at once Source: Shabbat 101b.
+  - was: מסקנא
+  - now: ראיה
+- **Shabbat 113a, step 22** (hebrewStepName): איתמר answers the question of step 20; challenged at once Source: Shabbat 113a.
+  - was: מסקנא
+  - now: תשובה
+- **Shabbat 116b, step 11** (hebrewStepName): end of the corrected-version answer (steps 9-10) Source: Shabbat 116b.
+  - was: מסקנא
+  - now: תירוץ
+- **Shabbat 127b, step 19** (hebrewStepName): end of the story labelled ראיה in steps 14-18 Source: Shabbat 127b.
+  - was: מסקנא
+  - now: ראיה
+- **Shabbat 132b, step 9** (hebrewStepName): second half of the answer begun in step 8; challenged at once Source: Shabbat 132b.
+  - was: מסקנא
+  - now: תשובה
+- **Shabbat 132b, step 15** (hebrewStepName): end of רבא's answer (steps 13-14) Source: Shabbat 132b.
+  - was: מסקנא
+  - now: תירוץ
+- **Shabbat 134a, step 7** (hebrewStepName): inference from the story backs אביי's challenge (step 3); answered in step 8 Source: Shabbat 134a.
+  - was: מסקנא
+  - now: קשיא
+- **Sanhedrin 86a, step 18** (hebrewStepName): ולא פליגי with no challenge before it Source: Sanhedrin 86a.
+  - was: תירוץ
+  - now: מימרא
+- **Sanhedrin 65b, step 10** (relationToPreviousStep): relation named the wrong kind Source: Sanhedrin 65b.
+  - was: Rejects the proof in Step 9
+  - now: Answers the challenge in Step 9
+- **Sanhedrin 6a, step 2** (relationToPreviousStep): relation named the wrong kind Source: Sanhedrin 6a.
+  - was: Rejects the challenge of step 1
+  - now: Answers the challenge of step 1
+- **Sanhedrin 75a, step 2** (relationToPreviousStep): relation named the wrong kind Source: Sanhedrin 75a.
+  - was: Rejects the proof brought in step 1
+  - now: Answers the challenge brought in step 1
+- **Shabbat 125b, step 8** (relationToPreviousStep): relation named the wrong kind Source: Shabbat 125b.
+  - was: Rejects the challenge in step 7
+  - now: Answers the challenge in step 7
+- **Shabbat 144b, step 10** (hebrewStepName): מידי איריא objects to the Resolution in step 9, not pushing aside a proof Source: Shabbat 144b.
+  - was: דחיה
+  - now: קשיא
+- **Shabbat 144b, step 23** (hebrewStepName): אלמא קסבר is the inference inside רב חסדא's statement, challenged at once in step 24 (rule 5) Source: Shabbat 144b.
+  - was: מסקנא
+  - now: מימרא
+- **Shabbat 145b, step 30** (hebrewStepName): in the story רבי יוחנן objects to the students' answers (rule 3); no proof is pushed aside Source: Shabbat 145b.
+  - was: דחיה
+  - now: קשיא
+- **Shabbat 145b, step 30** (relationToPreviousStep): match the new label Source: Shabbat 145b.
+  - was: Rejects all four
+  - now: Objects to all four
+- **Shabbat 14b, step 14** (hebrewStepName): וכי תימא… והאמר objects to a suggested answer (rule 2) Source: Shabbat 14b.
+  - was: דחיה
+  - now: קשיא
+- **Shabbat 14b, step 14** (title): match the new label Source: Shabbat 14b.
+  - was: Rejected:
+  - now: Objection:
+- **Shabbat 14b, step 14** (relationToPreviousStep): match the new label Source: Shabbat 14b.
+  - was: Rejects the suggested
+  - now: Challenges the suggested
+- **Shabbat 14b, step 16** (hebrewStepName): והאמר אילפא objects to the suggested answer of step 15 (rule 2) Source: Shabbat 14b.
+  - was: דחיה
+  - now: קשיא
+- **Shabbat 14b, step 16** (title): match the new label Source: Shabbat 14b.
+  - was: Rejected:
+  - now: Objection:
+- **Shabbat 14b, step 16** (relationToPreviousStep): match the new label Source: Shabbat 14b.
+  - was: Rejects the answer
+  - now: Challenges the answer
+- **Shabbat 150b, step 17** (hebrewStepName): וכי תימא… והאמר blocks an answer and so continues the challenge of step 16 Source: Shabbat 150b.
+  - was: דחיה
+  - now: קשיא
+- **Shabbat 150b, step 18** (hebrewStepName): second וכי תימא in the same challenge, like step 17 Source: Shabbat 150b.
+  - was: דחיה
+  - now: קשיא
+- **Shabbat 150b, step 18** (relationToPreviousStep): match the new label Source: Shabbat 150b.
+  - was: Rejects the next
+  - now: Blocks the next
+- **Shabbat 152b, step 19** (hebrewStepName): in the story רב אחאי answers רב נחמן's challenge (rule 3) Source: Shabbat 152b.
+  - was: דחיה
+  - now: תירוץ
+- **Shabbat 153a, step 11** (hebrewStepName): ולא פליגי with no challenge before it Source: Shabbat 153a.
+  - was: תירוץ
+  - now: מימרא
+- **Shabbat 153b, step 32** (hebrewStepName): לא… answers רבא's refutation (a Challenge), not a proof Source: Shabbat 153b.
+  - was: דחיה
+  - now: תירוץ
+- **Shabbat 153b, step 32** (title): match the new label Source: Shabbat 153b.
+  - was: Rejecting the second
+  - now: Answering the second
+- **Shabbat 153b, step 32** (relationToPreviousStep): match the new label Source: Shabbat 153b.
+  - was: Rejects the inference
+  - now: Answers the inference
+- **Shabbat 155b, step 6** (hebrewStepName): answers the תא שמע challenge of step 5 Source: Shabbat 155b.
+  - was: דחיה
+  - now: תירוץ
+- **Shabbat 155b, step 6** (relationToPreviousStep): match the new label Source: Shabbat 155b.
+  - was: Rejects the proof of step 5
+  - now: Answers the challenge of step 5
+- **Shabbat 17b, step 5** (hebrewStepName): אלא אמר רבא… extends רבא's challenge of step 4 against רבי חנינא's reason Source: Shabbat 17b.
+  - was: דחיה
+  - now: קשיא
+- **Shabbat 19b, step 6** (hebrewStepName): ורבי אלעזר אמר לך objects to the Response of step 5 with a ברייתא; step 7 resolves it Source: Shabbat 19b.
+  - was: דחיה
+  - now: קשיא
+- **Shabbat 19b, step 6** (relationToPreviousStep): match the new label Source: Shabbat 19b.
+  - was: Rejects the honey
+  - now: Challenges the honey
+- **Shabbat 21a, step 13** (hebrewStepName): רבה answers אביי's challenge (אדמותבת לי… סייעיה) Source: Shabbat 21a.
+  - was: דחיה
+  - now: תירוץ
+- **Shabbat 22a, step 10** (hebrewStepName): רב יוסף answers שמואל's challenge to רב (with the blood analogy) Source: Shabbat 22a.
+  - was: דחיה
+  - now: תירוץ
+- **Shabbat 22a, step 10** (relationToPreviousStep): match the new label Source: Shabbat 22a.
+  - was: Rejects שמואל
+  - now: Answers שמואל
+- **Shabbat 24b, step 1** (hebrewStepName): the ruling is challenged straight away in step 2, so it is not where the thread lands (rule 5) Source: Shabbat 24b.
+  - was: מסקנא
+  - now: מימרא
+- **Shabbat 26b, step 12** (hebrewStepName): טעמא דכתביה קרא is the end of the answer in step 11 and is followed by a new challenge Source: Shabbat 26b.
+  - was: מסקנא
+  - now: תירוץ
+- **Shabbat 27a, step 18** (hebrewStepName): ולאו קל וחומר הוא objects to the Resolution in step 17 (not a refutation of a קל וחומר) Source: Shabbat 27a.
+  - was: דחיה
+  - now: קשיא
+- **Shabbat 27a, step 18** (relationToPreviousStep): match the new label Source: Shabbat 27a.
+  - was: Rejects the defense
+  - now: Challenges the defense
+- **Shabbat 2b, step 6** (hebrewStepName): וכי תימא blocks an answer and continues the challenge of step 5 Source: Shabbat 2b.
+  - was: דחיה
+  - now: קשיא
+- **Shabbat 2b, step 6** (relationToPreviousStep): match the new label Source: Shabbat 2b.
+  - was: Rejects a possible
+  - now: Blocks a possible
+- **Shabbat 2b, step 19** (hebrewStepName): וליטעמיך is a counter-objection; step 20 answers it Source: Shabbat 2b.
+  - was: דחיה
+  - now: קשיא
+- **Shabbat 34a, step 5** (hebrewStepName): in the story רבי שמעון answers the elder's challenge (rule 3) Source: Shabbat 34a.
+  - was: דחיה
+  - now: תירוץ
+- **Shabbat 34a, step 5** (relationToPreviousStep): match the new label Source: Shabbat 34a.
+  - was: Rejects the mockery
+  - now: Answers the mockery
+- **Shabbat 40b, step 23** (hebrewStepName): שמע מינה תלת is an inference from the story, and the story is challenged next; not where the thread lands Source: Shabbat 40b.
+  - was: מסקנא
+  - now: ראיה
+- **Shabbat 45b, step 16** (hebrewStepName): רב יוסף's reading is challenged at once by אביי in step 17 (rule 5); no challenge before it to resolve Source: Shabbat 45b.
+  - was: מסקנא
+  - now: מימרא
+- **Shabbat 47a, step 6** (hebrewStepName): וכי תימא… והתניא blocks an answer and continues אביי's challenge Source: Shabbat 47a.
+  - was: דחיה
+  - now: קשיא
+- **Shabbat 47a, step 8** (hebrewStepName): רבא objects to אביי's answer (שתי תשובות בדבר), not a proof Source: Shabbat 47a.
+  - was: דחיה
+  - now: קשיא
+- **Shabbat 47a, step 8** (title): match the new label Source: Shabbat 47a.
+  - was: רבא rejects the
+  - now: רבא objects to the
+- **Shabbat 47a, step 8** (relationToPreviousStep): match the new label Source: Shabbat 47a.
+  - was: Rejects אביי
+  - now: Challenges אביי
+- **Shabbat 47a, step 14** (hebrewStepName): רב יהודה objects to the Response of step 13 from רב and שמואל Source: Shabbat 47a.
+  - was: דחיה
+  - now: קשיא
+- **Shabbat 55b, step 31** (hebrewStepName): אלא לאו שמע מינה ends the proof of steps 29-30 and is challenged at once in step 32 Source: Shabbat 55b.
+  - was: מסקנא
+  - now: ראיה
+- **Shabbat 56b, step 16** (hebrewStepName): אלא מעתה objects to the Resolution of step 15 Source: Shabbat 56b.
+  - was: דחיה
+  - now: קשיא
+- **Shabbat 56b, step 16** (relationToPreviousStep): match the new label Source: Shabbat 56b.
+  - was: Rejects the answer
+  - now: Challenges the answer
+- **Shabbat 57b, step 5** (hebrewStepName): וכי תימא continues אביי's challenge of step 4 Source: Shabbat 57b.
+  - was: דחיה
+  - now: קשיא
+- **Shabbat 58a, step 14** (hebrewStepName): לא, אידי ואידי… opens the new answer completed in step 15 (rule 5); nothing pushes aside a proof Source: Shabbat 58a.
+  - was: דחיה
+  - now: תירוץ
+- **Shabbat 59b, step 12** (hebrewStepName): a line of the story (רב's deduction), challenged at once in step 13 Source: Shabbat 59b.
+  - was: מסקנא
+  - now: מימרא
+- **Shabbat 5a, step 20** (hebrewStepName): איכפל תנא objects to the answers of steps 17-19 Source: Shabbat 5a.
+  - was: דחיה
+  - now: קשיא
+- **Shabbat 5a, step 20** (title): match the new label Source: Shabbat 5a.
+  - was: רבא rejects the
+  - now: רבא objects to the
+- **Shabbat 5a, step 20** (relationToPreviousStep): match the new label Source: Shabbat 5a.
+  - was: Rejects the approach
+  - now: Challenges the approach
+- **Shabbat 5b, step 4** (hebrewStepName): אימור… מי עבידי objects to applying רבא's answer to water Source: Shabbat 5b.
+  - was: דחיה
+  - now: קשיא
+- **Shabbat 5b, step 4** (relationToPreviousStep): match the new label Source: Shabbat 5b.
+  - was: Rejects applying
+  - now: Challenges applying
+- **Shabbat 60a, step 17** (hebrewStepName): the decree is the end of the answer to step 13 and is challenged at once in step 18 Source: Shabbat 60a.
+  - was: מסקנא
+  - now: תשובה
+- **Shabbat 61a, step 10** (hebrewStepName): אביי objects to רב יוסף's resolution in step 9 Source: Shabbat 61a.
+  - was: דחיה
+  - now: קשיא
+- **Shabbat 61a, step 10** (relationToPreviousStep): match the new label Source: Shabbat 61a.
+  - was: Rejects רב יוסף
+  - now: Challenges רב יוסף
+- **Shabbat 61a, step 11** (hebrewStepName): second half of אביי's objection in step 10 (rule 5) Source: Shabbat 61a.
+  - was: דחיה
+  - now: קשיא
+- **Shabbat 63b, step 14** (hebrewStepName): בשלמא התם… objects to the וכי תימא answer of step 13 Source: Shabbat 63b.
+  - was: דחיה
+  - now: קשיא
+- **Shabbat 63b, step 14** (title): match the new label Source: Shabbat 63b.
+  - was: Rejected:
+  - now: Objection:
+- **Shabbat 63b, step 14** (relationToPreviousStep): match the new label Source: Shabbat 63b.
+  - was: Rejects the suggested
+  - now: Challenges the suggested
+- **Shabbat 70a, step 14** (hebrewStepName): תלמוד לומר answers the objection of step 13 Source: Shabbat 70a.
+  - was: מסקנא
+  - now: תירוץ
+- **Shabbat 70b, step 7** (hebrewStepName): רבינא objects to רב אשי's resolution in step 6 Source: Shabbat 70b.
+  - was: דחיה
+  - now: קשיא
+- **Shabbat 70b, step 7** (relationToPreviousStep): match the new label Source: Shabbat 70b.
+  - was: Rejects רב אשי
+  - now: Challenges רב אשי
+- **Shabbat 72b, step 11** (hebrewStepName): אילימא… is part of the challenge of step 10 (shows no case of שוגג in עבודה זרה fits) Source: Shabbat 72b.
+  - was: דחיה
+  - now: קשיא
+- **Shabbat 72b, step 12** (hebrewStepName): ואלא… continues the same challenge as step 11 Source: Shabbat 72b.
+  - was: דחיה
+  - now: קשיא
+- **Shabbat 74b, step 23** (hebrewStepName): קושרים?! objects to רבא's Response in step 22 Source: Shabbat 74b.
+  - was: דחיה
+  - now: קשיא
+- **Shabbat 74b, step 23** (title): match the new label Source: Shabbat 74b.
+  - was: Rejected:
+  - now: Objection:
+- **Shabbat 74b, step 23** (relationToPreviousStep): match the new label Source: Shabbat 74b.
+  - was: Rejects רבא
+  - now: Challenges רבא
+- **Shabbat 74b, step 27** (hebrewStepName): objects to the וכי תימא answer of step 26 Source: Shabbat 74b.
+  - was: דחיה
+  - now: קשיא
+- **Shabbat 74b, step 27** (title): match the new label Source: Shabbat 74b.
+  - was: Rejected:
+  - now: Objection:
+- **Shabbat 74b, step 27** (relationToPreviousStep): match the new label Source: Shabbat 74b.
+  - was: Rejects the suggested
+  - now: Challenges the suggested
+- **Shabbat 7b, step 24** (hebrewStepName): והאמר רב יהודה answers the וכי תימא challenge of step 23 and saves the proof Source: Shabbat 7b.
+  - was: דחיה
+  - now: תירוץ
+- **Shabbat 7b, step 24** (relationToPreviousStep): match the new label Source: Shabbat 7b.
+  - was: Rejects the escape
+  - now: Answers the escape
+- **Shabbat 82a, step 4** (hebrewStepName): in the story רב הונא objects to רבה's reasoning (rule 3) Source: Shabbat 82a.
+  - was: דחיה
+  - now: קשיא
+- **Shabbat 82a, step 4** (relationToPreviousStep): match the new label Source: Shabbat 82a.
+  - was: Rejects רבה
+  - now: Objects to רבה
+- **Shabbat 83a, step 8** (hebrewStepName): אמר לך רבה… begins רבה's answer to the challenge of step 7, completed in step 9 Source: Shabbat 83a.
+  - was: דחיה
+  - now: תירוץ
+- **Shabbat 84b, step 4** (hebrewStepName): רחמנא ליצלן objects to רבי חנינא's Resolution in step 3 Source: Shabbat 84b.
+  - was: דחיה
+  - now: קשיא
+- **Shabbat 84b, step 4** (title): match the new label Source: Shabbat 84b.
+  - was: Sharp rejection
+  - now: Sharp objection
+- **Shabbat 84b, step 4** (relationToPreviousStep): match the new label Source: Shabbat 84b.
+  - was: Rejects the
+  - now: Challenges the
+- **Shabbat 84b, step 5** (hebrewStepName): אדרבה answers the objection of step 4 Source: Shabbat 84b.
+  - was: דחיה
+  - now: תירוץ
+- **Shabbat 84b, step 5** (relationToPreviousStep): match the new label Source: Shabbat 84b.
+  - was: the rejection
+  - now: the objection
+- **Shabbat 92b, step 6** (hebrewStepName): ומאי קושיא? דילמא… answers the challenge of step 4 Source: Shabbat 92b.
+  - was: דחיה
+  - now: תירוץ
+- **Shabbat 92b, step 6** (relationToPreviousStep): match the new label Source: Shabbat 92b.
+  - was: Rejects the question
+  - now: Answers the question
+- **Shabbat 92b, step 9** (hebrewStepName): ומאי קושיא? דילמא… answers the challenge of step 7 Source: Shabbat 92b.
+  - was: דחיה
+  - now: תירוץ
+- **Shabbat 92b, step 9** (relationToPreviousStep): match the new label Source: Shabbat 92b.
+  - was: Rejects רבא
+  - now: Answers רבא
+- **Shabbat 97b, step 12** (hebrewStepName): איתמר נמי brings support for step 11 (like תניא נמי הכי); not a landing, step 13 continues the thread Source: Shabbat 97b.
+  - was: מסקנא
+  - now: ראיה
+- **Shabbat 99b, step 4** (hebrewStepName): רב מרדכי objects to the Response in step 3 (rule 3) Source: Shabbat 99b.
+  - was: דחיה
+  - now: קשיא
+- **Shabbat 99b, step 4** (title): match the new label Source: Shabbat 99b.
+  - was: rejects the repeated
+  - now: objects to the repeated
+- **Shabbat 99b, step 4** (relationToPreviousStep): match the new label Source: Shabbat 99b.
+  - was: Rejects the answer
+  - now: Objects to the answer
+- **Shabbat 9a, step 6** (hebrewStepName): וכי תימא… והאמר objects to the suggested answer of step 5 Source: Shabbat 9a.
+  - was: דחיה
+  - now: קשיא
+- **Shabbat 9a, step 6** (title): match the new label Source: Shabbat 9a.
+  - was: Rejected:
+  - now: Objection:
+- **Shabbat 9a, step 6** (relationToPreviousStep): match the new label Source: Shabbat 9a.
+  - was: Rejects the suggested
+  - now: Challenges the suggested
+- **Shabbat 9b, step 15** (hebrewStepName): ולא פליגי with no challenge before it Source: Shabbat 9b.
+  - was: תירוץ
+  - now: מימרא
+
 ## 202611060551-rev114-labels-shas-j
 
 Approved: Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.

@@ -1,0 +1,1383 @@
+{
+ "name": "labels-shas-k",
+ "approved": "Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.",
+ "repairs": [
+  {
+   "id": "Sanhedrin_55_a",
+   "step": 4,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "תניא דלא כתרוייהו: a ברייתא quoted to attack both views (rule 1)",
+   "source": "Sanhedrin 55a"
+  },
+  {
+   "id": "Sanhedrin_61_a",
+   "step": 3,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "מתקיף לה רב פפא: a further objection, not pushing aside a proof",
+   "source": "Sanhedrin 61a"
+  },
+  {
+   "id": "Sanhedrin_61_a",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וכי תימא… מהשתחואה נפקא: objects to a possible answer",
+   "source": "Sanhedrin 61a"
+  },
+  {
+   "id": "Sanhedrin_62_a",
+   "step": 18,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "tries the statue case and knocks it down; continues the challenge of step 17",
+   "source": "Sanhedrin 62a"
+  },
+  {
+   "id": "Sanhedrin_62_b",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "answers the challenge of step 7 (לא מיתוקמא…)",
+   "source": "Sanhedrin 62b"
+  },
+  {
+   "id": "Sanhedrin_65_b",
+   "step": 10,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "לא, דיתיב בין הפרקים: answers the challenge of step 9",
+   "source": "Sanhedrin 65b"
+  },
+  {
+   "id": "Sanhedrin_69_a",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "לא, לעולם…: answers the challenge of steps 7-8",
+   "source": "Sanhedrin 69a"
+  },
+  {
+   "id": "Sanhedrin_6_a",
+   "step": 2,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "גברא אגברא קא רמית: answers the challenge of step 1",
+   "source": "Sanhedrin 6a"
+  },
+  {
+   "id": "Sanhedrin_75_a",
+   "step": 2,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "הא בצנעה הא בפרהסיא: answers the challenge of step 1",
+   "source": "Sanhedrin 75a"
+  },
+  {
+   "id": "Sanhedrin_8_a",
+   "step": 20,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וכי תימא… והתניא: knocks out a possible defence",
+   "source": "Sanhedrin 8a"
+  },
+  {
+   "id": "Shabbat_115_a",
+   "step": 13,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "אמר לך רב הונא: answers the refutation of steps 11-12",
+   "source": "Shabbat 115a"
+  },
+  {
+   "id": "Shabbat_121_b",
+   "step": 17,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "רבי ירמיה answers רב יוסף's challenge (maybe the ברייתא is corrupt)",
+   "source": "Shabbat 121b"
+  },
+  {
+   "id": "Shabbat_125_b",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "ולא היא: answers the challenge of step 7",
+   "source": "Shabbat 125b"
+  },
+  {
+   "id": "Shabbat_125_b",
+   "step": 10,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "ולא היא: answers the challenge of step 9",
+   "source": "Shabbat 125b"
+  },
+  {
+   "id": "Shabbat_126_b",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "אביי answers רב עמרם's challenge from the משנה",
+   "source": "Shabbat 126b"
+  },
+  {
+   "id": "Sanhedrin_61_b",
+   "step": 24,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objects to the answer of step 23 (if he accepted it, he is מזיד)",
+   "source": "Sanhedrin 61b"
+  },
+  {
+   "id": "Sanhedrin_63_b",
+   "step": 24,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רבא objects to the explanation (answer) in step 23",
+   "source": "Sanhedrin 63b"
+  },
+  {
+   "id": "Sanhedrin_64_a",
+   "step": 23,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "story: the בית מדרש objects to רב מנשה's defence (rule 3)",
+   "source": "Sanhedrin 64a"
+  },
+  {
+   "id": "Sanhedrin_71_a",
+   "step": 27,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "מימרא",
+   "why": "רבי יונתן's eyewitness statement; nothing proven is pushed aside",
+   "source": "Sanhedrin 71a"
+  },
+  {
+   "id": "Sanhedrin_71_a",
+   "step": 32,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "מימרא",
+   "why": "רבי יונתן's eyewitness statement; nothing proven is pushed aside",
+   "source": "Sanhedrin 71a"
+  },
+  {
+   "id": "Sanhedrin_71_a",
+   "step": 37,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "מימרא",
+   "why": "רבי אליעזר ברבי צדוק's report that it happened; a statement, not pushing aside a proof",
+   "source": "Sanhedrin 71a"
+  },
+  {
+   "id": "Sanhedrin_86_b",
+   "step": 4,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וכי תימא… והא איתמר: objects to the suggested answer of step 3",
+   "source": "Sanhedrin 86b"
+  },
+  {
+   "id": "Sanhedrin_94_a",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "מימרא",
+   "why": "story line: the request and the בת קול's refusal",
+   "source": "Sanhedrin 94a"
+  },
+  {
+   "id": "Sanhedrin_96_b",
+   "step": 25,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "story: נבוכדנצר objects to the plan (rule 3)",
+   "source": "Sanhedrin 96b"
+  },
+  {
+   "id": "Sanhedrin_96_b",
+   "step": 27,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "story: נבוכדנצר objects to the plan (rule 3)",
+   "source": "Sanhedrin 96b"
+  },
+  {
+   "id": "Sanhedrin_96_b",
+   "step": 29,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "story: נבוכדנצר objects to the plan (rule 3)",
+   "source": "Sanhedrin 96b"
+  },
+  {
+   "id": "Sanhedrin_96_b",
+   "step": 31,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "story: נבוכדנצר objects to the plan (rule 3)",
+   "source": "Sanhedrin 96b"
+  },
+  {
+   "id": "Sanhedrin_96_b",
+   "step": 33,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "story: נבוכדנצר objects to the plan (rule 3)",
+   "source": "Sanhedrin 96b"
+  },
+  {
+   "id": "Shabbat_101_b",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רב ספרא objects to רבא's answer",
+   "source": "Shabbat 101b"
+  },
+  {
+   "id": "Shabbat_102_b",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "אביי objects to רבי ירמיה's answer",
+   "source": "Shabbat 102b"
+  },
+  {
+   "id": "Shabbat_102_b",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רב אחא בר יעקב objects to אביי's answer",
+   "source": "Shabbat 102b"
+  },
+  {
+   "id": "Shabbat_106_b",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "והא בית…: objects to the proposed answer of step 7",
+   "source": "Shabbat 106b"
+  },
+  {
+   "id": "Shabbat_110_a",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "איכא דאמרי: objects to the answer of step 8",
+   "source": "Shabbat 110a"
+  },
+  {
+   "id": "Shabbat_111_b",
+   "step": 14,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objects to the proposed answer of step 13",
+   "source": "Shabbat 111b"
+  },
+  {
+   "id": "Shabbat_120_a",
+   "step": 18,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רבא objects to רב חסדא's answer",
+   "source": "Shabbat 120a"
+  },
+  {
+   "id": "Shabbat_120_b",
+   "step": 10,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objects to the suggested answer of step 9",
+   "source": "Shabbat 120b"
+  },
+  {
+   "id": "Shabbat_120_b",
+   "step": 18,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "ומי מצית אפכת לה? והאמר…: objects to the proposed answer",
+   "source": "Shabbat 120b"
+  },
+  {
+   "id": "Shabbat_123_a",
+   "step": 20,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רבא: מאן דקמותיב שפיר קמותיב: objects to אביי's answer",
+   "source": "Shabbat 123a"
+  },
+  {
+   "id": "Shabbat_130_b",
+   "step": 4,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "ומי שרו? והתניא: objects to the proposed answer",
+   "source": "Shabbat 130b"
+  },
+  {
+   "id": "Shabbat_131_a",
+   "step": 4,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "סוף סוף: objects to the answer of step 3",
+   "source": "Shabbat 131a"
+  },
+  {
+   "id": "Shabbat_131_a",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "סוף סוף: objects to the answer of step 5",
+   "source": "Shabbat 131a"
+  },
+  {
+   "id": "Shabbat_138_b",
+   "step": 24,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "second half of the answer in step 23 (quotes רבא's reply to רב אדא); not pushing aside a proof",
+   "source": "Shabbat 138b"
+  },
+  {
+   "id": "Sanhedrin_5_a",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "ראיה",
+   "why": "שמע מינה ends the proof of step 10 and is challenged at once",
+   "source": "Sanhedrin 5a"
+  },
+  {
+   "id": "Sanhedrin_60_b",
+   "step": 19,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "last line of the ברייתא (steps 16-19); the next step examines the ברייתא",
+   "source": "Sanhedrin 60b"
+  },
+  {
+   "id": "Sanhedrin_61_b",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "ראיה",
+   "why": "שמע מינה ends רבא's proof begun in step 10",
+   "source": "Sanhedrin 61b"
+  },
+  {
+   "id": "Sanhedrin_62_b",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "קשיא",
+   "why": "sums up the challenge of steps 4-5 and is challenged at once",
+   "source": "Sanhedrin 62b"
+  },
+  {
+   "id": "Sanhedrin_71_a",
+   "step": 10,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "third part of the explanation in steps 8-9",
+   "source": "Sanhedrin 71a"
+  },
+  {
+   "id": "Sanhedrin_82_b",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "story line, followed by more of the story",
+   "source": "Sanhedrin 82b"
+  },
+  {
+   "id": "Shabbat_101_b",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "ראיה",
+   "why": "end of the ברייתא brought as proof in step 9; challenged at once",
+   "source": "Shabbat 101b"
+  },
+  {
+   "id": "Shabbat_113_a",
+   "step": 22,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תשובה",
+   "why": "איתמר answers the question of step 20; challenged at once",
+   "source": "Shabbat 113a"
+  },
+  {
+   "id": "Shabbat_116_b",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "end of the corrected-version answer (steps 9-10)",
+   "source": "Shabbat 116b"
+  },
+  {
+   "id": "Shabbat_127_b",
+   "step": 19,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "ראיה",
+   "why": "end of the story labelled ראיה in steps 14-18",
+   "source": "Shabbat 127b"
+  },
+  {
+   "id": "Shabbat_132_b",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תשובה",
+   "why": "second half of the answer begun in step 8; challenged at once",
+   "source": "Shabbat 132b"
+  },
+  {
+   "id": "Shabbat_132_b",
+   "step": 15,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "end of רבא's answer (steps 13-14)",
+   "source": "Shabbat 132b"
+  },
+  {
+   "id": "Shabbat_134_a",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "קשיא",
+   "why": "inference from the story backs אביי's challenge (step 3); answered in step 8",
+   "source": "Shabbat 134a"
+  },
+  {
+   "id": "Sanhedrin_86_a",
+   "step": 18,
+   "field": "hebrewStepName",
+   "find": "תירוץ",
+   "replace": "מימרא",
+   "why": "ולא פליגי with no challenge before it",
+   "source": "Sanhedrin 86a"
+  },
+  {
+   "id": "Sanhedrin_65_b",
+   "step": 10,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the proof in Step 9",
+   "replace": "Answers the challenge in Step 9",
+   "why": "relation named the wrong kind",
+   "source": "Sanhedrin 65b"
+  },
+  {
+   "id": "Sanhedrin_6_a",
+   "step": 2,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the challenge of step 1",
+   "replace": "Answers the challenge of step 1",
+   "why": "relation named the wrong kind",
+   "source": "Sanhedrin 6a"
+  },
+  {
+   "id": "Sanhedrin_75_a",
+   "step": 2,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the proof brought in step 1",
+   "replace": "Answers the challenge brought in step 1",
+   "why": "relation named the wrong kind",
+   "source": "Sanhedrin 75a"
+  },
+  {
+   "id": "Shabbat_125_b",
+   "step": 8,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the challenge in step 7",
+   "replace": "Answers the challenge in step 7",
+   "why": "relation named the wrong kind",
+   "source": "Shabbat 125b"
+  },
+  {
+   "id": "Shabbat_144_b",
+   "step": 10,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "מידי איריא objects to the Resolution in step 9, not pushing aside a proof",
+   "source": "Shabbat 144b"
+  },
+  {
+   "id": "Shabbat_144_b",
+   "step": 23,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "אלמא קסבר is the inference inside רב חסדא's statement, challenged at once in step 24 (rule 5)",
+   "source": "Shabbat 144b"
+  },
+  {
+   "id": "Shabbat_145_b",
+   "step": 30,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "in the story רבי יוחנן objects to the students' answers (rule 3); no proof is pushed aside",
+   "source": "Shabbat 145b"
+  },
+  {
+   "id": "Shabbat_145_b",
+   "step": 30,
+   "field": "relationToPreviousStep",
+   "find": "Rejects all four",
+   "replace": "Objects to all four",
+   "why": "match the new label",
+   "source": "Shabbat 145b"
+  },
+  {
+   "id": "Shabbat_14_b",
+   "step": 14,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וכי תימא… והאמר objects to a suggested answer (rule 2)",
+   "source": "Shabbat 14b"
+  },
+  {
+   "id": "Shabbat_14_b",
+   "step": 14,
+   "field": "title",
+   "find": "Rejected:",
+   "replace": "Objection:",
+   "why": "match the new label",
+   "source": "Shabbat 14b"
+  },
+  {
+   "id": "Shabbat_14_b",
+   "step": 14,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the suggested",
+   "replace": "Challenges the suggested",
+   "why": "match the new label",
+   "source": "Shabbat 14b"
+  },
+  {
+   "id": "Shabbat_14_b",
+   "step": 16,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "והאמר אילפא objects to the suggested answer of step 15 (rule 2)",
+   "source": "Shabbat 14b"
+  },
+  {
+   "id": "Shabbat_14_b",
+   "step": 16,
+   "field": "title",
+   "find": "Rejected:",
+   "replace": "Objection:",
+   "why": "match the new label",
+   "source": "Shabbat 14b"
+  },
+  {
+   "id": "Shabbat_14_b",
+   "step": 16,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the answer",
+   "replace": "Challenges the answer",
+   "why": "match the new label",
+   "source": "Shabbat 14b"
+  },
+  {
+   "id": "Shabbat_150_b",
+   "step": 17,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וכי תימא… והאמר blocks an answer and so continues the challenge of step 16",
+   "source": "Shabbat 150b"
+  },
+  {
+   "id": "Shabbat_150_b",
+   "step": 18,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "second וכי תימא in the same challenge, like step 17",
+   "source": "Shabbat 150b"
+  },
+  {
+   "id": "Shabbat_150_b",
+   "step": 18,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the next",
+   "replace": "Blocks the next",
+   "why": "match the new label",
+   "source": "Shabbat 150b"
+  },
+  {
+   "id": "Shabbat_152_b",
+   "step": 19,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "in the story רב אחאי answers רב נחמן's challenge (rule 3)",
+   "source": "Shabbat 152b"
+  },
+  {
+   "id": "Shabbat_153_a",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "תירוץ",
+   "replace": "מימרא",
+   "why": "ולא פליגי with no challenge before it",
+   "source": "Shabbat 153a"
+  },
+  {
+   "id": "Shabbat_153_b",
+   "step": 32,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "לא… answers רבא's refutation (a Challenge), not a proof",
+   "source": "Shabbat 153b"
+  },
+  {
+   "id": "Shabbat_153_b",
+   "step": 32,
+   "field": "title",
+   "find": "Rejecting the second",
+   "replace": "Answering the second",
+   "why": "match the new label",
+   "source": "Shabbat 153b"
+  },
+  {
+   "id": "Shabbat_153_b",
+   "step": 32,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the inference",
+   "replace": "Answers the inference",
+   "why": "match the new label",
+   "source": "Shabbat 153b"
+  },
+  {
+   "id": "Shabbat_155_b",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "answers the תא שמע challenge of step 5",
+   "source": "Shabbat 155b"
+  },
+  {
+   "id": "Shabbat_155_b",
+   "step": 6,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the proof of step 5",
+   "replace": "Answers the challenge of step 5",
+   "why": "match the new label",
+   "source": "Shabbat 155b"
+  },
+  {
+   "id": "Shabbat_17_b",
+   "step": 5,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "אלא אמר רבא… extends רבא's challenge of step 4 against רבי חנינא's reason",
+   "source": "Shabbat 17b"
+  },
+  {
+   "id": "Shabbat_19_b",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "ורבי אלעזר אמר לך objects to the Response of step 5 with a ברייתא; step 7 resolves it",
+   "source": "Shabbat 19b"
+  },
+  {
+   "id": "Shabbat_19_b",
+   "step": 6,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the honey",
+   "replace": "Challenges the honey",
+   "why": "match the new label",
+   "source": "Shabbat 19b"
+  },
+  {
+   "id": "Shabbat_21_a",
+   "step": 13,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "רבה answers אביי's challenge (אדמותבת לי… סייעיה)",
+   "source": "Shabbat 21a"
+  },
+  {
+   "id": "Shabbat_22_a",
+   "step": 10,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "רב יוסף answers שמואל's challenge to רב (with the blood analogy)",
+   "source": "Shabbat 22a"
+  },
+  {
+   "id": "Shabbat_22_a",
+   "step": 10,
+   "field": "relationToPreviousStep",
+   "find": "Rejects שמואל",
+   "replace": "Answers שמואל",
+   "why": "match the new label",
+   "source": "Shabbat 22a"
+  },
+  {
+   "id": "Shabbat_24_b",
+   "step": 1,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "the ruling is challenged straight away in step 2, so it is not where the thread lands (rule 5)",
+   "source": "Shabbat 24b"
+  },
+  {
+   "id": "Shabbat_26_b",
+   "step": 12,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "טעמא דכתביה קרא is the end of the answer in step 11 and is followed by a new challenge",
+   "source": "Shabbat 26b"
+  },
+  {
+   "id": "Shabbat_27_a",
+   "step": 18,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "ולאו קל וחומר הוא objects to the Resolution in step 17 (not a refutation of a קל וחומר)",
+   "source": "Shabbat 27a"
+  },
+  {
+   "id": "Shabbat_27_a",
+   "step": 18,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the defense",
+   "replace": "Challenges the defense",
+   "why": "match the new label",
+   "source": "Shabbat 27a"
+  },
+  {
+   "id": "Shabbat_2_b",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וכי תימא blocks an answer and continues the challenge of step 5",
+   "source": "Shabbat 2b"
+  },
+  {
+   "id": "Shabbat_2_b",
+   "step": 6,
+   "field": "relationToPreviousStep",
+   "find": "Rejects a possible",
+   "replace": "Blocks a possible",
+   "why": "match the new label",
+   "source": "Shabbat 2b"
+  },
+  {
+   "id": "Shabbat_2_b",
+   "step": 19,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וליטעמיך is a counter-objection; step 20 answers it",
+   "source": "Shabbat 2b"
+  },
+  {
+   "id": "Shabbat_34_a",
+   "step": 5,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "in the story רבי שמעון answers the elder's challenge (rule 3)",
+   "source": "Shabbat 34a"
+  },
+  {
+   "id": "Shabbat_34_a",
+   "step": 5,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the mockery",
+   "replace": "Answers the mockery",
+   "why": "match the new label",
+   "source": "Shabbat 34a"
+  },
+  {
+   "id": "Shabbat_40_b",
+   "step": 23,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "ראיה",
+   "why": "שמע מינה תלת is an inference from the story, and the story is challenged next; not where the thread lands",
+   "source": "Shabbat 40b"
+  },
+  {
+   "id": "Shabbat_45_b",
+   "step": 16,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "רב יוסף's reading is challenged at once by אביי in step 17 (rule 5); no challenge before it to resolve",
+   "source": "Shabbat 45b"
+  },
+  {
+   "id": "Shabbat_47_a",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וכי תימא… והתניא blocks an answer and continues אביי's challenge",
+   "source": "Shabbat 47a"
+  },
+  {
+   "id": "Shabbat_47_a",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רבא objects to אביי's answer (שתי תשובות בדבר), not a proof",
+   "source": "Shabbat 47a"
+  },
+  {
+   "id": "Shabbat_47_a",
+   "step": 8,
+   "field": "title",
+   "find": "רבא rejects the",
+   "replace": "רבא objects to the",
+   "why": "match the new label",
+   "source": "Shabbat 47a"
+  },
+  {
+   "id": "Shabbat_47_a",
+   "step": 8,
+   "field": "relationToPreviousStep",
+   "find": "Rejects אביי",
+   "replace": "Challenges אביי",
+   "why": "match the new label",
+   "source": "Shabbat 47a"
+  },
+  {
+   "id": "Shabbat_47_a",
+   "step": 14,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רב יהודה objects to the Response of step 13 from רב and שמואל",
+   "source": "Shabbat 47a"
+  },
+  {
+   "id": "Shabbat_55_b",
+   "step": 31,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "ראיה",
+   "why": "אלא לאו שמע מינה ends the proof of steps 29-30 and is challenged at once in step 32",
+   "source": "Shabbat 55b"
+  },
+  {
+   "id": "Shabbat_56_b",
+   "step": 16,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "אלא מעתה objects to the Resolution of step 15",
+   "source": "Shabbat 56b"
+  },
+  {
+   "id": "Shabbat_56_b",
+   "step": 16,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the answer",
+   "replace": "Challenges the answer",
+   "why": "match the new label",
+   "source": "Shabbat 56b"
+  },
+  {
+   "id": "Shabbat_57_b",
+   "step": 5,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וכי תימא continues אביי's challenge of step 4",
+   "source": "Shabbat 57b"
+  },
+  {
+   "id": "Shabbat_58_a",
+   "step": 14,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "לא, אידי ואידי… opens the new answer completed in step 15 (rule 5); nothing pushes aside a proof",
+   "source": "Shabbat 58a"
+  },
+  {
+   "id": "Shabbat_59_b",
+   "step": 12,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "a line of the story (רב's deduction), challenged at once in step 13",
+   "source": "Shabbat 59b"
+  },
+  {
+   "id": "Shabbat_5_a",
+   "step": 20,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "איכפל תנא objects to the answers of steps 17-19",
+   "source": "Shabbat 5a"
+  },
+  {
+   "id": "Shabbat_5_a",
+   "step": 20,
+   "field": "title",
+   "find": "רבא rejects the",
+   "replace": "רבא objects to the",
+   "why": "match the new label",
+   "source": "Shabbat 5a"
+  },
+  {
+   "id": "Shabbat_5_a",
+   "step": 20,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the approach",
+   "replace": "Challenges the approach",
+   "why": "match the new label",
+   "source": "Shabbat 5a"
+  },
+  {
+   "id": "Shabbat_5_b",
+   "step": 4,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "אימור… מי עבידי objects to applying רבא's answer to water",
+   "source": "Shabbat 5b"
+  },
+  {
+   "id": "Shabbat_5_b",
+   "step": 4,
+   "field": "relationToPreviousStep",
+   "find": "Rejects applying",
+   "replace": "Challenges applying",
+   "why": "match the new label",
+   "source": "Shabbat 5b"
+  },
+  {
+   "id": "Shabbat_60_a",
+   "step": 17,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תשובה",
+   "why": "the decree is the end of the answer to step 13 and is challenged at once in step 18",
+   "source": "Shabbat 60a"
+  },
+  {
+   "id": "Shabbat_61_a",
+   "step": 10,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "אביי objects to רב יוסף's resolution in step 9",
+   "source": "Shabbat 61a"
+  },
+  {
+   "id": "Shabbat_61_a",
+   "step": 10,
+   "field": "relationToPreviousStep",
+   "find": "Rejects רב יוסף",
+   "replace": "Challenges רב יוסף",
+   "why": "match the new label",
+   "source": "Shabbat 61a"
+  },
+  {
+   "id": "Shabbat_61_a",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "second half of אביי's objection in step 10 (rule 5)",
+   "source": "Shabbat 61a"
+  },
+  {
+   "id": "Shabbat_63_b",
+   "step": 14,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "בשלמא התם… objects to the וכי תימא answer of step 13",
+   "source": "Shabbat 63b"
+  },
+  {
+   "id": "Shabbat_63_b",
+   "step": 14,
+   "field": "title",
+   "find": "Rejected:",
+   "replace": "Objection:",
+   "why": "match the new label",
+   "source": "Shabbat 63b"
+  },
+  {
+   "id": "Shabbat_63_b",
+   "step": 14,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the suggested",
+   "replace": "Challenges the suggested",
+   "why": "match the new label",
+   "source": "Shabbat 63b"
+  },
+  {
+   "id": "Shabbat_70_a",
+   "step": 14,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "תלמוד לומר answers the objection of step 13",
+   "source": "Shabbat 70a"
+  },
+  {
+   "id": "Shabbat_70_b",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רבינא objects to רב אשי's resolution in step 6",
+   "source": "Shabbat 70b"
+  },
+  {
+   "id": "Shabbat_70_b",
+   "step": 7,
+   "field": "relationToPreviousStep",
+   "find": "Rejects רב אשי",
+   "replace": "Challenges רב אשי",
+   "why": "match the new label",
+   "source": "Shabbat 70b"
+  },
+  {
+   "id": "Shabbat_72_b",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "אילימא… is part of the challenge of step 10 (shows no case of שוגג in עבודה זרה fits)",
+   "source": "Shabbat 72b"
+  },
+  {
+   "id": "Shabbat_72_b",
+   "step": 12,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "ואלא… continues the same challenge as step 11",
+   "source": "Shabbat 72b"
+  },
+  {
+   "id": "Shabbat_74_b",
+   "step": 23,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "קושרים?! objects to רבא's Response in step 22",
+   "source": "Shabbat 74b"
+  },
+  {
+   "id": "Shabbat_74_b",
+   "step": 23,
+   "field": "title",
+   "find": "Rejected:",
+   "replace": "Objection:",
+   "why": "match the new label",
+   "source": "Shabbat 74b"
+  },
+  {
+   "id": "Shabbat_74_b",
+   "step": 23,
+   "field": "relationToPreviousStep",
+   "find": "Rejects רבא",
+   "replace": "Challenges רבא",
+   "why": "match the new label",
+   "source": "Shabbat 74b"
+  },
+  {
+   "id": "Shabbat_74_b",
+   "step": 27,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objects to the וכי תימא answer of step 26",
+   "source": "Shabbat 74b"
+  },
+  {
+   "id": "Shabbat_74_b",
+   "step": 27,
+   "field": "title",
+   "find": "Rejected:",
+   "replace": "Objection:",
+   "why": "match the new label",
+   "source": "Shabbat 74b"
+  },
+  {
+   "id": "Shabbat_74_b",
+   "step": 27,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the suggested",
+   "replace": "Challenges the suggested",
+   "why": "match the new label",
+   "source": "Shabbat 74b"
+  },
+  {
+   "id": "Shabbat_7_b",
+   "step": 24,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "והאמר רב יהודה answers the וכי תימא challenge of step 23 and saves the proof",
+   "source": "Shabbat 7b"
+  },
+  {
+   "id": "Shabbat_7_b",
+   "step": 24,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the escape",
+   "replace": "Answers the escape",
+   "why": "match the new label",
+   "source": "Shabbat 7b"
+  },
+  {
+   "id": "Shabbat_82_a",
+   "step": 4,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "in the story רב הונא objects to רבה's reasoning (rule 3)",
+   "source": "Shabbat 82a"
+  },
+  {
+   "id": "Shabbat_82_a",
+   "step": 4,
+   "field": "relationToPreviousStep",
+   "find": "Rejects רבה",
+   "replace": "Objects to רבה",
+   "why": "match the new label",
+   "source": "Shabbat 82a"
+  },
+  {
+   "id": "Shabbat_83_a",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "אמר לך רבה… begins רבה's answer to the challenge of step 7, completed in step 9",
+   "source": "Shabbat 83a"
+  },
+  {
+   "id": "Shabbat_84_b",
+   "step": 4,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רחמנא ליצלן objects to רבי חנינא's Resolution in step 3",
+   "source": "Shabbat 84b"
+  },
+  {
+   "id": "Shabbat_84_b",
+   "step": 4,
+   "field": "title",
+   "find": "Sharp rejection",
+   "replace": "Sharp objection",
+   "why": "match the new label",
+   "source": "Shabbat 84b"
+  },
+  {
+   "id": "Shabbat_84_b",
+   "step": 4,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the",
+   "replace": "Challenges the",
+   "why": "match the new label",
+   "source": "Shabbat 84b"
+  },
+  {
+   "id": "Shabbat_84_b",
+   "step": 5,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "אדרבה answers the objection of step 4",
+   "source": "Shabbat 84b"
+  },
+  {
+   "id": "Shabbat_84_b",
+   "step": 5,
+   "field": "relationToPreviousStep",
+   "find": "the rejection",
+   "replace": "the objection",
+   "why": "match the new label",
+   "source": "Shabbat 84b"
+  },
+  {
+   "id": "Shabbat_92_b",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "ומאי קושיא? דילמא… answers the challenge of step 4",
+   "source": "Shabbat 92b"
+  },
+  {
+   "id": "Shabbat_92_b",
+   "step": 6,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the question",
+   "replace": "Answers the question",
+   "why": "match the new label",
+   "source": "Shabbat 92b"
+  },
+  {
+   "id": "Shabbat_92_b",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "ומאי קושיא? דילמא… answers the challenge of step 7",
+   "source": "Shabbat 92b"
+  },
+  {
+   "id": "Shabbat_92_b",
+   "step": 9,
+   "field": "relationToPreviousStep",
+   "find": "Rejects רבא",
+   "replace": "Answers רבא",
+   "why": "match the new label",
+   "source": "Shabbat 92b"
+  },
+  {
+   "id": "Shabbat_97_b",
+   "step": 12,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "ראיה",
+   "why": "איתמר נמי brings support for step 11 (like תניא נמי הכי); not a landing, step 13 continues the thread",
+   "source": "Shabbat 97b"
+  },
+  {
+   "id": "Shabbat_99_b",
+   "step": 4,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רב מרדכי objects to the Response in step 3 (rule 3)",
+   "source": "Shabbat 99b"
+  },
+  {
+   "id": "Shabbat_99_b",
+   "step": 4,
+   "field": "title",
+   "find": "rejects the repeated",
+   "replace": "objects to the repeated",
+   "why": "match the new label",
+   "source": "Shabbat 99b"
+  },
+  {
+   "id": "Shabbat_99_b",
+   "step": 4,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the answer",
+   "replace": "Objects to the answer",
+   "why": "match the new label",
+   "source": "Shabbat 99b"
+  },
+  {
+   "id": "Shabbat_9_a",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וכי תימא… והאמר objects to the suggested answer of step 5",
+   "source": "Shabbat 9a"
+  },
+  {
+   "id": "Shabbat_9_a",
+   "step": 6,
+   "field": "title",
+   "find": "Rejected:",
+   "replace": "Objection:",
+   "why": "match the new label",
+   "source": "Shabbat 9a"
+  },
+  {
+   "id": "Shabbat_9_a",
+   "step": 6,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the suggested",
+   "replace": "Challenges the suggested",
+   "why": "match the new label",
+   "source": "Shabbat 9a"
+  },
+  {
+   "id": "Shabbat_9_b",
+   "step": 15,
+   "field": "hebrewStepName",
+   "find": "תירוץ",
+   "replace": "מימרא",
+   "why": "ולא פליגי with no challenge before it",
+   "source": "Shabbat 9b"
+  }
+ ]
+}
