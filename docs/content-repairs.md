@@ -2,6 +2,122 @@
 
 Every change to the AI-written content, newest first. Each entry says what was wrong, the source used, and who approved it.
 
+## 202611060303-rev103-berakhot-60-64
+
+Approved: Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.
+
+- **Berakhot 60a, step 1** (hebrewStepName): This inference is the second half of the first version of the רב הונא / רבי יוחנן dispute (labelled מימרא on 59b); rule 5: a second half takes its first half's label and a Conclusion is never in the middle. Source: Berakhot 60a: מכלל דכי קנה וחזר וקנה דברי הכל אין צריך לברך; 59b last steps are מימרא; rulebook rule 5.
+  - was: מסקנא
+  - now: מימרא
+- **Berakhot 60a, step 3** (hebrewStepName): The inference closes the second version and is immediately challenged by מיתיבי, so it cannot be a Conclusion (rule 5). Source: Berakhot 60a: מכלל דכי יש לו וקנה דברי הכל צריך לברך. מיתיבי...; rulebook rule 5.
+  - was: מסקנא
+  - now: מימרא
+- **Berakhot 60a, step 17** (hebrewStepName): רב's reading of ואחר is the content of רב יוסף's objection (מתיב רב יוסף) against the משנה; a source quoted to attack is a Challenge, including its continuation (rule 1). Source: Berakhot 60a: ולא מהני רחמי? מתיב רב יוסף ... מיד נהפכה לבת; rulebook rule 1.
+  - was: ראיה
+  - now: קשיא
+- **Berakhot 60a, step 17** (whatsHappening): Matches the label fix: the step is part of an objection, not a proof. Source: Berakhot 60a: מתיב רב יוסף.
+  - was: This is the proof behind רב יוסף's objection.
+  - now: This is the content of רב יוסף's objection.
+- **Berakhot 60a, step 18** (hebrewStepName): אין מזכירין מעשה נסים answers רב יוסף's objection (a Challenge), so it is a Resolution; Rejection is only for pushing aside a proof (rule 2). Step 19, the second answer, is already תירוץ. Source: Berakhot 60a: אין מזכירין מעשה נסים. ואיבעית אימא...; rulebook rule 2.
+  - was: דחיה
+  - now: תירוץ
+- **Berakhot 60a, step 18** (stepSummary): The step answers רב יוסף's objection; it is not rejecting a proof. Source: Berakhot 60a: מתיב רב יוסף ... אין מזכירין מעשה נסים.
+  - was: The גמרא rejects the proof: we do not bring proofs from miracles.
+  - now: The גמרא answers the challenge: we do not bring proofs from miracles.
+- **Berakhot 60a, step 18** (whatsHappening): Same as above. Source: Berakhot 60a.
+  - was: The גמרא pushes back on רב יוסף's proof.
+  - now: The גמרא answers רב יוסף's objection.
+- **Berakhot 60a, step 18** (relationToPreviousStep): Same as above. Source: Berakhot 60a.
+  - was: Rejects the proof brought in Steps 16 and 17.
+  - now: Answers the challenge raised in Steps 16 and 17.
+- **Berakhot 60a, step 40** (hebrewStepName): אביי objects to the wording of a ברייתא's prayer; no proof is being pushed aside, so per rule 2 this is a Challenge (as the parallel אביי objection in step 47 is labelled). Source: Berakhot 60a: אמר אביי לא לימא איניש הכי דלא לפתח פומיה לשטן; rulebook rule 2.
+  - was: דחיה
+  - now: קשיא
+- **Berakhot 60b, step 2** (hebrewStepName): אביי objects to the wording of the bathroom prayer and replaces it; nothing is a proof, so per rule 2 this is a Challenge (same as אביי's identical objections on 60a). Source: Berakhot 60b: אמר אביי לא לימא איניש הכי דלמא שבקי ליה ואזלי; rulebook rule 2.
+  - was: דחיה
+  - now: קשיא
+- **Berakhot 60b, step 22** (hebrewStepName): The רבי עקיבא story is introduced with כי הא as an illustration of the habit just taught; story lines and illustrations are Statements (rule 8). Source: Berakhot 60b: כי הא דרבי עקיבא דהוה קאזיל באורחא; rulebook rule 8.
+  - was: ראיה
+  - now: מימרא
+- **Berakhot 60b, step 23** (hebrewStepName): Continuation of the illustrative story (rule 8). Source: Berakhot 60b: אזל ובת בדברא...; rulebook rule 8.
+  - was: ראיה
+  - now: מימרא
+- **Berakhot 60b, step 24** (hebrewStepName): Continuation of the illustrative story (rule 8). Source: Berakhot 60b: ביה בליליא אתא גייסא...; rulebook rule 8.
+  - was: ראיה
+  - now: מימרא
+- **Berakhot 60b, step 24** (deeperAnalysis): Matches the label fix: the story is brought with כי הא as an illustration, not as a proof. Source: Berakhot 60b: כי הא דרבי עקיבא.
+  - was: This proves the teaching from step 21.
+  - now: This illustrates the teaching from step 21.
+- **Berakhot 61a, step 1** (hebrewStepName): הכל לטובה is the second half of רבי עקיבא's sentence from the story on 60b; the second half takes the first half's label across the amud break (rule 5), and the story lines are Statements (rule 8). Source: Berakhot 60b-61a: כל מה שעושה הקב"ה / הכל לטובה; rulebook rules 5 and 8.
+  - was: מסקנא
+  - now: מימרא
+- **Berakhot 61b, step 15** (hebrewStepName): פפוס's 'are you not afraid' is labelled קשיא (an objection inside a story); the reply to a Challenge is a Resolution, not a Response (rules 3 and 6). Source: Berakhot 61b: אמר לו אמשול לך משל...; rulebook rules 3 and 6.
+  - was: תשובה
+  - now: תירוץ
+- **Berakhot 61b, step 16** (hebrewStepName): The fish's reply is the middle of רבי עקיבא's parable answering פפוס; it pushes aside no proof, so Rejection is wrong (rule 2), and as part of the answer it takes the answer's label (rule 5). Source: Berakhot 61b: אמרו לו אתה הוא שאומרים עליך פקח שבחיות...; rulebook rules 2 and 5.
+  - was: דחיה
+  - now: תירוץ
+- **Berakhot 61b, step 17** (hebrewStepName): The application of the parable is רבי עקיבא's answer to פפוס's challenge, so it is a Resolution (rule 6). Source: Berakhot 61b: אף אנחנו עכשיו...; rulebook rule 6.
+  - was: תשובה
+  - now: תירוץ
+- **Berakhot 62a, step 27** (deeperAnalysis): Rashi explains the leniency as being for the sake of guarding the טהרות (no worry that someone impure enters while they step out), not that going far would bring the workers into contact with impurity. Source: Berakhot 62a בטהרות הקלו; Rashi s.v. יוצאין מפתח בית הבד (ואין חוששין שמא בתוך כך יכנס עם הארץ ויגע) and s.v. בטהרות הקלו (בשביל שמירת טהרות).
+  - was: instead of going far away, where they might come into contact with impurity
+  - now: instead of going far away and leaving the טהרות unguarded
+- **Berakhot 62b, step 8** (hebrewStepName): רבי אבא quotes the משנה to attack רב ספרא's conduct; a source quoted to attack is a Challenge (rulebook rule 1), and the next steps defend רב ספרא against it. Source: Berakhot 62b לאו הכי תנן... אלמא לאו אורח ארעא הוא; Rashi s.v. ובית הכסא של כבוד (ואת אמרת ליעול מר).
+  - was: ראיה
+  - now: קשיא
+- **Berakhot 62b, step 8** (title): Title names the step as a proof; it is part of רבי אבא's challenge. Source: Berakhot 62b לאו הכי תנן.
+  - was: Proof from the משנה about the honorable בית הכסא in the בית המקדש
+  - now: רבי אבא's source: the honorable בית הכסא in the בית המקדש
+- **Berakhot 62b, step 9** (hebrewStepName): 'אלמא לאו אורח ארעא הוא' is the second half of רבי אבא's challenge and is immediately answered (והוא סבר מסוכן הוא), so it is not a Conclusion (rules 1 and 5). Source: Berakhot 62b אלמא לאו אורח ארעא הוא. והוא סבר מסוכן הוא.
+  - was: מסקנא
+  - now: קשיא
+- **Berakhot 62b, step 9** (title): Title names the step as a Conclusion; it is the end of רבי אבא's challenge, which is answered next. Source: Berakhot 62b.
+  - was: Conclusion: speaking from the bathroom is not proper conduct
+  - now: So speaking from the bathroom is not proper conduct
+- **Berakhot 62b, step 13** (hebrewStepName): רבי אלעזר applying 'ואתן אדם תחתיך' to the Roman (קרי עליה) is a line of the story, not a source brought to support any disputed position (rule 8). Source: Berakhot 62b קרי עליה רבי אלעזר: ואתן אדם תחתיך.
+  - was: ראיה
+  - now: מימרא
+- **Berakhot 62b, step 48** (hebrewStepName): The ברייתא is quoted as the second half of רבא's answer to the challenge 'נילף מקפנדריא' (תנא יליף ממנעל... מאי היא? דתניא); an answer quoting a source is a Resolution (rules 5 and 7). Source: Berakhot 62b אמר ליה: תנא יליף ממנעל... מאי היא? דתניא; Rashi s.v. תנא יליף.
+  - was: ראיה
+  - now: תירוץ
+- **Berakhot 63a, step 7** (hebrewStepName): The פסוק answers the question 'ומנין שאין עונין אמן במקדש' (step 6, שאלה); an answer citing a פסוק is a Response, not a Proof (rule 7). Source: Berakhot 63a ומנין שאין עונין אמן במקדש? שנאמר קומו ברכו.
+  - was: ראיה
+  - now: תשובה
+- **Berakhot 63a, step 7** (title): Title names the step as a proof; it is the Response to the question of step 6. Source: Berakhot 63a.
+  - was: Proof from the פסוק in נחמיה
+  - now: The source: the פסוק in נחמיה
+- **Berakhot 63a, step 8** (hebrewStepName): Continuation of the same answer from the same פסוק (יכול... תלמוד לומר); the second half takes the first half's label (rule 5). Source: Berakhot 63a יכול כל הברכות כולן תהא להן תהלה אחת.
+  - was: ראיה
+  - now: תשובה
+- **Berakhot 63a, step 8** (deeperAnalysis): Rashi explains the hava amina as answering ברוך שם כבוד מלכותו once, after the last blessing, not a response like אמן (the whole point is that אמן is not said there). Source: Berakhot 63a תהא להן תהלה אחת; Rashi s.v. על כל הברכות (בסוף ברכה אחרונה), s.v. תהלה אחת (שיענו פעם אחת בשכמל"ו).
+  - was: we might think one short response, like אמן, could cover all the blessings
+  - now: we might think one response of praise, said once at the end, could cover all the blessings
+- **Berakhot 63a, step 43** (hebrewStepName): Rejection is only for pushing aside a proof (rule 2); here the visitors answer חנינא's denunciation inside a story, which is not a proof, and the previous step is labelled מימרא (rule 3). Source: Berakhot 63a אמרו לו: כבר בנית ואי אתה יכול לסתור.
+  - was: דחיה
+  - now: מימרא
+- **Berakhot 63a, step 50** (hebrewStepName): 'והם שגרונו אצלך...' is the second half of the same reply begun in step 49 (גדיים שהנחת... והם שגרונו), and the message continues on 63b (ואמרו לאחינו שבגולה); a Conclusion is never a step in the middle (rule 5). Source: Berakhot 63a–b גדיים שהנחת נעשו תישים בעלי קרנים, והם שגרונו אצלך... ואמרו לאחינו שבגולה.
+  - was: מסקנא
+  - now: תירוץ
+- **Berakhot 64a, step 1** (hebrewStepName): The פסוקים complete רב יהודה בר זבידא's answer to 'מאי היא ברכה שברכו' (63b), so the step is the second half of a Response (rules 5 and 7). Source: Berakhot 63b–64a מאי היא ברכה שברכו? ... שנאמר פעלתי השמיני; Rashi s.v. שנאמר פעלתי השמיני.
+  - was: ראיה
+  - now: תשובה
+- **Berakhot 64a, step 1** (title): Title names the step as a proof; it is the end of the answer begun on 63b. Source: Berakhot 64a.
+  - was: Verses proving the blessing
+  - now: Verses showing the blessing
+- **Berakhot 64a, step 1** (stepSummary): The step completes an answer to a question, not a proof. Source: Berakhot 63b מאי היא ברכה שברכו.
+  - was: finishes its proof from
+  - now: finishes its answer from
+- **Berakhot 64a, step 1** (whatsHappening): The step completes an answer to a question, not a proof. Source: Berakhot 63b מאי היא ברכה שברכו.
+  - was: finishing a proof it started
+  - now: finishing an answer it started
+- **Berakhot 64a, step 7** (hebrewStepName): Rabba's and Rav Yosef's terms are part of the proof story for רבי אבין הלוי's teaching, and the story continues in the next step (אפילו אומנא לביתיה לא קרא); a Conclusion is never in the middle (rule 5). Source: Berakhot 64a מלך רבה עשרין ותרתין שנין... כל הנך שני דמלך רבה אפילו אומנא לביתיה לא קרא.
+  - was: מסקנא
+  - now: ראיה
+- **Berakhot 64a, step 13** (hebrewStepName): 'אלא לומר לך...' answers the difficulty 'וכי לפני אלהים אכלו' labelled קשיא in step 12; an answer to a Challenge is a Resolution (rule 2), as the site does for the same pattern on 63b steps 16-17. Source: Berakhot 64a וכי לפני אלהים אכלו? והלא לפני משה אכלו! אלא לומר לך.
+  - was: מסקנא
+  - now: תירוץ
+
 ## 202611060301-rev102-berakhot-52-59
 
 Approved: Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.
