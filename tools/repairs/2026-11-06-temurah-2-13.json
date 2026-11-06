@@ -1,0 +1,429 @@
+{
+ "name": "temurah-2-13",
+ "approved": "Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.",
+ "repairs": [
+  {
+   "id": "Temurah_3_b",
+   "step": 1,
+   "field": "hebrewStepName",
+   "find": "מימרא",
+   "replace": "תשובה",
+   "why": "This line is the second half of רבי יוחנן's answer to 'נשבע מנלן', which ends 3a as a תשובה (step 27); the second half takes the first half's label across the amud break (rule 5).",
+   "source": "Temurah 3a-3b: נשבע מנלן? ... בית דין של מעלה / אין מנקין אותו, אבל בית דין של מטה מלקין אותו"
+  },
+  {
+   "id": "Temurah_4_a",
+   "step": 1,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "תירוץ",
+   "why": "'לא מצית אמרת' answers the challenge that ends 3b (maybe the verse is about מוציא שם שמים לבטלה / lashes are not enough for cursing); an answer to a קשיא is a תירוץ, not a proof (rules 2 and 7).",
+   "source": "Temurah 3b-4a: ואימא למוציא שם שמים לבטלה ... אנן הכי קא קשיא לן ... / לא מצית אמרת דכתיב לא תקלל חרש; Rashi s.v. לא תקלל חרש"
+  },
+  {
+   "id": "Temurah_4_a",
+   "step": 1,
+   "field": "whatsHappening",
+   "find": "The גמרא proves that the punishment verse",
+   "replace": "The גמרא answers the challenge: the punishment verse",
+   "why": "Matches the corrected label: the step answers a challenge rather than bringing a proof.",
+   "source": "Temurah 4a: לא מצית אמרת"
+  },
+  {
+   "id": "Temurah_4_b",
+   "step": 1,
+   "field": "hebrewStepName",
+   "find": "תשובה",
+   "replace": "תירוץ",
+   "why": "'אפטורא קאי' is the second half of the answer begun at the end of 4a ('לא, רבי יוסי ברבי חנינא...', labelled תירוץ) to the contradiction between רבי יוסי ברבי חנינא's statements; it takes the first half's label (rules 5, 6).",
+   "source": "Temurah 4a-4b: לימא קשיא דרבי יוסי ברבי חנינא אדרבי יוסי ברבי חנינא! לא, רבי יוסי ברבי חנינא / אפטורא קאי; Rashi s.v. ומשני אפטורא קאי"
+  },
+  {
+   "id": "Temurah_4_b",
+   "step": 1,
+   "field": "relationToPreviousStep",
+   "find": "Answers the question, from before this section, about what 'also' refers to.",
+   "replace": "Completes the answer, begun on the previous amud, to the contradiction in רבי יוסי ברבי חנינא's statements.",
+   "why": "There was no question about 'also'; this step finishes resolving the contradiction raised at the end of 4a.",
+   "source": "Temurah 4a: לימא קשיא דרבי יוסי ברבי חנינא אדרבי יוסי ברבי חנינא"
+  },
+  {
+   "id": "Temurah_4_b",
+   "step": 1,
+   "field": "whatsHappening",
+   "find": "The גמרא answers the earlier question of what the word 'also' was attached to.",
+   "replace": "The גמרא finishes answering the contradiction from the previous amud by explaining what the word 'also' was attached to.",
+   "why": "Same correction as relationToPreviousStep: the step resolves a contradiction, not a question.",
+   "source": "Temurah 4a-4b; Rashi s.v. ומשני אפטורא קאי"
+  },
+  {
+   "id": "Temurah_5_b",
+   "step": 19,
+   "field": "phrases.2.notes",
+   "find": "Earlier on the דף this was explained",
+   "replace": "Earlier, on 4a, this was explained",
+   "why": "The derivation of the order ביכורים before תרומה from this verse is on 4a, not on this daf.",
+   "source": "Temurah 4a: מלאה אלו ביכורים, ודמעך אלו תרומה, ואמרת לא תאחר"
+  },
+  {
+   "id": "Temurah_6_b",
+   "step": 2,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "Rav Acha is objecting to Rav Ashi's answer (that Abaye and Rava argue about fixed interest), not pushing aside a proof; an objection to an answer is a Challenge (rulebook rule 2).",
+   "source": "Temurah 6b: אמר ליה התם בסברא פליגי? התם בקראי פליגי; Rashi s.v. התם בסברא פליגי - בתמיה"
+  },
+  {
+   "id": "Temurah_6_b",
+   "step": 2,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the attempt",
+   "replace": "Challenges the attempt",
+   "why": "Matches the corrected label: this step objects to an answer.",
+   "source": "Temurah 6b: התם בסברא פליגי"
+  },
+  {
+   "id": "Temurah_6_b",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "Abaye's cloak ruling is quoted to attack the second version (והא אביי נמי סבר... דאמר אביי); a source brought against something is a Challenge, never a Proof (rule 1).",
+   "source": "Temurah 6b: והא אביי נמי סבר מפקינן ריבית קצוצה בדיינין! דאמר אביי..."
+  },
+  {
+   "id": "Temurah_6_b",
+   "step": 20,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "This is the middle of the ברייתא quoted as a challenge (וְהָתַנְיָא) in step 19; every step quoting the rest of a challenging source is a Challenge (rule 1). The step itself says it continues quoting the challenging ברייתא.",
+   "source": "Temurah 6b: ולה׳ לרבות הוא? והתניא... תלמוד לומר ואל פתח אהל מועד"
+  },
+  {
+   "id": "Temurah_7_b",
+   "step": 1,
+   "field": "hebrewStepName",
+   "find": "מימרא",
+   "replace": "ראיה",
+   "why": "This is the text of the ברייתא introduced at the end of 7a as תניא כוותיה דרבא (labelled Proof); the rest of a source takes the label of its opening, also across the amud break (rule 5).",
+   "source": "Temurah 7a: תניא כוותיה דרבא; 7b: נדבה תעשה אותו זה קדשי בדק הבית"
+  },
+  {
+   "id": "Temurah_7_b",
+   "step": 2,
+   "field": "hebrewStepName",
+   "find": "מימרא",
+   "replace": "ראיה",
+   "why": "Continuation of the same supporting ברייתא (תניא כוותיה דרבא) begun on 7a (rule 5).",
+   "source": "Temurah 7b: יכול אפילו קדשי מזבח? תלמוד לומר ולנדר לא ירצה"
+  },
+  {
+   "id": "Temurah_7_b",
+   "step": 3,
+   "field": "hebrewStepName",
+   "find": "מימרא",
+   "replace": "ראיה",
+   "why": "Rabbi's clause is the end of the same supporting ברייתא (תניא כוותיה דרבא); the proof for Rava rests on it (rule 5).",
+   "source": "Temurah 7b: רבי אומר לא ירצה בהרצאת גופו הכתוב מדבר"
+  },
+  {
+   "id": "Temurah_7_b",
+   "step": 16,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "קשיא",
+   "why": "תיובתא דאביי here is the end of the מיתיבי and is answered at once by Abaye (בגברי קתני); a Conclusion is never a step in the middle (rule 5).",
+   "source": "Temurah 7b: מיתיבי... תיובתא דאביי. אמר אביי: בגברי קתני"
+  },
+  {
+   "id": "Temurah_7_b",
+   "step": 16,
+   "field": "title",
+   "find": "אביי is refuted",
+   "replace": "This seems to refute אביי",
+   "why": "The title states a final refutation, but Abaye answers in the next step; the final refutation comes only in step 23.",
+   "source": "Temurah 7b: תיובתא דאביי. אמר אביי: בגברי קתני"
+  },
+  {
+   "id": "Temurah_7_b",
+   "step": 16,
+   "field": "relationToPreviousStep",
+   "find": "Closes the challenge against אביי.",
+   "replace": "Completes the challenge against אביי.",
+   "why": "The challenge is not closed; Abaye answers it next.",
+   "source": "Temurah 7b: אמר אביי: בגברי קתני"
+  },
+  {
+   "id": "Temurah_7_b",
+   "step": 19,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "קשיא",
+   "why": "This תיובתא is answered straight away by Abaye's second defence (אפיק הקטרת מקצתו), so it is part of the challenge, not a Conclusion (rule 5).",
+   "source": "Temurah 7b: אלא פשיטא בחד גברא ותיובתא דאביי. אמר אביי: אפיק הקטרת מקצתו"
+  },
+  {
+   "id": "Temurah_7_b",
+   "step": 19,
+   "field": "title",
+   "find": "so אביי is refuted",
+   "replace": "so אביי seems refuted",
+   "why": "Abaye defends himself in the next step; the final refutation is step 23.",
+   "source": "Temurah 7b: אמר אביי: אפיק הקטרת מקצתו"
+  },
+  {
+   "id": "Temurah_8_a",
+   "step": 12,
+   "field": "hebrewStepName",
+   "find": "שאלה",
+   "replace": "קשיא",
+   "why": "This is the challenger fixing the era of the ברייתא he brought with מיתיבי (the same structure as steps 1-2 and 5-6, labelled Challenge); it is part of the challenge, not a request for information (rule 1).",
+   "source": "Temurah 8a: מיתיבי... במאי עסקינן? אילימא בזמן הזה מי איכא עיר הנדחת?"
+  },
+  {
+   "id": "Temurah_8_a",
+   "step": 17,
+   "field": "hebrewStepName",
+   "find": "שאלה",
+   "replace": "קשיא",
+   "why": "Part of the challenge from the ברייתא brought with מיתיבי in step 16; the same structure elsewhere on the amud is labelled Challenge (rule 1).",
+   "source": "Temurah 8a: מיתיבי ומעלה מעל בה׳... במאי עסקינן? אילימא בזמן הזה"
+  },
+  {
+   "id": "Temurah_8_a",
+   "step": 18,
+   "field": "hebrewStepName",
+   "find": "שאלה",
+   "replace": "קשיא",
+   "why": "Part of the same מיתיבי challenge (rule 1).",
+   "source": "Temurah 8a: ובמאי עסקינן? אילימא בבעל מום"
+  },
+  {
+   "id": "Temurah_8_a",
+   "step": 19,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "Nothing that was proved is being pushed aside; the challenger rules out the blemished option inside his own challenge. Rejection is only for pushing aside a Proof (rule 2).",
+   "source": "Temurah 8a: אילימא בבעל מום הא דומיא דשלמים קתני"
+  },
+  {
+   "id": "Temurah_8_a",
+   "step": 19,
+   "field": "relationToPreviousStep",
+   "find": "Answers the question from step 18 by ruling out the first option.",
+   "replace": "Continues the challenge by ruling out the first option.",
+   "why": "Matches the corrected label: this is part of the challenge.",
+   "source": "Temurah 8a: אילימא בבעל מום הא דומיא דשלמים קתני"
+  },
+  {
+   "id": "Temurah_8_a",
+   "step": 20,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "קשיא",
+   "why": "The שמע מינה ends the מיתיבי against Rav Nachman and is answered at the start of 8b (Abaye: בבכור בחוצה לארץ); the overview itself says the answer comes next. A Conclusion is never a step in the middle (rule 5).",
+   "source": "Temurah 8a: אלא לאו בתם ושמע מינה אית ליה לכהן זכייה בגוויה; 8b: אמר אביי לא, לעולם בתם ובבכור בחוצה לארץ"
+  },
+  {
+   "id": "Temurah_8_b",
+   "step": 6,
+   "field": "whatToRemember",
+   "find": "and רבי עקיבא (he does not)",
+   "replace": "and רבי עקיבא (even if the כהן owns it, he cannot make a תמורה, because the פסוק ties a תמורה to the owner's house)",
+   "why": "Per Rashi, רבי עקיבא (and רבי שמעון בן אלעזר, who follows him) does not deny that the כהן owns a בכור from חוץ לארץ; he rules out the תמורה from the הקש הוא ותמורתו. The site's own 7b step 29 says this answer does not depend on ownership.",
+   "source": "Temurah 8b; Rashi s.v. לא: ור׳ שמעון כר׳ עקיבא דאע״ג דאית ליה זכייה בגוויה אינו עושה תמורה על ידו דנפקא ליה מהקישא"
+  },
+  {
+   "id": "Temurah_8_b",
+   "step": 6,
+   "field": "deeperAnalysis",
+   "find": "רבי שמעון בן אלעזר, who disagrees, follows רבי עקיבא.",
+   "replace": "רבי שמעון בן אלעזר, who says no תמורה can be made with it even though the כהן owns it, follows רבי עקיבא.",
+   "why": "Same error: per Rashi the second view does not deny the כהן's ownership; it rules out the תמורה because of the הקש.",
+   "source": "Temurah 8b; Rashi s.v. לא: דאע״ג דאית ליה זכייה בגוויה אינו עושה תמורה על ידו"
+  },
+  {
+   "id": "Temurah_9_a",
+   "step": 1,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "בוצינא טב מקרא is the second half of the answer begun at the end of 8b (לא, דמסיק אדעתיה:), labelled Resolution there; the second half takes the first half's label across the amud break (rule 5).",
+   "source": "Temurah 8b-9a: לא, דמסיק אדעתיה: בוצינא טב מקרא"
+  },
+  {
+   "id": "Temurah_9_b",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "שאלה",
+   "replace": "תירוץ",
+   "why": "This spells out the first layer inside the answer חדא מגו חדא קא מיבעיא ליה (step 10, Resolution); it is the continuation of that answer, as in the parallel step 4 (rule 5).",
+   "source": "Temurah 9b: ורבי אבין חדא מגו חדא קא מיבעיא ליה... מי אמרינן באשם ראשון"
+  },
+  {
+   "id": "Temurah_9_b",
+   "step": 12,
+   "field": "hebrewStepName",
+   "find": "שאלה",
+   "replace": "תירוץ",
+   "why": "Continuation of the same חדא מגו חדא answer (ואם תימצא לומר...), like step 4 where the same move is labelled Resolution (rule 5).",
+   "source": "Temurah 9b: ואם תימצא לומר הדין גוף אחר... מהו שיחזיר וימיר בו?"
+  },
+  {
+   "id": "Temurah_9_b",
+   "step": 13,
+   "field": "hebrewStepName",
+   "find": "שאלה",
+   "replace": "מסקנא",
+   "why": "The step ends with תיקו; a question and its תיקו in one step are a Conclusion (rules 4 and 9). The step's own title says it is left unresolved.",
+   "source": "Temurah 9b: או דלמא אף על קדושה אחרת... אין חוזר וממיר? תיקו"
+  },
+  {
+   "id": "Temurah_10_a",
+   "step": 14,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "תשובה",
+   "why": "מאי טעמא? אמר קרא is a question answered by a פסוק inside one step; rule 7 makes an answer to a Question a Response, not a Proof.",
+   "source": "Temurah 10a: מאי טעמא? אמר קרא את כל מעשר תבואתך... ונתת; docs/step-labels.md rule 7"
+  },
+  {
+   "id": "Temurah_10_b",
+   "step": 1,
+   "field": "hebrewStepName",
+   "find": "תירוץ",
+   "replace": "מימרא",
+   "why": "This finishes the וצריכא begun on 10a step 20 (מימרא); nothing was challenged in this first version, and a second half takes the first half's label across the amud break (rule 5).",
+   "source": "Temurah 10a-10b: וצריכא, דאי אשמעינן בהך קמייתא... לעוברה גופיה; docs/step-labels.md rule 5"
+  },
+  {
+   "id": "Temurah_10_b",
+   "step": 2,
+   "field": "hebrewStepName",
+   "find": "תירוץ",
+   "replace": "מימרא",
+   "why": "Second half of the same unprompted צריכא (first version), which answers no challenge; it takes the label of 10a step 20 (rule 5).",
+   "source": "Temurah 10b: ואי אשמעינן בתרייתא... צריכא; docs/step-labels.md rule 5"
+  },
+  {
+   "id": "Temurah_10_b",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "תירוץ",
+   "why": "רבי זירא's אין, והתנן answers רבי ירמיה's challenge (step 8, קשיא); an answer to a Challenge that cites a משנה is a Resolution (rule 7).",
+   "source": "Temurah 10b: מי אלימא קדושת דמים... אמר ליה: אין, והתנן כל קדשים שקדם מום קבוע; Rashi s.v. והתנן - בניחותא; rule 7"
+  },
+  {
+   "id": "Temurah_10_b",
+   "step": 9,
+   "field": "title",
+   "find": "Proof that holiness",
+   "replace": "Yes: holiness",
+   "why": "The title names the step as a Proof; it is רבי זירא's answer to the challenge.",
+   "source": "Temurah 10b: אמר ליה: אין, והתנן"
+  },
+  {
+   "id": "Temurah_10_b",
+   "step": 13,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "תירוץ",
+   "why": "Same pattern: אין, והתנן יוצאין לחולין answers the challenge of step 12 (קשיא), so it is a Resolution (rule 7).",
+   "source": "Temurah 10b: ומי אלימא קדושת דמים דאסירא ליה בעבודה? אמר ליה: אין, והתנן; rule 7"
+  },
+  {
+   "id": "Temurah_10_b",
+   "step": 13,
+   "field": "title",
+   "find": "Proof that value-holiness",
+   "replace": "Yes: value-holiness",
+   "why": "The title names the step as a Proof; it is רבי זירא's answer to the challenge.",
+   "source": "Temurah 10b: אמר ליה: אין, והתנן יוצאין לחולין"
+  },
+  {
+   "id": "Temurah_11_b",
+   "step": 15,
+   "field": "hebrewStepName",
+   "find": "שאלה",
+   "replace": "מסקנא",
+   "why": "רבא's bird question and its תיקו are in one step; rule 9 makes a question with its תיקו a Conclusion.",
+   "source": "Temurah 11b: בעי רבא: בעוף מהו?... תיקו; docs/step-labels.md rules 4, 9"
+  },
+  {
+   "id": "Temurah_12_a",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "מימרא",
+   "why": "In the משנה the חכמים simply state their counter-view to רבי יהודה (אמרו לו: הקדש עושה תמורה ואין הולד עושה תמורה); רבי יהודה brought no proof, so this is not a Rejection (rule 2).",
+   "source": "Temurah 12a (משנה): רבי יהודה אומר הולד עושה תמורה. אמרו לו: הקדש עושה תמורה; rule 2"
+  },
+  {
+   "id": "Temurah_12_a",
+   "step": 12,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "תשובה",
+   "why": "דתנן continues רבי יוחנן's answer to מאן תנא (step 11, תשובה); an answer that quotes a source is a Response and its second half takes the same label (rules 5, 7).",
+   "source": "Temurah 12a: מאן תנא? ... דלא כרבי אליעזר, דתנן סאה של תרומה; rules 5, 7"
+  },
+  {
+   "id": "Temurah_12_a",
+   "step": 13,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "תשובה",
+   "why": "The חכמים's half of the same quoted משנה, still part of the answer to מאן תנא (rules 5, 7).",
+   "source": "Temurah 12a: וחכמים אומרים אינה מדמעת אלא לפי חשבון שבה; rules 5, 7"
+  },
+  {
+   "id": "Temurah_12_a",
+   "step": 19,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "תשובה",
+   "why": "דתנן רבי אליעזר בן יעקב אומר is the rest of the answer to מאן תנא (step 18, תשובה), so it takes the Response label (rules 5, 7).",
+   "source": "Temurah 12a: מאן תנא? ... רבי אליעזר בן יעקב היא, דתנן; rules 5, 7"
+  },
+  {
+   "id": "Temurah_12_b",
+   "step": 5,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "תירוץ",
+   "why": "דתניא quoting יוסף בן חוני is the second half of רבה's answer (step 4, תירוץ) to the challenge of step 3 (rules 5, 7).",
+   "source": "Temurah 12b: אלא אמר רבה: לפי חשבון כלים, ויוסף בן חוני היא, דתניא; rules 5, 7"
+  },
+  {
+   "id": "Temurah_12_b",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "תשובה",
+   "why": "דתניא הקדים עפר למים is the second half of the answer to מאן תנא (step 7, תשובה) (rules 5, 7).",
+   "source": "Temurah 12b: מאן תנא? ... דלא כרבי שמעון, דתניא; rules 5, 7"
+  },
+  {
+   "id": "Temurah_13_a",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "תשובה",
+   "why": "The rest of the quoted משנה (רבי עקיבא and חכמים) completes the answer to מתניתין מני (step 5, תשובה) (rules 5, 7).",
+   "source": "Temurah 13a: מתניתין מני? רבי עקיבא היא, דתנן השותפין...; rules 5, 7"
+  },
+  {
+   "id": "Temurah_13_b",
+   "step": 21,
+   "field": "hebrewStepName",
+   "find": "שאלה",
+   "replace": "מסקנא",
+   "why": "The second half of רבי אבין's question and its תיבעי are in one step; a question with its unresolved ending is a Conclusion (rules 4, 9).",
+   "source": "Temurah 13b: אלא שתי קדושות וגוף אחד, מאי? תיבעי; Rashi s.v. תיבעי - כמו תיקו; rules 4, 9"
+  }
+ ]
+}
