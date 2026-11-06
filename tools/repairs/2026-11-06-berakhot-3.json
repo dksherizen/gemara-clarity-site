@@ -1,0 +1,213 @@
+{
+ "name": "berakhot-3",
+ "approved": "Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.",
+ "repairs": [
+  {
+   "id": "Berakhot_28_b",
+   "step": 13,
+   "field": "simpleTranslation",
+   "find": "and that my friends be happy with me.",
+   "replace": "so that my friends would not rejoice over my failure.",
+   "why": "Rashi reads וישמחו בי חברי as part of what he prays to avoid: if he stumbles, his friends would gloat and be punished for it ('two evils'). The site makes it a positive request for his friends to be happy with him.",
+   "source": "Berakhot 28b: ולא אכשל בדבר הלכה וישמחו בי חברי; Rashi s.v. ולא אכשל: וישמחו חברי על כשלוני הרי רעות שתים שיבאו על ידי שאגרום להם שיענשו"
+  },
+  {
+   "id": "Berakhot_28_b",
+   "step": 13,
+   "field": "simpleTranslation",
+   "find": "and may I be happy with them.",
+   "replace": "so that I would not rejoice over their failure.",
+   "why": "The closing clause has the same structure as וישמחו בי חברי, which Rashi reads as gloating over a failure that the prayer asks to avoid; reading it as a positive wish contradicts that reading.",
+   "source": "Berakhot 28b: ולא יכשלו חברי בדבר הלכה ואשמח בהם; compare Rashi s.v. ולא אכשל"
+  },
+  {
+   "id": "Berakhot_28_b",
+   "step": 13,
+   "field": "phrases.7.english",
+   "find": "and that my colleagues rejoice in me,",
+   "replace": "and that my colleagues not rejoice over me, (That is, gloat over my mistake. רש״י says this would be a second harm, since they would be punished for it.)",
+   "why": "Same error in the phrase row: Rashi reads this as the gloating the prayer asks to avoid, not a positive request.",
+   "source": "Rashi s.v. ולא אכשל: וישמחו חברי על כשלוני הרי רעות שתים"
+  },
+  {
+   "id": "Berakhot_28_b",
+   "step": 13,
+   "field": "phrases.11.english",
+   "find": "and that I rejoice in them.",
+   "replace": "and that I not rejoice over them [over their mistake].",
+   "why": "Parallel to phrase 7: the prayer asks not to gloat over a friend's mistake.",
+   "source": "Berakhot 28b: ולא יכשלו חברי בדבר הלכה ואשמח בהם; compare Rashi s.v. ולא אכשל"
+  },
+  {
+   "id": "Berakhot_28_b",
+   "step": 13,
+   "field": "deeperAnalysis",
+   "find": "It also asks that they all be glad in one another's success.",
+   "replace": "It also asks that neither he nor his friends come to gloat over the other's mistake. רש״י says that would be a second harm, since the one who gloats is punished.",
+   "why": "Same error in the explanation: Rashi reads the 'rejoicing' as gloating over a failure, not shared joy.",
+   "source": "Rashi s.v. ולא אכשל: הרי רעות שתים שיבאו על ידי שאגרום להם שיענשו"
+  },
+  {
+   "id": "Berakhot_28_b",
+   "step": 13,
+   "field": "whatToRemember",
+   "find": "and for mutual joy among study partners.",
+   "replace": "and that study partners not gloat over each other's mistakes.",
+   "why": "Same error repeated in the summary line.",
+   "source": "Rashi s.v. ולא אכשל"
+  },
+  {
+   "id": "Berakhot_28_b",
+   "step": 13,
+   "field": "mimraCoreRuling",
+   "find": "and for mutual joy.",
+   "replace": "and that no one gloat over another's mistake.",
+   "why": "Same error repeated in the core ruling.",
+   "source": "Rashi s.v. ולא אכשל"
+  },
+  {
+   "id": "Berakhot_29_a",
+   "step": 43,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "This step knocks down the answer of step 42 (יחיד/ציבור); it does not push aside a proof. Refuting a proposed answer is a challenge, as the batch precedent for 'והתניא' knocking out an answer.",
+   "source": "Berakhot 29a: בצבור מאי טעמא לא ... אי הכי ... מפני ששומע משליח ציבור מיבעי ליה"
+  },
+  {
+   "id": "Berakhot_29_a",
+   "step": 43,
+   "field": "title",
+   "find": "Rejecting the answer:",
+   "replace": "Challenging the answer:",
+   "why": "Title names the kind; keep it consistent with the corrected label קשיא.",
+   "source": "Berakhot 29a: אי הכי ... מיבעי ליה"
+  },
+  {
+   "id": "Berakhot_29_a",
+   "step": 43,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the יחיד/ציבור answer from Step 42.",
+   "replace": "Challenges the יחיד/ציבור answer from Step 42.",
+   "why": "Keeps the relation line consistent with the corrected label קשיא.",
+   "source": "Berakhot 29a"
+  },
+  {
+   "id": "Berakhot_28_a",
+   "step": 22,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "מימרא",
+   "why": "This is a narrative line (רבי עקיבא tells the Sages to lock the gates). No proof is brought or pushed aside, so 'Rejection' is wrong; the surrounding story lines are labelled מימרא.",
+   "source": "Berakhot 28a: אמר להו רבי עקיבא לרבנן: טרוקו גלי דלא ליתו עבדי דרבן גמליאל"
+  },
+  {
+   "id": "Berakhot_33_b",
+   "step": 11,
+   "field": "whatsHappening",
+   "find": "רבי זירא answers רבי חייא בר אבין's difficulty by correcting the wording that caused it.",
+   "replace": "The difficulty about who disagrees is answered by correcting the wording that caused it: the ruling was not stated as הֲלָכָה.",
+   "why": "רבי חייא בר אבין raised no difficulty; he is the one who reported 'הלכה', and the question 'הלכה מכלל דפליגי' was raised against his report (by רבי זירא per Rashi, by the גמרא per the site's own step 6), so the site has the roles reversed.",
+   "source": "Berakhot 33b 'הלכה מכלל דפליגי... אמר ליה לאו הלכה איתמר אלא מטין'; Rashi s.v. ה\"ג הלכה מכלל דפליגי: 'והכי פריך א\"ל רבי זירא הלכה מכלל דפליגי בתמיה'"
+  },
+  {
+   "id": "Berakhot_33_b",
+   "step": null,
+   "field": "overview",
+   "find": "Stories about רבה and רבי חנינא teach that we may not add our own praises of God.",
+   "replace": "A story about רבה confirms the bird's nest rule, and a story about רבי חנינא teaches that we may not add our own praises of God.",
+   "why": "The רבה story is about the bird's nest phrase (רבה was only testing אביי), not about adding praises; only the רבי חנינא story teaches that.",
+   "source": "Berakhot 33b 'אתה חסת על קן צפור... ורבה נמי לחדודי אביי הוא דבעי'; 'האל הגדול הגבור והנורא והאדיר... סיימתינהו לכולהו שבחי דמרך'"
+  },
+  {
+   "id": "Berakhot_35_b",
+   "step": 21,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "Step 20 was an answer (תירוץ), not a proof; the Gemara's 'ונברך עליה בורא פרי עץ זית?' is an objection to that answer, i.e. a challenge, not a pushing-aside of a proof.",
+   "source": "Berakhot 35b: אמרי התם משום דלא אפשר... ונברך עליה בורא פרי עץ זית? אלא אמר מר זוטרא"
+  },
+  {
+   "id": "Berakhot_37_a",
+   "step": 10,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "This is the second half of the same תוספתא quoted in step 9 as the challenge 'ורבנן לא?! והתניא'; it is the body of the קשיא against step 8, not a proof for a position (compare steps 4-5, both labelled קשיא).",
+   "source": "Berakhot 37a: וְרַבָּנַן לָא?! וְהָתַנְיָא ... הַכּוֹסֵס אֶת הָאוֹרֶז ... בּוֹרֵא מִינֵי מְזוֹנוֹת"
+  },
+  {
+   "id": "Berakhot_37_a",
+   "step": 25,
+   "field": "deeperAnalysis",
+   "find": "Following ספריא's reading, \"his name\" refers to רבי עקיבא.",
+   "replace": "According to רש״י, \"his name\" refers to רבן גמליאל: רבי יהודה reports רבן גמליאל's view in a different version.",
+   "why": "Rashi says משמו means in the name of רבן גמליאל, not רבי עקיבא; the site cites Sefaria instead, and its own next amud (37b step 1) says רבי יהודה reports what רבן גמליאל held.",
+   "source": "Rashi Berakhot 37a s.v. משמו: של ר\"ג"
+  },
+  {
+   "id": "Berakhot_37_a",
+   "step": 25,
+   "field": "phrases.1.notes",
+   "find": "According to ספריא, in the name of רבי עקיבא.",
+   "replace": "According to רש״י, in the name of רבן גמליאל.",
+   "why": "Same attribution error as the deeperAnalysis: Rashi reads משמו as רבן גמליאל.",
+   "source": "Rashi Berakhot 37a s.v. משמו: של ר\"ג"
+  },
+  {
+   "id": "Berakhot_36_b",
+   "step": 4,
+   "field": "stepSummary",
+   "find": "fall away once the fruit is picked",
+   "replace": "fall off as the fruit nears ripening, so they are gone once it is picked",
+   "why": "Per Rashi the caper bud is absent from the detached fruit because it drops off as the fruit approaches ripeness, not because picking removes it.",
+   "source": "Rashi Berakhot 36b s.v. בתלוש ליתיה: סופו שנופל הימנו כשמגיע להתבשל"
+  },
+  {
+   "id": "Berakhot_36_b",
+   "step": 4,
+   "field": "deeperAnalysis",
+   "find": "come off when it is picked",
+   "replace": "fall off as it nears ripening, so they are gone by the time it is picked",
+   "why": "Same point: Rashi says the bud falls off as the fruit ripens.",
+   "source": "Rashi Berakhot 36b s.v. בתלוש ליתיה: סופו שנופל הימנו כשמגיע להתבשל"
+  },
+  {
+   "id": "Berakhot_36_b",
+   "step": 4,
+   "field": "phrases.5.notes",
+   "find": "The covering falls off once the fruit is picked",
+   "replace": "The covering falls off as the fruit nears ripening, so it is not there on the picked fruit",
+   "why": "Same point: Rashi says the bud falls off as the fruit ripens.",
+   "source": "Rashi Berakhot 36b s.v. בתלוש ליתיה: סופו שנופל הימנו כשמגיע להתבשל"
+  },
+  {
+   "id": "Berakhot_39_a",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "'Both of them did not live out their year' is the last line of the בר קפרא story; no discussion lands here, and the sugya's actual question (מאי לאו בהא קמיפלגי) only starts in the next step.",
+   "source": "Berakhot 39a: תָּנָא: וּשְׁנֵיהֶם לֹא הוֹצִיאוּ שְׁנָתָן"
+  },
+  {
+   "id": "Berakhot_38_a",
+   "step": 15,
+   "field": "hebrewStepName",
+   "find": "תירוץ",
+   "replace": "מימרא",
+   "why": "רב חסדא's 'ולא פליגי' is a statement reconciling two rulings (רב and שמואל); nothing was challenged before it, so it is not a Resolution.",
+   "source": "Berakhot 38a: אָמַר רַב חִסְדָּא, וְלָא פְּלִיגִי: הָא בְּעָבָה, הָא בְּרַכָּה"
+  },
+  {
+   "id": "Berakhot_35_b",
+   "step": 1,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "\"כאן לאחר ברכה\" is the second half of רבי לוי's answer, whose first half (end of 35a) is labelled Resolution; rulebook rule 5 (second halves take the first half's label).",
+   "source": "Berakhot 35a–b: כאן קודם ברכה, כאן לאחר ברכה"
+  }
+ ]
+}
