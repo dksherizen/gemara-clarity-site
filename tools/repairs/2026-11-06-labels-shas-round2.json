@@ -1,0 +1,393 @@
+{
+ "name": "labels-shas-round2",
+ "approved": "Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.",
+ "repairs": [
+  {
+   "id": "Avodah_Zarah_36_a",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "שמואל pushes back on רב's answer (step 7) by offering to produce the witness; objection to an answer",
+   "source": "Avodah Zarah 36a"
+  },
+  {
+   "id": "Avodah_Zarah_36_a",
+   "step": 8,
+   "field": "relationToPreviousStep",
+   "find": "Rejects רב's rejection",
+   "replace": "Challenges רב's dismissal",
+   "why": "relation named it a rejection",
+   "source": "Avodah Zarah 36a"
+  },
+  {
+   "id": "Avodah_Zarah_49_a",
+   "step": 16,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "continues the challenge of steps 14-15 by testing and knocking out the second candidate (אימר דשמעת...)",
+   "source": "Avodah Zarah 49a"
+  },
+  {
+   "id": "Bava_Kamma_4_b",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "continues the answer of step 5 to רב זביד's challenge (וכי תימא... אי הכי ארבעה? שלשה הוו); second half takes the label of the whole",
+   "source": "Bava Kamma 4b"
+  },
+  {
+   "id": "Bava_Kamma_78_a",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "part of the challenge 'for what halacha is רבא's rule?' (steps 5-6 are קשיא); same objection, next option",
+   "source": "Bava Kamma 78a"
+  },
+  {
+   "id": "Bava_Kamma_7_a",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "ועוד: second answer to the challenge of step 5, parallel to step 6 (תירוץ)",
+   "source": "Bava Kamma 7a"
+  },
+  {
+   "id": "Bava_Metzia_18_a",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וכי תימא... לטעון ולימא פרעתי: objection to the answer of step 6",
+   "source": "Bava Metzia 18a"
+  },
+  {
+   "id": "Bava_Metzia_56_a",
+   "step": 10,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "second half of אביי's evaluation begun in step 9 (קשיא); same label as its first half",
+   "source": "Bava Metzia 56a"
+  },
+  {
+   "id": "Beitzah_35_b",
+   "step": 19,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "אי נמי: second objection to the comparison of step 17, parallel to step 18 (קשיא)",
+   "source": "Beitzah 35b"
+  },
+  {
+   "id": "Berakhot_10_a",
+   "step": 49,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "חזקיהו's reply to ישעיהו's objection in step 48 (story, rule 3)",
+   "source": "Berakhot 10a"
+  },
+  {
+   "id": "Berakhot_10_a",
+   "step": 49,
+   "field": "relationToPreviousStep",
+   "find": "Rejects ישעיהו's claim",
+   "replace": "Answers ישעיהו's claim",
+   "why": "relation named it a rejection",
+   "source": "Berakhot 10a"
+  },
+  {
+   "id": "Chullin_130_b",
+   "step": 19,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "ועוד, מדרבי אליעזר ליקום ולותיב? answers the challenge of step 16 itself by undercutting its source",
+   "source": "Chullin 130b"
+  },
+  {
+   "id": "Eruvin_60_a",
+   "step": 15,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "אביי's 'לא דמי' answers the objection of step 14 (now קשיא) and restores the windows plan",
+   "source": "Eruvin 60a"
+  },
+  {
+   "id": "Eruvin_65_b",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "ואלא מאי כרבי אליעזר בן יעקב? הא אמר...: tests a candidate and knocks it out, an objection, not pushing aside a proof",
+   "source": "Eruvin 65b"
+  },
+  {
+   "id": "Eruvin_66_a",
+   "step": 4,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "second parallel continuing the answer of step 3 (מה מערב... אף שוכר) to the challenge of step 2",
+   "source": "Eruvin 66a"
+  },
+  {
+   "id": "Eruvin_80_a",
+   "step": 20,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "אביי's הכי השתא answers רב יוסף's challenge in step 19",
+   "source": "Eruvin 80a"
+  },
+  {
+   "id": "Eruvin_80_a",
+   "step": 20,
+   "field": "relationToPreviousStep",
+   "find": "Rejects רב יוסף's rejection",
+   "replace": "Answers רב יוסף's challenge",
+   "why": "relation named it a rejection",
+   "source": "Eruvin 80a"
+  },
+  {
+   "id": "Ketubot_110_a",
+   "step": 28,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "ועוד: רבא's second objection announced in step 27 (קשיא)",
+   "source": "Ketubot 110a"
+  },
+  {
+   "id": "Ketubot_31_a",
+   "step": 5,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "אי נמי: second answer to the challenge of step 3, parallel to step 4 (תירוץ)",
+   "source": "Ketubot 31a"
+  },
+  {
+   "id": "Ketubot_40_b",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וכי תימא נילף מקנסא: exact parallel of step 10 (קשיא); same pattern as Kiddushin 3b 16-18",
+   "source": "Ketubot 40b"
+  },
+  {
+   "id": "Ketubot_45_b",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "אדרבה: רבי חנניא pushes back on רבי אילעא's reply (step 7)",
+   "source": "Ketubot 45b"
+  },
+  {
+   "id": "Ketubot_59_a",
+   "step": 23,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "רב פפא's מי דמי knocks out רבי ירמיה's objection (step 22) and supports רבי אלעאי's answer",
+   "source": "Ketubot 59a"
+  },
+  {
+   "id": "Ketubot_85_a",
+   "step": 30,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "וליתה מדרב נחמן: answers רב פפי's challenge (steps 27-29) by setting aside רבא's rule",
+   "source": "Ketubot 85a"
+  },
+  {
+   "id": "Ketubot_88_b",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "second half of אביי's answer (steps 10-12), followed by רב פפא's challenge",
+   "source": "Ketubot 88b"
+  },
+  {
+   "id": "Kiddushin_16_b",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וכי תימא...: blocks a defence, part of רב ששת's challenge (steps 3-5 קשיא)",
+   "source": "Kiddushin 16b"
+  },
+  {
+   "id": "Kiddushin_16_b",
+   "step": 14,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וכי תימא...: blocks a defence, part of רב עמרם's challenge (steps 12-13 קשיא)",
+   "source": "Kiddushin 16b"
+  },
+  {
+   "id": "Kiddushin_18_b",
+   "step": 16,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "האי מאי? בשלמא...: answers the challenge of steps 14-15 and restores the proof",
+   "source": "Kiddushin 18b"
+  },
+  {
+   "id": "Kiddushin_3_b",
+   "step": 17,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וכי תימא נילף מקנסא: closes an escape route of the קשיא of step 15, parallel to step 16 (קשיא)",
+   "source": "Kiddushin 3b"
+  },
+  {
+   "id": "Kiddushin_71_b",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "אישתמיטתיה: the Gemara answers רבי יוחנן's objection (steps 5-6) in זעירי's defence",
+   "source": "Kiddushin 71b"
+  },
+  {
+   "id": "Megillah_6_a",
+   "step": 15,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וכי תימא... והאמר: blocks a second defence, part of the challenge of steps 13-14",
+   "source": "Megillah 6a"
+  },
+  {
+   "id": "Niddah_45_b",
+   "step": 27,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "ולא היא, רבא קטעי: the Gemara rejects רבא's answer (step 26) and revives רב המנונא's challenge",
+   "source": "Niddah 45b"
+  },
+  {
+   "id": "Niddah_45_b",
+   "step": 27,
+   "field": "relationToPreviousStep",
+   "find": "Rejects רבא's rejection",
+   "replace": "Challenges רבא's answer",
+   "why": "relation named it a rejection",
+   "source": "Niddah 45b"
+  },
+  {
+   "id": "Pesachim_11_a",
+   "step": 12,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וכי תימא... מאי איכא למימר: closes a rescue, part of the challenge of step 11",
+   "source": "Pesachim 11a"
+  },
+  {
+   "id": "Pesachim_20_b",
+   "step": 5,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "rest of רבי יוסי's ברייתא quoted to set up the contradiction (rule 1), parallel to step 4 (קשיא)",
+   "source": "Pesachim 20b"
+  },
+  {
+   "id": "Pesachim_78_a",
+   "step": 29,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "ועוד: second objection to the proposed reason, parallel to step 28 (קשיא)",
+   "source": "Pesachim 78a"
+  },
+  {
+   "id": "Pesachim_84_b",
+   "step": 10,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רב פפא rejects אביי's proposed case (steps 5-9): objection to an answer; his own case follows in step 11",
+   "source": "Pesachim 84b"
+  },
+  {
+   "id": "Sanhedrin_61_a",
+   "step": 4,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "מתקיף לה רב אחא: objection, parallel to step 3",
+   "source": "Sanhedrin 61a"
+  },
+  {
+   "id": "Sotah_2_b",
+   "step": 20,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "אי לאו סתירה קינוי מי איכא? answers the אדרבה challenge of step 19",
+   "source": "Sotah 2b"
+  },
+  {
+   "id": "Sotah_31_a",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "וכי תימא הכי נמי, והכתיב...: continues the answer of step 6 to the challenge of step 5",
+   "source": "Sotah 31a"
+  },
+  {
+   "id": "Zevachim_76_a",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "אי הכי, איפכא מיבעי ליה: רב יוסף objects to אביי's answer (step 5)",
+   "source": "Zevachim 76a"
+  },
+  {
+   "id": "Zevachim_76_a",
+   "step": 6,
+   "field": "relationToPreviousStep",
+   "find": "Rejects אביי's rejection",
+   "replace": "Challenges אביי's answer",
+   "why": "relation named it a rejection",
+   "source": "Zevachim 76a"
+  },
+  {
+   "id": "Zevachim_90_b",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "restates the difficulty against step 5's answer; step 7 'answers the difficulty'",
+   "source": "Zevachim 90b"
+  },
+  {
+   "id": "Zevachim_96_b",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "ועוד תניא: second objection to רמי בר חמא's answer, parallel to step 10 (קשיא)",
+   "source": "Zevachim 96b"
+  }
+ ]
+}

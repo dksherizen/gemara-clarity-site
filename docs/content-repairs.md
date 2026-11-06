@@ -2,6 +2,140 @@
 
 Every change to the AI-written content, newest first. Each entry says what was wrong, the source used, and who approved it.
 
+## 202611060600-rev120-labels-shas-round2
+
+Approved: Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.
+
+- **Avodah Zarah 36a, step 8** (hebrewStepName): שמואל pushes back on רב's answer (step 7) by offering to produce the witness; objection to an answer Source: Avodah Zarah 36a.
+  - was: דחיה
+  - now: קשיא
+- **Avodah Zarah 36a, step 8** (relationToPreviousStep): relation named it a rejection Source: Avodah Zarah 36a.
+  - was: Rejects רב's rejection
+  - now: Challenges רב's dismissal
+- **Avodah Zarah 49a, step 16** (hebrewStepName): continues the challenge of steps 14-15 by testing and knocking out the second candidate (אימר דשמעת...) Source: Avodah Zarah 49a.
+  - was: דחיה
+  - now: קשיא
+- **Bava Kamma 4b, step 6** (hebrewStepName): continues the answer of step 5 to רב זביד's challenge (וכי תימא... אי הכי ארבעה? שלשה הוו); second half takes the label of the whole Source: Bava Kamma 4b.
+  - was: דחיה
+  - now: תירוץ
+- **Bava Kamma 78a, step 7** (hebrewStepName): part of the challenge 'for what halacha is רבא's rule?' (steps 5-6 are קשיא); same objection, next option Source: Bava Kamma 78a.
+  - was: דחיה
+  - now: קשיא
+- **Bava Kamma 7a, step 7** (hebrewStepName): ועוד: second answer to the challenge of step 5, parallel to step 6 (תירוץ) Source: Bava Kamma 7a.
+  - was: דחיה
+  - now: תירוץ
+- **Bava Metzia 18a, step 7** (hebrewStepName): וכי תימא... לטעון ולימא פרעתי: objection to the answer of step 6 Source: Bava Metzia 18a.
+  - was: דחיה
+  - now: קשיא
+- **Bava Metzia 56a, step 10** (hebrewStepName): second half of אביי's evaluation begun in step 9 (קשיא); same label as its first half Source: Bava Metzia 56a.
+  - was: דחיה
+  - now: קשיא
+- **Beitzah 35b, step 19** (hebrewStepName): אי נמי: second objection to the comparison of step 17, parallel to step 18 (קשיא) Source: Beitzah 35b.
+  - was: דחיה
+  - now: קשיא
+- **Berakhot 10a, step 49** (hebrewStepName): חזקיהו's reply to ישעיהו's objection in step 48 (story, rule 3) Source: Berakhot 10a.
+  - was: דחיה
+  - now: תירוץ
+- **Berakhot 10a, step 49** (relationToPreviousStep): relation named it a rejection Source: Berakhot 10a.
+  - was: Rejects ישעיהו's claim
+  - now: Answers ישעיהו's claim
+- **Chullin 130b, step 19** (hebrewStepName): ועוד, מדרבי אליעזר ליקום ולותיב? answers the challenge of step 16 itself by undercutting its source Source: Chullin 130b.
+  - was: דחיה
+  - now: תירוץ
+- **Eruvin 60a, step 15** (hebrewStepName): אביי's 'לא דמי' answers the objection of step 14 (now קשיא) and restores the windows plan Source: Eruvin 60a.
+  - was: דחיה
+  - now: תירוץ
+- **Eruvin 65b, step 9** (hebrewStepName): ואלא מאי כרבי אליעזר בן יעקב? הא אמר...: tests a candidate and knocks it out, an objection, not pushing aside a proof Source: Eruvin 65b.
+  - was: דחיה
+  - now: קשיא
+- **Eruvin 66a, step 4** (hebrewStepName): second parallel continuing the answer of step 3 (מה מערב... אף שוכר) to the challenge of step 2 Source: Eruvin 66a.
+  - was: דחיה
+  - now: תירוץ
+- **Eruvin 80a, step 20** (hebrewStepName): אביי's הכי השתא answers רב יוסף's challenge in step 19 Source: Eruvin 80a.
+  - was: דחיה
+  - now: תירוץ
+- **Eruvin 80a, step 20** (relationToPreviousStep): relation named it a rejection Source: Eruvin 80a.
+  - was: Rejects רב יוסף's rejection
+  - now: Answers רב יוסף's challenge
+- **Ketubot 110a, step 28** (hebrewStepName): ועוד: רבא's second objection announced in step 27 (קשיא) Source: Ketubot 110a.
+  - was: דחיה
+  - now: קשיא
+- **Ketubot 31a, step 5** (hebrewStepName): אי נמי: second answer to the challenge of step 3, parallel to step 4 (תירוץ) Source: Ketubot 31a.
+  - was: דחיה
+  - now: תירוץ
+- **Ketubot 40b, step 11** (hebrewStepName): וכי תימא נילף מקנסא: exact parallel of step 10 (קשיא); same pattern as Kiddushin 3b 16-18 Source: Ketubot 40b.
+  - was: דחיה
+  - now: קשיא
+- **Ketubot 45b, step 8** (hebrewStepName): אדרבה: רבי חנניא pushes back on רבי אילעא's reply (step 7) Source: Ketubot 45b.
+  - was: דחיה
+  - now: קשיא
+- **Ketubot 59a, step 23** (hebrewStepName): רב פפא's מי דמי knocks out רבי ירמיה's objection (step 22) and supports רבי אלעאי's answer Source: Ketubot 59a.
+  - was: דחיה
+  - now: תירוץ
+- **Ketubot 85a, step 30** (hebrewStepName): וליתה מדרב נחמן: answers רב פפי's challenge (steps 27-29) by setting aside רבא's rule Source: Ketubot 85a.
+  - was: דחיה
+  - now: תירוץ
+- **Ketubot 88b, step 11** (hebrewStepName): second half of אביי's answer (steps 10-12), followed by רב פפא's challenge Source: Ketubot 88b.
+  - was: מסקנא
+  - now: תירוץ
+- **Kiddushin 16b, step 6** (hebrewStepName): וכי תימא...: blocks a defence, part of רב ששת's challenge (steps 3-5 קשיא) Source: Kiddushin 16b.
+  - was: דחיה
+  - now: קשיא
+- **Kiddushin 16b, step 14** (hebrewStepName): וכי תימא...: blocks a defence, part of רב עמרם's challenge (steps 12-13 קשיא) Source: Kiddushin 16b.
+  - was: דחיה
+  - now: קשיא
+- **Kiddushin 18b, step 16** (hebrewStepName): האי מאי? בשלמא...: answers the challenge of steps 14-15 and restores the proof Source: Kiddushin 18b.
+  - was: דחיה
+  - now: תירוץ
+- **Kiddushin 3b, step 17** (hebrewStepName): וכי תימא נילף מקנסא: closes an escape route of the קשיא of step 15, parallel to step 16 (קשיא) Source: Kiddushin 3b.
+  - was: דחיה
+  - now: קשיא
+- **Kiddushin 71b, step 7** (hebrewStepName): אישתמיטתיה: the Gemara answers רבי יוחנן's objection (steps 5-6) in זעירי's defence Source: Kiddushin 71b.
+  - was: דחיה
+  - now: תירוץ
+- **Megillah 6a, step 15** (hebrewStepName): וכי תימא... והאמר: blocks a second defence, part of the challenge of steps 13-14 Source: Megillah 6a.
+  - was: דחיה
+  - now: קשיא
+- **Niddah 45b, step 27** (hebrewStepName): ולא היא, רבא קטעי: the Gemara rejects רבא's answer (step 26) and revives רב המנונא's challenge Source: Niddah 45b.
+  - was: דחיה
+  - now: קשיא
+- **Niddah 45b, step 27** (relationToPreviousStep): relation named it a rejection Source: Niddah 45b.
+  - was: Rejects רבא's rejection
+  - now: Challenges רבא's answer
+- **Pesachim 11a, step 12** (hebrewStepName): וכי תימא... מאי איכא למימר: closes a rescue, part of the challenge of step 11 Source: Pesachim 11a.
+  - was: דחיה
+  - now: קשיא
+- **Pesachim 20b, step 5** (hebrewStepName): rest of רבי יוסי's ברייתא quoted to set up the contradiction (rule 1), parallel to step 4 (קשיא) Source: Pesachim 20b.
+  - was: דחיה
+  - now: קשיא
+- **Pesachim 78a, step 29** (hebrewStepName): ועוד: second objection to the proposed reason, parallel to step 28 (קשיא) Source: Pesachim 78a.
+  - was: דחיה
+  - now: קשיא
+- **Pesachim 84b, step 10** (hebrewStepName): רב פפא rejects אביי's proposed case (steps 5-9): objection to an answer; his own case follows in step 11 Source: Pesachim 84b.
+  - was: דחיה
+  - now: קשיא
+- **Sanhedrin 61a, step 4** (hebrewStepName): מתקיף לה רב אחא: objection, parallel to step 3 Source: Sanhedrin 61a.
+  - was: דחיה
+  - now: קשיא
+- **Sotah 2b, step 20** (hebrewStepName): אי לאו סתירה קינוי מי איכא? answers the אדרבה challenge of step 19 Source: Sotah 2b.
+  - was: דחיה
+  - now: תירוץ
+- **Sotah 31a, step 7** (hebrewStepName): וכי תימא הכי נמי, והכתיב...: continues the answer of step 6 to the challenge of step 5 Source: Sotah 31a.
+  - was: דחיה
+  - now: תירוץ
+- **Zevachim 76a, step 6** (hebrewStepName): אי הכי, איפכא מיבעי ליה: רב יוסף objects to אביי's answer (step 5) Source: Zevachim 76a.
+  - was: דחיה
+  - now: קשיא
+- **Zevachim 76a, step 6** (relationToPreviousStep): relation named it a rejection Source: Zevachim 76a.
+  - was: Rejects אביי's rejection
+  - now: Challenges אביי's answer
+- **Zevachim 90b, step 6** (hebrewStepName): restates the difficulty against step 5's answer; step 7 'answers the difficulty' Source: Zevachim 90b.
+  - was: דחיה
+  - now: קשיא
+- **Zevachim 96b, step 11** (hebrewStepName): ועוד תניא: second objection to רמי בר חמא's answer, parallel to step 10 (קשיא) Source: Zevachim 96b.
+  - was: דחיה
+  - now: קשיא
+
 ## 202611060556-rev119-labels-shas-o
 
 Approved: Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.
