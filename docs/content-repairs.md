@@ -2,6 +2,779 @@
 
 Every change to the AI-written content, newest first. Each entry says what was wrong, the source used, and who approved it.
 
+## 202611060309-rev106-labels-shas-c
+
+Approved: Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.
+
+- **Beitzah 7a, step 22** (hebrewStepName): אביי objects to רב יוסף's answer (ממאי… דילמא), not pushing aside a proof Source: Beitzah 7a.
+  - was: דחיה
+  - now: קשיא
+- **Beitzah 7a, step 22** (relationToPreviousStep): names the wrong kind of step after the label fix Source: Beitzah 7a.
+  - was: Rejects רב יוסף's
+  - now: Challenges רב יוסף's
+- **Beitzah 8b, step 5** (hebrewStepName): continues the objection to the גומא reason (אלא כדרבי אבא, הכא נמי) Source: Beitzah 8b.
+  - was: דחיה
+  - now: קשיא
+- **Beitzah 9a, step 4** (hebrewStepName): רבא answers the challenge of step 3 Source: Beitzah 9a.
+  - was: דחיה
+  - now: תירוץ
+- **Beitzah 9a, step 4** (relationToPreviousStep): names the wrong kind of step after the label fix Source: Beitzah 9a.
+  - was: Rejects the suggested dispute
+  - now: Answers the suggested dispute
+- **Beitzah 9b, step 14** (hebrewStepName): objects to the contradiction that רבי יוחנן's answer relies on (ממאי… דלמא); not a proof Source: Beitzah 9b.
+  - was: דחיה
+  - now: קשיא
+- **Beitzah 9b, step 14** (relationToPreviousStep): names the wrong kind of step after the label fix Source: Beitzah 9b.
+  - was: Rejects the need
+  - now: Challenges the need
+- **Beitzah 9b, step 15** (hebrewStepName): second half of the objection in step 14 (ואי נמי) Source: Beitzah 9b.
+  - was: דחיה
+  - now: קשיא
+- **Beitzah 9b, step 19** (hebrewStepName): objects to רבי יוחנן's answer in step 18 (ודלמא לא היא) Source: Beitzah 9b.
+  - was: דחיה
+  - now: קשיא
+- **Bekhorot 10a, step 13** (hebrewStepName): וכי תימא continuing the challenge of step 12 Source: Bekhorot 10a.
+  - was: דחיה
+  - now: קשיא
+- **Bekhorot 13a, step 32** (hebrewStepName): יוכיח refutes the proposed answer (step 31 is a Response), an objection to an answer Source: Bekhorot 13a.
+  - was: דחיה
+  - now: קשיא
+- **Bekhorot 13a, step 32** (relationToPreviousStep): names the wrong kind of step after the label fix Source: Bekhorot 13a.
+  - was: Rejects the קל וחומר
+  - now: Challenges the קל וחומר
+- **Bekhorot 13b, step 5** (hebrewStepName): objects to the answer of step 4 Source: Bekhorot 13b.
+  - was: דחיה
+  - now: קשיא
+- **Bekhorot 13b, step 5** (relationToPreviousStep): names the wrong kind of step after the label fix Source: Bekhorot 13b.
+  - was: Rejects the answer of step 4.
+  - now: Challenges the answer of step 4.
+- **Bekhorot 13b, step 6** (relationToPreviousStep): names the wrong kind of step after the label fix Source: Bekhorot 13b.
+  - was: Answers the rejection in Step 5
+  - now: Answers the challenge in Step 5
+- **Bekhorot 15a, step 16** (hebrewStepName): רב פפא objects to אביי's answer Source: Bekhorot 15a.
+  - was: דחיה
+  - now: קשיא
+- **Bekhorot 15a, step 16** (relationToPreviousStep): names the wrong kind of step after the label fix Source: Bekhorot 15a.
+  - was: Rejects אביי's answer
+  - now: Challenges אביי's answer
+- **Bekhorot 15a, step 25** (hebrewStepName): end of the answer in steps 22-24, followed straight away by a challenge Source: Bekhorot 15a.
+  - was: מסקנא
+  - now: תירוץ
+- **Bekhorot 21b, step 4** (hebrewStepName): אדרבה objects to the answer of step 3 Source: Bekhorot 21b.
+  - was: דחיה
+  - now: קשיא
+- **Bekhorot 21b, step 4** (relationToPreviousStep): names the wrong kind of step after the label fix Source: Bekhorot 21b.
+  - was: Rejects the previous answer
+  - now: Challenges the previous answer
+- **Bekhorot 24a, step 21** (hebrewStepName): objects to the suggested answer of step 20 Source: Bekhorot 24a.
+  - was: דחיה
+  - now: קשיא
+- **Bekhorot 24a, step 22** (hebrewStepName): second objection to the suggested answer of step 20 (ותו) Source: Bekhorot 24a.
+  - was: דחיה
+  - now: קשיא
+- **Bekhorot 24a, step 22** (relationToPreviousStep): names the wrong kind of step after the label fix Source: Bekhorot 24a.
+  - was: A second rejection of step 20
+  - now: A second challenge to step 20
+- **Bekhorot 25b, step 12** (hebrewStepName): רבי ירמיה attacks רב נחמן's answer (step 9) and the exchange built on it Source: Bekhorot 25b.
+  - was: דחיה
+  - now: קשיא
+- **Bekhorot 25b, step 12** (relationToPreviousStep): names the wrong kind of step after the label fix Source: Bekhorot 25b.
+  - was: Rejects רב נחמן's
+  - now: Challenges רב נחמן's
+- **Bekhorot 26b, step 21** (hebrewStepName): אדרבה objects to the answer of step 20 Source: Bekhorot 26b.
+  - was: דחיה
+  - now: קשיא
+- **Bekhorot 26b, step 21** (relationToPreviousStep): names the wrong kind of step after the label fix Source: Bekhorot 26b.
+  - was: Rejects the answer of Step 20
+  - now: Challenges the answer of Step 20
+- **Bekhorot 32a, step 6** (hebrewStepName): ולא פליגי after a Response to a question, no challenge before it Source: Bekhorot 32a.
+  - was: תירוץ
+  - now: מימרא
+- **Bekhorot 32a, step 7** (hebrewStepName): second ולא פליגי (ואיבעית אימא), same label as step 6 Source: Bekhorot 32a.
+  - was: תירוץ
+  - now: מימרא
+- **Bekhorot 32b, step 8** (hebrewStepName): שמע מינה closing רב אשי's proof (steps 6-7), followed straight away by a challenge Source: Bekhorot 32b.
+  - was: מסקנא
+  - now: ראיה
+- **Bekhorot 32b, step 12** (hebrewStepName): answers the challenge of step 11 (ולא כל דכן) Source: Bekhorot 32b.
+  - was: דחיה
+  - now: תירוץ
+- **Bekhorot 32b, step 12** (relationToPreviousStep): names the wrong kind of step after the label fix Source: Bekhorot 32b.
+  - was: Rejects the challenge of step 11
+  - now: Answers the challenge of step 11
+- **Bekhorot 32b, step 13** (hebrewStepName): restates the שמע מינה of רב אשי's proof, followed straight away by a challenge Source: Bekhorot 32b.
+  - was: מסקנא
+  - now: ראיה
+- **Bekhorot 35a, step 6** (hebrewStepName): זה הכלל closes the משנה; a line of the משנה, not where a discussion lands Source: Bekhorot 35a.
+  - was: מסקנא
+  - now: מימרא
+- **Bekhorot 37b, step 8** (hebrewStepName): continuation of the ברייתא brought as proof in step 5 (יכול… תלמוד לומר) Source: Bekhorot 37b.
+  - was: מסקנא
+  - now: ראיה
+- **Bekhorot 3a, step 26** (hebrewStepName): רב פפא objects to the reconciliation of step 25 Source: Bekhorot 3a.
+  - was: דחיה
+  - now: קשיא
+- **Bekhorot 3a, step 26** (relationToPreviousStep): names the wrong kind of step after the label fix Source: Bekhorot 3a.
+  - was: Rejects the reconciliation
+  - now: Challenges the reconciliation
+- **Bekhorot 3b, step 6** (hebrewStepName): הא נמי תנינא renews the challenge of step 4 against the וכי תימא answer Source: Bekhorot 3b.
+  - was: דחיה
+  - now: קשיא
+- **Bekhorot 3b, step 6** (relationToPreviousStep): names the wrong kind of step after the label fix Source: Bekhorot 3b.
+  - was: Rejects the distinction
+  - now: Knocks down the distinction
+- **Bekhorot 40a, step 26** (hebrewStepName): last line of the משנה (בית דין של אחריהן), a statement Source: Bekhorot 40a.
+  - was: מסקנא
+  - now: מימרא
+- **Bekhorot 40b, step 15** (hebrewStepName): ותסברא sharpens the contradiction of step 14; step 16 then answers it Source: Bekhorot 40b.
+  - was: דחיה
+  - now: קשיא
+- **Bekhorot 40b, step 15** (relationToPreviousStep): names the wrong kind of step after the label fix Source: Bekhorot 40b.
+  - was: Rejects the idea in step 14
+  - now: Sharpens step 14 by dismissing the idea
+- **Bekhorot 42b, step 14** (hebrewStepName): objects to the answer of step 13 (אפילו תימא רבנן) Source: Bekhorot 42b.
+  - was: דחיה
+  - now: קשיא
+- **Bekhorot 42b, step 14** (relationToPreviousStep): names the wrong kind of step after the label fix Source: Bekhorot 42b.
+  - was: Rejects step 13's claim
+  - now: Challenges step 13's claim
+- **Bekhorot 43a, step 20** (hebrewStepName): answers the 'one from two' challenge of step 19 (מה הצד-style refutation) Source: Bekhorot 43a.
+  - was: דחיה
+  - now: תירוץ
+- **Bekhorot 43a, step 20** (relationToPreviousStep): names the wrong kind of step after the label fix Source: Bekhorot 43a.
+  - was: Begins rejecting the 'one from two' challenge
+  - now: Begins answering the 'one from two' challenge
+- **Bekhorot 43a, step 21** (hebrewStepName): second part of the answer to step 19 Source: Bekhorot 43a.
+  - was: דחיה
+  - now: תירוץ
+- **Bekhorot 43a, step 21** (relationToPreviousStep): names the wrong kind of step after the label fix Source: Bekhorot 43a.
+  - was: Continues rejecting the 'one from two' challenge
+  - now: Continues answering the 'one from two' challenge
+- **Bekhorot 43a, step 22** (hebrewStepName): third part of the answer to step 19 Source: Bekhorot 43a.
+  - was: דחיה
+  - now: תירוץ
+- **Bekhorot 46b, step 10** (hebrewStepName): הא נמי תנינא knocks out the defense of step 9; an objection, not a proof pushed aside Source: Bekhorot 46b.
+  - was: דחיה
+  - now: קשיא
+- **Bekhorot 46b, step 10** (relationToPreviousStep): names the wrong kind of step after the label fix Source: Bekhorot 46b.
+  - was: Rejects the defense in step 9
+  - now: Challenges the defense in step 9
+- **Bekhorot 47a, step 26** (hebrewStepName): inside רב פפא's story רבה objects to his answer (rule 3) Source: Bekhorot 47a.
+  - was: דחיה
+  - now: קשיא
+- **Bekhorot 47a, step 28** (hebrewStepName): second half of רבה's objection begun in step 26 Source: Bekhorot 47a.
+  - was: דחיה
+  - now: קשיא
+- **Bekhorot 47b, step 12** (hebrewStepName): וכי תימא, part of the challenge of step 11 Source: Bekhorot 47b.
+  - was: דחיה
+  - now: קשיא
+- **Bekhorot 50b, step 9** (hebrewStepName): אלא אי איתמר הכי איתמר reformulates to escape the challenge of step 8, and is challenged straight away Source: Bekhorot 50b.
+  - was: מסקנא
+  - now: תירוץ
+- **Bekhorot 53b, step 4** (hebrewStepName): וכי תימא… closes a gap in the answer of step 3; part of the answer Source: Bekhorot 53b.
+  - was: דחיה
+  - now: תירוץ
+- **Bekhorot 53b, step 5** (hebrewStepName): second וכי תימא closing a gap in the answer of step 3 Source: Bekhorot 53b.
+  - was: דחיה
+  - now: תירוץ
+- **Bekhorot 53b, step 5** (relationToPreviousStep): names the wrong kind of step after the label fix Source: Bekhorot 53b.
+  - was: Rejects a second way around
+  - now: Closes a second way around
+- **Bekhorot 5a, step 22** (hebrewStepName): שמע מינה ending the proof of step 21, followed straight away by a rejection Source: Bekhorot 5a.
+  - was: מסקנא
+  - now: ראיה
+- **Bekhorot 5a, step 25** (hebrewStepName): שמע מינה ending the proof of step 24, followed straight away by a rejection Source: Bekhorot 5a.
+  - was: מסקנא
+  - now: ראיה
+- **Bekhorot 5b, step 40** (hebrewStepName): הילכך צריכי ends the answer of steps 37-39, followed straight away by a challenge Source: Bekhorot 5b.
+  - was: מסקנא
+  - now: תירוץ
+- **Bekhorot 8a, step 28** (hebrewStepName): completes the answer begun in step 25; challenged straight away Source: Bekhorot 8a.
+  - was: מסקנא
+  - now: תירוץ
+- **Bekhorot 9a, step 14** (hebrewStepName): אביי objects to רבי ירמיה's answer to מאן תנא Source: Bekhorot 9a.
+  - was: דחיה
+  - now: קשיא
+- **Bekhorot 9a, step 14** (relationToPreviousStep): names the wrong kind of step after the label fix Source: Bekhorot 9a.
+  - was: Rejects רבי ירמיה's conclusion
+  - now: Challenges רבי ירמיה's conclusion
+- **Berakhot 10a, step 6** (hebrewStepName): a line of the story (he prayed and they repented), rule 8 Source: Berakhot 10a.
+  - was: מסקנא
+  - now: מימרא
+- **Berakhot 10a, step 46** (hebrewStepName): inside the story ישעיהו objects to חזקיהו's defense (rule 3) Source: Berakhot 10a.
+  - was: דחיה
+  - now: קשיא
+- **Berakhot 10a, step 46** (relationToPreviousStep): names the wrong kind of step after the label fix Source: Berakhot 10a.
+  - was: Rejects חזקיהו's defense
+  - now: Challenges חזקיהו's defense
+- **Berakhot 10a, step 48** (hebrewStepName): inside the story ישעיהו objects to חזקיהו's proposal (rule 3) Source: Berakhot 10a.
+  - was: דחיה
+  - now: קשיא
+- **Berakhot 10a, step 48** (relationToPreviousStep): names the wrong kind of step after the label fix Source: Berakhot 10a.
+  - was: Rejects the proposal in step 47
+  - now: Challenges the proposal in step 47
+- **Berakhot 21b, step 26** (hebrewStepName): אימא סיפא knocks out the וכי תימא defense; continues the challenge Source: Berakhot 21b.
+  - was: דחיה
+  - now: קשיא
+- **Berakhot 21b, step 26** (relationToPreviousStep): names the wrong kind of step after the label fix Source: Berakhot 21b.
+  - was: Starts rejecting the defense
+  - now: Starts challenging the defense
+- **Berakhot 23a, step 2** (hebrewStepName): רב אשי objects to the suggested explanation of step 1 Source: Berakhot 23a.
+  - was: דחיה
+  - now: קשיא
+- **Berakhot 23a, step 2** (relationToPreviousStep): names the wrong kind of step after the label fix Source: Berakhot 23a.
+  - was: Rejects the suggestion in step 1.
+  - now: Challenges the suggestion in step 1.
+- **Berakhot 23b, step 8** (hebrewStepName): ותסברא objects to the suggested answer of step 7 Source: Berakhot 23b.
+  - was: דחיה
+  - now: קשיא
+- **Berakhot 23b, step 8** (relationToPreviousStep): names the wrong kind of step after the label fix Source: Berakhot 23b.
+  - was: Rejects the split proposed
+  - now: Challenges the split proposed
+- **Berakhot 25a, step 38** (hebrewStepName): רבא's ruling answers מאי הוי עלה (step 36) and is challenged straight away Source: Berakhot 25a.
+  - was: מסקנא
+  - now: תשובה
+- **Berakhot 27a, step 2** (hebrewStepName): אלא מאי… אימא סיפא continues the challenge against the other reading Source: Berakhot 27a.
+  - was: דחיה
+  - now: קשיא
+- **Berakhot 27a, step 2** (relationToPreviousStep): names the wrong kind of step after the label fix Source: Berakhot 27a.
+  - was: Rejects drawing a conclusion from step 1
+  - now: Presses on from step 1
+- **Berakhot 27a, step 3** (hebrewStepName): ותניא quoted to attack the non-inclusive reading (rule 1) Source: Berakhot 27a.
+  - was: ראיה
+  - now: קשיא
+- **Berakhot 30b, step 25** (hebrewStepName): objects to רבי אלעזר's answer to מנא הני מילי (rule 7: the source is an answer, not a proof) Source: Berakhot 30b.
+  - was: דחיה
+  - now: קשיא
+- **Berakhot 30b, step 25** (relationToPreviousStep): names the wrong kind of step after the label fix Source: Berakhot 30b.
+  - was: Rejects רבי אלעזר's proof
+  - now: Challenges רבי אלעזר's source
+- **Berakhot 30b, step 27** (hebrewStepName): objects to the answer of step 26 Source: Berakhot 30b.
+  - was: דחיה
+  - now: קשיא
+- **Berakhot 30b, step 27** (relationToPreviousStep): names the wrong kind of step after the label fix Source: Berakhot 30b.
+  - was: Rejects the proof brought in step 26.
+  - now: Challenges the source brought in step 26.
+- **Berakhot 30b, step 27** (title): names the wrong kind of step after the label fix Source: Berakhot 30b.
+  - was: Rejected: דוד
+  - now: Maybe דוד
+- **Berakhot 30b, step 29** (hebrewStepName): objects to the answer of step 28 Source: Berakhot 30b.
+  - was: דחיה
+  - now: קשיא
+- **Berakhot 30b, step 29** (relationToPreviousStep): names the wrong kind of step after the label fix Source: Berakhot 30b.
+  - was: Rejects the אל תקרי reading
+  - now: Challenges the אל תקרי reading
+- **Berakhot 30b, step 29** (title): names the wrong kind of step after the label fix Source: Berakhot 30b.
+  - was: Rejected: maybe
+  - now: Maybe
+- **Berakhot 33b, step 8** (hebrewStepName): answers the challenge of step 7 Source: Berakhot 33b.
+  - was: דחיה
+  - now: תירוץ
+- **Berakhot 35a, step 14** (hebrewStepName): end of the answer begun in step 12, challenged straight away Source: Berakhot 35a.
+  - was: מסקנא
+  - now: תירוץ
+- **Berakhot 35a, step 24** (hebrewStepName): הצד השוה closes the answer built in steps 21-23 and is challenged straight away Source: Berakhot 35a.
+  - was: מסקנא
+  - now: תירוץ
+- **Berakhot 37a, step 3** (hebrewStepName): קא משמע לן, second half of the צריכותא answer in steps 1-2 Source: Berakhot 37a.
+  - was: מסקנא
+  - now: תשובה
+- **Berakhot 3a, step 19** (hebrewStepName): inside the story אליהו objects to רבי יוסי's defense (rule 3) Source: Berakhot 3a.
+  - was: דחיה
+  - now: קשיא
+- **Berakhot 3a, step 19** (relationToPreviousStep): names the wrong kind of step after the label fix Source: Berakhot 3a.
+  - was: Rejects רבי יוסי's defense
+  - now: Challenges רבי יוסי's defense
+- **Berakhot 3b, step 31** (hebrewStepName): answers the challenge of step 30 (לא, מאורתא ועד אורתא) Source: Berakhot 3b.
+  - was: דחיה
+  - now: תירוץ
+- **Berakhot 3b, step 31** (relationToPreviousStep): names the wrong kind of step after the label fix Source: Berakhot 3b.
+  - was: Rejects the proof brought in step 30
+  - now: Answers the challenge in step 30
+- **Berakhot 3b, step 32** (relationToPreviousStep): names the wrong kind of step after the label fix Source: Berakhot 3b.
+  - was: Rejects the answer of Step 31
+  - now: Challenges the answer of Step 31
+- **Berakhot 42a, step 8** (hebrewStepName): inside the story רב יהודה objects to their answer (rule 3) Source: Berakhot 42a.
+  - was: דחיה
+  - now: קשיא
+- **Berakhot 42a, step 8** (relationToPreviousStep): names the wrong kind of step after the label fix Source: Berakhot 42a.
+  - was: Rejects the proof brought in step 7.
+  - now: Challenges the source cited in step 7.
+- **Berakhot 5b, step 25** (hebrewStepName): inside the story the Sages object to רב הונא's defence (rule 3) Source: Berakhot 5b.
+  - was: דחיה
+  - now: קשיא
+- **Berakhot 61a, step 29** (hebrewStepName): second half of רב נחמן בר יצחק's objection (rule 5) Source: Berakhot 61a.
+  - was: דחיה
+  - now: קשיא
+- **Chagigah 10b, step 18** (hebrewStepName): second half of רמי בר חמא's answer, attacked straight away in step 19 Source: Chagigah 10b.
+  - was: מסקנא
+  - now: תירוץ
+- **Chagigah 10b, step 21** (hebrewStepName): second half of רבא's answer, attacked straight away in step 22 Source: Chagigah 10b.
+  - was: מסקנא
+  - now: תירוץ
+- **Chagigah 10b, step 24** (hebrewStepName): second half of רב אשי's answer, attacked straight away in step 25 Source: Chagigah 10b.
+  - was: מסקנא
+  - now: תירוץ
+- **Chagigah 11a, step 1** (hebrewStepName): completes the ומאי קושיא objection (10b step 25) to רב אשי's answer Source: Chagigah 11a.
+  - was: דחיה
+  - now: קשיא
+- **Chagigah 11a, step 3** (hebrewStepName): ומאי קושיא דלמא objects to the answer of step 2, like the parallel steps on 10b Source: Chagigah 11a.
+  - was: דחיה
+  - now: קשיא
+- **Chagigah 11a, step 22** (hebrewStepName): last line of the ברייתא quoted in step 21 (rule 5) Source: Chagigah 11a.
+  - was: מסקנא
+  - now: ראיה
+- **Chagigah 15a, step 7** (hebrewStepName): line of the story (rule 8); the גמרא then analyses it Source: Chagigah 15a.
+  - was: מסקנא
+  - now: מימרא
+- **Chagigah 15a, step 25** (hebrewStepName): inside the story אחר objects to רבי מאיר's reading (rule 3) Source: Chagigah 15a.
+  - was: דחיה
+  - now: קשיא
+- **Chagigah 18a, step 5** (hebrewStepName): completes רבי יוחנן's אלא מעתה objection of step 4 (rule 5) Source: Chagigah 18a.
+  - was: דחיה
+  - now: קשיא
+- **Chagigah 20a, step 10** (hebrewStepName): ולטעמיך objects to the challenge of step 9 and is answered in step 11 Source: Chagigah 20a.
+  - was: דחיה
+  - now: קשיא
+- **Chagigah 25a, step 10** (hebrewStepName): לא: הא... answers the והתניא challenge of step 9 Source: Chagigah 25a.
+  - was: דחיה
+  - now: תירוץ
+- **Chagigah 25a, step 10** (relationToPreviousStep): relation names the wrong kind Source: Chagigah 25a.
+  - was: Rejects the inference
+  - now: Answers the inference
+- **Chagigah 26b, step 18** (hebrewStepName): objects to the וכי תימא answer of step 17 Source: Chagigah 26b.
+  - was: דחיה
+  - now: קשיא
+- **Chagigah 26b, step 20** (hebrewStepName): objects to the וכי תימא answer of step 19 Source: Chagigah 26b.
+  - was: דחיה
+  - now: קשיא
+- **Chullin 101b, step 12** (hebrewStepName): second half of the חכמים' objection in step 11, attacked in step 13 Source: Chullin 101b.
+  - was: מסקנא
+  - now: קשיא
+- **Chullin 102a, step 15** (hebrewStepName): closes רב שיזבי's proof from the משנה (steps 13-14) Source: Chullin 102a.
+  - was: מסקנא
+  - now: ראיה
+- **Chullin 104b, step 12** (hebrewStepName): והתניא knocks out the וכי תימא answer of step 11 Source: Chullin 104b.
+  - was: דחיה
+  - now: קשיא
+- **Chullin 105b, step 28** (hebrewStepName): inside the story מר בר רב אשי objects to the demon's excuse (rule 3) Source: Chullin 105b.
+  - was: דחיה
+  - now: קשיא
+- **Chullin 109a, step 7** (hebrewStepName): אלמא inference ending the proof that חכמים permit אפשר לסוחטו; attacked straight away (ממאי) in step 8 Source: Chullin 109a.
+  - was: מסקנא
+  - now: ראיה
+- **Chullin 109a, step 10** (hebrewStepName): the אלא half of the בשלמא/אלא answer to רב אחא's challenge (rule 5) Source: Chullin 109a.
+  - was: דחיה
+  - now: תירוץ
+- **Chullin 10a, step 13** (hebrewStepName): שאני התם answers רבא's מתיב challenge of step 12 Source: Chullin 10a.
+  - was: דחיה
+  - now: תירוץ
+- **Chullin 10b, step 3** (hebrewStepName): הלכתא ruling that is challenged straight away in step 4 Source: Chullin 10b.
+  - was: מסקנא
+  - now: מימרא
+- **Chullin 10b, step 22** (hebrewStepName): וכי תימא... והתנן is the continuation of אביי's second answer (step 21) Source: Chullin 10b.
+  - was: דחיה
+  - now: תירוץ
+- **Chullin 10b, step 23** (hebrewStepName): רבא objects to אביי's first answer Source: Chullin 10b.
+  - was: דחיה
+  - now: קשיא
+- **Chullin 10b, step 24** (hebrewStepName): רבא objects to אביי's second answer Source: Chullin 10b.
+  - was: דחיה
+  - now: קשיא
+- **Chullin 111b, step 12** (hebrewStepName): רבא objects to אביי's answer in step 11 Source: Chullin 111b.
+  - was: דחיה
+  - now: קשיא
+- **Chullin 113a, step 14** (hebrewStepName): ולא פליגי with no challenge before it Source: Chullin 113a.
+  - was: תירוץ
+  - now: מימרא
+- **Chullin 114a, step 21** (hebrewStepName): close of the מה הצד answer (steps 18-20), challenged straight away in step 22 Source: Chullin 114a.
+  - was: מסקנא
+  - now: תשובה
+- **Chullin 114b, step 3** (hebrewStepName): ת״ל is the answer to the מנין question of step 1, challenged straight away in step 4 Source: Chullin 114b.
+  - was: מסקנא
+  - now: תשובה
+- **Chullin 114b, step 6** (hebrewStepName): objects to רב אחדבוי's answer (step 5) to the challenge of step 4 Source: Chullin 114b.
+  - was: דחיה
+  - now: קשיא
+- **Chullin 114b, step 7** (hebrewStepName): second half of the objection in step 6 (דהא... יוכיח) Source: Chullin 114b.
+  - was: ראיה
+  - now: קשיא
+- **Chullin 114b, step 9** (hebrewStepName): objects to מר בריה דרבינא's answer in step 8 Source: Chullin 114b.
+  - was: דחיה
+  - now: קשיא
+- **Chullin 114b, step 11** (hebrewStepName): objects to רב אידי בר אבין's answer in step 10 Source: Chullin 114b.
+  - was: דחיה
+  - now: קשיא
+- **Chullin 115b, step 19** (hebrewStepName): רב מרדכי objects to רב אשי's answer in step 18 Source: Chullin 115b.
+  - was: דחיה
+  - now: קשיא
+- **Chullin 117a, step 6** (hebrewStepName): end of רבי ינאי's answer (steps 4-6), challenged straight away in step 7 Source: Chullin 117a.
+  - was: מסקנא
+  - now: תשובה
+- **Chullin 118a, step 30** (hebrewStepName): summary closing the answer of step 29, challenged straight away in step 31 Source: Chullin 118a.
+  - was: מסקנא
+  - now: תשובה
+- **Chullin 123b, step 13** (hebrewStepName): לא תימא... answers the ת״ש challenge of steps 11-12 Source: Chullin 123b.
+  - was: דחיה
+  - now: תירוץ
+- **Chullin 123b, step 13** (relationToPreviousStep): relation names the wrong kind Source: Chullin 123b.
+  - was: Rejects the inference
+  - now: Answers the inference
+- **Chullin 123b, step 21** (hebrewStepName): אביי answers רב יוסף's מתיב challenge of step 20 Source: Chullin 123b.
+  - was: דחיה
+  - now: תירוץ
+- **Chullin 124a, step 3** (hebrewStepName): רבא answers the challenge of step 2 (his first answer, replaced in step 4) Source: Chullin 124a.
+  - was: דחיה
+  - now: תירוץ
+- **Chullin 126b, step 28** (hebrewStepName): ת״ל settles the או כלך standoff inside the ברייתא and is followed by its next question; matches the parallel step 5 on 127a Source: Chullin 126b.
+  - was: מסקנא
+  - now: תירוץ
+- **Chullin 127a, step 3** (hebrewStepName): דין הוא answers the או אינו objection of step 2, then is itself challenged in step 4 Source: Chullin 127a.
+  - was: דחיה
+  - now: תירוץ
+- **Chullin 128a, step 11** (hebrewStepName): end of רב פפא's explanation (steps 8-11); next step is a rival explanation Source: Chullin 128a.
+  - was: מסקנא
+  - now: תירוץ
+- **Chullin 129a, step 3** (hebrewStepName): objects to the answer of step 2 Source: Chullin 129a.
+  - was: דחיה
+  - now: קשיא
+- **Chullin 129a, step 4** (hebrewStepName): ומאי קושיא דלמא answers the objection of step 3 Source: Chullin 129a.
+  - was: דחיה
+  - now: תירוץ
+- **Chullin 12b, step 7** (hebrewStepName): end of רבא's answer (step 6), challenged straight away in step 8 Source: Chullin 12b.
+  - was: מסקנא
+  - now: תשובה
+- **Chullin 130a, step 14** (hebrewStepName): overturns the last פירכא so the קל וחומר stands, answering the challenge of step 8 Source: Chullin 130a.
+  - was: מסקנא
+  - now: תירוץ
+- **Chullin 130b, step 18** (hebrewStepName): רבא objects to רב חסדא's answer in step 17 Source: Chullin 130b.
+  - was: דחיה
+  - now: קשיא
+- **Chullin 131a, step 3** (hebrewStepName): שאני התם answers the ת״ש challenge of step 2 Source: Chullin 131a.
+  - was: דחיה
+  - now: תירוץ
+- **Chullin 131a, step 3** (relationToPreviousStep): relation names the wrong kind Source: Chullin 131a.
+  - was: Rejects the challenge
+  - now: Answers the challenge
+- **Chullin 131a, step 6** (hebrewStepName): שאני התם answers the ת״ש challenge of steps 4-5 Source: Chullin 131a.
+  - was: דחיה
+  - now: תירוץ
+- **Chullin 131a, step 6** (relationToPreviousStep): relation names the wrong kind Source: Chullin 131a.
+  - was: Rejects the challenge
+  - now: Answers the challenge
+- **Chullin 131a, step 9** (hebrewStepName): לא, לכדתנן answers the ת״ש challenge of steps 7-8 Source: Chullin 131a.
+  - was: דחיה
+  - now: תירוץ
+- **Chullin 131a, step 9** (relationToPreviousStep): relation names the wrong kind Source: Chullin 131a.
+  - was: Rejects the inference
+  - now: Answers the inference
+- **Chullin 131b, step 28** (hebrewStepName): מאי לאו closes the proof from the two ברייתות (26-27), challenged straight away in step 29 Source: Chullin 131b.
+  - was: מסקנא
+  - now: ראיה
+- **Chullin 133b, step 19** (hebrewStepName): ולתני פטור מכולן objects to the answer of step 18 Source: Chullin 133b.
+  - was: דחיה
+  - now: קשיא
+- **Chullin 133b, step 19** (relationToPreviousStep): names the wrong kind of step Source: Chullin 133b.
+  - was: Rejects
+  - now: Challenges
+- **Chullin 134b, step 8** (hebrewStepName): השתא דאתית להכי completes the answer of step 7 and is challenged next Source: Chullin 134b.
+  - was: מסקנא
+  - now: תירוץ
+- **Chullin 134b, step 30** (hebrewStepName): second half of the תנא's derivation begun in step 29 Source: Chullin 134b.
+  - was: מסקנא
+  - now: מימרא
+- **Chullin 135b, step 5** (hebrewStepName): inference that completes the proof from the ברייתא in step 4 Source: Chullin 135b.
+  - was: מסקנא
+  - now: ראיה
+- **Chullin 136a, step 21** (hebrewStepName): ליתנהו להני כללי with a ברייתא objects to רבא's rules; not pushing aside a proof Source: Chullin 136a.
+  - was: דחיה
+  - now: קשיא
+- **Chullin 136a, step 21** (title): names the wrong kind of step Source: Chullin 136a.
+  - was: rejects the rules
+  - now: challenges the rules
+- **Chullin 136a, step 26** (hebrewStepName): parallel ליתנהו להני כללי objection from a ברייתא Source: Chullin 136a.
+  - was: דחיה
+  - now: קשיא
+- **Chullin 136a, step 26** (relationToPreviousStep): names the wrong kind of step Source: Chullin 136a.
+  - was: rejection
+  - now: challenge
+- **Chullin 138a, step 23** (hebrewStepName): וכי תימא closes off a defense; part of רבא's challenge Source: Chullin 138a.
+  - was: דחיה
+  - now: קשיא
+- **Chullin 140a, step 2** (hebrewStepName): answers the challenge from the verse in step 1 (the series of challenges to the reading continues from 139b) Source: Chullin 140a.
+  - was: דחיה
+  - now: תירוץ
+- **Chullin 140a, step 2** (relationToPreviousStep): names the wrong kind of step Source: Chullin 140a.
+  - was: Rejects the proof brought
+  - now: Answers the challenge brought
+- **Chullin 140a, step 4** (hebrewStepName): לא answers the תא שמע challenge of step 3 Source: Chullin 140a.
+  - was: דחיה
+  - now: תירוץ
+- **Chullin 140a, step 4** (relationToPreviousStep): names the wrong kind of step Source: Chullin 140a.
+  - was: Rejects
+  - now: Counters
+- **Chullin 140b, step 32** (hebrewStepName): לא rereading answers the מיתיבי challenge of steps 30-31 Source: Chullin 140b.
+  - was: דחיה
+  - now: תירוץ
+- **Chullin 140b, step 32** (relationToPreviousStep): names the wrong kind of step Source: Chullin 140b.
+  - was: Rejects
+  - now: Counters
+- **Chullin 142a, step 7** (hebrewStepName): end of רבי יעקב's ברייתא proof (step 6); challenged right after Source: Chullin 142a.
+  - was: מסקנא
+  - now: ראיה
+- **Chullin 17a, step 20** (hebrewStepName): וכי תימא closes off the obvious answer; part of רבה's challenge Source: Chullin 17a.
+  - was: דחיה
+  - now: קשיא
+- **Chullin 17a, step 20** (relationToPreviousStep): names the wrong kind of step Source: Chullin 17a.
+  - was: Rejects
+  - now: Challenges
+- **Chullin 19a, step 18** (hebrewStepName): אטו כל רובי objection to רב יוסף, answered in step 19 Source: Chullin 19a.
+  - was: דחיה
+  - now: קשיא
+- **Chullin 19a, step 23** (hebrewStepName): אטו כל רובי objection to רב חסדא, answered in step 24 Source: Chullin 19a.
+  - was: דחיה
+  - now: קשיא
+- **Chullin 19a, step 23** (relationToPreviousStep): names the wrong kind of step Source: Chullin 19a.
+  - was: Rejects
+  - now: Challenges
+- **Chullin 19a, step 30** (hebrewStepName): רב חסדא objects to רב הונא's retraction (story objection) Source: Chullin 19a.
+  - was: דחיה
+  - now: קשיא
+- **Chullin 19a, step 30** (relationToPreviousStep): names the wrong kind of step Source: Chullin 19a.
+  - was: Rejects
+  - now: Challenges
+- **Chullin 19b, step 4** (hebrewStepName): ודלמא objects to רב נחמן's answer (a Response, rule 7), not to a proof Source: Chullin 19b.
+  - was: דחיה
+  - now: קשיא
+- **Chullin 19b, step 4** (relationToPreviousStep): names the wrong kind of step Source: Chullin 19b.
+  - was: Rejects the proof brought
+  - now: Challenges the answer given
+- **Chullin 19b, step 14** (hebrewStepName): רבי יוחנן objects to רבי אלעזר's answer Source: Chullin 19b.
+  - was: דחיה
+  - now: קשיא
+- **Chullin 19b, step 14** (relationToPreviousStep): names the wrong kind of step Source: Chullin 19b.
+  - was: Rejects
+  - now: Challenges
+- **Chullin 19b, step 15** (hebrewStepName): רבא spells out רבי יוחנן's objection; same challenge as step 14 Source: Chullin 19b.
+  - was: דחיה
+  - now: קשיא
+- **Chullin 19b, step 15** (relationToPreviousStep): names the wrong kind of step Source: Chullin 19b.
+  - was: rejection
+  - now: objection
+- **Chullin 20a, step 3** (hebrewStepName): לא answers רבי ינאי's challenge Source: Chullin 20a.
+  - was: דחיה
+  - now: תירוץ
+- **Chullin 20a, step 3** (relationToPreviousStep): names the wrong kind of step Source: Chullin 20a.
+  - was: Rejects
+  - now: Counters
+- **Chullin 27a, step 37** (hebrewStepName): inference that ends the proof from רבי חייא's ברייתא (steps 35-36) Source: Chullin 27a.
+  - was: מסקנא
+  - now: ראיה
+- **Chullin 28a, step 12** (hebrewStepName): answers the מיתיבי challenge of step 11 Source: Chullin 28a.
+  - was: דחיה
+  - now: תירוץ
+- **Chullin 28a, step 14** (hebrewStepName): answers the תא שמע challenge of step 13 Source: Chullin 28a.
+  - was: דחיה
+  - now: תירוץ
+- **Chullin 30a, step 7** (hebrewStepName): שמע מינה answers the difficulty of step 6 and is then qualified Source: Chullin 30a.
+  - was: מסקנא
+  - now: תירוץ
+- **Chullin 30a, step 11** (hebrewStepName): וכי תימא… והתנן defends אביי's answer; part of the resolution Source: Chullin 30a.
+  - was: דחיה
+  - now: תירוץ
+- **Chullin 31a, step 3** (hebrewStepName): וכי תימא… והאמר continues the challenge of step 2 Source: Chullin 31a.
+  - was: דחיה
+  - now: קשיא
+- **Chullin 32b, step 5** (hebrewStepName): רב אחא בר הונא objects to רבא's rereading Source: Chullin 32b.
+  - was: דחיה
+  - now: קשיא
+- **Chullin 32b, step 5** (relationToPreviousStep): names the wrong kind of step Source: Chullin 32b.
+  - was: Rejects
+  - now: Challenges
+- **Chullin 32b, step 15** (hebrewStepName): רבי זירא's retraction disposes of his own challenge (step 14) Source: Chullin 32b.
+  - was: דחיה
+  - now: תירוץ
+- **Chullin 33b, step 22** (hebrewStepName): second half of the answer in step 21 Source: Chullin 33b.
+  - was: מסקנא
+  - now: תירוץ
+- **Chullin 34a, step 2** (hebrewStepName): לא סלקא דעתך objects to a suggestion, not to a proof Source: Chullin 34a.
+  - was: דחיה
+  - now: קשיא
+- **Chullin 34a, step 2** (relationToPreviousStep): names the wrong kind of step Source: Chullin 34a.
+  - was: Rejects
+  - now: Challenges
+- **Chullin 34a, step 2** (title): names the wrong kind of step Source: Chullin 34a.
+  - was: Rejected:
+  - now: Objection:
+- **Chullin 35b, step 12** (hebrewStepName): לא answers the תא שמע challenge of step 11 Source: Chullin 35b.
+  - was: דחיה
+  - now: תירוץ
+- **Chullin 35b, step 12** (relationToPreviousStep): names the wrong kind of step Source: Chullin 35b.
+  - was: Rejects
+  - now: Counters
+- **Chullin 35b, step 16** (hebrewStepName): לא answers the תא שמע challenge of step 15 Source: Chullin 35b.
+  - was: דחיה
+  - now: תירוץ
+- **Chullin 35b, step 16** (relationToPreviousStep): names the wrong kind of step Source: Chullin 35b.
+  - was: Rejects the inference in Step 15, the same way Step 12 rejected Step 11.
+  - now: Counters the inference in Step 15, the same way Step 12 countered Step 11.
+- **Chullin 36a, step 16** (hebrewStepName): completes the objection of step 15 to רבי אלעזר Source: Chullin 36a.
+  - was: דחיה
+  - now: קשיא
+- **Chullin 36b, step 4** (hebrewStepName): second half of the צריכותא begun in step 3 Source: Chullin 36b.
+  - was: מסקנא
+  - now: תירוץ
+- **Chullin 36b, step 16** (hebrewStepName): וכי תימא… והא continues the elimination challenges of steps 14-15 Source: Chullin 36b.
+  - was: דחיה
+  - now: קשיא
+- **Chullin 37a, step 18** (hebrewStepName): ודלמא answers the challenge of step 17 Source: Chullin 37a.
+  - was: דחיה
+  - now: תירוץ
+- **Chullin 37b, step 2** (hebrewStepName): end of the proof from the extra word (step 1); challenged right after Source: Chullin 37b.
+  - was: מסקנא
+  - now: ראיה
+- **Chullin 37b, step 4** (hebrewStepName): answers מר בר רב אשי's challenge (step 3) Source: Chullin 37b.
+  - was: דחיה
+  - now: תירוץ
+- **Chullin 37b, step 4** (relationToPreviousStep): names the wrong kind of step Source: Chullin 37b.
+  - was: Rejects
+  - now: Counters
+- **Chullin 39a, step 10** (hebrewStepName): second half of the צריכותא begun in step 9 Source: Chullin 39a.
+  - was: מסקנא
+  - now: תירוץ
+- **Chullin 3a, step 10** (hebrewStepName): answers רבא's challenge from the משנה (step 9) Source: Chullin 3a.
+  - was: דחיה
+  - now: תירוץ
+- **Chullin 3a, step 10** (relationToPreviousStep): names the wrong kind of step Source: Chullin 3a.
+  - was: Rejects the proof
+  - now: Answers the challenge
+- **Chullin 41b, step 13** (hebrewStepName): זה הכלל closes the משנה; the גמרא then challenges it Source: Chullin 41b.
+  - was: מסקנא
+  - now: מימרא
+- **Chullin 43b, step 4** (hebrewStepName): story line (רבה checks again), explained by step 5 Source: Chullin 43b.
+  - was: מסקנא
+  - now: מימרא
+- **Chullin 43b, step 21** (hebrewStepName): רב פפי gives a corrected answer to the question of step 19 Source: Chullin 43b.
+  - was: דחיה
+  - now: תשובה
+- **Chullin 43b, step 30** (hebrewStepName): story line: רבי אבא's ruling; not pushing aside a proof Source: Chullin 43b.
+  - was: דחיה
+  - now: מימרא
+- **Chullin 43b, step 30** (relationToPreviousStep): names the wrong kind of step Source: Chullin 43b.
+  - was: Rejects
+  - now: Overturns
+- **Chullin 44b, step 4** (hebrewStepName): story line; challenged right after Source: Chullin 44b.
+  - was: מסקנא
+  - now: מימרא
+- **Chullin 45b, step 5** (hebrewStepName): הכי השתא objects to אביי's answer (Response) to the בעיא Source: Chullin 45b.
+  - was: דחיה
+  - now: קשיא
+- **Chullin 45b, step 5** (relationToPreviousStep): names the wrong kind of step Source: Chullin 45b.
+  - was: Rejects
+  - now: Challenges
+- **Chullin 46b, step 14** (hebrewStepName): אי הכי knocks out the וכי תימא defense; part of רבינא's challenge Source: Chullin 46b.
+  - was: דחיה
+  - now: קשיא
+- **Chullin 46b, step 14** (relationToPreviousStep): names the wrong kind of step Source: Chullin 46b.
+  - was: Rejects
+  - now: Challenges
+- **Chullin 47b, step 19** (hebrewStepName): אלמא קסבר inference from רבי יוחנן's statement; challenged next Source: Chullin 47b.
+  - was: מסקנא
+  - now: מימרא
+- **Chullin 4a, step 15** (hebrewStepName): ולטעמיך here answers the challenge of step 14 (first half of the answer finished in step 16) Source: Chullin 4a.
+  - was: דחיה
+  - now: תירוץ
+- **Chullin 4a, step 15** (relationToPreviousStep): names the wrong kind of step Source: Chullin 4a.
+  - was: Rejects
+  - now: Counters
+- **Chullin 4b, step 23** (hebrewStepName): הכי השתא objects to the answer of step 22 Source: Chullin 4b.
+  - was: דחיה
+  - now: קשיא
+- **Chullin 4b, step 23** (relationToPreviousStep): names the wrong kind of step Source: Chullin 4b.
+  - was: Rejects
+  - now: Challenges
+- **Chullin 50a, step 34** (hebrewStepName): report of רבא's remark on the attribution; continues as מימרא on 50b Source: Chullin 50a.
+  - was: דחיה
+  - now: מימרא
+- **Chullin 52b, step 16** (hebrewStepName): והא תנן knocks out the וכי תימא answer (step 15) Source: Chullin 52b.
+  - was: דחיה
+  - now: קשיא
+- **Chullin 52b, step 16** (relationToPreviousStep): names the wrong kind of step Source: Chullin 52b.
+  - was: Rejects
+  - now: Challenges
+- **Chullin 52b, step 18** (hebrewStepName): והאמר knocks out the וכי תימא answer (step 17) Source: Chullin 52b.
+  - was: דחיה
+  - now: קשיא
+- **Chullin 52b, step 18** (relationToPreviousStep): names the wrong kind of step Source: Chullin 52b.
+  - was: Rejects
+  - now: Challenges
+- **Chullin 54a, step 10** (hebrewStepName): ריש לקיש's reply answers the objection of step 9 (story) Source: Chullin 54a.
+  - was: דחיה
+  - now: תירוץ
+- **Chullin 54a, step 11** (hebrewStepName): רבי יוחנן objects to ריש לקיש's dismissal (story) Source: Chullin 54a.
+  - was: דחיה
+  - now: קשיא
+- **Chullin 54a, step 11** (relationToPreviousStep): names the wrong kind of step Source: Chullin 54a.
+  - was: Rejects
+  - now: Challenges
+- **Chullin 54b, step 12** (hebrewStepName): אלמא קסבר inference from רב נחמן's statement; challenged next Source: Chullin 54b.
+  - was: מסקנא
+  - now: מימרא
+- **Chullin 57b, step 15** (hebrewStepName): רבי יהושע בן לוי's reply to the ewe objection (step 14), finished in step 16 Source: Chullin 57b.
+  - was: דחיה
+  - now: תירוץ
+- **Chullin 57b, step 15** (relationToPreviousStep): names the wrong kind of step Source: Chullin 57b.
+  - was: Rejects the ewe proof
+  - now: Answers the ewe case
+- **Chullin 5b, step 6** (hebrewStepName): צריכותא that completes the answer of step 5 Source: Chullin 5b.
+  - was: מסקנא
+  - now: תירוץ
+- **Chullin 60a, step 3** (hebrewStepName): story line Source: Chullin 60a.
+  - was: מסקנא
+  - now: מימרא
+- **Chullin 60b, step 7** (hebrewStepName): the moon objects to the offered comfort (story) Source: Chullin 60b.
+  - was: דחיה
+  - now: קשיא
+- **Chullin 60b, step 9** (hebrewStepName): the moon objects to the second comfort (story) Source: Chullin 60b.
+  - was: דחיה
+  - now: קשיא
+- **Chullin 60b, step 18** (hebrewStepName): רב חסדא's instruction is a statement, not where a discussion lands Source: Chullin 60b.
+  - was: מסקנא
+  - now: מימרא
+- **Chullin 63b, step 12** (hebrewStepName): אלא לאו שמע מינה answers the difficulty of step 11; a further challenge follows Source: Chullin 63b.
+  - was: מסקנא
+  - now: תירוץ
+- **Chullin 64b, step 17** (hebrewStepName): first half of the new answer completed in step 18 Source: Chullin 64b.
+  - was: מסקנא
+  - now: תירוץ
+- **Chullin 65b, step 14** (hebrewStepName): אי הכי knocks out the וכי תימא defense; part of רב אחאי's challenge Source: Chullin 65b.
+  - was: דחיה
+  - now: קשיא
+- **Chullin 65b, step 14** (relationToPreviousStep): names the wrong kind of step Source: Chullin 65b.
+  - was: Rejects
+  - now: Challenges
+- **Chullin 65b, step 15** (hebrewStepName): finishes the objection of step 14 Source: Chullin 65b.
+  - was: דחיה
+  - now: קשיא
+- **Chullin 70a, step 1** (hebrewStepName): second half of a צריכותא whose first half (69b) is מימרא Source: Chullin 70a.
+  - was: מסקנא
+  - now: מימרא
+- **Chullin 70b, step 23** (hebrewStepName): רבי יונתן objects to בן עזאי's answer (Response) Source: Chullin 70b.
+  - was: דחיה
+  - now: קשיא
+- **Chullin 71a, step 21** (hebrewStepName): ודלמא objects to the answer (Response, rule 7) of step 20; answered in step 22 Source: Chullin 71a.
+  - was: דחיה
+  - now: קשיא
+- **Chullin 71a, step 21** (relationToPreviousStep): names the wrong kind of step Source: Chullin 71a.
+  - was: Rejects the proof
+  - now: Challenges the source
+- **Chullin 72a, step 3** (hebrewStepName): רבא objects to רבה's answer Source: Chullin 72a.
+  - was: דחיה
+  - now: קשיא
+- **Chullin 72a, step 3** (relationToPreviousStep): names the wrong kind of step Source: Chullin 72a.
+  - was: Rejects
+  - now: Challenges
+
 ## 202611060306-rev105-labels-shas-b
 
 Approved: Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.
