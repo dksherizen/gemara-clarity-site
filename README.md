@@ -24,7 +24,7 @@ There are four ways in:
 
 - **Sugya Flow** (guided): read the steps one by one with all the explanations.
 - **Ameilus** (on your own): see the plain text, mark where you think each passage ends and guess what kind it is, then compare with the site's reading.
-- **Classics**: 113 hand-picked famous passages (stories and arguments), each opening at its exact first and last step.
+- **Classics**: 291 hand-picked famous passages from every masechta (stories, teachings and halachic sugyos), each opening at its exact first and last step. Two views (By Seder, Suggested order) and type buttons (Short stories, Longer stories, Big ideas, Halacha).
 - **My words**: words you saved while learning, with flashcards.
 
 The home page also shows today's Daf Yomi.
@@ -228,7 +228,7 @@ Present on some steps, mostly by kind: `confusionAlert` ("Don't get confused"), 
 
 `tools/check-site.mjs` requires `mainTopic`, `overview`, non-empty `steps`, a valid `hebrewStepName`, `title`, `stepSummary`, `whatsHappening`, `simpleTranslation`, and phrases with `aramaic` and `english` on every step.
 
-**`data/classics.json`**: `{ note, build, groups, items }`. `groups` are the five sections (First win, Getting hooked, Harder, Following a halachic argument, More classics). Each of the 113 `items` has `id`, `title`, `summary`, `seder`, `masechta`, `start` and `end` (`{m, daf, step, words}`, pointing at real steps, checked), `steps`, `group`, `order`, `reading`, and working notes (`status`, `note`, `source`, `summaryNote`). Titles and summaries are still marked as not yet approved wording. `data/classics-draft.json` is a working draft, not loaded by the app.
+**`data/classics.json`**: `{ note, build, groups, items }`. `groups` are the seven sections of the Suggested order, each with an `intro` saying what it trains (First win, Short stories, Getting hooked, Big ideas, Harder, First halachic sugyos, Following a halachic argument). Each of the 291 `items` has `id`, `title`, `summary`, `seder`, `masechta`, `start` and `end` (`{m, daf, step, words}`, pointing at real steps, checked), `steps`, `group`, `order` (one running number through the whole path; a "Then:" card comes right after its parent), `kind` (`short`, `story`, `idea` or `halacha`, for the type buttons; a "Then:" card takes its parent's), `reading`, and working notes (`status`, `note`, `source`, `summaryNote`). The 178 added on Nov 6 2026 have `source: "added-2026-11"`, and a `note` that ends "For the rav: …" where a start, end or reading is a judgment call. Titles and summaries are still marked as not yet approved wording. `data/classics-draft.json` is a working draft, not loaded by the app.
 
 ### How the content was generated
 
@@ -287,7 +287,7 @@ ameilus/                      Ameilus mode (core, ui, words)
 sw.js  manifest.json          offline worker, PWA manifest
 fonts/  *.png  *.svg          fonts, icons, logo, share image
 data/b/                       5,349 AI breakdowns + index.json (data version)
-data/classics.json            the 113 Classics
+data/classics.json            the 291 Classics
 data/mishnah/  data/perakim.json  data/perek-nikud.json  data/glossary.json  data/prose-nikud.json
 <masechet>/<daf>/index.html   GENERATED search pages (37 masechet folders)
 learn/  about/  privacy/  404.html  sitemap.xml   GENERATED
@@ -314,5 +314,6 @@ Kept in dashboards, not in Git: Cloudflare build settings, DNS, Worker secrets a
 - Oct 25 2026: My words page. Late Oct: course.gemaraclarity.org proxied; redesign; new logo; Classics.
 - Ongoing: weekly Daf Yomi content checks and numbered repair batches.
 - Nov 5 2026: a 13-reviewer review led to three batches of fixes, the About/Privacy pages, Report a mistake, the safety checks, `apply-repairs`, the runbook, and the end of the fallback to the old library.
+- Nov 6 2026: 178 new Classics (291 in all, every masechta), a seven-group Suggested order, and type buttons on the Classics screen.
 
 `git log --oneline` has the full story (over 750 commits).

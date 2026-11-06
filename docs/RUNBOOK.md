@@ -21,7 +21,7 @@ How the site works and how to change it safely. Written Nov 5 2026 for David and
 - `index.html`, `app.js`, `gc.css`, `acct.js`, `ameilus/`, `mywords.js`, `mishnah.js`: the app.
 - `sw.js`: the offline worker. **When you change any app file, raise the version string `V` at the top**, so phones pick up the change.
 - `data/b/<Masechet>_<daf>_<a|b>.json`: one AI-written breakdown per amud. `data/b/index.json` lists them and holds the data version.
-- `data/classics.json`: the 113 Classics. After editing it, raise `CL_REV` in `app.js` (and `V` in `sw.js`) so phones fetch the new list at once.
+- `data/classics.json`: the 291 Classics (with their Suggested-order group and type). After editing it, raise `CL_REV` in `app.js` (and `V` in `sw.js`) so phones fetch the new list at once.
 - `<masechet>/<daf>/index.html`, `/learn/`, `/about/`, `/privacy/`, `404.html`, `sitemap.xml`: the pages built for search engines. **Never edit these by hand.** They come from `tools/build-pages.mjs`.
 - `_worker/`: the Cloudflare Worker (domain redirects, sign-in proxy, course, spelling redirects such as /berachos/2a/ to /berakhot/2a/).
 - `tools/`: the tools below. `docs/`: this file and the content-repair log. Neither is served to visitors (`.assetsignore`).
@@ -66,7 +66,7 @@ On this computer a push runs the check automatically and stops if something is b
 ## Open items (Nov 5 2026)
 
 - Bing Webmaster Tools: skipped by choice (Nov 5 2026). It can import the Google Search Console setup later.
-- About 20 more Classics need checking against the Gemara. All 113 summaries are still marked "not approved wording".
+- Classics: all 291 summaries are still marked "not approved wording". The 178 added on Nov 6 2026 were read against the Gemara; 96 of them have a note for the rav (search `classics.json` for "For the rav").
 - A rav should review the corrections in `docs/content-repairs.md` and the delicate passages.
 - Weekly Daf Yomi checks: Daf Yomi stays in Kodashim and Taharos until June 2027, where the AI makes the most mistakes. Checked against the Gemara and Rashi so far (Nov 6 2026): Bekhorot 51a–61a and Arakhin 2a–20b. Next: Arakhin 21a onward (learners reach it about Dec 8).
 - Berakhot 2a–64a was checked line by line, text and labels, on Nov 6 2026.
