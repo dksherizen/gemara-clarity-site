@@ -1275,6 +1275,7 @@ function stepHtml(s, k, open){
       <h3 class="stitle">${px(s.title)}</h3>
       ${s.stepSummary ? `<p class="ssum">${px(s.stepSummary)}</p>` : ""}
       <div class="phrases">${(s.phrases||[]).map((p, pi) => `<div class="ph" data-ph="${pi}"><div class="pa he" lang="he">${heWords(p.aramaic, fwStop)}</div><div class="pe">${px(p.english)}${p.notes ? `<div class="pnote">${px(p.notes)}</div>` : ""}</div></div>`).join("")}</div>
+      <div class="rt" data-rt="${k}"></div>
       <button class="explain-btn" aria-expanded="${open}" aria-controls="x${k+1}"><span class="xb-l">${open ? "Hide explanation" : "Explain"}</span>${chev}</button>
       <div class="explain" id="x${k+1}" ${open ? "" : "hidden"}>
         ${P("What’s happening", s.whatsHappening)}
@@ -1447,6 +1448,7 @@ function wirePerek(){
 function wireDaf(){
   const c = current;
   wirePerek();
+  rtPaint(c); // Rashi and Tosfos buttons under each step (they appear once Sefaria answers)
   $("#bmBtn").onclick = () => { let b = bookmarks(); b = b.includes(c.id) ? b.filter(x => x !== c.id) : [c.id, ...b]; saveJSON(LS.bookmarks, b); toast(b.includes(c.id) ? "Bookmarked" : "Bookmark removed"); renderDaf(); };
   $("#shareBtn").onclick = async () => { const { daf, amud } = dafOf(c.i), sn = c.tab === "steps" && +(($(".step.cur") || {}).dataset?.n || 0), url = sn > 1 ? `https://gemaraclarity.org/${hashFor(c.m, c.i, "/s" + sn)}` : `https://gemaraclarity.org/${c.m.toLowerCase().replace(/_/g, "-")}/${daf}${amud}/`; /* Nov 5 2026: share the daf's own page, whose link preview shows the daf; past step 1, the app's own link to that step (review #65: Share keeps the step) */ try { if (navigator.share) await navigator.share({ title: `${label(c.m, c.i)} · Gemara Clarity`, url }); else { await navigator.clipboard.writeText(url); toast("Link copied"); } } catch {} };
   // v4 (Oct 29 2026): print-to-PDF removed at David's request
@@ -1465,6 +1467,7 @@ function wireDaf(){
     // kt3: a tap (or click) on a word of the Gemara text opens its word help; a drag-selection does not; a tap anywhere else closes it
     const fw = e.target.closest(".pa .fw"); if (fw) { const sel = window.getSelection && window.getSelection(); if (!sel || sel.isCollapsed) wordHelpFlow(fw); return; }
     if (wfOpen() && !e.target.closest("#wfWord")) closeWordFlow();
+    const rb = e.target.closest(".rt-btn"); if (rb) { rtToggle(rb); return; }
     const t = e.target.closest(".sh, .explain-btn"); if (t) { toggleStep(t.closest(".step")); return; }
     // v4: on the phone a tap on the very edge of the step turns to the step before or after
     if (paged() && innerWidth < 1000 && e.target.closest("#dafBody .step") && !e.target.closest("a, button, .fw, input, label, summary")) { const x = e.clientX; if (x < 26) stepBy(-1); else if (x > innerWidth - 26) stepBy(1); }
@@ -1935,6 +1938,84 @@ async function fetchPasuk(ref){
     pasukCache.set(ref, v); try { sessionStorage.setItem("gc-pasuk:" + ref, JSON.stringify(v)); } catch {}
     return v;
   } finally { clearTimeout(t); }
+}
+/* ---------- Rashi and Tosfos (Nov 6 2026, David asked for them): under each step, a "Rashi" and a "Tosfos" button open the
+   commentaries on that step's words, the Hebrew (Vilna edition, public domain) with the English wherever Sefaria has one.
+   Each comment is placed on a step by its opening words (the dibur hamaschil), matched loosely (no inner ו/י, plain final letters);
+   when they can't be found, by the Gemara line Sefaria hangs it on. Tested on 12 amudim across Shas: 86% by words, the rest by line. */
+const RT = { rashi: { en: "Rashi", he: "רש״י", book: "Rashi_on_" }, tosafot: { en: "Tosfos", he: "תוספות", book: "Tosafot_on_" } };
+const rtData = new Map(); // amud id -> Promise of { rashi: [per step: comments], tosafot: [...] }
+const RT_FIN = { "ך":"כ", "ם":"מ", "ן":"נ", "ף":"פ", "ץ":"צ" };
+const rtNorm = s => String(s || "").replace(/<[^>]+>/g, " ").replace(/[֑-ׇ]/g, "").replace(/[׳״'"`.,:;?!()\[\]{}<>–—\-־]/g, " ").replace(/\s+/g, " ").trim();
+const rtKey = w => { const p = w.replace(/[ךםןףץ]/g, c => RT_FIN[c]); return p.length <= 2 ? p : p[0] + p.slice(1).replace(/[וי]/g, ""); };
+const rtKeys = s => rtNorm(s).split(" ").filter(Boolean).map(rtKey);
+const RT_SKIP = new Set(["גמ", "מתני", "הג", "בגמ", "גמרא"].map(rtKey));
+const rtSplit = c => { const t = String(c || "").replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim(); const m = t.match(/^(.{2,140}?)(\s[–-]\s|\.\s)([\s\S]*)$/); return m ? [m[1], m[3]] : ["", t]; };
+function rtPlace(steps, segs, gemSegs){ // which step each comment belongs to; segs: comments per Gemara line; gemSegs: the Gemara's Hebrew per line
+  const words = [], stepOf = [];
+  steps.forEach((s, k) => (s.phrases || []).forEach(p => rtKeys(p.aramaic).forEach(w => { words.push(w); stepOf.push(k); })));
+  const find = (q, from, to) => { for (let i = Math.max(0, from); i <= Math.min(words.length - q.length, to); i++) { let ok = true; for (let j = 0; j < q.length; j++) if (words[i + j] !== q[j]) { ok = false; break; } if (ok) return i; } return -1; };
+  let gc = 0; const segAt = gemSegs.map(g => { const q = rtKeys(g).filter(w => !RT_SKIP.has(w)).slice(0, 3); const a = q.length ? find(q, gc, words.length) : -1; if (a >= 0) gc = a; return a; });
+  let cur = 0, prev = 0; const out = [];
+  segs.forEach((list, si) => [].concat(list || []).forEach(c => {
+    const dh = rtKeys(rtSplit(c)[0] || String(c).split(" ").slice(0, 4).join(" ")); while (dh.length && RT_SKIP.has(dh[0])) dh.shift();
+    const lo = segAt[si] >= 0 ? segAt[si] : cur, hi = (segAt.slice(si + 1).find(x => x >= 0) ?? words.length) + 40;
+    let at = -1;
+    for (const n of [4, 3, 2, 1]) { const q = dh.slice(0, Math.min(n, dh.length)); if (!q.length || (n === 1 && q[0].length < 3)) continue;
+      at = find(q, Math.max(0, lo - 30), hi); if (at < 0 && n >= 2) at = find(q, cur, words.length); if (at >= 0) break; }
+    if (at < 0 && segAt[si] >= 0) at = segAt[si];
+    const step = at >= 0 ? stepOf[at] : prev; if (at >= cur) cur = at; prev = step; out.push(step);
+  }));
+  return out;
+}
+async function rtBook(kind, m, i){ // one commentary on one amud: [{ he, en, src }] in order, with Sefaria's line structure kept for placing
+  const { daf, amud } = dafOf(i), base = `${SEFARIA}/api/v3/texts/${RT[kind].book}${m}.${daf}${amud}`, ttl = 60*864e5;
+  const h = await cachedJSON(`${base}?version=hebrew&return_format=text_only`, { ttl });
+  const he = ((h.versions || [])[0] || {}).text || [];
+  const ens = (h.available_versions || []).filter(v => v.language === "en" && !/\[fr\]|french/i.test(v.versionTitle || ""))
+    .sort((a, b) => /automat/i.test(a.versionTitle) - /automat/i.test(b.versionTitle)); // a machine translation only fills what people haven't
+  const vs = (await Promise.all(ens.map(v => cachedJSON(`${base}?version=${encodeURIComponent("english|" + v.versionTitle)}&return_format=text_only`, { ttl })
+    .then(j => ({ title: v.versionTitle, text: ((j.versions || [])[0] || {}).text || [] })).catch(() => null)))).filter(Boolean);
+  const segs = [].concat(he).map((list, si) => [].concat(list || []).map((c, ci) => {
+    for (const v of vs) { const e = [].concat(v.text[si] || [])[ci]; const t = e ? cleanEn(e) : ""; if (t) return { he: c, en: t, src: v.title }; }
+    return { he: c, en: "", src: "" };
+  }));
+  return segs;
+}
+function rtLoad(c){
+  if (!rtData.has(c.id)) rtData.set(c.id, (async () => {
+    const [t, r, tf] = await Promise.all([loadText(c.m, c.i), rtBook("rashi", c.m, c.i).catch(() => []), rtBook("tosafot", c.m, c.i).catch(() => [])]);
+    const steps = (c.analysis && c.analysis.steps) || [], out = {};
+    for (const [kind, segs] of [["rashi", r], ["tosafot", tf]]) {
+      const at = rtPlace(steps, segs.map(l => l.map(x => x.he)), t.he || []), flat = segs.flat(); out[kind] = steps.map(() => []);
+      flat.forEach((x, n) => out[kind][at[n]] && out[kind][at[n]].push(x));
+    }
+    return out;
+  })().catch(e => { rtData.delete(c.id); throw e; }));
+  return rtData.get(c.id);
+}
+function rtPanelHtml(kind, list){
+  const { daf, amud } = dafOf(current.i), ref = `${RT[kind].book}${current.m}.${daf}${amud}`, srcs = [...new Set(list.map(x => x.src).filter(Boolean))];
+  return list.map(x => { const [dh, rest] = rtSplit(x.he); return `<div class="rt-c"><p class="rt-he" lang="he" dir="rtl">${dh ? `<b>${esc(dh)}</b> – ` : ""}${esc(rest)}</p>${x.en ? `<p class="rt-en">${esc(x.en)}</p>` : `<p class="rt-en rt-none">No English for this one on Sefaria yet.</p>`}</div>`; }).join("")
+    + `<p class="rt-src">Hebrew: Vilna edition. ${srcs.length ? `English: ${esc(srcs.join("; "))}. ` : ""}From <a href="https://www.sefaria.org/${ref}?lang=bi" target="_blank" rel="noopener">Sefaria</a>.</p>`;
+}
+function rtPaint(c){
+  if (!c || c.am || !c.analysis) return;
+  rtLoad(c).then(d => {
+    if (current !== c) return;
+    $$("#dafBody .rt[data-rt]").forEach(slot => {
+      const k = +slot.dataset.rt; if (slot.dataset.done) return; slot.dataset.done = "1";
+      slot.innerHTML = Object.keys(RT).map(kind => { const list = (d[kind] || [])[k] || []; if (!list.length) return "";
+        const id = `rt-${kind}-${k + 1}`;
+        return `<button type="button" class="rt-btn" data-rt-kind="${kind}" aria-expanded="false" aria-controls="${id}">${RT[kind].en} <span class="rt-heb" lang="he">${RT[kind].he}</span><span class="rt-n">${list.length}</span></button>`; }).join("")
+        + Object.keys(RT).map(kind => { const list = (d[kind] || [])[k] || []; return list.length ? `<div class="rt-panel" id="rt-${kind}-${k + 1}" data-kind="${kind}" hidden>${rtPanelHtml(kind, list)}</div>` : ""; }).join("");
+    });
+  }).catch(e => console.warn("Rashi/Tosfos", e)); // no signal and nothing saved: the step simply shows no buttons
+}
+function rtToggle(btn){
+  const slot = btn.closest(".rt"), kind = btn.dataset.rtKind, open = btn.getAttribute("aria-expanded") !== "true";
+  $$(".rt-btn", slot).forEach(b => b.setAttribute("aria-expanded", String(open && b === btn)));
+  $$(".rt-panel", slot).forEach(p => { p.hidden = !(open && p.dataset.kind === kind); });
 }
 let pasukPrev = null;
 function closePasuk(){ const w = $("#pasukPop"); if (!w) return; w.remove(); document.removeEventListener("keydown", pasukKey, true); try { pasukPrev && pasukPrev.isConnected && pasukPrev.focus({ preventScroll: true }); } catch {} pasukPrev = null; }
