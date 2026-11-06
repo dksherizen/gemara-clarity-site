@@ -1,0 +1,825 @@
+{
+ "name": "labels-shas-h",
+ "approved": "Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.",
+ "repairs": [
+  {
+   "id": "Menachot_105_a",
+   "step": 22,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "אביי's אפילו תימא objects to רבי ירמיה's answer; no proof is being pushed aside",
+   "source": "Menachot 105a"
+  },
+  {
+   "id": "Menachot_105_a",
+   "step": 22,
+   "field": "relationToPreviousStep",
+   "find": "Rejects",
+   "replace": "Disputes",
+   "why": "relation names the wrong kind of step",
+   "source": "Menachot 105a"
+  },
+  {
+   "id": "Menachot_107_a",
+   "step": 38,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רב פפא objects to the חכמים's answer and offers another source",
+   "source": "Menachot 107a"
+  },
+  {
+   "id": "Menachot_107_a",
+   "step": 38,
+   "field": "relationToPreviousStep",
+   "find": "Rejects",
+   "replace": "Challenges",
+   "why": "relation names the wrong kind of step",
+   "source": "Menachot 107a"
+  },
+  {
+   "id": "Menachot_11_a",
+   "step": 29,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "מתקיף objection to the וכי תימא defence",
+   "source": "Menachot 11a"
+  },
+  {
+   "id": "Menachot_11_a",
+   "step": 29,
+   "field": "relationToPreviousStep",
+   "find": "Rejects",
+   "replace": "Challenges",
+   "why": "relation names the wrong kind of step",
+   "source": "Menachot 11a"
+  },
+  {
+   "id": "Menachot_11_a",
+   "step": 30,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "second half of רב זוטרא's objection (step 29)",
+   "source": "Menachot 11a"
+  },
+  {
+   "id": "Menachot_12_a",
+   "step": 15,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רבא's אדרבה objects to רב הונא's answer",
+   "source": "Menachot 12a"
+  },
+  {
+   "id": "Menachot_12_a",
+   "step": 15,
+   "field": "relationToPreviousStep",
+   "find": "Rejects",
+   "replace": "Challenges",
+   "why": "relation names the wrong kind of step",
+   "source": "Menachot 12a"
+  },
+  {
+   "id": "Menachot_13_a",
+   "step": 2,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "spells out the הא תו למה לי challenge of step 1",
+   "source": "Menachot 13a"
+  },
+  {
+   "id": "Menachot_13_a",
+   "step": 3,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "continues the למה לי challenge",
+   "source": "Menachot 13a"
+  },
+  {
+   "id": "Menachot_13_a",
+   "step": 4,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "finishes the reasoning of the למה לי challenge",
+   "source": "Menachot 13a"
+  },
+  {
+   "id": "Menachot_15_a",
+   "step": 21,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "ומי אמרינן... והתניא: a ברייתא quoted to attack the קל וחומר",
+   "source": "Menachot 15a"
+  },
+  {
+   "id": "Menachot_15_a",
+   "step": 21,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the method of the קל וחומר in step 20, opening a proof from a ברייתא.",
+   "replace": "Challenges the method of the קל וחומר in step 20, quoting a ברייתא.",
+   "why": "relation names the wrong kind of step",
+   "source": "Menachot 15a"
+  },
+  {
+   "id": "Menachot_15_b",
+   "step": 2,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "הכי השתא answers the vineyard challenge of step 1",
+   "source": "Menachot 15b"
+  },
+  {
+   "id": "Menachot_15_b",
+   "step": 2,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the proof from the vineyard case",
+   "replace": "Answers the challenge from the vineyard case",
+   "why": "relation names the wrong kind of step",
+   "source": "Menachot 15b"
+  },
+  {
+   "id": "Menachot_15_b",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "הכי השתא answers the vineyard challenge of step 7",
+   "source": "Menachot 15b"
+  },
+  {
+   "id": "Menachot_15_b",
+   "step": 8,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the vineyard proof from step 7",
+   "replace": "Answers the vineyard challenge from step 7",
+   "why": "relation names the wrong kind of step",
+   "source": "Menachot 15b"
+  },
+  {
+   "id": "Menachot_16_a",
+   "step": 10,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "שתי תשובות בדבר objects to רבא's answer",
+   "source": "Menachot 16a"
+  },
+  {
+   "id": "Menachot_16_a",
+   "step": 10,
+   "field": "relationToPreviousStep",
+   "find": "Rejects",
+   "replace": "Challenges",
+   "why": "relation names the wrong kind of step",
+   "source": "Menachot 16a"
+  },
+  {
+   "id": "Menachot_18_a",
+   "step": 5,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "end of the explanation of רבי אלעזר's statement begun in step 1; a challenge follows",
+   "source": "Menachot 18a"
+  },
+  {
+   "id": "Menachot_20_a",
+   "step": 3,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "אביי's אי הכי objects to רב יוסף's answer",
+   "source": "Menachot 20a"
+  },
+  {
+   "id": "Menachot_20_a",
+   "step": 3,
+   "field": "relationToPreviousStep",
+   "find": "Rejects",
+   "replace": "Challenges",
+   "why": "relation names the wrong kind of step",
+   "source": "Menachot 20a"
+  },
+  {
+   "id": "Menachot_20_a",
+   "step": 23,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "אדרבה objects to the answer of step 22",
+   "source": "Menachot 20a"
+  },
+  {
+   "id": "Menachot_20_a",
+   "step": 23,
+   "field": "relationToPreviousStep",
+   "find": "Rejects",
+   "replace": "Challenges",
+   "why": "relation names the wrong kind of step",
+   "source": "Menachot 20a"
+  },
+  {
+   "id": "Menachot_21_a",
+   "step": 5,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "second half of the answer in step 4; a challenge follows",
+   "source": "Menachot 21a"
+  },
+  {
+   "id": "Menachot_21_b",
+   "step": 16,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "ראיה",
+   "why": "the ת\"ל closes the ברייתא brought as proof (steps 11-12); a new answer follows",
+   "source": "Menachot 21b"
+  },
+  {
+   "id": "Menachot_24_b",
+   "step": 5,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "second half of רבא's answer in step 4",
+   "source": "Menachot 24b"
+  },
+  {
+   "id": "Menachot_27_b",
+   "step": 14,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רבנן's objection to רבי יהודה's answer in step 13",
+   "source": "Menachot 27b"
+  },
+  {
+   "id": "Menachot_27_b",
+   "step": 14,
+   "field": "relationToPreviousStep",
+   "find": "Rejects",
+   "replace": "Challenges",
+   "why": "relation names the wrong kind of step",
+   "source": "Menachot 27b"
+  },
+  {
+   "id": "Menachot_27_b",
+   "step": 21,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "second half of the answer in step 20; challenged straight after",
+   "source": "Menachot 27b"
+  },
+  {
+   "id": "Menachot_29_a",
+   "step": 17,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "בשלמא התם... objects to the answer of step 16",
+   "source": "Menachot 29a"
+  },
+  {
+   "id": "Menachot_29_a",
+   "step": 17,
+   "field": "relationToPreviousStep",
+   "find": "Starts rejecting",
+   "replace": "Starts challenging",
+   "why": "relation names the wrong kind of step",
+   "source": "Menachot 29a"
+  },
+  {
+   "id": "Menachot_29_a",
+   "step": 20,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "continues the objection of step 17 to the answer of step 16",
+   "source": "Menachot 29a"
+  },
+  {
+   "id": "Menachot_2_b",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objection to the וכי תימא answer of step 7",
+   "source": "Menachot 2b"
+  },
+  {
+   "id": "Menachot_2_b",
+   "step": 8,
+   "field": "relationToPreviousStep",
+   "find": "Rejects",
+   "replace": "Challenges",
+   "why": "relation names the wrong kind of step",
+   "source": "Menachot 2b"
+  },
+  {
+   "id": "Menachot_2_b",
+   "step": 10,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objection to the answer suggested in step 9",
+   "source": "Menachot 2b"
+  },
+  {
+   "id": "Menachot_2_b",
+   "step": 10,
+   "field": "relationToPreviousStep",
+   "find": "Rejects",
+   "replace": "Challenges",
+   "why": "relation names the wrong kind of step",
+   "source": "Menachot 2b"
+  },
+  {
+   "id": "Menachot_32_a",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "ראיה",
+   "why": "שמע מינה ends אביי's proof (steps 6-8); a different answer follows",
+   "source": "Menachot 32a"
+  },
+  {
+   "id": "Menachot_3_b",
+   "step": 23,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "מימרא",
+   "why": "explains why the others do not hold like רבה; not pushing aside a proof",
+   "source": "Menachot 3b"
+  },
+  {
+   "id": "Menachot_3_b",
+   "step": 24,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "מימרא",
+   "why": "same list as step 23",
+   "source": "Menachot 3b"
+  },
+  {
+   "id": "Menachot_3_b",
+   "step": 25,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "מימרא",
+   "why": "same list as step 23",
+   "source": "Menachot 3b"
+  },
+  {
+   "id": "Menachot_41_a",
+   "step": 5,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תשובה",
+   "why": "second half of רב נחמן בר יצחק's Response (step 4); challenged next",
+   "source": "Menachot 41a"
+  },
+  {
+   "id": "Menachot_41_b",
+   "step": 19,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "רב פפא's ruling is challenged straight away (step 20)",
+   "source": "Menachot 41b"
+  },
+  {
+   "id": "Menachot_42_a",
+   "step": 13,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "second half of the צריכותא statement begun in step 12",
+   "source": "Menachot 42a"
+  },
+  {
+   "id": "Menachot_42_b",
+   "step": 4,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "applies the answer of step 3; part of that Resolution",
+   "source": "Menachot 42b"
+  },
+  {
+   "id": "Menachot_42_b",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "ראיה",
+   "why": "שמע מינה תלת inference, challenged in step 12",
+   "source": "Menachot 42b"
+  },
+  {
+   "id": "Menachot_45_b",
+   "step": 13,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "end of רבי עקיבא's statement; challenged in step 14",
+   "source": "Menachot 45b"
+  },
+  {
+   "id": "Menachot_45_b",
+   "step": 28,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "בן ננס's מי כתיב objects to רבי עקיבא's reading; step 29 answers it",
+   "source": "Menachot 45b"
+  },
+  {
+   "id": "Menachot_47_b",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "האי מאי answers רב פפא's challenge (steps 5-6)",
+   "source": "Menachot 47b"
+  },
+  {
+   "id": "Menachot_47_b",
+   "step": 7,
+   "field": "relationToPreviousStep",
+   "find": "Rejects",
+   "replace": "Refutes",
+   "why": "relation names the wrong kind of step",
+   "source": "Menachot 47b"
+  },
+  {
+   "id": "Menachot_47_b",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "second half of the answer begun in step 7",
+   "source": "Menachot 47b"
+  },
+  {
+   "id": "Menachot_47_b",
+   "step": 8,
+   "field": "relationToPreviousStep",
+   "find": "completes the rejection",
+   "replace": "completes the answer",
+   "why": "relation names the wrong kind of step",
+   "source": "Menachot 47b"
+  },
+  {
+   "id": "Menachot_49_b",
+   "step": 1,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "ראיה",
+   "why": "ends the elimination that is part of the proof from the משנה (49a 24-26, 49b 3); challenged next",
+   "source": "Menachot 49b"
+  },
+  {
+   "id": "Menachot_4_a",
+   "step": 4,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "מימרא",
+   "why": "explains why רב אסי did not answer like רבה; no proof is pushed aside",
+   "source": "Menachot 4a"
+  },
+  {
+   "id": "Menachot_4_a",
+   "step": 5,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "מימרא",
+   "why": "same list as step 4",
+   "source": "Menachot 4a"
+  },
+  {
+   "id": "Menachot_4_a",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "מימרא",
+   "why": "same list as step 4",
+   "source": "Menachot 4a"
+  },
+  {
+   "id": "Menachot_4_a",
+   "step": 12,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "מאי נפקא מינה? והא תנא... objects to the answer of step 11",
+   "source": "Menachot 4a"
+  },
+  {
+   "id": "Menachot_4_a",
+   "step": 12,
+   "field": "relationToPreviousStep",
+   "find": "Rejects",
+   "replace": "Challenges",
+   "why": "relation names the wrong kind of step",
+   "source": "Menachot 4a"
+  },
+  {
+   "id": "Menachot_51_a",
+   "step": 18,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "the או אינו objection inside the explanation; step 19 answers it",
+   "source": "Menachot 51a"
+  },
+  {
+   "id": "Menachot_51_a",
+   "step": 18,
+   "field": "relationToPreviousStep",
+   "find": "Pushes back on the proof in step 17",
+   "replace": "Pushes back on step 17",
+   "why": "relation names the wrong kind of step",
+   "source": "Menachot 51a"
+  },
+  {
+   "id": "Menachot_52_a",
+   "step": 14,
+   "field": "hebrewStepName",
+   "find": "קשיא",
+   "replace": "דחיה",
+   "why": "continues רבי ירמיה's rejection of רבא's proof (steps 13, 15)",
+   "source": "Menachot 52a"
+  },
+  {
+   "id": "Menachot_53_a",
+   "step": 5,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "answers רב חסדא's objection of step 4",
+   "source": "Menachot 53a"
+  },
+  {
+   "id": "Menachot_53_a",
+   "step": 5,
+   "field": "relationToPreviousStep",
+   "find": "Rejects",
+   "replace": "Answers",
+   "why": "relation names the wrong kind of step",
+   "source": "Menachot 53a"
+  },
+  {
+   "id": "Menachot_53_a",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "answers רב נחמן בר יצחק's objection of step 7",
+   "source": "Menachot 53a"
+  },
+  {
+   "id": "Menachot_53_a",
+   "step": 8,
+   "field": "relationToPreviousStep",
+   "find": "Rejects",
+   "replace": "Answers",
+   "why": "relation names the wrong kind of step",
+   "source": "Menachot 53a"
+  },
+  {
+   "id": "Menachot_53_b",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "מימרא",
+   "why": "story lines (אברהם's pleas and God's replies) in one step; rule 8",
+   "source": "Menachot 53b"
+  },
+  {
+   "id": "Menachot_53_b",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "מימרא",
+   "why": "story lines, same as step 7",
+   "source": "Menachot 53b"
+  },
+  {
+   "id": "Menachot_55_b",
+   "step": 19,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "מתקיף רב אשי objects to the answer in step 18",
+   "source": "Menachot 55b"
+  },
+  {
+   "id": "Menachot_55_b",
+   "step": 19,
+   "field": "relationToPreviousStep",
+   "find": "Rejects",
+   "replace": "Challenges",
+   "why": "relation names the wrong kind of step",
+   "source": "Menachot 55b"
+  },
+  {
+   "id": "Menachot_56_a",
+   "step": 5,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objection to the וכי תימא answer of step 4",
+   "source": "Menachot 56a"
+  },
+  {
+   "id": "Menachot_56_a",
+   "step": 5,
+   "field": "relationToPreviousStep",
+   "find": "Rejects",
+   "replace": "Challenges",
+   "why": "relation names the wrong kind of step",
+   "source": "Menachot 56a"
+  },
+  {
+   "id": "Menachot_56_a",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "קשיא",
+   "why": "completes the objection of step 5; a new answer follows",
+   "source": "Menachot 56a"
+  },
+  {
+   "id": "Menachot_56_a",
+   "step": 10,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "מה לבן צאן objects to the answer of step 9",
+   "source": "Menachot 56a"
+  },
+  {
+   "id": "Menachot_56_b",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objection to the answer of step 7",
+   "source": "Menachot 56b"
+  },
+  {
+   "id": "Menachot_56_b",
+   "step": 8,
+   "field": "relationToPreviousStep",
+   "find": "Rejects",
+   "replace": "Challenges",
+   "why": "relation names the wrong kind of step",
+   "source": "Menachot 56b"
+  },
+  {
+   "id": "Menachot_58_a",
+   "step": 5,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תשובה",
+   "why": "end of the ברייתא brought as the Response (step 2); challenged next",
+   "source": "Menachot 58a"
+  },
+  {
+   "id": "Menachot_60_b",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objection to the קל וחומר; step 12 answers it",
+   "source": "Menachot 60b"
+  },
+  {
+   "id": "Menachot_60_b",
+   "step": 11,
+   "field": "relationToPreviousStep",
+   "find": "Rejects",
+   "replace": "Challenges",
+   "why": "relation names the wrong kind of step",
+   "source": "Menachot 60b"
+  },
+  {
+   "id": "Menachot_60_b",
+   "step": 28,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רבי יהודה's אדרבה objects to רבי שמעון's answer in step 27",
+   "source": "Menachot 60b"
+  },
+  {
+   "id": "Menachot_60_b",
+   "step": 28,
+   "field": "relationToPreviousStep",
+   "find": "Rejects",
+   "replace": "Challenges",
+   "why": "relation names the wrong kind of step",
+   "source": "Menachot 60b"
+  },
+  {
+   "id": "Menachot_65_a",
+   "step": 19,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "inside the story, רבן יוחנן בן זכאי objects to the old man's answer (rule 3)",
+   "source": "Menachot 65a"
+  },
+  {
+   "id": "Menachot_65_a",
+   "step": 19,
+   "field": "relationToPreviousStep",
+   "find": "Rejects",
+   "replace": "Challenges",
+   "why": "relation names the wrong kind of step",
+   "source": "Menachot 65a"
+  },
+  {
+   "id": "Menachot_65_b",
+   "step": 15,
+   "field": "hebrewStepName",
+   "find": "קשיא",
+   "replace": "ראיה",
+   "why": "part of רבי יוסי בר יהודה's proof begun in step 14",
+   "source": "Menachot 65b"
+  },
+  {
+   "id": "Menachot_65_b",
+   "step": 16,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "ראיה",
+   "why": "opens רבי יהודה בן בתירא's alternative proof; nothing is pushed aside",
+   "source": "Menachot 65b"
+  },
+  {
+   "id": "Menachot_66_a",
+   "step": 19,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "middle of רבא's list (steps 16-21); more push-offs follow",
+   "source": "Menachot 66a"
+  },
+  {
+   "id": "Menachot_67_a",
+   "step": 12,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "רבא's statement, challenged straight away in step 13",
+   "source": "Menachot 67a"
+  },
+  {
+   "id": "Menachot_68_a",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "בדותא היא objects to רב אשי's answer",
+   "source": "Menachot 68a"
+  },
+  {
+   "id": "Menachot_73_b",
+   "step": 17,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "אפילו תימא objects to the suggested (non-source) answer of step 16",
+   "source": "Menachot 73b"
+  },
+  {
+   "id": "Menachot_73_b",
+   "step": 17,
+   "field": "relationToPreviousStep",
+   "find": "Rejects",
+   "replace": "Challenges",
+   "why": "relation names the wrong kind of step",
+   "source": "Menachot 73b"
+  },
+  {
+   "id": "Menachot_109_b",
+   "step": 16,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "end of רבי מאיר's version of the story; רבי יהודה's version follows",
+   "source": "Menachot 109b"
+  }
+ ]
+}

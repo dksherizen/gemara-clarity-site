@@ -2,6 +2,284 @@
 
 Every change to the AI-written content, newest first. Each entry says what was wrong, the source used, and who approved it.
 
+## 202611060546-rev112-labels-shas-h
+
+Approved: Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.
+
+- **Menachot 105a, step 22** (hebrewStepName): אביי's אפילו תימא objects to רבי ירמיה's answer; no proof is being pushed aside Source: Menachot 105a.
+  - was: דחיה
+  - now: קשיא
+- **Menachot 105a, step 22** (relationToPreviousStep): relation names the wrong kind of step Source: Menachot 105a.
+  - was: Rejects
+  - now: Disputes
+- **Menachot 107a, step 38** (hebrewStepName): רב פפא objects to the חכמים's answer and offers another source Source: Menachot 107a.
+  - was: דחיה
+  - now: קשיא
+- **Menachot 107a, step 38** (relationToPreviousStep): relation names the wrong kind of step Source: Menachot 107a.
+  - was: Rejects
+  - now: Challenges
+- **Menachot 11a, step 29** (hebrewStepName): מתקיף objection to the וכי תימא defence Source: Menachot 11a.
+  - was: דחיה
+  - now: קשיא
+- **Menachot 11a, step 29** (relationToPreviousStep): relation names the wrong kind of step Source: Menachot 11a.
+  - was: Rejects
+  - now: Challenges
+- **Menachot 11a, step 30** (hebrewStepName): second half of רב זוטרא's objection (step 29) Source: Menachot 11a.
+  - was: דחיה
+  - now: קשיא
+- **Menachot 12a, step 15** (hebrewStepName): רבא's אדרבה objects to רב הונא's answer Source: Menachot 12a.
+  - was: דחיה
+  - now: קשיא
+- **Menachot 12a, step 15** (relationToPreviousStep): relation names the wrong kind of step Source: Menachot 12a.
+  - was: Rejects
+  - now: Challenges
+- **Menachot 13a, step 2** (hebrewStepName): spells out the הא תו למה לי challenge of step 1 Source: Menachot 13a.
+  - was: דחיה
+  - now: קשיא
+- **Menachot 13a, step 3** (hebrewStepName): continues the למה לי challenge Source: Menachot 13a.
+  - was: דחיה
+  - now: קשיא
+- **Menachot 13a, step 4** (hebrewStepName): finishes the reasoning of the למה לי challenge Source: Menachot 13a.
+  - was: ראיה
+  - now: קשיא
+- **Menachot 15a, step 21** (hebrewStepName): ומי אמרינן... והתניא: a ברייתא quoted to attack the קל וחומר Source: Menachot 15a.
+  - was: דחיה
+  - now: קשיא
+- **Menachot 15a, step 21** (relationToPreviousStep): relation names the wrong kind of step Source: Menachot 15a.
+  - was: Rejects the method of the קל וחומר in step 20, opening a proof from a ברייתא.
+  - now: Challenges the method of the קל וחומר in step 20, quoting a ברייתא.
+- **Menachot 15b, step 2** (hebrewStepName): הכי השתא answers the vineyard challenge of step 1 Source: Menachot 15b.
+  - was: דחיה
+  - now: תירוץ
+- **Menachot 15b, step 2** (relationToPreviousStep): relation names the wrong kind of step Source: Menachot 15b.
+  - was: Rejects the proof from the vineyard case
+  - now: Answers the challenge from the vineyard case
+- **Menachot 15b, step 8** (hebrewStepName): הכי השתא answers the vineyard challenge of step 7 Source: Menachot 15b.
+  - was: דחיה
+  - now: תירוץ
+- **Menachot 15b, step 8** (relationToPreviousStep): relation names the wrong kind of step Source: Menachot 15b.
+  - was: Rejects the vineyard proof from step 7
+  - now: Answers the vineyard challenge from step 7
+- **Menachot 16a, step 10** (hebrewStepName): שתי תשובות בדבר objects to רבא's answer Source: Menachot 16a.
+  - was: דחיה
+  - now: קשיא
+- **Menachot 16a, step 10** (relationToPreviousStep): relation names the wrong kind of step Source: Menachot 16a.
+  - was: Rejects
+  - now: Challenges
+- **Menachot 18a, step 5** (hebrewStepName): end of the explanation of רבי אלעזר's statement begun in step 1; a challenge follows Source: Menachot 18a.
+  - was: מסקנא
+  - now: מימרא
+- **Menachot 20a, step 3** (hebrewStepName): אביי's אי הכי objects to רב יוסף's answer Source: Menachot 20a.
+  - was: דחיה
+  - now: קשיא
+- **Menachot 20a, step 3** (relationToPreviousStep): relation names the wrong kind of step Source: Menachot 20a.
+  - was: Rejects
+  - now: Challenges
+- **Menachot 20a, step 23** (hebrewStepName): אדרבה objects to the answer of step 22 Source: Menachot 20a.
+  - was: דחיה
+  - now: קשיא
+- **Menachot 20a, step 23** (relationToPreviousStep): relation names the wrong kind of step Source: Menachot 20a.
+  - was: Rejects
+  - now: Challenges
+- **Menachot 21a, step 5** (hebrewStepName): second half of the answer in step 4; a challenge follows Source: Menachot 21a.
+  - was: מסקנא
+  - now: תירוץ
+- **Menachot 21b, step 16** (hebrewStepName): the ת"ל closes the ברייתא brought as proof (steps 11-12); a new answer follows Source: Menachot 21b.
+  - was: מסקנא
+  - now: ראיה
+- **Menachot 24b, step 5** (hebrewStepName): second half of רבא's answer in step 4 Source: Menachot 24b.
+  - was: דחיה
+  - now: תירוץ
+- **Menachot 27b, step 14** (hebrewStepName): רבנן's objection to רבי יהודה's answer in step 13 Source: Menachot 27b.
+  - was: דחיה
+  - now: קשיא
+- **Menachot 27b, step 14** (relationToPreviousStep): relation names the wrong kind of step Source: Menachot 27b.
+  - was: Rejects
+  - now: Challenges
+- **Menachot 27b, step 21** (hebrewStepName): second half of the answer in step 20; challenged straight after Source: Menachot 27b.
+  - was: מסקנא
+  - now: תירוץ
+- **Menachot 29a, step 17** (hebrewStepName): בשלמא התם... objects to the answer of step 16 Source: Menachot 29a.
+  - was: דחיה
+  - now: קשיא
+- **Menachot 29a, step 17** (relationToPreviousStep): relation names the wrong kind of step Source: Menachot 29a.
+  - was: Starts rejecting
+  - now: Starts challenging
+- **Menachot 29a, step 20** (hebrewStepName): continues the objection of step 17 to the answer of step 16 Source: Menachot 29a.
+  - was: דחיה
+  - now: קשיא
+- **Menachot 2b, step 8** (hebrewStepName): objection to the וכי תימא answer of step 7 Source: Menachot 2b.
+  - was: דחיה
+  - now: קשיא
+- **Menachot 2b, step 8** (relationToPreviousStep): relation names the wrong kind of step Source: Menachot 2b.
+  - was: Rejects
+  - now: Challenges
+- **Menachot 2b, step 10** (hebrewStepName): objection to the answer suggested in step 9 Source: Menachot 2b.
+  - was: דחיה
+  - now: קשיא
+- **Menachot 2b, step 10** (relationToPreviousStep): relation names the wrong kind of step Source: Menachot 2b.
+  - was: Rejects
+  - now: Challenges
+- **Menachot 32a, step 9** (hebrewStepName): שמע מינה ends אביי's proof (steps 6-8); a different answer follows Source: Menachot 32a.
+  - was: מסקנא
+  - now: ראיה
+- **Menachot 3b, step 23** (hebrewStepName): explains why the others do not hold like רבה; not pushing aside a proof Source: Menachot 3b.
+  - was: דחיה
+  - now: מימרא
+- **Menachot 3b, step 24** (hebrewStepName): same list as step 23 Source: Menachot 3b.
+  - was: דחיה
+  - now: מימרא
+- **Menachot 3b, step 25** (hebrewStepName): same list as step 23 Source: Menachot 3b.
+  - was: דחיה
+  - now: מימרא
+- **Menachot 41a, step 5** (hebrewStepName): second half of רב נחמן בר יצחק's Response (step 4); challenged next Source: Menachot 41a.
+  - was: מסקנא
+  - now: תשובה
+- **Menachot 41b, step 19** (hebrewStepName): רב פפא's ruling is challenged straight away (step 20) Source: Menachot 41b.
+  - was: מסקנא
+  - now: מימרא
+- **Menachot 42a, step 13** (hebrewStepName): second half of the צריכותא statement begun in step 12 Source: Menachot 42a.
+  - was: מסקנא
+  - now: מימרא
+- **Menachot 42b, step 4** (hebrewStepName): applies the answer of step 3; part of that Resolution Source: Menachot 42b.
+  - was: מסקנא
+  - now: תירוץ
+- **Menachot 42b, step 11** (hebrewStepName): שמע מינה תלת inference, challenged in step 12 Source: Menachot 42b.
+  - was: מסקנא
+  - now: ראיה
+- **Menachot 45b, step 13** (hebrewStepName): end of רבי עקיבא's statement; challenged in step 14 Source: Menachot 45b.
+  - was: מסקנא
+  - now: מימרא
+- **Menachot 45b, step 28** (hebrewStepName): בן ננס's מי כתיב objects to רבי עקיבא's reading; step 29 answers it Source: Menachot 45b.
+  - was: דחיה
+  - now: קשיא
+- **Menachot 47b, step 7** (hebrewStepName): האי מאי answers רב פפא's challenge (steps 5-6) Source: Menachot 47b.
+  - was: דחיה
+  - now: תירוץ
+- **Menachot 47b, step 7** (relationToPreviousStep): relation names the wrong kind of step Source: Menachot 47b.
+  - was: Rejects
+  - now: Refutes
+- **Menachot 47b, step 8** (hebrewStepName): second half of the answer begun in step 7 Source: Menachot 47b.
+  - was: דחיה
+  - now: תירוץ
+- **Menachot 47b, step 8** (relationToPreviousStep): relation names the wrong kind of step Source: Menachot 47b.
+  - was: completes the rejection
+  - now: completes the answer
+- **Menachot 49b, step 1** (hebrewStepName): ends the elimination that is part of the proof from the משנה (49a 24-26, 49b 3); challenged next Source: Menachot 49b.
+  - was: מסקנא
+  - now: ראיה
+- **Menachot 4a, step 4** (hebrewStepName): explains why רב אסי did not answer like רבה; no proof is pushed aside Source: Menachot 4a.
+  - was: דחיה
+  - now: מימרא
+- **Menachot 4a, step 5** (hebrewStepName): same list as step 4 Source: Menachot 4a.
+  - was: דחיה
+  - now: מימרא
+- **Menachot 4a, step 6** (hebrewStepName): same list as step 4 Source: Menachot 4a.
+  - was: דחיה
+  - now: מימרא
+- **Menachot 4a, step 12** (hebrewStepName): מאי נפקא מינה? והא תנא... objects to the answer of step 11 Source: Menachot 4a.
+  - was: דחיה
+  - now: קשיא
+- **Menachot 4a, step 12** (relationToPreviousStep): relation names the wrong kind of step Source: Menachot 4a.
+  - was: Rejects
+  - now: Challenges
+- **Menachot 51a, step 18** (hebrewStepName): the או אינו objection inside the explanation; step 19 answers it Source: Menachot 51a.
+  - was: דחיה
+  - now: קשיא
+- **Menachot 51a, step 18** (relationToPreviousStep): relation names the wrong kind of step Source: Menachot 51a.
+  - was: Pushes back on the proof in step 17
+  - now: Pushes back on step 17
+- **Menachot 52a, step 14** (hebrewStepName): continues רבי ירמיה's rejection of רבא's proof (steps 13, 15) Source: Menachot 52a.
+  - was: קשיא
+  - now: דחיה
+- **Menachot 53a, step 5** (hebrewStepName): answers רב חסדא's objection of step 4 Source: Menachot 53a.
+  - was: דחיה
+  - now: תירוץ
+- **Menachot 53a, step 5** (relationToPreviousStep): relation names the wrong kind of step Source: Menachot 53a.
+  - was: Rejects
+  - now: Answers
+- **Menachot 53a, step 8** (hebrewStepName): answers רב נחמן בר יצחק's objection of step 7 Source: Menachot 53a.
+  - was: דחיה
+  - now: תירוץ
+- **Menachot 53a, step 8** (relationToPreviousStep): relation names the wrong kind of step Source: Menachot 53a.
+  - was: Rejects
+  - now: Answers
+- **Menachot 53b, step 7** (hebrewStepName): story lines (אברהם's pleas and God's replies) in one step; rule 8 Source: Menachot 53b.
+  - was: דחיה
+  - now: מימרא
+- **Menachot 53b, step 8** (hebrewStepName): story lines, same as step 7 Source: Menachot 53b.
+  - was: דחיה
+  - now: מימרא
+- **Menachot 55b, step 19** (hebrewStepName): מתקיף רב אשי objects to the answer in step 18 Source: Menachot 55b.
+  - was: דחיה
+  - now: קשיא
+- **Menachot 55b, step 19** (relationToPreviousStep): relation names the wrong kind of step Source: Menachot 55b.
+  - was: Rejects
+  - now: Challenges
+- **Menachot 56a, step 5** (hebrewStepName): objection to the וכי תימא answer of step 4 Source: Menachot 56a.
+  - was: דחיה
+  - now: קשיא
+- **Menachot 56a, step 5** (relationToPreviousStep): relation names the wrong kind of step Source: Menachot 56a.
+  - was: Rejects
+  - now: Challenges
+- **Menachot 56a, step 6** (hebrewStepName): completes the objection of step 5; a new answer follows Source: Menachot 56a.
+  - was: מסקנא
+  - now: קשיא
+- **Menachot 56a, step 10** (hebrewStepName): מה לבן צאן objects to the answer of step 9 Source: Menachot 56a.
+  - was: דחיה
+  - now: קשיא
+- **Menachot 56b, step 8** (hebrewStepName): objection to the answer of step 7 Source: Menachot 56b.
+  - was: דחיה
+  - now: קשיא
+- **Menachot 56b, step 8** (relationToPreviousStep): relation names the wrong kind of step Source: Menachot 56b.
+  - was: Rejects
+  - now: Challenges
+- **Menachot 58a, step 5** (hebrewStepName): end of the ברייתא brought as the Response (step 2); challenged next Source: Menachot 58a.
+  - was: מסקנא
+  - now: תשובה
+- **Menachot 60b, step 11** (hebrewStepName): objection to the קל וחומר; step 12 answers it Source: Menachot 60b.
+  - was: דחיה
+  - now: קשיא
+- **Menachot 60b, step 11** (relationToPreviousStep): relation names the wrong kind of step Source: Menachot 60b.
+  - was: Rejects
+  - now: Challenges
+- **Menachot 60b, step 28** (hebrewStepName): רבי יהודה's אדרבה objects to רבי שמעון's answer in step 27 Source: Menachot 60b.
+  - was: דחיה
+  - now: קשיא
+- **Menachot 60b, step 28** (relationToPreviousStep): relation names the wrong kind of step Source: Menachot 60b.
+  - was: Rejects
+  - now: Challenges
+- **Menachot 65a, step 19** (hebrewStepName): inside the story, רבן יוחנן בן זכאי objects to the old man's answer (rule 3) Source: Menachot 65a.
+  - was: דחיה
+  - now: קשיא
+- **Menachot 65a, step 19** (relationToPreviousStep): relation names the wrong kind of step Source: Menachot 65a.
+  - was: Rejects
+  - now: Challenges
+- **Menachot 65b, step 15** (hebrewStepName): part of רבי יוסי בר יהודה's proof begun in step 14 Source: Menachot 65b.
+  - was: קשיא
+  - now: ראיה
+- **Menachot 65b, step 16** (hebrewStepName): opens רבי יהודה בן בתירא's alternative proof; nothing is pushed aside Source: Menachot 65b.
+  - was: דחיה
+  - now: ראיה
+- **Menachot 66a, step 19** (hebrewStepName): middle of רבא's list (steps 16-21); more push-offs follow Source: Menachot 66a.
+  - was: מסקנא
+  - now: מימרא
+- **Menachot 67a, step 12** (hebrewStepName): רבא's statement, challenged straight away in step 13 Source: Menachot 67a.
+  - was: מסקנא
+  - now: מימרא
+- **Menachot 68a, step 9** (hebrewStepName): בדותא היא objects to רב אשי's answer Source: Menachot 68a.
+  - was: דחיה
+  - now: קשיא
+- **Menachot 73b, step 17** (hebrewStepName): אפילו תימא objects to the suggested (non-source) answer of step 16 Source: Menachot 73b.
+  - was: דחיה
+  - now: קשיא
+- **Menachot 73b, step 17** (relationToPreviousStep): relation names the wrong kind of step Source: Menachot 73b.
+  - was: Rejects
+  - now: Challenges
+- **Menachot 109b, step 16** (hebrewStepName): end of רבי מאיר's version of the story; רבי יהודה's version follows Source: Menachot 109b.
+  - was: מסקנא
+  - now: מימרא
+
 ## 202611060545-rev111-labels-shas-g
 
 Approved: Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.
