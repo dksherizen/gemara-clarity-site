@@ -2,6 +2,188 @@
 
 Every change to the AI-written content, newest first. Each entry says what was wrong, the source used, and who approved it.
 
+## 202611060243-rev95-step-labels-1
+
+Approved: Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.
+
+- **Bekhorot 51b, step 1** (hebrewStepName): This line is the second half of the answer begun at the end of 51a (step 28, labelled תירוץ, 'אימא:') to the challenge 'פשיטא, לאו דידיה נינהו'. It completes the resolution; it is not where a sugya lands. Source: Bekhorot 51a-b: פשיטא! לאו דידיה נינהו! אימא: ולא הקדשות בכל אלו.
+  - was: מסקנא
+  - now: תירוץ
+- **Bekhorot 53a, step 24** (hebrewStepName): Step 23 is a challenge (אי הכי, בכור נמי לא ליקדש). This step answers that challenge: a firstborn's holiness does not depend on us, it is holy from the womb. Answering a קשיא is a תירוץ, not a rejection of a proof. Source: Bekhorot 53a: בכור בדידן תליא מילתא? ברחם קדוש!.
+  - was: דחיה
+  - now: תירוץ
+- **Bekhorot 53a, step 24** (relationToPreviousStep): Matches the corrected kind (תירוץ). Source: Bekhorot 53a: בכור בדידן תליא מילתא.
+  - was: Rejects the challenge
+  - now: Answers the challenge
+- **Bekhorot 53b, step 24** (hebrewStepName): Step 23 (the ק"ו that new and old should combine) is labelled קשיא, and the identical structure on 53a (steps 4-5) and later on this amud (25/26, 27/28) is labelled קשיא/תירוץ. The תלמוד לומר answers that challenge, so it is a תירוץ; a דחיה pushes aside a proof. Source: Bekhorot 53b: תלמוד לומר: עשר תעשר, בשתי מעשרות הכתוב מדבר.
+  - was: דחיה
+  - now: תירוץ
+- **Bekhorot 53b, step 24** (relationToPreviousStep): Matches the corrected kind (תירוץ). Source: Bekhorot 53b: תלמוד לומר עשר תעשר.
+  - was: Rejects the קל וחומר
+  - now: Answers the קל וחומר
+- **Bekhorot 54b, step 12** (hebrewStepName): A מסקנא in the middle of the sugya. This is the last line of רבא's answer (begun in step 7, a תירוץ) explaining why דגן cannot mean 'all grain is one': the word is needed to exclude other species. The discussion continues straight after with רב הונא בריה דרב נחמן's challenge. Source: Bekhorot 54b: אבל הכא, מי סגיא דלא כתיב דגן? למעוטי שאר מינין.
+  - was: מסקנא
+  - now: תירוץ
+- **Bekhorot 57b, step 1** (hebrewStepName): There is no question here. This continues the answer (begun at the end of 57a, 'לעולם גמר') to the challenge that the תנא קמא seems inconsistent. It resolves a קשיא. Source: Bekhorot 57a-b: וּבְיוֹצֵא דּוֹפֶן — סָבַר לַהּ כְּרַבִּי שִׁמְעוֹן.
+  - was: תשובה
+  - now: תירוץ
+- **Bekhorot 57b, step 2** (hebrewStepName): Same answer to the same challenge, continued for מחוסר זמן and יתום. No question precedes it. Source: Bekhorot 57b: בִּמְחוּסַּר זְמַן סָבַר לַהּ כְּרַבִּי שִׁמְעוֹן בֶּן יְהוּדָה.
+  - was: תשובה
+  - now: תירוץ
+- **Bekhorot 60a, step 17** (hebrewStepName): The גמרא quotes the משנה to open a challenge (the next step: it fits רב מארי, but against רב כהנא it is difficult). It does not support anyone's position. Source: Bekhorot 60a: תְּנַן: יָצְאוּ שְׁנַיִם כְּאַחַת ... בִּשְׁלָמָא.
+  - was: ראיה
+  - now: קשיא
+- **Bekhorot 58a, step 29** (hebrewStepName): 'וכי תימא ... והתניא' is part of the challenge of step 28: it blocks a possible defense so the objection stands. It is not a proof for a position. Source: Bekhorot 58a: וְכִי תֵּימָא: לָא מָצֵי קָאֵי אַטַּעְמַיְיהוּ, וְהָתַנְיָא.
+  - was: ראיה
+  - now: קשיא
+- **Bekhorot 61a, step 5** (hebrewStepName): Step 4 is a suggested answer ('וכי תימא'), not a proof. 'והתניא' knocks out that answer and renews the challenge to the claim that רבי יהודה holds the eleventh dies. That is a challenge, not a rejection of a proof. Source: Bekhorot 61a: וְהָתַנְיָא: אֵין בֵּין אַחַד עָשָׂר לִשְׁלָמִים.
+  - was: דחיה
+  - now: קשיא
+- **Bekhorot 56a, step 16** (hebrewStepName): רבי אלעזר is answering an איתיביה (a challenge, step 15) by saying the ברייתא is not authoritative. That answers a קשיא; the next step, his second answer, is already labelled תירוץ. Source: Bekhorot 56a: אֲמַר לֵיהּ: זוֹ אֵינָהּ מִשְׁנָה.
+  - was: דחיה
+  - now: תירוץ
+- **Bekhorot 59b, step 5** (hebrewStepName): This is the second half of the 'אי נמי' sentence of step 4, which rejects the קל וחומר. It finishes the rejection; it is not a separate conclusion. Source: Bekhorot 59b: תְּשִׁיעִי, דְּאַכַּתִּי לָא אִיבָּרַר לֵיהּ עֲשִׂירִי.
+  - was: מסקנא
+  - now: דחיה
+- **Bekhorot 57a, step 3** (hebrewStepName): The second half of a צריכותא (why both rulings of רבי יוחנן are needed), matching step 2, which is labelled מימרא. The discussion goes straight on with מיתיבי, so this is not where the sugya lands. Source: Bekhorot 57a: וְאִי אַשְׁמְעִינַן שָׂדֶה — לְחוּמְרָא ... צְרִיכָא.
+  - was: מסקנא
+  - now: מימרא
+- **Bekhorot 59a, step 5** (hebrewStepName): 'אילימא מהא דתניא' is the first attempted proof of רבא's rule. It is rejected with 'ודלמא' (step 6, דחיה). The parallel attempts at steps 7, 9, 11 (and 59b step 8) are labelled ראיה; this one should match. Source: Bekhorot 59a: אִילֵּימָא מֵהָא דְּתַנְיָא.
+  - was: תשובה
+  - now: ראיה
+- **Arakhin 4a, step 9** (hebrewStepName): This is the קא משמע לן that completes the answer to the פשיטא challenge (steps 7-8), not the conclusion of a sugya; the parallel קא משמע לן steps on 3b and 4b are labelled תירוץ. Source: Arakhin 4a, קא משמע לן, ואכלת ושבעת אמר רחמנא.
+  - was: מסקנא
+  - now: תירוץ
+- **Arakhin 4a, step 13** (hebrewStepName): Same pattern: the סלקא דעתך אמינא / קא משמע לן that finishes the answer (step 12) to the פשיטא challenge of step 11; the series continues right after. Source: Arakhin 4a, קא משמע לן: נהי דזר בהדי כהן לא מצי אכיל.
+  - was: מסקנא
+  - now: תירוץ
+- **Arakhin 4b, step 45** (hebrewStepName): Abaye's והתניא is the substance of his objection to Rava (step 44), not a proof supporting a position; the challenge is then drawn out in step 48. Source: Arakhin 4b, והתניא: ראש עבד זה הקדש.
+  - was: ראיה
+  - now: קשיא
+- **Arakhin 4b, step 45** (title): Title calls the והתניא objection a proof. Source: Arakhin 4b, והתניא.
+  - was: אביי's proof
+  - now: אביי's challenge
+- **Arakhin 4b, step 46** (hebrewStepName): Continuation of the same ברייתא Abaye quotes as his objection (step 45); keep it with the challenge. Source: Arakhin 4b, ראש פרה מכור לך.
+  - was: ראיה
+  - now: קשיא
+- **Arakhin 6b, step 10** (hebrewStepName): Explains the reasoning of each side of the story in step 9 (one thought it uncommon, the other that it might happen); it reaches no conclusion. Source: Arakhin 6b, מאן דשנייה סבר דלא שכיח, ומאן דאיקפד סבר.
+  - was: מסקנא
+  - now: מימרא
+- **Arakhin 10a, step 1** (hebrewStepName): This finishes רבי שמעון בר רבי's explanation that began on 9b step 20, which is labelled תירוץ; the two halves of one statement should carry the same label. Source: Arakhin 10a, ועיבור שנה שלשים ואשתקד עשינו שניהם מלאין.
+  - was: תשובה
+  - now: תירוץ
+- **Berakhot 2a, step 7** (hebrewStepName): This is the rest of the Mishnah's own rule ('and not only this did they say...'): it lists more cases where the time runs until dawn. It extends the rule; no source is brought to support a position. Source: Berakhot 2a, Mishnah: הקטר חלבים ואברים מצותן עד שיעלה עמוד השחר.
+  - was: ראיה
+  - now: מימרא
+- **Berakhot 2a, step 7** (stepSummary): Matches the relabel: the examples are part of the rule, not a proof of it. Source: Berakhot 2a, Mishnah: הקטר חלבים ואברים.
+  - was: backs up his general rule with two examples
+  - now: extends his general rule with two examples
+- **Berakhot 2a, step 7** (whatsHappening): Matches the relabel: the examples are part of the rule, not a proof of it. Source: Berakhot 2a, Mishnah: הקטר חלבים ואברים.
+  - was: giving examples to prove his rule from Step 6
+  - now: giving more cases that follow his rule from Step 6
+- **Berakhot 2b, step 14** (hebrewStepName): This 'so we learn from it' is only a first inference, and the very next step rejects it ('No...'). The discussion does not land here; it is an inference that the next step's דחיה pushes aside. Source: Berakhot 2b: אלא, שמע מינה עני שעורא לחוד וכהן שעורא לחוד ... לא, עני וכהן חד שעורא הוא.
+  - was: מסקנא
+  - now: ראיה
+- **Berakhot 4a, step 5** (hebrewStepName): Just the last item in the word-by-word reading of the verse (after the advisers comes Yoav). It is part of the statement, not where a discussion lands. Source: Berakhot 4a: ואחר כך שר צבא למלך יואב.
+  - was: מסקנא
+  - now: מימרא
+- **Berakhot 8b, step 12** (hebrewStepName): No question is asked before it. The Gemara simply gives two explanations of Rava's advice ('some say ... some say'). Source: Berakhot 8b: איכא דאמרי משום סכנה, ואיכא דאמרי משום קלקול סעודה.
+  - was: תשובה
+  - now: מימרא
+- **Berakhot 8b, step 14** (hebrewStepName): No question is asked before it. The Gemara explains Rava's rule by bringing three readings ('some say ...'). Same pattern as step 12. Source: Berakhot 8b: איכא דאמרי לא תגנו בלא קריאת שמע.
+  - was: תשובה
+  - now: מימרא
+- **Berakhot 14b, step 28** (hebrewStepName): This step blocks a possible defence of Rav ('maybe it was before the time for Shema') by asking 'then what was Rav Chiya bar Ashi testifying to?'. It is part of the challenge against Rav and is answered by the next step (a תירוץ). No proof is being pushed aside. Step 8 on this same amud has the identical structure (וכי תימא ... והאמר) and is labelled קשיא, so this one should match. Source: Berakhot 14b, וְכִי תֵּימָא: בִּדְלָא מְטָא זְמַן קְרִיאַת שְׁמַע, אִם כֵּן מַאי אַסְהַדְתֵּיהּ.
+  - was: דחיה
+  - now: קשיא
+- **Berakhot 10a, step 8** (hebrewStepName): The מין challenges the verse ('should she sing because she did not give birth?'). Beruriah's 'look at the end of the verse' is the start of her answer to that challenge, finished in step 9 (already a תירוץ). A rejection is for a proof, and the מין brought no proof here. Source: Berakhot 10a, אָמְרָה לֵיהּ: שַׁטְיָא, שְׁפֵיל לְסֵיפֵיהּ דִּקְרָא.
+  - was: דחיה
+  - now: תירוץ
+- **Berakhot 12a, step 8** (hebrewStepName): This is the second of two parallel reports (Rabbah bar bar Chana in Sura, then Ameimar in Nehardea) that the Ten Commandments reading was already cancelled. It is a report in the middle of the amud, not where a discussion lands; the parallel step 7 is a מימרא. Source: Berakhot 12a, אֲמֵימַר סְבַר לְמִקְבְּעִינְהוּ בִּנְהַרְדְּעָא, אֲמַר לֵיהּ רַב אַשִׁי: כְּבָר בִּטְּלוּם.
+  - was: מסקנא
+  - now: מימרא
+- **Berakhot 9a, step 4** (hebrewStepName): Rav Yitzchak bar Yosef reports that R. Yehoshua ben Levi's ruling was only inferred, not said outright. This is a statement about how the ruling was transmitted. It does not push aside any proof (step 2 is a plain ruling, not a proof). Source: Berakhot 9a, לָאו בְּפֵירוּשׁ אִיתְּמַר, אֶלָּא מִכְּלָלָא אִיתְּמַר.
+  - was: דחיה
+  - now: מימרא
+- **Berakhot 11b, step 28** (hebrewStepName): Same formula as Berakhot 9a step 4: Rav Yitzchak bar Yosef reports that R. Zerika's teaching was only inferred. It is a statement about transmission; the step before it (Reish Lakish: יוצר אור) is an answer, not a proof being rejected. Source: Berakhot 11b, הָא דְּרַבִּי זְרִיקָא לָאו בְּפֵירוּשׁ אִתְּמַר אֶלָּא מִכְּלָלָא אִתְּמַר.
+  - was: דחיה
+  - now: מימרא
+- **Berakhot 16a, step 6** (hebrewStepName): The rabbis' reaction ('had we come only to hear this, it would be enough') ends a story; it is not where any discussion lands. A new משנה follows. Source: Berakhot 16a: אִלּוּ לֹא בָּאנוּ אֶלָּא לִשְׁמוֹעַ דָּבָר זֶה דַּיֵּינוּ.
+  - was: מסקנא
+  - now: מימרא
+- **Berakhot 17b, step 11** (hebrewStepName): The משנה about working on תשעה באב is quoted as the source of the contradiction (the 'והא איפכא שמעינן להו' of step 10), not as support for anyone's position. Source: Berakhot 17b: והא איפכא שמעינן להו! דתנן: מקום שנהגו לעשות מלאכה בתשעה באב.
+  - was: ראיה
+  - now: קשיא
+- **Berakhot 19a, step 28** (hebrewStepName): The ברייתא about burning רבי אליעזר's טהרות and 'blessing' him finishes the challenge of step 25 (that a נידוי is found in the משנה's case). It supports no position; step 29 answers it. Source: Berakhot 19a: ותניא: אותו היום הביאו כל טהרות שטיהר רבי אליעזר ושרפום לפניו, ולבסוף ברכוהו.
+  - was: ראיה
+  - now: קשיא
+- **Berakhot 19b, step 15** (hebrewStepName): Like steps 8 and 11 (each a תא שמע ending 'אמאי? לימא אין חכמה...' and labelled קשיא), this תא שמע brings a source to challenge רב's rule of 'אין חכמה'. Step 17 states the challenge and step 18 answers it. Source: Berakhot 19b: תא שמע: ״והתעלמת מהם״ — פעמים שאתה מתעלם מהם.
+  - was: ראיה
+  - now: קשיא
+- **Berakhot 19b, step 16** (hebrewStepName): This continues the same challenging ברייתא as step 15 (the זקן ignoring a lost object for his dignity). It is the case that step 17 asks about. Source: Berakhot 19b: או היה זקן ואינה לפי כבודו ... לכך נאמר ״והתעלמת״.
+  - was: ראיה
+  - now: קשיא
+- **Berakhot 19b, step 21** (hebrewStepName): A new תא שמע that challenges רב's rule of 'אין חכמה' (a מת מצוה overrides the נזיר's prohibition). The 'אמאי לימא אין חכמה' and its answer come on 20a. It is the same pattern as steps 8 and 11, which are labelled קשיא. Source: Berakhot 19b-20a: תא שמע: ״ולאחתו״ מה תלמוד לומר ... אמאי, לימא אין חכמה.
+  - was: ראיה
+  - now: קשיא
+- **Berakhot 19b, step 21** (title): Matches the corrected label: the source is brought as a challenge. Source: Berakhot 19b: תא שמע: ״ולאחתו״.
+  - was: New proof: the נזיר and 'his sister'
+  - now: New challenge: the נזיר and 'his sister'
+- **Berakhot 19b, step 21** (relationToPreviousStep): Matches the corrected labels: both sources challenge רב's rule; neither proves anything. Source: Berakhot 19b: איסורא מממונא לא ילפינן. תא שמע: ״ולאחתו״.
+  - was: After the lost-object proof was limited to money laws in Step 20, the גמרא opens a fresh proof that deals with a real איסור.
+  - now: After the lost-object challenge was limited to money laws in Step 20, the גמרא opens a fresh challenge that deals with a real איסור.
+- **Berakhot 19b, step 22** (hebrewStepName): This continues the challenging ברייתא of step 21 (the exception for a מת מצוה), which is then challenged with 'אמאי' on 20a. Source: Berakhot 19b: לאחותו הוא דאינו מטמא.
+  - was: ראיה
+  - now: קשיא
+- **Berakhot 20b, step 21** (hebrewStepName): Step 18–19 brought a proof (תא שמע ... אשה מברכת לבעלה) that women's ברכת המזון is דאורייתא. 'הכא במאי עסקינן' pushes that proof aside: the ברייתא is about a rabbinic amount. It answers a proof, not a challenge, and the step's own relation says it 'removes it as a proof'. Source: Berakhot 20b: אלא הכא במאי עסקינן כגון שאכל שיעורא דרבנן.
+  - was: תירוץ
+  - now: דחיה
+- **Berakhot 21a, step 3** (hebrewStepName): 'והרי ברכת המזון ... ותנן' is an objection to the answer in step 2, built exactly like the 'והרי תפלה ... ותנן' of step 1 (labelled קשיא). It rejects an answer, not a proof, and step 4 gives a new answer (תירוץ). Source: Berakhot 21a: והרי ברכת המזון לאחריו דלית בה מלכות שמים, ותנן.
+  - was: דחיה
+  - now: קשיא
+- **Berakhot 21a, step 18** (hebrewStepName): The משנה is quoted to raise the challenge of step 19 ('ואי סלקא דעתך אמת ויציב דאורייתא — לברוך לאחריה!'). It is the source of an objection, not support. Source: Berakhot 21a: תנן: בעל קרי מהרהר בלבו ... ואי סלקא דעתך ״אמת ויציב״ דאורייתא — לברוך לאחריה.
+  - was: ראיה
+  - now: קשיא
+- **Berakhot 21a, step 20** (relationToPreviousStep): Step 19 is a challenge (קשיא) and step 20 a תירוץ; the relation calls it a proof. Source: Berakhot 21a: מאי טעמא מברך, אי משום יציאת מצרים — הא אדכר ליה בקריאת שמע.
+  - was: Rejects the proof from step 19.
+  - now: Answers the challenge from step 19.
+- **Berakhot 24a, step 1** (hebrewStepName): Answers the plain question 'מאי טעמא' at the end of 23b (step 30, labelled שאלה); no challenge is being resolved, so it is the תשובה to that שאלה. Source: Berakhot 24a: כֹּל לְנַטּוֹרִינְהוּ טְפֵי עֲדִיף.
+  - was: תירוץ
+  - now: תשובה
+- **Berakhot 24a, step 38** (hebrewStepName): This is the rest of the מיתיבי ברייתא (התולה תפיליו יתלו לו חייו) used to attack רבי's practice; it is part of the challenge, not a proof for any position (its own relation says it 'strengthens the objection'). Source: Berakhot 24a: דּוֹרְשֵׁי חֲמוּרוֹת אָמְרוּ ... זֶה הַתּוֹלֶה תְּפִילָּיו.
+  - was: ראיה
+  - now: קשיא
+- **Berakhot 24b, step 28** (hebrewStepName): 'אִינִי? וְהָא רַבִּי אֲבָהוּ...' attacks the suggested answer of step 27 with a contradicting story; that is a challenge (אִינִי/וְהָא), not the pushing aside of a proof. Source: Berakhot 24b: אִינִי, וְהָא רַבִּי אֲבָהוּ הֲוָה קָא אָזֵיל בָּתְרֵיהּ דְּרַבִּי יוֹחָנָן.
+  - was: דחיה
+  - now: קשיא
+- **Berakhot 24b, step 28** (stepSummary): Matches the label change: the story is a challenge. Source: Berakhot 24b.
+  - was: The answer is pushed away by a story.
+  - now: The answer is challenged by a story.
+- **Berakhot 24b, step 29** (hebrewStepName): 'הָכִי קָאָמַר לֵיהּ' answers the challenge of step 28 by explaining what רבי יוחנן meant; that resolves a קשיא. Source: Berakhot 24b: הָכִי קָאָמַר לֵיהּ: לְדִידִי לָא סְבִירָא לִי, לְדִידָךְ דִּסְבִירָא לָךְ.
+  - was: דחיה
+  - now: תירוץ
+- **Berakhot 24b, step 29** (relationToPreviousStep): Matches the label change. Source: Berakhot 24b.
+  - was: Pushes away the story-based rejection in step 28
+  - now: Answers the story-based challenge in step 28
+- **Berakhot 24b, step 29** (stepSummary): The story was a challenge, not a proof. Source: Berakhot 24b.
+  - was: The proof from the story is pushed away.
+  - now: The challenge from the story is answered.
+- **Berakhot 25a, step 32** (hebrewStepName): אביי answers רב יוסף's challenge (step 31) by showing רב has a strict statement too; it answers a קשיא, not a proof. Source: Berakhot 25a: אָמַר לֵיהּ אַבָּיֵי: מַאי חָזֵית דְּסָמְכַתְּ אַהָא, סְמוֹךְ אַהָא.
+  - was: דחיה
+  - now: תירוץ
+- **Berakhot 25a, step 32** (relationToPreviousStep): Matches the label change. Source: Berakhot 25a.
+  - was: Rejects רב יוסף's challenge
+  - now: Answers רב יוסף's challenge
+- **Berakhot 25a, step 40** (hebrewStepName): Step 39 is a מיתיבי against רבא; 'וּלְטַעְמָיךְ אֵימָא רֵישָׁא' answers it (its own relation says 'Answers the challenge'), so it is a resolution. Source: Berakhot 25a: וּלְטַעְמָיךְ אֵימָא רֵישָׁא: כׇּל זְמַן שֶׁמַּטְפִּיחִין.
+  - was: דחיה
+  - now: תירוץ
+- **Berakhot 25b, step 29** (hebrewStepName): A short story of רב יוסף's own practice in the middle of the topic (the sugya continues with the chamber-pot ברייתא); it does not settle anything. Source: Berakhot 25b: אֲמַר לֵיהּ רַב יוֹסֵף לְשַׁמָּעֵיהּ: אַיְּיתִי לִי רְבִיעֵיתָא דְמַיָּא.
+  - was: מסקנא
+  - now: מימרא
+- **Berakhot 26a, step 1** (hebrewStepName): This is the second half of רבא's statement 'גְּלִימָא אַקַּמְטְרָא...' begun at 25b step 47 (labelled מימרא); it is a ruling by רבא, not where a discussion lands, and is followed by more rulings. Source: Berakhot 25b-26a: אָמַר רָבָא: גְּלִימָא אַקַּמְטְרָא — כִּכְלִי בְּתוֹךְ כְּלִי דָּמֵי.
+  - was: מסקנא
+  - now: מימרא
+
 ## 202611060242-rev94-dafyomi-berakhot-2
 
 Approved: Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.

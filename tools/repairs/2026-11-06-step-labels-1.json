@@ -1,0 +1,537 @@
+{
+ "name": "step-labels-1",
+ "approved": "Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.",
+ "repairs": [
+  {
+   "id": "Bekhorot_51_b",
+   "step": 1,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "This line is the second half of the answer begun at the end of 51a (step 28, labelled תירוץ, 'אימא:') to the challenge 'פשיטא, לאו דידיה נינהו'. It completes the resolution; it is not where a sugya lands.",
+   "source": "Bekhorot 51a-b: פשיטא! לאו דידיה נינהו! אימא: ולא הקדשות בכל אלו"
+  },
+  {
+   "id": "Bekhorot_53_a",
+   "step": 24,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "Step 23 is a challenge (אי הכי, בכור נמי לא ליקדש). This step answers that challenge: a firstborn's holiness does not depend on us, it is holy from the womb. Answering a קשיא is a תירוץ, not a rejection of a proof.",
+   "source": "Bekhorot 53a: בכור בדידן תליא מילתא? ברחם קדוש!"
+  },
+  {
+   "id": "Bekhorot_53_a",
+   "step": 24,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the challenge",
+   "replace": "Answers the challenge",
+   "why": "Matches the corrected kind (תירוץ).",
+   "source": "Bekhorot 53a: בכור בדידן תליא מילתא"
+  },
+  {
+   "id": "Bekhorot_53_b",
+   "step": 24,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "Step 23 (the ק\"ו that new and old should combine) is labelled קשיא, and the identical structure on 53a (steps 4-5) and later on this amud (25/26, 27/28) is labelled קשיא/תירוץ. The תלמוד לומר answers that challenge, so it is a תירוץ; a דחיה pushes aside a proof.",
+   "source": "Bekhorot 53b: תלמוד לומר: עשר תעשר, בשתי מעשרות הכתוב מדבר"
+  },
+  {
+   "id": "Bekhorot_53_b",
+   "step": 24,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the קל וחומר",
+   "replace": "Answers the קל וחומר",
+   "why": "Matches the corrected kind (תירוץ).",
+   "source": "Bekhorot 53b: תלמוד לומר עשר תעשר"
+  },
+  {
+   "id": "Bekhorot_54_b",
+   "step": 12,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "A מסקנא in the middle of the sugya. This is the last line of רבא's answer (begun in step 7, a תירוץ) explaining why דגן cannot mean 'all grain is one': the word is needed to exclude other species. The discussion continues straight after with רב הונא בריה דרב נחמן's challenge.",
+   "source": "Bekhorot 54b: אבל הכא, מי סגיא דלא כתיב דגן? למעוטי שאר מינין"
+  },
+  {
+   "id": "Bekhorot_57_b",
+   "step": 1,
+   "field": "hebrewStepName",
+   "find": "תשובה",
+   "replace": "תירוץ",
+   "why": "There is no question here. This continues the answer (begun at the end of 57a, 'לעולם גמר') to the challenge that the תנא קמא seems inconsistent. It resolves a קשיא.",
+   "source": "Bekhorot 57a-b: וּבְיוֹצֵא דּוֹפֶן — סָבַר לַהּ כְּרַבִּי שִׁמְעוֹן"
+  },
+  {
+   "id": "Bekhorot_57_b",
+   "step": 2,
+   "field": "hebrewStepName",
+   "find": "תשובה",
+   "replace": "תירוץ",
+   "why": "Same answer to the same challenge, continued for מחוסר זמן and יתום. No question precedes it.",
+   "source": "Bekhorot 57b: בִּמְחוּסַּר זְמַן סָבַר לַהּ כְּרַבִּי שִׁמְעוֹן בֶּן יְהוּדָה"
+  },
+  {
+   "id": "Bekhorot_60_a",
+   "step": 17,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "The גמרא quotes the משנה to open a challenge (the next step: it fits רב מארי, but against רב כהנא it is difficult). It does not support anyone's position.",
+   "source": "Bekhorot 60a: תְּנַן: יָצְאוּ שְׁנַיִם כְּאַחַת ... בִּשְׁלָמָא"
+  },
+  {
+   "id": "Bekhorot_58_a",
+   "step": 29,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "'וכי תימא ... והתניא' is part of the challenge of step 28: it blocks a possible defense so the objection stands. It is not a proof for a position.",
+   "source": "Bekhorot 58a: וְכִי תֵּימָא: לָא מָצֵי קָאֵי אַטַּעְמַיְיהוּ, וְהָתַנְיָא"
+  },
+  {
+   "id": "Bekhorot_61_a",
+   "step": 5,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "Step 4 is a suggested answer ('וכי תימא'), not a proof. 'והתניא' knocks out that answer and renews the challenge to the claim that רבי יהודה holds the eleventh dies. That is a challenge, not a rejection of a proof.",
+   "source": "Bekhorot 61a: וְהָתַנְיָא: אֵין בֵּין אַחַד עָשָׂר לִשְׁלָמִים"
+  },
+  {
+   "id": "Bekhorot_56_a",
+   "step": 16,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "רבי אלעזר is answering an איתיביה (a challenge, step 15) by saying the ברייתא is not authoritative. That answers a קשיא; the next step, his second answer, is already labelled תירוץ.",
+   "source": "Bekhorot 56a: אֲמַר לֵיהּ: זוֹ אֵינָהּ מִשְׁנָה"
+  },
+  {
+   "id": "Bekhorot_59_b",
+   "step": 5,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "דחיה",
+   "why": "This is the second half of the 'אי נמי' sentence of step 4, which rejects the קל וחומר. It finishes the rejection; it is not a separate conclusion.",
+   "source": "Bekhorot 59b: תְּשִׁיעִי, דְּאַכַּתִּי לָא אִיבָּרַר לֵיהּ עֲשִׂירִי"
+  },
+  {
+   "id": "Bekhorot_57_a",
+   "step": 3,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "The second half of a צריכותא (why both rulings of רבי יוחנן are needed), matching step 2, which is labelled מימרא. The discussion goes straight on with מיתיבי, so this is not where the sugya lands.",
+   "source": "Bekhorot 57a: וְאִי אַשְׁמְעִינַן שָׂדֶה — לְחוּמְרָא ... צְרִיכָא"
+  },
+  {
+   "id": "Bekhorot_59_a",
+   "step": 5,
+   "field": "hebrewStepName",
+   "find": "תשובה",
+   "replace": "ראיה",
+   "why": "'אילימא מהא דתניא' is the first attempted proof of רבא's rule. It is rejected with 'ודלמא' (step 6, דחיה). The parallel attempts at steps 7, 9, 11 (and 59b step 8) are labelled ראיה; this one should match.",
+   "source": "Bekhorot 59a: אִילֵּימָא מֵהָא דְּתַנְיָא"
+  },
+  {
+   "id": "Arakhin_4_a",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "This is the קא משמע לן that completes the answer to the פשיטא challenge (steps 7-8), not the conclusion of a sugya; the parallel קא משמע לן steps on 3b and 4b are labelled תירוץ.",
+   "source": "Arakhin 4a, קא משמע לן, ואכלת ושבעת אמר רחמנא"
+  },
+  {
+   "id": "Arakhin_4_a",
+   "step": 13,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "Same pattern: the סלקא דעתך אמינא / קא משמע לן that finishes the answer (step 12) to the פשיטא challenge of step 11; the series continues right after.",
+   "source": "Arakhin 4a, קא משמע לן: נהי דזר בהדי כהן לא מצי אכיל"
+  },
+  {
+   "id": "Arakhin_4_b",
+   "step": 45,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "Abaye's והתניא is the substance of his objection to Rava (step 44), not a proof supporting a position; the challenge is then drawn out in step 48.",
+   "source": "Arakhin 4b, והתניא: ראש עבד זה הקדש"
+  },
+  {
+   "id": "Arakhin_4_b",
+   "step": 45,
+   "field": "title",
+   "find": "אביי's proof",
+   "replace": "אביי's challenge",
+   "why": "Title calls the והתניא objection a proof.",
+   "source": "Arakhin 4b, והתניא"
+  },
+  {
+   "id": "Arakhin_4_b",
+   "step": 46,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "Continuation of the same ברייתא Abaye quotes as his objection (step 45); keep it with the challenge.",
+   "source": "Arakhin 4b, ראש פרה מכור לך"
+  },
+  {
+   "id": "Arakhin_6_b",
+   "step": 10,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "Explains the reasoning of each side of the story in step 9 (one thought it uncommon, the other that it might happen); it reaches no conclusion.",
+   "source": "Arakhin 6b, מאן דשנייה סבר דלא שכיח, ומאן דאיקפד סבר"
+  },
+  {
+   "id": "Arakhin_10_a",
+   "step": 1,
+   "field": "hebrewStepName",
+   "find": "תשובה",
+   "replace": "תירוץ",
+   "why": "This finishes רבי שמעון בר רבי's explanation that began on 9b step 20, which is labelled תירוץ; the two halves of one statement should carry the same label.",
+   "source": "Arakhin 10a, ועיבור שנה שלשים ואשתקד עשינו שניהם מלאין"
+  },
+  {
+   "id": "Berakhot_2_a",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "מימרא",
+   "why": "This is the rest of the Mishnah's own rule ('and not only this did they say...'): it lists more cases where the time runs until dawn. It extends the rule; no source is brought to support a position.",
+   "source": "Berakhot 2a, Mishnah: הקטר חלבים ואברים מצותן עד שיעלה עמוד השחר"
+  },
+  {
+   "id": "Berakhot_2_a",
+   "step": 7,
+   "field": "stepSummary",
+   "find": "backs up his general rule with two examples",
+   "replace": "extends his general rule with two examples",
+   "why": "Matches the relabel: the examples are part of the rule, not a proof of it.",
+   "source": "Berakhot 2a, Mishnah: הקטר חלבים ואברים"
+  },
+  {
+   "id": "Berakhot_2_a",
+   "step": 7,
+   "field": "whatsHappening",
+   "find": "giving examples to prove his rule from Step 6",
+   "replace": "giving more cases that follow his rule from Step 6",
+   "why": "Matches the relabel: the examples are part of the rule, not a proof of it.",
+   "source": "Berakhot 2a, Mishnah: הקטר חלבים ואברים"
+  },
+  {
+   "id": "Berakhot_2_b",
+   "step": 14,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "ראיה",
+   "why": "This 'so we learn from it' is only a first inference, and the very next step rejects it ('No...'). The discussion does not land here; it is an inference that the next step's דחיה pushes aside.",
+   "source": "Berakhot 2b: אלא, שמע מינה עני שעורא לחוד וכהן שעורא לחוד ... לא, עני וכהן חד שעורא הוא"
+  },
+  {
+   "id": "Berakhot_4_a",
+   "step": 5,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "Just the last item in the word-by-word reading of the verse (after the advisers comes Yoav). It is part of the statement, not where a discussion lands.",
+   "source": "Berakhot 4a: ואחר כך שר צבא למלך יואב"
+  },
+  {
+   "id": "Berakhot_8_b",
+   "step": 12,
+   "field": "hebrewStepName",
+   "find": "תשובה",
+   "replace": "מימרא",
+   "why": "No question is asked before it. The Gemara simply gives two explanations of Rava's advice ('some say ... some say').",
+   "source": "Berakhot 8b: איכא דאמרי משום סכנה, ואיכא דאמרי משום קלקול סעודה"
+  },
+  {
+   "id": "Berakhot_8_b",
+   "step": 14,
+   "field": "hebrewStepName",
+   "find": "תשובה",
+   "replace": "מימרא",
+   "why": "No question is asked before it. The Gemara explains Rava's rule by bringing three readings ('some say ...'). Same pattern as step 12.",
+   "source": "Berakhot 8b: איכא דאמרי לא תגנו בלא קריאת שמע"
+  },
+  {
+   "id": "Berakhot_14_b",
+   "step": 28,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "This step blocks a possible defence of Rav ('maybe it was before the time for Shema') by asking 'then what was Rav Chiya bar Ashi testifying to?'. It is part of the challenge against Rav and is answered by the next step (a תירוץ). No proof is being pushed aside. Step 8 on this same amud has the identical structure (וכי תימא ... והאמר) and is labelled קשיא, so this one should match.",
+   "source": "Berakhot 14b, וְכִי תֵּימָא: בִּדְלָא מְטָא זְמַן קְרִיאַת שְׁמַע, אִם כֵּן מַאי אַסְהַדְתֵּיהּ"
+  },
+  {
+   "id": "Berakhot_10_a",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "The מין challenges the verse ('should she sing because she did not give birth?'). Beruriah's 'look at the end of the verse' is the start of her answer to that challenge, finished in step 9 (already a תירוץ). A rejection is for a proof, and the מין brought no proof here.",
+   "source": "Berakhot 10a, אָמְרָה לֵיהּ: שַׁטְיָא, שְׁפֵיל לְסֵיפֵיהּ דִּקְרָא"
+  },
+  {
+   "id": "Berakhot_12_a",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "This is the second of two parallel reports (Rabbah bar bar Chana in Sura, then Ameimar in Nehardea) that the Ten Commandments reading was already cancelled. It is a report in the middle of the amud, not where a discussion lands; the parallel step 7 is a מימרא.",
+   "source": "Berakhot 12a, אֲמֵימַר סְבַר לְמִקְבְּעִינְהוּ בִּנְהַרְדְּעָא, אֲמַר לֵיהּ רַב אַשִׁי: כְּבָר בִּטְּלוּם"
+  },
+  {
+   "id": "Berakhot_9_a",
+   "step": 4,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "מימרא",
+   "why": "Rav Yitzchak bar Yosef reports that R. Yehoshua ben Levi's ruling was only inferred, not said outright. This is a statement about how the ruling was transmitted. It does not push aside any proof (step 2 is a plain ruling, not a proof).",
+   "source": "Berakhot 9a, לָאו בְּפֵירוּשׁ אִיתְּמַר, אֶלָּא מִכְּלָלָא אִיתְּמַר"
+  },
+  {
+   "id": "Berakhot_11_b",
+   "step": 28,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "מימרא",
+   "why": "Same formula as Berakhot 9a step 4: Rav Yitzchak bar Yosef reports that R. Zerika's teaching was only inferred. It is a statement about transmission; the step before it (Reish Lakish: יוצר אור) is an answer, not a proof being rejected.",
+   "source": "Berakhot 11b, הָא דְּרַבִּי זְרִיקָא לָאו בְּפֵירוּשׁ אִתְּמַר אֶלָּא מִכְּלָלָא אִתְּמַר"
+  },
+  {
+   "id": "Berakhot_16_a",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "The rabbis' reaction ('had we come only to hear this, it would be enough') ends a story; it is not where any discussion lands. A new משנה follows.",
+   "source": "Berakhot 16a: אִלּוּ לֹא בָּאנוּ אֶלָּא לִשְׁמוֹעַ דָּבָר זֶה דַּיֵּינוּ"
+  },
+  {
+   "id": "Berakhot_17_b",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "The משנה about working on תשעה באב is quoted as the source of the contradiction (the 'והא איפכא שמעינן להו' of step 10), not as support for anyone's position.",
+   "source": "Berakhot 17b: והא איפכא שמעינן להו! דתנן: מקום שנהגו לעשות מלאכה בתשעה באב"
+  },
+  {
+   "id": "Berakhot_19_a",
+   "step": 28,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "The ברייתא about burning רבי אליעזר's טהרות and 'blessing' him finishes the challenge of step 25 (that a נידוי is found in the משנה's case). It supports no position; step 29 answers it.",
+   "source": "Berakhot 19a: ותניא: אותו היום הביאו כל טהרות שטיהר רבי אליעזר ושרפום לפניו, ולבסוף ברכוהו"
+  },
+  {
+   "id": "Berakhot_19_b",
+   "step": 15,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "Like steps 8 and 11 (each a תא שמע ending 'אמאי? לימא אין חכמה...' and labelled קשיא), this תא שמע brings a source to challenge רב's rule of 'אין חכמה'. Step 17 states the challenge and step 18 answers it.",
+   "source": "Berakhot 19b: תא שמע: ״והתעלמת מהם״ — פעמים שאתה מתעלם מהם"
+  },
+  {
+   "id": "Berakhot_19_b",
+   "step": 16,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "This continues the same challenging ברייתא as step 15 (the זקן ignoring a lost object for his dignity). It is the case that step 17 asks about.",
+   "source": "Berakhot 19b: או היה זקן ואינה לפי כבודו ... לכך נאמר ״והתעלמת״"
+  },
+  {
+   "id": "Berakhot_19_b",
+   "step": 21,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "A new תא שמע that challenges רב's rule of 'אין חכמה' (a מת מצוה overrides the נזיר's prohibition). The 'אמאי לימא אין חכמה' and its answer come on 20a. It is the same pattern as steps 8 and 11, which are labelled קשיא.",
+   "source": "Berakhot 19b-20a: תא שמע: ״ולאחתו״ מה תלמוד לומר ... אמאי, לימא אין חכמה"
+  },
+  {
+   "id": "Berakhot_19_b",
+   "step": 21,
+   "field": "title",
+   "find": "New proof: the נזיר and 'his sister'",
+   "replace": "New challenge: the נזיר and 'his sister'",
+   "why": "Matches the corrected label: the source is brought as a challenge.",
+   "source": "Berakhot 19b: תא שמע: ״ולאחתו״"
+  },
+  {
+   "id": "Berakhot_19_b",
+   "step": 21,
+   "field": "relationToPreviousStep",
+   "find": "After the lost-object proof was limited to money laws in Step 20, the גמרא opens a fresh proof that deals with a real איסור.",
+   "replace": "After the lost-object challenge was limited to money laws in Step 20, the גמרא opens a fresh challenge that deals with a real איסור.",
+   "why": "Matches the corrected labels: both sources challenge רב's rule; neither proves anything.",
+   "source": "Berakhot 19b: איסורא מממונא לא ילפינן. תא שמע: ״ולאחתו״"
+  },
+  {
+   "id": "Berakhot_19_b",
+   "step": 22,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "This continues the challenging ברייתא of step 21 (the exception for a מת מצוה), which is then challenged with 'אמאי' on 20a.",
+   "source": "Berakhot 19b: לאחותו הוא דאינו מטמא"
+  },
+  {
+   "id": "Berakhot_20_b",
+   "step": 21,
+   "field": "hebrewStepName",
+   "find": "תירוץ",
+   "replace": "דחיה",
+   "why": "Step 18–19 brought a proof (תא שמע ... אשה מברכת לבעלה) that women's ברכת המזון is דאורייתא. 'הכא במאי עסקינן' pushes that proof aside: the ברייתא is about a rabbinic amount. It answers a proof, not a challenge, and the step's own relation says it 'removes it as a proof'.",
+   "source": "Berakhot 20b: אלא הכא במאי עסקינן כגון שאכל שיעורא דרבנן"
+  },
+  {
+   "id": "Berakhot_21_a",
+   "step": 3,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "'והרי ברכת המזון ... ותנן' is an objection to the answer in step 2, built exactly like the 'והרי תפלה ... ותנן' of step 1 (labelled קשיא). It rejects an answer, not a proof, and step 4 gives a new answer (תירוץ).",
+   "source": "Berakhot 21a: והרי ברכת המזון לאחריו דלית בה מלכות שמים, ותנן"
+  },
+  {
+   "id": "Berakhot_21_a",
+   "step": 18,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "The משנה is quoted to raise the challenge of step 19 ('ואי סלקא דעתך אמת ויציב דאורייתא — לברוך לאחריה!'). It is the source of an objection, not support.",
+   "source": "Berakhot 21a: תנן: בעל קרי מהרהר בלבו ... ואי סלקא דעתך ״אמת ויציב״ דאורייתא — לברוך לאחריה"
+  },
+  {
+   "id": "Berakhot_21_a",
+   "step": 20,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the proof from step 19.",
+   "replace": "Answers the challenge from step 19.",
+   "why": "Step 19 is a challenge (קשיא) and step 20 a תירוץ; the relation calls it a proof.",
+   "source": "Berakhot 21a: מאי טעמא מברך, אי משום יציאת מצרים — הא אדכר ליה בקריאת שמע"
+  },
+  {
+   "id": "Berakhot_24_a",
+   "step": 1,
+   "field": "hebrewStepName",
+   "find": "תירוץ",
+   "replace": "תשובה",
+   "why": "Answers the plain question 'מאי טעמא' at the end of 23b (step 30, labelled שאלה); no challenge is being resolved, so it is the תשובה to that שאלה.",
+   "source": "Berakhot 24a: כֹּל לְנַטּוֹרִינְהוּ טְפֵי עֲדִיף"
+  },
+  {
+   "id": "Berakhot_24_a",
+   "step": 38,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "This is the rest of the מיתיבי ברייתא (התולה תפיליו יתלו לו חייו) used to attack רבי's practice; it is part of the challenge, not a proof for any position (its own relation says it 'strengthens the objection').",
+   "source": "Berakhot 24a: דּוֹרְשֵׁי חֲמוּרוֹת אָמְרוּ ... זֶה הַתּוֹלֶה תְּפִילָּיו"
+  },
+  {
+   "id": "Berakhot_24_b",
+   "step": 28,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "'אִינִי? וְהָא רַבִּי אֲבָהוּ...' attacks the suggested answer of step 27 with a contradicting story; that is a challenge (אִינִי/וְהָא), not the pushing aside of a proof.",
+   "source": "Berakhot 24b: אִינִי, וְהָא רַבִּי אֲבָהוּ הֲוָה קָא אָזֵיל בָּתְרֵיהּ דְּרַבִּי יוֹחָנָן"
+  },
+  {
+   "id": "Berakhot_24_b",
+   "step": 28,
+   "field": "stepSummary",
+   "find": "The answer is pushed away by a story.",
+   "replace": "The answer is challenged by a story.",
+   "why": "Matches the label change: the story is a challenge.",
+   "source": "Berakhot 24b"
+  },
+  {
+   "id": "Berakhot_24_b",
+   "step": 29,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "'הָכִי קָאָמַר לֵיהּ' answers the challenge of step 28 by explaining what רבי יוחנן meant; that resolves a קשיא.",
+   "source": "Berakhot 24b: הָכִי קָאָמַר לֵיהּ: לְדִידִי לָא סְבִירָא לִי, לְדִידָךְ דִּסְבִירָא לָךְ"
+  },
+  {
+   "id": "Berakhot_24_b",
+   "step": 29,
+   "field": "relationToPreviousStep",
+   "find": "Pushes away the story-based rejection in step 28",
+   "replace": "Answers the story-based challenge in step 28",
+   "why": "Matches the label change.",
+   "source": "Berakhot 24b"
+  },
+  {
+   "id": "Berakhot_24_b",
+   "step": 29,
+   "field": "stepSummary",
+   "find": "The proof from the story is pushed away.",
+   "replace": "The challenge from the story is answered.",
+   "why": "The story was a challenge, not a proof.",
+   "source": "Berakhot 24b"
+  },
+  {
+   "id": "Berakhot_25_a",
+   "step": 32,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "אביי answers רב יוסף's challenge (step 31) by showing רב has a strict statement too; it answers a קשיא, not a proof.",
+   "source": "Berakhot 25a: אָמַר לֵיהּ אַבָּיֵי: מַאי חָזֵית דְּסָמְכַתְּ אַהָא, סְמוֹךְ אַהָא"
+  },
+  {
+   "id": "Berakhot_25_a",
+   "step": 32,
+   "field": "relationToPreviousStep",
+   "find": "Rejects רב יוסף's challenge",
+   "replace": "Answers רב יוסף's challenge",
+   "why": "Matches the label change.",
+   "source": "Berakhot 25a"
+  },
+  {
+   "id": "Berakhot_25_a",
+   "step": 40,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "Step 39 is a מיתיבי against רבא; 'וּלְטַעְמָיךְ אֵימָא רֵישָׁא' answers it (its own relation says 'Answers the challenge'), so it is a resolution.",
+   "source": "Berakhot 25a: וּלְטַעְמָיךְ אֵימָא רֵישָׁא: כׇּל זְמַן שֶׁמַּטְפִּיחִין"
+  },
+  {
+   "id": "Berakhot_25_b",
+   "step": 29,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "A short story of רב יוסף's own practice in the middle of the topic (the sugya continues with the chamber-pot ברייתא); it does not settle anything.",
+   "source": "Berakhot 25b: אֲמַר לֵיהּ רַב יוֹסֵף לְשַׁמָּעֵיהּ: אַיְּיתִי לִי רְבִיעֵיתָא דְמַיָּא"
+  },
+  {
+   "id": "Berakhot_26_a",
+   "step": 1,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "This is the second half of רבא's statement 'גְּלִימָא אַקַּמְטְרָא...' begun at 25b step 47 (labelled מימרא); it is a ruling by רבא, not where a discussion lands, and is followed by more rulings.",
+   "source": "Berakhot 25b-26a: אָמַר רָבָא: גְּלִימָא אַקַּמְטְרָא — כִּכְלִי בְּתוֹךְ כְּלִי דָּמֵי"
+  }
+ ]
+}
