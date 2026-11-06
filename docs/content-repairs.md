@@ -2,6 +2,221 @@
 
 Every change to the AI-written content, newest first. Each entry says what was wrong, the source used, and who approved it.
 
+## 202611060259-rev101-labels-sample-signals
+
+Approved: Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.
+
+- **Nazir 40a, step 23** (hebrewStepName): The מה הצד derivation lands here, but the very next step (רבא מברניש: וליפרוך) attacks it, so by rule 5 it is not a Conclusion. It is the final link of the תשובה/דחיה chain that answers the source question, so it takes that chain's label. Source: Nazir 40a: וחזר הדין, לא ראי זה כראי זה, ולא ראי זה.
+  - was: מסקנא
+  - now: תשובה
+- **Megillah 5b, step 3** (hebrewStepName): The last line of the story (he applied 'two are better than one' to him). The challenge that follows is about רבי planting on פורים, not about this line. Rule 3: the rest of a story is Statement. Source: Megillah 5b: קרי עליה: ״טובים השנים מן האחד״..
+  - was: מסקנא
+  - now: מימרא
+- **Yoma 15a, step 4** (hebrewStepName): 'Rather, what is the Torah saying? At the time of the lighting...' is the punchline of the proof in steps 2–3, and אבא שאול's reply (step 5) immediately pushes that proof aside. Rule 5: it takes the label of the proof it completes. Source: Yoma 15a: אלא מאי קאמר רחמנא — בעידן הדלקה תהא מקטר קטורת,.
+  - was: מסקנא
+  - now: ראיה
+- **Sanhedrin 100a, step 16** (hebrewStepName): The end of the story of the mocking student (רבי יוחנן's rebuke and punishment). The next challenge (giant people and the gates) is a new topic. Rule 3: story lines are Statement. Source: Sanhedrin 100a: אמר לו: ריקה! אם לא ראית לא האמנת? מלגלג על.
+  - was: מסקנא
+  - now: מימרא
+- **Shabbat 27b, step 6** (hebrewStepName): 'You might have thought like רבא; so it teaches us' restates the answer of step 3 after the aside explaining רבא (steps 4–5). It is the second half of that Resolution (rule 5). Source: Shabbat 27b: סלקא דעתך כדרבא קא משמע לן..
+  - was: מסקנא
+  - now: תירוץ
+- **Rosh Hashanah 17b, step 1** (hebrewStepName): Second half of the drasha begun on 17a (step 29: 'for the remnant of His inheritance'), which is labelled מימרא. Rule 5: the second half takes the first half's label, even across the amud break. Source: Rosh Hashanah 17b: למי שמשים עצמו כשירים..
+  - was: מסקנא
+  - now: מימרא
+- **Megillah 29b, step 4** (hebrewStepName): 'And since in ניסן we need offerings from the new collection, we read early...' finishes רבי טבי's answer (step 3) to the question of step 2. It is the second half of the Response (rule 5); the next challenge is about a different point. Source: Megillah 29b: וכיון דבניסן בעי אקרובי מתרומה חדשה, קדמינן וקרינן באחד באדר,.
+  - was: מסקנא
+  - now: תשובה
+- **Bava Metzia 16b, step 22** (hebrewStepName): The Gemara's elaboration of רבי אבהו's statement (steps 20–21: 'even with ratification, we worry it was paid'), immediately challenged by רבי ירמיה. It is the second half of the Statement, and a challenge follows it at once (rule 5). Source: Bava Metzia 16b: אלא אפילו כתוב בו הנפק, ומאי ניהו? דמקוים – לא.
+  - was: מסקנא
+  - now: מימרא
+- **Bekhorot 6b, step 11** (hebrewStepName): 'Until רבי עקיבא came and expounded: את to include Torah scholars' is the end of the ברייתא brought as support in step 8. It quotes the rest of the same source, so it is Proof, not where the discussion lands. Source: Bekhorot 6b: עד שבא רבי עקיבא ולימד: ״את ה׳ אלהיך תירא״ —.
+  - was: מסקנא
+  - now: ראיה
+- **Chullin 136a, step 30** (hebrewStepName): 'Rather, learn from this that he exempts in תרומה too' answers the challenge of step 29 by accepting its implication, and is itself challenged at once in step 31. Rule 5 and rule 2: an answer to a challenge is a Resolution. Source: Chullin 136a: אלא שמע מינה בתרומה נמי פוטר..
+  - was: מסקנא
+  - now: תירוץ
+- **Zevachim 90a, step 21** (hebrewStepName): The summary of which verse teaches which case completes the answer (steps 19–20) to the question of step 18, and רבי אליעזר's יולדת case attacks it at once. Not a landing point (rule 5). Source: Zevachim 90a: הלכך, חטאת העוף לעולת העוף – מ״ואת השני״, חטאת בהמה.
+  - was: מסקנא
+  - now: תשובה
+- **Chagigah 11a, step 18** (hebrewStepName): 'Carrying should not be taken out of the category of collecting' is the end of the ברייתא quoted as support in step 17. The rest of the same source is Proof; the next challenge is about a different item. Source: Chagigah 11a: למימרא דהולכה לא תפקה מכלל קבלה..
+  - was: מסקנא
+  - now: ראיה
+- **Bava Kamma 29b, step 9** (hebrewStepName): 'Indeed, it may be concluded' accepts the proof of step 8, and the next step challenges that very attribution ('Did רבי אלעזר really say this?'). Rule 5: not a Conclusion when challenged at once; ש"מ as an inference is Proof. Source: Bava Kamma 29b: תסתיים..
+  - was: מסקנא
+  - now: ראיה
+- **Yevamot 49b, step 10** (hebrewStepName): The end of the story of ישעיה's death. The next step ('In any case, the verses contradict') returns to the contradiction, not to this line. Rule 3: story lines are Statement. Source: Yevamot 49b: כי מטא להדי פומא, נח נפשיה. משום דאמר: ״ובתוך עם.
+  - was: מסקנא
+  - now: מימרא
+- **Megillah 21a, step 1** (hebrewStepName): Second half of the derivation on 20b (steps 26–28 are תשובה: the סוטה is learned from תורה–תורה, like judgment). Rule 5 across the amud break; the next steps are parallel derivations, not a landing. Source: Megillah 21a: מה משפט ביום — אף כאן ביום..
+  - was: מסקנא
+  - now: תשובה
+- **Eruvin 15a, step 20** (hebrewStepName): Explains why אביי and רבא disagree under the new framing given in the Resolution of step 19 ('Rather: about partitions everyone agrees...'). It is the second half of that Resolution. Source: Eruvin 15a: אביי לטעמיה דאמר: לחי משום מחיצה, ומחיצה העשויה מאליה הויא.
+  - was: מסקנא
+  - now: תירוץ
+- **Bava Batra 15b, step 14** (hebrewStepName): 'All these תנאים hold איוב was Jewish, except some say' is a new claim that the next step proves ('For if you think...'). It is not where a discussion lands. Source: Bava Batra 15b: וכולהו תנאי סבירא להו דאיוב מישראל הוה, לבר מיש אומרים;.
+  - was: מסקנא
+  - now: מימרא
+- **Shabbat 73a, step 1** (hebrewStepName): 'Rather, must it not be: the first part is עבודה זרה and the last part other מצוות?' answers the challenge at the end of 72b (step 16, which says רבא would not exempt completely). It is a Resolution, not a Conclusion. Source: Shabbat 73a: אלא לאו, רישא בעבודה זרה וסיפא בשאר מצות..
+  - was: מסקנא
+  - now: תירוץ
+- **Sanhedrin 16b, step 6** (hebrewStepName): 'And afterward, the general of the king's army, יואב' is the last part of the verse exposition (Achitophel → Sanhedrin → Urim → army) brought as the source in step 3. It is the second half of the Proof, not a conclusion. Source: Sanhedrin 16b: ואחר כך ״שר הצבא למלך יואב״..
+  - was: מסקנא
+  - now: ראיה
+- **Chullin 77b, step 11** (hebrewStepName): 'And this is what רבי ירמיה meant' completes the reworded answer of steps 9–10 to the challenge of step 8. It is the second half of the Resolution (rule 5). Source: Chullin 77b: והיינו דאמר רבי ירמיה: לחומרא אמרה ר׳ אלעזר..
+  - was: מסקנא
+  - now: תירוץ
+- **Shabbat 81a, step 15** (hebrewStepName): Inside the story, זונין objects (step 14, Challenge) and the Sages' vote ('a handful') answers that objection. Rule 3: the reply that answers a character's objection is a Resolution. Source: Shabbat 81a: נמנו וגמרו מלא היד..
+  - was: מסקנא
+  - now: תירוץ
+- **Arakhin 11b, step 20** (hebrewStepName): 'Now that you have come to this, you can even say it was a required עולה' extends רב אשי's Resolution (step 19). It is the second half of that answer; the next Proof starts a new thread. Source: Arakhin 11b: השתא דאתית להכי, אפילו תימא עולת חובה, מידי דהוה אשליחא.
+  - was: מסקנא
+  - now: תירוץ
+- **Pesachim 110b, step 7** (hebrewStepName): 'What we said about ten, eight, six and four applies only to demons, but for witchcraft even larger numbers' is a new qualifying statement that the story in step 8 then illustrates. The sugya's real conclusion (כללא דמילתא) was step 4. Source: Pesachim 110b: והא דאמרן עשרה, תמניא, שיתא, ארבעה אין בהן משום זוגי,.
+  - was: מסקנא
+  - now: מימרא
+- **Sanhedrin 4a, step 6** (hebrewStepName): 'After they left, he ran after them: you do not need this proof; we follow the reading' is the continuation of רבי יהודה בן רועץ's answer to his students (step 5) inside the ברייתא brought as the source in step 4. It is the second half of that answer. Source: Sanhedrin 4a: לאחר שיצאו, יצא ומחזיר אחריהם. אמר להן: אי אתם זקוקים.
+  - was: מסקנא
+  - now: תשובה
+- **Sanhedrin 36a, step 3** (hebrewStepName): 'Rather, רבא said...' answers the challenges of steps 1–2 with a new reading. Rule 2: an answer to a Challenge is a Resolution. Source: Sanhedrin 36a: אלא אמר רבא: לא מיבעיא למאן דאמר נדרים ונדבות קריבין.
+  - was: דחיה
+  - now: תירוץ
+- **Yevamot 26a, step 11** (hebrewStepName): 'No. The משנה means death after divorce' answers the challenge of step 10 (does the משנה go against רבי?). Rule 2: Resolution, even when worded 'No'. Source: Yevamot 26a: לא: מיתה אגירושין, וגירושין אמיתה..
+  - was: דחיה
+  - now: תירוץ
+- **Sukkah 50a, step 6** (hebrewStepName): 'You can even say it follows רבי נחמיה...' answers the challenge of step 5. Rule 2: Resolution. Source: Sukkah 50a: אפילו תימא רבי נחמיה, אימר דאמר רבי נחמיה להדיוט, אבל.
+  - was: דחיה
+  - now: תירוץ
+- **Chagigah 14a, step 35** (hebrewStepName): 'He could have said I learned and forgot...' answers the challenge of step 34 and shows the man really was honest. Resolution. Source: Chagigah 14a: הוה ליה למימר גמר ושכח. מאי ״לא אהיה חובש״ —.
+  - was: דחיה
+  - now: תירוץ
+- **Ketubot 37a, step 9** (hebrewStepName): 'And if you say רבי יוסי did not give his ruling for things that happen on their own, look at a raped or seduced woman...' is a וכי תימא that blocks a defence and continues the challenge of step 8. Rule 2: Challenge. Source: Ketubot 37a: וכי תימא כל ממילא לא אמר רבי יוסי, הרי אנוסה.
+  - was: דחיה
+  - now: קשיא
+- **Yoma 3b, step 22** (hebrewStepName): 'And if you will say prepare means separate: then the משנה should use one word' is a וכי תימא continuing ריש לקיש's challenge (steps 20–21). Rule 2: Challenge. Source: Yoma 3b: וכי תימא: מאי ״מתקינין״ — ״מפרישין״, ליתני או אידי ואידי.
+  - was: דחיה
+  - now: קשיא
+- **Bava Kamma 63b, step 26** (hebrewStepName): 'And if you say let it come by a קל וחומר: dayo' blocks a possible answer and continues the challenge of step 25 (where does the second opinion learn the thief's double payment?). Rule 2: Challenge. Source: Bava Kamma 63b: וכי תימא: ליתי בקל וחומר מטוען טענת גנב; דיו לבא.
+  - was: דחיה
+  - now: קשיא
+- **Yevamot 14a, step 19** (hebrewStepName): 'What is the difficulty? Didn't we say places differ?' answers the 'Come and hear' challenge of step 18. The Gemara then sharpens it (step 20). Resolution. Source: Yevamot 14a: והאי מאי קושיא? ולא אמרינן מקומות שאני?.
+  - was: דחיה
+  - now: תירוץ
+- **Chullin 76b, step 22** (hebrewStepName): רב חסדא's reply ('the משנה can be pushed aside as we pushed it aside') answers רבה's suggested challenge. Resolution. Source: Chullin 76b: אמר ליה: מתניתין איכא לדחויי, כדדחינן..
+  - was: דחיה
+  - now: תירוץ
+- **Avodah Zarah 27a, step 3** (hebrewStepName): רבי יוסי's reply is the next line of the ברייתא quoted in step 2 to attack רבי יהודה ('But a ברייתא teaches...'). Rule 1: every step quoting the rest of that source is קשיא. Source: Avodah Zarah 27a: אמר לו רבי יוסי: וכי היכן מצינו מילה מן התורה.
+  - was: דחיה
+  - now: קשיא
+- **Makkot 7b, step 19** (hebrewStepName): 'And by your reasoning (וליטעמיך), what does the first half come to add?' Rule 2 names וליטעמיך explicitly as a Challenge. Source: Makkot 7b: וליטעמיך, כל שבדרך ירידתו, לאיתויי מאי?.
+  - was: דחיה
+  - now: קשיא
+- **Avodah Zarah 46b, step 5** (hebrewStepName): 'And if you say attached אתנן is forbidden because of בית ה׳ אלקיך, that phrase is needed for...' is a וכי תימא blocking רבא's defence and continues רב הונא's challenge (step 4). רבא answers in step 6. Source: Avodah Zarah 46b: ואי משום ״בית ה׳ אלהיך״ מיבעי ליה לכדתניא: ״בית ה׳.
+  - was: דחיה
+  - now: קשיא
+- **Bava Metzia 113b, step 19** (hebrewStepName): 'If you think רשב"ג holds this reasoning, that cannot be, because for him nothing is unfit' answers the challenge of step 18. Resolution. Source: Bava Metzia 113b: אי סלקא דעתך אית ליה לרבן שמעון בן גמליאל האי.
+  - was: דחיה
+  - now: תירוץ
+- **Yoma 8a, step 16** (hebrewStepName): 'Rather, everyone holds impurity is only pushed aside' gives up the challenged premise in response to step 15 and opens the new explanation of step 17 (already תירוץ). Resolution. Source: Yoma 8a: אלא דכולי עלמא הני תנאי סברי טומאה דחויה היא בציבור..
+  - was: דחיה
+  - now: תירוץ
+- **Chullin 127a, step 7** (hebrewStepName): רבא's reply ('since you made the sea a place of impurity, what difference...') answers the Sage's objection in step 6. Resolution. Source: Chullin 127a: אמר ליה: ומאחר דשויתיה לים מקום טומאה, מה לי הכא,.
+  - was: דחיה
+  - now: תירוץ
+- **Eruvin 97a, step 14** (hebrewStepName): 'No. It means three in total, some arm and some head' answers the challenge from רבה בר שמואל's ברייתא (step 13). Resolution. Source: Eruvin 97a: לא: שלש, מהן של יד מהן של ראש..
+  - was: דחיה
+  - now: תירוץ
+- **Niddah 30b, step 23** (hebrewStepName): 'And if you say it is to show the הלכה follows the majority, that is obvious!' is a וכי תימא continuing the challenge of step 22 (why repeat the חכמים?). The answer comes in step 24. Source: Niddah 30b: וכי תימא למסתמה רישא כרבנן, ויחיד ורבים — הלכה כרבים,.
+  - was: דחיה
+  - now: קשיא
+- **Shabbat 120b, step 25** (hebrewStepName): 'And can you really understand it so? If it is tied tightly it is a barrier...' answers the contradiction of step 24 by knocking out its premise; the Gemara then challenges this answer (step 26). Resolution. Source: Shabbat 120b: ותסברא האי גמי היכי דמי? אי דמיהדק — קא הוי.
+  - was: דחיה
+  - now: תירוץ
+- **Nazir 48a, step 16** (hebrewStepName): The קל וחומר from a כהן הדיוט answers the challenge of step 15 ('maybe he may become impure for other dead'). Resolution. Source: Nazir 48a: אמרת קל וחומר: ומה כהן הדיוט, שמיטמא לקרובין — אינו.
+  - was: דחיה
+  - now: תירוץ
+- **Pesachim 113b, step 14** (hebrewStepName): 'In that case, everyone hates him. What is different?' objects to the suggested answer of step 13. Rule 2: an objection to an answer is a Challenge. Source: Pesachim 113b: כולי עלמא נמי מיסני סני ליה, מאי שנא האי?.
+  - was: דחיה
+  - now: קשיא
+- **Pesachim 32a, step 20** (hebrewStepName): Inside the ברייתא, רבי אליעזר בן יעקב objects to רבי אלעזר חסמא's answer ('No! You can say this about impure תרומה...'). Rules 2 and 3: an objection to an answer is a Challenge. Source: Pesachim 32a: אמר לו: לא! אם אמרת בתרומה טמאה בשאר ימות השנה,.
+  - was: דחיה
+  - now: קשיא
+- **Bava Kamma 41a, step 13** (hebrewStepName): 'But is an ox that is מועד for animals מועד for people?' objects to רב זביד's answer (step 12). Challenge. Source: Bava Kamma 41a: ומועד לבהמה הוי מועד לאדם?.
+  - was: דחיה
+  - now: קשיא
+- **Chullin 18b, step 9** (hebrewStepName): רב יוסף's angry retort ('Do I learn from just anybody?') objects to רבי זירא's reply (step 8) dismissing the report. Rules 2 and 3: an objection to an answer is a Challenge. Source: Chullin 18b: שמע רב יוסף, איקפד, אמר: אנא מכולי עלמא גמירנא? אנא.
+  - was: דחיה
+  - now: קשיא
+- **Bava Kamma 29b, step 13** (hebrewStepName): מר זוטרא: 'Are these really alike?' objects to רבינא's comparison supporting the answer. Challenge. Source: Bava Kamma 29b: אמר ליה מר זוטרא בריה דרב מרי לרבינא: מי דמי?!.
+  - was: דחיה
+  - now: קשיא
+- **Zevachim 4a, step 28** (hebrewStepName): 'This can be refuted (איכא למיפרך)' objects to the גזירה שוה given as the Response to step 25's question. Rule 2: an objection to an answer is a Challenge. Source: Zevachim 4a: איכא למיפרך: מה לשינוי קודש – שכן פסולה בגופה, וישנו.
+  - was: דחיה
+  - now: קשיא
+- **Chagigah 15a, step 21** (hebrewStepName): אחר's 'Your teacher רבי עקיבא did not explain it that way' objects to רבי מאיר's answer (step 20) and gives another. Rule 3: an objection inside a story is a Challenge. Source: Chagigah 15a: אמר לו: רבי עקיבא רבך לא אמר כך, אלא: ברא.
+  - was: דחיה
+  - now: קשיא
+- **Berakhot 28b, step 8** (hebrewStepName): 'Wasn't it said that רבי אבא limited it to one who is with the צבור?' objects to the answer of step 7 inside the dialogue. Rules 2 and 3: Challenge. Source: Berakhot 28b: אמר ליה: לאו אתמר עלה אמר רבי אבא בצבור שנו..
+  - was: דחיה
+  - now: קשיא
+- **Ketubot 72a, step 33** (hebrewStepName): The Sages' 'a person does not live with a snake in a basket' objects to רבי מאיר's advice as explained in step 32. An objection to a suggestion is a Challenge (rule 2). Source: Ketubot 72a: אמרו לו: אין אדם דר עם נחש בכפיפה..
+  - was: דחיה
+  - now: קשיא
+- **Bava Kamma 110b, step 13** (hebrewStepName): רב זעירא's 'even if they are gift-receivers, the חמץ case is no question' knocks out the practical difference given as the Response in step 12. An objection to an answer is a Challenge. Source: Bava Kamma 110b: רב זעירא בעי הכי: אפילו אם תימצי לומר מקבלי מתנה.
+  - was: דחיה
+  - now: קשיא
+- **Bava Metzia 70a, step 8** (hebrewStepName): After hearing the facts (step 7), רב נחמן withdraws his own objection (step 5): 'in a case like this, even for adults it is allowed'. The thread ends here and the next step is a new ruling. It does not push aside a proof. Source: Bava Metzia 70a: אמר ליה: כי הא – אפילו בדקנני נמי שרי למיעבד,.
+  - was: דחיה
+  - now: מסקנא
+- **Gittin 59a, step 55** (hebrewStepName): 'They switched it and sent it to רב מרדכי, who said: wasn't the event like this?' introduces the precedent (step 56) that proves a child's gift is valid. It is the first half of that Proof. Source: Gittin 59a: אפכוה ושדרוה לקמיה דרב מרדכי. אמר ליה: זילו אמרו לבר.
+  - was: דחיה
+  - now: ראיה
+- **Nazir 28b, step 11** (hebrewStepName): 'And רבי מאיר holds: a wig, since it is dirty...' is רבי מאיר's objection to the ת"ק's answer (step 10). Rule 2: an objection to an answer is a Challenge. Source: Nazir 28b: ורבי מאיר סבר: בפאה נכרית, איידי דזוהמא — לא ניחא.
+  - was: דחיה
+  - now: קשיא
+- **Zevachim 82b, step 17** (hebrewStepName): רבא: 'But the word bringing is written!' objects to אביי's answer (step 16). Challenge. Source: Zevachim 82b: אמר ליה רבא: והא הבאה כתיב ביה!.
+  - was: דחיה
+  - now: קשיא
+- **Ketubot 81b, step 13** (hebrewStepName): אביי: 'Did רבי חנינא בר פפי hang jewels on it?' objects to the ruling sent back as the answer (step 12). Challenge. Source: Ketubot 81b: אמר אביי: אטו רבי חנינא בר פפי כיפי תלה לה?.
+  - was: דחיה
+  - now: קשיא
+- **Keritot 25a, step 6** (hebrewStepName): 'But we learned in a משנה: what is valid for the פרה is invalid for the עגלה' knocks out the suggested answer of step 5. Rule 2: Challenge. Source: Keritot 25a: והתנן: כשר בפרה פסול – בעגלה ערופה, פסול בפרה –.
+  - was: דחיה
+  - now: קשיא
+- **Ketubot 72a, step 2** (hebrewStepName): Answers step 1, which is labelled קשיא ('with a house of mourning, what door is locked?'). Rule 6: an answer to a Challenge is a Resolution. Step 3 has the same issue. Source: Ketubot 72a: תנא: למחר היא מתה ואין כל בריה סופדה..
+  - was: תשובה
+  - now: תירוץ
+- **Sanhedrin 43b, step 10** (hebrewStepName): Inside the story, עכן objects to the lots (step 9) and יהושע's reply answers him. Rule 3: the reply that answers a character's objection is a Resolution. There is no Question before it. Source: Sanhedrin 43b: אמר לו: בבקשה ממך, אל תוציא לעז על הגורלות, שעתידה.
+  - was: תשובה
+  - now: תירוץ
+- **Moed Katan 8a, step 13** (hebrewStepName): 'Yes, that is indeed so' answers the challenge of step 12 by conceding; the thread then continues (step 14). Rule 6: an answer to a Challenge is a Resolution (as in Chullin 42a:17). Source: Moed Katan 8a: אין, הכי נמי..
+  - was: תשובה
+  - now: תירוץ
+- **Berakhot 27b, step 32** (hebrewStepName): רבי יהושע's admission ('how can one living person deny another?') is not an answer to a Question. The question of step 28 was already answered at step 29. Inside the story this is Statement (rule 3). Rule 4 (an admitted challenge is a Conclusion) does not fit, because the story continues. Source: Berakhot 27b: עמד רבי יהושע על רגליו ואמר אלמלא אני חי והוא.
+  - was: תשובה
+  - now: מימרא
+- **Nazir 48a, step 14** (hebrewStepName): 'So the פסוק says...' answers the challenge of step 12 (why do we need a verse? a קל וחומר would do), after the קל וחומר is refuted. Rule 6: Resolution. Source: Nazir 48a: תלמוד לומר: ״לאביו ולאמו לא יטמא״, אבל מיטמא למת מצוה..
+  - was: תשובה
+  - now: תירוץ
+- **Sukkah 53b, step 30** (hebrewStepName): 'And רבי יהודה? That blast was only a signal' pushes aside the רבנן's proof from a verse (step 29, ראיה). Rule 2: pushing aside a Proof is a Rejection. Source: Sukkah 53b: ורבי יהודה: ההוא לסימנא בעלמא הוא דאתא..
+  - was: תירוץ
+  - now: דחיה
+- **Niddah 9b, step 8** (hebrewStepName): 'And they do not disagree' (ולא פליגי) reconciles two answers about the length of an עונה. No challenge was raised, so it is not a Resolution. This follows the precedent in the Berakhot 38–39 batch. Source: Niddah 9b: ולא פליגי, מר קחשיב ימי טומאה וימי טהרה, ומר לא.
+  - was: תירוץ
+  - now: מימרא
+- **Bava Kamma 114a, step 15** (hebrewStepName): 'He holds that giving up hope alone does not transfer ownership' is the Gemara explaining the reasoning of the ברייתא in step 14. No challenge was raised; it is an explanation (Statement). Source: Bava Kamma 114a: קסבר: יאוש כדי לא קני, ומעיקרא באיסורא אתא לידיה..
+  - was: תירוץ
+  - now: מימרא
+- **Rosh Hashanah 6b, step 30** (hebrewStepName): 'And they do not disagree: one is about an unblemished firstborn...' reconciles אביי and רב אחא. No challenge was raised (ולא פליגי precedent). Source: Rosh Hashanah 6b: ולא פליגי: הא בתם,.
+  - was: תירוץ
+  - now: מימרא
+- **Makkot 16b, step 16** (hebrewStepName): 'They do not disagree: big ants versus small ants' reconciles the two rulings. No challenge was raised (ולא פליגי precedent). Source: Makkot 16b: ולא פליגי, הא – ברברבי, והא – בזוטרי..
+  - was: תירוץ
+  - now: מימרא
+- **Bava Batra 22b, step 8** (hebrewStepName): 'רבי יוסי בר חנינא said: they do not disagree: old city versus new city' reconciles רב and רבי אושעיא. No challenge was raised (ולא פליגי precedent). Source: Bava Batra 22b: אמר רבי יוסי בר חנינא: ולא פליגי – הא בעיר.
+  - was: תירוץ
+  - now: מימרא
+
 ## 202611060258-rev100-labels-discovery-b
 
 Approved: Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.

@@ -1,0 +1,706 @@
+{
+ "name": "labels-sample-signals",
+ "approved": "Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.",
+ "repairs": [
+  {
+   "id": "Nazir_40_a",
+   "step": 23,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תשובה",
+   "why": "The מה הצד derivation lands here, but the very next step (רבא מברניש: וליפרוך) attacks it, so by rule 5 it is not a Conclusion. It is the final link of the תשובה/דחיה chain that answers the source question, so it takes that chain's label.",
+   "source": "Nazir 40a: וחזר הדין, לא ראי זה כראי זה, ולא ראי זה",
+   "signal": "P2"
+  },
+  {
+   "id": "Megillah_5_b",
+   "step": 3,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "The last line of the story (he applied 'two are better than one' to him). The challenge that follows is about רבי planting on פורים, not about this line. Rule 3: the rest of a story is Statement.",
+   "source": "Megillah 5b: קרי עליה: ״טובים השנים מן האחד״.",
+   "signal": "P2"
+  },
+  {
+   "id": "Yoma_15_a",
+   "step": 4,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "ראיה",
+   "why": "'Rather, what is the Torah saying? At the time of the lighting...' is the punchline of the proof in steps 2–3, and אבא שאול's reply (step 5) immediately pushes that proof aside. Rule 5: it takes the label of the proof it completes.",
+   "source": "Yoma 15a: אלא מאי קאמר רחמנא — בעידן הדלקה תהא מקטר קטורת,",
+   "signal": "P2"
+  },
+  {
+   "id": "Sanhedrin_100_a",
+   "step": 16,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "The end of the story of the mocking student (רבי יוחנן's rebuke and punishment). The next challenge (giant people and the gates) is a new topic. Rule 3: story lines are Statement.",
+   "source": "Sanhedrin 100a: אמר לו: ריקה! אם לא ראית לא האמנת? מלגלג על",
+   "signal": "P2"
+  },
+  {
+   "id": "Shabbat_27_b",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "'You might have thought like רבא; so it teaches us' restates the answer of step 3 after the aside explaining רבא (steps 4–5). It is the second half of that Resolution (rule 5).",
+   "source": "Shabbat 27b: סלקא דעתך כדרבא קא משמע לן.",
+   "signal": "P2"
+  },
+  {
+   "id": "Rosh_Hashanah_17_b",
+   "step": 1,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "Second half of the drasha begun on 17a (step 29: 'for the remnant of His inheritance'), which is labelled מימרא. Rule 5: the second half takes the first half's label, even across the amud break.",
+   "source": "Rosh Hashanah 17b: למי שמשים עצמו כשירים.",
+   "signal": "P2"
+  },
+  {
+   "id": "Megillah_29_b",
+   "step": 4,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תשובה",
+   "why": "'And since in ניסן we need offerings from the new collection, we read early...' finishes רבי טבי's answer (step 3) to the question of step 2. It is the second half of the Response (rule 5); the next challenge is about a different point.",
+   "source": "Megillah 29b: וכיון דבניסן בעי אקרובי מתרומה חדשה, קדמינן וקרינן באחד באדר,",
+   "signal": "P2"
+  },
+  {
+   "id": "Bava_Metzia_16_b",
+   "step": 22,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "The Gemara's elaboration of רבי אבהו's statement (steps 20–21: 'even with ratification, we worry it was paid'), immediately challenged by רבי ירמיה. It is the second half of the Statement, and a challenge follows it at once (rule 5).",
+   "source": "Bava Metzia 16b: אלא אפילו כתוב בו הנפק, ומאי ניהו? דמקוים – לא",
+   "signal": "P2"
+  },
+  {
+   "id": "Bekhorot_6_b",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "ראיה",
+   "why": "'Until רבי עקיבא came and expounded: את to include Torah scholars' is the end of the ברייתא brought as support in step 8. It quotes the rest of the same source, so it is Proof, not where the discussion lands.",
+   "source": "Bekhorot 6b: עד שבא רבי עקיבא ולימד: ״את ה׳ אלהיך תירא״ —",
+   "signal": "P2"
+  },
+  {
+   "id": "Chullin_136_a",
+   "step": 30,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "'Rather, learn from this that he exempts in תרומה too' answers the challenge of step 29 by accepting its implication, and is itself challenged at once in step 31. Rule 5 and rule 2: an answer to a challenge is a Resolution.",
+   "source": "Chullin 136a: אלא שמע מינה בתרומה נמי פוטר.",
+   "signal": "P2"
+  },
+  {
+   "id": "Zevachim_90_a",
+   "step": 21,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תשובה",
+   "why": "The summary of which verse teaches which case completes the answer (steps 19–20) to the question of step 18, and רבי אליעזר's יולדת case attacks it at once. Not a landing point (rule 5).",
+   "source": "Zevachim 90a: הלכך, חטאת העוף לעולת העוף – מ״ואת השני״, חטאת בהמה",
+   "signal": "P2"
+  },
+  {
+   "id": "Chagigah_11_a",
+   "step": 18,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "ראיה",
+   "why": "'Carrying should not be taken out of the category of collecting' is the end of the ברייתא quoted as support in step 17. The rest of the same source is Proof; the next challenge is about a different item.",
+   "source": "Chagigah 11a: למימרא דהולכה לא תפקה מכלל קבלה.",
+   "signal": "P2"
+  },
+  {
+   "id": "Bava_Kamma_29_b",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "ראיה",
+   "why": "'Indeed, it may be concluded' accepts the proof of step 8, and the next step challenges that very attribution ('Did רבי אלעזר really say this?'). Rule 5: not a Conclusion when challenged at once; ש\"מ as an inference is Proof.",
+   "source": "Bava Kamma 29b: תסתיים.",
+   "signal": "P2"
+  },
+  {
+   "id": "Yevamot_49_b",
+   "step": 10,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "The end of the story of ישעיה's death. The next step ('In any case, the verses contradict') returns to the contradiction, not to this line. Rule 3: story lines are Statement.",
+   "source": "Yevamot 49b: כי מטא להדי פומא, נח נפשיה. משום דאמר: ״ובתוך עם",
+   "signal": "P2"
+  },
+  {
+   "id": "Megillah_21_a",
+   "step": 1,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תשובה",
+   "why": "Second half of the derivation on 20b (steps 26–28 are תשובה: the סוטה is learned from תורה–תורה, like judgment). Rule 5 across the amud break; the next steps are parallel derivations, not a landing.",
+   "source": "Megillah 21a: מה משפט ביום — אף כאן ביום.",
+   "signal": "P2b"
+  },
+  {
+   "id": "Eruvin_15_a",
+   "step": 20,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "Explains why אביי and רבא disagree under the new framing given in the Resolution of step 19 ('Rather: about partitions everyone agrees...'). It is the second half of that Resolution.",
+   "source": "Eruvin 15a: אביי לטעמיה דאמר: לחי משום מחיצה, ומחיצה העשויה מאליה הויא",
+   "signal": "P2b"
+  },
+  {
+   "id": "Bava_Batra_15_b",
+   "step": 14,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "'All these תנאים hold איוב was Jewish, except some say' is a new claim that the next step proves ('For if you think...'). It is not where a discussion lands.",
+   "source": "Bava Batra 15b: וכולהו תנאי סבירא להו דאיוב מישראל הוה, לבר מיש אומרים;",
+   "signal": "P2b"
+  },
+  {
+   "id": "Shabbat_73_a",
+   "step": 1,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "'Rather, must it not be: the first part is עבודה זרה and the last part other מצוות?' answers the challenge at the end of 72b (step 16, which says רבא would not exempt completely). It is a Resolution, not a Conclusion.",
+   "source": "Shabbat 73a: אלא לאו, רישא בעבודה זרה וסיפא בשאר מצות.",
+   "signal": "P2b"
+  },
+  {
+   "id": "Sanhedrin_16_b",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "ראיה",
+   "why": "'And afterward, the general of the king's army, יואב' is the last part of the verse exposition (Achitophel → Sanhedrin → Urim → army) brought as the source in step 3. It is the second half of the Proof, not a conclusion.",
+   "source": "Sanhedrin 16b: ואחר כך ״שר הצבא למלך יואב״.",
+   "signal": "P2b"
+  },
+  {
+   "id": "Chullin_77_b",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "'And this is what רבי ירמיה meant' completes the reworded answer of steps 9–10 to the challenge of step 8. It is the second half of the Resolution (rule 5).",
+   "source": "Chullin 77b: והיינו דאמר רבי ירמיה: לחומרא אמרה ר׳ אלעזר.",
+   "signal": "P2b"
+  },
+  {
+   "id": "Shabbat_81_a",
+   "step": 15,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "Inside the story, זונין objects (step 14, Challenge) and the Sages' vote ('a handful') answers that objection. Rule 3: the reply that answers a character's objection is a Resolution.",
+   "source": "Shabbat 81a: נמנו וגמרו מלא היד.",
+   "signal": "P2b"
+  },
+  {
+   "id": "Arakhin_11_b",
+   "step": 20,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "'Now that you have come to this, you can even say it was a required עולה' extends רב אשי's Resolution (step 19). It is the second half of that answer; the next Proof starts a new thread.",
+   "source": "Arakhin 11b: השתא דאתית להכי, אפילו תימא עולת חובה, מידי דהוה אשליחא",
+   "signal": "P2b"
+  },
+  {
+   "id": "Pesachim_110_b",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "'What we said about ten, eight, six and four applies only to demons, but for witchcraft even larger numbers' is a new qualifying statement that the story in step 8 then illustrates. The sugya's real conclusion (כללא דמילתא) was step 4.",
+   "source": "Pesachim 110b: והא דאמרן עשרה, תמניא, שיתא, ארבעה אין בהן משום זוגי,",
+   "signal": "P2b"
+  },
+  {
+   "id": "Sanhedrin_4_a",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תשובה",
+   "why": "'After they left, he ran after them: you do not need this proof; we follow the reading' is the continuation of רבי יהודה בן רועץ's answer to his students (step 5) inside the ברייתא brought as the source in step 4. It is the second half of that answer.",
+   "source": "Sanhedrin 4a: לאחר שיצאו, יצא ומחזיר אחריהם. אמר להן: אי אתם זקוקים",
+   "signal": "P2b"
+  },
+  {
+   "id": "Sanhedrin_36_a",
+   "step": 3,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "'Rather, רבא said...' answers the challenges of steps 1–2 with a new reading. Rule 2: an answer to a Challenge is a Resolution.",
+   "source": "Sanhedrin 36a: אלא אמר רבא: לא מיבעיא למאן דאמר נדרים ונדבות קריבין",
+   "signal": "P3"
+  },
+  {
+   "id": "Yevamot_26_a",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "'No. The משנה means death after divorce' answers the challenge of step 10 (does the משנה go against רבי?). Rule 2: Resolution, even when worded 'No'.",
+   "source": "Yevamot 26a: לא: מיתה אגירושין, וגירושין אמיתה.",
+   "signal": "P3"
+  },
+  {
+   "id": "Sukkah_50_a",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "'You can even say it follows רבי נחמיה...' answers the challenge of step 5. Rule 2: Resolution.",
+   "source": "Sukkah 50a: אפילו תימא רבי נחמיה, אימר דאמר רבי נחמיה להדיוט, אבל",
+   "signal": "P3"
+  },
+  {
+   "id": "Chagigah_14_a",
+   "step": 35,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "'He could have said I learned and forgot...' answers the challenge of step 34 and shows the man really was honest. Resolution.",
+   "source": "Chagigah 14a: הוה ליה למימר גמר ושכח. מאי ״לא אהיה חובש״ —",
+   "signal": "P3"
+  },
+  {
+   "id": "Ketubot_37_a",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "'And if you say רבי יוסי did not give his ruling for things that happen on their own, look at a raped or seduced woman...' is a וכי תימא that blocks a defence and continues the challenge of step 8. Rule 2: Challenge.",
+   "source": "Ketubot 37a: וכי תימא כל ממילא לא אמר רבי יוסי, הרי אנוסה",
+   "signal": "P3"
+  },
+  {
+   "id": "Yoma_3_b",
+   "step": 22,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "'And if you will say prepare means separate: then the משנה should use one word' is a וכי תימא continuing ריש לקיש's challenge (steps 20–21). Rule 2: Challenge.",
+   "source": "Yoma 3b: וכי תימא: מאי ״מתקינין״ — ״מפרישין״, ליתני או אידי ואידי",
+   "signal": "P3"
+  },
+  {
+   "id": "Bava_Kamma_63_b",
+   "step": 26,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "'And if you say let it come by a קל וחומר: dayo' blocks a possible answer and continues the challenge of step 25 (where does the second opinion learn the thief's double payment?). Rule 2: Challenge.",
+   "source": "Bava Kamma 63b: וכי תימא: ליתי בקל וחומר מטוען טענת גנב; דיו לבא",
+   "signal": "P3"
+  },
+  {
+   "id": "Yevamot_14_a",
+   "step": 19,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "'What is the difficulty? Didn't we say places differ?' answers the 'Come and hear' challenge of step 18. The Gemara then sharpens it (step 20). Resolution.",
+   "source": "Yevamot 14a: והאי מאי קושיא? ולא אמרינן מקומות שאני?",
+   "signal": "P3"
+  },
+  {
+   "id": "Chullin_76_b",
+   "step": 22,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "רב חסדא's reply ('the משנה can be pushed aside as we pushed it aside') answers רבה's suggested challenge. Resolution.",
+   "source": "Chullin 76b: אמר ליה: מתניתין איכא לדחויי, כדדחינן.",
+   "signal": "P3"
+  },
+  {
+   "id": "Avodah_Zarah_27_a",
+   "step": 3,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רבי יוסי's reply is the next line of the ברייתא quoted in step 2 to attack רבי יהודה ('But a ברייתא teaches...'). Rule 1: every step quoting the rest of that source is קשיא.",
+   "source": "Avodah Zarah 27a: אמר לו רבי יוסי: וכי היכן מצינו מילה מן התורה",
+   "signal": "P3"
+  },
+  {
+   "id": "Makkot_7_b",
+   "step": 19,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "'And by your reasoning (וליטעמיך), what does the first half come to add?' Rule 2 names וליטעמיך explicitly as a Challenge.",
+   "source": "Makkot 7b: וליטעמיך, כל שבדרך ירידתו, לאיתויי מאי?",
+   "signal": "P3"
+  },
+  {
+   "id": "Avodah_Zarah_46_b",
+   "step": 5,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "'And if you say attached אתנן is forbidden because of בית ה׳ אלקיך, that phrase is needed for...' is a וכי תימא blocking רבא's defence and continues רב הונא's challenge (step 4). רבא answers in step 6.",
+   "source": "Avodah Zarah 46b: ואי משום ״בית ה׳ אלהיך״ מיבעי ליה לכדתניא: ״בית ה׳",
+   "signal": "P3"
+  },
+  {
+   "id": "Bava_Metzia_113_b",
+   "step": 19,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "'If you think רשב\"ג holds this reasoning, that cannot be, because for him nothing is unfit' answers the challenge of step 18. Resolution.",
+   "source": "Bava Metzia 113b: אי סלקא דעתך אית ליה לרבן שמעון בן גמליאל האי",
+   "signal": "P3"
+  },
+  {
+   "id": "Yoma_8_a",
+   "step": 16,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "'Rather, everyone holds impurity is only pushed aside' gives up the challenged premise in response to step 15 and opens the new explanation of step 17 (already תירוץ). Resolution.",
+   "source": "Yoma 8a: אלא דכולי עלמא הני תנאי סברי טומאה דחויה היא בציבור.",
+   "signal": "P3"
+  },
+  {
+   "id": "Chullin_127_a",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "רבא's reply ('since you made the sea a place of impurity, what difference...') answers the Sage's objection in step 6. Resolution.",
+   "source": "Chullin 127a: אמר ליה: ומאחר דשויתיה לים מקום טומאה, מה לי הכא,",
+   "signal": "P3"
+  },
+  {
+   "id": "Eruvin_97_a",
+   "step": 14,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "'No. It means three in total, some arm and some head' answers the challenge from רבה בר שמואל's ברייתא (step 13). Resolution.",
+   "source": "Eruvin 97a: לא: שלש, מהן של יד מהן של ראש.",
+   "signal": "P3"
+  },
+  {
+   "id": "Niddah_30_b",
+   "step": 23,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "'And if you say it is to show the הלכה follows the majority, that is obvious!' is a וכי תימא continuing the challenge of step 22 (why repeat the חכמים?). The answer comes in step 24.",
+   "source": "Niddah 30b: וכי תימא למסתמה רישא כרבנן, ויחיד ורבים — הלכה כרבים,",
+   "signal": "P3"
+  },
+  {
+   "id": "Shabbat_120_b",
+   "step": 25,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "'And can you really understand it so? If it is tied tightly it is a barrier...' answers the contradiction of step 24 by knocking out its premise; the Gemara then challenges this answer (step 26). Resolution.",
+   "source": "Shabbat 120b: ותסברא האי גמי היכי דמי? אי דמיהדק — קא הוי",
+   "signal": "P3"
+  },
+  {
+   "id": "Nazir_48_a",
+   "step": 16,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "The קל וחומר from a כהן הדיוט answers the challenge of step 15 ('maybe he may become impure for other dead'). Resolution.",
+   "source": "Nazir 48a: אמרת קל וחומר: ומה כהן הדיוט, שמיטמא לקרובין — אינו",
+   "signal": "P3"
+  },
+  {
+   "id": "Pesachim_113_b",
+   "step": 14,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "'In that case, everyone hates him. What is different?' objects to the suggested answer of step 13. Rule 2: an objection to an answer is a Challenge.",
+   "source": "Pesachim 113b: כולי עלמא נמי מיסני סני ליה, מאי שנא האי?",
+   "signal": "P4"
+  },
+  {
+   "id": "Pesachim_32_a",
+   "step": 20,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "Inside the ברייתא, רבי אליעזר בן יעקב objects to רבי אלעזר חסמא's answer ('No! You can say this about impure תרומה...'). Rules 2 and 3: an objection to an answer is a Challenge.",
+   "source": "Pesachim 32a: אמר לו: לא! אם אמרת בתרומה טמאה בשאר ימות השנה,",
+   "signal": "P4"
+  },
+  {
+   "id": "Bava_Kamma_41_a",
+   "step": 13,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "'But is an ox that is מועד for animals מועד for people?' objects to רב זביד's answer (step 12). Challenge.",
+   "source": "Bava Kamma 41a: ומועד לבהמה הוי מועד לאדם?",
+   "signal": "P4"
+  },
+  {
+   "id": "Chullin_18_b",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רב יוסף's angry retort ('Do I learn from just anybody?') objects to רבי זירא's reply (step 8) dismissing the report. Rules 2 and 3: an objection to an answer is a Challenge.",
+   "source": "Chullin 18b: שמע רב יוסף, איקפד, אמר: אנא מכולי עלמא גמירנא? אנא",
+   "signal": "P4"
+  },
+  {
+   "id": "Bava_Kamma_29_b",
+   "step": 13,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "מר זוטרא: 'Are these really alike?' objects to רבינא's comparison supporting the answer. Challenge.",
+   "source": "Bava Kamma 29b: אמר ליה מר זוטרא בריה דרב מרי לרבינא: מי דמי?!",
+   "signal": "P4"
+  },
+  {
+   "id": "Zevachim_4_a",
+   "step": 28,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "'This can be refuted (איכא למיפרך)' objects to the גזירה שוה given as the Response to step 25's question. Rule 2: an objection to an answer is a Challenge.",
+   "source": "Zevachim 4a: איכא למיפרך: מה לשינוי קודש – שכן פסולה בגופה, וישנו",
+   "signal": "P4"
+  },
+  {
+   "id": "Chagigah_15_a",
+   "step": 21,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "אחר's 'Your teacher רבי עקיבא did not explain it that way' objects to רבי מאיר's answer (step 20) and gives another. Rule 3: an objection inside a story is a Challenge.",
+   "source": "Chagigah 15a: אמר לו: רבי עקיבא רבך לא אמר כך, אלא: ברא",
+   "signal": "P4"
+  },
+  {
+   "id": "Berakhot_28_b",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "'Wasn't it said that רבי אבא limited it to one who is with the צבור?' objects to the answer of step 7 inside the dialogue. Rules 2 and 3: Challenge.",
+   "source": "Berakhot 28b: אמר ליה: לאו אתמר עלה אמר רבי אבא בצבור שנו.",
+   "signal": "P4"
+  },
+  {
+   "id": "Ketubot_72_a",
+   "step": 33,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "The Sages' 'a person does not live with a snake in a basket' objects to רבי מאיר's advice as explained in step 32. An objection to a suggestion is a Challenge (rule 2).",
+   "source": "Ketubot 72a: אמרו לו: אין אדם דר עם נחש בכפיפה.",
+   "signal": "P4"
+  },
+  {
+   "id": "Bava_Kamma_110_b",
+   "step": 13,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רב זעירא's 'even if they are gift-receivers, the חמץ case is no question' knocks out the practical difference given as the Response in step 12. An objection to an answer is a Challenge.",
+   "source": "Bava Kamma 110b: רב זעירא בעי הכי: אפילו אם תימצי לומר מקבלי מתנה",
+   "signal": "P4"
+  },
+  {
+   "id": "Bava_Metzia_70_a",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "מסקנא",
+   "why": "After hearing the facts (step 7), רב נחמן withdraws his own objection (step 5): 'in a case like this, even for adults it is allowed'. The thread ends here and the next step is a new ruling. It does not push aside a proof.",
+   "source": "Bava Metzia 70a: אמר ליה: כי הא – אפילו בדקנני נמי שרי למיעבד,",
+   "signal": "P4"
+  },
+  {
+   "id": "Gittin_59_a",
+   "step": 55,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "ראיה",
+   "why": "'They switched it and sent it to רב מרדכי, who said: wasn't the event like this?' introduces the precedent (step 56) that proves a child's gift is valid. It is the first half of that Proof.",
+   "source": "Gittin 59a: אפכוה ושדרוה לקמיה דרב מרדכי. אמר ליה: זילו אמרו לבר",
+   "signal": "P4"
+  },
+  {
+   "id": "Nazir_28_b",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "'And רבי מאיר holds: a wig, since it is dirty...' is רבי מאיר's objection to the ת\"ק's answer (step 10). Rule 2: an objection to an answer is a Challenge.",
+   "source": "Nazir 28b: ורבי מאיר סבר: בפאה נכרית, איידי דזוהמא — לא ניחא",
+   "signal": "P4"
+  },
+  {
+   "id": "Zevachim_82_b",
+   "step": 17,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רבא: 'But the word bringing is written!' objects to אביי's answer (step 16). Challenge.",
+   "source": "Zevachim 82b: אמר ליה רבא: והא הבאה כתיב ביה!",
+   "signal": "P4"
+  },
+  {
+   "id": "Ketubot_81_b",
+   "step": 13,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "אביי: 'Did רבי חנינא בר פפי hang jewels on it?' objects to the ruling sent back as the answer (step 12). Challenge.",
+   "source": "Ketubot 81b: אמר אביי: אטו רבי חנינא בר פפי כיפי תלה לה?",
+   "signal": "P4"
+  },
+  {
+   "id": "Keritot_25_a",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "'But we learned in a משנה: what is valid for the פרה is invalid for the עגלה' knocks out the suggested answer of step 5. Rule 2: Challenge.",
+   "source": "Keritot 25a: והתנן: כשר בפרה פסול – בעגלה ערופה, פסול בפרה –",
+   "signal": "P4"
+  },
+  {
+   "id": "Ketubot_72_a",
+   "step": 2,
+   "field": "hebrewStepName",
+   "find": "תשובה",
+   "replace": "תירוץ",
+   "why": "Answers step 1, which is labelled קשיא ('with a house of mourning, what door is locked?'). Rule 6: an answer to a Challenge is a Resolution. Step 3 has the same issue.",
+   "source": "Ketubot 72a: תנא: למחר היא מתה ואין כל בריה סופדה.",
+   "signal": "P5"
+  },
+  {
+   "id": "Sanhedrin_43_b",
+   "step": 10,
+   "field": "hebrewStepName",
+   "find": "תשובה",
+   "replace": "תירוץ",
+   "why": "Inside the story, עכן objects to the lots (step 9) and יהושע's reply answers him. Rule 3: the reply that answers a character's objection is a Resolution. There is no Question before it.",
+   "source": "Sanhedrin 43b: אמר לו: בבקשה ממך, אל תוציא לעז על הגורלות, שעתידה",
+   "signal": "P5"
+  },
+  {
+   "id": "Moed_Katan_8_a",
+   "step": 13,
+   "field": "hebrewStepName",
+   "find": "תשובה",
+   "replace": "תירוץ",
+   "why": "'Yes, that is indeed so' answers the challenge of step 12 by conceding; the thread then continues (step 14). Rule 6: an answer to a Challenge is a Resolution (as in Chullin 42a:17).",
+   "source": "Moed Katan 8a: אין, הכי נמי.",
+   "signal": "P5"
+  },
+  {
+   "id": "Berakhot_27_b",
+   "step": 32,
+   "field": "hebrewStepName",
+   "find": "תשובה",
+   "replace": "מימרא",
+   "why": "רבי יהושע's admission ('how can one living person deny another?') is not an answer to a Question. The question of step 28 was already answered at step 29. Inside the story this is Statement (rule 3). Rule 4 (an admitted challenge is a Conclusion) does not fit, because the story continues.",
+   "source": "Berakhot 27b: עמד רבי יהושע על רגליו ואמר אלמלא אני חי והוא",
+   "signal": "P5"
+  },
+  {
+   "id": "Nazir_48_a",
+   "step": 14,
+   "field": "hebrewStepName",
+   "find": "תשובה",
+   "replace": "תירוץ",
+   "why": "'So the פסוק says...' answers the challenge of step 12 (why do we need a verse? a קל וחומר would do), after the קל וחומר is refuted. Rule 6: Resolution.",
+   "source": "Nazir 48a: תלמוד לומר: ״לאביו ולאמו לא יטמא״, אבל מיטמא למת מצוה.",
+   "signal": "P5"
+  },
+  {
+   "id": "Sukkah_53_b",
+   "step": 30,
+   "field": "hebrewStepName",
+   "find": "תירוץ",
+   "replace": "דחיה",
+   "why": "'And רבי יהודה? That blast was only a signal' pushes aside the רבנן's proof from a verse (step 29, ראיה). Rule 2: pushing aside a Proof is a Rejection.",
+   "source": "Sukkah 53b: ורבי יהודה: ההוא לסימנא בעלמא הוא דאתא.",
+   "signal": "P6"
+  },
+  {
+   "id": "Niddah_9_b",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "תירוץ",
+   "replace": "מימרא",
+   "why": "'And they do not disagree' (ולא פליגי) reconciles two answers about the length of an עונה. No challenge was raised, so it is not a Resolution. This follows the precedent in the Berakhot 38–39 batch.",
+   "source": "Niddah 9b: ולא פליגי, מר קחשיב ימי טומאה וימי טהרה, ומר לא",
+   "signal": "P6"
+  },
+  {
+   "id": "Bava_Kamma_114_a",
+   "step": 15,
+   "field": "hebrewStepName",
+   "find": "תירוץ",
+   "replace": "מימרא",
+   "why": "'He holds that giving up hope alone does not transfer ownership' is the Gemara explaining the reasoning of the ברייתא in step 14. No challenge was raised; it is an explanation (Statement).",
+   "source": "Bava Kamma 114a: קסבר: יאוש כדי לא קני, ומעיקרא באיסורא אתא לידיה.",
+   "signal": "P6"
+  },
+  {
+   "id": "Rosh_Hashanah_6_b",
+   "step": 30,
+   "field": "hebrewStepName",
+   "find": "תירוץ",
+   "replace": "מימרא",
+   "why": "'And they do not disagree: one is about an unblemished firstborn...' reconciles אביי and רב אחא. No challenge was raised (ולא פליגי precedent).",
+   "source": "Rosh Hashanah 6b: ולא פליגי: הא בתם,",
+   "signal": "P6"
+  },
+  {
+   "id": "Makkot_16_b",
+   "step": 16,
+   "field": "hebrewStepName",
+   "find": "תירוץ",
+   "replace": "מימרא",
+   "why": "'They do not disagree: big ants versus small ants' reconciles the two rulings. No challenge was raised (ולא פליגי precedent).",
+   "source": "Makkot 16b: ולא פליגי, הא – ברברבי, והא – בזוטרי.",
+   "signal": "P6"
+  },
+  {
+   "id": "Bava_Batra_22_b",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "תירוץ",
+   "replace": "מימרא",
+   "why": "'רבי יוסי בר חנינא said: they do not disagree: old city versus new city' reconciles רב and רבי אושעיא. No challenge was raised (ולא פליגי precedent).",
+   "source": "Bava Batra 22b: אמר רבי יוסי בר חנינא: ולא פליגי – הא בעיר",
+   "signal": "P6"
+  }
+ ]
+}
