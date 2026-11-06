@@ -166,3 +166,21 @@ test("perekGroups: the shared grouping rule (run in isolation)", () => {
   const shared = Object.keys(P).flatMap(k => P[k].slice(1).filter((p, n) => p.start === P[k][n].end).map(p => [k, p]));
   if (shared.length) { const [k, p] = shared[0]; const gs = perekGroups(k); assert.match(gs[p.n - 1].midOf(p.start), /begins partway down/); assert.match(gs[p.n - 2].midOf(p.start), /begins partway down/); }
 });
+
+test("Worker: the site's own files get the safety headers (no CSP); status, body and redirects are kept; sign-in proxy untouched", async () => {
+  const w = await import(pathToFileURL(path.join(SITE, "_worker", "index.js")).href);
+  const env = { ASSETS: { fetch: async req => { const p = new URL(req.url).pathname;
+    if (p === "/") return new Response("<p>home</p>", { status: 200, headers: { "Content-Type": "text/html", "ETag": "x1" } });
+    if (p === "/app.js") return new Response(null, { status: 304, headers: { "ETag": "x2" } });
+    if (p === "/berakhot/2a/") return new Response(null, { status: 200 });
+    return new Response("", { status: 404 }); } } };
+  const get = p => w.default.fetch(new Request("https://gemaraclarity.org" + p), env);
+  const home = await get("/");
+  assert.equal(home.status, 200); assert.equal(await home.text(), "<p>home</p>"); assert.equal(home.headers.get("ETag"), "x1"); assert.equal(home.headers.get("Content-Type"), "text/html");
+  for (const [k, v] of Object.entries({ "Strict-Transport-Security": "max-age=31536000", "X-Content-Type-Options": "nosniff", "Referrer-Policy": "strict-origin-when-cross-origin", "X-Frame-Options": "SAMEORIGIN", "Permissions-Policy": "camera=(), microphone=(), geolocation=()" })) assert.equal(home.headers.get(k), v, k);
+  assert.equal(home.headers.get("Content-Security-Policy"), null, "no CSP (it would risk Google sign-in)");
+  const nm = await get("/app.js"); assert.equal(nm.status, 304); assert.equal(nm.headers.get("ETag"), "x2"); assert.equal(nm.headers.get("X-Frame-Options"), "SAMEORIGIN");
+  const red = await get("/berachos/2a/"); assert.equal(red.status, 301); assert.equal(red.headers.get("Location"), "https://gemaraclarity.org/berakhot/2a/"); assert.equal(red.headers.get("X-Content-Type-Options"), "nosniff");
+  const nf = await get("/no-such-page/"); assert.equal(nf.status, 404); assert.equal(nf.headers.get("Referrer-Policy"), "strict-origin-when-cross-origin");
+  assert.match(read("_worker/index.js"), /AUTH_PREFIXES\.some\(p => url\.pathname\.startsWith\(p\)\)\) return proxyAuth\(request, url\);/, "the sign-in proxy is returned as is");
+});

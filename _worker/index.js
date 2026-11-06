@@ -11,7 +11,7 @@
 // course.gemaraclarity.org is the Bava Metzia course, proxied to the course's own live site (see course-host.js);
 // on every other host a /course-site/ path answers 404 like any missing file.
 // Every other request (gemaraclarity.org itself, *.workers.dev, preview URLs) is served
-// the static assets unchanged.
+// the static assets, with the standard browser safety headers added (withSecurityHeaders, below).
 import { courseLink, ASSERTION_PATH, JWKS_PATH } from "./course-assertion.js";
 import { COURSE_HOST, inCourseDir, hideCourseDir, serveCourse } from "./course-host.js";
 
@@ -64,8 +64,24 @@ export default {
     const res = await env.ASSETS.fetch(request);
     if (res.status === 404 && (request.method === "GET" || request.method === "HEAD")) {
       const fixed = canonicalPath(url.pathname);
-      if (fixed) { const probe = await env.ASSETS.fetch(new Request(new URL(fixed, url), { method: "HEAD" })); if (probe.ok) return Response.redirect(new URL(fixed + url.search, url).toString(), 301); }
+      if (fixed) { const probe = await env.ASSETS.fetch(new Request(new URL(fixed, url), { method: "HEAD" })); if (probe.ok) return withSecurityHeaders(Response.redirect(new URL(fixed + url.search, url).toString(), 301)); }
     }
-    return res;
+    return withSecurityHeaders(res);
   },
 };
+
+// Nov 5 2026 (review #13, #71): the standard browser safety headers, on the site's own pages and files only (not the sign-in proxy or the course).
+// No Content-Security-Policy: Google sign-in loads Firebase's pages and scripts, and a wrong policy would break it. SAMEORIGIN, not DENY,
+// because sign-in opens a page from this site inside a frame. The response is copied with new Headers, keeping its status (redirects, 304s) and body.
+export const SECURITY_HEADERS = {
+  "Strict-Transport-Security": "max-age=31536000", // no includeSubDomains: hard to undo, and it would bind every gemaraclarity.org subdomain
+  "X-Content-Type-Options": "nosniff",
+  "Referrer-Policy": "strict-origin-when-cross-origin",
+  "X-Frame-Options": "SAMEORIGIN",
+  "Permissions-Policy": "camera=(), microphone=(), geolocation=()",
+};
+export function withSecurityHeaders(res) {
+  const headers = new Headers(res.headers);
+  for (const [k, v] of Object.entries(SECURITY_HEADERS)) headers.set(k, v);
+  return new Response(res.body, { status: res.status, statusText: res.statusText, headers });
+}

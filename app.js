@@ -385,8 +385,9 @@ function sanitize(html, he){
 const heTxt = t => { t = String(t||"").replace(/<[^>]+>/g, ""); return esc(settings.nikud ? t : t.replace(NIKUD, "")); };
 // kt3 (Oct 16 2026: tap a word to see its translation): each Hebrew/Aramaic word of a
 // step's phrase line is its own <span class="fw"> so a tap can open its word help (wordHelpFlow). The visible text is exactly heTxt's; nothing else changes.
-// e5: each word is a button for the keyboard; st (one per step) gives the step's first word the step's one Tab stop (roving tabindex)
-const heWords = (t, st) => { let k = 0; return heTxt(t).split(/(\s+|\u05BE)/).map(x => /[\u05D0-\u05EA]/.test(x) ? `<span class="fw" data-k="${k++}" role="button" tabindex="${st && !st.n++ ? 0 : -1}">${x}</span>` : x).join(""); };
+// e5: each word is reachable by keyboard; st (one per step) gives the step's first word the step's one Tab stop (roving tabindex). Nov 5 2026 (review #100): no role="button",
+// so a screen reader reads the line as one run of text, not "button" after every word; Tab, the arrows and Enter (word help) work as before
+const heWords = (t, st) => { let k = 0; return heTxt(t).split(/(\s+|\u05BE)/).map(x => /[\u05D0-\u05EA]/.test(x) ? `<span class="fw" data-k="${k++}" tabindex="${st && !st.n++ ? 0 : -1}">${x}</span>` : x).join(""); };
 
 /* ---------- UI helpers ---------- */
 function toast(msg){ const t = $("#toast"); t.textContent = msg; t.classList.add("show"); clearTimeout(toast._t); toast._t = setTimeout(() => t.classList.remove("show"), 2400); }
@@ -410,7 +411,7 @@ function openSheet(title, html, onMount){
   openSheet.last = document.activeElement;
   // Nov 5 2026: an open sheet gets its own history entry, so the phone's Back button closes the sheet instead of leaving the daf
   if (!(history.state && history.state.gcSheet)) { try { history.pushState({ gcSheet: 1 }, ""); openSheet.url = location.href; } catch {} }
-  if (!openSheet.inert) { openSheet.inert = [...document.body.children].filter(el => !["sheet", "backdrop", "toast", "disc"].includes(el.id) && !el.hasAttribute("inert")); openSheet.inert.forEach(el => el.setAttribute("inert", "")); } // v99r: the page behind the open sheet takes no focus
+  if (!openSheet.inert) { openSheet.inert = [...document.body.children].filter(el => !["sheet", "backdrop", "toast", "srStatus", "disc"].includes(el.id) && !el.hasAttribute("inert")); openSheet.inert.forEach(el => el.setAttribute("inert", "")); } // v99r: the page behind the open sheet takes no focus
   onMount && onMount($("#sheetBody"));
   setTimeout(() => { const f = $("#sheetBody [autofocus]") || $("#sheetClose"); f && f.focus(); }, 30);
 }
@@ -1196,7 +1197,7 @@ function syncPaged(){ // v4: one step at a time on every width (David, Oct 29: "
 function ticksHtml(steps, n, href){
   return steps.map((s, k) => { const t = TYPES[s.hebrewStepName] || TYPES["מימרא"];
     return href ? `<a class="tk t-${t.k}${k + 1 === n ? " cur" : ""}" href="${href(k + 1)}" aria-label="Step ${k + 1}: ${t.en}"></a>`
-      : `<button class="tk t-${t.k}${k + 1 === n ? " cur" : ""}" data-jump="${k + 1}" aria-label="Step ${k + 1}: ${t.en}"></button>`; }).join("");
+      : `<button class="tk t-${t.k}${k + 1 === n ? " cur" : ""}" data-jump="${k + 1}" aria-label="Step ${k + 1}: ${t.en}"${k + 1 === n ? ' aria-current="step"' : ""}></button>`; }).join("");
 }
 function ticksSync(n, total){
   const body = $("#dafBody"); if (!body || !current || !current.analysis) return;
@@ -1482,7 +1483,7 @@ function wireDaf(){
   const c = current;
   wirePerek();
   $("#bmBtn").onclick = () => { let b = bookmarks(); b = b.includes(c.id) ? b.filter(x => x !== c.id) : [c.id, ...b]; saveJSON(LS.bookmarks, b); toast(b.includes(c.id) ? "Bookmarked" : "Bookmark removed"); renderDaf(); };
-  $("#shareBtn").onclick = async () => { const { daf, amud } = dafOf(c.i), url = `https://gemaraclarity.org/${c.m.toLowerCase().replace(/_/g, "-")}/${daf}${amud}/`; /* Nov 5 2026: share the daf's own page, whose link preview shows the daf */ try { if (navigator.share) await navigator.share({ title: `${label(c.m, c.i)} · Gemara Clarity`, url }); else { await navigator.clipboard.writeText(url); toast("Link copied"); } } catch {} };
+  $("#shareBtn").onclick = async () => { const { daf, amud } = dafOf(c.i), sn = c.tab === "steps" && +(($(".step.cur") || {}).dataset?.n || 0), url = sn > 1 ? `https://gemaraclarity.org/${hashFor(c.m, c.i, "/s" + sn)}` : `https://gemaraclarity.org/${c.m.toLowerCase().replace(/_/g, "-")}/${daf}${amud}/`; /* Nov 5 2026: share the daf's own page, whose link preview shows the daf; past step 1, the app's own link to that step (review #65: Share keeps the step) */ try { if (navigator.share) await navigator.share({ title: `${label(c.m, c.i)} · Gemara Clarity`, url }); else { await navigator.clipboard.writeText(url); toast("Link copied"); } } catch {} };
   // v4 (Oct 29 2026): print-to-PDF removed at David's request
   $$("[data-tab]").forEach(b => b.onclick = () => { c.tab = b.dataset.tab; renderDaf(); });
   const ovb = $("#ovBtn"); if (ovb) ovb.onclick = () => {
@@ -1525,11 +1526,17 @@ function toggleStep(card, force){
 function jumpTo(n, flash){
   if (current && current.tab !== "steps") { current.tab = "steps"; renderDaf(); }
   const el = document.getElementById("s" + n); if (!el) return;
+  const ae = document.activeElement, keep = !!(ae && ae !== document.body && ae.closest && ae.closest("#view, #sidebar, #sheet, .edge")); // review #99: focus was in the steps (or on the control pressed)
   closeSheet(); jumpTo.lock = Date.now() + 700;
   if (paged()) { markCurrent(n); const top = $("#dafBody .steps"); const y = top ? top.getBoundingClientRect().top + scrollY - 70 : 0; if (scrollY > y + 4 || scrollY < y - 400) scrollTo({ top: Math.max(0, y), behavior: "auto" }); }
   else el.scrollIntoView({ behavior: "auto", block: "start" });
   markCurrent(n);
   if (flash) { el.classList.remove("arrive"); void el.offsetWidth; el.classList.add("arrive"); clearTimeout(jumpTo.t); jumpTo.t = setTimeout(() => el.classList.remove("arrive"), 1600); el.focus && el.setAttribute("tabindex", "-1"); try { el.focus({ preventScroll: true }); } catch {} }
+  // review #99: focus goes on to the new step's title (its header button if the title is not shown), so a keyboard or screen-reader user carries on
+  // from there; only when focus was already in the steps or on the control pressed, and a mouse click shows no focus ring (:focus-visible)
+  if (keep) { const t = [$(".stitle", el), $(".sh", el)].find(x => x && x.getClientRects().length); if (t) { if (!t.hasAttribute("tabindex") && t.tagName !== "BUTTON") t.setAttribute("tabindex", "-1"); try { t.focus({ preventScroll: true }); } catch {} } }
+  const total = current && current.analysis ? current.analysis.steps.length : 0, kn = $(".tname .ten", el);
+  if (total) announce(`Step ${n} of ${total}${kn ? ", " + kn.textContent.trim() : ""}`);
 }
 function observeSteps(){
   if (observer) observer.disconnect();
@@ -1545,14 +1552,28 @@ function markCurrent(n){
   if (!current || !current.analysis) return;
   const total = current.analysis.steps.length;
   $$(".step.cur").forEach(x => x.classList.remove("cur")); const el = document.getElementById("s" + n); el && el.classList.add("cur");
-  $$(".fnode.cur, .strip button.cur").forEach(x => x.classList.remove("cur"));
-  $$(`.fnode[data-jump="${n}"], .strip button[data-jump="${n}"]`).forEach(x => x.classList.add("cur"));
+  $$(".fnode.cur, .strip button.cur").forEach(x => { x.classList.remove("cur"); x.removeAttribute("aria-current"); });
+  $$(`.fnode[data-jump="${n}"], .strip button[data-jump="${n}"]`).forEach(x => { x.classList.add("cur"); if (x.matches(".fnode")) x.setAttribute("aria-current", "step"); }); // review #99: the current sidebar link says so to a screen reader
   const sb = $(`.strip button[data-jump="${n}"]`), strip = sb && sb.parentElement; // keep the current step's button in view inside the strip, without moving the page
   if (strip && strip.scrollWidth > strip.clientWidth) { const l = sb.offsetLeft - strip.offsetLeft, w = strip.clientWidth; if (l < strip.scrollLeft + 8 || l + sb.offsetWidth > strip.scrollLeft + w - 8) strip.scrollLeft = Math.max(0, l - w / 2 + sb.offsetWidth / 2); }
   const now = $("#stripNow"); if (now) now.innerHTML = stripNowHtml(current.analysis, n);
   const side = $(`#sidebar .fnode[data-jump="${n}"]`); if (side && $(".layout").classList.contains("with-side")) side.scrollIntoView({ block: "nearest" });
   updPager(n, total);
+  stepAddr(n);
 }
+// Nov 5 2026 (review #65): the address keeps the step (#/<Masechet>/<daf><a|b>/s<n>, which route() already opens), replaced in place: no new history
+// entry, and replaceState fires no hashchange, so nothing re-renders. Refresh, Back to this amud and a copied address then keep the step.
+function stepAddr(n){
+  if (!current || current.am || current.tab !== "steps") return;
+  if (history.state && history.state.gcSheet) { stepAddr.p = n; return; } // a sheet's own history entry is on top (closeSheet is about to go back): write the step once it is gone
+  stepAddr.p = 0;
+  const base = encodeURI(hashFor(current.m, current.i)), h = location.hash, to = base + "/s" + n;
+  if (h === to || (h !== base && !h.startsWith(base + "/"))) return; // already there, or the address has moved on to somewhere else
+  try { history.replaceState(history.state, "", to); } catch {}
+}
+addEventListener("popstate", () => { if (stepAddr.p && !(history.state && history.state.gcSheet)) stepAddr(stepAddr.p); });
+// review #99: a visually hidden live region (index.html) says where a step change landed; the visible toast stays for messages meant to be seen
+function announce(msg){ const r = $("#srStatus"); if (!r) return; r.textContent = ""; clearTimeout(announce.t); announce.t = setTimeout(() => { r.textContent = msg; }, 60); }
 window.addEventListener("scroll", () => {
   if (current && current.am) return; // Ameilus fills the bar with the passages done
   const h = document.documentElement; const max = h.scrollHeight - h.clientHeight;
@@ -1821,7 +1842,11 @@ function focusAfterRoute(){
   const h = card ? (card.querySelector("h2, h3, h4") || card) : document.querySelector("#view h1, #view h2"); if (!h) return;
   if (!h.hasAttribute("tabindex")) h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true });
 }
-window.addEventListener("hashchange", () => { if (swReload()) return; Promise.resolve(route(false)).then(() => requestAnimationFrame(focusAfterRoute), () => {}); });
+// Nov 5 2026 (review #96): "Skip to content" (index.html) moves focus to the content and leaves the page, the address and the step alone; a
+// hashchange to #view (the link followed without this handler) puts the previous address back in place, with no re-render
+function skipToView(){ try { $("#view").focus(); } catch {} }
+$(".skip").onclick = e => { e.preventDefault(); skipToView(); };
+window.addEventListener("hashchange", e => { if (location.hash === "#view") { let o = ""; try { o = new URL(e.oldURL).hash; } catch {} history.replaceState(history.state, "", location.pathname + location.search + (o === "#view" ? "" : o)); skipToView(); return; } if (swReload()) return; Promise.resolve(route(false)).then(() => requestAnimationFrame(focusAfterRoute), () => {}); });
 $("#homeBtn").onclick = () => { location.hash = "#/"; };
 $("#refBtn").onclick = () => openPicker();
 function openSettingsAll(){ openSettings(); if (current && current.am) amSettingsSection($("#sheetBody")); } $("#settingsBtn").onclick = e => acct.toggleMenu(e); // v106-acct: the corner button opens the profile menu; its Settings row opens openSettingsAll
@@ -1932,7 +1957,8 @@ function refParts(raw){
   return out;
 }
 function refButton(p){ return `<button type="button" class="pasuk-ref" data-pasuk="${esc(p.ref)}" data-label="${esc(p.label)}" aria-haspopup="dialog" title="Show this pasuk"><span class="he" lang="he">${esc(p.he)}</span> <span class="pasuk-cv">${esc(p.cv)}</span></button>`; }
-const refHtml = raw => refParts(raw).map(p => p.ref ? refButton(p) : esc(p.text)).join("");
+const heLang = t => bidiHe(t).replace(/<bdi class="he-in" /g, "<bdi "); // the Classics helper's marking without its font change, so the prose looks exactly as before
+const refHtml = raw => refParts(raw).map(p => p.ref ? refButton(p) : heLang(p.text)).join(""); // Nov 5 2026 (review #98): each Hebrew run in the English prose is marked as Hebrew (<bdi lang="he">) so a screen reader picks a Hebrew voice
 const pasukCache = new Map();
 const cleanHe = t => String(t).replace(/<[^>]+>/g, "").replace(/&nbsp;/g, " ").replace(/&[a-z]+;|&#\d+;/g, " ").replace(/\{[ספ]\}/g, "").replace(/\(([^)]*)\)\s*\[([^\]]*)\]/g, "$2").replace(/[\u0591-\u05AF\u05BD]/g, "").replace(/\s+/g, " ").trim();
 const cleanEn = t => String(t).replace(/<sup[^>]*>.*?<\/sup>/g, "").replace(/<i class="footnote">.*?<\/i>/g, "").replace(/<br\s*\/?>/g, " ").replace(/<[^>]+>/g, "").replace(/&nbsp;/g, " ").replace(/&amp;/g, "&").replace(/&#39;|&rsquo;/g, "’").replace(/&quot;/g, '"').replace(/\s+/g, " ").trim();
