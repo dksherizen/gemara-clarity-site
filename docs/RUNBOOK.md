@@ -58,6 +58,7 @@ On this computer a push runs the check automatically and stops if something is b
 
 - Content changes go through `tools/apply-repairs.mjs`, never by hand-editing a JSON file. A hand edit skips the version raise and the search-page rebuild.
 - Any change to an app file means raising `V` in `sw.js`.
+- **Help changes with the app.** When you add, rename or remove anything people tap or switch, change its Help topic in the same commit. All Help topics are at the end of `app.js` (the Ameilus one is at the end of `ameilus/ui.js`), written in plain words. `node --test test/site.test.mjs` fails if Help names a button or setting that is no longer in the app, or if a Settings switch is not explained anywhere in Help.
 - Keep the AI notice (first visit, every amud, every search page). Keep the Sefaria credit (its licence requires it).
 - Don't add the dedication back unless David asks. He chose to remove it on Oct 12 2026.
 

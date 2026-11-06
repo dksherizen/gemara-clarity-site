@@ -184,3 +184,26 @@ test("Worker: the site's own files get the safety headers (no CSP); status, body
   const nf = await get("/no-such-page/"); assert.equal(nf.status, 404); assert.equal(nf.headers.get("Referrer-Policy"), "strict-origin-when-cross-origin");
   assert.match(read("_worker/index.js"), /AUTH_PREFIXES\.some\(p => url\.pathname\.startsWith\(p\)\)\) return proxyAuth\(request, url\);/, "the sign-in proxy is returned as is");
 });
+
+// Help (redone Nov 5 2026): Help must change with the app. Every on-screen word a Help topic names (its labels) must still be in the app,
+// every switch and button in Settings must be named somewhere in Help, and Help may not send people to controls that are gone.
+test("Help stays in step with the app", () => {
+  const cut = (src, start, end) => { const s = src.indexOf(start); assert.ok(s >= 0, "Help block start: " + start); const e = src.indexOf(end, s); assert.ok(e > s, "Help block end"); return [src.slice(s, e), src.slice(0, s) + src.slice(e)]; };
+  const [helpApp, restApp] = cut(read("app.js"), "// ---- Help (redone", "async function openHelp(){");
+  const [helpAm, restAm] = cut(read("ameilus/ui.js"), "// ---- Help (redone", "\n}");
+  const help = helpApp + helpAm;
+  const app = [restApp, restAm, read("ameilus/core.js"), read("ameilus/words.js"), read("index.html"), read("acct.js"), read("mywords.js")].join("\n");
+  const labels = [...help.matchAll(/labels:\[([^\]]*)\]/g)].flatMap(m => [...m[1].matchAll(/"([^"]+)"/g)].map(x => x[1]));
+  assert.ok(labels.length >= 30, "the topics list the on-screen words they name");
+  for (const l of labels) assert.ok(app.includes(l), `Help names “${l}”, which is no longer in the app: update or remove that Help topic`);
+  // every Settings control is explained somewhere in Help
+  const set = restApp.slice(restApp.indexOf("function openSettings(){"), restApp.indexOf("openSheet(\"Settings\"")) + restApp.slice(restApp.indexOf("function amSettingsSection("), restApp.indexOf("function amSettingsSection(") + 3000);
+  const names = [...set.matchAll(/sw\("\w+","([^"]+)"/g), ...set.matchAll(/class="lbl"><b>([^<$]+)/g), ...set.matchAll(/<button[^>]*id="\w+"[^>]*>([^<$]+)/g)].map(m => m[1].trim());
+  assert.ok(names.length >= 12, "found the Settings controls");
+  for (const n of names) assert.ok(help.includes(n), `Settings has “${n}”, but no Help topic mentions it: add it to the right topic`);
+  // only the groups and screens Help knows, and no words for controls that were renamed
+  const groups = (helpApp.match(/HELP_GROUPS = (\[[^\]]*\])/) || [])[1] || "";
+  for (const m of help.matchAll(/id:"[^"]+", group:"([^"]+)"/g)) assert.ok(groups.includes(`"${m[1]}"`), "Help group " + m[1] + " is not in HELP_GROUPS");
+  for (const m of help.matchAll(/where:\[([^\]]*)\]/g)) for (const w of m[1].match(/"[^"]+"/g) || []) assert.ok(["\"home\"", "\"classics\"", "\"flow\"", "\"ameilus\""].includes(w), "unknown screen " + w);
+  assert.doesNotMatch(help, /\bAa\b|beside Aa|More detail opens the deeper|Unresolved|teiku/, "Help still names a control or tag that is gone");
+});

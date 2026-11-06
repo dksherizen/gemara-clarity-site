@@ -547,19 +547,20 @@ export function mountAmeilus(root, ctx){
   let barObs = null; try { barObs = new ResizeObserver(() => { fitBar(); expFade(); }); barObs.observe(bar); barObs.observe(sheet); barObs.observe(expBody); } catch { fitBar(); }
   return { destroy(){ closeWord(); document.removeEventListener("keydown", onKey); if (barObs) barObs.disconnect(); document.body.style.removeProperty("--am-bar-h"); document.body.style.removeProperty("--am-word-h"); document.body.classList.remove("am-walk-open", "am-exp-open"); root.innerHTML = ""; }, state: () => st, placeStep, openWalk: () => openWalk(true), tokens, kinds, ranges };
 }
-// ---- Help (Oct 20 2026): Ameilus registers its own Help topics here; the app's Help page (the ? beside Aa) lists them.
-// The walkthrough is replayed from Help: "Mark where each passage ends" › Replay the walkthrough. Nothing else in Ameilus changes.
+// ---- Help (redone Nov 5 2026): Ameilus adds its one Help topic here; the app's Help (the ? in the top bar) lists it with the rest (app.js, end).
+// labels: the on-screen words it names; test/site.test.mjs fails when one is gone. Replay the walkthrough from Help › Ameilus: try it yourself.
 {
   const reg = e => globalThis.registerHelp ? globalThis.registerHelp(e) : (globalThis.__gcHelpQ ||= []).push(e);
-  reg({ id:"am-mark", group:"Ameilus", order:1, icon:"check", where:["ameilus"], title:AMW.goal, sub:"Tap the last word, then “Ends here ✓”.",
-    body:[AMW.walkRead, `${AMW.walkTap} then “Ends here ✓”.`, "The first time you open Ameilus, a short walkthrough shows how. You can replay it here."],
-    action:{ label:"Replay the walkthrough", run: c => { if (c && c.am && c.am.openWalk) { c.close(); c.am.openWalk(); return; } try { localStorage.removeItem(WALK_KEY); } catch {} return "It will open the next time you start Ameilus on an amud."; } } });
-  reg({ id:"am-hints", group:"Ameilus", order:2, icon:"bulb", where:["ameilus"], title:"Hints", sub:"Vowels, punctuation, signal word and more.",
-    body:[AMW.walkHints, "Use any hint, in any order. If you use Show where it ends, that passage does not count as done on your own."] });
-  reg({ id:"am-words", group:"Ameilus", order:3, icon:"word", where:["ameilus"], title:"Word help and My words", sub:"Long-press any word.",
-    body:["Long-press a word to see what it means.", "Tap “Add to My words” to keep it. Your list and flashcards are in My words, in the menu at the top right."] });
-  reg({ id:"am-map", group:"Ameilus", order:4, icon:"steps", where:["ameilus"], title:"Sugya map", sub:"How the passages hang together.",
-    body:["The map button at the top shows each passage under the one it answers or builds on.", "It fills in as you go."] });
-  reg({ id:"am-reading", group:"Ameilus", order:5, icon:"eye", where:["ameilus"], title:"Show our reading", sub:"Check yourself after each passage.",
-    body:["After you mark a passage, say it in your own words.", "Then tap Show our reading to see its kind, its translation and what is happening."] });
+  reg({ id:"ameilus", group:"On the daf", order:0, icon:"check", where:["ameilus"], open:true,
+    title:"Ameilus: try it yourself", sub:"Mark where each passage ends, then check yourself.",
+    steps:["Read the plain text: no vowels, no punctuation.",
+      "Tap the last word of the first passage, then **Ends here ✓**.",
+      "Say the passage in your own words. Then tap **Show our reading** to check yourself.",
+      "Go on to the next passage the same way."],
+    body:["Stuck? **Hints** can add the vowels or the punctuation, or show the word that signals what is coming. **Show where it ends** gives the answer, but then that passage doesn’t count as done on your own.",
+      "Long-press (or right-click) any word to see what it means. **Add to My words** keeps it for flashcards.",
+      "The **Sugya map** button at the top shows how the passages hang together. It fills in as you go.",
+      "In Menu › Settings, while you are in Ameilus: **Bare mode** takes the hints away, and **Guess the kind first** asks what kind of step each passage is before showing you."],
+    labels:["Ends here ✓", "Show our reading", "Hints", "Show where it ends", "Add to My words", "Sugya map", "Bare mode", "Guess the kind first"],
+    action:{ label:"Replay the walkthrough", run: c => { if (c && c.am && c.am.openWalk) { c.close(); c.am.openWalk(); return; } try { localStorage.removeItem(WALK_KEY); } catch {} return "It will open the next time you start Ameilus on a daf."; } } });
 }

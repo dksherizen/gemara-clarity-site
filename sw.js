@@ -1,4 +1,4 @@
-const V = "gc2-shell-v136-a11y";
+const V = "gc2-shell-v137-help";
 const SHELL = ["./", "index.html", "gc.css", "fonts/spectral-normal-400-latin.woff2", "fonts/spectral-normal-600-latin.woff2", "fonts/spectral-italic-400-latin.woff2", "fonts/spectral-sc-normal-500-latin.woff2", "fonts/noto-rashi-hebrew-normal-400-hebrew.woff2", "app.js", "mishnah.js", "manifest.json", "icon-192.png", "icon-512.png", "icon-maskable-512.png", "apple-touch-icon.png", "favicon.svg", "favicon-32.png", "logo-mark.svg", "fonts/frank-ruhl-hebrew.woff2", "data/perakim.json", "data/perek-nikud.json", "ameilus/ui.js", "ameilus/core.js", "ameilus/words.js", "acct.js", "mywords.js", "data/glossary.json", "data/prose-nikud.json"];
 self.addEventListener("install", e => { e.waitUntil(caches.open(V).then(c => c.addAll(SHELL)).then(() => self.skipWaiting())); });
 self.addEventListener("activate", e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k !== V && k.startsWith("gc2-") && !k.startsWith("gc2-data")).map(k => caches.delete(k)))).then(() => self.clients.claim())); });
