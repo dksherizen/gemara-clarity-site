@@ -119,7 +119,8 @@ const CSS = `
 .pf-av{width:34px;height:34px;border-radius:50%;background:var(--accent);color:var(--accent-ink);font-size:16px;font-weight:800;display:inline-flex;align-items:center;justify-content:center;flex:none;overflow:hidden}
 .pf-av img{width:100%;height:100%;object-fit:cover;display:block}
 .pf-av.lg{width:44px;height:44px;font-size:19px}
-@media (max-width:600px){#settingsBtn.pf .pf-nm,#settingsBtn.pf .pf-chev{display:none}#settingsBtn.pf,#settingsBtn.pf.out{width:44px;padding:0}}
+@media (max-width:600px){#settingsBtn.pf.in .pf-nm,#settingsBtn.pf .pf-chev{display:none}#settingsBtn.pf.in{width:44px;padding:0}#settingsBtn.pf.out,#settingsBtn.pf.bare{width:auto;padding:0 10px;gap:6px}#settingsBtn.pf.out svg,#settingsBtn.pf.bare svg{display:none}}
+#settingsBtn.pf.bare{width:auto;padding:0 16px 0 12px;border-color:var(--border)}
 @media (max-width:480px){.topbar .brand-name{display:none}}
 .pm{position:fixed;z-index:60;width:300px;max-width:calc(100vw - 16px);box-sizing:border-box;padding:6px;border-radius:14px;border:1px solid var(--border);background:var(--panel);color:var(--text);box-shadow:0 18px 50px rgba(0,0,0,.45)}
 .pm-hd{display:flex;gap:12px;align-items:center;padding:12px 10px}
@@ -165,6 +166,7 @@ const GEAR = I('<circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .
 const WORDS = I('<rect x="3.5" y="7" width="13" height="13" rx="2"/><path d="M7.5 3.5h11a2 2 0 0 1 2 2v11"/>'); // My words (Oct 25 2026)
 const HELP = I('<circle cx="12" cy="12" r="9"/><path d="M9.6 9.3a2.5 2.5 0 0 1 4.8.9c0 1.7-2.4 2.2-2.4 3.6M12 17h.01"/>');
 const OUT = I('<path d="M15 4h3a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-3M10 16l-4-4 4-4M6 12h10"/>');
+const MENU = I('<path d="M4 7h16M4 12h16M4 17h16"/>');
 const CHEV = `<svg class="pf-chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>`;
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
 const LS = typeof localStorage !== "undefined" ? localStorage : null;
@@ -264,8 +266,7 @@ export function paintButton(){
   b.classList.add("pf"); b.classList.toggle("in", !!a); b.classList.toggle("out", !a && allowed()); b.classList.toggle("bare", !a && !allowed());
   b.removeAttribute("title"); b.setAttribute("aria-haspopup", "menu"); b.setAttribute("aria-expanded", menu ? "true" : "false");
   if (a) { b.innerHTML = `${avatar(a)}<span class="pf-nm">${esc(firstName(a))}</span>${CHEV}`; b.setAttribute("aria-label", `Account menu: ${a.name || a.email || "signed in"}`); fixPhotos(b, a); }
-  else if (allowed()) { b.innerHTML = `${PERSON}<span class="pf-nm">Sign in</span>`; b.setAttribute("aria-label", "Sign in and settings"); }
-  else { b.innerHTML = PERSON; b.setAttribute("aria-label", "Settings and help"); }
+  else { b.innerHTML = `${MENU}<span class="pf-nm">Menu</span>`; b.setAttribute("aria-label", allowed() ? "Menu: settings, help and sign in" : "Menu: settings and help"); } // Nov 5: a plain "Menu" button; signing in is one option inside it
 }
 function place(){
   const b = btn(); if (!menu || !b) return;
@@ -295,8 +296,8 @@ export function toggleMenu(e){
   if (a && !fb) connect().catch(() => {});
   menu = document.createElement("div"); menu.className = "pm"; menu.id = "pfMenu"; menu.setAttribute("role", "menu"); menu.setAttribute("aria-label", a ? "Account" : "Menu");
   menu.innerHTML = a ? head(a) + HR + item("account", PERSON, "Account") + item("words", WORDS, "My words") + item("settings", GEAR, "Settings") + item("help", HELP, "Help") + HR + item("signout", OUT, "Sign out")
-    : (allowed() ? `<div class="pm-so"><h3>Sign in to sync your progress</h3><p>Optional. Keeps bookmarks and progress on all your devices.</p><button class="gbtn" type="button" data-pm="google">${G}<span>Continue with Google</span></button><p class="si-err" role="alert" hidden></p></div>` + HR : "")
-      + item("words", WORDS, "My words") + item("settings", GEAR, "Settings") + item("help", HELP, "Help");
+    : item("settings", GEAR, "Settings") + item("words", WORDS, "My words") + item("help", HELP, "Help")
+      + (allowed() ? HR + `<div class="pm-so"><h3>Sign in (optional)</h3><p>Keeps your bookmarks and progress on all your devices.</p><button class="gbtn" type="button" data-pm="google">${G}<span>Continue with Google</span></button><p class="si-err" role="alert" hidden></p></div>` : "");
   if (a) fixPhotos(menu, a);
   document.body.append(menu); place();
   b.setAttribute("aria-expanded", "true"); b.classList.add("open");

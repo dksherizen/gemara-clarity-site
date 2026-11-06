@@ -204,6 +204,18 @@ const parseId = id => { const p = id.split("_"); const amud = p.pop(); const daf
 // home3b: the Sugya Flow link is written #/<m>/<daf>/steps; links with the earlier route word still open (alias in route()).
 // The mode key stays "shiur" inside the app (storage keys and data-path-pick unchanged).
 const hashFor = (m, i, extra="") => `#/${m}/${dafOf(i).daf}${dafOf(i).amud}${extra === "/shiur" ? "/steps" : extra}`;
+// Nov 5 2026: one contact address for mistakes, questions and privacy requests (also on /about/ and /privacy/, built by tools/build-pages.mjs)
+const CONTACT = "dksherizen@gmail.com";
+const reportHref = (m, i, step) => { const where = `${label(m, i)}${step ? `, step ${step}` : ""}`;
+  return `mailto:${CONTACT}?subject=${encodeURIComponent(`Gemara Clarity: mistake in ${where}`)}&body=${encodeURIComponent(`Where: ${where}
+Link: https://gemaraclarity.org/${hashFor(m, i, "/steps")}
+
+What is wrong:
+
+
+What it should say (and a source, if you know one):
+
+`)}`; };
 function gematria(n){
   const ones=["","א","ב","ג","ד","ה","ו","ז","ח","ט"], tens=["","י","כ","ל","מ","נ","ס","ע","פ","צ"], hund=["","ק","ר","ש","ת"];
   let s = hund[Math.floor(n/100)] || ""; n %= 100;
@@ -653,7 +665,7 @@ function openSettings(){
     <p class="small" style="margin:0 0 8px">Every daf you open is saved on this device automatically. You can also save the whole breakdown library now (${cloudIds.size || "all"} amudim) for learning without signal.</p>
     <button class="btn ofl-all" id="saveAll">Save library for offline<span class="sz">${oflMB(OFL_ALL_KB)}</span></button> <span class="small" id="saveAllMsg"></span><div id="oflList" class="ofl-list">${oflListHtml()}</div>
     <h3 style="margin:22px 0 4px;font-size:16px">About</h3>
-    <p class="small" style="margin:0">Text and translation: Sefaria, William Davidson Edition (CC BY-NC). Step-by-step breakdowns are AI-generated with the original <a href="https://gemara-clarity.netlify.app/" target="_blank" rel="noopener">Gemara Clarity</a> prompt (his library, plus amudim generated the same way); check them against the text and your teacher.</p>
+    <p class="small" style="margin:0">Text and translation: Sefaria, William Davidson Edition (CC BY-NC). Step-by-step breakdowns are AI-generated; check them against the text and your teacher. <a href="/about/">About Gemara Clarity</a> · <a href="/privacy/">Privacy</a> · <a href="mailto:${CONTACT}">${CONTACT}</a></p>
     <p class="small" style="margin:8px 0 0"><button class="linkbtn disc-link" id="discAgain" type="button">About this content (AI disclaimer)</button></p>
     <p class="small"><button class="btn" id="clearData" style="margin-top:10px">Clear my bookmarks, history and saved data</button></p>`;
   openSheet("Settings", html, body => {
@@ -814,7 +826,7 @@ function clAll(){
   }));
 }
 // draft text is shown as written except a clause that points at another list's numbering ("X's #5 starts at…"; the draft file stays unchanged)
-const clClean = s => { s = String(s || ""); const parts = s.split(/(?<=[;.])\s+/).filter(x => !/\b\w+['’]s #\d+/.test(x)); const out = parts.join(" ").trim(); return out && out !== s.trim() ? out.replace(/;$/, ".") : out; };
+const clClean = s => { s = String(s || ""); const parts = s.replace(/([;.])\s+/g, "$1\u0001").split("\u0001").filter(x => !/\b\w+['’]s #\d+/.test(x)); const out = parts.join(" ").trim(); return out && out !== s.trim() ? out.replace(/;$/, ".") : out; };
 const clStepOk = p => !!(p && masInfo(p.m) && /^\d+[ab]$/.test(p.daf || "") && Number.isInteger(p.step) && p.step > 0);
 const clLaunchable = it => !it.draft || (clStepOk(it.start) && clStepOk(it.end) && it.start.m === it.end.m && dafIdx(it.start.m, it.start.daf) <= dafIdx(it.end.m, it.end.daf));
 const clHook = it => { const s = dispNames(clClean(it.summary || it.why || "")); const m = /^(.+?[.!?])(\s|$)/.exec(s); return m ? m[1] : s; };
@@ -1283,6 +1295,7 @@ function stepHtml(s, k, open){
         ${s.whatToRemember ? `<div class="box remember"><h4>Remember</h4><p>${px(s.whatToRemember)}</p></div>` : ""}
         ${s.confusionAlert ? `<div class="box alert"><h4>Careful</h4><p>${px(s.confusionAlert)}</p></div>` : ""}
         ${moreHtml(more, settings.expandAll)}
+        ${current ? `<p class="report"><a href="${reportHref(current.m, current.i, k + 1)}">Report a mistake in this step</a></p>` : ""}
       </div>
       ${k > 0 || nextN ? `<div class="stepnav">${k > 0 ? `<button class="bwd" data-jump="${k}" aria-label="Back to step ${k}" title="Step ${k} (or swipe, or press ←)"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M19 12H6M11 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>` : ""}${nextN ? `<button class="fwd next-cue" data-jump="${nextN}" aria-label="Go on to step ${nextN}" title="Step ${nextN} (or swipe, or press →)"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>` : ""}</div>` : ""}${!nextN && total && k + 1 === total ? dafEndHtml() : ""}
     </div></article>`;
@@ -1354,7 +1367,7 @@ function renderDaf(){
       </div>
       ${a ? `<div class="ovpanel" id="ovPanel"${ovOpen() ? "" : " hidden"}>${a.overview ? `<p class="overview">${px(a.overview, a)}</p>` : ""}
         <div class="typecounts">${Object.entries(TYPES).filter(([he]) => counts[he]).map(([he, t]) => `<span class="typecount t-${t.k}">${counts[he]} ${t.en}${counts[he] > 1 ? "s" : ""}</span>`).join("")}${mishCountHtml()}</div></div>` : ""}
-      ${a ? `<p class="note-ai">AI-generated: check it against the text and your teacher.</p>` : ""}
+      ${a ? `<p class="note-ai">AI-generated, not reviewed by a rav, not for practical halacha: check it against the text and your teacher. <a href="${reportHref(c.m, c.i)}">Report a mistake</a></p>` : ""}
     </section>
     ${!a && !c.noText ? `<div class="notice">${c.cloudErr ? `<b>The breakdown couldn’t be loaded just now.</b>
         <p>Check your connection and try again. Meanwhile, here is the full text with translation, side by side.</p>` : `<b>Step-by-step breakdown coming soon.</b>
@@ -1951,7 +1964,7 @@ document.addEventListener("click", e => {
 const DISC_KEY = "gc-disclaimer";
 const DISC = {
   title: "Before you start",
-  body: "Everything in Gemara Clarity — translations, explanations and step breakdowns — is generated by AI. It has no haskama and has not been reviewed by a rav. It can contain mistakes.",
+  body: "Everything in Gemara Clarity — translations, explanations and step breakdowns — is generated by AI. It has no haskama and has not been reviewed by a rav. It can contain mistakes, and it is not for practical halacha. If you spot a mistake, tap “Report a mistake” on the amud or on any step.",
   ok: "I understand"
 };
 let discOpen = false, discWaiters = [];

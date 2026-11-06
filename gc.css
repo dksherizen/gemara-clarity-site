@@ -345,6 +345,9 @@ body.side-resizing *{cursor:col-resize!important}
 @keyframes spin{to{transform:rotate(360deg)}}
 .skel{height:14px;border-radius:7px;background:var(--panel);margin:10px 0}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+/* Nov 5 review fix: index.html ships a fallback line inside <main>; the app replaces it at once. It stays hidden for 3 s so only people whose browser can't run the app ever see it. */
+.boot-msg{max-width:36em;margin:40px auto;padding:0 16px;color:var(--muted);font:400 16px/1.6 var(--ui-font);text-align:center;animation:boot-wait 3s}
+@keyframes boot-wait{from,to{visibility:hidden}}
 
 @media print{
   body{background:#fff!important;color:#000!important;padding:0}
@@ -1467,13 +1470,24 @@ body.onestep .step .sh{pointer-events:none}
 .bottombar .sc-n{color:var(--ink);font-weight:600;font-variant-numeric:tabular-nums}
 .bottombar .sc-k{color:var(--c);margin-left:8px}
 .bottombar .sbar:hover{color:var(--ink)}
-@media (min-width:1000px){.bottombar{left:var(--side-w,300px)} body:has(.layout:not(.with-side)) .bottombar,body.side-collapsed .bottombar{left:0}}
+/* Nov 5 review fix: the sidebar only shows from 1100px, and the layout is centred, so nothing may assume the sidebar starts at the screen's edge.
+   The bottom bar moves right only while the sidebar is really showing. */
+@media (min-width:1100px){.bottombar{left:var(--side-w,300px)} body:has(.layout:not(.with-side)) .bottombar,body.side-collapsed .bottombar{left:0}}
 .edge{display:none}
 @media (min-width:1000px){
-  body.onestep .edge{display:flex;position:fixed;top:48px;bottom:45px;width:64px;align-items:center;justify-content:center;background:none;border:0;border-radius:0;padding:0;cursor:pointer;color:transparent;z-index:5}
+  /* The invisible prev/next click zones live only in the empty margin beside the reading column, never over the text or the sidebar:
+     their width is the margin that is actually free (capped at 64px), and they disappear when there is none. */
+  body.onestep{--edge-w:clamp(0px, calc((100vw - var(--max)) / 2 - 24px), 64px)}
+  body.onestep .edge{display:flex;position:fixed;top:48px;bottom:45px;width:var(--edge-w);align-items:center;justify-content:center;background:none;border:0;border-radius:0;padding:0;cursor:pointer;color:transparent;z-index:5;overflow:hidden}
   body.onestep .edge-next{right:0}
-  body.onestep .edge-prev{left:calc(var(--side-w,300px) + 2px)}
-  body.onestep.side-collapsed .edge-prev{left:0}
+  body.onestep .edge-prev{left:0}
+}
+@media (min-width:1100px){
+  /* While the steps sidebar is showing, the list itself is the way back, so there is no left zone; the right zone keeps to the margin outside the layout. */
+  body.onestep:has(.layout.with-side):not(.side-collapsed){--edge-w:clamp(0px, calc((100vw - max(1240px, calc(var(--side-w,300px) + var(--max) + 56px))) / 2 - 4px), 64px)}
+  body.onestep:has(.layout.with-side):not(.side-collapsed) .edge-prev{display:none}
+}
+@media (min-width:1000px){
   body.onestep .edge svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:1.4}
   body.onestep .edge:hover{color:var(--muted)}
   body.onestep.at-last .edge-next{display:none}
@@ -1929,3 +1943,7 @@ body.theme-light .wB-slip{background:#fff}
 .wy-okm{color:var(--good);font-weight:700}
 .wB-raw{margin:0;font:500 27px/46px var(--he-font);color:var(--ink);text-align:right}
 .wB-yours .lbl{white-space:normal}
+/* Nov 5 2026: "Report a mistake" links (amud note and the end of each step's explanation) */
+.explain .report{margin:16px 0 2px;font:400 14px/1.4 var(--ui-font)}
+.explain .report a,.note-ai a{color:var(--muted);text-decoration:underline;text-underline-offset:2px}
+.explain .report a:hover,.note-ai a:hover{color:var(--ink)}
