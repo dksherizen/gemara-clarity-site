@@ -1,0 +1,933 @@
+{
+ "name": "labels-shas-n",
+ "approved": "Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.",
+ "repairs": [
+  {
+   "id": "Zevachim_110_a",
+   "step": 26,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "proposes רבי אליעזר as the setting for the בעיא and knocks it out; continues the 'according to whom' challenge, no proof involved",
+   "source": "Zevachim 110a"
+  },
+  {
+   "id": "Zevachim_111_b",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objection to a suggested reading (אילימא) of רבי שמעון, not to a proof",
+   "source": "Zevachim 111b"
+  },
+  {
+   "id": "Zevachim_111_b",
+   "step": 8,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the suggestion",
+   "replace": "Challenges the suggestion",
+   "why": "wording follows the new label",
+   "source": "Zevachim 111b"
+  },
+  {
+   "id": "Zevachim_111_b",
+   "step": 8,
+   "field": "title",
+   "find": "Rejected:",
+   "replace": "Objection:",
+   "why": "wording follows the new label",
+   "source": "Zevachim 111b"
+  },
+  {
+   "id": "Zevachim_111_b",
+   "step": 10,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objection to the second suggested reading, not to a proof",
+   "source": "Zevachim 111b"
+  },
+  {
+   "id": "Zevachim_111_b",
+   "step": 10,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the suggestion",
+   "replace": "Challenges the suggestion",
+   "why": "wording follows the new label",
+   "source": "Zevachim 111b"
+  },
+  {
+   "id": "Zevachim_111_b",
+   "step": 10,
+   "field": "title",
+   "find": "Rejected:",
+   "replace": "Objection:",
+   "why": "wording follows the new label",
+   "source": "Zevachim 111b"
+  },
+  {
+   "id": "Zevachim_111_b",
+   "step": 12,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objection to the third suggested reading, not to a proof",
+   "source": "Zevachim 111b"
+  },
+  {
+   "id": "Zevachim_111_b",
+   "step": 12,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the suggestion",
+   "replace": "Challenges the suggestion",
+   "why": "wording follows the new label",
+   "source": "Zevachim 111b"
+  },
+  {
+   "id": "Zevachim_111_b",
+   "step": 12,
+   "field": "title",
+   "find": "Rejected again:",
+   "replace": "Objection again:",
+   "why": "wording follows the new label",
+   "source": "Zevachim 111b"
+  },
+  {
+   "id": "Zevachim_111_b",
+   "step": 14,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objection (הא קתני) to the fourth suggested reading, not to a proof",
+   "source": "Zevachim 111b"
+  },
+  {
+   "id": "Zevachim_111_b",
+   "step": 14,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the Step 13",
+   "replace": "Challenges the Step 13",
+   "why": "wording follows the new label",
+   "source": "Zevachim 111b"
+  },
+  {
+   "id": "Zevachim_113_a",
+   "step": 22,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "ריש לקיש's וליטעמיך defends against רבי יוחנן's challenge and answers it",
+   "source": "Zevachim 113a"
+  },
+  {
+   "id": "Zevachim_113_a",
+   "step": 22,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the inference",
+   "replace": "Answers the inference",
+   "why": "wording follows the new label",
+   "source": "Zevachim 113a"
+  },
+  {
+   "id": "Zevachim_113_b",
+   "step": 22,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "וליטעמיך used to defend ריש לקיש's answer against רב חסדא's objection; leads into the answer of step 23",
+   "source": "Zevachim 113b"
+  },
+  {
+   "id": "Zevachim_114_a",
+   "step": 4,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "הלכך summary is the end of the answer of steps 2-3; the answer continues in step 5",
+   "source": "Zevachim 114a"
+  },
+  {
+   "id": "Zevachim_114_b",
+   "step": 19,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "ולא?! והרי answers רב הונא's objection",
+   "source": "Zevachim 114b"
+  },
+  {
+   "id": "Zevachim_115_a",
+   "step": 21,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "הא מאי רומיא is an objection to how the answer/ברייתא was handled, answered in step 22",
+   "source": "Zevachim 115a"
+  },
+  {
+   "id": "Zevachim_119_a",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תשובה",
+   "why": "answers the למה חלקן question of step 6; next step is a new challenge, not a landing",
+   "source": "Zevachim 119a"
+  },
+  {
+   "id": "Zevachim_13_b",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "וכי הכל משלמים למדו pushes back on רב פדא's challenge and with step 8 answers it",
+   "source": "Zevachim 13b"
+  },
+  {
+   "id": "Zevachim_16_a",
+   "step": 13,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "ראיה",
+   "why": "וחזר הדין / הצד השוה is the rebuilt proof (end of the יוכיח chain) and is refuted straight away in step 14",
+   "source": "Zevachim 16a"
+  },
+  {
+   "id": "Zevachim_16_a",
+   "step": 15,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "רב סמא answers the פירכא (challenge) of step 14, defending the הצד השוה",
+   "source": "Zevachim 16a"
+  },
+  {
+   "id": "Zevachim_16_a",
+   "step": 15,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the refutation",
+   "replace": "Answers the refutation",
+   "why": "wording follows the new label",
+   "source": "Zevachim 16a"
+  },
+  {
+   "id": "Zevachim_16_b",
+   "step": 14,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "ראיה",
+   "why": "וחזר הדין / הצד השוה is the rebuilt proof and is refuted straight away in step 15",
+   "source": "Zevachim 16b"
+  },
+  {
+   "id": "Zevachim_17_a",
+   "step": 13,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תשובה",
+   "why": "second half of the response of step 12 (which ends with ;), heading off an objection to it",
+   "source": "Zevachim 17a"
+  },
+  {
+   "id": "Zevachim_19_b",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רבי יוחנן's own objection to his answer of step 8 (a new answer follows), not pushing aside a proof",
+   "source": "Zevachim 19b"
+  },
+  {
+   "id": "Zevachim_19_b",
+   "step": 9,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the answer",
+   "replace": "Challenges the answer",
+   "why": "wording follows the new label",
+   "source": "Zevachim 19b"
+  },
+  {
+   "id": "Zevachim_19_b",
+   "step": 35,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objection to the answer of step 34 (הא כתיב לשרת)",
+   "source": "Zevachim 19b"
+  },
+  {
+   "id": "Zevachim_19_b",
+   "step": 35,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the answer",
+   "replace": "Challenges the answer",
+   "why": "wording follows the new label",
+   "source": "Zevachim 19b"
+  },
+  {
+   "id": "Zevachim_23_b",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "ראיה",
+   "why": "end of the inference chain of steps 3-6, which step 7 pushes aside",
+   "source": "Zevachim 23b"
+  },
+  {
+   "id": "Zevachim_25_b",
+   "step": 4,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objection to רבי יוחנן's answer to a בעיא (answer quoting a ברייתא), not to a proof",
+   "source": "Zevachim 25b"
+  },
+  {
+   "id": "Zevachim_25_b",
+   "step": 4,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the proof",
+   "replace": "Challenges the answer",
+   "why": "wording follows the new label",
+   "source": "Zevachim 25b"
+  },
+  {
+   "id": "Zevachim_26_b",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וכי תימא: objection to a possible answer",
+   "source": "Zevachim 26b"
+  },
+  {
+   "id": "Zevachim_28_a",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "explanatory survey of why each אמורא did not take the others' approach; continued in step 12, not a landing",
+   "source": "Zevachim 28a"
+  },
+  {
+   "id": "Zevachim_28_a",
+   "step": 25,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "אדרבה objection to the answer of step 24",
+   "source": "Zevachim 28a"
+  },
+  {
+   "id": "Zevachim_28_a",
+   "step": 25,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the answer",
+   "replace": "Challenges the answer",
+   "why": "wording follows the new label",
+   "source": "Zevachim 28a"
+  },
+  {
+   "id": "Zevachim_28_b",
+   "step": 10,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "אדרבה objection to the answer of step 9",
+   "source": "Zevachim 28b"
+  },
+  {
+   "id": "Zevachim_28_b",
+   "step": 10,
+   "field": "relationToPreviousStep",
+   "find": "Rejects step 9",
+   "replace": "Challenges step 9",
+   "why": "wording follows the new label",
+   "source": "Zevachim 28b"
+  },
+  {
+   "id": "Zevachim_32_b",
+   "step": 17,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "רבא's אדרבה answers the challenge of step 16",
+   "source": "Zevachim 32b"
+  },
+  {
+   "id": "Zevachim_32_b",
+   "step": 17,
+   "field": "relationToPreviousStep",
+   "find": "Directly rejects the reasoning",
+   "replace": "Directly answers the reasoning",
+   "why": "wording follows the new label",
+   "source": "Zevachim 32b"
+  },
+  {
+   "id": "Zevachim_34_a",
+   "step": 2,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "ראיה",
+   "why": "end of the היקש proof begun on the previous daf; challenged straight away in step 3",
+   "source": "Zevachim 34a"
+  },
+  {
+   "id": "Zevachim_34_b",
+   "step": 17,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "third part of the צריכותא of steps 15-16 (מימרא)",
+   "source": "Zevachim 34b"
+  },
+  {
+   "id": "Zevachim_35_a",
+   "step": 15,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וכי תימא: heads off a possible answer, part of the challenge",
+   "source": "Zevachim 35a"
+  },
+  {
+   "id": "Zevachim_38_a",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "ראיה",
+   "why": "end of the ברייתא's derivation (the תנא's source brought in step 4); challenged straight away in step 9",
+   "source": "Zevachim 38a"
+  },
+  {
+   "id": "Zevachim_38_a",
+   "step": 13,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objection to רב אדא בר יצחק's answer of step 12",
+   "source": "Zevachim 38a"
+  },
+  {
+   "id": "Zevachim_38_a",
+   "step": 13,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the answer",
+   "replace": "Challenges the answer",
+   "why": "wording follows the new label",
+   "source": "Zevachim 38a"
+  },
+  {
+   "id": "Zevachim_39_a",
+   "step": 13,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "רבינא answers רב תחליפא's challenge",
+   "source": "Zevachim 39a"
+  },
+  {
+   "id": "Zevachim_39_a",
+   "step": 13,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the challenge",
+   "replace": "Answers the challenge",
+   "why": "wording follows the new label",
+   "source": "Zevachim 39a"
+  },
+  {
+   "id": "Zevachim_41_a",
+   "step": 1,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "second half of רבי ישמעאל's קל וחומר spelled out at the end of 40b (מימרא); challenged straight away in step 2",
+   "source": "Zevachim 41a"
+  },
+  {
+   "id": "Zevachim_42_b",
+   "step": 16,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objection to the answer of step 15",
+   "source": "Zevachim 42b"
+  },
+  {
+   "id": "Zevachim_42_b",
+   "step": 16,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the answer",
+   "replace": "Challenges the answer",
+   "why": "wording follows the new label",
+   "source": "Zevachim 42b"
+  },
+  {
+   "id": "Zevachim_43_b",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objection to רבא's answer (מידי מקוה כתיב)",
+   "source": "Zevachim 43b"
+  },
+  {
+   "id": "Zevachim_43_b",
+   "step": 8,
+   "field": "relationToPreviousStep",
+   "find": "Rejects רבא",
+   "replace": "Challenges רבא",
+   "why": "wording follows the new label",
+   "source": "Zevachim 43b"
+  },
+  {
+   "id": "Zevachim_45_a",
+   "step": 2,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "אביי answers the objection הלכתא למשיחא",
+   "source": "Zevachim 45a"
+  },
+  {
+   "id": "Zevachim_45_a",
+   "step": 2,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the objection",
+   "replace": "Answers the objection",
+   "why": "wording follows the new label",
+   "source": "Zevachim 45a"
+  },
+  {
+   "id": "Zevachim_46_b",
+   "step": 10,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "רבא's מסתברא ruling is challenged straight away in step 11",
+   "source": "Zevachim 46b"
+  },
+  {
+   "id": "Zevachim_48_a",
+   "step": 19,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "לא, דכולי עלמא gives the real answer to the challenge of step 17 after setting aside the לימא",
+   "source": "Zevachim 48a"
+  },
+  {
+   "id": "Zevachim_48_b",
+   "step": 13,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וכי תימא: shuts down a possible defence, part of the challenge",
+   "source": "Zevachim 48b"
+  },
+  {
+   "id": "Zevachim_49_b",
+   "step": 13,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "completes the answer of step 12; challenged straight away in step 14",
+   "source": "Zevachim 49b"
+  },
+  {
+   "id": "Zevachim_52_a",
+   "step": 17,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "ת\"ל line of the ברייתא (steps 14-16 מימרא); followed straight away by a challenge",
+   "source": "Zevachim 52a"
+  },
+  {
+   "id": "Zevachim_59_a",
+   "step": 26,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "answers the challenge against רב that the step-25 reading brought back (ולא תרוצי קא מתרצת? אימא שנשחטו)",
+   "source": "Zevachim 59a"
+  },
+  {
+   "id": "Zevachim_5_a",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "ריש לקיש objects to רבי אלעזר's answer; not pushing aside a proof",
+   "source": "Zevachim 5a"
+  },
+  {
+   "id": "Zevachim_5_a",
+   "step": 7,
+   "field": "relationToPreviousStep",
+   "find": "Rejects",
+   "replace": "Challenges",
+   "why": "wording follows the label change to קשיא",
+   "source": "Zevachim 5a"
+  },
+  {
+   "id": "Zevachim_5_a",
+   "step": 7,
+   "field": "title",
+   "find": "rejects",
+   "replace": "objects to",
+   "why": "wording follows the label change to קשיא",
+   "source": "Zevachim 5a"
+  },
+  {
+   "id": "Zevachim_5_b",
+   "step": 5,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "רבא's הקש is a new answer (אלא אמר רבא) and is challenged straight away in step 6; end-of-thread label is wrong",
+   "source": "Zevachim 5b"
+  },
+  {
+   "id": "Zevachim_5_b",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רב ששת objects to the reply suggested in step 8; an objection to an answer",
+   "source": "Zevachim 5b"
+  },
+  {
+   "id": "Zevachim_5_b",
+   "step": 9,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the answer",
+   "replace": "Challenges the answer",
+   "why": "wording follows the label change to קשיא",
+   "source": "Zevachim 5b"
+  },
+  {
+   "id": "Zevachim_60_b",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תשובה",
+   "why": "the תלמוד לומר is the ברייתא's answer to the question of step 1, and is challenged in step 7 (וניהדר דינא)",
+   "source": "Zevachim 60b"
+  },
+  {
+   "id": "Zevachim_60_b",
+   "step": 16,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רבי ירמיה attacks the Babylonian teaching and backs it with ברייתות; an objection, not pushing aside a proof",
+   "source": "Zevachim 60b"
+  },
+  {
+   "id": "Zevachim_66_b",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "ראיה",
+   "why": "second half of the proof begun in step 5 (ומדסיפא... רישא נמי), immediately pushed aside in step 7",
+   "source": "Zevachim 66b"
+  },
+  {
+   "id": "Zevachim_67_a",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "answers רבא's question in step 7 (מדלא קאמר ליה הכי שמע מינה) and is challenged at once in step 9",
+   "source": "Zevachim 67a"
+  },
+  {
+   "id": "Zevachim_67_a",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "answers the challenge of step 10 (לא; כך הצעה של כולה משנה)",
+   "source": "Zevachim 67a"
+  },
+  {
+   "id": "Zevachim_67_b",
+   "step": 3,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "answers the challenge of step 2 (one person vs two)",
+   "source": "Zevachim 67b"
+  },
+  {
+   "id": "Zevachim_67_b",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וכי תימא... ומי מצית אמרת הכי closes off an answer and keeps the step-5 challenge going",
+   "source": "Zevachim 67b"
+  },
+  {
+   "id": "Zevachim_69_a",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וכי תימא closes off an answer and continues the step-6 challenge",
+   "source": "Zevachim 69a"
+  },
+  {
+   "id": "Zevachim_69_a",
+   "step": 18,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "יצא... is the second half of the answer in step 17 and is challenged at once in step 19",
+   "source": "Zevachim 69a"
+  },
+  {
+   "id": "Zevachim_70_a",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וכי תימא... continues the step-7 objection to אביי",
+   "source": "Zevachim 70a"
+  },
+  {
+   "id": "Zevachim_75_b",
+   "step": 12,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "answers רבי יוסי בר אבין's objection in step 11 (הפדו?! רחמנא אמר לא תפדה)",
+   "source": "Zevachim 75b"
+  },
+  {
+   "id": "Zevachim_75_b",
+   "step": 12,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the objection",
+   "replace": "Answers the objection",
+   "why": "wording follows the label change to תירוץ",
+   "source": "Zevachim 75b"
+  },
+  {
+   "id": "Zevachim_76_a",
+   "step": 5,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "אביי answers רב יוסף's proposed challenge with רבה's reply",
+   "source": "Zevachim 76a"
+  },
+  {
+   "id": "Zevachim_76_a",
+   "step": 5,
+   "field": "relationToPreviousStep",
+   "find": "Rejects רב יוסף's proposed challenge",
+   "replace": "Answers רב יוסף's proposed challenge",
+   "why": "wording follows the label change to תירוץ",
+   "source": "Zevachim 76a"
+  },
+  {
+   "id": "Zevachim_76_a",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "מתקיף לה רבינא is an objection; step 12 answers it",
+   "source": "Zevachim 76a"
+  },
+  {
+   "id": "Zevachim_76_a",
+   "step": 11,
+   "field": "relationToPreviousStep",
+   "find": "Rejects step 10's claim",
+   "replace": "Challenges step 10's claim",
+   "why": "wording follows the label change to קשיא",
+   "source": "Zevachim 76a"
+  },
+  {
+   "id": "Zevachim_78_a",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "ראיה",
+   "why": "שמע מינה תלת is an inference from ריש לקיש's ruling, challenged at once in step 8 (מתיב רבא)",
+   "source": "Zevachim 78a"
+  },
+  {
+   "id": "Zevachim_7_b",
+   "step": 26,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רב אשי objects to the הואיל וגלי answer; an objection to an answer, not to a proof",
+   "source": "Zevachim 7b"
+  },
+  {
+   "id": "Zevachim_7_b",
+   "step": 26,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the reasoning",
+   "replace": "Challenges the reasoning",
+   "why": "wording follows the label change to קשיא",
+   "source": "Zevachim 7b"
+  },
+  {
+   "id": "Zevachim_80_a",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רבי יהושע turns רבי אליעזר's answer back on him; objection to an answer",
+   "source": "Zevachim 80a"
+  },
+  {
+   "id": "Zevachim_82_a",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "second half of רב הונא's objection begun in step 5",
+   "source": "Zevachim 82a"
+  },
+  {
+   "id": "Zevachim_87_a",
+   "step": 20,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "שאלה",
+   "why": "ריש לקיש restates his question (לכתחילה ליקרב קמיבעי לי); step 21 is its תשובה",
+   "source": "Zevachim 87a"
+  },
+  {
+   "id": "Zevachim_87_a",
+   "step": 20,
+   "field": "relationToPreviousStep",
+   "find": "Rejects step 19's answer",
+   "replace": "Sets aside step 19's answer",
+   "why": "wording follows the label change to שאלה",
+   "source": "Zevachim 87a"
+  },
+  {
+   "id": "Zevachim_87_b",
+   "step": 12,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "רב שימי בר אשי answers the challenge of step 11 by finding a case; step 13 then challenges him",
+   "source": "Zevachim 87b"
+  },
+  {
+   "id": "Zevachim_87_b",
+   "step": 12,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the challenge",
+   "replace": "Answers the challenge",
+   "why": "wording follows the label change to תירוץ",
+   "source": "Zevachim 87b"
+  },
+  {
+   "id": "Zevachim_89_b",
+   "step": 4,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "ראיה",
+   "why": "הא כיצד is the end of the ברייתא brought as the source in steps 2-3, and is challenged at once in step 5",
+   "source": "Zevachim 89b"
+  },
+  {
+   "id": "Zevachim_90_b",
+   "step": 2,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "step 1 tests the rule that a חטאת comes first (data labels it קשיא, as 90a step 25); לא, לנדבה answers it",
+   "source": "Zevachim 90b"
+  },
+  {
+   "id": "Zevachim_90_b",
+   "step": 2,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the proof in step 1",
+   "replace": "Answers the challenge in step 1",
+   "why": "wording follows the label change to תירוץ",
+   "source": "Zevachim 90b"
+  },
+  {
+   "id": "Zevachim_90_b",
+   "step": 5,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "ואימא מרישא answers the step-4 challenge to the rule that a חטאת comes first",
+   "source": "Zevachim 90b"
+  },
+  {
+   "id": "Zevachim_90_b",
+   "step": 5,
+   "field": "relationToPreviousStep",
+   "find": "Answers the proof in step 4",
+   "replace": "Answers the challenge in step 4",
+   "why": "wording follows the label change to תירוץ",
+   "source": "Zevachim 90b"
+  },
+  {
+   "id": "Zevachim_91_b",
+   "step": 13,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "step 12's תא שמע attacks שמואל's reading of רבי טרפון (oil all to the fires); מידי איריא answers it",
+   "source": "Zevachim 91b"
+  },
+  {
+   "id": "Zevachim_91_b",
+   "step": 13,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the proof brought",
+   "replace": "Answers the challenge brought",
+   "why": "wording follows the label change to תירוץ",
+   "source": "Zevachim 91b"
+  },
+  {
+   "id": "Zevachim_94_a",
+   "step": 20,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רבא objects to his own answer (לאו מילתא היא דאמרי); step 21 gives a new answer",
+   "source": "Zevachim 94a"
+  },
+  {
+   "id": "Zevachim_94_b",
+   "step": 27,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "וליטעמיך here defends the משנה against the chain of challenges in steps 19-26",
+   "source": "Zevachim 94b"
+  },
+  {
+   "id": "Zevachim_96_b",
+   "step": 10,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "מי דמי objects to רמי בר חמא's defence in step 9; an objection to an answer",
+   "source": "Zevachim 96b"
+  },
+  {
+   "id": "Zevachim_96_b",
+   "step": 10,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the comparison",
+   "replace": "Challenges the comparison",
+   "why": "wording follows the label change to קשיא",
+   "source": "Zevachim 96b"
+  }
+ ]
+}

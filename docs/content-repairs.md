@@ -2,6 +2,320 @@
 
 Every change to the AI-written content, newest first. Each entry says what was wrong, the source used, and who approved it.
 
+## 202611060556-rev118-labels-shas-n
+
+Approved: Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.
+
+- **Zevachim 110a, step 26** (hebrewStepName): proposes רבי אליעזר as the setting for the בעיא and knocks it out; continues the 'according to whom' challenge, no proof involved Source: Zevachim 110a.
+  - was: דחיה
+  - now: קשיא
+- **Zevachim 111b, step 8** (hebrewStepName): objection to a suggested reading (אילימא) of רבי שמעון, not to a proof Source: Zevachim 111b.
+  - was: דחיה
+  - now: קשיא
+- **Zevachim 111b, step 8** (relationToPreviousStep): wording follows the new label Source: Zevachim 111b.
+  - was: Rejects the suggestion
+  - now: Challenges the suggestion
+- **Zevachim 111b, step 8** (title): wording follows the new label Source: Zevachim 111b.
+  - was: Rejected:
+  - now: Objection:
+- **Zevachim 111b, step 10** (hebrewStepName): objection to the second suggested reading, not to a proof Source: Zevachim 111b.
+  - was: דחיה
+  - now: קשיא
+- **Zevachim 111b, step 10** (relationToPreviousStep): wording follows the new label Source: Zevachim 111b.
+  - was: Rejects the suggestion
+  - now: Challenges the suggestion
+- **Zevachim 111b, step 10** (title): wording follows the new label Source: Zevachim 111b.
+  - was: Rejected:
+  - now: Objection:
+- **Zevachim 111b, step 12** (hebrewStepName): objection to the third suggested reading, not to a proof Source: Zevachim 111b.
+  - was: דחיה
+  - now: קשיא
+- **Zevachim 111b, step 12** (relationToPreviousStep): wording follows the new label Source: Zevachim 111b.
+  - was: Rejects the suggestion
+  - now: Challenges the suggestion
+- **Zevachim 111b, step 12** (title): wording follows the new label Source: Zevachim 111b.
+  - was: Rejected again:
+  - now: Objection again:
+- **Zevachim 111b, step 14** (hebrewStepName): objection (הא קתני) to the fourth suggested reading, not to a proof Source: Zevachim 111b.
+  - was: דחיה
+  - now: קשיא
+- **Zevachim 111b, step 14** (relationToPreviousStep): wording follows the new label Source: Zevachim 111b.
+  - was: Rejects the Step 13
+  - now: Challenges the Step 13
+- **Zevachim 113a, step 22** (hebrewStepName): ריש לקיש's וליטעמיך defends against רבי יוחנן's challenge and answers it Source: Zevachim 113a.
+  - was: דחיה
+  - now: תירוץ
+- **Zevachim 113a, step 22** (relationToPreviousStep): wording follows the new label Source: Zevachim 113a.
+  - was: Rejects the inference
+  - now: Answers the inference
+- **Zevachim 113b, step 22** (hebrewStepName): וליטעמיך used to defend ריש לקיש's answer against רב חסדא's objection; leads into the answer of step 23 Source: Zevachim 113b.
+  - was: דחיה
+  - now: תירוץ
+- **Zevachim 114a, step 4** (hebrewStepName): הלכך summary is the end of the answer of steps 2-3; the answer continues in step 5 Source: Zevachim 114a.
+  - was: מסקנא
+  - now: תירוץ
+- **Zevachim 114b, step 19** (hebrewStepName): ולא?! והרי answers רב הונא's objection Source: Zevachim 114b.
+  - was: דחיה
+  - now: תירוץ
+- **Zevachim 115a, step 21** (hebrewStepName): הא מאי רומיא is an objection to how the answer/ברייתא was handled, answered in step 22 Source: Zevachim 115a.
+  - was: דחיה
+  - now: קשיא
+- **Zevachim 119a, step 7** (hebrewStepName): answers the למה חלקן question of step 6; next step is a new challenge, not a landing Source: Zevachim 119a.
+  - was: מסקנא
+  - now: תשובה
+- **Zevachim 13b, step 7** (hebrewStepName): וכי הכל משלמים למדו pushes back on רב פדא's challenge and with step 8 answers it Source: Zevachim 13b.
+  - was: דחיה
+  - now: תירוץ
+- **Zevachim 16a, step 13** (hebrewStepName): וחזר הדין / הצד השוה is the rebuilt proof (end of the יוכיח chain) and is refuted straight away in step 14 Source: Zevachim 16a.
+  - was: מסקנא
+  - now: ראיה
+- **Zevachim 16a, step 15** (hebrewStepName): רב סמא answers the פירכא (challenge) of step 14, defending the הצד השוה Source: Zevachim 16a.
+  - was: דחיה
+  - now: תירוץ
+- **Zevachim 16a, step 15** (relationToPreviousStep): wording follows the new label Source: Zevachim 16a.
+  - was: Rejects the refutation
+  - now: Answers the refutation
+- **Zevachim 16b, step 14** (hebrewStepName): וחזר הדין / הצד השוה is the rebuilt proof and is refuted straight away in step 15 Source: Zevachim 16b.
+  - was: מסקנא
+  - now: ראיה
+- **Zevachim 17a, step 13** (hebrewStepName): second half of the response of step 12 (which ends with ;), heading off an objection to it Source: Zevachim 17a.
+  - was: דחיה
+  - now: תשובה
+- **Zevachim 19b, step 9** (hebrewStepName): רבי יוחנן's own objection to his answer of step 8 (a new answer follows), not pushing aside a proof Source: Zevachim 19b.
+  - was: דחיה
+  - now: קשיא
+- **Zevachim 19b, step 9** (relationToPreviousStep): wording follows the new label Source: Zevachim 19b.
+  - was: Rejects the answer
+  - now: Challenges the answer
+- **Zevachim 19b, step 35** (hebrewStepName): objection to the answer of step 34 (הא כתיב לשרת) Source: Zevachim 19b.
+  - was: דחיה
+  - now: קשיא
+- **Zevachim 19b, step 35** (relationToPreviousStep): wording follows the new label Source: Zevachim 19b.
+  - was: Rejects the answer
+  - now: Challenges the answer
+- **Zevachim 23b, step 6** (hebrewStepName): end of the inference chain of steps 3-6, which step 7 pushes aside Source: Zevachim 23b.
+  - was: מסקנא
+  - now: ראיה
+- **Zevachim 25b, step 4** (hebrewStepName): objection to רבי יוחנן's answer to a בעיא (answer quoting a ברייתא), not to a proof Source: Zevachim 25b.
+  - was: דחיה
+  - now: קשיא
+- **Zevachim 25b, step 4** (relationToPreviousStep): wording follows the new label Source: Zevachim 25b.
+  - was: Rejects the proof
+  - now: Challenges the answer
+- **Zevachim 26b, step 8** (hebrewStepName): וכי תימא: objection to a possible answer Source: Zevachim 26b.
+  - was: דחיה
+  - now: קשיא
+- **Zevachim 28a, step 11** (hebrewStepName): explanatory survey of why each אמורא did not take the others' approach; continued in step 12, not a landing Source: Zevachim 28a.
+  - was: מסקנא
+  - now: מימרא
+- **Zevachim 28a, step 25** (hebrewStepName): אדרבה objection to the answer of step 24 Source: Zevachim 28a.
+  - was: דחיה
+  - now: קשיא
+- **Zevachim 28a, step 25** (relationToPreviousStep): wording follows the new label Source: Zevachim 28a.
+  - was: Rejects the answer
+  - now: Challenges the answer
+- **Zevachim 28b, step 10** (hebrewStepName): אדרבה objection to the answer of step 9 Source: Zevachim 28b.
+  - was: דחיה
+  - now: קשיא
+- **Zevachim 28b, step 10** (relationToPreviousStep): wording follows the new label Source: Zevachim 28b.
+  - was: Rejects step 9
+  - now: Challenges step 9
+- **Zevachim 32b, step 17** (hebrewStepName): רבא's אדרבה answers the challenge of step 16 Source: Zevachim 32b.
+  - was: דחיה
+  - now: תירוץ
+- **Zevachim 32b, step 17** (relationToPreviousStep): wording follows the new label Source: Zevachim 32b.
+  - was: Directly rejects the reasoning
+  - now: Directly answers the reasoning
+- **Zevachim 34a, step 2** (hebrewStepName): end of the היקש proof begun on the previous daf; challenged straight away in step 3 Source: Zevachim 34a.
+  - was: מסקנא
+  - now: ראיה
+- **Zevachim 34b, step 17** (hebrewStepName): third part of the צריכותא of steps 15-16 (מימרא) Source: Zevachim 34b.
+  - was: מסקנא
+  - now: מימרא
+- **Zevachim 35a, step 15** (hebrewStepName): וכי תימא: heads off a possible answer, part of the challenge Source: Zevachim 35a.
+  - was: דחיה
+  - now: קשיא
+- **Zevachim 38a, step 8** (hebrewStepName): end of the ברייתא's derivation (the תנא's source brought in step 4); challenged straight away in step 9 Source: Zevachim 38a.
+  - was: מסקנא
+  - now: ראיה
+- **Zevachim 38a, step 13** (hebrewStepName): objection to רב אדא בר יצחק's answer of step 12 Source: Zevachim 38a.
+  - was: דחיה
+  - now: קשיא
+- **Zevachim 38a, step 13** (relationToPreviousStep): wording follows the new label Source: Zevachim 38a.
+  - was: Rejects the answer
+  - now: Challenges the answer
+- **Zevachim 39a, step 13** (hebrewStepName): רבינא answers רב תחליפא's challenge Source: Zevachim 39a.
+  - was: דחיה
+  - now: תירוץ
+- **Zevachim 39a, step 13** (relationToPreviousStep): wording follows the new label Source: Zevachim 39a.
+  - was: Rejects the challenge
+  - now: Answers the challenge
+- **Zevachim 41a, step 1** (hebrewStepName): second half of רבי ישמעאל's קל וחומר spelled out at the end of 40b (מימרא); challenged straight away in step 2 Source: Zevachim 41a.
+  - was: מסקנא
+  - now: מימרא
+- **Zevachim 42b, step 16** (hebrewStepName): objection to the answer of step 15 Source: Zevachim 42b.
+  - was: דחיה
+  - now: קשיא
+- **Zevachim 42b, step 16** (relationToPreviousStep): wording follows the new label Source: Zevachim 42b.
+  - was: Rejects the answer
+  - now: Challenges the answer
+- **Zevachim 43b, step 8** (hebrewStepName): objection to רבא's answer (מידי מקוה כתיב) Source: Zevachim 43b.
+  - was: דחיה
+  - now: קשיא
+- **Zevachim 43b, step 8** (relationToPreviousStep): wording follows the new label Source: Zevachim 43b.
+  - was: Rejects רבא
+  - now: Challenges רבא
+- **Zevachim 45a, step 2** (hebrewStepName): אביי answers the objection הלכתא למשיחא Source: Zevachim 45a.
+  - was: דחיה
+  - now: תירוץ
+- **Zevachim 45a, step 2** (relationToPreviousStep): wording follows the new label Source: Zevachim 45a.
+  - was: Rejects the objection
+  - now: Answers the objection
+- **Zevachim 46b, step 10** (hebrewStepName): רבא's מסתברא ruling is challenged straight away in step 11 Source: Zevachim 46b.
+  - was: מסקנא
+  - now: מימרא
+- **Zevachim 48a, step 19** (hebrewStepName): לא, דכולי עלמא gives the real answer to the challenge of step 17 after setting aside the לימא Source: Zevachim 48a.
+  - was: דחיה
+  - now: תירוץ
+- **Zevachim 48b, step 13** (hebrewStepName): וכי תימא: shuts down a possible defence, part of the challenge Source: Zevachim 48b.
+  - was: דחיה
+  - now: קשיא
+- **Zevachim 49b, step 13** (hebrewStepName): completes the answer of step 12; challenged straight away in step 14 Source: Zevachim 49b.
+  - was: מסקנא
+  - now: תירוץ
+- **Zevachim 52a, step 17** (hebrewStepName): ת"ל line of the ברייתא (steps 14-16 מימרא); followed straight away by a challenge Source: Zevachim 52a.
+  - was: מסקנא
+  - now: מימרא
+- **Zevachim 59a, step 26** (hebrewStepName): answers the challenge against רב that the step-25 reading brought back (ולא תרוצי קא מתרצת? אימא שנשחטו) Source: Zevachim 59a.
+  - was: דחיה
+  - now: תירוץ
+- **Zevachim 5a, step 7** (hebrewStepName): ריש לקיש objects to רבי אלעזר's answer; not pushing aside a proof Source: Zevachim 5a.
+  - was: דחיה
+  - now: קשיא
+- **Zevachim 5a, step 7** (relationToPreviousStep): wording follows the label change to קשיא Source: Zevachim 5a.
+  - was: Rejects
+  - now: Challenges
+- **Zevachim 5a, step 7** (title): wording follows the label change to קשיא Source: Zevachim 5a.
+  - was: rejects
+  - now: objects to
+- **Zevachim 5b, step 5** (hebrewStepName): רבא's הקש is a new answer (אלא אמר רבא) and is challenged straight away in step 6; end-of-thread label is wrong Source: Zevachim 5b.
+  - was: מסקנא
+  - now: תירוץ
+- **Zevachim 5b, step 9** (hebrewStepName): רב ששת objects to the reply suggested in step 8; an objection to an answer Source: Zevachim 5b.
+  - was: דחיה
+  - now: קשיא
+- **Zevachim 5b, step 9** (relationToPreviousStep): wording follows the label change to קשיא Source: Zevachim 5b.
+  - was: Rejects the answer
+  - now: Challenges the answer
+- **Zevachim 60b, step 6** (hebrewStepName): the תלמוד לומר is the ברייתא's answer to the question of step 1, and is challenged in step 7 (וניהדר דינא) Source: Zevachim 60b.
+  - was: מסקנא
+  - now: תשובה
+- **Zevachim 60b, step 16** (hebrewStepName): רבי ירמיה attacks the Babylonian teaching and backs it with ברייתות; an objection, not pushing aside a proof Source: Zevachim 60b.
+  - was: דחיה
+  - now: קשיא
+- **Zevachim 66b, step 6** (hebrewStepName): second half of the proof begun in step 5 (ומדסיפא... רישא נמי), immediately pushed aside in step 7 Source: Zevachim 66b.
+  - was: מסקנא
+  - now: ראיה
+- **Zevachim 67a, step 8** (hebrewStepName): answers רבא's question in step 7 (מדלא קאמר ליה הכי שמע מינה) and is challenged at once in step 9 Source: Zevachim 67a.
+  - was: מסקנא
+  - now: תירוץ
+- **Zevachim 67a, step 11** (hebrewStepName): answers the challenge of step 10 (לא; כך הצעה של כולה משנה) Source: Zevachim 67a.
+  - was: דחיה
+  - now: תירוץ
+- **Zevachim 67b, step 3** (hebrewStepName): answers the challenge of step 2 (one person vs two) Source: Zevachim 67b.
+  - was: דחיה
+  - now: תירוץ
+- **Zevachim 67b, step 6** (hebrewStepName): וכי תימא... ומי מצית אמרת הכי closes off an answer and keeps the step-5 challenge going Source: Zevachim 67b.
+  - was: דחיה
+  - now: קשיא
+- **Zevachim 69a, step 7** (hebrewStepName): וכי תימא closes off an answer and continues the step-6 challenge Source: Zevachim 69a.
+  - was: דחיה
+  - now: קשיא
+- **Zevachim 69a, step 18** (hebrewStepName): יצא... is the second half of the answer in step 17 and is challenged at once in step 19 Source: Zevachim 69a.
+  - was: מסקנא
+  - now: תירוץ
+- **Zevachim 70a, step 8** (hebrewStepName): וכי תימא... continues the step-7 objection to אביי Source: Zevachim 70a.
+  - was: דחיה
+  - now: קשיא
+- **Zevachim 75b, step 12** (hebrewStepName): answers רבי יוסי בר אבין's objection in step 11 (הפדו?! רחמנא אמר לא תפדה) Source: Zevachim 75b.
+  - was: דחיה
+  - now: תירוץ
+- **Zevachim 75b, step 12** (relationToPreviousStep): wording follows the label change to תירוץ Source: Zevachim 75b.
+  - was: Rejects the objection
+  - now: Answers the objection
+- **Zevachim 76a, step 5** (hebrewStepName): אביי answers רב יוסף's proposed challenge with רבה's reply Source: Zevachim 76a.
+  - was: דחיה
+  - now: תירוץ
+- **Zevachim 76a, step 5** (relationToPreviousStep): wording follows the label change to תירוץ Source: Zevachim 76a.
+  - was: Rejects רב יוסף's proposed challenge
+  - now: Answers רב יוסף's proposed challenge
+- **Zevachim 76a, step 11** (hebrewStepName): מתקיף לה רבינא is an objection; step 12 answers it Source: Zevachim 76a.
+  - was: דחיה
+  - now: קשיא
+- **Zevachim 76a, step 11** (relationToPreviousStep): wording follows the label change to קשיא Source: Zevachim 76a.
+  - was: Rejects step 10's claim
+  - now: Challenges step 10's claim
+- **Zevachim 78a, step 7** (hebrewStepName): שמע מינה תלת is an inference from ריש לקיש's ruling, challenged at once in step 8 (מתיב רבא) Source: Zevachim 78a.
+  - was: מסקנא
+  - now: ראיה
+- **Zevachim 7b, step 26** (hebrewStepName): רב אשי objects to the הואיל וגלי answer; an objection to an answer, not to a proof Source: Zevachim 7b.
+  - was: דחיה
+  - now: קשיא
+- **Zevachim 7b, step 26** (relationToPreviousStep): wording follows the label change to קשיא Source: Zevachim 7b.
+  - was: Rejects the reasoning
+  - now: Challenges the reasoning
+- **Zevachim 80a, step 6** (hebrewStepName): רבי יהושע turns רבי אליעזר's answer back on him; objection to an answer Source: Zevachim 80a.
+  - was: דחיה
+  - now: קשיא
+- **Zevachim 82a, step 6** (hebrewStepName): second half of רב הונא's objection begun in step 5 Source: Zevachim 82a.
+  - was: דחיה
+  - now: קשיא
+- **Zevachim 87a, step 20** (hebrewStepName): ריש לקיש restates his question (לכתחילה ליקרב קמיבעי לי); step 21 is its תשובה Source: Zevachim 87a.
+  - was: דחיה
+  - now: שאלה
+- **Zevachim 87a, step 20** (relationToPreviousStep): wording follows the label change to שאלה Source: Zevachim 87a.
+  - was: Rejects step 19's answer
+  - now: Sets aside step 19's answer
+- **Zevachim 87b, step 12** (hebrewStepName): רב שימי בר אשי answers the challenge of step 11 by finding a case; step 13 then challenges him Source: Zevachim 87b.
+  - was: דחיה
+  - now: תירוץ
+- **Zevachim 87b, step 12** (relationToPreviousStep): wording follows the label change to תירוץ Source: Zevachim 87b.
+  - was: Rejects the challenge
+  - now: Answers the challenge
+- **Zevachim 89b, step 4** (hebrewStepName): הא כיצד is the end of the ברייתא brought as the source in steps 2-3, and is challenged at once in step 5 Source: Zevachim 89b.
+  - was: מסקנא
+  - now: ראיה
+- **Zevachim 90b, step 2** (hebrewStepName): step 1 tests the rule that a חטאת comes first (data labels it קשיא, as 90a step 25); לא, לנדבה answers it Source: Zevachim 90b.
+  - was: דחיה
+  - now: תירוץ
+- **Zevachim 90b, step 2** (relationToPreviousStep): wording follows the label change to תירוץ Source: Zevachim 90b.
+  - was: Rejects the proof in step 1
+  - now: Answers the challenge in step 1
+- **Zevachim 90b, step 5** (hebrewStepName): ואימא מרישא answers the step-4 challenge to the rule that a חטאת comes first Source: Zevachim 90b.
+  - was: דחיה
+  - now: תירוץ
+- **Zevachim 90b, step 5** (relationToPreviousStep): wording follows the label change to תירוץ Source: Zevachim 90b.
+  - was: Answers the proof in step 4
+  - now: Answers the challenge in step 4
+- **Zevachim 91b, step 13** (hebrewStepName): step 12's תא שמע attacks שמואל's reading of רבי טרפון (oil all to the fires); מידי איריא answers it Source: Zevachim 91b.
+  - was: דחיה
+  - now: תירוץ
+- **Zevachim 91b, step 13** (relationToPreviousStep): wording follows the label change to תירוץ Source: Zevachim 91b.
+  - was: Rejects the proof brought
+  - now: Answers the challenge brought
+- **Zevachim 94a, step 20** (hebrewStepName): רבא objects to his own answer (לאו מילתא היא דאמרי); step 21 gives a new answer Source: Zevachim 94a.
+  - was: דחיה
+  - now: קשיא
+- **Zevachim 94b, step 27** (hebrewStepName): וליטעמיך here defends the משנה against the chain of challenges in steps 19-26 Source: Zevachim 94b.
+  - was: דחיה
+  - now: תירוץ
+- **Zevachim 96b, step 10** (hebrewStepName): מי דמי objects to רמי בר חמא's defence in step 9; an objection to an answer Source: Zevachim 96b.
+  - was: דחיה
+  - now: קשיא
+- **Zevachim 96b, step 10** (relationToPreviousStep): wording follows the label change to קשיא Source: Zevachim 96b.
+  - was: Rejects the comparison
+  - now: Challenges the comparison
+
 ## 202611060555-rev117-labels-shas-m
 
 Approved: Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.
