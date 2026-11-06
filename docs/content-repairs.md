@@ -2,6 +2,128 @@
 
 Every change to the AI-written content, newest first. Each entry says what was wrong, the source used, and who approved it.
 
+## 202611060258-rev100-labels-discovery-b
+
+Approved: Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.
+
+- **Moed Katan 12b, step 1** (hebrewStepName): Second half of אביי's statement that begins on 12a (נקטינן הלכות מועד כהלכות שבת ... יש מהן פטור אבל אסור). Not where a discussion lands; the second half takes the first half's label (12a step 31 is מימרא). Source: Moed Katan 12a-b: אָמַר אַבָּיֵי נָקְטִינַן הִלְכוֹת מוֹעֵד כְּהִלְכוֹת שַׁבָּת ... יֵשׁ מֵהֶן פָּטוּר אֲבָל אָסוּר.
+  - was: מסקנא
+  - now: מימרא
+- **Moed Katan 12b, step 26** (hebrewStepName): אביי cursing רב's ruling is an opposing statement, not the pushing aside of a proof. Nothing here is a proof. Source: Moed Katan 12b: לָיֵיט עֲלַהּ אַבָּיֵי.
+  - was: דחיה
+  - now: מימרא
+- **Nazir 30a, step 1** (hebrewStepName): Second half of the challenge that ends 29b (אלא לרבי ... מאי איכא למימר): 'but he is still under his father's authority!' is an objection, not the pushing aside of a proof. 29b steps 12-13 are already קשיא. Source: Nazir 30a: הָא בִּרְשׁוּתֵיהּ דַּאֲבוּהּ קָאֵים.
+  - was: דחיה
+  - now: קשיא
+- **Nazir 30a, step 4** (hebrewStepName): First half of a הניחא ... אלא challenge (הניחא לרבי יוסי ברבי יהודה ... אלא לרבי מאי איכא למימר); step 5 is its second half. It follows a קשיא, not a שאלה, so תשובה cannot stand. The same construction on 29b (steps 12-13) is labelled קשיא, קשיא. Source: Nazir 30a: הָנִיחָא לְרַבִּי יוֹסֵי בְּרַבִּי יְהוּדָה.
+  - was: תשובה
+  - now: קשיא
+- **Nedarim 9a, step 11** (hebrewStepName): The ברייתא (טוב אשר לא תדור) is the source of step 10's difficulty: it shows neither רבי מאיר nor רבי יהודה distinguishes vow from gift. A source quoted to attack is a Challenge, never a Proof. Source: Nedarim 9a: דְּתַנְיָא טוֹב אֲשֶׁר לֹא תִדֹּר.
+  - was: ראיה
+  - now: קשיא
+- **Niddah 52a, step 1** (hebrewStepName): 'ריחני' is the answer to 51b's last step (ולבני מערבא ... לאתויי מאי? לאתויי ריחני), which is labelled קשיא. It is the second half of an answer, not a conclusion. (If 51b step 30 is ever relabelled שאלה, like its twin step 28, this should be תשובה.) Source: Niddah 51b-52a: לְאַתּוֹיֵי מַאי ... רֵיחָנֵי.
+  - was: מסקנא
+  - now: תירוץ
+- **Niddah 52a, step 14** (hebrewStepName): רב כהנא brings the story of רבי ישמעאל's daughter to stop his colleagues' plan to rule like רבי יהודה. A source brought against a plan is a Challenge, not a Proof. Source: Niddah 52a: אֲמַר לְהוּ רַב כָּהֲנָא לֹא כָּךְ הָיָה מַעֲשֶׂה.
+  - was: ראיה
+  - now: קשיא
+- **Niddah 52a, step 15** (hebrewStepName): Continuation of the same story רב כהנא quotes against the plan (rule 1: every step quoting the rest of the attacking source is קשיא). Source: Niddah 52a: אָמְרוּ דָּבָר שֶׁאָמַר אוֹתוֹ צַדִּיק.
+  - was: מימרא
+  - now: קשיא
+- **Niddah 52a, step 17** (hebrewStepName): The vote (נמנו וגמרו) is the end of רב כהנא's precedent and is the point that defeats the plan; same source as step 14. Source: Niddah 52a: וְנִמְנוּ וְגָמְרוּ.
+  - was: מימרא
+  - now: קשיא
+- **Niddah 52a, step 32** (hebrewStepName): Continues רבא's statement, which step 31 quotes (ואמר רבא) to attack two hairs in one follicle. Rule 1: the rest of the attacking source is also קשיא. Source: Niddah 52a: בִּסְעָרָה חֵירַף.
+  - was: מימרא
+  - now: קשיא
+- **Niddah 52a, step 33** (hebrewStepName): Same as step 32: the second half of רבא's statement, quoted inside the challenge. Source: Niddah 52a: בִּסְעָרָה הֱשִׁיבוּהוּ.
+  - was: מימרא
+  - now: קשיא
+- **Pesachim 15b, step 1** (hebrewStepName): End of the Tosefta that רבא quotes on 15a to object to רב נחמן (15a steps 13-16 are all קשיא). The second half takes the first half's label. Source: Pesachim 15b: הַפִּיגּוּל וְהַנּוֹתָר וְהַטָּמֵא בֵּית שַׁמַּאי אוֹמְרִים.
+  - was: מימרא
+  - now: קשיא
+- **Rosh Hashanah 32b, step 2** (hebrewStepName): No challenge comes before it. It is the Gemara's own comment on why the verse in step 1 is excluded, even though רב נחמן read it hopefully. Source: Rosh Hashanah 32b: וְאַף עַל גַּב דְּאָמַר רַב נַחְמָן ... אַדְכּוֹרֵי רִיתְחָא בְּרֵישׁ שַׁתָּא לָא מַדְכְּרִינַן.
+  - was: תירוץ
+  - now: מימרא
+- **Rosh Hashanah 32b, step 26** (hebrewStepName): The rest of the ברייתא רב הונא brings (תא שמע) to answer the challenge in step 24. Step 25 is תירוץ; the second half takes the first half's label. Source: Rosh Hashanah 32b: וְיָדַעְתָּ הַיּוֹם ... מַלְכוּת דִּבְרֵי רַבִּי יוֹסֵי.
+  - was: ראיה
+  - now: תירוץ
+- **Sanhedrin 28a, step 8** (hebrewStepName): The second half of רבא's objection (step 7, ולטעמיך) to רמי בר חמא's reasoning, which answered the question in step 5. An objection to an answer is a Challenge. Source: Sanhedrin 28a: אֶלָּא הֲזָמָה מֵעָלְמָא קָאָתֵי.
+  - was: דחיה
+  - now: קשיא
+- **Shabbat 59a, step 6** (hebrewStepName): Continuation of the attacking ברייתא brought with והתניא (steps 5 and 7, already קשיא in the data); the middle step must match. Source: Shabbat 59a: רַבִּי אֶלְעָזָר אוֹמֵר בְּמִדְרָסוֹת.
+  - was: מימרא
+  - now: קשיא
+- **Shevuot 4a, step 1** (hebrewStepName): Continuation of the משנה that 3b step 15 (תשובה) quotes as רבי יוחנן's source (אלא סתמא אשכח). The second half takes the first half's label. Source: Shevuot 4a: אֵינוֹ חַיָּיב אֶלָּא אַחַת. זוֹ הִיא שְׁבוּעַת בִּיטּוּי.
+  - was: מימרא
+  - now: תשובה
+- **Shevuot 4a, step 14** (hebrewStepName): Objections (אי הכי ... ותו ... ותו) to the answer of steps 11-13 that the משנה is about lashes. An objection to an answer is a Challenge; it is answered by רב יוסף in step 15. Source: Shevuot 4a: אִי הָכִי שְׁתַּיִם שֶׁהֵן אַרְבַּע.
+  - was: דחיה
+  - now: קשיא
+- **Shevuot 4a, step 14** (stepSummary): Summary calls the objections 'proofs'. Source: Shevuot 4a.
+  - was: brings three proofs from the משנה that it cannot be about lashes
+  - now: raises three objections from the משנה showing it cannot be about lashes
+- **Shevuot 4a, step 16** (hebrewStepName): רב כהנא clarifies how to understand רב יוסף's answer; no proof is pushed aside. It is the first half of the statement that step 17 finishes (מימרא). Source: Shevuot 4a: לָא תֵּימָא רַבִּי נָסֵיב לַהּ אַלִּיבָּא דְתַנָּאֵי.
+  - was: דחיה
+  - now: מימרא
+- **Sotah 22a, step 17** (hebrewStepName): Continuation of רבי יוחנן's statement quoted with אִינִי? וְהָאָמַר to attack the ברייתא (step 16). Rule 1: the rest of the attacking source is also קשיא. Source: Sotah 22a: יִרְאַת חֵטְא מִבְּתוּלָה.
+  - was: ראיה
+  - now: קשיא
+- **Sotah 22a, step 18** (hebrewStepName): Same: the second story is part of the same attacking statement; answered in step 19. Source: Sotah 22a: קִיבּוּל שָׂכָר מֵאַלְמָנָה.
+  - was: ראיה
+  - now: קשיא
+- **Sotah 22a, step 24** (hebrewStepName): Second half of רב's דרשה, quoted in step 23 (ראיה) to support רבי אבא. The second half takes the first half's label. Source: Sotah 22a: וַעֲצוּמִים כׇּל הֲרוּגֶיהָ.
+  - was: מימרא
+  - now: ראיה
+- **Sukkah 13b, step 13** (hebrewStepName): Second half of a two-sided analysis (מאן דאמר קוצר ... מאן דאמר בוצר ...), and step 14 continues the discussion. It is not a conclusion. Source: Sukkah 13b: מַאן דְּאָמַר בּוֹצֵר שֶׁאֵין לוֹ יָדוֹת.
+  - was: מסקנא
+  - now: מימרא
+- **Taanit 26a, step 1** (hebrewStepName): End of אביי and רבא's answer that begins on 25b (step 30 תשובה): one says הלל only on a full stomach. Source: Taanit 25b-26a: לְפִי שֶׁאֵין אוֹמְרִים הַלֵּל אֶלָּא עַל נֶפֶשׁ שְׂבֵעָה.
+  - was: מימרא
+  - now: תשובה
+- **Tamid 32a, step 27** (hebrewStepName): In a story, the king objects to the elders' answer. Rejection is only for pushing aside a proof; an objection to an answer is a Challenge. Source: Tamid 32a: דִּידִי טָבָא מִדִּידְכוּ.
+  - was: דחיה
+  - now: קשיא
+- **Tamid 32a, step 27** (relationToPreviousStep): Matches the new label. Source: Tamid 32a.
+  - was: Rejects the answer of step 26
+  - now: Challenges the answer of step 26
+- **Tamid 32a, step 36** (hebrewStepName): A line of the story in the middle of the episode (the king's next request follows at once). No Conclusion in the middle; story lines are Statement. Source: Tamid 32a: מִיָּד אַלְבֵּישׁ יָתְהוֹן לְבוּשִׁין דְּאַרְגְּווֹן.
+  - was: מסקנא
+  - now: מימרא
+- **Tamid 32a, step 37** (hebrewStepName): The king states a plan ('I want to go to אפריקי'); nothing is asked. Source: Tamid 32a: בָּעֵינָא דְּאֵיזִיל לִמְדִינַת אַפְרִיקֵי.
+  - was: שאלה
+  - now: מימרא
+- **Tamid 32a, step 38** (hebrewStepName): The elders object to the king's plan ('you cannot go'). With no question before it, it cannot be a Response; an objection to a plan in a story is a Challenge. Source: Tamid 32a: לָא מָצֵית אָזְלַתְּ.
+  - was: תשובה
+  - now: קשיא
+- **Temurah 2b, step 13** (hebrewStepName): End of the ברייתא that רבא quotes (תא שמע) in step 12 (ראיה); step 14 draws the inference. The second half takes the first half's label. Source: Temurah 2b: אָמַר רַבִּי יוֹסֵי בְּכוּלָּן אֲנִי רוֹאֶה לְהַחְמִיר.
+  - was: מימרא
+  - now: ראיה
+- **Yoma 71a, step 1** (hebrewStepName): End of the ברייתא's answer on 70b (מאי טעמא בא? להוציא כף ומחתה, שכל הפרשה ...), which is labelled תשובה (70b step 29). Source: Yoma 71a: שֶׁכׇּל הַפָּרָשָׁה כּוּלָּהּ נֶאֶמְרָה עַל הַסֵּדֶר.
+  - was: מימרא
+  - now: תשובה
+- **Yoma 71a, step 4** (hebrewStepName): Second half of רב חסדא's answer (step 3, תשובה): the reasoning that applies the tradition. Not a separate supporting source. Source: Yoma 71a: וְאִי אָמְרַתְּ כְּסִדְרָן כְּתִיבִי.
+  - was: ראיה
+  - now: תשובה
+- **Yoma 71a, step 14** (hebrewStepName): אדרבה pushes back on אביי's answer (step 13, תירוץ) to the challenge of step 12. An objection to an answer is a Challenge; step 15 answers it (תירוץ). Source: Yoma 71a: אַדְּרַבָּה מָה שׂוֹרֵף דְּהַשְׁתָּא.
+  - was: דחיה
+  - now: קשיא
+- **Yoma 71a, step 14** (relationToPreviousStep): Matches the new label; step 13 is an answer. Source: Yoma 71a.
+  - was: Rejects אביי's proof in Step 13
+  - now: Challenges אביי's answer in Step 13
+- **Yoma 71a, step 16** (hebrewStepName): רבא's alternative answer to the challenge of step 12 (why change the verses and not the משנה), parallel to אביי's answer in step 13 (תירוץ). Source: Yoma 71a: רָבָא אָמַר אָמַר קְרָא יׇעֳמַד חַי.
+  - was: ראיה
+  - now: תירוץ
+- **Yoma 71a, step 16** (title): Title should not name the step a proof once it is a Resolution. Source: Yoma 71a.
+  - was: רבא's proof:
+  - now: רבא's answer:
+- **Yoma 71a, step 16** (relationToPreviousStep): Matches the new label. Source: Yoma 71a.
+  - was: Gives an independent proof for the same point
+  - now: Gives an independent answer for the same point
+- **Zevachim 93b, step 28** (hebrewStepName): Inside the ברייתא that answers מנהני מילי (step 26); 'יכול ... תלמוד לומר' is a midrashic limit, not the pushing aside of a proof. The second half of the answer takes the first half's label (step 27, תשובה). Source: Zevachim 93b: יָכוֹל שֶׁאֲנִי מְרַבֶּה עוֹר עַד שֶׁלֹּא הוּפְשַׁט.
+  - was: דחיה
+  - now: תשובה
+
 ## 202611060257-rev99-berakhot-48-51-and-sample
 
 Approved: Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.

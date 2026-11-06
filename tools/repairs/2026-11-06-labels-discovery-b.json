@@ -1,0 +1,357 @@
+{
+ "name": "labels-discovery-b",
+ "approved": "Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.",
+ "repairs": [
+  {
+   "id": "Moed_Katan_12_b",
+   "step": 1,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "Second half of אביי's statement that begins on 12a (נקטינן הלכות מועד כהלכות שבת ... יש מהן פטור אבל אסור). Not where a discussion lands; the second half takes the first half's label (12a step 31 is מימרא).",
+   "source": "Moed Katan 12a-b: אָמַר אַבָּיֵי נָקְטִינַן הִלְכוֹת מוֹעֵד כְּהִלְכוֹת שַׁבָּת ... יֵשׁ מֵהֶן פָּטוּר אֲבָל אָסוּר"
+  },
+  {
+   "id": "Moed_Katan_12_b",
+   "step": 26,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "מימרא",
+   "why": "אביי cursing רב's ruling is an opposing statement, not the pushing aside of a proof. Nothing here is a proof.",
+   "source": "Moed Katan 12b: לָיֵיט עֲלַהּ אַבָּיֵי"
+  },
+  {
+   "id": "Nazir_30_a",
+   "step": 1,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "Second half of the challenge that ends 29b (אלא לרבי ... מאי איכא למימר): 'but he is still under his father's authority!' is an objection, not the pushing aside of a proof. 29b steps 12-13 are already קשיא.",
+   "source": "Nazir 30a: הָא בִּרְשׁוּתֵיהּ דַּאֲבוּהּ קָאֵים"
+  },
+  {
+   "id": "Nazir_30_a",
+   "step": 4,
+   "field": "hebrewStepName",
+   "find": "תשובה",
+   "replace": "קשיא",
+   "why": "First half of a הניחא ... אלא challenge (הניחא לרבי יוסי ברבי יהודה ... אלא לרבי מאי איכא למימר); step 5 is its second half. It follows a קשיא, not a שאלה, so תשובה cannot stand. The same construction on 29b (steps 12-13) is labelled קשיא, קשיא.",
+   "source": "Nazir 30a: הָנִיחָא לְרַבִּי יוֹסֵי בְּרַבִּי יְהוּדָה"
+  },
+  {
+   "id": "Nedarim_9_a",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "The ברייתא (טוב אשר לא תדור) is the source of step 10's difficulty: it shows neither רבי מאיר nor רבי יהודה distinguishes vow from gift. A source quoted to attack is a Challenge, never a Proof.",
+   "source": "Nedarim 9a: דְּתַנְיָא טוֹב אֲשֶׁר לֹא תִדֹּר"
+  },
+  {
+   "id": "Niddah_52_a",
+   "step": 1,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "'ריחני' is the answer to 51b's last step (ולבני מערבא ... לאתויי מאי? לאתויי ריחני), which is labelled קשיא. It is the second half of an answer, not a conclusion. (If 51b step 30 is ever relabelled שאלה, like its twin step 28, this should be תשובה.)",
+   "source": "Niddah 51b-52a: לְאַתּוֹיֵי מַאי ... רֵיחָנֵי"
+  },
+  {
+   "id": "Niddah_52_a",
+   "step": 14,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "רב כהנא brings the story of רבי ישמעאל's daughter to stop his colleagues' plan to rule like רבי יהודה. A source brought against a plan is a Challenge, not a Proof.",
+   "source": "Niddah 52a: אֲמַר לְהוּ רַב כָּהֲנָא לֹא כָּךְ הָיָה מַעֲשֶׂה"
+  },
+  {
+   "id": "Niddah_52_a",
+   "step": 15,
+   "field": "hebrewStepName",
+   "find": "מימרא",
+   "replace": "קשיא",
+   "why": "Continuation of the same story רב כהנא quotes against the plan (rule 1: every step quoting the rest of the attacking source is קשיא).",
+   "source": "Niddah 52a: אָמְרוּ דָּבָר שֶׁאָמַר אוֹתוֹ צַדִּיק"
+  },
+  {
+   "id": "Niddah_52_a",
+   "step": 17,
+   "field": "hebrewStepName",
+   "find": "מימרא",
+   "replace": "קשיא",
+   "why": "The vote (נמנו וגמרו) is the end of רב כהנא's precedent and is the point that defeats the plan; same source as step 14.",
+   "source": "Niddah 52a: וְנִמְנוּ וְגָמְרוּ"
+  },
+  {
+   "id": "Niddah_52_a",
+   "step": 32,
+   "field": "hebrewStepName",
+   "find": "מימרא",
+   "replace": "קשיא",
+   "why": "Continues רבא's statement, which step 31 quotes (ואמר רבא) to attack two hairs in one follicle. Rule 1: the rest of the attacking source is also קשיא.",
+   "source": "Niddah 52a: בִּסְעָרָה חֵירַף"
+  },
+  {
+   "id": "Niddah_52_a",
+   "step": 33,
+   "field": "hebrewStepName",
+   "find": "מימרא",
+   "replace": "קשיא",
+   "why": "Same as step 32: the second half of רבא's statement, quoted inside the challenge.",
+   "source": "Niddah 52a: בִּסְעָרָה הֱשִׁיבוּהוּ"
+  },
+  {
+   "id": "Pesachim_15_b",
+   "step": 1,
+   "field": "hebrewStepName",
+   "find": "מימרא",
+   "replace": "קשיא",
+   "why": "End of the Tosefta that רבא quotes on 15a to object to רב נחמן (15a steps 13-16 are all קשיא). The second half takes the first half's label.",
+   "source": "Pesachim 15b: הַפִּיגּוּל וְהַנּוֹתָר וְהַטָּמֵא בֵּית שַׁמַּאי אוֹמְרִים"
+  },
+  {
+   "id": "Rosh_Hashanah_32_b",
+   "step": 2,
+   "field": "hebrewStepName",
+   "find": "תירוץ",
+   "replace": "מימרא",
+   "why": "No challenge comes before it. It is the Gemara's own comment on why the verse in step 1 is excluded, even though רב נחמן read it hopefully.",
+   "source": "Rosh Hashanah 32b: וְאַף עַל גַּב דְּאָמַר רַב נַחְמָן ... אַדְכּוֹרֵי רִיתְחָא בְּרֵישׁ שַׁתָּא לָא מַדְכְּרִינַן"
+  },
+  {
+   "id": "Rosh_Hashanah_32_b",
+   "step": 26,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "תירוץ",
+   "why": "The rest of the ברייתא רב הונא brings (תא שמע) to answer the challenge in step 24. Step 25 is תירוץ; the second half takes the first half's label.",
+   "source": "Rosh Hashanah 32b: וְיָדַעְתָּ הַיּוֹם ... מַלְכוּת דִּבְרֵי רַבִּי יוֹסֵי"
+  },
+  {
+   "id": "Sanhedrin_28_a",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "The second half of רבא's objection (step 7, ולטעמיך) to רמי בר חמא's reasoning, which answered the question in step 5. An objection to an answer is a Challenge.",
+   "source": "Sanhedrin 28a: אֶלָּא הֲזָמָה מֵעָלְמָא קָאָתֵי"
+  },
+  {
+   "id": "Shabbat_59_a",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "מימרא",
+   "replace": "קשיא",
+   "why": "Continuation of the attacking ברייתא brought with והתניא (steps 5 and 7, already קשיא in the data); the middle step must match.",
+   "source": "Shabbat 59a: רַבִּי אֶלְעָזָר אוֹמֵר בְּמִדְרָסוֹת"
+  },
+  {
+   "id": "Shevuot_4_a",
+   "step": 1,
+   "field": "hebrewStepName",
+   "find": "מימרא",
+   "replace": "תשובה",
+   "why": "Continuation of the משנה that 3b step 15 (תשובה) quotes as רבי יוחנן's source (אלא סתמא אשכח). The second half takes the first half's label.",
+   "source": "Shevuot 4a: אֵינוֹ חַיָּיב אֶלָּא אַחַת. זוֹ הִיא שְׁבוּעַת בִּיטּוּי"
+  },
+  {
+   "id": "Shevuot_4_a",
+   "step": 14,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "Objections (אי הכי ... ותו ... ותו) to the answer of steps 11-13 that the משנה is about lashes. An objection to an answer is a Challenge; it is answered by רב יוסף in step 15.",
+   "source": "Shevuot 4a: אִי הָכִי שְׁתַּיִם שֶׁהֵן אַרְבַּע"
+  },
+  {
+   "id": "Shevuot_4_a",
+   "step": 14,
+   "field": "stepSummary",
+   "find": "brings three proofs from the משנה that it cannot be about lashes",
+   "replace": "raises three objections from the משנה showing it cannot be about lashes",
+   "why": "Summary calls the objections 'proofs'.",
+   "source": "Shevuot 4a"
+  },
+  {
+   "id": "Shevuot_4_a",
+   "step": 16,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "מימרא",
+   "why": "רב כהנא clarifies how to understand רב יוסף's answer; no proof is pushed aside. It is the first half of the statement that step 17 finishes (מימרא).",
+   "source": "Shevuot 4a: לָא תֵּימָא רַבִּי נָסֵיב לַהּ אַלִּיבָּא דְתַנָּאֵי"
+  },
+  {
+   "id": "Sotah_22_a",
+   "step": 17,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "Continuation of רבי יוחנן's statement quoted with אִינִי? וְהָאָמַר to attack the ברייתא (step 16). Rule 1: the rest of the attacking source is also קשיא.",
+   "source": "Sotah 22a: יִרְאַת חֵטְא מִבְּתוּלָה"
+  },
+  {
+   "id": "Sotah_22_a",
+   "step": 18,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "Same: the second story is part of the same attacking statement; answered in step 19.",
+   "source": "Sotah 22a: קִיבּוּל שָׂכָר מֵאַלְמָנָה"
+  },
+  {
+   "id": "Sotah_22_a",
+   "step": 24,
+   "field": "hebrewStepName",
+   "find": "מימרא",
+   "replace": "ראיה",
+   "why": "Second half of רב's דרשה, quoted in step 23 (ראיה) to support רבי אבא. The second half takes the first half's label.",
+   "source": "Sotah 22a: וַעֲצוּמִים כׇּל הֲרוּגֶיהָ"
+  },
+  {
+   "id": "Sukkah_13_b",
+   "step": 13,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "Second half of a two-sided analysis (מאן דאמר קוצר ... מאן דאמר בוצר ...), and step 14 continues the discussion. It is not a conclusion.",
+   "source": "Sukkah 13b: מַאן דְּאָמַר בּוֹצֵר שֶׁאֵין לוֹ יָדוֹת"
+  },
+  {
+   "id": "Taanit_26_a",
+   "step": 1,
+   "field": "hebrewStepName",
+   "find": "מימרא",
+   "replace": "תשובה",
+   "why": "End of אביי and רבא's answer that begins on 25b (step 30 תשובה): one says הלל only on a full stomach.",
+   "source": "Taanit 25b-26a: לְפִי שֶׁאֵין אוֹמְרִים הַלֵּל אֶלָּא עַל נֶפֶשׁ שְׂבֵעָה"
+  },
+  {
+   "id": "Tamid_32_a",
+   "step": 27,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "In a story, the king objects to the elders' answer. Rejection is only for pushing aside a proof; an objection to an answer is a Challenge.",
+   "source": "Tamid 32a: דִּידִי טָבָא מִדִּידְכוּ"
+  },
+  {
+   "id": "Tamid_32_a",
+   "step": 27,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the answer of step 26",
+   "replace": "Challenges the answer of step 26",
+   "why": "Matches the new label.",
+   "source": "Tamid 32a"
+  },
+  {
+   "id": "Tamid_32_a",
+   "step": 36,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "A line of the story in the middle of the episode (the king's next request follows at once). No Conclusion in the middle; story lines are Statement.",
+   "source": "Tamid 32a: מִיָּד אַלְבֵּישׁ יָתְהוֹן לְבוּשִׁין דְּאַרְגְּווֹן"
+  },
+  {
+   "id": "Tamid_32_a",
+   "step": 37,
+   "field": "hebrewStepName",
+   "find": "שאלה",
+   "replace": "מימרא",
+   "why": "The king states a plan ('I want to go to אפריקי'); nothing is asked.",
+   "source": "Tamid 32a: בָּעֵינָא דְּאֵיזִיל לִמְדִינַת אַפְרִיקֵי"
+  },
+  {
+   "id": "Tamid_32_a",
+   "step": 38,
+   "field": "hebrewStepName",
+   "find": "תשובה",
+   "replace": "קשיא",
+   "why": "The elders object to the king's plan ('you cannot go'). With no question before it, it cannot be a Response; an objection to a plan in a story is a Challenge.",
+   "source": "Tamid 32a: לָא מָצֵית אָזְלַתְּ"
+  },
+  {
+   "id": "Temurah_2_b",
+   "step": 13,
+   "field": "hebrewStepName",
+   "find": "מימרא",
+   "replace": "ראיה",
+   "why": "End of the ברייתא that רבא quotes (תא שמע) in step 12 (ראיה); step 14 draws the inference. The second half takes the first half's label.",
+   "source": "Temurah 2b: אָמַר רַבִּי יוֹסֵי בְּכוּלָּן אֲנִי רוֹאֶה לְהַחְמִיר"
+  },
+  {
+   "id": "Yoma_71_a",
+   "step": 1,
+   "field": "hebrewStepName",
+   "find": "מימרא",
+   "replace": "תשובה",
+   "why": "End of the ברייתא's answer on 70b (מאי טעמא בא? להוציא כף ומחתה, שכל הפרשה ...), which is labelled תשובה (70b step 29).",
+   "source": "Yoma 71a: שֶׁכׇּל הַפָּרָשָׁה כּוּלָּהּ נֶאֶמְרָה עַל הַסֵּדֶר"
+  },
+  {
+   "id": "Yoma_71_a",
+   "step": 4,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "תשובה",
+   "why": "Second half of רב חסדא's answer (step 3, תשובה): the reasoning that applies the tradition. Not a separate supporting source.",
+   "source": "Yoma 71a: וְאִי אָמְרַתְּ כְּסִדְרָן כְּתִיבִי"
+  },
+  {
+   "id": "Yoma_71_a",
+   "step": 14,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "אדרבה pushes back on אביי's answer (step 13, תירוץ) to the challenge of step 12. An objection to an answer is a Challenge; step 15 answers it (תירוץ).",
+   "source": "Yoma 71a: אַדְּרַבָּה מָה שׂוֹרֵף דְּהַשְׁתָּא"
+  },
+  {
+   "id": "Yoma_71_a",
+   "step": 14,
+   "field": "relationToPreviousStep",
+   "find": "Rejects אביי's proof in Step 13",
+   "replace": "Challenges אביי's answer in Step 13",
+   "why": "Matches the new label; step 13 is an answer.",
+   "source": "Yoma 71a"
+  },
+  {
+   "id": "Yoma_71_a",
+   "step": 16,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "תירוץ",
+   "why": "רבא's alternative answer to the challenge of step 12 (why change the verses and not the משנה), parallel to אביי's answer in step 13 (תירוץ).",
+   "source": "Yoma 71a: רָבָא אָמַר אָמַר קְרָא יׇעֳמַד חַי"
+  },
+  {
+   "id": "Yoma_71_a",
+   "step": 16,
+   "field": "title",
+   "find": "רבא's proof:",
+   "replace": "רבא's answer:",
+   "why": "Title should not name the step a proof once it is a Resolution.",
+   "source": "Yoma 71a"
+  },
+  {
+   "id": "Yoma_71_a",
+   "step": 16,
+   "field": "relationToPreviousStep",
+   "find": "Gives an independent proof for the same point",
+   "replace": "Gives an independent answer for the same point",
+   "why": "Matches the new label.",
+   "source": "Yoma 71a"
+  },
+  {
+   "id": "Zevachim_93_b",
+   "step": 28,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תשובה",
+   "why": "Inside the ברייתא that answers מנהני מילי (step 26); 'יכול ... תלמוד לומר' is a midrashic limit, not the pushing aside of a proof. The second half of the answer takes the first half's label (step 27, תשובה).",
+   "source": "Zevachim 93b: יָכוֹל שֶׁאֲנִי מְרַבֶּה עוֹר עַד שֶׁלֹּא הוּפְשַׁט"
+  }
+ ]
+}
