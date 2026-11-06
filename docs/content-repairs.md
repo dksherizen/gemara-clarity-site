@@ -2,6 +2,200 @@
 
 Every change to the AI-written content, newest first. Each entry says what was wrong, the source used, and who approved it.
 
+## 202611060242-rev94-dafyomi-berakhot-2
+
+Approved: Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.
+
+- **Berakhot 12a, step 21** (stepSummary): Rashi says explicitly that the answer is NOT that the ending works as its own ברכה; the opening itself is valid because it already includes both day and night. Source: Berakhot 12a 'כי קאמר ברכה ומלכות מעיקרא אתרוייהו קאמר'; Rashi s.v. ה"ג אלא כיון דאמר: 'לא תימא משום חתימתה יצא אלא פתיחתה נמי מעלייתא היא'.
+  - was: So the name and kingship said at the start apply to both parts, and the ending is still a proper ברכה even for רבי יוחנן.
+  - now: So the name and kingship said at the start cover both day and night, and the opening itself is valid, not only the ending. So the ברייתא still proves nothing about wine and beer.
+- **Berakhot 12a, step 21** (whatsHappening): Same error: per Rashi the opening is valid on its own, not carried over to make the ending a full ברכה. Source: Rashi 12a s.v. ה"ג אלא כיון דאמר: 'הלכך אדעתא דתרוייהו הויא'.
+  - was: The kingship at the opening of the ברכה counts for the ending too.
+  - now: The opening, said with God's name and kingship, already fits both day and night, so it is a valid opening at either time.
+- **Berakhot 12a, step 21** (deeperAnalysis): Same error: Rashi rejects reading this as the ending becoming a full ברכה. Source: Rashi 12a s.v. ה"ג אלא כיון דאמר.
+  - was: the opening kingship applies to the whole ברכה. So for רבי יוחנן the ending can also act as a full ברכה, and there is still no proof
+  - now: an opening said with the other time of day in mind still fits, so he is יוצא because the opening is valid too, not only because of the ending (Rashi). So there is still no proof
+- **Berakhot 12a, step 21** (phrases.5.notes): Same error shown on screen in the phrase note. Source: Rashi 12a s.v. ה"ג אלא כיון דאמר.
+  - was: so the opening kingship carries over to the ending too.
+  - now: so an opening meant for the other time of day is still a valid opening.
+- **Berakhot 13a, step 18** (stepSummary): 'Had in mind to do so' means intent to fulfill the מצוה, but the גמרא concludes it means intent to read (בקורא להגיה); this also contradicts the step's own confusionAlert. Source: Berakhot 13a 'מאי אם כוון לבו — לקרות... בקורא להגיה'; Rashi s.v. בקורא להגיה.
+  - was: fulfills his duty if he had in mind to do so.
+  - now: fulfills his duty if he focused his heart (כוון לבו).
+- **Berakhot 16b, step 1** (simpleTranslation): The בתולה/אלמנה distinction comes from the ברייתא on 16a (מכאן אמרו), not from the משנה, which only says a חתן is exempt. Source: Berakhot 16a: מִכָּאן אָמְרוּ: הַכּוֹנֵס אֶת הַבְּתוּלָה — פָּטוּר (ברייתא, תנו רבנן); משנה 16a: חָתָן פָּטוּר מִקְּרִיאַת שְׁמַע.
+  - was: why does the משנה talk specifically about someone marrying a בתולה?
+  - now: why does the ברייתא talk specifically about someone marrying a בתולה?
+- **Berakhot 16b, step 1** (deeperAnalysis): Same error: the בתולה case is in the ברייתא, not the משנה. Source: Berakhot 16a: תָּנוּ רַבָּנַן ... מִכָּאן אָמְרוּ: הַכּוֹנֵס אֶת הַבְּתוּלָה — פָּטוּר.
+  - was: the משנה's focus on a בתולה looks too narrow
+  - now: the ברייתא's focus on a בתולה looks too narrow
+- **Berakhot 16b, step 2** (deeperAnalysis): Same error: the משנה never mentions a בתולה; the ברייתא does. Source: Berakhot 16a: הַכּוֹנֵס אֶת הַבְּתוּלָה — פָּטוּר, וְאֶת הָאַלְמָנָה — חַיָּיב (ברייתא).
+  - was: That is why the משנה mentions only the בתולה case.
+  - now: That is why the ברייתא exempts only the בתולה case.
+- **Berakhot 17a** (overview): Rashi says the חכמים took leave of one another (זה מזה) to go home, not that students blessed their רבי. Source: Berakhot 17a: כִּי הֲווֹ מִפַּטְרִי רַבָּנַן מִבֵּי רַבִּי אַמֵּי; Rashi s.v. מפטרי רבנן: זה מזה שהיה נוטל רשות מחבירו לשוב לביתו ולארצו.
+  - was: It ends with the farewell blessings students gave their רבי,
+  - now: It ends with the farewell blessings the חכמים gave each other when leaving the ישיבה,
+- **Berakhot 17a, step 18** (stepSummary): Per Rashi the blessing was said by the חכמים to one another on parting, not to רבי אמי. Source: Rashi 17a s.v. מפטרי רבנן: זה מזה שהיה נוטל רשות מחבירו.
+  - was: they gave him a long blessing
+  - now: they gave each other a long blessing
+- **Berakhot 17a, step 18** (simpleTranslation): Per Rashi the חכמים blessed one another on parting. Source: Rashi 17a s.v. מפטרי רבנן: זה מזה.
+  - was: they would bless him like this:
+  - now: they would bless each other like this:
+- **Berakhot 17a, step 18** (whatsHappening): Rashi: the parting was of colleagues from each other, not students from their teacher. Source: Rashi 17a s.v. מפטרי רבנן: זה מזה שהיה נוטל רשות מחבירו לשוב לביתו ולארצו.
+  - was: the blessing that students gave their רבי when leaving his ישיבה
+  - now: the blessing the חכמים gave each other when they took leave of one another at the ישיבה to go home
+- **Berakhot 17a, step 18** (mimraCoreRuling): Per Rashi the blessing was between colleagues on parting. Source: Rashi 17a s.v. מפטרי רבנן: זה מזה.
+  - was: Students would bless their רבי with
+  - now: When the חכמים parted from each other, they would bless one another with
+- **Berakhot 17a, step 19** (stepSummary): Per Rashi the farewell was between the חכמים themselves. Source: Rashi 17a s.v. מפטרי רבנן: זה מזה.
+  - was: they blessed him with a פסוק
+  - now: they blessed each other with a פסוק
+- **Berakhot 17a, step 19** (simpleTranslation): Per Rashi the farewell was between the חכמים themselves. Source: Rashi 17a s.v. מפטרי רבנן: זה מזה.
+  - was: they would say to him the פסוק
+  - now: they would say to each other the פסוק
+- **Berakhot 17a, step 19** (whatToRemember): Per Rashi the farewell blessings were between colleagues, not to the רבי. Source: Rashi 17a s.v. מפטרי רבנן: זה מזה שהיה נוטל רשות מחבירו.
+  - was: The חכמים had a custom of blessing their רבי when they left his ישיבה,
+  - now: The חכמים had a custom of blessing each other when they parted at the ישיבה,
+- **Berakhot 17a, step 19** (whatsHappening): Per Rashi the farewell blessings were said by the חכמים to one another, not by students to a teacher. Source: Rashi 17a s.v. מפטרי רבנן: זה מזה.
+  - was: Here the students used a פסוק
+  - now: Here the חכמים used a פסוק
+- **Berakhot 19a, step 17** (whatsHappening): In רבי אלעזר's list, hand-washing comes first and speaking after the bier of scholars comes second; the Gemara explains the second one first. Source: Berakhot 19a: נפק דק ואשכח תלת: המזלזל בנטילת ידים, והמספר אחר מטתן של תלמידי חכמים, והמגיס דעתו.
+  - was: takes the first of רבי אלעזר's three cases
+  - now: takes the second case on רבי אלעזר's list (it is explained first)
+- **Berakhot 19a, step 19** (whatsHappening): Belittling hand-washing is the first case in רבי אלעזר's list, not the second. Source: Berakhot 19a: ואשכח תלת: המזלזל בנטילת ידים....
+  - was: moves to the second case and asks
+  - now: moves to the first case on רבי אלעזר's list and asks
+- **Berakhot 21a, step 1** (stepSummary): The reason being challenged, 'a matter the community is busy with', is רב אדא בר אהבה's statement at the end of 20b; רבי אלעזר's reason was only 'so he does not sit idle'. Source: Berakhot 20b: אמר רב אדא בר אהבה בדבר שהציבור עוסקין בו; 21a: והרי תפלה דדבר שהציבור עסוקין בו.
+  - was: challenges רבי אלעזר's reason using תפלה
+  - now: challenges רב אדא בר אהבה's reason using תפלה
+- **Berakhot 21a, step 1** (relationToPreviousStep): Same misattribution: 'because the community is busy with it' is רב אדא בר אהבה's answer, not רבי אלעזר's. Source: Berakhot 20b: אמר רב אדא בר אהבה בדבר שהציבור עוסקין בו.
+  - was: Challenges רבי אלעזר's reason from before this section
+  - now: Challenges רב אדא בר אהבה's reason from before this section
+- **Berakhot 22b** (overview): The four-אמות distance in the משנה is from urine and feces, not from foul things in general; the משנה is elliptical and 'from them' means urine. Source: Berakhot 22b mishna (וכמה ירחיק מהן ומן הצואה); Rashi s.v. וכמה ירחיק מהם – ממי רגלים, and s.v. עד שיתן לתוכן מים (חסורי מחסרא, explained on 25b).
+  - was: and to keep four אמות from foul things
+  - now: and to keep four אמות from urine and צואה
+- **Berakhot 22b, step 22** (stepSummary): Per Rashi and the Gemara on 25b, 'מהן' in the משנה refers to urine, not to the foul or soaking water. Source: Berakhot 22b (וכמה ירחיק מהן ומן הצואה – ארבע אמות); Rashi s.v. וכמה ירחיק מהם – ממי רגלים.
+  - was: One must also keep four אמות away from such things and from צואה.
+  - now: One must also keep four אמות away from urine and from צואה.
+- **Berakhot 22b, step 22** (simpleTranslation): 'Them' is urine according to Rashi's reading of the elliptical משנה, not the foul water just mentioned. Source: Rashi s.v. וכמה ירחיק מהם – ממי רגלים.
+  - was: And how far must he keep from them and from feces?
+  - now: And how far must he keep from them (urine) and from feces?
+- **Berakhot 22b, step 22** (deeperAnalysis): The distance rule is about urine and feces, per Rashi. Source: Rashi s.v. וכמה ירחיק מהם – ממי רגלים.
+  - was: keep four אמות from bad-smelling things and צואה when saying שמע
+  - now: keep four אמות from urine and צואה when saying שמע
+- **Berakhot 22b, step 22** (whatToRemember): The distance rule is about urine and feces, per Rashi. Source: Rashi s.v. וכמה ירחיק מהם – ממי רגלים.
+  - was: and keep four אמות from foul things.
+  - now: and keep four אמות from urine and צואה.
+- **Berakhot 22b, step 22** (mimraCoreRuling): The distance rule is about urine and feces, per Rashi. Source: Rashi s.v. וכמה ירחיק מהם – ממי רגלים.
+  - was: One must keep four אמות from foul things and צואה.
+  - now: One must keep four אמות from urine and צואה.
+- **Berakhot 23a, step 15** (deeperAnalysis): The ברייתא only requires removing them from the head; the same amud (steps 19-26) concludes that he holds them in his hand and enters, so saying they may not be brought in contradicts the site's own later steps. Source: Berakhot 23a (חולץ תפיליו ברחוק ארבע אמות ונכנס; התקינו שיהא אוחזן בידו ונכנס); Rashi s.v. חולץ ונפנה לאלתר – ובקבוע נמי אוחזן בידו... שבזמן שהם בראשו הם בגלוי.
+  - was: you may not bring תפילין into a bathroom, and you must take them off before you get close to it
+  - now: you may not wear תפילין into a bathroom, so you must take them off before you get close to it
+- **Berakhot 23b, step 5** (phrases.3.notes): The line is from a separate ברייתא introduced by מיתיבי (whose סיפא has 'זהו קל וחומר שאין עליו תשובה'); it does not appear in the bathroom ברייתות on 23a. Source: Berakhot 23b (מיתיבי: דברים שהתרתי לך כאן...); Rashi s.v. הא דקתני עלה – בסיפא דידה.
+  - was: This line comes from the earlier bathroom ברייתא.
+  - now: This line comes from a ברייתא about the two kinds of bathroom.
+- **Berakhot 23b, step 5** (whatsHappening): The quoted line is not from the 23a bathroom ברייתות; it is a new source brought with מיתיבי. Source: Berakhot 23b (מיתיבי: דברים שהתרתי לך כאן אסרתי לך כאן).
+  - was: using a line from the earlier bathroom ברייתא.
+  - now: using a line from a ברייתא about the two kinds of bathroom.
+- **Berakhot 25a, step 12** (stepSummary): The condition 'when hides were placed in them' applies to both pig and dog waste, not only to dog waste. Source: Berakhot 25a: וְלֹא כְּנֶגֶד צוֹאַת חֲזִירִים וְלֹא כְּנֶגֶד צוֹאַת כְּלָבִים בִּזְמַן שֶׁנָּתַן עוֹרוֹת לְתוֹכָן; Rashi s.v. בזמן שיש בהן עורות: אצואת כלבים וחזירים קאי; Rashi s.v. לית הלכתא: דאסר צואת כלבים וחזירים בשאין בהם עורות.
+  - was: forbids only human waste, pig waste, and dog waste that hides were put into.
+  - now: forbids only human waste, and pig or dog waste that hides were put into.
+- **Berakhot 25a, step 12** (simpleTranslation): Same error: the hides condition covers both pig and dog waste (לְתוֹכָן is plural). Source: Berakhot 25a: בִּזְמַן שֶׁנָּתַן עוֹרוֹת לְתוֹכָן; Rashi s.v. בזמן שיש בהן עורות.
+  - was: or pig waste, or dog waste when hides were placed in it.
+  - now: or pig waste or dog waste when hides were placed in them.
+- **Berakhot 25a, step 12** (deeperAnalysis): Rashi says רבא rejects the first ברייתא for forbidding dog and pig waste without hides; the second ברייתא's hides condition applies to both. Source: Rashi 25a s.v. לית הלכתא כי הא מתניתא: דאסר צואת כלבים וחזירים בשאין בהם עורות.
+  - was: The first ברייתא forbade all dog waste, chicken waste, and a smelly garbage heap. The second ברייתא forbids only human waste, pig waste, and dog waste used for tanning hides.
+  - now: The first ברייתא forbade all dog and pig waste, chicken waste, and a smelly garbage heap. The second ברייתא forbids only human waste, and pig or dog waste used for tanning hides.
+- **Berakhot 25a, step 12** (mimraCoreRuling): The hides condition applies to pig waste too, not only dog waste. Source: Rashi 25a s.v. בזמן שיש בהן עורות: אצואת כלבים וחזירים קאי.
+  - was: human waste, pig waste, or dog waste that hides were placed in.
+  - now: human waste, or pig or dog waste that hides were placed in.
+- **Berakhot 25a, step 12** (phrases.8.english): לְתוֹכָן is plural and refers to both the pig and dog waste. Source: Berakhot 25a: בִּזְמַן שֶׁנָּתַן עוֹרוֹת לְתוֹכָן; Rashi s.v. בזמן שיש בהן עורות.
+  - was: when he placed hides into it.
+  - now: when he placed hides into them.
+- **Berakhot 24a, step 17** (deeperAnalysis): Rashi explains the problem as the two people's buttocks touching each other, not facing each other (once turned away, neither can see the other). Source: Berakhot 24a: וְהָא אִיכָּא עֲגָבוֹת; Rashi s.v. הא איכא עגבות: דנגעי אהדדי.
+  - was: but now the two backs face each other.
+  - now: but now their bare buttocks touch each other.
+- **Berakhot 24a, step 17** (phrases.3.notes): Same point: per Rashi the concern is contact between their buttocks. Source: Rashi 24a s.v. הא איכא עגבות: דנגעי אהדדי.
+  - was: their bare backs are facing each other.
+  - now: their bare buttocks touch each other.
+- **Berakhot 26a, step 1** (title): The line is the end of רבא's ruling that begins on 25b with גְּלִימָא (a cloak); it is the cloak over the chest, not merely placing the item on a chest, that counts as a vessel within a vessel. Source: Berakhot 25b-26a: אָמַר רָבָא: גְּלִימָא אַקַּמְטְרָא — כִּכְלִי בְּתוֹךְ כְּלִי דָּמֵי; Rashi s.v. ככלי בתוך כלי דמי: דהא גלימא לאו כליין הוא.
+  - was: Placing it on a chest counts as a vessel within a vessel
+  - now: A cloak spread over a chest counts as a vessel within a vessel
+- **Berakhot 26a, step 1** (stepSummary): Omits the cloak (גְּלִימָא) that starts רבא's ruling on 25b; placing on a chest alone is not what the Gemara says counts as double covering. Source: Berakhot 25b: אָמַר רָבָא: גְּלִימָא אַקַּמְטְרָא; Rashi s.v. ככלי בתוך כלי דמי.
+  - was: an item placed on top of a chest is treated like a vessel inside another vessel
+  - now: according to רבא, a cloak spread over the items on a chest is treated like a vessel inside another vessel
+- **Berakhot 26a, step 1** (simpleTranslation): The subject of the sentence is the cloak from the end of 25b, not the holy item itself. Source: Berakhot 25b: אָמַר רָבָא: גְּלִימָא אַקַּמְטְרָא.
+  - was: If it is placed on a chest, that is like a vessel within a vessel.
+  - now: (רבא said: a cloak) on a chest is like a vessel within a vessel.
+- **Berakhot 26a, step 1** (whatsHappening): Same error: the double covering is cloak plus chest, not the chest alone. Source: Berakhot 25b-26a; Rashi s.v. ככלי בתוך כלי דמי: דהא גלימא לאו כליין הוא.
+  - was: Putting a holy object on top of a chest counts as covering it twice, like a vessel inside a vessel.
+  - now: רבא's ruling: a cloak spread over holy items on a chest counts as covering them twice, like a vessel inside a vessel.
+- **Berakhot 26a, step 1** (deeperAnalysis): Same error; Rashi explains the cloak counts because it is not the items' own container (כליין). Source: Rashi s.v. ככלי בתוך כלי דמי: דהא גלימא לאו כליין הוא.
+  - was: The new point is that the chest adds a second layer.
+  - now: The new point is that a cloak over a chest gives two layers; since a cloak is not the items' own designated container, it counts as a real second covering.
+- **Berakhot 26a, step 1** (phrases.1.english): The phrase continues רבא's sentence from 25b whose subject is the cloak. Source: Berakhot 25b: אָמַר רָבָא: גְּלִימָא.
+  - was: On a chest, it is like a vessel within a vessel.
+  - now: (A cloak) on a chest is like a vessel within a vessel. (The word 'cloak,' גְּלִימָא, is at the end of the previous amud.)
+- **Arakhin 8b, step 16** (deeperAnalysis): Rashi explains נושא as God lifting the pan of sins so the merits tip the scale, not lifting the person. Source: Arakhin 8b רבי יוסי ברבי חנינא אמר: נושא; Rashi s.v. נושא: נושא ומגביה כף העונות למעלה כדי שיכריעו הזכיות; Rashi s.v. ורב יהודה: שאתה מגביה עונות.
+  - was: so He lifts the person up, like רבי יוסי ברבי חנינא's נושא.
+  - now: so He lifts up the side of the scale holding the sins, letting the merits outweigh them, like רבי יוסי ברבי חנינא's נושא.
+- **Arakhin 8b, step 16** (whatToRemember): Same error as in deeperAnalysis: per Rashi, נושא means lifting the pan of sins, not lifting the person. Source: Arakhin 8b; Rashi s.v. נושא: נושא ומגביה כף העונות למעלה.
+  - was: (God lifts the person up, high as 'mighty mountains')
+  - now: (God lifts up the scale of sins so the merits outweigh them)
+- **Zevachim 85a, step 21** (whatsHappening): Per Rashi the animal stays on the מזבח and is burned there (אם עלו לא ירדו); the reason it is flayed in place is that once taken down it could not go back up, not that it can no longer be offered. Source: Zevachim 85a; Rashi s.v. הכא במאי עסקינן (דאי מחית לה תו לא סלקא) and s.v. כגון דהיתה לו שעת הכושר (השתא נמי כי איתא בראש המזבח ונקטרת בעיא הפשט ונתוח).
+  - was: Since it can no longer be offered, it is flayed right where it is.
+  - now: Since it may not go back up if it is taken down, it is flayed right where it is, on top of the מזבח.
+- **Zevachim 85a, step 1** (deeperAnalysis): 'The inner מזבח' means the golden incense altar; the point is the outer altar in the courtyard, where animal offerings go. Source: Zevachim 85a (לא תהא פחותה משוחט בחוץ ומעלה בחוץ); Rashi s.v. לא תהא פחותה.
+  - was: could never be brought on the inner מזבח
+  - now: could never be brought on the מזבח in the עזרה
+- **Temurah 27a** (overview): Only רב אשי says it depends on where the hand rests; רבא said only that a blemished animal allows the 'moving holiness' meaning. Source: Temurah 27a: אמר רבא ... כגון שהיה הקדש בעל מום; אמר רב אשי ... ידו אקודש חול הוי ידו אחול קודש הוי.
+  - was: רבא and רב אשי add that a blemished holy animal can go either way, depending on which animal the owner's hand rests on.
+  - now: רבא adds that with a blemished holy animal, תחת can mean moving the holiness, and רב אשי adds that it can go either way, depending on which animal the owner's hand rests on.
+- **Bekhorot 51a, step 11** (deeperAnalysis): The site gives a Torah-level reason (a note is not money), but Rashi and עולא on 51b say that by Torah law the son is redeemed and the rule is only a גזירה lest people say one redeems with a שטר. Source: Rashi 51a s.v. ובנו אינו פדוי: כדאמרינן בגמרא שמא יאמרו פודין בשטרות; Bekhorot 51b: אמר עולא דבר תורה בנו פדוי ... גזירה שמא יאמרו פודין בשטר.
+  - was: But a note is not money in hand, so it does not redeem the son.
+  - now: The son is still not redeemed. Rashi explains, as the גמרא says on the next amud, that this is a rabbinic decree, so that people will not say one may redeem with שטרות.
+- **Bekhorot 53a, step 25** (stepSummary): Rashi says the proposal is to sell the mothers' ears to a non-Jew, so that a non-Jew is a partner and the offspring never become בכור; the site says the unborn animals' ears. Source: Rashi 53a s.v. הכי קאמר: לקנינהו לאודנייהו דאימהות לעובדי כוכבים כי היכי דתיהוי יד עובד כוכבים באמצע.
+  - was: sell the ears of the unborn animals
+  - now: sell the ears of the mother animals
+- **Bekhorot 53b, step 18** (deeperAnalysis): Rashi explains the משנה as switching between מזבח holiness and בדק הבית holiness (the stringent holiness being the מזבח's), which is also how step 19 and the גמרא's 'not every animal stands to be an עולה' work; the site's example of a light קרבן turned into an עולה is not Rashi's case. Source: Rashi 53b s.v. מקדושה לקדושה: שאין קדושת מזבח חלה על קדושת בדה"ב ואע"ג דקדושת מזבח חמורה; s.v. מהו דתימא.
+  - was: For example, an animal that is already a קרבן of light holiness cannot be turned into a more stringent קרבן such as an עולה.
+  - now: For example, an animal already consecrated for בדק הבית cannot then be made a קרבן for the מזבח, even though the holiness of the מזבח is more stringent.
+- **Bekhorot 54b, step 19** (deeperAnalysis): Rashi says explicitly that the משנה's 'he brings them and tithes them in the middle' does not mean he literally brings them; the middle flock simply joins the two sides. Source: Rashi 54b s.v. היה לו באמצע: אותן האמצעיות מצרפות את הצדדין והאי דקתני מביא ומעשרן באמצע לא מביא ממש קאמר.
+  - was: The owner gathers all of them in the middle and tithes them together.
+  - now: The middle animals join all of them into one group for the tithe. Rashi notes that 'brings them to the middle' is not meant literally.
+- **Bekhorot 52a, step 7** (deeperAnalysis): The site follows the תוספות reading (his own daughters, fed under the בית דין condition of the כתובה) without saying that Rashi reads it differently; the reading itself is sound, so only a note is needed. Source: Rashi 52a s.v. ולא הבנות: שהיה מקבל עליו לזון את בתה שהיה לה מאיש אחר חמש שנים; Tosafot 52a s.v. והאמר שמואל: ובקונטרס פירש מזון הבנות כגון נשא אשה ופסק לזון בתה ... אלא במזון הבת שהוא תנאי ב"ד איירי (Ketubot 52b בנן נוקבן; Ketubot 101b הנושא את האשה ופסקה עמו שיזון את בתה).
+  - was: After a man dies, his daughters are supported from his estate.
+  - now: After a man dies, his daughters are supported from his estate. (This follows תוספות. Rashi explains the case as a wife's daughter from another man, whom the husband agreed to feed for five years.)
+- **Bekhorot 57a, step 4** (deeperAnalysis): Rashi explains all ten are forbidden because one unknown lamb among them is the dog's price, not because all ten count as its payment; the site's version also undercuts the next step's question (why not pick one). Source: Bekhorot 57a (שֶׁכְּנֶגֶד הַכֶּלֶב אֲסוּרִין); Rashi s.v. אחד נטל עשרה (דאחד מהן היה חילופו של כלב ... ולא ידעינן הי ניהו).
+  - was: The ברייתא treats all ten lambs as payment for the dog, so all ten are forbidden.
+  - now: One of the ten lambs is the dog's price, but we do not know which one, so all ten are forbidden.
+- **Bekhorot 57b, step 9** (stepSummary): Rashi learns the question from the word נעלסה itself (the bird carries its egg up and lowers it gently), not from a later verse about leaving eggs on the ground. Source: Bekhorot 57b (וְהָא כְּתִיב: ״כְּנַף רְנָנִים נֶעֱלָסָה״); Rashi s.v. והכתיב כנף רננים נעלסה (נושא עולה ונתחטא ... ומורידה בנחת בקינה אלמא דלא שדיא ליה).
+  - was: since a פסוק says this bird leaves its eggs on the ground.
+  - now: since a פסוק shows that this bird lifts its egg and sets it down gently in its nest.
+- **Bekhorot 57b, step 9** (simpleTranslation): Same error: the question is from נעלסה as Rashi reads it. Source: Bekhorot 57b (וְהָא כְּתִיב: ״כְּנַף רְנָנִים נֶעֱלָסָה״); Rashi s.v. והכתיב כנף רננים נעלסה (נושא עולה ונתחטא ... ומורידה בנחת בקינה אלמא דלא שדיא ליה).
+  - was: (and the פסוק goes on to say it leaves its eggs on the ground)
+  - now: (Rashi: this means the bird lifts its egg and lowers it gently, so it does not drop it)
+- **Bekhorot 57b, step 9** (whatsHappening): Same error: the question is from נעלסה as Rashi reads it. Source: Bekhorot 57b (וְהָא כְּתִיב: ״כְּנַף רְנָנִים נֶעֱלָסָה״); Rashi s.v. והכתיב כנף רננים נעלסה (נושא עולה ונתחטא ... ומורידה בנחת בקינה אלמא דלא שדיא ליה).
+  - was: A פסוק in איוב describes this bird as laying its eggs on the earth, so how could an egg fall from high up?
+  - now: A פסוק in איוב praises this bird: Rashi reads נעלסה as 'it carries up and lowers gently,' meaning the bird sets its huge egg down carefully in its nest. So how could an egg fall?
+- **Bekhorot 57b, step 9** (deeperAnalysis): Same error: the question is from נעלסה as Rashi reads it. Source: Bekhorot 57b (וְהָא כְּתִיב: ״כְּנַף רְנָנִים נֶעֱלָסָה״); Rashi s.v. והכתיב כנף רננים נעלסה (נושא עולה ונתחטא ... ומורידה בנחת בקינה אלמא דלא שדיא ליה).
+  - was: The פסוק continues: 'for she leaves her eggs on the earth.' If the eggs are laid on the ground, it is hard to explain a falling egg.
+  - now: Rashi reads נעלסה as initials: נושא, עולה, ונתחטא, the bird lifts the egg, goes up, and brings it down gently. A bird that handles its egg so carefully does not drop it.
+- **Bekhorot 57b, step 9** (confusionAlert): Same error: the confusionAlert asserts the non-Rashi reading as the only one. Source: Bekhorot 57b (וְהָא כְּתִיב: ״כְּנַף רְנָנִים נֶעֱלָסָה״); Rashi s.v. והכתיב כנף רננים נעלסה (נושא עולה ונתחטא ... ומורידה בנחת בקינה אלמא דלא שדיא ליה).
+  - was: The part that actually creates the question, 'she leaves her eggs on the earth' (איוב 39:14), is in the next verse of איוב. The גמרא does not quote it and assumes the learner knows it.
+  - now: Rashi finds the question in the word נעלסה itself, read as 'carries up and lowers gently.' (Some explain it instead from the next verse, 'she leaves her eggs on the earth,' איוב 39:14.)
+- **Bekhorot 57b, step 9** (phrases.3.notes): Same error, in the phrase note (this field is phrases.3.notes, not english). Source: Bekhorot 57b (וְהָא כְּתִיב: ״כְּנַף רְנָנִים נֶעֱלָסָה״); Rashi s.v. והכתיב כנף רננים נעלסה (נושא עולה ונתחטא ... ומורידה בנחת בקינה אלמא דלא שדיא ליה).
+  - was: The verse continues: 'she leaves her eggs on the earth' (איוב 39:13–14).
+  - now: Rashi: נעלסה means the bird lifts its egg and lowers it gently into its nest, so it does not drop it.
+- **Bekhorot 57b, step 10** (whatsHappening): Keeps step 10 consistent with Rashi's reading of the question in step 9. Source: Bekhorot 57b (וְהָא כְּתִיב: ״כְּנַף רְנָנִים נֶעֱלָסָה״); Rashi s.v. והכתיב כנף רננים נעלסה (נושא עולה ונתחטא ... ומורידה בנחת בקינה אלמא דלא שדיא ליה); Rashi s.v. מוזרתא הואי (שלא היתה ראויה לאפרוח לכך השליכה).
+  - was: Normally the bird lays its eggs on the ground, but
+  - now: Normally the bird sets its eggs down carefully, but
+- **Bekhorot 58a, step 19** (stepSummary): Rashi says outright that on א׳ אלול there is no real mixing (the אלול-born are still too young to be tithed); the reason is only the need for a clear marker between new and old. Source: Bekhorot 58a (וּבָעֵינַן לְמִיעְבַּד הֶכֵּירָא בְּחָדָשׁ וְיָשָׁן); Rashi s.v. ובעינן היכירא (דנהי דליכא למימר דליתו לעשורי הנהו דאלול והנהו דאב בהדדי ... היכירא בעינן).
+  - was: Tithing on that day would mix the new animals born in אלול with the old ones born in אב.
+  - now: No אלול-born animal could be tithed yet on that day, but a clear marker (היכירא) is needed so that the old (אב) animals are never tithed once the new month has begun.
+- **Bekhorot 58b, step 3** (deeperAnalysis): Rashi (and the Steinsaltz English) say the challenge is about the five תשרי animals joining a later גורן of the same year; the אב animals belong to the earlier year and could not join a later round. Source: Bekhorot 58b (לִצְטַרְפוּ לְגוֹרֶן אַחֵר); Rashi s.v. מאי אמרת לצטרפו (הנך חמשה דתשרי לגורן אחר).
+  - was: free the leftover אב or תשרי animals completely
+  - now: free the leftover תשרי animals completely
+
 ## 202611060236-rev93-dafyomi-berakhot-1
 
 Approved: Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.
