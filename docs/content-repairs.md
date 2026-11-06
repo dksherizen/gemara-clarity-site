@@ -2,6 +2,95 @@
 
 Every change to the AI-written content, newest first. Each entry says what was wrong, the source used, and who approved it.
 
+## 202611060257-rev99-berakhot-48-51-and-sample
+
+Approved: Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.
+
+- **Berakhot 48a, step 4** (hebrewStepName): Rabbah's remark 'both of you will become Sages' is the last line of the Abaye/Rava story; no discussion lands here (the ruling like Rav Nachman was step 2), so per rule 3 the rest of a story is Statement. Source: Berakhot 48a: אֲמַר לְהוּ רַבָּה: תַּרְוַיְיכוּ רַבָּנַן הָוֵיתוּ; docs/step-labels.md rules 3-4.
+  - was: מסקנא
+  - now: מימרא
+- **Berakhot 48b, step 1** (hebrewStepName): This is the continuation of the אִיתְּמַר נָמֵי supporting statement of Rava begun at 48a step 17 (labelled ראיה); the second half takes the first half's label, including across the amud break. Source: Berakhot 48a-b: אִיתְּמַר נָמֵי, אָמַר רַב חָנָא בַּר יְהוּדָה מִשְּׁמֵיהּ דְּרָבָא: אֲפִילּוּ לֹא / טִבֵּל עִמָּהֶם...; step-labels.md rule 5.
+  - was: מימרא
+  - now: ראיה
+- **Berakhot 48b, step 2** (hebrewStepName): Still the same אִיתְּמַר נָמֵי supporting statement (its second clause, וּלְהוֹצִיא...עַד שֶׁיֹּאכַל כְּזַיִת דָּגָן), so it keeps the ראיה label of 48a step 17. Source: Berakhot 48b: וּלְהוֹצִיא אֶת הָרַבִּים יְדֵי חוֹבָתָם — אֵינוֹ מוֹצִיא עַד שֶׁיֹּאכַל כְּזַיִת דָּגָן; step-labels.md rule 5.
+  - was: מימרא
+  - now: ראיה
+- **Berakhot 49a, step 1** (hebrewStepName): 'And this one was given with thirteen covenants' is just the second half of Pelimo's statement in the ברייתא (48b step 36, labelled מימרא); nothing is being proved, and a second half takes the first half's label. Source: Berakhot 48b-49a: פְּלֵימוֹ אוֹמֵר... שֶׁזּוֹ נִתְּנָה בְּשָׁלֹשׁ בְּרִיתוֹת, וְזוֹ נִתְּנָה בִּשְׁלֹשׁ עֶשְׂרֵה בְּרִיתוֹת; step-labels.md rule 5.
+  - was: ראיה
+  - now: מימרא
+- **Berakhot 49b, step 14** (hebrewStepName): The משנה about holy meat (דִּתְנַן) is quoted to attack, showing Rabbi Meir and Rabbi Yehuda hold the reverse amounts (וְהָא אִיפְּכָא שָׁמְעִינַן לְהוּ); a source quoted to attack is a Challenge, never a Proof. Source: Berakhot 49b: וְהָא אִיפְּכָא שָׁמְעִינַן לְהוּ, דִּתְנַן: וְכֵן מִי שֶׁיָּצָא מִיְּרוּשָׁלַיִם...; step-labels.md rule 1.
+  - was: ראיה
+  - now: קשיא
+- **Berakhot 49b, step 15** (hebrewStepName): Continuation of the same contradicting משנה (the reversed כביצה/כזית amounts are the punchline of the challenge), so it takes the Challenge label too. Source: Berakhot 49b: רַבִּי מֵאִיר אוֹמֵר: זֶה וְזֶה בִּכְבֵיצָה. וְרַבִּי יְהוּדָה אוֹמֵר: זֶה וְזֶה בִּכְזַיִת; step-labels.md rule 1.
+  - was: ראיה
+  - now: קשיא
+- **Berakhot 51b, step 7** (hebrewStepName): Nothing before this step is a שאלה (step 6, Rav Nachman's request, is a מימרא). In the story, עולא objects to Rav Nachman's suggestion to send the cup. Rule 3 makes that a Challenge, and rule 6 does not allow a Response with no Question. Source: Berakhot 51b: לישדר מר כסא דברכתא לילתא. אמר ליה: הכי אמר רבי יוחנן...; docs/step-labels.md rules 3 and 6.
+  - was: תשובה
+  - now: קשיא
+- **Berakhot 51b, step 7** (relationToPreviousStep): Keeps the relation line in step with the corrected label: עולא is objecting to a request, not answering a question. Source: Berakhot 51b, as above.
+  - was: Answers and turns down
+  - now: Objects to and turns down
+- **Berakhot 51b, step 10** (hebrewStepName): Under the rulebook, דחיה is used only to push aside a proof. ילתא's retort is a character in a story objecting to עולא's offer (that the whole barrel is 'wine of blessing'), so under rule 3 it is a Challenge. If the owner reads it as the closing line of the story, מימרא would also be acceptable. Source: Berakhot 51b: שלחה ליה: ממהדורי מילי ומסמרטוטי כלמי; docs/step-labels.md rules 2 and 3.
+  - was: דחיה
+  - now: קשיא
+- **Beitzah 2b, step 1** (hebrewStepName): Second half of Rav Nachman's answer (begun in 2a step 14, labelled Resolution) to the contradiction from his own words; second halves take the first half's label. Source: Beitzah 2b: גבי יום טוב, דסתם לן תנא כרבי יהודה.
+  - was: ראיה
+  - now: תירוץ
+- **Eruvin 103a, step 1** (hebrewStepName): Objection to the answer that R' Yehuda follows R' Eliezer (it knocks out an answer, not a proof). The identical line on 102b step 24 is already קשיא. Source: Eruvin 103a: אי אליבא דרבי אליעזר קאמר, אפילו לכתחילה נמי.
+  - was: דחיה
+  - now: קשיא
+- **Eruvin 103a, step 16** (hebrewStepName): The other Amora objects to the defence in step 15 (an answer), not to a proof; step 17 then answers it as a Resolution. Source: Eruvin 103a: ואידך — דומיא דהרכיבו והבאתו מחוץ לתחום קתני.
+  - was: דחיה
+  - now: קשיא
+- **Kiddushin 4a, step 14** (hebrewStepName): Second half of the צריכא begun in step 13 (Statement); not where a discussion lands — the Gemara goes straight on with גופא. Source: Kiddushin 4a: ואי אשמעינן מעשה ידיה ... צריכא.
+  - was: מסקנא
+  - now: מימרא
+- **Avodah Zarah 5a, step 19** (hebrewStepName): Answers the challenge of step 18 (ומי כתיבי קראי על תנאי?) with "אין" plus a source; an answer to a Challenge is a Resolution. Source: Avodah Zarah 5a: אין, דהכי אמר רבי שמעון בן לקיש.
+  - was: ראיה
+  - now: תירוץ
+- **Keritot 26a, step 30** (hebrewStepName): "צריכי" objects to Rabbi Zeira's answer in step 29 (which answered the challenge of step 28); objection to an answer is a Challenge. Source: Keritot 26a: צריכי, דאי כתב קרא גבי יחיד.
+  - was: דחיה
+  - now: קשיא
+- **Keritot 26a, step 30** (relationToPreviousStep): Step 29 is Rabbi Zeira's answer to a challenge, not a proof. Source: Keritot 26a: אמר רבי זעירא: לא מצית אמרת.
+  - was: Attacks the proof in step 29
+  - now: Attacks the answer in step 29
+- **Keritot 26a, step 32** (hebrewStepName): Answers the challenge of step 31 ("write it only by the Nasi"), defending the צריכותא; answer to a Challenge = Resolution. Source: Keritot 26a: יחיד מנשיא לא אתי, דאיכא למיפרך.
+  - was: דחיה
+  - now: תירוץ
+- **Keritot 26a, step 33** (hebrewStepName): Second half of the answer in step 32. Source: Keritot 26a: וצבור מנשיא לא אתי.
+  - was: דחיה
+  - now: תירוץ
+- **Keritot 26a, step 35** (hebrewStepName): Answers the challenge of step 34 ("write it only by the community"). Source: Keritot 26a: איכא למיפרך: מה לצבור.
+  - was: דחיה
+  - now: תירוץ
+- **Keritot 26a, step 37** (hebrewStepName): Answers the challenge of step 36 (learn the individual from the other two). Source: Keritot 26a: מה לנשיא וצבור, שכן אינן בשמיעת קול.
+  - was: דחיה
+  - now: תירוץ
+- **Keritot 26a, step 39** (hebrewStepName): Answers the challenge of step 38 (learn the community from the other two). Source: Keritot 26a: מה ליחיד ונשיא שכן יש בקרבנן נקבה.
+  - was: דחיה
+  - now: תירוץ
+- **Keritot 26a, step 41** (hebrewStepName): Continues the challenge of step 40 by knocking out the possible answers (מאי פרכת ... יוכיח); not pushing aside a proof. Source: Keritot 26a: מאי פרכת? ... יחיד יוכיח.
+  - was: דחיה
+  - now: קשיא
+- **Keritot 26a, step 42** (hebrewStepName): Second half of step 41 (צבור יוכיח); same label as its first half. Source: Keritot 26a: צבור יוכיח, דאין בקרבנן נקבה.
+  - was: דחיה
+  - now: קשיא
+- **Keritot 26a, step 45** (hebrewStepName): Abaye objects to the derivation of steps 43-44 (an answer), not to a proof. Source: Keritot 26a: אביי אמר: אי דלא כתיב ידיעה גבי נשיא, מיחיד וצבור לא אתי.
+  - was: דחיה
+  - now: קשיא
+- **Bava Batra 21b, step 8** (hebrewStepName): Inside the story, the teacher objects to Yoav's answer; step 9 answers him and is already a Resolution (rule 3). Source: Bava Batra 21b: שבקיה לההוא גברא דליקום בארור.
+  - was: דחיה
+  - now: קשיא
+- **Gittin 88a, step 18** (hebrewStepName): R' Yirmiyah objects to R' Avahu's plan to validate the כתובה; objection to a plan is a Challenge (or Conclusion if an unanswered, admitted challenge counts under rule 4). Source: Gittin 88a: אמר ליה רבי ירמיה: חתם סופר שנינו.
+  - was: דחיה
+  - now: קשיא
+- **Bava Kamma 107b, step 8** (hebrewStepName): The answer to step 7's מאי טעמא (Question); Question and Response go together. No position is being supported by an outside source. Source: Bava Kamma 107b: מאי טעמא? ... אם לא שלח ידו.
+  - was: ראיה
+  - now: תשובה
+- **Ketubot 61b, step 5** (hebrewStepName): A line of the story (they checked and found it); per rule 3 the rest of a story is Statement. Source: Ketubot 61b: בדקו ולא אשכחו ... בדקו אשכחו.
+  - was: ראיה
+  - now: מימרא
+
 ## 202611060254-rev98-labels-rule1-and-berakhot-46-47
 
 Approved: Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.

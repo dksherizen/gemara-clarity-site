@@ -1,0 +1,258 @@
+{
+ "name": "berakhot-48-51-and-sample",
+ "approved": "Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.",
+ "repairs": [
+  {
+   "id": "Berakhot_48_a",
+   "step": 4,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "Rabbah's remark 'both of you will become Sages' is the last line of the Abaye/Rava story; no discussion lands here (the ruling like Rav Nachman was step 2), so per rule 3 the rest of a story is Statement.",
+   "source": "Berakhot 48a: אֲמַר לְהוּ רַבָּה: תַּרְוַיְיכוּ רַבָּנַן הָוֵיתוּ; docs/step-labels.md rules 3-4"
+  },
+  {
+   "id": "Berakhot_48_b",
+   "step": 1,
+   "field": "hebrewStepName",
+   "find": "מימרא",
+   "replace": "ראיה",
+   "why": "This is the continuation of the אִיתְּמַר נָמֵי supporting statement of Rava begun at 48a step 17 (labelled ראיה); the second half takes the first half's label, including across the amud break.",
+   "source": "Berakhot 48a-b: אִיתְּמַר נָמֵי, אָמַר רַב חָנָא בַּר יְהוּדָה מִשְּׁמֵיהּ דְּרָבָא: אֲפִילּוּ לֹא / טִבֵּל עִמָּהֶם...; step-labels.md rule 5"
+  },
+  {
+   "id": "Berakhot_48_b",
+   "step": 2,
+   "field": "hebrewStepName",
+   "find": "מימרא",
+   "replace": "ראיה",
+   "why": "Still the same אִיתְּמַר נָמֵי supporting statement (its second clause, וּלְהוֹצִיא...עַד שֶׁיֹּאכַל כְּזַיִת דָּגָן), so it keeps the ראיה label of 48a step 17.",
+   "source": "Berakhot 48b: וּלְהוֹצִיא אֶת הָרַבִּים יְדֵי חוֹבָתָם — אֵינוֹ מוֹצִיא עַד שֶׁיֹּאכַל כְּזַיִת דָּגָן; step-labels.md rule 5"
+  },
+  {
+   "id": "Berakhot_49_a",
+   "step": 1,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "מימרא",
+   "why": "'And this one was given with thirteen covenants' is just the second half of Pelimo's statement in the ברייתא (48b step 36, labelled מימרא); nothing is being proved, and a second half takes the first half's label.",
+   "source": "Berakhot 48b-49a: פְּלֵימוֹ אוֹמֵר... שֶׁזּוֹ נִתְּנָה בְּשָׁלֹשׁ בְּרִיתוֹת, וְזוֹ נִתְּנָה בִּשְׁלֹשׁ עֶשְׂרֵה בְּרִיתוֹת; step-labels.md rule 5"
+  },
+  {
+   "id": "Berakhot_49_b",
+   "step": 14,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "The משנה about holy meat (דִּתְנַן) is quoted to attack, showing Rabbi Meir and Rabbi Yehuda hold the reverse amounts (וְהָא אִיפְּכָא שָׁמְעִינַן לְהוּ); a source quoted to attack is a Challenge, never a Proof.",
+   "source": "Berakhot 49b: וְהָא אִיפְּכָא שָׁמְעִינַן לְהוּ, דִּתְנַן: וְכֵן מִי שֶׁיָּצָא מִיְּרוּשָׁלַיִם...; step-labels.md rule 1"
+  },
+  {
+   "id": "Berakhot_49_b",
+   "step": 15,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "Continuation of the same contradicting משנה (the reversed כביצה/כזית amounts are the punchline of the challenge), so it takes the Challenge label too.",
+   "source": "Berakhot 49b: רַבִּי מֵאִיר אוֹמֵר: זֶה וְזֶה בִּכְבֵיצָה. וְרַבִּי יְהוּדָה אוֹמֵר: זֶה וְזֶה בִּכְזַיִת; step-labels.md rule 1"
+  },
+  {
+   "id": "Berakhot_51_b",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "תשובה",
+   "replace": "קשיא",
+   "why": "Nothing before this step is a שאלה (step 6, Rav Nachman's request, is a מימרא). In the story, עולא objects to Rav Nachman's suggestion to send the cup. Rule 3 makes that a Challenge, and rule 6 does not allow a Response with no Question.",
+   "source": "Berakhot 51b: לישדר מר כסא דברכתא לילתא. אמר ליה: הכי אמר רבי יוחנן...; docs/step-labels.md rules 3 and 6"
+  },
+  {
+   "id": "Berakhot_51_b",
+   "step": 7,
+   "field": "relationToPreviousStep",
+   "find": "Answers and turns down",
+   "replace": "Objects to and turns down",
+   "why": "Keeps the relation line in step with the corrected label: עולא is objecting to a request, not answering a question.",
+   "source": "Berakhot 51b, as above"
+  },
+  {
+   "id": "Berakhot_51_b",
+   "step": 10,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "Under the rulebook, דחיה is used only to push aside a proof. ילתא's retort is a character in a story objecting to עולא's offer (that the whole barrel is 'wine of blessing'), so under rule 3 it is a Challenge. If the owner reads it as the closing line of the story, מימרא would also be acceptable.",
+   "source": "Berakhot 51b: שלחה ליה: ממהדורי מילי ומסמרטוטי כלמי; docs/step-labels.md rules 2 and 3"
+  },
+  {
+   "id": "Beitzah_2_b",
+   "step": 1,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "תירוץ",
+   "why": "Second half of Rav Nachman's answer (begun in 2a step 14, labelled Resolution) to the contradiction from his own words; second halves take the first half's label.",
+   "source": "Beitzah 2b: גבי יום טוב, דסתם לן תנא כרבי יהודה"
+  },
+  {
+   "id": "Eruvin_103_a",
+   "step": 1,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "Objection to the answer that R' Yehuda follows R' Eliezer (it knocks out an answer, not a proof). The identical line on 102b step 24 is already קשיא.",
+   "source": "Eruvin 103a: אי אליבא דרבי אליעזר קאמר, אפילו לכתחילה נמי"
+  },
+  {
+   "id": "Eruvin_103_a",
+   "step": 16,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "The other Amora objects to the defence in step 15 (an answer), not to a proof; step 17 then answers it as a Resolution.",
+   "source": "Eruvin 103a: ואידך — דומיא דהרכיבו והבאתו מחוץ לתחום קתני"
+  },
+  {
+   "id": "Kiddushin_4_a",
+   "step": 14,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "Second half of the צריכא begun in step 13 (Statement); not where a discussion lands — the Gemara goes straight on with גופא.",
+   "source": "Kiddushin 4a: ואי אשמעינן מעשה ידיה ... צריכא"
+  },
+  {
+   "id": "Avodah_Zarah_5_a",
+   "step": 19,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "תירוץ",
+   "why": "Answers the challenge of step 18 (ומי כתיבי קראי על תנאי?) with \"אין\" plus a source; an answer to a Challenge is a Resolution.",
+   "source": "Avodah Zarah 5a: אין, דהכי אמר רבי שמעון בן לקיש"
+  },
+  {
+   "id": "Keritot_26_a",
+   "step": 30,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "\"צריכי\" objects to Rabbi Zeira's answer in step 29 (which answered the challenge of step 28); objection to an answer is a Challenge.",
+   "source": "Keritot 26a: צריכי, דאי כתב קרא גבי יחיד"
+  },
+  {
+   "id": "Keritot_26_a",
+   "step": 30,
+   "field": "relationToPreviousStep",
+   "find": "Attacks the proof in step 29",
+   "replace": "Attacks the answer in step 29",
+   "why": "Step 29 is Rabbi Zeira's answer to a challenge, not a proof.",
+   "source": "Keritot 26a: אמר רבי זעירא: לא מצית אמרת"
+  },
+  {
+   "id": "Keritot_26_a",
+   "step": 32,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "Answers the challenge of step 31 (\"write it only by the Nasi\"), defending the צריכותא; answer to a Challenge = Resolution.",
+   "source": "Keritot 26a: יחיד מנשיא לא אתי, דאיכא למיפרך"
+  },
+  {
+   "id": "Keritot_26_a",
+   "step": 33,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "Second half of the answer in step 32.",
+   "source": "Keritot 26a: וצבור מנשיא לא אתי"
+  },
+  {
+   "id": "Keritot_26_a",
+   "step": 35,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "Answers the challenge of step 34 (\"write it only by the community\").",
+   "source": "Keritot 26a: איכא למיפרך: מה לצבור"
+  },
+  {
+   "id": "Keritot_26_a",
+   "step": 37,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "Answers the challenge of step 36 (learn the individual from the other two).",
+   "source": "Keritot 26a: מה לנשיא וצבור, שכן אינן בשמיעת קול"
+  },
+  {
+   "id": "Keritot_26_a",
+   "step": 39,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "Answers the challenge of step 38 (learn the community from the other two).",
+   "source": "Keritot 26a: מה ליחיד ונשיא שכן יש בקרבנן נקבה"
+  },
+  {
+   "id": "Keritot_26_a",
+   "step": 41,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "Continues the challenge of step 40 by knocking out the possible answers (מאי פרכת ... יוכיח); not pushing aside a proof.",
+   "source": "Keritot 26a: מאי פרכת? ... יחיד יוכיח"
+  },
+  {
+   "id": "Keritot_26_a",
+   "step": 42,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "Second half of step 41 (צבור יוכיח); same label as its first half.",
+   "source": "Keritot 26a: צבור יוכיח, דאין בקרבנן נקבה"
+  },
+  {
+   "id": "Keritot_26_a",
+   "step": 45,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "Abaye objects to the derivation of steps 43-44 (an answer), not to a proof.",
+   "source": "Keritot 26a: אביי אמר: אי דלא כתיב ידיעה גבי נשיא, מיחיד וצבור לא אתי"
+  },
+  {
+   "id": "Bava_Batra_21_b",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "Inside the story, the teacher objects to Yoav's answer; step 9 answers him and is already a Resolution (rule 3).",
+   "source": "Bava Batra 21b: שבקיה לההוא גברא דליקום בארור"
+  },
+  {
+   "id": "Gittin_88_a",
+   "step": 18,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "R' Yirmiyah objects to R' Avahu's plan to validate the כתובה; objection to a plan is a Challenge (or Conclusion if an unanswered, admitted challenge counts under rule 4).",
+   "source": "Gittin 88a: אמר ליה רבי ירמיה: חתם סופר שנינו"
+  },
+  {
+   "id": "Bava_Kamma_107_b",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "תשובה",
+   "why": "The answer to step 7's מאי טעמא (Question); Question and Response go together. No position is being supported by an outside source.",
+   "source": "Bava Kamma 107b: מאי טעמא? ... אם לא שלח ידו"
+  },
+  {
+   "id": "Ketubot_61_b",
+   "step": 5,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "מימרא",
+   "why": "A line of the story (they checked and found it); per rule 3 the rest of a story is Statement.",
+   "source": "Ketubot 61b: בדקו ולא אשכחו ... בדקו אשכחו"
+  }
+ ]
+}
