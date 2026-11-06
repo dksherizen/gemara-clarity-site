@@ -149,7 +149,7 @@ function vocApply(text, V, gloss, ok) {                               // -> the 
 
 // The study words the explanations lean on (the amud's own text rarely carries them, or carries them two ways), and the eight step types: one fixed vocalization, used after the amud's own multi-word matches and before its single words.
 const STEP_NIKUD = { "מימרא":"מֵימְרָא", "קשיא":"קֻשְׁיָא", "תירוץ":"תֵּירוּץ", "שאלה":"שְׁאֵלָה", "ראיה":"רְאָיָה", "תשובה":"תְּשׁוּבָה", "דחיה":"דְּחִיָּה", "מסקנא":"מַסְקָנָא" };
-const VOC_META = Object.assign({ "משנה":"מִשְׁנָה", "גמרא":"גְּמָרָא", "ברייתא":"בָּרַיְיתָא", "ברייתות":"בָּרַיְיתוֹת", "פסוק":"פָּסוּק", "פסוקים":"פְּסוּקִים",
+const VOC_META = Object.assign({ "תנא קמא":"תַּנָּא קַמָּא", "ותנא קמא":"וְתַנָּא קַמָּא", "דתנא קמא":"דְּתַנָּא קַמָּא", "לתנא קמא":"לְתַנָּא קַמָּא", "התנא קמא":"הַתַּנָּא קַמָּא", "משנה":"מִשְׁנָה", "גמרא":"גְּמָרָא", "ברייתא":"בָּרַיְיתָא", "ברייתות":"בָּרַיְיתוֹת", "פסוק":"פָּסוּק", "פסוקים":"פְּסוּקִים",
   "תנאים":"תַּנָּאִים", "אמוראים":"אֲמוֹרָאִים", "מחלוקת":"מַחֲלוֹקֶת", "מתניתין":"מַתְנִיתִין", "סוגיא":"סוּגְיָא", "סוגיה":"סוּגְיָה", "קושיא":"קוּשְׁיָא", "מסכת":"מַסֶּכֶת", "תורה":"תּוֹרָה", "תוספות":"תּוֹסָפוֹת", "קל וחומר":"קַל וָחוֹמֶר" }, STEP_NIKUD);
 // ---- end nikud borrowing ----
 // N1 (display only): VOC_NX = letters -> the one pointed form the whole data gives them, kept only when that form also occurs as a word of its own, the letters
@@ -327,11 +327,10 @@ async function loadCloudAnalysis(id){
     const a = await cachedJSON(`data/b/${encodeURIComponent(id)}.json${staticVersion ? "?v=" + encodeURIComponent(staticVersion) : ""}`, { ttl: 3*864e5 });
     return a && Array.isArray(a.steps) && a.steps.length ? a : null;
   }
-  try {
-    const j = await cachedJSON(`${FS_BASE}/${encodeURIComponent(id)}?mask.fieldPaths=analysis`, { ttl: 3*864e5 });
-    const a = fsDecode({ mapValue: { fields: j.fields || {} } }).analysis;
-    return a && Array.isArray(a.steps) && a.steps.length ? a : null;
-  } catch (e) { if (e.notFound) return null; throw e; }
+  // Nov 5 2026: no fallback to the original app's Firestore library any more. It held older, unrepaired breakdowns,
+  // and anyone with that app's (public) admin switch could write to it. If our own file can't load, the page says so and offers a retry.
+  if (staticIds.size) return null;
+  throw new Error("breakdown unavailable");
 }
 async function loadText(m, i){
   const { daf, amud } = dafOf(i);

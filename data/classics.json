@@ -61,14 +61,14 @@
   {
    "id": "taa23a-honi",
    "title": "Honi and the carob tree",
-   "summary": "A man plants a carob tree for his grandchildren, falls asleep for seventy years, wakes up, and nobody believes who he is. Start there, then go back for the story of him drawing a circle and refusing to move until it rains.",
+   "summary": "All his life Honi wondered how anyone could sleep for seventy years. One day he meets a man planting a carob tree that will only bear fruit in seventy years, and then Honi himself falls asleep for seventy years. He wakes to find the man's grandson eating its fruit, and nobody believes who he is. Start there, then go back for the story of him drawing a circle and refusing to move until it rains.",
    "seder": "Moed",
    "masechta": "Taanit",
    "start": {
     "m": "Taanit",
     "daf": "23a",
-    "step": 22,
-    "words": "יוֹמָא חַד הֲוָה אָזֵל בְּאוֹרְחָא,"
+    "step": 21,
+    "words": "אָמַר רַבִּי יוֹחָנָן:"
    },
    "end": {
     "m": "Taanit",
@@ -76,15 +76,15 @@
     "step": 27,
     "words": "אוֹ חַבְרוּתָא אוֹ מִיתוּתָא."
    },
-   "steps": 6,
+   "steps": 7,
    "status": "pointer-checked only",
-   "note": "live in Classics now (Tab/Instinct list); pointer check passed, boundaries not read by me",
+   "note": "Nov 5 2026 (Claude, from the review): start moved back to step 21 so the story opens with Honi's lifelong question; summary rewritten (Honi, not the planter, sleeps seventy years). Boundaries read against the Gemara.",
    "source": "shown",
    "summaryNote": "summary written by us (Instinct), not approved wording",
    "group": "first",
    "order": 2,
    "reading": {
-    "steps": 6
+    "steps": 7
    }
   },
   {
@@ -118,15 +118,15 @@
   },
   {
    "id": "shab31a-hillel",
-   "title": "Hillel and the three converts",
-   "summary": "A man bets 400 zuz he can make Hillel lose his temper, and fails three times. Then comes “what is hateful to you, do not do to others,” told on one foot. Stories first, argument almost none.",
+   "title": "Hillel and the 400-zuz bet",
+   "summary": "Two men bet 400 zuz on whether anyone can make Hillel lose his temper. One of them interrupts Hillel on Friday afternoon with one silly question after another, and Hillel answers each one patiently. He loses the bet. Stories first, argument almost none.",
    "seder": "Moed",
    "masechta": "Shabbat",
    "start": {
     "m": "Shabbat",
-    "daf": "31a",
-    "step": 1,
-    "words": "שֶׁהִמְרוּ זֶה אֶת זֶה,"
+    "daf": "30b",
+    "step": 41,
+    "words": "מַעֲשֶׂה בִּשְׁנֵי בְּנֵי אָדָם"
    },
    "end": {
     "m": "Shabbat",
@@ -134,15 +134,15 @@
     "step": 8,
     "words": "וְהִלֵּל לֹא יַקְפִּיד."
    },
-   "steps": 8,
+   "steps": 9,
    "status": "pointer-checked only",
-   "note": "live in Classics now (Tab/Instinct list); pointer check passed, boundaries not read by me",
+   "note": "Nov 5 2026 (Claude, from the review): this passage is the 400-zuz bet, not the three converts; retitled, start moved back to 30b step 41 so it no longer opens mid-sentence, summary rewritten. Boundaries read against the Gemara.",
    "source": "shown",
    "summaryNote": "summary written by us (Instinct), not approved wording",
    "group": "first",
    "order": 3,
    "reading": {
-    "steps": 8
+    "steps": 9
    }
   },
   {
