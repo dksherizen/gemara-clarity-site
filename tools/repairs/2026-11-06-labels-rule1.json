@@ -1,0 +1,1248 @@
+{
+ "name": "labels-rule1-and-berakhot-46-47",
+ "approved": "Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.",
+ "repairs": [
+  {
+   "id": "Avodah_Zarah_5_b",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "והתנן brings the משנה in חולין (one day of notice before a festival) against the משנה's three days; it is the source of the challenge in step 7 and is answered in step 9.",
+   "source": "Avodah Zarah 5b: ומי בעינן כולי האי? והתנן: בארבעה פרקים בשנה..."
+  },
+  {
+   "id": "Avodah_Zarah_6_b",
+   "step": 30,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "והתניא brings the lime ברייתא against רבי יהודה (step 29: does he ignore later happiness?); answered by רב נחמן בר יצחק in step 31.",
+   "source": "Avodah Zarah 6b: ולית ליה לרבי יהודה... והתניא: רבי יהודה אומר: אשה לא תסוד במועד..."
+  },
+  {
+   "id": "Bava_Batra_155_b",
+   "step": 2,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "והא תנן brings the סריס משנה against the age-20 view (step 1); answered in step 3.",
+   "source": "Bava Batra 155b: והא תנן: בן עשרים שלא הביא שתי שערות..."
+  },
+  {
+   "id": "Bava_Batra_159_b",
+   "step": 2,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "והתניא brings the collapsed-house ברייתא against the claim that תחת אבתיך is only a blessing (step 1); the next step draws the challenge and step 4 rejects it.",
+   "source": "Bava Batra 159b: אבל לענין דינא לא?! והתניא: נפל הבית עליו ועל אביו..."
+  },
+  {
+   "id": "Bava_Kamma_34_b",
+   "step": 4,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "והתניא brings רבי יהודה's ברייתא on payment to back the challenge of step 1 after step 3 knocked out the answer; it attacks, it does not support.",
+   "source": "Bava Kamma 34b: לענין תשלומין מי שמעת ליה?! והתניא, רבי יהודה אומר: יכול שור שוה מנה..."
+  },
+  {
+   "id": "Bava_Kamma_34_b",
+   "step": 5,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "Continues quoting the same attacking source; under rule 1 every step that quotes the rest of that source is a Challenge. (End of the רבי יהודה ברייתא begun in step 4.)",
+   "source": "Bava Kamma 34b: אמרת: וכי מועד למה יוצא..."
+  },
+  {
+   "id": "Bava_Kamma_42_b",
+   "step": 21,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "והתניא brings the ברייתא of the struck woman against the limit of step 18 (challenge of step 20); the ברייתא continues on 43a step 1, already labelled קשיא, and is answered there in step 2.",
+   "source": "Bava Kamma 42b: ובנזקין לא אמר רבי עקיבא? והתניא: הכה את האשה ויצאו ילדיה..."
+  },
+  {
+   "id": "Bava_Kamma_61_b",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "והתנן brings the oven משנה against רבי שמעון (step 5: does he have no fire measure?); answered by רב נחמן in step 8.",
+   "source": "Bava Kamma 61b: ולית ליה לרבי שמעון שיעורא בדליקה? והתנן: לא יעמיד אדם תנור..."
+  },
+  {
+   "id": "Bava_Kamma_61_b",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "Continues quoting the same attacking source; under rule 1 every step that quotes the rest of that source is a Challenge. (רבי שמעון's line in the same משנה, which carries the contradiction.)",
+   "source": "Bava Kamma 61b: רבי שמעון אומר: לא נאמרו שיעורין הללו..."
+  },
+  {
+   "id": "Bava_Kamma_90_b",
+   "step": 12,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "והתניא brings the סנהדרין ברייתא against the reading of step 11 (a witness becoming a judge); step 13 draws the point and step 14 answers.",
+   "source": "Bava Kamma 90b: למימרא דעד נעשה דיין?! והתניא: סנהדרין שראו אחד שהרג את הנפש..."
+  },
+  {
+   "id": "Bava_Kamma_90_b",
+   "step": 17,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "והתניא brings the שמעון התימני ברייתא against the claim that רבי עקיבא holds a witness cannot judge (step 16); its continuation (steps 18-19) is already קשיא.",
+   "source": "Bava Kamma 90b: וסבר רבי עקיבא דאין עד נעשה דיין? והתניא: והכה איש את רעהו באבן או באגרף..."
+  },
+  {
+   "id": "Bava_Metzia_88_a",
+   "step": 13,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "והתניא brings the בית הינו ברייתא behind the challenge of step 12 (is a buyer obligated by Torah law?).",
+   "source": "Bava Metzia 88a: ולוקח מדאורייתא מי מחייב? והתניא: מפני מה חרבו חנויות של בית הינו..."
+  },
+  {
+   "id": "Bava_Metzia_88_b",
+   "step": 1,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "Continues quoting the same attacking source; under rule 1 every step that quotes the rest of that source is a Challenge. Across the amud break: the verses בית הינו relied on finish the ברייתא begun on 88a step 13; step 2 is the conclusion.",
+   "source": "Bava Metzia 88a-b: שהיו אומרין: עשר תעשר ואכלת – ולא מוכר..."
+  },
+  {
+   "id": "Bekhorot_31_b",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "והתניא brings the ברייתא that מעשר is never sold, behind the challenge of step 8; answered by רב ששת in step 10.",
+   "source": "Bekhorot 31b: אלא מעשר בביתיה מי מיזדבן? והתניא... ואינו נמכר לא חי ולא שחוט"
+  },
+  {
+   "id": "Bekhorot_48_a",
+   "step": 12,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "והתנן brings the guarantor משנה behind רבא's objection (step 11), which knocks out רבי ירמיה's explanation; step 13 replaces it.",
+   "source": "Bekhorot 48a: מי איכא מידי דלדידיה לא מצי תבע ליה...? והתנן: המלוה את חבירו על ידי ערב..."
+  },
+  {
+   "id": "Bekhorot_48_a",
+   "step": 12,
+   "field": "relationToPreviousStep",
+   "find": "the source that supports רבא",
+   "replace": "the source behind רבא",
+   "why": "Rule 1: the משנה is part of the challenge; avoid calling it support.",
+   "source": "Bekhorot 48a"
+  },
+  {
+   "id": "Berakhot_55_a",
+   "step": 10,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "והתניא brings the ten-things ברייתא against רב יהודה's praise of lingering (step 9); answered in step 11.",
+   "source": "Berakhot 55a: והמאריך בבית הכסא מעליותא הוא? והתניא: עשרה דברים מביאין את האדם לידי תחתוניות..."
+  },
+  {
+   "id": "Chullin_100_b",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "והתניא brings רבי יהודה's ברייתא on a non-kosher bird's carcass behind the challenge of step 6 (does he hold איסור חל על איסור?).",
+   "source": "Chullin 100b: וסבר רבי יהודה איסור חל על איסור? והתניא: רבי יהודה אומר..."
+  },
+  {
+   "id": "Chullin_100_b",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "Continues quoting the same attacking source; under rule 1 every step that quotes the rest of that source is a Challenge. (The תלמוד לומר of the same ברייתא.)",
+   "source": "Chullin 100b: תלמוד לומר נבלה וטרפה לא יאכל לטמאה בה..."
+  },
+  {
+   "id": "Chullin_119_b",
+   "step": 3,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "והתנן brings the onion-peel משנה against the case of one covering on top of another (step 2: ומי איכא שומר על גב שומר?); step 4 gives a different case instead.",
+   "source": "Chullin 119b: ומי איכא שומר על גב שומר? והתנן: רבי יהודה אומר: שלש קליפות בבצל..."
+  },
+  {
+   "id": "Chullin_119_b",
+   "step": 3,
+   "field": "title",
+   "find": "Proof from the three peels",
+   "replace": "Challenge from the three peels",
+   "why": "Rule 1: the משנה is quoted to attack, so the title should not call it a proof.",
+   "source": "Chullin 119b"
+  },
+  {
+   "id": "Chullin_119_b",
+   "step": 3,
+   "field": "relationToPreviousStep",
+   "find": "Proves the doubt raised in step 2",
+   "replace": "Gives the source for the doubt raised in step 2",
+   "why": "Rule 1: avoid calling an attacking source a proof.",
+   "source": "Chullin 119b"
+  },
+  {
+   "id": "Eruvin_35_b",
+   "step": 3,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "והתנן brings the מקוה משנה against רבי מאיר (step 2: does he rule stringently in a doubt?); answered in step 7.",
+   "source": "Eruvin 35b: וסבר רבי מאיר ספיקא לחומרא? והתנן: טמא שירד לטבול..."
+  },
+  {
+   "id": "Eruvin_35_b",
+   "step": 4,
+   "field": "hebrewStepName",
+   "find": "מימרא",
+   "replace": "קשיא",
+   "why": "Continues quoting the same attacking source; under rule 1 every step that quotes the rest of that source is a Challenge. (Labelled מימרא, but it is the next clause of the same משנה.)",
+   "source": "Eruvin 35b: במה דברים אמורים – בטומאה חמורה"
+  },
+  {
+   "id": "Eruvin_35_b",
+   "step": 5,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "Continues quoting the same attacking source; under rule 1 every step that quotes the rest of that source is a Challenge.",
+   "source": "Eruvin 35b: אבל בטומאה קלה..."
+  },
+  {
+   "id": "Eruvin_35_b",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "Continues quoting the same attacking source; under rule 1 every step that quotes the rest of that source is a Challenge. (Last clause of the same משנה; the answer is step 7.)",
+   "source": "Eruvin 35b: רבי יוסי מטמא"
+  },
+  {
+   "id": "Eruvin_46_a",
+   "step": 16,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "והתנן brings רבי אלעזר's משנה as the first half of רב פפא's challenge to רבא (step 15).",
+   "source": "Eruvin 46a: ובדרבנן לא שני לן...? והתנן, רבי אלעזר אומר: כל אשה שעברו עליה שלש עונות..."
+  },
+  {
+   "id": "Eruvin_46_a",
+   "step": 17,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "Second half of the same attacking source (the ברייתא about רבי relying on רבי אלעזר) that makes up רב פפא's challenge.",
+   "source": "Eruvin 46a: ותניא: מעשה ועשה רבי כרבי אלעזר..."
+  },
+  {
+   "id": "Eruvin_46_a",
+   "step": 17,
+   "field": "relationToPreviousStep",
+   "find": "Completes the proof begun in step 16",
+   "replace": "Completes the challenge begun in step 16",
+   "why": "Rule 1: this is part of a challenge, not a proof.",
+   "source": "Eruvin 46a"
+  },
+  {
+   "id": "Eruvin_46_a",
+   "step": 21,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "והתניא brings the near/far report ברייתא behind רב משרשיא's challenge to רבא (step 20).",
+   "source": "Eruvin 46a: ובדרבנן לא שני...? והתניא: שמועה קרובה נוהגת שבעה ושלשים..."
+  },
+  {
+   "id": "Eruvin_46_a",
+   "step": 22,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "Continues quoting the same attacking source; under rule 1 every step that quotes the rest of that source is a Challenge.",
+   "source": "Eruvin 46a: ואי זו היא קרובה ואיזו היא רחוקה..."
+  },
+  {
+   "id": "Gittin_71_b",
+   "step": 22,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "והתנן brings the scribe-and-witness משנה behind the second challenge (step 21: does רבי יוסי accept \"Say\"?).",
+   "source": "Gittin 71b: ועוד, מי מודה רבי יוסי באומר אמרו?! והתנן: כתב סופר ועד – כשר..."
+  },
+  {
+   "id": "Keritot_18_b",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "והתניא brings the כללו של דבר ברייתא behind אביי's challenge to רבא (step 7).",
+   "source": "Keritot 18b: ואת לא תסברא...? והתניא, כללו של דבר: כל שחלוקין בחטאות – חלוקין באשמות!"
+  },
+  {
+   "id": "Keritot_18_b",
+   "step": 8,
+   "field": "title",
+   "find": "A ברייתא backs up אביי",
+   "replace": "A ברייתא behind אביי's challenge",
+   "why": "Rule 1: the step is a challenge, so the title should not present it as support.",
+   "source": "Keritot 18b"
+  },
+  {
+   "id": "Ketubot_42_b",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "איתיביה: אביי brings רבי שמעון's line against רבה (step 10); step 12 draws the challenge and step 13 answers.",
+   "source": "Ketubot 42b: איתיביה, רבי שמעון אומר: אם לא הספיקה לגבות עד שמת האב..."
+  },
+  {
+   "id": "Ketubot_70_a",
+   "step": 17,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "והתנן brings the קונם שאיני עושה לפיך משנה behind the challenge of step 16; answered in step 18.",
+   "source": "Ketubot 70a: כל כמיניה דמפקע לה לשיעבודה? והתנן: קונם שאיני עושה לפיך – אינו צריך להפר"
+  },
+  {
+   "id": "Ketubot_70_a",
+   "step": 17,
+   "field": "title",
+   "find": "Proof from a wife who vows",
+   "replace": "Challenge from a wife who vows",
+   "why": "Rule 1: the step is a challenge, not a proof.",
+   "source": "Ketubot 70a"
+  },
+  {
+   "id": "Ketubot_81_a",
+   "step": 17,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "והתניא brings סומכוס's ברייתא behind רבא's challenge (step 16: can a כתובה be collected during the marriage?).",
+   "source": "Ketubot 81a: ומי נתנה כתובה לגבות מחיים? והתניא, רבי אבא אומר, שאלתי את סומכוס..."
+  },
+  {
+   "id": "Ketubot_103_b",
+   "step": 32,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "Inside the challenge ברייתא of step 31 (רבי חייא visiting רבי), רבי חייא quotes the signs-at-death ברייתא; it is part of the same attacking source, which is answered in steps 34-35.",
+   "source": "Ketubot 103b: והתניא: כשחלה רבי... והתניא: מת מתוך השחוק סימן יפה לו..."
+  },
+  {
+   "id": "Meilah_15_b",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "והתנן brings the כל הפיגולים מצטרפין משנה behind the challenge of step 7; answered in step 9.",
+   "source": "Meilah 15b: שלמים אמאי לא מחייב? והתנן: כל הפיגולים מצטרפין זה עם זה..."
+  },
+  {
+   "id": "Menachot_25_b",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "והתניא brings the ציץ ברייתא behind the objection of step 5 against רב יוסף's answer; answered by reversing the names in step 7.",
+   "source": "Menachot 25b: דמרצה ציץ על אכילות מי שמעת ליה? והתניא: רבי אליעזר אומר: הציץ מרצה על אכילות..."
+  },
+  {
+   "id": "Menachot_25_b",
+   "step": 7,
+   "field": "relationToPreviousStep",
+   "find": "against the proof in Step 6",
+   "replace": "against the challenge in Step 6",
+   "why": "Step 6 is a challenge (rule 1), not a proof.",
+   "source": "Menachot 25b"
+  },
+  {
+   "id": "Menachot_25_b",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "Continues quoting the same attacking source; under rule 1 every step that quotes the rest of that source is a Challenge. (The תלמוד לומר of the ברייתא that רב ששת brought with מתקיף... והתניא in step 8, already קשיא.)",
+   "source": "Menachot 25b: תלמוד לומר: כל טהור יאכל בשר..."
+  },
+  {
+   "id": "Menachot_48_a",
+   "step": 12,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "והתנן brings the mixed-limbs משנה behind רבי יוחנן's objection (step 11); step 13 draws the challenge and step 14 answers.",
+   "source": "Menachot 48a: וכי אומר לו לאדם עמוד וחטא בשביל שתזכה?! והתנן: אברי חטאת שנתערבו באברי עולה..."
+  },
+  {
+   "id": "Menachot_48_a",
+   "step": 13,
+   "field": "relationToPreviousStep",
+   "find": "Completes רבי יוחנן's proof from the משנה",
+   "replace": "Completes רבי יוחנן's challenge from the משנה",
+   "why": "Rule 1: the משנה is the source of a challenge, not a proof.",
+   "source": "Menachot 48a"
+  },
+  {
+   "id": "Menachot_51_b",
+   "step": 21,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "והתנן brings רבי שמעון's seven court rules behind the challenge of step 20; the key line is step 23 and the answer is step 24.",
+   "source": "Menachot 51b: וסבר רבי שמעון משל ציבור דאורייתא? והתנן, אמר רבי שמעון: שבעה דברים התקינו בית דין..."
+  },
+  {
+   "id": "Menachot_51_b",
+   "step": 22,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "Continues quoting the same attacking source; under rule 1 every step that quotes the rest of that source is a Challenge.",
+   "source": "Menachot 51b: וכן גר שמת והניח זבחים..."
+  },
+  {
+   "id": "Menachot_72_a",
+   "step": 21,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "והתניא brings רבי's account of studying with רבי שמעון behind the challenge of step 20 (isn't רבי a student of רבי שמעון?); answered in step 22.",
+   "source": "Menachot 72a: ורבי, לאו תלמידיה דרבי שמעון הוא? והתניא, אמר רבי: כשהיינו למדין תורה אצל רבי שמעון בתקוע..."
+  },
+  {
+   "id": "Menachot_72_a",
+   "step": 21,
+   "field": "title",
+   "find": "Proof that רבי learned",
+   "replace": "Source showing that רבי learned",
+   "why": "Rule 1: the source serves a challenge, so the title should not call it a proof.",
+   "source": "Menachot 72a"
+  },
+  {
+   "id": "Nazir_34_a",
+   "step": 2,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "והתניא brings רבי טרפון's ברייתא behind the challenge of step 1 (the author cannot be רבי טרפון); step 3 replaces the suggestion.",
+   "source": "Nazir 34a: אילימא רבי טרפון מי הוי נזיר? והתניא, רבי יהודה אומר משום רבי טרפון: אין אחד מהן נזיר..."
+  },
+  {
+   "id": "Nazir_34_a",
+   "step": 2,
+   "field": "relationToPreviousStep",
+   "find": "Brings a source to prove the challenge",
+   "replace": "Brings the source behind the challenge",
+   "why": "Rule 1: avoid calling an attacking source a proof.",
+   "source": "Nazir 34a"
+  },
+  {
+   "id": "Nedarim_19_a",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "והתניא brings a ברייתא (רבי אליעזר: liquids have no טומאה at all) against the assumption in step 6 that he holds a doubtful liquid is impure; it is answered in step 8. Rule 1.",
+   "source": "Nedarim 19a: והתניא, רבי אליעזר אומר: אין טומאה למשקין כל עיקר."
+  },
+  {
+   "id": "Niddah_12_a",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "The ברייתא is quoted to back רב הונא's objection in step 6 (a check cannot be done within שיעור וסת); it attacks the premise of the question, it does not prove a position. Rule 1.",
+   "source": "Niddah 12a: והתניא: איזהו שיעור וסת? משל לשמש ועד שעומדים בצד"
+  },
+  {
+   "id": "Niddah_58_a",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "'וכי תימא... ומי מחזקינן טומאה ממקום למקום?' is an objection to a suggested answer, which rule 2 makes a Challenge, not a Rejection. Step 8 (its source) must carry the same label (rule 5).",
+   "source": "Niddah 58a: וכי תימא זימנין דנגע בעקבה, ומי מחזקינן טומאה ממקום"
+  },
+  {
+   "id": "Niddah_58_a",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "והתניא brings the ברייתא behind the objection in step 7 to the suggested answer; the suggestion is then replaced in step 9. A source quoted to attack is a Challenge. Rule 1.",
+   "source": "Niddah 58a: והתניא: היתה לה מכה בצוארה, שתוכל לתלות — תולה,"
+  },
+  {
+   "id": "Niddah_58_a",
+   "step": 8,
+   "field": "title",
+   "find": "Proof from the neck",
+   "replace": "Challenge from the neck",
+   "why": "Matches the relabel: the ברייתא attacks the suggested answer.",
+   "source": "Niddah 58a: והתניא: היתה לה מכה בצוארה, שתוכל לתלות — תולה,"
+  },
+  {
+   "id": "Niddah_58_a",
+   "step": 8,
+   "field": "relationToPreviousStep",
+   "find": "Supports the rule from step 7",
+   "replace": "Backs the objection in step 7",
+   "why": "Matches the relabel.",
+   "source": "Niddah 58a: והתניא: היתה לה מכה בצוארה, שתוכל לתלות — תולה,"
+  },
+  {
+   "id": "Pesachim_2_b",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "מיתיבי: רבי יהודה's ordering is brought against the view that אור means day (רב הונא as first understood); like the מיתיבי in 2a step 17, it is a Challenge, accepted with שמע מינה in step 8. Rule 1.",
+   "source": "Pesachim 2b: מיתיבי, רבי יהודה אומר: בודקין אור (לארבעה) עשר ובארבעה"
+  },
+  {
+   "id": "Pesachim_2_b",
+   "step": 7,
+   "field": "relationToPreviousStep",
+   "find": "brings positive proof for its position",
+   "replace": "brings a challenge against the view that אור means day",
+   "why": "Matches the relabel: the step opens with מיתיבי.",
+   "source": "Pesachim 2b: מיתיבי, רבי יהודה אומר: בודקין אור (לארבעה) עשר ובארבעה"
+  },
+  {
+   "id": "Pesachim_2_b",
+   "step": 8,
+   "field": "relationToPreviousStep",
+   "find": "Accepts the proof from step 7",
+   "replace": "Accepts the challenge from step 7",
+   "why": "Matches the relabel of step 7.",
+   "source": "Pesachim 2b: שמע מינה."
+  },
+  {
+   "id": "Pesachim_2_b",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "מיתיבי opens a second ברייתא (when work stops on the fourteenth) brought against the view that אור means day. Rule 1.",
+   "source": "Pesachim 2b: מיתיבי: מאימתי ארבעה עשר אסור בעשיית מלאכה? רבי אליעזר"
+  },
+  {
+   "id": "Pesachim_2_b",
+   "step": 9,
+   "field": "relationToPreviousStep",
+   "find": "after the proof from",
+   "replace": "after the challenge from",
+   "why": "Matches the relabel of step 7.",
+   "source": "Pesachim 2b: מיתיבי: מאימתי ארבעה עשר אסור בעשיית מלאכה? רבי אליעזר"
+  },
+  {
+   "id": "Pesachim_2_b",
+   "step": 12,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "The inference 'אלמא אור אורתא הוא' is the punchline of the מיתיבי begun in step 9, drawn from the same ברייתא, before the answer in step 13. Rule 1.",
+   "source": "Pesachim 2b: מדקאמר רבי יהודה משעת הנץ החמה, אלמא ״אור״ דקאמר"
+  },
+  {
+   "id": "Pesachim_2_b",
+   "step": 13,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "'לא, מאי אור — עמוד השחר' answers the challenge of steps 9-12; an answer to a Challenge is a Resolution (rule 2). Knock-on of relabelling step 12.",
+   "source": "Pesachim 2b: לא, מאי ״אור״ — עמוד השחר."
+  },
+  {
+   "id": "Pesachim_2_b",
+   "step": 22,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "מיתיבי: the signal-fire ברייתא ('לאור עיבורו') is brought against the view that אור means day; accepted with שמע מינה in step 23. Rule 1.",
+   "source": "Pesachim 2b: מיתיבי: אין משיאין משואות אלא על החדש שנראה בזמנו,"
+  },
+  {
+   "id": "Pesachim_2_b",
+   "step": 22,
+   "field": "relationToPreviousStep",
+   "find": "The proof from",
+   "replace": "The challenge from",
+   "why": "Matches the relabel of steps 9-12.",
+   "source": "Pesachim 2b: מיתיבי: אין משיאין משואות אלא על החדש שנראה בזמנו,"
+  },
+  {
+   "id": "Pesachim_2_b",
+   "step": 23,
+   "field": "title",
+   "find": "accepts the proof",
+   "replace": "accepts the challenge",
+   "why": "Matches the relabel of step 22.",
+   "source": "Pesachim 2b: שמע מינה."
+  },
+  {
+   "id": "Pesachim_2_b",
+   "step": 23,
+   "field": "relationToPreviousStep",
+   "find": "accepts the proof brought in step 22",
+   "replace": "accepts the challenge brought in step 22",
+   "why": "Matches the relabel of step 22.",
+   "source": "Pesachim 2b: שמע מינה."
+  },
+  {
+   "id": "Pesachim_34_a",
+   "step": 21,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "'והתנן, זה הכלל' opens the משנה that completes רבי יוחנן's איתיביה against ריש לקיש (34b step 1, already קשיא, finishes it). Rule 1.",
+   "source": "Pesachim 34a: והתנן, זה הכלל:"
+  },
+  {
+   "id": "Pesachim_44_a",
+   "step": 5,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "והתנן: אביי quotes the משנה of the תרומה soup to attack רב דימי's rule that היתר does not join איסור. Rule 1.",
+   "source": "Pesachim 44a: והתנן: המקפה של תרומה והשום והשמן של חולין, ונגע"
+  },
+  {
+   "id": "Pesachim_44_a",
+   "step": 5,
+   "field": "title",
+   "find": "The proof:",
+   "replace": "The challenge:",
+   "why": "Matches the relabel.",
+   "source": "Pesachim 44a: והתנן: המקפה של תרומה והשום והשמן של חולין, ונגע"
+  },
+  {
+   "id": "Pesachim_44_a",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "'היכי דמי, לאו משום דהיתר מצטרף לאיסור?' is the conclusion of אביי's attack on רב דימי from the same משנה, before רב דימי's answer in step 9. Rule 1.",
+   "source": "Pesachim 44a: היכי דמי, לאו משום דהיתר מצטרף לאיסור?"
+  },
+  {
+   "id": "Pesachim_44_a",
+   "step": 8,
+   "field": "relationToPreviousStep",
+   "find": "turns it into a proof against",
+   "replace": "turns it into a challenge against",
+   "why": "Matches the relabel.",
+   "source": "Pesachim 44a: היכי דמי, לאו משום דהיתר מצטרף לאיסור?"
+  },
+  {
+   "id": "Pesachim_44_a",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "רב דימי's 'לא, מאי כזית...' answers אביי's challenge (steps 4-8); an answer to a Challenge is a Resolution (rule 2). Knock-on of relabelling step 8.",
+   "source": "Pesachim 44a: לא, מאי כזית — דאיכא כזית בכדי אכילת פרס."
+  },
+  {
+   "id": "Pesachim_44_a",
+   "step": 9,
+   "field": "relationToPreviousStep",
+   "find": "Rejects אביי's proof",
+   "replace": "Answers אביי's challenge",
+   "why": "Matches the relabel.",
+   "source": "Pesachim 44a: לא, מאי כזית — דאיכא כזית בכדי אכילת פרס."
+  },
+  {
+   "id": "Pesachim_52_b",
+   "step": 22,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "'והא תנן' opens the שביעית משנה that is the source of רב שימי's מתקיף against the answer of steps 19-20. Rule 1.",
+   "source": "Pesachim 52b: והא תנן: מאימתי אין קוצצין את האילנות בשביעית? בית"
+  },
+  {
+   "id": "Pesachim_59_a",
+   "step": 25,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "והתניא opens the ברייתא that backs the challenge of step 24 (a burnt-offering cannot precede the sin-offering); the challenge is answered in step 28. Rule 1.",
+   "source": "Pesachim 59a: והתניא: ״והקריב את אשר לחטאת ראשונה״, מה תלמוד לומר?"
+  },
+  {
+   "id": "Pesachim_59_a",
+   "step": 26,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "Second half of the same attacking ברייתא (זה בנה אב לכל חטאות...), still before the answer in step 28. Rule 1.",
+   "source": "Pesachim 59a: אלא: זה בנה אב לכל חטאות שיהו קודמות לכל"
+  },
+  {
+   "id": "Pesachim_81_b",
+   "step": 2,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "'ומי דיינינן קל וחומר מהלכה?' objects to רבה's קל וחומר answer (81a step 18, finished in 81b step 1) and is answered by רבא in step 4; an objection to an answer is a Challenge (rule 2). Step 3 (its source) must match (rule 5).",
+   "source": "Pesachim 81b: אמרי: ומי דיינינן קל וחומר מהלכה?"
+  },
+  {
+   "id": "Pesachim_81_b",
+   "step": 2,
+   "field": "title",
+   "find": "Rejection: you cannot",
+   "replace": "Challenge: you cannot",
+   "why": "Matches the relabel.",
+   "source": "Pesachim 81b: אמרי: ומי דיינינן קל וחומר מהלכה?"
+  },
+  {
+   "id": "Pesachim_81_b",
+   "step": 3,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "והתניא: רבי אליעזר's 'אין דנין קל וחומר מהלכה' is the source of the objection in step 2 to רבה's קל וחומר; answered by רבא in step 4. Rule 1.",
+   "source": "Pesachim 81b: והתניא, אמר לו רבי אליעזר: עקיבא, עצם כשעורה הלכה,"
+  },
+  {
+   "id": "Pesachim_81_b",
+   "step": 3,
+   "field": "title",
+   "find": "Proof from a ברייתא",
+   "replace": "Backing from a ברייתא",
+   "why": "Matches the relabel.",
+   "source": "Pesachim 81b: והתניא, אמר לו רבי אליעזר: עקיבא, עצם כשעורה הלכה,"
+  },
+  {
+   "id": "Pesachim_96_a",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "והתניא: בן בג בג's ברייתא is brought to back the challenge of step 10 (inspection is not limited to פסח מצרים); answered in step 12. Rule 1.",
+   "source": "Pesachim 96a: והתניא, בן בג בג אומר: מניין לתמיד שטעון ביקור"
+  },
+  {
+   "id": "Pesachim_96_a",
+   "step": 12,
+   "field": "relationToPreviousStep",
+   "find": "Deflects the proof from",
+   "replace": "Deflects the challenge from",
+   "why": "Matches the relabel of step 11.",
+   "source": "Pesachim 96a: שאני התם, דכתיב: ״תשמרו״."
+  },
+  {
+   "id": "Rosh_Hashanah_31_b",
+   "step": 24,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "והתניא: רב פפא's timeline sources are quoted to attack רב נחמן בר יצחק's attribution to רבן יוחנן בן זכאי; step 27 (ואידך) and 28 answer it for רב נחמן בר יצחק. Rule 1.",
+   "source": "Rosh Hashanah 31b: והתניא: כל שנותיו של רבן יוחנן בן זכאי מאה"
+  },
+  {
+   "id": "Rosh_Hashanah_31_b",
+   "step": 25,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "Continues the same attacking chain (ותניא: the strip stopped whitening forty years before the destruction) before the answer in step 28. Rule 1.",
+   "source": "Rosh Hashanah 31b: ותניא: ארבעים שנה קודם שנחרב הבית לא היה לשון"
+  },
+  {
+   "id": "Rosh_Hashanah_31_b",
+   "step": 25,
+   "field": "relationToPreviousStep",
+   "find": "Continues the proof begun",
+   "replace": "Continues the objection begun",
+   "why": "Matches the relabel.",
+   "source": "Rosh Hashanah 31b: ותניא: ארבעים שנה קודם שנחרב הבית לא היה לשון"
+  },
+  {
+   "id": "Rosh_Hashanah_31_b",
+   "step": 26,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "Last piece of the same attacking chain (ותנן: משחרב הבית התקין רבן יוחנן בן זכאי) before the answer in step 28. Rule 1.",
+   "source": "Rosh Hashanah 31b: ותנן: משחרב הבית התקין רבן יוחנן בן זכאי!"
+  },
+  {
+   "id": "Rosh_Hashanah_31_b",
+   "step": 26,
+   "field": "relationToPreviousStep",
+   "find": "Completes the proof by",
+   "replace": "Completes the objection by",
+   "why": "Matches the relabel.",
+   "source": "Rosh Hashanah 31b: ותנן: משחרב הבית התקין רבן יוחנן בן זכאי!"
+  },
+  {
+   "id": "Rosh_Hashanah_31_b",
+   "step": 27,
+   "field": "relationToPreviousStep",
+   "find": "Turns the proof just completed into a challenge",
+   "replace": "Turns the objection just completed into a question",
+   "why": "Matches the relabel of steps 24-26.",
+   "source": "Rosh Hashanah 31b: ואידך:"
+  },
+  {
+   "id": "Rosh_Hashanah_7_a",
+   "step": 29,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "והתניא (אין מעברין השנה לפני ראש השנה...) is the source of the challenge in step 28 that leap years are counted from ניסן; answered in step 30. Rule 1.",
+   "source": "Rosh Hashanah 7a: והתניא: אין מעברין השנה לפני ראש השנה, ואם עיברוה"
+  },
+  {
+   "id": "Sanhedrin_112_b",
+   "step": 26,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "והתניא (ירושלים אינה נעשית עיר הנדחת) knocks out the ירושלים reading inside רב יוסף's מתיב (step 24); the challenge is answered in step 29. Rule 1.",
+   "source": "Sanhedrin 112b: והתניא: עשרה דברים נאמרו בירושלים, וזו אחת מהן –"
+  },
+  {
+   "id": "Sanhedrin_112_b",
+   "step": 26,
+   "field": "relationToPreviousStep",
+   "find": "Proves the doubt raised",
+   "replace": "Backs the doubt raised",
+   "why": "Matches the relabel.",
+   "source": "Sanhedrin 112b: והתניא: עשרה דברים נאמרו בירושלים, וזו אחת מהן –"
+  },
+  {
+   "id": "Sanhedrin_41_a",
+   "step": 40,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "והתניא: the 120-years ברייתא is brought against identifying בן זכאי as רבי יוחנן בן זכאי (step 39); answered in step 44. Rule 1.",
+   "source": "Sanhedrin 41a: והתניא: כל שנותיו של רבי יוחנן בן זכאי מאה"
+  },
+  {
+   "id": "Sanhedrin_41_a",
+   "step": 41,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "ותניא: continues the same attack (the סנהדרין left forty years before the חורבן) before the answer in step 44. Rule 1.",
+   "source": "Sanhedrin 41a: ותניא: ארבעים שנה קודם חורבן הבית, גלתה סנהדרין וישבה"
+  },
+  {
+   "id": "Sanhedrin_41_a",
+   "step": 43,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "ותנן: last piece of the same attack (רבן יוחנן בן זכאי's תקנות after the destruction) before the answer in step 44. Rule 1.",
+   "source": "Sanhedrin 41a: ותנן: משחרב בית המקדש, התקין רבן יוחנן בן זכאי."
+  },
+  {
+   "id": "Sanhedrin_68_a",
+   "step": 2,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "והתניא opens the story of רבי אליעזר's illness, brought against the claim that רבי עקיבא learned this from רבי יהושע (step 1). Rule 1.",
+   "source": "Sanhedrin 68a: והתניא: כשחלה רבי אליעזר, נכנסו רבי עקיבא וחביריו לבקרו."
+  },
+  {
+   "id": "Shabbat_103_b",
+   "step": 15,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "'למימרא דרבי שמעון לחומרא?' objects to the suggestion of step 14 (וכי תימא); an objection to a suggestion is a Challenge (rule 2). Step 16 (its source) must match (rule 5).",
+   "source": "Shabbat 103b: למימרא דרבי שמעון לחומרא?"
+  },
+  {
+   "id": "Shabbat_103_b",
+   "step": 16,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "והתניא: רבי שמעון's 'עד שיקדח את כולו' is the source of the objection in step 15 to the suggested difference; the suggestion is replaced in step 17. Rule 1.",
+   "source": "Shabbat 103b: והתניא: הקודח כל שהוא חייב, המגרר כל שהוא, המעבד"
+  },
+  {
+   "id": "Shabbat_52_a",
+   "step": 31,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "והתנן: the ring משנה (טבעת בהמה טהורה) is brought against the משנה's assumption that animal chains take טומאה (step 30); 52b step 1, already קשיא, finishes it. Rule 1.",
+   "source": "Shabbat 52a: והתנן: טבעת אדם — טמאה, וטבעת בהמה וכלים ושאר"
+  },
+  {
+   "id": "Shabbat_59_a",
+   "step": 5,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "והתניא: the מדרס ברייתא (עמוד ונעשה מלאכתנו) is brought against רבי יוחנן (step 4); the challenge is answered in step 8. Rule 1.",
+   "source": "Shabbat 59a: והתניא: ״וכל כלי אשר ישב עליו וגו׳״ — יכול"
+  },
+  {
+   "id": "Shabbat_59_a",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "רבי יוחנן's side of the dispute is the punchline of the same attack (he contradicts himself), answered by איפוך in step 8. Rule 1.",
+   "source": "Shabbat 59a: ורבי יוחנן אמר: אף אומר בטמא מת ״עמוד ונעשה"
+  },
+  {
+   "id": "Shabbat_59_a",
+   "step": 7,
+   "field": "relationToPreviousStep",
+   "find": "which proves the challenge raised",
+   "replace": "which completes the challenge raised",
+   "why": "Matches the relabel.",
+   "source": "Shabbat 59a: ורבי יוחנן אמר: אף אומר בטמא מת ״עמוד ונעשה"
+  },
+  {
+   "id": "Shabbat_90_a",
+   "step": 13,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "והתנן (כל שאין לו עיקר אין לו שביעית) is the source of the מיתיבי in step 12 against identifying בורית as כבריתא; the identification is replaced in step 14. Rule 1.",
+   "source": "Shabbat 90a: והתנן: זה הכלל, כל שיש לו עיקר — יש"
+  },
+  {
+   "id": "Shabbat_90_a",
+   "step": 13,
+   "field": "title",
+   "find": "Proof: only rooted",
+   "replace": "Source: only rooted",
+   "why": "Matches the relabel.",
+   "source": "Shabbat 90a: והתנן: זה הכלל, כל שיש לו עיקר — יש"
+  },
+  {
+   "id": "Shevuot_11_b",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "והתניא (ריש לקיש: רבי שמעון holds the פרה can be redeemed on its woodpile) completes the challenge of step 8 to the answer that the ברייתא is רבי שמעון; answered in step 10. Rule 1.",
+   "source": "Shevuot 11b: והתניא, רבי שמעון אומר: פרה מטמאה טומאת אוכלין, הואיל"
+  },
+  {
+   "id": "Shevuot_31_b",
+   "step": 5,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "והתנן: the deposit-oath משנה is quoted by the רבנן to attack רב פפא (step 4); answered in step 7. Rule 1.",
+   "source": "Shevuot 31b: והתנן גבי פקדון: שבועת הפקדון נוהגת באנשים ובנשים, ברחוקין"
+  },
+  {
+   "id": "Shevuot_31_b",
+   "step": 6,
+   "field": "title",
+   "find": "Finish Their Proof",
+   "replace": "Finish Their Challenge",
+   "why": "Step 6 is the end of the same challenge and is already labelled קשיא.",
+   "source": "Shevuot 31b: מושבע מפי אחרים בפקדון מנא להו לרבנן דחייב? לאו"
+  },
+  {
+   "id": "Shevuot_5_a",
+   "step": 13,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "'והא תניא' (the waters test only when the husband is clean) backs אביי's challenge to רבא in step 12. Rule 1.",
+   "source": "Shevuot 5a: והא תניא: ״ונקה האיש מעון והאשה ההוא תשא את"
+  },
+  {
+   "id": "Sotah_28_a",
+   "step": 2,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "'והא תניא' (the waters test only when the husband is clean) backs the challenge in step 1 against reading 'אותו' as the husband. Rule 1.",
+   "source": "Sotah 28a: והא תניא: ״ונקה האיש מעון והאשה ההיא תשא את"
+  },
+  {
+   "id": "Temurah_19_a",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "והתניא (רבי אלעזר: הוא עצמו יקרב פסח) is the source of רב עוקבא בר חמא's מתיב against אביי (step 10); answered in step 13. Rule 1.",
+   "source": "Temurah 19a: והתניא: המפריש נקבה לפסח — היא וולדותיה ירעו עד"
+  },
+  {
+   "id": "Yevamot_44_a",
+   "step": 5,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "והתניא (the elders give him fitting advice) is the source of the challenge in step 4 to letting him marry all four; answered in step 7. Rule 1.",
+   "source": "Yevamot 44a: והתניא: ״וקראו לו זקני עירו״ הן ולא שלוחן. ״ודברו"
+  },
+  {
+   "id": "Yevamot_44_a",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "Continues the same attacking ברייתא ('כלך אצל שכמותך') before the answer in step 7. Rule 1.",
+   "source": "Yevamot 44a: שאם היה הוא ילד והיא זקנה, הוא זקן והיא"
+  },
+  {
+   "id": "Yevamot_52_b",
+   "step": 10,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "והתניא: רבי עקיבא's 'נאסרה עליו עולמית' is the source of the challenge in step 9 that the רישא cannot follow רבי עקיבא; answered in step 11. Rule 1.",
+   "source": "Yevamot 52b: והתניא, רבי עקיבא אומר: מנין לנותן גט ליבמתו שנאסרה"
+  },
+  {
+   "id": "Yoma_16_b",
+   "step": 3,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "והתנן: the מדות measurements are quoted to attack the idea that מדות follows רבי יהודה (step 2); the punchline comes in step 5. Rule 1.",
+   "source": "Yoma 16b: והתנן: כל העזרה היתה אורך מאה ושמונים ושבע על"
+  },
+  {
+   "id": "Yoma_16_b",
+   "step": 4,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "Continues the same מדות משנה (south to north) inside the same challenge, before its punchline in step 5. Rule 1.",
+   "source": "Yoma 16b: מן הדרום לצפון — מאה ושלשים וחמש; הכבש והמזבח"
+  },
+  {
+   "id": "Yoma_18_a",
+   "step": 14,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "והתניא (הכהן הגדול מאחיו... בחכמה) backs the challenge in step 13 against the משנה's 'שמא לא למד'; answered by רב יוסף in step 15. Rule 1.",
+   "source": "Yoma 18a: והתניא: ״והכהן הגדול מאחיו״, שיהא גדול מאחיו בכח, בנוי,"
+  },
+  {
+   "id": "Yoma_18_a",
+   "step": 14,
+   "field": "relationToPreviousStep",
+   "find": "text-based proof for",
+   "replace": "text-based source for",
+   "why": "Matches the relabel.",
+   "source": "Yoma 18a: והתניא: ״והכהן הגדול מאחיו״, שיהא גדול מאחיו בכח, בנוי,"
+  },
+  {
+   "id": "Yoma_23_a",
+   "step": 33,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "והתניא (עשרה דברים נאמרו בירושלים) is the source of the challenge in step 32 to רבי צדוק's question; 23b step 1, already קשיא, finishes the quote. Rule 1.",
+   "source": "Yoma 23a: והתניא: עשרה דברים נאמרו בירושלים, וזו אחת מהן:"
+  },
+  {
+   "id": "Yoma_28_b",
+   "step": 30,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "והתניא (moonlight and sunlight look different) backs the challenge 'ומי מיחלף?' in step 29; answered in step 31. Rule 1.",
+   "source": "Yoma 28b: והתניא, רבי אומר: אינו דומה תימור של לבנה לתימור"
+  },
+  {
+   "id": "Yoma_52_b",
+   "step": 13,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "והתניא (משנגנז ארון...) is brought for the challenge in step 12 that the second Temple had no ארון; the answer comes in step 17. Rule 1.",
+   "source": "Yoma 52b: והתניא: משנגנז ארון — נגנזה עמו צנצנת המן, וצלוחית"
+  },
+  {
+   "id": "Yoma_52_b",
+   "step": 13,
+   "field": "title",
+   "find": "Proof that the Ark was hidden away",
+   "replace": "A ברייתא: the Ark was hidden away",
+   "why": "Matches the relabel.",
+   "source": "Yoma 52b: והתניא: משנגנז ארון — נגנזה עמו צנצנת המן, וצלוחית"
+  },
+  {
+   "id": "Yoma_52_b",
+   "step": 15,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "The פסוק is the ברייתא's own source (שנאמר...) for יאשיהו hiding the ארון: the rest of the same attacking source, before the answer in step 17. Rule 1.",
+   "source": "Yoma 52b: שנאמר: ״ויאמר ללוים המבינים לכל ישראל הקדושים לה׳ תנו"
+  },
+  {
+   "id": "Yoma_52_b",
+   "step": 16,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "רבי אלעזר's גזירה שוה explains the ברייתא's list; it is still part of the same challenge, which is answered only in step 17. Rule 1 (stop at the answer).",
+   "source": "Yoma 52b: ואמר רבי אלעזר: אתיא ״שמה״ ״שמה״, ואתיא ״דורות״ ״דורות״."
+  },
+  {
+   "id": "Yoma_54_a",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "והתניא (no one passed through יהודה for fifty-two years) backs רבה's challenge in step 6 against עולא; answered in step 10. Rule 1.",
+   "source": "Yoma 54a: והתניא, רבי יהודה אומר: חמשים ושתים שנה לא עבר"
+  },
+  {
+   "id": "Yoma_54_a",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "ותניא: second ברייתא in the same challenge (brimstone and salt for seven years), before the answer in step 10. Rule 1.",
+   "source": "Yoma 54a: ותניא, רבי יוסי אומר: שבע שנים נתקיימה גפרית ומלח"
+  },
+  {
+   "id": "Yoma_54_a",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "רבי יוחנן's source for the ברייתא of step 8: still inside the same challenge, which is answered only in step 10. Rule 1 (stop at the answer).",
+   "source": "Yoma 54a: ואמר רבי יוחנן: מאי טעמא דרבי יוסי — אתיא"
+  },
+  {
+   "id": "Zevachim_13_a",
+   "step": 12,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "והתניא opens the ברייתא behind 'וקבלה מי פסלה?' (step 11): its point comes in step 15 (קבלה – לא עשה בה מחשבה כמעשה) and רבא answers in step 17. Rule 1.",
+   "source": "Zevachim 13a: והתניא: ״והקריבו״ – זו קבלת הדם. אתה אומר קבלת"
+  },
+  {
+   "id": "Zevachim_13_a",
+   "step": 13,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "רבי עקיבא's גזירה שוה: the rest of the same attacking ברייתא, before the answer in step 17. Rule 1.",
+   "source": "Zevachim 13a: אמר רבי עקיבא: מנין לקבלה שלא תהא אלא בכהן"
+  },
+  {
+   "id": "Zevachim_13_a",
+   "step": 20,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "והתניא (פיגול intent works in שחיטה and קבלה) is the source of the challenge in step 19 to רבא's answer. Rule 1.",
+   "source": "Zevachim 13a: והתניא: יכול לא תהא מחשבה מועלת אלא בזריקה בלבד;"
+  },
+  {
+   "id": "Zevachim_13_b",
+   "step": 3,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "והתנן (בשתי אכילות הכתוב מדבר) is the source of the scholar's challenge to רבא in step 2; answered in step 4. Rule 1.",
+   "source": "Zevachim 13b: והתנן: יכול לא תהא מחשבה מועלת אלא באכילת בשר,"
+  },
+  {
+   "id": "Berakhot_46_b",
+   "step": 1,
+   "field": "hebrewStepName",
+   "find": "מימרא",
+   "replace": "ראיה",
+   "why": "This is the middle of the ברייתא brought (כדתניא) as the proof for רב's claim that הטוב והמטיב is not from the Torah; it opens as ראיה on 46a step 18, and step 2 (its end) is also ראיה. The second half takes the first half's label across the amud break.",
+   "source": "Berakhot 46a-b: כִּדְתַנְיָא: כׇּל הַבְּרָכוֹת כּוּלָּן... וְיֵשׁ מֵהֶן שֶׁחוֹתֵם בָּהֶן בְּ״בָרוּךְ״"
+  },
+  {
+   "id": "Berakhot_46_b",
+   "step": 24,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "The last clause of רב ששת's ברייתא (steps 22-23 are מימרא); the discussion continues right after with מסייע ליה לרב, so this is not where it lands. The second half of a statement takes the first half's label.",
+   "source": "Berakhot 46b: וְלִמְקוֹם שֶׁמַּיִם אַחֲרוֹנִים חוֹזְרִין — לְשָׁם בְּרָכָה חוֹזֶרֶת. מְסַיַּיע לֵיהּ לְרַב"
+  },
+  {
+   "id": "Berakhot_46_b",
+   "step": 27,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "רבי חייא's words to רב end a short story illustrating רב's rule; no discussion lands here (a new ברייתא follows). Story lines are Statement.",
+   "source": "Berakhot 46b: אֲמַר לֵיהּ: בַּר פַּחֲתֵי, ״עַיֵּין בְּבִרְכַּת מְזוֹנָא״ קָאָמַר לָךְ"
+  },
+  {
+   "id": "Berakhot_47_a",
+   "step": 19,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "שמואל objects to רב's claim that the meal is over; nothing here pushes aside a proof, so by the rulebook (objection to a position, also inside a story) it is a Challenge, not a Rejection.",
+   "source": "Berakhot 47a: אֲמַר לֵיהּ שְׁמוּאֵל: אִלּוּ מַיְיתוּ לִי אַרְדִּילַיָּא... מִי לָא אָכְלִינַן"
+  },
+  {
+   "id": "Berakhot_47_a",
+   "step": 19,
+   "field": "relationToPreviousStep",
+   "find": "Rejects רב's claim",
+   "replace": "Challenges רב's claim",
+   "why": "Keeps the relation text in line with the corrected label (Challenge, not Rejection).",
+   "source": "Berakhot 47a: מִי לָא אָכְלִינַן"
+  },
+  {
+   "id": "Berakhot_47_b",
+   "step": 1,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "תירוץ",
+   "why": "The verse is the second half of אביי's answer to רב פפא's challenge, which 47a step 30 labels תירוץ (עָלֶיךָ אָמַר קְרָא); the second half takes the first half's label across the amud break.",
+   "source": "Berakhot 47a-b: אֲמַר לֵיהּ: עָלֶיךָ אָמַר קְרָא ״מִכֹּל מַעְשְׂרֹתֵיכֶם תָּרִימוּ״"
+  },
+  {
+   "id": "Berakhot_47_b",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "תירוץ",
+   "why": "This is the end of רבא's answer (step 10, תירוץ) to the challenge about the כותי: the כותים tithe properly, so they are not עמי הארץ by the חכמים' definition. The site itself says it 'completes רבא's answer'; the second half takes the first half's label.",
+   "source": "Berakhot 47b: וְהָנֵי כּוּתָאֵי עַשּׂוֹרֵי מְעַשְּׂרִי כְּדַחֲזֵי; Rashi s.v. דפליגי עליה דר\"מ: הלכך כותי מזמנין עליו דעשורי מעשר"
+  }
+ ]
+}

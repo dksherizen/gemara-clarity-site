@@ -2,6 +2,425 @@
 
 Every change to the AI-written content, newest first. Each entry says what was wrong, the source used, and who approved it.
 
+## 202611060254-rev98-labels-rule1-and-berakhot-46-47
+
+Approved: Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.
+
+- **Avodah Zarah 5b, step 8** (hebrewStepName): והתנן brings the משנה in חולין (one day of notice before a festival) against the משנה's three days; it is the source of the challenge in step 7 and is answered in step 9. Source: Avodah Zarah 5b: ומי בעינן כולי האי? והתנן: בארבעה פרקים בשנה....
+  - was: ראיה
+  - now: קשיא
+- **Avodah Zarah 6b, step 30** (hebrewStepName): והתניא brings the lime ברייתא against רבי יהודה (step 29: does he ignore later happiness?); answered by רב נחמן בר יצחק in step 31. Source: Avodah Zarah 6b: ולית ליה לרבי יהודה... והתניא: רבי יהודה אומר: אשה לא תסוד במועד....
+  - was: ראיה
+  - now: קשיא
+- **Bava Batra 155b, step 2** (hebrewStepName): והא תנן brings the סריס משנה against the age-20 view (step 1); answered in step 3. Source: Bava Batra 155b: והא תנן: בן עשרים שלא הביא שתי שערות....
+  - was: ראיה
+  - now: קשיא
+- **Bava Batra 159b, step 2** (hebrewStepName): והתניא brings the collapsed-house ברייתא against the claim that תחת אבתיך is only a blessing (step 1); the next step draws the challenge and step 4 rejects it. Source: Bava Batra 159b: אבל לענין דינא לא?! והתניא: נפל הבית עליו ועל אביו....
+  - was: ראיה
+  - now: קשיא
+- **Bava Kamma 34b, step 4** (hebrewStepName): והתניא brings רבי יהודה's ברייתא on payment to back the challenge of step 1 after step 3 knocked out the answer; it attacks, it does not support. Source: Bava Kamma 34b: לענין תשלומין מי שמעת ליה?! והתניא, רבי יהודה אומר: יכול שור שוה מנה....
+  - was: ראיה
+  - now: קשיא
+- **Bava Kamma 34b, step 5** (hebrewStepName): Continues quoting the same attacking source; under rule 1 every step that quotes the rest of that source is a Challenge. (End of the רבי יהודה ברייתא begun in step 4.) Source: Bava Kamma 34b: אמרת: וכי מועד למה יוצא....
+  - was: ראיה
+  - now: קשיא
+- **Bava Kamma 42b, step 21** (hebrewStepName): והתניא brings the ברייתא of the struck woman against the limit of step 18 (challenge of step 20); the ברייתא continues on 43a step 1, already labelled קשיא, and is answered there in step 2. Source: Bava Kamma 42b: ובנזקין לא אמר רבי עקיבא? והתניא: הכה את האשה ויצאו ילדיה....
+  - was: ראיה
+  - now: קשיא
+- **Bava Kamma 61b, step 6** (hebrewStepName): והתנן brings the oven משנה against רבי שמעון (step 5: does he have no fire measure?); answered by רב נחמן in step 8. Source: Bava Kamma 61b: ולית ליה לרבי שמעון שיעורא בדליקה? והתנן: לא יעמיד אדם תנור....
+  - was: ראיה
+  - now: קשיא
+- **Bava Kamma 61b, step 7** (hebrewStepName): Continues quoting the same attacking source; under rule 1 every step that quotes the rest of that source is a Challenge. (רבי שמעון's line in the same משנה, which carries the contradiction.) Source: Bava Kamma 61b: רבי שמעון אומר: לא נאמרו שיעורין הללו....
+  - was: ראיה
+  - now: קשיא
+- **Bava Kamma 90b, step 12** (hebrewStepName): והתניא brings the סנהדרין ברייתא against the reading of step 11 (a witness becoming a judge); step 13 draws the point and step 14 answers. Source: Bava Kamma 90b: למימרא דעד נעשה דיין?! והתניא: סנהדרין שראו אחד שהרג את הנפש....
+  - was: ראיה
+  - now: קשיא
+- **Bava Kamma 90b, step 17** (hebrewStepName): והתניא brings the שמעון התימני ברייתא against the claim that רבי עקיבא holds a witness cannot judge (step 16); its continuation (steps 18-19) is already קשיא. Source: Bava Kamma 90b: וסבר רבי עקיבא דאין עד נעשה דיין? והתניא: והכה איש את רעהו באבן או באגרף....
+  - was: ראיה
+  - now: קשיא
+- **Bava Metzia 88a, step 13** (hebrewStepName): והתניא brings the בית הינו ברייתא behind the challenge of step 12 (is a buyer obligated by Torah law?). Source: Bava Metzia 88a: ולוקח מדאורייתא מי מחייב? והתניא: מפני מה חרבו חנויות של בית הינו....
+  - was: ראיה
+  - now: קשיא
+- **Bava Metzia 88b, step 1** (hebrewStepName): Continues quoting the same attacking source; under rule 1 every step that quotes the rest of that source is a Challenge. Across the amud break: the verses בית הינו relied on finish the ברייתא begun on 88a step 13; step 2 is the conclusion. Source: Bava Metzia 88a-b: שהיו אומרין: עשר תעשר ואכלת – ולא מוכר....
+  - was: ראיה
+  - now: קשיא
+- **Bekhorot 31b, step 9** (hebrewStepName): והתניא brings the ברייתא that מעשר is never sold, behind the challenge of step 8; answered by רב ששת in step 10. Source: Bekhorot 31b: אלא מעשר בביתיה מי מיזדבן? והתניא... ואינו נמכר לא חי ולא שחוט.
+  - was: ראיה
+  - now: קשיא
+- **Bekhorot 48a, step 12** (hebrewStepName): והתנן brings the guarantor משנה behind רבא's objection (step 11), which knocks out רבי ירמיה's explanation; step 13 replaces it. Source: Bekhorot 48a: מי איכא מידי דלדידיה לא מצי תבע ליה...? והתנן: המלוה את חבירו על ידי ערב....
+  - was: ראיה
+  - now: קשיא
+- **Bekhorot 48a, step 12** (relationToPreviousStep): Rule 1: the משנה is part of the challenge; avoid calling it support. Source: Bekhorot 48a.
+  - was: the source that supports רבא
+  - now: the source behind רבא
+- **Berakhot 55a, step 10** (hebrewStepName): והתניא brings the ten-things ברייתא against רב יהודה's praise of lingering (step 9); answered in step 11. Source: Berakhot 55a: והמאריך בבית הכסא מעליותא הוא? והתניא: עשרה דברים מביאין את האדם לידי תחתוניות....
+  - was: ראיה
+  - now: קשיא
+- **Chullin 100b, step 7** (hebrewStepName): והתניא brings רבי יהודה's ברייתא on a non-kosher bird's carcass behind the challenge of step 6 (does he hold איסור חל על איסור?). Source: Chullin 100b: וסבר רבי יהודה איסור חל על איסור? והתניא: רבי יהודה אומר....
+  - was: ראיה
+  - now: קשיא
+- **Chullin 100b, step 8** (hebrewStepName): Continues quoting the same attacking source; under rule 1 every step that quotes the rest of that source is a Challenge. (The תלמוד לומר of the same ברייתא.) Source: Chullin 100b: תלמוד לומר נבלה וטרפה לא יאכל לטמאה בה....
+  - was: ראיה
+  - now: קשיא
+- **Chullin 119b, step 3** (hebrewStepName): והתנן brings the onion-peel משנה against the case of one covering on top of another (step 2: ומי איכא שומר על גב שומר?); step 4 gives a different case instead. Source: Chullin 119b: ומי איכא שומר על גב שומר? והתנן: רבי יהודה אומר: שלש קליפות בבצל....
+  - was: ראיה
+  - now: קשיא
+- **Chullin 119b, step 3** (title): Rule 1: the משנה is quoted to attack, so the title should not call it a proof. Source: Chullin 119b.
+  - was: Proof from the three peels
+  - now: Challenge from the three peels
+- **Chullin 119b, step 3** (relationToPreviousStep): Rule 1: avoid calling an attacking source a proof. Source: Chullin 119b.
+  - was: Proves the doubt raised in step 2
+  - now: Gives the source for the doubt raised in step 2
+- **Eruvin 35b, step 3** (hebrewStepName): והתנן brings the מקוה משנה against רבי מאיר (step 2: does he rule stringently in a doubt?); answered in step 7. Source: Eruvin 35b: וסבר רבי מאיר ספיקא לחומרא? והתנן: טמא שירד לטבול....
+  - was: ראיה
+  - now: קשיא
+- **Eruvin 35b, step 4** (hebrewStepName): Continues quoting the same attacking source; under rule 1 every step that quotes the rest of that source is a Challenge. (Labelled מימרא, but it is the next clause of the same משנה.) Source: Eruvin 35b: במה דברים אמורים – בטומאה חמורה.
+  - was: מימרא
+  - now: קשיא
+- **Eruvin 35b, step 5** (hebrewStepName): Continues quoting the same attacking source; under rule 1 every step that quotes the rest of that source is a Challenge. Source: Eruvin 35b: אבל בטומאה קלה....
+  - was: ראיה
+  - now: קשיא
+- **Eruvin 35b, step 6** (hebrewStepName): Continues quoting the same attacking source; under rule 1 every step that quotes the rest of that source is a Challenge. (Last clause of the same משנה; the answer is step 7.) Source: Eruvin 35b: רבי יוסי מטמא.
+  - was: ראיה
+  - now: קשיא
+- **Eruvin 46a, step 16** (hebrewStepName): והתנן brings רבי אלעזר's משנה as the first half of רב פפא's challenge to רבא (step 15). Source: Eruvin 46a: ובדרבנן לא שני לן...? והתנן, רבי אלעזר אומר: כל אשה שעברו עליה שלש עונות....
+  - was: ראיה
+  - now: קשיא
+- **Eruvin 46a, step 17** (hebrewStepName): Second half of the same attacking source (the ברייתא about רבי relying on רבי אלעזר) that makes up רב פפא's challenge. Source: Eruvin 46a: ותניא: מעשה ועשה רבי כרבי אלעזר....
+  - was: ראיה
+  - now: קשיא
+- **Eruvin 46a, step 17** (relationToPreviousStep): Rule 1: this is part of a challenge, not a proof. Source: Eruvin 46a.
+  - was: Completes the proof begun in step 16
+  - now: Completes the challenge begun in step 16
+- **Eruvin 46a, step 21** (hebrewStepName): והתניא brings the near/far report ברייתא behind רב משרשיא's challenge to רבא (step 20). Source: Eruvin 46a: ובדרבנן לא שני...? והתניא: שמועה קרובה נוהגת שבעה ושלשים....
+  - was: ראיה
+  - now: קשיא
+- **Eruvin 46a, step 22** (hebrewStepName): Continues quoting the same attacking source; under rule 1 every step that quotes the rest of that source is a Challenge. Source: Eruvin 46a: ואי זו היא קרובה ואיזו היא רחוקה....
+  - was: ראיה
+  - now: קשיא
+- **Gittin 71b, step 22** (hebrewStepName): והתנן brings the scribe-and-witness משנה behind the second challenge (step 21: does רבי יוסי accept "Say"?). Source: Gittin 71b: ועוד, מי מודה רבי יוסי באומר אמרו?! והתנן: כתב סופר ועד – כשר....
+  - was: ראיה
+  - now: קשיא
+- **Keritot 18b, step 8** (hebrewStepName): והתניא brings the כללו של דבר ברייתא behind אביי's challenge to רבא (step 7). Source: Keritot 18b: ואת לא תסברא...? והתניא, כללו של דבר: כל שחלוקין בחטאות – חלוקין באשמות!.
+  - was: ראיה
+  - now: קשיא
+- **Keritot 18b, step 8** (title): Rule 1: the step is a challenge, so the title should not present it as support. Source: Keritot 18b.
+  - was: A ברייתא backs up אביי
+  - now: A ברייתא behind אביי's challenge
+- **Ketubot 42b, step 11** (hebrewStepName): איתיביה: אביי brings רבי שמעון's line against רבה (step 10); step 12 draws the challenge and step 13 answers. Source: Ketubot 42b: איתיביה, רבי שמעון אומר: אם לא הספיקה לגבות עד שמת האב....
+  - was: ראיה
+  - now: קשיא
+- **Ketubot 70a, step 17** (hebrewStepName): והתנן brings the קונם שאיני עושה לפיך משנה behind the challenge of step 16; answered in step 18. Source: Ketubot 70a: כל כמיניה דמפקע לה לשיעבודה? והתנן: קונם שאיני עושה לפיך – אינו צריך להפר.
+  - was: ראיה
+  - now: קשיא
+- **Ketubot 70a, step 17** (title): Rule 1: the step is a challenge, not a proof. Source: Ketubot 70a.
+  - was: Proof from a wife who vows
+  - now: Challenge from a wife who vows
+- **Ketubot 81a, step 17** (hebrewStepName): והתניא brings סומכוס's ברייתא behind רבא's challenge (step 16: can a כתובה be collected during the marriage?). Source: Ketubot 81a: ומי נתנה כתובה לגבות מחיים? והתניא, רבי אבא אומר, שאלתי את סומכוס....
+  - was: ראיה
+  - now: קשיא
+- **Ketubot 103b, step 32** (hebrewStepName): Inside the challenge ברייתא of step 31 (רבי חייא visiting רבי), רבי חייא quotes the signs-at-death ברייתא; it is part of the same attacking source, which is answered in steps 34-35. Source: Ketubot 103b: והתניא: כשחלה רבי... והתניא: מת מתוך השחוק סימן יפה לו....
+  - was: ראיה
+  - now: קשיא
+- **Meilah 15b, step 8** (hebrewStepName): והתנן brings the כל הפיגולים מצטרפין משנה behind the challenge of step 7; answered in step 9. Source: Meilah 15b: שלמים אמאי לא מחייב? והתנן: כל הפיגולים מצטרפין זה עם זה....
+  - was: ראיה
+  - now: קשיא
+- **Menachot 25b, step 6** (hebrewStepName): והתניא brings the ציץ ברייתא behind the objection of step 5 against רב יוסף's answer; answered by reversing the names in step 7. Source: Menachot 25b: דמרצה ציץ על אכילות מי שמעת ליה? והתניא: רבי אליעזר אומר: הציץ מרצה על אכילות....
+  - was: ראיה
+  - now: קשיא
+- **Menachot 25b, step 7** (relationToPreviousStep): Step 6 is a challenge (rule 1), not a proof. Source: Menachot 25b.
+  - was: against the proof in Step 6
+  - now: against the challenge in Step 6
+- **Menachot 25b, step 9** (hebrewStepName): Continues quoting the same attacking source; under rule 1 every step that quotes the rest of that source is a Challenge. (The תלמוד לומר of the ברייתא that רב ששת brought with מתקיף... והתניא in step 8, already קשיא.) Source: Menachot 25b: תלמוד לומר: כל טהור יאכל בשר....
+  - was: ראיה
+  - now: קשיא
+- **Menachot 48a, step 12** (hebrewStepName): והתנן brings the mixed-limbs משנה behind רבי יוחנן's objection (step 11); step 13 draws the challenge and step 14 answers. Source: Menachot 48a: וכי אומר לו לאדם עמוד וחטא בשביל שתזכה?! והתנן: אברי חטאת שנתערבו באברי עולה....
+  - was: ראיה
+  - now: קשיא
+- **Menachot 48a, step 13** (relationToPreviousStep): Rule 1: the משנה is the source of a challenge, not a proof. Source: Menachot 48a.
+  - was: Completes רבי יוחנן's proof from the משנה
+  - now: Completes רבי יוחנן's challenge from the משנה
+- **Menachot 51b, step 21** (hebrewStepName): והתנן brings רבי שמעון's seven court rules behind the challenge of step 20; the key line is step 23 and the answer is step 24. Source: Menachot 51b: וסבר רבי שמעון משל ציבור דאורייתא? והתנן, אמר רבי שמעון: שבעה דברים התקינו בית דין....
+  - was: ראיה
+  - now: קשיא
+- **Menachot 51b, step 22** (hebrewStepName): Continues quoting the same attacking source; under rule 1 every step that quotes the rest of that source is a Challenge. Source: Menachot 51b: וכן גר שמת והניח זבחים....
+  - was: ראיה
+  - now: קשיא
+- **Menachot 72a, step 21** (hebrewStepName): והתניא brings רבי's account of studying with רבי שמעון behind the challenge of step 20 (isn't רבי a student of רבי שמעון?); answered in step 22. Source: Menachot 72a: ורבי, לאו תלמידיה דרבי שמעון הוא? והתניא, אמר רבי: כשהיינו למדין תורה אצל רבי שמעון בתקוע....
+  - was: ראיה
+  - now: קשיא
+- **Menachot 72a, step 21** (title): Rule 1: the source serves a challenge, so the title should not call it a proof. Source: Menachot 72a.
+  - was: Proof that רבי learned
+  - now: Source showing that רבי learned
+- **Nazir 34a, step 2** (hebrewStepName): והתניא brings רבי טרפון's ברייתא behind the challenge of step 1 (the author cannot be רבי טרפון); step 3 replaces the suggestion. Source: Nazir 34a: אילימא רבי טרפון מי הוי נזיר? והתניא, רבי יהודה אומר משום רבי טרפון: אין אחד מהן נזיר....
+  - was: ראיה
+  - now: קשיא
+- **Nazir 34a, step 2** (relationToPreviousStep): Rule 1: avoid calling an attacking source a proof. Source: Nazir 34a.
+  - was: Brings a source to prove the challenge
+  - now: Brings the source behind the challenge
+- **Nedarim 19a, step 7** (hebrewStepName): והתניא brings a ברייתא (רבי אליעזר: liquids have no טומאה at all) against the assumption in step 6 that he holds a doubtful liquid is impure; it is answered in step 8. Rule 1. Source: Nedarim 19a: והתניא, רבי אליעזר אומר: אין טומאה למשקין כל עיקר..
+  - was: ראיה
+  - now: קשיא
+- **Niddah 12a, step 7** (hebrewStepName): The ברייתא is quoted to back רב הונא's objection in step 6 (a check cannot be done within שיעור וסת); it attacks the premise of the question, it does not prove a position. Rule 1. Source: Niddah 12a: והתניא: איזהו שיעור וסת? משל לשמש ועד שעומדים בצד.
+  - was: ראיה
+  - now: קשיא
+- **Niddah 58a, step 7** (hebrewStepName): 'וכי תימא... ומי מחזקינן טומאה ממקום למקום?' is an objection to a suggested answer, which rule 2 makes a Challenge, not a Rejection. Step 8 (its source) must carry the same label (rule 5). Source: Niddah 58a: וכי תימא זימנין דנגע בעקבה, ומי מחזקינן טומאה ממקום.
+  - was: דחיה
+  - now: קשיא
+- **Niddah 58a, step 8** (hebrewStepName): והתניא brings the ברייתא behind the objection in step 7 to the suggested answer; the suggestion is then replaced in step 9. A source quoted to attack is a Challenge. Rule 1. Source: Niddah 58a: והתניא: היתה לה מכה בצוארה, שתוכל לתלות — תולה,.
+  - was: ראיה
+  - now: קשיא
+- **Niddah 58a, step 8** (title): Matches the relabel: the ברייתא attacks the suggested answer. Source: Niddah 58a: והתניא: היתה לה מכה בצוארה, שתוכל לתלות — תולה,.
+  - was: Proof from the neck
+  - now: Challenge from the neck
+- **Niddah 58a, step 8** (relationToPreviousStep): Matches the relabel. Source: Niddah 58a: והתניא: היתה לה מכה בצוארה, שתוכל לתלות — תולה,.
+  - was: Supports the rule from step 7
+  - now: Backs the objection in step 7
+- **Pesachim 2b, step 7** (hebrewStepName): מיתיבי: רבי יהודה's ordering is brought against the view that אור means day (רב הונא as first understood); like the מיתיבי in 2a step 17, it is a Challenge, accepted with שמע מינה in step 8. Rule 1. Source: Pesachim 2b: מיתיבי, רבי יהודה אומר: בודקין אור (לארבעה) עשר ובארבעה.
+  - was: ראיה
+  - now: קשיא
+- **Pesachim 2b, step 7** (relationToPreviousStep): Matches the relabel: the step opens with מיתיבי. Source: Pesachim 2b: מיתיבי, רבי יהודה אומר: בודקין אור (לארבעה) עשר ובארבעה.
+  - was: brings positive proof for its position
+  - now: brings a challenge against the view that אור means day
+- **Pesachim 2b, step 8** (relationToPreviousStep): Matches the relabel of step 7. Source: Pesachim 2b: שמע מינה..
+  - was: Accepts the proof from step 7
+  - now: Accepts the challenge from step 7
+- **Pesachim 2b, step 9** (hebrewStepName): מיתיבי opens a second ברייתא (when work stops on the fourteenth) brought against the view that אור means day. Rule 1. Source: Pesachim 2b: מיתיבי: מאימתי ארבעה עשר אסור בעשיית מלאכה? רבי אליעזר.
+  - was: ראיה
+  - now: קשיא
+- **Pesachim 2b, step 9** (relationToPreviousStep): Matches the relabel of step 7. Source: Pesachim 2b: מיתיבי: מאימתי ארבעה עשר אסור בעשיית מלאכה? רבי אליעזר.
+  - was: after the proof from
+  - now: after the challenge from
+- **Pesachim 2b, step 12** (hebrewStepName): The inference 'אלמא אור אורתא הוא' is the punchline of the מיתיבי begun in step 9, drawn from the same ברייתא, before the answer in step 13. Rule 1. Source: Pesachim 2b: מדקאמר רבי יהודה משעת הנץ החמה, אלמא ״אור״ דקאמר.
+  - was: ראיה
+  - now: קשיא
+- **Pesachim 2b, step 13** (hebrewStepName): 'לא, מאי אור — עמוד השחר' answers the challenge of steps 9-12; an answer to a Challenge is a Resolution (rule 2). Knock-on of relabelling step 12. Source: Pesachim 2b: לא, מאי ״אור״ — עמוד השחר..
+  - was: דחיה
+  - now: תירוץ
+- **Pesachim 2b, step 22** (hebrewStepName): מיתיבי: the signal-fire ברייתא ('לאור עיבורו') is brought against the view that אור means day; accepted with שמע מינה in step 23. Rule 1. Source: Pesachim 2b: מיתיבי: אין משיאין משואות אלא על החדש שנראה בזמנו,.
+  - was: ראיה
+  - now: קשיא
+- **Pesachim 2b, step 22** (relationToPreviousStep): Matches the relabel of steps 9-12. Source: Pesachim 2b: מיתיבי: אין משיאין משואות אלא על החדש שנראה בזמנו,.
+  - was: The proof from
+  - now: The challenge from
+- **Pesachim 2b, step 23** (title): Matches the relabel of step 22. Source: Pesachim 2b: שמע מינה..
+  - was: accepts the proof
+  - now: accepts the challenge
+- **Pesachim 2b, step 23** (relationToPreviousStep): Matches the relabel of step 22. Source: Pesachim 2b: שמע מינה..
+  - was: accepts the proof brought in step 22
+  - now: accepts the challenge brought in step 22
+- **Pesachim 34a, step 21** (hebrewStepName): 'והתנן, זה הכלל' opens the משנה that completes רבי יוחנן's איתיביה against ריש לקיש (34b step 1, already קשיא, finishes it). Rule 1. Source: Pesachim 34a: והתנן, זה הכלל:.
+  - was: ראיה
+  - now: קשיא
+- **Pesachim 44a, step 5** (hebrewStepName): והתנן: אביי quotes the משנה of the תרומה soup to attack רב דימי's rule that היתר does not join איסור. Rule 1. Source: Pesachim 44a: והתנן: המקפה של תרומה והשום והשמן של חולין, ונגע.
+  - was: ראיה
+  - now: קשיא
+- **Pesachim 44a, step 5** (title): Matches the relabel. Source: Pesachim 44a: והתנן: המקפה של תרומה והשום והשמן של חולין, ונגע.
+  - was: The proof:
+  - now: The challenge:
+- **Pesachim 44a, step 8** (hebrewStepName): 'היכי דמי, לאו משום דהיתר מצטרף לאיסור?' is the conclusion of אביי's attack on רב דימי from the same משנה, before רב דימי's answer in step 9. Rule 1. Source: Pesachim 44a: היכי דמי, לאו משום דהיתר מצטרף לאיסור?.
+  - was: ראיה
+  - now: קשיא
+- **Pesachim 44a, step 8** (relationToPreviousStep): Matches the relabel. Source: Pesachim 44a: היכי דמי, לאו משום דהיתר מצטרף לאיסור?.
+  - was: turns it into a proof against
+  - now: turns it into a challenge against
+- **Pesachim 44a, step 9** (hebrewStepName): רב דימי's 'לא, מאי כזית...' answers אביי's challenge (steps 4-8); an answer to a Challenge is a Resolution (rule 2). Knock-on of relabelling step 8. Source: Pesachim 44a: לא, מאי כזית — דאיכא כזית בכדי אכילת פרס..
+  - was: דחיה
+  - now: תירוץ
+- **Pesachim 44a, step 9** (relationToPreviousStep): Matches the relabel. Source: Pesachim 44a: לא, מאי כזית — דאיכא כזית בכדי אכילת פרס..
+  - was: Rejects אביי's proof
+  - now: Answers אביי's challenge
+- **Pesachim 52b, step 22** (hebrewStepName): 'והא תנן' opens the שביעית משנה that is the source of רב שימי's מתקיף against the answer of steps 19-20. Rule 1. Source: Pesachim 52b: והא תנן: מאימתי אין קוצצין את האילנות בשביעית? בית.
+  - was: ראיה
+  - now: קשיא
+- **Pesachim 59a, step 25** (hebrewStepName): והתניא opens the ברייתא that backs the challenge of step 24 (a burnt-offering cannot precede the sin-offering); the challenge is answered in step 28. Rule 1. Source: Pesachim 59a: והתניא: ״והקריב את אשר לחטאת ראשונה״, מה תלמוד לומר?.
+  - was: ראיה
+  - now: קשיא
+- **Pesachim 59a, step 26** (hebrewStepName): Second half of the same attacking ברייתא (זה בנה אב לכל חטאות...), still before the answer in step 28. Rule 1. Source: Pesachim 59a: אלא: זה בנה אב לכל חטאות שיהו קודמות לכל.
+  - was: ראיה
+  - now: קשיא
+- **Pesachim 81b, step 2** (hebrewStepName): 'ומי דיינינן קל וחומר מהלכה?' objects to רבה's קל וחומר answer (81a step 18, finished in 81b step 1) and is answered by רבא in step 4; an objection to an answer is a Challenge (rule 2). Step 3 (its source) must match (rule 5). Source: Pesachim 81b: אמרי: ומי דיינינן קל וחומר מהלכה?.
+  - was: דחיה
+  - now: קשיא
+- **Pesachim 81b, step 2** (title): Matches the relabel. Source: Pesachim 81b: אמרי: ומי דיינינן קל וחומר מהלכה?.
+  - was: Rejection: you cannot
+  - now: Challenge: you cannot
+- **Pesachim 81b, step 3** (hebrewStepName): והתניא: רבי אליעזר's 'אין דנין קל וחומר מהלכה' is the source of the objection in step 2 to רבה's קל וחומר; answered by רבא in step 4. Rule 1. Source: Pesachim 81b: והתניא, אמר לו רבי אליעזר: עקיבא, עצם כשעורה הלכה,.
+  - was: ראיה
+  - now: קשיא
+- **Pesachim 81b, step 3** (title): Matches the relabel. Source: Pesachim 81b: והתניא, אמר לו רבי אליעזר: עקיבא, עצם כשעורה הלכה,.
+  - was: Proof from a ברייתא
+  - now: Backing from a ברייתא
+- **Pesachim 96a, step 11** (hebrewStepName): והתניא: בן בג בג's ברייתא is brought to back the challenge of step 10 (inspection is not limited to פסח מצרים); answered in step 12. Rule 1. Source: Pesachim 96a: והתניא, בן בג בג אומר: מניין לתמיד שטעון ביקור.
+  - was: ראיה
+  - now: קשיא
+- **Pesachim 96a, step 12** (relationToPreviousStep): Matches the relabel of step 11. Source: Pesachim 96a: שאני התם, דכתיב: ״תשמרו״..
+  - was: Deflects the proof from
+  - now: Deflects the challenge from
+- **Rosh Hashanah 31b, step 24** (hebrewStepName): והתניא: רב פפא's timeline sources are quoted to attack רב נחמן בר יצחק's attribution to רבן יוחנן בן זכאי; step 27 (ואידך) and 28 answer it for רב נחמן בר יצחק. Rule 1. Source: Rosh Hashanah 31b: והתניא: כל שנותיו של רבן יוחנן בן זכאי מאה.
+  - was: ראיה
+  - now: קשיא
+- **Rosh Hashanah 31b, step 25** (hebrewStepName): Continues the same attacking chain (ותניא: the strip stopped whitening forty years before the destruction) before the answer in step 28. Rule 1. Source: Rosh Hashanah 31b: ותניא: ארבעים שנה קודם שנחרב הבית לא היה לשון.
+  - was: ראיה
+  - now: קשיא
+- **Rosh Hashanah 31b, step 25** (relationToPreviousStep): Matches the relabel. Source: Rosh Hashanah 31b: ותניא: ארבעים שנה קודם שנחרב הבית לא היה לשון.
+  - was: Continues the proof begun
+  - now: Continues the objection begun
+- **Rosh Hashanah 31b, step 26** (hebrewStepName): Last piece of the same attacking chain (ותנן: משחרב הבית התקין רבן יוחנן בן זכאי) before the answer in step 28. Rule 1. Source: Rosh Hashanah 31b: ותנן: משחרב הבית התקין רבן יוחנן בן זכאי!.
+  - was: ראיה
+  - now: קשיא
+- **Rosh Hashanah 31b, step 26** (relationToPreviousStep): Matches the relabel. Source: Rosh Hashanah 31b: ותנן: משחרב הבית התקין רבן יוחנן בן זכאי!.
+  - was: Completes the proof by
+  - now: Completes the objection by
+- **Rosh Hashanah 31b, step 27** (relationToPreviousStep): Matches the relabel of steps 24-26. Source: Rosh Hashanah 31b: ואידך:.
+  - was: Turns the proof just completed into a challenge
+  - now: Turns the objection just completed into a question
+- **Rosh Hashanah 7a, step 29** (hebrewStepName): והתניא (אין מעברין השנה לפני ראש השנה...) is the source of the challenge in step 28 that leap years are counted from ניסן; answered in step 30. Rule 1. Source: Rosh Hashanah 7a: והתניא: אין מעברין השנה לפני ראש השנה, ואם עיברוה.
+  - was: ראיה
+  - now: קשיא
+- **Sanhedrin 112b, step 26** (hebrewStepName): והתניא (ירושלים אינה נעשית עיר הנדחת) knocks out the ירושלים reading inside רב יוסף's מתיב (step 24); the challenge is answered in step 29. Rule 1. Source: Sanhedrin 112b: והתניא: עשרה דברים נאמרו בירושלים, וזו אחת מהן –.
+  - was: ראיה
+  - now: קשיא
+- **Sanhedrin 112b, step 26** (relationToPreviousStep): Matches the relabel. Source: Sanhedrin 112b: והתניא: עשרה דברים נאמרו בירושלים, וזו אחת מהן –.
+  - was: Proves the doubt raised
+  - now: Backs the doubt raised
+- **Sanhedrin 41a, step 40** (hebrewStepName): והתניא: the 120-years ברייתא is brought against identifying בן זכאי as רבי יוחנן בן זכאי (step 39); answered in step 44. Rule 1. Source: Sanhedrin 41a: והתניא: כל שנותיו של רבי יוחנן בן זכאי מאה.
+  - was: ראיה
+  - now: קשיא
+- **Sanhedrin 41a, step 41** (hebrewStepName): ותניא: continues the same attack (the סנהדרין left forty years before the חורבן) before the answer in step 44. Rule 1. Source: Sanhedrin 41a: ותניא: ארבעים שנה קודם חורבן הבית, גלתה סנהדרין וישבה.
+  - was: ראיה
+  - now: קשיא
+- **Sanhedrin 41a, step 43** (hebrewStepName): ותנן: last piece of the same attack (רבן יוחנן בן זכאי's תקנות after the destruction) before the answer in step 44. Rule 1. Source: Sanhedrin 41a: ותנן: משחרב בית המקדש, התקין רבן יוחנן בן זכאי..
+  - was: ראיה
+  - now: קשיא
+- **Sanhedrin 68a, step 2** (hebrewStepName): והתניא opens the story of רבי אליעזר's illness, brought against the claim that רבי עקיבא learned this from רבי יהושע (step 1). Rule 1. Source: Sanhedrin 68a: והתניא: כשחלה רבי אליעזר, נכנסו רבי עקיבא וחביריו לבקרו..
+  - was: ראיה
+  - now: קשיא
+- **Shabbat 103b, step 15** (hebrewStepName): 'למימרא דרבי שמעון לחומרא?' objects to the suggestion of step 14 (וכי תימא); an objection to a suggestion is a Challenge (rule 2). Step 16 (its source) must match (rule 5). Source: Shabbat 103b: למימרא דרבי שמעון לחומרא?.
+  - was: דחיה
+  - now: קשיא
+- **Shabbat 103b, step 16** (hebrewStepName): והתניא: רבי שמעון's 'עד שיקדח את כולו' is the source of the objection in step 15 to the suggested difference; the suggestion is replaced in step 17. Rule 1. Source: Shabbat 103b: והתניא: הקודח כל שהוא חייב, המגרר כל שהוא, המעבד.
+  - was: ראיה
+  - now: קשיא
+- **Shabbat 52a, step 31** (hebrewStepName): והתנן: the ring משנה (טבעת בהמה טהורה) is brought against the משנה's assumption that animal chains take טומאה (step 30); 52b step 1, already קשיא, finishes it. Rule 1. Source: Shabbat 52a: והתנן: טבעת אדם — טמאה, וטבעת בהמה וכלים ושאר.
+  - was: ראיה
+  - now: קשיא
+- **Shabbat 59a, step 5** (hebrewStepName): והתניא: the מדרס ברייתא (עמוד ונעשה מלאכתנו) is brought against רבי יוחנן (step 4); the challenge is answered in step 8. Rule 1. Source: Shabbat 59a: והתניא: ״וכל כלי אשר ישב עליו וגו׳״ — יכול.
+  - was: ראיה
+  - now: קשיא
+- **Shabbat 59a, step 7** (hebrewStepName): רבי יוחנן's side of the dispute is the punchline of the same attack (he contradicts himself), answered by איפוך in step 8. Rule 1. Source: Shabbat 59a: ורבי יוחנן אמר: אף אומר בטמא מת ״עמוד ונעשה.
+  - was: ראיה
+  - now: קשיא
+- **Shabbat 59a, step 7** (relationToPreviousStep): Matches the relabel. Source: Shabbat 59a: ורבי יוחנן אמר: אף אומר בטמא מת ״עמוד ונעשה.
+  - was: which proves the challenge raised
+  - now: which completes the challenge raised
+- **Shabbat 90a, step 13** (hebrewStepName): והתנן (כל שאין לו עיקר אין לו שביעית) is the source of the מיתיבי in step 12 against identifying בורית as כבריתא; the identification is replaced in step 14. Rule 1. Source: Shabbat 90a: והתנן: זה הכלל, כל שיש לו עיקר — יש.
+  - was: ראיה
+  - now: קשיא
+- **Shabbat 90a, step 13** (title): Matches the relabel. Source: Shabbat 90a: והתנן: זה הכלל, כל שיש לו עיקר — יש.
+  - was: Proof: only rooted
+  - now: Source: only rooted
+- **Shevuot 11b, step 9** (hebrewStepName): והתניא (ריש לקיש: רבי שמעון holds the פרה can be redeemed on its woodpile) completes the challenge of step 8 to the answer that the ברייתא is רבי שמעון; answered in step 10. Rule 1. Source: Shevuot 11b: והתניא, רבי שמעון אומר: פרה מטמאה טומאת אוכלין, הואיל.
+  - was: ראיה
+  - now: קשיא
+- **Shevuot 31b, step 5** (hebrewStepName): והתנן: the deposit-oath משנה is quoted by the רבנן to attack רב פפא (step 4); answered in step 7. Rule 1. Source: Shevuot 31b: והתנן גבי פקדון: שבועת הפקדון נוהגת באנשים ובנשים, ברחוקין.
+  - was: ראיה
+  - now: קשיא
+- **Shevuot 31b, step 6** (title): Step 6 is the end of the same challenge and is already labelled קשיא. Source: Shevuot 31b: מושבע מפי אחרים בפקדון מנא להו לרבנן דחייב? לאו.
+  - was: Finish Their Proof
+  - now: Finish Their Challenge
+- **Shevuot 5a, step 13** (hebrewStepName): 'והא תניא' (the waters test only when the husband is clean) backs אביי's challenge to רבא in step 12. Rule 1. Source: Shevuot 5a: והא תניא: ״ונקה האיש מעון והאשה ההוא תשא את.
+  - was: ראיה
+  - now: קשיא
+- **Sotah 28a, step 2** (hebrewStepName): 'והא תניא' (the waters test only when the husband is clean) backs the challenge in step 1 against reading 'אותו' as the husband. Rule 1. Source: Sotah 28a: והא תניא: ״ונקה האיש מעון והאשה ההיא תשא את.
+  - was: ראיה
+  - now: קשיא
+- **Temurah 19a, step 11** (hebrewStepName): והתניא (רבי אלעזר: הוא עצמו יקרב פסח) is the source of רב עוקבא בר חמא's מתיב against אביי (step 10); answered in step 13. Rule 1. Source: Temurah 19a: והתניא: המפריש נקבה לפסח — היא וולדותיה ירעו עד.
+  - was: ראיה
+  - now: קשיא
+- **Yevamot 44a, step 5** (hebrewStepName): והתניא (the elders give him fitting advice) is the source of the challenge in step 4 to letting him marry all four; answered in step 7. Rule 1. Source: Yevamot 44a: והתניא: ״וקראו לו זקני עירו״ הן ולא שלוחן. ״ודברו.
+  - was: ראיה
+  - now: קשיא
+- **Yevamot 44a, step 6** (hebrewStepName): Continues the same attacking ברייתא ('כלך אצל שכמותך') before the answer in step 7. Rule 1. Source: Yevamot 44a: שאם היה הוא ילד והיא זקנה, הוא זקן והיא.
+  - was: ראיה
+  - now: קשיא
+- **Yevamot 52b, step 10** (hebrewStepName): והתניא: רבי עקיבא's 'נאסרה עליו עולמית' is the source of the challenge in step 9 that the רישא cannot follow רבי עקיבא; answered in step 11. Rule 1. Source: Yevamot 52b: והתניא, רבי עקיבא אומר: מנין לנותן גט ליבמתו שנאסרה.
+  - was: ראיה
+  - now: קשיא
+- **Yoma 16b, step 3** (hebrewStepName): והתנן: the מדות measurements are quoted to attack the idea that מדות follows רבי יהודה (step 2); the punchline comes in step 5. Rule 1. Source: Yoma 16b: והתנן: כל העזרה היתה אורך מאה ושמונים ושבע על.
+  - was: ראיה
+  - now: קשיא
+- **Yoma 16b, step 4** (hebrewStepName): Continues the same מדות משנה (south to north) inside the same challenge, before its punchline in step 5. Rule 1. Source: Yoma 16b: מן הדרום לצפון — מאה ושלשים וחמש; הכבש והמזבח.
+  - was: ראיה
+  - now: קשיא
+- **Yoma 18a, step 14** (hebrewStepName): והתניא (הכהן הגדול מאחיו... בחכמה) backs the challenge in step 13 against the משנה's 'שמא לא למד'; answered by רב יוסף in step 15. Rule 1. Source: Yoma 18a: והתניא: ״והכהן הגדול מאחיו״, שיהא גדול מאחיו בכח, בנוי,.
+  - was: ראיה
+  - now: קשיא
+- **Yoma 18a, step 14** (relationToPreviousStep): Matches the relabel. Source: Yoma 18a: והתניא: ״והכהן הגדול מאחיו״, שיהא גדול מאחיו בכח, בנוי,.
+  - was: text-based proof for
+  - now: text-based source for
+- **Yoma 23a, step 33** (hebrewStepName): והתניא (עשרה דברים נאמרו בירושלים) is the source of the challenge in step 32 to רבי צדוק's question; 23b step 1, already קשיא, finishes the quote. Rule 1. Source: Yoma 23a: והתניא: עשרה דברים נאמרו בירושלים, וזו אחת מהן:.
+  - was: ראיה
+  - now: קשיא
+- **Yoma 28b, step 30** (hebrewStepName): והתניא (moonlight and sunlight look different) backs the challenge 'ומי מיחלף?' in step 29; answered in step 31. Rule 1. Source: Yoma 28b: והתניא, רבי אומר: אינו דומה תימור של לבנה לתימור.
+  - was: ראיה
+  - now: קשיא
+- **Yoma 52b, step 13** (hebrewStepName): והתניא (משנגנז ארון...) is brought for the challenge in step 12 that the second Temple had no ארון; the answer comes in step 17. Rule 1. Source: Yoma 52b: והתניא: משנגנז ארון — נגנזה עמו צנצנת המן, וצלוחית.
+  - was: ראיה
+  - now: קשיא
+- **Yoma 52b, step 13** (title): Matches the relabel. Source: Yoma 52b: והתניא: משנגנז ארון — נגנזה עמו צנצנת המן, וצלוחית.
+  - was: Proof that the Ark was hidden away
+  - now: A ברייתא: the Ark was hidden away
+- **Yoma 52b, step 15** (hebrewStepName): The פסוק is the ברייתא's own source (שנאמר...) for יאשיהו hiding the ארון: the rest of the same attacking source, before the answer in step 17. Rule 1. Source: Yoma 52b: שנאמר: ״ויאמר ללוים המבינים לכל ישראל הקדושים לה׳ תנו.
+  - was: ראיה
+  - now: קשיא
+- **Yoma 52b, step 16** (hebrewStepName): רבי אלעזר's גזירה שוה explains the ברייתא's list; it is still part of the same challenge, which is answered only in step 17. Rule 1 (stop at the answer). Source: Yoma 52b: ואמר רבי אלעזר: אתיא ״שמה״ ״שמה״, ואתיא ״דורות״ ״דורות״..
+  - was: ראיה
+  - now: קשיא
+- **Yoma 54a, step 7** (hebrewStepName): והתניא (no one passed through יהודה for fifty-two years) backs רבה's challenge in step 6 against עולא; answered in step 10. Rule 1. Source: Yoma 54a: והתניא, רבי יהודה אומר: חמשים ושתים שנה לא עבר.
+  - was: ראיה
+  - now: קשיא
+- **Yoma 54a, step 8** (hebrewStepName): ותניא: second ברייתא in the same challenge (brimstone and salt for seven years), before the answer in step 10. Rule 1. Source: Yoma 54a: ותניא, רבי יוסי אומר: שבע שנים נתקיימה גפרית ומלח.
+  - was: ראיה
+  - now: קשיא
+- **Yoma 54a, step 9** (hebrewStepName): רבי יוחנן's source for the ברייתא of step 8: still inside the same challenge, which is answered only in step 10. Rule 1 (stop at the answer). Source: Yoma 54a: ואמר רבי יוחנן: מאי טעמא דרבי יוסי — אתיא.
+  - was: ראיה
+  - now: קשיא
+- **Zevachim 13a, step 12** (hebrewStepName): והתניא opens the ברייתא behind 'וקבלה מי פסלה?' (step 11): its point comes in step 15 (קבלה – לא עשה בה מחשבה כמעשה) and רבא answers in step 17. Rule 1. Source: Zevachim 13a: והתניא: ״והקריבו״ – זו קבלת הדם. אתה אומר קבלת.
+  - was: ראיה
+  - now: קשיא
+- **Zevachim 13a, step 13** (hebrewStepName): רבי עקיבא's גזירה שוה: the rest of the same attacking ברייתא, before the answer in step 17. Rule 1. Source: Zevachim 13a: אמר רבי עקיבא: מנין לקבלה שלא תהא אלא בכהן.
+  - was: ראיה
+  - now: קשיא
+- **Zevachim 13a, step 20** (hebrewStepName): והתניא (פיגול intent works in שחיטה and קבלה) is the source of the challenge in step 19 to רבא's answer. Rule 1. Source: Zevachim 13a: והתניא: יכול לא תהא מחשבה מועלת אלא בזריקה בלבד;.
+  - was: ראיה
+  - now: קשיא
+- **Zevachim 13b, step 3** (hebrewStepName): והתנן (בשתי אכילות הכתוב מדבר) is the source of the scholar's challenge to רבא in step 2; answered in step 4. Rule 1. Source: Zevachim 13b: והתנן: יכול לא תהא מחשבה מועלת אלא באכילת בשר,.
+  - was: ראיה
+  - now: קשיא
+- **Berakhot 46b, step 1** (hebrewStepName): This is the middle of the ברייתא brought (כדתניא) as the proof for רב's claim that הטוב והמטיב is not from the Torah; it opens as ראיה on 46a step 18, and step 2 (its end) is also ראיה. The second half takes the first half's label across the amud break. Source: Berakhot 46a-b: כִּדְתַנְיָא: כׇּל הַבְּרָכוֹת כּוּלָּן... וְיֵשׁ מֵהֶן שֶׁחוֹתֵם בָּהֶן בְּ״בָרוּךְ״.
+  - was: מימרא
+  - now: ראיה
+- **Berakhot 46b, step 24** (hebrewStepName): The last clause of רב ששת's ברייתא (steps 22-23 are מימרא); the discussion continues right after with מסייע ליה לרב, so this is not where it lands. The second half of a statement takes the first half's label. Source: Berakhot 46b: וְלִמְקוֹם שֶׁמַּיִם אַחֲרוֹנִים חוֹזְרִין — לְשָׁם בְּרָכָה חוֹזֶרֶת. מְסַיַּיע לֵיהּ לְרַב.
+  - was: מסקנא
+  - now: מימרא
+- **Berakhot 46b, step 27** (hebrewStepName): רבי חייא's words to רב end a short story illustrating רב's rule; no discussion lands here (a new ברייתא follows). Story lines are Statement. Source: Berakhot 46b: אֲמַר לֵיהּ: בַּר פַּחֲתֵי, ״עַיֵּין בְּבִרְכַּת מְזוֹנָא״ קָאָמַר לָךְ.
+  - was: מסקנא
+  - now: מימרא
+- **Berakhot 47a, step 19** (hebrewStepName): שמואל objects to רב's claim that the meal is over; nothing here pushes aside a proof, so by the rulebook (objection to a position, also inside a story) it is a Challenge, not a Rejection. Source: Berakhot 47a: אֲמַר לֵיהּ שְׁמוּאֵל: אִלּוּ מַיְיתוּ לִי אַרְדִּילַיָּא... מִי לָא אָכְלִינַן.
+  - was: דחיה
+  - now: קשיא
+- **Berakhot 47a, step 19** (relationToPreviousStep): Keeps the relation text in line with the corrected label (Challenge, not Rejection). Source: Berakhot 47a: מִי לָא אָכְלִינַן.
+  - was: Rejects רב's claim
+  - now: Challenges רב's claim
+- **Berakhot 47b, step 1** (hebrewStepName): The verse is the second half of אביי's answer to רב פפא's challenge, which 47a step 30 labels תירוץ (עָלֶיךָ אָמַר קְרָא); the second half takes the first half's label across the amud break. Source: Berakhot 47a-b: אֲמַר לֵיהּ: עָלֶיךָ אָמַר קְרָא ״מִכֹּל מַעְשְׂרֹתֵיכֶם תָּרִימוּ״.
+  - was: ראיה
+  - now: תירוץ
+- **Berakhot 47b, step 11** (hebrewStepName): This is the end of רבא's answer (step 10, תירוץ) to the challenge about the כותי: the כותים tithe properly, so they are not עמי הארץ by the חכמים' definition. The site itself says it 'completes רבא's answer'; the second half takes the first half's label. Source: Berakhot 47b: וְהָנֵי כּוּתָאֵי עַשּׂוֹרֵי מְעַשְּׂרִי כְּדַחֲזֵי; Rashi s.v. דפליגי עליה דר"מ: הלכך כותי מזמנין עליו דעשורי מעשר.
+  - was: ראיה
+  - now: תירוץ
+
 ## 202611060252-rev97-berakhot-4
 
 Approved: Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.
