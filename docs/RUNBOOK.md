@@ -41,6 +41,7 @@ Then open http://localhost:8765. (Sign-in won't work there.)
 2. `node tools/apply-repairs.mjs tools/repairs/<file>.json --dry` checks that every repair still matches.
 3. `node tools/apply-repairs.mjs tools/repairs/<file>.json` applies them. It also raises the data version (so phones fetch the fix), logs each change in `docs/content-repairs.md`, and rebuilds the search pages.
 4. Fix **every** field that says the wrong thing: the summary people read first, the explanation, the overview. A fix to the hidden explanation alone leaves the old error on screen.
+5. A step's label (Statement, Question, Challenge, Proof…) is the field `hebrewStepName`. Label it by the rules in `docs/step-labels.md` (set by David, Nov 6 2026), and fix any title or "relation" line that names the old kind.
 
 **Check everything before it goes live**
 
@@ -67,4 +68,6 @@ On this computer a push runs the check automatically and stops if something is b
 - Bing Webmaster Tools: skipped by choice (Nov 5 2026). It can import the Google Search Console setup later.
 - About 20 more Classics need checking against the Gemara. All 113 summaries are still marked "not approved wording".
 - A rav should review the corrections in `docs/content-repairs.md` and the delicate passages.
-- Weekly Daf Yomi checks: Daf Yomi stays in Kodashim and Taharos until June 2027, where the AI makes the most mistakes.
+- Weekly Daf Yomi checks: Daf Yomi stays in Kodashim and Taharos until June 2027, where the AI makes the most mistakes. Checked against the Gemara and Rashi so far (Nov 6 2026): Bekhorot 51a–61a and Arakhin 2a–20b. Next: Arakhin 21a onward (learners reach it about Dec 8).
+- Berakhot 2a–64a was checked line by line, text and labels, on Nov 6 2026.
+- Step labels across Shas: on Nov 6 2026 every step flagged by four automatic signals (Rejection after a Challenge or an answer, Conclusion in the middle, "ולא פליגי" as Resolution) and every Proof opening with an attack word was checked against `docs/step-labels.md`; about 2,000 labels were fixed. Not yet decided by David: how to label a יוכיח / מה ל… chain where the amud itself mixes styles (Menachot 5b–6a held back), and "ואידך" replies.
