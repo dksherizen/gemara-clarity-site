@@ -2,6 +2,257 @@
 
 Every change to the AI-written content, newest first. Each entry says what was wrong, the source used, and who approved it.
 
+## 202611060544-rev110-labels-shas-f
+
+Approved: Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.
+
+- **Ketubot 91a, step 7** (hebrewStepName): וכי תימא blocking a defense: an objection, not pushing aside a proof Source: Ketubot 91a.
+  - was: דחיה
+  - now: קשיא
+- **Ketubot 91a, step 9** (hebrewStepName): הלכה ruling immediately challenged in step 10 (why both parts); a statement, not a landing Source: Ketubot 91a.
+  - was: מסקנא
+  - now: מימרא
+- **Ketubot 9a, step 11** (hebrewStepName): ולטעמיך objects to the inference in step 10 (rule 2) Source: Ketubot 9a.
+  - was: דחיה
+  - now: קשיא
+- **Ketubot 9a, step 11** (relationToPreviousStep): names the wrong kind of step Source: Ketubot 9a.
+  - was: Rejects the strict
+  - now: Challenges the strict
+- **Ketubot 9b, step 13** (hebrewStepName): לא, דקא טעין טענת דמים answers רב יוסף's challenge (step 9, מאי קמ"ל) Source: Ketubot 9b.
+  - was: דחיה
+  - now: תירוץ
+- **Kiddushin 12a, step 9** (hebrewStepName): וכי תימא… והא כי אתא רב דימי: strengthens אביי's challenge Source: Kiddushin 12a.
+  - was: דחיה
+  - now: קשיא
+- **Kiddushin 16a, step 35** (hebrewStepName): objects to the answer of step 34 (שייר מיתת האדון) Source: Kiddushin 16a.
+  - was: דחיה
+  - now: קשיא
+- **Kiddushin 16a, step 35** (relationToPreviousStep): names the wrong kind of step Source: Kiddushin 16a.
+  - was: Rejects the answer
+  - now: Challenges the answer
+- **Kiddushin 16b, step 5** (hebrewStepName): וכי תימא תנא ושייר… והא ארבעה קתני: part of רב ששת's challenge Source: Kiddushin 16b.
+  - was: דחיה
+  - now: קשיא
+- **Kiddushin 16b, step 13** (hebrewStepName): וכי תימא תנא ושייר… והא אלו קתני: part of רב עמרם's challenge Source: Kiddushin 16b.
+  - was: דחיה
+  - now: קשיא
+- **Kiddushin 18a, step 18** (hebrewStepName): אביי objects to רבא's answer Source: Kiddushin 18a.
+  - was: דחיה
+  - now: קשיא
+- **Kiddushin 18a, step 18** (relationToPreviousStep): names the wrong kind of step Source: Kiddushin 18a.
+  - was: Rejects רבא
+  - now: Challenges רבא
+- **Kiddushin 18b, step 15** (hebrewStepName): second half of the attack begun in step 14 Source: Kiddushin 18b.
+  - was: דחיה
+  - now: קשיא
+- **Kiddushin 19b, step 25** (hebrewStepName): מה ל… refutes the והלא דין הוא challenge of step 24, answering it Source: Kiddushin 19b.
+  - was: דחיה
+  - now: תירוץ
+- **Kiddushin 19b, step 25** (relationToPreviousStep): names the wrong kind of step Source: Kiddushin 19b.
+  - was: Rejects the logical argument
+  - now: Answers the logical argument
+- **Kiddushin 21a, step 7** (hebrewStepName): second half of רב אחא סבא's מה הצד answer (step 6), immediately challenged in step 8 Source: Kiddushin 21a.
+  - was: מסקנא
+  - now: תירוץ
+- **Kiddushin 22b, step 31** (hebrewStepName): completes רב אשי's Response (step 30), then challenged in step 32 Source: Kiddushin 22b.
+  - was: מסקנא
+  - now: תשובה
+- **Kiddushin 23a, step 8** (hebrewStepName): אלמא… second half of the Response in step 7, which step 9 challenges Source: Kiddushin 23a.
+  - was: מסקנא
+  - now: תשובה
+- **Kiddushin 23a, step 11** (hebrewStepName): והא לא תני הכי: objection to the וכי תימא defence of step 10 Source: Kiddushin 23a.
+  - was: דחיה
+  - now: קשיא
+- **Kiddushin 23a, step 11** (relationToPreviousStep): names the wrong kind of step Source: Kiddushin 23a.
+  - was: Rejects the suggested reading
+  - now: Challenges the suggested reading
+- **Kiddushin 23b, step 11** (hebrewStepName): second half of רבי אלעזר's explanation (step 10, מימרא), followed by a new challenge Source: Kiddushin 23b.
+  - was: מסקנא
+  - now: מימרא
+- **Kiddushin 29b, step 29** (hebrewStepName): ולא פליגי with no challenge before it (step 28 is a מימרא) Source: Kiddushin 29b.
+  - was: תירוץ
+  - now: מימרא
+- **Kiddushin 30a, step 21** (hebrewStepName): רב יוסף objects to the counting suggestion (Response in step 20) Source: Kiddushin 30a.
+  - was: דחיה
+  - now: קשיא
+- **Kiddushin 30a, step 21** (relationToPreviousStep): names the wrong kind of step Source: Kiddushin 30a.
+  - was: Rejects the counting
+  - now: Challenges the counting
+- **Kiddushin 30a, step 24** (hebrewStepName): objects to אביי's suggestion in step 23 Source: Kiddushin 30a.
+  - was: דחיה
+  - now: קשיא
+- **Kiddushin 30a, step 24** (relationToPreviousStep): names the wrong kind of step Source: Kiddushin 30a.
+  - was: Rejects אביי
+  - now: Challenges אביי
+- **Kiddushin 32a, step 3** (hebrewStepName): ruling (אורו ליה רבנן) immediately attacked by מיתיבי in step 4 Source: Kiddushin 32a.
+  - was: מסקנא
+  - now: מימרא
+- **Kiddushin 33a, step 5** (hebrewStepName): מכאן אמרו: the result of the היקש answer in step 4, immediately challenged in step 6 Source: Kiddushin 33a.
+  - was: מסקנא
+  - now: תירוץ
+- **Kiddushin 34a, step 14** (hebrewStepName): לא סלקא דעתך answers the challenge of step 13 Source: Kiddushin 34a.
+  - was: דחיה
+  - now: תירוץ
+- **Kiddushin 34a, step 14** (relationToPreviousStep): names the wrong kind of step Source: Kiddushin 34a.
+  - was: Rejects the suggestion
+  - now: Answers the challenge
+- **Kiddushin 35a, step 9** (hebrewStepName): second half of the פפוניא Response (step 8), immediately challenged in step 10 Source: Kiddushin 35a.
+  - was: מסקנא
+  - now: תשובה
+- **Kiddushin 39b, step 12** (hebrewStepName): end of רבי יעקב's proof from the story (step 11), challenged in step 13 Source: Kiddushin 39b.
+  - was: מסקנא
+  - now: ראיה
+- **Kiddushin 3b, step 16** (hebrewStepName): וכי תימא… strengthens the קשיא of step 15 Source: Kiddushin 3b.
+  - was: דחיה
+  - now: קשיא
+- **Kiddushin 40a, step 14** (hebrewStepName): objects to the תנא ושייר answer of step 13 Source: Kiddushin 40a.
+  - was: דחיה
+  - now: קשיא
+- **Kiddushin 40a, step 14** (relationToPreviousStep): names the wrong kind of step Source: Kiddushin 40a.
+  - was: Rejects the answer
+  - now: Challenges the answer
+- **Kiddushin 43b, step 3** (hebrewStepName): second half of the צריכותא begun in step 2 (תירוץ) Source: Kiddushin 43b.
+  - was: מסקנא
+  - now: תירוץ
+- **Kiddushin 44a, step 17** (hebrewStepName): השתא דאתית להכי… answers the original challenge against רבי יוחנן Source: Kiddushin 44a.
+  - was: מסקנא
+  - now: תירוץ
+- **Kiddushin 44a, step 22** (hebrewStepName): וכי תימא… ומי סבר לה: part of the challenge of steps 20-21 Source: Kiddushin 44a.
+  - was: דחיה
+  - now: קשיא
+- **Kiddushin 46a, step 5** (hebrewStepName): רב deflects the challenge of step 4 (יכול לשנויי לכו) Source: Kiddushin 46a.
+  - was: דחיה
+  - now: תירוץ
+- **Kiddushin 47a, step 10** (hebrewStepName): completes the proof begun in step 9 (ראיה), followed by a new challenge Source: Kiddushin 47a.
+  - was: מסקנא
+  - now: ראיה
+- **Kiddushin 47b, step 2** (hebrewStepName): רבא answers the challenge of step 1 (the ברייתא is garbled) Source: Kiddushin 47b.
+  - was: דחיה
+  - now: תירוץ
+- **Kiddushin 47b, step 2** (relationToPreviousStep): names the wrong kind of step Source: Kiddushin 47b.
+  - was: Rejects the proof brought
+  - now: Answers the challenge brought
+- **Kiddushin 47b, step 7** (hebrewStepName): רבה objects to the explanation given in step 6 (Response) Source: Kiddushin 47b.
+  - was: דחיה
+  - now: קשיא
+- **Kiddushin 47b, step 7** (relationToPreviousStep): names the wrong kind of step Source: Kiddushin 47b.
+  - was: Rejects the accidents
+  - now: Challenges the accidents
+- **Kiddushin 49a, step 12** (hebrewStepName): second half of מר בר רב אשי's challenge (step 11) Source: Kiddushin 49a.
+  - was: דחיה
+  - now: קשיא
+- **Kiddushin 4b, step 7** (hebrewStepName): יבמה תוכיח refutes the והלא דין הוא challenge of step 6, answering it Source: Kiddushin 4b.
+  - was: דחיה
+  - now: תירוץ
+- **Kiddushin 4b, step 9** (hebrewStepName): ת"ל: the ברייתא's answer to the והלא דין הוא challenge, immediately challenged in step 10 Source: Kiddushin 4b.
+  - was: מסקנא
+  - now: תירוץ
+- **Kiddushin 4b, step 17** (hebrewStepName): אמה העבריה תוכיח refutes the והלא דין הוא challenge of step 16 Source: Kiddushin 4b.
+  - was: דחיה
+  - now: תירוץ
+- **Kiddushin 4b, step 19** (hebrewStepName): ת"ל: the ברייתא's answer to the challenge of step 16, immediately challenged in step 20 Source: Kiddushin 4b.
+  - was: מסקנא
+  - now: תירוץ
+- **Kiddushin 4b, step 22** (hebrewStepName): completes רב אשי's answer begun in step 21 Source: Kiddushin 4b.
+  - was: דחיה
+  - now: תירוץ
+- **Kiddushin 51a, step 7** (hebrewStepName): לאו איתמר עלה… answers the challenge of step 6 Source: Kiddushin 51a.
+  - was: דחיה
+  - now: תירוץ
+- **Kiddushin 52a, step 4** (hebrewStepName): וכי תימא… blocks a defence, part of the challenge in step 3 Source: Kiddushin 52a.
+  - was: דחיה
+  - now: קשיא
+- **Kiddushin 52b, step 22** (hebrewStepName): in the story, רבי יוסי answers רבי יהודה's objection (rule 3) Source: Kiddushin 52b.
+  - was: דחיה
+  - now: תירוץ
+- **Kiddushin 52b, step 22** (relationToPreviousStep): names the wrong kind of step Source: Kiddushin 52b.
+  - was: Rejects רבי יהודה
+  - now: Answers רבי יהודה
+- **Kiddushin 53b, step 7** (hebrewStepName): רבי יעקב objects to רבי ירמיה's answer (איפכא מסתברא) Source: Kiddushin 53b.
+  - was: דחיה
+  - now: קשיא
+- **Kiddushin 53b, step 7** (relationToPreviousStep): names the wrong kind of step Source: Kiddushin 53b.
+  - was: Rejects רבי ירמיה
+  - now: Challenges רבי ירמיה
+- **Kiddushin 54a, step 4** (hebrewStepName): לא, בלו דוקא answers the challenge of step 3 Source: Kiddushin 54a.
+  - was: דחיה
+  - now: תירוץ
+- **Kiddushin 56b, step 28** (hebrewStepName): answers מר זוטרא's challenge in step 27 Source: Kiddushin 56b.
+  - was: דחיה
+  - now: תירוץ
+- **Kiddushin 56b, step 28** (relationToPreviousStep): names the wrong kind of step Source: Kiddushin 56b.
+  - was: Rejects מר זוטרא
+  - now: Answers מר זוטרא
+- **Kiddushin 57b, step 22** (hebrewStepName): איכא למיפרך: objection to the היקש answer of step 19 Source: Kiddushin 57b.
+  - was: דחיה
+  - now: קשיא
+- **Kiddushin 58a, step 8** (hebrewStepName): אישתיקו is a story line; the challenge is answered right away by רבה in step 9 (rules 5, 8) Source: Kiddushin 58a.
+  - was: מסקנא
+  - now: מימרא
+- **Kiddushin 59b, step 16** (hebrewStepName): הלכה ruling immediately challenged (קשיא הלכתא אהלכתא) in step 17 Source: Kiddushin 59b.
+  - was: מסקנא
+  - now: מימרא
+- **Kiddushin 5a, step 3** (hebrewStepName): מה לכסף objects to the קל וחומר given as the Response in step 2 Source: Kiddushin 5a.
+  - was: דחיה
+  - now: קשיא
+- **Kiddushin 5a, step 3** (relationToPreviousStep): names the wrong kind of step Source: Kiddushin 5a.
+  - was: Rejects the
+  - now: Challenges the
+- **Kiddushin 5a, step 27** (hebrewStepName): מה להנך completes the answer begun in step 26 (תירוץ) Source: Kiddushin 5a.
+  - was: דחיה
+  - now: תירוץ
+- **Kiddushin 60a, step 11** (hebrewStepName): אביי objects to רבא's answer (מי דמי) Source: Kiddushin 60a.
+  - was: דחיה
+  - now: קשיא
+- **Kiddushin 60a, step 11** (relationToPreviousStep): names the wrong kind of step Source: Kiddushin 60a.
+  - was: Rejects the answer
+  - now: Challenges the answer
+- **Kiddushin 60b, step 4** (hebrewStepName): second half of the צריכותא begun in step 3 (מימרא) Source: Kiddushin 60b.
+  - was: מסקנא
+  - now: מימרא
+- **Kiddushin 61a, step 4** (hebrewStepName): ורמינהו objects to the suggested answer in step 3 Source: Kiddushin 61a.
+  - was: דחיה
+  - now: קשיא
+- **Kiddushin 61a, step 4** (relationToPreviousStep): names the wrong kind of step Source: Kiddushin 61a.
+  - was: Rejects the suggested
+  - now: Challenges the suggested
+- **Kiddushin 61b, step 5** (hebrewStepName): lesson of the parable in step 4 (מימרא), immediately challenged in step 6 Source: Kiddushin 61b.
+  - was: מסקנא
+  - now: מימרא
+- **Kiddushin 63a, step 10** (hebrewStepName): האיתמר עלה… answers the challenge of step 9 Source: Kiddushin 63a.
+  - was: דחיה
+  - now: תירוץ
+- **Kiddushin 63a, step 10** (relationToPreviousStep): names the wrong kind of step Source: Kiddushin 63a.
+  - was: Rejects the suggestion
+  - now: Answers the challenge
+- **Kiddushin 63b, step 6** (hebrewStepName): ריש לקיש's rule drawn from רבי ינאי's answer, mid-thread (step 7 gives another answer to step 4) Source: Kiddushin 63b.
+  - was: מסקנא
+  - now: מימרא
+- **Berakhot 30b, step 25** (hebrewStepName): Undo: a source offered for מנא הני מילי is pushed aside with ממאי/דילמא, which is a Rejection (rulebook rule 7 exception, added Nov 6 2026). Source: Berakhot 30b.
+  - was: קשיא
+  - now: דחיה
+- **Berakhot 30b, step 25** (relationToPreviousStep): Undo: a source offered for מנא הני מילי is pushed aside with ממאי/דילמא, which is a Rejection (rulebook rule 7 exception, added Nov 6 2026). Source: Berakhot 30b.
+  - was: Challenges רבי אלעזר's source
+  - now: Rejects רבי אלעזר's proof
+- **Berakhot 30b, step 27** (hebrewStepName): Undo: a source offered for מנא הני מילי is pushed aside with ממאי/דילמא, which is a Rejection (rulebook rule 7 exception, added Nov 6 2026). Source: Berakhot 30b.
+  - was: קשיא
+  - now: דחיה
+- **Berakhot 30b, step 27** (relationToPreviousStep): Undo: a source offered for מנא הני מילי is pushed aside with ממאי/דילמא, which is a Rejection (rulebook rule 7 exception, added Nov 6 2026). Source: Berakhot 30b.
+  - was: Challenges the source brought in step 26.
+  - now: Rejects the proof brought in step 26.
+- **Berakhot 30b, step 27** (title): Undo: a source offered for מנא הני מילי is pushed aside with ממאי/דילמא, which is a Rejection (rulebook rule 7 exception, added Nov 6 2026). Source: Berakhot 30b.
+  - was: Maybe דוד
+  - now: Rejected: דוד
+- **Berakhot 30b, step 29** (hebrewStepName): Undo: a source offered for מנא הני מילי is pushed aside with ממאי/דילמא, which is a Rejection (rulebook rule 7 exception, added Nov 6 2026). Source: Berakhot 30b.
+  - was: קשיא
+  - now: דחיה
+- **Berakhot 30b, step 29** (relationToPreviousStep): Undo: a source offered for מנא הני מילי is pushed aside with ממאי/דילמא, which is a Rejection (rulebook rule 7 exception, added Nov 6 2026). Source: Berakhot 30b.
+  - was: Challenges the אל תקרי reading
+  - now: Rejects the אל תקרי reading
+- **Berakhot 30b, step 29** (title): Undo: a source offered for מנא הני מילי is pushed aside with ממאי/דילמא, which is a Rejection (rulebook rule 7 exception, added Nov 6 2026). Source: Berakhot 30b.
+  - was: Maybe
+  - now: Rejected: maybe
+
 ## 202611060543-rev109-labels-shas-e
 
 Approved: Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.

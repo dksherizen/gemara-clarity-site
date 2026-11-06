@@ -1,0 +1,744 @@
+{
+ "name": "labels-shas-f",
+ "approved": "Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.",
+ "repairs": [
+  {
+   "id": "Ketubot_91_a",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וכי תימא blocking a defense: an objection, not pushing aside a proof",
+   "source": "Ketubot 91a"
+  },
+  {
+   "id": "Ketubot_91_a",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "הלכה ruling immediately challenged in step 10 (why both parts); a statement, not a landing",
+   "source": "Ketubot 91a"
+  },
+  {
+   "id": "Ketubot_9_a",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "ולטעמיך objects to the inference in step 10 (rule 2)",
+   "source": "Ketubot 9a"
+  },
+  {
+   "id": "Ketubot_9_a",
+   "step": 11,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the strict",
+   "replace": "Challenges the strict",
+   "why": "names the wrong kind of step",
+   "source": "Ketubot 9a"
+  },
+  {
+   "id": "Ketubot_9_b",
+   "step": 13,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "לא, דקא טעין טענת דמים answers רב יוסף's challenge (step 9, מאי קמ\"ל)",
+   "source": "Ketubot 9b"
+  },
+  {
+   "id": "Kiddushin_12_a",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וכי תימא… והא כי אתא רב דימי: strengthens אביי's challenge",
+   "source": "Kiddushin 12a"
+  },
+  {
+   "id": "Kiddushin_16_a",
+   "step": 35,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objects to the answer of step 34 (שייר מיתת האדון)",
+   "source": "Kiddushin 16a"
+  },
+  {
+   "id": "Kiddushin_16_a",
+   "step": 35,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the answer",
+   "replace": "Challenges the answer",
+   "why": "names the wrong kind of step",
+   "source": "Kiddushin 16a"
+  },
+  {
+   "id": "Kiddushin_16_b",
+   "step": 5,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וכי תימא תנא ושייר… והא ארבעה קתני: part of רב ששת's challenge",
+   "source": "Kiddushin 16b"
+  },
+  {
+   "id": "Kiddushin_16_b",
+   "step": 13,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וכי תימא תנא ושייר… והא אלו קתני: part of רב עמרם's challenge",
+   "source": "Kiddushin 16b"
+  },
+  {
+   "id": "Kiddushin_18_a",
+   "step": 18,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "אביי objects to רבא's answer",
+   "source": "Kiddushin 18a"
+  },
+  {
+   "id": "Kiddushin_18_a",
+   "step": 18,
+   "field": "relationToPreviousStep",
+   "find": "Rejects רבא",
+   "replace": "Challenges רבא",
+   "why": "names the wrong kind of step",
+   "source": "Kiddushin 18a"
+  },
+  {
+   "id": "Kiddushin_18_b",
+   "step": 15,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "second half of the attack begun in step 14",
+   "source": "Kiddushin 18b"
+  },
+  {
+   "id": "Kiddushin_19_b",
+   "step": 25,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "מה ל… refutes the והלא דין הוא challenge of step 24, answering it",
+   "source": "Kiddushin 19b"
+  },
+  {
+   "id": "Kiddushin_19_b",
+   "step": 25,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the logical argument",
+   "replace": "Answers the logical argument",
+   "why": "names the wrong kind of step",
+   "source": "Kiddushin 19b"
+  },
+  {
+   "id": "Kiddushin_21_a",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "second half of רב אחא סבא's מה הצד answer (step 6), immediately challenged in step 8",
+   "source": "Kiddushin 21a"
+  },
+  {
+   "id": "Kiddushin_22_b",
+   "step": 31,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תשובה",
+   "why": "completes רב אשי's Response (step 30), then challenged in step 32",
+   "source": "Kiddushin 22b"
+  },
+  {
+   "id": "Kiddushin_23_a",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תשובה",
+   "why": "אלמא… second half of the Response in step 7, which step 9 challenges",
+   "source": "Kiddushin 23a"
+  },
+  {
+   "id": "Kiddushin_23_a",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "והא לא תני הכי: objection to the וכי תימא defence of step 10",
+   "source": "Kiddushin 23a"
+  },
+  {
+   "id": "Kiddushin_23_a",
+   "step": 11,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the suggested reading",
+   "replace": "Challenges the suggested reading",
+   "why": "names the wrong kind of step",
+   "source": "Kiddushin 23a"
+  },
+  {
+   "id": "Kiddushin_23_b",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "second half of רבי אלעזר's explanation (step 10, מימרא), followed by a new challenge",
+   "source": "Kiddushin 23b"
+  },
+  {
+   "id": "Kiddushin_29_b",
+   "step": 29,
+   "field": "hebrewStepName",
+   "find": "תירוץ",
+   "replace": "מימרא",
+   "why": "ולא פליגי with no challenge before it (step 28 is a מימרא)",
+   "source": "Kiddushin 29b"
+  },
+  {
+   "id": "Kiddushin_30_a",
+   "step": 21,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רב יוסף objects to the counting suggestion (Response in step 20)",
+   "source": "Kiddushin 30a"
+  },
+  {
+   "id": "Kiddushin_30_a",
+   "step": 21,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the counting",
+   "replace": "Challenges the counting",
+   "why": "names the wrong kind of step",
+   "source": "Kiddushin 30a"
+  },
+  {
+   "id": "Kiddushin_30_a",
+   "step": 24,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objects to אביי's suggestion in step 23",
+   "source": "Kiddushin 30a"
+  },
+  {
+   "id": "Kiddushin_30_a",
+   "step": 24,
+   "field": "relationToPreviousStep",
+   "find": "Rejects אביי",
+   "replace": "Challenges אביי",
+   "why": "names the wrong kind of step",
+   "source": "Kiddushin 30a"
+  },
+  {
+   "id": "Kiddushin_32_a",
+   "step": 3,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "ruling (אורו ליה רבנן) immediately attacked by מיתיבי in step 4",
+   "source": "Kiddushin 32a"
+  },
+  {
+   "id": "Kiddushin_33_a",
+   "step": 5,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "מכאן אמרו: the result of the היקש answer in step 4, immediately challenged in step 6",
+   "source": "Kiddushin 33a"
+  },
+  {
+   "id": "Kiddushin_34_a",
+   "step": 14,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "לא סלקא דעתך answers the challenge of step 13",
+   "source": "Kiddushin 34a"
+  },
+  {
+   "id": "Kiddushin_34_a",
+   "step": 14,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the suggestion",
+   "replace": "Answers the challenge",
+   "why": "names the wrong kind of step",
+   "source": "Kiddushin 34a"
+  },
+  {
+   "id": "Kiddushin_35_a",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תשובה",
+   "why": "second half of the פפוניא Response (step 8), immediately challenged in step 10",
+   "source": "Kiddushin 35a"
+  },
+  {
+   "id": "Kiddushin_39_b",
+   "step": 12,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "ראיה",
+   "why": "end of רבי יעקב's proof from the story (step 11), challenged in step 13",
+   "source": "Kiddushin 39b"
+  },
+  {
+   "id": "Kiddushin_3_b",
+   "step": 16,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וכי תימא… strengthens the קשיא of step 15",
+   "source": "Kiddushin 3b"
+  },
+  {
+   "id": "Kiddushin_40_a",
+   "step": 14,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objects to the תנא ושייר answer of step 13",
+   "source": "Kiddushin 40a"
+  },
+  {
+   "id": "Kiddushin_40_a",
+   "step": 14,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the answer",
+   "replace": "Challenges the answer",
+   "why": "names the wrong kind of step",
+   "source": "Kiddushin 40a"
+  },
+  {
+   "id": "Kiddushin_43_b",
+   "step": 3,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "second half of the צריכותא begun in step 2 (תירוץ)",
+   "source": "Kiddushin 43b"
+  },
+  {
+   "id": "Kiddushin_44_a",
+   "step": 17,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "השתא דאתית להכי… answers the original challenge against רבי יוחנן",
+   "source": "Kiddushin 44a"
+  },
+  {
+   "id": "Kiddushin_44_a",
+   "step": 22,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וכי תימא… ומי סבר לה: part of the challenge of steps 20-21",
+   "source": "Kiddushin 44a"
+  },
+  {
+   "id": "Kiddushin_46_a",
+   "step": 5,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "רב deflects the challenge of step 4 (יכול לשנויי לכו)",
+   "source": "Kiddushin 46a"
+  },
+  {
+   "id": "Kiddushin_47_a",
+   "step": 10,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "ראיה",
+   "why": "completes the proof begun in step 9 (ראיה), followed by a new challenge",
+   "source": "Kiddushin 47a"
+  },
+  {
+   "id": "Kiddushin_47_b",
+   "step": 2,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "רבא answers the challenge of step 1 (the ברייתא is garbled)",
+   "source": "Kiddushin 47b"
+  },
+  {
+   "id": "Kiddushin_47_b",
+   "step": 2,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the proof brought",
+   "replace": "Answers the challenge brought",
+   "why": "names the wrong kind of step",
+   "source": "Kiddushin 47b"
+  },
+  {
+   "id": "Kiddushin_47_b",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רבה objects to the explanation given in step 6 (Response)",
+   "source": "Kiddushin 47b"
+  },
+  {
+   "id": "Kiddushin_47_b",
+   "step": 7,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the accidents",
+   "replace": "Challenges the accidents",
+   "why": "names the wrong kind of step",
+   "source": "Kiddushin 47b"
+  },
+  {
+   "id": "Kiddushin_49_a",
+   "step": 12,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "second half of מר בר רב אשי's challenge (step 11)",
+   "source": "Kiddushin 49a"
+  },
+  {
+   "id": "Kiddushin_4_b",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "יבמה תוכיח refutes the והלא דין הוא challenge of step 6, answering it",
+   "source": "Kiddushin 4b"
+  },
+  {
+   "id": "Kiddushin_4_b",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "ת\"ל: the ברייתא's answer to the והלא דין הוא challenge, immediately challenged in step 10",
+   "source": "Kiddushin 4b"
+  },
+  {
+   "id": "Kiddushin_4_b",
+   "step": 17,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "אמה העבריה תוכיח refutes the והלא דין הוא challenge of step 16",
+   "source": "Kiddushin 4b"
+  },
+  {
+   "id": "Kiddushin_4_b",
+   "step": 19,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "ת\"ל: the ברייתא's answer to the challenge of step 16, immediately challenged in step 20",
+   "source": "Kiddushin 4b"
+  },
+  {
+   "id": "Kiddushin_4_b",
+   "step": 22,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "completes רב אשי's answer begun in step 21",
+   "source": "Kiddushin 4b"
+  },
+  {
+   "id": "Kiddushin_51_a",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "לאו איתמר עלה… answers the challenge of step 6",
+   "source": "Kiddushin 51a"
+  },
+  {
+   "id": "Kiddushin_52_a",
+   "step": 4,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וכי תימא… blocks a defence, part of the challenge in step 3",
+   "source": "Kiddushin 52a"
+  },
+  {
+   "id": "Kiddushin_52_b",
+   "step": 22,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "in the story, רבי יוסי answers רבי יהודה's objection (rule 3)",
+   "source": "Kiddushin 52b"
+  },
+  {
+   "id": "Kiddushin_52_b",
+   "step": 22,
+   "field": "relationToPreviousStep",
+   "find": "Rejects רבי יהודה",
+   "replace": "Answers רבי יהודה",
+   "why": "names the wrong kind of step",
+   "source": "Kiddushin 52b"
+  },
+  {
+   "id": "Kiddushin_53_b",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רבי יעקב objects to רבי ירמיה's answer (איפכא מסתברא)",
+   "source": "Kiddushin 53b"
+  },
+  {
+   "id": "Kiddushin_53_b",
+   "step": 7,
+   "field": "relationToPreviousStep",
+   "find": "Rejects רבי ירמיה",
+   "replace": "Challenges רבי ירמיה",
+   "why": "names the wrong kind of step",
+   "source": "Kiddushin 53b"
+  },
+  {
+   "id": "Kiddushin_54_a",
+   "step": 4,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "לא, בלו דוקא answers the challenge of step 3",
+   "source": "Kiddushin 54a"
+  },
+  {
+   "id": "Kiddushin_56_b",
+   "step": 28,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "answers מר זוטרא's challenge in step 27",
+   "source": "Kiddushin 56b"
+  },
+  {
+   "id": "Kiddushin_56_b",
+   "step": 28,
+   "field": "relationToPreviousStep",
+   "find": "Rejects מר זוטרא",
+   "replace": "Answers מר זוטרא",
+   "why": "names the wrong kind of step",
+   "source": "Kiddushin 56b"
+  },
+  {
+   "id": "Kiddushin_57_b",
+   "step": 22,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "איכא למיפרך: objection to the היקש answer of step 19",
+   "source": "Kiddushin 57b"
+  },
+  {
+   "id": "Kiddushin_58_a",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "אישתיקו is a story line; the challenge is answered right away by רבה in step 9 (rules 5, 8)",
+   "source": "Kiddushin 58a"
+  },
+  {
+   "id": "Kiddushin_59_b",
+   "step": 16,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "הלכה ruling immediately challenged (קשיא הלכתא אהלכתא) in step 17",
+   "source": "Kiddushin 59b"
+  },
+  {
+   "id": "Kiddushin_5_a",
+   "step": 3,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "מה לכסף objects to the קל וחומר given as the Response in step 2",
+   "source": "Kiddushin 5a"
+  },
+  {
+   "id": "Kiddushin_5_a",
+   "step": 3,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the",
+   "replace": "Challenges the",
+   "why": "names the wrong kind of step",
+   "source": "Kiddushin 5a"
+  },
+  {
+   "id": "Kiddushin_5_a",
+   "step": 27,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "מה להנך completes the answer begun in step 26 (תירוץ)",
+   "source": "Kiddushin 5a"
+  },
+  {
+   "id": "Kiddushin_60_a",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "אביי objects to רבא's answer (מי דמי)",
+   "source": "Kiddushin 60a"
+  },
+  {
+   "id": "Kiddushin_60_a",
+   "step": 11,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the answer",
+   "replace": "Challenges the answer",
+   "why": "names the wrong kind of step",
+   "source": "Kiddushin 60a"
+  },
+  {
+   "id": "Kiddushin_60_b",
+   "step": 4,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "second half of the צריכותא begun in step 3 (מימרא)",
+   "source": "Kiddushin 60b"
+  },
+  {
+   "id": "Kiddushin_61_a",
+   "step": 4,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "ורמינהו objects to the suggested answer in step 3",
+   "source": "Kiddushin 61a"
+  },
+  {
+   "id": "Kiddushin_61_a",
+   "step": 4,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the suggested",
+   "replace": "Challenges the suggested",
+   "why": "names the wrong kind of step",
+   "source": "Kiddushin 61a"
+  },
+  {
+   "id": "Kiddushin_61_b",
+   "step": 5,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "lesson of the parable in step 4 (מימרא), immediately challenged in step 6",
+   "source": "Kiddushin 61b"
+  },
+  {
+   "id": "Kiddushin_63_a",
+   "step": 10,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "האיתמר עלה… answers the challenge of step 9",
+   "source": "Kiddushin 63a"
+  },
+  {
+   "id": "Kiddushin_63_a",
+   "step": 10,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the suggestion",
+   "replace": "Answers the challenge",
+   "why": "names the wrong kind of step",
+   "source": "Kiddushin 63a"
+  },
+  {
+   "id": "Kiddushin_63_b",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "ריש לקיש's rule drawn from רבי ינאי's answer, mid-thread (step 7 gives another answer to step 4)",
+   "source": "Kiddushin 63b"
+  },
+  {
+   "id": "Berakhot_30_b",
+   "step": 25,
+   "field": "hebrewStepName",
+   "find": "קשיא",
+   "replace": "דחיה",
+   "why": "Undo: a source offered for מנא הני מילי is pushed aside with ממאי/דילמא, which is a Rejection (rulebook rule 7 exception, added Nov 6 2026).",
+   "source": "Berakhot 30b"
+  },
+  {
+   "id": "Berakhot_30_b",
+   "step": 25,
+   "field": "relationToPreviousStep",
+   "find": "Challenges רבי אלעזר's source",
+   "replace": "Rejects רבי אלעזר's proof",
+   "why": "Undo: a source offered for מנא הני מילי is pushed aside with ממאי/דילמא, which is a Rejection (rulebook rule 7 exception, added Nov 6 2026).",
+   "source": "Berakhot 30b"
+  },
+  {
+   "id": "Berakhot_30_b",
+   "step": 27,
+   "field": "hebrewStepName",
+   "find": "קשיא",
+   "replace": "דחיה",
+   "why": "Undo: a source offered for מנא הני מילי is pushed aside with ממאי/דילמא, which is a Rejection (rulebook rule 7 exception, added Nov 6 2026).",
+   "source": "Berakhot 30b"
+  },
+  {
+   "id": "Berakhot_30_b",
+   "step": 27,
+   "field": "relationToPreviousStep",
+   "find": "Challenges the source brought in step 26.",
+   "replace": "Rejects the proof brought in step 26.",
+   "why": "Undo: a source offered for מנא הני מילי is pushed aside with ממאי/דילמא, which is a Rejection (rulebook rule 7 exception, added Nov 6 2026).",
+   "source": "Berakhot 30b"
+  },
+  {
+   "id": "Berakhot_30_b",
+   "step": 27,
+   "field": "title",
+   "find": "Maybe דוד",
+   "replace": "Rejected: דוד",
+   "why": "Undo: a source offered for מנא הני מילי is pushed aside with ממאי/דילמא, which is a Rejection (rulebook rule 7 exception, added Nov 6 2026).",
+   "source": "Berakhot 30b"
+  },
+  {
+   "id": "Berakhot_30_b",
+   "step": 29,
+   "field": "hebrewStepName",
+   "find": "קשיא",
+   "replace": "דחיה",
+   "why": "Undo: a source offered for מנא הני מילי is pushed aside with ממאי/דילמא, which is a Rejection (rulebook rule 7 exception, added Nov 6 2026).",
+   "source": "Berakhot 30b"
+  },
+  {
+   "id": "Berakhot_30_b",
+   "step": 29,
+   "field": "relationToPreviousStep",
+   "find": "Challenges the אל תקרי reading",
+   "replace": "Rejects the אל תקרי reading",
+   "why": "Undo: a source offered for מנא הני מילי is pushed aside with ממאי/דילמא, which is a Rejection (rulebook rule 7 exception, added Nov 6 2026).",
+   "source": "Berakhot 30b"
+  },
+  {
+   "id": "Berakhot_30_b",
+   "step": 29,
+   "field": "title",
+   "find": "Maybe",
+   "replace": "Rejected: maybe",
+   "why": "Undo: a source offered for מנא הני מילי is pushed aside with ממאי/דילמא, which is a Rejection (rulebook rule 7 exception, added Nov 6 2026).",
+   "source": "Berakhot 30b"
+  }
+ ]
+}
