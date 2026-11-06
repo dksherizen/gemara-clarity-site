@@ -2,6 +2,128 @@
 
 Every change to the AI-written content, newest first. Each entry says what was wrong, the source used, and who approved it.
 
+## 202611060607-rev121-arakhin-21-34
+
+Approved: Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.
+
+- **Arakhin 21b, step 7** (hebrewStepName): This is the second half of רב פפא's summary (step 6 is מימרא), and it is immediately challenged with פשיטא in step 8, so it cannot be a Conclusion (rule 5). Source: Arakhin 21b: לאמוראי נמי לא קשיא... אמוראי ודאי פליגי. פשיטא!.
+  - was: מסקנא
+  - now: מימרא
+- **Arakhin 22b, step 1** (hebrewStepName): The משנה is quoted (תנן) to set up an attack on רב פפא (step 4 'לרב פפא קשיא'), so it is a Challenge, not a Proof (rule 1); 22a step 12, the same move, is already קשיא. Source: Arakhin 22b: תנן שום היתומים... אלא לרב פפא קשיא; Rashi s.v. אילימא בבעל חוב.
+  - was: ראיה
+  - now: קשיא
+- **Arakhin 22b, step 9** (hebrewStepName): This תא שמע turns out to contradict רב פפא ('אלא בעל חוב קשיא', step 11) and is answered with a תירוץ, so it is a Challenge (rule 1). Source: Arakhin 22b: תא שמע על מנת ליתן לאשה... אלא לרב פפא... בעל חוב קשיא.
+  - was: ראיה
+  - now: קשיא
+- **Arakhin 23a, step 13** (hebrewStepName): This is the second half of the ברייתא brought in step 12 as support (ראיה); it only explains which בית שמאי/בית הלל dispute it means, so it takes the same label (rule 5). Source: Arakhin 23a: והתניא... הן הן דברי ב"ש... שב"ש אומרים הקדש טעות הקדש; Rashi s.v. והתניא: בניחותא.
+  - was: מסקנא
+  - now: ראיה
+- **Arakhin 24b, step 16** (hebrewStepName): The משנה is brought with תא שמע ... בשלמא לשמואל ... אלא לרב מאי, an attack on רב that step 17 answers as a תירוץ; a source brought to attack is a Challenge (rule 1). Source: Arakhin 24b: תא שמע ולא גואלין אחר היובל פחות משנה... אלא לרב מאי אחר יובל שנה.
+  - was: ראיה
+  - now: קשיא
+- **Arakhin 24b, step 16** (whatsHappening): Names the step as a proof; it is a challenge to רב (goes with the label fix). Source: Arakhin 24b: אלא לרב מאי אחר יובל שנה.
+  - was: The גמרא brings a new proof from the משנה.
+  - now: The גמרא brings a new challenge from the משנה.
+- **Arakhin 25b, step 13** (hebrewStepName): רבי זירא's question and its תיקו are in one step; per rule 9 a question with its תיקו is a Conclusion. Source: Arakhin 25b: בעי רבי זירא אשה מי מעמיד לה שדה... תיקו.
+  - was: שאלה
+  - now: מסקנא
+- **Arakhin 25b, step 18** (hebrewStepName): 'ודין הוא...' is the second half of the ברייתא's own question (מנין שלא יאמר...), giving the logic behind the claim; nothing is being challenged, and step 19 is labelled its תשובה (rules 5 and 6). Source: Arakhin 25b: מנין שלא יאמר הואיל ויוצאה לכהן... ודין הוא בשל אחרים אני זוכה... ת"ל אחוזתו.
+  - was: קשיא
+  - now: שאלה
+- **Arakhin 27b, step 22** (deeperAnalysis): The owners' claim "אתא גברא בחריקין" is that they should be released and the outsider should take the field, since הקדש loses nothing; it is not a claim to win the field at 25 (step 39 explains the same phrase correctly). Source: Arakhin 27b: ולימרו הבעלים אתא גברא בחריקין; Rashi s.v. ולימרו בעלים: בשלמא עד השתא הדריתו עלן משום פסידא דהקדש אבל השתא אמאי בעיתו למיכפיין.
+  - was: so the owner should win without raising his bid.
+  - now: so the owner should be able to say the outsider has simply taken his place, and let him have the field at 25 instead of being forced to pay 30.
+- **Arakhin 27b, step 22** (whatsHappening): Same point: the challenge is why the owner is compelled (נותנין = על כרחן), not why he pays more than the outsider. Source: Rashi 27b s.v. הבעלים נותנין: על כרחן; s.v. ולימרו בעלים: אמאי בעיתו למיכפיין.
+  - was: so why must he pay more?
+  - now: so why is he forced to redeem it at all, instead of letting the outsider take it?
+- **Arakhin 26a, step 13** (hebrewStepName): Second half of the הכא במאי עסקינן answer to a challenge (the same passage on 26b is labelled Challenge → Resolution); rules 2 and 5. Source: Arakhin 26a: אלא הכא במאי עסקינן... סלקא דעתך אמינא לא תיפרוק... תלמוד לומר עוד.
+  - was: תירוץ
+  - now: תירוץ
+- **Arakhin 28a, step 6** (hebrewStepName): This is the continuation of the same ברייתא that answers מנא הני מילי (step 4 שאלה, step 5 תשובה); an answer to a Question is a Response even when it quotes a source (rules 5, 7). Source: Arakhin 28a: גמ׳ מנא הני מילי? דתנו רבנן... יכול לא יחרים ואם החרים יהו מוחרמין? תלמוד לומר אך.
+  - was: ראיה
+  - now: תשובה
+- **Arakhin 29a, step 6** (hebrewStepName): A Conclusion in the middle: the ברייתא continues straight on in steps 7-8 (וכי מה למדנו...). The תלמוד לומר answers the ברייתא's own קל וחומר in step 5 (labelled קשיא), so it is a Resolution (rules 2, 5). Source: Arakhin 29a: ודין הוא... תלמוד לומר כשדה החרם... וכי מה למדנו משדה חרם מעתה.
+  - was: מסקנא
+  - now: תירוץ
+- **Arakhin 29a, step 35** (hebrewStepName): Step 35 quotes the rest of the same ברייתא brought with מיתיבי in steps 33-34 (both קשיא); every step quoting the rest of an attacking source is a Challenge (rule 1). Source: Arakhin 29a: מיתיבי: אין עבד עברי נוהג... רבי שמעון בן אלעזר אומר: אין גר תושב נוהג.
+  - was: מימרא
+  - now: קשיא
+- **Arakhin 30b, step 5** (hebrewStepName): This line is part of רבי יוסי ברבי חנינא's teaching that the Sage quotes against אביי (אדרבה, נחמיר עליה; step 4 is קשיא); a source quoted to attack is a Challenge, and so is every step quoting the rest of it (rule 1). Source: Arakhin 30b: אדרבה, נחמיר עליה מדרבי יוסי ברבי חנינא; Rashi s.v. מדרבי יוסי: דודאי לא בא לידי כך אלא מפני שהיה רשע.
+  - was: ראיה
+  - now: קשיא
+- **Arakhin 30b, step 6** (hebrewStepName): This line is part of רבי יוסי ברבי חנינא's teaching that the Sage quotes against אביי (אדרבה, נחמיר עליה; step 4 is קשיא); a source quoted to attack is a Challenge, and so is every step quoting the rest of it (rule 1). Source: Arakhin 30b: אדרבה, נחמיר עליה מדרבי יוסי ברבי חנינא; Rashi s.v. מדרבי יוסי: דודאי לא בא לידי כך אלא מפני שהיה רשע.
+  - was: ראיה
+  - now: קשיא
+- **Arakhin 30b, step 7** (hebrewStepName): This line is part of רבי יוסי ברבי חנינא's teaching that the Sage quotes against אביי (אדרבה, נחמיר עליה; step 4 is קשיא); a source quoted to attack is a Challenge, and so is every step quoting the rest of it (rule 1). Source: Arakhin 30b: אדרבה, נחמיר עליה מדרבי יוסי ברבי חנינא; Rashi s.v. מדרבי יוסי: דודאי לא בא לידי כך אלא מפני שהיה רשע.
+  - was: ראיה
+  - now: קשיא
+- **Arakhin 30b, step 12** (hebrewStepName): This line is part of רבי יוסי ברבי חנינא's teaching that the Sage quotes against אביי (אדרבה, נחמיר עליה; step 4 is קשיא); a source quoted to attack is a Challenge, and so is every step quoting the rest of it (rule 1). Source: Arakhin 30b: אדרבה, נחמיר עליה מדרבי יוסי ברבי חנינא; Rashi s.v. מדרבי יוסי: דודאי לא בא לידי כך אלא מפני שהיה רשע.
+  - was: ראיה
+  - now: קשיא
+- **Arakhin 30b, step 13** (hebrewStepName): This line is part of רבי יוסי ברבי חנינא's teaching that the Sage quotes against אביי (אדרבה, נחמיר עליה; step 4 is קשיא); a source quoted to attack is a Challenge, and so is every step quoting the rest of it (rule 1). Source: Arakhin 30b: אדרבה, נחמיר עליה מדרבי יוסי ברבי חנינא; Rashi s.v. מדרבי יוסי: דודאי לא בא לידי כך אלא מפני שהיה רשע.
+  - was: ראיה
+  - now: קשיא
+- **Arakhin 30b, step 15** (hebrewStepName): This line is part of רבי יוסי ברבי חנינא's teaching that the Sage quotes against אביי (אדרבה, נחמיר עליה; step 4 is קשיא); a source quoted to attack is a Challenge, and so is every step quoting the rest of it (rule 1). Source: Arakhin 30b: אדרבה, נחמיר עליה מדרבי יוסי ברבי חנינא; Rashi s.v. מדרבי יוסי: דודאי לא בא לידי כך אלא מפני שהיה רשע.
+  - was: ראיה
+  - now: קשיא
+- **Arakhin 30b, step 16** (hebrewStepName): This line is part of רבי יוסי ברבי חנינא's teaching that the Sage quotes against אביי (אדרבה, נחמיר עליה; step 4 is קשיא); a source quoted to attack is a Challenge, and so is every step quoting the rest of it (rule 1). Source: Arakhin 30b: אדרבה, נחמיר עליה מדרבי יוסי ברבי חנינא; Rashi s.v. מדרבי יוסי: דודאי לא בא לידי כך אלא מפני שהיה רשע.
+  - was: ראיה
+  - now: קשיא
+- **Arakhin 30b, step 19** (hebrewStepName): רב נחמן בר יצחק's reading answers the challenge of step 18 (ולעולם לענין פדיונו נחמיר); an answer to a Challenge is a Resolution even when it expounds a פסוק (rule 7). The step's own relationToPreviousStep says it answers step 18, and steps 20 (קשיא) / 21 (תירוץ) treat it as an answer. Source: Arakhin 30b: אמר רב נחמן בר יצחק: כתיב אם עוד רבות בשנים... נתרבה כספו מכסף מקנתו.
+  - was: ראיה
+  - now: תירוץ
+- **Arakhin 30b, step 30** (hebrewStepName): Step 30 is the second half of רבי שמעון's single statement begun in step 29 (מימרא: מה טעם... אבל מקדיש...), so it takes the same label (rule 5). Source: Arakhin 30b: אמר רבי שמעון מה טעם... אבל מקדיש שדה אחוזה הואיל שהורע כחו.
+  - was: מסקנא
+  - now: מימרא
+- **Arakhin 26a, step 12** (hebrewStepName): הכא במאי עסקינן answers a challenge, so it is a Resolution (rule 2); matches the same passage on 26b. Source: Arakhin 26a–b.
+  - was: דחיה
+  - now: תירוץ
+- **Arakhin 31b, step 1** (hebrewStepName): רבא gives a second answer to the question מאי בינייהו (31a step 27, a שאלה, first answered in 31a step 28 as תשובה). Nothing was challenged, so this is a Response, not a Resolution. Source: Arakhin 31a-b: מאי בינייהו? ... רבא אמר: דכולי עלמא צד אחד ברבית אסור; rulebook rule 6.
+  - was: תירוץ
+  - now: תשובה
+- **Arakhin 32b, step 1** (hebrewStepName): אביי answers the information question מאי קאמר (32a step 21, labelled שאלה, whose own note says it is not an attack). An answer to a Question is a Response. Source: Arakhin 32a-b: מאי קאמר? אמר אביי: הכי קאמר; Rashi s.v. מאי קאמר; rulebook rule 6.
+  - was: תירוץ
+  - now: תשובה
+- **Arakhin 32b, step 2** (hebrewStepName): רבא gives a second answer to the same question מאי קאמר. Nothing was challenged. Source: Arakhin 32b: רבא אמר: גמלא בגליל לאפוקי גמלא דשאר ארצות; rulebook rule 6.
+  - was: תירוץ
+  - now: תשובה
+- **Arakhin 32b, step 15** (hebrewStepName): The פסוק answers the question מאי טעמא of step 14. A source cited to answer a Question is a Response, not a Proof. Source: Arakhin 32b: מאי טעמא דמאן דאמר קדושה ראשונה קידשה לשעתה... דכתיב ויעשו בני הגולה; rulebook rule 7.
+  - was: ראיה
+  - now: תשובה
+- **Arakhin 32b, step 26** (hebrewStepName): The דתניא is quoted to establish the premise of the challenge ומי מנו שמיטין ויובלות (step 25). A source brought as part of an attack is a Challenge, not a Proof. Source: Arakhin 32b: ומי מנו שמיטין ויובלות? ... דתניא: משגלו שבט ראובן... בטלו יובלות; rulebook rule 1.
+  - was: ראיה
+  - now: קשיא
+- **Arakhin 32b, step 26** (title): The title calls the step a proof, but the ברייתא is part of the challenge against counting יובל in עזרא's time. Source: Arakhin 32b: דתניא: משגלו שבט ראובן ושבט גד... בטלו יובלות.
+  - was: Proof that יובל needs
+  - now: Source that יובל needs
+- **Arakhin 32b, step 27** (hebrewStepName): This continues the same ברייתא quoted for the challenge (its own confusionAlert says it makes the question of step 25 harder). The rest of an attacking source takes the Challenge label. Source: Arakhin 32b: יכול היו עליה והן מעורבין... ולא בזמן שהן מעורבין!; rulebook rule 1.
+  - was: ראיה
+  - now: קשיא
+- **Arakhin 33a, step 4** (hebrewStepName): Step 4 completes the challenge ולא מנו שמיטין ויובלות? והכתיב (step 3), which step 5 then answers as a תירוץ. It is the end of an objection, not a proof. Source: Arakhin 33a: ולא מנו שמיטין ויובלות? והכתיב מקץ שבע שנים... והוינן בהו... שש לנמכר ושבע לנרצע; Rashi s.v. ושבע לנרצע (אלמא בימי צדקיה הוה יובל); rulebook rule 1.
+  - was: ראיה
+  - now: קשיא
+- **Arakhin 33a, step 4** (whatsHappening): The step ends a challenge, not a proof. Source: Arakhin 33a: ולא מנו שמיטין ויובלות? והכתיב.
+  - was: The גמרא finishes the proof from step 3.
+  - now: The גמרא finishes the challenge from step 3.
+- **Arakhin 33a, step 3** (whatsHappening): It calls the challenge a proof, which contradicts the step's own Challenge label. Source: Arakhin 33a: ולא מנו שמיטין ויובלות? והכתיב.
+  - was: This step sets up the proof, which is finished in the next step.
+  - now: This step sets up the challenge, which is finished in the next step.
+- **Arakhin 33a, step 5** (whatsHappening): Step 5 answers a challenge (it is labelled תירוץ). It does not push aside a proof. Source: Arakhin 33a: ההוא בתוכחה כתיב.
+  - was: The גמרא pushes back on the proof.
+  - now: The גמרא answers the challenge.
+- **Arakhin 33a, step 5** (relationToPreviousStep): Steps 3-4 are a challenge, not a proof. Source: Arakhin 33a: ולא מנו... והכתיב.
+  - was: Answers the proof of steps 3–4.
+  - now: Answers the challenge of steps 3–4.
+- **Arakhin 33a, step 26** (hebrewStepName): This is only the second half of the ברייתא that answers והתם מנלן (step 24; the first half, step 25, is תשובה). The sugya goes straight on with ופליגא דרבי אושעיא, so this is not a Conclusion. Source: Arakhin 33a: והתם מנלן? דתניא... מה תלמוד לומר ממכר? ממכריו יוצא בחנם; rulebook rule 5.
+  - was: מסקנא
+  - now: תשובה
+- **Arakhin 33a, step 31** (hebrewStepName): This is the second half of רב פפא's answer (step 30, תשובה) to וביובל יצא למה לי, and the ברייתא refuting רבי אושעיא follows it. A half-answer in the middle of a sugya is not a Conclusion. Source: Arakhin 33a: אמר רב פפא: לא נצרכה אלא... למאי מדמית ליה... השלמה בעי; rulebook rule 5.
+  - was: מסקנא
+  - now: תשובה
+- **Arakhin 33a, step 32** (hebrewStepName): Step 32 is the first half of תניא כוותיה דרב הונא ותיובתא דרבי אושעיא, and its second half (step 33) is already מסקנא. A תיובתא is a Conclusion, and both halves must have the same label. Source: Arakhin 33a: תניא כוותיה דרב הונא ותיובתא דרבי אושעיא; Rashi s.v. ותיובתא דרבי אושעיא; rulebook rules 4-5.
+  - was: ראיה
+  - now: מסקנא
+
 ## 202611060600-rev120-labels-shas-round2
 
 Approved: Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.
