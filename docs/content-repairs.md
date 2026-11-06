@@ -2,6 +2,518 @@
 
 Every change to the AI-written content, newest first. Each entry says what was wrong, the source used, and who approved it.
 
+## 202611060553-rev116-labels-shas-l
+
+Approved: Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.
+
+- **Shevuot 11a, step 3** (hebrewStepName): וכי תימא shutting an escape from the challenge in step 2; continues the challenge, not pushing aside a proof Source: Shevuot 11a.
+  - was: דחיה
+  - now: קשיא
+- **Shevuot 11b, step 5** (hebrewStepName): שאני פרה answers the challenge from the פרה in step 4 Source: Shevuot 11b.
+  - was: דחיה
+  - now: תירוץ
+- **Shevuot 11b, step 5** (relationToPreviousStep): names the wrong kind after relabel to תירוץ Source: Shevuot 11b.
+  - was: Rejects the proof from the פרה
+  - now: Answers the challenge from the פרה
+- **Shevuot 14b, step 11** (hebrewStepName): הא לא קשיא answers אביי's וליטעמיך counter-challenge Source: Shevuot 14b.
+  - was: דחיה
+  - now: תירוץ
+- **Shevuot 14b, step 11** (relationToPreviousStep): names the wrong kind after relabel to תירוץ Source: Shevuot 14b.
+  - was: Rejects אביי's counter-challenge
+  - now: Answers אביי's counter-challenge
+- **Shevuot 15a, step 20** (hebrewStepName): ותסברה? answers the challenge of step 19 Source: Shevuot 15a.
+  - was: דחיה
+  - now: תירוץ
+- **Shevuot 15a, step 20** (relationToPreviousStep): names the wrong kind after relabel to תירוץ Source: Shevuot 15a.
+  - was: Rejects the challenge of Step 19
+  - now: Answers the challenge of Step 19
+- **Shevuot 15b, step 26** (hebrewStepName): וליטעמיך is a counter-objection, not pushing aside a proof Source: Shevuot 15b.
+  - was: דחיה
+  - now: קשיא
+- **Shevuot 15b, step 26** (relationToPreviousStep): names the wrong kind after relabel to קשיא Source: Shevuot 15b.
+  - was: Rejects the assumption
+  - now: Attacks the assumption
+- **Shevuot 21b, step 2** (hebrewStepName): לא; זו היא... answers רבי ירמיה's challenge (step 1 continues his קשיא from 21a) Source: Shevuot 21b.
+  - was: דחיה
+  - now: תירוץ
+- **Shevuot 21b, step 2** (relationToPreviousStep): names the wrong kind after relabel to תירוץ Source: Shevuot 21b.
+  - was: Rejects step 1's reading of
+  - now: Answers step 1 by rejecting its reading of
+- **Shevuot 22b, step 16** (hebrewStepName): לא; עפר לאו בר אכילה answers the challenge in step 15 Source: Shevuot 22b.
+  - was: דחיה
+  - now: תירוץ
+- **Shevuot 32a, step 4** (hebrewStepName): אמר לאו דוקא answers the challenge (והא נמי תנינא) of step 3 Source: Shevuot 32a.
+  - was: דחיה
+  - now: תירוץ
+- **Shevuot 32a, step 4** (relationToPreviousStep): names the wrong kind after relabel to תירוץ Source: Shevuot 32a.
+  - was: Turns aside the proof from the משנה
+  - now: Answers the challenge from the משנה
+- **Shevuot 34b, step 12** (hebrewStepName): ומאי חוכא? דלמא... objects to the explanation of the laughter Source: Shevuot 34b.
+  - was: דחיה
+  - now: קשיא
+- **Shevuot 34b, step 12** (relationToPreviousStep): names the wrong kind after relabel to קשיא Source: Shevuot 34b.
+  - was: Rejects Step 11's explanation
+  - now: Challenges Step 11's explanation
+- **Shevuot 34b, step 15** (hebrewStepName): רב הונא's ומאי חוכא objects to the scholars' explanation; step 16 answers it Source: Shevuot 34b.
+  - was: דחיה
+  - now: קשיא
+- **Shevuot 34b, step 15** (relationToPreviousStep): names the wrong kind after relabel to קשיא Source: Shevuot 34b.
+  - was: Rejects the scholars' argument
+  - now: Challenges the scholars' argument
+- **Shevuot 34b, step 19** (hebrewStepName): מסתברא ממעילה answers the אדרבה challenge of step 18 Source: Shevuot 34b.
+  - was: דחיה
+  - now: תירוץ
+- **Shevuot 34b, step 19** (relationToPreviousStep): names the wrong kind after relabel to תירוץ Source: Shevuot 34b.
+  - was: Rejects step 18 by showing
+  - now: Answers step 18 by showing
+- **Shevuot 37b, step 6** (hebrewStepName): רב מרדכי deflects רבינא's תא שמע challenge against רבה (same move as step 4, labelled תירוץ) Source: Shevuot 37b.
+  - was: דחיה
+  - now: תירוץ
+- **Shevuot 37b, step 6** (relationToPreviousStep): names the wrong kind after relabel to תירוץ Source: Shevuot 37b.
+  - was: Rejects the proof of step 5
+  - now: Answers the challenge of step 5
+- **Shevuot 37b, step 6** (title): names the wrong kind after relabel to תירוץ Source: Shevuot 37b.
+  - was: sets the proof aside
+  - now: sets the challenge aside
+- **Shevuot 46a, step 13** (hebrewStepName): ואלא מאי רבנן? defends the answer against רב שישא's objection in step 12 Source: Shevuot 46a.
+  - was: דחיה
+  - now: תירוץ
+- **Sotah 24b, step 10** (hebrewStepName): אמר לך רב answers the challenge in step 9 Source: Sotah 24b.
+  - was: דחיה
+  - now: תירוץ
+- **Sotah 24b, step 10** (relationToPreviousStep): names the wrong kind after relabel to תירוץ Source: Sotah 24b.
+  - was: Rejects step 9's suggestion
+  - now: Answers step 9's suggestion
+- **Sotah 30a, step 2** (hebrewStepName): וכי תימא inside רבי יוחנן's challenge, blocking an escape Source: Sotah 30a.
+  - was: דחיה
+  - now: קשיא
+- **Sotah 30a, step 2** (relationToPreviousStep): names the wrong kind after relabel to קשיא Source: Sotah 30a.
+  - was: Rejects a possible defense
+  - now: Blocks a possible defense
+- **Sotah 31a, step 6** (hebrewStepName): answers the challenge of step 5 (why not check the spelling) Source: Sotah 31a.
+  - was: דחיה
+  - now: תירוץ
+- **Sotah 31a, step 6** (relationToPreviousStep): names the wrong kind after relabel to תירוץ Source: Sotah 31a.
+  - was: Rejects the assumption behind the challenge in step 5.
+  - now: Answers the challenge in step 5 by rejecting its assumption.
+- **Sotah 31b, step 23** (hebrewStepName): וליטעמיך counter-objection to the תיובתא of step 22 (per brief); not a Proof being pushed aside Source: Sotah 31b.
+  - was: דחיה
+  - now: תירוץ
+- **Sotah 31b, step 23** (relationToPreviousStep): names the wrong kind after relabel to קשיא Source: Sotah 31b.
+  - was: against the proof in Step 22
+  - now: against the challenge in Step 22
+- **Sotah 47b, step 13** (hebrewStepName): וליטעמיך counter-objection to the תיובתא of step 12 (per brief) Source: Sotah 47b.
+  - was: דחיה
+  - now: תירוץ
+- **Sotah 47b, step 13** (relationToPreviousStep): names the wrong kind after relabel to קשיא Source: Sotah 47b.
+  - was: Rejects the refutation
+  - now: Counters the refutation
+- **Sotah 6a, step 7** (hebrewStepName): answers אביי's counter-case challenge in step 6 (parallel step 9 is תירוץ) Source: Sotah 6a.
+  - was: דחיה
+  - now: תירוץ
+- **Sotah 6a, step 7** (relationToPreviousStep): names the wrong kind after relabel to תירוץ Source: Sotah 6a.
+  - was: Rejects the counter-case
+  - now: Answers the counter-case
+- **Shevuot 13a, step 16** (hebrewStepName): אלמה לא? objects to רבא's answer in step 15 Source: Shevuot 13a.
+  - was: דחיה
+  - now: קשיא
+- **Shevuot 23a, step 17** (hebrewStepName): ודלמא לכוס? objects to the answer in step 16 Source: Shevuot 23a.
+  - was: דחיה
+  - now: קשיא
+- **Shevuot 23a, step 17** (relationToPreviousStep): names the wrong kind after relabel to קשיא Source: Shevuot 23a.
+  - was: Rejects the answer in step 16
+  - now: Challenges the answer in step 16
+- **Shevuot 23a, step 19** (hebrewStepName): ודלמא... objects to the wording suggested in step 18 Source: Shevuot 23a.
+  - was: דחיה
+  - now: קשיא
+- **Shevuot 23a, step 19** (relationToPreviousStep): names the wrong kind after relabel to קשיא Source: Shevuot 23a.
+  - was: Rejects the short wording
+  - now: Challenges the short wording
+- **Shevuot 25b, step 16** (hebrewStepName): אביי objects to the רבנן's answer in step 15 Source: Shevuot 25b.
+  - was: דחיה
+  - now: קשיא
+- **Shevuot 25b, step 16** (relationToPreviousStep): names the wrong kind after relabel to קשיא Source: Shevuot 25b.
+  - was: Rejects the answer of the רבנן
+  - now: Challenges the answer of the רבנן
+- **Shevuot 26a, step 29** (hebrewStepName): objects to the proposed case (answer) in step 28 Source: Shevuot 26a.
+  - was: דחיה
+  - now: קשיא
+- **Shevuot 26a, step 29** (relationToPreviousStep): names the wrong kind after relabel to קשיא Source: Shevuot 26a.
+  - was: Rejects the case proposed
+  - now: Challenges the case proposed
+- **Shevuot 28b, step 12** (hebrewStepName): אבימי objects to עיפא's answer (אישתבשת) Source: Shevuot 28b.
+  - was: דחיה
+  - now: קשיא
+- **Shevuot 28b, step 12** (relationToPreviousStep): names the wrong kind after relabel to קשיא Source: Shevuot 28b.
+  - was: Rejects עיפא's answer
+  - now: Challenges עיפא's answer
+- **Shevuot 28b, step 15** (hebrewStepName): אבימי objects to עיפא's answer (אישתבשת) Source: Shevuot 28b.
+  - was: דחיה
+  - now: קשיא
+- **Shevuot 28b, step 15** (relationToPreviousStep): names the wrong kind after relabel to קשיא Source: Shevuot 28b.
+  - was: Rejects עיפא's answer
+  - now: Challenges עיפא's answer
+- **Shevuot 28b, step 18** (hebrewStepName): אבימי objects to עיפא's answer (אישתבשת) Source: Shevuot 28b.
+  - was: דחיה
+  - now: קשיא
+- **Shevuot 28b, step 18** (relationToPreviousStep): names the wrong kind after relabel to קשיא Source: Shevuot 28b.
+  - was: Rejects עיפא's answer
+  - now: Challenges עיפא's answer
+- **Shevuot 32b, step 5** (hebrewStepName): ולימא ליה מי יימר objects to the suggested answer in step 4 Source: Shevuot 32b.
+  - was: דחיה
+  - now: קשיא
+- **Shevuot 32b, step 5** (relationToPreviousStep): names the wrong kind after relabel to קשיא Source: Shevuot 32b.
+  - was: Rejects the suggestion
+  - now: Challenges the suggestion
+- **Shevuot 32b, step 5** (title): names the wrong kind after relabel to קשיא Source: Shevuot 32b.
+  - was: Rejected:
+  - now: Challenged:
+- **Shevuot 34b, step 17** (hebrewStepName): מסתברא ממעילה objects to the scholars' answer in step 16 Source: Shevuot 34b.
+  - was: דחיה
+  - now: קשיא
+- **Shevuot 34b, step 17** (relationToPreviousStep): names the wrong kind after relabel to קשיא Source: Shevuot 34b.
+  - was: Rejects the scholars' answer
+  - now: Challenges the scholars' answer
+- **Shevuot 34b, step 24** (hebrewStepName): ומאי חוכא? דלמא objects to the Response in step 23 Source: Shevuot 34b.
+  - was: דחיה
+  - now: קשיא
+- **Shevuot 34b, step 24** (relationToPreviousStep): names the wrong kind after relabel to קשיא Source: Shevuot 34b.
+  - was: Rejects the joke
+  - now: Challenges the joke
+- **Shevuot 36a, step 40** (hebrewStepName): רבי יצחק's version objects to the איפוך answer of step 39 Source: Shevuot 36a.
+  - was: דחיה
+  - now: קשיא
+- **Shevuot 36a, step 40** (relationToPreviousStep): names the wrong kind after relabel to קשיא Source: Shevuot 36a.
+  - was: Rejects the reversal
+  - now: Challenges the reversal
+- **Shevuot 41b, step 7** (hebrewStepName): פריך רב אחא: objects to שמואל's answer (תנאי היא) in step 6 Source: Shevuot 41b.
+  - was: דחיה
+  - now: קשיא
+- **Shevuot 41b, step 7** (relationToPreviousStep): names the wrong kind after relabel to קשיא Source: Shevuot 41b.
+  - was: Rejects step 6's claim
+  - now: Challenges step 6's claim
+- **Shevuot 43a, step 19** (hebrewStepName): אי הכי... objects to the answer of step 18 Source: Shevuot 43a.
+  - was: דחיה
+  - now: קשיא
+- **Shevuot 43a, step 19** (relationToPreviousStep): names the wrong kind after relabel to קשיא Source: Shevuot 43a.
+  - was: Rejects the answer of step 18
+  - now: Challenges the answer of step 18
+- **Shevuot 8b, step 11** (hebrewStepName): רבא objects to רבי זירא's answer in step 10 Source: Shevuot 8b.
+  - was: דחיה
+  - now: קשיא
+- **Shevuot 8b, step 11** (relationToPreviousStep): names the wrong kind after relabel to קשיא Source: Shevuot 8b.
+  - was: Rejects רבי זירא's answer
+  - now: Challenges רבי זירא's answer
+- **Sotah 11a, step 8** (hebrewStepName): רבא objects to אביי's answer in step 7 Source: Sotah 11a.
+  - was: דחיה
+  - now: קשיא
+- **Sotah 11a, step 8** (relationToPreviousStep): names the wrong kind after relabel to קשיא Source: Sotah 11a.
+  - was: Rejects אביי's answer
+  - now: Challenges אביי's answer
+- **Sotah 11a, step 20** (hebrewStepName): narrator's comment inside the story of פרעה's advisors (rule 8), not pushing aside a proof Source: Sotah 11a.
+  - was: דחיה
+  - now: מימרא
+- **Sotah 11a, step 20** (relationToPreviousStep): names the wrong kind after relabel to מימרא Source: Sotah 11a.
+  - was: Rejects the reasoning of step 19
+  - now: Points out the flaw in the reasoning of step 19
+- **Sotah 12b, step 17** (hebrewStepName): רבי נחמיה objects to רבי יהודה's answer Source: Sotah 12b.
+  - was: דחיה
+  - now: קשיא
+- **Sotah 12b, step 17** (relationToPreviousStep): names the wrong kind after relabel to קשיא Source: Sotah 12b.
+  - was: Rejects the answer
+  - now: Challenges the answer
+- **Sotah 2b, step 19** (hebrewStepName): אדרבה objects to the Response in step 18 Source: Sotah 2b.
+  - was: דחיה
+  - now: קשיא
+- **Sotah 2b, step 19** (relationToPreviousStep): names the wrong kind after relabel to קשיא Source: Sotah 2b.
+  - was: Rejects the reasoning of step 18
+  - now: Challenges the reasoning of step 18
+- **Shevuot 20a, step 18** (hebrewStepName): ואזדו לטעמייהו is an observation, immediately challenged by the מיתיבי in step 19 Source: Shevuot 20a.
+  - was: מסקנא
+  - now: מימרא
+- **Shevuot 20b, step 15** (hebrewStepName): אלא אימא answers the objection of step 14 and is itself challenged (פשיטא) in step 16 Source: Shevuot 20b.
+  - was: מסקנא
+  - now: תירוץ
+- **Shevuot 32a, step 6** (hebrewStepName): end of the proof begun in step 5; challenged straight away in step 7 Source: Shevuot 32a.
+  - was: מסקנא
+  - now: ראיה
+- **Shevuot 39b, step 28** (hebrewStepName): end of the הכי נמי מסתברא proof of step 27; step 29 continues from it Source: Shevuot 39b.
+  - was: מסקנא
+  - now: ראיה
+- **Shevuot 42b, step 4** (hebrewStepName): completes the answer of steps 2-3; challenged in step 5 Source: Shevuot 42b.
+  - was: מסקנא
+  - now: תירוץ
+- **Shevuot 4b, step 13** (hebrewStepName): second half of the רבנן's Response begun in step 12; challenged in step 14 Source: Shevuot 4b.
+  - was: מסקנא
+  - now: תשובה
+- **Shevuot 5b, step 7** (hebrewStepName): שמע מינה closing רבינא's proof; רבא pushes it aside in step 8 Source: Shevuot 5b.
+  - was: מסקנא
+  - now: ראיה
+- **Sotah 12a, step 19** (hebrewStepName): story line (עמרם takes back his wife), challenged straight away in step 20 Source: Sotah 12a.
+  - was: מסקנא
+  - now: מימרא
+- **Sotah 13b, step 1** (hebrewStepName): answers the challenge at Sotah 13a step 33 (how can a dead body travel with the שכינה); then challenged in step 2 Source: Sotah 13b.
+  - was: מסקנא
+  - now: תירוץ
+- **Sotah 18b, step 8** (hebrewStepName): ruling against רב המנונא, immediately challenged in step 9 Source: Sotah 18b.
+  - was: מסקנא
+  - now: מימרא
+- **Sotah 18b, step 8** (relationToPreviousStep): names the wrong kind after relabel to מימרא Source: Sotah 18b.
+  - was: Rejects the practical outcome
+  - now: Rules against the practical outcome
+- **Sotah 19a, step 13** (hebrewStepName): second half of the Response (גזירה שוה) in step 12 Source: Sotah 19a.
+  - was: מסקנא
+  - now: תשובה
+- **Sotah 29b, step 14** (hebrewStepName): second half of the answer to step 12's source question; challenged in step 15 Source: Sotah 29b.
+  - was: מסקנא
+  - now: תשובה
+- **Sotah 2b, step 3** (hebrewStepName): second half of the Response of step 2; challenged in step 4 Source: Sotah 2b.
+  - was: מסקנא
+  - now: תשובה
+- **Sotah 31b, step 16** (hebrewStepName): end of the proof begun in steps 11-13; challenged in step 17 Source: Sotah 31b.
+  - was: מסקנא
+  - now: ראיה
+- **Sotah 42b, step 21** (hebrewStepName): part of רבי אלעזר's teaching; challenged in step 22 Source: Sotah 42b.
+  - was: מסקנא
+  - now: מימרא
+- **Sotah 43a, step 23** (hebrewStepName): wraps up the proof of step 22; challenged in step 24 Source: Sotah 43a.
+  - was: מסקנא
+  - now: ראיה
+- **Sotah 45a, step 16** (hebrewStepName): second half of רב's answer (step 14); challenged in step 17 Source: Sotah 45a.
+  - was: מסקנא
+  - now: תירוץ
+- **Sotah 38b, step 7** (hebrewStepName): ולא פליגי with no challenge before it Source: Sotah 38b.
+  - was: תירוץ
+  - now: מימרא
+- **Sotah 39b, step 11** (hebrewStepName): ולא פליגי with no challenge before it Source: Sotah 39b.
+  - was: תירוץ
+  - now: מימרא
+- **Sotah 8b, step 13** (hebrewStepName): והא קתני objects to אביי's answer (rule 2), no proof pushed aside Source: Sotah 8b.
+  - was: דחיה
+  - now: קשיא
+- **Sotah 8b, step 13** (title): match the new label Source: Sotah 8b.
+  - was: rejects
+  - now: challenges
+- **Sotah 8b, step 13** (relationToPreviousStep): match the new label Source: Sotah 8b.
+  - was: Rejects
+  - now: Challenges
+- **Sukkah 11a, step 20** (hebrewStepName): רב הונא renews his objection against רב יוסף's reply; not pushing aside a proof Source: Sukkah 11a.
+  - was: דחיה
+  - now: קשיא
+- **Sukkah 11a, step 20** (relationToPreviousStep): match the new label Source: Sukkah 11a.
+  - was: Rejects
+  - now: Challenges
+- **Sukkah 14a, step 3** (hebrewStepName): והתנן knocks out the וכי תימא defence (rule 2) Source: Sukkah 14a.
+  - was: דחיה
+  - now: קשיא
+- **Sukkah 14a, step 3** (relationToPreviousStep): match the new label Source: Sukkah 14a.
+  - was: Rejects
+  - now: Challenges
+- **Sukkah 17a, step 11** (hebrewStepName): the חכמים answer רבה's challenge by turning it back on him Source: Sukkah 17a.
+  - was: דחיה
+  - now: תירוץ
+- **Sukkah 18a, step 22** (hebrewStepName): והא קא חזינן objects to a suggested reason (rule 2) Source: Sukkah 18a.
+  - was: דחיה
+  - now: קשיא
+- **Sukkah 18a, step 22** (title): match the new label Source: Sukkah 18a.
+  - was: Rejected:
+  - now: Objection:
+- **Sukkah 18a, step 22** (relationToPreviousStep): match the new label Source: Sukkah 18a.
+  - was: Rejects
+  - now: Challenges
+- **Sukkah 18a, step 24** (hebrewStepName): והא קא חזינן objects to a suggested reason (rule 2) Source: Sukkah 18a.
+  - was: דחיה
+  - now: קשיא
+- **Sukkah 18a, step 24** (title): match the new label Source: Sukkah 18a.
+  - was: Rejected:
+  - now: Objection:
+- **Sukkah 18a, step 24** (relationToPreviousStep): match the new label Source: Sukkah 18a.
+  - was: Rejects
+  - now: Challenges
+- **Sukkah 20a, step 7** (hebrewStepName): second half of רב פפא's answer, challenged at once (rule 5) Source: Sukkah 20a.
+  - was: מסקנא
+  - now: תירוץ
+- **Sukkah 20b, step 20** (hebrewStepName): the משנה's inference closing the טבי proof; challenged at once by the גמרא (rule 5) Source: Sukkah 20b.
+  - was: מסקנא
+  - now: ראיה
+- **Sukkah 22a, step 13** (hebrewStepName): שמע מינה closing רבא's proof, challenged at once by רב אשי (rule 5) Source: Sukkah 22a.
+  - was: מסקנא
+  - now: ראיה
+- **Sukkah 27a, step 3** (hebrewStepName): דילמא answers the לימא תיהוי תיובתיה challenge (rule 2) Source: Sukkah 27a.
+  - was: דחיה
+  - now: תירוץ
+- **Sukkah 27a, step 3** (title): match the new label Source: Sukkah 27a.
+  - was: Pushing off the proof
+  - now: Answering the challenge
+- **Sukkah 27a, step 3** (relationToPreviousStep): match the new label Source: Sukkah 27a.
+  - was: Rejects
+  - now: Answers
+- **Sukkah 27b, step 29** (hebrewStepName): closing line of the story, challenged at once (rules 5, 8) Source: Sukkah 27b.
+  - was: מסקנא
+  - now: מימרא
+- **Sukkah 29a, step 4** (hebrewStepName): ולא פליגי reconciling two versions; no challenge before it Source: Sukkah 29a.
+  - was: תירוץ
+  - now: מימרא
+- **Sukkah 32b, step 15** (hebrewStepName): objection to the לא דק answer (rule 2) Source: Sukkah 32b.
+  - was: דחיה
+  - now: קשיא
+- **Sukkah 32b, step 15** (relationToPreviousStep): match the new label Source: Sukkah 32b.
+  - was: Rejects
+  - now: Challenges
+- **Sukkah 36a, step 16** (hebrewStepName): דלמא לא היא objects to רבה's claimed link, a statement not a proof (rule 2) Source: Sukkah 36a.
+  - was: דחיה
+  - now: קשיא
+- **Sukkah 36a, step 16** (relationToPreviousStep): match the new label Source: Sukkah 36a.
+  - was: Rejects
+  - now: Challenges
+- **Sukkah 36a, step 17** (hebrewStepName): second half of אביי's objection in step 16 (rule 5) Source: Sukkah 36a.
+  - was: דחיה
+  - now: קשיא
+- **Sukkah 36a, step 17** (relationToPreviousStep): match the new label Source: Sukkah 36a.
+  - was: reject
+  - now: challenge
+- **Sukkah 37a, step 17** (hebrewStepName): שמע מינה closing רבא's proof, pushed aside at once in step 18 (rule 5) Source: Sukkah 37a.
+  - was: מסקנא
+  - now: ראיה
+- **Sukkah 38a, step 8** (hebrewStepName): מאי קושיא answers the challenge of step 6; no proof pushed aside Source: Sukkah 38a.
+  - was: דחיה
+  - now: תירוץ
+- **Sukkah 38a, step 11** (hebrewStepName): מאי קושיא answers רבא's challenge of step 9; no proof pushed aside Source: Sukkah 38a.
+  - was: דחיה
+  - now: תירוץ
+- **Sukkah 44a, step 7** (hebrewStepName): וכי תימא … והא מעשים continues אביי's objection (rule 2) Source: Sukkah 44a.
+  - was: דחיה
+  - now: קשיא
+- **Sukkah 45b, step 25** (hebrewStepName): רב יוסף's ruling is attacked at once by מיתיבי (rule 5) Source: Sukkah 45b.
+  - was: מסקנא
+  - now: מימרא
+- **Sukkah 48a, step 15** (hebrewStepName): ולא פליגי reconciling two answers; no challenge before it Source: Sukkah 48a.
+  - was: תירוץ
+  - now: מימרא
+- **Sukkah 54a, step 16** (hebrewStepName): רבא objects to רבי זירא's answer (rule 2) Source: Sukkah 54a.
+  - was: דחיה
+  - now: קשיא
+- **Sukkah 54a, step 16** (title): match the new label Source: Sukkah 54a.
+  - was: rejects:
+  - now: objects:
+- **Sukkah 54a, step 16** (relationToPreviousStep): match the new label Source: Sukkah 54a.
+  - was: Rejects
+  - now: Challenges
+- **Sukkah 5b, step 2** (hebrewStepName): תפשת מרובה answers the challenge of step 1 Source: Sukkah 5b.
+  - was: דחיה
+  - now: תירוץ
+- **Sukkah 5b, step 2** (relationToPreviousStep): match the new label Source: Sukkah 5b.
+  - was: Rejects
+  - now: Answers
+- **Sukkah 5b, step 6** (hebrewStepName): תפשת מרובה answers the challenge of step 5 Source: Sukkah 5b.
+  - was: דחיה
+  - now: תירוץ
+- **Sukkah 5b, step 6** (relationToPreviousStep): match the new label Source: Sukkah 5b.
+  - was: Rejects
+  - now: Answers
+- **Taanit 10a, step 25** (hebrewStepName): שמואל's ruling is challenged at once by אִינִי (rule 5) Source: Taanit 10a.
+  - was: מסקנא
+  - now: מימרא
+- **Taanit 12b, step 6** (hebrewStepName): רב ששת answers the rabbis' challenge Source: Taanit 12b.
+  - was: דחיה
+  - now: תירוץ
+- **Taanit 12b, step 6** (relationToPreviousStep): match the new label Source: Taanit 12b.
+  - was: Rejects
+  - now: Answers
+- **Taanit 13b, step 30** (hebrewStepName): ותסברא begins answering the challenge of step 29 Source: Taanit 13b.
+  - was: דחיה
+  - now: תירוץ
+- **Taanit 13b, step 30** (relationToPreviousStep): match the new label Source: Taanit 13b.
+  - was: reject
+  - now: answer
+- **Taanit 14a, step 2** (hebrewStepName): answers the challenge of step 1 (תיבה is not an omission) Source: Taanit 14a.
+  - was: דחיה
+  - now: תירוץ
+- **Taanit 14a, step 2** (relationToPreviousStep): match the new label Source: Taanit 14a.
+  - was: Rejects
+  - now: Answers
+- **Taanit 14b, step 3** (hebrewStepName): answers רבי אמי's objection of step 2; no proof pushed aside Source: Taanit 14b.
+  - was: דחיה
+  - now: תירוץ
+- **Taanit 14b, step 3** (relationToPreviousStep): match the new label Source: Taanit 14b.
+  - was: Rejects רבי אמי's ruling
+  - now: Answers רבי אמי's objection
+- **Taanit 26b, step 23** (hebrewStepName): the ruling is challenged at once from current practice (rule 5) Source: Taanit 26b.
+  - was: מסקנא
+  - now: מימרא
+- **Taanit 4a, step 21** (hebrewStepName): אביי objects to רבא's answer (rule 2) Source: Taanit 4a.
+  - was: דחיה
+  - now: קשיא
+- **Tamid 27b, step 3** (hebrewStepName): והתניא knocks out the וכי תימא answer (rule 2) Source: Tamid 27b.
+  - was: דחיה
+  - now: קשיא
+- **Tamid 27b, step 3** (relationToPreviousStep): match the new label Source: Tamid 27b.
+  - was: Rejects
+  - now: Challenges
+- **Tamid 27b, step 5** (hebrewStepName): והאמר knocks out the וכי תימא answer (rule 2) Source: Tamid 27b.
+  - was: דחיה
+  - now: קשיא
+- **Tamid 27b, step 5** (relationToPreviousStep): match the new label Source: Tamid 27b.
+  - was: Rejects
+  - now: Challenges
+- **Tamid 27b, step 6** (hebrewStepName): אלא שמע מינה נגד ראשיהן answers the challenge of step 1, and alternative answers follow (rule 5) Source: Tamid 27b.
+  - was: מסקנא
+  - now: תירוץ
+- **Temurah 22a, step 14** (hebrewStepName): second half of the צריכותא begun in step 13 (rule 5) Source: Temurah 22a.
+  - was: מסקנא
+  - now: מימרא
+- **Temurah 22b, step 35** (hebrewStepName): אתאן לרבי is the second half of the רישא/סיפא challenge (rule 5) Source: Temurah 22b.
+  - was: מסקנא
+  - now: קשיא
+- **Temurah 24a, step 9** (hebrewStepName): דלמא answers the challenge of step 8 (rule 2) Source: Temurah 24a.
+  - was: דחיה
+  - now: תירוץ
+- **Temurah 30a, step 17** (hebrewStepName): answers the challenge of step 16 Source: Temurah 30a.
+  - was: דחיה
+  - now: תירוץ
+- **Temurah 30a, step 17** (relationToPreviousStep): match the new label Source: Temurah 30a.
+  - was: Rejects
+  - now: Answers
+- **Temurah 32b, step 4** (hebrewStepName): וליטעמיך counter-objection, not pushing aside a proof (rule 2) Source: Temurah 32b.
+  - was: דחיה
+  - now: קשיא
+- **Temurah 32b, step 4** (relationToPreviousStep): match the new label Source: Temurah 32b.
+  - was: Rejects
+  - now: Challenges
+- **Temurah 34a, step 14** (hebrewStepName): objects to רבי ירמיה's answer (rule 2) Source: Temurah 34a.
+  - was: דחיה
+  - now: קשיא
+- **Temurah 34a, step 14** (relationToPreviousStep): match the new label Source: Temurah 34a.
+  - was: Rejects
+  - now: Challenges
+- **Temurah 3b, step 30** (hebrewStepName): completes the answer to the question of step 22 after the side discussion; challenged at once (rule 5) Source: Temurah 3b.
+  - was: מסקנא
+  - now: תשובה
+- **Yevamot 102a, step 17** (hebrewStepName): אי הכי objects to a suggested reason (rule 2) Source: Yevamot 102a.
+  - was: דחיה
+  - now: קשיא
+- **Yevamot 102a, step 17** (relationToPreviousStep): match the new label Source: Yevamot 102a.
+  - was: Rejects
+  - now: Challenges
+- **Yevamot 102b, step 36** (hebrewStepName): רבא objects to אביי's answer (rule 2) Source: Yevamot 102b.
+  - was: דחיה
+  - now: קשיא
+- **Yevamot 102b, step 36** (title): match the new label Source: Yevamot 102b.
+  - was: rejects
+  - now: challenges
+- **Yevamot 102b, step 36** (relationToPreviousStep): match the new label Source: Yevamot 102b.
+  - was: Rejects
+  - now: Challenges
+- **Yevamot 103b, step 3** (hebrewStepName): answers the question of step 2, and is challenged at once (rules 5, 7) Source: Yevamot 103b.
+  - was: מסקנא
+  - now: תשובה
+- **Yevamot 103b, step 25** (hebrewStepName): לא, מוסגרת answers the תא שמע challenge against רב פפי (rule 2) Source: Yevamot 103b.
+  - was: דחיה
+  - now: תירוץ
+- **Temurah 2a, step 3** (hebrewStepName): ותיסברא answers the challenge of step 2 by denying its premise Source: Temurah 2a.
+  - was: דחיה
+  - now: תירוץ
+
 ## 202611060551-rev115-labels-shas-k
 
 Approved: Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.
