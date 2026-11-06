@@ -7,9 +7,10 @@ How the site works and how to change it safely. Written Nov 5 2026 for David and
 | Piece | Where | Notes |
 |---|---|---|
 | Code and content | GitHub: `dksherizen/gemara-clarity-site`, branch `main` | **A push to `main` goes live within about 2 minutes.** |
-| Hosting | Cloudflare (Workers + static assets), account owned by David | `wrangler.jsonc` configures it. Domains: gemaraclarity.org (main), gemaraclarity.com and www (both redirect). Paid plan (confirm that Workers itself is on the paid plan; on Workers Free a very busy day could hit the 100,000-requests-a-day limit). |
+| Hosting | Cloudflare (Workers + static assets), account owned by David | `wrangler.jsonc` configures it. Domains: gemaraclarity.org (main), gemaraclarity.com and www (both redirect). Workers Paid plan ($5/month, confirmed Nov 5 2026), so there is no daily request cap to hit. |
 | Visitor numbers | Cloudflare dashboard › Web Analytics | Cookie-free. |
-| Sign-in and synced data | Firebase project `gemara-clarity-accounts` | Google sign-in only. Each user's data is one document, `users/{uid}`. The Firestore rules must allow a user to read/write only their own document. |
+| Google Search | Google Search Console, domain property `gemaraclarity.org` (verified Nov 5 2026) | Verified by a TXT record `google-site-verification=…` in Cloudflare DNS. **Don't delete that record.** Sitemap submitted. |
+| Sign-in and synced data | Firebase project `gemara-clarity-accounts` | Google sign-in only. Each user's data is one document, `users/{uid}`. Firestore rules (checked Nov 5 2026): a signed-in user can read, write and delete only their own document, and writes must have exactly `schema`, `updatedAt` and `items`. |
 | The Gemara text | Sefaria's public API, fetched by the browser | Credited on every page (William Davidson Edition, CC BY-NC 4.0). |
 | Old original app | gemara-clarity.netlify.app, Firebase project `gemara-clarity` | Left up on purpose. The new site no longer reads from it. |
 | Course site | course.gemaraclarity.org | The Worker passes it through to the course's own site on Tab hosting (`_worker/course-host.js`). Course sign-in uses two Worker secrets: `COURSE_ASSERTION_PRIVATE_JWK` and `COURSE_ASSERTION_EXTRA_PUBLIC_JWKS`. |
@@ -20,7 +21,7 @@ How the site works and how to change it safely. Written Nov 5 2026 for David and
 - `index.html`, `app.js`, `gc.css`, `acct.js`, `ameilus/`, `mywords.js`, `mishnah.js`: the app.
 - `sw.js`: the offline worker. **When you change any app file, raise the version string `V` at the top**, so phones pick up the change.
 - `data/b/<Masechet>_<daf>_<a|b>.json`: one AI-written breakdown per amud. `data/b/index.json` lists them and holds the data version.
-- `data/classics.json`: the 113 Classics.
+- `data/classics.json`: the 113 Classics. After editing it, raise `CL_REV` in `app.js` (and `V` in `sw.js`) so phones fetch the new list at once.
 - `<masechet>/<daf>/index.html`, `/learn/`, `/about/`, `/privacy/`, `404.html`, `sitemap.xml`: the pages built for search engines. **Never edit these by hand.** They come from `tools/build-pages.mjs`.
 - `_worker/`: the Cloudflare Worker (domain redirects, sign-in proxy, course, spelling redirects such as /berachos/2a/ to /berakhot/2a/).
 - `tools/`: the tools below. `docs/`: this file and the content-repair log. Neither is served to visitors (`.assetsignore`).
@@ -62,7 +63,8 @@ On this computer a push runs the check automatically and stops if something is b
 
 ## Open items (Nov 5 2026)
 
-- Confirm the Cloudflare Workers plan. Verify gemaraclarity.org in Google Search Console and Bing Webmaster Tools, and submit `https://gemaraclarity.org/sitemap.xml`. Check the Firestore rules for `gemara-clarity-accounts` in the Firebase console.
+- Bing Webmaster Tools: skipped by choice (Nov 5 2026). It can import the Google Search Console setup later.
+- Firebase › Authentication › Authorized domains still lists `gc-acct-test.sites.tab.bot` (Tab's old test copy); remove when David agrees.
 - About 20 more Classics need checking against the Gemara. All 113 summaries are still marked "not approved wording".
 - A rav should review the corrections in `docs/content-repairs.md` and the delicate passages.
 - Weekly Daf Yomi checks: Daf Yomi stays in Kodashim and Taharos until June 2027, where the AI makes the most mistakes.

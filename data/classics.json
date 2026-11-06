@@ -177,7 +177,7 @@
   {
    "id": "kid31a-dama",
    "title": "Dama ben Netina honors his father",
-   "summary": "A non-Jew loses a fortune rather than wake his sleeping father, and is later rewarded with a red heifer. It then asks how far honoring parents really goes, and who comes first when both ask.",
+   "summary": "A non-Jew loses a fortune rather than wake his sleeping father, and is later rewarded with a red heifer. Then: why one who is commanded is greater, Dama’s silence when his mother shames him in public, and the son who feeds his father pheasant yet loses his world.",
    "seder": "Nashim",
    "masechta": "Kiddushin",
    "start": {
@@ -188,19 +188,19 @@
    },
    "end": {
     "m": "Kiddushin",
-    "daf": "31a",
-    "step": 23,
-    "words": "וְיֵשׁ מַטְחִינוֹ בָּרֵיחַיִם"
+    "daf": "31b",
+    "step": 1,
+    "words": "וּמְבִיאוֹ לְחַיֵּי הָעוֹלָם הַבָּא."
    },
-   "steps": 10,
+   "steps": 11,
    "status": "pointer-checked only",
-   "note": "live in Classics now (Tab/Instinct list); pointer check passed, boundaries not read by me",
+   "note": "Nov 5 2026 (Claude, Classics check): end moved to Kiddushin 31b step 1, because the last sentence (feeding a father pheasant vs. grinding at the mill) runs over the amud line; summary no longer promises ‘who comes first when both ask’, which is earlier on 31a and not in this range. Boundaries read against the Gemara.",
    "source": "shown",
    "summaryNote": "summary written by us (Instinct), not approved wording",
    "group": "first",
    "order": 4,
    "reading": {
-    "steps": 10
+    "steps": 11
    }
   },
   {
@@ -351,7 +351,7 @@
   {
    "id": "bm84a-reishlakish",
    "title": "Reish Lakish and Rabbi Yochanan",
-   "summary": "Rabbi Yochanan sits by the river, Reish Lakish the bandit jumps in after him and becomes his greatest student. Then a quarrel in the study hall, a hurt that cannot be undone, and Rabbi Yochanan’s grief.",
+   "summary": "Rabbi Yochanan is bathing in the Jordan; Reish Lakish the bandit jumps in after him and becomes his greatest student. Then a quarrel in the study hall, a hurt that cannot be undone, and Rabbi Yochanan’s grief.",
    "seder": "Nezikin",
    "masechta": "Bava_Metzia",
    "start": {
@@ -368,7 +368,7 @@
    },
    "steps": 18,
    "status": "pointer-checked only",
-   "note": "live in Classics now (Tab/Instinct list); pointer check passed, boundaries not read by me",
+   "note": "Nov 5 2026 (Claude, Classics check): summary corrected: Rabbi Yochanan was bathing in the Jordan (קא סחי בירדנא), not sitting by the river. Boundaries read against the Gemara.",
    "source": "shown",
    "summaryNote": "summary written by us (Instinct), not approved wording",
    "group": "harder",
@@ -391,25 +391,25 @@
    },
    "end": {
     "m": "Chagigah",
-    "daf": "15a",
-    "step": 33,
-    "words": "אֲמַר לֵיהּ"
+    "daf": "15b",
+    "step": 5,
+    "words": "אִי הֲוַאי בִּידִי סַכִּינָא, הֲוָה קָרַעְנָא לֵיהּ."
    },
-   "steps": 22,
+   "steps": 27,
    "status": "pointer-checked only",
-   "note": "live in Classics now (Tab/Instinct list); pointer check passed, boundaries not read by me",
+   "note": "Nov 5 2026 (Claude, Classics check): end moved to Chagigah 15b step 5; it used to stop mid-sentence at the amud line, before the thirteen synagogues and the child’s verse that sounded like ‘and to Elisha God said’. Boundaries read against the Gemara.",
    "source": "shown",
    "summaryNote": "summary written by us (Instinct), not approved wording",
    "group": "harder",
    "order": 11,
    "reading": {
-    "steps": 22
+    "steps": 27
    }
   },
   {
    "id": "ber27b-gamliel",
    "title": "Rabban Gamliel is removed",
-   "summary": "The head of the court humiliates Rabbi Yehoshua, the people force him out, and a new leader is picked. The next day the doors open and every student may enter. Politics, pride, and an apology.",
+   "summary": "The head of the court humiliates Rabbi Yehoshua, the people force him out, and Rabbi Elazar ben Azarya is picked. That same day the doors open and every student may enter. Rabban Gamliel apologizes and is brought back, sharing the post with Rabbi Elazar ben Azarya. Politics, pride, and an apology.",
    "seder": "Zeraim",
    "masechta": "Berakhot",
    "start": {
@@ -421,18 +421,18 @@
    "end": {
     "m": "Berakhot",
     "daf": "28a",
-    "step": 24,
-    "words": "לְמָחָר אֲנִי וְאַתָּה נַשְׁכִּים לְפִתְחוֹ."
+    "step": 30,
+    "words": "רַבִּי שִׁמְעוֹן בֶּן יוֹחַאי הֲוָה."
    },
-   "steps": 44,
+   "steps": 50,
    "status": "pointer-checked only",
-   "note": "live in Classics now (Tab/Instinct list); pointer check passed, boundaries not read by me",
+   "note": "Nov 5 2026 (Claude, Classics check): end moved to Berakhot 28a step 30 so it includes the outcome (one does not lower someone in holiness; three weeks and one week; the student was Rabbi Shimon bar Yochai); summary corrected: the doors opened that same day (תנא אותו היום), not the next day. Boundaries read against the Gemara.",
    "source": "shown",
    "summaryNote": "summary written by us (Instinct), not approved wording",
    "group": "harder",
    "order": 12,
    "reading": {
-    "steps": 44
+    "steps": 50
    }
   },
   {
@@ -705,8 +705,8 @@
    "start": {
     "m": "Bava_Metzia",
     "daf": "62a",
-    "step": 1,
-    "words": "״וְחֵי אָחִיךָ עִמָּךְ״."
+    "step": 2,
+    "words": "וְרַבִּי יוֹחָנָן, הַאי ״וְחֵי אָחִיךָ עִמָּךְ״"
    },
    "end": {
     "m": "Bava_Metzia",
@@ -714,15 +714,15 @@
     "step": 3,
     "words": "חַיֶּיךָ קוֹדְמִים לְחַיֵּי חֲבֵירֶךָ."
    },
-   "steps": 3,
+   "steps": 2,
    "status": "verified-read",
-   "note": "start/end read; clean (starts at the question that opens the story)",
+   "note": "Nov 5 2026 (Claude, Classics check): start moved to Bava Metzia 62a step 2 (‘and what does Rabbi Yochanan do with this verse?’); step 1 was the second half of a sentence from 61b about interest. Boundaries read against the Gemara.",
    "source": "draft",
    "summaryNote": "summary written by us (Instinct), not approved wording",
    "group": "more",
    "order": 123,
    "reading": {
-    "steps": 3
+    "steps": 2
    }
   },
   {
@@ -856,18 +856,18 @@
    "end": {
     "m": "Chagigah",
     "daf": "10a",
-    "step": 19,
-    "words": "אֶלָּא דִּשְׁמוּאֵל לֵית לֵיהּ פִּירְכָא."
+    "step": 20,
+    "words": "מִמְּלֵי צַנָּא דְקָרֵי."
    },
-   "steps": 14,
+   "steps": 15,
    "status": "verified-read",
-   "note": "end extended 12->19 (Shmuel's source stands unrefuted); changed, needs pointer re-check by repair agent",
+   "note": "Nov 5 2026 (Claude, Classics check): end moved one step to Chagigah 10a step 20, so it includes the closing line ‘one sharp pepper is better than a basket of squash’. Boundaries read against the Gemara.",
    "source": "draft",
    "summaryNote": "summary written by us (Instinct), not approved wording",
    "group": "more",
    "order": 128,
    "reading": {
-    "steps": 14
+    "steps": 15
    }
   },
   {
@@ -902,7 +902,7 @@
   {
    "id": "bk2a-avos",
    "title": "The four main kinds of damage",
-   "summary": "The opening Mishnah of Bava Kamma: ox, pit, מבעה and fire, and what each adds. The Gemara asks whether their subcategories work like those of שבת.",
+   "summary": "The opening Mishnah of Bava Kamma: ox, pit, מבעה and fire, and what each adds. The Gemara asks whether their offshoots are like the main categories: in שבת they are, in טומאה they are not, and רב פפא answers that in damages some are and some are not.",
    "seder": "Nezikin",
    "masechta": "Bava_Kamma",
    "start": {
@@ -913,25 +913,25 @@
    },
    "end": {
     "m": "Bava_Kamma",
-    "daf": "2a",
-    "step": 11,
-    "words": "קָרֵי לַהּ תּוֹלָדָה."
+    "daf": "2b",
+    "step": 3,
+    "words": "וְיֵשׁ מֵהֶן לָאו כַּיּוֹצֵא בָּהֶן."
    },
-   "steps": 11,
+   "steps": 15,
    "status": "verified-read",
-   "note": "pointer-checked; automated check: ends on a conclusion or answer and the next step is not a continuation. Not manually read.",
+   "note": "Nov 5 2026 (Claude, Classics check): end moved to Bava Kamma 2b step 3; it used to stop on a side point before the Gemara’s answer (רב פפא: some are like the main category and some are not). Boundaries read against the Gemara.",
    "source": "draft",
    "summaryNote": "summary written by us (Instinct), not approved wording",
    "group": "more",
    "order": 130,
    "reading": {
-    "steps": 11
+    "steps": 15
    }
   },
   {
    "id": "bk46a-parah",
    "title": "The ox, the cow and the calf",
-   "summary": "The Mishnah of שור שנגח את הפרה, then סומכוס's \"split the doubtful money\" against the Sages' great rule: המוציא מחבירו עליו הראיה, whoever takes money from another must bring proof.",
+   "summary": "The Mishnah of שור שנגח את הפרה, then סומכוס's \"split the doubtful money\" against the Sages' great rule, המוציא מחבירו עליו הראיה: whoever takes money from another must bring proof. Even against a majority, as with the ox sold that turns out to be a gorer, in money cases we do not follow the majority.",
    "seder": "Nezikin",
    "masechta": "Bava_Kamma",
    "start": {
@@ -942,25 +942,25 @@
    },
    "end": {
     "m": "Bava_Kamma",
-    "daf": "46a",
-    "step": 17,
-    "words": "וְקָאֵי בִּדְמֵי רִדְיָא."
+    "daf": "46b",
+    "step": 5,
+    "words": "עָלָיו הָרְאָיָה."
    },
-   "steps": 10,
+   "steps": 16,
    "status": "verified-read",
-   "note": "pointer-checked; automated check: ends on a conclusion or answer and the next step is not a continuation. Not manually read.",
+   "note": "Nov 5 2026 (Claude, Classics check): end moved to Bava Kamma 46b step 5; it used to stop in the middle of the Rav/Shmuel case of the ox sold that turned out to gore, before its point (in money cases we do not follow the majority). Boundaries read against the Gemara.",
    "source": "draft",
    "summaryNote": "summary written by us (Instinct), not approved wording",
    "group": "more",
    "order": 131,
    "reading": {
-    "steps": 10
+    "steps": 16
    }
   },
   {
    "id": "bk20a-zehnehene",
    "title": "Zeh nehene v'zeh lo chaser",
-   "summary": "רב חסדא's question to רמי בר חמא, and a long line of attempted proofs from Mishnayos and ברייתות, each pushed off, ending with רבי יוחנן's silence.",
+   "summary": "רב חסדא's question to רמי בר חמא, and a long line of attempted proofs from Mishnayos and ברייתות, each pushed off. רבי יוחנן's silence is not agreement, and the case of the treasurer who used הקדש is explained by רבה's rule: הקדש used without permission is like a private person's property used with permission.",
    "seder": "Nezikin",
    "masechta": "Bava_Kamma",
    "start": {
@@ -971,19 +971,19 @@
    },
    "end": {
     "m": "Bava_Kamma",
-    "daf": "20b",
-    "step": 23,
-    "words": "הֶקְדֵּשׁ שֶׁלֹּא מִדַּעַת –"
+    "daf": "21a",
+    "step": 1,
+    "words": "כְּהֶדְיוֹט מִדַּעַת דָּמֵי."
    },
-   "steps": 29,
+   "steps": 30,
    "status": "verified-read",
-   "note": "end extended 22->23 to close on the resolution",
+   "note": "Nov 5 2026 (Claude, Classics check): end moved to Bava Kamma 21a step 1; it used to stop mid-sentence at the amud line, in the middle of רבה’s rule. Boundaries read against the Gemara.",
    "source": "draft",
    "summaryNote": "summary written by us (Instinct), not approved wording",
    "group": "more",
    "order": 132,
    "reading": {
-    "steps": 29
+    "steps": 30
    }
   },
   {
@@ -1146,18 +1146,18 @@
    "end": {
     "m": "Yoma",
     "daf": "85b",
-    "step": 12,
-    "words": "וְדִשְׁמוּאֵל, וַדַּאי לֵית לֵיהּ פִּירְכָא."
+    "step": 13,
+    "words": "מִמְּלָא צַנָּא דְקָרֵי."
    },
-   "steps": 16,
+   "steps": 17,
    "status": "verified-read",
-   "note": "start/end read; clean (starts at the question that opens the story)",
+   "note": "Nov 5 2026 (Claude, Classics check): end moved one step to Yoma 85b step 13, so it includes the closing line ‘one sharp pepper is better than a basket of squash’. Boundaries read against the Gemara.",
    "source": "draft",
    "summaryNote": "summary written by us (Instinct), not approved wording",
    "group": "more",
    "order": 138,
    "reading": {
-    "steps": 16
+    "steps": 17
    }
   },
   {
@@ -1192,7 +1192,7 @@
   {
    "id": "pes2a-or",
    "title": "Or l'arba'ah asar",
-   "summary": "The Mishnah on בדיקת חמץ, then רב הונא and רב יהודה on the word אור, tested against verses about morning light.",
+   "summary": "The Mishnah on בדיקת חמץ, then רב הונא and רב יהודה on the word אור, tested against verse after verse, until a ברייתא of רבי יהודה shows that אור means evening.",
    "seder": "Moed",
    "masechta": "Pesachim",
    "start": {
@@ -1204,18 +1204,18 @@
    "end": {
     "m": "Pesachim",
     "daf": "2b",
-    "step": 4,
-    "words": "וְלָא לַישְׁכְּחֵיהּ."
+    "step": 8,
+    "words": "שְׁמַע מִינַּהּ."
    },
-   "steps": 27,
+   "steps": 31,
    "status": "verified-read",
-   "note": "extended to 2b step 4; partial: the 'or' sugya continues",
+   "note": "Nov 5 2026 (Claude, Classics check): end moved to Pesachim 2b step 8; it used to stop in the middle of the run of challenges, before רבי יהודה’s ברייתא proves that אור means evening (‘שמע מינה’). Boundaries read against the Gemara.",
    "source": "draft",
    "summaryNote": "summary written by us (Instinct), not approved wording",
    "group": "more",
    "order": 140,
    "reading": {
-    "steps": 27
+    "steps": 31
    }
   },
   {
@@ -1308,7 +1308,7 @@
   {
    "id": "kid2a-niknes",
    "title": "How a woman is married",
-   "summary": "The opening Mishnah of Kiddushin: money, document and relations. The Gemara asks why it says \"acquired\" and learns money from קיחה קיחה משדה עפרון.",
+   "summary": "The opening Mishnah of Kiddushin: money, document and relations. The Gemara asks why it says \"acquired\" and learns money from קיחה קיחה משדה עפרון. The next chapter's \"מקדש\" is the Rabbis' word: she becomes forbidden to everyone like הקדש. The Mishnah speaks about her because it ends with \"she acquires herself.\"",
    "seder": "Nashim",
    "masechta": "Kiddushin",
    "start": {
@@ -1320,18 +1320,18 @@
    "end": {
     "m": "Kiddushin",
     "daf": "2b",
-    "step": 3,
-    "words": "וּלְבַסּוֹף תָּנֵי לִישָּׁנָא דְרַבָּנַן,"
+    "step": 7,
+    "words": "תְּנָא נָמֵי רֵישָׁא בְּדִידַהּ."
    },
-   "steps": 12,
+   "steps": 16,
    "status": "verified-read",
-   "note": "extended to 2b step 3 (language of the Mishnah answered); partial",
+   "note": "Nov 5 2026 (Claude, Classics check): end moved to Kiddushin 2b step 7; it used to stop mid-sentence (‘first the Torah’s language, then the Rabbis’ language,’) before the explanation. Boundaries read against the Gemara.",
    "source": "draft",
    "summaryNote": "summary written by us (Instinct), not approved wording",
    "group": "more",
    "order": 144,
    "reading": {
-    "steps": 12
+    "steps": 16
    }
   },
   {
@@ -1436,18 +1436,18 @@
    "end": {
     "m": "Yevamot",
     "daf": "62b",
-    "step": 22,
-    "words": "הֲלָכָה כְּרַבִּי יְהוֹשֻׁעַ."
+    "step": 21,
+    "words": "אָמַר רַב נַחְמָן: אַסְכָּרָה."
    },
-   "steps": 8,
+   "steps": 7,
    "status": "verified-read",
-   "note": "pointer-checked; automated check: ends on a conclusion or answer and the next step is not a continuation. Not manually read.",
+   "note": "Nov 5 2026 (Claude, Classics check): end moved back one step to Yevamot 62b step 21, where the story ends (they died of אסכרה); the dropped last step was a ruling (‘the halacha follows Rabbi Yehoshua’) about a teaching that isn’t in this range. Boundaries read against the Gemara.",
    "source": "draft",
    "summaryNote": "summary written by us (Instinct), not approved wording",
    "group": "more",
    "order": 148,
    "reading": {
-    "steps": 8
+    "steps": 7
    }
   },
   {
@@ -1522,19 +1522,19 @@
    },
    "end": {
     "m": "Sanhedrin",
-    "daf": "74a",
-    "step": 31,
-    "words": "דִּילְמָא דְּמָא דְּהוּא גַּבְרָא סוּמָּק טְפֵי."
+    "daf": "74b",
+    "step": 3,
+    "words": "אֵין פַּרְהֶסְיָא פְּחוּתָה מֵעֲשָׂרָה בְּנֵי אָדָם."
    },
-   "steps": 13,
+   "steps": 19,
    "status": "verified-read",
-   "note": "pointer-checked; automated check: ends on a conclusion or answer and the next step is not a continuation. Not manually read.",
+   "note": "Nov 5 2026 (Claude, Classics check): end moved to Sanhedrin 74b step 3, so the range includes the times-of-persecution and in-public rules that the summary promises (they used to be cut off). Boundaries read against the Gemara.",
    "source": "draft",
    "summaryNote": "summary written by us (Instinct), not approved wording",
    "group": "more",
    "order": 151,
    "reading": {
-    "steps": 13
+    "steps": 19
    }
   },
   {
@@ -1546,8 +1546,8 @@
    "start": {
     "m": "Makkot",
     "daf": "7a",
-    "step": 5,
-    "words": "סַנְהֶדְרִין הַהוֹרֶגֶת אֶחָד בְּשָׁבוּעַ"
+    "step": 3,
+    "words": "מַתְנִי׳"
    },
    "end": {
     "m": "Makkot",
@@ -1555,15 +1555,15 @@
     "step": 22,
     "words": "בִּמְנָאֲפִים – מִשֶּׁיִּרְאוּ כִּמְנָאֲפִים."
    },
-   "steps": 18,
+   "steps": 20,
    "status": "verified-read",
-   "note": "pointer-checked; automated check: ends on a conclusion or answer and the next step is not a continuation. Not manually read.",
+   "note": "Nov 5 2026 (Claude, Classics check): start moved back to Makkot 7a step 3, the beginning of the Mishnah; the Gemara’s first steps discuss its opening lines (the condemned man who fled), which used to be cut off. Boundaries read against the Gemara.",
    "source": "draft",
    "summaryNote": "summary written by us (Instinct), not approved wording",
    "group": "more",
    "order": 152,
    "reading": {
-    "steps": 18
+    "steps": 20
    }
   },
   {
@@ -1633,8 +1633,8 @@
    "start": {
     "m": "Gittin",
     "daf": "25a",
-    "step": 4,
-    "words": "וְרַבִּי יוֹחָנָן אָמַר:"
+    "step": 2,
+    "words": "זְעֵירִי אָמַר:"
    },
    "end": {
     "m": "Gittin",
@@ -1642,15 +1642,15 @@
     "step": 3,
     "words": "אָמַר לָהֶם: לִכְשֶׁיִּבָּקַע."
    },
-   "steps": 23,
+   "steps": 25,
    "status": "verified-read",
-   "note": "end extended to 26a step 3; step 4 is a new Mishnah; cross-amud",
+   "note": "Nov 5 2026 (Claude, Classics check): start moved back to Gittin 25a step 2 (זעירי: ‘all are not disqualified except the last’), which Rabbi Yochanan’s opening line answers. Boundaries read against the Gemara.",
    "source": "draft",
    "summaryNote": "summary written by us (Instinct), not approved wording",
    "group": "more",
    "order": 155,
    "reading": {
-    "steps": 23
+    "steps": 25
    }
   },
   {
@@ -1661,31 +1661,31 @@
    "masechta": "Yevamot",
    "start": {
     "m": "Yevamot",
-    "daf": "93a",
-    "step": 1,
-    "words": "קֻוֽנָּם שֶׁאֲנִי עוֹשָׂה לְפִיךָ —"
+    "daf": "92b",
+    "step": 16,
+    "words": "אֲמַר לֵיהּ רֵישׁ לָקִישׁ:"
    },
    "end": {
     "m": "Yevamot",
-    "daf": "93a",
-    "step": 10,
-    "words": "אֲמַר לֵיהּ: שַׁפִּיר עֲבַדְתְּ."
+    "daf": "93b",
+    "step": 3,
+    "words": "וּפִשְׁתָּה כֵהָה לֹא יְכַבֶּנָּה״."
    },
-   "steps": 10,
+   "steps": 19,
    "status": "verified-read",
-   "note": "start moved 4->1 so the Mishnah is included",
+   "note": "Nov 5 2026 (Claude, Classics check): start moved back to Yevamot 92b step 16 (Reish Lakish’s argument); the old start was the quoted Mishnah in the middle of a sentence from 92b. End moved to 93b step 3, so it includes why Rabbi Chiya approved Rabbi Yannai and the dream of the bruised reed. Boundaries read against the Gemara.",
    "source": "draft",
    "summaryNote": "summary written by us (Instinct), not approved wording",
    "group": "more",
    "order": 156,
    "reading": {
-    "steps": 10
+    "steps": 19
    }
   },
   {
    "id": "shab33b-rashbi",
    "title": "Rabbi Shimon bar Yochai in the cave",
-   "summary": "רבי יהודה praises Rome, רבי שמעון criticizes it and must hide. Twelve years in a cave with a carob tree and a spring; he comes out too harsh and is sent back; the old man with two myrtle bundles.",
+   "summary": "רבי יהודה praises Rome, רבי שמעון criticizes it and must hide. Twelve years in a cave with a carob tree and a spring; he comes out too harsh and is sent back; the old man with two myrtle bundles. Coming out to fix something, he purifies a doubtful place, and the mocking elder and the informer יהודה בן גרים are struck dead.",
    "seder": "Moed",
    "masechta": "Shabbat",
    "start": {
@@ -1696,19 +1696,19 @@
    },
    "end": {
     "m": "Shabbat",
-    "daf": "33b",
-    "step": 33,
-    "words": "שָׁלֵם בְּמָמוֹנוֹ, שָׁלֵם בְּתוֹרָתוֹ."
+    "daf": "34a",
+    "step": 6,
+    "words": "וְעָשָׂהוּ גַּל שֶׁל עֲצָמוֹת."
    },
-   "steps": 14,
+   "steps": 23,
    "status": "verified-read",
-   "note": "start/end read; clean (starts at the question that opens the story)",
+   "note": "Nov 5 2026 (Claude, Classics check): end moved to Shabbat 34a step 6; it used to stop just as he sets out to fix something, before he purifies the place and the informer יהודה בן גרים is punished. Boundaries read against the Gemara.",
    "source": "draft",
    "summaryNote": "summary written by us (Instinct), not approved wording",
    "group": "more",
    "order": 157,
    "reading": {
-    "steps": 14
+    "steps": 23
    }
   },
   {
@@ -2120,30 +2120,30 @@
   {
    "id": "ber10a-hezekiah",
    "title": "Hezekiah, Isaiah and the sick king",
-   "summary": "Isaiah visits the sick King Hezekiah and tells him he will die. Hezekiah argues, and the lesson is never to hold back from prayer.",
+   "summary": "Isaiah visits the sick King Hezekiah and tells him he will die for not having children. Hezekiah answers that he has a family tradition never to hold back from prayer, even with a sword on his neck, and he turns to the wall and prays.",
    "seder": "Zeraim",
    "masechta": "Berakhot",
    "start": {
     "m": "Berakhot",
     "daf": "10a",
-    "step": 38,
-    "words": "חִזְקִיָּהוּ אֲמַר: לֵיתֵי יְשַׁעְיָהוּ גַּבַּאי,"
+    "step": 37,
+    "words": "אָמַר רַב הַמְנוּנָא: מַאי דִּכְתִיב"
    },
    "end": {
     "m": "Berakhot",
-    "daf": "10a",
-    "step": 51,
-    "words": "שֶׁנֶּאֱמַר: ״הֵן יִקְטְלֵנִי לוֹ אֲיַחֵל״."
+    "daf": "10b",
+    "step": 2,
+    "words": "וַיִּתְפַּלֵּל אֶל ה׳״."
    },
-   "steps": 14,
+   "steps": 17,
    "status": "verified-read",
-   "note": "",
+   "note": "Nov 5 2026 (Claude, Classics check): start moved back to Berakhot 10a step 37, where Rav Hamnuna’s teaching that opens the story begins (it used to start in the middle of it); end moved to 10b step 2, where Hezekiah turns to the wall and prays; summary now says why he was to die and how it ends. Boundaries read against the Gemara.",
    "source": "new",
    "summaryNote": "summary written by us (Instinct), not approved wording",
    "group": "more",
    "order": 172,
    "reading": {
-    "steps": 14
+    "steps": 17
    }
   },
   {
@@ -2178,7 +2178,7 @@
   {
    "id": "ber62a-kahana",
    "title": "Rav Kahana under Rav's bed",
-   "summary": "Rabbi Akiva, Ben Azzai and Rav Kahana each hide to learn Torah from a teacher's private conduct. 'It is Torah, and I need to learn.'",
+   "summary": "Rabbi Akiva and Ben Azzai follow their teachers into private places, and Rav Kahana hides under Rav’s bed, each to learn Torah from a teacher’s private conduct. ‘It is Torah, and I need to learn.’",
    "seder": "Zeraim",
    "masechta": "Berakhot",
    "start": {
@@ -2195,7 +2195,7 @@
    },
    "steps": 9,
    "status": "verified-read",
-   "note": "",
+   "note": "Nov 5 2026 (Claude, Classics check): summary corrected: only Rav Kahana hid; Rabbi Akiva and Ben Azzai followed their teachers in. Boundaries read against the Gemara.",
    "source": "new",
    "summaryNote": "summary written by us (Instinct), not approved wording",
    "group": "more",
@@ -2207,14 +2207,14 @@
   {
    "id": "shab30b-david",
    "title": "King David dies on Shabbos",
-   "summary": "The Angel of Death cannot touch David while he learns, so he shakes the garden trees. Then Shlomo asks what to do with the body.",
+   "summary": "David asks to know when he will die and is told: on Shabbos. Every Shabbos he learns all day, so the Angel of Death cannot touch him until it shakes the garden trees. Then Shlomo asks what to do with the body, and ‘a living dog is better than a dead lion.’",
    "seder": "Moed",
    "masechta": "Shabbat",
    "start": {
     "m": "Shabbat",
-    "daf": "30b",
-    "step": 1,
-    "words": "כׇּל יוֹמָא דְשַׁבְּתָא"
+    "daf": "30a",
+    "step": 16,
+    "words": "וּדְקָאָמַר שְׁלֹמֹה:"
    },
    "end": {
     "m": "Shabbat",
@@ -2222,15 +2222,15 @@
     "step": 5,
     "words": "מִן הָאַרְיֵה הַמֵּת״."
    },
-   "steps": 5,
+   "steps": 10,
    "status": "verified-read",
-   "note": "",
+   "note": "Nov 5 2026 (Claude, Classics check): start moved back to Shabbat 30a step 16; the story (David is told he will die on Shabbos) begins on the previous amud, and it used to open mid-story. Boundaries read against the Gemara.",
    "source": "new",
    "summaryNote": "summary written by us (Instinct), not approved wording",
    "group": "more",
    "order": 175,
    "reading": {
-    "steps": 5
+    "steps": 10
    }
   },
   {
@@ -2294,7 +2294,7 @@
   {
    "id": "yoma69b-yetzer",
    "title": "Capturing the evil inclination",
-   "summary": "The Men of the Great Assembly cry out and catch the evil inclination of idol worship, then decide whether to kill it.",
+   "summary": "The people cry out and capture the evil inclination for idol worship, a fiery lion cub, and seal it in a lead pot. They then capture the inclination for sin, but killing it would end the world, so they blind it and let it go.",
    "seder": "Moed",
    "masechta": "Yoma",
    "start": {
@@ -2311,7 +2311,7 @@
    },
    "steps": 11,
    "status": "verified-read",
-   "note": "",
+   "note": "Nov 5 2026 (Claude, Classics check): summary corrected: the idol-worship inclination is sealed in a lead pot; the question of killing is about the second one, the inclination for sin, which they blind and release. Boundaries read against the Gemara.",
    "source": "new",
    "summaryNote": "summary written by us (Instinct), not approved wording",
    "group": "more",
@@ -2381,7 +2381,7 @@
   {
    "id": "taan25a-elazar",
    "title": "Rabbi Elazar ben Pedas and the dream",
-   "summary": "Weak and poor, Rabbi Elazar ben Pedas tells what he saw in a dream when his students ask.",
+   "summary": "Weak and poor, Rabbi Elazar ben Pedas tells what he saw in a dream when the Rabbis visiting him ask.",
    "seder": "Moed",
    "masechta": "Taanit",
    "start": {
@@ -2398,7 +2398,7 @@
    },
    "steps": 11,
    "status": "verified-read",
-   "note": "",
+   "note": "Nov 5 2026 (Claude, Classics check): summary wording: the visitors were ‘the Rabbis’ (רבנן), not his students. Boundaries read against the Gemara.",
    "source": "new",
    "summaryNote": "summary written by us (Instinct), not approved wording",
    "group": "more",
@@ -2410,7 +2410,7 @@
   {
    "id": "taan25a-rain",
    "title": "Sky, sky, cover your face",
-   "summary": "Rabbi Chama bar Chanina's fast brings no rain. His students try to move the community's hearts, and rain finally comes.",
+   "summary": "Rabbi Chama bar Chanina’s fast brings no rain, and even the community’s focused prayer fails. With their consent he orders the sky to cover its face; when it doesn’t, he calls it brazen, and it clouds over and the rain comes.",
    "seder": "Moed",
    "masechta": "Taanit",
    "start": {
@@ -2427,7 +2427,7 @@
    },
    "steps": 8,
    "status": "verified-read",
-   "note": "",
+   "note": "Nov 5 2026 (Claude, Classics check): summary corrected: the community’s prayer did not bring rain (בעון רחמי ולא אתי מיטרא); it came only after he spoke to the sky. Boundaries read against the Gemara.",
    "source": "new",
    "summaryNote": "summary written by us (Instinct), not approved wording",
    "group": "more",
@@ -2438,8 +2438,8 @@
   },
   {
    "id": "sukkah28a-students",
-   "title": "Rabban Yochanan ben Zakkai and his students",
-   "summary": "What the greatest of his students, down to the least, had learned. 'If the smallest of them was like this...'",
+   "title": "Rabban Yochanan ben Zakkai, the least of Hillel’s students",
+   "summary": "Rabbi Eliezer never said anything he had not heard from his teacher, just like his teacher Rabban Yochanan ben Zakkai. Yet Rabban Yochanan ben Zakkai, who mastered everything, was the least of Hillel’s eighty students. ‘If the smallest of them was like this...’",
    "seder": "Moed",
    "masechta": "Sukkah",
    "start": {
@@ -2456,7 +2456,7 @@
    },
    "steps": 10,
    "status": "verified-read",
-   "note": "",
+   "note": "Nov 5 2026 (Claude, Classics check): title and summary corrected: the eighty students were Hillel’s, and Rabban Yochanan ben Zakkai was the least of them (קטן שבכולן); the range also opens with Rabbi Eliezer. Boundaries read against the Gemara.",
    "source": "new",
    "summaryNote": "summary written by us (Instinct), not approved wording",
    "group": "more",
@@ -2473,9 +2473,9 @@
    "masechta": "Ketubot",
    "start": {
     "m": "Ketubot",
-    "daf": "103b",
-    "step": 2,
-    "words": "אַל תִּסְפְּדוּנִי בָּעֲיָירוֹת —"
+    "daf": "103a",
+    "step": 39,
+    "words": "אָמַר לָהֶן: לְחַכְמֵי יִשְׂרָאֵל אֲנִי צָרִיךְ."
    },
    "end": {
     "m": "Ketubot",
@@ -2483,15 +2483,15 @@
     "step": 8,
     "words": "מְזוּמָּן הוּא לְחַיֵּי הָעוֹלָם הַבָּא."
    },
-   "steps": 7,
+   "steps": 10,
    "status": "verified-read",
-   "note": "",
+   "note": "Nov 5 2026 (Claude, Classics check): start moved back to Ketubot 103a step 39, where Rabbi calls the Sages and gives the instructions; it used to start on 103b with the Gemara explaining instructions the reader had not seen. Boundaries read against the Gemara.",
    "source": "new",
    "summaryNote": "summary written by us (Instinct), not approved wording",
    "group": "more",
    "order": 184,
    "reading": {
-    "steps": 7
+    "steps": 10
    }
   },
   {
@@ -2584,7 +2584,7 @@
   {
    "id": "bm85a-rabbi-suffering",
    "title": "Rabbi's thirteen years of suffering",
-   "summary": "Rabbi accepts suffering after he fails to save a calf. It leaves him when he shows mercy to baby weasels.",
+   "summary": "Rabbi’s suffering comes after he sends away a calf that ran to him for protection (‘Go, this is what you were created for’). It leaves when he shows mercy to baby weasels.",
    "seder": "Nezikin",
    "masechta": "Bava_Metzia",
    "start": {
@@ -2601,7 +2601,7 @@
    },
    "steps": 6,
    "status": "verified-read",
-   "note": "",
+   "note": "Nov 5 2026 (Claude, Classics check): summary corrected: Rabbi did not ‘fail to save’ the calf; it hid in his garment and he sent it back to slaughter, and suffering came because he showed no mercy. Boundaries read against the Gemara.",
    "source": "new",
    "summaryNote": "summary written by us (Instinct), not approved wording",
    "group": "more",
@@ -2654,18 +2654,18 @@
    "end": {
     "m": "Bava_Batra",
     "daf": "58a",
-    "step": 10,
-    "words": "כָּךְ מִדַּת הַפְּנִימִית."
+    "step": 12,
+    "words": "וְדוֹמִים לִשְׁנֵי גַּלְגַּלֵּי חַמָּה."
    },
-   "steps": 8,
+   "steps": 10,
    "status": "verified-read",
-   "note": "",
+   "note": "Nov 5 2026 (Claude, Classics check): end moved to Bava Batra 58a step 12; it used to stop in the middle of the heavenly voice’s words, before Rabbi Bana’ah’s ‘I looked at his two heels, and they were like two suns’. Boundaries read against the Gemara.",
    "source": "new",
    "summaryNote": "summary written by us (Instinct), not approved wording",
    "group": "more",
    "order": 190,
    "reading": {
-    "steps": 8
+    "steps": 10
    }
   },
   {
@@ -2758,7 +2758,7 @@
   {
    "id": "az18a-chanina",
    "title": "Rabbi Chanina ben Teradyon's death",
-   "summary": "His teacher is sick, and Chanina is executed for teaching Torah in public. He accepts God's judgment.",
+   "summary": "Visiting the sick Rabbi Yose ben Kisma, Rabbi Chanina ben Teradyon is warned to stop teaching Torah in public. He is burned wrapped in a Sefer Torah, sees the letters flying upward, and the executioner who speeds his death earns the World to Come with him.",
    "seder": "Nezikin",
    "masechta": "Avodah_Zarah",
    "start": {
@@ -2775,7 +2775,7 @@
    },
    "steps": 20,
    "status": "verified-read",
-   "note": "long; combines Rabbi Yose ben Kisma's illness and the death of Rabbi Chanina ben Teradyon",
+   "note": "Nov 5 2026 (Claude, Classics check): summary corrected: the sick man is Rabbi Yose ben Kisma, who warns him; ‘he accepts God’s judgment’ is just before this range. Boundaries read against the Gemara.",
    "source": "new",
    "summaryNote": "summary written by us (Instinct), not approved wording",
    "group": "more",
@@ -2816,7 +2816,7 @@
   {
    "id": "bb21a-schools",
    "title": "Yehoshua ben Gamla and the first schools",
-   "summary": "Torah would have been forgotten if not for יהושע בן גמלא, who put teachers in every town. Then class sizes, discipline, and קנאת סופרים: rivalry between teachers makes learning grow.",
+   "summary": "Torah would have been forgotten if not for יהושע בן גמלא, who put teachers in every town. Then class sizes, discipline, and קנאת סופרים: rivalry between teachers makes learning grow. It ends with Yoav and the teacher who taught him one word wrong.",
    "seder": "Nezikin",
    "masechta": "Bava_Batra",
    "start": {
@@ -2827,19 +2827,19 @@
    },
    "end": {
     "m": "Bava_Batra",
-    "daf": "21a",
-    "step": 20,
-    "words": "שַׁבֶּשְׁתָּא, כֵּיוָן דְּעָל – עָל;"
+    "daf": "21b",
+    "step": 10,
+    "words": "וְאִיכָּא דְאָמְרִי: לָא קַטְלֵיהּ."
    },
-   "steps": 19,
+   "steps": 30,
    "status": "verified-read",
-   "note": "re-read: step 2 names Yehoshua ben Gamla, so the start is clean enough; ends at Rav Dimi's ruling, step 21 continues with a proof",
+   "note": "Nov 5 2026 (Claude, Classics check): end moved to Bava Batra 21b step 10; it used to stop mid-sentence at the amud line, before Rav Dimi’s proof (Yoav and his teacher, זכר/זֵכֶר). Boundaries read against the Gemara.",
    "source": "changed",
    "summaryNote": "summary written by us (Instinct), not approved wording",
    "group": "more",
    "order": 196,
    "reading": {
-    "steps": 19
+    "steps": 30
    }
   },
   {
@@ -2903,7 +2903,7 @@
   {
    "id": "ber56a-bar-hedya",
    "title": "Bar Hedya the dream interpreter and Rava",
-   "summary": "Bar Hedya gives good readings to those who pay and bad to those who do not. Rava and Abaye test him, and the story ends on a ship.",
+   "summary": "Bar Hedya gives good readings to those who pay and bad ones to those who don't. Abaye pays and Rava doesn't, and every reading comes true. Rava finds the secret, \"all dreams follow the mouth\", and curses him. Bar Hedya flees to Rome, where the curse catches him.",
    "seder": "Zeraim",
    "masechta": "Berakhot",
    "start": {
@@ -2914,19 +2914,19 @@
    },
    "end": {
     "m": "Berakhot",
-    "daf": "56a",
-    "step": 35,
-    "words": "דַּאֲמַר מָר: גָּלוּת מְכַפֶּרֶת עָוֹן."
+    "daf": "56b",
+    "step": 1,
+    "words": "וְאִצְטְלִיק וּנְפַל בִּתְרֵין."
    },
-   "steps": 31,
+   "steps": 35,
    "status": "verified-read",
-   "note": "story continues in exile at steps 36-38 and into 56b; long (31 steps)",
+   "note": "Nov 5 2026 (Claude, Classics check): end moved to Berakhot 56b step 1, so the story ends where Rava’s curse is fulfilled in Rome; summary corrected (not a ‘test’, and the story doesn’t end on a ship). Boundaries read against the Gemara.",
    "source": "new",
    "summaryNote": "summary written by us (Instinct), not approved wording",
    "group": "more",
    "order": 199,
    "reading": {
-    "steps": 31
+    "steps": 35
    }
   },
   {
@@ -2973,18 +2973,18 @@
    "end": {
     "m": "Berakhot",
     "daf": "58a",
-    "step": 36,
-    "words": "שֶׁנֶּאֱמַר: ״וַיַּרְא יִשְׂרָאֵל אֶת הַיָּד הַגְּדֹלָה וְגוֹ׳״."
+    "step": 39,
+    "words": "נְשִׂיא רֹאשׁ מֶשֶׁךְ וְתֻבָל״."
    },
-   "steps": 8,
+   "steps": 11,
    "status": "verified-read",
-   "note": "",
+   "note": "Nov 5 2026 (Claude, Classics check): end moved to Berakhot 58a step 39; it used to stop partway through Rabbi Shila’s explanation of the verse ‘Yours, Hashem, is the greatness’. Boundaries read against the Gemara.",
    "source": "new",
    "summaryNote": "summary written by us (Instinct), not approved wording",
    "group": "more",
    "order": 201,
    "reading": {
-    "steps": 8
+    "steps": 11
    }
   },
   {
@@ -2995,9 +2995,9 @@
    "masechta": "Tamid",
    "start": {
     "m": "Tamid",
-    "daf": "32a",
-    "step": 1,
-    "words": "מִן הַשָּׁמַיִם לָאָרֶץ רָחוֹק,"
+    "daf": "31b",
+    "step": 25,
+    "words": "עֲשָׂרָה דְּבָרִים שָׁאַל"
    },
    "end": {
     "m": "Tamid",
@@ -3005,21 +3005,21 @@
     "step": 36,
     "words": "עַל צַוְּארֵיהוֹן."
    },
-   "steps": 36,
+   "steps": 37,
    "status": "verified-read",
-   "note": "the story goes on at step 37 (Alexander's journey)",
+   "note": "Nov 5 2026 (Claude, Classics check): start moved back to Tamid 31b step 25 (‘Alexander of Macedon asked the Elders of the Negev ten things’); the old start was mid-sentence. Boundaries read against the Gemara.",
    "source": "new",
    "summaryNote": "summary written by us (Instinct), not approved wording",
    "group": "more",
    "order": 202,
    "reading": {
-    "steps": 36
+    "steps": 37
    }
   },
   {
    "id": "chul7b-pinchas-rabbi",
    "title": "Rabbi Pinchas ben Yair and Rabbi (Yehuda HaNasi)",
-   "summary": "Rabbi invites Rabbi Pinchas to eat and then tries to buy his mules, and Pinchas refuses until a mountain rises between them.",
+   "summary": "Rabbi invites Rabbi Pinchas ben Yair to eat, but at the door Pinchas sees Rabbi's dangerous white mules and refuses. Rabbi offers to sell, free, maim or kill them, and Pinchas rejects each one, until a mountain rises between them.",
    "seder": "Kodashim",
    "masechta": "Chullin",
    "start": {
@@ -3036,7 +3036,7 @@
    },
    "steps": 8,
    "status": "verified-read",
-   "note": "",
+   "note": "Nov 5 2026 (Claude, Classics check): summary corrected: the white mules were Rabbi’s own; he offered to sell or get rid of them, he did not try to buy them. Boundaries read against the Gemara.",
    "source": "new",
    "summaryNote": "summary written by us (Instinct), not approved wording",
    "group": "more",
@@ -3048,14 +3048,14 @@
   {
    "id": "meilah17b-bentemalyon",
    "title": "Rabbi Shimon bar Yochai goes to Rome",
-   "summary": "Rabbi Shimon is sent on a mission to Rome and meets Ben Temalyon, a demon, who enters the emperor's daughter.",
+   "summary": "Rome bans Shabbat, milah and family purity. Rabbi Shimon bar Yochai is sent to Rome, the demon Ben Temalyon enters the emperor's daughter, Rabbi Shimon drives him out, and the grateful emperor lets them tear up the decree.",
    "seder": "Kodashim",
    "masechta": "Meilah",
    "start": {
     "m": "Meilah",
-    "daf": "17b",
-    "step": 1,
-    "words": "יֵלֵךְ רַבִּי שִׁמְעוֹן בֶּן יוֹחַאי,"
+    "daf": "17a",
+    "step": 10,
+    "words": "שָׁאַל רַבִּי מַתְיָא בֶּן חָרָשׁ"
    },
    "end": {
     "m": "Meilah",
@@ -3063,15 +3063,15 @@
     "step": 10,
     "words": "וַהֲווֹ עָלֶיהָ כַּמָּה טִיפֵּי דָמִים."
    },
-   "steps": 10,
+   "steps": 19,
    "status": "verified-read",
-   "note": "",
+   "note": "Nov 5 2026 (Claude, Classics check): start moved back to Meilah 17a step 10, where the story is framed (Rabbi Masya ben Charash’s question in Rome) and the decree is told; the old start answered a question (‘who will go?’) the reader hadn’t seen; summary now gives the outcome. Boundaries read against the Gemara.",
    "source": "new",
    "summaryNote": "summary written by us (Instinct), not approved wording",
    "group": "more",
    "order": 204,
    "reading": {
-    "steps": 10
+    "steps": 19
    }
   },
   {
@@ -3083,8 +3083,8 @@
    "start": {
     "m": "Menachot",
     "daf": "109b",
-    "step": 12,
-    "words": "לְאַחַר הָרֶגֶל,"
+    "step": 10,
+    "words": "תַּנְיָא כְּמַאן דְּאָמַר"
    },
    "end": {
     "m": "Menachot",
@@ -3092,15 +3092,15 @@
     "step": 21,
     "words": "עַל אַחַת כַּמָּה וְכַמָּה."
    },
-   "steps": 10,
+   "steps": 12,
    "status": "verified-read",
-   "note": "",
+   "note": "Nov 5 2026 (Claude, Classics check): start moved back to Menachot 109b step 10, where the baraita begins (‘the year Shimon HaTzaddik died’); the old start was mid-story. The dying priest is Shimon HaTzaddik. Boundaries read against the Gemara.",
    "source": "new",
    "summaryNote": "summary written by us (Instinct), not approved wording",
    "group": "more",
    "order": 205,
    "reading": {
-    "steps": 10
+    "steps": 12
    }
   },
   {
@@ -3164,7 +3164,7 @@
   {
    "id": "git57b-zechariah",
    "title": "Nevuzaradan and the blood of Zechariah",
-   "summary": "Nevuzaradan finds Zechariah's blood boiling in the Temple and kills the Sanhedrin until it settles.",
+   "summary": "Nevuzaradan finds Zechariah's blood boiling in the Temple. He kills the Sanhedrin, young people and schoolchildren over it, but it does not rest until he pleads with Zechariah. Shaken, he repents and converts.",
    "seder": "Nashim",
    "masechta": "Gittin",
    "start": {
@@ -3181,7 +3181,7 @@
    },
    "steps": 7,
    "status": "verified-read",
-   "note": "",
+   "note": "Nov 5 2026 (Claude, Classics check): summary corrected: the killings did not settle the blood (ולא נח); it rested only when he pleaded, and he then converted. Boundaries read against the Gemara.",
    "source": "new",
    "summaryNote": "summary written by us (Instinct), not approved wording",
    "group": "more",
@@ -3222,14 +3222,14 @@
   {
    "id": "ned40a-visiting",
    "title": "Rav Chelbo is ill and no one visits him",
-   "summary": "Rabbi Akiva teaches that one who does not visit the sick is as if he spills blood.",
+   "summary": "Rav Chelbo is sick and no one comes to visit. Rav Kahana recalls how Rabbi Akiva visited a sick student and saved his life, then taught that one who does not visit the sick is as if he spills blood.",
    "seder": "Nashim",
    "masechta": "Nedarim",
    "start": {
     "m": "Nedarim",
-    "daf": "40a",
-    "step": 1,
-    "words": "רַב חֶלְבּוֹ בְּאֵישׁ."
+    "daf": "39b",
+    "step": 29,
+    "words": "רַב חֶלְבּוֹ חֲלַשׁ,"
    },
    "end": {
     "m": "Nedarim",
@@ -3237,28 +3237,28 @@
     "step": 3,
     "words": "כְּאִילּוּ שׁוֹפֵךְ דָּמִים."
    },
-   "steps": 3,
+   "steps": 4,
    "status": "verified-read",
-   "note": "",
+   "note": "Nov 5 2026 (Claude, Classics check): start moved back to Nedarim 39b step 29, where Rav Kahana’s announcement begins (the old start was its second half); summary now tells the Rav Chelbo story the title names. Boundaries read against the Gemara.",
    "source": "new",
    "summaryNote": "summary written by us (Instinct), not approved wording",
    "group": "more",
    "order": 210,
    "reading": {
-    "steps": 3
+    "steps": 4
    }
   },
   {
    "id": "git6b-evyatar",
    "title": "Rabbi Evyatar asks Eliyahu what God is doing",
-   "summary": "'These and those are the words of the living God.'",
+   "summary": "Rabbi Evyatar and Rabbi Yonatan disagree on what angered the husband in the story of the pilegesh in Givah: a fly or a hair. Eliyahu reports that God quotes both, because \"these and those are the words of the living God.\"",
    "seder": "Nashim",
    "masechta": "Gittin",
    "start": {
     "m": "Gittin",
     "daf": "6b",
-    "step": 17,
-    "words": "וְאַשְׁכְּחֵיהּ רַבִּי אֶבְיָתָר לְאֵלִיָּהוּ,"
+    "step": 16,
+    "words": "וְעוֹד, הָא רַבִּי אֶבְיָתָר הוּא"
    },
    "end": {
     "m": "Gittin",
@@ -3266,28 +3266,28 @@
     "step": 19,
     "words": "נִימָא מָצָא וְהִקְפִּיד."
    },
-   "steps": 3,
+   "steps": 4,
    "status": "verified-read",
-   "note": "",
+   "note": "Nov 5 2026 (Claude, Classics check): start moved back to Gittin 6b step 16, which sets up the fly/hair dispute that Eliyahu’s answer is about; summary written out. Boundaries read against the Gemara.",
    "source": "new",
    "summaryNote": "summary written by us (Instinct), not approved wording",
    "group": "more",
    "order": 211,
    "reading": {
-    "steps": 3
+    "steps": 4
    }
   },
   {
    "id": "sanh109a-nachum",
    "title": "Nachum Ish Gamzu and the dirt of Avraham",
-   "summary": "Sent to the emperor with a chest of dirt, Nachum meets Eliyahu at an inn, and the dirt wins a war.",
+   "summary": "Sent with a gift for the emperor, Nachum has it stolen at an inn and replaced with dirt. Facing death, he says \"this too is for the good.\" Eliyahu suggests it is Avraham's dirt, it wins a war, and the innkeepers who try the same trick are executed.",
    "seder": "Nezikin",
    "masechta": "Sanhedrin",
    "start": {
     "m": "Sanhedrin",
-    "daf": "109a",
-    "step": 1,
-    "words": "מַאן נְשַׁדַּר?"
+    "daf": "108b",
+    "step": 43,
+    "words": "נַחוּם אִישׁ גַּם זוֹ הֲוָה רְגִיל,"
    },
    "end": {
     "m": "Sanhedrin",
@@ -3295,15 +3295,15 @@
     "step": 5,
     "words": "קַטְלִינְהוּ לְהָנָךְ דָּיוֹרֵי."
    },
-   "steps": 5,
+   "steps": 7,
    "status": "verified-read",
-   "note": "starts at 'whom should we send?'; the setup is on the previous amud",
+   "note": "Nov 5 2026 (Claude, Classics check): start moved back to Sanhedrin 108b step 43 (Nachum’s habit, ‘this too is for the good’); the old start was mid-sentence. Summary corrected: thieves at the inn swapped the gift for dirt, and Eliyahu appeared later at the emperor’s court. Boundaries read against the Gemara.",
    "source": "new",
    "summaryNote": "summary written by us (Instinct), not approved wording",
    "group": "more",
    "order": 212,
    "reading": {
-    "steps": 5
+    "steps": 7
    }
   }
  ]

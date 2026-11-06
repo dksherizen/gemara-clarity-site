@@ -780,7 +780,7 @@ function modeBarHtml(m, i, mode){ // the compact chooser on every amud once a ch
 // A Classic is a selected passage with a clear start and end step (data/classics.json). It opens in Sugya Flow at its exact start
 // step (home3c: Classic-in-Ameilus was removed, Oct 16 2026). A range may run across several amudim; a two-part
 // Classic keeps its second part as its own entry (partOf), shown inside the first part's card. The 'source' fields are not shown.
-const CL_REV = "home3c";
+const CL_REV = "home3c-r2"; // raise this whenever data/classics.json changes, so every phone fetches the new list at once
 const clJSON = {};
 function clData(name){ return clJSON[name] || (clJSON[name] = cachedJSON(`data/${name}.json?v=${CL_REV}`, { ttl: 10*60e3, timeout: 8000 }).catch(() => { delete clJSON[name]; return null; })); }
 const dafIdx = (m, daf) => { const d = /^(\d+)([ab])$/.exec(daf); return idxOf(+d[1], d[2]); };
