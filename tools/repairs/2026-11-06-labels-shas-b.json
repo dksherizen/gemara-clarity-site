@@ -1,0 +1,2562 @@
+{
+ "name": "labels-shas-b",
+ "approved": "Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.",
+ "repairs": [
+  {
+   "id": "Avodah_Zarah_8_a",
+   "step": 13,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "last line of the אדם הראשון ברייתא; challenged at once in step 14 (rules 5, 8)",
+   "source": "Avodah Zarah 8a"
+  },
+  {
+   "id": "Bava_Batra_101_b",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "ראיה",
+   "why": "end of the four-caves proof; immediately undercut by רב הונא in step 7 (rule 5)",
+   "source": "Bava Batra 101b"
+  },
+  {
+   "id": "Bava_Batra_101_b",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objects to רב הונא's statement (ברותא היא), not pushing aside a proof (rule 2)",
+   "source": "Bava Batra 101b"
+  },
+  {
+   "id": "Bava_Batra_101_b",
+   "step": 8,
+   "field": "relationToPreviousStep",
+   "find": "Rejects step 7",
+   "replace": "Challenges step 7",
+   "why": "relation named the wrong kind",
+   "source": "Bava Batra 101b"
+  },
+  {
+   "id": "Bava_Batra_103_a",
+   "step": 5,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "rest of the ברייתא quoted with והא תניא to attack step 3 (rule 1)",
+   "source": "Bava Batra 103a"
+  },
+  {
+   "id": "Bava_Batra_103_a",
+   "step": 5,
+   "field": "relationToPreviousStep",
+   "find": "uses it to reject step 3",
+   "replace": "uses it to challenge step 3",
+   "why": "relation named the wrong kind",
+   "source": "Bava Batra 103a"
+  },
+  {
+   "id": "Bava_Batra_109_a",
+   "step": 4,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "answers the אימא challenge of step 3 (rule 2)",
+   "source": "Bava Batra 109a"
+  },
+  {
+   "id": "Bava_Batra_109_a",
+   "step": 4,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the suggestion",
+   "replace": "Answers the suggestion",
+   "why": "relation named the wrong kind",
+   "source": "Bava Batra 109a"
+  },
+  {
+   "id": "Bava_Batra_109_a",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "answers the ואימא challenge of step 5 (rule 2)",
+   "source": "Bava Batra 109a"
+  },
+  {
+   "id": "Bava_Batra_109_a",
+   "step": 6,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the reading",
+   "replace": "Answers the reading",
+   "why": "relation named the wrong kind",
+   "source": "Bava Batra 109a"
+  },
+  {
+   "id": "Bava_Batra_110_a",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "מימרא",
+   "why": "Gemara's comment on the story (ולא היא…), not pushing aside a proof (rules 3, 8)",
+   "source": "Bava Batra 110a"
+  },
+  {
+   "id": "Bava_Batra_110_a",
+   "step": 8,
+   "field": "relationToPreviousStep",
+   "find": "Rejects how",
+   "replace": "Corrects how",
+   "why": "relation named the wrong kind",
+   "source": "Bava Batra 110a"
+  },
+  {
+   "id": "Bava_Batra_110_b",
+   "step": 5,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objection to the ודלמא defence in step 4 (rule 2)",
+   "source": "Bava Batra 110b"
+  },
+  {
+   "id": "Bava_Batra_110_b",
+   "step": 5,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the defense",
+   "replace": "Challenges the defense",
+   "why": "relation named the wrong kind",
+   "source": "Bava Batra 110b"
+  },
+  {
+   "id": "Bava_Batra_110_b",
+   "step": 12,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objection to the suggested answer (step 11), not to a proof (rule 2)",
+   "source": "Bava Batra 110b"
+  },
+  {
+   "id": "Bava_Batra_110_b",
+   "step": 12,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the suggested answer",
+   "replace": "Challenges the suggested answer",
+   "why": "relation named the wrong kind",
+   "source": "Bava Batra 110b"
+  },
+  {
+   "id": "Bava_Batra_111_b",
+   "step": 14,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רבא objects to אביי's resolution (rule 2)",
+   "source": "Bava Batra 111b"
+  },
+  {
+   "id": "Bava_Batra_111_b",
+   "step": 14,
+   "field": "relationToPreviousStep",
+   "find": "Rejects אביי",
+   "replace": "Challenges אביי",
+   "why": "relation named the wrong kind",
+   "source": "Bava Batra 111b"
+  },
+  {
+   "id": "Bava_Batra_112_a",
+   "step": 12,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "ראיה",
+   "why": "closes the יאיר proof; challenged at once by רב פפא (rule 5)",
+   "source": "Bava Batra 112a"
+  },
+  {
+   "id": "Bava_Batra_112_a",
+   "step": 17,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objection to אביי's answer in step 16, answered in step 18 (rule 2)",
+   "source": "Bava Batra 112a"
+  },
+  {
+   "id": "Bava_Batra_112_a",
+   "step": 17,
+   "field": "relationToPreviousStep",
+   "find": "Rejects אביי",
+   "replace": "Challenges אביי",
+   "why": "relation named the wrong kind",
+   "source": "Bava Batra 112a"
+  },
+  {
+   "id": "Bava_Batra_114_a",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "answers רב אשי's challenge (אלא מאי אית לך למימר…), continued as תירוץ in 114b step 1",
+   "source": "Bava Batra 114a"
+  },
+  {
+   "id": "Bava_Batra_115_b",
+   "step": 13,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "in the story, the reply to the צדוקי's objection (rule 3)",
+   "source": "Bava Batra 115b"
+  },
+  {
+   "id": "Bava_Batra_116_a",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "answers the challenge of step 7 (אלא…) and is challenged at once in step 9 (rule 5)",
+   "source": "Bava Batra 116a"
+  },
+  {
+   "id": "Bava_Batra_116_a",
+   "step": 8,
+   "field": "title",
+   "find": "Conclusion:",
+   "replace": "Answer:",
+   "why": "title named the wrong kind",
+   "source": "Bava Batra 116a"
+  },
+  {
+   "id": "Bava_Batra_118_b",
+   "step": 12,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "restates the resolution of step 10 after its source; challenged at once (rule 5)",
+   "source": "Bava Batra 118b"
+  },
+  {
+   "id": "Bava_Batra_118_b",
+   "step": 17,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וליטעמיך counter-objection (rule 2)",
+   "source": "Bava Batra 118b"
+  },
+  {
+   "id": "Bava_Batra_118_b",
+   "step": 17,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the assumption",
+   "replace": "Challenges the assumption",
+   "why": "relation named the wrong kind",
+   "source": "Bava Batra 118b"
+  },
+  {
+   "id": "Bava_Batra_119_b",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "the two rulings are challenged at once (קשיא הלכתא אהלכתא) (rule 5)",
+   "source": "Bava Batra 119b"
+  },
+  {
+   "id": "Bava_Batra_122_b",
+   "step": 18,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וכי תימא blocking a defence, part of the challenge to רב אשי (rule 2)",
+   "source": "Bava Batra 122b"
+  },
+  {
+   "id": "Bava_Batra_130_a",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "והתניא knocking out the answer of step 6 (rules 1, 2)",
+   "source": "Bava Batra 130a"
+  },
+  {
+   "id": "Bava_Batra_130_a",
+   "step": 7,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the suggested answer",
+   "replace": "Challenges the suggested answer",
+   "why": "relation named the wrong kind",
+   "source": "Bava Batra 130a"
+  },
+  {
+   "id": "Bava_Batra_130_a",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "rest of the ברייתא quoted in step 7 to attack (rule 1)",
+   "source": "Bava Batra 130a"
+  },
+  {
+   "id": "Bava_Batra_131_a",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "ראיה",
+   "why": "end of רב משרשיא's proof; challenged at once in step 7 (rule 5)",
+   "source": "Bava Batra 131a"
+  },
+  {
+   "id": "Bava_Batra_131_a",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "end of רב פפא's challenge (steps 7-8), answered in step 10",
+   "source": "Bava Batra 131a"
+  },
+  {
+   "id": "Bava_Batra_131_a",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "אביי knocks out his own answer with a משנה; objection to an answer (rule 2)",
+   "source": "Bava Batra 131a"
+  },
+  {
+   "id": "Bava_Batra_131_a",
+   "step": 11,
+   "field": "relationToPreviousStep",
+   "find": "rejects his own answer",
+   "replace": "retracts his own answer",
+   "why": "relation named the wrong kind",
+   "source": "Bava Batra 131a"
+  },
+  {
+   "id": "Bava_Batra_131_a",
+   "step": 12,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "קשיא",
+   "why": "second half of the objection in step 11; answered by רב נחומי next (rule 5)",
+   "source": "Bava Batra 131a"
+  },
+  {
+   "id": "Bava_Batra_132_b",
+   "step": 4,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "והא תניא knocking out the defence in step 3 (rules 1, 2)",
+   "source": "Bava Batra 132b"
+  },
+  {
+   "id": "Bava_Batra_132_b",
+   "step": 4,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the defense",
+   "replace": "Challenges the defense",
+   "why": "relation named the wrong kind",
+   "source": "Bava Batra 132b"
+  },
+  {
+   "id": "Bava_Batra_135_a",
+   "step": 5,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "אביי objects to רבא's answer (rule 2)",
+   "source": "Bava Batra 135a"
+  },
+  {
+   "id": "Bava_Batra_135_a",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "אביי objects to רב יוסף's resolution in step 10 (rules 2, 7)",
+   "source": "Bava Batra 135a"
+  },
+  {
+   "id": "Bava_Batra_135_a",
+   "step": 11,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the proof from",
+   "replace": "Challenges the comparison to",
+   "why": "relation named the wrong kind",
+   "source": "Bava Batra 135a"
+  },
+  {
+   "id": "Bava_Batra_141_b",
+   "step": 10,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "answers the ולימא ליה challenge of step 9 (rule 2)",
+   "source": "Bava Batra 141b"
+  },
+  {
+   "id": "Bava_Batra_141_b",
+   "step": 10,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the רבי מאיר suggestion",
+   "replace": "Answers the רבי מאיר suggestion",
+   "why": "relation named the wrong kind",
+   "source": "Bava Batra 141b"
+  },
+  {
+   "id": "Bava_Batra_141_b",
+   "step": 12,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "answers the ולימא ליה challenge of step 11 (rule 2)",
+   "source": "Bava Batra 141b"
+  },
+  {
+   "id": "Bava_Batra_141_b",
+   "step": 12,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the רבי יוסי suggestion",
+   "replace": "Answers the רבי יוסי suggestion",
+   "why": "relation named the wrong kind",
+   "source": "Bava Batra 141b"
+  },
+  {
+   "id": "Bava_Batra_141_b",
+   "step": 14,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "answers the ולימא ליה challenge of step 13 (rule 2)",
+   "source": "Bava Batra 141b"
+  },
+  {
+   "id": "Bava_Batra_141_b",
+   "step": 14,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the suggestion",
+   "replace": "Answers the suggestion",
+   "why": "relation named the wrong kind",
+   "source": "Bava Batra 141b"
+  },
+  {
+   "id": "Bava_Batra_141_b",
+   "step": 16,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "answers the ולימא ליה challenge of step 15 (rule 2)",
+   "source": "Bava Batra 141b"
+  },
+  {
+   "id": "Bava_Batra_141_b",
+   "step": 16,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the suggestion",
+   "replace": "Answers the suggestion",
+   "why": "relation named the wrong kind",
+   "source": "Bava Batra 141b"
+  },
+  {
+   "id": "Bava_Batra_141_b",
+   "step": 18,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "answers the ולימא ליה challenge of step 17 (rule 2)",
+   "source": "Bava Batra 141b"
+  },
+  {
+   "id": "Bava_Batra_141_b",
+   "step": 18,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the suggestion",
+   "replace": "Answers the suggestion",
+   "why": "relation named the wrong kind",
+   "source": "Bava Batra 141b"
+  },
+  {
+   "id": "Bava_Batra_141_b",
+   "step": 20,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "answers the ולימא ליה challenge of step 19 (rule 2)",
+   "source": "Bava Batra 141b"
+  },
+  {
+   "id": "Bava_Batra_141_b",
+   "step": 20,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the answer of step 19",
+   "replace": "Answers the suggestion of step 19",
+   "why": "relation named the wrong kind",
+   "source": "Bava Batra 141b"
+  },
+  {
+   "id": "Bava_Batra_142_b",
+   "step": 20,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רבי אבהו objects to רבי ירמיה's response (rule 2)",
+   "source": "Bava Batra 142b"
+  },
+  {
+   "id": "Bava_Batra_142_b",
+   "step": 20,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the age-based answer",
+   "replace": "Challenges the age-based answer",
+   "why": "relation named the wrong kind",
+   "source": "Bava Batra 142b"
+  },
+  {
+   "id": "Bava_Batra_143_a",
+   "step": 16,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "הכי השתא answering the challenge of steps 14-15 (rule 2)",
+   "source": "Bava Batra 143a"
+  },
+  {
+   "id": "Bava_Batra_143_a",
+   "step": 16,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the tax-case challenge",
+   "replace": "Answers the tax-case challenge",
+   "why": "relation named the wrong kind",
+   "source": "Bava Batra 143a"
+  },
+  {
+   "id": "Bava_Batra_143_b",
+   "step": 2,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "הכי השתא answering רבי זירא's challenge (rule 2)",
+   "source": "Bava Batra 143b"
+  },
+  {
+   "id": "Bava_Batra_143_b",
+   "step": 2,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the challenge",
+   "replace": "Answers the challenge",
+   "why": "relation named the wrong kind",
+   "source": "Bava Batra 143b"
+  },
+  {
+   "id": "Bava_Batra_149_b",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "אביי answers רב יוסף's objection (rule 2)",
+   "source": "Bava Batra 149b"
+  },
+  {
+   "id": "Bava_Batra_157_b",
+   "step": 12,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "the ruling is challenged at once by מיתיבי in step 13 (rule 5)",
+   "source": "Bava Batra 157b"
+  },
+  {
+   "id": "Bava_Batra_159_b",
+   "step": 4,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "answers the והתניא challenge of steps 2-3 with לא (rules 1, 2)",
+   "source": "Bava Batra 159b"
+  },
+  {
+   "id": "Bava_Batra_159_b",
+   "step": 4,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the reading of the source that step 3 relied on.",
+   "replace": "Answers the challenge by rereading the source that step 3 relied on.",
+   "why": "relation named the wrong kind",
+   "source": "Bava Batra 159b"
+  },
+  {
+   "id": "Bava_Batra_15_b",
+   "step": 3,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וליטעמיך counter-objection to the מיתיבי (rule 2)",
+   "source": "Bava Batra 15b"
+  },
+  {
+   "id": "Bava_Batra_15_b",
+   "step": 3,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the proof from step 2",
+   "replace": "Challenges the reasoning of step 2",
+   "why": "relation named the wrong kind (step 2 is a challenge, not a proof)",
+   "source": "Bava Batra 15b"
+  },
+  {
+   "id": "Bava_Batra_167_b",
+   "step": 19,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תשובה",
+   "why": "רב זביד's competing answer to the question of step 17, not pushing aside a proof",
+   "source": "Bava Batra 167b"
+  },
+  {
+   "id": "Bava_Batra_168_b",
+   "step": 12,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "story line, challenged at once by רב אחא (rules 5, 8)",
+   "source": "Bava Batra 168b"
+  },
+  {
+   "id": "Bava_Batra_16_a",
+   "step": 21,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "אביי objects to רבא's answer (rule 2)",
+   "source": "Bava Batra 16a"
+  },
+  {
+   "id": "Bava_Batra_16_a",
+   "step": 21,
+   "field": "relationToPreviousStep",
+   "find": "Rejects רבא",
+   "replace": "Challenges רבא",
+   "why": "relation named the wrong kind",
+   "source": "Bava Batra 16a"
+  },
+  {
+   "id": "Bava_Batra_16_b",
+   "step": 46,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "answers the ודילמא challenge of step 45 (rule 2)",
+   "source": "Bava Batra 16b"
+  },
+  {
+   "id": "Bava_Batra_16_b",
+   "step": 46,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the suggestion",
+   "replace": "Answers the suggestion",
+   "why": "relation named the wrong kind",
+   "source": "Bava Batra 16b"
+  },
+  {
+   "id": "Bava_Batra_174_b",
+   "step": 13,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "end of the story; challenged at once in step 14 (rules 5, 8)",
+   "source": "Bava Batra 174b"
+  },
+  {
+   "id": "Bava_Batra_175_b",
+   "step": 20,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וכי תימא… והא אמר: objection to a possible answer (rule 2)",
+   "source": "Bava Batra 175b"
+  },
+  {
+   "id": "Bava_Batra_17_b",
+   "step": 22,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "answers the challenge of step 21 (rule 2)",
+   "source": "Bava Batra 17b"
+  },
+  {
+   "id": "Bava_Batra_17_b",
+   "step": 22,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the challenge",
+   "replace": "Answers the challenge",
+   "why": "relation named the wrong kind",
+   "source": "Bava Batra 17b"
+  },
+  {
+   "id": "Bava_Batra_18_a",
+   "step": 2,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "answers the תא שמע challenge of step 1 with לא (rule 2)",
+   "source": "Bava Batra 18a"
+  },
+  {
+   "id": "Bava_Batra_18_a",
+   "step": 2,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the inference drawn in step 1.",
+   "replace": "Answers the challenge by denying the inference drawn in step 1.",
+   "why": "relation named the wrong kind",
+   "source": "Bava Batra 18a"
+  },
+  {
+   "id": "Bava_Batra_18_a",
+   "step": 5,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "answers the תא שמע challenge of step 4 with לא (rule 2)",
+   "source": "Bava Batra 18a"
+  },
+  {
+   "id": "Bava_Batra_18_a",
+   "step": 5,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the inference in step 4.",
+   "replace": "Answers the challenge by denying the inference in step 4.",
+   "why": "relation named the wrong kind",
+   "source": "Bava Batra 18a"
+  },
+  {
+   "id": "Bava_Batra_18_a",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "answers the תא שמע challenge of step 7 with לא (rule 2)",
+   "source": "Bava Batra 18a"
+  },
+  {
+   "id": "Bava_Batra_18_a",
+   "step": 8,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the inference in step 7.",
+   "replace": "Answers the challenge by denying the inference in step 7.",
+   "why": "relation named the wrong kind",
+   "source": "Bava Batra 18a"
+  },
+  {
+   "id": "Bava_Batra_18_a",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "answers the תא שמע challenge of step 10 with לא (rule 2)",
+   "source": "Bava Batra 18a"
+  },
+  {
+   "id": "Bava_Batra_18_a",
+   "step": 11,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the inference drawn in step 10.",
+   "replace": "Answers the challenge by denying the inference drawn in step 10.",
+   "why": "relation named the wrong kind",
+   "source": "Bava Batra 18a"
+  },
+  {
+   "id": "Bava_Batra_24_b",
+   "step": 16,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "ומאי קושיא? דלמא… answers the challenge of step 14 another way (rule 2)",
+   "source": "Bava Batra 24b"
+  },
+  {
+   "id": "Bava_Batra_24_b",
+   "step": 16,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the question of Step 14,",
+   "replace": "Answers the question of Step 14 another way,",
+   "why": "relation named the wrong kind",
+   "source": "Bava Batra 24b"
+  },
+  {
+   "id": "Bava_Batra_26_b",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "מידי איריא answers the challenge of step 7 (rule 2)",
+   "source": "Bava Batra 26b"
+  },
+  {
+   "id": "Bava_Batra_27_a",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "answers the challenge of step 5 (rule 2); not a landing point",
+   "source": "Bava Batra 27a"
+  },
+  {
+   "id": "Bava_Batra_27_a",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "answers the תא שמע challenge of step 7 (rule 2)",
+   "source": "Bava Batra 27a"
+  },
+  {
+   "id": "Bava_Batra_27_a",
+   "step": 10,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "answers the תא שמע challenge of step 9 (rule 2)",
+   "source": "Bava Batra 27a"
+  },
+  {
+   "id": "Bava_Batra_28_b",
+   "step": 17,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objection to רב יוסף's Response, which quotes a פסוק (rules 2, 7)",
+   "source": "Bava Batra 28b"
+  },
+  {
+   "id": "Bava_Batra_28_b",
+   "step": 17,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the proof brought",
+   "replace": "Challenges the source brought",
+   "why": "relation named the wrong kind",
+   "source": "Bava Batra 28b"
+  },
+  {
+   "id": "Bava_Batra_30_b",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "רבא's ruling on the story, immediately challenged (כמאן, כאדמון?) – rule 5",
+   "source": "Bava Batra 30b"
+  },
+  {
+   "id": "Bava_Batra_3_b",
+   "step": 1,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "second half of the מחלוקת statement from 3a (בשנים… ואיתא להא ואיתא להא), immediately challenged – rule 5",
+   "source": "Bava Batra 3b"
+  },
+  {
+   "id": "Bava_Batra_48_a",
+   "step": 5,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תשובה",
+   "why": "אלא סברא הוא is the final answer to the search for רב הונא's source (47b), challenged at once in step 6",
+   "source": "Bava Batra 48a"
+  },
+  {
+   "id": "Bava_Batra_75_a",
+   "step": 19,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "end of the story of the mocking student; next step challenges רבי יוחנן – rules 8, 5",
+   "source": "Bava Batra 75a"
+  },
+  {
+   "id": "Bava_Batra_7_a",
+   "step": 16,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "רב חמא's ruling on the story, immediately questioned (והא תו למה לי) – rule 5",
+   "source": "Bava Batra 7a"
+  },
+  {
+   "id": "Bava_Batra_7_a",
+   "step": 20,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "רב חמא's ruling on the second story, immediately challenged by רבינא – rule 5",
+   "source": "Bava Batra 7a"
+  },
+  {
+   "id": "Bava_Batra_80_a",
+   "step": 12,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "אלמא inference is part of רב כהנא's statement, immediately attacked by מיתיבי – rule 5",
+   "source": "Bava Batra 80a"
+  },
+  {
+   "id": "Bava_Batra_81_a",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "ראיה",
+   "why": "שמע מינה closes the proof of step 7 and is attacked at once – rule 5",
+   "source": "Bava Batra 81a"
+  },
+  {
+   "id": "Bava_Batra_82_a",
+   "step": 1,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "second half of the תירוץ that ends 81b (step 17) – rule 5, across the amud break",
+   "source": "Bava Batra 82a"
+  },
+  {
+   "id": "Bava_Batra_95_a",
+   "step": 5,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "ראיה",
+   "why": "שמע מינה completes the proof begun in step 3 and is rejected in step 6 – rule 5",
+   "source": "Bava Batra 95a"
+  },
+  {
+   "id": "Bava_Batra_95_b",
+   "step": 2,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "answers רב זביד's ברייתא (challenge from 95a step 14) by rereading the משנה; next step challenges it – rule 5",
+   "source": "Bava Batra 95b"
+  },
+  {
+   "id": "Bava_Batra_95_b",
+   "step": 1,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "closing line of רב זביד's ברייתא, quoted to attack the earlier reading (95a step 14 is קשיא) – rule 1",
+   "source": "Bava Batra 95b"
+  },
+  {
+   "id": "Bava_Kamma_105_b",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "ראיה",
+   "why": "אלמא… inference closes רבה's proof (steps 3-5, ראיה) and is attacked at once – rule 5",
+   "source": "Bava Kamma 105b"
+  },
+  {
+   "id": "Bava_Kamma_106_a",
+   "step": 24,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "third part of רבא's answer (steps 22-23), immediately challenged by רב אשי – rule 5",
+   "source": "Bava Kamma 106a"
+  },
+  {
+   "id": "Bava_Kamma_117_b",
+   "step": 28,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תשובה",
+   "why": "second half of the חכמים's answer begun in step 27, immediately challenged – rule 5",
+   "source": "Bava Kamma 117b"
+  },
+  {
+   "id": "Bava_Kamma_12_a",
+   "step": 16,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "והלכתא בכפות answers the challenge of steps 14-15; another challenge follows – rule 5",
+   "source": "Bava Kamma 12a"
+  },
+  {
+   "id": "Bava_Kamma_17_b",
+   "step": 21,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "סתמא כרבנן identifies the author of the ברייתא; רבא immediately questions the רבנן – rule 5",
+   "source": "Bava Kamma 17b"
+  },
+  {
+   "id": "Bava_Kamma_25_b",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "שמע מינה finishes the answer of step 10, challenged in step 12 – rule 5",
+   "source": "Bava Kamma 25b"
+  },
+  {
+   "id": "Bava_Kamma_28_b",
+   "step": 3,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "קשיא",
+   "why": "second half of שמואל's objection begun in step 2; רב answers it in step 4 – rule 5",
+   "source": "Bava Kamma 28b"
+  },
+  {
+   "id": "Bava_Kamma_29_b",
+   "step": 18,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "inference that closes the resolution (steps 15-17), immediately challenged (ומי אמר רבי יוחנן הכי) – rule 5",
+   "source": "Bava Kamma 29b"
+  },
+  {
+   "id": "Bava_Kamma_29_b",
+   "step": 23,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "reverses the attribution to answer step 22's challenge; step 24 challenges it at once – rule 5",
+   "source": "Bava Kamma 29b"
+  },
+  {
+   "id": "Bava_Batra_84_b",
+   "step": 10,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "רבי אסי answers רבי זירא's objection – rule 2",
+   "source": "Bava Batra 84b"
+  },
+  {
+   "id": "Bava_Batra_84_b",
+   "step": 10,
+   "field": "relationToPreviousStep",
+   "find": "Rejects",
+   "replace": "Pushes back on",
+   "why": "not a rejection of a proof",
+   "source": "Bava Batra 84b"
+  },
+  {
+   "id": "Bava_Batra_86_b",
+   "step": 2,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "הכא במאי עסקינן answers a תא שמע brought against the rule (86a step 17 challenges 'the same rule') – rules 1-2",
+   "source": "Bava Batra 86b"
+  },
+  {
+   "id": "Bava_Batra_86_b",
+   "step": 2,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the proof from step 1.",
+   "replace": "Answers the challenge from step 1.",
+   "why": "step 1 is a challenge",
+   "source": "Bava Batra 86b"
+  },
+  {
+   "id": "Bava_Batra_86_b",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "שאני בהמה answers רבינא's תא שמע against the rule – rules 1-2",
+   "source": "Bava Batra 86b"
+  },
+  {
+   "id": "Bava_Batra_86_b",
+   "step": 6,
+   "field": "relationToPreviousStep",
+   "find": "Rejects רבינא's proof",
+   "replace": "Answers רבינא's challenge",
+   "why": "step 5 is a challenge",
+   "source": "Bava Batra 86b"
+  },
+  {
+   "id": "Bava_Batra_87_a",
+   "step": 3,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "רבא (ותסברא) answers the challenge of step 2 – rule 2",
+   "source": "Bava Batra 87a"
+  },
+  {
+   "id": "Bava_Batra_9_b",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "answers רב ששת's counter-challenge (ואלא שרץ מנלן) – rules 2-3",
+   "source": "Bava Batra 9b"
+  },
+  {
+   "id": "Bava_Batra_9_b",
+   "step": 8,
+   "field": "relationToPreviousStep",
+   "find": "Rejects רב ששת's proof",
+   "replace": "Answers רב ששת's challenge",
+   "why": "step 7 is a counter-challenge",
+   "source": "Bava Batra 9b"
+  },
+  {
+   "id": "Bava_Batra_9_b",
+   "step": 10,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "answers רב ששת's second counter-challenge – rules 2-3",
+   "source": "Bava Batra 9b"
+  },
+  {
+   "id": "Bava_Batra_9_b",
+   "step": 10,
+   "field": "relationToPreviousStep",
+   "find": "Rejects רב ששת's proof",
+   "replace": "Answers רב ששת's challenge",
+   "why": "step 9 is a counter-challenge",
+   "source": "Bava Batra 9b"
+  },
+  {
+   "id": "Bava_Kamma_103_b",
+   "step": 15,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וכי תימא… והא – continues רבא's objection by blocking a defense – rule 2",
+   "source": "Bava Kamma 103b"
+  },
+  {
+   "id": "Bava_Kamma_10_a",
+   "step": 25,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "answers רבי זירא's challenge (מתקיף לה) – rule 2",
+   "source": "Bava Kamma 10a"
+  },
+  {
+   "id": "Bava_Kamma_10_a",
+   "step": 25,
+   "field": "relationToPreviousStep",
+   "find": "Begins rejecting",
+   "replace": "Begins answering",
+   "why": "answer to a challenge",
+   "source": "Bava Kamma 10a"
+  },
+  {
+   "id": "Bava_Kamma_10_a",
+   "step": 26,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "second half of the answer begun in step 25 – rule 5 (same window)",
+   "source": "Bava Kamma 10a"
+  },
+  {
+   "id": "Bava_Kamma_10_a",
+   "step": 26,
+   "field": "relationToPreviousStep",
+   "find": "two-sided rejection",
+   "replace": "two-sided answer",
+   "why": "answer to a challenge",
+   "source": "Bava Kamma 10a"
+  },
+  {
+   "id": "Bava_Kamma_10_b",
+   "step": 3,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "answers רב פפא's challenge (מתקיף לה) – rule 2",
+   "source": "Bava Kamma 10b"
+  },
+  {
+   "id": "Bava_Kamma_10_b",
+   "step": 3,
+   "field": "relationToPreviousStep",
+   "find": "Rejects רב פפא's challenge",
+   "replace": "Answers רב פפא's challenge",
+   "why": "answer to a challenge",
+   "source": "Bava Kamma 10b"
+  },
+  {
+   "id": "Bava_Kamma_112_a",
+   "step": 20,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "in the story, רבי אבין answers רבי ירמיה's objection – rule 3",
+   "source": "Bava Kamma 112a"
+  },
+  {
+   "id": "Bava_Kamma_112_a",
+   "step": 20,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the proof רבי ירמיה offered",
+   "replace": "Answers the challenge רבי ירמיה raised",
+   "why": "step 19 is a challenge",
+   "source": "Bava Kamma 112a"
+  },
+  {
+   "id": "Bava_Kamma_112_b",
+   "step": 3,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "answers the counter-challenge of step 2 – rules 2-3",
+   "source": "Bava Kamma 112b"
+  },
+  {
+   "id": "Bava_Kamma_112_b",
+   "step": 3,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the proof",
+   "replace": "Answers the challenge",
+   "why": "step 2 is a challenge",
+   "source": "Bava Kamma 112b"
+  },
+  {
+   "id": "Bava_Kamma_19_b",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "הכי השתא answers the challenge of step 8 – rule 2",
+   "source": "Bava Kamma 19b"
+  },
+  {
+   "id": "Bava_Kamma_19_b",
+   "step": 9,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the challenge",
+   "replace": "Answers the challenge",
+   "why": "answer to a challenge",
+   "source": "Bava Kamma 19b"
+  },
+  {
+   "id": "Bava_Kamma_25_a",
+   "step": 15,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וכי תימא – continues רב פפא's challenge by blocking an answer – rule 2",
+   "source": "Bava Kamma 25a"
+  },
+  {
+   "id": "Bava_Kamma_25_a",
+   "step": 16,
+   "field": "relationToPreviousStep",
+   "find": "רב פפא's rejection",
+   "replace": "רב פפא's point",
+   "why": "step 15 is part of a challenge, not a rejection",
+   "source": "Bava Kamma 25a"
+  },
+  {
+   "id": "Bava_Kamma_28_b",
+   "step": 10,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "ולטעמיך – a counter-challenge – rule 2",
+   "source": "Bava Kamma 28b"
+  },
+  {
+   "id": "Bava_Kamma_29_b",
+   "step": 14,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "second half of מר זוטרא's objection (מי דמי) to רבינא's comparison – rules 2, 5",
+   "source": "Bava Kamma 29b"
+  },
+  {
+   "id": "Bava_Kamma_29_b",
+   "step": 14,
+   "field": "relationToPreviousStep",
+   "find": "מר זוטרא's rejection",
+   "replace": "מר זוטרא's challenge",
+   "why": "objection to an answer",
+   "source": "Bava Kamma 29b"
+  },
+  {
+   "id": "Bava_Batra_33_b",
+   "step": 4,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "מימרא",
+   "why": "אביי ורבא simply disagree with רב חסדא's ruling – a stated opinion, not a pushed-aside proof",
+   "source": "Bava Batra 33b"
+  },
+  {
+   "id": "Bava_Batra_34_a",
+   "step": 3,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "אביי (מי דמי) objects to רבי אבא's answer – rule 2",
+   "source": "Bava Batra 34a"
+  },
+  {
+   "id": "Bava_Batra_34_a",
+   "step": 3,
+   "field": "relationToPreviousStep",
+   "find": "Rejects using",
+   "replace": "Challenges using",
+   "why": "objection to an answer",
+   "source": "Bava Batra 34a"
+  },
+  {
+   "id": "Bava_Batra_39_a",
+   "step": 12,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "מימרא",
+   "why": "רב הונא בריה דרב יהושע gives a dissenting view – a statement, not a rejection of a proof",
+   "source": "Bava Batra 39a"
+  },
+  {
+   "id": "Bava_Batra_39_a",
+   "step": 12,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the",
+   "replace": "Disagrees with the",
+   "why": "dissenting opinion",
+   "source": "Bava Batra 39a"
+  },
+  {
+   "id": "Bava_Batra_56_b",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objects to the suggested answer of step 7 – rule 2",
+   "source": "Bava Batra 56b"
+  },
+  {
+   "id": "Bava_Batra_56_b",
+   "step": 8,
+   "field": "relationToPreviousStep",
+   "find": "Rejects",
+   "replace": "Challenges",
+   "why": "objection to an answer",
+   "source": "Bava Batra 56b"
+  },
+  {
+   "id": "Bava_Batra_65_b",
+   "step": 4,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "והא… קתני knocks out the resolution of step 3 – rule 2",
+   "source": "Bava Batra 65b"
+  },
+  {
+   "id": "Bava_Batra_65_b",
+   "step": 4,
+   "field": "relationToPreviousStep",
+   "find": "Rejects",
+   "replace": "Challenges",
+   "why": "objection to an answer",
+   "source": "Bava Batra 65b"
+  },
+  {
+   "id": "Bava_Batra_74_a",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "in the story the רבנן object to his defense – rule 3",
+   "source": "Bava Batra 74a"
+  },
+  {
+   "id": "Bava_Batra_74_a",
+   "step": 7,
+   "field": "relationToPreviousStep",
+   "find": "Rejects",
+   "replace": "Challenges",
+   "why": "objection to a defense",
+   "source": "Bava Batra 74a"
+  },
+  {
+   "id": "Bava_Batra_76_a",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "לא; דכולי עלמא… opens the real answer to step 6, completed in step 9 – rules 2, 5",
+   "source": "Bava Batra 76a"
+  },
+  {
+   "id": "Bava_Batra_79_a",
+   "step": 13,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "והתניא knocks out the answer of step 12 – rules 1-2",
+   "source": "Bava Batra 79a"
+  },
+  {
+   "id": "Bava_Batra_79_a",
+   "step": 13,
+   "field": "relationToPreviousStep",
+   "find": "Rejects",
+   "replace": "Challenges",
+   "why": "objection to an answer",
+   "source": "Bava Batra 79a"
+  },
+  {
+   "id": "Bava_Batra_82_b",
+   "step": 12,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "אביי (מי דמי) objects to רב יוסף's answer – rule 2",
+   "source": "Bava Batra 82b"
+  },
+  {
+   "id": "Bava_Batra_82_b",
+   "step": 12,
+   "field": "relationToPreviousStep",
+   "find": "Rejects",
+   "replace": "Challenges",
+   "why": "objection to an answer",
+   "source": "Bava Batra 82b"
+  },
+  {
+   "id": "Bava_Batra_88_a",
+   "step": 2,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objects to the resolution of step 1 – rule 2",
+   "source": "Bava Batra 88a"
+  },
+  {
+   "id": "Bava_Batra_88_a",
+   "step": 2,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the support",
+   "replace": "Challenges the support",
+   "why": "objection to an answer",
+   "source": "Bava Batra 88a"
+  },
+  {
+   "id": "Bava_Kamma_100_a",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objects to the suggested answer (תשובה) of step 6 – rule 2",
+   "source": "Bava Kamma 100a"
+  },
+  {
+   "id": "Bava_Kamma_100_a",
+   "step": 7,
+   "field": "relationToPreviousStep",
+   "find": "Rejects",
+   "replace": "Challenges",
+   "why": "objection to an answer",
+   "source": "Bava Kamma 100a"
+  },
+  {
+   "id": "Bava_Kamma_100_a",
+   "step": 7,
+   "field": "title",
+   "find": "Rejected:",
+   "replace": "Objection:",
+   "why": "objection to an answer",
+   "source": "Bava Kamma 100a"
+  },
+  {
+   "id": "Bava_Kamma_100_a",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objects to the suggested answer (תשובה) of step 8 – rule 2",
+   "source": "Bava Kamma 100a"
+  },
+  {
+   "id": "Bava_Kamma_100_a",
+   "step": 9,
+   "field": "relationToPreviousStep",
+   "find": "Rejects",
+   "replace": "Challenges",
+   "why": "objection to an answer",
+   "source": "Bava Kamma 100a"
+  },
+  {
+   "id": "Bava_Kamma_100_a",
+   "step": 9,
+   "field": "title",
+   "find": "Rejected:",
+   "replace": "Objection:",
+   "why": "objection to an answer",
+   "source": "Bava Kamma 100a"
+  },
+  {
+   "id": "Bava_Kamma_100_a",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objects to the suggested answer (תשובה) of step 10 – rule 2",
+   "source": "Bava Kamma 100a"
+  },
+  {
+   "id": "Bava_Kamma_100_a",
+   "step": 11,
+   "field": "relationToPreviousStep",
+   "find": "Rejects",
+   "replace": "Challenges",
+   "why": "objection to an answer",
+   "source": "Bava Kamma 100a"
+  },
+  {
+   "id": "Bava_Kamma_100_a",
+   "step": 11,
+   "field": "title",
+   "find": "Rejected:",
+   "replace": "Objection:",
+   "why": "objection to an answer",
+   "source": "Bava Kamma 100a"
+  },
+  {
+   "id": "Bava_Kamma_101_a",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objects to the framing offered as an answer in step 7 – rule 2",
+   "source": "Bava Kamma 101a"
+  },
+  {
+   "id": "Bava_Kamma_101_a",
+   "step": 10,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objects to the framing offered in step 9 – rule 2",
+   "source": "Bava Kamma 101a"
+  },
+  {
+   "id": "Bava_Kamma_101_a",
+   "step": 10,
+   "field": "relationToPreviousStep",
+   "find": "Rejects",
+   "replace": "Challenges",
+   "why": "objection to an answer",
+   "source": "Bava Kamma 101a"
+  },
+  {
+   "id": "Bava_Kamma_10_a",
+   "step": 17,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objects to the answer of step 16 – rule 2",
+   "source": "Bava Kamma 10a"
+  },
+  {
+   "id": "Bava_Kamma_10_a",
+   "step": 17,
+   "field": "relationToPreviousStep",
+   "find": "Rejects",
+   "replace": "Challenges",
+   "why": "objection to an answer",
+   "source": "Bava Kamma 10a"
+  },
+  {
+   "id": "Bava_Kamma_114_b",
+   "step": 38,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "כל שכן עילא מצא – objects to the answer of step 37 – rule 2",
+   "source": "Bava Kamma 114b"
+  },
+  {
+   "id": "Bava_Kamma_114_b",
+   "step": 38,
+   "field": "relationToPreviousStep",
+   "find": "Rejects",
+   "replace": "Challenges",
+   "why": "objection to an answer",
+   "source": "Bava Kamma 114b"
+  },
+  {
+   "id": "Bava_Kamma_15_a",
+   "step": 25,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objects to the answer of step 24 – rule 2",
+   "source": "Bava Kamma 15a"
+  },
+  {
+   "id": "Bava_Kamma_15_a",
+   "step": 25,
+   "field": "relationToPreviousStep",
+   "find": "Rejects",
+   "replace": "Challenges",
+   "why": "objection to an answer",
+   "source": "Bava Kamma 15a"
+  },
+  {
+   "id": "Bava_Kamma_16_b",
+   "step": 12,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "מנא ידעינן – objects to the answer of steps 9/11 – rule 2",
+   "source": "Bava Kamma 16b"
+  },
+  {
+   "id": "Bava_Kamma_16_b",
+   "step": 12,
+   "field": "relationToPreviousStep",
+   "find": "Rejects",
+   "replace": "Challenges",
+   "why": "objection to an answer",
+   "source": "Bava Kamma 16b"
+  },
+  {
+   "id": "Bava_Kamma_18_a",
+   "step": 21,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "ולא היא – objects to the resolution of step 20 – rule 2",
+   "source": "Bava Kamma 18a"
+  },
+  {
+   "id": "Bava_Kamma_18_a",
+   "step": 21,
+   "field": "relationToPreviousStep",
+   "find": "Rejects",
+   "replace": "Challenges",
+   "why": "objection to an answer",
+   "source": "Bava Kamma 18a"
+  },
+  {
+   "id": "Bava_Kamma_18_a",
+   "step": 21,
+   "field": "title",
+   "find": "Rejecting the reading",
+   "replace": "Challenging the reading",
+   "why": "objection to an answer",
+   "source": "Bava Kamma 18a"
+  },
+  {
+   "id": "Bava_Kamma_2_b",
+   "step": 10,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objects to the answer (תשובה) of step 9 – rule 2",
+   "source": "Bava Kamma 2b"
+  },
+  {
+   "id": "Bava_Kamma_2_b",
+   "step": 10,
+   "field": "relationToPreviousStep",
+   "find": "Rejects",
+   "replace": "Challenges",
+   "why": "objection to an answer",
+   "source": "Bava Kamma 2b"
+  },
+  {
+   "id": "Bava_Batra_70_a",
+   "step": 2,
+   "field": "hebrewStepName",
+   "find": "תירוץ",
+   "replace": "מימרא",
+   "why": "ולא פליגי with no challenge before it – a reconciling statement",
+   "source": "Bava Batra 70a"
+  },
+  {
+   "id": "Bava_Metzia_64_b",
+   "step": 14,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רבא objects to his father's answer (which relied on רב נחמן); an objection to an answer, not pushing aside a proof",
+   "source": "Bava Metzia 64b"
+  },
+  {
+   "id": "Bava_Metzia_64_b",
+   "step": 14,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the source",
+   "replace": "Challenges the source",
+   "why": "names the wrong kind of step; now קשיא",
+   "source": "Bava Metzia 64b"
+  },
+  {
+   "id": "Bava_Metzia_65_b",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "תירוץ",
+   "replace": "מימרא",
+   "why": "ולא פליגי with no challenge before it (step 5 is a Response); a harmonizing statement",
+   "source": "Bava Metzia 65b"
+  },
+  {
+   "id": "Bava_Metzia_66_b",
+   "step": 5,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "ולא היא knocks out רב אשי's reading, which was an answer to a challenge (rule 2)",
+   "source": "Bava Metzia 66b"
+  },
+  {
+   "id": "Bava_Metzia_66_b",
+   "step": 5,
+   "field": "relationToPreviousStep",
+   "find": "Rejects רב אשי",
+   "replace": "Challenges רב אשי",
+   "why": "names the wrong kind of step; now קשיא",
+   "source": "Bava Metzia 66b"
+  },
+  {
+   "id": "Bava_Metzia_68_a",
+   "step": 13,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "רב אשי answers מר בר אמימר's challenge (step 12)",
+   "source": "Bava Metzia 68a"
+  },
+  {
+   "id": "Bava_Metzia_68_a",
+   "step": 13,
+   "field": "relationToPreviousStep",
+   "find": "Rejects מר בר אמימר's defense",
+   "replace": "Answers מר בר אמימר's challenge",
+   "why": "names the wrong kind of step; now תירוץ",
+   "source": "Bava Metzia 68a"
+  },
+  {
+   "id": "Bava_Metzia_69_a",
+   "step": 2,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רב זביד objects (דילמא… ואמר רב נחמן…) to the explanation of the document; step 3 answers it as a challenge",
+   "source": "Bava Metzia 69a"
+  },
+  {
+   "id": "Bava_Metzia_71_b",
+   "step": 18,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "ברותא היא knocks out רב אשי's answer to the challenge; objection to an answer (rule 2)",
+   "source": "Bava Metzia 71b"
+  },
+  {
+   "id": "Bava_Metzia_71_b",
+   "step": 18,
+   "field": "relationToPreviousStep",
+   "find": "Begins rejecting",
+   "replace": "Begins challenging",
+   "why": "names the wrong kind of step; now קשיא",
+   "source": "Bava Metzia 71b"
+  },
+  {
+   "id": "Bava_Metzia_77_a",
+   "step": 22,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "ומי שאני ליה? והתניא knocks out the suggested answer (וכי תימא) of step 21 (rule 2)",
+   "source": "Bava Metzia 77a"
+  },
+  {
+   "id": "Bava_Metzia_78_b",
+   "step": 21,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "the סיפא of the ברייתא knocks out the answer proposed for שמואל in step 20 (rule 2)",
+   "source": "Bava Metzia 78b"
+  },
+  {
+   "id": "Bava_Metzia_78_b",
+   "step": 21,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the answer",
+   "replace": "Challenges the answer",
+   "why": "names the wrong kind of step; now קשיא",
+   "source": "Bava Metzia 78b"
+  },
+  {
+   "id": "Bava_Metzia_7_b",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "the רבנן's reply is the second half of רב פפא's answer (rule 5)",
+   "source": "Bava Metzia 7b"
+  },
+  {
+   "id": "Bava_Metzia_81_a",
+   "step": 2,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "לא, הא… answers the challenge of step 1 (rule 2)",
+   "source": "Bava Metzia 81a"
+  },
+  {
+   "id": "Bava_Metzia_81_a",
+   "step": 2,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the inference",
+   "replace": "Answers the inference",
+   "why": "names the wrong kind of step; now תירוץ",
+   "source": "Bava Metzia 81a"
+  },
+  {
+   "id": "Bava_Metzia_82_a",
+   "step": 10,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "ותסברא? אימור… objects to the suggestion of step 9 (rule 2)",
+   "source": "Bava Metzia 82a"
+  },
+  {
+   "id": "Bava_Metzia_83_b",
+   "step": 17,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "inside a story, רבי יהושע בן קרחה objects to רבי אלעזר's defense (rule 3)",
+   "source": "Bava Metzia 83b"
+  },
+  {
+   "id": "Bava_Metzia_83_b",
+   "step": 17,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the defense",
+   "replace": "Challenges the defense",
+   "why": "names the wrong kind of step; now קשיא",
+   "source": "Bava Metzia 83b"
+  },
+  {
+   "id": "Bava_Metzia_84_a",
+   "step": 3,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "inside a story, אליהו objects to רבי ישמעאל's excuse (rule 3)",
+   "source": "Bava Metzia 84a"
+  },
+  {
+   "id": "Bava_Metzia_84_a",
+   "step": 3,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the excuse",
+   "replace": "Challenges the excuse",
+   "why": "names the wrong kind of step; now קשיא",
+   "source": "Bava Metzia 84a"
+  },
+  {
+   "id": "Bava_Metzia_87_b",
+   "step": 17,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "end of the כרם/קמה יוכיח answer, followed straight away by a challenge (מה להצד השוה) (rule 5)",
+   "source": "Bava Metzia 87b"
+  },
+  {
+   "id": "Bava_Metzia_88_b",
+   "step": 14,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "מה לשור… objects to the קל וחומר given as the Response to מנלן (rules 2, 7)",
+   "source": "Bava Metzia 88b"
+  },
+  {
+   "id": "Bava_Metzia_88_b",
+   "step": 14,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the קל וחומר",
+   "replace": "Challenges the קל וחומר",
+   "why": "names the wrong kind of step; now קשיא",
+   "source": "Bava Metzia 88b"
+  },
+  {
+   "id": "Bava_Metzia_88_b",
+   "step": 22,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "מה לאדם… objects to the קל וחומר given as the Response to מנלן (rules 2, 7)",
+   "source": "Bava Metzia 88b"
+  },
+  {
+   "id": "Bava_Metzia_88_b",
+   "step": 22,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the קל וחומר",
+   "replace": "Challenges the קל וחומר",
+   "why": "names the wrong kind of step; now קשיא",
+   "source": "Bava Metzia 88b"
+  },
+  {
+   "id": "Bava_Metzia_8_a",
+   "step": 25,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "איצטריך… knocks out the defense (וכי תימא) of step 24; an objection to a defence is a Challenge (rule 2)",
+   "source": "Bava Metzia 8a"
+  },
+  {
+   "id": "Bava_Metzia_8_a",
+   "step": 25,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the defense",
+   "replace": "Challenges the defense",
+   "why": "names the wrong kind of step; now קשיא",
+   "source": "Bava Metzia 8a"
+  },
+  {
+   "id": "Bava_Metzia_8_b",
+   "step": 5,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "ראיה",
+   "why": "second half of רב יהודה's proof begun in step 4, followed straight away by challenges (rule 5)",
+   "source": "Bava Metzia 8b"
+  },
+  {
+   "id": "Bava_Metzia_90_a",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "knocks out the suggested answer (וכי תימא) of step 6 (rule 2)",
+   "source": "Bava Metzia 90a"
+  },
+  {
+   "id": "Bava_Metzia_90_a",
+   "step": 7,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the answer",
+   "replace": "Challenges the answer",
+   "why": "names the wrong kind of step; now קשיא",
+   "source": "Bava Metzia 90a"
+  },
+  {
+   "id": "Bava_Metzia_91_b",
+   "step": 4,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "answers the challenge of step 3 (rule 2)",
+   "source": "Bava Metzia 91b"
+  },
+  {
+   "id": "Bava_Metzia_91_b",
+   "step": 4,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the narrow reading in step 3.",
+   "replace": "Answers the challenge in step 3.",
+   "why": "names the wrong kind of step; now תירוץ",
+   "source": "Bava Metzia 91b"
+  },
+  {
+   "id": "Bava_Metzia_92_a",
+   "step": 1,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "דחיה",
+   "why": "second half of the Rejection begun at 91b step 29 (לא… ומהלך כעושה מעשה דמי); a new line of the משנה follows (rule 5)",
+   "source": "Bava Metzia 92a"
+  },
+  {
+   "id": "Bava_Metzia_92_b",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וכי תימא… blocks the expected answer and so continues the challenge of step 8",
+   "source": "Bava Metzia 92b"
+  },
+  {
+   "id": "Bava_Metzia_93_a",
+   "step": 13,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "קא סבר… explains שמואל's statement and is challenged straight away (rule 5)",
+   "source": "Bava Metzia 93a"
+  },
+  {
+   "id": "Bava_Metzia_94_b",
+   "step": 12,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "אדרבה objects to the answer of step 11 (rule 2)",
+   "source": "Bava Metzia 94b"
+  },
+  {
+   "id": "Bava_Metzia_94_b",
+   "step": 30,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "איכא למיפרך objects to the גזירה שוה given as the Response to מנא לן (rules 2, 7)",
+   "source": "Bava Metzia 94b"
+  },
+  {
+   "id": "Bava_Metzia_95_b",
+   "step": 13,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "האי מאי?! objects to the answer of step 12 (rule 2)",
+   "source": "Bava Metzia 95b"
+  },
+  {
+   "id": "Bava_Metzia_95_b",
+   "step": 13,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the answer",
+   "replace": "Challenges the answer",
+   "why": "names the wrong kind of step; now קשיא",
+   "source": "Bava Metzia 95b"
+  },
+  {
+   "id": "Bava_Metzia_98_a",
+   "step": 4,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "second half of the two-cow answer begun in steps 2-3; more of the answer follows (rule 5)",
+   "source": "Bava Metzia 98a"
+  },
+  {
+   "id": "Bava_Metzia_98_a",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "second half of the three-cow answer begun in step 5; another answer follows (rule 5)",
+   "source": "Bava Metzia 98a"
+  },
+  {
+   "id": "Bava_Metzia_98_a",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "second half of the רישא answer by רמי בר חמא (steps 7-8); the סיפא follows (rule 5)",
+   "source": "Bava Metzia 98a"
+  },
+  {
+   "id": "Bava_Metzia_9_a",
+   "step": 19,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "ברותא היא knocks out רבי אבהו's answer to the challenge (rule 2)",
+   "source": "Bava Metzia 9a"
+  },
+  {
+   "id": "Bava_Metzia_9_b",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תשובה",
+   "why": "וכי תימא… והא כל… closes a gap in רבא's own answer; it continues the Response of step 5 (rule 5)",
+   "source": "Bava Metzia 9b"
+  },
+  {
+   "id": "Beitzah_10_a",
+   "step": 5,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "ממאי? דלמא… objects to רבי יוחנן's answer (מוחלפת השיטה) (rule 2)",
+   "source": "Beitzah 10a"
+  },
+  {
+   "id": "Beitzah_10_a",
+   "step": 5,
+   "field": "title",
+   "find": "Rejecting the pestle proof",
+   "replace": "Challenging the pestle contradiction",
+   "why": "names the wrong kind of step; now קשיא",
+   "source": "Beitzah 10a"
+  },
+  {
+   "id": "Beitzah_10_a",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "ממאי? דלמא… objects to רבי יוחנן's answer (מוחלפת השיטה) (rule 2)",
+   "source": "Beitzah 10a"
+  },
+  {
+   "id": "Beitzah_10_a",
+   "step": 9,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the need",
+   "replace": "Challenges the need",
+   "why": "names the wrong kind of step; now קשיא",
+   "source": "Beitzah 10a"
+  },
+  {
+   "id": "Beitzah_13_b",
+   "step": 18,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "רב ששת's counter-example answers רבי אבא בר ממל's challenge (step 17)",
+   "source": "Beitzah 13b"
+  },
+  {
+   "id": "Beitzah_13_b",
+   "step": 18,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the assumption behind",
+   "replace": "Answers by refuting the assumption behind",
+   "why": "names the wrong kind of step; now תירוץ",
+   "source": "Beitzah 13b"
+  },
+  {
+   "id": "Beitzah_14_b",
+   "step": 27,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "והתניא knocks out the suggested answer (וכי תימא) of step 26 (rule 2)",
+   "source": "Beitzah 14b"
+  },
+  {
+   "id": "Beitzah_14_b",
+   "step": 27,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the suggestion",
+   "replace": "Challenges the suggestion",
+   "why": "names the wrong kind of step; now קשיא",
+   "source": "Beitzah 14b"
+  },
+  {
+   "id": "Beitzah_14_b",
+   "step": 29,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "והאמר… knocks out the suggested answer (וכי תימא) of step 28 (rule 2)",
+   "source": "Beitzah 14b"
+  },
+  {
+   "id": "Beitzah_14_b",
+   "step": 29,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the barrier",
+   "replace": "Challenges the barrier",
+   "why": "names the wrong kind of step; now קשיא",
+   "source": "Beitzah 14b"
+  },
+  {
+   "id": "Beitzah_14_b",
+   "step": 31,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "והאמר עולא knocks out the curtain answer of step 30 (rule 2)",
+   "source": "Beitzah 14b"
+  },
+  {
+   "id": "Beitzah_20_a",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "מאי שנא… answers the challenge of step 8 by turning its reasoning back",
+   "source": "Beitzah 20a"
+  },
+  {
+   "id": "Beitzah_20_a",
+   "step": 9,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the alternative",
+   "replace": "Answers the alternative",
+   "why": "names the wrong kind of step; now תירוץ",
+   "source": "Beitzah 20a"
+  },
+  {
+   "id": "Beitzah_20_b",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "בית שמאי object to בית הלל's defense of their קל וחומר (rule 2: objection to a defence)",
+   "source": "Beitzah 20b"
+  },
+  {
+   "id": "Beitzah_20_b",
+   "step": 7,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the distinction",
+   "replace": "Challenges the distinction",
+   "why": "names the wrong kind of step; now קשיא",
+   "source": "Beitzah 20b"
+  },
+  {
+   "id": "Beitzah_21_a",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "מימרא",
+   "why": "עורבא פרח evades the challenge; a story line, not an answer and not a proof being pushed aside (rules 3, 8)",
+   "source": "Beitzah 21a"
+  },
+  {
+   "id": "Beitzah_22_b",
+   "step": 3,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "ומאי דעתיך… continues אמימר's answer of step 2 (rule 5)",
+   "source": "Beitzah 22b"
+  },
+  {
+   "id": "Beitzah_24_a",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "knocks out the suggested answer (וכי תימא) of step 6 (rule 2)",
+   "source": "Beitzah 24a"
+  },
+  {
+   "id": "Beitzah_24_a",
+   "step": 7,
+   "field": "title",
+   "find": "Rejection: a bird",
+   "replace": "Challenge: a bird",
+   "why": "names the wrong kind of step; now קשיא",
+   "source": "Beitzah 24a"
+  },
+  {
+   "id": "Beitzah_24_a",
+   "step": 7,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the roofed",
+   "replace": "Challenges the roofed",
+   "why": "names the wrong kind of step; now קשיא",
+   "source": "Beitzah 24a"
+  },
+  {
+   "id": "Beitzah_24_b",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "ולטעמיך counter-challenge (rule 2)",
+   "source": "Beitzah 24b"
+  },
+  {
+   "id": "Beitzah_24_b",
+   "step": 11,
+   "field": "relationToPreviousStep",
+   "find": "Answers the challenge in step 10",
+   "replace": "Turns the challenge in step 10 back",
+   "why": "names the wrong kind of step; now קשיא",
+   "source": "Beitzah 24b"
+  },
+  {
+   "id": "Beitzah_25_a",
+   "step": 20,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "לא: ממקום… answers the challenge of step 19 (rule 2)",
+   "source": "Beitzah 25a"
+  },
+  {
+   "id": "Beitzah_25_a",
+   "step": 20,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the proof from the משנה",
+   "replace": "Answers the challenge from the משנה",
+   "why": "names the wrong kind of step; now תירוץ",
+   "source": "Beitzah 25a"
+  },
+  {
+   "id": "Beitzah_27_a",
+   "step": 19,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "ראיה",
+   "why": "ומינה… is the second half of the proof of step 18, and אביי pushes it aside straight away (rule 5)",
+   "source": "Beitzah 27a"
+  },
+  {
+   "id": "Beitzah_29_a",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תשובה",
+   "why": "ואתא רבי יהודה למימר… is the second half of שמואל's Response (step 7), challenged straight away (rule 5)",
+   "source": "Beitzah 29a"
+  },
+  {
+   "id": "Beitzah_29_a",
+   "step": 13,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "second half of רבא's reading in step 12 (labelled מימרא), challenged straight away (rule 5)",
+   "source": "Beitzah 29a"
+  },
+  {
+   "id": "Beitzah_2_a",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "ומאי קושיא? דלמא… answers the challenge of step 8 (rule 2)",
+   "source": "Beitzah 2a"
+  },
+  {
+   "id": "Beitzah_2_a",
+   "step": 9,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the question",
+   "replace": "Answers the question",
+   "why": "names the wrong kind of step; now תירוץ",
+   "source": "Beitzah 2a"
+  },
+  {
+   "id": "Beitzah_32_a",
+   "step": 5,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וכי תימא… ומי שניא ליה? continues the challenge against the answer of step 3 (rule 2)",
+   "source": "Beitzah 32a"
+  },
+  {
+   "id": "Beitzah_32_a",
+   "step": 12,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "אביי's ממאי? דלמא… objects to רב יוסף's answer to מאן תנא (rules 2, 7)",
+   "source": "Beitzah 32a"
+  },
+  {
+   "id": "Beitzah_32_a",
+   "step": 12,
+   "field": "relationToPreviousStep",
+   "find": "Attacks the proof brought",
+   "replace": "Attacks the answer brought",
+   "why": "names the wrong kind of step; now קשיא",
+   "source": "Beitzah 32a"
+  },
+  {
+   "id": "Beitzah_33_b",
+   "step": 13,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "applies the ברייתא and finishes the answer begun in step 10; challenged straight away (rule 5)",
+   "source": "Beitzah 33b"
+  },
+  {
+   "id": "Beitzah_34_a",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רבי ירמיה objects to רבי זירא's answer to his בעיא (rules 2, 7)",
+   "source": "Beitzah 34a"
+  },
+  {
+   "id": "Beitzah_34_a",
+   "step": 6,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the proof offered",
+   "replace": "Challenges the answer offered",
+   "why": "names the wrong kind of step; now קשיא",
+   "source": "Beitzah 34a"
+  },
+  {
+   "id": "Beitzah_35_b",
+   "step": 18,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "ודלמא שאני התם objects to the Response of step 17 (rules 2, 7)",
+   "source": "Beitzah 35b"
+  },
+  {
+   "id": "Beitzah_38_b",
+   "step": 10,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "אביי answers רב ספרא's challenge (steps 7-9)",
+   "source": "Beitzah 38b"
+  },
+  {
+   "id": "Beitzah_38_b",
+   "step": 10,
+   "field": "relationToPreviousStep",
+   "find": "אביי rejects רב ספרא",
+   "replace": "אביי answers רב ספרא",
+   "why": "names the wrong kind of step; now תירוץ",
+   "source": "Beitzah 38b"
+  },
+  {
+   "id": "Beitzah_3_b",
+   "step": 3,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "the רבנן's reply completes רבינא's answer (rule 5)",
+   "source": "Beitzah 3b"
+  },
+  {
+   "id": "Beitzah_4_a",
+   "step": 18,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objects to the proposed reading (Response) of step 17 (rules 2, 7)",
+   "source": "Beitzah 4a"
+  },
+  {
+   "id": "Beitzah_4_a",
+   "step": 18,
+   "field": "title",
+   "find": "Rejected: Everyone",
+   "replace": "Challenge: Everyone",
+   "why": "names the wrong kind of step; now קשיא",
+   "source": "Beitzah 4a"
+  },
+  {
+   "id": "Beitzah_4_a",
+   "step": 18,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the",
+   "replace": "Challenges the",
+   "why": "names the wrong kind of step; now קשיא",
+   "source": "Beitzah 4a"
+  },
+  {
+   "id": "Beitzah_5_b",
+   "step": 13,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "אביי objects to the assumption behind steps 8-12 (an objection, not pushing aside a proof)",
+   "source": "Beitzah 5b"
+  },
+  {
+   "id": "Beitzah_5_b",
+   "step": 13,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the assumption",
+   "replace": "Challenges the assumption",
+   "why": "names the wrong kind of step; now קשיא",
+   "source": "Beitzah 5b"
+  },
+  {
+   "id": "Beitzah_6_b",
+   "step": 15,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "knocks out the defense (וכי תימא) of step 14 (rule 2)",
+   "source": "Beitzah 6b"
+  },
+  {
+   "id": "Beitzah_6_b",
+   "step": 15,
+   "field": "title",
+   "find": "Rejected:",
+   "replace": "Challenge:",
+   "why": "names the wrong kind of step; now קשיא",
+   "source": "Beitzah 6b"
+  },
+  {
+   "id": "Beitzah_6_b",
+   "step": 15,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the defense",
+   "replace": "Challenges the defense",
+   "why": "names the wrong kind of step; now קשיא",
+   "source": "Beitzah 6b"
+  },
+  {
+   "id": "Beitzah_6_b",
+   "step": 17,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "knocks out the defense (וכי תימא) of step 16 (rule 2)",
+   "source": "Beitzah 6b"
+  },
+  {
+   "id": "Beitzah_6_b",
+   "step": 17,
+   "field": "title",
+   "find": "Rejected:",
+   "replace": "Challenge:",
+   "why": "names the wrong kind of step; now קשיא",
+   "source": "Beitzah 6b"
+  },
+  {
+   "id": "Beitzah_6_b",
+   "step": 17,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the reinterpretation",
+   "replace": "Challenges the reinterpretation",
+   "why": "names the wrong kind of step; now קשיא",
+   "source": "Beitzah 6b"
+  },
+  {
+   "id": "Beitzah_7_a",
+   "step": 17,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "אביי's ממאי? דלמא… objects to רב יוסף's answer to מאן תנא (rules 2, 7)",
+   "source": "Beitzah 7a"
+  },
+  {
+   "id": "Beitzah_7_a",
+   "step": 17,
+   "field": "relationToPreviousStep",
+   "find": "Rejects רב יוסף",
+   "replace": "Challenges רב יוסף",
+   "why": "names the wrong kind of step; now קשיא",
+   "source": "Beitzah 7a"
+  }
+ ]
+}
