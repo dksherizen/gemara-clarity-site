@@ -2,7 +2,8 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
-const SITE = path.join(path.dirname(new URL(import.meta.url).pathname), "..", "site");
+import { fileURLToPath, pathToFileURL } from "node:url";
+const SITE = path.join(path.dirname(fileURLToPath(import.meta.url)), "..");
 const read = f => fs.readFileSync(path.join(SITE, f), "utf8");
 
 test("index has title, viewport and local references only", () => {
@@ -17,17 +18,22 @@ test("index has title, viewport and local references only", () => {
 });
 
 test("the eight step types and their colours, and Sefaria as source", () => {
-  const js = read("app.js"), css = read("styles.css");
+  const js = read("app.js"), css = read("gc.css");
   for (const t of ["מימרא","קשיא","תירוץ","ראיה","דחיה","שאלה","תשובה","מסקנא"]) assert.ok(js.includes(`"${t}"`), t);
-  for (const [k, c] of Object.entries({ mimra:"#38bdf8", kashya:"#fb7185", terutz:"#34d399", raaya:"#a78bfa", dechiya:"#fb923c", sheelah:"#fbbf24", teshuvah:"#22d3ee", maskana:"#e879f9" }))
-    assert.ok(css.includes(`--${k}:${c}`), k);
+  // Nov 5 2026: the colours changed with the light theme; every kind must still have a colour in each theme
+  for (const k of ["mimra","kashya","terutz","raaya","dechiya","sheelah","teshuvah","maskana"]) {
+    for (const theme of ["body.theme-dark", "body.theme-light"]) { const block = css.slice(css.indexOf(theme + "{"), css.indexOf("}", css.indexOf(theme + "{"))); assert.match(block, new RegExp(`--${k}:#[0-9a-f]{6}`), `${k} in ${theme}`); }
+  }
   assert.match(js, /https:\/\/www\.sefaria\.org/);
 });
 
 test("no secrets and no writes to the original cloud project", () => {
   const all = fs.readdirSync(SITE).filter(f => /\.(js|html|json)$/.test(f)).map(read).join("\n");
   assert.doesNotMatch(all, /sk-[A-Za-z0-9]{20,}/, "no OpenAI key");
-  assert.doesNotMatch(all, /AIza[0-9A-Za-z_\-]{20,}/, "no Firebase key");
+  // the Firebase *web* config key is public by design (it identifies the project; Firestore rules protect the data). Any other Google key is not.
+  const PUBLIC_WEB_KEY = "AIzaSyAFJ4rN7kfZ5cTZEsTxIatjnx5DDfIXg08";
+  assert.doesNotMatch(all.split(PUBLIC_WEB_KEY).join(""), /AIza[0-9A-Za-z_\-]{20,}/, "no other Google/Firebase key");
+  assert.doesNotMatch(all, /-----BEGIN [A-Z ]*PRIVATE KEY/, "no private key");
   assert.doesNotMatch(all, /ADMIN_PASSWORD|gemaraclarity"/);
   assert.doesNotMatch(all, /method:\s*"(PATCH|PUT|DELETE)"/);
   const fsCalls = [...all.matchAll(/FS_BASE[^;\n]*/g)].map(m => m[0]).join("\n");
@@ -37,7 +43,7 @@ test("no secrets and no writes to the original cloud project", () => {
 test("no client-side AI: no key entry, no ai.js, missing amudim say coming soon", () => {
   const all = fs.readdirSync(SITE).filter(f => /\.(js|html|json)$/.test(f)).map(read).join("\n");
   assert.ok(!fs.existsSync(path.join(SITE, "ai.js")), "ai.js removed");
-  assert.doesNotMatch(all, /ai\.js|api\.openai\.com|openrouter|apiKey|keyInput|makeBtn/i);
+  assert.doesNotMatch(all.replace(/apiKey: "AIza[^"]*"/g, ""), /ai\.js|api\.openai\.com|openrouter|apiKey|keyInput|makeBtn/i); // the Firebase web config's apiKey field is fine
   assert.doesNotMatch(read("sw.js"), /"ai\.js"/, "service worker must not precache a removed file");
   assert.match(read("app.js"), /breakdown coming soon/);
 });
@@ -50,12 +56,12 @@ test("PWA files exist and parse", () => {
 });
 
 test("no placeholder text left", () => {
-  const all = ["index.html","app.js","styles.css"].map(read).join("\n");
+  const all = ["index.html","app.js","gc.css"].map(read).join("\n");
   assert.doesNotMatch(all, /lorem ipsum|TODO|FIXME|__MAS__/i);
 });
 
 test("Mishnah badge: steps in the Mishnah portion are marked, Gemara quotes of it are not", async () => {
-  const { segmentFlags, stepFlags, endState, segmentMarker } = await import(path.join(SITE, "mishnah.js"));
+  const { segmentFlags, stepFlags, endState, segmentMarker } = await import(pathToFileURL(path.join(SITE, "mishnah.js")).href);
   const segs = [
     "וְאָמַר רַבִּי יוֹחָנָן: הֲלָכָה כְּרַבִּי יְהוֹשֻׁעַ.",                       // Gemara carried over from the previous amud
     "<big><strong>מַתְנִי׳</strong></big> מֵאֵימָתַי קוֹרִין אֶת שְׁמַע בְּשַׁחֲרִית?",  // Mishnah opens
@@ -77,7 +83,7 @@ test("Mishnah badge: steps in the Mishnah portion are marked, Gemara quotes of i
   ];
   assert.deepEqual(stepFlags(steps, segs, flags), [false, true, false]);
   assert.deepEqual(stepFlags(steps, segs, [false, false, false, false]), [false, false, false], "no Mishnah, no badge");
-  const js = read("app.js"), css = read("styles.css");
+  const js = read("app.js"), css = read("gc.css");
   assert.match(js, /from "\.\/mishnah\.js"/);
   assert.match(js, /lg t-mishnah/, "the Mishnah badge is in the key");
   assert.match(css, /--mishnah:#/);
@@ -122,7 +128,7 @@ test("perakim.json: every masechet in the list has its perakim, in order, coveri
 });
 
 test("picker groups by perek with a jump bar, the daf header names the perek, and it works offline", () => {
-  const js = read("app.js"), css = read("styles.css");
+  const js = read("app.js"), css = read("gc.css");
   assert.match(js, /fetch\("data\/perakim\.json"\)/);
   assert.match(js, /class="pk-jump"/); assert.match(js, /data-jump/); assert.match(js, /id="pk-\$\{p\.n\}"/);
   assert.match(js, /id="perekSlot"/); assert.match(js, /perekLineHtml\(c\.m, c\.i\)/);
@@ -131,7 +137,7 @@ test("picker groups by perek with a jump bar, the daf header names the perek, an
 });
 
 test("perek view is always on: no By perek / All dapim switch, and the home library groups by perek too", () => {
-  const js = read("app.js"), css = read("styles.css");
+  const js = read("app.js"), css = read("gc.css");
   assert.doesNotMatch(js, />By perek</); assert.doesNotMatch(js, />All dapim</);
   assert.doesNotMatch(js, /pk-mode/); assert.doesNotMatch(js, /data-mode/); assert.doesNotMatch(css, /\.pk-mode/);
   assert.doesNotMatch(js, /settings\.byPerek\s*(!==|===|=[^=])/, "the old switch setting is never read or written");

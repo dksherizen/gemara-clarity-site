@@ -1,8 +1,9 @@
 {
   "name": "gemara-clarity-site",
   "compatibility_date": "2025-10-01",
-  // Tiny Worker that only does host redirects (.com / www -> gemaraclarity.org); see _worker/index.js.
+  // The Worker (see _worker/index.js): host redirects (.com / www -> gemaraclarity.org), the Google sign-in proxy, the course host and course sign-in,
+  // and redirects from other spellings (/berachos/2a/) to the real page address.
   "main": "_worker/index.js",
-  // run_worker_first: the redirect must run before any static asset is matched.
-  "assets": { "directory": "./", "binding": "ASSETS", "run_worker_first": true }
+  // run_worker_first: the redirects must run before any static asset is matched. not_found_handling: unknown addresses get /404.html.
+  "assets": { "directory": "./", "binding": "ASSETS", "run_worker_first": true, "not_found_handling": "404-page" }
 }

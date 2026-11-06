@@ -338,11 +338,27 @@ async function loadText(m, i){
   const flat = v => !v ? [] : typeof v === "string" ? [v] : Array.isArray(v) ? v.flatMap(flat) : [];
   return { he: flat(j.he), en: flat(j.text), heRef: j.heRef, version: j.versionTitle, heVersion: j.heVersionTitle, license: j.license };
 }
+// Nov 5 2026: the Daf Yomi worked out here, from the cycle that began on Jan 5 2020 (2,711 days a cycle), used whenever Sefaria's
+// calendar has no answer, e.g. on June 8 2027, the first day of the next cycle, when its calendar was still empty.
+// Checked against Sefaria's calendar on 20 dates from 2020 to 2027, including the Kinnim/Tamid/Middos days.
+const DY_TABLE = [["Berakhot",64],["Shabbat",157],["Eruvin",105],["Pesachim",121],["Shekalim",22],["Yoma",88],["Sukkah",56],["Beitzah",40],["Rosh_Hashanah",35],["Taanit",31],["Megillah",32],["Moed_Katan",29],["Chagigah",27],["Yevamot",122],["Ketubot",112],["Nedarim",91],["Nazir",66],["Sotah",49],["Gittin",90],["Kiddushin",82],["Bava_Kamma",119],["Bava_Metzia",119],["Bava_Batra",176],["Sanhedrin",113],["Makkot",24],["Shevuot",49],["Avodah_Zarah",76],["Horayot",14],["Zevachim",120],["Menachot",110],["Chullin",142],["Bekhorot",61],["Arakhin",34],["Temurah",34],["Keritot",28],["Meilah",22],["Kinnim",4],["Tamid",9],["Middot",5],["Niddah",73]];
+const DY_START = { Kinnim: 22, Tamid: 25, Middot: 33 };
+function dafYomiLocal(d){
+  const total = DY_TABLE.reduce((n, [, c]) => n + c - 1, 0);
+  let n = Math.round((Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()) - Date.UTC(2020, 0, 5)) / 864e5);
+  n = ((n % total) + total) % total;
+  for (const [m, c] of DY_TABLE) {
+    if (n < c - 1) { const daf = (DY_START[m] ?? 1) + n + 1; return masInfo(m) ? { m, i: Math.max(idxOf(daf, "a"), masInfo(m)[2]) } : { m: null }; }
+    n -= c - 1;
+  }
+  return null;
+}
 async function dafYomi(){
   const d = new Date(); const key = `daf-yomi-${d.getFullYear()}-${d.getMonth()+1}-${d.getDate()}`;
-  const j = await cachedJSON(`${SEFARIA}/api/calendars?year=${d.getFullYear()}&month=${d.getMonth()+1}&day=${d.getDate()}`, { ttl: 12*3600e3, key: "/" + key, timeout: 8000 });
-  const item = (j.calendar_items||[]).find(c => c.title && c.title.en === "Daf Yomi");
-  if (!item) return null;
+  let j = null;
+  try { j = await cachedJSON(`${SEFARIA}/api/calendars?year=${d.getFullYear()}&month=${d.getMonth()+1}&day=${d.getDate()}`, { ttl: 12*3600e3, key: "/" + key, timeout: 8000 }); } catch {}
+  const item = ((j && j.calendar_items)||[]).find(c => c.title && c.title.en === "Daf Yomi");
+  if (!item) return dafYomiLocal(d);
   // Daf Yomi fix (dafyomi-trace.txt): accept an amud letter ("Meilah 22a") and handle Mishnah-only days (Kinnim, Middot), which
   // are not masechtos in the app: the tile says so in plain text, with no link (English links stay off), instead of "Unavailable offline"
   const mm = typeof item.ref === "string" && item.ref.match(/^(.*) (\d+)([ab])?$/);
@@ -392,11 +408,16 @@ function openSheet(title, html, onMount){
   $("#sheetTitle").textContent = title; fresh.innerHTML = html;
   $("#sheet").hidden = false; $("#backdrop").hidden = false; document.body.style.overflow = "hidden";
   openSheet.last = document.activeElement;
+  // Nov 5 2026: an open sheet gets its own history entry, so the phone's Back button closes the sheet instead of leaving the daf
+  if (!(history.state && history.state.gcSheet)) { try { history.pushState({ gcSheet: 1 }, ""); openSheet.url = location.href; } catch {} }
   if (!openSheet.inert) { openSheet.inert = [...document.body.children].filter(el => !["sheet", "backdrop", "toast", "disc"].includes(el.id) && !el.hasAttribute("inert")); openSheet.inert.forEach(el => el.setAttribute("inert", "")); } // v99r: the page behind the open sheet takes no focus
   onMount && onMount($("#sheetBody"));
   setTimeout(() => { const f = $("#sheetBody [autofocus]") || $("#sheetClose"); f && f.focus(); }, 30);
 }
-function closeSheet(){ if ($("#sheet").hidden) return; $("#sheet").hidden = true; $("#backdrop").hidden = true; document.body.style.overflow = ""; if (openSheet.inert) { openSheet.inert.forEach(el => el.removeAttribute("inert")); openSheet.inert = null; } try { openSheet.last && openSheet.last.focus && openSheet.last.focus({ preventScroll: true }); } catch {} }
+addEventListener("popstate", () => { if (closeSheet.skip) { closeSheet.skip = false; return; } if (!$("#sheet").hidden) closeSheet(true); });
+function closeSheet(viaBack){ if ($("#sheet").hidden) return;
+  if (!viaBack && history.state && history.state.gcSheet) setTimeout(() => { if (history.state && history.state.gcSheet && location.href === openSheet.url) { closeSheet.skip = true; history.back(); } }, 0); // drop the sheet's history entry unless closing it navigated somewhere
+  $("#sheet").hidden = true; $("#backdrop").hidden = true; document.body.style.overflow = ""; if (openSheet.inert) { openSheet.inert.forEach(el => el.removeAttribute("inert")); openSheet.inert = null; } try { openSheet.last && openSheet.last.focus && openSheet.last.focus({ preventScroll: true }); } catch {} }
 function sheetTab(e){ // v99r: while the sheet is open, Tab on its last control goes to the first and Shift-Tab on its first goes to the last
   if (document.querySelector("#pasukPop, #disc")) return; // those keep their own focus rules
   const s = $("#sheet"), a = document.activeElement;
@@ -1103,6 +1124,7 @@ function renderHome(){
   const links = (he, en, items) => `<section class="h5-sec"><h2 class="section-h"><span lang="he">${he}</span> ${en}</h2><p class="h4-links">${items}</p></section>`;
   const amudLink = id => { const p = parseId(id); return masInfo(p.m) ? `<a href="${hashFor(p.m, p.i)}"><span class="he" lang="he">${heLabel(p.m, p.i)}</span> ${label(p.m, p.i)}</a>` : ""; };
   $("#view").innerHTML = `<div class="homewrap h5">
+    ${hasLast ? "" : `<header class="h5-hero"><h1>Every sugya in Shas, step by step</h1><p>The Aramaic beside English, phrase by phrase, with each question, answer and proof marked, so you can follow the argument. Free, no ads, works offline.</p></header>`}
     <section class="amud" id="homeAmud" aria-busy="true">
       <p class="amud-k" id="yomiTile"><span lang="he">דף היומי</span> <span id="yomiV">Today’s daf</span><span id="yomiS" class="s"></span></p>
       <div class="amud-page" id="amudPage"><div class="amud-wait">&nbsp;</div></div>
@@ -1460,7 +1482,7 @@ function wireDaf(){
   const c = current;
   wirePerek();
   $("#bmBtn").onclick = () => { let b = bookmarks(); b = b.includes(c.id) ? b.filter(x => x !== c.id) : [c.id, ...b]; saveJSON(LS.bookmarks, b); toast(b.includes(c.id) ? "Bookmarked" : "Bookmark removed"); renderDaf(); };
-  $("#shareBtn").onclick = async () => { const url = location.href; try { if (navigator.share) await navigator.share({ title: `${label(c.m, c.i)} · Gemara Clarity`, url }); else { await navigator.clipboard.writeText(url); toast("Link copied"); } } catch {} };
+  $("#shareBtn").onclick = async () => { const { daf, amud } = dafOf(c.i), url = `https://gemaraclarity.org/${c.m.toLowerCase().replace(/_/g, "-")}/${daf}${amud}/`; /* Nov 5 2026: share the daf's own page, whose link preview shows the daf */ try { if (navigator.share) await navigator.share({ title: `${label(c.m, c.i)} · Gemara Clarity`, url }); else { await navigator.clipboard.writeText(url); toast("Link copied"); } } catch {} };
   // v4 (Oct 29 2026): print-to-PDF removed at David's request
   $$("[data-tab]").forEach(b => b.onclick = () => { c.tab = b.dataset.tab; renderDaf(); });
   const ovb = $("#ovBtn"); if (ovb) ovb.onclick = () => {
@@ -1803,7 +1825,7 @@ window.addEventListener("hashchange", () => { if (swReload()) return; Promise.re
 $("#homeBtn").onclick = () => { location.hash = "#/"; };
 $("#refBtn").onclick = () => openPicker();
 function openSettingsAll(){ openSettings(); if (current && current.am) amSettingsSection($("#sheetBody")); } $("#settingsBtn").onclick = e => acct.toggleMenu(e); // v106-acct: the corner button opens the profile menu; its Settings row opens openSettingsAll
-$("#sheetClose").onclick = closeSheet; $("#backdrop").onclick = closeSheet;
+$("#sheetClose").onclick = () => closeSheet(); $("#backdrop").onclick = () => closeSheet();
 $("#flowBtn").onclick = () => { if (current && current.analysis) openSheet(`The steps of ${label(current.m, current.i)}`, flowHtml(current.analysis.steps), b => { const cur = $$(".step.cur")[0]; if (cur) { const f = $(`.fnode[data-jump="${cur.dataset.n}"]`, b); f && f.classList.add("cur"); f && f.scrollIntoView({ block: "center" }); } b.onclick = e => { const j = e.target.closest("[data-jump]"); if (j) { e.preventDefault(); jumpTo(+j.dataset.jump); } }; }); };
 // v4: moving between steps — swipe, a tap on the left/right edge, the arrow keys (or j/k), or the one arrow at the foot of the step
 function stepBy(d){ if (!paged() || !current || !current.analysis) return false; const c = +(($(".step.cur") || {}).dataset?.n || 1), t = current.analysis.steps.length, n = c + d; if (n < 1 || n > t) return false; jumpTo(n); return true; }

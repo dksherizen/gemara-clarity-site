@@ -21,6 +21,24 @@ const REDIRECT_HOSTS = new Set([
   "www.gemaraclarity.com",
   "www.gemaraclarity.org",
 ]);
+// Nov 5 2026: the spellings the site itself shows (and other common ones) redirect to the real page address,
+// so /berachos/2a/, /Berakhot/2a and /bava_metzia/2a all reach /berakhot/2a/ instead of a "not found" page.
+const ALIASES = { berachos: "berakhot", berachot: "berakhot", brachos: "berakhot", brachot: "berakhot", shabbos: "shabbat", shabbath: "shabbat",
+  succah: "sukkah", sukka: "sukkah", taanis: "taanit", yevamos: "yevamot", kesubos: "ketubot", kesuvos: "ketubot", ketuvot: "ketubot",
+  "bava-basra": "bava-batra", "baba-batra": "bava-batra", "baba-kamma": "bava-kamma", "baba-metzia": "bava-metzia", makkos: "makkot",
+  shevuos: "shevuot", horayos: "horayot", menachos: "menachot", bechoros: "bekhorot", bechorot: "bekhorot", arachin: "arakhin",
+  kereisos: "keritot", kerisos: "keritot", krisos: "keritot", meilah: "meilah", "me-ilah": "meilah", "avoda-zara": "avodah-zarah",
+  "moed-katan": "moed-katan", "rosh-hashana": "rosh-hashanah", eiruvin: "eruvin", beitza: "beitzah", megila: "megillah", chagiga: "chagigah",
+  sota: "sotah", gitin: "gittin", kidushin: "kiddushin", zevachim: "zevachim", chulin: "chullin", nida: "niddah", temura: "temurah" };
+export function canonicalPath(pathname) {
+  const m = pathname.match(/^\/([^/]+)(\/(\d+[abAB])?\/?)?$/);
+  if (!m) return null;
+  let mas = decodeURIComponent(m[1]).toLowerCase().replace(/['’]/g, "").replace(/[_\s]+/g, "-");
+  mas = ALIASES[mas] || mas;
+  const daf = m[3] ? m[3].toLowerCase() : "";
+  const out = `/${mas}/${daf ? daf + "/" : ""}`;
+  return out === pathname ? null : out;
+}
 const AUTH_ORIGIN = "https://gemara-clarity-accounts.firebaseapp.com";
 const AUTH_PREFIXES = ["/__/auth/", "/__/firebase/"];
 
@@ -43,6 +61,11 @@ export default {
     if (host === COURSE_HOST) return serveCourse(request, url, env);
     if (inCourseDir(url.pathname)) return hideCourseDir(request, url, env);
     if (url.pathname === ASSERTION_PATH || url.pathname === JWKS_PATH) return courseLink(request, url, env);
-    return env.ASSETS.fetch(request);
+    const res = await env.ASSETS.fetch(request);
+    if (res.status === 404 && (request.method === "GET" || request.method === "HEAD")) {
+      const fixed = canonicalPath(url.pathname);
+      if (fixed) { const probe = await env.ASSETS.fetch(new Request(new URL(fixed, url), { method: "HEAD" })); if (probe.ok) return Response.redirect(new URL(fixed + url.search, url).toString(), 301); }
+    }
+    return res;
   },
 };

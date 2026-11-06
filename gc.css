@@ -1947,3 +1947,12 @@ body.theme-light .wB-slip{background:#fff}
 .explain .report{margin:16px 0 2px;font:400 14px/1.4 var(--ui-font)}
 .explain .report a,.note-ai a{color:var(--muted);text-decoration:underline;text-underline-offset:2px}
 .explain .report a:hover,.note-ai a:hover{color:var(--ink)}
+/* Nov 5 2026: on phones the Bookmark and Share labels show, so their buttons must grow to fit them (they ran together as "BookmarkShare") */
+@media (max-width:640px){.headbar .headactions{gap:14px}.headbar .headactions .btn{width:auto;gap:5px}}
+/* Nov 5 2026: a one-line "what this is" for first-time visitors (hidden once they have history) */
+.h5-hero{max-width:var(--max);margin:6px auto 18px;padding:0 2px}
+.h5-hero h1{margin:0 0 6px;font:600 24px/1.25 var(--ui-font);color:var(--ink)}
+.h5-hero p{margin:0;font:400 16px/1.5 var(--ui-font);color:var(--muted)}
+/* Nov 5 2026: the A-/A+ text size (Settings, 85-170%) now enlarges the explanations too, not only the Aramaic and English lines.
+   The phrase rows already scale through --he-size/--en-size; these blocks are zoomed by the same factor. */
+.stitle,.ssum,.explain,.dafhead .topic,.dafhead .overview,.note-ai,.stepnav,.srel,.h5-hero{zoom:var(--scale)}

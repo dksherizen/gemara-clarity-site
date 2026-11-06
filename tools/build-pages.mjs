@@ -148,19 +148,27 @@ const PRIVACY = textPage("privacy/index.html", "Privacy | Gemara Clarity", "What
 <h2>Contact</h2>
 <p>Questions or requests about your data: <a href="mailto:${CONTACT}">${CONTACT}</a>.</p>`);
 
+// Served by Cloudflare for any address that doesn't exist (wrangler.jsonc: not_found_handling "404-page"). Links are absolute, since it can appear at any depth.
+const NOT_FOUND = ["404.html", head({ title: "Page not found | Gemara Clarity", desc: "This page doesn't exist.", url: `${SITE}/`, type: "website" }).replace("<head>", '<head><meta name="robots" content="noindex">') + `<body>${HEADER}<main>
+<h1>Page not found</h1>
+<p>There's no page at this address. It may have been mistyped.</p>
+<p><a class="btn" href="/">Open Gemara Clarity</a></p>
+<p>To find an amud, open Gemara Clarity and tap <b>Choose a daf</b>, or browse <a href="/learn/">all masechtos</a>. Page addresses look like <a href="/berakhot/2a/">gemaraclarity.org/berakhot/2a</a>.</p>
+</main>${FOOTER()}</body></html>`];
+
 // ---- build ----
 const out = new Map();
 ids.forEach((a, i) => out.set(`${slug(a.m)}/${a.daf}${a.amud}/index.html`, amudPage(a, ids[i - 1], ids[i + 1])));
 for (const [m] of MAS) { const f = `${slug(m)}/index.html`; if (fs.existsSync(path.join(ROOT, f))) out.set(f, restyle(f)); }
 out.set("learn/index.html", restyle("learn/index.html"));
-for (const [f, html] of [ABOUT, PRIVACY]) out.set(f, html);
+for (const [f, html] of [ABOUT, PRIVACY, NOT_FOUND]) out.set(f, html);
 const urls = [`${SITE}/`, `${SITE}/learn/`, `${SITE}/about/`, ...MAS.filter(([m]) => fs.existsSync(path.join(ROOT, slug(m), "index.html"))).map(([m]) => `${SITE}/${slug(m)}/`), ...ids.map(a => `${SITE}/${slug(a.m)}/${a.daf}${a.amud}/`)];
 out.set("sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map(u => `<url><loc>${u}</loc></url>`).join("\n")}\n</urlset>\n`);
 
 let changed = 0;
 for (const [f, html] of out) {
   const p = path.join(ROOT, f), cur = fs.existsSync(p) ? fs.readFileSync(p, "utf8") : null;
-  if (cur === html) continue;
+  if (cur !== null && cur.replace(/\r\n/g, "\n") === html) continue; // Windows checkouts may hold CRLF line endings
   changed++;
   if (CHECK) { if (changed <= 20) console.log("out of date:", f); continue; }
   fs.mkdirSync(path.dirname(p), { recursive: true });

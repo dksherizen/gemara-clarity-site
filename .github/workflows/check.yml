@@ -1,0 +1,16 @@
+# Runs the site checks on every push and pull request. A red X on the commit means something is broken:
+# open the run to see the plain-English list of problems. (Cloudflare still deploys on push, so fix a red X right away.)
+name: Check the site
+on: [push, pull_request]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Site checks (scripts, data, Classics, offline list, search pages)
+        run: node tools/check-site.mjs
+      - name: Tests
+        run: node --test test/

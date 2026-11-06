@@ -1,0 +1,68 @@
+# Gemara Clarity runbook
+
+How the site works and how to change it safely. Written Nov 5 2026 for David and for anyone (person or AI) who helps him.
+
+## What runs where
+
+| Piece | Where | Notes |
+|---|---|---|
+| Code and content | GitHub: `dksherizen/gemara-clarity-site`, branch `main` | **A push to `main` goes live within about 2 minutes.** |
+| Hosting | Cloudflare (Workers + static assets), account owned by David | `wrangler.jsonc` configures it. Domains: gemaraclarity.org (main), gemaraclarity.com and www (both redirect). Paid plan (confirm that Workers itself is on the paid plan; on Workers Free a very busy day could hit the 100,000-requests-a-day limit). |
+| Visitor numbers | Cloudflare dashboard › Web Analytics | Cookie-free. |
+| Sign-in and synced data | Firebase project `gemara-clarity-accounts` | Google sign-in only. Each user's data is one document, `users/{uid}`. The Firestore rules must allow a user to read/write only their own document. |
+| The Gemara text | Sefaria's public API, fetched by the browser | Credited on every page (William Davidson Edition, CC BY-NC 4.0). |
+| Old original app | gemara-clarity.netlify.app, Firebase project `gemara-clarity` | Left up on purpose. The new site no longer reads from it. |
+| Course site | course.gemaraclarity.org | The Worker passes it through to the course's own site on Tab hosting (`_worker/course-host.js`). Course sign-in uses two Worker secrets: `COURSE_ASSERTION_PRIVATE_JWK` and `COURSE_ASSERTION_EXTRA_PUBLIC_JWKS`. |
+| Contact | dksherizen@gmail.com | Used by "Report a mistake", /about/ and /privacy/. To change it, edit `CONTACT` in `app.js` and in `tools/build-pages.mjs`, then rebuild the pages. |
+
+## The folders
+
+- `index.html`, `app.js`, `gc.css`, `acct.js`, `ameilus/`, `mywords.js`, `mishnah.js`: the app.
+- `sw.js`: the offline worker. **When you change any app file, raise the version string `V` at the top**, so phones pick up the change.
+- `data/b/<Masechet>_<daf>_<a|b>.json`: one AI-written breakdown per amud. `data/b/index.json` lists them and holds the data version.
+- `data/classics.json`: the 113 Classics.
+- `<masechet>/<daf>/index.html`, `/learn/`, `/about/`, `/privacy/`, `404.html`, `sitemap.xml`: the pages built for search engines. **Never edit these by hand.** They come from `tools/build-pages.mjs`.
+- `_worker/`: the Cloudflare Worker (domain redirects, sign-in proxy, course, spelling redirects such as /berachos/2a/ to /berakhot/2a/).
+- `tools/`: the tools below. `docs/`: this file and the content-repair log. Neither is served to visitors (`.assetsignore`).
+
+## Everyday jobs
+
+**See the site on your computer before it goes live**
+
+```
+python -m http.server 8765
+```
+Then open http://localhost:8765. (Sign-in won't work there.)
+
+**Fix a mistake in the content**
+
+1. Write the fix as a small JSON file in `tools/repairs/`. Copy the format of `tools/repairs/2026-11-05-review.json`. Each repair gives the amud, the step, the field, the exact text that is there now, the new text, what was wrong, and the source.
+2. `node tools/apply-repairs.mjs tools/repairs/<file>.json --dry` checks that every repair still matches.
+3. `node tools/apply-repairs.mjs tools/repairs/<file>.json` applies them. It also raises the data version (so phones fetch the fix), logs each change in `docs/content-repairs.md`, and rebuilds the search pages.
+4. Fix **every** field that says the wrong thing: the summary people read first, the explanation, the overview. A fix to the hidden explanation alone leaves the old error on screen.
+
+**Check everything before it goes live**
+
+```
+node tools/check-site.mjs
+node --test test/
+```
+On this computer a push runs the check automatically and stops if something is broken (`.githooks/pre-push`, enabled with `git config core.hooksPath .githooks`). GitHub also runs it after every push: a red X on the commit means look now, because Cloudflare will already have deployed it.
+
+**Put changes live:** commit and push to `main`.
+
+**Undo the last change on the live site:** `git revert HEAD` and push. The previous version is live again within about 2 minutes.
+
+## Rules that keep it safe
+
+- Content changes go through `tools/apply-repairs.mjs`, never by hand-editing a JSON file. A hand edit skips the version raise and the search-page rebuild.
+- Any change to an app file means raising `V` in `sw.js`.
+- Keep the AI notice (first visit, every amud, every search page). Keep the Sefaria credit (its licence requires it).
+- Don't add the dedication back unless David asks. He chose to remove it on Oct 12 2026.
+
+## Open items (Nov 5 2026)
+
+- Confirm the Cloudflare Workers plan. Verify gemaraclarity.org in Google Search Console and Bing Webmaster Tools, and submit `https://gemaraclarity.org/sitemap.xml`. Check the Firestore rules for `gemara-clarity-accounts` in the Firebase console.
+- About 20 more Classics need checking against the Gemara. All 113 summaries are still marked "not approved wording".
+- A rav should review the corrections in `docs/content-repairs.md` and the delicate passages.
+- Weekly Daf Yomi checks: Daf Yomi stays in Kodashim and Taharos until June 2027, where the AI makes the most mistakes.

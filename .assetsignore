@@ -7,3 +7,4 @@ test
 _worker
 tools
 docs
+.githooks

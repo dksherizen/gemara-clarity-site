@@ -1,0 +1,4 @@
+#!/bin/sh
+# Blocks a push from this computer when the site checks fail, because a push to main goes live at once.
+# Turned on per copy of the repo with:  git config core.hooksPath .githooks
+node tools/check-site.mjs || { echo; echo "Push stopped: fix the problems above first."; exit 1; }
