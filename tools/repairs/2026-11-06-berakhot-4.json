@@ -1,0 +1,222 @@
+{
+ "name": "berakhot-4",
+ "approved": "Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.",
+ "repairs": [
+  {
+   "id": "Berakhot_40_a",
+   "step": 13,
+   "field": "deeperAnalysis",
+   "find": "drinking plenty of water while eating protects the intestines",
+   "replace": "drinking plenty of water after eating protects the intestines",
+   "why": "Rashi explains המקפה as drinking a lot of water after the meal, until the food floats, not while eating.",
+   "source": "Berakhot 40a הַמַּקְפֶּה אֲכִילָתוֹ בְּמַיִם; Rashi s.v. המקפה אכילתו במים: שותה מים הרבה אחר אכילתו"
+  },
+  {
+   "id": "Berakhot_40_a",
+   "step": 41,
+   "field": "hebrewStepName",
+   "find": "מימרא",
+   "replace": "ראיה",
+   "why": "This is the middle of the ברייתא brought (דתניא) as the proof that רבי יהודה calls wheat a tree; it opens as ראיה in step 40, and a continuation takes the first half's label.",
+   "source": "Berakhot 40a דְּתַנְיָא: אִילָן שֶׁאָכַל מִמֶּנּוּ אָדָם הָרִאשׁוֹן; rulebook rule 5"
+  },
+  {
+   "id": "Berakhot_40_a",
+   "step": 42,
+   "field": "hebrewStepName",
+   "find": "מימרא",
+   "replace": "ראיה",
+   "why": "רבי יהודה's line in the ברייתא is the actual proof for step 39 (the step itself says 'This completes the proof'), yet it is labelled Statement.",
+   "source": "Berakhot 40a רַבִּי יְהוּדָה אוֹמֵר: חִטָּה הָיְתָה; rulebook rule 5"
+  },
+  {
+   "id": "Berakhot_40_b",
+   "step": 1,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "This is the second half of the קא משמע לן answer to the פשיטא challenge, which ends 40a as תירוץ (step 43); the second half takes the first half's label across the amud break.",
+   "source": "Berakhot 40a-b הֵיכָא דְּכִי שָׁקְלַתְּ לֵיהּ לְפֵירֵי... אֲבָל הֵיכָא...; rulebook rule 5"
+  },
+  {
+   "id": "Berakhot_41_a",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "והתניא knocking out the suggested answer of step 7 (וכי תימא) is an objection to an answer, which the rulebook labels Challenge, not Rejection.",
+   "source": "Berakhot 41a וְכִי תֵּימָא: הָכִי נָמֵי דְּלֵית לֵיהּ, וְהָתַנְיָא; rulebook rule 2"
+  },
+  {
+   "id": "Berakhot_41_a",
+   "step": 8,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the suggestion of step 7.",
+   "replace": "Challenges the suggestion of step 7.",
+   "why": "Matches the corrected label (Challenge).",
+   "source": "rulebook rule 2"
+  },
+  {
+   "id": "Berakhot_41_a",
+   "step": 8,
+   "field": "whatsHappening",
+   "find": "The גמרא rejects the suggestion of step 7.",
+   "replace": "The גמרא challenges the suggestion of step 7 with a ברייתא.",
+   "why": "Matches the corrected label (Challenge).",
+   "source": "rulebook rule 2"
+  },
+  {
+   "id": "Berakhot_41_b",
+   "step": 1,
+   "field": "hebrewStepName",
+   "find": "מימרא",
+   "replace": "ראיה",
+   "why": "שיעורן כרמונים is the end of the sentence begun in 41a step 18 (labelled ראיה, ״רִמּוֹן״ כְּדִתְנַן: כׇּל כְּלֵי בַּעֲלֵי בָתִּים); the second half takes the first half's label across the amud break.",
+   "source": "Berakhot 41a-b ״רִמּוֹן״, כְּדִתְנַן: כׇּל כְּלֵי בַּעֲלֵי בָתִּים... שִׁיעוּרָן כְּרִמּוֹנִים; rulebook rule 5"
+  },
+  {
+   "id": "Berakhot_42_a",
+   "step": 3,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "Rav Nachman objects to Rav Huna's conduct; nothing here pushes aside a proof, so by the rulebook (objection to an action/position, also inside a story) it is a Challenge, not a Rejection.",
+   "source": "Berakhot 42a: אמר ליה רב נחמן: עדי כפנא; docs/step-labels.md rules 2-3"
+  },
+  {
+   "id": "Berakhot_42_a",
+   "step": 3,
+   "field": "relationToPreviousStep",
+   "find": "Rejects רב הונא's behavior in step 2.",
+   "replace": "Challenges רב הונא's behavior in step 2.",
+   "why": "Matches the corrected label (Challenge, not Rejection).",
+   "source": "Berakhot 42a: עדי כפנא"
+  },
+  {
+   "id": "Berakhot_42_b",
+   "step": 21,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "The students being unable to answer is a line in the middle of the story; the question is answered right after on 43a by the elder (כהסבו דמי), so it is not where the discussion lands.",
+   "source": "Berakhot 42b-43a: לא הוה בידייהו... עד דאתא ההוא סבא... ושני להו; docs/step-labels.md rules 3, 5"
+  },
+  {
+   "id": "Berakhot_43_b",
+   "step": 26,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "מסקנא",
+   "why": "ולא היא knocks out Rav Pappa's answer (a Resolution), not a proof, so it cannot be a Rejection; it ends the thread with the challenge standing and the ruling of the decider intact, so it is the Conclusion.",
+   "source": "Berakhot 43b: ולא היא, לאשתמוטי נפשיה הוא דעבד; Rashi s.v. ולא היא; docs/step-labels.md rules 2, 4"
+  },
+  {
+   "id": "Berakhot_43_b",
+   "step": 26,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the answer of step 25.",
+   "replace": "Overturns the answer of step 25 and closes the story.",
+   "why": "Matches the corrected label (Conclusion, not Rejection).",
+   "source": "Berakhot 43b: ולא היא"
+  },
+  {
+   "id": "Berakhot_44_b",
+   "step": 37,
+   "field": "deeperAnalysis",
+   "find": "having it pass through your house, meaning eating it regularly, is harmful.",
+   "replace": "according to רש״י the 'house' is the belly of the person who eats it, so turnip passing through it is harmful.",
+   "why": "Rashi explains 'the house' as the eater's belly (לכרס האוכל לפת), not a household where turnip is eaten often.",
+   "source": "Berakhot 44b אוי לו לבית שהלפת עוברת בתוכו; Rashi s.v. אוי לבית: לכרס האוכל לפת"
+  },
+  {
+   "id": "Berakhot_44_b",
+   "step": 37,
+   "field": "mimraCoreRuling",
+   "find": "Turnip is harmful to the home where it is eaten.",
+   "replace": "Turnip is harmful to the stomach of the one who eats it.",
+   "why": "Same error as in deeperAnalysis: per Rashi the 'house' is the eater's belly.",
+   "source": "Rashi Berakhot 44b s.v. אוי לבית"
+  },
+  {
+   "id": "Berakhot_44_b",
+   "step": 37,
+   "field": "phrases.2.notes",
+   "find": "Meaning a home where turnip is often eaten.",
+   "replace": "רש״י: the 'house' is the belly of the one who eats turnip.",
+   "why": "The phrase note contradicts Rashi, who reads 'house' as the eater's belly.",
+   "source": "Rashi Berakhot 44b s.v. אוי לבית: לכרס האוכל לפת"
+  },
+  {
+   "id": "Berakhot_44_a",
+   "step": 31,
+   "field": "hebrewStepName",
+   "find": "תירוץ",
+   "replace": "מימרא",
+   "why": "רב עמרם's 'ולא פליגי' reconciles two rulings; nothing was challenged before it, so it is not a Resolution (same ruling as the earlier ולא פליגי repair).",
+   "source": "Berakhot 44a אמר רב עמרם ולא פליגי הא לן והא להו; docs/step-labels.md"
+  },
+  {
+   "id": "Berakhot_45_b",
+   "step": 35,
+   "field": "hebrewStepName",
+   "find": "תירוץ",
+   "replace": "מימרא",
+   "why": "'ולא פליגי' reconciles רב זביד and רב פפא; no challenge was raised, so it is not a Resolution.",
+   "source": "Berakhot 45b ולא פליגי הא דאשכחינהו דקא אמרי נברך; docs/step-labels.md"
+  },
+  {
+   "id": "Berakhot_45_b",
+   "step": 1,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "This finishes the 'שאני התם' answer to the waiter תא שמע, which 45a step 24 labels תירוץ (the source attacks the lenient view, so it is a challenge); the second half takes the first half's label across the amud break.",
+   "source": "Berakhot 45a–b שאני התם דניחא להו דמקבע להו בחובה מעיקרא; docs/step-labels.md rules 1, 2, 5"
+  },
+  {
+   "id": "Berakhot_45_b",
+   "step": 1,
+   "field": "title",
+   "find": "Finishing the rejection of the waiter proof",
+   "replace": "Finishing the answer to the waiter challenge",
+   "why": "Title names the step as a rejection of a proof; it is the end of the answer to a challenge.",
+   "source": "Berakhot 45b; docs/step-labels.md rule 2"
+  },
+  {
+   "id": "Berakhot_45_b",
+   "step": 1,
+   "field": "stepSummary",
+   "find": "The previous proof from the שמש is pushed aside.",
+   "replace": "The challenge from the שמש is answered.",
+   "why": "Matches the corrected label: the waiter source was a challenge to the lenient view, now answered.",
+   "source": "Berakhot 45b; docs/step-labels.md rule 1"
+  },
+  {
+   "id": "Berakhot_45_b",
+   "step": 1,
+   "field": "relationToPreviousStep",
+   "find": "Closes the rejection of the previous proof (from the waiter case)",
+   "replace": "Completes the answer to the previous challenge (from the waiter case)",
+   "why": "Matches the corrected label.",
+   "source": "docs/step-labels.md rules 2, 5"
+  },
+  {
+   "id": "Berakhot_45_b",
+   "step": 13,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "ראיה",
+   "why": "'תסתיים' closes the proof that רבי יוחנן is the strict one, but it is immediately challenged by רבא בר רב הונא (step 14), so it cannot be a Conclusion in the middle; it is the inference ending the proof.",
+   "source": "Berakhot 45b תסתיים. אמר ליה רבא בר רב הונא...; docs/step-labels.md rule 5"
+  },
+  {
+   "id": "Berakhot_45_b",
+   "step": 13,
+   "field": "title",
+   "find": "Conclusion: רבי יוחנן",
+   "replace": "Proven: רבי יוחנן",
+   "why": "Title names the step as a Conclusion; it is the end of a proof that is then challenged.",
+   "source": "docs/step-labels.md rule 5"
+  }
+ ]
+}

@@ -2,6 +2,83 @@
 
 Every change to the AI-written content, newest first. Each entry says what was wrong, the source used, and who approved it.
 
+## 202611060252-rev97-berakhot-4
+
+Approved: Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.
+
+- **Berakhot 40a, step 13** (deeperAnalysis): Rashi explains המקפה as drinking a lot of water after the meal, until the food floats, not while eating. Source: Berakhot 40a הַמַּקְפֶּה אֲכִילָתוֹ בְּמַיִם; Rashi s.v. המקפה אכילתו במים: שותה מים הרבה אחר אכילתו.
+  - was: drinking plenty of water while eating protects the intestines
+  - now: drinking plenty of water after eating protects the intestines
+- **Berakhot 40a, step 41** (hebrewStepName): This is the middle of the ברייתא brought (דתניא) as the proof that רבי יהודה calls wheat a tree; it opens as ראיה in step 40, and a continuation takes the first half's label. Source: Berakhot 40a דְּתַנְיָא: אִילָן שֶׁאָכַל מִמֶּנּוּ אָדָם הָרִאשׁוֹן; rulebook rule 5.
+  - was: מימרא
+  - now: ראיה
+- **Berakhot 40a, step 42** (hebrewStepName): רבי יהודה's line in the ברייתא is the actual proof for step 39 (the step itself says 'This completes the proof'), yet it is labelled Statement. Source: Berakhot 40a רַבִּי יְהוּדָה אוֹמֵר: חִטָּה הָיְתָה; rulebook rule 5.
+  - was: מימרא
+  - now: ראיה
+- **Berakhot 40b, step 1** (hebrewStepName): This is the second half of the קא משמע לן answer to the פשיטא challenge, which ends 40a as תירוץ (step 43); the second half takes the first half's label across the amud break. Source: Berakhot 40a-b הֵיכָא דְּכִי שָׁקְלַתְּ לֵיהּ לְפֵירֵי... אֲבָל הֵיכָא...; rulebook rule 5.
+  - was: מסקנא
+  - now: תירוץ
+- **Berakhot 41a, step 8** (hebrewStepName): והתניא knocking out the suggested answer of step 7 (וכי תימא) is an objection to an answer, which the rulebook labels Challenge, not Rejection. Source: Berakhot 41a וְכִי תֵּימָא: הָכִי נָמֵי דְּלֵית לֵיהּ, וְהָתַנְיָא; rulebook rule 2.
+  - was: דחיה
+  - now: קשיא
+- **Berakhot 41a, step 8** (relationToPreviousStep): Matches the corrected label (Challenge). Source: rulebook rule 2.
+  - was: Rejects the suggestion of step 7.
+  - now: Challenges the suggestion of step 7.
+- **Berakhot 41a, step 8** (whatsHappening): Matches the corrected label (Challenge). Source: rulebook rule 2.
+  - was: The גמרא rejects the suggestion of step 7.
+  - now: The גמרא challenges the suggestion of step 7 with a ברייתא.
+- **Berakhot 41b, step 1** (hebrewStepName): שיעורן כרמונים is the end of the sentence begun in 41a step 18 (labelled ראיה, ״רִמּוֹן״ כְּדִתְנַן: כׇּל כְּלֵי בַּעֲלֵי בָתִּים); the second half takes the first half's label across the amud break. Source: Berakhot 41a-b ״רִמּוֹן״, כְּדִתְנַן: כׇּל כְּלֵי בַּעֲלֵי בָתִּים... שִׁיעוּרָן כְּרִמּוֹנִים; rulebook rule 5.
+  - was: מימרא
+  - now: ראיה
+- **Berakhot 42a, step 3** (hebrewStepName): Rav Nachman objects to Rav Huna's conduct; nothing here pushes aside a proof, so by the rulebook (objection to an action/position, also inside a story) it is a Challenge, not a Rejection. Source: Berakhot 42a: אמר ליה רב נחמן: עדי כפנא; docs/step-labels.md rules 2-3.
+  - was: דחיה
+  - now: קשיא
+- **Berakhot 42a, step 3** (relationToPreviousStep): Matches the corrected label (Challenge, not Rejection). Source: Berakhot 42a: עדי כפנא.
+  - was: Rejects רב הונא's behavior in step 2.
+  - now: Challenges רב הונא's behavior in step 2.
+- **Berakhot 42b, step 21** (hebrewStepName): The students being unable to answer is a line in the middle of the story; the question is answered right after on 43a by the elder (כהסבו דמי), so it is not where the discussion lands. Source: Berakhot 42b-43a: לא הוה בידייהו... עד דאתא ההוא סבא... ושני להו; docs/step-labels.md rules 3, 5.
+  - was: מסקנא
+  - now: מימרא
+- **Berakhot 43b, step 26** (hebrewStepName): ולא היא knocks out Rav Pappa's answer (a Resolution), not a proof, so it cannot be a Rejection; it ends the thread with the challenge standing and the ruling of the decider intact, so it is the Conclusion. Source: Berakhot 43b: ולא היא, לאשתמוטי נפשיה הוא דעבד; Rashi s.v. ולא היא; docs/step-labels.md rules 2, 4.
+  - was: דחיה
+  - now: מסקנא
+- **Berakhot 43b, step 26** (relationToPreviousStep): Matches the corrected label (Conclusion, not Rejection). Source: Berakhot 43b: ולא היא.
+  - was: Rejects the answer of step 25.
+  - now: Overturns the answer of step 25 and closes the story.
+- **Berakhot 44b, step 37** (deeperAnalysis): Rashi explains 'the house' as the eater's belly (לכרס האוכל לפת), not a household where turnip is eaten often. Source: Berakhot 44b אוי לו לבית שהלפת עוברת בתוכו; Rashi s.v. אוי לבית: לכרס האוכל לפת.
+  - was: having it pass through your house, meaning eating it regularly, is harmful.
+  - now: according to רש״י the 'house' is the belly of the person who eats it, so turnip passing through it is harmful.
+- **Berakhot 44b, step 37** (mimraCoreRuling): Same error as in deeperAnalysis: per Rashi the 'house' is the eater's belly. Source: Rashi Berakhot 44b s.v. אוי לבית.
+  - was: Turnip is harmful to the home where it is eaten.
+  - now: Turnip is harmful to the stomach of the one who eats it.
+- **Berakhot 44b, step 37** (phrases.2.notes): The phrase note contradicts Rashi, who reads 'house' as the eater's belly. Source: Rashi Berakhot 44b s.v. אוי לבית: לכרס האוכל לפת.
+  - was: Meaning a home where turnip is often eaten.
+  - now: רש״י: the 'house' is the belly of the one who eats turnip.
+- **Berakhot 44a, step 31** (hebrewStepName): רב עמרם's 'ולא פליגי' reconciles two rulings; nothing was challenged before it, so it is not a Resolution (same ruling as the earlier ולא פליגי repair). Source: Berakhot 44a אמר רב עמרם ולא פליגי הא לן והא להו; docs/step-labels.md.
+  - was: תירוץ
+  - now: מימרא
+- **Berakhot 45b, step 35** (hebrewStepName): 'ולא פליגי' reconciles רב זביד and רב פפא; no challenge was raised, so it is not a Resolution. Source: Berakhot 45b ולא פליגי הא דאשכחינהו דקא אמרי נברך; docs/step-labels.md.
+  - was: תירוץ
+  - now: מימרא
+- **Berakhot 45b, step 1** (hebrewStepName): This finishes the 'שאני התם' answer to the waiter תא שמע, which 45a step 24 labels תירוץ (the source attacks the lenient view, so it is a challenge); the second half takes the first half's label across the amud break. Source: Berakhot 45a–b שאני התם דניחא להו דמקבע להו בחובה מעיקרא; docs/step-labels.md rules 1, 2, 5.
+  - was: דחיה
+  - now: תירוץ
+- **Berakhot 45b, step 1** (title): Title names the step as a rejection of a proof; it is the end of the answer to a challenge. Source: Berakhot 45b; docs/step-labels.md rule 2.
+  - was: Finishing the rejection of the waiter proof
+  - now: Finishing the answer to the waiter challenge
+- **Berakhot 45b, step 1** (stepSummary): Matches the corrected label: the waiter source was a challenge to the lenient view, now answered. Source: Berakhot 45b; docs/step-labels.md rule 1.
+  - was: The previous proof from the שמש is pushed aside.
+  - now: The challenge from the שמש is answered.
+- **Berakhot 45b, step 1** (relationToPreviousStep): Matches the corrected label. Source: docs/step-labels.md rules 2, 5.
+  - was: Closes the rejection of the previous proof (from the waiter case)
+  - now: Completes the answer to the previous challenge (from the waiter case)
+- **Berakhot 45b, step 13** (hebrewStepName): 'תסתיים' closes the proof that רבי יוחנן is the strict one, but it is immediately challenged by רבא בר רב הונא (step 14), so it cannot be a Conclusion in the middle; it is the inference ending the proof. Source: Berakhot 45b תסתיים. אמר ליה רבא בר רב הונא...; docs/step-labels.md rule 5.
+  - was: מסקנא
+  - now: ראיה
+- **Berakhot 45b, step 13** (title): Title names the step as a Conclusion; it is the end of a proof that is then challenged. Source: docs/step-labels.md rule 5.
+  - was: Conclusion: רבי יוחנן
+  - now: Proven: רבי יוחנן
+
 ## 202611060248-rev96-berakhot-3
 
 Approved: Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.
