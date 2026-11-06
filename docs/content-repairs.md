@@ -2,6 +2,314 @@
 
 Every change to the AI-written content, newest first. Each entry says what was wrong, the source used, and who approved it.
 
+## 202611060545-rev111-labels-shas-g
+
+Approved: Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.
+
+- **Kiddushin 64a, step 13** (hebrewStepName): רב אשי's ותסברא attacks the בידו answer, not a proof Source: Kiddushin 64a.
+  - was: דחיה
+  - now: קשיא
+- **Kiddushin 64a, step 13** (title): match label Source: Kiddushin 64a.
+  - was: rejects
+  - now: challenges
+- **Kiddushin 64a, step 13** (relationToPreviousStep): match label Source: Kiddushin 64a.
+  - was: rejects the assumption
+  - now: challenges the assumption
+- **Kiddushin 65a, step 6** (hebrewStepName): second half of the הכי השתא answer in step 5 (התם... הכא...), not where the thread lands Source: Kiddushin 65a.
+  - was: מסקנא
+  - now: תירוץ
+- **Kiddushin 65a, step 33** (hebrewStepName): ולטעמיך here defends רב נחמן against רבא's challenge (answers it, leading into אלא הבמ"ע) Source: Kiddushin 65a.
+  - was: דחיה
+  - now: תירוץ
+- **Kiddushin 65a, step 33** (relationToPreviousStep): match label Source: Kiddushin 65a.
+  - was: Rejects רבא's reading of the משנה by showing
+  - now: Answers רבא's challenge by showing
+- **Kiddushin 65b, step 8** (hebrewStepName): ותסברא answers רב אחדבוי's challenge on רב's behalf Source: Kiddushin 65b.
+  - was: דחיה
+  - now: תירוץ
+- **Kiddushin 65b, step 8** (relationToPreviousStep): match label Source: Kiddushin 65b.
+  - was: Rejects the inference that
+  - now: Answers by knocking out the inference that
+- **Kiddushin 68b, step 9** (hebrewStepName): answers the challenge of step 8 (he is not a ממזר) Source: Kiddushin 68b.
+  - was: דחיה
+  - now: תירוץ
+- **Kiddushin 68b, step 9** (relationToPreviousStep): match label Source: Kiddushin 68b.
+  - was: Rejects the inference in step 8
+  - now: Answers step 8, denying
+- **Kiddushin 70a, step 36** (hebrewStepName): objection to רב נחמן's answer (קטנה היא), not to a proof Source: Kiddushin 70a.
+  - was: דחיה
+  - now: קשיא
+- **Kiddushin 70a, step 36** (relationToPreviousStep): match label Source: Kiddushin 70a.
+  - was: Rejects רב נחמן's answer
+  - now: Challenges רב נחמן's answer
+- **Kiddushin 70a, step 39** (hebrewStepName): objection to the על ידי שליח answer Source: Kiddushin 70a.
+  - was: דחיה
+  - now: קשיא
+- **Kiddushin 70a, step 39** (relationToPreviousStep): match label Source: Kiddushin 70a.
+  - was: Begins to reject
+  - now: Begins to challenge
+- **Kiddushin 71b, step 6** (hebrewStepName): continues רבי יוחנן's objection (מאי דעתיך... אילימא) inside the story Source: Kiddushin 71b.
+  - was: דחיה
+  - now: קשיא
+- **Kiddushin 71b, step 13** (hebrewStepName): רבי אבהו objects (מגדף) to an explanation of a פסוק, not a proof Source: Kiddushin 71b.
+  - was: דחיה
+  - now: קשיא
+- **Kiddushin 71b, step 13** (relationToPreviousStep): match label Source: Kiddushin 71b.
+  - was: Rejects the explanation
+  - now: Challenges the explanation
+- **Kiddushin 77b, step 6** (hebrewStepName): לא צריכא answers the נזיר challenge of step 5 Source: Kiddushin 77b.
+  - was: מסקנא
+  - now: תירוץ
+- **Kiddushin 7a, step 20** (hebrewStepName): מי דמי answers מר זוטרא's challenge (steps 18-19) Source: Kiddushin 7a.
+  - was: דחיה
+  - now: תירוץ
+- **Kiddushin 7a, step 20** (relationToPreviousStep): match label Source: Kiddushin 7a.
+  - was: Rejects the comparison
+  - now: Answers by rejecting the comparison
+- **Kiddushin 9b, step 15** (hebrewStepName): אביי objects to the רבנן's answer Source: Kiddushin 9b.
+  - was: דחיה
+  - now: קשיא
+- **Kiddushin 9b, step 15** (title): match label Source: Kiddushin 9b.
+  - was: rejects it
+  - now: challenges it
+- **Kiddushin 9b, step 15** (relationToPreviousStep): match label Source: Kiddushin 9b.
+  - was: Rejects the answer
+  - now: Challenges the answer
+- **Makkot 10b, step 13** (hebrewStepName): לא, כדתניא answers the challenge from the משנה Source: Makkot 10b.
+  - was: דחיה
+  - now: תירוץ
+- **Makkot 10b, step 13** (relationToPreviousStep): match label Source: Makkot 10b.
+  - was: Rejects the reading
+  - now: Answers by rejecting the reading
+- **Makkot 12a, step 31** (hebrewStepName): ותסברא objects to the suggested resolution (לימא), not a proof Source: Makkot 12a.
+  - was: דחיה
+  - now: קשיא
+- **Makkot 12a, step 31** (relationToPreviousStep): match label Source: Makkot 12a.
+  - was: Rejects the attribution
+  - now: Challenges the attribution
+- **Makkot 13a, step 21** (hebrewStepName): רבי שמעון's counter to the חכמים' answer (אף חטה) is an objection, not pushing aside a proof Source: Makkot 13a.
+  - was: דחיה
+  - now: קשיא
+- **Makkot 13a, step 21** (relationToPreviousStep): match label Source: Makkot 13a.
+  - was: Rejects the חכמים's answer
+  - now: Challenges the חכמים's answer
+- **Makkot 13b, step 17** (hebrewStepName): מאי אמרת... heads off an answer, part of the challenge of step 16 Source: Makkot 13b.
+  - was: דחיה
+  - now: קשיא
+- **Makkot 15a, step 16** (hebrewStepName): וכן אמר רבי יוחנן is the second half of רבא's answer in step 15, and a challenge follows Source: Makkot 15a.
+  - was: מסקנא
+  - now: תירוץ
+- **Makkot 16a, step 19** (hebrewStepName): רב objects to רב שימי's answer Source: Makkot 16a.
+  - was: דחיה
+  - now: קשיא
+- **Makkot 16a, step 19** (relationToPreviousStep): match label Source: Makkot 16a.
+  - was: Rejects the answer
+  - now: Challenges the answer
+- **Makkot 21a, step 12** (hebrewStepName): הא כיצד is the end of the ברייתא quoted in step 11 Source: Makkot 21a.
+  - was: מסקנא
+  - now: מימרא
+- **Makkot 21b, step 11** (hebrewStepName): רבי ינאי's reply (shard and pearl) is a story line; ריש לקיש then pushes the proof aside Source: Makkot 21b.
+  - was: מסקנא
+  - now: מימרא
+- **Makkot 21b, step 19** (hebrewStepName): עולא's עדא תהא closes רבא's answer, which אביי challenges straight away Source: Makkot 21b.
+  - was: מסקנא
+  - now: תירוץ
+- **Makkot 2b, step 31** (hebrewStepName): רבא objects to רב המנונא's revised version Source: Makkot 2b.
+  - was: דחיה
+  - now: קשיא
+- **Makkot 2b, step 31** (relationToPreviousStep): match label Source: Makkot 2b.
+  - was: Rejects
+  - now: Challenges
+- **Makkot 9a, step 14** (hebrewStepName): ואזדו לטעמייהו quotes a stated dispute (איתמר), and רבא challenges it straight away Source: Makkot 9a.
+  - was: מסקנא
+  - now: מימרא
+- **Makkot 9a, step 17** (hebrewStepName): ולטעמיך objects to the answer of step 16 Source: Makkot 9a.
+  - was: דחיה
+  - now: קשיא
+- **Makkot 9a, step 17** (relationToPreviousStep): match label Source: Makkot 9a.
+  - was: Rejects the support
+  - now: Challenges the support
+- **Makkot 9b, step 3** (hebrewStepName): continues רבי יונתן's reading that answers the challenge of step 1 Source: Makkot 9b.
+  - was: דחיה
+  - now: תירוץ
+- **Megillah 10a, step 13** (hebrewStepName): מכלל inference from the ברייתא, which רבינא then pushes aside (דילמא) Source: Megillah 10a.
+  - was: מסקנא
+  - now: ראיה
+- **Megillah 10a, step 18** (hebrewStepName): אלמא inference finishing the proof of step 17, challenged by ורמינהו Source: Megillah 10a.
+  - was: מסקנא
+  - now: ראיה
+- **Megillah 11b, step 28** (hebrewStepName): story line (the שטן kills ושתי), followed by a challenge Source: Megillah 11b.
+  - was: מסקנא
+  - now: מימרא
+- **Megillah 12a, step 17** (hebrewStepName): רשב"י objects to his students' answer Source: Megillah 12a.
+  - was: דחיה
+  - now: קשיא
+- **Megillah 12a, step 17** (relationToPreviousStep): match label Source: Megillah 12a.
+  - was: Rejects the answer
+  - now: Challenges the answer
+- **Megillah 14b, step 2** (hebrewStepName): in the story אביגיל objects to דוד's claim (rule 3) Source: Megillah 14b.
+  - was: דחיה
+  - now: קשיא
+- **Megillah 14b, step 2** (relationToPreviousStep): match label Source: Megillah 14b.
+  - was: Rejects
+  - now: Challenges
+- **Megillah 14b, step 3** (relationToPreviousStep): step 2 is now a challenge Source: Megillah 14b.
+  - was: accepts the rejection
+  - now: accepts the challenge
+- **Megillah 16a, step 22** (hebrewStepName): מרדכי's retort is a story line, not pushing aside a proof Source: Megillah 16a.
+  - was: דחיה
+  - now: מימרא
+- **Megillah 16a, step 22** (relationToPreviousStep): match label Source: Megillah 16a.
+  - was: Rejects
+  - now: Retorts to
+- **Megillah 18a, step 34** (hebrewStepName): אלא... is the second half of the proof of step 33 Source: Megillah 18a.
+  - was: מסקנא
+  - now: ראיה
+- **Megillah 18a, step 39** (hebrewStepName): quotes רב ושמואל's general rule, challenged in step 40 Source: Megillah 18a.
+  - was: מסקנא
+  - now: מימרא
+- **Megillah 18a, step 46** (hebrewStepName): מתקיף לה רבינא objects to the answer of step 45 Source: Megillah 18a.
+  - was: דחיה
+  - now: קשיא
+- **Megillah 18a, step 46** (relationToPreviousStep): match label Source: Megillah 18a.
+  - was: Rejects the assumption
+  - now: Challenges the assumption
+- **Megillah 19a, step 14** (hebrewStepName): second half of the Response in step 13, followed by אביי's challenge Source: Megillah 19a.
+  - was: מסקנא
+  - now: תשובה
+- **Megillah 12b, step 1** (hebrewStepName): end of the proverb that began in the last step of 12a (labelled תירוץ); second half takes the same label Source: Megillah 12b.
+  - was: מסקנא
+  - now: תירוץ
+- **Megillah 19b, step 12** (hebrewStepName): לא סלקא דעתך answers the challenge of step 11 Source: Megillah 19b.
+  - was: דחיה
+  - now: תירוץ
+- **Megillah 19b, step 12** (relationToPreviousStep): match label Source: Megillah 19b.
+  - was: Rejects the challenge
+  - now: Answers the challenge
+- **Megillah 22b, step 3** (hebrewStepName): שמע מינה closes the תא שמע proof, which רב אשי challenges straight away Source: Megillah 22b.
+  - was: מסקנא
+  - now: ראיה
+- **Megillah 24b, step 36** (hebrewStepName): רב פפא answers the challenge of step 35 Source: Megillah 24b.
+  - was: דחיה
+  - now: תירוץ
+- **Megillah 2b, step 10** (hebrewStepName): answers the ואימא challenge of step 9 Source: Megillah 2b.
+  - was: דחיה
+  - now: תירוץ
+- **Megillah 2b, step 10** (relationToPreviousStep): match label Source: Megillah 2b.
+  - was: Rejects the challenge
+  - now: Answers the challenge
+- **Megillah 2b, step 12** (hebrewStepName): answers the ואימא challenge of step 11 Source: Megillah 2b.
+  - was: דחיה
+  - now: תירוץ
+- **Megillah 2b, step 12** (relationToPreviousStep): match label Source: Megillah 2b.
+  - was: Rejects the suggestion in Step 11 that
+  - now: Answers Step 11, ruling out that
+- **Megillah 30a, step 33** (hebrewStepName): ולא פליגי with no challenge before it (steps 31-32 are statements) Source: Megillah 30a.
+  - was: תירוץ
+  - now: מימרא
+- **Megillah 3a, step 19** (hebrewStepName): aggadic explanation, challenged straight away in step 20 Source: Megillah 3a.
+  - was: מסקנא
+  - now: מימרא
+- **Megillah 3b, step 5** (hebrewStepName): answers the challenge of steps 3-4 (כבוד תורה vs תלמוד תורה) Source: Megillah 3b.
+  - was: דחיה
+  - now: תירוץ
+- **Megillah 3b, step 5** (relationToPreviousStep): match label Source: Megillah 3b.
+  - was: Rejects the proof brought in step 4
+  - now: Answers the challenge of steps 3-4
+- **Megillah 4a, step 3** (hebrewStepName): ולטעמיך turns the challenger's verse around in defence of step 1; it answers the challenge Source: Megillah 4a.
+  - was: דחיה
+  - now: תירוץ
+- **Megillah 4a, step 3** (relationToPreviousStep): match label Source: Megillah 4a.
+  - was: Rejects the proof used in Step 2.
+  - now: Answers Step 2: the same reasoning would prove too much.
+- **Megillah 5a, step 8** (hebrewStepName): לא answers the challenge of steps 5-7 Source: Megillah 5a.
+  - was: דחיה
+  - now: תירוץ
+- **Megillah 5a, step 8** (relationToPreviousStep): match label Source: Megillah 5a.
+  - was: Rejects the inference
+  - now: Answers by rejecting the inference
+- **Megillah 5a, step 9** (relationToPreviousStep): step 8 is now a Resolution Source: Megillah 5a.
+  - was: Completes the דחיה
+  - now: Completes the answer
+- **Megillah 6a, step 14** (hebrewStepName): וכי תימא blocks a defence; part of the challenge of step 13 Source: Megillah 6a.
+  - was: דחיה
+  - now: קשיא
+- **Megillah 8b, step 5** (hebrewStepName): וכי תימא... תוכיח finishes אביי's answer of step 4, not a rejection of a proof Source: Megillah 8b.
+  - was: דחיה
+  - now: תירוץ
+- **Meilah 10b, step 8** (hebrewStepName): רבי אלעזר objects (וכי יש נוגע...) to the reading of step 7; הא כיצד then resolves it Source: Meilah 10b.
+  - was: דחיה
+  - now: קשיא
+- **Meilah 20b, step 3** (hebrewStepName): אביי objects to רב חסדא's answer Source: Meilah 20b.
+  - was: דחיה
+  - now: קשיא
+- **Meilah 20b, step 3** (relationToPreviousStep): match label Source: Meilah 20b.
+  - was: Rejects
+  - now: Challenges
+- **Meilah 20b, step 4** (relationToPreviousStep): step 3 is now a challenge Source: Meilah 20b.
+  - was: rejection
+  - now: challenge
+- **Meilah 5a, step 5** (hebrewStepName): שמע מינה closes רבי זירא's proof, which is pushed aside in step 6 Source: Meilah 5a.
+  - was: מסקנא
+  - now: ראיה
+- **Meilah 5a, step 10** (hebrewStepName): שמע מינה closes the second proof, which רב יוסף challenges in step 11 Source: Meilah 5a.
+  - was: מסקנא
+  - now: ראיה
+- **Meilah 5b, step 7** (hebrewStepName): לא, אפילו פסול answers the challenge of steps 5-6 Source: Meilah 5b.
+  - was: דחיה
+  - now: תירוץ
+- **Meilah 5b, step 7** (relationToPreviousStep): match label Source: Meilah 5b.
+  - was: Rejects the inference
+  - now: Answers by rejecting the inference
+- **Meilah 8b, step 5** (hebrewStepName): third part of רבא's answer (steps 3-5) Source: Meilah 8b.
+  - was: מסקנא
+  - now: תירוץ
+- **Menachot 101a, step 16** (hebrewStepName): answers רב פפא's challenge of step 15 Source: Menachot 101a.
+  - was: דחיה
+  - now: תירוץ
+- **Menachot 101a, step 16** (relationToPreviousStep): match label Source: Menachot 101a.
+  - was: Rejects
+  - now: Answers
+- **Menachot 101b, step 5** (hebrewStepName): continues the statement of רבי שמעון's reason in step 4; a challenge follows Source: Menachot 101b.
+  - was: מסקנא
+  - now: מימרא
+- **Menachot 102b, step 6** (hebrewStepName): מידי הוא טעמא answers רבא's challenge against רב אשי Source: Menachot 102b.
+  - was: דחיה
+  - now: תירוץ
+- **Menachot 102b, step 6** (relationToPreviousStep): match label Source: Menachot 102b.
+  - was: Rejects רבא's explanation from step 5
+  - now: Answers step 5 by rejecting רבא's explanation
+- **Menachot 103a, step 19** (hebrewStepName): second half of the answer in step 18 (רבי יוחנן's argument to חזקיה) Source: Menachot 103a.
+  - was: דחיה
+  - now: תירוץ
+- **Menachot 104a, step 14** (hebrewStepName): שמע מינה closes רבא's תא שמע proof, which רב אשי challenges straight away Source: Menachot 104a.
+  - was: מסקנא
+  - now: ראיה
+- **Eruvin 48a, step 7** (hebrewStepName): Undo: pushing aside a source offered as the reason/answer (ודילמא) is a Rejection (rulebook rule 7 exception, Nov 6 2026). Source: Eruvin 48a.
+  - was: קשיא
+  - now: דחיה
+- **Eruvin 48a, step 7** (relationToPreviousStep): Undo: pushing aside a source offered as the reason/answer (ודילמא) is a Rejection (rulebook rule 7 exception, Nov 6 2026). Source: Eruvin 48a.
+  - was: Challenges the use of the ברייתא
+  - now: Rejects the use of the ברייתא
+- **Eruvin 48a, step 9** (hebrewStepName): Undo: pushing aside a source offered as the reason/answer (ודילמא) is a Rejection (rulebook rule 7 exception, Nov 6 2026). Source: Eruvin 48a.
+  - was: קשיא
+  - now: דחיה
+- **Eruvin 48a, step 9** (relationToPreviousStep): Undo: pushing aside a source offered as the reason/answer (ודילמא) is a Rejection (rulebook rule 7 exception, Nov 6 2026). Source: Eruvin 48a.
+  - was: Challenges step 8
+  - now: Rejects step 8
+- **Eruvin 96a, step 15** (hebrewStepName): Undo: pushing aside a source offered as the reason/answer (ודילמא) is a Rejection (rulebook rule 7 exception, Nov 6 2026). Source: Eruvin 96a.
+  - was: קשיא
+  - now: דחיה
+- **Eruvin 96a, step 15** (relationToPreviousStep): Undo: pushing aside a source offered as the reason/answer (ודילמא) is a Rejection (rulebook rule 7 exception, Nov 6 2026). Source: Eruvin 96a.
+  - was: Challenges the inference of step 14
+  - now: Rejects the inference of step 14
+- **Eruvin 96a, step 17** (hebrewStepName): Undo: pushing aside a source offered as the reason/answer (ודילמא) is a Rejection (rulebook rule 7 exception, Nov 6 2026). Source: Eruvin 96a.
+  - was: קשיא
+  - now: דחיה
+- **Eruvin 96a, step 17** (relationToPreviousStep): Undo: pushing aside a source offered as the reason/answer (ודילמא) is a Rejection (rulebook rule 7 exception, Nov 6 2026). Source: Eruvin 96a.
+  - was: Starts challenging the answer brought in Step 16
+  - now: Starts rejecting the proof brought in Step 16
+
 ## 202611060544-rev110-labels-shas-f
 
 Approved: Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.
