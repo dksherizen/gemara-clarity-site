@@ -2,6 +2,134 @@
 
 Every change to the AI-written content, newest first. Each entry says what was wrong, the source used, and who approved it.
 
+## 202611060301-rev102-berakhot-52-59
+
+Approved: Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.
+
+- **Berakhot 52a, step 1** (phrases.1.notes): The ברייתא in question rules like בית הלל (והלכה כדברי בית הלל), not that one may follow בית שמאי; the note contradicts the step's own summary. Source: Berakhot 51b-52a: והלכה כדברי ב"ה, פשיטא דהא נפקא בת קול... ואיבעית אימא לאחר בת קול ורבי יהושע היא.
+  - was: the ברייתא allowing one to follow בית שמאי follows his view
+  - now: the ברייתא that rules like בית הלל even after the בת קול follows his view
+- **Berakhot 52a, step 4** (hebrewStepName): Step 4 (לא סלקא דעתך, דקתני מאור ואחר כך בשמים) answers the שאלה of step 3 (ממאי דבית שמאי היא); rule 7: an answer to a Question is a Response even when it cites a source. Source: Berakhot 52a: והא ממאי דבית שמאי היא... לא סלקא דעתך; docs/step-labels.md rule 7.
+  - was: ראיה
+  - now: תשובה
+- **Berakhot 52a, step 5** (hebrewStepName): Step 5 (דתניא אמר רבי יהודה) is the second half of the same answer as step 4; rule 5: the second half takes the first half's label. Source: Berakhot 52a: בית שמאי, דתניא אמר רבי יהודה...; docs/step-labels.md rules 5, 7.
+  - was: ראיה
+  - now: תשובה
+- **Berakhot 52b, step 5** (hebrewStepName): דבר אחר: תכף לנטילת ידים סעודה is the ברייתא's second reason for בית הלל, not an answer to במאי קמיפלגי (the step itself says 'בית הלל add a second reason'); the parallel דבר אחר in step 20 is correctly מימרא. Source: Berakhot 52b: דבר אחר תכף לנטילת ידים סעודה. מאי דבר אחר? הכי קאמרי להו בית הלל לבית שמאי.
+  - was: תשובה
+  - now: מימרא
+- **Berakhot 53a, step 8** (hebrewStepName): Step 8 knocks out a suggested answer (וכי תימא... אלא הא דתניא המוציא שלהבת חייב), not a proof; rule 2: an objection to an answer or suggestion is a Challenge, and it quotes a ברייתא to attack (rule 1). Source: Berakhot 53a: וכי תימא הך איסורא אזל ליה... אלא הא דתניא המוציא שלהבת לרשות הרבים חייב; docs/step-labels.md rules 1-2.
+  - was: דחיה
+  - now: קשיא
+- **Berakhot 53a, step 8** (title): Title names the kind; it must match the corrected label קשיא. Source: As above; docs/step-labels.md rule 2.
+  - was: Rejection: carrying a flame
+  - now: Challenge: carrying a flame
+- **Berakhot 53b, step 38** (hebrewStepName): רבי נהוראי's words are the continuation of the ברייתא quoted with והתניא to attack 'חטוף ובריך'; rule 1: every step quoting the rest of an attacking source is קשיא (the step's own confusionAlert says it only strengthens the challenge). Source: Berakhot 53b: והתניא רבי יוסי אומר גדול העונה אמן... אמר ליה רבי נהוראי השמים כן הוא; docs/step-labels.md rule 1.
+  - was: ראיה
+  - now: קשיא
+- **Berakhot 55a, step 2** (hebrewStepName): Rabbi Yitzchak's teaching is a second source brought to attack רב יהודה's praise of long prayer (the step itself says it strengthens the challenge), so under rule 1 it is a Challenge, not a Proof. Source: Berakhot 55a: וְאָמַר רַבִּי יִצְחָק ... וְעִיּוּן תְּפִלָּה ... לַשָּׁמַיִם! — answered by הָא לָא קַשְׁיָא; step-labels.md rule 1.
+  - was: ראיה
+  - now: קשיא
+- **Berakhot 54b, step 35** (hebrewStepName): The step ends with an unanswered קַשְׁיָא and the thread closes there, so under rule 4 (a thread that ends without an answer) it is a Conclusion. Source: Berakhot 54b: וְאֵימָא בֵּי עַשְׂרָה שְׁאָר עַמָּא, וּתְרֵי רַבָּנַן! קַשְׁיָא; step-labels.md rules 4 and 9.
+  - was: קשיא
+  - now: מסקנא
+- **Berakhot 55b, step 1** (hebrewStepName): This line finishes the answer to מנא לן? (55a step 39 שאלה / step 40 תשובה); nothing was challenged, and a second half takes the first half's label across the amud break. Source: Berakhot 55a–b: מְנָא לַן? — מִיּוֹסֵף ... וְהַהִיא שַׁעְתָּא אִמֵּיהּ לָא הֲוָת; step-labels.md rules 5 and 6.
+  - was: תירוץ
+  - now: תשובה
+- **Berakhot 55b, step 7** (deeperAnalysis): The explanation misses the actual contradiction: Rashi says the difficulty is that Rav Huna has the good person seeing bad dreams, while the verse says bad dreams will not frighten him; 'too' makes it sound as if the two fit. Source: Berakhot 55b; Rashi s.v. ודוד לא ראה חלום טוב: קשיא לרב הונא דאמר לאדם טוב מראין לו חלום רע.
+  - was: The earlier teaching left the good person without good dreams. This verse appears to protect such a person from frightening bad dreams too, so the גמרא needs a more precise account.
+  - now: רב הונא's teaching implies that a good person is shown bad dreams instead of good ones (רש״י). This verse, as רב חסדא explains it, promises that bad dreams will not frighten such a person, so it seems to contradict רב הונא.
+- **Berakhot 54a, step 29** (phrases.4.notes): Rashi explains that the wall of a house next to him fell and he went into the house, not that he hid inside the wall. Source: Berakhot 54a: אִיתְפָּרַקָא לֵיהּ אָשִׁיתָא, עָל לְגַוַּהּ; Rashi s.v. אתפרקא ליה אשיתא: נפלה חומת בית שהיה סמוך לו ונכנס לתוך הבית.
+  - was: He was saved by hiding inside the wall.
+  - now: רש״י: the wall of a nearby house fell, and he escaped into the house.
+- **Berakhot 54b, step 42** (deeperAnalysis): The stated reason contradicts Rashi, who says the danger is from demons, attracted by weakened fortune (sick, birthing woman, mourner) or by jealousy (groom, bride, Torah scholars). Source: Berakhot 54b; Rashi s.v. שימור: מן המזיקין; s.v. חולה: שהורע מזלו; s.v. חתן וכלה ותלמידי חכמים: מקנאתו מתגרה בהם.
+  - was: What these people share is that they are physically weak or their minds are elsewhere, so they need others to look out for them.
+  - now: רש״י explains that they need guarding from מזיקין: a sick person, a חיה and an אבל because their מזל is weakened, and a חתן, a כלה and תלמידי חכמים because the מזיקין are jealous of them.
+- **Berakhot 54b, step 42** (phrases.4.notes): The note gives a reason not in the text that differs from Rashi's (jealousy of the מזיקין). Source: Rashi s.v. חתן וכלה ותלמידי חכמים: מקנאתו מתגרה בהם.
+  - was: They often walk alone at night to learn.
+  - now: רש״י: the מזיקין attack them out of jealousy.
+- **Berakhot 54b, step 41** (deeperAnalysis): Same issue as step 42: Rashi's reason is protection from demons (weakened מזל or jealousy), not a general weakened state; the phrase note of this same step already cites Rashi correctly. Source: Berakhot 54b; Rashi s.v. שימור: מן המזיקין; s.v. חתן וכלה: מקנאתו מתגרה בהם.
+  - was: These people are in a sensitive or weakened state, so others should not leave them alone or unguarded.
+  - now: רש״י explains that they need guarding from מזיקין.
+- **Berakhot 56a, step 21** (deeperAnalysis): Rashi explains that the vav is properly absent in the verse (חסר), so its erasure does not invalidate the tefillin; the claim that the missing letter makes them invalid contradicts Rashi. Source: Berakhot 56a: וָאו דְּ״פֶטֶר חֲמוֹר״ וַדַּאי גְּהִיט; Rashi s.v. וי"ו דפטר חמור: והוא חסר וי"ו ובתפילין של רבא כתבו הכותב מלא ואח"כ מחקו.
+  - was: רבא saw the phrase, but a single missing letter is easy to overlook. Even one missing letter makes תפילין invalid, so the warning still holds.
+  - now: רבא saw the phrase, but a single erased letter is easy to overlook. According to רש״י, in the תורה the word חמר here is written without a ו; the scribe of רבא's תפילין wrote it with a ו and then erased it, so the ו is indeed erased.
+- **Berakhot 56a, step 13** (hebrewStepName): A story event (the treasury break-in and Rava's arrest) is a Statement under rule 8; the Gemara does not bring it as a proof. Source: Berakhot 56a: לִמְחַר אִתְּבַר בֵּדַיְינָא דְּמַלְכָּא; docs/step-labels.md rule 8.
+  - was: ראיה
+  - now: מימרא
+- **Berakhot 56a, step 26** (hebrewStepName): Rava being struck twice is a line of the story, not a source brought as proof (rule 8). Source: Berakhot 56a: וּמְחוֹהוּ לְרָבָא תְּרֵי; docs/step-labels.md rule 8.
+  - was: ראיה
+  - now: מימרא
+- **Berakhot 56a, step 17** (whatsHappening): The barrel dreams do not end here: the next dream (step 18) is a barrel falling into a pit. Source: Berakhot 56a: חֲזַן חָבִיתָא דִּנְפַל לְבֵירָא.
+  - was: finishing this set of barrel dreams
+  - now: continuing this set of barrel dreams
+- **Berakhot 56a, step 17** (relationToPreviousStep): A fifth barrel dream (the barrel in the pit) follows immediately. Source: Berakhot 56a: חֲזַן חָבִיתָא דִּנְפַל לְבֵירָא.
+  - was: The fourth and final barrel-related dream in this run
+  - now: The fourth barrel-related dream in this run
+- **Berakhot 56a, step 17** (whatToRemember): There are five barrel dreams, not four; the barrel falling into a pit comes next. Source: Berakhot 56a: חֲזַן חָבִיתָא דִּנְפַל לְבֵירָא.
+  - was: In all four barrel dreams (lettuce, meat, palm tree, pomegranate),
+  - now: In these barrel dreams (lettuce, meat, palm tree, pomegranate, and next the barrel in the pit),
+- **Berakhot 56b, step 2** (hebrewStepName): A story exchange (question and interpretation in one step) with no Question step before it; rule 6 says a Response needs a preceding Question, and rule 8 makes story lines Statements, as the parallel bar Hadaya exchanges on 56a are labelled. Source: Berakhot 56b: שָׁאַל בֶּן דָּמָא; docs/step-labels.md rules 6, 8.
+  - was: תשובה
+  - now: מימרא
+- **Berakhot 56b, step 3** (hebrewStepName): Story exchange with no Question step before it (rules 6, 8). Source: Berakhot 56b: אֲמַר לֵיהּ בַּר קַפָּרָא לְרַבִּי; docs/step-labels.md rules 6, 8.
+  - was: תשובה
+  - now: מימרא
+- **Berakhot 56b, step 4** (hebrewStepName): Story exchange with no Question step before it (rules 6, 8). Source: Berakhot 56b: אֲמַר לֵיהּ הָהוּא מִינָא; docs/step-labels.md rules 6, 8.
+  - was: תשובה
+  - now: מימרא
+- **Berakhot 56b, step 5** (hebrewStepName): Story exchange with no Question step before it (rules 6, 8). Source: Berakhot 56b: חֲזַאי דִּקְטִיף לִי כּוֹכְבָא; docs/step-labels.md rules 6, 8.
+  - was: תשובה
+  - now: מימרא
+- **Berakhot 56b, step 6** (hebrewStepName): Story exchange with no Question step before it (rules 6, 8). Source: Berakhot 56b: חֲזַאי עֵינַי דְּנָשְׁקָן; docs/step-labels.md rules 6, 8.
+  - was: תשובה
+  - now: מימרא
+- **Berakhot 56b, step 7** (hebrewStepName): Story exchange with no Question step before it (rules 6, 8). Source: Berakhot 56b: חֲזַאי דְּדָרֵיכְנָא בְּטוּנָא דְּאָסָא; docs/step-labels.md rules 6, 8.
+  - was: תשובה
+  - now: מימרא
+- **Berakhot 56b, step 8** (hebrewStepName): Story exchange with no Question step before it (rules 6, 8). Source: Berakhot 56b: חֲזַאי עוֹרְבֵי דְּהָדְרִי לְפוּרְיֵיהּ; docs/step-labels.md rules 6, 8.
+  - was: תשובה
+  - now: מימרא
+- **Berakhot 56b, step 9** (hebrewStepName): Story exchange with no Question step before it (rules 6, 8). Source: Berakhot 56b: חֲזַאי דְּנָקֵיטְנָא תְּרֵי יוֹנֵי; docs/step-labels.md rules 6, 8.
+  - was: תשובה
+  - now: מימרא
+- **Berakhot 56b, step 10** (hebrewStepName): Story exchange with no Question step before it (rules 6, 8). Source: Berakhot 56b: חֲזַאי דְּקָלֵיפְנָא בֵּיעֵי; docs/step-labels.md rules 6, 8.
+  - was: תשובה
+  - now: מימרא
+- **Berakhot 57a, step 44** (hebrewStepName): Abaye and Rava state their own view (once he went up, he went up); nothing was a proof, so it cannot be a Rejection (rule 2). It is a dissenting Statement. Source: Berakhot 57a: אַבָּיֵי וְרָבָא דְּאָמְרִי תַּרְוַויְיהוּ: כֵּיוָן שֶׁעָלָה — עָלָה; docs/step-labels.md rule 2.
+  - was: דחיה
+  - now: מימרא
+- **Berakhot 57a, step 56** (hebrewStepName): Rav Sheshet objects to the reciter's teaching (all the more so it doubled); an objection to a teaching is a Challenge, and Rejection is only for pushing aside a proof (rule 2). Source: Berakhot 57a: אֲמַר לֵיהּ רַב שֵׁשֶׁת: כׇּל שֶׁכֵּן שֶׁנִּכְפְּלָה; docs/step-labels.md rule 2.
+  - was: דחיה
+  - now: קשיא
+- **Berakhot 57a, step 57** (hebrewStepName): ולא היא answers Rav Sheshet's objection and keeps the reciter's teaching; an answer to a Challenge is a Resolution (rule 2), and no proof was pushed aside. Source: Berakhot 57a: וְלָא הִיא, רַב שֵׁשֶׁת הוּא דַּחֲזָא חִוְיָא; Rashi s.v. ולא היא; docs/step-labels.md rule 2.
+  - was: דחיה
+  - now: תירוץ
+- **Berakhot 58b, step 18** (deeperAnalysis): The contradiction is answered on this same amud (לא קשיא: הא ממעי אמו...), so saying the passage stops before an answer is false and contradicts step 19. Source: Berakhot 58b: מיתיבי ... לא קשיא, הא ממעי אמו, הא בתר דאיתיליד.
+  - was: This passage stops before an answer.
+  - now: The answer comes in the next step.
+- **Berakhot 59b** (overview): רבי אבהו only says when the rain blessing begins; the wording מודים אנחנו לך is רב יהודה's answer to מאי מברכין (and the ending is רבי יוחנן's). Source: Berakhot 59b: מאימתי מברכין על הגשמים... מאי מברכין? אמר רב יהודה: מודים אנחנו לך.
+  - was: when רבי אבהו teaches a different rain blessing, מודים אנחנו לך, which ends
+  - now: when רבי אבהו speaks of a different rain blessing, which רב יהודה gives as מודים אנחנו לך and which ends
+- **Berakhot 58a, step 41** (phrases.1.notes): The ברייתא is not a source for רבי שילא's teaching; it is a different interpretation of the verse (as the step's own confusionAlert says). Source: Berakhot 58a: במתניתא תנא משמיה דרבי עקיבא: לך ה' הגדולה – זו קריעת ים סוף.
+  - was: Here the גמרא brings a different, earlier source for this teaching.
+  - now: Here the גמרא brings a different reading of the same verse, from a ברייתא.
+- **Berakhot 58a, step 35** (hebrewStepName): This is a story event (רבי שילא kills the informer), and the passage continues with his דרשה; rulebook rules 5 and 8 make story lines Statements and forbid a Conclusion in the middle. Source: Berakhot 58a: מחייה בקולפא וקטליה; docs/step-labels.md rules 5, 8.
+  - was: מסקנא
+  - now: מימרא
+- **Berakhot 58b, step 16** (hebrewStepName): The step is the closing event of a story (they set their eyes on him and he died), not the landing point of a discussion; rulebook rule 8 makes story lines Statements. Source: Berakhot 58b: יהבי ביה עינייהו ושכיב; docs/step-labels.md rule 8.
+  - was: מסקנא
+  - now: מימרא
+- **Berakhot 58b, step 5** (hebrewStepName): No שאלה precedes this; עולא is countering רב חסדא's defence of his sighing (step 4, a תירוץ), and an objection to a defence is a Challenge (rules 2, 3, 6). Source: Berakhot 58b: אמר ליה: הכי אמר רבי יוחנן מיום שחרב בית המקדש...; docs/step-labels.md rules 2, 3, 6.
+  - was: תשובה
+  - now: קשיא
+- **Berakhot 58b, step 6** (hebrewStepName): This is the second half of עולא's reply in step 5 and takes the same label (rule 5); in any case no שאלה precedes it (rule 6). Source: Berakhot 58b: ואמר רבי יוחנן עתיד הקב"ה להחזירן לישובן; docs/step-labels.md rules 5, 6.
+  - was: תשובה
+  - now: קשיא
+- **Berakhot 59a, step 43** (hebrewStepName): In the West they object to the practice of falling on one's face, not to a proof; rulebook rule 2 keeps דחיה only for pushing aside a proof, so an objection like this is a Challenge (מימרא, an opposing ruling, would also be acceptable). Source: Berakhot 59a: לייטי עלה במערבא משום דמחזי כמאן דסגיד לקשתא; docs/step-labels.md rule 2.
+  - was: דחיה
+  - now: קשיא
+
 ## 202611060259-rev101-labels-sample-signals
 
 Approved: Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.
