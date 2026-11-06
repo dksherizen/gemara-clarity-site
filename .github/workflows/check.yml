@@ -13,4 +13,4 @@ jobs:
       - name: Site checks (scripts, data, Classics, offline list, search pages)
         run: node tools/check-site.mjs
       - name: Tests
-        run: node --test test/
+        run: node --test test/site.test.mjs

@@ -45,7 +45,7 @@ Then open http://localhost:8765. (Sign-in won't work there.)
 
 ```
 node tools/check-site.mjs
-node --test test/
+node --test test/site.test.mjs
 ```
 On this computer a push runs the check automatically and stops if something is broken (`.githooks/pre-push`, enabled with `git config core.hooksPath .githooks`). GitHub also runs it after every push: a red X on the commit means look now, because Cloudflare will already have deployed it.
 
