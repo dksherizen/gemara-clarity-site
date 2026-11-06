@@ -1,0 +1,2409 @@
+{
+ "name": "labels-shas-i",
+ "approved": "Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.",
+ "repairs": [
+  {
+   "id": "Menachot_73_b",
+   "step": 25,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רבי שמעון objects to the answer's הקש (וכי נאמר...); not pushing aside a proof",
+   "source": "Menachot 73b"
+  },
+  {
+   "id": "Menachot_73_b",
+   "step": 25,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the הֶקֵּשׁ",
+   "replace": "Challenges the הֶקֵּשׁ",
+   "why": "relation names the wrong kind",
+   "source": "Menachot 73b"
+  },
+  {
+   "id": "Menachot_74_a",
+   "step": 14,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "the חכמים laugh at רבי אבא's answer: objection to an answer",
+   "source": "Menachot 74a"
+  },
+  {
+   "id": "Menachot_74_a",
+   "step": 14,
+   "field": "relationToPreviousStep",
+   "find": "Rejects רבי אבא's answer",
+   "replace": "Challenges רבי אבא's answer",
+   "why": "relation names the wrong kind",
+   "source": "Menachot 74a"
+  },
+  {
+   "id": "Menachot_74_a",
+   "step": 15,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "תירוץ",
+   "why": "answers the objection in step 14 by citing a teaching (rule 7)",
+   "source": "Menachot 74a"
+  },
+  {
+   "id": "Menachot_74_a",
+   "step": 18,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רבא objects to אביי's explanation (סכינא חריפא)",
+   "source": "Menachot 74a"
+  },
+  {
+   "id": "Menachot_74_a",
+   "step": 18,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the way",
+   "replace": "Challenges the way",
+   "why": "relation names the wrong kind",
+   "source": "Menachot 74a"
+  },
+  {
+   "id": "Menachot_77_b",
+   "step": 14,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "תלמוד לומר answers the counter-argument of step 13 and is challenged at once in step 15 (rule 5)",
+   "source": "Menachot 77b"
+  },
+  {
+   "id": "Menachot_78_a",
+   "step": 19,
+   "field": "hebrewStepName",
+   "find": "תירוץ",
+   "replace": "מימרא",
+   "why": "ולא פליגי with no challenge before it; reconciles two statements",
+   "source": "Menachot 78a"
+  },
+  {
+   "id": "Menachot_79_a",
+   "step": 24,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "לא, דאיפסיל בזריקה answers the challenge from the משנה (rule 2)",
+   "source": "Menachot 79a"
+  },
+  {
+   "id": "Menachot_79_a",
+   "step": 24,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the reading behind the challenge",
+   "replace": "Answers the challenge",
+   "why": "relation names the wrong kind",
+   "source": "Menachot 79a"
+  },
+  {
+   "id": "Menachot_7_b",
+   "step": 23,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "לא... answers the challenge from the ברייתא (rule 2)",
+   "source": "Menachot 7b"
+  },
+  {
+   "id": "Menachot_7_b",
+   "step": 23,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the reading of the ברייתא offered in step 22.",
+   "replace": "Answers the challenge in step 22 by reading the ברייתא differently.",
+   "why": "relation names the wrong kind",
+   "source": "Menachot 7b"
+  },
+  {
+   "id": "Menachot_81_a",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objection to רב שישא's plan (rule 2)",
+   "source": "Menachot 81a"
+  },
+  {
+   "id": "Menachot_81_a",
+   "step": 7,
+   "field": "relationToPreviousStep",
+   "find": "Rejects רב שישא's plan",
+   "replace": "Challenges רב שישא's plan",
+   "why": "relation names the wrong kind",
+   "source": "Menachot 81a"
+  },
+  {
+   "id": "Menachot_81_a",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רב כהנא objects to רב אשי's plan (rule 2)",
+   "source": "Menachot 81a"
+  },
+  {
+   "id": "Menachot_81_a",
+   "step": 9,
+   "field": "relationToPreviousStep",
+   "find": "Rejects רב אשי's pregnant-animal plan",
+   "replace": "Challenges רב אשי's pregnant-animal plan",
+   "why": "relation names the wrong kind",
+   "source": "Menachot 81a"
+  },
+  {
+   "id": "Menachot_81_a",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רבינא objects to רב דימי's plan (rule 2)",
+   "source": "Menachot 81a"
+  },
+  {
+   "id": "Menachot_81_a",
+   "step": 11,
+   "field": "relationToPreviousStep",
+   "find": "Rejects רב דימי's three-animal plan",
+   "replace": "Challenges רב דימי's three-animal plan",
+   "why": "relation names the wrong kind",
+   "source": "Menachot 81a"
+  },
+  {
+   "id": "Menachot_81_b",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "הכי השתא answers the challenge of step 8",
+   "source": "Menachot 81b"
+  },
+  {
+   "id": "Menachot_81_b",
+   "step": 9,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the comparison made in Step 8",
+   "replace": "Answers the challenge in Step 8",
+   "why": "relation names the wrong kind",
+   "source": "Menachot 81b"
+  },
+  {
+   "id": "Menachot_81_b",
+   "step": 10,
+   "field": "hebrewStepName",
+   "find": "מימרא",
+   "replace": "קשיא",
+   "why": "תא שמע ברייתא brought against רב הונא (rule 1)",
+   "source": "Menachot 81b"
+  },
+  {
+   "id": "Menachot_81_b",
+   "step": 12,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "הוא הדין... answers the inference-challenge of step 11",
+   "source": "Menachot 81b"
+  },
+  {
+   "id": "Menachot_81_b",
+   "step": 12,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the inference of step 11",
+   "replace": "Answers the inference of step 11",
+   "why": "relation names the wrong kind",
+   "source": "Menachot 81b"
+  },
+  {
+   "id": "Menachot_84_a",
+   "step": 8,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the answer in step 7",
+   "replace": "Challenges the answer in step 7",
+   "why": "relation names the wrong kind",
+   "source": "Menachot 84a"
+  },
+  {
+   "id": "Menachot_84_a",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "בעינא כרמל answers רמי בר חמא's challenge in step 8",
+   "source": "Menachot 84a"
+  },
+  {
+   "id": "Menachot_84_a",
+   "step": 9,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the suggestion of step 8.",
+   "replace": "Answers the suggestion of step 8.",
+   "why": "relation names the wrong kind",
+   "source": "Menachot 84a"
+  },
+  {
+   "id": "Menachot_84_a",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "כרמל תקריב answers the challenge in step 10",
+   "source": "Menachot 84a"
+  },
+  {
+   "id": "Menachot_84_a",
+   "step": 11,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the suggestion of step 10",
+   "replace": "Answers the suggestion of step 10",
+   "why": "relation names the wrong kind",
+   "source": "Menachot 84a"
+  },
+  {
+   "id": "Menachot_85_a",
+   "step": 14,
+   "field": "hebrewStepName",
+   "find": "תשובה",
+   "replace": "ראיה",
+   "why": "קתני מיהת is the punchline of the proof from the ברייתא, not an answer to a question",
+   "source": "Menachot 85a"
+  },
+  {
+   "id": "Menachot_88_a",
+   "step": 3,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "רבי שמעון answers the חכמים' challenge (start of his answer; step 4 completes it)",
+   "source": "Menachot 88a"
+  },
+  {
+   "id": "Menachot_88_a",
+   "step": 3,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the reasoning behind",
+   "replace": "Answers",
+   "why": "relation names the wrong kind",
+   "source": "Menachot 88a"
+  },
+  {
+   "id": "Menachot_88_a",
+   "step": 4,
+   "field": "relationToPreviousStep",
+   "find": "after the rejection in step 3",
+   "replace": "after the reply in step 3",
+   "why": "relation names the wrong kind",
+   "source": "Menachot 88a"
+  },
+  {
+   "id": "Menachot_8_b",
+   "step": 10,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "ראיה",
+   "why": "שמע מינה ends the proof begun in step 6; step 11 returns to the challenge with another answer (rule 5)",
+   "source": "Menachot 8b"
+  },
+  {
+   "id": "Menachot_92_b",
+   "step": 4,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "והכי קאמר is the second half of the corrected-ברייתא answer; challenged at once in step 5",
+   "source": "Menachot 92b"
+  },
+  {
+   "id": "Menachot_95_b",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "מאי קשיא? דלמא... answers the contradiction in step 7 (rule 2)",
+   "source": "Menachot 95b"
+  },
+  {
+   "id": "Menachot_95_b",
+   "step": 8,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the contradiction raised in step 7",
+   "replace": "Answers the contradiction raised in step 7",
+   "why": "relation names the wrong kind",
+   "source": "Menachot 95b"
+  },
+  {
+   "id": "Menachot_95_b",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objects to רב אשי's answer (ברותא היא)",
+   "source": "Menachot 95b"
+  },
+  {
+   "id": "Menachot_95_b",
+   "step": 11,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the answer of step 10",
+   "replace": "Challenges the answer of step 10",
+   "why": "relation names the wrong kind",
+   "source": "Menachot 95b"
+  },
+  {
+   "id": "Menachot_97_a",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "רבא retracts and answers his own challenge from step 8",
+   "source": "Menachot 97a"
+  },
+  {
+   "id": "Menachot_97_a",
+   "step": 9,
+   "field": "relationToPreviousStep",
+   "find": "רבא rejects his own challenge",
+   "replace": "רבא answers his own challenge",
+   "why": "relation names the wrong kind",
+   "source": "Menachot 97a"
+  },
+  {
+   "id": "Menachot_97_b",
+   "step": 18,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objection to the וכי תימא suggestion in step 17",
+   "source": "Menachot 97b"
+  },
+  {
+   "id": "Menachot_97_b",
+   "step": 18,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the suggestion of step 17.",
+   "replace": "Challenges the suggestion of step 17.",
+   "why": "relation names the wrong kind",
+   "source": "Menachot 97b"
+  },
+  {
+   "id": "Menachot_98_b",
+   "step": 32,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וליטעמיך counter-objection (rule 2)",
+   "source": "Menachot 98b"
+  },
+  {
+   "id": "Menachot_9_b",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רבי יוחנן objects to ריש לקיש's answer",
+   "source": "Menachot 9b"
+  },
+  {
+   "id": "Menachot_9_b",
+   "step": 8,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the answer given in Step 7.",
+   "replace": "Challenges the answer given in Step 7.",
+   "why": "relation names the wrong kind",
+   "source": "Menachot 9b"
+  },
+  {
+   "id": "Moed_Katan_11_a",
+   "step": 19,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "מתקיף לה רב חסדא: objection to the answer in step 18",
+   "source": "Moed Katan 11a"
+  },
+  {
+   "id": "Moed_Katan_11_a",
+   "step": 19,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the answer of step 18.",
+   "replace": "Challenges the answer of step 18.",
+   "why": "relation names the wrong kind",
+   "source": "Moed Katan 11a"
+  },
+  {
+   "id": "Moed_Katan_13_a",
+   "step": 15,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רב פפא's מתקיף לה against רב ששת's reasoning is an objection, not pushing aside a proof",
+   "source": "Moed Katan 13a"
+  },
+  {
+   "id": "Moed_Katan_13_a",
+   "step": 15,
+   "field": "relationToPreviousStep",
+   "find": "Rejects רב ששת's reasoning",
+   "replace": "Challenges רב ששת's reasoning",
+   "why": "relation names the wrong kind",
+   "source": "Moed Katan 13a"
+  },
+  {
+   "id": "Moed_Katan_13_a",
+   "step": 16,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רבינא's parallel מתקיף לה, same as step 15",
+   "source": "Moed Katan 13a"
+  },
+  {
+   "id": "Moed_Katan_13_a",
+   "step": 16,
+   "field": "relationToPreviousStep",
+   "find": "Adds a second rejection",
+   "replace": "Adds a second challenge",
+   "why": "relation names the wrong kind",
+   "source": "Moed Katan 13a"
+  },
+  {
+   "id": "Moed_Katan_16_b",
+   "step": 14,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "in the story רבי objects to רבי חייא's answer (rule 3)",
+   "source": "Moed Katan 16b"
+  },
+  {
+   "id": "Moed_Katan_16_b",
+   "step": 14,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the reading",
+   "replace": "Challenges the reading",
+   "why": "relation names the wrong kind",
+   "source": "Moed Katan 16b"
+  },
+  {
+   "id": "Moed_Katan_18_a",
+   "step": 12,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "ראיה",
+   "why": "שמע מינה תלת is an inference from the story and is challenged at once (rule 5)",
+   "source": "Moed Katan 18a"
+  },
+  {
+   "id": "Moed_Katan_25_b",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "in the story בר אבין objects to בר קיפוק's wording (rule 3)",
+   "source": "Moed Katan 25b"
+  },
+  {
+   "id": "Moed_Katan_25_b",
+   "step": 11,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the wording",
+   "replace": "Challenges the wording",
+   "why": "relation names the wrong kind",
+   "source": "Moed Katan 25b"
+  },
+  {
+   "id": "Moed_Katan_26_a",
+   "step": 38,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "second half of the challenge begun in step 37",
+   "source": "Moed Katan 26a"
+  },
+  {
+   "id": "Moed_Katan_27_a",
+   "step": 12,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "מאי קושיא answers רבה's challenge",
+   "source": "Moed Katan 27a"
+  },
+  {
+   "id": "Moed_Katan_27_a",
+   "step": 12,
+   "field": "relationToPreviousStep",
+   "find": "Rejects רבה's challenge",
+   "replace": "Answers רבה's challenge",
+   "why": "relation names the wrong kind",
+   "source": "Moed Katan 27a"
+  },
+  {
+   "id": "Moed_Katan_27_a",
+   "step": 14,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "ומאי קשיא answers the challenge of step 13",
+   "source": "Moed Katan 27a"
+  },
+  {
+   "id": "Moed_Katan_27_a",
+   "step": 14,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the challenge of Step 13.",
+   "replace": "Answers the challenge of Step 13.",
+   "why": "relation names the wrong kind",
+   "source": "Moed Katan 27a"
+  },
+  {
+   "id": "Moed_Katan_2_b",
+   "step": 2,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objection to the suggestion in step 1 (אם כן, אמאן תרמייה)",
+   "source": "Moed Katan 2b"
+  },
+  {
+   "id": "Moed_Katan_2_b",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וכי תימא: continuation of אביי's challenge",
+   "source": "Moed Katan 2b"
+  },
+  {
+   "id": "Nazir_11_b",
+   "step": 4,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "end of the first answer; the next step is איבעית אימא, a second answer (rule 5)",
+   "source": "Nazir 11b"
+  },
+  {
+   "id": "Nazir_12_b",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "ודלמא answers the challenge built in steps 4-6",
+   "source": "Nazir 12b"
+  },
+  {
+   "id": "Nazir_12_b",
+   "step": 7,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the assumption in step 6",
+   "replace": "Answers step 6 by questioning its assumption",
+   "why": "relation names the wrong kind",
+   "source": "Nazir 12b"
+  },
+  {
+   "id": "Nazir_18_b",
+   "step": 13,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "the רבנן's side of the same answer (why they need no מיעוט for עולה); no proof is pushed aside",
+   "source": "Nazir 18b"
+  },
+  {
+   "id": "Nazir_27_b",
+   "step": 3,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "תא שמע quoted for רב המנונא's objection (rule 1)",
+   "source": "Nazir 27b"
+  },
+  {
+   "id": "Nazir_27_b",
+   "step": 5,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "לא, תמימה answers the challenge from the ברייתא",
+   "source": "Nazir 27b"
+  },
+  {
+   "id": "Nazir_27_b",
+   "step": 5,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the suggested reading of the ברייתא from step 4.",
+   "replace": "Answers step 4 with a different reading of the ברייתא.",
+   "why": "relation names the wrong kind",
+   "source": "Nazir 27b"
+  },
+  {
+   "id": "Nazir_28_a",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "לא, תמימה answers רבא's challenge",
+   "source": "Nazir 28a"
+  },
+  {
+   "id": "Nazir_28_a",
+   "step": 9,
+   "field": "relationToPreviousStep",
+   "find": "Rejects רבא's inference",
+   "replace": "Answers רבא's inference",
+   "why": "relation names the wrong kind",
+   "source": "Nazir 28a"
+  },
+  {
+   "id": "Nazir_2_b",
+   "step": 10,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "אמרי... answers the לימא challenge of step 9",
+   "source": "Nazir 2b"
+  },
+  {
+   "id": "Nazir_2_b",
+   "step": 10,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the suggestion of step 9.",
+   "replace": "Answers the suggestion of step 9.",
+   "why": "relation names the wrong kind",
+   "source": "Nazir 2b"
+  },
+  {
+   "id": "Nazir_31_a",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "בית הלל object to רב פפא's reading (אם כן...)",
+   "source": "Nazir 31a"
+  },
+  {
+   "id": "Nazir_31_b",
+   "step": 21,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "בית הלל answer בית שמאי's counter-case (step 20 is a קשיא)",
+   "source": "Nazir 31b"
+  },
+  {
+   "id": "Nazir_31_b",
+   "step": 21,
+   "field": "relationToPreviousStep",
+   "find": "Rejects בית שמאי's proof",
+   "replace": "Answers בית שמאי's challenge",
+   "why": "relation names the wrong kind",
+   "source": "Nazir 31b"
+  },
+  {
+   "id": "Nazir_31_b",
+   "step": 22,
+   "field": "relationToPreviousStep",
+   "find": "Completes the rejection in step 21",
+   "replace": "Completes the answer in step 21",
+   "why": "relation names the wrong kind",
+   "source": "Nazir 31b"
+  },
+  {
+   "id": "Nazir_32_a",
+   "step": 14,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "ולא היא objects to רב שימי's answer",
+   "source": "Nazir 32a"
+  },
+  {
+   "id": "Nazir_32_a",
+   "step": 14,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the קל וחומר",
+   "replace": "Challenges the קל וחומר",
+   "why": "relation names the wrong kind",
+   "source": "Nazir 32a"
+  },
+  {
+   "id": "Nazir_34_b",
+   "step": 18,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "second half of the רבנן's exposition; challenged at once in step 19 (rule 5)",
+   "source": "Nazir 34b"
+  },
+  {
+   "id": "Nazir_36_b",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "counter-question (אלא מאי...) like וליטעמיך; the real answer comes in step 10",
+   "source": "Nazir 36b"
+  },
+  {
+   "id": "Nazir_37_b",
+   "step": 14,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רבי עקיבא objects to the רבנן's צריכותא answer",
+   "source": "Nazir 37b"
+  },
+  {
+   "id": "Nazir_37_b",
+   "step": 14,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the second half",
+   "replace": "Challenges the second half",
+   "why": "relation names the wrong kind",
+   "source": "Nazir 37b"
+  },
+  {
+   "id": "Nazir_37_b",
+   "step": 16,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רבי עקיבא objects to the רבנן's answer in step 15",
+   "source": "Nazir 37b"
+  },
+  {
+   "id": "Nazir_37_b",
+   "step": 16,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the רבנן's split",
+   "replace": "Challenges the רבנן's split",
+   "why": "relation names the wrong kind",
+   "source": "Nazir 37b"
+  },
+  {
+   "id": "Nazir_38_b",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objection to the answer in step 10",
+   "source": "Nazir 38b"
+  },
+  {
+   "id": "Nazir_38_b",
+   "step": 11,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the answer of Step 10",
+   "replace": "Challenges the answer of Step 10",
+   "why": "relation names the wrong kind",
+   "source": "Nazir 38b"
+  },
+  {
+   "id": "Nazir_3_b",
+   "step": 12,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "אמרי: לא... answers the challenge from the ברייתא in step 11",
+   "source": "Nazir 3b"
+  },
+  {
+   "id": "Nazir_3_b",
+   "step": 12,
+   "field": "relationToPreviousStep",
+   "find": "Rejects step 11's proof by giving",
+   "replace": "Answers step 11 by giving",
+   "why": "relation names the wrong kind",
+   "source": "Nazir 3b"
+  },
+  {
+   "id": "Nazir_42_a",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "the West's reply answers רבי יוסי ברבי חנינא's objection",
+   "source": "Nazir 42a"
+  },
+  {
+   "id": "Nazir_42_a",
+   "step": 7,
+   "field": "relationToPreviousStep",
+   "find": "Rejects רבי יוסי ברבי חנינא's objection",
+   "replace": "Answers רבי יוסי ברבי חנינא's objection",
+   "why": "relation names the wrong kind",
+   "source": "Nazir 42a"
+  },
+  {
+   "id": "Nazir_42_b",
+   "step": 4,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "ראיה",
+   "why": "שמע מינה ends the proof from step 3 and is challenged at once (rule 5)",
+   "source": "Nazir 42b"
+  },
+  {
+   "id": "Nazir_42_b",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "second half of the answer in step 10, and step 12 attacks it",
+   "source": "Nazir 42b"
+  },
+  {
+   "id": "Nazir_44_b",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "inference inside אביי's report, challenged at once in step 9",
+   "source": "Nazir 44b"
+  },
+  {
+   "id": "Nazir_46_b",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "ואלא הא דתניא… is a counter-objection to the challenge of step 8, answered by רבי אבינא",
+   "source": "Nazir 46b"
+  },
+  {
+   "id": "Nazir_46_b",
+   "step": 9,
+   "field": "relationToPreviousStep",
+   "find": "Pushes back on the proof from the palms",
+   "replace": "Pushes back on the challenge from the palms",
+   "why": "relation names the wrong kind",
+   "source": "Nazir 46b"
+  },
+  {
+   "id": "Nazir_48_a",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תשובה",
+   "why": "continuation of the ברייתא answering מנלן (step 8); challenged in step 12",
+   "source": "Nazir 48a"
+  },
+  {
+   "id": "Nazir_4_b",
+   "step": 14,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "ורבי יוסי אמר לך answers רבי יעקב's challenge",
+   "source": "Nazir 4b"
+  },
+  {
+   "id": "Nazir_4_b",
+   "step": 14,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the proof from",
+   "replace": "Answers the challenge from",
+   "why": "relation names the wrong kind",
+   "source": "Nazir 4b"
+  },
+  {
+   "id": "Nazir_4_b",
+   "step": 18,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "end of the שמעון הצדיק ברייתא that is the answer begun in step 16",
+   "source": "Nazir 4b"
+  },
+  {
+   "id": "Nazir_56_b",
+   "step": 13,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "קשיא",
+   "why": "הוי משום… closes the challenge of steps 10-12; answered in step 14",
+   "source": "Nazir 56b"
+  },
+  {
+   "id": "Nazir_58_a",
+   "step": 17,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וליטעמיך",
+   "source": "Nazir 58a"
+  },
+  {
+   "id": "Nazir_5_a",
+   "step": 13,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "איכא דאמרי: a second answer to the challenge of step 9",
+   "source": "Nazir 5a"
+  },
+  {
+   "id": "Nazir_61_b",
+   "step": 15,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "מי כתיב נזיר עולם answers the אימא challenge of step 14",
+   "source": "Nazir 61b"
+  },
+  {
+   "id": "Nazir_61_b",
+   "step": 15,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the",
+   "replace": "Answers the",
+   "why": "relation names the wrong kind",
+   "source": "Nazir 61b"
+  },
+  {
+   "id": "Nazir_61_b",
+   "step": 17,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "answers the אימא challenge of step 16",
+   "source": "Nazir 61b"
+  },
+  {
+   "id": "Nazir_61_b",
+   "step": 17,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the",
+   "replace": "Answers the",
+   "why": "relation names the wrong kind",
+   "source": "Nazir 61b"
+  },
+  {
+   "id": "Nazir_62_a",
+   "step": 1,
+   "field": "hebrewStepName",
+   "find": "תירוץ",
+   "replace": "קשיא",
+   "why": "end of the אימא challenge begun on 61b (that step is קשיא); the second half takes the label of the first",
+   "source": "Nazir 62a"
+  },
+  {
+   "id": "Nazir_62_a",
+   "step": 2,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "answers the אימא challenge",
+   "source": "Nazir 62a"
+  },
+  {
+   "id": "Nazir_62_a",
+   "step": 2,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the proposal",
+   "replace": "Answers the proposal",
+   "why": "relation names the wrong kind",
+   "source": "Nazir 62a"
+  },
+  {
+   "id": "Nazir_66_a",
+   "step": 15,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תשובה",
+   "why": "second half of the answer to במאי קמיפלגי; challenged in step 16",
+   "source": "Nazir 66a"
+  },
+  {
+   "id": "Nedarim_16_a",
+   "step": 13,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "מימרא",
+   "why": "explains why אביי did not answer like רב אשי; no proof is pushed aside",
+   "source": "Nedarim 16a"
+  },
+  {
+   "id": "Nedarim_23_a",
+   "step": 5,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "story line, and step 6 challenges it",
+   "source": "Nedarim 23a"
+  },
+  {
+   "id": "Nedarim_36_b",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "לא, משל בעל הכרי… answers the איתיביה",
+   "source": "Nedarim 36b"
+  },
+  {
+   "id": "Nedarim_36_b",
+   "step": 11,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the challenge",
+   "replace": "Answers the challenge",
+   "why": "relation names the wrong kind",
+   "source": "Nedarim 36b"
+  },
+  {
+   "id": "Nedarim_37_a",
+   "step": 12,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וליטעמיך",
+   "source": "Nedarim 37a"
+  },
+  {
+   "id": "Nedarim_37_a",
+   "step": 12,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the assumption",
+   "replace": "Challenges the assumption",
+   "why": "relation names the wrong kind",
+   "source": "Nedarim 37a"
+  },
+  {
+   "id": "Nedarim_3_b",
+   "step": 10,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objection to the answer of step 9",
+   "source": "Nedarim 3b"
+  },
+  {
+   "id": "Nedarim_3_b",
+   "step": 10,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the case",
+   "replace": "Challenges the case",
+   "why": "relation names the wrong kind",
+   "source": "Nedarim 3b"
+  },
+  {
+   "id": "Nedarim_48_a",
+   "step": 13,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "last line of the משנה; the גמרא challenges it at once (מעשה לסתור)",
+   "source": "Nedarim 48a"
+  },
+  {
+   "id": "Nedarim_48_b",
+   "step": 10,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "לא, לאתויי… answers the challenge from כל",
+   "source": "Nedarim 48b"
+  },
+  {
+   "id": "Nedarim_48_b",
+   "step": 10,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the proof",
+   "replace": "Answers the challenge",
+   "why": "relation names the wrong kind",
+   "source": "Nedarim 48b"
+  },
+  {
+   "id": "Nedarim_49_b",
+   "step": 16,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "inside the story רבי יהודה objects to רבי שמעון's reason (rule 3)",
+   "source": "Nedarim 49b"
+  },
+  {
+   "id": "Nedarim_49_b",
+   "step": 16,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the reason",
+   "replace": "Challenges the reason",
+   "why": "relation names the wrong kind",
+   "source": "Nedarim 49b"
+  },
+  {
+   "id": "Nedarim_51_b",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "הא לא קשיא: דלמא… answers the challenge of step 10",
+   "source": "Nedarim 51b"
+  },
+  {
+   "id": "Nedarim_56_a",
+   "step": 12,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "רבינא answers the רבנן's challenge to עולא",
+   "source": "Nedarim 56a"
+  },
+  {
+   "id": "Nedarim_56_a",
+   "step": 12,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the רבנן",
+   "replace": "Answers the רבנן",
+   "why": "relation names the wrong kind",
+   "source": "Nedarim 56a"
+  },
+  {
+   "id": "Nedarim_70_b",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objects to the suggested answer of step 5 (היכי דמי)",
+   "source": "Nedarim 70b"
+  },
+  {
+   "id": "Nedarim_70_b",
+   "step": 6,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the suggestion",
+   "replace": "Challenges the suggestion",
+   "why": "relation names the wrong kind",
+   "source": "Nedarim 70b"
+  },
+  {
+   "id": "Nedarim_70_b",
+   "step": 6,
+   "field": "title",
+   "find": "Rejected:",
+   "replace": "Problem:",
+   "why": "title names the wrong kind",
+   "source": "Nedarim 70b"
+  },
+  {
+   "id": "Nedarim_83_a",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "ואלא מאי… counter-objection to the inference of step 6; the answer comes in step 8",
+   "source": "Nedarim 83a"
+  },
+  {
+   "id": "Nedarim_83_a",
+   "step": 7,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the inference",
+   "replace": "Challenges the inference",
+   "why": "relation names the wrong kind",
+   "source": "Nedarim 83a"
+  },
+  {
+   "id": "Nedarim_85_b",
+   "step": 3,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objection to the וכי תימא answer",
+   "source": "Nedarim 85b"
+  },
+  {
+   "id": "Nedarim_85_b",
+   "step": 3,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the answer",
+   "replace": "Challenges the answer",
+   "why": "relation names the wrong kind",
+   "source": "Nedarim 85b"
+  },
+  {
+   "id": "Nedarim_85_b",
+   "step": 5,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "אביי objects to רב יוסף's answer",
+   "source": "Nedarim 85b"
+  },
+  {
+   "id": "Nedarim_85_b",
+   "step": 5,
+   "field": "relationToPreviousStep",
+   "find": "Rejects רב יוסף",
+   "replace": "Challenges רב יוסף",
+   "why": "relation names the wrong kind",
+   "source": "Nedarim 85b"
+  },
+  {
+   "id": "Nedarim_85_b",
+   "step": 5,
+   "field": "title",
+   "find": "rejects",
+   "replace": "challenges",
+   "why": "title names the wrong kind",
+   "source": "Nedarim 85b"
+  },
+  {
+   "id": "Niddah_10_a",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objection to the וכי תימא answer",
+   "source": "Niddah 10a"
+  },
+  {
+   "id": "Niddah_10_a",
+   "step": 9,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the suggestion",
+   "replace": "Challenges the suggestion",
+   "why": "relation names the wrong kind",
+   "source": "Niddah 10a"
+  },
+  {
+   "id": "Niddah_14_a",
+   "step": 16,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "last line of the משנה; the גמרא challenges it in step 17",
+   "source": "Niddah 14a"
+  },
+  {
+   "id": "Niddah_15_a",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וכי תימא… blocks a possible answer; continues the challenge of step 6, closed by קשיא in step 8",
+   "source": "Niddah 15a"
+  },
+  {
+   "id": "Niddah_19_a",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וכי תימא… blocks an answer; part of the challenge of step 10",
+   "source": "Niddah 19a"
+  },
+  {
+   "id": "Niddah_19_a",
+   "step": 13,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "האי מאי answers the challenge of step 12",
+   "source": "Niddah 19a"
+  },
+  {
+   "id": "Niddah_19_a",
+   "step": 13,
+   "field": "relationToPreviousStep",
+   "find": "It rejects the reading",
+   "replace": "It answers the reading",
+   "why": "relation names the wrong kind",
+   "source": "Niddah 19a"
+  },
+  {
+   "id": "Niddah_21_a",
+   "step": 18,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objection to the וכי תימא defence",
+   "source": "Niddah 21a"
+  },
+  {
+   "id": "Niddah_21_a",
+   "step": 18,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the defense",
+   "replace": "Challenges the defense",
+   "why": "relation names the wrong kind",
+   "source": "Niddah 21a"
+  },
+  {
+   "id": "Niddah_21_a",
+   "step": 21,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objection to the וכי תימא answer",
+   "source": "Niddah 21a"
+  },
+  {
+   "id": "Niddah_21_a",
+   "step": 21,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the answer",
+   "replace": "Challenges the answer",
+   "why": "relation names the wrong kind",
+   "source": "Niddah 21a"
+  },
+  {
+   "id": "Niddah_21_b",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objection to the וכי תימא defence",
+   "source": "Niddah 21b"
+  },
+  {
+   "id": "Niddah_21_b",
+   "step": 7,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the defense",
+   "replace": "Challenges the defense",
+   "why": "relation names the wrong kind",
+   "source": "Niddah 21b"
+  },
+  {
+   "id": "Niddah_28_b",
+   "step": 18,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "answers the וכי תימא challenge of step 17",
+   "source": "Niddah 28b"
+  },
+  {
+   "id": "Niddah_28_b",
+   "step": 18,
+   "field": "relationToPreviousStep",
+   "find": "Rejects step 17",
+   "replace": "Answers step 17",
+   "why": "relation names the wrong kind",
+   "source": "Niddah 28b"
+  },
+  {
+   "id": "Niddah_2_b",
+   "step": 12,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "ומאי קושיא… דלמא objects to the answer of step 11",
+   "source": "Niddah 2b"
+  },
+  {
+   "id": "Niddah_2_b",
+   "step": 12,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the answer",
+   "replace": "Challenges the answer",
+   "why": "relation names the wrong kind",
+   "source": "Niddah 2b"
+  },
+  {
+   "id": "Niddah_2_b",
+   "step": 22,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objects to the distinction of step 21",
+   "source": "Niddah 2b"
+  },
+  {
+   "id": "Niddah_2_b",
+   "step": 22,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the distinction",
+   "replace": "Challenges the distinction",
+   "why": "relation names the wrong kind",
+   "source": "Niddah 2b"
+  },
+  {
+   "id": "Niddah_30_b",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "רבי ישמעאל answers the חכמים's challenge from the קליאופטרא story",
+   "source": "Niddah 30b"
+  },
+  {
+   "id": "Niddah_30_b",
+   "step": 13,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "ורבנן: answers רבי ישמעאל's objection of step 12",
+   "source": "Niddah 30b"
+  },
+  {
+   "id": "Niddah_30_b",
+   "step": 13,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the",
+   "replace": "Answers the",
+   "why": "relation names the wrong kind",
+   "source": "Niddah 30b"
+  },
+  {
+   "id": "Niddah_30_b",
+   "step": 18,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "ורבי ישמעאל: answers the flaw raised in step 17",
+   "source": "Niddah 30b"
+  },
+  {
+   "id": "Niddah_32_b",
+   "step": 5,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "אין הכי נמי… is the answer to step 4; challenged in step 6",
+   "source": "Niddah 32b"
+  },
+  {
+   "id": "Niddah_33_a",
+   "step": 32,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "הכא במאי עסקינן answers רבא's challenge",
+   "source": "Niddah 33a"
+  },
+  {
+   "id": "Niddah_33_a",
+   "step": 32,
+   "field": "relationToPreviousStep",
+   "find": "Rejects רבא's proof",
+   "replace": "Answers רבא's challenge",
+   "why": "relation names the wrong kind",
+   "source": "Niddah 33a"
+  },
+  {
+   "id": "Niddah_33_b",
+   "step": 30,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רבא objects to אביי's answer",
+   "source": "Niddah 33b"
+  },
+  {
+   "id": "Niddah_33_b",
+   "step": 30,
+   "field": "relationToPreviousStep",
+   "find": "Rejects אביי",
+   "replace": "Challenges אביי",
+   "why": "relation names the wrong kind",
+   "source": "Niddah 33b"
+  },
+  {
+   "id": "Niddah_34_b",
+   "step": 16,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תשובה",
+   "why": "second half of the בית הלל answer to ובית הלל?; attacked in step 17",
+   "source": "Niddah 34b"
+  },
+  {
+   "id": "Niddah_35_a",
+   "step": 10,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "מידי איריא answers the challenge of step 9",
+   "source": "Niddah 35a"
+  },
+  {
+   "id": "Niddah_35_a",
+   "step": 10,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the comparison",
+   "replace": "Answers the comparison",
+   "why": "relation names the wrong kind",
+   "source": "Niddah 35a"
+  },
+  {
+   "id": "Niddah_35_b",
+   "step": 3,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "ותסברא: counter-objection to the challenger's reading; the answer comes in step 4",
+   "source": "Niddah 35b"
+  },
+  {
+   "id": "Niddah_35_b",
+   "step": 3,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the assumption",
+   "replace": "Challenges the assumption",
+   "why": "relation names the wrong kind",
+   "source": "Niddah 35b"
+  },
+  {
+   "id": "Niddah_36_b",
+   "step": 30,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "ואימא objects to ריש לקיש's answer",
+   "source": "Niddah 36b"
+  },
+  {
+   "id": "Niddah_36_b",
+   "step": 30,
+   "field": "relationToPreviousStep",
+   "find": "Rejects ריש לקיש",
+   "replace": "Challenges ריש לקיש",
+   "why": "relation names the wrong kind",
+   "source": "Niddah 36b"
+  },
+  {
+   "id": "Niddah_36_b",
+   "step": 40,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "מימרא",
+   "why": "story line (a retort); no proof is pushed aside",
+   "source": "Niddah 36b"
+  },
+  {
+   "id": "Niddah_36_b",
+   "step": 40,
+   "field": "relationToPreviousStep",
+   "find": "Rejects רב אסי",
+   "replace": "Counters רב אסי",
+   "why": "relation names the wrong kind",
+   "source": "Niddah 36b"
+  },
+  {
+   "id": "Niddah_37_a",
+   "step": 10,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "לא, לטמויה… answers the תא שמע challenge",
+   "source": "Niddah 37a"
+  },
+  {
+   "id": "Niddah_37_a",
+   "step": 10,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the reading",
+   "replace": "Answers the reading",
+   "why": "relation names the wrong kind",
+   "source": "Niddah 37a"
+  },
+  {
+   "id": "Niddah_38_b",
+   "step": 12,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רבא objects to רב ששת's answer",
+   "source": "Niddah 38b"
+  },
+  {
+   "id": "Niddah_38_b",
+   "step": 12,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the answer",
+   "replace": "Challenges the answer",
+   "why": "relation names the wrong kind",
+   "source": "Niddah 38b"
+  },
+  {
+   "id": "Niddah_3_b",
+   "step": 16,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "Hillel's reply answering Shammai's objection inside the reconstructed dialogue",
+   "source": "Niddah 3b"
+  },
+  {
+   "id": "Niddah_43_a",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "explains the two answers and is followed straight away by a challenge to רבא; part of the answers",
+   "source": "Niddah 43a"
+  },
+  {
+   "id": "Niddah_45_a",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "מתקיף objection to the suggested practical difference (a Response), not a proof",
+   "source": "Niddah 45a"
+  },
+  {
+   "id": "Niddah_45_a",
+   "step": 9,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the practical difference",
+   "replace": "Challenges the practical difference",
+   "why": "relation names the wrong kind",
+   "source": "Niddah 45a"
+  },
+  {
+   "id": "Niddah_45_b",
+   "step": 26,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "רבא answers רב המנונא's מתיב",
+   "source": "Niddah 45b"
+  },
+  {
+   "id": "Niddah_45_b",
+   "step": 26,
+   "field": "relationToPreviousStep",
+   "find": "Rejects רב המנונא's proof",
+   "replace": "Answers רב המנונא's challenge",
+   "why": "relation names the wrong kind",
+   "source": "Niddah 45b"
+  },
+  {
+   "id": "Niddah_49_a",
+   "step": 3,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וכי תימא ... פשיטא: objection to a suggested answer",
+   "source": "Niddah 49a"
+  },
+  {
+   "id": "Niddah_4_a",
+   "step": 15,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "ומי תלינן? והתנן: source quoted to attack the suggested answer",
+   "source": "Niddah 4a"
+  },
+  {
+   "id": "Niddah_4_a",
+   "step": 15,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the answer of Step 14",
+   "replace": "Challenges the answer of Step 14",
+   "why": "relation names the wrong kind",
+   "source": "Niddah 4a"
+  },
+  {
+   "id": "Niddah_4_a",
+   "step": 18,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "והתנן attacking the step 17 distinction",
+   "source": "Niddah 4a"
+  },
+  {
+   "id": "Niddah_4_a",
+   "step": 18,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the step 17 distinction",
+   "replace": "Challenges the step 17 distinction",
+   "why": "relation names the wrong kind",
+   "source": "Niddah 4a"
+  },
+  {
+   "id": "Niddah_52_b",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "רבי עקיבא's reply answers the challenge",
+   "source": "Niddah 52b"
+  },
+  {
+   "id": "Niddah_55_a",
+   "step": 24,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תשובה",
+   "why": "תלמוד לומר ends the ברייתא answering the question of step 20, and is challenged straight away",
+   "source": "Niddah 55a"
+  },
+  {
+   "id": "Niddah_56_b",
+   "step": 16,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "רבי יוחנן's זאת אומרת statement, challenged straight away in step 17",
+   "source": "Niddah 56b"
+  },
+  {
+   "id": "Niddah_5_b",
+   "step": 16,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "רבא defends זעירי against the ברייתא challenge (ותסברא)",
+   "source": "Niddah 5b"
+  },
+  {
+   "id": "Niddah_62_b",
+   "step": 10,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "ריש לקיש answers רבי יוחנן's challenge",
+   "source": "Niddah 62b"
+  },
+  {
+   "id": "Niddah_65_a",
+   "step": 5,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objection to the suggested defense (הא בלבד קאמר)",
+   "source": "Niddah 65a"
+  },
+  {
+   "id": "Niddah_65_a",
+   "step": 5,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the defense offered in step 4",
+   "replace": "Challenges the defense offered in step 4",
+   "why": "relation names the wrong kind",
+   "source": "Niddah 65a"
+  },
+  {
+   "id": "Niddah_69_a",
+   "step": 18,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "answers the objection of step 17",
+   "source": "Niddah 69a"
+  },
+  {
+   "id": "Niddah_69_a",
+   "step": 18,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the objection of step 17",
+   "replace": "Answers the objection of step 17",
+   "why": "relation names the wrong kind",
+   "source": "Niddah 69a"
+  },
+  {
+   "id": "Niddah_6_b",
+   "step": 12,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "answers the challenge of step 11, then a new challenge follows",
+   "source": "Niddah 6b"
+  },
+  {
+   "id": "Niddah_72_a",
+   "step": 17,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רב יוסף objects to רב כהנא's answer",
+   "source": "Niddah 72a"
+  },
+  {
+   "id": "Niddah_72_a",
+   "step": 17,
+   "field": "relationToPreviousStep",
+   "find": "Rejects רב כהנא's way",
+   "replace": "Challenges רב כהנא's way",
+   "why": "relation names the wrong kind",
+   "source": "Niddah 72a"
+  },
+  {
+   "id": "Niddah_7_b",
+   "step": 27,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וכי תימא: objection to a possible answer",
+   "source": "Niddah 7b"
+  },
+  {
+   "id": "Niddah_8_a",
+   "step": 16,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "ומי איכא? והתנן: source quoted to attack the suggested answer",
+   "source": "Niddah 8a"
+  },
+  {
+   "id": "Niddah_8_a",
+   "step": 16,
+   "field": "relationToPreviousStep",
+   "find": "Starts to reject the suggestion",
+   "replace": "Starts to challenge the suggestion",
+   "why": "relation names the wrong kind",
+   "source": "Niddah 8a"
+  },
+  {
+   "id": "Pesachim_100_b",
+   "step": 3,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "answers the inference drawn from the attacking ברייתא",
+   "source": "Pesachim 100b"
+  },
+  {
+   "id": "Pesachim_100_b",
+   "step": 3,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the inference from step 2",
+   "replace": "Answers the inference from step 2",
+   "why": "relation names the wrong kind",
+   "source": "Pesachim 100b"
+  },
+  {
+   "id": "Pesachim_102_a",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "אמר לך רבי יוחנן: defense answering the proposed refutation",
+   "source": "Pesachim 102a"
+  },
+  {
+   "id": "Pesachim_102_a",
+   "step": 8,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the refutation of רבי יוחנן",
+   "replace": "Answers the refutation of רבי יוחנן",
+   "why": "relation names the wrong kind",
+   "source": "Pesachim 102a"
+  },
+  {
+   "id": "Pesachim_103_b",
+   "step": 14,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "in the story, רב יעקב בר אבא objects to רבא's reply",
+   "source": "Pesachim 103b"
+  },
+  {
+   "id": "Pesachim_103_b",
+   "step": 14,
+   "field": "relationToPreviousStep",
+   "find": "Rejects רבא's deflection in step 13",
+   "replace": "Challenges רבא's deflection in step 13",
+   "why": "relation names the wrong kind",
+   "source": "Pesachim 103b"
+  },
+  {
+   "id": "Pesachim_104_a",
+   "step": 25,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "מימרא",
+   "why": "אביי cursing רב's view is a statement, not pushing aside a proof",
+   "source": "Pesachim 104a"
+  },
+  {
+   "id": "Pesachim_107_b",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "ראיה",
+   "why": "end of רבינא's proof (בשלמא/אלא), challenged straight away in step 7",
+   "source": "Pesachim 107b"
+  },
+  {
+   "id": "Pesachim_112_a",
+   "step": 34,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "in the story, רבי שמעון objects to רבי עקיבא's reason",
+   "source": "Pesachim 112a"
+  },
+  {
+   "id": "Pesachim_113_b",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תשובה",
+   "why": "answers the question of step 9 and is challenged straight away in step 12",
+   "source": "Pesachim 113b"
+  },
+  {
+   "id": "Pesachim_114_b",
+   "step": 10,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "ואכתי ממאי? דילמא: objection to the answer of step 9 (an answer to a Challenge, not to מנלן)",
+   "source": "Pesachim 114b"
+  },
+  {
+   "id": "Pesachim_11_a",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objection to רב אשי's answer (בדותא)",
+   "source": "Pesachim 11a"
+  },
+  {
+   "id": "Pesachim_11_a",
+   "step": 11,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the alternative answer offered in step 10",
+   "replace": "Challenges the alternative answer offered in step 10",
+   "why": "relation names the wrong kind",
+   "source": "Pesachim 11a"
+  },
+  {
+   "id": "Pesachim_14_b",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "answers the challenge of step 8",
+   "source": "Pesachim 14b"
+  },
+  {
+   "id": "Pesachim_14_b",
+   "step": 9,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the challenge of Step 8",
+   "replace": "Answers the challenge of Step 8",
+   "why": "relation names the wrong kind",
+   "source": "Pesachim 14b"
+  },
+  {
+   "id": "Pesachim_16_a",
+   "step": 16,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "מתקיף רב אשי: objection to the answer of step 15",
+   "source": "Pesachim 16a"
+  },
+  {
+   "id": "Pesachim_16_a",
+   "step": 16,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the answer of Step 15.",
+   "replace": "Challenges the answer of Step 15.",
+   "why": "relation names the wrong kind",
+   "source": "Pesachim 16a"
+  },
+  {
+   "id": "Pesachim_18_a",
+   "step": 17,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תשובה",
+   "why": "completes רבינא's answer to step 14 and is challenged straight away",
+   "source": "Pesachim 18a"
+  },
+  {
+   "id": "Pesachim_18_b",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תשובה",
+   "why": "end of the ברייתא's derivation answering the question, challenged straight away",
+   "source": "Pesachim 18b"
+  },
+  {
+   "id": "Pesachim_20_b",
+   "step": 4,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "continues quoting רבי יוסי's ברייתא brought as a contradiction (ורמינהו), rule 1; step 5 is the same",
+   "source": "Pesachim 20b"
+  },
+  {
+   "id": "Pesachim_20_b",
+   "step": 33,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "answers the challenge of step 32",
+   "source": "Pesachim 20b"
+  },
+  {
+   "id": "Pesachim_20_b",
+   "step": 33,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the suggestion of Step 32.",
+   "replace": "Answers the challenge of Step 32.",
+   "why": "relation names the wrong kind",
+   "source": "Pesachim 20b"
+  },
+  {
+   "id": "Pesachim_22_a",
+   "step": 15,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objection to רבי אבהו's answer",
+   "source": "Pesachim 22a"
+  },
+  {
+   "id": "Pesachim_22_a",
+   "step": 15,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the answer of Step 14",
+   "replace": "Challenges the answer of Step 14",
+   "why": "relation names the wrong kind",
+   "source": "Pesachim 22a"
+  },
+  {
+   "id": "Pesachim_23_a",
+   "step": 12,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objection to רב אשי's answer",
+   "source": "Pesachim 23a"
+  },
+  {
+   "id": "Pesachim_23_a",
+   "step": 12,
+   "field": "relationToPreviousStep",
+   "find": "Rejects רב אשי's answer.",
+   "replace": "Challenges רב אשי's answer.",
+   "why": "relation names the wrong kind",
+   "source": "Pesachim 23a"
+  },
+  {
+   "id": "Pesachim_24_a",
+   "step": 1,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תשובה",
+   "why": "second half of the answer at the end of 23b (step 23 there is תשובה), challenged straight away",
+   "source": "Pesachim 24a"
+  },
+  {
+   "id": "Pesachim_24_a",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "completes רבי יונתן's answer of step 6",
+   "source": "Pesachim 24a"
+  },
+  {
+   "id": "Pesachim_24_a",
+   "step": 12,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "completes אביי's answer of step 11, challenged straight away",
+   "source": "Pesachim 24a"
+  },
+  {
+   "id": "Pesachim_26_a",
+   "step": 20,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "שאני התם answers the challenge of step 19",
+   "source": "Pesachim 26a"
+  },
+  {
+   "id": "Pesachim_26_a",
+   "step": 20,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the inference of step 19",
+   "replace": "Answers the inference of step 19",
+   "why": "relation names the wrong kind",
+   "source": "Pesachim 26a"
+  },
+  {
+   "id": "Pesachim_26_b",
+   "step": 14,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objection to the answer of step 13",
+   "source": "Pesachim 26b"
+  },
+  {
+   "id": "Pesachim_26_b",
+   "step": 14,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the answer given in step 13.",
+   "replace": "Challenges the answer given in step 13.",
+   "why": "relation names the wrong kind",
+   "source": "Pesachim 26b"
+  },
+  {
+   "id": "Pesachim_27_b",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "רבא answers the challenge (הכי השתא)",
+   "source": "Pesachim 27b"
+  },
+  {
+   "id": "Pesachim_27_b",
+   "step": 7,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the challenge of step 6.",
+   "replace": "Answers the challenge of step 6.",
+   "why": "relation names the wrong kind",
+   "source": "Pesachim 27b"
+  },
+  {
+   "id": "Pesachim_28_a",
+   "step": 10,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רב יוסף's אדרבה objects to רבה's answer",
+   "source": "Pesachim 28a"
+  },
+  {
+   "id": "Pesachim_2_a",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "answers the מיתיבי of step 8",
+   "source": "Pesachim 2a"
+  },
+  {
+   "id": "Pesachim_2_a",
+   "step": 9,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the קשיא of step 8",
+   "replace": "Answers the קשיא of step 8",
+   "why": "relation names the wrong kind",
+   "source": "Pesachim 2a"
+  },
+  {
+   "id": "Pesachim_2_a",
+   "step": 12,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "answers the מיתיבי of step 11",
+   "source": "Pesachim 2a"
+  },
+  {
+   "id": "Pesachim_2_a",
+   "step": 12,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the קשיא of step 11",
+   "replace": "Answers the קשיא of step 11",
+   "why": "relation names the wrong kind",
+   "source": "Pesachim 2a"
+  },
+  {
+   "id": "Pesachim_2_a",
+   "step": 14,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "answers the מיתיבי of step 13",
+   "source": "Pesachim 2a"
+  },
+  {
+   "id": "Pesachim_2_a",
+   "step": 14,
+   "field": "relationToPreviousStep",
+   "find": "This rejects the proof brought in step 13.",
+   "replace": "This answers the challenge brought in step 13.",
+   "why": "relation names the wrong kind",
+   "source": "Pesachim 2a"
+  },
+  {
+   "id": "Pesachim_2_a",
+   "step": 18,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "answers the מיתיבי of step 17",
+   "source": "Pesachim 2a"
+  },
+  {
+   "id": "Pesachim_2_a",
+   "step": 18,
+   "field": "relationToPreviousStep",
+   "find": "This rejects the proof in step 17.",
+   "replace": "This answers the challenge in step 17.",
+   "why": "relation names the wrong kind",
+   "source": "Pesachim 2a"
+  },
+  {
+   "id": "Pesachim_2_b",
+   "step": 2,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "answers the challenge from the thief פסוק",
+   "source": "Pesachim 2b"
+  },
+  {
+   "id": "Pesachim_2_b",
+   "step": 2,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the proof from the thief פסוק.",
+   "replace": "Answers the challenge from the thief פסוק.",
+   "why": "relation names the wrong kind",
+   "source": "Pesachim 2b"
+  },
+  {
+   "id": "Pesachim_2_b",
+   "step": 4,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "answers the מיתיבי from איוב",
+   "source": "Pesachim 2b"
+  },
+  {
+   "id": "Pesachim_2_b",
+   "step": 4,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the proof from איוב 3:9.",
+   "replace": "Answers the challenge from איוב 3:9.",
+   "why": "relation names the wrong kind",
+   "source": "Pesachim 2b"
+  },
+  {
+   "id": "Pesachim_2_b",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "answers the מיתיבי from תהלים",
+   "source": "Pesachim 2b"
+  },
+  {
+   "id": "Pesachim_2_b",
+   "step": 6,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the proof from תהלים 139.",
+   "replace": "Answers the challenge from תהלים 139.",
+   "why": "relation names the wrong kind",
+   "source": "Pesachim 2b"
+  },
+  {
+   "id": "Pesachim_2_b",
+   "step": 25,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "אורה שאני answers the מיתיבי of step 24",
+   "source": "Pesachim 2b"
+  },
+  {
+   "id": "Pesachim_2_b",
+   "step": 25,
+   "field": "relationToPreviousStep",
+   "find": "This step pushes away the challenge from step 24.",
+   "replace": "This step answers the challenge from step 24.",
+   "why": "relation names the wrong kind",
+   "source": "Pesachim 2b"
+  },
+  {
+   "id": "Pesachim_30_b",
+   "step": 20,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וכי תימא: strengthens the challenge by closing off an answer",
+   "source": "Pesachim 30b"
+  },
+  {
+   "id": "Pesachim_32_b",
+   "step": 27,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "acceptance line in the dialogue, undone straight away by step 28",
+   "source": "Pesachim 32b"
+  },
+  {
+   "id": "Pesachim_33_a",
+   "step": 5,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "רב פפא's מתקיף defends רבי אבהו against the challenge of step 4",
+   "source": "Pesachim 33a"
+  },
+  {
+   "id": "Pesachim_33_a",
+   "step": 5,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the inference of step 4",
+   "replace": "Answers the inference of step 4",
+   "why": "relation names the wrong kind",
+   "source": "Pesachim 33a"
+  },
+  {
+   "id": "Pesachim_34_a",
+   "step": 12,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objection to the suggested defense of step 11",
+   "source": "Pesachim 34a"
+  },
+  {
+   "id": "Pesachim_34_a",
+   "step": 12,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the defense offered in step 11.",
+   "replace": "Challenges the defense offered in step 11.",
+   "why": "relation names the wrong kind",
+   "source": "Pesachim 34a"
+  },
+  {
+   "id": "Pesachim_34_b",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רבי ירמיה objects to the Babylonian explanation",
+   "source": "Pesachim 34b"
+  },
+  {
+   "id": "Pesachim_36_a",
+   "step": 3,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "מידי בלבד כתיב: objection to רבינא's answer",
+   "source": "Pesachim 36a"
+  },
+  {
+   "id": "Pesachim_36_a",
+   "step": 3,
+   "field": "relationToPreviousStep",
+   "find": "Rejects רבינא's alternative",
+   "replace": "Challenges רבינא's alternative",
+   "why": "relation names the wrong kind",
+   "source": "Pesachim 36a"
+  }
+ ]
+}
