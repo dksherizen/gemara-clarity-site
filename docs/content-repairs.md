@@ -2,6 +2,737 @@
 
 Every change to the AI-written content, newest first. Each entry says what was wrong, the source used, and who approved it.
 
+## 202611060305-rev104-labels-shas-a
+
+Approved: Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.
+
+- **Arakhin 22a, step 14** (hebrewStepName): רב אסי's counter 'ולרבי יוחנן מי ניחא' is an objection, answered in step 15 Source: Arakhin 22a.
+  - was: דחיה
+  - now: קשיא
+- **Arakhin 25a, step 15** (hebrewStepName): וכי תימא... והתניא: strengthens the challenge (rule 2) Source: Arakhin 25a.
+  - was: דחיה
+  - now: קשיא
+- **Arakhin 27b, step 13** (hebrewStepName): וכי תימא knocking out an answer is a Challenge (rule 2) Source: Arakhin 27b.
+  - was: דחיה
+  - now: קשיא
+- **Arakhin 27b, step 13** (relationToPreviousStep): relation names wrong kind Source: Arakhin 27b.
+  - was: Rejects ahead of time the answer
+  - now: Objects ahead of time to the answer
+- **Arakhin 4b, step 49** (hebrewStepName): וליטעמיך counter-objection; answered by אלא לא קשיא in step 50 Source: Arakhin 4b.
+  - was: דחיה
+  - now: קשיא
+- **Arakhin 4b, step 49** (relationToPreviousStep): relation names wrong kind Source: Arakhin 4b.
+  - was: Rejects
+  - now: Challenges
+- **Arakhin 9b, step 7** (hebrewStepName): רב הונא's counter 'ולעולא מי ניחא' is an objection, then resolved in step 8 Source: Arakhin 9b.
+  - was: דחיה
+  - now: קשיא
+- **Avodah Zarah 15a, step 12** (hebrewStepName): answers רב שישא's challenge from a משנה (שאני עבודה זרה) Source: Avodah Zarah 15a.
+  - was: דחיה
+  - now: תירוץ
+- **Avodah Zarah 15a, step 12** (relationToPreviousStep): step 11 is a challenge (מתקיף... והתנן), not a proof Source: Avodah Zarah 15a.
+  - was: Rejects the proof
+  - now: Answers the challenge
+- **Avodah Zarah 23b, step 2** (hebrewStepName): ואלא הא דתניא מני: objection to the suggestion in step 1 Source: Avodah Zarah 23b.
+  - was: דחיה
+  - now: קשיא
+- **Avodah Zarah 23b, step 2** (relationToPreviousStep): relation names wrong kind Source: Avodah Zarah 23b.
+  - was: Rejects
+  - now: Challenges
+- **Avodah Zarah 23b, step 9** (hebrewStepName): וכי תימא... והאמר: continues the challenge (rule 2) Source: Avodah Zarah 23b.
+  - was: דחיה
+  - now: קשיא
+- **Avodah Zarah 32a, step 12** (hebrewStepName): וליטעמיך counter-question; answered by רבא in step 13 Source: Avodah Zarah 32a.
+  - was: דחיה
+  - now: קשיא
+- **Avodah Zarah 32a, step 12** (relationToPreviousStep): step 11 is a מיתיבי challenge, not a proof Source: Avodah Zarah 32a.
+  - was: Rejects the proof from Step 11
+  - now: Challenges the argument from Step 11
+- **Avodah Zarah 34a, step 4** (hebrewStepName): וכי תימא... והא: part of the challenge (rule 2) Source: Avodah Zarah 34a.
+  - was: דחיה
+  - now: קשיא
+- **Avodah Zarah 36a, step 7** (hebrewStepName): רב answers שמואל's challenge of step 6 Source: Avodah Zarah 36a.
+  - was: דחיה
+  - now: תירוץ
+- **Avodah Zarah 36a, step 12** (hebrewStepName): וכי תימא... אם כן מאי: part of the challenge (rule 2) Source: Avodah Zarah 36a.
+  - was: דחיה
+  - now: קשיא
+- **Avodah Zarah 41b, step 6** (hebrewStepName): answers the איתיביה challenge (rule 1: a source quoted to attack is a Challenge) Source: Avodah Zarah 41b.
+  - was: דחיה
+  - now: תירוץ
+- **Avodah Zarah 41b, step 6** (relationToPreviousStep): step 5 is a challenge Source: Avodah Zarah 41b.
+  - was: Rejects the proof from דגון
+  - now: Answers the challenge from דגון
+- **Avodah Zarah 49a, step 5** (hebrewStepName): לא, הא רבי אליעזר answers the challenge of steps 3-4 Source: Avodah Zarah 49a.
+  - was: דחיה
+  - now: תירוץ
+- **Avodah Zarah 49a, step 5** (relationToPreviousStep): relation names wrong kind Source: Avodah Zarah 49a.
+  - was: Rejects
+  - now: Answers
+- **Avodah Zarah 49a, step 15** (hebrewStepName): אילימא רבנן דעצים, אחמורי מחמרי: continues the challenge of step 14 Source: Avodah Zarah 49a.
+  - was: דחיה
+  - now: קשיא
+- **Avodah Zarah 50b, step 12** (hebrewStepName): ודלמא answers the contradiction raised in step 11 Source: Avodah Zarah 50b.
+  - was: דחיה
+  - now: תירוץ
+- **Avodah Zarah 50b, step 14** (hebrewStepName): מי דמי answers the contradiction raised in step 13 Source: Avodah Zarah 50b.
+  - was: דחיה
+  - now: תירוץ
+- **Avodah Zarah 68b, step 17** (hebrewStepName): רב ששת's answer to step 16, completed by step 18 (אלא מאי אית לך למימר) Source: Avodah Zarah 68b.
+  - was: דחיה
+  - now: תירוץ
+- **Avodah Zarah 68b, step 17** (relationToPreviousStep): relation names wrong kind Source: Avodah Zarah 68b.
+  - was: Rejects the challenge of step 16
+  - now: Answers the challenge of step 16
+- **Arakhin 26a, step 7** (hebrewStepName): אביי objects to רבה's answer (סכינא חריפא מפסקא קראי?) Source: Arakhin 26a.
+  - was: דחיה
+  - now: קשיא
+- **Arakhin 26a, step 7** (relationToPreviousStep): relation names wrong kind Source: Arakhin 26a.
+  - was: Rejects
+  - now: Challenges
+- **Arakhin 27a, step 5** (hebrewStepName): אלא לרב...: objection to the suggested answer (rule 2) Source: Arakhin 27a.
+  - was: דחיה
+  - now: קשיא
+- **Arakhin 27a, step 5** (relationToPreviousStep): relation names wrong kind Source: Arakhin 27a.
+  - was: Rejects
+  - now: Challenges
+- **Arakhin 30b, step 18** (hebrewStepName): אימא: objection to אביי's answer in step 17 Source: Arakhin 30b.
+  - was: דחיה
+  - now: קשיא
+- **Arakhin 30b, step 18** (relationToPreviousStep): step 17 is an answer, not a proof Source: Arakhin 30b.
+  - was: Rejects the proof from step 17
+  - now: Challenges the answer in step 17
+- **Arakhin 34a, step 10** (hebrewStepName): מי דמי: objection to רמי בר חמא's answer Source: Arakhin 34a.
+  - was: דחיה
+  - now: קשיא
+- **Arakhin 34a, step 10** (relationToPreviousStep): relation names wrong kind Source: Arakhin 34a.
+  - was: Rejects
+  - now: Challenges
+- **Avodah Zarah 10b, step 21** (hebrewStepName): inside a story, קטיעה objects to the advisors' plan (rule 3) Source: Avodah Zarah 10b.
+  - was: דחיה
+  - now: קשיא
+- **Avodah Zarah 10b, step 21** (relationToPreviousStep): relation names wrong kind Source: Avodah Zarah 10b.
+  - was: Rejects
+  - now: Objects to
+- **Avodah Zarah 10b, step 24** (hebrewStepName): second half of קטיעה's objection (rule 5) Source: Avodah Zarah 10b.
+  - was: דחיה
+  - now: קשיא
+- **Avodah Zarah 15b, step 17** (hebrewStepName): וכי תימא... והאמר: objection (rule 2) Source: Avodah Zarah 15b.
+  - was: דחיה
+  - now: קשיא
+- **Avodah Zarah 29b, step 15** (hebrewStepName): inside the story, רבי יהושע objects to רבי ישמעאל's reading (rule 3) Source: Avodah Zarah 29b.
+  - was: דחיה
+  - now: קשיא
+- **Avodah Zarah 29b, step 15** (relationToPreviousStep): relation names wrong kind Source: Avodah Zarah 29b.
+  - was: Rejects
+  - now: Challenges
+- **Avodah Zarah 30a, step 20** (hebrewStepName): פירוקא לסכנתא: objection to relying on the answer of step 19 Source: Avodah Zarah 30a.
+  - was: דחיה
+  - now: קשיא
+- **Avodah Zarah 30a, step 20** (relationToPreviousStep): relation names wrong kind Source: Avodah Zarah 30a.
+  - was: Rejects relying on
+  - now: Objects to relying on
+- **Avodah Zarah 37b, step 15** (hebrewStepName): רבא objects to the statement attributed to רב נחמן; not a proof Source: Avodah Zarah 37b.
+  - was: דחיה
+  - now: קשיא
+- **Avodah Zarah 37b, step 15** (relationToPreviousStep): relation names wrong kind Source: Avodah Zarah 37b.
+  - was: Rejects
+  - now: Challenges
+- **Avodah Zarah 38b, step 10** (hebrewStepName): inside the story, רב זביד objects to רבי חייא's ruling (rule 3) Source: Avodah Zarah 38b.
+  - was: דחיה
+  - now: קשיא
+- **Avodah Zarah 38b, step 10** (relationToPreviousStep): relation names wrong kind Source: Avodah Zarah 38b.
+  - was: Rejects
+  - now: Challenges
+- **Avodah Zarah 50b, step 8** (hebrewStepName): מי דמי answers the difficulty guessed in step 7 Source: Avodah Zarah 50b.
+  - was: דחיה
+  - now: תירוץ
+- **Avodah Zarah 50b, step 8** (relationToPreviousStep): relation names wrong kind Source: Avodah Zarah 50b.
+  - was: Rejects the guess made in step 7
+  - now: Answers the difficulty guessed in step 7
+- **Avodah Zarah 50b, step 10** (hebrewStepName): מי דמי answers the difficulty guessed in step 9 Source: Avodah Zarah 50b.
+  - was: דחיה
+  - now: תירוץ
+- **Avodah Zarah 50b, step 10** (relationToPreviousStep): relation names wrong kind Source: Avodah Zarah 50b.
+  - was: Rejects the second guess made in step 9
+  - now: Answers the difficulty guessed in step 9
+- **Avodah Zarah 53b, step 11** (hebrewStepName): part of רבי אלעזר's answer (rule 5), not pushing aside a proof Source: Avodah Zarah 53b.
+  - was: דחיה
+  - now: תשובה
+- **Avodah Zarah 58b, step 12** (hebrewStepName): רבי יוחנן objects to רבי אסי's reply in step 11 Source: Avodah Zarah 58b.
+  - was: דחיה
+  - now: קשיא
+- **Avodah Zarah 58b, step 12** (relationToPreviousStep): step 11 is an answer Source: Avodah Zarah 58b.
+  - was: Rejects the proof brought in step 11.
+  - now: Challenges the answer given in step 11.
+- **Avodah Zarah 68b, step 3** (hebrewStepName): ומי פליגי... והא קתני: objection to the deflection in step 2, defending the proof Source: Avodah Zarah 68b.
+  - was: דחיה
+  - now: קשיא
+- **Avodah Zarah 68b, step 3** (relationToPreviousStep): relation names wrong kind Source: Avodah Zarah 68b.
+  - was: Rejects
+  - now: Challenges
+- **Avodah Zarah 68b, step 3** (title): title names wrong kind Source: Avodah Zarah 68b.
+  - was: Rejecting the answer
+  - now: Challenging the answer
+- **Avodah Zarah 76a, step 8** (hebrewStepName): רבא objects to רב ששת's answer in step 7 Source: Avodah Zarah 76a.
+  - was: דחיה
+  - now: קשיא
+- **Avodah Zarah 76a, step 8** (relationToPreviousStep): relation names wrong kind Source: Avodah Zarah 76a.
+  - was: Rejects
+  - now: Challenges
+- **Avodah Zarah 7b, step 22** (hebrewStepName): רב אחא objects to אביי's answer in step 21 Source: Avodah Zarah 7b.
+  - was: דחיה
+  - now: קשיא
+- **Avodah Zarah 7b, step 22** (relationToPreviousStep): relation names wrong kind Source: Avodah Zarah 7b.
+  - was: Rejects
+  - now: Challenges
+- **Arakhin 13a, step 2** (hebrewStepName): אלא אשארא answers the ברייתא's difficulty; next step gives רב אשי's alternative answer Source: Arakhin 13a.
+  - was: מסקנא
+  - now: תירוץ
+- **Arakhin 16b, step 25** (hebrewStepName): second half of רב נחמן בר יצחק's statement; challenged next Source: Arakhin 16b.
+  - was: מסקנא
+  - now: מימרא
+- **Arakhin 23a, step 18** (hebrewStepName): line of a story (rule 8), followed by a challenge Source: Arakhin 23a.
+  - was: מסקנא
+  - now: מימרא
+- **Arakhin 26b, step 5** (hebrewStepName): end of the proof (שמע מינה), attacked in step 6 Source: Arakhin 26b.
+  - was: מסקנא
+  - now: ראיה
+- **Arakhin 27a, step 13** (hebrewStepName): end of the מעשה in the משנה (rule 8) Source: Arakhin 27a.
+  - was: מסקנא
+  - now: מימרא
+- **Arakhin 29a, step 32** (hebrewStepName): inference from עולא's statement that is attacked by מיתיבי next Source: Arakhin 29a.
+  - was: מסקנא
+  - now: מימרא
+- **Arakhin 33a, step 19** (hebrewStepName): second half of רב הונא's answer (rule 5) Source: Arakhin 33a.
+  - was: מסקנא
+  - now: תשובה
+- **Arakhin 8b, step 2** (hebrewStepName): last line of the ברייתא's list; challenged next Source: Arakhin 8b.
+  - was: מסקנא
+  - now: מימרא
+- **Avodah Zarah 13a, step 17** (hebrewStepName): רבי יוחנן's ruling, which the next step challenges (rule 5) Source: Avodah Zarah 13a.
+  - was: מסקנא
+  - now: מימרא
+- **Avodah Zarah 26a, step 15** (hebrewStepName): second half of the צריכא (rule 5) Source: Avodah Zarah 26a.
+  - was: מסקנא
+  - now: מימרא
+- **Avodah Zarah 32a, step 9** (hebrewStepName): end of the answer to the איבעיא; attacked by מיתיבי next Source: Avodah Zarah 32a.
+  - was: מסקנא
+  - now: תשובה
+- **Avodah Zarah 40a, step 8** (hebrewStepName): רב פפא's ruling, attacked by מיתיבי next (rule 5) Source: Avodah Zarah 40a.
+  - was: מסקנא
+  - now: מימרא
+- **Avodah Zarah 43a, step 2** (hebrewStepName): אלא פשיטא במוצא answers the challenge closing 42b (if making, why a dragon?); challenged next Source: Avodah Zarah 43a.
+  - was: מסקנא
+  - now: תירוץ
+- **Avodah Zarah 43a, step 11** (hebrewStepName): שמע מינה תלת from the story: an inference (Proof), challenged next Source: Avodah Zarah 43a.
+  - was: מסקנא
+  - now: ראיה
+- **Avodah Zarah 53b, step 4** (hebrewStepName): last link of the צריכותא (rule 5) Source: Avodah Zarah 53b.
+  - was: מסקנא
+  - now: מימרא
+- **Avodah Zarah 6b, step 28** (hebrewStepName): last link of the צריכותא (rule 5) Source: Avodah Zarah 6b.
+  - was: מסקנא
+  - now: מימרא
+- **Avodah Zarah 72b, step 8** (hebrewStepName): end of the proof (מכל מקום נצוק חיבור), rejected next Source: Avodah Zarah 72b.
+  - was: מסקנא
+  - now: ראיה
+- **Avodah Zarah 31a, step 12** (hebrewStepName): ולא פליגי with no challenge before it Source: Avodah Zarah 31a.
+  - was: תירוץ
+  - now: מימרא
+- **Avodah Zarah 38b, step 15** (hebrewStepName): ולא פליגי with no challenge before it Source: Avodah Zarah 38b.
+  - was: תירוץ
+  - now: מימרא
+- **Avodah Zarah 48b, step 16** (hebrewStepName): ולא פליגי with no challenge before it Source: Avodah Zarah 48b.
+  - was: תירוץ
+  - now: מימרא
+- **Avodah Zarah 75a, step 2** (hebrewStepName): ולא פליגי with no challenge before it Source: Avodah Zarah 75a.
+  - was: תירוץ
+  - now: מימרא
+- **Bava Kamma 32b, step 15** (hebrewStepName): רבא objects to רב שימי's answer (והתניא), not pushing aside a proof Source: Bava Kamma 32b.
+  - was: דחיה
+  - now: קשיא
+- **Bava Kamma 34b, step 3** (hebrewStepName): objects to the וכי תימא defense in step 2 Source: Bava Kamma 34b.
+  - was: דחיה
+  - now: קשיא
+- **Bava Kamma 37b, step 17** (hebrewStepName): objects to the וכי תימא answer of step 16 (דיו) Source: Bava Kamma 37b.
+  - was: דחיה
+  - now: קשיא
+- **Bava Kamma 39a, step 1** (hebrewStepName): second half of אביי's answer begun at the end of 38b; challenged at once in step 2 Source: Bava Kamma 39a.
+  - was: מסקנא
+  - now: תירוץ
+- **Bava Kamma 39a, step 15** (hebrewStepName): רבא objects to the איפוך answer of step 14 Source: Bava Kamma 39a.
+  - was: דחיה
+  - now: קשיא
+- **Bava Kamma 3b, step 8** (hebrewStepName): והתנן objecting to the proposal (answer) in step 7 Source: Bava Kamma 3b.
+  - was: דחיה
+  - now: קשיא
+- **Bava Kamma 41a, step 10** (hebrewStepName): רב אשי objects to רבה's answer Source: Bava Kamma 41a.
+  - was: דחיה
+  - now: קשיא
+- **Bava Kamma 41a, step 15** (hebrewStepName): objects to רב שימי's answer, same as step 13 (קשיא) Source: Bava Kamma 41a.
+  - was: דחיה
+  - now: קשיא
+- **Bava Kamma 41a, step 17** (hebrewStepName): objects to ריש לקיש's answer, same as step 13 (קשיא) Source: Bava Kamma 41a.
+  - was: דחיה
+  - now: קשיא
+- **Bava Kamma 41b, step 2** (hebrewStepName): answers the challenge of step 1 Source: Bava Kamma 41b.
+  - was: דחיה
+  - now: תירוץ
+- **Bava Kamma 42a, step 7** (hebrewStepName): רבא objects to רב עולא's answer Source: Bava Kamma 42a.
+  - was: דחיה
+  - now: קשיא
+- **Bava Kamma 42b, step 14** (hebrewStepName): answers the הלא דין הוא challenge of steps 12-13 (labelled קשיא) by showing the פסוק is needed Source: Bava Kamma 42b.
+  - was: דחיה
+  - now: תירוץ
+- **Bava Kamma 44a, step 2** (hebrewStepName): answers the קל וחומר challenge of step 1 (labelled קשיא) Source: Bava Kamma 44a.
+  - was: דחיה
+  - now: תירוץ
+- **Bava Kamma 45b, step 14** (hebrewStepName): second half of רבי יהודה's explanation (Response, step 13); challenged at once by וכי תימא in step 15 Source: Bava Kamma 45b.
+  - was: מסקנא
+  - now: תשובה
+- **Bava Kamma 49b, step 12** (hebrewStepName): in the story רב ייבא objects to רב נחמן's answer (rule 3) Source: Bava Kamma 49b.
+  - was: דחיה
+  - now: קשיא
+- **Bava Kamma 4a, step 4** (hebrewStepName): רב אשי objects to the answer of step 3 Source: Bava Kamma 4a.
+  - was: דחיה
+  - now: קשיא
+- **Bava Kamma 4a, step 32** (hebrewStepName): וליטעמיך is a Challenge (rule 2) Source: Bava Kamma 4a.
+  - was: דחיה
+  - now: קשיא
+- **Bava Kamma 4b, step 3** (hebrewStepName): answers רב מרי's challenge (step 2) Source: Bava Kamma 4b.
+  - was: דחיה
+  - now: תירוץ
+- **Bava Kamma 4b, step 5** (hebrewStepName): answers רב זביד's challenge (step 4) Source: Bava Kamma 4b.
+  - was: דחיה
+  - now: תירוץ
+- **Bava Kamma 50b, step 35** (hebrewStepName): אלמא inference from the story, challenged at once by רבא in step 36 Source: Bava Kamma 50b.
+  - was: מסקנא
+  - now: מימרא
+- **Bava Kamma 51a, step 5** (hebrewStepName): וליטעמיך is a Challenge (rule 2) Source: Bava Kamma 51a.
+  - was: דחיה
+  - now: קשיא
+- **Bava Kamma 54a, step 8** (hebrewStepName): objects to the answer of step 7 Source: Bava Kamma 54a.
+  - was: דחיה
+  - now: קשיא
+- **Bava Kamma 54b, step 25** (hebrewStepName): objects to the answer of step 24 Source: Bava Kamma 54b.
+  - was: דחיה
+  - now: קשיא
+- **Bava Kamma 55a, step 27** (hebrewStepName): answers רבינא's challenge (הכי השתא) Source: Bava Kamma 55a.
+  - was: דחיה
+  - now: תירוץ
+- **Bava Kamma 57a, step 3** (hebrewStepName): answers the challenge from the ברייתא quoted to attack (steps 1-2, קשיא) Source: Bava Kamma 57a.
+  - was: דחיה
+  - now: תירוץ
+- **Bava Kamma 63a, step 2** (hebrewStepName): answers the challenge of step 1 (birds excluded); step 3 then challenges it Source: Bava Kamma 63a.
+  - was: דחיה
+  - now: תירוץ
+- **Bava Kamma 64a, step 11** (hebrewStepName): objects to the וכי תימא answer of step 10 Source: Bava Kamma 64a.
+  - was: דחיה
+  - now: קשיא
+- **Bava Kamma 64a, step 13** (hebrewStepName): objects to the answer of step 12 Source: Bava Kamma 64a.
+  - was: דחיה
+  - now: קשיא
+- **Bava Kamma 64b, step 28** (hebrewStepName): end of אביי's Response (steps 27-28); challenged at once in step 29 Source: Bava Kamma 64b.
+  - was: מסקנא
+  - now: תשובה
+- **Bava Kamma 66b, step 6** (hebrewStepName): second half of רבא's וליטעמיך counter-challenge begun in step 5 Source: Bava Kamma 66b.
+  - was: דחיה
+  - now: קשיא
+- **Bava Kamma 67b, step 4** (hebrewStepName): שמע מינה end of רבא's proof; challenged at once in step 5 Source: Bava Kamma 67b.
+  - was: מסקנא
+  - now: ראיה
+- **Bava Kamma 69a, step 13** (hebrewStepName): והאמר knocks out the וכי תימא defense of step 12 Source: Bava Kamma 69a.
+  - was: דחיה
+  - now: קשיא
+- **Bava Kamma 69b, step 7** (hebrewStepName): second half of the answer begun in step 6; challenged at once in step 8 Source: Bava Kamma 69b.
+  - was: מסקנא
+  - now: תירוץ
+- **Bava Kamma 73a, step 7** (hebrewStepName): a הלכה statement (like step 6), challenged at once by the משנה in step 8 Source: Bava Kamma 73a.
+  - was: מסקנא
+  - now: מימרא
+- **Bava Kamma 73a, step 11** (hebrewStepName): objects to the answer of step 10 Source: Bava Kamma 73a.
+  - was: דחיה
+  - now: קשיא
+- **Bava Kamma 73b, step 14** (hebrewStepName): שמע מינה end of רבא's proof; אביי rejects it at once in step 15 Source: Bava Kamma 73b.
+  - was: מסקנא
+  - now: ראיה
+- **Bava Kamma 74a, step 8** (hebrewStepName): objects to the answer of step 7 (answered in step 9) Source: Bava Kamma 74a.
+  - was: דחיה
+  - now: קשיא
+- **Bava Kamma 74a, step 15** (hebrewStepName): שמע מינה end of רבא's proof (step 14); אביי rebuts it at once in steps 16-17 Source: Bava Kamma 74a.
+  - was: מסקנא
+  - now: ראיה
+- **Bava Kamma 75b, step 20** (hebrewStepName): end of the explanation begun in steps 16-17; rejected at once by רב אחא in step 21 Source: Bava Kamma 75b.
+  - was: מסקנא
+  - now: תירוץ
+- **Bava Kamma 76a, step 5** (hebrewStepName): objects to the answer of step 4 Source: Bava Kamma 76a.
+  - was: דחיה
+  - now: קשיא
+- **Bava Kamma 77b, step 12** (hebrewStepName): רבי יוחנן's objection to the answer of step 11, finished in step 13 (קשיא) Source: Bava Kamma 77b.
+  - was: דחיה
+  - now: קשיא
+- **Bava Kamma 78a, step 4** (hebrewStepName): answers the אדרבה challenge of step 3 Source: Bava Kamma 78a.
+  - was: דחיה
+  - now: תירוץ
+- **Bava Kamma 78a, step 6** (hebrewStepName): part of the למאי הלכתא challenge of step 5, eliminating options (steps 7-8 the same) Source: Bava Kamma 78a.
+  - was: דחיה
+  - now: קשיא
+- **Bava Kamma 79a, step 15** (hebrewStepName): רב אשי objects to the answer of step 14 (restoring the proof) Source: Bava Kamma 79a.
+  - was: דחיה
+  - now: קשיא
+- **Bava Kamma 7a, step 6** (hebrewStepName): answers the דילמא challenge of step 5 Source: Bava Kamma 7a.
+  - was: דחיה
+  - now: תירוץ
+- **Bava Kamma 84a, step 2** (hebrewStepName): answers the challenge of step 1 Source: Bava Kamma 84a.
+  - was: דחיה
+  - now: תירוץ
+- **Bava Kamma 84b, step 12** (hebrewStepName): objects to the answer of step 11 (rule 7: an answer citing רב פפא is still an answer) Source: Bava Kamma 84b.
+  - was: דחיה
+  - now: קשיא
+- **Bava Kamma 86a, step 16** (hebrewStepName): end of the proof (steps 13-15); rejected at once in step 17 Source: Bava Kamma 86a.
+  - was: מסקנא
+  - now: ראיה
+- **Bava Kamma 88a, step 28** (hebrewStepName): end of the proof (steps 26-27); challenged at once by וכי תימא in step 29 Source: Bava Kamma 88a.
+  - was: מסקנא
+  - now: ראיה
+- **Bava Kamma 88b, step 13** (hebrewStepName): end of רבי ירמיה's proof (step 12); rejected at once in step 14 Source: Bava Kamma 88b.
+  - was: מסקנא
+  - now: ראיה
+- **Bava Kamma 90b, step 14** (hebrewStepName): answers the challenge of steps 12-13 Source: Bava Kamma 90b.
+  - was: דחיה
+  - now: תירוץ
+- **Bava Kamma 32b, step 15** (title): names the step as the wrong kind after the label fix Source: Bava Kamma 32b.
+  - was: רבא rejects it
+  - now: רבא challenges it
+- **Bava Kamma 32b, step 15** (relationToPreviousStep): names the step as the wrong kind after the label fix Source: Bava Kamma 32b.
+  - was: Rejects
+  - now: Challenges
+- **Bava Kamma 34b, step 3** (relationToPreviousStep): names the step as the wrong kind after the label fix Source: Bava Kamma 34b.
+  - was: Rejects the support
+  - now: Challenges the defense
+- **Bava Kamma 37b, step 17** (relationToPreviousStep): names the step as the wrong kind after the label fix Source: Bava Kamma 37b.
+  - was: Rejects
+  - now: Challenges
+- **Bava Kamma 39a, step 15** (title): names the step as the wrong kind after the label fix Source: Bava Kamma 39a.
+  - was: רבא rejects
+  - now: רבא objects to
+- **Bava Kamma 39a, step 15** (relationToPreviousStep): names the step as the wrong kind after the label fix Source: Bava Kamma 39a.
+  - was: Rejects
+  - now: Challenges
+- **Bava Kamma 3b, step 8** (relationToPreviousStep): names the step as the wrong kind after the label fix Source: Bava Kamma 3b.
+  - was: Rejects
+  - now: Challenges
+- **Bava Kamma 41a, step 10** (relationToPreviousStep): names the step as the wrong kind after the label fix Source: Bava Kamma 41a.
+  - was: Rejects
+  - now: Challenges
+- **Bava Kamma 41a, step 15** (relationToPreviousStep): names the step as the wrong kind after the label fix Source: Bava Kamma 41a.
+  - was: Rejects
+  - now: Challenges
+- **Bava Kamma 41a, step 17** (relationToPreviousStep): names the step as the wrong kind after the label fix Source: Bava Kamma 41a.
+  - was: Rejects
+  - now: Challenges
+- **Bava Kamma 41b, step 2** (relationToPreviousStep): names the step as the wrong kind after the label fix Source: Bava Kamma 41b.
+  - was: Rejects
+  - now: Answers
+- **Bava Kamma 42a, step 7** (relationToPreviousStep): names the step as the wrong kind after the label fix Source: Bava Kamma 42a.
+  - was: Rejects
+  - now: Challenges
+- **Bava Kamma 42b, step 14** (relationToPreviousStep): names the step as the wrong kind after the label fix Source: Bava Kamma 42b.
+  - was: Rejects
+  - now: Answers
+- **Bava Kamma 44a, step 2** (relationToPreviousStep): names the step as the wrong kind after the label fix Source: Bava Kamma 44a.
+  - was: Rejects
+  - now: Answers
+- **Bava Kamma 49b, step 12** (relationToPreviousStep): names the step as the wrong kind after the label fix Source: Bava Kamma 49b.
+  - was: Rejects
+  - now: Challenges
+- **Bava Kamma 4a, step 4** (relationToPreviousStep): names the step as the wrong kind after the label fix Source: Bava Kamma 4a.
+  - was: Rejects
+  - now: Challenges
+- **Bava Kamma 4b, step 3** (title): names the step as the wrong kind after the label fix Source: Bava Kamma 4b.
+  - was: Rejected:
+  - now: Answered:
+- **Bava Kamma 4b, step 3** (relationToPreviousStep): names the step as the wrong kind after the label fix Source: Bava Kamma 4b.
+  - was: Rejects
+  - now: Answers
+- **Bava Kamma 4b, step 5** (title): names the step as the wrong kind after the label fix Source: Bava Kamma 4b.
+  - was: Rejected:
+  - now: Answered:
+- **Bava Kamma 4b, step 5** (relationToPreviousStep): names the step as the wrong kind after the label fix Source: Bava Kamma 4b.
+  - was: Starts rejecting
+  - now: Starts answering
+- **Bava Kamma 54a, step 8** (relationToPreviousStep): names the step as the wrong kind after the label fix Source: Bava Kamma 54a.
+  - was: Rejects
+  - now: Challenges
+- **Bava Kamma 54b, step 25** (relationToPreviousStep): names the step as the wrong kind after the label fix Source: Bava Kamma 54b.
+  - was: Rejects
+  - now: Challenges
+- **Bava Kamma 55a, step 27** (relationToPreviousStep): names the step as the wrong kind after the label fix Source: Bava Kamma 55a.
+  - was: Rejects
+  - now: Answers
+- **Bava Kamma 57a, step 3** (relationToPreviousStep): names the step as the wrong kind after the label fix Source: Bava Kamma 57a.
+  - was: Rejects
+  - now: Answers
+- **Bava Kamma 63a, step 2** (relationToPreviousStep): names the step as the wrong kind after the label fix Source: Bava Kamma 63a.
+  - was: Rejects
+  - now: Answers
+- **Bava Kamma 64a, step 11** (relationToPreviousStep): names the step as the wrong kind after the label fix Source: Bava Kamma 64a.
+  - was: Rejects
+  - now: Challenges
+- **Bava Kamma 64a, step 13** (relationToPreviousStep): names the step as the wrong kind after the label fix Source: Bava Kamma 64a.
+  - was: Rejects
+  - now: Challenges
+- **Bava Kamma 69a, step 13** (relationToPreviousStep): names the step as the wrong kind after the label fix Source: Bava Kamma 69a.
+  - was: Rejects
+  - now: Challenges
+- **Bava Kamma 73a, step 11** (relationToPreviousStep): names the step as the wrong kind after the label fix Source: Bava Kamma 73a.
+  - was: Rejects
+  - now: Challenges
+- **Bava Kamma 76a, step 5** (relationToPreviousStep): names the step as the wrong kind after the label fix Source: Bava Kamma 76a.
+  - was: Rejects
+  - now: Challenges
+- **Bava Kamma 77b, step 12** (relationToPreviousStep): names the step as the wrong kind after the label fix Source: Bava Kamma 77b.
+  - was: Rejects
+  - now: Challenges
+- **Bava Kamma 78a, step 4** (relationToPreviousStep): names the step as the wrong kind after the label fix Source: Bava Kamma 78a.
+  - was: Rejects
+  - now: Answers
+- **Bava Kamma 79a, step 15** (relationToPreviousStep): names the step as the wrong kind after the label fix Source: Bava Kamma 79a.
+  - was: Rejects
+  - now: Challenges
+- **Bava Kamma 7a, step 6** (title): names the step as the wrong kind after the label fix Source: Bava Kamma 7a.
+  - was: First rejection:
+  - now: First answer:
+- **Bava Kamma 7a, step 6** (relationToPreviousStep): names the step as the wrong kind after the label fix Source: Bava Kamma 7a.
+  - was: Rejects
+  - now: Answers
+- **Bava Kamma 91b, step 13** (hebrewStepName): ודלמא בגדים שאני objects to the proposed source (an answer to 'which tanna'), rule 2 Source: Bava Kamma 91b.
+  - was: דחיה
+  - now: קשיא
+- **Bava Kamma 91b, step 13** (relationToPreviousStep): relation named the wrong kind Source: Bava Kamma 91b.
+  - was: Rejects the 'all the more so' reasoning
+  - now: Challenges the 'all the more so' reasoning
+- **Bava Kamma 97a, step 8** (hebrewStepName): in the story רבה objects to his father's answer (rule 3) Source: Bava Kamma 97a.
+  - was: דחיה
+  - now: קשיא
+- **Bava Kamma 97a, step 8** (relationToPreviousStep): relation named the wrong kind Source: Bava Kamma 97a.
+  - was: Rejects the answer of step 7.
+  - now: Challenges the answer of step 7.
+- **Bava Kamma 99b, step 17** (hebrewStepName): objects to a proposed source answering הי רבי מאיר (a Response), rule 2 Source: Bava Kamma 99b.
+  - was: דחיה
+  - now: קשיא
+- **Bava Kamma 99b, step 17** (title): title named the wrong kind Source: Bava Kamma 99b.
+  - was: Rejected: the dyer
+  - now: Challenged: the dyer
+- **Bava Kamma 99b, step 17** (relationToPreviousStep): relation named the wrong kind Source: Bava Kamma 99b.
+  - was: Rejects the suggestion in Step 16.
+  - now: Challenges the suggestion in Step 16.
+- **Bava Kamma 9a, step 16** (hebrewStepName): איכא דאמרי: another version of the objection in step 15 Source: Bava Kamma 9a.
+  - was: דחיה
+  - now: קשיא
+- **Bava Metzia 103a, step 2** (hebrewStepName): answers the challenge of step 1 (worker's oath is special) Source: Bava Metzia 103a.
+  - was: דחיה
+  - now: תירוץ
+- **Bava Metzia 103a, step 2** (relationToPreviousStep): relation named the wrong kind Source: Bava Metzia 103a.
+  - was: Rejects the comparison from step 1
+  - now: Answers the challenge from step 1
+- **Bava Metzia 104b, step 10** (hebrewStepName): ולא היא: the Gemara's final ruling on the two versions, not pushing aside a proof Source: Bava Metzia 104b.
+  - was: דחיה
+  - now: מסקנא
+- **Bava Metzia 104b, step 10** (relationToPreviousStep): relation named the wrong kind Source: Bava Metzia 104b.
+  - was: Rejects the second version
+  - now: Overrules the second version
+- **Bava Metzia 105a, step 29** (hebrewStepName): ולא פליגי reconciling two opinions, no challenge before it Source: Bava Metzia 105a.
+  - was: תירוץ
+  - now: מימרא
+- **Bava Metzia 109a, step 25** (hebrewStepName): in the story the owner objects to רב פפא's answer (rule 3) Source: Bava Metzia 109a.
+  - was: דחיה
+  - now: קשיא
+- **Bava Metzia 109a, step 25** (relationToPreviousStep): relation named the wrong kind Source: Bava Metzia 109a.
+  - was: Rejects רב פפא's saffron answer
+  - now: Challenges רב פפא's saffron answer
+- **Bava Metzia 109b, step 19** (hebrewStepName): לא: answers the מיתיבי challenge of steps 17-18 (rule 2) Source: Bava Metzia 109b.
+  - was: דחיה
+  - now: תירוץ
+- **Bava Metzia 109b, step 19** (relationToPreviousStep): relation named the wrong kind Source: Bava Metzia 109b.
+  - was: Rejects the proof in Step 18
+  - now: Answers the challenge in Step 18
+- **Bava Metzia 110a, step 7** (hebrewStepName): הלכתא כרב כהנא is challenged straight away in step 8 (rule 5) Source: Bava Metzia 110a.
+  - was: מסקנא
+  - now: מימרא
+- **Bava Metzia 110a, step 12** (hebrewStepName): a dissenting view (רב זביד and רב עוירא disagree with רב יהודה), not pushing aside a proof Source: Bava Metzia 110a.
+  - was: דחיה
+  - now: מימרא
+- **Bava Metzia 11b, step 6** (hebrewStepName): report of who accepted the answer, followed straight away by רבא's challenge (rule 5) Source: Bava Metzia 11b.
+  - was: מסקנא
+  - now: מימרא
+- **Bava Metzia 11b, step 8** (hebrewStepName): ולא היא answers רבא's challenge in step 7 Source: Bava Metzia 11b.
+  - was: דחיה
+  - now: תירוץ
+- **Bava Metzia 11b, step 8** (relationToPreviousStep): relation named the wrong kind Source: Bava Metzia 11b.
+  - was: Rejects רבא's proof in step 7.
+  - now: Answers רבא's challenge in step 7.
+- **Bava Metzia 11b, step 13** (hebrewStepName): end of the proof (מאי טעמא לאו משום...) begun in step 10, then challenged (rule 5) Source: Bava Metzia 11b.
+  - was: מסקנא
+  - now: ראיה
+- **Bava Metzia 12b, step 19** (hebrewStepName): לא, לעולם answers the challenge נימא תיהוי תיובתא of step 18 Source: Bava Metzia 12b.
+  - was: דחיה
+  - now: תירוץ
+- **Bava Metzia 12b, step 19** (relationToPreviousStep): relation named the wrong kind Source: Bava Metzia 12b.
+  - was: Rejects the suggested refutation in step 18.
+  - now: Answers the suggested refutation in step 18.
+- **Bava Metzia 13b, step 8** (hebrewStepName): second half of the תיובתא begun in step 7 (rules 1, 5); a challenge follows Source: Bava Metzia 13b.
+  - was: מסקנא
+  - now: קשיא
+- **Bava Metzia 14b, step 15** (hebrewStepName): מידי איריא answers the challenge of steps 13-14 Source: Bava Metzia 14b.
+  - was: דחיה
+  - now: תירוץ
+- **Bava Metzia 14b, step 15** (relationToPreviousStep): relation named the wrong kind Source: Bava Metzia 14b.
+  - was: Rejects Step 14's assumption
+  - now: Answers Step 14 by denying the assumption
+- **Bava Metzia 15b, step 22** (hebrewStepName): second half of the צריכא answer begun in step 21 (rule 5) Source: Bava Metzia 15b.
+  - was: מסקנא
+  - now: תירוץ
+- **Bava Metzia 16a, step 2** (hebrewStepName): סוף סוף objects to the proposed נפקא מינה (a Response), rule 2 Source: Bava Metzia 16a.
+  - was: דחיה
+  - now: קשיא
+- **Bava Metzia 16a, step 2** (title): title named the wrong kind Source: Bava Metzia 16a.
+  - was: Rejection: the buyer's
+  - now: Challenge: the buyer's
+- **Bava Metzia 16a, step 2** (relationToPreviousStep): relation named the wrong kind Source: Bava Metzia 16a.
+  - was: Rejects the proposed difference
+  - now: Challenges the proposed difference
+- **Bava Metzia 16a, step 4** (hebrewStepName): סוף סוף objects to the second proposed נפקא מינה, rule 2 Source: Bava Metzia 16a.
+  - was: דחיה
+  - now: קשיא
+- **Bava Metzia 16a, step 4** (title): title named the wrong kind Source: Bava Metzia 16a.
+  - was: Rejection: his children
+  - now: Challenge: his children
+- **Bava Metzia 16a, step 4** (relationToPreviousStep): relation named the wrong kind Source: Bava Metzia 16a.
+  - was: Rejects the 'robber died' case
+  - now: Challenges the 'robber died' case
+- **Bava Metzia 17b, step 6** (hebrewStepName): continues אביי's objection of step 5 (if you say witnesses, the heirs can claim payment) Source: Bava Metzia 17b.
+  - was: דחיה
+  - now: קשיא
+- **Bava Metzia 18a, step 6** (hebrewStepName): אלא answers the challenge (מנא לן, 17b step 8); then challenged by וכי תימא (rule 5) Source: Bava Metzia 18a.
+  - was: מסקנא
+  - now: תירוץ
+- **Bava Metzia 18b, step 17** (hebrewStepName): second half of the answer to במאי קמיפלגי (רבה's reading, then רבי זירא's), rule 5 Source: Bava Metzia 18b.
+  - was: דחיה
+  - now: תשובה
+- **Bava Metzia 19b, step 9** (hebrewStepName): last part of the court's statement in steps 6-8, then challenged by רב זביד (rule 5) Source: Bava Metzia 19b.
+  - was: מסקנא
+  - now: מימרא
+- **Bava Metzia 22b, step 11** (hebrewStepName): הלכתא כאביי ביע"ל קג"ם is challenged straight away in step 12 (rule 5) Source: Bava Metzia 22b.
+  - was: מסקנא
+  - now: מימרא
+- **Bava Metzia 30a, step 26** (hebrewStepName): objects to the suggestion of step 25 (it is already learned from רב יהודה) Source: Bava Metzia 30a.
+  - was: דחיה
+  - now: קשיא
+- **Bava Metzia 30a, step 26** (relationToPreviousStep): relation named the wrong kind Source: Bava Metzia 30a.
+  - was: Rejects the suggestion of step 25.
+  - now: Challenges the suggestion of step 25.
+- **Bava Metzia 31a, step 11** (hebrewStepName): רבא objects to אביי's answer (rule 2) Source: Bava Metzia 31a.
+  - was: דחיה
+  - now: קשיא
+- **Bava Metzia 31a, step 11** (relationToPreviousStep): relation named the wrong kind Source: Bava Metzia 31a.
+  - was: Rejects אביי's answer from step 10.
+  - now: Challenges אביי's answer from step 10.
+- **Bava Metzia 34a, step 12** (hebrewStepName): אימא סיפא answers the challenge of step 11 from the משנה Source: Bava Metzia 34a.
+  - was: דחיה
+  - now: תירוץ
+- **Bava Metzia 34a, step 26** (hebrewStepName): answers the challenge of step 25 (were they taught together?) Source: Bava Metzia 34a.
+  - was: דחיה
+  - now: תירוץ
+- **Bava Metzia 34a, step 26** (relationToPreviousStep): relation named the wrong kind Source: Bava Metzia 34a.
+  - was: Rejects the proof brought in step 25.
+  - now: Answers the challenge brought in step 25.
+- **Bava Metzia 35a, step 11** (hebrewStepName): completes רב אשי's answer (step 10), then a challenge follows (rule 5) Source: Bava Metzia 35a.
+  - was: מסקנא
+  - now: תירוץ
+- **Bava Metzia 35a, step 22** (hebrewStepName): line of a story, challenged straight away by רבא (rules 5, 8) Source: Bava Metzia 35a.
+  - was: מסקנא
+  - now: מימרא
+- **Bava Metzia 3a, step 9** (hebrewStepName): תינח מציאה objects to the answer of step 8 (rule 2) Source: Bava Metzia 3a.
+  - was: דחיה
+  - now: קשיא
+- **Bava Metzia 3a, step 9** (relationToPreviousStep): relation named the wrong kind Source: Bava Metzia 3a.
+  - was: Rejects the answer of Step 8
+  - now: Challenges the answer of Step 8
+- **Bava Metzia 40a, step 4** (hebrewStepName): רב חסדא answers רבי אמי's challenge (step 3) Source: Bava Metzia 40a.
+  - was: דחיה
+  - now: תירוץ
+- **Bava Metzia 40a, step 5** (hebrewStepName): second answer to רבי אמי's challenge (same window as flagged step 4) Source: Bava Metzia 40a.
+  - was: דחיה
+  - now: תירוץ
+- **Bava Metzia 41a, step 22** (hebrewStepName): completes the proof begun in step 17 (שמע מינה), then rejected in step 23 (rule 5) Source: Bava Metzia 41a.
+  - was: מסקנא
+  - now: ראיה
+- **Bava Metzia 42b, step 15** (hebrewStepName): objects to the claim in step 14; step 16 answers it Source: Bava Metzia 42b.
+  - was: דחיה
+  - now: קשיא
+- **Bava Metzia 42b, step 15** (relationToPreviousStep): relation named the wrong kind Source: Bava Metzia 42b.
+  - was: Rejects the seller's claim from step 14.
+  - now: Challenges the seller's claim from step 14.
+- **Bava Metzia 43b, step 1** (hebrewStepName): אלא פשיטא answers the question of 43a (what does 'time of removal' mean), then challenged (rule 5) Source: Bava Metzia 43b.
+  - was: מסקנא
+  - now: תשובה
+- **Bava Metzia 47b, step 7** (hebrewStepName): וכי תימא continues the מיתיבי challenge of step 6 (rule 2) Source: Bava Metzia 47b.
+  - was: דחיה
+  - now: קשיא
+- **Bava Metzia 49b, step 4** (hebrewStepName): in the story רב טבות answers the challenge of step 3 (rule 3) Source: Bava Metzia 49b.
+  - was: דחיה
+  - now: תירוץ
+- **Bava Metzia 49b, step 4** (relationToPreviousStep): relation named the wrong kind Source: Bava Metzia 49b.
+  - was: Rejects the challenge by denying
+  - now: Answers the challenge by denying
+- **Bava Metzia 4b, step 8** (hebrewStepName): answers the איכא דמותיב challenge of step 7 (rule 2) Source: Bava Metzia 4b.
+  - was: דחיה
+  - now: תירוץ
+- **Bava Metzia 4b, step 8** (relationToPreviousStep): relation named the wrong kind Source: Bava Metzia 4b.
+  - was: Rejects the inference of Step 7
+  - now: Answers the inference of Step 7
+- **Bava Metzia 4b, step 10** (hebrewStepName): end of the הכי נמי מסתברא proof of step 9, then challenged in step 11 (rule 5) Source: Bava Metzia 4b.
+  - was: מסקנא
+  - now: ראיה
+- **Bava Metzia 51a, step 19** (hebrewStepName): second half of the צריכא begun in step 18 (rule 5) Source: Bava Metzia 51a.
+  - was: מסקנא
+  - now: מימרא
+- **Bava Metzia 53a, step 4** (hebrewStepName): ממאי... דלמא answers the challenge of steps 2-3 against חזקיה (rule 2) Source: Bava Metzia 53a.
+  - was: דחיה
+  - now: תירוץ
+- **Bava Metzia 53a, step 15** (hebrewStepName): answers the suggestion-challenge of step 14, like steps 13 and 17 Source: Bava Metzia 53a.
+  - was: דחיה
+  - now: תירוץ
+- **Bava Metzia 53a, step 15** (relationToPreviousStep): relation named the wrong kind Source: Bava Metzia 53a.
+  - was: Rejects the suggestion of step 14
+  - now: Answers the suggestion of step 14
+- **Bava Metzia 56a, step 9** (hebrewStepName): אביי objects to שמואל's answer (דלמא שאני), rule 2 Source: Bava Metzia 56a.
+  - was: דחיה
+  - now: קשיא
+- **Bava Metzia 56a, step 12** (hebrewStepName): answers the challenge of step 11 (why רבינא did not use פלטר) Source: Bava Metzia 56a.
+  - was: דחיה
+  - now: תירוץ
+- **Bava Metzia 57b, step 7** (hebrewStepName): הכי השתא answers the challenge of step 6 Source: Bava Metzia 57b.
+  - was: דחיה
+  - now: תירוץ
+- **Bava Metzia 57b, step 7** (relationToPreviousStep): relation named the wrong kind Source: Bava Metzia 57b.
+  - was: Rejects the question of step 6.
+  - now: Answers the challenge of step 6.
+- **Bava Metzia 57b, step 25** (hebrewStepName): last part of the ברייתא answer of steps 23-24 (rule 5) Source: Bava Metzia 57b.
+  - was: מסקנא
+  - now: תשובה
+- **Bava Metzia 5b, step 1** (hebrewStepName): completes the answer begun at the end of 5a (רב נחמן's oath is rabbinic), then challenged (rule 5) Source: Bava Metzia 5b.
+  - was: מסקנא
+  - now: תירוץ
+- **Bava Metzia 60a, step 16** (hebrewStepName): הא מדקתני סיפא objects to the answer of step 15 (rule 2) Source: Bava Metzia 60a.
+  - was: דחיה
+  - now: קשיא
+- **Bava Metzia 61a, step 8** (hebrewStepName): second half of רבינא's statement (step 6), then challenged (rule 5) Source: Bava Metzia 61a.
+  - was: מסקנא
+  - now: מימרא
+
 ## 202611060303-rev103-berakhot-60-64
 
 Approved: Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.
