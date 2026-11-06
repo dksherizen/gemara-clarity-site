@@ -2,6 +2,278 @@
 
 Every change to the AI-written content, newest first. Each entry says what was wrong, the source used, and who approved it.
 
+## 202611060556-rev119-labels-shas-o
+
+Approved: Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.
+
+- **Yevamot 99b, step 8** (hebrewStepName): last clause of the משנה's list, followed by the גמרא's challenge; part of the statement Source: Yevamot 99b.
+  - was: מסקנא
+  - now: מימרא
+- **Yevamot 9a, step 25** (hebrewStepName): רבי's reply answers לוי's challenge; not pushing aside a proof Source: Yevamot 9a.
+  - was: דחיה
+  - now: תירוץ
+- **Yevamot 9a, step 25** (relationToPreviousStep): relation matches new label Source: Yevamot 9a.
+  - was: Rejects לוי's challenge
+  - now: Answers לוי's challenge
+- **Yevamot 9b, step 4** (hebrewStepName): הא איתותב answers the challenge of step 3 Source: Yevamot 9b.
+  - was: דחיה
+  - now: תירוץ
+- **Yevamot 9b, step 4** (relationToPreviousStep): relation matches new label Source: Yevamot 9b.
+  - was: Pushes aside the challenge
+  - now: Answers the challenge
+- **Yoma 10a, step 21** (hebrewStepName): answers רבה בר עולא's challenge (continued in step 22) Source: Yoma 10a.
+  - was: דחיה
+  - now: תירוץ
+- **Yoma 10a, step 21** (relationToPreviousStep): relation matches new label Source: Yoma 10a.
+  - was: Rejects the קשיא
+  - now: Answers the קשיא
+- **Yoma 14a, step 21** (hebrewStepName): objection (והכתיב) to the answer of step 20 Source: Yoma 14a.
+  - was: דחיה
+  - now: קשיא
+- **Yoma 14a, step 21** (title): title matches new label Source: Yoma 14a.
+  - was: Rejected:
+  - now: Challenge:
+- **Yoma 14a, step 21** (relationToPreviousStep): relation matches new label Source: Yoma 14a.
+  - was: Rejects the answer
+  - now: Challenges the answer
+- **Yoma 17b, step 2** (hebrewStepName): שמע מינה ending the proof, attacked straight away in step 3 Source: Yoma 17b.
+  - was: מסקנא
+  - now: ראיה
+- **Yoma 22b, step 42** (hebrewStepName): the dream story answers רב נחמן's objection; not pushing aside a proof Source: Yoma 22b.
+  - was: דחיה
+  - now: תירוץ
+- **Yoma 26b, step 15** (hebrewStepName): objection (אי כתב רחמנא...) to the answer of step 14 Source: Yoma 26b.
+  - was: דחיה
+  - now: קשיא
+- **Yoma 26b, step 15** (title): title matches new label Source: Yoma 26b.
+  - was: Rejection:
+  - now: Challenge:
+- **Yoma 26b, step 15** (relationToPreviousStep): relation matches new label Source: Yoma 26b.
+  - was: Rejects the answer
+  - now: Challenges the answer
+- **Yoma 26b, step 16** (relationToPreviousStep): step 15 is now a challenge Source: Yoma 26b.
+  - was: Rejects the דחיה of Step 15
+  - now: Answers the challenge of Step 15
+- **Yoma 28b, step 6** (hebrewStepName): רבא answers רב יוסף's challenge Source: Yoma 28b.
+  - was: דחיה
+  - now: תירוץ
+- **Yoma 28b, step 6** (relationToPreviousStep): relation matches new label Source: Yoma 28b.
+  - was: Rejects the קשיא
+  - now: Answers the קשיא
+- **Yoma 28b, step 9** (hebrewStepName): מאי קושיא? ודילמא... answers the challenge of step 8 Source: Yoma 28b.
+  - was: דחיה
+  - now: תירוץ
+- **Yoma 28b, step 9** (relationToPreviousStep): relation matches new label Source: Yoma 28b.
+  - was: Directly rejects the challenge
+  - now: Directly answers the challenge
+- **Yoma 28b, step 10** (hebrewStepName): second alternative answer (אי נמי) to the challenge of step 8 Source: Yoma 28b.
+  - was: דחיה
+  - now: תירוץ
+- **Yoma 28b, step 11** (hebrewStepName): third alternative answer (אי נמי) to the challenge of step 8 Source: Yoma 28b.
+  - was: דחיה
+  - now: תירוץ
+- **Yoma 28b, step 19** (hebrewStepName): הא איכא נמי מילה answers רב שימי's objection Source: Yoma 28b.
+  - was: דחיה
+  - now: תירוץ
+- **Yoma 28b, step 19** (relationToPreviousStep): relation matches new label Source: Yoma 28b.
+  - was: Rejects the suggestion
+  - now: Answers the objection
+- **Yoma 2b, step 9** (hebrewStepName): objection (אלמה לא) to the answer of step 8 Source: Yoma 2b.
+  - was: דחיה
+  - now: קשיא
+- **Yoma 2b, step 9** (relationToPreviousStep): relation matches new label Source: Yoma 2b.
+  - was: Rejects the answer
+  - now: Challenges the answer
+- **Yoma 35b, step 2** (hebrewStepName): לא... answers the מיתיבי challenge Source: Yoma 35b.
+  - was: דחיה
+  - now: תירוץ
+- **Yoma 35b, step 2** (relationToPreviousStep): relation matches new label Source: Yoma 35b.
+  - was: Rejects the reading in step 1.
+  - now: Answers the challenge in step 1 with another reading.
+- **Yoma 36a, step 7** (hebrewStepName): אלא מאי... begins the answer to step 6, completed in step 8 Source: Yoma 36a.
+  - was: דחיה
+  - now: תירוץ
+- **Yoma 36b, step 12** (hebrewStepName): רב's הלכה ruling, challenged straight away with פשיטא Source: Yoma 36b.
+  - was: מסקנא
+  - now: מימרא
+- **Yoma 40a, step 4** (hebrewStepName): וכי תימא... objection blocking the answer from step 2 Source: Yoma 40a.
+  - was: דחיה
+  - now: קשיא
+- **Yoma 40a, step 4** (relationToPreviousStep): relation matches new label Source: Yoma 40a.
+  - was: Rejects ahead of time
+  - now: Challenges ahead of time
+- **Yoma 40a, step 13** (hebrewStepName): objection (והא... קתני) to the answer of step 12 Source: Yoma 40a.
+  - was: דחיה
+  - now: קשיא
+- **Yoma 40a, step 13** (relationToPreviousStep): relation matches new label Source: Yoma 40a.
+  - was: Rejects the answer
+  - now: Challenges the answer
+- **Yoma 41a, step 12** (hebrewStepName): רב ששת answers the challenge of steps 10-11 (continued in step 13) Source: Yoma 41a.
+  - was: דחיה
+  - now: תירוץ
+- **Yoma 41b, step 5** (hebrewStepName): objection (והא אין פדיון לעוף) to the answer of step 4 Source: Yoma 41b.
+  - was: דחיה
+  - now: קשיא
+- **Yoma 41b, step 5** (relationToPreviousStep): relation matches new label Source: Yoma 41b.
+  - was: It rejects the answer
+  - now: It challenges the answer
+- **Yoma 46a, step 9** (hebrewStepName): רבא objects to רב אחא בר יעקב's answer; ends in קשיא Source: Yoma 46a.
+  - was: דחיה
+  - now: קשיא
+- **Yoma 46a, step 9** (relationToPreviousStep): relation matches new label Source: Yoma 46a.
+  - was: Rejects the תירוץ
+  - now: Challenges the תירוץ
+- **Yoma 47a, step 8** (hebrewStepName): answers the challenge/suggestion of step 7 Source: Yoma 47a.
+  - was: דחיה
+  - now: תירוץ
+- **Yoma 47a, step 8** (title): title matches new label Source: Yoma 47a.
+  - was: Rejected:
+  - now: Answer:
+- **Yoma 47a, step 8** (relationToPreviousStep): relation matches new label Source: Yoma 47a.
+  - was: Rejects the suggestion
+  - now: Answers the suggestion
+- **Yoma 49a, step 29** (hebrewStepName): אדרבה objection to רב פפא's answer Source: Yoma 49a.
+  - was: דחיה
+  - now: קשיא
+- **Yoma 53a, step 9** (hebrewStepName): ruling that ends the ברייתא's statement, challenged straight away in step 10 Source: Yoma 53a.
+  - was: מסקנא
+  - now: מימרא
+- **Yoma 55a, step 7** (hebrewStepName): הא מאי answers the אדרבה challenge of step 6 Source: Yoma 55a.
+  - was: דחיה
+  - now: תירוץ
+- **Yoma 55a, step 22** (hebrewStepName): ולא פליגי with no challenge before it Source: Yoma 55a.
+  - was: תירוץ
+  - now: מימרא
+- **Yoma 55b, step 6** (hebrewStepName): answers the challenge of step 5 and is challenged by the מיתיבי in step 7 Source: Yoma 55b.
+  - was: מסקנא
+  - now: תירוץ
+- **Yoma 55b, step 6** (relationToPreviousStep): relation matches new label Source: Yoma 55b.
+  - was: Concludes from the failed suggestion in step 5.
+  - now: Answers the challenge in step 5.
+- **Yoma 57a, step 10** (hebrewStepName): step 9 is an eyewitness challenge to the ברייתא; ודילמא answers it Source: Yoma 57a.
+  - was: דחיה
+  - now: תירוץ
+- **Yoma 57a, step 10** (relationToPreviousStep): relation matches new label Source: Yoma 57a.
+  - was: Rejects the evidence brought in Step 9.
+  - now: Answers the challenge from the evidence in Step 9.
+- **Yoma 57a, step 11** (hebrewStepName): objects to the answer of step 10 and restores the challenge of step 9 Source: Yoma 57a.
+  - was: תירוץ
+  - now: קשיא
+- **Yoma 57a, step 11** (relationToPreviousStep): relation matches new label Source: Yoma 57a.
+  - was: Answers the rejection in step 10 and restores the proof from step 9.
+  - now: Objects to the answer in step 10 and restores the challenge from step 9.
+- **Yoma 57b, step 7** (hebrewStepName): אדרבה objection to רב פפא's answer Source: Yoma 57b.
+  - was: דחיה
+  - now: קשיא
+- **Yoma 57b, step 7** (relationToPreviousStep): relation matches new label Source: Yoma 57b.
+  - was: Rejects רב פפא's answer
+  - now: Challenges רב פפא's answer
+- **Yoma 5b, step 16** (hebrewStepName): objection to the reframing answer of step 15 Source: Yoma 5b.
+  - was: דחיה
+  - now: קשיא
+- **Yoma 5b, step 16** (relationToPreviousStep): relation matches new label Source: Yoma 5b.
+  - was: Rejects the reframing
+  - now: Challenges the reframing
+- **Yoma 63b, step 7** (hebrewStepName): objection (אימר דשמעת...) to רב יוסף's answer Source: Yoma 63b.
+  - was: דחיה
+  - now: קשיא
+- **Yoma 66a, step 23** (hebrewStepName): אביי's competing answer to the מאן תנא question; no proof is pushed aside Source: Yoma 66a.
+  - was: דחיה
+  - now: תשובה
+- **Yoma 66b, step 7** (hebrewStepName): אפילו תימא רבי נתן answers the challenge of step 6 Source: Yoma 66b.
+  - was: דחיה
+  - now: תירוץ
+- **Yoma 66b, step 7** (relationToPreviousStep): relation matches new label Source: Yoma 66b.
+  - was: Rejects the inference of step 6.
+  - now: Answers the challenge of step 6.
+- **Yoma 69a, step 9** (hebrewStepName): שמע מינה ending the proof, pushed aside straight away by רב אשי Source: Yoma 69a.
+  - was: מסקנא
+  - now: ראיה
+- **Yoma 69b, step 33** (hebrewStepName): objection (והא עלה קתני) to the answer of step 32 Source: Yoma 69b.
+  - was: דחיה
+  - now: קשיא
+- **Yoma 69b, step 33** (relationToPreviousStep): relation matches new label Source: Yoma 69b.
+  - was: Rejects the answer
+  - now: Challenges the answer
+- **Yoma 6b, step 2** (hebrewStepName): step 1 is a source brought against רב שימי (challenge); לא, לעולם answers it Source: Yoma 6b.
+  - was: דחיה
+  - now: תירוץ
+- **Yoma 6b, step 2** (relationToPreviousStep): relation matches new label Source: Yoma 6b.
+  - was: Rejects the proof made in step 1.
+  - now: Answers the challenge made in step 1.
+- **Yoma 6b, step 3** (hebrewStepName): תא שמע against רב שימי ending in תיובתא (rule 1) Source: Yoma 6b.
+  - was: ראיה
+  - now: קשיא
+- **Yoma 71b, step 27** (hebrewStepName): new answer (learn from the אבנט) to the challenges of steps 24/26; followed by alternative answers Source: Yoma 71b.
+  - was: מסקנא
+  - now: תירוץ
+- **Yoma 72a, step 14** (hebrewStepName): מי כתיב answers רב אחא בר יעקב's objection Source: Yoma 72a.
+  - was: דחיה
+  - now: תירוץ
+- **Yoma 72a, step 14** (relationToPreviousStep): relation matches new label Source: Yoma 72a.
+  - was: Rejects the objection
+  - now: Answers the objection
+- **Yoma 72a, step 17** (hebrewStepName): מי כתיב answers רב אחא בר יעקב's objection Source: Yoma 72a.
+  - was: דחיה
+  - now: תירוץ
+- **Yoma 72a, step 17** (relationToPreviousStep): relation matches new label Source: Yoma 72a.
+  - was: Rejects the objection
+  - now: Answers the objection
+- **Yoma 75b, step 12** (hebrewStepName): second half of רבי's statement in the ברייתא Source: Yoma 75b.
+  - was: מסקנא
+  - now: מימרא
+- **Yoma 75b, step 21** (hebrewStepName): line of the story (rule 8) Source: Yoma 75b.
+  - was: מסקנא
+  - now: מימרא
+- **Yoma 78b, step 7** (hebrewStepName): רבא's objection to אביי's answer Source: Yoma 78b.
+  - was: דחיה
+  - now: קשיא
+- **Yoma 78b, step 8** (hebrewStepName): רבא's second objection (ועוד) to אביי's answer Source: Yoma 78b.
+  - was: דחיה
+  - now: קשיא
+- **Yoma 78b, step 9** (hebrewStepName): רבא's third objection (ועוד) to אביי's answer Source: Yoma 78b.
+  - was: דחיה
+  - now: קשיא
+- **Yoma 83a, step 15** (hebrewStepName): second half of the answer begun in steps 13-14; next step opens a new challenge Source: Yoma 83a.
+  - was: מסקנא
+  - now: תירוץ
+- **Yoma 84b, step 28** (hebrewStepName): פשיטא objection to the suggested case of step 27 Source: Yoma 84b.
+  - was: דחיה
+  - now: קשיא
+- **Yoma 84b, step 28** (relationToPreviousStep): relation matches new label Source: Yoma 84b.
+  - was: Rejects the suggestion
+  - now: Challenges the suggestion
+- **Yoma 86a, step 4** (hebrewStepName): answers the challenge of step 3 Source: Yoma 86a.
+  - was: דחיה
+  - now: תירוץ
+- **Yoma 8a, step 20** (hebrewStepName): אלא דכולי עלמא begins the new answer (step 21) to the challenge of steps 18-19 Source: Yoma 8a.
+  - was: דחיה
+  - now: תירוץ
+- **Yoma 9b, step 17** (hebrewStepName): continuation of the aggadic statement, challenged straight away in step 18 Source: Yoma 9b.
+  - was: מסקנא
+  - now: מימרא
+- **Yoma 9b, step 36** (hebrewStepName): story line (רבי יוחנן's reaction), not pushing aside a proof Source: Yoma 9b.
+  - was: דחיה
+  - now: מימרא
+- **Zevachim 100b, step 11** (hebrewStepName): completes רבה בר רב הונא's answer; further answers follow Source: Zevachim 100b.
+  - was: מסקנא
+  - now: תירוץ
+- **Zevachim 100b, step 13** (hebrewStepName): objection (בדותא) to רב אשי's answer Source: Zevachim 100b.
+  - was: דחיה
+  - now: קשיא
+- **Zevachim 102a, step 2** (hebrewStepName): end of the ברייתא quoted against רב (rule 1) Source: Zevachim 102a.
+  - was: מסקנא
+  - now: קשיא
+- **Zevachim 102b, step 25** (hebrewStepName): story line (rule 8); next step opens רב אחאי's challenge Source: Zevachim 102b.
+  - was: מסקנא
+  - now: מימרא
+- **Zevachim 102b, step 30** (hebrewStepName): מי כתיב objection to the פסוק offered as an answer in step 29 Source: Zevachim 102b.
+  - was: דחיה
+  - now: קשיא
+- **Zevachim 102b, step 30** (relationToPreviousStep): relation matches new label Source: Zevachim 102b.
+  - was: Rejects the פסוק
+  - now: Challenges the פסוק
+
 ## 202611060556-rev118-labels-shas-n
 
 Approved: Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.

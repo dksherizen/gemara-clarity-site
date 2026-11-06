@@ -1,0 +1,807 @@
+{
+ "name": "labels-shas-o",
+ "approved": "Drafted overnight Nov 5–6 2026 by Claude from a line-by-line check against the Gemara and Rashi on Sefaria (each finding re-checked before applying); David asked for fixes to go live overnight. Awaiting review by a rav.",
+ "repairs": [
+  {
+   "id": "Yevamot_99_b",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "last clause of the משנה's list, followed by the גמרא's challenge; part of the statement",
+   "source": "Yevamot 99b"
+  },
+  {
+   "id": "Yevamot_9_a",
+   "step": 25,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "רבי's reply answers לוי's challenge; not pushing aside a proof",
+   "source": "Yevamot 9a"
+  },
+  {
+   "id": "Yevamot_9_a",
+   "step": 25,
+   "field": "relationToPreviousStep",
+   "find": "Rejects לוי's challenge",
+   "replace": "Answers לוי's challenge",
+   "why": "relation matches new label",
+   "source": "Yevamot 9a"
+  },
+  {
+   "id": "Yevamot_9_b",
+   "step": 4,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "הא איתותב answers the challenge of step 3",
+   "source": "Yevamot 9b"
+  },
+  {
+   "id": "Yevamot_9_b",
+   "step": 4,
+   "field": "relationToPreviousStep",
+   "find": "Pushes aside the challenge",
+   "replace": "Answers the challenge",
+   "why": "relation matches new label",
+   "source": "Yevamot 9b"
+  },
+  {
+   "id": "Yoma_10_a",
+   "step": 21,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "answers רבה בר עולא's challenge (continued in step 22)",
+   "source": "Yoma 10a"
+  },
+  {
+   "id": "Yoma_10_a",
+   "step": 21,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the קשיא",
+   "replace": "Answers the קשיא",
+   "why": "relation matches new label",
+   "source": "Yoma 10a"
+  },
+  {
+   "id": "Yoma_14_a",
+   "step": 21,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objection (והכתיב) to the answer of step 20",
+   "source": "Yoma 14a"
+  },
+  {
+   "id": "Yoma_14_a",
+   "step": 21,
+   "field": "title",
+   "find": "Rejected:",
+   "replace": "Challenge:",
+   "why": "title matches new label",
+   "source": "Yoma 14a"
+  },
+  {
+   "id": "Yoma_14_a",
+   "step": 21,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the answer",
+   "replace": "Challenges the answer",
+   "why": "relation matches new label",
+   "source": "Yoma 14a"
+  },
+  {
+   "id": "Yoma_17_b",
+   "step": 2,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "ראיה",
+   "why": "שמע מינה ending the proof, attacked straight away in step 3",
+   "source": "Yoma 17b"
+  },
+  {
+   "id": "Yoma_22_b",
+   "step": 42,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "the dream story answers רב נחמן's objection; not pushing aside a proof",
+   "source": "Yoma 22b"
+  },
+  {
+   "id": "Yoma_26_b",
+   "step": 15,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objection (אי כתב רחמנא...) to the answer of step 14",
+   "source": "Yoma 26b"
+  },
+  {
+   "id": "Yoma_26_b",
+   "step": 15,
+   "field": "title",
+   "find": "Rejection:",
+   "replace": "Challenge:",
+   "why": "title matches new label",
+   "source": "Yoma 26b"
+  },
+  {
+   "id": "Yoma_26_b",
+   "step": 15,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the answer",
+   "replace": "Challenges the answer",
+   "why": "relation matches new label",
+   "source": "Yoma 26b"
+  },
+  {
+   "id": "Yoma_26_b",
+   "step": 16,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the דחיה of Step 15",
+   "replace": "Answers the challenge of Step 15",
+   "why": "step 15 is now a challenge",
+   "source": "Yoma 26b"
+  },
+  {
+   "id": "Yoma_28_b",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "רבא answers רב יוסף's challenge",
+   "source": "Yoma 28b"
+  },
+  {
+   "id": "Yoma_28_b",
+   "step": 6,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the קשיא",
+   "replace": "Answers the קשיא",
+   "why": "relation matches new label",
+   "source": "Yoma 28b"
+  },
+  {
+   "id": "Yoma_28_b",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "מאי קושיא? ודילמא... answers the challenge of step 8",
+   "source": "Yoma 28b"
+  },
+  {
+   "id": "Yoma_28_b",
+   "step": 9,
+   "field": "relationToPreviousStep",
+   "find": "Directly rejects the challenge",
+   "replace": "Directly answers the challenge",
+   "why": "relation matches new label",
+   "source": "Yoma 28b"
+  },
+  {
+   "id": "Yoma_28_b",
+   "step": 10,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "second alternative answer (אי נמי) to the challenge of step 8",
+   "source": "Yoma 28b"
+  },
+  {
+   "id": "Yoma_28_b",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "third alternative answer (אי נמי) to the challenge of step 8",
+   "source": "Yoma 28b"
+  },
+  {
+   "id": "Yoma_28_b",
+   "step": 19,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "הא איכא נמי מילה answers רב שימי's objection",
+   "source": "Yoma 28b"
+  },
+  {
+   "id": "Yoma_28_b",
+   "step": 19,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the suggestion",
+   "replace": "Answers the objection",
+   "why": "relation matches new label",
+   "source": "Yoma 28b"
+  },
+  {
+   "id": "Yoma_2_b",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objection (אלמה לא) to the answer of step 8",
+   "source": "Yoma 2b"
+  },
+  {
+   "id": "Yoma_2_b",
+   "step": 9,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the answer",
+   "replace": "Challenges the answer",
+   "why": "relation matches new label",
+   "source": "Yoma 2b"
+  },
+  {
+   "id": "Yoma_35_b",
+   "step": 2,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "לא... answers the מיתיבי challenge",
+   "source": "Yoma 35b"
+  },
+  {
+   "id": "Yoma_35_b",
+   "step": 2,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the reading in step 1.",
+   "replace": "Answers the challenge in step 1 with another reading.",
+   "why": "relation matches new label",
+   "source": "Yoma 35b"
+  },
+  {
+   "id": "Yoma_36_a",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "אלא מאי... begins the answer to step 6, completed in step 8",
+   "source": "Yoma 36a"
+  },
+  {
+   "id": "Yoma_36_b",
+   "step": 12,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "רב's הלכה ruling, challenged straight away with פשיטא",
+   "source": "Yoma 36b"
+  },
+  {
+   "id": "Yoma_40_a",
+   "step": 4,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "וכי תימא... objection blocking the answer from step 2",
+   "source": "Yoma 40a"
+  },
+  {
+   "id": "Yoma_40_a",
+   "step": 4,
+   "field": "relationToPreviousStep",
+   "find": "Rejects ahead of time",
+   "replace": "Challenges ahead of time",
+   "why": "relation matches new label",
+   "source": "Yoma 40a"
+  },
+  {
+   "id": "Yoma_40_a",
+   "step": 13,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objection (והא... קתני) to the answer of step 12",
+   "source": "Yoma 40a"
+  },
+  {
+   "id": "Yoma_40_a",
+   "step": 13,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the answer",
+   "replace": "Challenges the answer",
+   "why": "relation matches new label",
+   "source": "Yoma 40a"
+  },
+  {
+   "id": "Yoma_41_a",
+   "step": 12,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "רב ששת answers the challenge of steps 10-11 (continued in step 13)",
+   "source": "Yoma 41a"
+  },
+  {
+   "id": "Yoma_41_b",
+   "step": 5,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objection (והא אין פדיון לעוף) to the answer of step 4",
+   "source": "Yoma 41b"
+  },
+  {
+   "id": "Yoma_41_b",
+   "step": 5,
+   "field": "relationToPreviousStep",
+   "find": "It rejects the answer",
+   "replace": "It challenges the answer",
+   "why": "relation matches new label",
+   "source": "Yoma 41b"
+  },
+  {
+   "id": "Yoma_46_a",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רבא objects to רב אחא בר יעקב's answer; ends in קשיא",
+   "source": "Yoma 46a"
+  },
+  {
+   "id": "Yoma_46_a",
+   "step": 9,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the תירוץ",
+   "replace": "Challenges the תירוץ",
+   "why": "relation matches new label",
+   "source": "Yoma 46a"
+  },
+  {
+   "id": "Yoma_47_a",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "answers the challenge/suggestion of step 7",
+   "source": "Yoma 47a"
+  },
+  {
+   "id": "Yoma_47_a",
+   "step": 8,
+   "field": "title",
+   "find": "Rejected:",
+   "replace": "Answer:",
+   "why": "title matches new label",
+   "source": "Yoma 47a"
+  },
+  {
+   "id": "Yoma_47_a",
+   "step": 8,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the suggestion",
+   "replace": "Answers the suggestion",
+   "why": "relation matches new label",
+   "source": "Yoma 47a"
+  },
+  {
+   "id": "Yoma_49_a",
+   "step": 29,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "אדרבה objection to רב פפא's answer",
+   "source": "Yoma 49a"
+  },
+  {
+   "id": "Yoma_53_a",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "ruling that ends the ברייתא's statement, challenged straight away in step 10",
+   "source": "Yoma 53a"
+  },
+  {
+   "id": "Yoma_55_a",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "הא מאי answers the אדרבה challenge of step 6",
+   "source": "Yoma 55a"
+  },
+  {
+   "id": "Yoma_55_a",
+   "step": 22,
+   "field": "hebrewStepName",
+   "find": "תירוץ",
+   "replace": "מימרא",
+   "why": "ולא פליגי with no challenge before it",
+   "source": "Yoma 55a"
+  },
+  {
+   "id": "Yoma_55_b",
+   "step": 6,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "answers the challenge of step 5 and is challenged by the מיתיבי in step 7",
+   "source": "Yoma 55b"
+  },
+  {
+   "id": "Yoma_55_b",
+   "step": 6,
+   "field": "relationToPreviousStep",
+   "find": "Concludes from the failed suggestion in step 5.",
+   "replace": "Answers the challenge in step 5.",
+   "why": "relation matches new label",
+   "source": "Yoma 55b"
+  },
+  {
+   "id": "Yoma_57_a",
+   "step": 10,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "step 9 is an eyewitness challenge to the ברייתא; ודילמא answers it",
+   "source": "Yoma 57a"
+  },
+  {
+   "id": "Yoma_57_a",
+   "step": 10,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the evidence brought in Step 9.",
+   "replace": "Answers the challenge from the evidence in Step 9.",
+   "why": "relation matches new label",
+   "source": "Yoma 57a"
+  },
+  {
+   "id": "Yoma_57_a",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "תירוץ",
+   "replace": "קשיא",
+   "why": "objects to the answer of step 10 and restores the challenge of step 9",
+   "source": "Yoma 57a"
+  },
+  {
+   "id": "Yoma_57_a",
+   "step": 11,
+   "field": "relationToPreviousStep",
+   "find": "Answers the rejection in step 10 and restores the proof from step 9.",
+   "replace": "Objects to the answer in step 10 and restores the challenge from step 9.",
+   "why": "relation matches new label",
+   "source": "Yoma 57a"
+  },
+  {
+   "id": "Yoma_57_b",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "אדרבה objection to רב פפא's answer",
+   "source": "Yoma 57b"
+  },
+  {
+   "id": "Yoma_57_b",
+   "step": 7,
+   "field": "relationToPreviousStep",
+   "find": "Rejects רב פפא's answer",
+   "replace": "Challenges רב פפא's answer",
+   "why": "relation matches new label",
+   "source": "Yoma 57b"
+  },
+  {
+   "id": "Yoma_5_b",
+   "step": 16,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objection to the reframing answer of step 15",
+   "source": "Yoma 5b"
+  },
+  {
+   "id": "Yoma_5_b",
+   "step": 16,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the reframing",
+   "replace": "Challenges the reframing",
+   "why": "relation matches new label",
+   "source": "Yoma 5b"
+  },
+  {
+   "id": "Yoma_63_b",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objection (אימר דשמעת...) to רב יוסף's answer",
+   "source": "Yoma 63b"
+  },
+  {
+   "id": "Yoma_66_a",
+   "step": 23,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תשובה",
+   "why": "אביי's competing answer to the מאן תנא question; no proof is pushed aside",
+   "source": "Yoma 66a"
+  },
+  {
+   "id": "Yoma_66_b",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "אפילו תימא רבי נתן answers the challenge of step 6",
+   "source": "Yoma 66b"
+  },
+  {
+   "id": "Yoma_66_b",
+   "step": 7,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the inference of step 6.",
+   "replace": "Answers the challenge of step 6.",
+   "why": "relation matches new label",
+   "source": "Yoma 66b"
+  },
+  {
+   "id": "Yoma_69_a",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "ראיה",
+   "why": "שמע מינה ending the proof, pushed aside straight away by רב אשי",
+   "source": "Yoma 69a"
+  },
+  {
+   "id": "Yoma_69_b",
+   "step": 33,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objection (והא עלה קתני) to the answer of step 32",
+   "source": "Yoma 69b"
+  },
+  {
+   "id": "Yoma_69_b",
+   "step": 33,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the answer",
+   "replace": "Challenges the answer",
+   "why": "relation matches new label",
+   "source": "Yoma 69b"
+  },
+  {
+   "id": "Yoma_6_b",
+   "step": 2,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "step 1 is a source brought against רב שימי (challenge); לא, לעולם answers it",
+   "source": "Yoma 6b"
+  },
+  {
+   "id": "Yoma_6_b",
+   "step": 2,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the proof made in step 1.",
+   "replace": "Answers the challenge made in step 1.",
+   "why": "relation matches new label",
+   "source": "Yoma 6b"
+  },
+  {
+   "id": "Yoma_6_b",
+   "step": 3,
+   "field": "hebrewStepName",
+   "find": "ראיה",
+   "replace": "קשיא",
+   "why": "תא שמע against רב שימי ending in תיובתא (rule 1)",
+   "source": "Yoma 6b"
+  },
+  {
+   "id": "Yoma_71_b",
+   "step": 27,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "new answer (learn from the אבנט) to the challenges of steps 24/26; followed by alternative answers",
+   "source": "Yoma 71b"
+  },
+  {
+   "id": "Yoma_72_a",
+   "step": 14,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "מי כתיב answers רב אחא בר יעקב's objection",
+   "source": "Yoma 72a"
+  },
+  {
+   "id": "Yoma_72_a",
+   "step": 14,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the objection",
+   "replace": "Answers the objection",
+   "why": "relation matches new label",
+   "source": "Yoma 72a"
+  },
+  {
+   "id": "Yoma_72_a",
+   "step": 17,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "מי כתיב answers רב אחא בר יעקב's objection",
+   "source": "Yoma 72a"
+  },
+  {
+   "id": "Yoma_72_a",
+   "step": 17,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the objection",
+   "replace": "Answers the objection",
+   "why": "relation matches new label",
+   "source": "Yoma 72a"
+  },
+  {
+   "id": "Yoma_75_b",
+   "step": 12,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "second half of רבי's statement in the ברייתא",
+   "source": "Yoma 75b"
+  },
+  {
+   "id": "Yoma_75_b",
+   "step": 21,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "line of the story (rule 8)",
+   "source": "Yoma 75b"
+  },
+  {
+   "id": "Yoma_78_b",
+   "step": 7,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רבא's objection to אביי's answer",
+   "source": "Yoma 78b"
+  },
+  {
+   "id": "Yoma_78_b",
+   "step": 8,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רבא's second objection (ועוד) to אביי's answer",
+   "source": "Yoma 78b"
+  },
+  {
+   "id": "Yoma_78_b",
+   "step": 9,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "רבא's third objection (ועוד) to אביי's answer",
+   "source": "Yoma 78b"
+  },
+  {
+   "id": "Yoma_83_a",
+   "step": 15,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "second half of the answer begun in steps 13-14; next step opens a new challenge",
+   "source": "Yoma 83a"
+  },
+  {
+   "id": "Yoma_84_b",
+   "step": 28,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "פשיטא objection to the suggested case of step 27",
+   "source": "Yoma 84b"
+  },
+  {
+   "id": "Yoma_84_b",
+   "step": 28,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the suggestion",
+   "replace": "Challenges the suggestion",
+   "why": "relation matches new label",
+   "source": "Yoma 84b"
+  },
+  {
+   "id": "Yoma_86_a",
+   "step": 4,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "answers the challenge of step 3",
+   "source": "Yoma 86a"
+  },
+  {
+   "id": "Yoma_8_a",
+   "step": 20,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "תירוץ",
+   "why": "אלא דכולי עלמא begins the new answer (step 21) to the challenge of steps 18-19",
+   "source": "Yoma 8a"
+  },
+  {
+   "id": "Yoma_9_b",
+   "step": 17,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "continuation of the aggadic statement, challenged straight away in step 18",
+   "source": "Yoma 9b"
+  },
+  {
+   "id": "Yoma_9_b",
+   "step": 36,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "מימרא",
+   "why": "story line (רבי יוחנן's reaction), not pushing aside a proof",
+   "source": "Yoma 9b"
+  },
+  {
+   "id": "Zevachim_100_b",
+   "step": 11,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "תירוץ",
+   "why": "completes רבה בר רב הונא's answer; further answers follow",
+   "source": "Zevachim 100b"
+  },
+  {
+   "id": "Zevachim_100_b",
+   "step": 13,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "objection (בדותא) to רב אשי's answer",
+   "source": "Zevachim 100b"
+  },
+  {
+   "id": "Zevachim_102_a",
+   "step": 2,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "קשיא",
+   "why": "end of the ברייתא quoted against רב (rule 1)",
+   "source": "Zevachim 102a"
+  },
+  {
+   "id": "Zevachim_102_b",
+   "step": 25,
+   "field": "hebrewStepName",
+   "find": "מסקנא",
+   "replace": "מימרא",
+   "why": "story line (rule 8); next step opens רב אחאי's challenge",
+   "source": "Zevachim 102b"
+  },
+  {
+   "id": "Zevachim_102_b",
+   "step": 30,
+   "field": "hebrewStepName",
+   "find": "דחיה",
+   "replace": "קשיא",
+   "why": "מי כתיב objection to the פסוק offered as an answer in step 29",
+   "source": "Zevachim 102b"
+  },
+  {
+   "id": "Zevachim_102_b",
+   "step": 30,
+   "field": "relationToPreviousStep",
+   "find": "Rejects the פסוק",
+   "replace": "Challenges the פסוק",
+   "why": "relation matches new label",
+   "source": "Zevachim 102b"
+  }
+ ]
+}
