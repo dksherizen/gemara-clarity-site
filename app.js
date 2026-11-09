@@ -1192,6 +1192,9 @@ function updPager(n, total){ // v4: the thin bottom bar: "5 of 24 · Kind" over 
   const kn = tn && $(".ten", tn), kind = kn ? kn.textContent.trim() : "";
   w.innerHTML = `<span class="sc-n">${n}</span> of ${total}${kind ? ` <span class="sc-k t-${k}">${kind}</span>` : ""}`;
   ticksSync(n, total);
+  const bp = $("#bbPrev"), bn = $("#bbNext"); // v6: back and Next in the bottom bar move one step; Next names the kind of step it goes to
+  if (bp) bp.disabled = n <= 1;
+  if (bn) { const nx = document.getElementById("s" + (n + 1)), nk = nx && $(".tname .ten", nx); bn.hidden = n >= total; $("#bbNextT").textContent = nk ? `Next: ${nk.textContent.trim()}` : "Next"; bn.setAttribute("aria-label", `Go on to step ${n + 1}${nk ? `, ${nk.textContent.trim()}` : ""}`); }
   try { localStorage.setItem("gc5-pos", JSON.stringify({ id: current.id, n })); } catch {}
   const f = $("#stepFill"); if (f) f.style.width = (total ? n / total * 100 : 0) + "%";
   document.body.classList.toggle("at-last", n >= total);
@@ -1494,7 +1497,7 @@ function toggleStep(card, force){
 function jumpTo(n, flash){
   if (current && current.tab !== "steps") { current.tab = "steps"; renderDaf(); }
   const el = document.getElementById("s" + n); if (!el) return;
-  const ae = document.activeElement, keep = !!(ae && ae !== document.body && ae.closest && ae.closest("#view, #sidebar, #sheet, .edge")); // review #99: focus was in the steps (or on the control pressed)
+  const ae = document.activeElement, keep = !!(ae && ae !== document.body && ae.closest && ae.closest("#view, #sidebar, #sheet, .edge, .bottombar")); // review #99: focus was in the steps (or on the control pressed)
   closeSheet(); jumpTo.lock = Date.now() + 700;
   if (paged()) { markCurrent(n); const top = $("#dafBody .steps"); const y = top ? top.getBoundingClientRect().top + scrollY - 70 : 0; if (scrollY > y + 4 || scrollY < y - 400) scrollTo({ top: Math.max(0, y), behavior: "auto" }); }
   else el.scrollIntoView({ behavior: "auto", block: "start" });
@@ -1815,7 +1818,7 @@ $("#sheetClose").onclick = () => closeSheet(); $("#backdrop").onclick = () => cl
 $("#flowBtn").onclick = () => { if (current && current.analysis) openSheet(`The steps of ${label(current.m, current.i)}`, flowHtml(current.analysis.steps), b => { const cur = $$(".step.cur")[0]; if (cur) { const f = $(`.fnode[data-jump="${cur.dataset.n}"]`, b); f && f.classList.add("cur"); f && f.scrollIntoView({ block: "center" }); } b.onclick = e => { const j = e.target.closest("[data-jump]"); if (j) { e.preventDefault(); jumpTo(+j.dataset.jump); } }; }); };
 // v4: moving between steps — swipe, a tap on the left/right edge, the arrow keys (or j/k), or the one arrow at the foot of the step
 function stepBy(d){ if (!paged() || !current || !current.analysis) return false; const c = +(($(".step.cur") || {}).dataset?.n || 1), t = current.analysis.steps.length, n = c + d; if (n < 1 || n > t) return false; jumpTo(n); return true; }
-$$(".edge").forEach(b => b.onclick = () => stepBy(+b.dataset.d));
+$$(".edge, .bb-step").forEach(b => b.onclick = () => stepBy(+b.dataset.d));
 (() => { let sx = 0, sy = 0, st = 0, ok = false;
   document.addEventListener("touchstart", e => { const t = e.touches[0]; ok = e.touches.length === 1 && paged() && !!e.target.closest("#dafBody .step") && !e.target.closest("input, textarea, .wf, #sheet"); sx = t.clientX; sy = t.clientY; st = Date.now(); }, { passive: true });
   document.addEventListener("touchend", e => { if (!ok) return; ok = false; const t = e.changedTouches[0], dx = t.clientX - sx, dy = t.clientY - sy;

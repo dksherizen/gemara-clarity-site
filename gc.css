@@ -1988,3 +1988,190 @@ body.theme-light .wB-slip{background:#fff}
 .rt-en{margin:0;font-size:calc(15.5px * var(--scale,1));line-height:1.55;color:var(--text)}
 .rt-none{color:var(--muted);font-style:italic;font-size:14px}
 .rt-src{margin:8px 0 0;font-size:13px;color:var(--muted)}
+
+/* ===================================================================================================
+   v6 "Clear and Calm" (Nov 9 2026, chosen by David from three mockups). The last word over every layer above.
+   A clean page; the phone's own sans-serif for everything you tap or scan, the book serif (Spectral) for what you read,
+   Frank Ruhl for the Hebrew. One accent (navy) for actions; the eight step colours stay as they were and live in
+   soft pills, the step strip and the step list. Soft cards, rounded controls, no heavy frame.
+   =================================================================================================== */
+:root{
+  --ui-font:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Frank Ruhl Libre",sans-serif;
+  --sc-font:var(--ui-font);
+  --read-font:'Spectral',Georgia,'Frank Ruhl Libre',serif;
+  --r-sm:10px;--r-md:14px;--r-lg:20px;
+}
+body.theme-light{
+  --bg:#ffffff;--panel:#ffffff;--panel-2:#f3f4f7;--raise:#ffffff;--ink:#0f1218;--text:#30343b;--muted:#5b6270;--faint:#5b6270;
+  --rule:#e5e7ec;--border:#e5e7ec;--border-2:#eef0f3;--accent:#1d3f9e;--accent-ink:#ffffff;--desk:#f3f4f7;
+  --binding:#1d3f9e;--binding-hi:#16327e;--on-binding:#ffffff;--gold:#b08a3e;--gold-ink:#1d3f9e;
+  --shade:rgba(15,18,24,.08);--scrim:rgba(15,18,24,.40);--toast-bg:#0f1218;--toast-ink:#ffffff;
+}
+body.theme-sepia{
+  --bg:#f7f1e3;--panel:#f7f1e3;--panel-2:#efe6d2;--raise:#faf5ea;--ink:#1d170e;--text:#3a3226;--muted:#5f5445;--faint:#5f5445;
+  --rule:#e3d8c0;--border:#e3d8c0;--border-2:#eadfc9;--accent:#2a4086;--accent-ink:#ffffff;--desk:#efe6d2;
+  --binding:#2a4086;--binding-hi:#22356f;--on-binding:#ffffff;--gold:#b08a3e;--gold-ink:#2a4086;
+  --shade:rgba(40,28,10,.10);--scrim:rgba(30,22,10,.40);--toast-bg:#1d170e;--toast-ink:#f7f1e3;
+}
+body.theme-dark{
+  --bg:#101215;--panel:#101215;--panel-2:#1a1d22;--raise:#16191d;--ink:#f1f3f6;--text:#cfd3da;--muted:#9aa1ad;--faint:#9aa1ad;
+  --rule:#262a31;--border:#262a31;--border-2:#1f2328;--accent:#a9bdff;--accent-ink:#0b1020;--desk:#0b0d10;
+  --binding:#a9bdff;--binding-hi:#c3d0ff;--on-binding:#0b1020;--gold:#d2ad5e;--gold-ink:#a9bdff;
+  --shade:rgba(0,0,0,.35);--scrim:rgba(0,0,0,.55);--toast-bg:#f1f3f6;--toast-ink:#101215;
+}
+body{font-family:var(--ui-font);font-size:16px;line-height:1.55}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:6px}
+a{color:var(--accent)}
+
+/* what you read is in the book serif */
+.step .ssum,.ph .pe,.ph .pnote,.explain p,.explain dl,.amud-topic,.dafhead .topic,.ovpanel .overview,.rt-en,.wB-line,.wB-tr,.wB-gloss,.wB-ans{font-family:var(--read-font)}
+
+/* ---------- top bar: a clean bar in the page colour, a hairline under it ---------- */
+.topbar{background:var(--bg);color:var(--ink);border-bottom:1px solid var(--rule);padding:env(safe-area-inset-top) 10px 0 14px;height:calc(52px + env(safe-area-inset-top))}
+.topbar .brand{color:var(--ink);align-items:center;gap:8px}
+.topbar .brand-he{font:800 22px/1 var(--he-font);color:var(--ink)}
+.topbar .brand-logo{top:0;width:26px;height:26px}
+.topbar .brand-name{font:600 15px/1 var(--ui-font);letter-spacing:-.01em;color:var(--ink)}
+.topbar .refbtn{min-height:36px;padding:0 12px;border-radius:999px;background:var(--panel-2);color:var(--ink);font:500 15px var(--ui-font);gap:4px}
+.topbar .refbtn:hover span{text-decoration:none}
+.topbar .refbtn:hover{background:color-mix(in srgb,var(--ink) 8%,var(--panel-2))}
+.topbar .iconbtn,.topbar .aa,.topbar .hp-q,.topbar #settingsBtn.pf,.topbar #settingsBtn.pf .pf-chev{color:var(--ink);font-family:var(--ui-font)}
+.topbar .iconbtn{border-radius:10px}
+.topbar .iconbtn:active,.topbar .refbtn:active,.topbar #settingsBtn.pf:hover,.topbar #settingsBtn.pf.open{background:var(--panel-2)}
+.topbar #settingsBtn.pf{border-radius:10px;font-weight:500}
+
+/* ---------- buttons: one accent, rounded ---------- */
+.btn-primary{height:46px;padding:0 22px;border-radius:999px;background:var(--accent);color:var(--accent-ink);font:600 15px/1 var(--ui-font)}
+.btn-primary:hover,.btn-primary:active{background:color-mix(in srgb,var(--accent) 88%,var(--ink))}
+.wB-btn{height:46px;border:0;border-radius:999px;background:var(--accent);color:var(--accent-ink);font:600 15px/1 var(--ui-font)}
+.wB-btn:active{background:color-mix(in srgb,var(--accent) 88%,var(--ink))}
+.toast{background:var(--toast-bg);color:var(--toast-ink);border-radius:12px;font:500 15px var(--ui-font);box-shadow:0 8px 24px -8px var(--shade)}
+
+/* ---------- home ---------- */
+.h5-hero{margin:10px auto 22px}
+.h5-hero h1{font:700 28px/1.15 var(--ui-font);letter-spacing:-.02em}
+.h5-hero p{font:400 16px/1.5 var(--ui-font)}
+.h5 .amud{background:var(--panel-2);border-radius:var(--r-lg);padding:16px 18px 20px}
+.amud-k{font:600 13px/20px var(--ui-font);color:var(--ink)}
+.amud-k [lang="he"]{color:var(--muted);font-size:16px}
+.amud-k .s,#yomiS{color:var(--muted);font-weight:400}
+.amud-rh{border-bottom-color:var(--rule)}
+.amud-text{font-size:21px;line-height:36px}
+.amud-meta .en{font-family:var(--ui-font)}
+.h5 .h4-line{border:0;background:var(--panel-2);border-radius:var(--r-md);padding:14px 16px}
+.h5 .h4-line .k{font-family:var(--ui-font)}
+.h5 .section-h,.legend-wrap>summary.section-h{font:600 13px/20px var(--ui-font);color:var(--muted)}
+.wy-h{font:600 13px/20px var(--ui-font);color:var(--muted)}
+.wy-h [lang="he"]{font-size:20px}
+.wB-box{border:1px solid var(--rule);border-radius:var(--r-lg);background:var(--bg)}
+.wB-tab{border-bottom:2px solid transparent}
+.wB-tab small{font-family:var(--ui-font)}
+.wB-tab[aria-selected="true"]{border-bottom-color:var(--accent);background:var(--bg)}
+.wB-stage{background:var(--bg)}
+.wB-slip{border-radius:12px;background:var(--panel-2);border-color:transparent}
+body.theme-light .wB-slip{background:var(--panel-2)}
+.wB-slip.s2,.wB-slip.s3{border-color:var(--bg)}
+.wB-check{border-radius:999px;background:var(--panel-2);border:0}
+.wB-alt{color:var(--muted)}
+.h5 .wB-search,.wB-search{border:0;border-radius:var(--r-md);background:var(--panel-2);font-family:var(--ui-font)}
+.h4-links a .he,.h4-way .rw-he{color:var(--ink)}
+.legend .swatch{width:12px;height:12px;border:0;border-radius:3px;background:var(--c)}
+.legend .lg{grid-template-columns:12px 1fr;align-items:center}
+.legend .lg b{font-family:var(--ui-font);font-weight:600}
+@media (min-width:1000px){.wB-tab{border-bottom:0}.wB-tab[aria-selected="true"]{border-left-color:var(--accent)}}
+
+/* ---------- the daf page ---------- */
+.runhead{border-bottom:0;font-size:14px}
+.runhead .he,.runhead .perekline{font-size:14px}
+.refline .he{font-weight:700}
+.modebar{gap:4px;margin:12px 0 0;padding:3px;border-radius:999px;background:var(--panel-2);width:max-content;max-width:100%}
+.modebar .mb-o{min-height:34px;padding:0 14px;border-radius:999px;color:var(--muted);font:500 14px var(--ui-font)}
+.modebar .mb-o.on{text-decoration:none;color:var(--ink);background:var(--bg);box-shadow:0 1px 2px var(--shade)}
+.dafhead .topic{font-size:17px}
+.headbar{border-top-color:var(--rule)}
+.headbar .ovbtn,.headactions .btn,.notice .btn,.explain-btn{min-height:38px;padding:0 14px;border-radius:999px;background:var(--panel-2);color:var(--ink);font:500 14px var(--ui-font);text-decoration:none}
+.headbar .ovbtn:hover,.headactions .btn:hover,.explain-btn:hover{background:color-mix(in srgb,var(--ink) 7%,var(--panel-2))}
+.headactions{gap:8px}
+.typecount{font-family:var(--ui-font);text-decoration:none;padding:3px 10px;border-radius:999px;background:color-mix(in srgb,var(--c) 11%,transparent)}
+.notice{border:0;border-radius:var(--r-md);background:var(--panel-2);padding:12px 16px}
+
+/* the strip: the shape of the sugya; the current step is the long, solid one */
+.ticks{gap:4px;height:10px;align-items:center;margin:18px 0 0}
+.ticks .tk{height:6px;border-radius:3px;opacity:.38}
+.ticks .tk.cur{height:6px;opacity:1;flex-grow:2.4}
+.ticks .tk:hover{height:6px;opacity:.7}
+
+/* the step: its kind in soft pills, the Aramaic and English together on one card */
+body.onestep #dafBody .steps .step.cur{padding-top:20px}
+.step .sh .tname{gap:6px;font-family:var(--ui-font)}
+.step .sh .tname .he,.step .sh .tname .ten{padding:4px 11px;border-radius:999px;background:color-mix(in srgb,var(--c) 11%,transparent);color:var(--c)}
+.step .sh .tname .he{font:600 16px/22px var(--he-font)}
+.step .sh .tname .ten{font:600 14px/22px var(--ui-font)}
+.step .sh .tname .stag,.step .sh .tname .mbadge{font:500 12px/18px var(--ui-font);border-radius:999px;border-color:var(--rule);padding:2px 9px;align-self:center}
+.step .stitle{margin-top:12px;font:650 21px/1.3 var(--ui-font);letter-spacing:-.01em}
+.step .ssum{font-size:17px;line-height:1.6}
+.phrases{margin-top:18px;padding:4px 18px;border-radius:var(--r-lg);background:var(--panel-2)}
+.ph{padding:14px 0;border-bottom-color:var(--rule)}
+.ph .pe{font-size:var(--en-size)}
+.ph .pnote{font-size:15px}
+.rt-btn{min-height:40px;padding:0 14px;border:0;border-radius:999px;background:var(--panel-2);color:var(--ink);font:600 14px var(--ui-font)}
+.rt-btn:hover{background:color-mix(in srgb,var(--ink) 7%,var(--panel-2))}
+.rt-btn[aria-expanded=true]{background:color-mix(in srgb,var(--accent) 14%,var(--panel-2))}
+.rt-n{background:var(--bg)}
+.rt-panel{border-left:0;border-radius:var(--r-md);background:var(--panel-2);padding:4px 16px 10px}
+.explain .box,.explain details{border-top-color:var(--rule)}
+.explain h4{font-family:var(--ui-font)}
+
+/* the bottom bar: back, where you are (tap for every step), Next */
+.bottombar{display:flex;align-items:center;gap:10px;padding:8px max(12px,calc((100% - var(--max)) / 2)) calc(10px + env(safe-area-inset-bottom));background:color-mix(in srgb,var(--bg) 92%,transparent);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
+.bottombar[hidden],body:not(.onestep) .bottombar{display:none}
+.bottombar .sbar{flex:1;width:auto;min-width:0;min-height:44px;border-radius:999px;font:400 14px/44px var(--ui-font);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bottombar .sbar:hover{background:var(--panel-2)}
+.bottombar .sc-k{color:var(--c);font-weight:600}
+.bb-step{flex:none;display:inline-flex;align-items:center;justify-content:center;gap:6px;height:44px;border:0;border-radius:999px;font:600 15px/1 var(--ui-font);cursor:pointer}
+.bb-step svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.bb-prev{width:44px;background:var(--panel-2);color:var(--ink)}
+.bb-next{padding:0 14px 0 18px;background:var(--accent);color:var(--accent-ink);max-width:58vw}
+.bb-next span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bb-step:disabled{opacity:.35;cursor:default}
+.bb-next[hidden]{display:none}
+body.onestep .stepnav{display:none}
+
+/* ---------- desktop step list ---------- */
+.flow h2{font:600 13px/20px var(--ui-font);color:var(--muted)}
+.flow h2::before{content:none}
+.flow .phase{font:600 12px/18px var(--ui-font);color:var(--muted)}
+.fnode{border-radius:var(--r-sm);font-family:var(--ui-font);font-size:14px;line-height:1.4}
+.fnode .fty{text-decoration:none;font:600 13px/18px var(--ui-font);margin-bottom:2px}
+.fnode .fty .he{font-size:15px}
+.fnode:hover{background:var(--panel-2)}
+.fnode.cur{background:color-mix(in srgb,var(--c,var(--accent)) 11%,transparent)}
+.side-resize{border-left-color:var(--rule)}
+
+/* ---------- sheets: picker, settings, Menu, Help ---------- */
+.sheet-backdrop{background:var(--scrim)}
+.sheet{border-radius:var(--r-lg) var(--r-lg) 0 0;box-shadow:0 -8px 40px -12px var(--shade)}
+@media (min-width:760px){.sheet{border-radius:var(--r-lg);box-shadow:0 24px 60px -20px var(--shade)}}
+.sheet-head{border-bottom:0;padding:14px 20px 6px}
+.sheet-head h2{font:700 19px/26px var(--ui-font);letter-spacing:-.01em}
+.sheet-head .iconbtn{border-radius:999px;background:var(--panel-2);min-width:36px;height:36px;font-size:15px}
+.sheet .input,#gotoInput{height:48px;padding:0 16px;border:0;border-radius:var(--r-md);background:var(--panel-2);font-family:var(--ui-font)}
+.sheet .input:focus,#gotoInput:focus{outline:2px solid var(--accent);outline-offset:0;border:0}
+.masbtn{border-top-color:var(--rule)}
+.masbtn .mb-en{font-family:var(--ui-font)}
+.ofl-save,.sheet .btn,.sheet .seder .chip{font-family:var(--ui-font)}
+.tabs button.on,.tabs button[aria-selected="true"],.mi-tabs button.on,.mi-tabs button[aria-selected="true"]{text-decoration:none;color:var(--ink);box-shadow:inset 0 -2px var(--accent)}
+.sheet .seg,.sheet .segmented{border:0;border-radius:999px;background:var(--panel-2);padding:3px}
+.sheet .seg button,.sheet [data-theme],.sheet .segmented button{border-radius:999px;border:0}
+.sheet .seg button.on,.sheet [data-theme].on,.sheet [aria-pressed="true"]{background:var(--bg);color:var(--ink);box-shadow:0 1px 3px var(--shade)}
+.pk-h{border-bottom-color:var(--rule)}
+.dafcell button::before{border-radius:8px}
+.dafcell button.has::after{background:var(--accent)}
+
+/* ---------- Ameilus ---------- */
+.am .btn,.am-bar .btn,.am-walk .btn,.am button.btn,.am-bar button,.am-actions button{border-radius:999px;font-family:var(--ui-font)}
+.step .sh .tname .mbadge .he,.step .sh .tname .stag .he{padding:0;background:none;color:var(--muted);font-size:14px;line-height:18px}
+.wB-ticks{gap:4px;height:8px;align-items:center}
+.wB-ticks .tk{height:6px;max-width:none;border-radius:3px;opacity:.4}
+.wB-ticks .tk.cur{height:6px;opacity:1;flex-grow:2.4}
+#homeAmud .ticks .tk{opacity:.85}

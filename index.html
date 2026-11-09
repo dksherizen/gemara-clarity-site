@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Gemara Clarity: every sugya, step by step</title>
 <meta name="description" content="Learn any daf of Gemara step by step: Aramaic beside English, phrase by phrase, with every question, challenge, answer and conclusion color-coded.">
-<meta name="theme-color" content="#2a1d15">
+<meta name="theme-color" content="#ffffff">
 <meta property="og:title" content="Gemara Clarity">
 <meta property="og:description" content="Every sugya, step by step: Aramaic beside English, with the argument's flow color-coded.">
 <meta property="og:image" content="og.png">
@@ -54,7 +54,9 @@
 </div>
 
 <nav class="bottombar" id="bottombar" aria-label="Where you are in the sugya" hidden>
+  <button id="bbPrev" class="bb-step bb-prev" data-d="-1" aria-label="Back one step"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
   <button id="flowBtn" class="sbar" aria-label="All the steps of this amud"><span class="sbar-line" aria-hidden="true"><span id="stepFill"></span></span><span id="stepCounter" class="sbar-t"></span></button>
+  <button id="bbNext" class="bb-step bb-next" data-d="1"><span id="bbNextT">Next</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
   <span hidden><button id="prevBtn" tabindex="-1"><span id="prevLabel"></span></button><button id="nextBtn" tabindex="-1"><span id="nextLabel"></span></button><button id="bbToggle" tabindex="-1"></button></span>
 </nav>
 <button class="edge edge-prev" data-d="-1" aria-label="Previous step" tabindex="-1"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
