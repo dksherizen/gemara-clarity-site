@@ -2283,13 +2283,13 @@ registerHelp({ id:"colours", group:"On the daf", order:1, icon:"kinds", where:["
     "In Menu › Settings you can turn off **Step colors**, or use **Color the text** to colour the words too."],
   labels:["Mishnah", "Step colors", "Color the text"], action: helpGo.settings });
 registerHelp({ id:"reading", group:"On the daf", order:2, icon:"lines", where:["flow"],
-  title:"Reading a step", sub:"Explain, Rashi and Tosfos, verses, all the steps.",
+  title:"Reading a step", sub:"Next, Explain, Rashi and Tosfos, verses, all the steps.",
   body:["**Explain**, under each step, says what is happening and why. Inside it, **More detail** goes deeper.",
     "**Rashi** and **Tosfos**, under the Aramaic, open their comments on that step: the Hebrew, with the English wherever Sefaria has a translation. The number shows how many there are.",
     "When a step quotes a pasuk, tap the reference to read the whole verse.",
-    "The bar at the bottom of the screen (“1 of 14”) lists all the steps, so you can see how the sugya fits together and jump to any step.",
+    "At the bottom of the screen, **Next** takes you on to the following step and says what kind of step it is; the round arrow beside it goes back one. Tap “1 of 14” between them to list all the steps, so you can see how the sugya fits together and jump to any step.",
     "Want to test yourself? In Menu › Settings, turn off the **English translation** or the **Vowels (nikud)**. You can also turn **Phrase notes** off, turn **Logic details** on, or **Open every explanation** so you never need to tap Explain."],
-  labels:["Explain", "More detail", "Show overview", "Rashi", "Tosfos"], action: helpGo.settings });
+  labels:["Explain", "More detail", "Show overview", "Rashi", "Tosfos", "Next"], action: helpGo.settings });
 registerHelp({ id:"saved", group:"Your things", order:1, icon:"bookmark", where:["home","flow"],
   title:"Bookmarks, history and My words", sub:"Find your way back.",
   body:["Tap **Bookmark** at the bottom of any daf to keep it.",

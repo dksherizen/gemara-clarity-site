@@ -7,7 +7,6 @@
 @font-face{font-family:'Spectral';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/spectral-normal-400-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
 @font-face{font-family:'Spectral';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/spectral-normal-600-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;}
 @font-face{font-family:'Spectral';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/spectral-normal-600-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
-@font-face{font-family:'Spectral SC';font-style:normal;font-weight:500;font-display:swap;src:url(fonts/spectral-sc-normal-500-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
 @font-face{font-family:'Frank Ruhl Libre';font-style:normal;font-weight:300 900;font-display:swap;src:url(fonts/frank-ruhl-hebrew.woff2) format('woff2');unicode-range:U+0307-0308, U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;}
 *,*::before,*::after{box-sizing:border-box}
 :root{
@@ -2092,7 +2091,7 @@ body.theme-light .wB-slip{background:var(--panel-2)}
 .headbar .ovbtn,.headactions .btn,.notice .btn,.explain-btn{min-height:38px;padding:0 14px;border-radius:999px;background:var(--panel-2);color:var(--ink);font:500 14px var(--ui-font);text-decoration:none}
 .headbar .ovbtn:hover,.headactions .btn:hover,.explain-btn:hover{background:color-mix(in srgb,var(--ink) 7%,var(--panel-2))}
 .headactions{gap:8px}
-.typecount{font-family:var(--ui-font);text-decoration:none;padding:3px 10px;border-radius:999px;background:color-mix(in srgb,var(--c) 11%,transparent)}
+.typecount{font-family:var(--ui-font);text-decoration:none;padding:3px 10px;border-radius:999px;background:color-mix(in srgb,var(--c) var(--pill-a),transparent)}
 .notice{border:0;border-radius:var(--r-md);background:var(--panel-2);padding:12px 16px}
 
 /* the strip: the shape of the sugya; the current step is the long, solid one */
@@ -2104,7 +2103,7 @@ body.theme-light .wB-slip{background:var(--panel-2)}
 /* the step: its kind in soft pills, the Aramaic and English together on one card */
 body.onestep #dafBody .steps .step.cur{padding-top:20px}
 .step .sh .tname{gap:6px;font-family:var(--ui-font)}
-.step .sh .tname .he,.step .sh .tname .ten{padding:4px 11px;border-radius:999px;background:color-mix(in srgb,var(--c) 11%,transparent);color:var(--c)}
+.step .sh .tname .he,.step .sh .tname .ten{padding:4px 11px;border-radius:999px;background:color-mix(in srgb,var(--c) var(--pill-a),transparent);color:var(--c)}
 .step .sh .tname .he{font:600 16px/22px var(--he-font)}
 .step .sh .tname .ten{font:600 14px/22px var(--ui-font)}
 .step .sh .tname .stag,.step .sh .tname .mbadge{font:500 12px/18px var(--ui-font);border-radius:999px;border-color:var(--rule);padding:2px 9px;align-self:center}
@@ -2145,7 +2144,7 @@ body.onestep .stepnav{display:none}
 .fnode .fty{text-decoration:none;font:600 13px/18px var(--ui-font);margin-bottom:2px}
 .fnode .fty .he{font-size:15px}
 .fnode:hover{background:var(--panel-2)}
-.fnode.cur{background:color-mix(in srgb,var(--c,var(--accent)) 11%,transparent)}
+.fnode.cur{background:color-mix(in srgb,var(--c,var(--accent)) var(--pill-a),transparent)}
 .side-resize{border-left-color:var(--rule)}
 
 /* ---------- sheets: picker, settings, Menu, Help ---------- */
@@ -2175,3 +2174,28 @@ body.onestep .stepnav{display:none}
 .wB-ticks .tk{height:6px;max-width:none;border-radius:3px;opacity:.4}
 .wB-ticks .tk.cur{height:6px;opacity:1;flex-grow:2.4}
 #homeAmud .ticks .tk{opacity:.85}
+
+/* v6: the rounder shapes everywhere else (older layers drew 3px corners on every control and card) */
+.btn,.chip,.clx-chip,.seg3 button,.cl-seg button,.clx .cl-seg button,.disc .btn.primary,.am-optbtn,.kchip,.hp-act,.mw-tab,.clx-row .cl-go .btn,.sugg .chip,.sizer button,.pick-mode,.am-gopt,.am-guess,.next-step,.pasuk-ref,:is(.am,.am-bar,.am-word) .btn,:is(.am,.am-word) .chip,.srel a,.ovbtn{border-radius:999px}
+.switch span{border-radius:999px;border:0;background:color-mix(in srgb,var(--ink) 14%,var(--panel-2))}
+.switch span::after{background:var(--bg);box-shadow:0 1px 3px var(--shade)}
+.switch input:checked+span::after{background:var(--accent-ink)}
+.seg3,.cl-seg,.clx .cl-seg{border-radius:999px;border:0;background:var(--panel-2)}
+.seg3 button[aria-pressed=true],.cl-seg button[aria-pressed="true"],.clx .cl-seg button[aria-pressed="true"]{background:var(--bg);color:var(--ink);box-shadow:0 1px 3px var(--shade)}
+.disc{border-radius:var(--r-lg);border:0;box-shadow:0 24px 60px -20px var(--shade)}
+.disc .btn.primary{font-weight:600;min-height:48px}
+.am-walk{border-radius:var(--r-lg)}
+.am-card,.am-word,.am-exp,.hp-card,.mw-card,.h3-card,.pz,.clx-seder,.box,.am-tip,.ofl,.am-hints .hb{border-radius:var(--r-md)}
+.clx-row,.mi-band,.demo-step{border-radius:var(--r-sm)}
+.clx-search,.searchbox,.input,.mw-search input,.h3-search{border-radius:var(--r-md)}
+.clx-search{border:0;background:var(--panel-2)}
+.clx-chip{border-color:var(--rule)}
+.clx-chip.on{background:color-mix(in srgb,var(--accent) 10%,var(--bg));border-color:transparent;color:var(--accent)}
+.clx-eyebrow{color:var(--accent);letter-spacing:.08em;font-weight:700;font-family:var(--ui-font)}
+.clx-seder{border-color:var(--rule)}
+.hp-act{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.sheet h3,.sheet h4,#pickBody>h3,.clx-t,.cl-h,.am-walk-h{font-family:var(--ui-font)}
+@media (min-width:1100px){.layout.with-side ~ .bottombar #flowBtn{display:block}}
+/* v6: how strongly a step's colour tints its pill; kept light enough that the coloured words on it stay at 4.5:1 or better */
+body.theme-light,body.theme-sepia{--pill-a:7%}
+body.theme-dark{--pill-a:12%}
