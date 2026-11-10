@@ -49,6 +49,15 @@ export const AMW = {
   walkNear: "a real break, but not the end yet",
   walkEndShort: `the end of the ${UNIT}`,
   walkEnd: `The end of the ${UNIT}: the answer finishes here.`,
+  // the guided first passage after Start (Nov 9 2026): the app walks the learner through one passage, then hands over
+  coachHead: `Your first ${UNIT}, done together`,
+  coachRead: `It is shaded. Read it from the start. The thought is complete at the word in the box, so the ${UNIT} ends there.`,
+  coachTap: "Tap the word in the box.",
+  coachRight: "Right. Now press Ends here ✓.",
+  coachWrong: `Not this one. For this first ${UNIT}, tap the word in the box.`,
+  coachTurnHead: "Now you try",
+  coachTurn: `Our explanation of that ${UNIT} is open. When you're ready, read on until the next thought is complete and tap its last word. Stuck? Open Hints.`,
+  coachDone: "Got it",
   // the marker messages (core.js evaluateMark)
   nearMiss: `Good instinct — that is a real break. This ${UNIT} runs a little further; keep going and mark its end.`,
   beyond: (endWord, n) => `A real break. We split it sooner too, after ${endWord}, so that's ${nUnits(n)} in one.`,

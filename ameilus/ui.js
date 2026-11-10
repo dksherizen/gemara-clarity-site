@@ -1,8 +1,8 @@
 // Ameilus v3 UI. Self-contained: mountAmeilus(root, ctx) renders one amud into `root` and owns
 // only elements inside it plus the word sheet it appends to document.body. The host passes data
 // and callbacks, so the same module can drop into Gemara Clarity behind a Shiur/Ameilus switch.
-import * as C from "./core.js?v=3.6.0";
-import { AMW } from "./words.js?v=3.6.0";
+import * as C from "./core.js?v=3.7.0";
+import { AMW } from "./words.js?v=3.7.0";
 
 const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const he = s => `<span class="he" dir="rtl" lang="he">${esc(s)}</span>`;
@@ -62,6 +62,8 @@ export function mountAmeilus(root, ctx){
   let st; try { st = Object.assign(blank(), JSON.parse(localStorage.getItem(KEY) || "null") || {}); } catch { st = blank(); }
   if (!st.used || typeof st.used !== "object") st.used = {};
   let mark = null, msg = null, card = null, wordMode = false, vowelWord = new Set(), resetOpen = false, hintsOpen = false;
+  let coach = 0; // the guided first passage after the walkthrough's Start (Nov 9 2026): 1 = shaded passage, tap the boxed word; 2 = "Now you try" until the next passage is marked; 0 = off
+  const guideEnd = () => { const cs = curStep(); return cs < 0 ? -1 : ranges[cs].end; };
   const save = () => { try { localStorage.setItem(KEY, JSON.stringify({ pos: st.pos, cuts: st.cuts, done: st.done, used: st.used, tries: st.tries, open: card ? { at: card.at, steps: card.steps, shown: !!card.shown, fb: card.fb || null, fbKind: card.fb ? card.fbKind : null } : null })); } catch {} }; // open: the explanation in the panel, so a reload shows it again (v99p)
   { const o = st.open; if (o && Number.isInteger(o.at) && o.at >= 0 && o.at < st.pos && o.at < tokens.length && Array.isArray(o.steps) && o.steps.every(s => Number.isInteger(s) && steps[s] && st.done[s]) && (st.cuts.includes(o.at) || o.steps.some(s => ranges[s].end === o.at)) && (o.fb == null || (typeof o.fb === "string" && /^[a-z]+$/.test(String(o.fbKind))))) card = { at: o.at, steps: o.steps.slice(), shown: !!o.shown, fb: o.fb || null, fbKind: o.fb ? o.fbKind : undefined, check: null, checked: false }; } // a saved record without a valid open field opens nothing
   const curStep = () => st.pos < tokens.length ? tokens[st.pos].s : -1;
@@ -185,7 +187,8 @@ export function mountAmeilus(root, ctx){
     const done = i < st.pos;
     const txt = C.wordView(t, i, { pos: st.pos, vowels: show.vowels, punct: show.punct, bare, vowelWord }).text;
     const sel = mark != null && i >= st.pos && i <= mark;
-    const cls = ["w", done ? (guessHides(t.s) ? "done" : "done k-" + (C.KIND_CLASS[steps[t.s].hebrewStepName] || "mimra")) : "", sel ? "sel" : "", i === mark ? "mark" : "",
+    const ge = coach === 1 && !done ? ranges[cs].end : -1, guide = ge >= 0 && i <= ge;
+    const cls = ["w", guide ? "guide" : "", i === ge ? "guide-end" : "",done ? (guessHides(t.s) ? "done" : "done k-" + (C.KIND_CLASS[steps[t.s].hebrewStepName] || "mimra")) : "", sel ? "sel" : "", i === mark ? "mark" : "",
       (st.sig && st.sig.i === i) ? "sig" : "", i === st.pos && mark == null && i > 0 ? "next" : ""].filter(Boolean).join(" ");
     return `<span class="${cls}" data-i="${i}" tabindex="${i === (mark != null ? mark : st.pos) ? 0 : -1}">${esc(txt)}</span>`;
   }
@@ -331,8 +334,10 @@ export function mountAmeilus(root, ctx){
         <button class="hb ic" data-act="reset" aria-expanded="false" aria-label="${esc(AMW.resetAria)}" title="${esc(AMW.resetAria)}">↺</button>
       </div>`;
     // the nudge arrows follow the Hebrew: the row runs right-to-left, so "one word back" sits on the right pointing right (›) and "one word on" sits on the left pointing left (‹), the way the marker moves
+    const coachBox = coach === 1 ? `<div class="am-coach" role="status"><b class="am-coach-h">${esc(AMW.coachHead)}</b><p>${esc(AMW.coachRead)}</p><p class="am-coach-do">${esc(mark == null ? AMW.coachTap : mark === guideEnd() ? AMW.coachRight : AMW.coachWrong)}</p></div>`
+      : coach === 2 ? `<div class="am-coach" role="status"><b class="am-coach-h">${esc(AMW.coachTurnHead)}</b><p>${esc(AMW.coachTurn)}</p><button class="btn sm" data-act="coachdone">${esc(AMW.coachDone)}</button></div>` : "";
     bar.innerHTML = `
-      ${msg ? `<div class="am-msg am-msg-${msg.k}" role="status">${msg.head ? `Head start: ${he(msg.head.he)}${msg.head.en ? ` - ${mixed(msg.head.en)}` : ""}` : mixed(msg.k === "hint" ? voc(msg.text) : msg.text)}</div>` : `<div class="am-msg am-msg-idle">${mark == null ? (wordMode ? "Word help is on: tap any word for its meaning." : esc(AMW.idle)) : "Marker set. Nudge it, or confirm."}</div>`}
+      ${coachBox && !(msg && msg.k !== "hint") ? coachBox : msg ?`<div class="am-msg am-msg-${msg.k}" role="status">${msg.head ? `Head start: ${he(msg.head.he)}${msg.head.en ? ` - ${mixed(msg.head.en)}` : ""}` : mixed(msg.k === "hint" ? voc(msg.text) : msg.text)}</div>` : `<div class="am-msg am-msg-idle">${mark == null ? (wordMode ? "Word help is on: tap any word for its meaning." : esc(AMW.idle)) : "Marker set. Nudge it, or confirm."}</div>`}
       ${panel}
       ${row}
       ${mark != null ? `<div class="am-acts" dir="rtl"><button class="btn sm" data-act="nudge" data-d="-1" aria-label="Move marker one word back" title="One word back">›</button><button class="btn primary" data-act="commit">Ends here ✓</button><button class="btn sm" data-act="nudge" data-d="1" aria-label="Move marker one word on" title="One word on">‹</button></div>` : ""}`;
@@ -385,6 +390,7 @@ export function mountAmeilus(root, ctx){
     st.cuts.push(ev.carveTo);
     ev.completes.forEach(s => { st.done[s] = { own: own && (st.done[s] ? st.done[s].own : true), sig: !!(st.used[s] && st.used[s].sig), rev: !!viaReveal }; });
     st.pos = ev.carveTo + 1; st.tries = 0; st.sig = null; mark = null; msg = null;
+    coach = coach === 1 ? 2 : 0; // the guided passage is done: hand over ("Now you try"); after the learner's own one, the coaching ends
     const lastDone = ev.completes[ev.completes.length - 1];
     const check = null; // no check question after a passage
     card = { at: ev.carveTo, fb: viaReveal ? "Here's where we split it." : ev.text, fbKind: ev.rel, steps: ev.completes, check, checked: false, shown: false };
@@ -430,6 +436,7 @@ export function mountAmeilus(root, ctx){
     const b = e.target.closest("[data-act]"); if (!b) return;
     const a = b.dataset.act;
     if (a === "commit") commit(false);
+    if (a === "coachdone") { coach = 0; renderBar(); }
     if (a === "toggle") toggleShow(b.dataset.k);
     if (a === "signal") signal();
     if (a === "head") head();
@@ -521,7 +528,11 @@ export function mountAmeilus(root, ctx){
   root.addEventListener("click", e => {
     const w = e.target.closest("[data-walk]"); if (!w) return;
     if (w.dataset.walk === "open") { if (tipEl.hidden) openWalk(true); else closeWalk(); }
-    else { closeWalk(); if (w.dataset.walk === "start") { dafBox.scrollTop = 0; const f = daf.querySelector(`[data-i="${st.pos}"]`); if (f) { f.focus({ preventScroll: true }); f.classList.add("am-startcue"); setTimeout(() => f.classList.remove("am-startcue"), 2600); } } }
+    else { closeWalk(); if (w.dataset.walk === "start" && st.pos < tokens.length) { // Start: walk through the passage the learner is on together (it was a focus ring nobody saw)
+      coach = 1; mark = null; msg = null; card = null; hintsOpen = false; render();
+      const s0 = daf.querySelector(`[data-i="${st.pos}"]`), e0 = daf.querySelector(`[data-i="${guideEnd()}"]`);
+      if (st.pos === 0) dafBox.scrollTop = 0; else scrollInBox(dafBox, s0, "center");
+      requestAnimationFrame(() => scrollInBox(dafBox, e0)); e0 && e0.focus({ preventScroll: true }); say(AMW.coachRead + " " + AMW.coachTap); } }
   });
   let seen = false; try { seen = !!localStorage.getItem(WALK_KEY); } catch {}
   if (!seen) { if (typeof ctx.whenReady === "function") ctx.whenReady(() => { if (root.isConnected && !localStorage.getItem(WALK_KEY)) openWalk(false); }); else openWalk(false); } // the site's first-visit notice comes first
@@ -557,10 +568,11 @@ export function mountAmeilus(root, ctx){
       "Tap the last word of the first passage, then **Ends here ✓**.",
       "Say the passage in your own words. Then tap **Show our reading** to check yourself.",
       "Go on to the next passage the same way."],
-    body:["Stuck? **Hints** can add the vowels or the punctuation, or show the word that signals what is coming. **Show where it ends** gives the answer, but then that passage doesn’t count as done on your own.",
+    body:["New to it? **Replay the walkthrough** below and tap **Start**: the app does the passage you're on with you. It shades the passage and boxes its last word, then you try the next one yourself.",
+      "Stuck? **Hints** can add the vowels or the punctuation, or show the word that signals what is coming. **Show where it ends** gives the answer, but then that passage doesn’t count as done on your own.",
       "Long-press (or right-click) any word to see what it means. **Add to My words** keeps it for flashcards.",
       "The **Sugya map** button at the top shows how the passages hang together. It fills in as you go.",
       "In Menu › Settings, while you are in Ameilus: **Bare mode** takes the hints away, and **Guess the kind first** asks what kind of step each passage is before showing you."],
-    labels:["Ends here ✓", "Show our reading", "Hints", "Show where it ends", "Add to My words", "Sugya map", "Bare mode", "Guess the kind first"],
+    labels:["Ends here ✓", "Show our reading", "Start", "Hints", "Show where it ends", "Add to My words", "Sugya map", "Bare mode", "Guess the kind first"],
     action:{ label:"Replay the walkthrough", run: c => { if (c && c.am && c.am.openWalk) { c.close(); c.am.openWalk(); return; } try { localStorage.removeItem(WALK_KEY); } catch {} return "It will open the next time you start Ameilus on a daf."; } } });
 }

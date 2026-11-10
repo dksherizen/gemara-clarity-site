@@ -2199,3 +2199,13 @@ body.onestep .stepnav{display:none}
 /* v6: how strongly a step's colour tints its pill; kept light enough that the coloured words on it stay at 4.5:1 or better */
 body.theme-light,body.theme-sepia{--pill-a:7%}
 body.theme-dark{--pill-a:12%}
+
+/* Ameilus: the guided first passage after the walkthrough's Start (Nov 9 2026). The passage is shaded, its last word boxed. */
+.am-daf .w.guide{background:color-mix(in srgb,var(--accent) 9%,transparent)}
+.am-daf .w.guide-end{background:color-mix(in srgb,var(--accent) 18%,transparent);box-shadow:0 0 0 2px var(--accent) inset;border-radius:6px}
+.am-daf .w.guide-end.mark{background:color-mix(in srgb,var(--accent) 34%,transparent)}
+.am-coach{max-width:760px;margin:0 auto 8px;padding:10px 14px;border-radius:var(--r-md);background:var(--panel-2);color:var(--text);font:400 14px/1.45 var(--ui-font);text-align:left}
+.am-coach-h{display:block;font:600 14px/20px var(--ui-font);color:var(--ink)}
+.am-coach p{margin:2px 0 0}
+.am-coach .am-coach-do{font-weight:600;color:var(--accent)}
+.am-coach .btn{margin-top:8px;min-height:36px;padding:0 16px;border:0;border-radius:999px;background:var(--bg);color:var(--ink);font:500 14px var(--ui-font)}

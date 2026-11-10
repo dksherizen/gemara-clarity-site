@@ -1,6 +1,6 @@
 // Ameilus v3 core: pure functions over Gemara Clarity step data (data/b/<id>.json).
 // No DOM, no network. Shared by the UI (ui.js) and the unit tests (test/*.test.mjs).
-import { AMW } from "./words.js?v=3.6.0";
+import { AMW } from "./words.js?v=3.7.0";
 // marking a real break before the passage's end (David's wording, Oct 14 2026; unit renamed "passage" Oct 15 2026); the walkthrough quotes it too
 export const NEAR_MISS_TEXT = AMW.nearMiss;
 export const NIK = /[\u0591-\u05C7]/g;

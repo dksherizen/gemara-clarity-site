@@ -1,7 +1,7 @@
 // Gemara Clarity, rebuilt. Static, no keys, no trackers.
 // Text: Sefaria public API. Breakdowns: read-only from the original app's public cloud library.
 import { segmentMarker, segmentFlags, stepFlags, endState } from "./mishnah.js"; import * as acct from "./acct.js"; // v106-acct: optional sign-in (the corner profile button opens Account, Settings, Help); guests load no Firebase
-import { AMW } from "./ameilus/words.js?v=3.6.0"; // Ameilus names itself from one table (the word for what the learner marks may change)
+import { AMW } from "./ameilus/words.js?v=3.7.0"; // Ameilus names itself from one table (the word for what the learner marks may change)
 const MAS = [["Berakhot", "ברכות", 2, 126], ["Shabbat", "שבת", 2, 313], ["Eruvin", "עירובין", 2, 208], ["Pesachim", "פסחים", 2, 241], ["Yoma", "יומא", 2, 174], ["Sukkah", "סוכה", 2, 111], ["Beitzah", "ביצה", 2, 79], ["Rosh_Hashanah", "ראש השנה", 2, 68], ["Taanit", "תענית", 2, 60], ["Megillah", "מגילה", 2, 62], ["Moed_Katan", "מועד קטן", 2, 56], ["Chagigah", "חגיגה", 2, 52], ["Yevamot", "יבמות", 2, 243], ["Ketubot", "כתובות", 2, 223], ["Nedarim", "נדרים", 2, 181], ["Nazir", "נזיר", 2, 131], ["Sotah", "סוטה", 2, 97], ["Gittin", "גיטין", 2, 179], ["Kiddushin", "קידושין", 2, 163], ["Bava_Kamma", "בבא קמא", 2, 237], ["Bava_Metzia", "בבא מציעא", 2, 236], ["Bava_Batra", "בבא בתרא", 2, 351], ["Sanhedrin", "סנהדרין", 2, 225], ["Makkot", "מכות", 2, 47], ["Shevuot", "שבועות", 2, 97], ["Avodah_Zarah", "עבודה זרה", 2, 151], ["Horayot", "הוריות", 2, 26], ["Zevachim", "זבחים", 2, 239], ["Menachot", "מנחות", 2, 218], ["Chullin", "חולין", 2, 282], ["Bekhorot", "בכורות", 2, 120], ["Arakhin", "ערכין", 2, 66], ["Temurah", "תמורה", 2, 66], ["Keritot", "כריתות", 2, 55], ["Meilah", "מעילה", 2, 42], ["Tamid", "תמיד", 49, 65], ["Niddah", "נדה", 2, 144]]; // [key, hebrew, firstAmudIndex, lastAmudIndex]  index: 2 = 2a, 3 = 2b ...
 const SEDARIM = [
   ["Zeraim","זרעים",["Berakhot"]],
@@ -1556,7 +1556,7 @@ window.addEventListener("scroll", () => {
    reading glossary in data/glossary.json). It reads the same breakdown the Shiur view loads (loadCloudAnalysis),
    mounts into #view, hides the bottom bar and the flow sidebar (it has its own bar and sugya map), and is torn
    down by the router on any other route. Nothing here changes how Shiur loads or looks. */
-const AM_VER = "3.6.0", AM_SKEY = "gc-am3-settings";
+const AM_VER = "3.7.0", AM_SKEY = "gc-am3-settings";
 let amMounted = null, amModP = null, amGlossP = null, pendingJump = null;
 const amPrefs = () => { try { return Object.assign({ bare: false }, JSON.parse(localStorage.getItem(AM_SKEY) || "{}")); } catch { return { bare: false }; } };
 function amModule(){ return amModP || (amModP = import(`./ameilus/ui.js?v=${AM_VER}-help`).catch(e => { amModP = null; throw e; })); }
