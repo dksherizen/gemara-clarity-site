@@ -2428,3 +2428,4 @@ body.onestep .step.cur .phrases{margin-top:24px;border-top:1px solid var(--rule)
 /* v7.1: a calmer top of the step: the kind, the title, one summary. The Classics note sits at the foot of the step. */
 body.onestep .step.cur .classic-mark{margin-top:14px;font-size:14px;color:var(--muted)}
 body.onestep .step.cur .ssum{color:var(--muted)}
+body.onestep .step.cur .stitle{padding-bottom:2px}

@@ -1281,11 +1281,11 @@ function stepHtml(s, k, open){
     <button class="sh" aria-expanded="${open}" aria-controls="x${k+1}"><span class="num">${k+1}</span><span class="tname"><span class="he" lang="he">${stepHe(s.hebrewStepName)}</span><span class="ten">${t.en}</span>${stagHtml(s)}${isMish(k) ? MBADGE : ""}</span></button>
     <div class="sbody">
       <h3 class="stitle">${px(s.title)}</h3>
-      ${s.stepSummary ? `<p class="ssum">${px(s.stepSummary)}</p>` : ""}
       <div class="phrases">${(s.phrases||[]).map((p, pi) => `<div class="ph" data-ph="${pi}"><div class="pa he" lang="he">${heWords(p.aramaic, fwStop)}</div><div class="pe">${px(p.english)}${p.notes ? `<div class="pnote">${px(p.notes)}</div>` : ""}</div></div>`).join("")}</div>
       <div class="rt" data-rt="${k}"></div>
       <button class="explain-btn" aria-expanded="${open}" aria-controls="x${k+1}"><span class="xb-l">${open ? "Hide explanation" : "Explain"}</span>${chev}</button>
       <div class="explain" id="x${k+1}" ${open ? "" : "hidden"}>
+        ${P("Summary", s.stepSummary)}
         ${P("What’s happening", s.whatsHappening)}
         ${s.whatToRemember ? `<div class="box remember"><h4>Remember</h4><p>${px(s.whatToRemember)}</p></div>` : ""}
         ${s.confusionAlert ? `<div class="box alert"><h4>Careful</h4><p>${px(s.confusionAlert)}</p></div>` : ""}
