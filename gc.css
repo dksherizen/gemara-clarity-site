@@ -2386,3 +2386,46 @@ body.on-daf .dafhead:not(.chooser)>.runhead{display:none}
 .more-b .srel{margin:10px 0 0}
 .h5 .h4-line{background:var(--panel);box-shadow:0 1px 2px var(--shade)}
 #homeAmud .amud-page{min-height:0}
+
+/* ===================================================================================================
+   v7.1 (Nov 12 2026, David, after seeing v7 live): two typefaces only, and a lighter step header.
+   - One sans for every Latin word (titles, summaries, the English beside the Aramaic); Frank Ruhl for Hebrew. No book serif.
+   - The step's colour is a slim band with its kind, not a tall block: the title and summary sit on the white card below it.
+   - The step you are on in the list is tinted, not filled.
+   - A− / A+ sit on the page beside the Sugya Flow / Ameilus switch.
+   =================================================================================================== */
+:root{--read-font:var(--ui-font)}
+.h5-hero h1{font-weight:700;letter-spacing:-.02em}
+body.onestep .step.cur .sh{align-items:center;padding:12px 36px}
+body.onestep .step.cur .sh .tname{align-items:center}
+body.onestep .step.cur .sh .tname .he{font:700 22px/1.1 var(--he-font)}
+body.onestep .step.cur .sh .tname .ten{font:700 16px/1.2 var(--ui-font)}
+body.onestep .step.cur .sh .num{font-size:14px}
+body.onestep .step.cur .sbody>:not(.phrases):not(.phrases ~ *){padding:16px 36px 0;background:none;color:var(--text)}
+body.onestep .step.cur .sbody>:not(.phrases):not(.phrases ~ *) a{color:var(--accent)}
+body.onestep .step.cur .stitle{padding-top:22px;font:700 28px/1.22 var(--ui-font);letter-spacing:-.015em;color:var(--ink)}
+body.onestep .step.cur .ssum{padding-top:10px;font-size:17px;line-height:1.55;color:var(--text)}
+body.onestep .step.cur .phrases{margin-top:24px;border-top:1px solid var(--rule)}
+@media (min-width:760px){body.onestep .step.cur .ph .pe{font-size:calc(var(--en-size) * 1.18)}}
+@media (max-width:759px){
+  body.onestep .step.cur .sh{padding:10px 20px}
+  body.onestep .step.cur .sbody>:not(.phrases):not(.phrases ~ *){padding:12px 20px 0}
+  body.onestep .step.cur .stitle{padding-top:16px;font-size:22px}
+  body.onestep .step.cur .ssum{font-size:16px}
+  body.onestep .step.cur .phrases{margin-top:18px;border-top-width:1px}
+}
+.fnode.cur{background:color-mix(in srgb,var(--c) 12%,transparent);color:var(--ink)}
+.fnode.cur .ft{color:var(--ink)}
+.fnode.cur .fty,.fnode.cur .fty .he{color:var(--c)}
+.layout .sidebar .flow .fnode.cur .dot{background:var(--c);color:var(--on-c)}
+/* the on-page text size buttons: on the same row as the mode switch, at its right end */
+.pgsize{display:flex;justify-content:flex-end;gap:6px;height:44px;margin-top:-44px;pointer-events:none}
+.dafhead:not(.chooser)>.pgsize{order:3}
+.pgsize button{pointer-events:auto;min-width:44px;height:44px;padding:0 10px;border:0;border-radius:12px;background:var(--panel);color:var(--ink);font:700 15px/1 var(--ui-font);cursor:pointer;box-shadow:0 1px 2px var(--shade)}
+.pgsize button:hover{background:var(--panel-2)}
+@media print{.pgsize{display:none}}
+.am-main .pgsize{margin-top:-50px;margin-bottom:6px}
+/* v7.1: a calmer top of the step: the kind, the title, one summary. The Classics note sits at the foot of the step. */
+body.onestep .step.cur .classic-mark{margin-top:14px;font-size:14px;color:var(--muted)}
+body.onestep .step.cur .ssum{color:var(--muted)}
+body.onestep .step.cur .stitle{padding-bottom:2px}

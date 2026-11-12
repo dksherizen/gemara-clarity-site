@@ -757,9 +757,10 @@ function pathsHtml(hrefOf, opts = {}){ // two equal cards; hrefOf(mode) gives ea
   };
   return `<div class="paths">${one("shiur")}${one("ameilus")}</div>`;
 }
+document.addEventListener("click", e => { const t = e.target.closest && e.target.closest("[data-pgsize]"); if (!t) return; settings.scale = Math.min(1.7, Math.max(0.85, +(settings.scale + 0.1 * +t.dataset.pgsize).toFixed(2))); applySettings(); }); // v7.1: the on-page A− / A+
 function modeBarHtml(m, i, mode){ // the compact chooser on every amud once a choice is remembered
   const o = (k, b, sub) => `<a class="mb-o${mode === k ? " on" : ""}" href="${hashFor(m, i, "/" + k)}" data-path-pick="${k}"${mode === k ? ' aria-current="page"' : ""}><b>${b}</b><span>${sub}</span></a>`;
-  return `<nav class="modebar" aria-label="How to learn this amud">${o("shiur", "Sugya Flow", "explained step by step")}${o("ameilus", "Ameilus", "try it yourself")}</nav>`;
+  return `<nav class="modebar" aria-label="How to learn this amud">${o("shiur", "Sugya Flow", "explained step by step")}${o("ameilus", "Ameilus", "try it yourself")}</nav><span class="pgsize" role="group" aria-label="Text size"><button type="button" data-pgsize="-1" aria-label="Smaller text">A−</button><button type="button" data-pgsize="1" aria-label="Larger text">A+</button></span>`; // v7.1: text size right on the page (same setting as Menu › Settings › Text size)
 }
 // ---- end two paths ----
 // ---- Classics (classics1, Oct 16 2026; ported from the Classics v1 preview and widened) ----
@@ -951,7 +952,7 @@ function markClassics(c, a){
     if (!C || current !== c) return;
     for (const it of C.items) {
       const s = clAt(it.start), e = clAt(it.end), back = it.partOf || it.id, name = `<a href="#/classics/${esc(back)}">${esc(clName(it))}</a>`;
-      const mark = (n, where, html) => { const el = document.getElementById("s" + n); const sb = el && $(".sbody", el); if (sb && !el.querySelector(`.classic-mark[data-cl="${it.id}"][data-w="${where}"]`)) sb.insertAdjacentHTML(where === "end" ? "beforeend" : "afterbegin", `<div class="classic-mark ${where}" data-cl="${esc(it.id)}" data-w="${where}" role="note">${html}</div>`); }; // v4: the note sits inside its own step, so it shows with that step only
+      const mark = (n, where, html) => { const el = document.getElementById("s" + n); const sb = el && $(".sbody", el); if (sb && !el.querySelector(`.classic-mark[data-cl="${it.id}"][data-w="${where}"]`)) sb.insertAdjacentHTML("beforeend", /* v7.1: the "begins with this step" note also sits at the foot of the step, so nothing stands between the kind and the title */ `<div class="classic-mark ${where}" data-cl="${esc(it.id)}" data-w="${where}" role="note">${html}</div>`); }; // v4: the note sits inside its own step, so it shows with that step only
       if (s.m !== c.m) continue;
       if (s.i === c.i) mark(it.start.step, "start", `The classic sugya ${name} begins with this step. It runs to ${it.end.daf}, step ${it.end.step}.`);
       if (e.i === c.i) mark(it.end.step, "end", `The classic sugya ${name} ends with this step. <a href="#/classics">More classics</a>`);
@@ -1280,11 +1281,11 @@ function stepHtml(s, k, open){
     <button class="sh" aria-expanded="${open}" aria-controls="x${k+1}"><span class="num">${k+1}</span><span class="tname"><span class="he" lang="he">${stepHe(s.hebrewStepName)}</span><span class="ten">${t.en}</span>${stagHtml(s)}${isMish(k) ? MBADGE : ""}</span></button>
     <div class="sbody">
       <h3 class="stitle">${px(s.title)}</h3>
-      ${s.stepSummary ? `<p class="ssum">${px(s.stepSummary)}</p>` : ""}
       <div class="phrases">${(s.phrases||[]).map((p, pi) => `<div class="ph" data-ph="${pi}"><div class="pa he" lang="he">${heWords(p.aramaic, fwStop)}</div><div class="pe">${px(p.english)}${p.notes ? `<div class="pnote">${px(p.notes)}</div>` : ""}</div></div>`).join("")}</div>
       <div class="rt" data-rt="${k}"></div>
       <button class="explain-btn" aria-expanded="${open}" aria-controls="x${k+1}"><span class="xb-l">${open ? "Hide explanation" : "Explain"}</span>${chev}</button>
       <div class="explain" id="x${k+1}" ${open ? "" : "hidden"}>
+        ${P("Summary", s.stepSummary)}
         ${P("What’s happening", s.whatsHappening)}
         ${s.whatToRemember ? `<div class="box remember"><h4>Remember</h4><p>${px(s.whatToRemember)}</p></div>` : ""}
         ${s.confusionAlert ? `<div class="box alert"><h4>Careful</h4><p>${px(s.confusionAlert)}</p></div>` : ""}
