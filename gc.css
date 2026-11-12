@@ -2209,3 +2209,179 @@ body.theme-dark{--pill-a:12%}
 .am-coach p{margin:2px 0 0}
 .am-coach .am-coach-do{font-weight:600;color:var(--accent)}
 .am-coach .btn{margin-top:8px;min-height:36px;padding:0 16px;border:0;border-radius:999px;background:var(--bg);color:var(--ink);font:500 14px var(--ui-font)}
+
+/* ===================================================================================================
+   v7 "Weight" (Nov 12 2026, chosen by David from the A2 mockups). The last word over every layer above.
+   v6 was clear but too plain: white on white, the step colours only in pale pills, a narrow column.
+   v7 keeps v6's single column and fonts and adds weight: a dark frame (navy bar, gold wordmark), a tinted page
+   with white cards on it, and the step's own colour as a SOLID surface: the header of the step you are on,
+   the number chips in the step list, the strip, and the Next button (which takes the colour of the step to come).
+   --on-c is the text colour that sits on a solid step colour (white in light and sepia, near-black in dark).
+   =================================================================================================== */
+body.theme-light{
+  --desk:#e8ecf4;--panel-2:#eef1f6;--rule:#dfe3ec;--border:#dfe3ec;--border-2:#e8ebf2;--muted:#4b5263;--faint:#4b5263;
+  --accent:#14275f;--binding:#14275f;--binding-hi:#0c1a44;--on-binding:#ffffff;--gold:#d9b45f;--gold-ink:#14275f;--on-c:#ffffff;
+}
+body.theme-sepia{
+  --desk:#e9dfc8;--binding:#22356f;--binding-hi:#1a2a5a;--on-binding:#ffffff;--gold:#dcb968;--gold-ink:#22356f;--on-c:#ffffff;
+}
+body.theme-dark{
+  --desk:#0b0d10;--bg:#16191d;--panel:#16191d;--raise:#1b1f24;--binding:#0b0d10;--binding-hi:#16191d;--on-binding:#f1f3f6;--gold:#d9b45f;--gold-ink:#a9bdff;--on-c:#0b0d10;
+}
+html,body{background:var(--desk)}
+:root{--max:980px;--top-h:56px}
+.layout{max-width:1400px;padding:0 20px}
+
+/* ---------- the frame: a navy bar, the wordmark in gold ---------- */
+.topbar{background:var(--binding);color:var(--on-binding);border-bottom:0;padding:env(safe-area-inset-top) 12px 0 18px;height:calc(56px + env(safe-area-inset-top))}
+body.theme-dark .topbar{border-bottom:1px solid var(--rule)}
+.topbar .brand,.topbar .brand-name{color:var(--on-binding)}
+.topbar .brand-he{color:var(--gold);font-size:25px}
+.topbar .brand-name{font-weight:600;font-size:16px}
+.topbar .refbtn{min-height:40px;padding:0 14px;border-radius:10px;background:#ffffff;color:#14275f;font:700 15px var(--ui-font)}
+.topbar .refbtn:hover{background:#eef1f6}
+body.theme-dark .topbar .refbtn{background:var(--panel-2);color:var(--ink)}
+.topbar .iconbtn,.topbar .aa,.topbar .hp-q,.topbar #settingsBtn.pf,.topbar #settingsBtn.pf .pf-chev{color:var(--on-binding)}
+.topbar .iconbtn:active,.topbar .refbtn:active,.topbar #settingsBtn.pf:hover,.topbar #settingsBtn.pf.open,.topbar .iconbtn:hover{background:rgba(255,255,255,.14)}
+.topbar :focus-visible{outline-color:var(--gold)}
+.topbar .modesw-a{color:var(--on-binding)}
+
+/* ---------- controls: squarer, heavier ---------- */
+.btn-primary,.wB-btn{border-radius:12px;font-weight:700}
+.modebar{background:var(--panel);border-radius:12px;padding:4px}
+.modebar .mb-o{border-radius:9px;min-height:36px;font-weight:500;color:var(--text)}
+.modebar .mb-o.on{background:var(--accent);color:var(--accent-ink);box-shadow:none}
+.modebar .mb-o.on b{font-weight:700}
+.headbar .ovbtn,.headactions .btn{background:var(--panel)}
+.notice{background:var(--panel)}
+
+/* ---------- the strip: every step in its full colour; the one you are on stands tall ---------- */
+.ticks{gap:4px;height:30px;align-items:center;margin:18px 0 0}
+.ticks .tk,.ticks .tk:hover{height:12px;border-radius:4px;opacity:1}
+.ticks .tk.cur{height:28px;opacity:1;flex-grow:1.4}
+
+/* ---------- the step you are on: a white card under a solid header in the step's own colour ---------- */
+body.onestep #dafBody .steps .step.cur{margin-top:16px;padding:0;border:0;border-radius:16px;overflow:hidden;background:var(--panel);box-shadow:0 1px 2px var(--shade)}
+body.onestep .step.cur .sh{display:flex;align-items:baseline;gap:12px;width:100%;margin:0;padding:26px 36px 4px;border-radius:0;background:var(--c);color:var(--on-c)}
+body.onestep .step.cur .sh .num,body.theme-light:not(.no-colors) .step.cur .sh .num,body.theme-sepia:not(.no-colors) .step.cur .sh .num{order:9;margin-left:auto;width:auto;height:auto;border-radius:0;background:none;box-shadow:none;color:var(--on-c);font:600 15px/1 var(--ui-font)}
+body.onestep .step.cur .sh .num::before{content:"Step "}
+body.onestep .step.cur .sh .tname{gap:12px;align-items:baseline}
+body.onestep .step.cur .sh .tname .he,body.onestep .step.cur .sh .tname .ten{padding:0;border-radius:0;background:none;color:var(--on-c)}
+body.onestep .step.cur .sh .tname .he{font:700 30px/1.1 var(--he-font)}
+body.onestep .step.cur .sh .tname .ten{font:700 19px/1.2 var(--ui-font)}
+body.onestep .step.cur .sh .tname .stag,body.onestep .step.cur .sh .tname .mbadge,body.onestep .step.cur .sh .tname .mbadge .he,body.onestep .step.cur .sh .tname .stag .he{color:var(--on-c);border-color:color-mix(in srgb,var(--on-c) 55%,transparent)}
+body.onestep .step.cur .sbody{padding:0 0 22px;opacity:1}
+body.onestep .step.cur .sbody>:not(.phrases):not(.phrases ~ *){margin:0;padding:8px 36px 0;background:var(--c);color:var(--on-c)}
+body.onestep .step.cur .sbody>:not(.phrases):not(.phrases ~ *) a{color:var(--on-c)}
+body.onestep .step.cur .stitle{font:600 34px/1.18 var(--read-font);letter-spacing:0}
+body.onestep .step.cur .ssum{font-size:19px;line-height:1.5}
+body.onestep .step.cur .phrases{margin:0;padding:0;border-radius:0;background:none;border-top:26px solid var(--c)}
+body.onestep .step.cur .ph{padding:0;gap:0;border-bottom:1px solid var(--rule)}
+body.onestep .step.cur .ph .pa{padding:16px 20px 2px;font-size:calc(var(--he-size) * 1.25)}
+body.onestep .step.cur .ph .pe{padding:2px 20px 16px;font-size:calc(var(--en-size) * 1.1)}
+body.onestep .step.cur .phrases ~ *{margin-left:20px;margin-right:20px}
+body.onestep .step.cur .explain-btn{margin-top:16px;min-height:44px;padding:0 18px;border:2px solid var(--ink);border-radius:12px;background:var(--panel);color:var(--ink);font:700 15px var(--ui-font)}
+body.onestep .step.cur .explain h4{color:var(--c)}
+@media (min-width:760px){
+  body.onestep:not(.hide-translation) .step.cur .ph{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  body.onestep:not(.hide-translation) .step.cur .ph .pa{grid-column:2;grid-row:1}
+  body.onestep:not(.hide-translation) .step.cur .ph .pe{grid-column:1;grid-row:1;align-self:center}
+  body.onestep .step.cur .ph .pa{padding:22px 36px;font-size:calc(var(--he-size) * 1.5);background:color-mix(in srgb,var(--c) 6%,transparent)}
+  body.onestep .step.cur .ph .pe{padding:22px 36px;font-size:calc(var(--en-size) * 1.3)}
+  body.onestep .step.cur .phrases ~ *{margin-left:36px;margin-right:36px}
+}
+@media (max-width:759px){
+  body.onestep .step.cur .sh{padding:18px 20px 2px}
+  body.onestep .step.cur .sbody>:not(.phrases):not(.phrases ~ *){padding:6px 20px 0}
+  body.onestep .step.cur .stitle{font-size:25px}
+  body.onestep .step.cur .ssum{font-size:17px}
+  body.onestep .step.cur .phrases{border-top-width:18px}
+  body.onestep #dafBody .steps .step.cur{margin-left:-14px;margin-right:-14px;border-radius:0}
+}
+
+/* ---------- the bottom bar: Next wears the colour of the step to come ---------- */
+.bottombar{background:color-mix(in srgb,var(--desk) 90%,transparent)}
+.bb-step{height:48px;border-radius:12px;font-weight:700}
+.bb-prev{width:48px;background:var(--panel);box-shadow:inset 0 0 0 2px var(--ink)}
+.bb-next{padding:0 16px 0 20px;background:var(--accent);color:var(--accent-ink)}
+body:not(.no-colors) .bb-next[class*=" t-"]{background:var(--c);color:var(--on-c)}
+.bottombar .sbar{border-radius:12px}
+.bottombar .sbar:hover{background:var(--panel)}
+
+/* ---------- the step list: a white card; each step's number on a chip of its colour ---------- */
+@media (min-width:1100px){
+  .layout.with-side .sidebar{margin-top:44px;padding:14px 10px;border-radius:16px;background:var(--panel)}
+  .side-resize{border-left-color:transparent}
+}
+.fnode{margin-left:0;border-left:0;border-radius:10px;padding:8px 10px;grid-template-columns:30px 1fr;gap:10px;align-items:start}
+.fnode.t-mimra:not(.cur){--c:var(--mimra)}.fnode.t-kashya:not(.cur){--c:var(--kashya)}.fnode.t-terutz:not(.cur){--c:var(--terutz)}.fnode.t-raaya:not(.cur){--c:var(--raaya)}
+.fnode.t-dechiya:not(.cur){--c:var(--dechiya)}.fnode.t-sheelah:not(.cur){--c:var(--sheelah)}.fnode.t-teshuvah:not(.cur){--c:var(--teshuvah)}.fnode.t-maskana:not(.cur){--c:var(--maskana)}
+.fnode .dot,.fnode.cur .dot{width:30px;height:26px;border-radius:7px;background:var(--c);color:var(--on-c);box-shadow:none;font:700 13px/1 var(--ui-font)}
+.fnode:not(.cur) .ft{color:var(--text)}
+.fnode .fty{color:var(--c);font-weight:700}
+.fnode:hover{background:var(--panel-2)}
+.fnode.cur{background:var(--c);color:var(--on-c)}
+.fnode.cur .ft,.fnode.cur .fty,.fnode.cur .fty .he{color:var(--on-c)}
+.fnode.cur .dot{background:var(--on-c);color:var(--c)}
+/* v7 fixes over older layers */
+.modebar .mb-o.on,.modebar .mb-o.on b{color:var(--accent-ink)}
+@media (min-width:1100px){body.on-daf main#view{max-width:var(--max)}}
+body.onestep .step.cur .sbody>:not(.phrases):not(.phrases ~ *){max-width:none}
+body.onestep .step.cur .sh .num{display:block}
+body.onestep .step.cur .ph .pa{text-align:start;text-align-last:auto}
+.layout .sidebar .flow .fnode .dot,.layout .sidebar .flow .fnode.cur .dot{display:grid;place-items:center;width:30px;height:26px;border-radius:7px;background:var(--c);color:var(--on-c);font:700 13px/1 var(--ui-font);text-align:center}
+.layout .sidebar .flow .fnode.cur .dot{background:var(--on-c);color:var(--c)}
+@media (min-width:760px){
+  body.onestep:not(.hide-translation) .step.cur .ph{background:linear-gradient(to right,transparent 50%,color-mix(in srgb,var(--c) 6%,transparent) 50%)}
+  body.onestep:not(.hide-translation) .step.cur .ph .pa{background:none;align-self:center}
+}
+
+/* ---------- v7 home: the headline on the navy frame, white cards below, the eight kinds as solid tiles ---------- */
+.homewrap.h5{padding-top:0}
+.h5-hero{margin:-14px auto 28px;padding:52px 0 44px;background:var(--binding);color:var(--on-binding);box-shadow:0 0 0 100vmax var(--binding);clip-path:inset(0 -100vmax)}
+.h5-hero h1{font:600 clamp(34px,5.2vw,52px)/1.06 var(--read-font);letter-spacing:-.01em;color:var(--on-binding)}
+.h5-hero p{margin-top:14px;font:400 19px/1.5 var(--read-font);color:color-mix(in srgb,var(--on-binding) 90%,transparent)}
+.h5 .amud{background:var(--panel);box-shadow:0 1px 2px var(--shade)}
+#homeAmud .ticks{height:16px}
+#homeAmud .ticks .tk,.wB-ticks .tk{height:12px;opacity:1;border-radius:3px}
+.wB-ticks{height:20px}
+.wB-ticks .tk.cur{height:20px;flex-grow:1.6}
+.wB-box{border:0;box-shadow:0 1px 2px var(--shade)}
+.wB-tab[aria-selected="true"]{background:var(--panel-2)}
+.h5 .wB-search,.wB-search{background:var(--panel);box-shadow:0 1px 2px var(--shade)}
+.h5 .wy-h,.h5 .wy-h .en{color:var(--ink)}
+.wB-key>summary .wB-case{display:none}
+.wB-key .legend{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;margin-top:6px}
+.wB-key .legend .lg{display:block;margin:0;padding:16px 18px 18px;border:0;border-radius:14px;background:var(--c);color:var(--on-c)}
+.wB-key .legend .lg *{color:var(--on-c)}
+.wB-key .legend .lg .swatch{display:none}
+.wB-key .legend .lg.t-mishnah{--c:var(--mishnah);grid-column:1 / -1}
+
+/* ---------- v7 Ameilus: the amud on a white card; a finished passage is tinted in its kind's colour; the marker is gold ---------- */
+.am-dafwrap{padding:18px 26px;border-radius:16px;background:var(--panel);box-shadow:0 1px 2px var(--shade)}
+.am-exp,.am-exp.empty,.am-map{border:0;border-radius:16px;background:var(--panel);box-shadow:0 1px 2px var(--shade)}
+body:not(.no-colors) .am-daf .w.done[class*="k-"]{background:color-mix(in srgb,var(--c) 10%,transparent)}
+.am-daf .w.sel{background:color-mix(in srgb,var(--accent) 12%,transparent)}
+.am-daf .w.mark{background:var(--gold);color:#12141a;box-shadow:none;border-radius:6px}
+.am-node{margin-left:0;width:100%;border-left:0;border-radius:10px;padding:8px}
+.am-node .kdot{display:none}
+body:not(.no-colors) .am-node[class*="k-"] .am-nk{padding:2px 9px;border-radius:7px;background:var(--c);color:var(--on-c);font-weight:700}
+.am-node.here{background:color-mix(in srgb,var(--gold) 30%,transparent)}
+.am-node.here .am-nt{color:var(--ink);font-weight:700}
+.am-bar{border-top:1px solid var(--rule)}
+.am-bar .btn,.am-bar button{border-radius:12px}
+.am-bar .btn.primary{font-weight:700}
+.wB-key .legend .lg *,.wB-key .legend .lg b .en-he{color:var(--on-c)!important}
+.am-dafwrap{padding:0}
+.am-daf{box-sizing:border-box;width:100%;padding:18px 26px}
+/* v7: the strip is gone from the step page (David, Nov 12 2026): the step list and "10 of 19" already say where you are. It stays on the home page's Today's daf card. */
+#dafBody .ticks{display:none}
+/* v7 trims (David, Nov 12 2026): less above the step. The amud summary shows only with the overview open; the small running
+   head is gone (the title and the top bar already name the daf); Help lives in the Menu, not on its own "?" button;
+   the raw Aramaic block is gone from the home page's Today's daf card. "In plain words" is no longer drawn (app.js). */
+body.onestep .dafhead:not(.ov-open) .topic{display:none}
+body.on-daf .dafhead:not(.chooser)>.runhead{display:none}
+.topbar .hp-q{display:none}
+#homeAmud .amud-rh,#homeAmud .amud-text{display:none}
+.more-b .srel{margin:10px 0 0}
+.h5 .h4-line{background:var(--panel);box-shadow:0 1px 2px var(--shade)}
