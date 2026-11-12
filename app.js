@@ -952,7 +952,7 @@ function markClassics(c, a){
     if (!C || current !== c) return;
     for (const it of C.items) {
       const s = clAt(it.start), e = clAt(it.end), back = it.partOf || it.id, name = `<a href="#/classics/${esc(back)}">${esc(clName(it))}</a>`;
-      const mark = (n, where, html) => { const el = document.getElementById("s" + n); const sb = el && $(".sbody", el); if (sb && !el.querySelector(`.classic-mark[data-cl="${it.id}"][data-w="${where}"]`)) sb.insertAdjacentHTML(where === "end" ? "beforeend" : "afterbegin", `<div class="classic-mark ${where}" data-cl="${esc(it.id)}" data-w="${where}" role="note">${html}</div>`); }; // v4: the note sits inside its own step, so it shows with that step only
+      const mark = (n, where, html) => { const el = document.getElementById("s" + n); const sb = el && $(".sbody", el); if (sb && !el.querySelector(`.classic-mark[data-cl="${it.id}"][data-w="${where}"]`)) sb.insertAdjacentHTML("beforeend", /* v7.1: the "begins with this step" note also sits at the foot of the step, so nothing stands between the kind and the title */ `<div class="classic-mark ${where}" data-cl="${esc(it.id)}" data-w="${where}" role="note">${html}</div>`); }; // v4: the note sits inside its own step, so it shows with that step only
       if (s.m !== c.m) continue;
       if (s.i === c.i) mark(it.start.step, "start", `The classic sugya ${name} begins with this step. It runs to ${it.end.daf}, step ${it.end.step}.`);
       if (e.i === c.i) mark(it.end.step, "end", `The classic sugya ${name} ends with this step. <a href="#/classics">More classics</a>`);

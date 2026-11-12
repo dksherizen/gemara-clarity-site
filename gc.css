@@ -2425,3 +2425,6 @@ body.onestep .step.cur .phrases{margin-top:24px;border-top:1px solid var(--rule)
 .pgsize button:hover{background:var(--panel-2)}
 @media print{.pgsize{display:none}}
 .am-main .pgsize{margin-top:-50px;margin-bottom:6px}
+/* v7.1: a calmer top of the step: the kind, the title, one summary. The Classics note sits at the foot of the step. */
+body.onestep .step.cur .classic-mark{margin-top:14px;font-size:14px;color:var(--muted)}
+body.onestep .step.cur .ssum{color:var(--muted)}
