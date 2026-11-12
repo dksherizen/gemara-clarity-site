@@ -757,9 +757,10 @@ function pathsHtml(hrefOf, opts = {}){ // two equal cards; hrefOf(mode) gives ea
   };
   return `<div class="paths">${one("shiur")}${one("ameilus")}</div>`;
 }
+document.addEventListener("click", e => { const t = e.target.closest && e.target.closest("[data-pgsize]"); if (!t) return; settings.scale = Math.min(1.7, Math.max(0.85, +(settings.scale + 0.1 * +t.dataset.pgsize).toFixed(2))); applySettings(); }); // v7.1: the on-page A− / A+
 function modeBarHtml(m, i, mode){ // the compact chooser on every amud once a choice is remembered
   const o = (k, b, sub) => `<a class="mb-o${mode === k ? " on" : ""}" href="${hashFor(m, i, "/" + k)}" data-path-pick="${k}"${mode === k ? ' aria-current="page"' : ""}><b>${b}</b><span>${sub}</span></a>`;
-  return `<nav class="modebar" aria-label="How to learn this amud">${o("shiur", "Sugya Flow", "explained step by step")}${o("ameilus", "Ameilus", "try it yourself")}</nav>`;
+  return `<nav class="modebar" aria-label="How to learn this amud">${o("shiur", "Sugya Flow", "explained step by step")}${o("ameilus", "Ameilus", "try it yourself")}</nav><span class="pgsize" role="group" aria-label="Text size"><button type="button" data-pgsize="-1" aria-label="Smaller text">A−</button><button type="button" data-pgsize="1" aria-label="Larger text">A+</button></span>`; // v7.1: text size right on the page (same setting as Menu › Settings › Text size)
 }
 // ---- end two paths ----
 // ---- Classics (classics1, Oct 16 2026; ported from the Classics v1 preview and widened) ----
