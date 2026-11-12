@@ -176,7 +176,10 @@ const loadJSON = (k, d) => { try { const v = JSON.parse(localStorage.getItem(k))
 const saveJSON = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} };
 
 try { localStorage.removeItem("gc2-openai-key"); } catch {} // the old bring-your-own-key mode is gone; forget any key a device saved
-const settings = Object.assign({ scale:1, nikud:true, translation:true, colors:true, kindtext:false, notes:true, terms:true, logic:false, expandAll:false, theme:"light" }, loadJSON(LS.settings, {}));
+const settings = Object.assign({ scale:1, nikud:true, translation:true, colors:true, kindtext:true, notes:true, terms:true, logic:false, expandAll:false, theme:"light" }, loadJSON(LS.settings, {}));
+// v7 (Nov 12 2026, David): "Color the text" is on by default. Every visitor already has kindtext:false saved (applySettings saves on load),
+// so turn it on once for each device; after that the switch in Settings is remembered as usual.
+try { if (!localStorage.getItem("gc-v7-kindtext")) { settings.kindtext = true; localStorage.setItem("gc-v7-kindtext", "1"); } } catch {}
 delete settings.byPerek; // the old "By perek / All dapim" switch is gone: perek view is always on
 let cloudIds = new Set();
 let cloudLoaded = false;
