@@ -2376,3 +2376,12 @@ body:not(.no-colors) .am-node[class*="k-"] .am-nk{padding:2px 9px;border-radius:
 .am-daf{box-sizing:border-box;width:100%;padding:18px 26px}
 /* v7: the strip is gone from the step page (David, Nov 12 2026): the step list and "10 of 19" already say where you are. It stays on the home page's Today's daf card. */
 #dafBody .ticks{display:none}
+/* v7 trims (David, Nov 12 2026): less above the step. The amud summary shows only with the overview open; the small running
+   head is gone (the title and the top bar already name the daf); Help lives in the Menu, not on its own "?" button;
+   the raw Aramaic block is gone from the home page's Today's daf card. "In plain words" is no longer drawn (app.js). */
+body.onestep .dafhead:not(.ov-open) .topic{display:none}
+body.on-daf .dafhead:not(.chooser)>.runhead{display:none}
+.topbar .hp-q{display:none}
+#homeAmud .amud-rh,#homeAmud .amud-text{display:none}
+.more-b .srel{margin:10px 0 0}
+.h5 .h4-line{background:var(--panel);box-shadow:0 1px 2px var(--shade)}

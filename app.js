@@ -1263,7 +1263,9 @@ function stepHtml(s, k, open){
     ["What is rejected", s.dechiyaRejectionScope], ["The flaw", s.dechiyaFlawIdentified], ["Core ruling", s.mimraCoreRuling], [marksOf(s).includes("unresolved") ? "Where it is left" : "Final takeaway", s.maskanaFinalTakeaway],
     ["Classification", s.classificationConfidence ? `${s.classificationConfidence} confidence` : ""]].filter(r => r[1]);
   // calm (gc2-calm-1): the secondary layers sit behind one quiet "More detail" fold; nothing is dropped
+  const relLine = relatedLineHtml(relatedSteps(current && current.id, s, k + 1, (current && current.analysis && current.analysis.steps || []).length || k + 1), k + 1); // v7: the related-steps line moved from above the title into More detail
   const more = [
+    relLine ? ["Related steps", relLine] : null,
     s.classificationConfidence && s.classificationConfidence !== "High" && s.alternativePossibleLabel ? ["Another reading", `<p class="maybe">Could also be read as: ${px(s.alternativePossibleLabel)}</p>`] : null,
     s.deeperAnalysis ? ["Going deeper", P("Going deeper", s.deeperAnalysis)] : null,
     // kt2 (Oct 16 2026: no Key Terms section): the Key terms section is not shown; keyTerms stay in the data for nikud borrowing (vocTextsOf)
@@ -1274,7 +1276,6 @@ function stepHtml(s, k, open){
   return `<article class="step t-${t.k}${open ? " open" : ""}${isMish(k) ? " is-mishnah" : ""}" id="s${k+1}" data-n="${k+1}">
     <button class="sh" aria-expanded="${open}" aria-controls="x${k+1}"><span class="num">${k+1}</span><span class="tname"><span class="he" lang="he">${stepHe(s.hebrewStepName)}</span><span class="ten">${t.en}</span>${stagHtml(s)}${isMish(k) ? MBADGE : ""}</span></button>
     <div class="sbody">
-      ${relatedLineHtml(relatedSteps(current && current.id, s, k + 1, (current && current.analysis && current.analysis.steps || []).length || k + 1), k + 1)}
       <h3 class="stitle">${px(s.title)}</h3>
       ${s.stepSummary ? `<p class="ssum">${px(s.stepSummary)}</p>` : ""}
       <div class="phrases">${(s.phrases||[]).map((p, pi) => `<div class="ph" data-ph="${pi}"><div class="pa he" lang="he">${heWords(p.aramaic, fwStop)}</div><div class="pe">${px(p.english)}${p.notes ? `<div class="pnote">${px(p.notes)}</div>` : ""}</div></div>`).join("")}</div>
@@ -1282,7 +1283,6 @@ function stepHtml(s, k, open){
       <button class="explain-btn" aria-expanded="${open}" aria-controls="x${k+1}"><span class="xb-l">${open ? "Hide explanation" : "Explain"}</span>${chev}</button>
       <div class="explain" id="x${k+1}" ${open ? "" : "hidden"}>
         ${P("What’s happening", s.whatsHappening)}
-        ${P("In plain words", s.simpleTranslation)}
         ${s.whatToRemember ? `<div class="box remember"><h4>Remember</h4><p>${px(s.whatToRemember)}</p></div>` : ""}
         ${s.confusionAlert ? `<div class="box alert"><h4>Careful</h4><p>${px(s.confusionAlert)}</p></div>` : ""}
         ${moreHtml(more, settings.expandAll)}
