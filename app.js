@@ -1062,7 +1062,7 @@ function waysHtml(){
   </section>`;
 }
 function keyHtml(){
-  return `<details class="legend-wrap wy-key wB-key"><summary><span class="wy-key-t"><span lang="he">סימני העיפרון</span> What the colours mean</span><span class="wB-case" aria-hidden="true">${Object.values(TYPES).map(t => `<i class="t-${t.k}"></i>`).join("")}</span></summary>${wyLegend()}</details>`;
+  return `<details class="legend-wrap wy-key wB-key" open><summary><span class="wy-key-t"><span lang="he">סימני העיפרון</span> What the colours mean</span><span class="wB-case" aria-hidden="true">${Object.values(TYPES).map(t => `<i class="t-${t.k}"></i>`).join("")}</span></summary>${wyLegend()}</details>`;
 }
 function waysFill(m, i, a){
   wyDay = { m, i, a };
@@ -1194,7 +1194,7 @@ function updPager(n, total){ // v4: the thin bottom bar: "5 of 24 · Kind" over 
   ticksSync(n, total);
   const bp = $("#bbPrev"), bn = $("#bbNext"); // v6: back and Next in the bottom bar move one step; Next names the kind of step it goes to
   if (bp) bp.disabled = n <= 1;
-  if (bn) { const nx = document.getElementById("s" + (n + 1)), nk = nx && $(".tname .ten", nx); bn.hidden = n >= total; $("#bbNextT").textContent = nk ? `Next: ${nk.textContent.trim()}` : "Next"; bn.setAttribute("aria-label", `Go on to step ${n + 1}${nk ? `, ${nk.textContent.trim()}` : ""}`); }
+  if (bn) { const nx = document.getElementById("s" + (n + 1)), nk = nx && $(".tname .ten", nx); bn.hidden = n >= total; bn.className = "bb-step bb-next" + (nx && /\bt-[a-z]+\b/.test(nx.className) ? " " + nx.className.match(/\bt-[a-z]+\b/)[0] : ""); /* v7: Next wears the colour of the step to come */ $("#bbNextT").textContent = nk ? `Next: ${nk.textContent.trim()}` : "Next"; bn.setAttribute("aria-label", `Go on to step ${n + 1}${nk ? `, ${nk.textContent.trim()}` : ""}`); }
   try { localStorage.setItem("gc5-pos", JSON.stringify({ id: current.id, n })); } catch {}
   const f = $("#stepFill"); if (f) f.style.width = (total ? n / total * 100 : 0) + "%";
   document.body.classList.toggle("at-last", n >= total);
