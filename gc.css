@@ -2374,3 +2374,5 @@ body:not(.no-colors) .am-node[class*="k-"] .am-nk{padding:2px 9px;border-radius:
 .wB-key .legend .lg *,.wB-key .legend .lg b .en-he{color:var(--on-c)!important}
 .am-dafwrap{padding:0}
 .am-daf{box-sizing:border-box;width:100%;padding:18px 26px}
+/* v7: the strip is gone from the step page (David, Nov 12 2026): the step list and "10 of 19" already say where you are. It stays on the home page's Today's daf card. */
+#dafBody .ticks{display:none}
