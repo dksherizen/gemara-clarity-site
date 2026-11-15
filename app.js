@@ -396,7 +396,7 @@ const heWords = (t, st) => { let k = 0; return heTxt(t).split(/(\s+|\u05BE)/).ma
 function toast(msg){ const t = $("#toast"); t.textContent = msg; t.classList.add("show"); clearTimeout(toast._t); toast._t = setTimeout(() => t.classList.remove("show"), 2400); }
 function applySettings(){
   const b = document.body;
-  b.classList.remove("theme-dark","theme-light","theme-sepia"); b.classList.add("theme-" + settings.theme);
+  settings.theme = "light"; /* v8 (Nov 15 2026, David): one look only; Dark and Sepia are retired */ b.classList.remove("theme-dark","theme-light","theme-sepia"); b.classList.add("theme-light");
   b.classList.toggle("hide-translation", !settings.translation);
   b.classList.toggle("no-colors", !settings.colors);
   b.classList.toggle("no-kindtext", !settings.kindtext);
@@ -659,7 +659,6 @@ function openSettings(){
       <span class="sizer"><button data-size="-1" aria-label="Smaller text">A−</button><button data-size="1" aria-label="Larger text">A+</button></span></div>
     <div class="preview-he">${heTxt("אָמַר רַבִּי יוֹחָנָן מִשּׁוּם רַבִּי שִׁמְעוֹן בֶּן יוֹחַי")}</div>
     <div class="preview-en">Rabbi Yoḥanan said in the name of Rabbi Shimon ben Yoḥai…</div>
-    <div class="setrow"><span class="lbl"><b>Theme</b></span><span class="seg3">${["dark","light","sepia"].map(t => `<button data-theme="${t}" aria-pressed="${settings.theme === t}">${t[0].toUpperCase() + t.slice(1)}</button>`).join("")}</span></div>
     ${sw("translation","English translation","Beside each phrase")}
     ${sw("nikud","Vowels (nikud)","Turn off to practice reading plain text")}
     ${sw("colors","Step colors")}
@@ -2313,10 +2312,9 @@ registerHelp({ id:"settings", group:"Your things", order:3, icon:"aa", where:["a
   title:"Settings and signing in", sub:"Text size, theme, sign-in, starting fresh.",
   body:["Tap **Menu** at the top right, then **Settings**.",
     "**Text size**: A− and A+ make the Hebrew, Aramaic and English smaller or larger together.",
-    "**Theme**: Light, Dark or Sepia.",
     "Signing in is optional. Tap **Menu**, then **Continue with Google**. It keeps your bookmarks and progress on all your devices. Without it, everything stays on this device only.",
     "To start fresh on this device, use **Clear my bookmarks, history and saved data** at the bottom of Settings. It can’t be undone."],
-  labels:["Menu", "Settings", "Text size", "Theme", "Continue with Google", "Clear my bookmarks, history and saved data"], action: helpGo.settings });
+  labels:["Menu", "Settings", "Text size", "Continue with Google", "Clear my bookmarks, history and saved data"], action: helpGo.settings });
 registerHelp({ id:"mistake", group:"Your things", order:4, icon:"info", where:["flow","ameilus"],
   title:"Found a mistake?", sub:"The explanations are written by AI. Tell us.",
   body:["The Aramaic and its English translation come from Sefaria. The steps and explanations were written by AI. No rav has checked them, they can be wrong, and they are not for practical halacha.",

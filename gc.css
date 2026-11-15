@@ -2429,3 +2429,86 @@ body.onestep .step.cur .phrases{margin-top:24px;border-top:1px solid var(--rule)
 body.onestep .step.cur .classic-mark{margin-top:14px;font-size:14px;color:var(--muted)}
 body.onestep .step.cur .ssum{color:var(--muted)}
 body.onestep .step.cur .stitle{padding-bottom:2px}
+
+/* ===================================================================================================
+   v8 "Plain frame" (Nov 15 2026, chosen by David from screenshots of the real app). The last word over every layer above.
+   v7 put the step's colour in six places at once (text, band, tinted column, chip, tinted row, Next button) on a navy and
+   blue-grey frame, and it read as a toy. v8 has ONE rule: the coloured text is the only colour on the page.
+   - Kept: the Aramaic and its translation in the step's colour ("Color the text"), and the small label naming the kind.
+   - Neutral: white page, grey hairlines, black titles, black buttons, a white top bar. One radius. No shadows.
+   - Gone: the colour band, the tinted Aramaic column, coloured number chips, the tinted page, the colour-changing Next.
+   - Light only: Dark and Sepia are retired (app.js forces theme-light; their token blocks above stay for the tests).
+   =================================================================================================== */
+html{--L-bg:#ffffff;--L-surface:#ffffff;--L-soft:#f4f4f5;--L-side:#ffffff;--L-ink:#18181b;--L-ink-2:#3f3f46;--L-muted:#63636b;--L-rule:#e4e4e7;--L-accent:#18181b;--L-on-accent:#ffffff;--L-bar:#ffffff;--L-on-bar:#18181b;--L-bar-rule:#e4e4e7;--L-bar-chip:#f4f4f5;--L-brand:#18181b;--L-r:8px;--L-card-border:0}
+html,body{background:var(--L-bg)}
+body.theme-light{--desk:var(--L-bg);--bg:var(--L-surface);--panel:var(--L-surface);--panel-2:var(--L-soft);--raise:var(--L-surface);--ink:var(--L-ink);--text:var(--L-ink);--muted:var(--L-muted);--faint:var(--L-muted);--rule:var(--L-rule);--border:var(--L-rule);--border-2:var(--L-rule);--accent:var(--L-accent);--accent-ink:var(--L-on-accent);--binding:var(--L-bar);--on-binding:var(--L-on-bar);--gold:var(--L-brand);--shade:transparent}
+html .topbar{border-bottom:1px solid var(--L-bar-rule)}
+html .topbar .brand-name{font-weight:600;letter-spacing:-.01em}
+html .topbar .refbtn{background:var(--L-bar-chip);color:var(--L-on-bar);border-radius:var(--L-r);font-weight:600}
+html .modebar{background:var(--L-soft);border-radius:var(--L-r);padding:3px}
+html .modebar .mb-o{border-radius:calc(var(--L-r) - 2px);color:var(--L-muted)}
+html .modebar .mb-o.on{background:var(--L-surface);box-shadow:0 1px 2px rgba(0,0,0,.1)}
+html .modebar .mb-o.on,html .modebar .mb-o.on b{color:var(--L-ink)}
+html .pgsize button{background:none;border:1px solid var(--L-rule);border-radius:var(--L-r);box-shadow:none;font-weight:600;color:var(--L-muted)}
+html .refline .he{font-weight:700}
+/* step */
+html body.onestep #dafBody .steps .step.cur{border-radius:var(--L-r);box-shadow:none;border:var(--L-card-border);background:var(--L-surface)}
+html body.onestep .step.cur .sh{background:none;color:var(--L-muted);padding:30px 44px 0}
+html body.onestep .step.cur .sh .tname .he{color:var(--c);font:700 21px/1 var(--he-font)}
+html body.onestep .step.cur .sh .tname .ten{color:var(--c);font:600 12.5px/1 var(--ui-font);letter-spacing:.08em;text-transform:uppercase}
+html body.onestep .step.cur .sh .num{color:var(--L-muted)!important;font-weight:500;font-size:13px}
+html body.onestep .step.cur .sbody>:not(.phrases):not(.phrases ~ *){padding:0 44px}
+html body.onestep .step.cur .stitle{padding-top:12px;font:700 30px/1.2 var(--ui-font);letter-spacing:-.02em;color:var(--L-ink)}
+html body.onestep .step.cur .phrases{margin-top:28px;border-top:1px solid var(--L-rule)}
+html body.onestep .step.cur .ph{background:none!important;border-bottom:1px solid var(--L-rule)}
+html body.onestep .step.cur .phrases ~ *{margin-left:44px;margin-right:44px}
+html body.onestep .step.cur .explain-btn{border:1px solid var(--L-rule);border-radius:var(--L-r);font-weight:600;font-size:14px;color:var(--L-ink)}
+html body.onestep .step.cur .explain h4{color:var(--L-muted);font:600 12px/1.4 var(--ui-font);letter-spacing:.08em;text-transform:uppercase}
+@media (min-width:760px){html body.onestep .step.cur .ph .pa,html body.onestep .step.cur .ph .pe{padding:20px 44px}}
+@media (max-width:759px){html body.onestep .step.cur .sh{padding:20px 20px 0}html body.onestep .step.cur .sbody>:not(.phrases):not(.phrases ~ *){padding:0 20px}html body.onestep .step.cur .stitle{font-size:23px}html body.onestep .step.cur .phrases ~ *{margin-left:20px;margin-right:20px}html body.onestep .step.cur .phrases{margin-top:20px}}
+/* step list */
+html .layout.with-side .sidebar{background:var(--L-side);border-radius:var(--L-r);border:var(--L-card-border);padding:10px 8px}
+html .fnode{border-radius:6px;padding:7px 10px;grid-template-columns:22px 1fr;gap:8px}
+html .layout .sidebar .flow .fnode .dot,html .layout .sidebar .flow .fnode.cur .dot{display:block;width:22px;height:auto;background:none;color:var(--L-muted);font:500 13px/20px var(--ui-font);text-align:right;border-radius:0}
+html .fnode .fty{font-size:11.5px;font-weight:600;letter-spacing:.02em;color:var(--c)}
+html .fnode .fty .he{font-size:13px}
+html .fnode:not(.cur) .ft{color:var(--L-ink-2)}
+html .fnode.cur{background:var(--L-soft)}
+html .fnode.cur .ft{color:var(--L-ink);font-weight:600}
+html .layout .sidebar .flow .fnode.cur .dot{color:var(--L-ink);font-weight:700}
+html .flow .phase,html .flow h2{color:var(--L-muted)}
+/* bottom bar */
+html .bottombar{background:color-mix(in srgb,var(--L-bg) 94%,transparent);border-top:1px solid var(--L-rule)}
+html .bb-step{border-radius:var(--L-r);height:44px;font-weight:600}
+html .bb-prev{box-shadow:none;border:1px solid var(--L-rule);background:var(--L-surface);width:44px}
+html .bb-next,html body .bb-next[class*=" t-"]{background:var(--L-accent);color:var(--L-on-accent)}
+html .bottombar .sc-k{color:var(--L-muted)}
+/* home */
+html .h5-hero{margin:0 auto 26px;padding:56px 0 6px;background:none;box-shadow:none;clip-path:none;color:var(--L-ink)}
+html .h5-hero h1{color:var(--L-ink);font:700 46px/1.08 var(--ui-font);letter-spacing:-.03em}
+html .h5-hero p{color:var(--L-muted);font-size:18px}
+html .h5 .amud,html .wB-box,html .h5 .wB-search,html .h5 .h4-line{box-shadow:none;border:1px solid var(--L-rule);border-radius:var(--L-r);background:var(--L-surface)}
+html .btn-primary,html .wB-btn{border-radius:var(--L-r);font-weight:600}
+html .wB-slip{border-radius:var(--L-r)}
+html .wB-key .legend{gap:0 28px}
+html .wB-key .legend .lg{display:grid;background:none;padding:10px 0;border-radius:0;border-top:1px solid var(--L-rule)}
+html .wB-key .legend .lg *{color:var(--L-ink-2)!important}
+html .wB-key .legend .lg b,html .wB-key .legend .lg b .en-he{color:var(--c)!important}
+html .wB-key .legend .lg .swatch{display:block;border-radius:50%;width:10px;height:10px}
+html body.onestep .step.cur .ph .pa{font-weight:500}
+html .layout.with-side .sidebar{border-right:1px solid var(--L-rule);border-radius:0}
+html body.onestep .step.cur .sh{padding-top:8px}
+html .topbar .iconbtn:hover,html .topbar .iconbtn:active,html .topbar .refbtn:hover,html .topbar .refbtn:active,html .topbar #settingsBtn.pf:hover,html .topbar #settingsBtn.pf.open{background:var(--L-soft)}
+html .topbar :focus-visible{outline-color:var(--L-ink)}
+html .headbar .ovbtn,html .headactions .btn,html .notice{background:var(--L-soft);border-radius:var(--L-r)}
+/* Ameilus: the same rule. A finished passage keeps its coloured text; nothing else is coloured. */
+html .am-dafwrap,html .am-exp,html .am-exp.empty,html .am-map{box-shadow:none;border:1px solid var(--L-rule);border-radius:var(--L-r);background:var(--L-surface)}
+html body:not(.no-colors) .am-daf .w.done[class*="k-"]{background:none}
+html .am-daf .w.sel{background:var(--L-soft)}
+html .am-daf .w.mark{background:var(--L-ink);color:var(--L-on-accent);border-radius:4px}
+html body:not(.no-colors) .am-node[class*="k-"] .am-nk{padding:0;background:none;color:var(--c);font-weight:600}
+html .am-node.here{background:var(--L-soft)}
+html .am-bar .btn,html .am-bar button{border-radius:var(--L-r)}
+html .am-bar .btn.primary{background:var(--L-accent);color:var(--L-on-accent)}
+html body:not(.x) .bb-next,html body:not(.x) .bb-next[class*=" t-"]{background:var(--L-accent);color:var(--L-on-accent)}
+html body.onestep .step.cur .sh{padding-bottom:8px}
