@@ -2282,7 +2282,7 @@ registerHelp({ id:"find", group:"Start here", order:3, icon:"search", where:["ho
 registerHelp({ id:"colours", group:"On the daf", order:1, icon:"kinds", where:["flow","ameilus"], kinds:true, open:true,
   title:"What the colours mean", sub:"Each step is coloured by its job in the argument.",
   body:["The **Mishnah** label marks the Mishnah itself. It is not a ninth colour.",
-    "The coloured bar at the top of the daf shows every step in order. Tap a colour to jump to that step.",
+    "The step list shows every step in order: at the side on a computer, or by tapping the step counter at the bottom on a phone. Tap a step to jump to it.",
     "In Menu › Settings you can turn off **Step colors**, or use **Color the text** to colour the words too."],
   labels:["Mishnah", "Step colors", "Color the text"], action: helpGo.settings });
 registerHelp({ id:"reading", group:"On the daf", order:2, icon:"lines", where:["flow"],
