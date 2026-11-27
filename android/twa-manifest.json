@@ -1,0 +1,42 @@
+{
+  "packageId": "org.gemaraclarity.app",
+  "host": "gemaraclarity.org",
+  "name": "Gemara Clarity",
+  "launcherName": "Gemara",
+  "display": "standalone",
+  "themeColor": "#FFFFFF",
+  "themeColorDark": "#FFFFFF",
+  "navigationColor": "#FFFFFF",
+  "navigationColorDark": "#FFFFFF",
+  "navigationDividerColor": "#DFE7EE",
+  "navigationDividerColorDark": "#DFE7EE",
+  "backgroundColor": "#FFFFFF",
+  "enableNotifications": false,
+  "startUrl": "/",
+  "iconUrl": "https://gemaraclarity.org/icon-512.png",
+  "maskableIconUrl": "https://gemaraclarity.org/icon-maskable-512.png",
+  "splashScreenFadeOutDuration": 300,
+  "signingKey": {
+    "path": "./gemaraclarity-upload.jks",
+    "alias": "gemaraclarity"
+  },
+  "appVersionCode": 1,
+  "shortcuts": [],
+  "generatorApp": "bubblewrap-core",
+  "webManifestUrl": "https://gemaraclarity.org/manifest.json",
+  "fallbackType": "customtabs",
+  "features": {},
+  "alphaDependencies": {
+    "enabled": false
+  },
+  "enableSiteSettingsShortcut": true,
+  "isChromeOSOnly": false,
+  "isMetaQuest": false,
+  "fullScopeUrl": "https://gemaraclarity.org/",
+  "minSdkVersion": 24,
+  "orientation": "default",
+  "fingerprints": [],
+  "additionalTrustedOrigins": [],
+  "retainedBundles": [],
+  "displayOverride": []
+}
