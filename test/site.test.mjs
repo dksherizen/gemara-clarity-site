@@ -136,7 +136,7 @@ test("picker groups by perek with a jump bar, the daf header names the perek, an
   assert.match(read("sw.js"), /"data\/perakim\.json"/);
 });
 
-test("perek view is always on: no By perek / All dapim switch, and the home library groups by perek too", () => {
+test("perek view is always on: no By perek / All dapim switch, and the daf library groups by perek too", () => {
   const js = read("app.js"), css = read("gc.css");
   assert.doesNotMatch(js, />By perek</); assert.doesNotMatch(js, />All dapim</);
   assert.doesNotMatch(js, /pk-mode/); assert.doesNotMatch(js, /data-mode/); assert.doesNotMatch(css, /\.pk-mode/);
@@ -145,13 +145,12 @@ test("perek view is always on: no By perek / All dapim switch, and the home libr
   assert.match(js, /ps\.length < 2\) return null/, "one perek or no perakim data: plain grid");
   // both places use the shared grouping, headers and jump bar
   const picker = js.slice(js.indexOf("const showDafGrid"), js.indexOf('body.addEventListener("click"'));
-  const lib = js.slice(js.indexOf("function libraryHtml"), js.indexOf("function refreshLibrary"));
-  for (const [name, src] of [["picker", picker], ["library", lib]]) {
-    assert.match(src, /perekGroups\(k\)/, name); assert.match(src, /perekHeadHtml\(p\)/, name); assert.match(src, /perekJumpHtml\(/, name); assert.match(src, /midLegendHtml/, name);
-  }
-  assert.match(lib, /id="lib-\$\{k\}-pk-\$\{p\.n\}"/);
-  assert.match(js, /data-libjump/); assert.match(js, /if \(!current\) refreshLibrary\(\)/, "library re-lists when perakim arrive");
-  for (const sel of [".lib-row .pk-jump", ".lib-row .chip.mid", ".lib-body"]) assert.ok(css.includes(sel), sel);
+  assert.match(picker, /perekGroups\(k\)/); assert.match(picker, /perekHeadHtml\(p\)/); assert.match(picker, /perekJumpHtml\(/); assert.match(picker, /midLegendHtml/);
+  // v9 (Nov 27 2026): the daf library is its own page (#/library); a masechta opens in place to its amudim, under the same perek grouping
+  const lib = js.slice(js.indexOf("function libraryPickerHtml"), js.indexOf("function refreshLibrary"));
+  assert.match(lib, /perekGroups\(k\)/, "library"); assert.match(lib, /class="gc-pk"/, "library"); assert.match(lib, /midOf\(i\)/, "library");
+  assert.match(js, /if \(parts\[0\] === "library"\) return renderLibrary\(parts\[1\]\)/); assert.match(js, /if \(!current\) refreshLibrary\(\)/, "library re-lists when the index or the perakim arrive");
+  for (const sel of [".gc-pk", ".gc-amud-chip", ".gc-tractate-toggle"]) assert.ok(css.includes(sel), sel);
 });
 
 test("perekGroups: the shared grouping rule (run in isolation)", () => {

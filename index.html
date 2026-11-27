@@ -17,15 +17,18 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Gemara">
 <link rel="preload" href="fonts/frank-ruhl-hebrew.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="fonts/spectral-normal-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/plus-jakarta-sans.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="gc.css">
 </head>
 <body class="theme-light">
 <a class="skip" href="#view">Skip to content</a>
 <header class="topbar" id="topbar">
   <button class="brand" id="homeBtn" aria-label="Gemara Clarity home">
-    <img class="brand-logo" src="logo-mark.svg" alt="" width="28" height="28" decoding="async"><span class="brand-he" lang="he" aria-hidden="true">גמרא</span><span class="brand-name">Gemara Clarity</span>
+    <img class="brand-logo" src="logo-mark.svg" alt="" width="34" height="34" decoding="async"><span class="brand-name">gemara clarity<span class="brand-dot">.</span></span>
   </button>
+  <nav class="study-nav" id="studyNav" aria-label="Main">
+    <a href="#/library">Daf library</a><a href="#/classics">Classics</a><a href="#/words">My words</a>
+  </nav>
   <button class="refbtn" id="refBtn" aria-haspopup="dialog">
     <span id="refBtnText">Choose a daf</span>
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>

@@ -163,6 +163,7 @@ const G = `<svg viewBox="0 0 48 48" width="18" height="18" aria-hidden="true"><p
 const I = d => `<svg viewBox="0 0 24 24" aria-hidden="true">${d}</svg>`;
 const PERSON = I('<circle cx="12" cy="8.5" r="3.8"/><path d="M4.5 20c1.2-3.6 4-5.4 7.5-5.4s6.3 1.8 7.5 5.4"/>');
 const GEAR = I('<circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/>');
+const LIBR = I('<path d="M16 6l4 14M12 6v14M8 8v12M4 4v16"/>'), STAR = I('<path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.8z"/>');
 const WORDS = I('<rect x="3.5" y="7" width="13" height="13" rx="2"/><path d="M7.5 3.5h11a2 2 0 0 1 2 2v11"/>'); // My words (Oct 25 2026)
 const HELP = I('<circle cx="12" cy="12" r="9"/><path d="M9.6 9.3a2.5 2.5 0 0 1 4.8.9c0 1.7-2.4 2.2-2.4 3.6M12 17h.01"/>');
 const OUT = I('<path d="M15 4h3a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-3M10 16l-4-4 4-4M6 12h10"/>');
@@ -295,8 +296,8 @@ export function toggleMenu(e){
   const a = allowed() ? me() : null;
   if (a && !fb) connect().catch(() => {});
   menu = document.createElement("div"); menu.className = "pm"; menu.id = "pfMenu"; menu.setAttribute("role", "menu"); menu.setAttribute("aria-label", a ? "Account" : "Menu");
-  menu.innerHTML = a ? head(a) + HR + item("account", PERSON, "Account") + item("words", WORDS, "My words") + item("settings", GEAR, "Settings") + item("help", HELP, "Help") + HR + item("signout", OUT, "Sign out")
-    : item("settings", GEAR, "Settings") + item("words", WORDS, "My words") + item("help", HELP, "Help")
+  menu.innerHTML = a ? head(a) + HR + item("library", LIBR, "Daf library") + item("classics", STAR, "Classics") + item("words", WORDS, "My words") + HR + item("account", PERSON, "Account") + item("settings", GEAR, "Settings") + item("help", HELP, "Help") + HR + item("signout", OUT, "Sign out")
+    : item("library", LIBR, "Daf library") + item("classics", STAR, "Classics") + item("words", WORDS, "My words") + HR + item("settings", GEAR, "Settings") + item("help", HELP, "Help")
       + (allowed() ? HR + `<div class="pm-so"><h3>Sign in (optional)</h3><p>Keeps your bookmarks and progress on all your devices.</p><button class="gbtn" type="button" data-pm="google">${G}<span>Continue with Google</span></button><p class="si-err" role="alert" hidden></p></div>` : "");
   if (a) fixPhotos(menu, a);
   document.body.append(menu); place();
@@ -310,6 +311,8 @@ function pick(k, el){
   if (k === "google") { const err = menu.querySelector(".si-err"); return googleSignIn(el, t => { err.textContent = t; err.hidden = !t; }); }
   closeMenu(true); // focus back on the corner button, so closing the sheet returns there
   if (k === "words") location.hash = "#/words";
+  else if (k === "library") location.hash = "#/library"; // v9: the pages in the header's links, for phones (the links only fit from 760px up)
+  else if (k === "classics") location.hash = "#/classics";
   else if (k === "settings") deps.openSettings();
   else if (k === "help") openHelp();
   else if (k === "account") openAccount();

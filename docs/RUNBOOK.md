@@ -19,6 +19,7 @@ How the site works and how to change it safely. Written Nov 5 2026 for David and
 ## The folders
 
 - `index.html`, `app.js`, `gc.css`, `acct.js`, `ameilus/`, `mywords.js`, `mishnah.js`: the app.
+- `img/`: the three photos on the home page and the Daf library (from the Pammy redesign, Nov 27 2026). `fonts/plus-jakarta-sans.woff2` is the one Latin typeface (SIL Open Font License; the licence text sits beside it).
 - `sw.js`: the offline worker. **When you change any app file, raise the version string `V` at the top**, so phones pick up the change.
 - `data/b/<Masechet>_<daf>_<a|b>.json`: one AI-written breakdown per amud. `data/b/index.json` lists them and holds the data version.
 - `data/classics.json`: the 291 Classics (with their Suggested-order group and type). After editing it, raise `CL_REV` in `app.js` (and `V` in `sw.js`) so phones fetch the new list at once.
