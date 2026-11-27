@@ -56,6 +56,15 @@ On this computer a push runs the check automatically and stops if something is b
 
 **Undo the last change on the live site:** `git revert HEAD` and push. The previous version is live again within about 2 minutes.
 
+## The Android app (Nov 27 2026)
+
+- The app is the live site shown full-screen by Chrome on the phone or tablet (a "Trusted Web Activity"). It has no copy of the site inside it, so **a change to the site reaches the app with no new app build**. Package name: `org.gemaraclarity.app`.
+- `android/` is the app project (made with Bubblewrap's generator; `android/twa-manifest.json` holds its settings). It is not served to visitors (`.assetsignore`).
+- **The signing key is not in this repo and must never be.** David holds `gemaraclarity-upload.jks` and its password. Every later version of the app must be signed with the same key, or phones will refuse the update. Lose it and the app has to be reinstalled from scratch.
+- `_worker/index.js` answers `/.well-known/assetlinks.json` with that key's public fingerprint. That is what lets the app hide the address bar. If the key changes, or Google Play re-signs the app, add the new fingerprint there.
+- To rebuild: Android SDK (platform 36, build-tools 36) and JDK 17+; in `android/`, `gradle assembleRelease`, then `zipalign` and `apksigner sign` with the key. Raise `appVersionCode` in `android/app/build.gradle` each time.
+- Offline in the app is the site's own: Menu › Downloads saves a masechta or the whole library to the device.
+
 ## Rules that keep it safe
 
 - Content changes go through `tools/apply-repairs.mjs`, never by hand-editing a JSON file. A hand edit skips the version raise and the search-page rebuild.
