@@ -13,8 +13,8 @@
   "backgroundColor": "#FFFFFF",
   "enableNotifications": false,
   "startUrl": "/",
-  "iconUrl": "http://localhost:8765/icon-512.png",
-  "maskableIconUrl": "http://localhost:8765/icon-maskable-512.png",
+  "iconUrl": "https://gemaraclarity.org/icon-512.png",
+  "maskableIconUrl": "https://gemaraclarity.org/icon-maskable-512.png",
   "splashScreenFadeOutDuration": 300,
   "signingKey": {
     "path": "./gemaraclarity-upload.jks",
