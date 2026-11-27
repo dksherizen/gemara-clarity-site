@@ -39,6 +39,12 @@ export function canonicalPath(pathname) {
   const out = `/${mas}/${daf ? daf + "/" : ""}`;
   return out === pathname ? null : out;
 }
+// Nov 27 2026: the Android app (package org.gemaraclarity.app) is this site shown full-screen by Chrome (a Trusted Web Activity).
+// Android asks this address which apps may do that; the answer names the app and the SHA-256 fingerprint of the key it is signed with.
+// The fingerprint is public by design. If the app is ever signed with a new key (or Google Play re-signs it), add that fingerprint here.
+const ASSETLINKS_PATH = "/.well-known/assetlinks.json";
+const ASSETLINKS = JSON.stringify([{ relation: ["delegate_permission/common.handle_all_urls"], target: { namespace: "android_app", package_name: "org.gemaraclarity.app",
+  sha256_cert_fingerprints: ["D9:57:DF:65:C9:CB:E8:78:A5:7F:47:6E:85:83:77:21:99:C8:23:DA:F4:27:C1:D6:18:0C:CC:DF:C4:21:A6:DC"] } }]);
 const AUTH_ORIGIN = "https://gemara-clarity-accounts.firebaseapp.com";
 const AUTH_PREFIXES = ["/__/auth/", "/__/firebase/"];
 
@@ -59,6 +65,7 @@ export default {
     }
     if (AUTH_PREFIXES.some(p => url.pathname.startsWith(p))) return proxyAuth(request, url);
     if (host === COURSE_HOST) return serveCourse(request, url, env);
+    if (url.pathname === ASSETLINKS_PATH) return new Response(ASSETLINKS, { headers: { "content-type": "application/json; charset=utf-8", "cache-control": "public, max-age=3600" } });
     if (inCourseDir(url.pathname)) return hideCourseDir(request, url, env);
     if (url.pathname === ASSERTION_PATH || url.pathname === JWKS_PATH) return courseLink(request, url, env);
     const res = await env.ASSETS.fetch(request);

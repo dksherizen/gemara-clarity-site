@@ -2737,3 +2737,10 @@ html body.onestep .step.cur .sbody>.stitle:not(.x):not(.y){padding:5px 14px 0;ma
 html body .step .pe,html body .step .pnote,html body .am-ph .he+div{font-family:var(--ui-font)}
 html body .dafhead .refline{margin-top:12px}
 html body .step .explain :is(p,dd,dt,li,summary){font-family:var(--ui-font)}
+/* Downloads sheet (Nov 27 2026) */
+.dl .dl-seder{display:flex;justify-content:space-between;align-items:baseline;margin:18px 0 2px;font:800 14px var(--ui-font);color:var(--L-muted)}
+.dl .dl-seder .he{font:600 16px var(--he-ui)}
+.dl .ofl-slot{margin:6px 0 0}
+.dl .ofl-save{width:100%;justify-content:flex-start}
+.gc-library-search #libDownloads{margin-top:6px;cursor:pointer}
+.gc-library-search #libDownloads svg:first-child{color:var(--gc-teal)}

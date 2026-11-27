@@ -687,7 +687,18 @@ function openSettings(){
     if (!settings.nikud) $(".preview-he", body).textContent = "אמר רבי יוחנן משום רבי שמעון בן יוחי";
   });
 }
+// Downloads (Nov 27 2026, for the Android app): one screen for saving to this device. Everything, or one masechta at a time.
+// The same saving code as Settings › Offline and the picker's "Save … for offline"; each masechta shows its own progress, Pause and Remove.
+function openDownloads(){
+  openSheet("Downloads", `<div class="dl">
+    <p class="small" style="margin:0 0 10px">Save dapim to this device and learn with no signal. Every daf you open is kept automatically; here you can save more ahead of time. Use Wi-Fi: the whole library is large.</p>
+    <button class="btn ofl-all" id="saveAll" type="button">Save library for offline<span class="sz">${oflMB(OFL_ALL_KB)}</span></button> <span class="small" id="saveAllMsg"></span>
+    <div id="oflList" class="ofl-list">${oflListHtml()}</div>
+    ${SEDARIM.map(([en, he, ks]) => `<h4 class="dl-seder"><span>Seder ${en}</span><span class="he" lang="he">${he}</span></h4>${ks.map(k => oflSlotHtml(k)).join("")}`).join("")}
+  </div>`, body => { body.addEventListener("click", e => { const t = e.target.closest("#saveAll"); if (t) saveLibrary($("#saveAllMsg", body), t); }); });
+}
 async function saveLibrary(msg, btn){
+  try { if (navigator.storage && navigator.storage.persist) navigator.storage.persist().catch(() => {}); } catch {} // ask the browser to keep the saved library when the device runs low on space
   btn.disabled = true; const ids = [...cloudIds]; let done = 0, fail = 0; const bad = new Set();
   const run = async id => { try { await loadCloudAnalysis(id); const p = parseId(id); await loadText(p.m, p.i); } catch { fail++; bad.add(parseId(id).m); } done++; msg.textContent = ` ${done}/${ids.length}`; };
   for (let k = 0; k < ids.length; k += 4) await Promise.all(ids.slice(k, k + 4).map(run));
@@ -1039,7 +1050,7 @@ function libraryPickerHtml(k){
   const [, , first, last] = masInfo(k), gs = perekGroups(k);
   const chip = (i, mid) => `<a class="gc-amud-chip${hasBreakdown(refId(k, i)) || !cloudIds.size ? "" : " no"}" href="${hashFor(k, i)}" aria-label="${masName(k)} ${amudLbl(i)}${mid ? ", " + mid : ""}"${mid ? ` title="${mid}"` : ""}>${amudLbl(i)}</a>`;
   const grid = (from, to, midOf = () => "") => { let s = ""; for (let i = Math.max(from, first); i <= Math.min(to, last); i++) s += chip(i, midOf(i)); return `<div class="gc-amud-grid">${s}</div>`; };
-  return `<div class="gc-tractate-picker"><p>${amudLbl(first)}–${amudLbl(last)}</p>
+  return `<div class="gc-tractate-picker"><p>${amudLbl(first)}–${amudLbl(last)}</p>${oflSlotHtml(k)}
     <nav class="gc-tractate-indexes" aria-label="More ways to browse ${masName(k)}"><button type="button" class="gc-inline-link" data-lib-pick="${k}" aria-haspopup="dialog">By perek ${gi("arrow")}</button><button type="button" class="gc-inline-link" data-lib-mi="${k}" aria-haspopup="dialog">By Mishnah ${gi("arrow")}</button></nav>
     ${gs ? gs.map(({ p, midOf }) => `<section class="gc-pk"><h3><span>Perek ${p.n} · ${amudLbl(p.start)}–${amudLbl(p.end)}</span><span lang="he">${esc(perekHe(p))}</span></h3>${grid(p.start, p.end, midOf)}</section>`).join("") : grid(first, last)}</div>`;
 }
@@ -1052,7 +1063,8 @@ function renderLibrary(focus){
     <header class="gc-library-title"><div><p class="gc-eyebrow">${gi("lib")} THE LEARNING DIRECTORY</p><h1 id="libTitle">Daf library<span>.</span></h1><p>${MAS.length} masechtos${cloudIds.size ? ` · ${cloudIds.size.toLocaleString("en-US")} amudim` : ""}</p></div>
       <img src="img/reading-desk.webp" alt="Reading glasses and a cloth bookmark resting on paper" width="768" height="512"></header>
     <form role="search" class="gc-library-search" id="libForm"><label for="libInput">Choose a daf</label>
-      <div class="gc-search-field">${gi("search")}<input id="libInput" type="search" autocomplete="off" placeholder="Try Shabbos 21b or שבת כא:" aria-label="Search by masechta, daf or amud"></div></form>
+      <div class="gc-search-field">${gi("search")}<input id="libInput" type="search" autocomplete="off" placeholder="Try Shabbos 21b or שבת כא:" aria-label="Search by masechta, daf or amud"></div>
+      <button type="button" class="gc-inline-link" id="libDownloads" aria-haspopup="dialog">${OFL_DL} Downloads: save a masechta or the whole library ${gi("arrow")}</button></form>
     <section class="gc-library-results" id="libResults" aria-label="Search results" hidden></section>
     <section aria-label="Masechtos by seder" class="gc-orders">${SEDARIM.map(([en, he, ks]) => `<section class="gc-order"><h2>${en}<bdi lang="he" dir="rtl">${he}</bdi></h2>${ks.map(k => `<div class="gc-tractate" id="lib-${k}">
         <button class="gc-tractate-toggle" type="button" aria-expanded="${k === open}" aria-controls="libp-${k}" data-lib="${k}"><span>${masName(k)}</span><bdi dir="rtl" lang="he">${masInfo(k)[1]}</bdi><span class="gc-tractate-count">${count[k] ? count[k] + " amudim" : ""}</span>${gi("chev")}</button>
@@ -1075,6 +1087,7 @@ function renderLibrary(focus){
         : `<li><a href="${hashFor(x.m, x.i)}">${gi("book")}<strong>${label(x.m, x.i)}</strong><span dir="rtl" lang="he">${heLabel(x.m, x.i)}</span>${gi("right")}</a></li>`).join("")}</ul>`;
   };
   input.addEventListener("input", search);
+  $("#libDownloads").onclick = () => openDownloads();
   $("#libForm").addEventListener("submit", e => { e.preventDefault(); const f = $("a, button", res); f && f.click(); });
   res.addEventListener("click", e => { const t = e.target.closest("[data-res]"); if (!t) return; const k = t.dataset.res; input.value = ""; search(); toggle(k, true); document.getElementById("lib-" + k).scrollIntoView({ block: "start" }); });
   const land = () => { if (open) { toggle(open, true); const el = document.getElementById("lib-" + open); el && el.scrollIntoView({ block: "start" }); } else scrollTo(0, 0); };
@@ -2156,7 +2169,7 @@ function oflListHtml(){
     const sub = j && !j.stop ? `Saving · <span data-ofl-n="${k}">${j.done} of ${j.of}</span>` : r.st === "saved" ? `${r.of || OFL_KB[k][0]} amudim` : `Paused · ${r.n || 0} of ${r.of || OFL_KB[k][0]} amudim`;
     return `<div class="sv-row"><span class="lbl"><b>${nm}</b><span>${sub}</span></span><span class="rt"><span class="mb">${oflMB(r.st === "saved" ? OFL_KB[k][1] : kbOf(k))}</span><button class="btn" type="button" data-ofl="remove" data-ofl-k="${k}" aria-label="Remove ${nm} from this device">Remove</button></span></div>`; }).join("");
   const tot = ks.reduce((s, k) => s + kbOf(k), 0);
-  return `<h4 class="sv-h">Saved masechtot</h4>${rows || `<p class="small sv-none">None yet.</p>`}${ks.length ? `<div class="sv-tot"><b>Total on this device</b><b>${oflMB(tot)}</b></div>` : ""}<p class="small sv-hint">To save another masechta, open it from “Choose a daf”.</p><button class="btn ofl-rmall" type="button" data-ofl="removeall">Remove all offline data</button>`;
+  return `<h4 class="sv-h">Saved masechtot</h4>${rows || `<p class="small sv-none">None yet.</p>`}${ks.length ? `<div class="sv-tot"><b>Total on this device</b><b>${oflMB(tot)}</b></div>` : ""}<p class="small sv-hint">To save another masechta, open Menu › Downloads, or open it from “Choose a daf”.</p><button class="btn ofl-rmall" type="button" data-ofl="removeall">Remove all offline data</button>`;
 }
 document.addEventListener("click", e => { // capture: the picker's own click handler (data-mas on #pickBody) never sees these buttons
   const b = e.target.closest && e.target.closest("[data-ofl]"); if (!b) return;
@@ -2168,7 +2181,7 @@ document.addEventListener("click", e => { // capture: the picker's own click han
   else if (a === "remove") { if (confirm(`Remove ${masName(k)} from this device? You can save it again any time.`)) oflRemove(k); }
   else if (a === "removeall") { if (confirm("Remove all offline data? Saved masechtot and every daf saved on this device will need signal again. Bookmarks and settings stay.")) oflRemoveAll(); }
 }, true);
-acct.init({ openSheet, closeSheet, toast, openSettings: openSettingsAll, openHelp, onPulled: () => { Object.assign(settings, loadJSON(LS.settings, {})); applySettings(); if (!current) renderHome(); } }); // v106-acct
+acct.init({ openSheet, closeSheet, toast, openSettings: openSettingsAll, openDownloads, openHelp, onPulled: () => { Object.assign(settings, loadJSON(LS.settings, {})); applySettings(); if (!current) renderHome(); } }); // v106-acct
 if (!disclaimerSeen()) showDisclaimer(false);
 
 applySettings();
@@ -2259,11 +2272,11 @@ registerHelp({ id:"saved", group:"Your things", order:1, icon:"bookmark", where:
 registerHelp({ id:"offline", group:"Your things", order:2, icon:"offline", where:["home"],
   title:"Learning without signal", sub:"Save dapim to this device.",
   body:["Every daf you open is kept on this device, so it opens again without signal.",
-    "Going somewhere without signal? Save more first. Tap **Choose a daf**, pick a masechta and tap **Save … for offline**. Or save everything in Menu › Settings › **Save library for offline**. It is large, so use Wi-Fi.",
+    "Going somewhere without signal? Save more first. Open **Downloads** from the Menu (or from the Daf library). Tap **Save … for offline** beside a masechta, or **Save library for offline** for all of Shas. It is large, so use Wi-Fi. You can pause, carry on later, or remove a masechta there.",
     "On a phone, add Gemara Clarity to your home screen (your browser’s Share or ⋮ menu › Add to Home Screen) and it opens like an app.",
     "If the app ever looks out of date, close it and open it again."],
-  labels:["for offline", "Save library for offline"],
-  action:{ label:"Open offline settings", run: c => { c.close(); openSettingsAll(); const s = $("#saveAll"); s && s.scrollIntoView({ block:"center" }); } } });
+  labels:["for offline", "Save library for offline", "Downloads"],
+  action:{ label:"Open Downloads", run: c => { c.close(); openDownloads(); } } });
 registerHelp({ id:"settings", group:"Your things", order:3, icon:"aa", where:["ameilus","classics"],
   title:"Settings and signing in", sub:"Text size, theme, sign-in, starting fresh.",
   body:["Tap **Menu** at the top right, then **Settings**.",
