@@ -690,6 +690,12 @@ function openSettings(){
 // Downloads (Nov 27 2026, for the Android app): one screen for saving to this device. Everything, or one masechta at a time.
 // The same saving code as Settings › Offline and the picker's "Save … for offline"; each masechta shows its own progress, Pause and Remove.
 function openDownloads(){
+  if (/GemaraClarityApp/.test(navigator.userAgent)) { // the Android app carries every lesson inside it: there is nothing to download
+    openSheet("Downloads", `<div class="dl"><p style="margin:0 0 10px"><b>Everything is already on this device.</b></p>
+      <p class="small" style="margin:0 0 10px">All ${cloudIds.size ? cloudIds.size.toLocaleString("en-US") : "5,349"} amudim came inside the app: every step, translation and explanation in Sugya Flow, Ameilus, and the Classics. They open with no signal and nothing more needs saving.</p>
+      <p class="small" style="margin:0">Only these need a connection: Rashi and Tosfos, a pasuk opened from a reference, and today’s Daf Yomi from the calendar (without signal the app works the daf out itself).</p></div>`);
+    return;
+  }
   openSheet("Downloads", `<div class="dl">
     <p class="small" style="margin:0 0 10px">Save dapim to this device and learn with no signal. Every daf you open is kept automatically; here you can save more ahead of time. Use Wi-Fi: the whole library is large.</p>
     <button class="btn ofl-all" id="saveAll" type="button">Save library for offline<span class="sz">${oflMB(OFL_ALL_KB)}</span></button> <span class="small" id="saveAllMsg"></span>
@@ -2202,7 +2208,9 @@ function renderDafNoticeCount(){ /* counts appear on next render; nothing urgent
 // guard keyed by that cache name). Nothing is shown. Marks, position, settings and hints are already saved, so the reload keeps them.
 let swNext = null; const SW_EVERY = 600000;
 function swReload(){ if (!swNext) return false; const g = "gc-sw-reload:" + swNext; try { if (sessionStorage.getItem(g)) return false; sessionStorage.setItem(g, "1"); } catch { return false; } location.reload(); return true; }
-if ("serviceWorker" in navigator) {
+// Nov 27 2026: inside the Android app (its browser view names itself "GemaraClarityApp") the app files and every lesson are already
+// in the app, so there is no offline worker to install.
+if ("serviceWorker" in navigator && !/GemaraClarityApp/.test(navigator.userAgent)) {
   const sw = navigator.serviceWorker; let reg = null, last = -Infinity, had = !!sw.controller;
   const check = () => { if (!reg || Date.now() - last < SW_EVERY) return; last = Date.now(); reg.update().catch(() => {}); };
   // the new worker controls the page as soon as it activates (skipWaiting), before its activate step has removed the old cache, so its name is read once it is activated

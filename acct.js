@@ -175,7 +175,7 @@ const LS = typeof localStorage !== "undefined" ? localStorage : null;
 const lget = (k, d) => { try { const v = JSON.parse(LS.getItem(k)); return v ?? d; } catch { return d; } };
 const lset = (k, v) => { try { if (v == null) LS.removeItem(k); else LS.setItem(k, JSON.stringify(v)); } catch {} };
 let deps = null, fb = null, menu = null, fbLoading = null, user = null, status = "idle", lastSync = 0, timer = null, busy = false, again = false, leaving = false;
-export const allowed = () => typeof location !== "undefined" && HOSTS.test(location.hostname);
+export const allowed = () => typeof location !== "undefined" && HOSTS.test(location.hostname) && !/GemaraClarityApp/.test(navigator.userAgent); // Google refuses sign-in inside an app's built-in browser view, so the Android app does not offer it
 const me = () => lget(K.acct, null);
 
 export function init(d){
