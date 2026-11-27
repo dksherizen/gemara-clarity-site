@@ -253,19 +253,20 @@ function matchMasechet(q){
   }
   return out.sort((a,b) => b[0]-a[0]).map(x => x[1]);
 }
-function parseGoto(q){
-  q = q.trim(); if (!q) return [];
-  // Latin: "makkot 5b", "bm 21:", "berachos 2."
-  let m = q.match(/^(.*?)[\s.]*(\d{1,3})\s*([ab:.]|amud\s*[ab]|\s*ע["״]?[אב])?\s*$/i);
-  let name, daf, amud = null;
-  if (m) { name = m[1]; daf = +m[2]; const a = (m[3]||"").toLowerCase(); amud = /b|:|ב/.test(a) ? "b" : /a|\.|א/.test(a) ? "a" : null; }
-  else {
-    // Hebrew: "ברכות ב", "ב״מ כא ע״ב"
-    const hm = q.match(/^(.+?)\s+([א-ת"״׳']{1,5})(?:\s+(ע["״]?[אב]|[.:]))?\s*$/);
-    if (hm) { name = hm[1]; daf = heNum(hm[2].replace(/["״׳']/g,"")); const a = hm[3]||""; amud = /ב|:/.test(a) ? "b" : a ? "a" : null; }
-    else { name = q; daf = null; }
+function parseGoto(q, ctxMas){
+  // v9 (Nov 27 2026): Hebrew and traditional references. "שבת כא:", "שבת כ״א ע״ב", "Shabbos daf 21 amud b", "bm 21:",
+  // and, with a masechta in view (ctxMas), a bare daf: "21b", "כא.". A dot is amud a, a colon is amud b.
+  q = q.replace(/עמוד\s*([אב])(?=\s|$)/g, "ע״$1").replace(/(^|\s)(?:masechet|maseches|masechta|tractate|daf|amud|מסכת|דף|עמוד)(?=\s|$)/gi, " ").replace(/[\u0591-\u05BD\u05BF\u05C1\u05C2\u05C4\u05C5\u05C7]/g, "").replace(/\s+/g, " ").trim(); if (!q) return [];
+  const side = a => !a ? null : /[b:ב]/i.test(a.replace(/^ע["״'׳]?/, "")) ? "b" : "a";
+  let name = q, daf = null, amud = null;
+  const m = q.match(/^(.*?)[\s.,]*(\d{1,3})\s*([ab:.]|ע["״'׳]?[אב])?$/i);
+  if (m) { name = m[1]; daf = +m[2]; amud = side(m[3]); }
+  else if (!matchMasechet(q).length) { // a name on its own ("בבא קמא") is never read as a number
+    const hm = q.match(/^(?:(.+?)\s+)?([א-ת"״׳']{1,5}?)\s*(ע["״'׳]?[אב]|[.:])?$/);
+    if (hm && (hm[1] || ctxMas)) { const n = heNum(hm[2].replace(/["״׳']/g, "")); if (n) { name = hm[1] || ""; daf = n; amud = side(hm[3]); } }
   }
-  const keys = matchMasechet(name).slice(0, 6);
+  name = name.trim();
+  const keys = name ? matchMasechet(name).slice(0, 6) : ctxMas && daf ? [ctxMas] : [];
   const res = [];
   for (const key of keys) {
     const [, , first, last] = masInfo(key);
@@ -576,7 +577,7 @@ function openPicker(focusMas, focusPerek, mode){
   openSheet(pm ? "Choose a daf" : "Go to a daf", html, body => {
     const input = $("#gotoInput", body), sugg = $("#gotoSugg", body);
     const showMasList = () => {
-      miPickChrome(body, false);
+      miPickChrome(body, false); delete $("#pickBody", body).dataset.mas;
       $("#pickBody", body).innerHTML = SEDARIM.map(([en, he, list]) => `<div class="seder dp-seder">Seder ${en} <span class="en-he">${he}</span></div><div class="masgrid dp-list">${list.map(k => {
         const n = [...cloudIds].filter(id => parseId(id).m === k).length;
         return `<button class="masbtn" data-mas="${k}"><span class="mb-names"><span class="mb-en">${masName(k)}</span><span class="mb-he">${masInfo(k)[1]}</span></span>${n ? `<span class="dp-n" title="${n} amudim with a step-by-step breakdown">${n} amudim</span>` : ""}</button>`; }).join("")}</div>`).join("");
@@ -636,7 +637,7 @@ function openPicker(focusMas, focusPerek, mode){
       else { const [k, i] = t.dataset.go.split("|"); closeSheet(); go(k, +i, pm ? "/" + pm : ""); }
     });
     input.addEventListener("input", () => {
-      const r = parseGoto(input.value).slice(0, 6);
+      const r = parseGoto(input.value, $("#pickBody", body).dataset.mas || (current && current.m) || "").slice(0, 6);
       sugg.innerHTML = r.map(x => x.i == null
         ? `<button class="chip" data-mas="${x.m}"><span>${masName(x.m)}</span><span class="he en-he x">${masInfo(x.m)[1]}</span></button>`
         : `<button class="chip" data-go="${x.m}|${x.i}"><span>${label(x.m, x.i)}${hasBreakdown(refId(x.m, x.i)) ? ` <span style="color:var(--accent)">● breakdown</span>` : ""}</span><span class="he x">${heLabel(x.m, x.i)}</span></button>`).join("")
@@ -695,43 +696,6 @@ async function saveLibrary(msg, btn){
   btn.disabled = false;
 }
 
-/* ---------- home ---------- */
-function libraryHtml(){
-  if (!cloudLoaded) return `<div class="skel"></div><div class="skel" style="width:70%"></div>`;
-  if (!cloudIds.size) return `<div class="empty">The library list didn’t load just now. Any daf still opens from “Go to any daf…” above.</div>`; // v99lb: index.json failed; each amud still loads (one Firestore document)
-  const by = {};
-  for (const id of cloudIds) { const p = parseId(id); (by[p.m] ||= []).push(p.i); }
-  const lastM = (history_()[0] && parseId(history_()[0].id).m) || "";
-  const chip = (k, i, mid = "") => `<a class="chip${mid ? " mid" : ""}" href="${hashFor(k, i)}"${mid ? ` title="${mid}" aria-label="${masName(k)} ${amudLbl(i)}, ${mid}"` : ""}>${amudLbl(i)}</a>`;
-  const body = (k, list) => { // grouped by perek, the same way the picker lists them; one perek or no perakim data: plain chips
-    const gs = perekGroups(k);
-    if (!gs) return `<div class="chips">${list.map(i => chip(k, i)).join("")}</div>`;
-    const secs = gs.map(g => ({ ...g, list: list.filter(i => i >= g.p.start && i <= g.p.end) })).filter(g => g.list.length);
-    const hasMid = secs.some(g => g.list.some(i => g.midOf(i)));
-    return (secs.length > 1 ? perekJumpHtml(secs.map(g => ({ ...g.p, jump: `${k}|${g.p.n}` })), "data-libjump") : "")
-      + (hasMid ? `<div class="legend-mini">${midLegendHtml}</div>` : "")
-      + secs.map(({ p, midOf, list }) => `<section class="pk" id="lib-${k}-pk-${p.n}">${perekHeadHtml(p)}<div class="chips">${list.map(i => chip(k, i, midOf(i))).join("")}</div></section>`).join("");
-  };
-  return `<div class="lib">${MAS.filter(x => by[x[0]]).map(([k, he]) => `<details class="card lib-row" data-mas="${k}"${k === lastM ? " open" : ""}><summary><span class="lr-en">${masName(k)}</span><span class="he lr-he">${he}</span><span class="lr-n">${by[k].length} amudim</span>${chev}</summary>
-    <div class="lib-body">${body(k, by[k].sort((a,b) => a-b))}</div></details>`).join("")}</div>`;
-}
-function refreshLibrary(){ // re-list after the library index or the perakim arrive, keeping open rows open
-  const s = $("#libSlot"); if (!s || current) return;
-  const open = new Set($$("details.lib-row[open]", s).map(d => d.dataset.mas));
-  s.innerHTML = libraryHtml();
-  if (open.size) $$("details.lib-row", s).forEach(d => { d.open = open.has(d.dataset.mas); });
-  const hdr = s.previousElementSibling; if (hdr && hdr.querySelector("small")) hdr.querySelector("small").textContent = cloudIds.size ? cloudIds.size + " amudim" : "";
-}
-function wireLibrary(){
-  const s = $("#libSlot"); if (!s) return;
-  s.addEventListener("click", e => {
-    const t = e.target.closest("[data-libjump]"); if (!t) return;
-    const [k, n] = t.dataset.libjump.split("|"), sec = document.getElementById(`lib-${k}-pk-${n}`); if (!sec) return;
-    const bar = t.parentElement; $$(".chip", bar).forEach(c => c.classList.toggle("on", c === t));
-    const top = ($("#topbar") || {}).offsetHeight || 0, sticky = bar.offsetHeight || 0;
-    scrollTo({ top: scrollY + sec.getBoundingClientRect().top - top - sticky - 6, behavior: "smooth" });
-  });
-}
 // ---- Two paths: Shiur and Ameilus (Oct 15 2026) ----
 // Ameilus is its own way of learning, not a switch: home offers both paths up front, an amud opened with no
 // remembered choice asks which way (equal weight, no default), and once a choice is remembered on this device
@@ -964,19 +928,6 @@ function markClassics(c, a){
 
 // ---- home3: three ways in (Oct 16 2026: three ways in: Sugya Flow, Ameilus and the classics) ----
 // Sugya Flow and Ameilus open the daf picker with that way chosen; Classics opens the library of famous sugyos.
-const H3_ART = {
-  shiur: `<svg viewBox="0 0 64 64" aria-hidden="true"><path class="a-ln" d="M19 17v12.5a5 5 0 0 0 5 5h3.5M27 34.5V47"/><circle cx="19" cy="17" r="5.5" fill="var(--mimra)"/><circle cx="27" cy="34.5" r="5.5" fill="var(--kashya)"/><circle cx="27" cy="49" r="5.5" fill="var(--terutz)"/><rect class="a-tx" x="29" y="14.5" width="22" height="5" rx="2.5"/><rect class="a-tx" x="37" y="32" width="17" height="5" rx="2.5"/><rect class="a-tx" x="37" y="46.5" width="13" height="5" rx="2.5"/></svg>`,
-  ameilus: `<svg viewBox="0 0 64 64" aria-hidden="true"><rect class="a-tx" x="10" y="15" width="34" height="5" rx="2.5"/><rect class="a-tx" x="10" y="26" width="26" height="5" rx="2.5"/><rect class="a-hl" x="10" y="37" width="20" height="6" rx="3"/><path class="a-ul" d="M10 48.5c6-2.6 12 2.6 18 0"/><g transform="rotate(42 44 36)"><rect x="39" y="12" width="10" height="34" rx="3" fill="var(--terutz)"/><rect x="39" y="12" width="10" height="7" rx="3" class="a-cap"/><path d="M39 46l5 9 5-9z" class="a-tip"/></g></svg>`,
-  classics: `<svg viewBox="0 0 64 64" aria-hidden="true"><path class="a-pg" d="M32 19c-6-4.2-13.5-5.2-21-4v32c7.5-1.2 15 0 21 4z"/><path class="a-pg" d="M32 19c6-4.2 13.5-5.2 21-4v32c-7.5-1.2-15 0-21 4z"/><path class="a-ln" d="M32 19v32"/><rect class="a-tx" x="15" y="23" width="12" height="3.2" rx="1.6"/><rect class="a-tx" x="15" y="30" width="10" height="3.2" rx="1.6"/><rect class="a-tx" x="37" y="23" width="12" height="3.2" rx="1.6"/><rect class="a-tx" x="39" y="30" width="10" height="3.2" rx="1.6"/><path d="M42 13h7v17l-3.5-3-3.5 3z" fill="var(--sheelah)"/></svg>`
-};
-function homeChoicesHtml(last){
-  const card = (k, h, p, go, attrs) => `<${k === "classics" ? "a" : "button type=\"button\""} class="h3-card h3-${k}" ${attrs}>
-      <span class="h3-art">${H3_ART[k]}</span>
-      <span class="h3-tx"><b class="h3-h">${h}</b><span class="h3-p">${p}</span><span class="h3-gotx">${go}</span></span>
-      <span class="h3-chev" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></span>
-      ${last === k ? `<span class="h3-last">Last used</span>` : ""}</${k === "classics" ? "a" : "button"}>`;
-  return `<div class="h3-grid">${card("shiur", "Sugya Flow", "Learn any daf step by step", "Choose a daf", `data-home-pick="shiur" aria-haspopup="dialog"`)}${card("ameilus", "Ameilus", "Try each step yourself first", "Choose a daf", `data-home-pick="ameilus" aria-haspopup="dialog"`)}${card("classics", "Classics", "Famous sugyos to start with", "Browse by Seder", `href="#/classics"`)}</div>`;
-}
 // My words (Oct 25 2026): the saved-words list and flashcards are their own screen
 // (#/words, #/words/cards; mywords.js). Ameilus still saves into the same list ("gc-am3-mywords"); Settings › Ameilus links here instead of listing them.
 let mwModP = null;
@@ -990,180 +941,157 @@ function renderWords(sub){
     () => { $("#view").innerHTML = `<div class="notice"><b>My words can’t open right now.</b><p>${navigator.onLine ? "Please try again." : "You’re offline. It opens once the app has been online once since this update."}</p><a class="btn" href="#/words">Try again</a></div>`; });
 }
 
-/* ---------- Ways to learn (option B, chosen by David Oct 30 2026) ----------
-   The home section under today's amud. Built from today's real amud (waysFill runs once the amud has painted) and data/classics.json. */
-const WY_OPT = "b";
-const WY_CL = ["taa23a-honi", "bm59b-achnai", "shab31a-hillel", "ber61b-akiva", "git55b-kamtza"];
-let wyDay = null; // { m, i, a } once today's amud is in
-const wyPlain = t => String(t || "").replace(/[\u0591-\u05BD\u05BF-\u05C7]/g, "").trim();
-const wyShort = (t, n) => { const w = String(t || "").split(/\s+/); return w.length > n ? w.slice(0, n).join(" ") + "…" : w.join(" "); };
-function wyPick(a, from){ // a step whose phrase is short enough to show whole, with its English
-  let best = null;
-  ((a && a.steps) || []).forEach((st, k) => { if (k < (from || 0) || k > 12) return; const ph = (st.phrases || []).find(p => p.aramaic && p.english); if (!ph) return;
-    const n = ph.aramaic.split(/\s+/).length; if (n < 3 || n > 14) return; const sc = Math.abs(n - 6); if (!best || sc < best.sc) best = { st, ph, k, n, sc }; });
-  return best;
+/* ---------- home and the daf library (v9, Nov 27 2026: Pammy's layout, on our app and our data) ---------- */
+const GI = { // line icons on a 24px grid
+  search: '<circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/>', arrow: '<path d="M5 12h14M13 6l6 6-6 6"/>',
+  book: '<path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/>',
+  pencil: '<path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/>', cal: '<rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/>',
+  clock: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>', lib: '<path d="M16 6l4 14M12 6v14M8 8v12M4 4v16"/>', chev: '<path d="M6 9l6 6 6-6"/>', right: '<path d="M9 6l6 6-6 6"/>',
+  offline: '<path d="M12 20h.01M8.5 16.4a5 5 0 0 1 7 0M5 12.9a10 10 0 0 1 5.2-2.7M19 12.9a10 10 0 0 0-2-1.5M2 8.8a15 15 0 0 1 4.2-2.6M22 8.8a15 15 0 0 0-11.3-3.8M2 2l20 20"/>',
+};
+const gi = k => `<svg viewBox="0 0 24 24" aria-hidden="true">${GI[k]}</svg>`;
+function siteFooterHtml(){
+  return `<footer class="gc-footer"><div class="gc-container">
+    <div class="gc-footer-row"><div><span class="gc-foot-brand"><img src="logo-mark.svg" alt="" width="34" height="34"><span>gemara clarity<i>.</i></span></span><p>Gemara, phrase by phrase.</p></div>
+      <nav aria-label="Footer"><a href="#/library">Daf library</a><a href="#/classics">Classics</a><a href="/about/">About &amp; sources</a><a href="/privacy/">Privacy</a><a href="mailto:${CONTACT}">Contact</a></nav></div>
+    <p class="gc-footer-note">The step breakdowns, translations and explanations are AI-generated, not reviewed by a rav, and not for practical halacha: check them against the text and your teacher. Text and reference translation: Sefaria, William Davidson Edition (<a href="https://creativecommons.org/licenses/by-nc/4.0/" rel="noopener">CC BY-NC 4.0</a>). <a href="mailto:${CONTACT}?subject=${encodeURIComponent("Gemara Clarity: a mistake")}">Report a mistake</a></p>
+    <div class="gc-footer-bottom">© Gemara Clarity</div></div></footer>`;
 }
-const wyKind = st => TYPES[st.hebrewStepName] || TYPES["מימרא"];
-const wyTicks = (steps, cur) => steps.map((s, k) => `<span class="tk t-${wyKind(s).k}${k + 1 === cur ? " cur" : ""}"></span>`).join("");
-const wyLegend = () => `<div class="legend">${Object.entries(TYPES).map(([he, t]) => `<div class="lg t-${t.k}"><span class="swatch"></span><div><b><span class="en-he" lang="he">${stepHe(he)}</span> ${t.en}</b><div class="d">${t.d}</div></div></div>`).join("")}<div class="lg t-mishnah"><span class="swatch"></span><div><b><span class="en-he" lang="he">${px(MISHNAH.he)}</span> ${MISHNAH.en}</b><div class="d">${MISHNAH.d}</div></div></div></div>`;
-const wySearchSvg = `<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>`;
-function wyClassics(){ // the featured classics, in WY_CL order, with their Sugya Flow links
-  return clData("classics").then(C => { const items = (C && C.items) || []; const by = Object.fromEntries(items.map(x => [x.id, x]));
-    return { all: items.filter(x => !x.partOf), pick: WY_CL.map(id => by[id]).filter(Boolean).map(it => { const s = clAt(it.start); return { it, href: hashFor(s.m, s.i, "/s" + it.start.step), he: heLabel(s.m, s.i), en: label(s.m, s.i) }; }) }; });
+function modeCardsHtml(){
+  const card = (k, pick, role, name, detail, icon) => `<button type="button" class="gc-mode-card gc-mode-${k}" data-home-pick="${pick}" aria-haspopup="dialog"><span class="gc-mode-icon">${gi(icon)}</span><span class="gc-mode-copy"><span class="gc-mode-role">${role}</span><strong>${name}</strong><span class="gc-mode-detail">${detail}</span></span><span class="gc-mode-arrow">${gi("arrow")}</span></button>`;
+  return `<div class="gc-mode-grid">${card("steps", "shiur", "Guided study", "Sugya Flow", "Follow the argument with phrase translations and explanations.", "book")}${card("ameilus", "ameilus", "Independent study", "Ameilus", "Mark passages yourself, use hints, then compare your reading.", "pencil")}</div>`;
 }
-function wyOpened(all){ // how many classics start on an amud this device has opened
-  const seen = new Set(history_().map(x => x.id));
-  return all.filter(it => { const s = clAt(it.start); return s.i != null && seen.has(refId(s.m, s.i)); }).length;
-}
-
-const wyRaw = t => wyPlain(t).replace(/[.,:;?!–—"“”„‘’׳״()\[\]]/g, "").replace(/\s+/g, " ").trim();
-function wyMarkHtml(a, cls){ // Ameilus in miniature: the raw text across a passage boundary; the learner taps where the passage ends
-  const s = (a && a.steps) || [];
-  for (let k = 0; k + 1 < Math.min(s.length, 14); k++) {
-    const A = wyRaw(((s[k].phrases || []).slice(-1)[0] || {}).aramaic).split(" ").filter(Boolean), B = wyRaw(((s[k + 1].phrases || [])[0] || {}).aramaic).split(" ").filter(Boolean);
-    if (A.length < 3 || B.length < 2) continue;
-    const left = A.slice(-5), right = B.slice(0, 4), end = left.length - 1;
-    return `<p class="${cls}-raw" lang="he" dir="rtl">${[...left, ...right].map((w, j) => `<button type="button" class="wy-w" data-ok="${j === end ? 1 : 0}">${esc(w)}</button>`).join(" ")}</p>`;
-  }
-  return "";
-}
-function wyMarkBind(root, msg){
-  if (!root) return;
-  root.addEventListener("click", e => { const b = e.target.closest(".wy-w"); if (!b) return;
-    $$(".wy-w", root).forEach(x => x.classList.remove("ok", "no"));
-    const ok = b.dataset.ok === "1"; b.classList.add(ok ? "ok" : "no");
-    const m = $(msg, root); if (m) m.innerHTML = ok ? `<span class="wy-okm">✓</span> Right: the passage ends here.` : `Not there yet. Keep reading.`; });
-}
-
-const WB_MODES = [["shiur", "מהלך הסוגיא", "Sugya Flow"], ["ameilus", "עמלות", "Ameilus"], ["classics", "סוגיות יסוד", "Classics"]];
-function waysHtml(){
-  const sel = modePref() === "ameilus" ? "ameilus" : "shiur";
-  const tab = ([k, he, en]) => `<button type="button" role="tab" class="wB-tab" id="wbt-${k}" data-wb="${k}" aria-controls="wbp-${k}" aria-selected="${k === sel}"><span lang="he">${he}</span><small>${en}</small></button>`;
-  return `<section class="h5-sec wy wB" aria-labelledby="wyH">
-    <h2 class="wy-h" id="wyH"><span lang="he">דרכי לימוד</span> <span class="en">Ways to learn</span></h2>
-    <div class="wB-box">
-      <div class="wB-tabs" role="tablist" aria-label="Ways to learn">${WB_MODES.map(tab).join("")}</div>
-      <div class="wB-stage">
-        <div class="wB-p" role="tabpanel" id="wbp-shiur" aria-labelledby="wbt-shiur"${sel === "shiur" ? "" : " hidden"}>
-          <a class="wB-art wB-deck" id="wbDeck" href="#" aria-label="Today’s daf in Sugya Flow"><span class="wB-slip s3"></span><span class="wB-slip s2"></span><span class="wB-slip s1"><span class="wB-wait">Today’s daf is opening…</span></span></a>
-          <p class="wB-line">The whole sugya laid out step by step: who asks, who answers, and why each step is there.</p>
-          <p class="wB-act"><a class="wB-btn" id="wbFlowGo" href="#">Learn today’s daf</a><button type="button" class="wB-alt" data-home-pick="shiur" aria-haspopup="dialog">Choose a daf</button></p>
-        </div>
-        <div class="wB-p" role="tabpanel" id="wbp-ameilus" aria-labelledby="wbt-ameilus"${sel === "ameilus" ? "" : " hidden"}>
-          <div class="wB-art wB-sheet" id="wbSheet"><span class="wB-wait">Today’s daf is opening…</span></div>
-          <p class="wB-line">The raw amud, no vowels, no punctuation. You work out where each passage ends, and the hints are there when you want them.</p>
-          <p class="wB-act"><a class="wB-btn" id="wbAmGo" href="#">Try today’s daf</a><button type="button" class="wB-alt" data-home-pick="ameilus" aria-haspopup="dialog">Choose a daf</button></p>
-        </div>
-        <div class="wB-p" role="tabpanel" id="wbp-classics" aria-labelledby="wbt-classics" hidden>
-          <div class="wB-art wB-shelf" id="wbShelf"><span class="wB-wait">&nbsp;</span></div>
-          <p class="wB-line" id="wbClLine">The famous sugyos, each with a clear start and end. Tap a volume to begin.</p>
-          <p class="wB-act"><a class="wB-btn" href="#/classics">All classics</a></p>
-        </div>
-      </div>
-    </div>
-    <button class="wB-search" id="homeSearch" type="button">${wySearchSvg}<span class="t">Go to any daf</span><span class="eg">e.g. Bechoros 42a</span></button>
-  </section>`;
-}
-function keyHtml(){
-  return `<details class="legend-wrap wy-key wB-key" open><summary><span class="wy-key-t"><span lang="he">סימני העיפרון</span> What the colours mean</span><span class="wB-case" aria-hidden="true">${Object.values(TYPES).map(t => `<i class="t-${t.k}"></i>`).join("")}</span></summary>${wyLegend()}</details>`;
-}
-function waysFill(m, i, a){
-  wyDay = { m, i, a };
-  const deck = $("#wbDeck"), sheet = $("#wbSheet"); if (!deck || !sheet) return;
-  $("#wbFlowGo").href = hashFor(m, i, "/steps"); $("#wbFlowGo").textContent = `Learn ${label(m, i)}`;
-  $("#wbAmGo").href = hashFor(m, i, "/ameilus"); $("#wbAmGo").textContent = `Try ${label(m, i)} yourself`;
-  if (!a || !a.steps || !a.steps.length) return;
-  deck.href = hashFor(m, i, "/s1");
-  const slip = (st, n) => { const t = wyKind(st), ph = (st.phrases || [])[0] || {};
-    return `<span class="wB-k t-${t.k}"><span lang="he">${stepHe(st.hebrewStepName)}</span> ${t.en}<span class="n">${n} of ${a.steps.length}</span></span>
-      <span class="wB-ar t-${t.k}" lang="he" dir="rtl">${esc(wyShort(ph.aramaic, 9))}</span><span class="wB-tr">${px(wyShort(st.simpleTranslation || ph.english || st.title, 24), a)}</span>`; };
-  const s = a.steps;
-  deck.innerHTML = `<span class="wB-slip s3"></span><span class="wB-slip s2"></span>
-    <span class="wB-slip s1">${slip(s[0], 1)}</span><span class="wB-ticks">${wyTicks(s, 1)}</span>`;
-  // Ameilus: the raw text on a worksheet; the learner marks where the passage ends
-  const mk = wyMarkHtml(a, "wB");
-  if (!mk) return;
-  sheet.innerHTML = `${mk}<p class="wB-yours"><span class="lbl" id="wbMsg">Where does the passage end? Tap the word.</span><span class="ln"></span><svg class="wB-pencil" viewBox="0 0 64 12" aria-hidden="true"><path d="M2 3h44l14 3-14 3H2z" fill="var(--gold)"/><path d="M46 3l14 3-14 3z" fill="#e3c69c"/><path d="M56 5.1L60 6l-4 .9z" fill="var(--ink)"/><path d="M2 3h6v6H2z" fill="var(--binding)"/></svg></p>`;
-  wyMarkBind(sheet, "#wbMsg");
-}
-function waysBind(){
-  $$(".wB-tab").forEach(b => b.onclick = () => { $$(".wB-tab").forEach(x => x.setAttribute("aria-selected", x === b)); $$(".wB-p").forEach(p => p.hidden = p.id !== "wbp-" + b.dataset.wb); });
-  $(".wB-tabs") && $(".wB-tabs").addEventListener("keydown", e => { if (!/Arrow(Left|Right)/.test(e.key)) return; const t = $$(".wB-tab"), k = t.indexOf(document.activeElement); if (k < 0) return; const n = t[(k + (e.key === "ArrowRight" ? 1 : t.length - 1)) % t.length]; n.focus(); n.click(); });
-  wyClassics().then(({ all, pick }) => { const sh = $("#wbShelf"); if (!sh || !pick.length) return;
-    const hs = [148, 132, 156, 140, 126];
-    sh.innerHTML = `<span class="wB-books">${pick.map((c, k) => `<a class="wB-book" href="${c.href}" style="--h:${hs[k % hs.length]}px" title="${esc(clName(c.it))}"><span class="sp" lang="he">${esc(masInfo(c.it.start.m)[1])}</span><span class="nm">${esc(clName(c.it))}</span></a>`).join("")}</span><span class="wB-plank"></span>`;
-    const line = $("#wbClLine"); if (line) line.innerHTML = `${all.length} classic sugyos, each with a clear start and end. Start with ${pick.slice(0, 3).map(c => `<a href="${c.href}">${esc(clName(c.it))}</a>`).join(", ")}.`;
-  }).catch(() => {});
-}
-
+const keyGridHtml = () => `<div class="gc-key-grid">${Object.entries(TYPES).map(([he, t]) => `<div class="t-${t.k}"><b><span lang="he">${stepHe(he)}</span>${t.en}</b><p>${t.d}</p></div>`).join("")}</div>`;
 function renderHome(){
   current = null; document.title = "Gemara Clarity: every sugya, step by step";
   setChrome(false);
   const h = history_(), bm = bookmarks(), mwN = mwCount();
-  const last = h[0] && parseId(h[0].id);
-  const hasLast = !!(last && masInfo(last.m));
-  let pos = null; try { pos = JSON.parse(localStorage.getItem("gc5-pos") || "null"); } catch {}
-  // v5 (Oct 29 2026, design bible): home opens on today's amud itself, the real text marked in the step colours, with one Start / Continue
-  const row = (k, he, en, p, attrs) => `<li><${k === "classics" ? "a" : "button type=\"button\""} class="h4-way h3-${k}" ${attrs}><span class="rw-he" lang="he">${he}</span><b>${en}</b><span class="rw-d">${p}</span></${k === "classics" ? "a" : "button"}></li>`;
-  const links = (he, en, items) => `<section class="h5-sec"><h2 class="section-h"><span lang="he">${he}</span> ${en}</h2><p class="h4-links">${items}</p></section>`;
-  const amudLink = id => { const p = parseId(id); return masInfo(p.m) ? `<a href="${hashFor(p.m, p.i)}"><span class="he" lang="he">${heLabel(p.m, p.i)}</span> ${label(p.m, p.i)}</a>` : ""; };
-  $("#view").innerHTML = `<div class="homewrap h5">
-    ${hasLast ? "" : `<header class="h5-hero"><h1>Every sugya in Shas, step by step</h1><p>The Aramaic beside English, phrase by phrase, with each question, answer and proof marked, so you can follow the argument. Free, no ads, works offline.</p></header>`}
-    <section class="amud" id="homeAmud" aria-busy="true">
-      <p class="amud-k" id="yomiTile"><span lang="he">דף היומי</span> <span id="yomiV">Today’s daf</span><span id="yomiS" class="s"></span></p>
-      <div class="amud-page" id="amudPage"><div class="amud-wait">&nbsp;</div></div>
+  const last = h[0] && parseId(h[0].id), hasLast = !!(last && masInfo(last.m));
+  const lastN = hasLast ? flowPos(h[0].id) : 1;
+  const amudLink = id => { const p = parseId(id); return masInfo(p.m) ? `<a href="${hashFor(p.m, p.i)}"><span>${label(p.m, p.i)}</span><span lang="he">${heLabel(p.m, p.i)}</span></a>` : ""; };
+  const list = (title, items) => `<section><h2>${title}</h2>${items}</section>`;
+  const yours = [
+    bm.length ? list("Bookmarks", bm.slice(0, 6).map(amudLink).join("")) : "",
+    h.length > 1 ? list("Recently learned", h.slice(0, 6).map(x => amudLink(x.id)).join("")) : "",
+    mwN ? list("My words", `<a href="#/words"><span>${mwN} saved word${mwN === 1 ? "" : "s"}</span>${gi("right")}</a><a href="#/words/cards"><span>Flashcards</span>${gi("right")}</a>`) : ""].filter(Boolean).join("");
+  $("#view").innerHTML = `<div class="gc-site">
+    <div class="gc-notice"><div class="gc-container gc-notice-row"><span class="gc-notice-label">${gi("cal")} Daf Yomi</span><span id="yomiLink">Today’s daf</span></div></div>
+    <section class="gc-hero gc-container" aria-labelledby="heroTitle">
+      <div class="gc-hero-copy">
+        <p class="gc-eyebrow">THE DAF, STEP BY STEP</p>
+        <h1 id="heroTitle">Learn Gemara. <br>Find the thread<span>.</span></h1>
+        <p class="gc-hero-description">Read Aramaic phrase by phrase and see how each question and answer fits.</p>
+        <div class="gc-hero-actions"><button type="button" class="gc-btn gc-btn-primary gc-hero-primary" id="homeSearch" aria-haspopup="dialog">${gi("search")} Choose a daf ${gi("arrow")}</button><button type="button" class="gc-btn gc-btn-outline" id="homeModes">${gi("book")} Study modes</button></div>
+        ${hasLast ? `<a class="gc-continue" href="${hashFor(last.m, last.i, lastN > 1 ? "/s" + lastN : "")}"><span class="gc-continue-icon">${gi("clock")}</span><span><strong>Continue ${label(last.m, last.i)}</strong><small>${lastN > 1 ? `Step ${lastN}` : "Where you left off"}</small></span>${gi("arrow")}</a>`
+          : `<p class="gc-hero-reassurance">${gi("offline")} Free, no ads, no account needed. Works offline.</p>`}
+      </div>
+      <div class="gc-hero-visual"><div class="gc-hero-image-wrap"><img src="img/study-desk.webp" alt="An open volume and reading glasses on a sunlit library desk" width="768" height="512" fetchpriority="high"></div>
+        <div class="gc-hero-chip"><span class="gc-chip-icon">${gi("book")}</span><strong>Phrase by phrase</strong></div></div>
     </section>
-    ${hasLast ? (() => { const n = pos && pos.id === h[0].id && pos.n > 1 ? pos.n : 0; return `<p class="h5-cont" id="homeCont" data-id="${h[0].id}"><a class="h4-line" href="${hashFor(last.m, last.i, n ? "/s" + n : "")}"><span class="k">Continue</span> <span class="v"><span class="s he" lang="he">${heLabel(last.m, last.i)}</span> ${label(last.m, last.i)}${n ? `, step ${n}` : ""}</span></a></p>`; })() : ""}
-    ${waysHtml()}
-    ${mwN ? links("המילים שלי", "My words", `<a href="#/words">${mwN} saved words</a>, <a href="#/words/cards">flashcards</a>`) : ""}
-    ${bm.length ? links("סימניות", "Bookmarks", bm.map(amudLink).filter(Boolean).join("")) : ""}
-    ${h.length > 1 ? links("נלמד לאחרונה", "Recently learned", h.slice(0, 8).map(x => amudLink(x.id)).filter(Boolean).join("")) : ""}
-    ${keyHtml()}</div>`;
+    <section class="gc-section gc-tight"><div class="gc-container"><div class="gc-today" id="homeAmud" aria-busy="true"><div><p class="gc-eyebrow" id="todayK">TODAY’S DAF</p><h2 id="todayH">&nbsp;</h2></div><p class="gc-today-text" lang="he" dir="rtl"></p></div></div></section>
+    <section id="studyModes" class="gc-section gc-study-modes"><div class="gc-container">
+      <div class="gc-section-head"><div><p class="gc-eyebrow">STUDY MODES</p><h2>Two ways to learn<span>.</span></h2></div><p>Follow the flow with guidance, or work through the daf independently.</p></div>
+      ${modeCardsHtml()}</div></section>
+    <section class="gc-section gc-library-section"><div class="gc-container"><div class="gc-library-panel">
+      <div class="gc-library-copy"><span class="gc-library-icon">${gi("lib")}</span><h2>Explore the daf library<span>.</span></h2>
+        <p><span id="libCount">${cloudIds.size ? cloudIds.size.toLocaleString("en-US") : "5,349"}</span> amudim. Browse by masechta or discover a Classic sugya.</p>
+        <div class="gc-library-actions"><a class="gc-btn gc-btn-primary" href="#/library">Daf library ${gi("arrow")}</a><a class="gc-inline-link" href="#/classics">Explore Classics ${gi("arrow")}</a></div></div>
+      <div class="gc-library-photo"><img src="img/library-volumes.webp" alt="Clothbound volumes beside a library window" width="768" height="512" loading="lazy"></div></div></div></section>
+    ${yours ? `<section class="gc-section gc-tight"><div class="gc-container gc-yours">${yours}</div></section>` : ""}
+    <section class="gc-section gc-tight"><div class="gc-container"><details class="gc-key"><summary>What the step colours mean ${gi("chev")}</summary>${keyGridHtml()}</details></div></section>
+    ${siteFooterHtml()}</div>`;
   $("#homeSearch").onclick = () => openPicker();
+  $("#homeModes").onclick = () => $("#studyModes").scrollIntoView({ behavior: "smooth", block: "start" });
   $$("[data-home-pick]").forEach(b => b.onclick = () => openPicker(undefined, undefined, b.dataset.homePick));
-  try { waysBind(); } catch (e) { console.warn("ways", e); }
-  // the amud on the first screen: today's Daf Yomi; if that can't be reached (offline, Mishnah-only day), the amud last learned, else Berakhot 2a
-  const plain = t => String(t || "").replace(/[\u0591-\u05BD\u05BF-\u05C7]/g, "").replace(/[?!,;:.]+(?=\s|$)/g, m0 => m0 === "." || m0 === ":" ? m0 : "").trim();
+  // today's amud, in the step colours: today's Daf Yomi; if that can't be reached (offline, Mishnah-only day), the amud last learned, else Berakhot 2a
+  const plain = t => String(t || "").replace(/[֑-ֽֿ-ׇ]/g, "").replace(/[?!,;:.]+(?=\s|$)/g, m0 => m0 === "." || m0 === ":" ? m0 : "").trim();
   const paint = async (m, i, kind) => {
-    const page = $("#amudPage"), box = $("#homeAmud"); if (!page) return;
+    const box = $("#homeAmud"); if (!box) return;
     const id = refId(m, i);
-    const k = $("#yomiTile");
-    if (k) k.innerHTML = kind === "yomi" ? `<span lang="he">דף היומי</span> Today’s daf` : kind === "last" ? `<span lang="he">המשך</span> Where you left off` : `<span lang="he">תחילת הש״ס</span> Where Shas begins`;
     let a = null; try { await staticReady; if (!staticIds.size || staticIds.has(id)) a = await loadCloudAnalysis(id); } catch {}
-    if (!$("#amudPage")) return;
+    if (!box.isConnected) return;
     box.removeAttribute("aria-busy");
-    const hc = $("#homeCont"); if (hc && hc.dataset.id === id) hc.hidden = true; // the amud above is the one to continue: its own button says so
-    const at = pos && pos.id === id && a && pos.n > 1 && pos.n <= a.steps.length ? pos.n : 0;
-    const go = n => hashFor(m, i, n ? "/s" + n : "/steps");
+    const n = flowPos(id), at = a && n > 1 && n < a.steps.length ? n : 0;
+    const go = k => hashFor(m, i, k ? "/s" + k : "/steps");
     let words = 0, first = true, body = "";
-    if (a) for (let s = 0; s < a.steps.length && words < 46; s++) {
+    if (a) for (let s = 0; s < a.steps.length && words < 60; s++) {
       const st = a.steps[s], t = TYPES[st.hebrewStepName] || TYPES["מימרא"];
       let txt = plain((st.phrases || []).map(p => p.aramaic).join(" ")); if (!txt) continue;
-      let ws = txt.split(/\s+/); const room = 46 - words; const cut = ws.length > room + 6; if (cut) ws = ws.slice(0, room);
+      let ws = txt.split(/\s+/); const room = 60 - words; const cut = ws.length > room + 6; if (cut) ws = ws.slice(0, room);
       words += ws.length;
       let open = "";
       if (first) { open = `<span class="ow">${esc(ws.shift())}</span> `; first = false; }
-      body += `${open}<a class="mk t-${t.k}" href="${go(s + 1)}" title="Step ${s + 1}: ${t.en}">${esc(ws.join(" "))}${cut ? "…" : ""}</a> `;
+      body += `${open}<a class="t-${t.k}" href="${go(s + 1)}" title="Step ${s + 1}: ${t.en}">${esc(ws.join(" "))}${cut ? "…" : ""}</a> `;
       if (cut) break;
     }
-    page.innerHTML = `
-      <div class="amud-rh" lang="he" dir="rtl"><span>${masInfo(m)[1]}</span><span>${heShort(i)}</span></div>
-      ${a ? `<p class="amud-text" lang="he" dir="rtl">${body}</p>
-      <nav class="ticks" aria-label="Steps of this sugya">${ticksHtml(a.steps, at || 0, go)}</nav>` : ""}
-      <p class="amud-meta"><span class="he" lang="he">${heLabel(m, i)}</span> <span class="en">${label(m, i)}${a ? `, ${a.steps.length} steps` : ""}</span></p>
-      ${a && a.mainTopic ? `<p class="amud-topic">${px(a.mainTopic, a)}</p>` : ""}
-      <p class="amud-go"><a class="btn-primary" href="${a ? go(at) : hashFor(m, i)}">${at ? `Continue at step ${at}` : a ? "Start" : "Open the daf"}</a></p>`;
-    try { waysFill(m, i, a, at); } catch (e) { console.warn("ways", e); }
+    box.innerHTML = `<div><p class="gc-eyebrow">${kind === "yomi" ? "TODAY’S DAF" : kind === "last" ? "WHERE YOU LEFT OFF" : "WHERE SHAS BEGINS"}</p>
+        <h2>${label(m, i)}<span>.</span></h2>
+        <p class="gc-today-meta"><bdi lang="he" dir="rtl">${heLabel(m, i)}</bdi>${a ? `<span>${a.steps.length} steps</span>` : ""}</p>
+        ${a && a.mainTopic ? `<p class="gc-today-topic">${px(a.mainTopic, a)}</p>` : ""}
+        <p class="gc-today-go"><a class="gc-btn gc-btn-primary" href="${a ? go(at) : hashFor(m, i)}">${at ? `Continue at step ${at}` : a ? "Start in Sugya Flow" : "Open the daf"} ${gi("arrow")}</a>${a ? `<a class="gc-inline-link" href="${hashFor(m, i, "/ameilus")}">Try it in Ameilus ${gi("arrow")}</a>` : ""}</p></div>
+      ${body ? `<p class="gc-today-text" lang="he" dir="rtl">${body}</p>` : ""}`;
   };
   const fallback = () => hasLast ? paint(last.m, last.i, "last") : paint("Berakhot", masInfo("Berakhot")[2], "start");
-  dafYomi().then(y => { if (y && y.m) paint(y.m, y.i, "yomi"); else fallback(); }).catch(fallback);
+  dafYomi().then(y => { if (y && y.m) { const l = $("#yomiLink"); if (l) l.outerHTML = `<a href="${hashFor(y.m, y.i)}">${label(y.m, y.i)} ${gi("arrow")}</a>`; paint(y.m, y.i, "yomi"); } else { const l = $("#yomiLink"); if (l) l.textContent = "No Gemara daf today"; fallback(); } }).catch(fallback);
 }
-
+// The daf library (#/library, #/library/<Masechet>): every masechta by seder; a masechta opens in place to its amudim, by perek.
+function libraryPickerHtml(k){
+  const [, , first, last] = masInfo(k), gs = perekGroups(k);
+  const chip = (i, mid) => `<a class="gc-amud-chip${hasBreakdown(refId(k, i)) || !cloudIds.size ? "" : " no"}" href="${hashFor(k, i)}" aria-label="${masName(k)} ${amudLbl(i)}${mid ? ", " + mid : ""}"${mid ? ` title="${mid}"` : ""}>${amudLbl(i)}</a>`;
+  const grid = (from, to, midOf = () => "") => { let s = ""; for (let i = Math.max(from, first); i <= Math.min(to, last); i++) s += chip(i, midOf(i)); return `<div class="gc-amud-grid">${s}</div>`; };
+  return `<div class="gc-tractate-picker"><p>${amudLbl(first)}–${amudLbl(last)}</p>
+    <nav class="gc-tractate-indexes" aria-label="More ways to browse ${masName(k)}"><button type="button" class="gc-inline-link" data-lib-pick="${k}" aria-haspopup="dialog">By perek ${gi("arrow")}</button><button type="button" class="gc-inline-link" data-lib-mi="${k}" aria-haspopup="dialog">By Mishnah ${gi("arrow")}</button></nav>
+    ${gs ? gs.map(({ p, midOf }) => `<section class="gc-pk"><h3><span>Perek ${p.n} · ${amudLbl(p.start)}–${amudLbl(p.end)}</span><span lang="he">${esc(perekHe(p))}</span></h3>${grid(p.start, p.end, midOf)}</section>`).join("") : grid(first, last)}</div>`;
+}
+function renderLibrary(focus){
+  current = null; document.title = "Daf library · Gemara Clarity";
+  setChrome(false);
+  const count = {}; for (const id of cloudIds) { const m = parseId(id).m; count[m] = (count[m] || 0) + 1; }
+  const open = focus && masInfo(focus) ? focus : "";
+  $("#view").innerHTML = `<div class="gc-site"><div class="gc-container gc-inner-page">
+    <header class="gc-library-title"><div><p class="gc-eyebrow">${gi("lib")} THE LEARNING DIRECTORY</p><h1 id="libTitle">Daf library<span>.</span></h1><p>${MAS.length} masechtos${cloudIds.size ? ` · ${cloudIds.size.toLocaleString("en-US")} amudim` : ""}</p></div>
+      <img src="img/reading-desk.webp" alt="Reading glasses and a cloth bookmark resting on paper" width="768" height="512"></header>
+    <form role="search" class="gc-library-search" id="libForm"><label for="libInput">Choose a daf</label>
+      <div class="gc-search-field">${gi("search")}<input id="libInput" type="search" autocomplete="off" placeholder="Try Shabbos 21b or שבת כא:" aria-label="Search by masechta, daf or amud"></div></form>
+    <section class="gc-library-results" id="libResults" aria-label="Search results" hidden></section>
+    <section aria-label="Masechtos by seder" class="gc-orders">${SEDARIM.map(([en, he, ks]) => `<section class="gc-order"><h2>${en}<bdi lang="he" dir="rtl">${he}</bdi></h2>${ks.map(k => `<div class="gc-tractate" id="lib-${k}">
+        <button class="gc-tractate-toggle" type="button" aria-expanded="${k === open}" aria-controls="libp-${k}" data-lib="${k}"><span>${masName(k)}</span><bdi dir="rtl" lang="he">${masInfo(k)[1]}</bdi><span class="gc-tractate-count">${count[k] ? count[k] + " amudim" : ""}</span>${gi("chev")}</button>
+        <div id="libp-${k}"${k === open ? "" : " hidden"}>${k === open ? libraryPickerHtml(k) : ""}</div></div>`).join("")}</section>`).join("")}</section>
+    </div>${siteFooterHtml()}</div>`;
+  const view = $("#view"), input = $("#libInput"), res = $("#libResults");
+  const toggle = (k, force) => { const b = $(`[data-lib="${k}"]`, view), p = document.getElementById("libp-" + k); if (!b || !p) return; const on = force ?? b.getAttribute("aria-expanded") !== "true";
+    b.setAttribute("aria-expanded", String(on)); p.hidden = !on; if (on && !p.firstChild) p.innerHTML = libraryPickerHtml(k); };
+  view.querySelector(".gc-orders").addEventListener("click", e => {
+    const t = e.target.closest("[data-lib],[data-lib-pick],[data-lib-mi]"); if (!t) return;
+    if (t.dataset.lib) toggle(t.dataset.lib);
+    else if (t.dataset.libPick) { pickBy = "daf"; openPicker(t.dataset.libPick); }
+    else { pickBy = "mishnah"; openPicker(t.dataset.libMi); }
+  });
+  const search = () => {
+    const q = input.value.trim(), r = q ? parseGoto(q).slice(0, 8) : [];
+    res.hidden = !q;
+    res.innerHTML = !q ? "" : `<p class="gc-search-caption" role="status">${r.length ? "" : "No match yet. Try “Berachos 2a” or “שבת כא:”."}${r.filter(x => x.out).map(x => { const [, , f, l] = masInfo(x.m); return `${masName(x.m)} runs ${amudLbl(f)}–${amudLbl(l)}.`; }).join(" ")}</p>
+      <ul class="gc-picker-list">${r.map(x => x.i == null ? `<li><button type="button" data-res="${x.m}">${gi("book")}<strong>${masName(x.m)}</strong><span dir="rtl" lang="he">${masInfo(x.m)[1]}</span>${gi("right")}</button></li>`
+        : `<li><a href="${hashFor(x.m, x.i)}">${gi("book")}<strong>${label(x.m, x.i)}</strong><span dir="rtl" lang="he">${heLabel(x.m, x.i)}</span>${gi("right")}</a></li>`).join("")}</ul>`;
+  };
+  input.addEventListener("input", search);
+  $("#libForm").addEventListener("submit", e => { e.preventDefault(); const f = $("a, button", res); f && f.click(); });
+  res.addEventListener("click", e => { const t = e.target.closest("[data-res]"); if (!t) return; const k = t.dataset.res; input.value = ""; search(); toggle(k, true); document.getElementById("lib-" + k).scrollIntoView({ block: "start" }); });
+  const land = () => { if (open) { toggle(open, true); const el = document.getElementById("lib-" + open); el && el.scrollIntoView({ block: "start" }); } else scrollTo(0, 0); };
+  if (perakim) land(); else loadPerakim().then(() => { if (input.isConnected) { $$(".gc-tractate-toggle[aria-expanded=true]", view).forEach(b => { document.getElementById("libp-" + b.dataset.lib).innerHTML = libraryPickerHtml(b.dataset.lib); }); land(); } }).catch(land);
+}
+function refreshLibrary(){ // the library index arrived after the page was drawn: fill in the counts
+  if (current) return;
+  const c = $("#libCount"); if (c && cloudIds.size) c.textContent = cloudIds.size.toLocaleString("en-US");
+  if ($("#libTitle") && !$("#libInput").value) { const o = $(".gc-tractate-toggle[aria-expanded=true]"); renderLibrary(o ? o.dataset.lib : ""); }
+}
 /* ---------- daf view ---------- */
 function setChrome(onDaf){
   $("#bottombar").hidden = !onDaf; document.body.classList.remove("choosing");
   $(".layout").classList.toggle("with-side", !!(onDaf && current && current.analysis && current.tab === "steps"));
   $("#refBtnText").textContent = current ? label(current.m, current.i) : "Choose a daf";
+  $("#refBtn").classList.toggle("go", !current); // v9: with no daf open, "Choose a daf" is the page's main button
+  { const at = (location.hash.replace(/^#\/?/, "").split("/")[0] || "").toLowerCase(); $$("#studyNav a").forEach(a => { if (a.getAttribute("href") === "#/" + at) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); }); }
   if (!onDaf) { $("#sidebar").innerHTML = ""; $("#progressFill").style.width = "0"; }
   setModeSwitch(onDaf && current ? "shiur" : null);
   syncPaged();
@@ -1189,6 +1117,20 @@ function ticksSync(n, total){
   if (row.children.length !== total) row.innerHTML = ticksHtml(current.analysis.steps, n);
   else [...row.children].forEach((b, k) => { b.classList.toggle("cur", k + 1 === n); b.setAttribute("aria-current", k + 1 === n ? "step" : "false"); });
 }
+// v9 (Nov 27 2026): the step you were on is remembered for each amud (the last 100), on this device. An amud opened again
+// without a step in its link opens where you stopped; an amud you finished opens at step 1.
+const FLOW_POS = "gc-flow-pos";
+function flowPosAll(){ const o = loadJSON(FLOW_POS, {}); return o && typeof o === "object" && !Array.isArray(o) ? o : {}; }
+function flowPos(id){ const n = flowPosAll()[id]; if (Number.isInteger(n) && n > 0) return n; const old = loadJSON("gc5-pos", null); return old && old.id === id && Number.isInteger(old.n) && old.n > 0 ? old.n : 1; }
+function flowPosSave(id, n){ const rest = Object.entries(flowPosAll()).filter(([k]) => k !== id); saveJSON(FLOW_POS, Object.fromEntries([[id, n], ...rest].slice(0, 100))); }
+function syncBar(){ // v9: the bottom bar's Back and Next line up with the edges of the step above them
+  const bar = $("#bottombar"), col = $("#dafBody .steps") || $("#dafBody"); /* the column, not the step card: the card slides while it changes */ if (!bar || bar.hidden || !col) return;
+  bar.style.removeProperty("--col-l"); bar.style.removeProperty("--col-r");
+  const b = bar.getBoundingClientRect(), c = col.getBoundingClientRect(); if (!c.width) return;
+  bar.style.setProperty("--col-l", Math.max(12, Math.round(c.left - b.left)) + "px"); bar.style.setProperty("--col-r", Math.max(12, Math.round(b.right - c.right)) + "px");
+}
+addEventListener("resize", () => { clearTimeout(syncBar.t); syncBar.t = setTimeout(syncBar, 160); });
+try { const ro = new ResizeObserver(() => requestAnimationFrame(syncBar)); ro.observe($("#view")); ro.observe(document.documentElement); ro.observe(document.body); } catch {} // the column moves when the step list is resized or hidden, and when the fonts arrive
 function updPager(n, total){ // v4: the thin bottom bar: "5 of 24 · Kind" over a progress line; tapping it opens the step list
   const w = $("#stepCounter"); if (!w || !current || !current.analysis) return;
   const el = document.getElementById("s" + n), tn = el && $(".tname", el), k = (el && (el.className.match(/\bt-(\w+)/) || [])[1]) || "mimra";
@@ -1199,8 +1141,10 @@ function updPager(n, total){ // v4: the thin bottom bar: "5 of 24 · Kind" over 
   if (bp) bp.disabled = n <= 1;
   if (bn) { const nx = document.getElementById("s" + (n + 1)), nk = nx && $(".tname .ten", nx); bn.hidden = n >= total; bn.className = "bb-step bb-next" + (nx && /\bt-[a-z]+\b/.test(nx.className) ? " " + nx.className.match(/\bt-[a-z]+\b/)[0] : ""); /* v7: Next wears the colour of the step to come */ $("#bbNextT").textContent = nk ? `Next: ${nk.textContent.trim()}` : "Next"; bn.setAttribute("aria-label", `Go on to step ${n + 1}${nk ? `, ${nk.textContent.trim()}` : ""}`); }
   try { localStorage.setItem("gc5-pos", JSON.stringify({ id: current.id, n })); } catch {}
+  flowPosSave(current.id, n);
   const f = $("#stepFill"); if (f) f.style.width = (total ? n / total * 100 : 0) + "%";
   document.body.classList.toggle("at-last", n >= total);
+  requestAnimationFrame(syncBar); clearTimeout(syncBar.t2); syncBar.t2 = setTimeout(syncBar, 350); // again once the page has settled (the step list, a scrollbar)
 }
 function updateNav(){
   if (!current) return;
@@ -1281,6 +1225,7 @@ function stepHtml(s, k, open){
     <div class="sbody">
       <h3 class="stitle">${px(s.title)}</h3>
       <div class="phrases">${(s.phrases||[]).map((p, pi) => `<div class="ph" data-ph="${pi}"><div class="pa he" lang="he">${heWords(p.aramaic, fwStop)}</div><div class="pe">${px(p.english)}${p.notes ? `<div class="pnote">${px(p.notes)}</div>` : ""}</div></div>`).join("")}</div>
+      ${current ? `<p class="study-passage-report"><a href="${reportHref(current.m, current.i, k + 1)}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.3 2a6.4 6.4 0 0 0 3.2-1 1 1 0 0 1 1.5.9v10.3a1 1 0 0 1-.4.8 6 6 0 0 1-3.6 1c-3 0-5-2-8-2a6 6 0 0 0-4 1.5"/></svg>Report a mistake</a></p>` : ""}
       <div class="rt" data-rt="${k}"></div>
       <button class="explain-btn" aria-expanded="${open}" aria-controls="x${k+1}"><span class="xb-l">${open ? "Hide explanation" : "Explain"}</span>${chev}</button>
       <div class="explain" id="x${k+1}" ${open ? "" : "hidden"}>
@@ -1377,7 +1322,7 @@ function renderDaf(){
   const p = neighbor(c.m, c.i, -1), n = neighbor(c.m, c.i, 1);
   $("#endnav").innerHTML = `${p ? `<a class="de-p" href="${hashFor(p.m, p.i)}">← ${label(p.m, p.i)}</a>` : ""}${n ? `<a class="de-n" href="${hashFor(n.m, n.i)}">${label(n.m, n.i)} →</a>` : ""}`;
   markMishnah(); markClassics(c, a);
-  if (pendingJump && a && pendingJump.id === c.id && c.tab === "steps") { const k = pendingJump.n; pendingJump = null; setTimeout(() => { const el = document.getElementById("s" + k); if (!el || current !== c) return; toggleStep(el, true); jumpTo(k); }, 0); }
+  if (pendingJump && a && pendingJump.id === c.id && c.tab === "steps") { const k = pendingJump.resume && pendingJump.n >= a.steps.length ? 1 : pendingJump.n; pendingJump = null; if (k > 1) setTimeout(() => { const el = document.getElementById("s" + k); if (!el || current !== c) return; toggleStep(el, true); jumpTo(k); }, 0); }
   miAfterRender(c, a);
 }
 /* ---------- Mishnah badge: worked out here from Sefaria's מתני׳ / גמ׳ markers, nothing regenerated ---------- */
@@ -1752,6 +1697,7 @@ function routeCanon(){
   const p = h.replace(/^#\/?/, "").split("/").filter(Boolean), nf = { nf: h.replace(/^#\/?/, "") }; if (!p.length) return null;
   let to;
   if (p[0].toLowerCase() === "classics") to = ["classics", ...p.slice(1)];
+  else if (p[0].toLowerCase() === "library") { const lm = p[1] && MAS.find(x => x[0].toLowerCase() === p[1].replace(/ /g, "_").toLowerCase()); to = ["library", ...(lm ? [lm[0]] : [])]; } // v9: the daf library
   else if (p[0].toLowerCase() === "words") to = ["words", ...(p[1] && p[1].toLowerCase() === "cards" ? ["cards"] : [])]; // My words (Oct 25 2026): #/words, #/words/cards
   else {
     const info = MAS.find(x => x[0].toLowerCase() === p[0].replace(/ /g, "_").toLowerCase()); if (!info) return nf;
@@ -1779,6 +1725,7 @@ function route(keepScroll){
   if (parts[2] !== "ameilus" && (amMounted || (current && current.am) || document.body.classList.contains("am-mode"))) amTeardown();
   if (!parts.length) return renderHome();
   if (parts[0] === "classics") return renderClassics(parts[1]);
+  if (parts[0] === "library") return renderLibrary(parts[1]);
   if (parts[0] === "words") return renderWords(parts[1]);
   const [m, df, extra] = parts; const info = masInfo(m);
   const dm = (df || "").match(/^(\d{1,3})([ab])?$/);
@@ -1788,6 +1735,7 @@ function route(keepScroll){
   if (extra === "review") { location.replace(hashFor(m, i, modePref() ? "" : "/shiur")); return; }
   if (extra === "ameilus") { if (keepScroll && amMounted && current && current.am && current.id === refId(m, i)) return; return renderAmeilus(m, i); }
   const sj = /^s(\d+)$/.exec(extra || ""); if (sj && !keepScroll) pendingJump = { id: refId(m, i), n: +sj[1] };
+  else if (!keepScroll && !(current && current.id === refId(m, i) && !current.am)) { const n = flowPos(refId(m, i)); pendingJump = n > 1 ? { id: refId(m, i), n, resume: true } : null; }
   if (keepScroll && current && current.id === refId(m, i)) { const y = scrollY; renderDaf(); scrollTo(0, y); return; }
   // which way to open: an explicit Shiur link (/shiur, /s<n>) is a choice; a plain link follows the remembered
   // choice; with none remembered, an amud that Ameilus can open asks first (amud chooser)
@@ -1803,7 +1751,7 @@ function route(keepScroll){
 function focusAfterRoute(){
   const a = document.activeElement; if (a && a !== document.body) return;
   let p; try { p = decodeURIComponent(location.hash.replace(/^#\/?/, "")).split("/").filter(Boolean); } catch { return; } // v99q: a malformed %-escape shows the notice; nothing to focus
-  if (p.length && p[0] !== "classics" && p[0] !== "words") return;
+  if (p.length && p[0] !== "classics" && p[0] !== "words" && p[0] !== "library") return;
   if (!$("#sheet").hidden || $("#pasukPop") || document.querySelector('[role="dialog"]:not([hidden]), [role="alertdialog"]:not([hidden])')) return;
   const card = p[0] === "classics" && p[1] ? document.getElementById("cl-" + p[1]) : null; // back from a Classic: its own card (already scrolled into view)
   const h = card ? (card.querySelector("h2, h3, h4") || card) : document.querySelector("#view h1, #view h2"); if (!h) return;
@@ -1822,11 +1770,17 @@ $("#flowBtn").onclick = () => { if (current && current.analysis) openSheet(`The 
 // v4: moving between steps — swipe, a tap on the left/right edge, the arrow keys (or j/k), or the one arrow at the foot of the step
 function stepBy(d){ if (!paged() || !current || !current.analysis) return false; const c = +(($(".step.cur") || {}).dataset?.n || 1), t = current.analysis.steps.length, n = c + d; if (n < 1 || n > t) return false; jumpTo(n); return true; }
 $$(".edge, .bb-step").forEach(b => b.onclick = () => stepBy(+b.dataset.d));
-(() => { let sx = 0, sy = 0, st = 0, ok = false;
-  document.addEventListener("touchstart", e => { const t = e.touches[0]; ok = e.touches.length === 1 && paged() && !!e.target.closest("#dafBody .step") && !e.target.closest("input, textarea, .wf, #sheet"); sx = t.clientX; sy = t.clientY; st = Date.now(); }, { passive: true });
-  document.addEventListener("touchend", e => { if (!ok) return; ok = false; const t = e.changedTouches[0], dx = t.clientX - sx, dy = t.clientY - sy;
+(() => { let t0 = null; // v9: a swipe never starts on a button, link or field, or while a sheet, the notice or a pasuk is open
+  const busy = () => !$("#sheet").hidden || discOpen || !!$("#pasukPop");
+  document.addEventListener("touchstart", e => { t0 = null; if (e.touches.length !== 1 || !paged() || busy()) return;
+    const card = e.target.closest("#dafBody .step.cur"); if (!card || e.target.closest("a, button, input, textarea, label, summary, .wf, #wfWord")) return;
+    const t = e.touches[0]; t0 = { card, id: t.identifier, x: t.clientX, y: t.clientY, at: Date.now() }; }, { passive: true });
+  document.addEventListener("touchcancel", () => { t0 = null; }, { passive: true });
+  document.addEventListener("touchend", e => { const s0 = t0; t0 = null; if (!s0 || e.touches.length || !s0.card.isConnected || busy()) return;
+    const t = [...e.changedTouches].find(x => x.identifier === s0.id); if (!t) return;
     const sel = window.getSelection && window.getSelection(); if (sel && !sel.isCollapsed) return;
-    if (Math.abs(dx) > 60 && Math.abs(dy) < Math.abs(dx) * 0.6 && Date.now() - st < 800) stepBy(dx < 0 ? 1 : -1); }, { passive: true });
+    const dx = t.clientX - s0.x, dy = t.clientY - s0.y;
+    if (Math.abs(dx) > 60 && Math.abs(dy) < Math.abs(dx) * 0.6 && Date.now() - s0.at < 800) { closeWordFlow(); stepBy(dx < 0 ? 1 : -1); } }, { passive: true });
 })();
 document.addEventListener("click", e => { if (!paged()) return; const sh = e.target.closest(".step:not(.cur) > .sh"); if (!sh) return; e.preventDefault(); e.stopImmediatePropagation(); jumpTo(+sh.parentElement.dataset.n); }, true);
 addEventListener("resize", () => { clearTimeout(syncPaged.t); syncPaged.t = setTimeout(syncPaged, 150); });
@@ -1865,7 +1819,7 @@ function applyUi(){
   t.title = ui.barHidden ? "Show bar" : "Hide bar";
 }
 function setSideHidden(h){
-  ui.sideHidden = h; saveUi(); applyUi();
+  ui.sideHidden = h; saveUi(); applyUi(); requestAnimationFrame(syncBar);
   const f = h ? $("#sideShow") : $("#sideHide"); f && f.focus({ preventScroll: true });
   if (!h) { const cur = $("#sidebar .fnode.cur"); cur && cur.scrollIntoView({ block: "nearest" }); }
 }
@@ -2260,11 +2214,11 @@ const helpGo = {
 };
 registerHelp({ id:"first-daf", group:"Start here", order:1, icon:"paths", where:["home","classics"], open:true,
   title:"Your first daf, in 4 steps", sub:"New here? Start with this.",
-  steps:["Tap **Choose a daf** at the top and pick one. Or tap **Start** on today’s Daf Yomi on the home screen.",
+  steps:["Tap **Choose a daf** at the top and pick one. Or tap **Start in Sugya Flow** on today’s daf on the home screen.",
     "Read the first step: each phrase of the Aramaic with its English beside it.",
     "Tap **Explain** under the step to see what is going on, in plain words.",
     "Tap the arrow → to go on to the next step. Each step’s colour tells you its job (see “What the colours mean”)."],
-  body:["You don’t have to finish in one go. The app remembers where you stopped: **Continue** on the home screen takes you back."],
+  body:["You don’t have to finish in one go. The app remembers where you stopped in each daf. **Continue** on the home screen takes you back to the last one, and a daf you open again opens at the step you were on."],
   labels:["Choose a daf", "Start", "Explain", "Continue"], action: helpGo.pick });
 registerHelp({ id:"ways", group:"Start here", order:2, icon:"steps", where:["home","classics"],
   title:"Sugya Flow or Ameilus?", sub:"Explained for you, or work it out yourself.",
@@ -2274,11 +2228,12 @@ registerHelp({ id:"ways", group:"Start here", order:2, icon:"steps", where:["hom
   labels:["Sugya Flow", "Ameilus"] });
 registerHelp({ id:"find", group:"Start here", order:3, icon:"search", where:["home","classics","flow","ameilus"],
   title:"Finding a daf", sub:"Any daf, a Mishnah, today’s daf, or a famous sugya.",
-  body:["Tap **Choose a daf** at the top. (On a daf, that button shows the daf’s name.) Type a name like “Berakhot 5b”, or pick a masechta and then a daf.",
+  body:["Tap **Choose a daf** at the top. (On a daf, that button shows the daf’s name.) Type a name like “Berakhot 5b”, or pick a masechta and then a daf. Hebrew works too: “שבת כא:” opens Shabbos 21b (a dot is amud a, a colon is amud b).",
+    "The **Daf library** lists every masechta by seder; tap one to see its dapim. It is at the top of the screen, and in the Menu on a phone.",
     "Looking for a Mishnah? Pick the masechta, then switch to **By Mishnah**.",
     "Today’s Daf Yomi is at the top of the home screen.",
-    "**Classics**, on the home screen, are famous sugyos. They are a good place to start."],
-  labels:["Choose a daf", "By Mishnah", "Classics", "Today’s daf"], action: helpGo.pick });
+    "**Classics** are famous sugyos. They are a good place to start."],
+  labels:["Choose a daf", "By Mishnah", "Classics", "Today’s daf", "Daf library"], action: helpGo.pick });
 registerHelp({ id:"colours", group:"On the daf", order:1, icon:"kinds", where:["flow","ameilus"], kinds:true, open:true,
   title:"What the colours mean", sub:"Each step is coloured by its job in the argument.",
   body:["The **Mishnah** label marks the Mishnah itself. It is not a ninth colour.",
@@ -2290,9 +2245,10 @@ registerHelp({ id:"reading", group:"On the daf", order:2, icon:"lines", where:["
   body:["**Explain**, under each step, says what is happening and why. Inside it, **More detail** goes deeper.",
     "**Rashi** and **Tosfos**, under the Aramaic, open their comments on that step: the Hebrew, with the English wherever Sefaria has a translation. The number shows how many there are.",
     "When a step quotes a pasuk, tap the reference to read the whole verse.",
+    "See something wrong? **Report a mistake**, under the step, starts an email to us with the daf and the step filled in.",
     "At the bottom of the screen, **Next** takes you on to the following step and says what kind of step it is; the round arrow beside it goes back one. Tap “1 of 14” between them to list all the steps, so you can see how the sugya fits together and jump to any step.",
     "Want to test yourself? In Menu › Settings, turn off the **English translation** or the **Vowels (nikud)**. You can also turn **Phrase notes** off, turn **Logic details** on, or **Open every explanation** so you never need to tap Explain."],
-  labels:["Explain", "More detail", "Show overview", "Rashi", "Tosfos", "Next"], action: helpGo.settings });
+  labels:["Explain", "More detail", "Show overview", "Rashi", "Tosfos", "Next", "Report a mistake"], action: helpGo.settings });
 registerHelp({ id:"saved", group:"Your things", order:1, icon:"bookmark", where:["home","flow"],
   title:"Bookmarks, history and My words", sub:"Find your way back.",
   body:["Tap **Bookmark** at the bottom of any daf to keep it.",

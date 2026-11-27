@@ -27,7 +27,9 @@ There are four ways in:
 - **Classics**: 291 hand-picked famous passages from every masechta (stories, teachings and halachic sugyos), each opening at its exact first and last step. Two views (By Seder, Suggested order) and type buttons (Short stories, Longer stories, Big ideas, Halacha).
 - **My words**: words you saved while learning, with flashcards.
 
-The home page also shows today's Daf Yomi.
+The home page also shows today's Daf Yomi, and the **Daf library** page lists every masechta by seder.
+
+The look (since Nov 27 2026) follows a redesign made for David by an outside service, Pammy: navy text, a magenta accent, a pale blue-grey page, three stock photos. Only the look and a few features were taken; the app is still this repo's own no-build code.
 
 ### Where the words come from
 
@@ -132,13 +134,13 @@ A no-build, framework-free static web app (plain HTML, CSS and ES modules) plus 
 |---|---|
 | `index.html` | Shell: top bar, steps sidebar, `<main id="view">`, bottom step bar, sheet dialog, toast. Loads `gc.css` and `app.js` as a module. No inline scripts (a test enforces this). |
 | `app.js` (~2,300 lines) | Everything else: masechet table `MAS`, hash router, home page, daf picker (by perek / by Mishnah), Sugya Flow renderer, Classics, Daf Yomi, settings sheet, offline library, Report a mistake, AI notice, service-worker registration. Constants worth knowing: `MAS`, `TYPES` (the eight step kinds), `PHASES`, `CONTACT`, `CL_REV`, `DATA_CACHE = "gc2-data-v1"`. |
-| `gc.css` | All styles, light and dark themes; one color variable per step kind per theme (tested). |
+| `gc.css` | All styles. Light theme only is shown (Dark and Sepia were retired Nov 15 2026; their token blocks stay for the tests); one color variable per step kind per theme (tested). The last section, v9, is the current look: the colour tokens are set once in the v8 token line, the study screens follow Pammy's `study.css`, and the home page, library and footer use `gc-*` classes. |
 | `mishnah.js` | Marks a step "Mishnah" at display time from Sefaria's `מתני׳` / `גמ׳` markers. No AI involved. |
 | `ameilus/core.js`, `ameilus/ui.js`, `ameilus/words.js` | Ameilus mode (v3.6.0): pure logic (tokenizing the amud, scoring the learner's passage marks), UI (`mountAmeilus(root, ctx)`), and one table of the words Ameilus uses about itself. |
 | `mywords.js` | `#/words` list and `#/words/cards` flashcards (Leitner-style boxes). Words live in localStorage `gc-am3-mywords`; card state in `gc-mw-cards` (device only). |
 | `acct.js` | Optional Google sign-in and sync. See "Accounts and sync" below. |
 | `sw.js` | Service worker. See "Offline". |
-| `manifest.json`, icons, `favicon*`, `og.png`, `logo-mark.svg`, `fonts/` | Installable PWA ("Gemara", standalone), self-hosted fonts (Spectral, Frank Ruhl, Noto Rashi Hebrew). |
+| `manifest.json`, icons, `favicon*`, `og.png`, `logo-mark.svg`, `fonts/` | Installable PWA ("Gemara", standalone), self-hosted fonts (Plus Jakarta Sans for all Latin text, Frank Ruhl for Hebrew; Spectral and Noto Rashi Hebrew are older files still shipped). `img/` holds the three photos on the home and library pages. |
 | `data/perakim.json`, `data/perek-nikud.json` | Perek map (from Sefaria's chapter map) and vowelled perek names, for the picker and headers. |
 | `data/mishnah/<Masechet>.json` | Each masechet's Mishnayos and where they sit, for the picker's "By Mishnah" tab. |
 | `data/glossary.json` | Reading glossary used by Ameilus and word help. |
@@ -148,7 +150,8 @@ A no-build, framework-free static web app (plain HTML, CSS and ES modules) plus 
 
 | Hash | Shows |
 |---|---|
-| `#/` | Home: Daf Yomi, ways to learn, recent, Classics teaser |
+| `#/` | Home: Daf Yomi, today's daf in the step colours, the two study modes, your bookmarks and recent dapim |
+| `#/library`, `#/library/<Masechet>` | Daf library: every masechta by seder; one opens in place to its amudim, by perek |
 | `#/<Masechet>/<daf><a|b>` | The amud, in the reader's remembered mode (asks the first time) |
 | `…/steps` (old alias `…/shiur`) | Sugya Flow |
 | `…/s<n>` | Sugya Flow, jumped to step n |
