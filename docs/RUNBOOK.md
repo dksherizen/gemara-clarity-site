@@ -58,12 +58,13 @@ On this computer a push runs the check automatically and stops if something is b
 
 ## The Android app (Nov 27 2026)
 
-- The app is the live site shown full-screen by Chrome on the phone or tablet (a "Trusted Web Activity"). It has no copy of the site inside it, so **a change to the site reaches the app with no new app build**. Package name: `org.gemaraclarity.app`.
-- `android/` is the app project (made with Bubblewrap's generator; `android/twa-manifest.json` holds its settings). It is not served to visitors (`.assetsignore`).
-- **The signing key is not in this repo and must never be.** David holds `gemaraclarity-upload.jks` and its password. Every later version of the app must be signed with the same key, or phones will refuse the update. Lose it and the app has to be reinstalled from scratch.
-- `_worker/index.js` answers `/.well-known/assetlinks.json` with that key's public fingerprint. That is what lets the app hide the address bar. If the key changes, or Google Play re-signs the app, add the new fingerprint there.
-- To rebuild: Android SDK (platform 36, build-tools 36) and JDK 17+; in `android/`, `gradle assembleRelease`, then `zipalign` and `apksigner sign` with the key. Raise `appVersionCode` in `android/app/build.gradle` each time.
-- Offline in the app is the site's own: Menu › Downloads saves a masechta or the whole library to the device.
+- The app is a standalone Android app, package `org.gemaraclarity.app`. **It does not use the phone's browser** (David's content filter blocks the browser, and the first attempt, a Chrome-based shell, was blocked with it). The site's own files and all 5,349 lesson files are copied inside the app, and the app shows them in its own view. It opens and works with no signal.
+- Because the files are inside the app, **a change to the site or a content fix does not reach the app until a new app is built and installed.**
+- Only these use the network in the app: Rashi and Tosfos, a pasuk opened from a reference, and the Daf Yomi calendar (all from Sefaria). There is no Google sign-in in the app (Google refuses sign-in inside an app's built-in view); `acct.js` and `app.js` check for `GemaraClarityApp` in the browser name to switch off sign-in and the offline worker there.
+- `android/` is the app project. `android/copy-site.sh` copies the site into it; the copy is not committed. It is not served to visitors (`.assetsignore`).
+- **The signing key is not in this repo and must never be.** David holds `gemaraclarity-upload.jks` and its password. Every later version must be signed with the same key, or phones will refuse the update.
+- To rebuild: Android SDK (platform 35, build-tools) and JDK 17+. From the repo root: `sh android/copy-site.sh`, then in `android/` run `gradle assembleRelease`, then `zipalign` and `apksigner sign` with the key. Raise `versionCode` and `versionName` in `android/app/build.gradle` each time.
+- `_worker/index.js` still answers `/.well-known/assetlinks.json` from the Chrome-based first attempt. It is harmless and unused by the current app.
 
 ## Rules that keep it safe
 
